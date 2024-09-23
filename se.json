@@ -1,0 +1,2681 @@
+{
+  "name": "Sylvan Elves",
+  "translation": {
+    "fr": "Elfes Sylvestres",
+    "cn": "林木精灵"
+  },
+  "short": "se",
+  "version": "2023 beta2",
+  "nrversion": 343,
+  "playable": 1,
+  "id": 14,
+  "include": [102],
+  "hereditary": [
+    {
+      "ref": "forest_embrace",
+      "path": "hereditary"
+    }
+  ],
+  "indicators": ["sylvan_longbow"],
+  "reference_details": {
+    "army_general": "General",
+    "army_bsb": "Battle Standard",
+    "wizard": "Wizard",
+    "wizardApprentice": "Wizard Apprentice",
+    "wizardAdept": "Wizard Adept",
+    "wizardMaster": "Wizard Master",
+    "mount": "Mount",
+    "weaponEnchantUni": "Weapon Enchant",
+    "dominant": "Dominant",
+    "sizeLarge": "Large Size",
+    "sizeGigantic": "Gigantic Size",
+    "core_unit": "Core Unit",
+    "kin_pathfinder": "Pathfinder",
+    "sylvan_monster": "Avatar of Nature, Dragon or Treefather",
+    "sylvan_longbow": "Sylvan Longbow"
+  },
+  "dictionnary": [
+    {
+      "refs": ["potions_and_scrolls"],
+      "options": [
+        {
+          "name": "Potion of Healing",
+          "cost": 40,
+          "option_id": "q8e8hwcd92oabvg6hksexd",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Elixir of Negation",
+          "cost": 30,
+          "option_id": "pc0k6b2100dm9ssovsubvj",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Spell Scroll",
+          "cost": 30,
+          "option_id": "qlchhz3mvceazo0fy9opp",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "type": "check",
+          "name": "Song of Cenyrn",
+          "cost": 10,
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1"]
+              }
+            }
+          },
+          "armyHasNotOption": ["art_se_cenryn"],
+          "refs": ["art_se_cenryn"],
+          "description": "May be activated when the bearer's unit declares a Charge. The target of the Charge may only declare <span class=\"textbf\">Hold!</span> as its Charge Reaction, unless it is Shaken. The enemy unit may still declare Charge Reactions as normal if it is subsequently Charged by other units.",
+          "option_id": "n3hjgqc4eta0f559z59xyzp"
+        },
+        {
+          "type": "check",
+          "name": "Sacred Seeds",
+          "cost": 55,
+          "hasNotOption": ["mount"],
+          "armyHasNotOption": ["art_se_seeds"],
+          "refs": ["art_se_seeds"],
+          "description": "May be activated at the end of any friendly Movement Phase. Place a Forest Terrain Feature in contact with the bearer and at least 1\" away from any enemy units and other Terrain Features. This Forest remains in play until the end of the game (even if the bearer is removed as a casualty), it <span class=\"textbf\">must</span> fit within a circle of 6\" diameter and is considered <span class=\"textbf\">Dangerous Terrain</span>.<br>",
+          "option_id": "x22hlp2ycoh6hubbvfmp5"
+        }
+      ]
+    },
+    {
+      "refs": ["weaponEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Oaken Might",
+          "cost": 65,
+          "armyHasNotOption": ["se_oken_might"],
+          "refs": ["weaponEnchantUni", "se_oken_might"],
+          "description": "+3 Str.<br>",
+          "option_id": "423fdsfsdgdfsfgdsh34"
+        },
+        {
+          "name": "Eldritch Inscriptions",
+          "cost": 30,
+          "option_id": "6ffofbxifmdktckxnncje",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Supernatural Dexterity",
+          "cost": 20,
+          "option_id": "2gklc92kuw50snayrc6fcc",
+          "type": "check",
+          "shared": true
+        }
+      ]
+    },
+    {
+      "refs": ["bannerEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "refs": ["be_se_deception"],
+          "armyHasNotOption": [
+            {
+              "refs": ["be_se_deception"],
+              "amount": 1
+            }
+          ],
+          "name": "Banner of Deception",
+          "cost": 55,
+          "description": "Once the opponent has deployed their entire army, but before moving models with <span class=\"textbf\">Vanguard</span>, the owner may remove the bearer's unit from the Battlefield and deploy it again elsewhere. Attachable models deployed inside the unit must be redeployed inside the same unit.<br>",
+          "option_id": "kd7g0dsnluceney2lxa"
+        },
+        {
+          "type": "check",
+          "refs": ["be_se_pennant"],
+          "armyHasNotOption": [
+            {
+              "refs": ["be_se_pennant"],
+              "amount": 1
+            }
+          ],
+          "name": "Predator Pennant",
+          "cost": 45,
+          "description": "The bearer's unit gains <span class=\"textbf\">Devastating Charge (Distracting (1))</span>.<br>",
+          "option_id": "teiudx40u2s2zrexucrj6e"
+        },
+        {
+          "type": "check",
+          "refs": ["be_se_mist"],
+          "armyHasNotOption": [
+            {
+              "refs": ["be_se_mist"],
+              "amount": 2
+            }
+          ],
+          "name": "Banner of Silent Mist",
+          "cost": 35,
+          "description": "The bearer's unit gains \t<span class=\"textbf\">Soft Cover</span>. Enemy units within 3\" of the bearer's unit may not gain any benefit from their <span class=\"textbf\">Musician</span>.",
+          "option_id": "en2tgw2me0pltea39xn4z8",
+          "hasNotOption": ["core_unit"]
+        },
+        {
+          "name": "Rending Banner",
+          "cost": 50,
+          "option_id": "jfdobnsuqmoi60w113x0l",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "9xx288ktqdtjsehf5p6rw"
+    },
+    {
+      "refs": ["spearEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Hunter's Honour",
+          "cost": 75,
+          "armyHasNotOption": ["se_se_hunter"],
+          "refs": ["weaponEnchantUni", "se_se_hunter"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "description": "+1 Str and +1 AP. If the wielder causes at least one unsaved wound with this weapon, the wielder and all Rank-and-File models in its unit gain <span class=\"textbf\">Distracting (1)</span> until the end of the Round of Combat.<br>",
+          "option_id": "wrjwjdx50ndksa7dw1eg3f"
+        }
+      ],
+      "option_id": "7nfjltyx9vnd09kfhlfs6m"
+    },
+    {
+      "refs": ["sylvanLongbowEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Watcher's Woe",
+          "cost": 40,
+          "armyHasNotOption": ["be_se_watchers_woe"],
+          "refs": ["weaponEnchantUni", "be_se_watchers_woe"],
+          "hasNotOption": ["weaponEnchantUni", "wizard"],
+          "description": "Number of Shots is <span class=\"textbf\">set</span> to at least 3, <span class=\"textbf\">Poison Attacks (Shooting)</span>.",
+          "option_id": "uv1aswbxc34az1bmoavcg"
+        },
+        {
+          "type": "check",
+          "name": "Bough Of Wyscan",
+          "cost": 100,
+          "armyHasNotOption": ["be_se_wyscan"],
+          "refs": ["weaponEnchantUni", "be_se_wyscan"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "description": "Number of Shots is <span class=\"textbf\">always</span> set to 1, Str 3, AP 2, <span class=\"textbf\">Area Attack (1×5)</span>, <span class=\"textbf\">Direct Hit (2)</span>.<br>",
+          "option_id": "d9xm19aedijn90l7ijxvhp"
+        }
+      ],
+      "option_id": "i4jmuip0g3rjsfylfeelh"
+    },
+    {
+      "refs": ["pairedWeaponsEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Spirit of the Whirlwind",
+          "cost": 50,
+          "armyHasNotOption": ["sbe_se_whirl"],
+          "refs": ["weaponEnchantUni", "sbe_se_whirl"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "description": "+1 Att, +1 Str, and +2 AP.<br>",
+          "option_id": "s3hp7jy1wsdcyfmct978em"
+        }
+      ],
+      "option_id": "z3rfgu119gb7ibb4xdvva9"
+    },
+    {
+      "refs": ["artefact"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Mist Walker's Mirror",
+          "cost": 50,
+          "hasNotOption": ["mount"],
+          "armyHasNotOption": ["art_se_mistwalker"],
+          "refs": ["art_se_mistwalker"],
+          "description": "One use only. May be activated at the end of any friendly Movement Phase if the bearer’s unit is unengaged, consists entirely of Height 1 models, and is fully inside a Forest that is not in contact with enemy models. Apply the following rules:<br>&nbsp;&nbsp;&bull;  Remove the bearer's unit from the Battlefield.<br>&nbsp;&nbsp;&bull;  Immediately place it back using <span class=\"textbf\">Ambush (centre of Forest)</span>. <br>\nIf the unit cannot be placed, it is considered destroyed where it was removed.<br>",
+          "option_id": "its7ng99l5eootw7pbhtha"
+        },
+        {
+          "type": "check",
+          "name": "Hail Shot",
+          "cost": 60,
+          "hasOption": [
+            {
+              "refs": ["prince", "chieftain"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": ["blade_dancer"],
+          "armyHasNotOption": ["art_se_hail"],
+          "refs": ["art_se_hail"],
+          "description": "One use only. May be activated in the Shooting Phase. This is a Shooting Weapon with the following profile:<br>&nbsp;&nbsp;&bull;  <br>\n<i>Hail Shot</i> cannot benefit from <span class=\"textbf\">Forest's Thorns</span>.<br>",
+          "option_id": "iczhgquctad6emturuxdpo"
+        },
+
+        {
+          "type": "check",
+          "name": "Horn of the Wild Hunt",
+          "cost": 35,
+          "armyHasNotOption": ["art_se_wildhunt"],
+          "refs": ["art_se_wildhunt"],
+          "description": "One use only. May be activated when a friendly unit within 8\" fails a Charge Range roll. The Charge Range roll is rerolled.<br>",
+          "option_id": "pjri0up7wckxe3nses34c8"
+        },
+        {
+          "type": "check",
+          "name": "Glyph of Amryl",
+          "cost": 20,
+          "armyHasNotOption": ["art_se_amryl"],
+          "refs": ["art_se_amryl"],
+          "hasNotOption": ["sylvan_spirit"],
+          "description": "The bearer gains +3 Def.",
+          "option_id": "540gfhebvwi715amejebl",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1"]
+              }
+            }
+          }
+        },
+        {
+          "name": "Rod of Battle",
+          "cost": 25,
+          "option_id": "dyau3xbgwps3u6psalr5h8",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Essence of a Free Mind",
+          "cost": 25,
+          "option_id": "65mh7x7ms4p131wq7kudpgr",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Obsidian Rock",
+          "cost": 25,
+          "option_id": "grjavkxr2dxy06xw23f2",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "vejk1fwa60b1isd09h5z1d"
+    },
+    {
+      "refs": ["kindreds"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Shapeshifter",
+          "cost": 40,
+          "hasNotOption": ["mount"],
+          "description": "The model gains Exclusive,Fortitude (4+),Vanguard. Its Mob is <span class=\"textbf\">set</span> to 10\". The model loses <span class=\"textbf\">Attached</span> (if it has it).<br>",
+          "option_id": "m8hkm4kcdg05ha2aswdu3"
+        },
+        {
+          "type": "check",
+          "name": "Wild Hunter",
+          "cost": 60,
+          "hasOption": [
+            {
+              "refs": ["elvenHorse_mount_unit", "greatElk_mount_unit"],
+              "amount": 1
+            }
+          ],
+          "description": "The model gains Fearless,Frenzy,Light Troops and the model part gains Devastating Charge (+1 Att, +1 Str),Fury,Lethal Strike. <br>",
+          "option_id": "h6mznektgkgzjb1aqpkqe9"
+        },
+        {
+          "type": "check",
+          "name": "Pathfinder",
+          "cost": 40,
+          "refs": ["kin_pathfinder"],
+          "armyHasNotOption": [
+            {
+              "refs": ["kin_pathfinder"],
+              "amount": 2
+            }
+          ],
+          "hasNotOption": [
+            {
+              "refs": ["mount"],
+              "amount": 1
+            },
+            {
+              "refs": ["army_bsb", "not_a_leader"],
+              "amount": 1
+            }
+          ],
+          "description": "The model gains Root and Snare (<i>see Pathfinder unit</i>),Forest's Thorns,Scout, Stand and Shoot,Vanguard.<br>Sylvan Longbow wielded by the model has its Shots <span class=\"textbf\">set</span> to 4 if a Chieftain, or 5 if a Forest Prince.<br>",
+          "option_id": "zihhwi2d6m2owwn40ceav"
+        },
+        {
+          "type": "check",
+          "name": "Forest Guardian",
+          "cost": 40,
+          "refs": ["forest_guardian"],
+          "hasNotOption": ["mount"],
+          "description": "The model gains <span class=\"textbf\">Vanguard</span>. The model and Rank-and-File models in the model's unit gain <span class=\"textbf\">First Strike (Hatred)</span>.<br>",
+          "option_id": "3rg66whsmdcdah46g09bo"
+        },
+        {
+          "type": "check",
+          "name": "Blade Dancer",
+          "cost": 60,
+          "refs": ["blade_dancer"],
+          "hasNotOption": ["mount"],
+          "description": "The model gains Aegis (6+), Dances of Cenyrn (<i>see Blade Dancer unit</i>),Exclusive (Blade Dancer Kindred, Blade Dancers),Fearless,Magic Resistance (2). The model's unit gains <span class=\"textbf\">Swiftstride</span>. <br>",
+          "option_id": "b6edu4duqiwbs1wipbxtj4"
+        }
+      ],
+      "option_id": "d86kudgehwbbwef73f9xjo"
+    },
+    {
+      "refs": ["natureAspects"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Scarred Bark",
+          "cost": 50,
+          "armyHasNotOption": ["na_se_bark"],
+          "refs": ["na_se_bark"],
+          "description": "The model's unit gains <span class=\"textbf\">First Strike (Hatred)</span>.<br>",
+          "option_id": "0qjazejahy64sizr82cs5u"
+        },
+        {
+          "type": "check",
+          "name": "Toxic Spores",
+          "cost": 50,
+          "armyHasNotOption": ["na_se_spores"],
+          "refs": ["na_se_spores"],
+          "description": "The model's unit Standard Melee Attacks gain <span class=\"textbf\">Lethal Strike</span>.<br>",
+          "option_id": "4ghxeiy1xchpz397fbeq1"
+        },
+        {
+          "type": "check",
+          "name": "Entangling Vines",
+          "cost": 50,
+          "armyHasNotOption": ["na_se_vines"],
+          "refs": ["na_se_vines"],
+          "description": "The model gains <span class=\"textbf\">Impaling Roots</span> if it didn't have it. When the model is fighting a Duel, enemy Melee Attacks towards it must reroll successful to-hit rolls.<br>",
+          "option_id": "1fms7mokd6rjzvl14g51ke"
+        },
+        {
+          "type": "check",
+          "name": "Oaken Crown",
+          "cost": 35,
+          "armyHasNotOption": ["na_se_crown"],
+          "refs": ["na_se_crown"],
+          "description": "The model's unit gains <span class=\"textbf\">Disciplined</span> and <span class=\"textbf\">Fortitude (5+)</span>.<br>",
+          "option_id": "po611jhabof16r4cuzvws"
+        },
+        {
+          "type": "check",
+          "name": "Verdant Rebirth",
+          "cost": 35,
+          "armyHasNotOption": ["se_verdant_rebirth"],
+          "refs": ["se_verdant_rebirth"],
+          "description": "The first time each Magic Phase that the model successfully casts a Learned Spell that targets a friendly unit, it <span class=\"textbf\">Recovers</span> 1 HP. \nThe model cannot Recover more than 1 HP per Magic Phase from this spell or <i>Fountain of Youth</i> (Druidism).<br>",
+          "hasOption": ["treefather_ancient"],
+          "option_id": "f32f32fc32f32f23f32fg23"
+        }
+      ],
+      "option_id": "zi8bf3ritdr15lcx9azhsc"
+    },
+    {
+      "refs": ["armourEnchant"],
+      "options": [
+        {
+          "name": "Ghostly Guard",
+          "cost": 30,
+          "option_id": "crbs0bqbar89ldtvhx0qxe",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "type": "check",
+          "name": "Shielding Bark",
+          "cost": 80,
+          "hasNotOption": ["flyer"],
+          "armyHasNotOption": ["be_se_bark"],
+          "refs": ["be_se_bark"],
+          "description": "+1 HP, Aegis (5+),Fearless, Tree Singing,Weakness (Flaming Attacks). Arm is <span class=\"textbf\">set</span> to 4 and can <span class=\"textbf\">never</span> be improved beyond this.",
+          "option_id": "4q31bbyigxn0yhjgif9ei2j"
+        }
+      ]
+    }
+  ],
+  "army": [
+    {
+      "name": "Army",
+      "optionsLabel": "Categories",
+      "maxCost": 4500,
+      "armyHasNotOption": [
+        {
+          "refs": ["sylvan_longbow"],
+          "amount": 10,
+          "perPoints": 1000,
+          "extra": 10,
+          "armyTypeMult": false,
+          "roundUp": true
+        }
+      ],
+      "options": [
+        {
+          "name": "Characters",
+          "refs": ["perso"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "name": "Forest Prince",
+              "cost": 210,
+              "refs": ["prince", "tag_Elf", "tag_Light Armour"],
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "k1tholxocjlstxvviyh19",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "eptm13pydnvm7se1y1e7w"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "optionsLabel": "Kindred",
+                  "minSize": 0,
+                  "maxSize": 1,
+                  "options": [],
+                  "optionsDict": ["kindreds"],
+                  "collapsible": true,
+                  "option_id": "qc029izgur4iisrnyx02n"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Light Troops",
+                      "cost": 0,
+                      "options": [],
+                      "option_id": "ewfefwef32f32g54j56j56y54y"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Elven Horse",
+                      "cost": 35,
+                      "options": [],
+                      "refopt": "se_elven_horse_mount",
+                      "option_id": "2xy8sx1tzvsi4vqyelfsw"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Great Elk",
+                      "cost": 110,
+                      "options": [],
+                      "refopt": "great_elk_mount",
+                      "option_id": "odlejvxr6oaxbkqzax6es"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Eagle King",
+                      "cost": 110,
+                      "options": [],
+                      "refopt": "eagle_king_mount",
+                      "option_id": "rhnjvkj9kjnn421wim1wj"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Forest Dragon",
+                      "cost": 440,
+                      "options": [],
+                      "refopt": "forest_dragon_mount",
+                      "option_id": "menuvh82xmecjn99lw2kve",
+                      "maxUnitCost": 800
+                    }
+                  ],
+                  "option_id": "6g0ery11muslcga6o5fsej"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 200,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 5,
+                      "refs": [],
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant", "shieldEnchant"],
+                      "option_id": "6345643342g534h564n56hn56"
+                    },
+                    {
+                      "name": "Elven Cloak",
+                      "ignoreCost": true,
+                      "type": "check",
+                      "cost": 5,
+                      "option_id": "fd32gf23-932fg34g3gfdgd30223",
+                      "hasStat": {
+                        "global": {
+                          "Hgt": {
+                            "excluded": ["5"]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "u63kzl9p571z5wwc5wb6li",
+                      "optionsLabel": "Armour Enchant",
+                      "optionsDict": ["armourEnchant"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": []
+                    },
+                    {
+                      "optionsLabel": "Ranged Weapon",
+                      "collapsible": true,
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "refs": ["sylvan_longbow"],
+                          "type": "check",
+                          "name": "Sylvan Longbow (0+)",
+                          "cost": 10,
+                          "hasNotOption": ["blade_dancer"],
+                          "optionsLabel": "Sylvan Longbow Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["sylvanLongbowEnchant"],
+                          "optionsSuffix": " (Sylvan Longbow)",
+                          "option_id": "tfe6tmy1qqqjhi28zeaf"
+                        }
+                      ],
+                      "option_id": "p9enecp9gdn3ehc5x8jm92"
+                    },
+                    {
+                      "optionsLabel": "Melee Weapon",
+                      "collapsible": true,
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Spear",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Spear Enchant",
+                          "optionsSuffix": " (Spear)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "hasNotOption": ["mount"],
+                          "optionsDict": ["weaponEnchant", "spearEnchant"],
+                          "option_id": "f4xrrlasdsbm2gy4iwapek"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Paired Weapons",
+                          "optionsSuffix": " (Paired Weapons)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "qbsuo0uqgtba7caf66l07w"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Great Weapon and Elven Finesse",
+                          "cost": 15,
+                          "maxSize": 1,
+                          "optionsLabel": "Great Weapon Enchant",
+                          "optionsSuffix": " (Great Weapon)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
+                          "option_id": "bbcnhquj29jvhn2nr5sbc9"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Light Lance",
+                          "cost": 10,
+                          "maxSize": 1,
+                          "optionsLabel": "Light Lance Enchant",
+                          "optionsSuffix": " (Light Lance)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "hasOption": ["mount"],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "hd3mts1c2mndn5wiyz4dub"
+                        }
+                      ],
+                      "option_id": "khb52sw979o26326apzca"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "u5n3o53a6y9p5cb7kmllhi"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "nw0qa7beo08v2kb7lvwlx"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "kkcbbsop38bcbr6qluud16",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "option_id": "825wfwg8vgdb2bmq93b5id"
+                }
+              ],
+              "unit_id": "forest_prince",
+              "option_id": "xwsub4gu99cmky6ya031io",
+              "logo": "character"
+            },
+            {
+              "name": "Chieftain",
+              "cost": 110,
+              "refs": ["chieftain", "tag_Elf", "tag_Light Armour"],
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "ap997lq0khn80jcy8tssuf",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "o9yv0aigsmh9tdvodkvoqn"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Captain and Attached",
+                      "cost": 0,
+                      "option_id": "f23f3ew2g43g342g34f3434"
+                    },
+                    {
+                      "type": "check",
+                      "armyHasNotOption": ["army_bsb"],
+                      "refs": ["army_bsb", "not_a_leader"],
+                      "name": "Battle Standard Bearer",
+                      "cost": 50,
+                      "collapsible": true,
+                      "option_id": "f34f34g34g34f34f34f34g34"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "optionsLabel": "Kindred",
+                  "minSize": 0,
+                  "maxSize": 1,
+                  "options": [],
+                  "optionsDict": ["kindreds"],
+                  "collapsible": true,
+                  "option_id": "srh7muenpnezj3629xukt"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "option_id": "093fi3ew2nf032hj0c32jc2",
+                      "name": "Light Troops",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Elven Horse",
+                      "cost": 40,
+                      "options": [],
+                      "refopt": "se_elven_horse_mount",
+                      "option_id": "0g4ws795qsbqnzw6lkn6xd"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Great Elk",
+                      "cost": 110,
+                      "options": [],
+                      "refopt": "great_elk_mount",
+                      "option_id": "6dto8x5zuk5ng4qki0srpa"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Eagle King",
+                      "cost": 130,
+                      "options": [],
+                      "refopt": "eagle_king_mount",
+                      "option_id": "9wwq3dzqnrenhe3jfuzbmi"
+                    }
+                  ],
+                  "option_id": "opnhbuhx9bm0gh5goyref"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 100,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 5,
+                      "refs": [],
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant", "shieldEnchant"],
+                      "option_id": "f32fg32f32f23g32g34"
+                    },
+                    {
+                      "name": "Elven Cloak",
+                      "ignoreCost": true,
+                      "type": "check",
+                      "cost": 5,
+                      "option_id": "342098fj230f023f0-932f30223",
+                      "hasStat": {
+                        "global": {
+                          "Hgt": {
+                            "excluded": ["5"]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "option_id": "6o6zpcet48rzclp55teiie",
+                      "optionsLabel": "Banner Enchant",
+                      "options": [],
+                      "type": "group",
+                      "optionsDict": ["bannerEnchant"],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "childrenOptions": {
+                        "hasOption": [
+                          {
+                            "refs": ["army_bsb"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "ze1zr0huyncvwwqt8btcuc",
+                      "optionsLabel": "Armour Enchant",
+                      "optionsDict": ["armourEnchant"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": []
+                    },
+                    {
+                      "optionsLabel": "Ranged Weapon",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "refs": ["sylvan_longbow"],
+                          "type": "check",
+                          "name": "Sylvan Longbow (1+)",
+                          "cost": 10,
+                          "hasNotOption": ["blade_dancer"],
+                          "optionsLabel": "Sylvan Longbow Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["sylvanLongbowEnchant"],
+                          "optionsSuffix": " (Sylvan Longbow)",
+                          "option_id": "xqcgvt457pk8b5p5t89yc2"
+                        }
+                      ],
+                      "option_id": "3ry513f1ba5d4n03w3i55"
+                    },
+                    {
+                      "optionsLabel": "Melee Weapon",
+                      "collapsible": true,
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Spear",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Spear Enchant",
+                          "optionsSuffix": " (Spear)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "spearEnchant"],
+                          "option_id": "3fbc77umesyzolcw4gelz9"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "optionsSuffix": " (Paired Weapons)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "f23f23f2334gb534g345"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Great Weapon and Elven Finesse",
+                          "cost": 15,
+                          "maxSize": 1,
+                          "optionsLabel": "Great Weapon Enchant",
+                          "optionsSuffix": " (Great Weapon)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
+                          "option_id": "tqv3rmhrrgk8abxqu417l4"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Light Lance",
+                          "cost": 10,
+                          "maxSize": 1,
+                          "optionsLabel": "Light Lance Enchant",
+                          "optionsSuffix": " (Light Lance)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "hasOption": ["mount"],
+                          "optionsDict": ["weaponEnchant", "lightLanceEnchant"],
+                          "option_id": "gewg32f32fsdff3232g34g43g3g43"
+                        }
+                      ],
+                      "option_id": "7mxt3thh5tp2o5p67ytf9"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "nh1ospmqvgfqrh17gt9xg"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "06qp7kytq8h6mppkgim3oqh"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "t40g48oyvenaoypa1g365h",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "option_id": "16bti14l5nrl11qysc26z"
+                }
+              ],
+              "unit_id": "chieftain",
+              "option_id": "e4yfv9f1gnbk3r44j363r9",
+              "logo": "character"
+            },
+            {
+              "name": "Druid",
+              "cost": 270,
+              "refs": ["wizard", "tag_Elf"],
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "mc7sxglvexogo87xmahp2u",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "p3di7b7a1vmi8a2pd44lkr"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "4wck67p26u9af7ly98b0xe",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Elven Horse",
+                      "cost": 30,
+                      "options": [],
+                      "refopt": "se_elven_horse_mount",
+                      "option_id": "8cidhfin6d25t7cha5bshr"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Eagle King",
+                      "cost": 50,
+                      "options": [],
+                      "refopt": "eagle_king_mount",
+                      "option_id": "owxo0ruod7nmch04o37iz8"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Sylvan Unicorn",
+                      "cost": 50,
+                      "options": [],
+                      "refopt": "sylvan_unicorn_mount",
+                      "option_id": "xdyy5mkiysjdxzjsakr73k"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Forest Dragon",
+                      "cost": 380,
+                      "hasOption": ["wizardMaster"],
+                      "options": [],
+                      "refopt": "forest_dragon_mount",
+                      "option_id": "pnz5np1j2ssj45j30a618",
+                      "maxUnitCost": 900
+                    }
+                  ],
+                  "option_id": "c7y3s042eehgztwwkdhx9w",
+                  "minSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Path",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["art_free_ess"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 2
+                      }
+                    }
+                  ],
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "name": "Cosmology",
+                      "refs": ["cosmology"],
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "yslqxfcecnb4fu0xmj5sl2"
+                    },
+                    {
+                      "name": "Druidism",
+                      "refs": ["druidism"],
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "ba0eg36ffjk5zzeiill9sa"
+                    },
+                    {
+                      "name": "Shamanism",
+                      "refs": ["shamanism"],
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "i5fz8mjbyfk3j6ncww0ocv"
+                    }
+                  ],
+                  "option_id": "u4czfw7jx4cw07baq8v77"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Level",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "refs": ["wizardAdept"],
+                      "name": "Wizard Adept",
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "f32f32fdsf3f2f32"
+                    },
+                    {
+                      "refs": ["wizardMaster"],
+                      "name": "Wizard Master",
+                      "type": "check",
+                      "cost": 150,
+                      "option_id": "nkt534rnav9y2pkllb4gio"
+                    }
+                  ],
+                  "option_id": "fcm0dpttc1a4wq2ixsjbb"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 100,
+                  "collapsible": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["wizardMaster"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 200
+                      }
+                    }
+                  ],
+                  "options": [
+                    {
+                      "optionsLabel": "Armour Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["armourEnchant"],
+                      "option_id": "fewfewfj32fj349efdsfds"
+                    },
+                    {
+                      "optionsLabel": "Ranged Weapon",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "type": "check",
+                          "refs": ["sylvan_longbow"],
+                          "name": "Sylvan Longbow (3+)",
+                          "cost": 5,
+                          "hasNotOption": ["blade_dancer"],
+                          "optionsLabel": "Sylvan Longbow Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["sylvanLongbowEnchant"],
+                          "optionsSuffix": " (Sylvan Longbow)",
+                          "option_id": "42u8f224ht6hw6w44zrh6f"
+                        }
+                      ],
+                      "option_id": "yin0is2p3d6wtqjk1mtdw"
+                    },
+                    {
+                      "optionsLabel": "Melee Weapon",
+                      "collapsible": true,
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Paired Weapons",
+                          "optionsSuffix": " (Paired Weapons)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "kzqyj2aj17fzec8h421qi"
+                        }
+                      ],
+                      "option_id": "1vswz0kn1p1fgvxn35cu5h"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "sph9njtmy7jqrsgmr4jpg"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "0672g9jk53fb8c71es2bkuc"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "rbbqt1nk3vqd6nhpmctci",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "option_id": "k7ow3xj1hipdl4bta27dc"
+                }
+              ],
+              "unit_id": "druid",
+              "option_id": "sxdev79mx96gdlh0e9r3l",
+              "logo": "character",
+              "maxUnitCost": 700
+            },
+            {
+              "name": "Treefather Ancient",
+              "cost": 600,
+              "refs": ["treefather_ancient", "sylvan_monster", "sylvan_spirit", "tag_Sylvan Spirit"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["treefather_ancient"],
+                  "amount": 1
+                }
+              ],
+              "hasNotOption": ["art_drago_gem"],
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "tva3m58gltpkz7u68kukf",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "sqxperrz39n2hqn0g61n9"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "optionsLabel": "Aspect of Nature",
+                  "minSize": 0,
+                  "maxSize": 1,
+                  "options": [],
+                  "optionsDict": ["natureAspects"],
+                  "collapsible": true,
+                  "option_id": "h44pcclledlo6fvpxjvry"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Wizard",
+                      "refs": ["wizard"],
+                      "cost": 0,
+                      "hide": true,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Path",
+                          "minSize": 1,
+                          "maxSize": 1,
+                          "override": [
+                            {
+                              "hasOption": [
+                                {
+                                  "refs": ["art_free_ess"],
+                                  "amount": 1
+                                }
+                              ],
+                              "options": {
+                                "maxSize": 2
+                              }
+                            }
+                          ],
+                          "collapsible": true,
+                          "options": [
+                            {
+                              "name": "Divination",
+                              "refs": ["divination"],
+                              "type": "check",
+                              "cost": 0,
+                              "option_id": "8qr4iyrjxtfiwvrlhvrjx"
+                            },
+                            {
+                              "name": "Druidism",
+                              "refs": ["druidism"],
+                              "type": "check",
+                              "cost": 0,
+                              "option_id": "toss67yidsqo27nsl9mhs"
+                            }
+                          ],
+                          "option_id": "07xotj6orbu6jyo6e86yh8"
+                        },
+                        {
+                          "type": "group",
+                          "collapsible": true,
+                          "optionsLabel": "Level",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "refs": ["wizardAdept"],
+                              "name": "Wizard Adept",
+                              "type": "check",
+                              "cost": 0,
+                              "option_id": "fesdf32f32f32f23f32g34"
+                            },
+                            {
+                              "refs": ["wizardMaster"],
+                              "name": "Wizard Master",
+                              "type": "check",
+                              "cost": 150,
+                              "option_id": "w5hxuwdg4wbil8nnngfaj"
+                            }
+                          ],
+                          "option_id": "jlj3xov7oyudiv18lkp5"
+                        }
+                      ],
+                      "option_id": "vcv5w6j2djzk8tet9kon8"
+                    }
+                  ],
+                  "option_id": "a8bbkk3zvtj5ghcic32dgm"
+                }
+              ],
+              "unit_id": "treefather_ancient",
+              "option_id": "qxq7l7xtpwfmgoyz2cjz5c",
+              "logo": "character",
+              "maxUnitCost": 800
+            },
+            {
+              "name": "Avatar of Nature",
+              "cost": 600,
+              "refs": ["avatar_of_nature", "sylvan_monster", "sylvan_spirit", "tag_Sylvan Spirit"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["avatar_of_nature"],
+                  "amount": 1
+                }
+              ],
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "szllea79q0lcx99pdy2h0l",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "fvzzg5ngi2w6evvq3dy0o"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "optionsLabel": "Aspect of Nature",
+                  "minSize": 0,
+                  "maxSize": 1,
+                  "options": [],
+                  "optionsDict": ["natureAspects"],
+                  "collapsible": true,
+                  "option_id": "4o4tmw9zzhm4nzbjwytq3x"
+                }
+              ],
+              "unit_id": "avatar_of_nature",
+              "option_id": "npg6nuh9wby396yqn4cna",
+              "logo": "character",
+              "maxUnitCost": 700
+            },
+            {
+              "name": "Dryad Ancient",
+              "cost": 100,
+              "refs": ["sylvan_spirit", "tag_Sylvan Spirit"],
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "edeeot648o35jl05zvdlb",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Captain and Attached",
+                      "cost": 0,
+                      "option_id": "f23f23f3254n56m5m56j56",
+                      "refs": ["leadership_amount"]
+                    },
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "qna30tdfiqkf2oe1ucetp"
+                    }
+                  ],
+                  "minSize": 1,
+                  "maxSize": 1
+                },
+                {
+                  "optionsLabel": "Aspect of Nature",
+                  "minSize": 0,
+                  "maxSize": 1,
+                  "options": [],
+                  "leafMaxCost": 100,
+                  "optionsDict": ["natureAspects"],
+                  "collapsible": true,
+                  "option_id": "ibdrkoxy9njv5afk7gu2p"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Wizard",
+                      "refs": ["wizard"],
+                      "cost": 0,
+                      "hide": true,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Path",
+                          "minSize": 1,
+                          "maxSize": 1,
+                          "override": [
+                            {
+                              "hasOption": [
+                                {
+                                  "refs": ["art_free_ess"],
+                                  "amount": 1
+                                }
+                              ],
+                              "options": {
+                                "maxSize": 2
+                              }
+                            }
+                          ],
+                          "collapsible": true,
+                          "options": [
+                            {
+                              "name": "Divination",
+                              "refs": ["divination"],
+                              "type": "check",
+                              "cost": 0,
+                              "option_id": "s9zpc7rj3mz28f1cj2w9f"
+                            },
+                            {
+                              "name": "Druidism",
+                              "refs": ["druidism"],
+                              "type": "check",
+                              "cost": 0,
+                              "option_id": "x4briscyybqnb0733rsll"
+                            }
+                          ],
+                          "option_id": "sd5gs4a5r4wkemtt6nn8"
+                        },
+                        {
+                          "type": "group",
+                          "collapsible": true,
+                          "optionsLabel": "Level",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "refs": ["wizardApprentice"],
+                              "name": "Wizard Apprentice",
+                              "type": "check",
+                              "cost": 50,
+                              "option_id": "kckd1g177enyx9k5iqlgm"
+                            },
+                            {
+                              "refs": ["wizardAdept"],
+                              "name": "Wizard Adept",
+                              "type": "check",
+                              "cost": 150,
+                              "option_id": "252bufeuzg5tehwqaoj3md"
+                            }
+                          ],
+                          "option_id": "ebanhoql2det800s23j3w"
+                        }
+                      ],
+                      "option_id": "c8f3kzre0h6ccaj76ggbru"
+                    }
+                  ],
+                  "option_id": "fstndc5ebltfmgx08vti"
+                }
+              ],
+              "unit_id": "dryad_ancient",
+              "option_id": "j7vhts5h9dnmbdhuv0vvde",
+              "logo": "character"
+            },
+            {
+              "name": "Thicket Shepherd",
+              "cost": 220,
+              "refs": ["thicket_shepherd", "sylvan_spirit", "tag_Sylvan Spirit"],
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "lv5yltddvzjpqly3hq6sa",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "2r71w2r7tscoqo9jpx85i"
+                    },
+                    {
+                      "name": "Battle Standard Bearer",
+                      "type": "check",
+                      "refs": ["army_bsb", "not_a_leader"],
+                      "armyHasNotOption": ["army_bsb"],
+                      "cost": 50,
+                      "options": [],
+                      "option_id": "et7dffuyb3spvp136m2eff"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Captain and Attached",
+                      "cost": 0,
+                      "option_id": "f34f43g34g34f34fd34g35g54"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "optionsLabel": "Aspect of Nature",
+                  "minSize": 0,
+                  "maxSize": 1,
+                  "options": [],
+                  "leafMaxCost": 100,
+                  "optionsDict": ["natureAspects"],
+                  "collapsible": true,
+                  "option_id": "dttet9wzztqn5aov1e54jk"
+                }
+              ],
+              "unit_id": "thicket_shepherd",
+              "option_id": "yv01fd0nrtdi5tsns5ejdk",
+              "logo": "character",
+              "armyHasNotOption": [
+                {
+                  "refs": ["thicket_shepherd"],
+                  "amount": 2
+                }
+              ]
+            }
+          ],
+          "option_id": "58b8y7r1klm8lrnl1wloo5"
+        },
+        {
+          "name": "Core Units",
+          "minPercent": 0.25,
+          "refs": ["base"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Forest Guard",
+              "cost": -10,
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 35,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 11,
+                      "options": [
+                        {
+                          "option_id": "fn420fj302fjh032fv23f342",
+                          "type": "check",
+                          "name": "Shield",
+                          "cost": 1
+                        },
+                        {
+                          "type": "group",
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Spear",
+                              "cost": 0,
+                              "option_id": "rzb5v472ajjvxffnro208"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Paired Weapons",
+                              "cost": 0,
+                              "option_id": "iqodntsy9j7hvzx6eksdkw"
+                            }
+                          ],
+                          "option_id": "elfhmz1klqmfsa91lxae5p"
+                        }
+                      ],
+                      "option_id": "iapl962tpcqt5c4wmqqdg9",
+                      "refs": ["forest_guard_amount"]
+                    }
+                  ],
+                  "option_id": "wa6el6yte1rdxy7dc8pp0r"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "sortOptions": true,
+                      "cost": 5,
+                      "collapsible": true,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "lzd27sxtfvj5op1fmh71k"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "itacq7r6s9febdo0vqxbef"
+                    }
+                  ],
+                  "option_id": "k42ivraeenhgmi5wtsyoe"
+                }
+              ],
+              "unit_id": "forest_guard",
+              "option_id": "3vo9jbl0rqyzizicakgs5",
+              "logo": "core",
+              "refs": ["core_unit", "tag_Elf", "tag_Light Armour", "tag_"]
+            },
+            {
+              "name": "Sylvan Archers",
+              "cost": 50,
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 17,
+                      "option_id": "2kwgo9y4m6ap3l46w59r6g",
+                      "refs": ["sylvan_longbow"]
+                    }
+                  ],
+                  "option_id": "89crr2reve6f1wxu8c3h5i"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "sortOptions": true,
+                      "cost": 5,
+                      "collapsible": true,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "uwhf0znhr9oejeba09pu"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "bie5trpnem7zho55p59ypc"
+                    }
+                  ],
+                  "option_id": "ks3chwsen9s908flbznz"
+                }
+              ],
+              "unit_id": "sylvan_archers",
+              "option_id": "mobrl1drftccyrft9iyzcn",
+              "logo": "core",
+              "refs": ["core_unit", "tag_Elf", "tag_"]
+            },
+            {
+              "name": "Heath Riders",
+              "refs": ["heath_riders", "core_unit", "tag_Elf", "tag_Light Armour", "tag_"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["heath_riders"],
+                  "amount": 3
+                }
+              ],
+              "cost": 50,
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["heath_hunters"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["unseen_arrows"]
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 30,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Options",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Heath Hunters",
+                              "cost": 0,
+                              "refs": ["heath_hunters", "sylvan_longbow"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["heath_hunters"],
+                                  "amount": 20
+                                }
+                              ],
+                              "options": [
+                                {
+                                  "type": "check",
+                                  "name": "Ambush (Board Edge)",
+                                  "cost": 2,
+                                  "option_id": "r1d26rx0d7b7mg9n2dfyl9"
+                                }
+                              ],
+                              "option_id": "3r7p79mozf3omznrvipj1"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Heath Lancers",
+                              "cost": 0,
+                              "option_id": "f32f32f32gv34290g34m0v34v43"
+                            }
+                          ],
+                          "option_id": "muxxcmfscnkfb6wz04z7s"
+                        }
+                      ],
+                      "option_id": "q6wreo4vyr7cd8xk0t6if5",
+                      "refs": ["heath_riders_amount"]
+                    }
+                  ],
+                  "option_id": "dntz9uolwyur40ogvv0zv"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "sortOptions": true,
+                      "cost": 5,
+                      "collapsible": true,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "j1clwjqj9uxmkb2pwtpkn"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "3d2z4mboll9yr1ty6tl5b9"
+                    }
+                  ],
+                  "option_id": "stqzg28xwnsv6kxocska9"
+                }
+              ],
+              "unit_id": "heath_riders",
+              "option_id": "0hcubb18q1bpmpyrsyzxjd",
+              "logo": "core"
+            },
+            {
+              "name": "Dryads",
+              "refs": ["dryads", "core_unit", "tag_Sylvan Spirit"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["dryads"],
+                  "amount": 4
+                }
+              ],
+              "cost": 20,
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 15,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Clearing Spirits",
+                              "cost": 1,
+                              "refs": ["dryad_skirmishers"],
+                              "hasNotOption": [
+                                {
+                                  "refs": ["dryad_skirmishers"],
+                                  "amount": 15
+                                }
+                              ],
+                              "option_id": "rhthyc271lkzup7067he2h"
+                            }
+                          ],
+                          "option_id": "1xlm0v0h9lvyo7hewtbveg"
+                        }
+                      ],
+                      "option_id": "uldi32h120mh1s909a47fj",
+                      "refs": ["dryads_amount"]
+                    }
+                  ],
+                  "option_id": "robxuy20yhhgu4k5w314k"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "mugmklvs4gknn3ftchoku"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "option_id": "g4g34fdsf3erg34g34g43",
+                      "hasNotOption": ["dryad_skirmishers"]
+                    }
+                  ],
+                  "option_id": "co6ezivb62n9id4xak58q"
+                }
+              ],
+              "unit_id": "dryads",
+              "option_id": "meiram78yonwo1vgus4fh",
+              "logo": "core"
+            }
+          ],
+          "option_id": "0buuuiuzprpd6qqrxev7ap3"
+        },
+        {
+          "name": "Special",
+          "refs": ["special"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Forest Rangers",
+              "refs": ["forest_rangers", "tag_Elf", "tag_Light Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["forest_rangers"],
+                  "amount": 5
+                }
+              ],
+              "cost": -20,
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Vanguard",
+                              "cost": 2,
+                              "option_id": "xcn6bd98xp1ie2gkguvux"
+                            }
+                          ],
+                          "option_id": "phfj5ldajjq503u07qucsj"
+                        }
+                      ],
+                      "option_id": "f339ss66t359etwl2f8qc5",
+                      "refs": ["forest_rangers_amount"]
+                    }
+                  ],
+                  "option_id": "izjawsbjwsq54mjeh2efk"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "tbw77bzaocqo2lau4j42b8"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "e2v1dtmv3jl1l9zlxup1xd"
+                    }
+                  ],
+                  "option_id": "lia4hq034vgs4qrwecmcwl"
+                }
+              ],
+              "unit_id": "forest_rangers",
+              "option_id": "5e5gep9z4fihbclnzgywp",
+              "logo": "special"
+            },
+            {
+              "name": "Thicket Beasts",
+              "refs": ["thicket_beasts", "tag_Sylvan Spirit"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["thicket_beasts"],
+                  "amount": 3
+                }
+              ],
+              "cost": -80,
+              "options": [
+                {
+                  "minSize": 4,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 100,
+                      "option_id": "qkiju4ipb3vlw4xq2577b",
+                      "refs": ["thicket_beasts_amount"]
+                    }
+                  ],
+                  "option_id": "9kvw0v4ju7bnlnez9fvjg"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "fjjj3290fdj32f302f32"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "ak8zscosqtxxzym43ggvc"
+                    }
+                  ],
+                  "option_id": "mf270b1ncf999ha5mazi1l"
+                }
+              ],
+              "unit_id": "thicket_beasts",
+              "option_id": "rx0hf2gsualhtuvwfvs9kh",
+              "logo": "special"
+            },
+            {
+              "name": "Forest Eagles",
+              "refs": ["forest_eagles", "tag_Beast"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["forest_eagles"],
+                  "amount": 2
+                }
+              ],
+              "cost": 90,
+              "options": [
+                {
+                  "minSize": 2,
+                  "maxSize": 5,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 30,
+                      "option_id": "pewinn5z9bmnifuvmn702i",
+                      "refs": ["forest_eagles_amount"]
+                    }
+                  ],
+                  "option_id": "3cz1htd0vwf49rywi6zqvg"
+                }
+              ],
+              "unit_id": "forest_eagles",
+              "option_id": "rbwyeici4gz0qpj4t6b9o",
+              "logo": "special"
+            },
+            {
+              "name": "Blade Dancers",
+              "refs": ["blade_dancers", "tag_Elf"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["blade_dancers"],
+                  "amount": 3
+                }
+              ],
+              "cost": 4,
+              "options": [
+                {
+                  "minSize": 7,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 28,
+                      "option_id": "zhuabj5tozix5501qaetl",
+                      "refs": ["blade_dancers_amount"]
+                    }
+                  ],
+                  "option_id": "z6qvfk1ss8o7zwg18kxeo"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "8j8smn3g2u85li9awr12vd"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "h8gq1d77j7o71p3qz9xmh"
+                    }
+                  ],
+                  "option_id": "ys0d09w6zc9slchsu7c1d"
+                }
+              ],
+              "unit_id": "blade_dancers",
+              "option_id": "8fc7r13q78v6lhg7oan1m5",
+              "logo": "special"
+            },
+            {
+              "name": "Treefather",
+              "cost": 440,
+              "refs": ["treefather", "tag_Sylvan Spirit"],
+              "override": [
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["sylvan_monster"],
+                      "amount": 2
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["treefather"],
+                        "amount": 1
+                      }
+                    ]
+                  }
+                }
+              ],
+              "armyHasNotOption": [
+                {
+                  "refs": ["treefather"],
+                  "amount": 2
+                }
+              ],
+              "unit_id": "treefather",
+              "option_id": "2ymd52tbygmsprhun4w5xf",
+              "logo": "special"
+            },
+            {
+              "name": "Wild Huntsmen",
+              "refs": ["wild_huntsmen", "tag_Elf", "tag_Light Armour", "tag_"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["wild_huntsmen"],
+                  "amount": 3
+                }
+              ],
+              "cost": 0,
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 50,
+                      "options": [
+                        {
+                          "optionsLabel": "Shield",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 4,
+                              "option_id": "b7kydjkuztg4xu1trtr12l"
+                            }
+                          ],
+                          "option_id": "ourxmpj9j9rbc4k6ynel"
+                        },
+                        {
+                          "optionsLabel": "Weapon",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Paired Weapons",
+                              "cost": 0,
+                              "option_id": "2qm5v0z64wgqjyfyegb3j"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Light Lance",
+                              "cost": 0,
+                              "option_id": "pcq3g0r5i8i4gm3w2z7rj"
+                            }
+                          ],
+                          "option_id": "puaczz1w1pkd1g8kj2fry"
+                        }
+                      ],
+                      "option_id": "qnocb6th73gw1z7ekwslu",
+                      "refs": ["wild_huntsmen_amount"]
+                    }
+                  ],
+                  "option_id": "yhauo5hylfru6alvsqo5tg"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "pwfkb8ibam0irp1t4qy1yn"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "ud4jrbqwyespi906doho"
+                    }
+                  ],
+                  "option_id": "a8qzwwf1qoka26sbosljce"
+                }
+              ],
+              "unit_id": "wild_huntsmen",
+              "option_id": "dljdwj3ctl579uwan3v0lo",
+              "logo": "special"
+            },
+            {
+              "name": "Kestrel Knights",
+              "refs": ["kestrel_knights", "tag_Elf", "tag_Light Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["kestrel_knights"],
+                  "amount": 2
+                }
+              ],
+              "cost": 100,
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 60,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "minSize": 1,
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Skirmisher and Sylvan Longbow (3+)",
+                              "cost": 0,
+                              "option_id": "q70ht1tqym16a7r34hsgd",
+                              "refs": ["sylvan_longbow"]
+                            },
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 10,
+                              "option_id": "dlmkhpv313yidhcbkb8p"
+                            }
+                          ],
+                          "option_id": "t0i5hjet1zob6bp6ecfqo"
+                        }
+                      ],
+                      "option_id": "7narpchh24iinizjrnkl99",
+                      "refs": ["kestrel_knights_amount"]
+                    }
+                  ],
+                  "option_id": "lb8hububhdqcf8d682knlg"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "xu6lms7by7iyu2oo2v3qn"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "nejk1ncx6xjq5zuaerb78"
+                    }
+                  ],
+                  "option_id": "umrspepqh3n6yz7g8r8cjk"
+                }
+              ],
+              "unit_id": "kestrel_knights",
+              "option_id": "13m5bhybqovh2zrorce22l",
+              "logo": "special"
+            }
+          ],
+          "option_id": "5gsjvro1fx4kmeydoxo6e"
+        },
+        {
+          "name": "Unseen Arrows",
+          "maxPercent": 0.35,
+          "refs": ["unseen_arrows"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Briar Maidens",
+              "refs": ["briar_maidens", "tag_Elf", "tag_Light Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["briar_maidens"],
+                  "amount": 2
+                }
+              ],
+              "cost": 50,
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 30,
+                      "option_id": "e0sjocjd0fkokyrpe24iug",
+                      "refs": ["briar_maidens_amount"]
+                    }
+                  ],
+                  "option_id": "h7i705m9rd9u0t4xjvicgr"
+                },
+                {
+                  "optionsLabel": "Magic",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Wizard Conclave (2)",
+                      "cost": 100,
+                      "refs": ["wizard"],
+                      "option_id": "dwq43y34gfdgdgv34gv34g344g",
+                      "magic": {
+                        "amount": 2,
+                        "spells": [
+                          {
+                            "path": "cosmology",
+                            "ref": "weal_and_woe"
+                          },
+                          {
+                            "path": "druidism",
+                            "ref": "entwining_roots"
+                          },
+                          {
+                            "path": "shamanism",
+                            "ref": "swarm_insects"
+                          },
+                          {
+                            "path": "hereditary",
+                            "ref": "forest_embrace"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "option_id": "f32f32f32jlvbvbvrt43"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "f8j7zgbmhuldqzs9wmz6o9"
+                    }
+                  ],
+                  "option_id": "y93j7ob2ruiuklaobu3pxg"
+                }
+              ],
+              "unit_id": "briar_maidens",
+              "option_id": "yuh8pxlmigh8dy29eaz3ze",
+              "logo": "arrows"
+            },
+            {
+              "name": "Sylvan Sentinels",
+              "refs": ["sylvan_sentinels", "tag_Elf"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["sylvan_sentinels"],
+                  "amount": 2
+                }
+              ],
+              "override": [
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["pathfinders"],
+                      "amount": 2
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["sylvan_sentinels"],
+                        "amount": 1
+                      }
+                    ]
+                  }
+                }
+              ],
+              "cost": -10,
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 34,
+                      "refs": ["sylvan_longbow"],
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Scout",
+                              "cost": 3,
+                              "refs": ["scout_sentinels"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["scout_sentinels"],
+                                  "amount": 1,
+                                  "parentMult": false
+                                }
+                              ],
+                              "option_id": "6t7fxhhefttv5rxtl3pa4a"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Paired Weapons",
+                              "cost": 1,
+                              "option_id": "qbqmbsz6i5jhpdjufotl27"
+                            }
+                          ],
+                          "option_id": "26t5ugi4e13riwxcjncap"
+                        }
+                      ],
+                      "option_id": "yyu4uqgmctrsi3vgnxqmh"
+                    }
+                  ],
+                  "option_id": "etq769hyel9u1bhba5ve"
+                }
+              ],
+              "unit_id": "sylvan_sentinels",
+              "option_id": "hmu25j99mr50oipesj8j2",
+              "logo": "arrows"
+            },
+            {
+              "name": "Pathfinders",
+              "refs": ["pathfinders", "tag_Elf"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["pathfinders"],
+                  "amount": 2
+                }
+              ],
+              "cost": 0,
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 40,
+                      "option_id": "c2d4adh8ock7xecmhzpmof",
+                      "refs": ["sylvan_longbow"]
+                    }
+                  ],
+                  "option_id": "g19c8rmwi9dxjqr60kw4"
+                }
+              ],
+              "unit_id": "pathfinders",
+              "option_id": "cm7hzhraa4m0zx6yfkm8rnb",
+              "logo": "arrows"
+            },
+            {
+              "name": "Sylvan Giant",
+              "cost": 270,
+              "category": "unseen_arrows",
+              "options": [
+                {
+                  "optionsLabel": "Weapons",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Giant Club",
+                      "cost": 0,
+                      "refs": [],
+                      "option_id": "y2rzt0tcfcl99h6h99w9f"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Giant Sentinel",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "lvduc836cngychl0t73py9"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Bone Break Dancer and Paired Weapons",
+                      "cost": 35,
+                      "refs": [],
+                      "option_id": "dk0wdn0auetykrwlzlia"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "option_id": "ju994vdziify74ajkr51f"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Big Brother",
+                      "cost": 25,
+                      "refs": [],
+                      "option_id": "0poe40omtyuedmzjkmovox"
+                    }
+                  ],
+                  "option_id": "4bv8gokuf0e84dzcm9u5r"
+                }
+              ],
+              "refs": ["sylvanGiant"],
+              "unit_id": "sylvan_giant",
+              "armyHasNotOption": [
+                {
+                  "refs": ["sylvanGiant"],
+                  "amount": 3
+                },
+                {
+                  "refs": ["sizeGigantic"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "5m53hwdr3cbdz5wrk158iw",
+              "logo": "arrows"
+            }
+          ],
+          "option_id": "2ugyrivb1s97z8bd8t8at"
+        },
+        {
+          "name": "Mounts",
+          "invisible": true,
+          "refs": ["mounts"],
+          "options": [
+            {
+              "name": "Forest Dragon *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "sylvan_monster", "dragon_mount_unit", "tag_Beast", "tag_Mount", "flyer"],
+              "unit_id": "forest_dragon_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["dragon_mount_unit"],
+                  "amount": 1
+                }
+              ],
+              "option_id": "10s0bvq9t1el9xbtucmg2",
+              "logo": "character"
+            },
+            {
+              "name": "Eagle King *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "eagleKing_mount_unit", "tag_Beast", "tag_Mount", "tag_", "flyer"],
+              "unit_id": "eagle_king_mount",
+              "invisible": true,
+              "option_id": "ibwu71n1xbbfkjq9eoxn36",
+              "logo": "character"
+            },
+            {
+              "name": "Elven Horse *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "elvenHorse_mount_unit", "tag_Mount", "tag_"],
+              "unit_id": "se_elven_horse_mount",
+              "invisible": true,
+              "option_id": "9o11vmurvnwiw3bgueu4zb",
+              "logo": "character"
+            },
+            {
+              "name": "Great Elk *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "greatElk_mount_unit", "tag_Mount", "tag_"],
+              "unit_id": "great_elk_mount",
+              "invisible": true,
+              "option_id": "h17xbtdrfadcpnnwfnkxzt",
+              "logo": "character"
+            },
+            {
+              "name": "Sylvan Unicorn *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "sylvanUnicorn_mount_unit", "tag_Mount", "tag_"],
+              "unit_id": "sylvan_unicorn_mount",
+              "invisible": true,
+              "option_id": "y3dp3ybomv7hxng6v0psak",
+              "logo": "character"
+            }
+          ],
+          "option_id": "0vk7wmh7dcga802hbyy5kjc"
+        }
+      ],
+      "option_id": "ravgnkg8jfdpv8wcfre3t"
+    }
+  ]
+}

@@ -1,0 +1,2783 @@
+{
+  "name": "Highborn Elves",
+  "translation": {
+    "fr": "Hautes Lignées Elfiques",
+    "cn": "高等精灵"
+  },
+  "short": "he",
+  "version": "2023",
+  "nrversion": 371,
+  "playable": 1,
+  "indicators": ["ancient_allies"],
+  "id": 7,
+  "include": [102],
+  "hereditary": [
+    {
+      "path": "hereditary",
+      "ref": "favour_meladys"
+    }
+  ],
+  "reference_details": {
+    "army_general": "General",
+    "army_bsb": "Battle Standard",
+    "wizard": "Wizard",
+    "wizardApprentice": "Wizard Apprentice",
+    "wizardAdept": "Wizard Adept",
+    "wizardMaster": "Wizard Master",
+    "mount": "Mount",
+    "weaponEnchantUni": "Weapon Enchant",
+    "dominant": "Dominant",
+    "core_unit": "Core Unit",
+    "queens_companion": "Queen's Companion",
+    "royal_huntsman": "Royal Huntsman",
+    "fleet_officer": "Fleet Officer",
+    "queens_cavalier": "Queen's Cavalier",
+    "mountDragon": "Dragon or Ancient Dragon",
+    "elven_horse_mount": "Elven Horse",
+    "dragon_army": "Queen's Cavalier with Height 5",
+    "ancient_allies": "Ancient Allies",
+    "sea_guard_reaper_or_sky_sloop": "Sky Sloop or Sea Guard Reaper"
+  },
+  "dictionnary": [
+    {
+      "refs": ["potions_and_scrolls"],
+      "options": [
+        {
+          "name": "Scroll of Power",
+          "cost": 30,
+          "option_id": "vo95gv94z5kinhtsplpen",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "type": "check",
+          "refs": ["scroll_pearl_thrne"],
+          "armyHasNotOption": ["scroll_pearl_thrne"],
+          "name": "Scroll of the Pearl Throne",
+          "cost": 20,
+          "description": "Choose a Magic Item from an enemy unit that is in contact with the bearer. This Magic Item is ignored.<br><br><i>If it was an Enchanted Weapon or Shield, the mundane effects of the Weapon or Shield can still be used</i>.<br>",
+          "option_id": "mccp4vc0dv1dsdarivmhib4nj"
+        }
+      ]
+    },
+    {
+      "refs": ["shieldEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "refs": ["be_he_metally"],
+          "armyHasNotOption": ["be_he_metally"],
+          "name": "Star Metal Alloy",
+          "cost": 25,
+          "description": "The first time the bearer's model suffers an unsaved wound from an attack with <span class=\"textbf\">Multiple Wounds</span>, the number of wounds is halved, rounding fractions up.<br>",
+          "option_id": "jg2zren397hqi4189m1s2"
+        },
+        {
+          "name": "Sigil of Protection",
+          "cost": 15,
+          "option_id": "0wb9xn2aq5exp2lbygna",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Dusk Forged",
+          "cost": 55,
+          "option_id": "f75ehm9v0zv3ks9db8ft1n",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "jsg1ky1eezdx67ucpsabf"
+    },
+    {
+      "refs": ["armourEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "refs": ["be_he_demonbane"],
+          "armyHasNotOption": ["be_he_demonbane"],
+          "name": "Daemon's Bane",
+          "cost": 20,
+          "description": "+2 Arm against <span class=\"textbf\">Magical Attacks</span>.<br>",
+          "option_id": "mccp4vc0dv1rivmhib4nj"
+        },
+        {
+          "name": "Ghostly Guard",
+          "cost": 30,
+          "option_id": "lz9dfq74ixm08sajxl7lgbm",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "hasNotOption": ["mount"],
+          "type": "check",
+          "refs": ["ae_he_dorcprot"],
+          "armyHasNotOption": ["ae_he_dorcprot"],
+          "name": "Protection of Dorac",
+          "cost": 50,
+          "description": "+3 Arm, +3 Def, and <span class=\"textbf\">Attached</span>. Arm can never be improved beyond 5. <br>",
+          "option_id": "witofkc3psrhnnu14bstl"
+        },
+        {
+          "hasOption": [
+            {
+              "refs": ["mage"],
+              "amount": 1
+            },
+            {
+              "refs": ["light_troops", "elven_horse_mount", "giant_eagle_mount"]
+            }
+          ],
+          "type": "check",
+          "refs": ["lae_he_gleamrobe"],
+          "armyHasNotOption": ["lae_he_gleamrobe"],
+          "name": "Gleaming Robe",
+          "cost": 60,
+          "description": "<span class=\"textbf\">Aegis (3+)</span>. Armour is <span class=\"textbf\">set</span> to 1 and can <span class=\"textbf\">never</span> be improved beyond this. If the wearer Miscasts and rolls <span class=\"textbf\">Witchfire</span>, the number of hits is halved (rounding fractions up) for the wearer and its unit.<br>",
+          "option_id": "tb9adb4b5jdui4aplc4hn"
+        }
+      ],
+      "option_id": "dtly4xbft599iskeddostw"
+    },
+    {
+      "refs": ["bannerEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "refs": ["be_he_navigator"],
+          "armyHasNotOption": ["be_he_navigator"],
+          "name": "Navigator's Banner",
+          "cost": 50,
+          "description": "The bearer's unit gains <span class=\"textbf\">First Strike (Aegis (5+))</span>.<br>",
+          "option_id": "ttwbrn69c9erw067rkm8e"
+        },
+        {
+          "type": "check",
+          "refs": ["be_he_becalm"],
+          "armyHasNotOption": ["be_he_becalm"],
+          "hasNotOption": ["core_unit"],
+          "name": "Banner of Becalming",
+          "cost": 30,
+          "description": "In the opponent's Magic Phase, after Excess Magic has been rolled, remove one dice from the opponent's dice pool.<br>",
+          "option_id": "25emuhapfmfvqscsopeb5"
+        },
+        {
+          "type": "check",
+          "refs": ["be_he_ryma"],
+          "armyHasNotOption": [
+            {
+              "refs": ["be_he_ryma"],
+              "amount": 2
+            }
+          ],
+          "name": "War Banner of Rymâ",
+          "cost": 60,
+          "description": "A unit with one or more War Banners of Rymâ gains +1\" Cha and Rank-and-File model parts with Elf in the bearer's unit gain <span class=\"textbf\">Devastating Charge (+1 Str)</span>.<br>",
+          "option_id": "x8vq4xntlvga8jro3vrj2"
+        },
+        {
+          "name": "Banner of Speed",
+          "cost": 45,
+          "option_id": "v0dkrtnka7ppkzn2pf9a",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "wg723djz45evum77m5eqn"
+    },
+    {
+      "refs": ["weaponEnchant"],
+      "options": [
+        {
+          "name": "Eldritch Inscriptions",
+          "cost": 30,
+          "option_id": "yovi4xwszxiy6niokset3k",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Supernatural Dexterity",
+          "cost": 20,
+          "option_id": "o5opzcpw5glp309c1hies",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Elemental Blade",
+          "type": "check",
+          "refs": ["elemental_blade", "weaponEnchantUni"],
+          "armyHasNotOption": ["we_he_elemental_blade"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "cost": 60,
+          "description": "+1 Att, +1 Str. When Choosing Equipment and Abilities, choose to gain either Flaming Attacks, Lightning Attacks. The effects last until the end of the Round of Combat.<br>",
+          "option_id": "4o25h0yqvrqo0fujw6ej79"
+        }
+      ],
+      "option_id": "6rxax6ow5yy18fz53hv2lv"
+    },
+    {
+      "refs": ["lanceEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Nova Flare",
+          "cost": 95,
+          "armyHasNotOption": ["we_he_nova_flare"],
+          "refs": ["weaponEnchantUni", "we_he_nova_flare"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "description": "Devastating Charge (+1 Att), Lethal Strike, Divine Attacks.<br><br>One use only. May be activated when choosing equipment and abilities in the Melee Phase. The wielder counts as Charging for the purpose of <span class=\"textbf\">Devastating Charge</span>.<br>",
+          "option_id": "4tdec81m1t3ek1oalxz0v9"
+        }
+      ],
+      "option_id": "6vp46oxv473kyhv5m2zxrh"
+    },
+    {
+      "refs": ["spearEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Sliver of the Blazing Dawn",
+          "cost": 120,
+          "armyHasNotOption": ["we_he_silver_blaze_dawn"],
+          "refs": ["weaponEnchantUni", "we_he_silver_blaze_dawn"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "description": "+1 Str and +2 AP. Each successful to-hit roll with this weapon causes two hits instead of one.<br>",
+          "option_id": "no5u10n70s96kpwl7ooi9h"
+        }
+      ],
+      "option_id": "kvhby719vh7j2ntsqj9o5"
+    },
+    {
+      "refs": ["longbowEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Elu's Heartwood",
+          "cost": 75,
+          "armyHasNotOption": ["we_he_elus_heart"],
+          "refs": ["weaponEnchantUni", "we_he_elus_heart"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "description": "Shots 3, Str as user +1, and AP as user +1.<br>",
+          "option_id": "6tbdq3x7ggmgzuowaqxy18"
+        }
+      ],
+      "option_id": "kycca2o3u6224xoobiq5j"
+    },
+    {
+      "refs": ["handWeaponEnchant"],
+      "options": [],
+      "option_id": "41dfqpi9yhcvryy8984t5a"
+    },
+    {
+      "refs": ["artefact"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Book of Meladys",
+          "cost": 60,
+          "armyHasNotOption": ["art_he_meladys"],
+          "hasNotOption": ["asfal_scholar"],
+          "refs": ["art_he_meladys", "dominant"],
+          "description": "The first time in each Magic Phase that the bearer fails a Casting Roll for a Learned Spell cast with two or three dice, the bearer may reroll all Magic Dice from this Casting Roll.\n",
+          "option_id": "ykn689uouxlhwso08fne8"
+        },
+        {
+          "type": "check",
+          "name": "Diadem of Protection",
+          "cost": 80,
+          "armyHasNotOption": ["art_he_diadem"],
+          "refs": ["art_he_diadem"],
+          "description": "<span class=\"textbf\">Aegis (+2, max 4+)</span>.<br>",
+          "option_id": "qjqnpbhzwik9xqjnecsr88"
+        },
+        {
+          "type": "check",
+          "name": "Amethyst Crystal",
+          "cost": 40,
+          "hasOption": ["wizard"],
+          "refs": ["art_he_amecrys"],
+          "armyHasNotOption": ["art_he_amecrys"],
+          "description": "Dispelling rolls made by the bearer's army gain a +1 modifier.<br>",
+          "option_id": "sxhmenal9xbhx17uial30r"
+        },
+        {
+          "name": "Rod of Battle",
+          "cost": 25,
+          "option_id": "bm51uo3zbmtyia0vxpx2aq",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Essence of a Free Mind",
+          "cost": 25,
+          "option_id": "je3g9gc0kfbu8pzckwie7",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Obsidian Rock",
+          "cost": 25,
+          "option_id": "n5fj1neakniwkdc7b7jhnc",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "prkvvi54qlp6gfiamxygu5"
+    },
+    {
+      "refs": ["honourMage"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Asfad Scholar",
+          "hasOption": ["wizardMaster"],
+          "cost": 60,
+          "description": "The model gains <span class=\"textbf\">Channel (1)</span>. The range of the Wizard's Learned Spells is increased by 6\". Aura spells gain +3\" Range instead, and spells with type Caster are unaffected.<br>",
+          "option_id": "1m3l1g1sss13v4puohy5yn",
+          "refs": ["asfal_scholar"],
+          "armyHasNotOption": [
+            {
+              "refs": ["asfal_scholar"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "name": "Order of the Fiery Heart",
+          "refs": ["fiery_order"],
+          "cost": 20,
+          "description": "The model gains <span class=\"textbf\">Flaming Attacks</span>, Metal Armour, and the model part's Arm is <span class=\"textbf\">set</span> to 2.<br>\n\tThe model replaces its available Paths of Magic with Alchemy, Pyromancy, and ignores the Missile, Damage spell types for Learned Spells when targeting units that are Engaged in Combat with the model.<br>",
+          "option_id": "9jcefl5fu94ha7sdlla6lu",
+          "armyHasNotOption": [
+            {
+              "refs": ["fiery_order"],
+              "amount": 2
+            }
+          ]
+        }
+      ],
+      "option_id": "2ju9e35cc3bkbl3089a1ug"
+    },
+    {
+      "refs": ["honourPrince", "honourCommander"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Master of Canreig Tower",
+          "refs": ["master_canreig", "wizard", "protean_magic"],
+          "hasOption": [
+            {
+              "refs": ["light_troops", "elven_horse_mount", "giant_eagle_mount"],
+              "amount": 1
+            }
+          ],
+          "neverHide": true,
+          "hasNotOption": ["longbow"],
+          "magic": {
+            "amount": 3,
+            "spells": [
+              {
+                "path": "alchemy",
+                "ref": "molten_copper"
+              },
+              {
+                "path": "cosmology",
+                "ref": "weal_and_woe"
+              },
+              {
+                "path": "druidism",
+                "ref": "fountain_of_youth"
+              },
+              {
+                "path": "evocation",
+                "ref": "whispers_of_the_veil"
+              },
+              {
+                "path": "shamanism",
+                "ref": "predator's_instinct"
+              },
+              {
+                "path": "witchcraft",
+                "ref": "evil_eye"
+              }
+            ]
+          },
+          "cost": 150,
+          "description": "The model gains Master of Spellcrafting (1), Protean Magic (3), Wizard Apprentice.<br><br>The model has these Paths of Magic available: Alchemy, Cosmology, Druidism, Evocation, Shamanism, Witchcraft.<br>",
+          "armyHasNotOption": [
+            {
+              "refs": ["master_canreig"],
+              "amount": 2
+            }
+          ],
+          "option_id": "487iq3ve3wn2o3l9p159wt"
+        },
+        {
+          "type": "check",
+          "name": "High Warden of the Flame",
+          "refs": ["high_warden"],
+          "neverHide": true,
+          "armyHasNotOption": [
+            {
+              "refs": ["high_warden"],
+              "amount": 2
+            }
+          ],
+          "cost": 25,
+          "description": "The model gains Aegis (4+), Fearless, Immune (Divine Attacks), Stubborn.<br>",
+          "option_id": "43askmoaubk7udbo1yf0uy",
+          "hasOption": [
+            {
+              "refs": ["light_troops"],
+              "amount": 1
+            },
+            {
+              "refs": ["halberd"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "name": "Fleet Officer",
+          "refs": ["fleet_officer"],
+          "neverHide": true,
+          "hasOption": [
+            {
+              "refs": ["light_troops", "giant_eagle_mount", "griffon_mount", "sky_sloop"],
+              "amount": 1
+            }
+          ],
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["light_troops"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "hasOption": [
+                  {
+                    "refs": ["spear"],
+                    "amount": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "armyHasNotOption": [
+            {
+              "refs": ["fleet_officer"],
+              "amount": 2
+            }
+          ],
+          "cost": 25,
+          "description": "The model gains Strider (Water), Stand and Shoot, Quick to Fire. The model part also gains <span class=\"textbf\">Lightning Attacks (Melee)</span>.<br><br>Panic and Rally tests taken by friendly units containing Elf within 12\" of this model are Minimised. This cannot be used if the model is Shaken.<br>",
+          "option_id": "o4fowkum7prxdgs4lpv2ef"
+        },
+        {
+          "type": "check",
+          "name": "Grandmaster of the Sword",
+          "refs": ["grandmaster_of_the_sword"],
+          "neverHide": true,
+          "armyHasNotOption": [
+            {
+              "refs": ["grandmaster_of_the_sword"],
+              "amount": 2
+            }
+          ],
+          "cost": 25,
+          "description": "The model gains Distracting (1), Lethal Strike, and its Melee Attacks ignore Parry, Distracting.<br>",
+          "option_id": "fgsdgg32g32f32fd32gf342gf42",
+          "hasOption": [
+            {
+              "refs": ["light_troops"],
+              "amount": 1
+            },
+            {
+              "refs": ["great_weapon"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "name": "Royal Huntsman",
+          "refs": ["royal_huntsman"],
+          "neverHide": true,
+          "armyHasNotOption": [
+            {
+              "refs": ["royal_huntsman"],
+              "amount": 2
+            }
+          ],
+          "cost": 25,
+          "description": "The model gains Lion's Fur, Valiant, and the model part gains <span class=\"textbf\">Multiple Wounds (2, towards Height 4--5)</span>.<br>",
+          "option_id": "bvzolc1uk9aj534a9xcak",
+          "hasOption": [
+            {
+              "refs": ["light_troops", "lion_chariot_mount"],
+              "amount": 1
+            }
+          ],
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["light_troops"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "hasOption": [
+                  {
+                    "refs": ["great_weapon"],
+                    "amount": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "name": "Queen's Cavalier",
+          "refs": ["queens_cavalier"],
+          "neverHide": true,
+          "armyHasNotOption": [
+            {
+              "refs": ["queens_cavalier"],
+              "amount": 2
+            }
+          ],
+          "cost": 25,
+          "description": "The model part gains <span class=\"textbf\">First Strike (+1 Att, +1 Off)</span>, and the model's unit may reroll Failed Charge rolls.<br><br>If the model has Height 5,  Dragons (Regal and Ancient) replace their Ancient Allies value with <span class=\"textbf\">Ancient Allies (1)</span> and Phoenixes replace it with  <span class=\"textbf\">Ancient Allies (2)</span>.<br>",
+          "hasOption": [
+            {
+              "refs": ["elven_horse_mount", "mountDragon"],
+              "amount": 1
+            }
+          ],
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["elven_horse_mount"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "hasOption": [
+                  {
+                    "refs": ["lance"],
+                    "amount": 1
+                  }
+                ]
+              }
+            },
+            {
+              "hasOption": [
+                {
+                  "refs": ["mountDragon"],
+                  "amount": 1
+                }
+              ],
+              "push": {
+                "refs": ["dragon_army"]
+              }
+            }
+          ],
+          "option_id": "lqdrb8zvjy89cor4o74uk"
+        },
+        {
+          "type": "check",
+          "name": "Queen's Companion",
+          "refs": ["queens_companion"],
+          "neverHide": true,
+          "cost": 25,
+          "armyHasNotOption": [
+            {
+              "refs": ["queens_companion"],
+              "amount": 2
+            }
+          ],
+          "description": "The model's Longbow Shots  are <span class=\"textbf\">set</span> to 3 and the model's unit gains <span class=\"textbf\">Accurate</span>.<br><br><span class=\"textbf\">Must</span> choose one option only:<br/> •Fae Miasma, Scout,\n\t<br> Exclusive (Grey Watchers): free\n\t<br/> •Moonlight Arrows: free<br>",
+          "maxSize": 1,
+          "minSize": 1,
+          "optionsLabel": "Options",
+          "options": [
+            {
+              "type": "check",
+              "cost": 0,
+              "name": "Moonlight Arrows",
+              "option_id": "tic7hct2yklxpzyg9zf2b"
+            },
+            {
+              "type": "check",
+              "cost": 0,
+              "name": "Fae Miasma, Scout, Exclusive (Grey Watchers)",
+              "option_id": "95y10nd4l0upmswkgtuv7b"
+            }
+          ],
+          "option_id": "2g0ba3yqbxu89ipnxvg56r",
+          "hasOption": [
+            {
+              "refs": ["longbow"],
+              "amount": 1
+            },
+            {
+              "refs": ["light_troops"],
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "option_id": "4drjmnbiweu2aim4rxie94"
+    }
+  ],
+  "army": [
+    {
+      "name": "Army",
+      "optionsLabel": "Categories",
+      "maxCost": 4500,
+      "armyHasNotOption": [
+        {
+          "refs": ["ancient_allies"],
+          "amount": 1,
+          "perPoints": 1500
+        }
+      ],
+      "options": [
+        {
+          "name": "Characters",
+          "refs": ["perso"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "refs": ["prince", "tag_Elf", "tag_Metal Armour"],
+              "name": "High Prince",
+              "cost": 210,
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "dfn17dl33ypboq374a6ibj",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "option_id": "1n8o3p6dal1f6yn6uhp6n6"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Honour",
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "options": [],
+                  "optionsDict": ["honourPrince"],
+                  "option_id": "wdvs41bz63bb9baukai6ng"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "rief6cnav8lva54tltkaab",
+                      "cost": 0,
+                      "refs": ["light_troops"]
+                    },
+                    {
+                      "type": "check",
+                      "cost": 35,
+                      "name": "Elven Horse",
+                      "refopt": "he_elven_horse_mount",
+                      "option_id": "vh65q7szafggd8pyzop4fk"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Giant Eagle",
+                      "cost": 50,
+                      "refopt": "giant_eagle_mount",
+                      "option_id": "h8v761x74m4uayk1ne4t3"
+                    },
+                    {
+                      "type": "check",
+                      "cost": 35,
+                      "name": "Reaver Chariot",
+                      "refopt": "reaver_chariot_mount",
+                      "option_id": "jw99diqul5kt8ntp2k2ip"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Griffon",
+                      "cost": 250,
+                      "refopt": "griffon_mount",
+                      "option_id": "12t0q6o21yqhawyh7w2ynfl",
+                      "maxUnitCost": 700
+                    },
+                    {
+                      "type": "check",
+                      "name": "Sky Sloop",
+                      "cost": 210,
+                      "options": [],
+                      "refopt": "sky_sloop_mount",
+                      "option_id": "o1r0tqkbbei7k7tocjw7uv",
+                      "maxUnitCost": 700
+                    },
+                    {
+                      "type": "check",
+                      "refopt": "lion_chariot_mount",
+                      "name": "Lion Chariot",
+                      "cost": 160,
+                      "option_id": "47ax1yjehhj9u6kzwvcuyd",
+                      "maxUnitCost": 700
+                    },
+                    {
+                      "type": "check",
+                      "name": "Regal Dragon",
+                      "cost": 420,
+                      "refopt": "regal_dragon_mount",
+                      "option_id": "p2xyb49n7ohcwjgjw32bt",
+                      "maxUnitCost": 800
+                    },
+                    {
+                      "type": "check",
+                      "name": "Ancient Dragon",
+                      "cost": 550,
+                      "refopt": "ancient_dragon_mount",
+                      "option_id": "5elp5t6vp6cd3445m1nse4",
+                      "maxUnitCost": 900
+                    }
+                  ],
+                  "option_id": "y6hrcb964h3p7ce0k9fi8"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 200,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 5,
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "cx4bm7x9orgpyqvxj6p0n",
+                      "hasNotOption": ["high_warden"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Dragonforged Armour",
+                      "cost": 10,
+                      "options": [],
+                      "option_id": "78hb43fdhnj6ik67p;545gh543",
+                      "ignoreCost": true
+                    },
+                    {
+                      "type": "check",
+                      "name": "Longbow (0+)",
+                      "cost": 5,
+                      "options": [],
+                      "maxSize": 1,
+                      "optionsLabel": "Bow Enchant",
+                      "optionsDict": ["longbowEnchant"],
+                      "option_id": "0600xsz87uuexeee9b3g6pj",
+                      "refs": ["longbow"]
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "xssg7bnn5l71xllu0b8s",
+                      "optionsLabel": "Armour Enchant",
+                      "optionsDict": ["armourEnchant"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": []
+                    },
+                    {
+                      "type": "group",
+                      "name": "Close Combat Weapon",
+                      "collapsible": true,
+                      "optionsLabel": "Close Combat Weapon",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Light Lance",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "hasOption": ["mount"],
+                          "optionsLabel": "Light Lance Enchant",
+                          "optionsSuffix": " (Light Lance)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "w9dzxbjzlj832fy1bwg0ro"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "optionsSuffix": " (Paired Weapons)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "dwywpwx3f17ebfs5xiyiqp"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Spear",
+                          "refs": ["spear"],
+                          "cost": 15,
+                          "maxSize": 1,
+                          "optionsLabel": "Spear Enchant",
+                          "optionsSuffix": " (Spear)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "spearEnchant"],
+                          "option_id": "59zk8ndmkxbbxqvvf6ef1r",
+                          "hasNotOption": ["mount"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Great Weapon and Elven Finesse",
+                          "cost": 15,
+                          "maxSize": 1,
+                          "refs": ["great_weapon"],
+                          "optionsLabel": "Great Weapon Enchant",
+                          "optionsSuffix": " (Great Weapon)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "qleimm76turar5dqbtvx74"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "refs": ["halberd"],
+                          "cost": 10,
+                          "maxSize": 1,
+                          "optionsLabel": "Halberd Enchant",
+                          "optionsSuffix": " (Halberd)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "nt0k59vitmfamjhk0hivhp"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Lance",
+                          "cost": 15,
+                          "maxSize": 1,
+                          "refs": ["lance"],
+                          "hasOption": ["mount"],
+                          "optionsLabel": "Lance Enchant",
+                          "optionsSuffix": " (Lance)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "lanceEnchant"],
+                          "option_id": "jzznf6df8gdtlms6ua5lb"
+                        }
+                      ],
+                      "option_id": "hipyuhifxsptqg5ahi5xq"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "6kn6s7zug47yoc3o0kxtq"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "jsvivlxd79bjf3gvpfvjb"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "t27uxznnndo00zhg24zeo",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "option_id": "wvzvq73ztoymtr1unvwcb"
+                }
+              ],
+              "unit_id": "high_prince",
+              "option_id": "rydim7dt7hq9rufz2wpn4l",
+              "logo": "character",
+              "maxUnitCost": 600
+            },
+            {
+              "refs": ["commander", "tag_Elf", "tag_Metal Armour"],
+              "name": "Commander",
+              "cost": 100,
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "hrtc4ijrfuefzgg186bked",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "name": "Captain and Attached",
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "g34g432g43g34dsafewg34g34",
+                      "refs": ["leadership_amount"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "option_id": "w670p01oxne9k2pyd4w5w"
+                    },
+                    {
+                      "name": "Battle Standard Bearer",
+                      "type": "check",
+                      "cost": 50,
+                      "option_id": "3fgf32fg32g234g54",
+                      "refs": ["army_bsb"],
+                      "armyHasNotOption": ["army_bsb"]
+                    }
+                  ],
+                  "maxSize": 1,
+                  "minSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Honour",
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "options": [],
+                  "optionsDict": ["honourCommander"],
+                  "option_id": "hzl7lmqkqqcglropbcvlpd"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "isn2s8rakcepc9av0dr9ul",
+                      "cost": 0,
+                      "refs": ["light_troops"]
+                    },
+                    {
+                      "type": "check",
+                      "cost": 25,
+                      "name": "Elven Horse",
+                      "refopt": "he_elven_horse_mount",
+                      "option_id": "6zueycyu2poq3k9hdk0jvq"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Giant Eagle",
+                      "cost": 75,
+                      "refopt": "giant_eagle_mount",
+                      "option_id": "i80e43356lihlirvobkbd",
+                      "maxUnitCost": 800
+                    },
+                    {
+                      "type": "check",
+                      "cost": 60,
+                      "name": "Reaver Chariot",
+                      "refopt": "reaver_chariot_mount",
+                      "option_id": "usx8f7smbhqedu6zctnncr",
+                      "maxUnitCost": 800
+                    },
+                    {
+                      "type": "check",
+                      "name": "Griffon",
+                      "cost": 220,
+                      "refopt": "griffon_mount",
+                      "option_id": "kj163koiblenj9v4hsi6",
+                      "maxUnitCost": 800
+                    },
+                    {
+                      "type": "check",
+                      "name": "Sky Sloop",
+                      "cost": 240,
+                      "options": [],
+                      "refopt": "sky_sloop_mount",
+                      "option_id": "ydu4cpz2n2hroortvy3h3",
+                      "maxUnitCost": 800
+                    },
+                    {
+                      "type": "check",
+                      "refopt": "lion_chariot_mount",
+                      "name": "Lion Chariot",
+                      "cost": 180,
+                      "option_id": "uz1k5m7y93zqghq4bk9eo",
+                      "maxUnitCost": 800
+                    },
+                    {
+                      "type": "check",
+                      "name": "Regal Dragon",
+                      "cost": 440,
+                      "refopt": "regal_dragon_mount",
+                      "hasOption": [
+                        {
+                          "refs": ["queens_cavalier"],
+                          "amount": 1,
+                          "lenient": true
+                        }
+                      ],
+                      "option_id": "dzoxdy2hynbzcfyirm1g3",
+                      "maxUnitCost": 800
+                    }
+                  ],
+                  "option_id": "buel0le8ppbx6hmeo169te"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 100,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "option_id": "f7igncc3g30s8ralzpqkm",
+                      "optionsLabel": "Banner Enchant",
+                      "options": [],
+                      "type": "group",
+                      "optionsDict": ["bannerEnchant"],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "childrenOptions": {
+                        "hasOption": [
+                          {
+                            "refs": ["army_bsb"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 5,
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "akhmgaef8f9whdky5tl1f",
+                      "hasNotOption": ["high_warden"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Dragonforged Armour",
+                      "cost": 10,
+                      "options": [],
+                      "option_id": "gbrg3gbdfgberg34gb34",
+                      "ignoreCost": true
+                    },
+                    {
+                      "type": "check",
+                      "name": "Longbow (1+)",
+                      "cost": 5,
+                      "options": [],
+                      "maxSize": 1,
+                      "optionsLabel": "Bow Enchant",
+                      "optionsDict": ["longbowEnchant"],
+                      "option_id": "ki1jt5hoo9cgdcapb44ie",
+                      "refs": ["longbow"]
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "cp3ym93iwymk621y8jlcm",
+                      "optionsLabel": "Armour Enchant",
+                      "optionsDict": ["armourEnchant"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": []
+                    },
+                    {
+                      "type": "group",
+                      "name": "Close Combat Weapon",
+                      "collapsible": true,
+                      "optionsLabel": "Close Combat Weapon",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Light Lance",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "hasOption": ["mount"],
+                          "optionsLabel": "Light Lance Enchant",
+                          "optionsSuffix": " (Light Lance)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "1w5exufq2zeznd98o9mzcl"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "optionsSuffix": " (Paired Weapons)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "qiwog2cmntmz5ahpaxxcj"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Spear",
+                          "refs": ["spear"],
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Spear Enchant",
+                          "optionsSuffix": " (Spear)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "spearEnchant"],
+                          "option_id": "l9i7ocsj66ma4ebyrnntzq",
+                          "hasNotOption": ["mount"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Great Weapon and Elven Finesse",
+                          "refs": ["great_weapon"],
+                          "cost": 10,
+                          "maxSize": 1,
+                          "optionsLabel": "Great Weapon Enchant",
+                          "optionsSuffix": " (Great Weapon)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "y1ltr1uatrr8umjhqwog"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "refs": ["halberd"],
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Halberd Enchant",
+                          "optionsSuffix": " (Halberd)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "bzzvrjgr95lvmz3a8qje4"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Lance",
+                          "refs": ["lance"],
+                          "cost": 10,
+                          "maxSize": 1,
+                          "hasOption": ["mount"],
+                          "optionsLabel": "Lance Enchant",
+                          "optionsSuffix": " (Lance)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "lanceEnchant"],
+                          "option_id": "xzyus3lxh8fu55pxhxb9p"
+                        }
+                      ],
+                      "option_id": "6l5di0s2jq8mbw345kx6qn"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "bdit0y1cj2b850l6ygbtry"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "38i3yhos9whefeprg9ws7t"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "j7ni6yv5cwsdcwbytk5q",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "option_id": "0cgwray0guo6qu7ulxjy6w"
+                }
+              ],
+              "unit_id": "commander",
+              "option_id": "rtw7g9gzot1s1pdulkewi",
+              "logo": "character",
+              "maxUnitCost": 700
+            },
+            {
+              "name": "Mage",
+              "refs": ["wizard", "mage", "tag_Elf"],
+              "cost": 290,
+              "category": "perso",
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "fgatmxqn07wyrh48n6hqh",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "type": "check",
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "name": "General",
+                      "option_id": "eiv2fwvki9bdna4t481jzm",
+                      "cost": 0
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Honour",
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "options": [],
+                  "optionsDict": ["honourMage"],
+                  "option_id": "vvdriyvz14p1kxgi6xw6te"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Path",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["art_free_ess"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 2
+                      }
+                    }
+                  ],
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "name": "Cosmology",
+                      "refs": ["cosmology"],
+                      "type": "check",
+                      "hasNotOption": ["fiery_order"],
+                      "cost": 0,
+                      "option_id": "9ddkm5yt1t8a86g96x81b6"
+                    },
+                    {
+                      "name": "Divination",
+                      "refs": ["divination"],
+                      "type": "check",
+                      "hasNotOption": ["fiery_order"],
+                      "cost": 0,
+                      "option_id": "gnnwu530if852lvigykcsc"
+                    },
+                    {
+                      "name": "Pyromancy",
+                      "refs": ["pyromancy"],
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "c97fln2fkpf5ahs8o8bu8r"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Alchemy",
+                      "refs": ["alchemy"],
+                      "cost": 0,
+                      "hasOption": ["fiery_order"],
+                      "option_id": "kmj38diurmkywi2cev8ops"
+                    }
+                  ],
+                  "option_id": "7a2yvgsv7hxn88wvdgdvwn"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Level",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "refs": ["wizardAdept"],
+                      "name": "Wizard Adept",
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "7bw3mwk5ih6jtourfl0pt"
+                    },
+                    {
+                      "refs": ["wizardMaster"],
+                      "name": "Wizard Master",
+                      "type": "check",
+                      "cost": 150,
+                      "option_id": "umihviclfdkg0ofryvql1q"
+                    }
+                  ],
+                  "option_id": "o3sqm7poxbhdbdn272sfw8"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "0pyf6jxmlfz40on83rxhba",
+                      "cost": 0,
+                      "refs": ["light_troops"]
+                    },
+                    {
+                      "type": "check",
+                      "cost": 10,
+                      "name": "Elven Horse",
+                      "refopt": "he_elven_horse_mount",
+                      "option_id": "kx3en95cwzmeofrl854hm"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Giant Eagle",
+                      "cost": 30,
+                      "refopt": "giant_eagle_mount",
+                      "option_id": "qascnopxv140eao3wdqc6"
+                    },
+                    {
+                      "type": "check",
+                      "cost": 20,
+                      "name": "Reaver Chariot",
+                      "refopt": "reaver_chariot_mount",
+                      "option_id": "tzf4rloxompygag5ssjf2h"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Griffon",
+                      "cost": 125,
+                      "refopt": "griffon_mount",
+                      "hasOption": [
+                        {
+                          "refs": ["wizardMaster"],
+                          "amount": 1
+                        }
+                      ],
+                      "option_id": "zjx221rvu9j1xwatwfbk"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Regal Dragon",
+                      "cost": 400,
+                      "refopt": "regal_dragon_mount",
+                      "hasOption": [
+                        {
+                          "refs": ["wizardMaster", "fiery_order"],
+                          "amount": 1
+                        }
+                      ],
+                      "option_id": "snnnrxdxfqe5exin3j46h",
+                      "maxUnitCost": 900
+                    }
+                  ],
+                  "option_id": "q2u157r57b6hozogz2dih"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 100,
+                  "collapsible": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["wizardMaster"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 200
+                      }
+                    }
+                  ],
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "hasOption": ["fiery_order"],
+                      "cost": 5,
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "ztwriclrdno7iya7c7wgj"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Dragonforged Armour",
+                      "cost": 10,
+                      "options": [],
+                      "option_id": "f3ef2399875348jjjj93r3",
+                      "ignoreCost": true
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "lmnog2cac5bn82d8or2fj",
+                      "optionsLabel": "Armour Enchant",
+                      "optionsDict": ["armourEnchant"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": []
+                    },
+                    {
+                      "type": "group",
+                      "name": "Weapon",
+                      "optionsLabel": "Weapon",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "optionsSuffix": " (Paired Weapons)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "hasOption": ["fiery_order"],
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "4najrzjfhm2p261owdjoq"
+                        }
+                      ],
+                      "option_id": "2vocqfapsguw8n0gz95rak"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "l4enpjn9jkag6987nkegej"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "l4183fiykcid43aej60c"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "munqokl3zce2hlk7350ok",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "option_id": "lg5csmtjcvlt1d52mlcc"
+                }
+              ],
+              "unit_id": "mage",
+              "option_id": "9usolw35sevi5lopoekdx",
+              "logo": "character"
+            }
+          ],
+          "option_id": "sdz81ge6j5qhpnqmij0mc"
+        },
+        {
+          "name": "Core Units",
+          "minPercent": 0.25,
+          "refs": ["base"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Citizen Spears",
+              "cost": 10,
+              "refs": ["citizen_spears", "core_unit", "tag_Elf", "tag_Light Armour", "tag_"],
+              "options": [
+                {
+                  "minSize": 20,
+                  "maxSize": 40,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 12,
+                      "option_id": "yszpwhvqo4rrsj287gne3",
+                      "refs": ["citizen_spears_amount"]
+                    }
+                  ],
+                  "option_id": "uih8moc3rcijs9fdts97m"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "optionsLabel": "Banner Enchant",
+                      "sortOptions": true,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "3ymuswk43rn3qfg8ycjekm"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "kwo7ix5jlgdbcillrgqis9"
+                    }
+                  ],
+                  "option_id": "3ajxayq6kay97ih59wmdur"
+                }
+              ],
+              "unit_id": "citizen_spears",
+              "option_id": "rqafi24w6djvsp3j0nkc",
+              "logo": "core"
+            },
+            {
+              "name": "Highborn Lancers",
+              "armyHasNotOption": [
+                {
+                  "refs": ["highborn_lancers"],
+                  "amount": 4
+                }
+              ],
+              "refs": ["highborn_lancers", "core_unit", "tag_Elf", "tag_Metal Armour"],
+              "cost": 80,
+              "category": "base",
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 26,
+                      "option_id": "4wszxksplq2hcftr26ntz5",
+                      "refs": ["highborn_lancers_amount"]
+                    }
+                  ],
+                  "option_id": "wupove60hpllpdl3fqpjzl"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "optionsLabel": "Banner Enchant",
+                      "sortOptions": true,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "ltd00ni4g6raa6221ndpq"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "ebjuv5kslch3ht8win75j8"
+                    }
+                  ],
+                  "option_id": "yv3doj4rwkkf89b1gc29nf"
+                }
+              ],
+              "unit_id": "highborn_lancers",
+              "option_id": "0ku0rivg5wgqwzdt0qnl",
+              "logo": "core"
+            },
+            {
+              "name": "Citizen Archers",
+              "cost": 30,
+              "refs": ["citizen_spears", "core_unit", "tag_Elf", "tag_Light Armour"],
+              "extraCategories": ["queens_bows"],
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 30,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 13,
+                      "option_id": "o68yiapwhef7kwckc18sbj",
+                      "refs": ["citizen_archers_amount"]
+                    }
+                  ],
+                  "option_id": "1rvqi8upvdha735wyrm3w"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "optionsLabel": "Banner Enchant",
+                      "sortOptions": true,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "p14czy3ydsjfgm4wk2m7b"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "8udmh47ku3xju3bre0viuk"
+                    }
+                  ],
+                  "option_id": "14zblkqs371pjgzna2te0a"
+                }
+              ],
+              "unit_id": "citizen_archers",
+              "option_id": "9p7xul2yom5dzl3vp7s8d",
+              "logo": "core"
+            },
+            {
+              "name": "Sea Guard",
+              "cost": -15,
+              "refs": ["sea_guards", "core_unit", "tag_Elf", "tag_Light Armour"],
+              "extraCategories": ["queens_bows"],
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 30,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 17,
+                      "option_id": "pdnel4skwi8ihqgsixyv",
+                      "refs": ["sea_guard_amount"]
+                    }
+                  ],
+                  "option_id": "d5y04ms372wonqqcbi45l"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "optionsLabel": "Banner Enchant",
+                      "sortOptions": true,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "wf3xf0zofu32mlvj93bi5"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "m3w0c4ztz5novki1g4ahc"
+                    }
+                  ],
+                  "option_id": "v5jathiguwnqmttstp38p"
+                }
+              ],
+              "unit_id": "sea_guard",
+              "option_id": "l63mjum7h3f7aqs8545kp5",
+              "logo": "core"
+            },
+            {
+              "name": "Erlein Reavers",
+              "cost": 110,
+              "refs": ["elein_reavers", "core_unit", "tag_Elf", "tag_Light Armour"],
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["erlein_reaver_bows"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["queens_bows"]
+                  }
+                }
+              ],
+              "armyHasNotOption": [
+                {
+                  "refs": ["elein_reavers"],
+                  "amount": 4
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 14,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "name": "Bow (3+)",
+                              "cost": 1,
+                              "type": "check",
+                              "option_id": "4qmohfqvt4yodcunuy46z9",
+                              "refs": ["erlein_reaver_bows"]
+                            }
+                          ],
+                          "option_id": "xt66ns7yh4nfyc292vnakb"
+                        }
+                      ],
+                      "option_id": "6nndtvcn0y6pns2ewxgsr",
+                      "refs": ["elein_reavers_amount"]
+                    }
+                  ],
+                  "option_id": "6fwum6wxf63zorr5bswbcc"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "sortOptions": true,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "40sdlq4q5c2p9m6byd8qp"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "x23oeiabxbpy9kx7egafq"
+                    }
+                  ],
+                  "option_id": "87lommazdx70x0hr2q3q0b"
+                }
+              ],
+              "unit_id": "elein_reavers",
+              "option_id": "olqgtoz7pylzx18lx119cc",
+              "logo": "core"
+            }
+          ],
+          "option_id": "kxibp3gno27ilackjmyh6"
+        },
+        {
+          "name": "Special",
+          "refs": ["special"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Sword Masters",
+              "cost": 0,
+              "refs": ["sword_masters", "tag_Elf", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["sword_masters"],
+                  "amount": 4
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "option_id": "0cuqnfrl4t4qjuhkephqs3h",
+                      "refs": ["sword_masters_amount"]
+                    }
+                  ],
+                  "option_id": "t09j2jcilisdddh3gvoz4k"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "sortOptions": true,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "cwmxzlctgt4lva3wtmdqi"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "n06n25c9ahqgdctxzr6286"
+                    }
+                  ],
+                  "option_id": "2um2pak02wmht18tsw5pu"
+                }
+              ],
+              "unit_id": "sword_masters",
+              "option_id": "05tlh0h4o4m30imomz2f2r28",
+              "logo": "special"
+            },
+            {
+              "name": "Lion Guard",
+              "cost": 0,
+              "refs": ["lion_guard", "tag_Elf", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["lion_guard"],
+                  "amount": 5
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["lion_skirmishers"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 15
+                      }
+                    }
+                  ],
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "option_id": "l5or4fqfymqbwfb2g2imuj",
+                      "refs": ["lion_guard_amount"]
+                    }
+                  ],
+                  "option_id": "vk9girifeee9osx50isft"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "sortOptions": true,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "0ugmgbt60uwp2f2t3h61wti"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "z0or65qfqkgrq1wicf3tli"
+                    }
+                  ],
+                  "option_id": "4s8oalc0gfh3rxcfdtzyae"
+                }
+              ],
+              "unit_id": "lion_guard",
+              "option_id": "cd0vd8flw29ep1fxqa6d7",
+              "logo": "special"
+            },
+            {
+              "name": "Flame Wardens",
+              "cost": 0,
+              "refs": ["flame_wardens", "tag_Elf", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["flame_wardens"],
+                  "amount": 5
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "option_id": "fq1nv7kxfwwalk7y5a4fai",
+                      "refs": ["flame_wardens_amount"]
+                    }
+                  ],
+                  "option_id": "2iadtvwfym7io5xrwz9lc"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "sortOptions": true,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "sgr6tyoywvgi5nzikng8dt"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "nkciv235i8qq2d251p14ts"
+                    }
+                  ],
+                  "option_id": "epwpods765m61ru2683b"
+                }
+              ],
+              "unit_id": "flame_wardens",
+              "option_id": "8tyu65zdf1kd34hbt5z8",
+              "logo": "special"
+            },
+            {
+              "name": "Knights of Rymâ",
+              "cost": 100,
+              "refs": ["knights_ryma", "tag_Elf", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["knights_ryma"],
+                  "amount": 4
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 40,
+                      "option_id": "yfyz85i73iirs9hxm5kx1c",
+                      "refs": ["knights_of_ryma_amount"]
+                    }
+                  ],
+                  "option_id": "7li1ob019x1bayrx3d30ng"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "sortOptions": true,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "ooio33kn7ipwoo9e6oqjc"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "5qj1rfns3wwl05kda7gcsn"
+                    }
+                  ],
+                  "option_id": "fr0haflf96jk6qfgh3ac5"
+                }
+              ],
+              "unit_id": "knights_of_ryma",
+              "option_id": "r4tbd7se9f8jbehij32cdr",
+              "logo": "special"
+            },
+            {
+              "name": "Reaver Chariots",
+              "cost": 20,
+              "refs": ["reaver_char", "tag_Elf", "tag_Light Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["reaver_char"],
+                  "amount": 3
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 2,
+                  "maxSize": 3,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 90,
+                      "option_id": "h2xi6ji4zwox78wf96tjaj",
+                      "refs": ["reaver_chariots_amount"]
+                    }
+                  ],
+                  "option_id": "va71xufixv2gs6vpplmtc"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "1ar0t0fvxy2fwvcjpsbwg7"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "kyqb8xkenxao6uyl6ux2n"
+                    }
+                  ],
+                  "option_id": "qikror1nmghwukr9ugihaf"
+                }
+              ],
+              "unit_id": "reaver_chariots",
+              "option_id": "qb6lnpljzcoaxk3g3wbweu",
+              "logo": "special"
+            },
+            {
+              "name": "Lion Chariot",
+              "cost": 200,
+              "refs": ["lion_char", "tag_Elf", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["lion_char"],
+                  "amount": 3
+                }
+              ],
+              "unit_id": "lion_chariot",
+              "option_id": "xnszcdzk5qe5uke3scs06",
+              "logo": "special"
+            },
+            {
+              "name": "Giant Eagles",
+              "cost": 90,
+              "refs": ["giant_eagle", "tag_Beast"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["giant_eagle"],
+                  "amount": 2
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 2,
+                  "maxSize": 5,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 30,
+                      "option_id": "a5ocfmfrpaw6sgdeiqvjo3",
+                      "refs": ["giant_eagles_amount"]
+                    }
+                  ],
+                  "option_id": "4rkbihiwjle0e3k88lkzwov"
+                }
+              ],
+              "unit_id": "giant_eagles",
+              "option_id": "kchawhiz131nbvlfvmxgb",
+              "logo": "special"
+            },
+            {
+              "name": "Phoenix",
+              "diffstatlines": true,
+              "offstatline": "",
+              "cost": 330,
+              "refs": ["phoenix", "tag_Beast", "ancient_allies"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["phoenix"],
+                  "amount": 2
+                }
+              ],
+              "override": [
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["dragon_army"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "refs": [
+                      "phoenix",
+                      "tag_Beast",
+                      {
+                        "ref": "ancient_allies",
+                        "amount": 2
+                      }
+                    ]
+                  }
+                }
+              ],
+              "optionsLabel": "Options",
+              "options": [
+                {
+                  "type": "group",
+                  "name": "Type",
+                  "optionsLabel": "Type",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Frost Phoenix",
+                      "cost": 0,
+                      "option_id": "kui0mgrfjwbnc10elgwf9",
+                      "refs": ["type_amount"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Fire Phoenix",
+                      "cost": 70,
+                      "option_id": "64drfe8pplt7xlsyg7d70a"
+                    }
+                  ],
+                  "option_id": "vbvwvkcsoxmgrqithcvja4"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Warden's Bond",
+                      "cost": 40,
+                      "option_id": "6xk6wjeg9w7lwma06tbd7",
+                      "offstatline": "B"
+                    }
+                  ],
+                  "option_id": "udkb93qa6xhgynqzkrqrla"
+                }
+              ],
+              "unit_id": "phoenix",
+              "option_id": "0lo67tk84y3c20ogepcriaj",
+              "logo": "special"
+            },
+            {
+              "name": "Highborn Giant",
+              "cost": 265,
+              "category": "special",
+              "options": [
+                {
+                  "optionsLabel": "Weapons",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Giant Club",
+                      "cost": 0,
+                      "refs": [],
+                      "option_id": "8fd6jvdp3gm59jv645402q"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Shoreguardian Bow (4+) and Spear",
+                      "cost": 25,
+                      "refs": [],
+                      "option_id": "dix1u5gyrewqbmg9reldb"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Lion Cloak and Axe",
+                      "cost": 25,
+                      "refs": [],
+                      "option_id": "jvovlmjyhg1wkp6qjb145"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "option_id": "m1w62sjfyc8jkyf812c6an"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Big Brother",
+                      "cost": 25,
+                      "refs": [],
+                      "option_id": "ptclkpty01ayzaauchluk"
+                    }
+                  ],
+                  "option_id": "5e0cno504xr5me9ms3r34j"
+                }
+              ],
+              "refs": ["highbornGiant", "ancient_allies"],
+              "unit_id": "highborn_giant",
+              "armyHasNotOption": [
+                {
+                  "refs": ["highbornGiant"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "a17bx384p6rzvktpl1f39b",
+              "logo": "special"
+            },
+            {
+              "name": "Sea Guard Reaper",
+              "cost": 200,
+              "refs": ["sea_guard_reaper", "war_machine", "sea_guard_reaper_or_sky_sloop", "tag_Elf", "tag_Light Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["sea_guard_reaper"],
+                  "amount": 3
+                },
+                {
+                  "refs": ["sea_guard_reaper_or_sky_sloop"],
+                  "amount": 3
+                }
+              ],
+              "unit_id": "sea_guard_reaper",
+              "option_id": "fewfwedsgfdgwegerwdgsdhwe",
+              "logo": "special"
+            },
+            {
+              "name": "Initiate of the Fiery Heart",
+              "cost": 340,
+              "refs": ["initiate_of_the_fiery_heart", "ancient_allies", "wizard", "wizardApprentice", "tag_Elf"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["initiate_of_the_fiery_heart"],
+                  "amount": 2
+                }
+              ],
+              "unit_id": "initiate_of_the_fiery_heart",
+              "option_id": "bg8osewd0w7i61k9fq570g",
+              "logo": "special",
+              "minSize": 1,
+              "maxSize": 1,
+              "options": [
+                {
+                  "type": "check",
+                  "name": "Wizard Conclave (2)",
+                  "cost": 0,
+                  "option_id": "nf328fn823f923f3892f32f32",
+                  "replaceSpells": true,
+                  "magic": {
+                    "amount": 2,
+                    "spells": [
+                      {
+                        "path": "alchemy",
+                        "ref": "molten_copper"
+                      },
+                      {
+                        "path": "alchemy",
+                        "ref": "living_steel"
+                      },
+                      {
+                        "path": "pyromancy",
+                        "ref": "flaming_swords"
+                      },
+                      {
+                        "path": "pyromancy",
+                        "ref": "pyroclastic_flow"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Sky Sloop",
+              "cost": 220,
+              "refs": ["sky_sloop", "sea_guard_reaper_or_sky_sloop", "tag_Elf", "tag_Light Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["sky_sloop"],
+                  "amount": 2
+                },
+                {
+                  "refs": ["sea_guard_reaper_or_sky_sloop"],
+                  "amount": 3
+                }
+              ],
+              "unit_id": "sky_sloop",
+              "option_id": "whmhj2n4au4js5ul75nu",
+              "logo": "special"
+            }
+          ],
+          "option_id": "60kl9dgo50m05ngfxdc2etl"
+        },
+        {
+          "name": "Queen's Bows",
+          "maxPercent": 0.25,
+          "refs": ["queens_bows"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Queen's Guard",
+              "cost": 40,
+              "refs": ["queen_guard", "tag_Elf", "tag_Light Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["queen_guard"],
+                  "amount": 2
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 20,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["queen_guard_amount"],
+                          "amount": 20
+                        }
+                      ],
+                      "refs": ["queen_guard_amount"],
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "option_id": "bdm7711lte47pt72r99xnd"
+                    }
+                  ],
+                  "option_id": "va80x6jlypda7phfsxy1rj"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "sortOptions": true,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "756yk5w9u3w5alqans1ath"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "vkxan0zkh9q1a67131xbtm"
+                    }
+                  ],
+                  "option_id": "8mof02esn1fhpdike5i0og"
+                }
+              ],
+              "unit_id": "queens_guard",
+              "option_id": "h835i2h8fahth4kipstij",
+              "logo": "arrows"
+            },
+            {
+              "name": "Grey Watchers",
+              "cost": 50,
+              "refs": ["grey_watchers", "tag_Elf", "tag_Light Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["grey_watchers"],
+                  "amount": 2
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 1,
+                              "option_id": "fxwfehkhntofgbf5yvzuo"
+                            }
+                          ],
+                          "option_id": "rzz1ir3n2vieozl245cbwj"
+                        }
+                      ],
+                      "option_id": "rixzhkfknotwy6fc9exw",
+                      "refs": ["grey_watchers_amount"]
+                    }
+                  ],
+                  "option_id": "28cq3or6z6dtb5opjboo3"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "5bzlhtgvsusgnbi9yb3g4u"
+                    }
+                  ],
+                  "option_id": "lo92uajfceorblb23a"
+                }
+              ],
+              "unit_id": "grey_watchers",
+              "option_id": "r51eq62rmrz1gr59rf78c",
+              "logo": "arrows"
+            }
+          ],
+          "option_id": "dwilq09k7ze0vvnx7g9n"
+        },
+        {
+          "name": "Mounts",
+          "invisible": true,
+          "refs": ["mounts"],
+          "options": [
+            {
+              "name": "Ancient Dragon *Mount",
+              "type": "check",
+              "category": "mounts",
+              "unit_id": "ancient_dragon_mount",
+              "invisible": true,
+              "refs": [
+                "mount",
+                "mountDragon",
+                "ancient_dragon",
+                "army_unique",
+                "tag_Beast",
+                "tag_Mount",
+                {
+                  "ref": "ancient_allies",
+                  "amount": 2
+                }
+              ],
+              "override": [
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["dragon_army"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "refs": [
+                      "mount",
+                      "mountDragon",
+                      "ancient_dragon",
+                      "army_unique",
+                      "tag_Beast",
+                      "tag_Mount",
+                      {
+                        "ref": "ancient_allies",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                }
+              ],
+              "armyHasNotOption": [
+                {
+                  "refs": ["ancient_dragon"],
+                  "amount": 1,
+                  "armyTypeMult": false
+                }
+              ],
+              "option_id": "52dl5g0ov7mim1r4tai15",
+              "logo": "character"
+            },
+            {
+              "name": "Regal Dragon *Mount",
+              "type": "check",
+              "category": "mounts",
+              "unit_id": "regal_dragon_mount",
+              "invisible": true,
+              "refs": [
+                "mount",
+                "mountDragon",
+                "regal_dragon",
+                "tag_Beast",
+                "tag_Mount",
+                {
+                  "ref": "ancient_allies",
+                  "amount": 2
+                }
+              ],
+              "override": [
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["dragon_army"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "refs": [
+                      "mount",
+                      "mountDragon",
+                      "regal_dragon",
+                      "tag_Beast",
+                      "tag_Mount",
+                      {
+                        "ref": "ancient_allies",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                }
+              ],
+              "armyHasNotOption": [
+                {
+                  "refs": ["regal_dragon"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "0aqjz1daje4gx2cf2kgnheb",
+              "logo": "character"
+            },
+            {
+              "type": "check",
+              "name": "Elven Horse *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "unit_id": "he_elven_horse_mount",
+              "invisible": true,
+              "refs": ["mount", "tag_Mount", "tag_", "elven_horse_mount"],
+              "option_id": "zcj3b0w35dexhnxdoabxl8",
+              "logo": "character"
+            },
+            {
+              "name": "Giant Eagle *Mount",
+              "type": "check",
+              "category": "mounts",
+              "options": [],
+              "unit_id": "giant_eagle_mount",
+              "invisible": true,
+              "refs": ["giant_eagle_mount", "mount", "tag_Mount", "tag_Beast"],
+              "option_id": "lr7d6bcj0rs0vatqh22z1fl",
+              "logo": "character",
+              "armyHasNotOption": [
+                {
+                  "refs": ["giant_eagle_mount"],
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "name": "Griffon *Mount",
+              "type": "check",
+              "category": "mounts",
+              "options": [],
+              "unit_id": "griffon_mount",
+              "invisible": true,
+              "refs": [
+                "mount",
+                "griffon_mount",
+                "tag_Beast",
+                "tag_Mount",
+                {
+                  "ref": "ancient_allies",
+                  "amount": 1
+                }
+              ],
+              "armyHasNotOption": [
+                {
+                  "refs": ["griffon_mount"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "866izmabqr7elrynkxfj5v",
+              "logo": "character"
+            },
+            {
+              "name": "Lion Chariot *Mount",
+              "type": "check",
+              "category": "mounts",
+              "options": [],
+              "cost": 145,
+              "unit_id": "lion_chariot_mount",
+              "invisible": true,
+              "refs": ["mount", "tag_Construct", "lion_chariot_mount"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["lion_chariot_mount"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "lbnfksbcjk112x2oim7e0i",
+              "logo": "character"
+            },
+            {
+              "name": "Reaver Chariot *Mount",
+              "type": "check",
+              "category": "mounts",
+              "options": [],
+              "unit_id": "reaver_chariot_mount",
+              "invisible": true,
+              "refs": ["mount", "reaver_chariot_mount", "tag_Construct", "tag_"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["reaver_chariot_mount"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "03xv2o5n2idb4ldcoxgnuks",
+              "logo": "character"
+            },
+            {
+              "name": "Sky Sloop *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["sky_sloop", "mount", "sea_guard_reaper_or_sky_sloop", "tag_Construct"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["sky_sloop"],
+                  "amount": 2
+                },
+                {
+                  "refs": ["sea_guard_reaper_or_sky_sloop"],
+                  "amount": 3
+                }
+              ],
+              "unit_id": "sky_sloop_mount",
+              "invisible": true,
+              "option_id": "dq2quszoxaoagh4pbsvxf",
+              "logo": "character"
+            }
+          ],
+          "option_id": "4sl797gdflj3z7sxnau8hp"
+        }
+      ],
+      "option_id": "5qkpffp0zwi9ned5z8qjg"
+    }
+  ]
+}

@@ -1,0 +1,3497 @@
+{
+  "name": "Kingdom of Equitaine",
+  "translation": {
+    "fr": "Royaume d'Equitaine",
+    "cn": "埃奎坦骑士国"
+  },
+  "short": "koe",
+  "version": "2023 beta4",
+  "nrversion": 480,
+  "playable": 1,
+  "id": 9,
+  "include": [102],
+  "indicators": ["tag_Holy Vows"],
+  "hereditary": [
+    {
+      "path": "hereditary",
+      "ref": "breath_lady"
+    }
+  ],
+  "reference_details": {
+    "army_general": "General",
+    "army_bsb": "Battle Standard",
+    "wizard": "Wizard",
+    "wizardApprentice": "Wizard Apprentice",
+    "wizardAdept": "Wizard Adept",
+    "wizardMaster": "Wizard Master",
+    "mount": "Mount",
+    "weaponEnchantUni": "Weapon Enchant",
+    "dominant": "Dominant",
+    "core_unit": "Core Unit",
+    "peasant_bow_numbers": "Peasant Bowmen",
+    "scorption_trebuchet": "Scorpion or Trebuchet",
+    "gallantry": "Gallantry",
+    "fey_steed_or_knight": "Fey Steed or Fey Knight",
+    "siegeOrLowBorn": "Siege Weapon, Lowborn Archers or Hooded Men",
+    "tag_Holy Vows": "Holy Vows"
+  },
+  "dictionnary": [
+    {
+      "refs": ["potions_and_scrolls"],
+      "options": [
+        {
+          "name": "Potion of Healing",
+          "cost": 60,
+          "option_id": "vcp0f2bvhzj5pu1ueo5gle",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Elixir of Negation",
+          "cost": 30,
+          "option_id": "xmj7ovun5iniff1zo8pyrs",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "type": "check",
+          "refs": ["black_knight_tonic"],
+          "armyHasNotOption": [
+            {
+              "refs": ["black_knight_tonic"],
+              "amount": 1
+            }
+          ],
+          "cost": 45,
+          "name": "Black Knight's Tonic",
+          "option_id": "432f342f43g54h3h43h3",
+          "description": "The first time the bearer’s model suffers an unsaved wound from an attack with Multiple Wounds (X), the model gains <span class=\"textbf\">Immune (Multiple Wounds)</span> until the end of the phase.\n"
+        }
+      ]
+    },
+    {
+      "refs": ["koeBannerEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "refs": ["oriflamme"],
+          "armyHasNotOption": [
+            {
+              "refs": ["oriflamme"],
+              "amount": 1
+            }
+          ],
+          "cost": 55,
+          "name": "Oriflamme",
+          "option_id": "hn054iyt43gm45309gj534g3",
+          "description": "The bearer's unit gains <span class=\"textbf\">Horror</span>.\n",
+          "hasNotOption": ["core_unit"]
+        },
+        {
+          "type": "check",
+          "refs": ["banner_of_roland"],
+          "armyHasNotOption": [
+            {
+              "refs": ["banner_of_roland"],
+              "amount": 1
+            }
+          ],
+          "cost": 35,
+          "name": "Banner of Roland",
+          "option_id": "432fewv34h65nmu7k87ol6",
+          "description": "The bearer’s unit gains <span class=\"textbf\">Devastating Charge (Aegis (5+))</span>. In addition, enemy units with <span class=\"textbf\">Stand and Shoot</span> cannot use this rule against the bearer’s unit.\n"
+        },
+        {
+          "type": "check",
+          "refs": ["relic_shroud"],
+          "cost": 55,
+          "name": "Relic Shroud",
+          "option_id": "43g3g54y54h56h54h4h4h4",
+          "description": "The bearer can cast <i>Breath of the Lady</i> (Hereditary Spell) as a Bound Spell (5+).",
+          "boundSpells": [
+            {
+              "path": "hereditary",
+              "ref": "breath_lady",
+              "mods": {
+                "castValue": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "refs": ["lord_arms"],
+          "armyHasNotOption": [
+            {
+              "refs": ["lord_arms"],
+              "amount": 1
+            }
+          ],
+          "cost": 30,
+          "hasOption": [
+            {
+              "refs": ["army_bsb"],
+              "amount": 1
+            }
+          ],
+          "name": "Lord's Arms",
+          "option_id": "4mom34ggk340g3ms0g43g43g43o",
+          "description": "The restriction on the maximum number of Proper Ranks <i>(for Steady, Steadfast, Surrounded, and Rank Bonus purposes)</i> from <span class=\"textbf\">Lance Formation</span> is increased to three for the bearer's unit.\n"
+        },
+        {
+          "type": "check",
+          "refs": ["castella_crast"],
+          "armyHasNotOption": [
+            {
+              "refs": ["castella_crast"],
+              "amount": 3
+            }
+          ],
+          "cost": 40,
+          "name": "Castellan's Crest",
+          "option_id": "fdsgf3g41fg34g3g43",
+          "description": "One use only. May be activated immediately before declaring a Charge with the bearer or the bearer’s unit in the Charge Phase. Failed Charge Range rolls of the bearer or the bearer’s unit must be rerolled until the end of the phase. Other Characters Charging out of the bearer’s unit are not affected."
+        }
+      ]
+    },
+    {
+      "refs": ["bannerEnchant"],
+      "options": [
+        {
+          "name": "Banner of Speed",
+          "cost": 45,
+          "option_id": "vhdq1nt8jy9su08e0s8rw",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Banner of Discipline",
+          "cost": 20,
+          "option_id": "y9nqk2ugfymwqyw7gf4mjk",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Distortion Emblem",
+          "cost": 35,
+          "option_id": "6a53lndfe6i6ou0tg9nzwf",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "b158ppng1zijgk87on5g9"
+    },
+    {
+      "refs": ["handWeaponEnchant", "pairedWeaponsEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "cost": 60,
+          "name": "Tristan's Resolve",
+          "option_id": "hg0-b453k-vb54j954jnv09b54",
+          "description": "+1 Att and +1 AP. After a successful to-hit roll, the attacker may discard one of the hits with this weapon and choose an Enchanted Weapon carried by the model the attack was allocated towards. This Weapon Enchantment is ignored for the rest of the game.\n",
+          "refs": ["tristan_resolve", "weaponEnchantUni"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "armyHasNotOption": [
+            {
+              "refs": ["tristan_resolve"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Hero's Heart",
+          "cost": 50,
+          "option_id": "9wvwpbgkikg47lbq72rfba",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "c012hccx42wuq42nwnl5us"
+    },
+    {
+      "refs": ["halberdEnchant", "greatWeaponEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "cost": 50,
+          "name": "Mortal Reminder",
+          "option_id": "bb549g534v5340vnj3809vhjewfe",
+          "refs": ["mortal_reminder", "weaponEnchantUni"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "armyHasNotOption": [
+            {
+              "refs": ["mortal_reminder"],
+              "amount": 1
+            }
+          ],
+          "description": "+1 Str, +1 AP, and <span class=\"textbf\">Terror</span>.\n"
+        }
+      ],
+      "option_id": "l8sb3as6wp3o7ie7uhurw"
+    },
+    {
+      "refs": ["lanceEnchant"],
+      "options": [],
+      "option_id": "543g4vb34rehjdfgfdgd"
+    },
+    {
+      "refs": ["lightLanceEnchant", "lanceEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "cost": 75,
+          "name": "Divine Judgement",
+          "option_id": "432f34v3e4rgvb3432hth541r",
+          "description": "After the wielder successfully completes a Charge, apply the following until the wielder is no longer Engaged in Combat: +2 Str and +2 AP.\n",
+          "refs": ["bane_breaker", "weaponEnchantUni"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "armyHasNotOption": [
+            {
+              "refs": ["bane_breaker"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 30,
+          "name": "Uther's Mettle",
+          "option_id": "jds0349rbmv3-09jg3vm340",
+          "description": "+X Att, where X is equal to the number of ranks of a single enemy unit on contact with the wielder up to a maximum of 4. If multiple units, use the unit with the most ranks. These extra Attacks can only be allocated towards Rank-and-File models. <i>If the attacks cannot be allocated towards Rank-and-File models, such as when the wielder is in a Duel, the attacks are lost.</i>\n",
+          "refs": ["warsong_stirng", "weaponEnchantUni"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "armyHasNotOption": [
+            {
+              "refs": ["warsong_stirng"],
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "option_id": "fsdf32f32fsdfsfsd"
+    },
+    {
+      "refs": ["armourEnchant"],
+      "options": [
+        {
+          "name": "Ghostly Guard",
+          "cost": 35,
+          "option_id": "nsdlkmuclzfd4suuoh272",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "type": "check",
+          "refs": ["prayer_etched_ring"],
+          "armyHasNotOption": [
+            {
+              "refs": ["prayer_etched_ring"],
+              "amount": 1
+            }
+          ],
+          "cost": 90,
+          "name": "Prayer Etched",
+          "option_id": "jmg-43it4m9g5445j0g54mn854",
+          "description": "+1 Arm and <span class=\"textbf\">Aegis (+1, max. 4+)</span>.\n"
+        },
+        {
+          "type": "check",
+          "refs": ["cavalry_banner"],
+          "armyHasNotOption": [
+            {
+              "refs": ["cavalry_banner"],
+              "amount": 1
+            }
+          ],
+          "cost": 60,
+          "name": "Percival's Panoply",
+          "option_id": "3mf943j-043jv3429iv34-v43",
+          "description": "+2 Arm.\n",
+          "hasOption": ["tag_Mount"]
+        }
+      ],
+      "option_id": "refdsfsdfdsc32f3f32fdsfsd"
+    },
+    {
+      "refs": ["shieldEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Fortress of Faith",
+          "option_id": "fsdjfidsjf0320fhgsdhgfdhfd",
+          "cost": 20,
+          "description": "<span class=\"textbf\">Immune (Lethal Strike)</span> while the bearer's unit contains at least one Rank-and-File model.\n",
+          "refs": ["fortress_faith"],
+          "armyHasNotOption": [
+            {
+              "refs": ["fortress_faith"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Dusk Forged",
+          "cost": 65,
+          "option_id": "xiotimt7jcfkn7ed5e4ph",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Sigil of Protection",
+          "cost": 30,
+          "option_id": "x1vzktdm3yycgx9squm6g",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "5oacz6neo4mnyc7dr643s"
+    },
+    {
+      "refs": ["artefact"],
+      "options": [
+        {
+          "type": "check",
+          "refs": ["sacred_chalice"],
+          "armyHasNotOption": [
+            {
+              "refs": ["sacred_chalice"],
+              "amount": 1
+            }
+          ],
+          "cost": 15,
+          "name": "Sacred Chalice",
+          "option_id": "43r34gh65j65h5445h4354j",
+          "description": "The bearer gains <span class=\"textbf\">Magic Resistance (1)</span>. When the bearer’s unit is the target of an enemy Spell the bearer gains <span class=\"textbf\">Channel (1)</span> until the end of following Magic Phase.\n"
+        }
+      ],
+      "option_id": "vib1kldqcf6zn191vnpwe"
+    },
+    {
+      "refs": ["heroicTraits"],
+      "options": [
+        {
+          "cost": 205,
+          "name": "Quin",
+          "type": "check",
+          "option_id": "vrvv43iv34kvc3432r231",
+          "refs": ["quin", "wizard", "wizardAdept"],
+          "description": "The model is a <span class=\"textbf\">Wizard Adept</span> that chooses <i>Witchcraft</i> as its Path of Magic.\n  If on foot, the model gains <span class=\"textbf\">Scout</span>.",
+          "optionsLabel": "Path",
+          "minSize": 1,
+          "maxSize": 1,
+          "options": [
+            {
+              "refs": ["witchcraft"],
+              "type": "check",
+              "cost": 0,
+              "name": "Witchcraft",
+              "option_id": "fn209fn320f032f032f32h5"
+            }
+          ]
+        },
+        {
+          "cost": 55,
+          "name": "Cleric",
+          "type": "check",
+          "option_id": "43f2i9f3j0f3420f3492r23",
+          "refs": ["cleric", "ordo_minister", "tag_Holy Vows"],
+          "loses_rules": ["koe-ordeal"],
+          "description": "The model gains <span class=\"textbf\">Clergy</span>, <span class=\"textbf\">Ordo Minister</span>, Holy Vows, and loses <span class=\"textbf\">Commonfolk</span>.\n",
+          "hasNotOption": ["quin"],
+          "neverHide": true
+        },
+        {
+          "cost": 50,
+          "name": "Bannerman",
+          "type": "check",
+          "option_id": "fgfdg8ii65h54g54g34f34f",
+          "refs": ["bannerman", "army_bsb"],
+          "description": "The model becomes the Battle Standard Bearer.",
+          "hasNotOption": ["army_general", "quin"],
+          "neverHide": true,
+          "armyHasNotOption": [
+            {
+              "refs": ["army_bsb"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "cost": 35,
+          "name": "Minstrel",
+          "type": "check",
+          "option_id": "vfmv3ovm34-v3k-0v34k-v43",
+          "refs": ["troubadour", "wizard", "wizardApprentice"],
+          "description": "The model gains <span class=\"textbf\">Musician</span> and is a <span class=\"textbf\">Wizard Apprentice</span> that uses <i>Divination</i> as its Path of Magic.",
+          "hasNotOption": ["quin"],
+          "neverHide": true,
+          "optionsLabel": "Path",
+          "minSize": 1,
+          "maxSize": 1,
+          "options": [
+            {
+              "refs": ["divination"],
+              "type": "check",
+              "cost": 0,
+              "name": "Divination",
+              "option_id": "f32f32hf328fj32f239fnj392fn93828f32"
+            }
+          ]
+        },
+        {
+          "cost": 35,
+          "name": "Castellan",
+          "type": "check",
+          "option_id": "vdver348jv3094u4trf3f",
+          "refs": ["castellan"],
+          "description": "The model part gains <span class=\"textbf\">Captain</span>, <span class=\"textbf\">Commanding Presence (6\", Commonfolk)</span> and <span class=\"textbf\">Disciplined</span>.\n",
+          "hasNotOption": ["quin"],
+          "neverHide": true
+        }
+      ],
+      "option_id": "fm439f34k9vc3m40ck32"
+    },
+    {
+      "refs": ["knightly_principles"],
+      "options": [
+        {
+          "option_id": "432frgejvb9034jg09534bj54",
+          "type": "check",
+          "cost": 65,
+          "refs": ["kp_honour"],
+          "name": "Honour",
+          "description": "The bearer's unit Charge Range rolls are Maximised. While Engaged with an enemy unit’s Front Facing, the bearer gains <span class=\"textbf\">Devastating Charge (+2 Att)</span>.\n"
+        },
+        {
+          "option_id": "43moifm2309f320c32c32",
+          "type": "check",
+          "cost": 50,
+          "refs": ["kp_justice"],
+          "name": "Justice",
+          "description": "At Agility Step 0, the model performs X additional Standard Melee Attack, where X is equal to the number of HP losses suffered in the Round of Combat by Rank-and-File models in the bearer’s unit. X can never be greater than 3.\\\n<i>Note that HP losses suffered at Agility step 0 are applicable, and that if the model is unable to perform these additional attacks, the attacks are lost.</i>\n"
+        },
+        {
+          "option_id": "433fm32v439gbk5gdflf923",
+          "type": "check",
+          "cost": 70,
+          "refs": ["kp_valour"],
+          "name": "Valour",
+          "description": "The bearer gains <span class=\"textbf\">Fearless</span> and its Standard Melee Attacks gain <span class=\"textbf\">Multiple Wounds (2, towards Res 5 or more)</span>.\n"
+        },
+        {
+          "option_id": "543ib09tvfdmskf3209f32",
+          "type": "check",
+          "cost": 55,
+          "refs": ["kp_excellence"],
+          "name": "Excellence",
+          "description": "Duels issued by the bearer must <i>(whenever possible)</i> be accepted. The bearer part gains <span class=\"textbf\">Lethal Strike</span>, and when its Standard Melee Attacks Roll a natural ‘6’ to wound, the attack gains <span class=\"textbf\">Multiple Wounds (2)</span>.\n"
+        },
+        {
+          "option_id": "b094igmg3j0vmg3f4fgsddf",
+          "type": "check",
+          "cost": 30,
+          "refs": ["kp_faith", "tag_Holy Vows"],
+          "name": "Faith",
+          "description": "The bearer gains Holy Vows and <span class=\"textbf\">Fearless</span>. If the bearer’s unit is the target of an Orison while Engaged in Combat, add one Blessing Token to your pool.\n"
+        },
+        {
+          "option_id": ";45mf49fj49gf3902342f23",
+          "type": "check",
+          "cost": 35,
+          "refs": ["kp_forebearance"],
+          "hasNotOption": [
+            {
+              "refs": ["towering"],
+              "amount": 1
+            },
+            {
+              "refs": ["sizeGigantic"],
+              "amount": 1
+            }
+          ],
+          "name": "Forbearance",
+          "description": "When using a Shield, the model gains <span class=\"textbf\">Distracting (1)</span>. "
+        },
+        {
+          "option_id": "vfdbth5432yj54y75vwv43",
+          "type": "check",
+          "cost": 25,
+          "refs": ["kp_generosity"],
+          "name": "Generosity",
+          "description": "The model gains Attached,Exclusive (Rank-and-File).\\\n  Rank-and-File models with <span class=\"textbf\">Nobility</span> in the unit that the bearer is deployed in gain a Bastard Sword and <span class=\"textbf\">Weapon Master</span> until the end of the game.\n"
+        }
+      ],
+      "option_id": "3xwc3ufx6esd1zmxg44ai5"
+    },
+    {
+      "refs": ["weaponEnchant"],
+      "options": [
+        {
+          "name": "Shield Breaker",
+          "cost": 40,
+          "option_id": "1oxjxn39se7aw1jbykih2j",
+          "type": "check",
+          "shared": true
+        }
+      ]
+    }
+  ],
+  "army": [
+    {
+      "name": "Army",
+      "optionsLabel": "Categories",
+      "maxCost": 4500,
+      "options": [
+        {
+          "name": "Characters",
+          "refs": ["characters"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "name": "Damsel",
+              "refs": ["wizard", "damsel", "tag_Human", "tag_Holy Vows"],
+              "cost": 270,
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["sainted"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["gallantry"]
+                  }
+                }
+              ],
+
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "bc131l8q96colgcmd3bi6i",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "type": "check",
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "l80bxoswvggwvgen1osjw"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Path",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["art_free_ess"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 2
+                      }
+                    }
+                  ],
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "name": "Divination",
+                      "refs": ["divination"],
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "8kvl4apx2llikhdnqsq8"
+                    },
+                    {
+                      "name": "Druidism",
+                      "refs": ["druidism"],
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "ndnzpmzoqmlu009hbzkrr"
+                    },
+                    {
+                      "name": "Shamanism",
+                      "refs": ["shamanism"],
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "ttuzoaue8p53nzjxxct4q"
+                    }
+                  ],
+                  "option_id": "0ju46ilze1xf4qnuxl5bqc"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Level",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "refs": ["wizardAdept"],
+                      "name": "Wizard Adept",
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "78jt3uedtc535ziirw5fdq"
+                    },
+                    {
+                      "refs": ["wizardMaster"],
+                      "name": "Wizard Master",
+                      "type": "check",
+                      "cost": 150,
+                      "option_id": "9ec2muyn4p5z19dk08fjp"
+                    }
+                  ],
+                  "option_id": "bvqerb58jubrea1m0x6oek"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "1shsaupzzpif37me7cx6mo",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Heraldic Steed",
+                      "cost": 20,
+                      "options": [],
+                      "refopt": "heraldic_steed_mount",
+                      "option_id": "4tfdgfdgdfgfdgsdf3w2f32f32",
+                      "hasOption": [
+                        {
+                          "refs": ["wizardMaster", "wizardAdept"],
+                          "amount": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Pegasus Charger",
+                      "cost": 20,
+                      "options": [],
+                      "refopt": "pegasus_charger_mount",
+                      "option_id": "rkdsfoki6ec961t113i2o9",
+                      "hasOption": [
+                        {
+                          "refs": ["wizardMaster", "wizardAdept"],
+                          "amount": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Destrier",
+                      "cost": 55,
+                      "options": [],
+                      "refopt": "destrier_mount",
+                      "option_id": "fcm9k53604ihs647vr9535"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Fey Steed",
+                      "cost": 35,
+                      "options": [],
+                      "refopt": "fey_steed_mount",
+                      "option_id": "6r3mdhkcdg60gr1jno25wl",
+                      "hasOption": [
+                        {
+                          "refs": ["wizardMaster", "wizardAdept"],
+                          "amount": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Revered Unicorn",
+                      "cost": 85,
+                      "options": [],
+                      "refopt": "revered_unicorn_mount",
+                      "option_id": "e0gh1k0inor0rqrms7c4f6e"
+                    }
+                  ],
+                  "option_id": "jdfa31b2brphvh1cch0ma",
+                  "minSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Options",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Sainted and Gallantry (1)",
+                      "cost": 25,
+                      "refs": ["sainted", "army_unique"],
+                      "option_id": "ny3tcqb2hzsto6rlqm53yh",
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["sainted"],
+                          "amount": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "5flectqwf8thmofegcpajj"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 100,
+                  "collapsible": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["wizardMaster"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 200
+                      }
+                    },
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["sainted"],
+                          "amount": 1
+                        },
+                        {
+                          "refs": ["wizardApprentice", "wizardAdept"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 150
+                      }
+                    }
+                  ],
+
+                  "options": [
+                    {
+                      "optionsLabel": "Armour Enchant",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "options": [],
+                      "optionsDict": ["armourEnchant"],
+                      "option_id": "fefewfewf32rrgre3"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "fadncn1lsq62ixkgmsjnvd"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "2lkwocu9ortwc5cukvbzc"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "l3cpkhzmtlbzxn2n08bc2d",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "option_id": "m3b9b58e2jtsj6xkwa2gp"
+                }
+              ],
+              "unit_id": "damsel",
+              "option_id": "abeszs4d4c2c497g5wdwg",
+              "logo": "character"
+            },
+            {
+              "name": "Duke",
+              "cost": 120,
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "jlk9tzt26k8khqopukky2j",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "99d1d4p6hwrpip5kcv1",
+                      "hasNotOption": ["army_bsb"]
+                    },
+                    {
+                      "name": "Battle Standard Bearer",
+                      "type": "check",
+                      "cost": 50,
+                      "option_id": "f23f23f327634g34g43g43js2229",
+                      "refs": ["army_bsb"],
+                      "armyHasNotOption": ["army_bsb"]
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "20wf1k088a6pxa8zcd1jt",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Destrier",
+                      "cost": 75,
+                      "options": [],
+                      "refopt": "destrier_mount",
+                      "option_id": "k0c9r9upagmf0583a6vkc"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Fey Steed",
+                      "cost": 145,
+                      "options": [],
+                      "refopt": "fey_steed_mount",
+                      "hasOption": ["sainted"],
+                      "option_id": "va9eum1tpw6o8cu948ah5",
+                      "maxUnitCost": 700,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["sainted"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "maxUnitCost": 800
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Pegasus Charger",
+                      "cost": 135,
+                      "options": [],
+                      "refopt": "pegasus_charger_mount",
+                      "option_id": "3tcwri28v5o84fyhe9zleq"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Revered Unicorn",
+                      "cost": 60,
+                      "options": [],
+                      "refopt": "revered_unicorn_mount",
+                      "hasOption": ["sainted"],
+                      "option_id": "gk1cb9gmyecndy8vxoxen"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Hippogriff",
+                      "cost": 245,
+                      "options": [],
+                      "refopt": "hippogriff_mount",
+                      "option_id": "54zksnjn37yh0zgtbpwr7",
+                      "maxUnitCost": 700,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["sainted"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "maxUnitCost": 800
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "jb7nf7gmxxe2ti1fp4yam4",
+                  "minSize": 1
+                },
+                {
+                  "optionsLabel": "Knightly Principles",
+                  "maxSize": 1,
+                  "sortOptions": true,
+                  "collapsible": true,
+                  "options": [],
+                  "optionsDict": ["knightly_principles"],
+                  "option_id": "59kwlyjusg586iodwtft7s"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "collapsible": true,
+                  "type": "group",
+                  "options": [
+                    {
+                      "maxUnitCost": 700,
+                      "type": "check",
+                      "name": "Sainted and Gallantry (1)",
+                      "cost": 95,
+                      "refs": ["sainted", "army_unique"],
+                      "extraCategories": ["gallantry"],
+                      "neverHide": true,
+                      "hasNotOption": ["army_bsb"],
+                      "option_id": "u540wjw0msh2up23fy9n18",
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["sainted"],
+                          "amount": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "6niaxvy6gfa60nsaesz4su"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 150,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["sainted", "army_general"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 200
+                      }
+                    },
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["army_bsb"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 100
+                      }
+                    }
+                  ],
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "option_id": "6snwde32tf8vmgw02et6mb",
+                      "optionsLabel": "Banner Enchant",
+                      "options": [],
+                      "type": "group",
+                      "optionsDict": ["bannerEnchant", "koeBannerEnchant"],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "childrenOptions": {
+                        "hasOption": [
+                          {
+                            "refs": ["army_bsb"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 20,
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "ssc4p2zgwkp83ssq4y1e95",
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["kp_forebearance"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "minAmount": 1
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "optionsLabel": "Armour Enchant",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "options": [],
+                      "optionsDict": ["armourEnchant"],
+                      "option_id": "t10nkuotrj9s5wcozlglml"
+                    },
+                    {
+                      "collapsible": true,
+                      "optionsLabel": "Weapons",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Bastard Sword",
+                          "cost": 25,
+                          "maxSize": 1,
+                          "optionsLabel": "Bastard Sword Enchant",
+                          "optionsSuffix": " (Bastard Sword)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                          "option_id": "fs107vt7uyfhip430b31fk"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 0,
+                          "maxSize": 1,
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "optionsSuffix": " (Paired Weapons)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "vtir0yyvb80fcwz1w90o1t"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 30,
+                          "maxSize": 1,
+                          "optionsLabel": "Great Weapon Enchant",
+                          "optionsSuffix": " (Great Weapon)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
+                          "option_id": "wddoh3g0kur33kbv816m8v"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 0,
+                          "maxSize": 1,
+                          "optionsSuffix": " (Halberd)",
+                          "optionsLabel": "Halberd Enchant",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "halberdEnchant"],
+                          "option_id": "h6gpxnnpu0gt2klbx1zok"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Lance",
+                          "cost": 20,
+                          "maxSize": 1,
+                          "hasOption": ["mount"],
+                          "optionsSuffix": " (Lance)",
+                          "optionsLabel": "Lance Enchant",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "lanceEnchant"],
+                          "option_id": "dq76jv934zip28f1kfvho"
+                        }
+                      ],
+                      "option_id": "7nks21j3tvtq18c213uwe"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "bcwwto4ctogw00e4m4bkp8"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "6igeu07v31jppl6nl0fuf"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "77ov9m6i9n7fo7vgnb3veq",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "option_id": "d6pjijn2qckr1do33g6l7i"
+                }
+              ],
+              "unit_id": "duke",
+              "option_id": "vrobcz007grurhx49xo8",
+              "refs": ["duke", "tag_Human", "tag_Metal Armour"],
+              "logo": "character",
+              "armyHasNotOption": [
+                {
+                  "refs": ["duke"],
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "name": "Paladin",
+              "cost": 125,
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "uyajy6gvsot5vfbxa9zph",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "type": "check",
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "gfdg342gdfsgfdg342g43g34",
+                      "hasNotOption": ["not_a_leader"],
+                      "hasOption": ["sainted"]
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "3kgk3zc1sll3psf3yv0w5e",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Destrier",
+                      "cost": 60,
+                      "options": [],
+                      "refopt": "destrier_mount",
+                      "option_id": "sfl67z2n7ctsllgc3pbnvq"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Revered Unicorn",
+                      "cost": 70,
+                      "options": [],
+                      "refopt": "revered_unicorn_mount",
+                      "option_id": "sgtklk2dal5hped460ktgo9"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Pegasus Charger",
+                      "cost": 135,
+                      "options": [],
+                      "refopt": "pegasus_charger_mount",
+                      "option_id": "s9ugabq1gwxtix732gigcj"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Fey Steed",
+                      "cost": 145,
+                      "options": [],
+                      "refopt": "fey_steed_mount",
+                      "option_id": "s7okf7u8851hhwtmx3dhk7j",
+                      "maxUnitCost": 700,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["sainted"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "maxUnitCost": 800
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Hippogriff",
+                      "cost": 245,
+                      "options": [],
+                      "refopt": "hippogriff_mount",
+                      "option_id": "5s4zksnjn37yh0zgtbpwr7",
+                      "maxUnitCost": 700,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["sainted"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "maxUnitCost": 800
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "k0litspsgnbnkzp70roq6ho",
+                  "minSize": 1
+                },
+                {
+                  "optionsLabel": "Options",
+                  "collapsible": true,
+                  "type": "group",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Sainted and Gallantry (1)",
+                      "cost": 140,
+                      "refs": ["sainted", "army_unique"],
+                      "extraCategories": ["gallantry"],
+                      "option_id": "6f2wsea0c4jn54bkomvem2",
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["sainted"],
+                          "amount": 1
+                        }
+                      ],
+                      "maxUnitCost": 700
+                    }
+                  ],
+                  "option_id": "gfrdg453y45d3h534h534h534"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 150,
+                  "collapsible": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["sainted"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 200
+                      }
+                    }
+                  ],
+                  "options": [
+                    {
+                      "optionsLabel": "Armour",
+                      "collapsible": true,
+                      "option_id": "543g534bvdr4b4054-bk54tb4",
+                      "options": [
+                        {
+                          "optionsLabel": "Armour Enchant",
+                          "maxSize": 1,
+                          "collapsible": true,
+                          "sortOptions": true,
+                          "options": [],
+                          "optionsDict": ["armourEnchant"],
+                          "option_id": "rb6gfesnrxdqwc9g44qrpqq"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 20,
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "v8mbgipundsog277t1aqe"
+                    },
+                    {
+                      "collapsible": true,
+                      "optionsLabel": "Weapons",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 0,
+                          "maxSize": 1,
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "optionsSuffix": " (Paired Weapons)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "20fc97t33dd5ceug4uutrx"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 30,
+                          "maxSize": 1,
+                          "optionsLabel": "Great Weapon Enchant",
+                          "optionsSuffix": " (Great Weapon)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
+                          "option_id": "ejlqekvwwmldvsoh1k5x8b"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Bastard Sword",
+                          "cost": 25,
+                          "maxSize": 1,
+                          "optionsLabel": "Bastard Sword Enchant",
+                          "optionsSuffix": " (Bastard Sword)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                          "option_id": "fdsfds32f4gffdgfdakjlk5534"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 0,
+                          "maxSize": 1,
+                          "optionsSuffix": " (Halberd)",
+                          "optionsLabel": "Halberd Enchant",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "halberdEnchant"],
+                          "option_id": "f7xy997tdrpfh62pbuv9qc"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Lance",
+                          "cost": 20,
+                          "maxSize": 1,
+                          "optionsLabel": "Lance Enchant",
+                          "optionsSuffix": " (Lance)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "lanceEnchant"],
+                          "option_id": "2eedgjkhfdvffewg34g34jh34",
+                          "hasOption": [
+                            {
+                              "refs": ["mount"],
+                              "amount": 1
+                            }
+                          ]
+                        }
+                      ],
+                      "option_id": "l3g41mag00ok4q159f2yqre"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "q0oq3nadvffkrfmf172gmrc"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "2uewjt8na9fy8ifigqizufn"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "5ojcvau0npc6o34f8idahb",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "option_id": "bqlbl3fftpqulnuzbv6cm7c"
+                }
+              ],
+              "unit_id": "paladin",
+              "option_id": "fsdgwg4gsdffewgdgffdgfdgfd",
+              "refs": ["paladin", "tag_Human", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["paladin"],
+                  "amount": 2
+                }
+              ],
+              "logo": "character"
+            },
+            {
+              "name": "Folk Hero",
+              "cost": 60,
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "khqn2spighm0sp4tj70eny",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "x5juoe22mcmx9ctvi8g9hl",
+                      "hasNotOption": ["army_bsb"]
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "optionsLabel": "Heroic Traits",
+                  "collapsible": true,
+                  "type": "group",
+                  "minSize": 1,
+                  "maxSize": 2,
+                  "options": [],
+                  "optionsDict": ["heroicTraits"],
+                  "option_id": "gid9y73lt2m99dm7r3pka"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "4bidjc2scvjd348bdlp71",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Heraldic Steed",
+                      "cost": 50,
+                      "options": [],
+                      "refopt": "heraldic_steed_mount",
+                      "option_id": "432f43f43g453y3sdfg"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Destrier",
+                      "cost": 60,
+                      "options": [],
+                      "refopt": "destrier_mount",
+                      "option_id": "fl67z2n7ctsllgc3pbnvq"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Fey Steed",
+                      "cost": 70,
+                      "options": [],
+                      "refopt": "fey_steed_mount",
+                      "hasOption": ["sainted"],
+                      "option_id": "7okf7u8851hhwtmx3dhk7j"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Pegasus Charger",
+                      "cost": 35,
+                      "options": [],
+                      "refopt": "pegasus_charger_mount",
+                      "hasOption": ["sainted"],
+                      "option_id": "9ugabq1gwxtix732gigcj"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Revered Unicorn",
+                      "cost": 60,
+                      "options": [],
+                      "refopt": "revered_unicorn_mount",
+                      "hasOption": ["sainted"],
+                      "option_id": "gtklk2dal5hped460ktgo9"
+                    }
+                  ],
+                  "option_id": "k0litpsgnbnkzp70roq6ho",
+                  "minSize": 1
+                },
+                {
+                  "optionsLabel": "Options",
+                  "collapsible": true,
+                  "type": "group",
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Attached",
+                      "cost": 0,
+                      "option_id": "34t34g43,g304kg034jg0439ug34"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Sainted",
+                      "cost": 70,
+                      "refs": ["sainted", "army_unique"],
+                      "hasNotOption": ["army_bsb"],
+                      "option_id": "6f2wea0c4jn54bkomvem2",
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["sainted"],
+                          "amount": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "gfrdg453y453h534h534h534"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 100,
+                  "collapsible": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["sainted"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 150
+                      }
+                    }
+                  ],
+                  "options": [
+                    {
+                      "optionsLabel": "Banner Enchant",
+                      "options": [],
+                      "optionsDict": ["bannerEnchant", "koeBannerEnchant"],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "option_id": "4345vgrvfdgfdfsdfwe32r32f32",
+                      "childrenOptions": {
+                        "hasOption": [
+                          {
+                            "refs": ["army_bsb"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "tbvoqyblm1p91033bpjt4",
+                      "optionsLabel": "Armour Enchant",
+                      "optionsDict": ["armourEnchant"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": []
+                    },
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 10,
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "v8mbgipunsog277t1aqe"
+                    },
+                    {
+                      "collapsible": true,
+                      "optionsLabel": "Weapons",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Spear",
+                          "cost": 0,
+                          "maxSize": 1,
+                          "optionsLabel": "Spear Enchant",
+                          "optionsSuffix": " (Spear)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "hxadps9wawvi3j6nhg232p"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 0,
+                          "maxSize": 1,
+                          "optionsSuffix": " (Halberd)",
+                          "optionsLabel": "Halberd Enchant",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "halberdEnchant"],
+                          "option_id": "f7xy997tdrph62pbuv9qc"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Light Lance",
+                          "cost": 0,
+                          "maxSize": 1,
+                          "hasOption": ["mount"],
+                          "optionsSuffix": " (Light Lance)",
+                          "optionsLabel": "Lance Enchant",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "lightLanceEnchant"],
+                          "option_id": "efsxd0b7e0wj1jbqgk64d"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Longbow (3+) with Shots 3",
+                          "cost": 5,
+                          "refs": ["longbow_hero"],
+                          "ignoreCost": true,
+                          "armyHasNotOption": [
+                            {
+                              "refs": ["longbow_hero"],
+                              "amount": 1
+                            }
+                          ],
+                          "option_id": "0s45vj0u3rhn5af8oesgrom"
+                        }
+                      ],
+                      "option_id": "l3g41mag00ok4q1592yqre"
+                    },
+                    {
+                      "optionsLabel": "Castellan Weapons",
+                      "maxSize": 1,
+                      "option_id": "nf328fn23fn83928nf932f32f32",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "optionsSuffix": " (Paired Weapons)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "20fc97t33d5ceug4uutrx",
+                          "hasOption": ["castellan"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Great Weapon Enchant",
+                          "optionsSuffix": " (Great Weapon)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
+                          "option_id": "ejlqekvwwmlvsoh1k5x8b",
+                          "hasOption": ["castellan"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Bastard Sword",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Bastard Sword Enchant",
+                          "optionsSuffix": " (Bastard Sword)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                          "option_id": "fdsfds32f4gfdgfdakjlk5534",
+                          "hasOption": ["castellan"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Lance",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Lance Enchant",
+                          "optionsSuffix": " (Lance)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "lanceEnchant"],
+                          "option_id": "2eedgjkhfdvfewg34g34jh34",
+                          "hasOption": [
+                            {
+                              "refs": ["mount"],
+                              "amount": 1
+                            },
+                            {
+                              "refs": ["castellan"],
+                              "amount": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "q0oq3nadvffkrmf172gmrc"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "2uewjt8na9y8ifigqizufn"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "1m1sv2nmg2sj5a6vngsm0i",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "option_id": "bqlbl3ftpqulnuzbv6cm7c"
+                }
+              ],
+              "unit_id": "folk_hero",
+              "option_id": "lqpu4efrl3bxu272guqej",
+              "refs": ["folk_hero", "tag_Human", "tag_Metal Armour"],
+              "logo": "character",
+              "armyHasNotOption": [
+                {
+                  "refs": ["folk_hero"],
+                  "amount": 3
+                }
+              ]
+            }
+          ],
+          "option_id": "ct4ce9tux8ejdxj8jvarv"
+        },
+        {
+          "name": "Core Units",
+          "minPercent": 0.25,
+          "refs": ["core"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Knights of the Realm",
+              "cost": 90,
+              "category": "core",
+              "options": [
+                {
+                  "minSize": 6,
+                  "maxSize": 12,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 30,
+                      "hide": true,
+                      "option_id": "xtfwdnn5xhoif0c9z3ksn",
+                      "refs": ["knights_of_the_realm_amount"],
+                      "optionsLabel": "Options",
+                      "options": [
+                        {
+                          "option_id": "fsd3942tg934rjb95hj032fg342d123",
+                          "type": "check",
+                          "name": "Solemn Oath",
+                          "cost": 3,
+                          "refs": ["solemn_oath"],
+                          "armyHasNotOption": [
+                            {
+                              "refs": ["solemn_oath"],
+                              "amount": 12
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "stmigqwf7v6zr3sfaj2pe"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Knight Banneret",
+                      "cost": 30,
+                      "option_id": "f32342f342f324534254234543",
+                      "hasOption": [
+                        {
+                          "refs": ["knights_of_the_realm_amount"],
+                          "amount": 8
+                        }
+                      ],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["koeBannerEnchant"],
+                      "refs": ["knight_banneret"],
+                      "armyHasNotOptions": [
+                        {
+                          "refs": ["knight_banneret"],
+                          "amount": 3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "3nminm52xz3dfhksibrkfr"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant", "koeBannerEnchant"],
+                      "option_id": "lzzkubb99makgfq4v3s8n"
+                    }
+                  ],
+                  "option_id": "h5on45dti4gcta4zalwnx"
+                }
+              ],
+              "refs": ["knightsOfTheRealm", "core_unit", "tag_Human", "tag_Metal Armour"],
+              "unit_id": "knights_of_the_realm",
+              "armyHasNotOption": [
+                {
+                  "refs": ["knightsOfTheRealm"],
+                  "amount": 4
+                }
+              ],
+              "option_id": "h5ggzyh2yrq0n9wxlakpw5k",
+              "logo": "core"
+            },
+            {
+              "name": "Lowborn Archers",
+              "cost": 47,
+              "category": "core",
+              "options": [
+                {
+                  "minSize": 12,
+                  "maxSize": 30,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 9,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Weapons",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Crossbow (4+)",
+                              "cost": 1,
+                              "refs": [],
+                              "option_id": "9fymhm1yn6frad61etdkk"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Longbow (4+)",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "pkdeb147ivi2jifjgx34pf"
+                            }
+                          ],
+                          "maxSize": 1,
+                          "option_id": "e3e9vlz506qxk0yik503e"
+                        }
+                      ],
+                      "option_id": "ejnsadxop5p07nm0ju0k1vs",
+                      "refs": ["lowborn_archers_amount"]
+                    }
+                  ],
+                  "option_id": "6ofeaoqcgd7h3xyhkq8vlm"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Prepared Position",
+                      "cost": 15,
+                      "refs": ["prepared_position"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["prepared_position"],
+                          "amount": 3
+                        }
+                      ],
+                      "option_id": "yedw4efi55oojc24wjg6os"
+                    }
+                  ],
+                  "option_id": "ob9mm181lwbwt9vkjo7z4t"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "fh7kl7o54i537tcfp6t2w"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "refs": [],
+                      "option_id": "vipbrehio9nypg9lkabkd"
+                    }
+                  ],
+                  "option_id": "zt8i8p6tbalrh1zew6pya"
+                }
+              ],
+              "refs": ["lowbornArchers", "siegeOrLowBorn", "core_unit", "tag_Human"],
+              "unit_id": "lowborn_archers",
+              "armyHasNotOption": [
+                {
+                  "refs": ["lowbornArchers"],
+                  "amount": 3
+                },
+                {
+                  "refs": ["siegeOrLowBorn"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "jey2rx78j6bxf4ofwwuvnh",
+              "logo": "core"
+            },
+            {
+              "name": "Lowborn Levies",
+              "cost": -20,
+              "category": "core",
+              "options": [
+                {
+                  "minSize": 30,
+                  "maxSize": 50,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 8,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Weapons",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Paired Weapons",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "fewm9342v34wvsdaws4"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 2,
+                              "refs": [],
+                              "option_id": "zxlixq8smyo3bfh5f9pm"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Halberd and Shield",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "us5m9i76wxhf87e6pv6cr"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Spear and Shield",
+                              "cost": 1,
+                              "refs": [],
+                              "option_id": "cgmqb6d74btzr6sklpsvc"
+                            }
+                          ],
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "option_id": "xl7ylizr3q6b280b44rh"
+                        }
+                      ],
+                      "option_id": "kn7wkud5fzk9sooe2661r9",
+                      "refs": ["lowborn_levies_amount"]
+                    }
+                  ],
+                  "option_id": "xunuakdlgllpj0xwvmcg"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "xjunm19jirfy6rv6uu6ef"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "refs": [],
+                      "option_id": "t1ih4bijv5ptd943qm2i3"
+                    }
+                  ],
+                  "option_id": "fncl0rx4da52wj0p2jcoky"
+                }
+              ],
+              "refs": ["lowbornLevies", "core_unit", "tag_Human", "tag_Light Armour"],
+              "unit_id": "lowborn_levies",
+              "option_id": "wazldt6giqlnf41mne9dnp",
+              "logo": "core"
+            },
+            {
+              "name": "Mounted Serjeants",
+              "cost": 80,
+              "category": "core",
+              "options": [
+                {
+                  "minSize": 8,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Weapons",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Light Lance and Shield",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "pec7dcotyikq3eco16k2zg"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Great Weapon",
+                              "cost": 1,
+                              "refs": [],
+                              "option_id": "a2z9mw7zjmhp744td5yiti"
+                            }
+                          ],
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "option_id": "dvfcahjjqnqkefdhq95gjl"
+                        }
+                      ],
+                      "option_id": "1b54y83amxq8xobv5jtdar",
+                      "refs": ["ordo_sergeants_amount"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["ordo_sergeants_amount"],
+                          "amount": 30
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "cvbhi0gjagoeex3g2eyup4"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "vb573a1at4869bgkpl4yaa"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "refs": [],
+                      "option_id": "ze4p8ng0oyqmckq9hb139",
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant", "koeBannerEnchant"]
+                    }
+                  ],
+                  "option_id": "yxx5qysya5ay8bqvbuf6ec"
+                }
+              ],
+              "refs": ["mountedSerjeants", "core_unit", "tag_Human", "tag_Metal Armour", "tag_Holy Vows"],
+              "unit_id": "mounted_serjeants",
+              "option_id": "i2q3b1ut2oemgxz0nht7k",
+              "logo": "core"
+            },
+            {
+              "name": "Hedge Knights",
+              "cost": 100,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 6,
+                  "maxSize": 9,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 25,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "vdqnm77n6ml9ozoleedl",
+                      "refs": ["hedge_knights_numbers"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["hedge_knights_numbers"],
+                          "amount": 15
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "lt2vlkht96mg7epcgpiu9"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Knight Banneret",
+                      "cost": 15,
+                      "option_id": "8834973fn32f3029rgfdg934g34",
+                      "hasOption": [
+                        {
+                          "refs": ["hedge_knights_numbers"],
+                          "amount": 8
+                        }
+                      ],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["koeBannerEnchant"],
+                      "refs": ["knight_banneret"],
+                      "armyHasNotOptions": [
+                        {
+                          "refs": ["knight_banneret"],
+                          "amount": 3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "xn4u4iv0bom9bme7cv5s0e"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "3yz8gkeiordlasqgh1o4w",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant", "koeBannerEnchant"]
+                    }
+                  ],
+                  "option_id": "c083th70wsbwwkaqt4vgd"
+                }
+              ],
+              "refs": ["hedgeKnights", "core_unit", "tag_Human", "tag_Metal Armour"],
+              "extraCategories": ["gallantry"],
+              "unit_id": "hedge_knights",
+              "option_id": "m4krikjxl65h2pgt9d0tq",
+              "logo": "core"
+            }
+          ],
+          "option_id": "qsuyoi7hrqxub7bvayron"
+        },
+        {
+          "name": "Special",
+          "refs": ["special"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Enlisted Outlaws",
+              "cost": 90,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 6,
+                      "hide": true,
+                      "option_id": "vrygfgxps5hfblzrz9s01f",
+                      "optionsLabel": "Options",
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Throwing Weapons (5+)",
+                          "cost": 0,
+                          "refs": [],
+                          "option_id": "32gn4334255mgm0g34k-g34g"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Hooded Men",
+                          "cost": 0,
+                          "refs": ["hooded_men"],
+                          "option_id": "felgmd1p8h67x5vboxawbu",
+                          "optionsLabel": "Ranged Weapons",
+                          "minSize": 1,
+                          "maxSize": 1,
+                          "loses_rules": ["rulebook-throwing_weapons"],
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Longbow (3+)",
+                              "cost": 1,
+                              "refs": [],
+                              "option_id": "342grehbfdfsdkhgkfggwe43g34"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Crossbow (4+)",
+                              "cost": 3,
+                              "refs": ["hodded_crossbow"],
+                              "option_id": "j56j54htrhewgfdfqjykjwf32"
+                            }
+                          ]
+                        }
+                      ],
+                      "refs": ["enlisted_outlaws_amount"]
+                    }
+                  ],
+                  "option_id": "c991ttabuagu89h1fz0ymi"
+                },
+                {
+                  "option_id": "f2309fj23fsdfdsf09ewc32fc3",
+                  "type": "check",
+                  "invisible": true,
+                  "hide": true,
+                  "refs": ["siegeOrLowBorn"],
+                  "hasOption": ["hooded_men"],
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["hooded_men"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "minAmount": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "check",
+                  "name": "Prepared Position",
+                  "cost": 20,
+                  "refs": [],
+                  "option_id": "g34g34fdhlku34wf32y54h43hb534"
+                }
+              ],
+              "refs": ["enlistedOutlaws", "tag_Human", "tag_Siege"],
+              "unit_id": "enlisted_outlaws",
+              "armyHasNotOption": [
+                {
+                  "refs": ["enlistedOutlaws"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "m9gfosyqh9dyx77w2ploai",
+              "logo": "special"
+            },
+            {
+              "name": "Knights of the Quest",
+              "cost": -70,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 6,
+                  "maxSize": 8,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 70,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "zfxk2yscgjl5p14dqa0zyx",
+                      "refs": ["knights_of_the_quest_amount"]
+                    }
+                  ],
+                  "option_id": "bvugxqsijp6qgnsx51te8"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Knight Banneret",
+                      "cost": 30,
+                      "option_id": "nfjnnnf329if032f3245",
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["koeBannerEnchant"],
+                      "refs": ["knight_banneret"],
+                      "armyHasNotOptions": [
+                        {
+                          "refs": ["knight_banneret"],
+                          "amount": 3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "a225mzhkzy4cszzwaa8ehq"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant", "koeBannerEnchant"],
+                      "option_id": "himkvpiiiil6fi67dqk8dk"
+                    }
+                  ],
+                  "option_id": "qksxo2vnuv1e1io5o0qfr"
+                }
+              ],
+              "refs": ["knightsOfTheQuest", "tag_Human", "tag_Metal Armour"],
+              "unit_id": "knights_of_the_quest",
+              "armyHasNotOption": [
+                {
+                  "refs": ["knightsOfTheQuest"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "yz5ma806chm3mz0btkx3io",
+              "logo": "special"
+            },
+            {
+              "name": "Knights Penitent",
+              "cost": 35,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 7,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 65,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "mtziyt5g5rne493ddnv4r6",
+                      "refs": ["knights_penitent_amount"]
+                    }
+                  ],
+                  "option_id": "efpgvsyeyhlzuhv8vkf11a"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "aqq6y4tx259pc6snwenpm"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "je8rqbseshdl4b8e8re1u",
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant", "koeBannerEnchant"]
+                    }
+                  ],
+                  "option_id": "4ls0aw27wn1ffd8f0h2lg"
+                }
+              ],
+              "refs": ["knightsPenitent", "tag_Human", "tag_Metal Armour"],
+              "unit_id": "knights_penitent",
+              "armyHasNotOption": [
+                {
+                  "refs": ["knightsPenitent"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "im39ggmg6hxdbh9773gz8",
+              "logo": "special"
+            },
+            {
+              "name": "Knights of the Court",
+              "cost": 45,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 6,
+                  "maxSize": 9,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 45,
+                      "hide": true,
+                      "option_id": "pn110bvah3g03zvyndscy08",
+                      "refs": ["knights_of_the_court_amount"]
+                    }
+                  ],
+                  "option_id": "fbfmdocd4q66nq7ou6jkhn"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Knight Banneret",
+                      "cost": 30,
+                      "option_id": "342f34243h54324432gb43g34",
+                      "hasOption": [
+                        {
+                          "refs": ["knights_of_the_court_amount"],
+                          "amount": 8
+                        }
+                      ],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["koeBannerEnchant"],
+                      "refs": ["knight_banneret"],
+                      "armyHasNotOptions": [
+                        {
+                          "refs": ["knight_banneret"],
+                          "amount": 3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "xbk7n41l04jbpzp2sxvgo"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant", "koeBannerEnchant"],
+                      "option_id": "po128tmz1ob467xeop1q87"
+                    }
+                  ],
+                  "option_id": "p1imdki6hp94a93errvjol"
+                }
+              ],
+              "refs": ["knightsOfTheCourt", "tag_Human", "tag_Metal Armour"],
+              "unit_id": "knights_of_the_court",
+              "armyHasNotOption": [
+                {
+                  "refs": ["knightsOfTheCourt"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "uipv4ooozq4fdvekski1w",
+              "logo": "special"
+            },
+            {
+              "name": "Men-at-Arms",
+              "cost": -65,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 30,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 15,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Knights Forlorn",
+                              "cost": 2,
+                              "refs": ["ma_folorn_knights"],
+                              "option_id": "zgfxkeo0ajsb2h0we2ty"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Ordo Wardens",
+                              "cost": 2,
+                              "refs": ["ma_ordo_wardens"],
+                              "option_id": "8neisl7ti572piuj7vkc9u"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Castle Guard",
+                              "cost": 0,
+                              "option_id": "fdsfgdsgdsgdsf32r32"
+                            }
+                          ],
+                          "option_id": "2g22vrdsh6j5p9xl2b55v"
+                        }
+                      ],
+                      "option_id": "dggizws8f0nlrj5anar24",
+                      "refs": ["men-at-arms_amount"]
+                    }
+                  ],
+                  "option_id": "adzal1oq4y5v2f1g28f27"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Knight Banneret",
+                      "cost": 30,
+                      "option_id": "f23f32f323219e239c32",
+                      "hasOption": [
+                        {
+                          "refs": ["men-at-arms_amount"],
+                          "amount": 20
+                        },
+                        {
+                          "refs": ["ma_folorn_knights"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["koeBannerEnchant"],
+                      "refs": ["knight_banneret"],
+                      "armyHasNotOptions": [
+                        {
+                          "refs": ["knight_banneret"],
+                          "amount": 3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "uxq1vi23uwmpagf8y7ikp"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant", "koeBannerEnchant"],
+                      "option_id": "xz9tefw10hdoikyovbjcf"
+                    }
+                  ],
+                  "option_id": "ka1uhhqbjum37jn7ogqjm"
+                }
+              ],
+              "refs": ["men-at-arms", "tag_Human", "tag_Metal Armour"],
+              "unit_id": "men-at-arms",
+              "armyHasNotOption": [
+                {
+                  "refs": ["men-at-arms"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "47uopjwhxv4ymu54o5clrs",
+              "logo": "special"
+            },
+            {
+              "name": "Pegasus Knights",
+              "cost": 90,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 5,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 70,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "980kuqnsl3rm7jypktwd3q",
+                      "refs": ["pegasus_knights_amount"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["pegasus_knights_amount"],
+                          "amount": 12
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "u452atm86hf82y2uapr197"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Knight Banneret",
+                      "cost": 30,
+                      "option_id": "fg32g2g325634g3g34g43",
+                      "hasOption": [
+                        {
+                          "refs": ["pegasus_knights_amount"],
+                          "amount": 4
+                        }
+                      ],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["koeBannerEnchant"],
+                      "refs": ["knight_banneret"],
+                      "armyHasNotOptions": [
+                        {
+                          "refs": ["knight_banneret"],
+                          "amount": 3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "emc4mhqte06wb2y3mkaaa"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant", "koeBannerEnchant"],
+                      "option_id": "g5vv59cm5zjyphlaexovn"
+                    }
+                  ],
+                  "option_id": "h5nfyv0ln6tu9pxj7uysh"
+                }
+              ],
+              "refs": ["pegasusKnights", "tag_Human", "tag_Metal Armour"],
+              "extraCategories": ["gallantry"],
+              "unit_id": "pegasus_knights",
+              "option_id": "3jpyefs2nz85i3r1riox9u",
+              "logo": "special"
+            },
+            {
+              "name": "Sacred Reliquary",
+              "cost": 170,
+              "category": "special",
+              "options": [],
+              "refs": ["sacredReliquary", "not_a_leader", "tag_Human", "tag_Metal Armour", "tag_Holy Vows"],
+              "unit_id": "sacred_reliquary",
+              "armyHasNotOption": [
+                {
+                  "refs": ["sacredReliquary"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "v6y7pvi98qomurf5tecjnf",
+              "logo": "special"
+            },
+            {
+              "name": "Siege Weapon",
+              "cost": 115,
+              "category": "special",
+              "options": [
+                {
+                  "optionsLabel": "Type",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Trebuchet (4+) and change its Height to 3",
+                      "cost": 90,
+                      "refs": [],
+                      "option_id": "qk22v7lpcny5uusxvwkj"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Scorpion (4+)",
+                      "cost": 0,
+                      "refs": [],
+                      "option_id": "okr55u81g8rnkrdfhj69"
+                    }
+                  ],
+                  "option_id": "9kcg3w210mu4n5u6msrukd"
+                }
+              ],
+              "refs": ["siegeWarMachine", "siegeOrLowBorn", "tag_Human", "tag_Construct", "tag_Siege"],
+              "unit_id": "siege_war_machine",
+              "option_id": "s1vhwn5eadnbuzush217ml",
+              "logo": "special",
+              "armyHasNotOption": [
+                {
+                  "refs": ["siegeWarMachine"],
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "name": "Sky Heralds",
+              "cost": 105,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 35,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Weapons",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Light Lance",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "o8aou81vdnipdnejr1ji"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Paired Weapons",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "dybfc22mz8q7ggemmftf6e"
+                            }
+                          ],
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "option_id": "wvlstrvl2vmqzuicwfdom"
+                        }
+                      ],
+                      "option_id": "z46m0c1emgnirxrvdh86ad",
+                      "refs": ["sky_heralds_amount"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["sky_heralds_amount"],
+                          "amount": 10
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "8fk1enx8es3c82vh7i1ibt"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "lvdbzxu2stmlspw27gv4n"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "8t1b0x21m3362b3g5szpwk"
+                    }
+                  ],
+                  "option_id": "z2en16cxy2n7aaae1sce95"
+                }
+              ],
+              "refs": ["skyHeralds", "tag_Human", "tag_Light Armour"],
+              "unit_id": "sky_heralds",
+              "option_id": "569vcdgatr5f756hh6r08",
+              "logo": "special",
+              "extraCategories": ["gallantry"]
+            },
+            {
+              "name": "Yeoman Outriders",
+              "cost": 110,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 8,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Shield",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 1,
+                              "refs": [],
+                              "option_id": "mdzk4jpbp08ta6k1crodnn"
+                            }
+                          ],
+                          "maxSize": 1,
+                          "option_id": "nrg4xzj5kyrhav7ziu38n"
+                        },
+                        {
+                          "optionsLabel": "Weapons",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Bow (4+)",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "vznwvvwvg4t4o7szv6e0s"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Throwing Weapons (5+)",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "73axeouf6dqr4jvr1q7d"
+                            }
+                          ],
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "option_id": "8f7r3ycwlfxjkr81d2l7qb"
+                        }
+                      ],
+                      "option_id": "x03z999d4f9sqrtvawy0ik",
+                      "refs": ["yeoman_outriders_amount"]
+                    }
+                  ],
+                  "option_id": "jp5chgphqyenrtntdsgd1"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "a8aj9251ipwpeqj0e85ai"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "cbpepm2lfijaq1vfui27zm"
+                    }
+                  ],
+                  "option_id": "mu729ho0nlbwjbglmqhxw"
+                }
+              ],
+              "refs": ["yeomanOutriders", "tag_Human", "tag_Light Armour"],
+              "unit_id": "yeoman_outriders",
+              "armyHasNotOption": [
+                {
+                  "refs": ["yeomanOutriders"],
+                  "amount": 4
+                }
+              ],
+              "option_id": "09acsib22bff21pul0zfwvq",
+              "logo": "special"
+            },
+            {
+              "name": "Feudal Giant",
+              "cost": 295,
+              "category": "special",
+              "options": [
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Big Brother",
+                      "cost": 25,
+                      "refs": [],
+                      "option_id": "pntg8stgrlqu4luibsq9q"
+                    }
+                  ],
+                  "option_id": "rm8y2kxmel6pun8tmiisr"
+                },
+                {
+                  "optionsLabel": "Weapons",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Giant Club",
+                      "cost": 5,
+                      "refs": [],
+                      "option_id": "tqdgiyloc35zy7ahcu3rn"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Relic Bearer",
+                      "cost": 0,
+                      "refs": [],
+                      "option_id": "in4sb8dp24ohj1cyxn0c1v"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Knighted Giant",
+                      "cost": 25,
+                      "refs": ["army_unique", "knighted_giant"],
+                      "option_id": "pxocmqjwxtqkc2bjmp4wxq",
+                      "armyHasNotOption": ["knighted_giant"]
+                    }
+                  ],
+                  "maxSize": 1,
+                  "option_id": "o01zxvl9odivbgrluuuto"
+                }
+              ],
+              "refs": ["feudalGiant"],
+              "unit_id": "feudal_giant",
+              "option_id": "fzjrkuzvb2kgi6ulnnpds",
+              "logo": "special"
+            }
+          ],
+          "option_id": "g186sh9lr5490bgz777p5d"
+        },
+        {
+          "name": "Fey",
+          "maxPercent": 0.2,
+          "refs": ["fey"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Fey Knight",
+              "cost": 315,
+              "category": "fey",
+              "options": [
+                {
+                  "optionsLabel": "Options",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion of the Green Knight",
+                      "cost": 0,
+                      "refs": ["army_unique", "green_k_champ"],
+                      "option_id": "14ho4xyalritcsu5tia4yk",
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["green_k_champ"],
+                          "amount": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Chosen of the Snow Childe",
+                      "cost": 0,
+                      "refs": ["army_unique", "snow_chosen"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["snow_chosen"],
+                          "amount": 1
+                        }
+                      ],
+                      "option_id": "2brf6y29tmhtv1c60ddcnds"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Warden of the Hooded Man",
+                      "cost": 0,
+                      "refs": ["army_unique", "warden_hooded"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["warden_hooded"],
+                          "amount": 1
+                        }
+                      ],
+                      "option_id": "35rfwdfsdfdsfds"
+                    }
+                  ],
+                  "option_id": "qcb95d363qaozloai1vc"
+                }
+              ],
+              "refs": ["feyKnight", "fey_steed_or_knight", "tag_Fey", "tag_Metal Armour"],
+              "unit_id": "fey_knight",
+              "option_id": "kox868zrz8nynkooy7r33",
+              "logo": "fey"
+            },
+            {
+              "name": "Friar's Lanterns",
+              "cost": 110,
+              "category": "fey",
+              "options": [
+                {
+                  "minSize": 2,
+                  "maxSize": 4,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 40,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "g43g34gsdgsfg3g34g34g4jdd3",
+                      "refs": ["friar's_lanterns_amount"]
+                    }
+                  ],
+                  "option_id": "8ez78esfrl0ka9ds3kijxnnk"
+                }
+              ],
+              "refs": ["friar'sLantern", "tag_Fey"],
+              "unit_id": "friars_lantern",
+              "armyHasNotOption": [
+                {
+                  "refs": ["friar'sLantern"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "wvva6b231auu0kq7gmq2p",
+              "logo": "fey"
+            },
+            {
+              "name": "Naiads",
+              "cost": 45,
+              "category": "fey",
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "nesz2l1qxzeucw606ylu9",
+                      "refs": ["naiads_amount"]
+                    }
+                  ],
+                  "option_id": "8ez78esfrl0ka93kijxnnk"
+                },
+                {
+                  "optionsLabel": "Magic",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Wizard Conclave (2)",
+                      "cost": 100,
+                      "refs": [],
+                      "option_id": "4b35t4wmn0x0mgaeuicesz",
+                      "magic": {
+                        "amount": 2,
+                        "spells": [
+                          {
+                            "path": "witchcraft",
+                            "ref": "illusory_paths"
+                          },
+                          {
+                            "path": "druidism",
+                            "ref": "fountain_of_youth"
+                          },
+                          {
+                            "path": "shamanism",
+                            "ref": "swarm_insects"
+                          },
+                          {
+                            "path": "divination",
+                            "ref": "chance_of_redemption"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "option_id": "e1hxbc5ufbtxfqutiqulr8"
+                }
+              ],
+              "refs": ["naiads", "tag_Fey"],
+              "unit_id": "naiads",
+              "armyHasNotOption": [
+                {
+                  "refs": ["naiads"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "yliskgtzeck0aar39pmygqu",
+              "logo": "fey"
+            },
+            {
+              "name": "The Lady's Courtier",
+              "cost": 410,
+              "category": "fey",
+              "extraCategories": ["gallantry"],
+              "options": [
+                {
+                  "optionsLabel": "Options",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Courtier of the Dawn",
+                      "cost": 0,
+                      "refs": ["courtier_of_the_dawn"],
+                      "option_id": "jzvs6kxqk7fw4r7rcilbj8"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Courtier of the Dusk",
+                      "cost": 15,
+                      "refs": ["wizard", "wizardAdept"],
+                      "option_id": "c0ujr8xvwg54vzruxk8h",
+                      "replaceSpells": true,
+                      "magic": {
+                        "amount": 2,
+                        "spells": [
+                          {
+                            "path": "druidism",
+                            "ref": "fountain_of_youth"
+                          },
+                          {
+                            "path": "druidism",
+                            "ref": "stone_skin"
+                          },
+                          {
+                            "path": "witchcraft",
+                            "ref": "evil_eye"
+                          },
+                          {
+                            "path": "witchcraft",
+                            "ref": "soured_luck"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "option_id": "2r347fcrvbu2iqwwrn12q"
+                }
+              ],
+              "refs": ["theLadysCourtier", "army_unique", "tag_Fey", "tag_Beast"],
+              "unit_id": "the_ladys_courtier",
+              "armyHasNotOption": [
+                {
+                  "refs": ["theLadysCourtier"],
+                  "amount": 1
+                }
+              ],
+              "option_id": "j9wp7yhieravhrenlw0su",
+              "logo": "fey"
+            }
+          ],
+          "option_id": "qzoh1sumhxcw2xok749nz"
+        },
+        {
+          "name": "Gallantry",
+          "option_id": "fe8fn23i0fn230fd23mdf32f2",
+          "options": [],
+          "refs": ["gallantry"],
+          "maxPerPoints": {
+            "value": 1,
+            "perPoints": 650
+          }
+        },
+        {
+          "name": "Mounts",
+          "invisible": true,
+          "refs": ["mounts"],
+          "options": [
+            {
+              "name": "Destrier *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["destrier_mount_unit", "mount", "tag_Mount"],
+              "unit_id": "destrier_mount",
+              "invisible": true,
+              "option_id": "nzkg3s5krar1ffy9p1gbya",
+              "logo": "character"
+            },
+            {
+              "name": "Heraldic Steed *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["heraldic_steed_mount_unit", "mount", "gallantry", "tag_Mount"],
+              "unit_id": "heraldic_steed_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["heraldic_steed_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "wrsq79jznyntoqzgj99qt",
+              "logo": "character"
+            },
+            {
+              "name": "Revered Unicorn *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["revered_unicorn_mount_unit", "mount", "tag_Mount"],
+              "unit_id": "revered_unicorn_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["revered_unicorn_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "c7bi91aqyt9epod11mpsm7",
+              "logo": "character"
+            },
+            {
+              "name": "Pegasus Charger *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": [
+                "pegasus_charger_mount_unit",
+                "mount",
+                "flyer",
+                {
+                  "ref": "gallantry",
+                  "amount": 1
+                },
+                "tag_Mount"
+              ],
+              "unit_id": "pegasus_charger_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["pegasus_charger_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "0bezqg8xh6ancef9l973iu",
+              "logo": "character"
+            },
+            {
+              "name": "Hippogriff *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": [
+                "hippogriff_mount_unit",
+                "mount",
+                "flyer",
+                {
+                  "ref": "gallantry",
+                  "amount": 2
+                },
+                "tag_Mount"
+              ],
+              "unit_id": "hippogriff_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["hippogriff_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "l5oqc7ahhsji5oikdj7zw",
+              "logo": "character"
+            },
+            {
+              "name": "Fey Steed *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["fey_steed_unit", "mount", "fey_steed_or_knight", "gallantry", "tag_Fey", "tag_Mount"],
+              "unit_id": "fey_steed_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["fey_steed_or_knight"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "7kwcqb3ll94aajkmrqno2k",
+              "logo": "character"
+            }
+          ],
+          "option_id": "ba7fzmypmgzti8m6s6mb9"
+        }
+      ],
+      "option_id": "uo7v004bw1ob97cxh42kjj"
+    }
+  ],
+  "lastUpdated": "2022-12-06T11:30:40.585Z"
+}

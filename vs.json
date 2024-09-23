@@ -1,0 +1,3187 @@
+{
+  "name": "Vermin Swarm",
+  "translation": {
+    "fr": "Marée de Vermines",
+    "cn": "灾祸鼠群"
+  },
+  "short": "vs",
+  "version": "2023 alpha3",
+  "nrversion": 503,
+  "playable": 1,
+  "id": 21,
+  "include": [102],
+  "hereditary": [
+    {
+      "path": "hereditary",
+      "ref": "awakened_swarm"
+    }
+  ],
+  "reference_details": {
+    "army_general": "General",
+    "army_bsb": "Battle Standard",
+    "wizard": "Wizard",
+    "wizardApprentice": "Wizard Apprentice",
+    "wizardAdept": "Wizard Adept",
+    "wizardMaster": "Wizard Master",
+    "mount": "Mount",
+    "weaponEnchantUni": "Weapon Enchant",
+    "dominant": "Dominant",
+    "sizeLarge": "Large Size",
+    "sizeGigantic": "Gigantic Size",
+    "core_unit": "Core Unit",
+    "deepfire_thrower": "Deepfire Thrower",
+    "canister_launcher": "Canister Launcher",
+    "rotary_gun": "Rotary Gun",
+    "jezail": "Jezail",
+    "brute_force": "Brute Force",
+    "fetthisFleshmaster": "Fetthis Fleshmaster"
+  },
+  "indicators": ["jezail", "rotary_gun", "canister_launcher", "deepfire_thrower", "brute_force"],
+  "dictionnary": [
+    {
+      "refs": ["potions_and_scrolls"],
+      "options": [
+        {
+          "name": "Potion of Healing",
+          "cost": 55,
+          "option_id": "683l07koq4msvcttcecqg",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Scroll of Power",
+          "cost": 35,
+          "option_id": "3kd6r6a78460f3m0mou2eo5",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Spell Scroll (Weight of Judgement)",
+          "cost": 35,
+          "option_id": "ux86dw6op217qw3ynvj2r",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "type": "check",
+          "name": "Potion of Rat Form",
+          "cost": 25,
+          "description": "During any friendly Magic Phase, the bearer can choose to lose <span class=\"textbf\">Attached</span> (if they have it) and make a 6\" Magical Move. They must end this move by joining another friendly unit (<i>following the normal rules for joining units</i>).\n",
+          "refs": ["potion_ratform"],
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1"]
+              }
+            }
+          },
+          "armyHasNotOption": [
+            {
+              "refs": ["veil potion_ratform"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "rrr4r3jif3jf8fd9023cwqdw"
+        }
+      ]
+    },
+    {
+      "refs": ["shieldEnchant"],
+      "options": [],
+      "option_id": "iw6vv9q25ubfvoofjnu9t"
+    },
+    {
+      "refs": ["armourEnchant"],
+      "options": [
+        {
+          "name": "Death Cheater",
+          "cost": 100,
+          "option_id": "9liy3kzxa5eagim6s235pu",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "type": "check",
+          "name": "Plague-Hermit's Blessing",
+          "cost": 70,
+          "description": "The number of HP is <span class=\"textbf\">set</span> to 6. Model gains the Cult of Errahman property. The model automatically fails all its Armour Saves rolls.\n",
+          "refs": ["pestilent plate_1dl4iyof", "cult_of_errahman"],
+          "loses_rules": ["vs-caelysian_pantheon"],
+          "armyHasNotOption": [
+            {
+              "refs": ["pestilent plate_1dl4iyof"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": ["mount", "greater_eagle"],
+          "categories": [],
+          "option_id": "234dvg54654fdvfdf32e4r32"
+        }
+      ],
+      "option_id": "yaeh6gzh1gy2obekfbtm"
+    },
+    {
+      "refs": ["bannerEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Sacred Aquila",
+          "cost": 60,
+          "description": "The bearer and Rank-and-File models in the bearer's unit gain <span class=\"textbf\">Fury</span>. Additionally, for each natural to-hit roll of ‘1’ with a Melee Attack made by the bearer's unit, the bearer's unit suffers 1 hit with Str 3 and AP 0 in the same Agility Step.\n",
+          "refs": ["banner of avrasi superiority_782byx0c"],
+          "armyHasNotOption": [
+            {
+              "refs": ["banner of avrasi superiority_782byx0c"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "categories": [],
+          "option_id": "d04rkf32kof230323r34"
+        },
+        {
+          "type": "check",
+          "name": "Bell of the Deep Roads",
+          "cost": 20,
+          "description": "The bearer's unit gains <span class=\"textbf\">Ambush (within 1.5\" of a friendly Tunnel Marker)</span>.\n",
+          "refs": ["banner of mining_60ha69tw"],
+          "armyHasNotOption": [
+            {
+              "refs": ["banner of mining_60ha69tw"],
+              "amount": 2
+            }
+          ],
+          "hasNotOption": [],
+          "categories": [],
+          "option_id": "ht6865734r323124e12321"
+        },
+        {
+          "name": "Banner of Speed",
+          "cost": 45,
+          "option_id": "wbykp2snnk2i3hrt6l6na",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Banner of Discipline",
+          "cost": 20,
+          "option_id": "tlza04edojfpctz7fn4rr",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Distortion Emblem",
+          "cost": 25,
+          "option_id": "wmg8fgc0zhvnsm0crd12",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "3sp2tsm3jssmcr2omvsoo"
+    },
+    {
+      "refs": ["pistolEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Rodentium Bullets",
+          "cost": 20,
+          "description": "The weapon's Range is <span class=\"textbf\">set</span> to 18\". The weapon gains +2 Shots, +1 AP, and <span class=\"textbf\">Accurate</span>.",
+          "refs": ["darkstone shot_xp2dd06", "weaponEnchantUni"],
+          "armyHasNotOption": [
+            {
+              "refs": ["darkstone shot_xp2dd06"],
+              "amount": 2
+            }
+          ],
+          "hasNotOption": [
+            {
+              "refs": ["weaponEnchantUni"],
+              "amount": 1
+            }
+          ],
+          "categories": [],
+          "option_id": "423432mkr32kml41232131"
+        },
+        {
+          "type": "check",
+          "name": "Storm Rocket",
+          "cost": 70,
+          "description": "\n\tAim 3+. Range is <span class=\"textbf\">set</span> to 24\", Str is <span class=\"textbf\">set</span> to 5 and AP is <span class=\"textbf\">set</span> to 2. The weapon gains Flaming Attacks, Maniacal Enthusiasm (To-hit roll). If the weapon hits, it causes D6 hits instead of 1.\n",
+          "refs": ["magnesium fireworks_l5f8rtkm"],
+          "armyHasNotOption": [
+            {
+              "refs": ["magnesium fireworks_l5f8rtkm"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "categories": [],
+          "option_id": "ko34rkfkef04kvewopvck23"
+        }
+      ],
+      "option_id": "vspvfs0tk8xpod5l5qzz"
+    },
+    {
+      "refs": ["pairedWeaponsEnchant"],
+      "options": [],
+      "option_id": "2skcz0vcohvgf0xngbznw9"
+    },
+    {
+      "refs": ["handWeaponEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Secrets of the Doom Blade",
+          "cost": 100,
+          "description": "Strength is <span class=\"textbf\">set</span> to 10, AP is <span class=\"textbf\">set</span> to 10 and gains Divine Attacks,Fury, Frenzy,Multiple Wounds (3, against Aegis)\n",
+          "refs": ["doom blade_ux76y1nv", "weaponEnchantUni"],
+          "armyHasNotOption": [
+            {
+              "refs": ["doom blade_ux76y1nv"],
+              "amount": 1
+            }
+          ],
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1", "2", "3", "4"]
+              }
+            }
+          },
+          "categories": [],
+          "option_id": "4234323409325rm1cb3vd"
+        }
+      ],
+      "option_id": "3em60dflrj9al2mvu2h3q"
+    },
+    {
+      "refs": ["weaponEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Swarm Master",
+          "cost": 20,
+          "description": "While using this weapon, the wielder gains <span class=\"textbf\">Grind Attack (X, Str 3, AP 1)</span>, where X is the number of Proper Ranks in the wielder's unit, up to a maximum of 10.\n",
+          "refs": ["swarm_master_432y1nv", "weaponEnchantUni"],
+          "armyHasNotOption": [
+            {
+              "refs": ["swarm_master_432y1nv"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [
+            {
+              "refs": ["weaponEnchantUni"],
+              "amount": 1
+            },
+            {
+              "refs": ["construct"],
+              "amount": 1
+            }
+          ],
+          "categories": [],
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1"]
+              }
+            }
+          },
+          "option_id": "567hfhb6u6534w324f32"
+        },
+        {
+          "name": "Eldritch Inscriptions",
+          "cost": 30,
+          "option_id": "5r6iujrpi4brxzks7gmzw",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "75675thtrgfedvrkhgdffew"
+    },
+    {
+      "refs": ["artefact"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Tome of the Ratking",
+          "cost": 30,
+          "description": "The bearer's unit gains <span class=\"textbf\">Unstable</span>.\n",
+          "refs": ["tome_of_the_ratking"],
+          "armyHasNotOption": [
+            {
+              "refs": ["tome_of_the_ratking"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "categories": [],
+          "option_id": "lopkvbm065ih67ug5rrhju56ihfdw",
+          "magic": {
+            "spells": [
+              {
+                "path": "divination",
+                "ref": "guiding_light",
+                "mods": {
+                  "mandatory": true,
+                  "free": true
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "check",
+          "name": "Tarina's Lyre",
+          "cost": 10,
+          "description": "<span class=\"textbf\">Stomp Attack</span> made by enemy units within 8\" of the bearer suffer a -2 to-wound modifier.",
+          "refs": ["razor whip_qq7791xs"],
+          "armyHasNotOption": [
+            {
+              "refs": ["razor whip_qq7791xs"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "categories": [],
+          "option_id": "87biofgn349vn34fdsfdsd"
+        },
+        {
+          "type": "check",
+          "name": "Favanite Powder",
+          "cost": 25,
+          "description": "When casting a Hex spell, after seeing the result of the roll, the bearer can choose to gain <span class=\"textbf\">Maniacal Enthusiasm (Casting Roll)</span>.\n",
+          "refs": ["favanite_powder"],
+          "armyHasNotOption": [
+            {
+              "refs": ["favanite_powder"],
+              "amount": 1
+            }
+          ],
+          "categories": [],
+          "option_id": "3e4wfsdfedf32wgfsddc32f32fd32"
+        },
+        {
+          "type": "check",
+          "name": "Crown of Hubris",
+          "cost": 85,
+          "description": "At the start of any friendly Magic Phase, the bearer may choose to inflict 3 HP losses on its unit. If this is used, the model gains <span class=\"textbf\">Channel (2)</span> with Duration: One Turn.\n",
+          "refs": ["dominant", "soulstone_z9gynq02"],
+          "armyHasNotOption": [
+            {
+              "refs": ["soulstone_z9gynq02"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "categories": [],
+          "option_id": "5vvgklk8l7mf1230342jkf32fff"
+        },
+        {
+          "type": "check",
+          "name": "Darkstone Detonator",
+          "cost": 45,
+          "description": "At the end of any friendly Movement Phase after the first, the bearer may remove a single friendly Tunnel Marker within 24\" of it.\n\tIf so, apply the following effects before removing the Tunnel Marker:\n\t\n\t\t<br>&nbsp;&nbsp;&bull;   Each unengaged unit within 4\" of the Tunnel Marker suffers 2D6 hits with Str 4 and AP 1.\n\t\t<br>&nbsp;&nbsp;&bull;   If one or more units that are Engaged in the same Combat are within 4\" of the Tunnel Marker, a total of 2D6 hits with Str 4 and AP 1 is inflicted.\n\t\t\tRoll a D6 for each hit: on a roll of 4+, the hit is distributed onto a randomly chosen friendly unit; otherwise, the hit is distributed onto a randomly chosen enemy unit.\n\t<br>\n\t\n",
+          "refs": ["staff of tectonic shift_tbl6tdo5e"],
+          "armyHasNotOption": [
+            {
+              "refs": ["staff of tectonic shift_tbl6tdo5e"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "categories": [],
+          "option_id": "kkfewv4ewikcicjj3e4rk65hbh56"
+        },
+        {
+          "type": "check",
+          "name": "Cowl of the Apostate",
+          "cost": 30,
+          "description": "If  there are two other models with <span class=\"textbf\">Holy Triumvirate</span> on the army the list, its Path access is replaced with Occultism, Thaumaturgy, Witchcraft.",
+          "refs": ["cowl_apostate"],
+          "armyHasNotOption": [
+            {
+              "refs": ["cowl_apostate"],
+              "amount": 1
+            }
+          ],
+          "hasOption": ["wizard"],
+          "categories": [],
+          "option_id": "553fgewrgi6hfgksdf43fgsdaw"
+        },
+        {
+          "name": "Mask of Mindless Violence",
+          "cost": 30,
+          "option_id": "9238id2y52qa4lg4efikk",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Obsidian Rock",
+          "cost": 20,
+          "option_id": "7vum5ejcpcs8qrtkn84f6u",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "ncp5j1t0hko0d62uz18un76"
+    }
+  ],
+  "army": [
+    {
+      "name": "Army",
+      "optionsLabel": "Categories",
+      "maxCost": 4500,
+      "options": [
+        {
+          "name": "Characters",
+          "refs": ["perso"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "name": "Ruinous Dictator",
+              "cost": 380,
+              "category": "perso",
+              "options": [
+                {
+                  "optionsLabel": "General",
+                  "options": [
+                    {
+                      "type": "group",
+                      "option_id": "53y531sqz8swvmed9747we",
+                      "name": "Leadership",
+                      "optionsLabel": "Leadership",
+                      "options": [
+                        {
+                          "refs": ["army_general"],
+                          "armyHasNotOption": ["army_general"],
+                          "type": "check",
+                          "name": "General",
+                          "cost": 0,
+                          "option_id": "rb32cyzpn34z0h6hce6zo"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "refs": ["ruinous_dictator_amount"]
+                    }
+                  ],
+                  "option_id": "34mfierkwvm0349v329ur312nf32"
+                },
+                {
+                  "optionsLabel": "Mortal Origin",
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Pontifex Maximus",
+                      "cost": 0,
+                      "refs": [],
+                      "option_id": "62qeftjac4eds889ae3qv1j",
+                      "optionsLabel": "Magic Item",
+                      "optionsDict": ["artefact", "potions_and_scrolls"],
+                      "maxSize": 1,
+                      "leafMaxCost": 50
+                    },
+                    {
+                      "type": "check",
+                      "name": "Lord of the Legions",
+                      "cost": 70,
+                      "refs": [],
+                      "option_id": "0u7xzndrztx9xa4fp2bmay"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Supreme Augur",
+                      "cost": 30,
+                      "option_id": "3gxg798mbh3aveta5kkm4t"
+                    }
+                  ],
+                  "collapsible": true,
+                  "option_id": "015gwaryy6minfk0zvsyt1r"
+                },
+                {
+                  "optionsLabel": "Patron Deity",
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "collapsible": true,
+                  "option_id": "5432ndwjkfni32523r32fsdufdsjfuiew",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Girded by Acratos",
+                      "cost": 90,
+                      "refs": [],
+                      "option_id": "n0czfiawxw9ty1ouuw2dz"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Enlightened by Favana",
+                      "cost": 130,
+                      "refs": ["favana"],
+                      "option_id": "dznvq0s55p2pfap4lkpxg"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Fortified by Udius",
+                      "cost": 110,
+                      "refs": [],
+                      "option_id": "vqmawvsy7gplw31nbjiez"
+                    }
+                  ]
+                },
+                {
+                  "optionsLabel": "Magic",
+                  "options": [
+                    {
+                      "optionsLabel": "Level",
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Wizard Apprentice",
+                          "cost": 0,
+                          "refs": ["wizardApprentice"],
+                          "option_id": "g34g34g43t342gfdgdfgfdgdf",
+                          "hasNotOption": ["favana"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Wizard Adept",
+                          "cost": 0,
+                          "refs": ["wizardAdept"],
+                          "option_id": "mwm7mrdj432ewfewwhyl75opo8j4nqc",
+                          "hasOption": ["favana"]
+                        }
+                      ],
+                      "maxSize": 1,
+                      "minSize": 1,
+                      "collapsible": true,
+                      "option_id": "532f34regrfeg54v3443h"
+                    },
+                    {
+                      "optionsLabel": "Path",
+                      "options": [
+                        {
+                          "name": "Occultism",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "543grer54tftfgdsfsd12e41242",
+                          "refs": ["occultism"]
+                        },
+                        {
+                          "name": "Thaumaturgy",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "f32f32fsdxfsdffv342ff4334",
+                          "refs": ["thaumaturgy"],
+                          "hasOption": ["favana"]
+                        },
+                        {
+                          "name": "Thaumaturgy",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "fewfewf3e2r31243ehgerdfewf34",
+                          "refs": ["thaumaturgy"],
+                          "hasNotOption": ["favana"],
+                          "armyHasOption": [
+                            {
+                              "refs": ["cowl_apostate"],
+                              "amount": 1
+                            },
+                            {
+                              "refs": ["holy_triumvirate"],
+                              "amount": 3
+                            },
+                            {
+                              "refs": ["caelysianPantheon"],
+                              "amount": 3
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Witchcraft",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "fsdfdsf32fsdfewv32vsdfds",
+                          "refs": ["witchcraft"],
+                          "hasNotOption": ["favana"],
+                          "armyHasOption": [
+                            {
+                              "refs": ["cowl_apostate"],
+                              "amount": 1
+                            },
+                            {
+                              "refs": ["holy_triumvirate"],
+                              "amount": 3
+                            },
+                            {
+                              "refs": ["caelysianPantheon"],
+                              "amount": 3
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Witchcraft",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "fsdfdsf32fsdfefdfdwv32vsdfds",
+                          "refs": ["witchcraft"],
+                          "hasOption": ["favana"]
+                        }
+                      ],
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "option_id": "45gbfdh567y34fgewgerg34w35"
+                    },
+                    {
+                      "optionsLabel": "Equipment",
+                      "option_id": "d90gj3u3vsdoh943nmvb94j",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "option_id": "yRubxDpHu7t43XkXuW0pQFo6",
+                          "cost": 20
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "option_id": "axDBn6ipONWSy0jM564fKEAA",
+                          "cost": 20
+                        },
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "option_id": "gP6A3LKuMCri8AAa25PMnhT4",
+                          "cost": 20
+                        }
+                      ]
+                    }
+                  ],
+                  "collapsible": true,
+                  "option_id": "y0cwe543gerg43kqa3qrmacxx50ll"
+                }
+              ],
+              "refs": [
+                "non_core_unit",
+                "army_unique",
+                "ruinousDictator",
+                "wizard",
+                "holy_triumvirate",
+                "caelysianPantheon",
+                "tag_Supernal",
+                "tag_Caelysian Pantheon"
+              ],
+              "unit_id": "ruinous_dictator",
+              "armyHasNotOption": [
+                {
+                  "refs": ["ruinousDictator"],
+                  "amount": 1
+                },
+                {
+                  "refs": ["holy_triumvirate"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "ebzmoieimwcfmkhqk5k6w9",
+              "logo": "character",
+              "magic": {},
+              "override": [
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["holy_triumvirate"],
+                      "amount": 3
+                    },
+                    {
+                      "refs": ["caelysianPantheon"],
+                      "amount": 3
+                    }
+                  ],
+                  "options": {
+                    "magic": {
+                      "choices": ["H", "1", "2", "3", "4", "5", "6"]
+                    }
+                  },
+                  "push": {
+                    "refs": ["wizardMasterChoices"]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Vermin Senator",
+              "cost": 120,
+              "category": "perso",
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "kz2hz4knhhpt1xp0hrt17f",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Captain and Attached",
+                      "cost": 0,
+                      "option_id": "vckldsv0439543bj1juewr0vb34jv034v43",
+                      "refs": ["leadership_amount"]
+                    },
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "6ku5qoptl0g1zp4yofl13"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "minSize": 1
+                },
+                {
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "refs": [],
+                      "optionsLabel": "Armour Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["armourEnchant"],
+                      "option_id": "534gesgrh3fwqdgfref324g34",
+                      "childrenOptions": {
+                        "hasNotOption": [
+                          {
+                            "refs": ["doom blade_ux76y1nv"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "cnzj0afd2drxmg514gfv3"
+                    },
+                    {
+                      "optionsLabel": "Pistol Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Pistol)",
+                      "exportGroup": "Pistol",
+                      "parentRule": "pistol",
+                      "options": [],
+                      "optionsDict": ["pistolEnchant"],
+                      "option_id": "5bn78afd2drxmfsdfsd514gfv3"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "kk33u371uxwhax4isy1gc",
+                      "childrenOptions": {
+                        "hasNotOption": [
+                          {
+                            "refs": ["doom blade_ux76y1nv"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "e59x0x5cwatc2e0a3c63k5",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "childrenOptions": {
+                        "hasNotOption": [
+                          {
+                            "refs": ["doom blade_ux76y1nv"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 200,
+                  "option_id": "wcwwxz4r5oujpmbg83djn"
+                },
+                {
+                  "optionsLabel": "Mount",
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "bstslxs1ato3lbuq23ht5h",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Senatorial Litter",
+                      "cost": 55,
+                      "refs": ["mount"],
+                      "refopt": "senatorial_litter_mount",
+                      "option_id": "vsul1iedhtu7g0aw3cv38"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "option_id": "yvwopfg73onxs76c883ld",
+                  "minSize": 1
+                }
+              ],
+              "refs": ["verminSenator", "non_core_unit", "tag_Vermin", "tag_Light Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["verminSenator"],
+                  "amount": 3
+                }
+              ],
+              "unit_id": "vermin_senator",
+              "option_id": "hkp71v03ipwx86imbstv4g",
+              "logo": "character"
+            },
+            {
+              "name": "Bloodfur Legate",
+              "cost": 135,
+              "category": "perso",
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "8w325m00mkmza7gb17jlzn",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "1xnzgvcfq5t9eri4uvta5b"
+                    },
+                    {
+                      "type": "check",
+                      "armyHasNotOption": ["army_bsb"],
+                      "refs": ["army_bsb", "not_a_leader"],
+                      "name": "Battle Standard Bearer",
+                      "cost": 50,
+                      "collapsible": true,
+                      "option_id": "540953mmmf3209f23f20c"
+                    }
+                  ]
+                },
+                {
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "nmlm0blp54sp2mm5qj9dx",
+                      "childrenOptions": {
+                        "hasNotOption": [
+                          {
+                            "refs": ["doom blade_ux76y1nv"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "optionsLabel": "Shield",
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Shield",
+                          "cost": 5,
+                          "refs": [],
+                          "optionsLabel": "Shield Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["shieldEnchant"],
+                          "option_id": "dtbp7mexzypg13aa7oz23a",
+                          "childrenOptions": {
+                            "hasNotOption": [
+                              {
+                                "refs": ["doom blade_ux76y1nv"],
+                                "amount": 1
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "option_id": "kldj8vo98kq3882p17hu8"
+                    },
+                    {
+                      "refs": [],
+                      "optionsLabel": "Armour Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["armourEnchant"],
+                      "option_id": "53fdrggfdhtru564wgfdsgj",
+                      "childrenOptions": {
+                        "hasNotOption": [
+                          {
+                            "refs": ["doom blade_ux76y1nv"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "optionsLabel": "Ranged Weapons",
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Pistol (3+)",
+                          "cost": 5,
+                          "refs": [],
+                          "optionsLabel": "Pistol Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["pistolEnchant"],
+                          "option_id": "vze56i5c850vc1vjnnrgs"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "option_id": "kor2ixddkj9py1nsiwx9u"
+                    },
+                    {
+                      "optionsLabel": "Melee Weapons",
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "optionsSuffix": " (Paired Weapons)",
+                          "option_id": "uqqlj9ucpw7qskkam6a6i"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Spear",
+                          "cost": 5,
+                          "refs": [],
+                          "optionsLabel": "Spear Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "spearEnchant"],
+                          "optionsSuffix": " (Spear)",
+                          "option_id": "dk0xo7b00cn6xlg4cxnrt7"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Halberd Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "halberdEnchant"],
+                          "optionsSuffix": " (Halberd)",
+                          "option_id": "i3ggf0hou7u1gjofntdf9"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "option_id": "x21vy072cyur55zij5t1b"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "yx4oinhfyfz056r6ejenj"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "bc75c6225d6t8a7u0xmvan",
+                      "childrenOptions": {
+                        "hasNotOption": [
+                          {
+                            "refs": ["doom blade_ux76y1nv"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "z270xxumfuipjhd7bhjwh",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "childrenOptions": {
+                        "hasNotOption": [
+                          {
+                            "refs": ["doom blade_ux76y1nv"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 200,
+                  "option_id": "klb7ron5cjrs5mo2jisvs"
+                },
+                {
+                  "optionsLabel": "Mount",
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "zbomzuhjzyo3v4hyhmd29i",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Triumphal Platform",
+                      "cost": 270,
+                      "refs": ["mount"],
+                      "refopt": "triumphal_platform_mount",
+                      "option_id": "ych3phgcc1ev8ul9oy84f"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Praetorian Brute",
+                      "cost": 55,
+                      "refs": ["mount"],
+                      "refopt": "praetorian_brute_mount",
+                      "option_id": "354325rgdfsfgdsgfdgf"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "option_id": "g6zhefmvxgi2nuk0yceuun",
+                  "minSize": 1
+                }
+              ],
+              "refs": ["bloodfurCommander", "non_core_unit", "tag_Vermin", "tag_Metal Armour"],
+              "unit_id": "bloodfur_legate",
+              "option_id": "nzqms2my62njfo1qb7c2k",
+              "logo": "character"
+            },
+            {
+              "name": "House Prefect",
+              "cost": 50,
+              "category": "perso",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["rakachitTechnocrat"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["tunnel_gunners"]
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "p9zg1j7xzk7rmimv0fld3",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 25,
+                      "option_id": "9r6y7e7usfeotdsdcd57mi"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Captain and Attached",
+                      "cost": 0,
+                      "option_id": "vcklv0439543bj1juewr0vb34jv034v43"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "minSize": 1
+                },
+                {
+                  "optionsLabel": "Mount",
+                  "option_id": "fmnidnfidsnfwenfowefweewhew",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "option_id": "fnisfn8234jhf32f934en9venf3f",
+                      "type": "check",
+                      "name": "Praetorian Brute",
+                      "refopt": "praetorian_brute_mount",
+                      "cost": 55,
+                      "hasOption": ["fetthisFleshmaster"]
+                    }
+                  ]
+                },
+                {
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "refs": [],
+                      "optionsLabel": "Armour Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["armourEnchant"],
+                      "option_id": "68fvwq43btrjyk76kfggfdg5342"
+                    },
+                    {
+                      "optionsLabel": "Ranged Weapons",
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Jezail (3+)",
+                          "cost": 10,
+                          "refs": ["jezail"],
+                          "armyHasNotOption": [
+                            {
+                              "refs": ["jezail"],
+                              "amount": 18
+                            }
+                          ],
+                          "option_id": "5oc32o9myfdfgca20ru55k",
+                          "hasOption": ["rakachitTechnocrat"],
+                          "ignoreCost": true
+                        },
+                        {
+                          "type": "check",
+                          "name": "Rotary Gun (3+)",
+                          "cost": 10,
+                          "refs": ["rotary_gun"],
+                          "armyHasNotOption": [
+                            {
+                              "refs": ["rotary_gun"],
+                              "amount": 12
+                            }
+                          ],
+                          "option_id": "5wb37yud3inu53jflo40wl",
+                          "hasOption": ["rakachitTechnocrat"],
+                          "ignoreCost": true
+                        },
+                        {
+                          "type": "check",
+                          "name": "Deepfire Thrower",
+                          "cost": 25,
+                          "refs": ["deepfire_thrower"],
+                          "armyHasNotOption": [
+                            {
+                              "refs": ["deepfire_thrower"],
+                              "amount": 6
+                            }
+                          ],
+                          "option_id": "4dgrjpnw6sx2klm4lktjvu",
+                          "hasOption": ["skorchitAlchemist"],
+                          "ignoreCost": true
+                        },
+                        {
+                          "type": "check",
+                          "name": "Canister Launcher (3+)",
+                          "cost": 45,
+                          "refs": ["canister_launcher"],
+                          "armyHasNotOption": [
+                            {
+                              "refs": ["canister_launcher"],
+                              "amount": 9
+                            }
+                          ],
+                          "option_id": "oyj7k4lkc79c740775elw",
+                          "hasOption": ["skorchitAlchemist"],
+                          "ignoreCost": true
+                        }
+                      ],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "option_id": "9izf0422jqoo01jm5nio0c"
+                    },
+                    {
+                      "optionsLabel": "Pistol Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["pistolEnchant"],
+                      "option_id": "ojy0jjz5kyhdk67ur7ygo"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "a0zkdglp138cyjjjzs7ee"
+                    },
+                    {
+                      "refs": [],
+                      "optionsLabel": "Shield Enchant",
+                      "exportGroup": "Shield",
+                      "optionsSuffix": " (Shield)",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "342r342fsdfsdfdsgfdfsdfsd24"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "vtj1z5kq7bnsn04v13yts"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "1f13hgp5apylelj0tx75m8",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 100,
+                  "option_id": "yscf6udmngy02bzr3083"
+                },
+                {
+                  "optionsLabel": "Type",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Fetthis Fleshmaster",
+                      "cost": 0,
+                      "refs": ["fetthisFleshmaster", "heavy_armour"],
+                      "loses_rules": ["light_armour"],
+                      "option_id": "ef2wbo10yijhztt4usohbv",
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["fetthisFleshmaster"],
+                          "amount": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Stygian Overseer",
+                      "loses_rules": ["light_armour"],
+                      "cost": 40,
+                      "refs": ["stygianOverseer", "heavy_armour"],
+                      "option_id": "ee9fnoekqkuy1g2njp9tjp",
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["stygianOverseer"],
+                          "amount": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Rakachit Technocrat",
+                      "cost": 30,
+                      "refs": ["rakachitTechnocrat"],
+                      "option_id": "c070avh2c4a8dc5soa9zbs",
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["rakachitTechnocrat"],
+                          "amount": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Skorchit Alchemist",
+                      "cost": 30,
+                      "refs": ["skorchitAlchemist"],
+                      "option_id": "v3n1jt60f80cn0ur8g6i9a",
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["skorchitAlchemist"],
+                          "amount": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "option_id": "aaypq30k376yr0mjflv2z"
+                }
+              ],
+              "refs": ["housePrefect", "non_core_unit", "tag_Vermin", "tag_Metal Armour"],
+              "unit_id": "house_prefect",
+              "option_id": "lcp7rw8t35ls8dnarttb",
+              "logo": "character"
+            },
+            {
+              "name": "Swarm Priest",
+              "cost": 100,
+              "category": "perso",
+              "override": [
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["holy_triumvirate"],
+                      "amount": 3
+                    },
+                    {
+                      "refs": ["cult_of_errahman"],
+                      "amount": 3
+                    }
+                  ],
+                  "hasOption": [
+                    {
+                      "refs": ["wizardAdept"],
+                      "amount": 1
+                    },
+                    {
+                      "refs": ["holy_triumvirate"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "magic": {
+                      "choices": ["1", "2", "3", "4", "5", "6"]
+                    }
+                  },
+                  "push": {
+                    "refs": ["wizardMasterChoices"]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["holy_triumvirate"],
+                      "amount": 3
+                    },
+                    {
+                      "refs": ["cult_of_errahman"],
+                      "amount": 3
+                    }
+                  ],
+                  "hasOption": [
+                    {
+                      "refs": ["wizardApprentice"],
+                      "amount": 1
+                    },
+                    {
+                      "refs": ["holy_triumvirate"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "magic": {
+                      "choices": ["1", "2", "3", "4"]
+                    }
+                  },
+                  "push": {
+                    "refs": ["wizardAdeptChoices"]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["holy_triumvirate"],
+                      "amount": 3
+                    },
+                    {
+                      "refs": ["caelysianPantheon"],
+                      "amount": 3
+                    }
+                  ],
+                  "hasOption": [
+                    {
+                      "refs": ["wizardAdept"],
+                      "amount": 1
+                    },
+                    {
+                      "refs": ["holy_triumvirate"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "magic": {
+                      "choices": ["H", "1", "2", "3", "4", "5", "6"]
+                    }
+                  },
+                  "push": {
+                    "refs": ["wizardMasterChoices"]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["holy_triumvirate"],
+                      "amount": 3
+                    },
+                    {
+                      "refs": ["caelysianPantheon"],
+                      "amount": 3
+                    }
+                  ],
+                  "hasOption": [
+                    {
+                      "refs": ["wizardApprentice"],
+                      "amount": 1
+                    },
+                    {
+                      "refs": ["holy_triumvirate"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "magic": {
+                      "choices": ["H", "1", "2", "3", "4"]
+                    }
+                  },
+                  "push": {
+                    "refs": ["wizardAdeptChoices"]
+                  }
+                }
+              ],
+              "magic": {},
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "si4kzau5d5nnxkngduyft",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "fd39oecdbiipqcja3d195"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "optionsLabel": "Armour Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["armourEnchant"],
+                      "option_id": "t7vyxo6mjpb8fy6rlfywz2"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "kqs52f515dhgt0axd47m5v"
+                    },
+                    {
+                      "optionsLabel": "Bloodpox Blades Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Bloodpox Blades)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                      "option_id": "kqs52f515dhgt0axd47m5v",
+                      "childrenOptions": {
+                        "hasOption": [
+                          {
+                            "refs": ["cult_of_errahman"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "vj7jrry12co5kx8ms7mx3c"
+                    },
+                    {
+                      "type": "group",
+                      "option_id": "q1qqyj7yqyg7c0sjmcwgb9",
+                      "name": "Potions and Scrolls",
+                      "optionsLabel": "Potions and Scrolls",
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 100,
+                  "option_id": "u4h4f3jyjbafql4eoge1z4"
+                },
+                {
+                  "optionsLabel": "Cult",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Caelysian Pantheon",
+                      "cost": 0,
+                      "refs": ["caelysianPantheon", "thisCaelysianPantheon"],
+                      "option_id": "1nezp920rj229fd3i7o02o"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Cult of Errahman",
+                      "cost": 5,
+                      "refs": ["cult_of_errahman"],
+                      "option_id": "raxn5ilpxxr2xdoyn5fgr"
+                    }
+                  ],
+                  "collapsible": true,
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "option_id": "22z7cri4h6e9rva0salhb4"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Holy Triumvirate",
+                      "cost": 20,
+                      "refs": ["holy_triumvirate"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["holy_triumvirate"],
+                          "amount": 3
+                        }
+                      ],
+                      "option_id": "70hzxcp22tn77lft5lqhaa",
+                      "magic": {
+                        "spells": [
+                          {
+                            "path": "hereditary",
+                            "ref": "awakened_swarm",
+                            "mods": {
+                              "mandatory": true,
+                              "free": true
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "option_id": "3mrkf4i3ofm3402ifj0233208"
+                },
+                {
+                  "optionsLabel": "Mount",
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "r2ma9thvtjfwctyn9uh0vk",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Sacred Platform",
+                      "cost": 260,
+                      "refs": ["mount"],
+                      "refopt": "sacred_platform_mount",
+                      "option_id": "4i8uoxupres9hbrw0b4ato"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "option_id": "5i8dzpuyy2loej4pwjme1m",
+                  "minSize": 1
+                },
+                {
+                  "optionsLabel": "Magic",
+                  "options": [
+                    {
+                      "optionsLabel": "Level",
+                      "options": [
+                        {
+                          "cost": "0",
+                          "name": "Wizard Apprentice and Attached",
+                          "refs": ["wizardApprentice"],
+                          "type": "check",
+                          "option_id": "dp1y8nmixxl9awrpm7f"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Wizard Adept",
+                          "cost": 150,
+                          "refs": ["wizardAdept"],
+                          "option_id": "mwm7mrdjhyl75opo8j4nqc"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "minSize": 1,
+                      "collapsible": true,
+                      "option_id": "ptxcak74cg9aofuqiut9"
+                    },
+                    {
+                      "optionsLabel": "Path",
+                      "options": [
+                        {
+                          "name": "Thaumaturgy",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "4w6ocoh0t2fbqma7p4p8of",
+                          "refs": ["thaumaturgy"]
+                        },
+                        {
+                          "name": "Occultism",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "d1tgzdppqe7fi5nxzzpsj",
+                          "refs": ["occultism"],
+                          "hasNotOption": ["thisCaelysianPantheon"]
+                        },
+                        {
+                          "name": "Witchcraft",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "534ngerkv498r32nf3u2nf32",
+                          "refs": ["witchcraft"],
+                          "hasOption": ["thisCaelysianPantheon"]
+                        }
+                      ],
+                      "minSize": 1,
+                      "collapsible": true,
+                      "maxSize": 1,
+                      "option_id": "1hf97mgn8yuj8phug7351gt"
+                    }
+                  ],
+                  "collapsible": true,
+                  "option_id": "y0cwe6kqa3qrmacxx50ll"
+                }
+              ],
+              "refs": ["swarmPriest", "wizard", "non_core_unit", "tag_Vermin"],
+              "unit_id": "swarm_priest",
+              "option_id": "ouvg0qi1smcu4vg6s20aj",
+              "logo": "character"
+            },
+            {
+              "name": "Duskblade Assassin",
+              "cost": 135,
+              "category": "perso",
+              "options": [],
+              "refs": ["duskbladeAssassin", "non_core_unit", "not_a_leader", "tag_Vermin"],
+              "unit_id": "duskblade_assassin",
+              "armyHasNotOption": [
+                {
+                  "refs": ["duskbladeAssassin"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "nti7n7yy2x3t6fxkg2t75",
+              "logo": "character"
+            }
+          ],
+          "option_id": "defnpxz9nllzjnc9yeqw1g"
+        },
+        {
+          "name": "Core Units",
+          "minPercent": 0.25,
+          "refs": ["base"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Blackfur Veterans",
+              "cost": 10,
+              "category": "base",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["bloodfur_praetorians"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "replaceCategory": "special"
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 20,
+                  "maxSize": 40,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 12,
+                      "hide": true,
+                      "option_id": "vm28q00c8jqxxune3wuh68",
+                      "refs": ["blackfur_veterans_amount"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["blackfur_veterans_amount"],
+                          "amount": 120
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "yw01bw65w0qy6dpnleltc"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "m43dx0pbph788m2wsq0o0a"
+                    },
+                    {
+                      "type": "check",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 5,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "name": "Standard Bearer",
+                      "option_id": "rhy4b9vh95p47zvyihigw8"
+                    }
+                  ],
+                  "option_id": "vxi7v8oxpjekja6nm6n1s"
+                }
+              ],
+              "refs": ["core_unit", "blackfurVeterans", "tag_Vermin", "tag_Legionary", "tag_Metal Armour"],
+              "unit_id": "blackfur_veterans",
+              "option_id": "tqfuo9glymbu3ysmohczom",
+              "logo": "core"
+            },
+            {
+              "name": "Plague Cultists",
+              "cost": 0,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 20,
+                  "maxSize": 40,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 11,
+                      "hide": true,
+                      "option_id": "3cisugy7dsxeq048vds5owprm",
+                      "refs": ["plague_disciples_amount"]
+                    }
+                  ],
+                  "option_id": "i4v0wpm6vdskcyvfxoh8658g"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "j3scd38c1xmdsrgjko06xaba"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "w6o2l0ypdsxc2lgd1p8cegc"
+                    }
+                  ],
+                  "option_id": "vjqlp7dgvs9ds7eyyaimnwh"
+                }
+              ],
+              "refs": ["plagueDisciples", "non_core_unit", "core_unit", "tag_Vermin", "tag_Cult of Errahman"],
+              "unit_id": "plague_cultists",
+              "option_id": "567gcjgwdsur6nfsg97kix89",
+              "logo": "core"
+            },
+            {
+              "name": "Vermin Legionaries",
+              "cost": 10,
+              "category": "base",
+              "options": [
+                {
+                  "minSize": 25,
+                  "maxSize": 60,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 8,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Spear",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "xwz9z2l1z3p1yfd4gr2ym6"
+                            }
+                          ],
+                          "maxSize": 1,
+                          "option_id": "bhqf7x4cznea2gicv4cnfo"
+                        }
+                      ],
+                      "option_id": "la9pdegf3xlu0c5dbu8xga",
+                      "refs": ["vermin_legionaries_amount"]
+                    }
+                  ],
+                  "option_id": "mmkxcmxhuab4av4xdzo97"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "7u6i92ftc7rilddtehtim"
+                    },
+                    {
+                      "type": "check",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 5,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "name": "Standard Bearer",
+                      "option_id": "yccjt0kip7n4o99aztju"
+                    }
+                  ],
+                  "option_id": "lchztkx0dqqyc87a9b6r"
+                }
+              ],
+              "refs": ["core_unit", "verminLegionaries", "tag_Vermin", "tag_Legionary", "tag_Light Armour"],
+              "unit_id": "vermin_legionaries",
+              "option_id": "24ty2x90nakwyjgma29ng",
+              "logo": "core"
+            },
+            {
+              "name": "Vermin Slaves",
+              "cost": 55,
+              "category": "base",
+              "options": [
+                {
+                  "minSize": 30,
+                  "maxSize": 60,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 4,
+                      "hide": true,
+                      "option_id": "yhtgnf14qravc8eou0lpej",
+                      "refs": ["vermin_slaves_amount"]
+                    }
+                  ],
+                  "option_id": "h4fg1yfozxqp8qcia1g9a"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Tunnel Digger",
+                      "cost": 20,
+                      "refs": [],
+                      "option_id": "a4dgj3g6xhct44d1yxr8e"
+                    }
+                  ],
+                  "option_id": "p9bequl5z7lef9l8mi0879"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "p5uryqtatzjrcfqpxo8n"
+                    }
+                  ],
+                  "option_id": "6r525ebzadrgqmprzizeq"
+                }
+              ],
+              "refs": ["core_unit", "verminSlaves", "tag_Vermin"],
+              "unit_id": "vermin_slaves",
+              "option_id": "99s0ibs9n7b8bbflqhm6p9",
+              "logo": "core"
+            },
+            {
+              "name": "Vermin Slingers",
+              "cost": 35,
+              "category": "base",
+              "options": [
+                {
+                  "minSize": 20,
+                  "maxSize": 30,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 7,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "ue934hnxdtiirc0poakvqa",
+                      "refs": ["vermin_velites_amount"]
+                    }
+                  ],
+                  "option_id": "basnkh413onlbguzvv1mxa"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "my71l40z6a4mjbtcw5nka"
+                    },
+                    {
+                      "type": "check",
+                      "cost": 5,
+                      "name": "Standard Bearer",
+                      "option_id": "gdsv43y54yh34g43g43"
+                    }
+                  ],
+                  "option_id": "jhm0kqpxgem7h0so2bf94p"
+                }
+              ],
+              "refs": ["core_unit", "verminVelites", "tag_Vermin", "tag_Light Armour", "tag_Legionary"],
+              "unit_id": "vermin_slingers",
+              "option_id": "wbmyfsqzval0ccxw8yflwz9",
+              "logo": "core"
+            }
+          ],
+          "option_id": "mixf33sd9d9fi8e07pyudq"
+        },
+        {
+          "name": "Special",
+          "refs": ["special"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Bloodfur Praetorians",
+              "cost": 20,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 20,
+                  "maxSize": 40,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 12,
+                      "hide": true,
+                      "option_id": "g3433f34f34g43g34g3g34"
+                    }
+                  ],
+                  "option_id": "345343ggfdg34g34hg34hg343"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "asdasdasdafdsf34g4554"
+                    },
+                    {
+                      "type": "check",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 5,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "name": "Standard Bearer",
+                      "option_id": "g34543534g34g3445353453"
+                    }
+                  ],
+                  "option_id": "g43g43g34654654g534g54g54"
+                }
+              ],
+              "refs": ["core_unit", "bloodfurPraetorians", "tag_Vermin", "tag_Legionary", "tag_Metal Armour"],
+              "armyHasNotOption": ["bloodfurPraetorians"],
+              "unit_id": "blackfur_veterans",
+              "option_id": "g43gergfdg4334gj034g34g34",
+              "logo": "core"
+            },
+            {
+              "name": "Vermin Brutes",
+              "cost": -70,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 6,
+                  "maxSize": 12,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 55,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "49en9k20spcefk82ialnm7",
+                      "refs": ["brute_force"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["brute_force"],
+                          "amount": 24
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "adbhlzmpatjgmshtm1gcso"
+                }
+              ],
+              "refs": ["fetthisBrutes", "non_core_unit", "tag_Vermin", "tag_Mutant"],
+              "unit_id": "vermin_brutes",
+              "option_id": "6giwfa75jfkzn323y15h2f",
+              "logo": "special"
+            },
+            {
+              "name": "Giant Rats",
+              "cost": 50,
+              "category": "special",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["giant_rats_amount"],
+                      "amount": 20
+                    }
+                  ],
+                  "options": {
+                    "replaceCategory": "base",
+                    "cost": 70
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 30,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 4,
+                      "hide": true,
+                      "option_id": "xygbczmqzyjsjbj55qmrt",
+                      "refs": ["giant_rats_amount"]
+                    }
+                  ],
+                  "option_id": "yx0h655pl7rd7s7tjvibfo"
+                }
+              ],
+              "refs": ["giantRats", "non_core_unit", "tag_Beast", "tag_Mutant"],
+              "unit_id": "giant_rats",
+              "option_id": "brz2row3lcdmoripdu016",
+              "logo": "special"
+            },
+            {
+              "name": "Fire Rats",
+              "cost": 50,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 20,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 4,
+                      "hide": true,
+                      "option_id": "xygbczmqzysdjsjbj55qmrt"
+                    }
+                  ],
+                  "option_id": "yx0h655pdsl7rd7s7tjvibfo"
+                }
+              ],
+              "refs": ["fireRats", "non_core_unit", "tag_Beast", "tag_Mutant"],
+              "unit_id": "giant_rats",
+              "option_id": "fsf23f326fgfdcfsd4534d03khg409rg4",
+              "logo": "special"
+            },
+            {
+              "name": "Rat Swarm",
+              "cost": 75,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 25,
+                      "hide": true,
+                      "option_id": "xygbcdsdszmqzyjsjbj55qmrt",
+                      "refs": ["rat_swarm_amount"]
+                    }
+                  ],
+                  "option_id": "yx0h655fsdf32pl7rd7s7tjvibfo"
+                }
+              ],
+              "refs": ["ratSwarm", "tag_Beast"],
+              "unit_id": "rat_swarm",
+              "option_id": "qwiqruhz2xypp96dt0pgl",
+              "logo": "special"
+            },
+            {
+              "name": "Legionary Drill Team",
+              "cost": 75,
+              "category": "special",
+              "options": [],
+              "refs": ["legionaryDrillTeam", "non_core_unit", "tag_Construct", "tag_Metal Armour"],
+              "unit_id": "legionary_drill_team",
+              "armyHasNotOption": [
+                {
+                  "refs": ["legionaryDrillTeam"],
+                  "amount": 2
+                }
+              ],
+              "override": [
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["stygianOverseer"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["legionaryDrillTeam"],
+                        "amount": 3
+                      }
+                    ]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["stygianOverseer"],
+                      "amount": 2
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["legionaryDrillTeam"],
+                        "amount": 4
+                      }
+                    ]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["stygianOverseer"],
+                      "amount": 3
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["legionaryDrillTeam"],
+                        "amount": 5
+                      }
+                    ]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["stygianOverseer"],
+                      "amount": 4
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["legionaryDrillTeam"],
+                        "amount": 6
+                      }
+                    ]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["stygianOverseer"],
+                      "amount": 5
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["legionaryDrillTeam"],
+                        "amount": 7
+                      }
+                    ]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["stygianOverseer"],
+                      "amount": 6
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["legionaryDrillTeam"],
+                        "amount": 8
+                      }
+                    ]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["stygianOverseer"],
+                      "amount": 7
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["legionaryDrillTeam"],
+                        "amount": 9
+                      }
+                    ]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["stygianOverseer"],
+                      "amount": 8
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["legionaryDrillTeam"],
+                        "amount": 10
+                      }
+                    ]
+                  }
+                }
+              ],
+              "option_id": "destt9c7l1pnr0m4dohq8h",
+              "logo": "special"
+            },
+            {
+              "name": "Gladiator Brutes",
+              "cost": 50,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 60,
+                      "hide": true,
+                      "refs": ["brute_force"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["brute_force"],
+                          "amount": 24
+                        }
+                      ],
+                      "options": [],
+                      "option_id": "uxl5l9zg1j885xmki8neqt"
+                    }
+                  ],
+                  "option_id": "j7dmnbtq0z9grbgch48epe"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "adbdb8m144nnxjwq5mvueh"
+                    },
+                    {
+                      "type": "check",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "name": "Standard Bearer",
+                      "option_id": "j7s1vkpvzg99wn3lbedl6r"
+                    }
+                  ],
+                  "option_id": "queih2t95d0b3ir8rojmv6"
+                }
+              ],
+              "refs": ["murmilloBrutes", "non_core_unit", "tag_Vermin", "tag_Mutant", "tag_Metal Armour"],
+              "unit_id": "gladiator_brutes",
+              "armyHasNotOption": [
+                {
+                  "refs": ["murmilloBrutes"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "26486idw2jrpdcavfhy1jf",
+              "logo": "special"
+            },
+            {
+              "name": "Plague Disciples",
+              "cost": 0,
+              "category": "special",
+              "loses_rules": ["vs-bloodpox_blades"],
+              "rules": [
+                {
+                  "id": "vs-plague_flail",
+                  "params": []
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 40,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 12,
+                      "hide": true,
+                      "option_id": "3cisugy7xeq048vds5owprm",
+                      "refs": ["plague_disciples_amount"]
+                    }
+                  ],
+                  "option_id": "i4v0wpm6vkcyvfxoh8658g"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "j3scd38c1xmrgjko06xaba"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "w6o2l0ypxc2lgd1p8cegc"
+                    }
+                  ],
+                  "option_id": "vjqlp7dgvs97eyyaimnwh"
+                }
+              ],
+              "refs": ["non_core_unit", "cult_of_errahman", "tag_Cult of Errahman"],
+              "unit_id": "plague_cultists",
+              "option_id": "567gcjgwur6nfsg97kix89",
+              "logo": "special"
+            },
+            {
+              "name": "Doomspark Device",
+              "cost": 255,
+              "category": "tunnel_gunners",
+              "refs": ["doomsparkDevices", "non_core_unit", "tag_Vermin"],
+              "unit_id": "doomspark_device",
+              "armyHasNotOption": [
+                {
+                  "refs": ["doomsparkDevices"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "gf19l3tdamll84augmbpu",
+              "logo": "special"
+            },
+            {
+              "name": "Shadowfur Stalkers",
+              "cost": 55,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 8,
+                      "hide": true,
+                      "refs": ["stalkers_numbers"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["stalkers_numbers"],
+                          "amount": 30
+                        }
+                      ],
+                      "options": [
+                        {
+                          "optionsLabel": "Weapons",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Throwing Weapons (4+)",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "jsaombafn8c1xud2q9ejna"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Pistol (4+)",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "k4v367gf4eabl4srjq3drc"
+                            }
+                          ],
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "option_id": "fomop3pamlyyophn6lr29"
+                        }
+                      ],
+                      "option_id": "4fim9yr5eepqsg347l5ntg"
+                    }
+                  ],
+                  "option_id": "xvrvvn9fidceqbmbyrpvhs"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "7iyakb6nfpa9p2ox371xv"
+                    }
+                  ],
+                  "option_id": "3ffpy7vlnm8jtxuwmow6c"
+                }
+              ],
+              "refs": ["shadowfurStalkers", "non_core_unit"],
+              "unit_id": "shadowfur_stalkers",
+              "armyHasNotOption": [
+                {
+                  "refs": ["shadowfurStalkers"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "oqg6ny4fcai4lynwymqjw7",
+              "logo": "special"
+            }
+          ],
+          "option_id": "v33kd5j1ta88isnha69na"
+        },
+        {
+          "name": "Tunnel Gunners",
+          "maxPercent": 0.3,
+          "refs": ["tunnel_gunners"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Thunder Brutes",
+              "cost": 50,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 60,
+                      "hide": true,
+                      "refs": ["brute_force"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["brute_force"],
+                          "amount": 24
+                        }
+                      ],
+                      "options": [
+                        {
+                          "optionsLabel": "Equipment",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Deepfire Thrower",
+                              "cost": 15,
+                              "refs": ["deepfire_thrower"],
+                              "option_id": "fw1ewuzr9lp59ygplkg7cc",
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["deepfire_thrower"],
+                                  "amount": 6
+                                }
+                              ]
+                            },
+                            {
+                              "type": "check",
+                              "name": "Canister Launcher (4+)",
+                              "cost": 7,
+                              "refs": ["canister_launcher"],
+                              "option_id": "tdrgv72hfypamqkeoxi3v4",
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["canister_launcher"],
+                                  "amount": 9
+                                }
+                              ]
+                            },
+                            {
+                              "type": "check",
+                              "name": "Rotary Gun (4+)",
+                              "cost": 20,
+                              "refs": ["rotary_gun"],
+                              "option_id": "bw27gzgjcumz7ak7uai24i",
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["rotary_gun"],
+                                  "amount": 12
+                                }
+                              ]
+                            },
+                            {
+                              "type": "check",
+                              "name": "Jezail (4+) and Shield",
+                              "cost": 0,
+                              "option_id": "rl9udj4d1tsc3vgent7u6l",
+                              "refs": ["jezail"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["jezail"],
+                                  "amount": 18
+                                }
+                              ]
+                            }
+                          ],
+                          "minSize": 1,
+                          "maxSize": 1,
+                          "option_id": "nmfqk9gdlemfdfavzmyqazia"
+                        }
+                      ],
+                      "option_id": "uxl5l9zg1j88ds5xmki8neqt"
+                    }
+                  ],
+                  "option_id": "j7dmnbtq0z9grdsbgch48epe"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "adbdb8m144dsnnxjwq5mvueh"
+                    },
+                    {
+                      "type": "check",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "name": "Standard Bearer",
+                      "option_id": "j7s1vkpvdszg99wn3lbedl6r"
+                    }
+                  ],
+                  "option_id": "queih2t95d0dsb3ir8rojmv6"
+                }
+              ],
+              "refs": ["thunderBrutes", "non_core_unit", "tag_Vermin", "tag_Mutant", "tag_Metal Armour"],
+              "unit_id": "thunder_brutes",
+              "armyHasNotOption": [
+                {
+                  "refs": ["thunderBrutes"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "26486idw2dsdsjrpdcavfhy1jf",
+              "logo": "pistols"
+            },
+            {
+              "name": "Experimental Weapon Teams",
+              "cost": 15,
+              "category": "tunnel_gunners",
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 35,
+                      "hide": true,
+                      "options": [
+                        {
+                          "minSize": 1,
+                          "maxSize": 1,
+                          "optionsLabel": "Weapon",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Rotary Gun (4+)",
+                              "cost": 20,
+                              "refs": ["rotary_gun"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["rotary_gun"],
+                                  "amount": 12
+                                }
+                              ],
+                              "option_id": "lp2yxsx75zfgwi8de32zbv"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Canister Launcher (4+)",
+                              "cost": 2,
+                              "refs": ["canister_launcher"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["canister_launcher"],
+                                  "amount": 9
+                                }
+                              ],
+                              "option_id": "tfnys7cxvbb5mb110ppmp"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Deepfire Thrower",
+                              "cost": 15,
+                              "refs": ["deepfire_thrower"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["deepfire_thrower"],
+                                  "amount": 6
+                                }
+                              ],
+                              "option_id": "rqk2nrs0roj6p1f3ekz9ir"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Jezail (4+)",
+                              "cost": 0,
+                              "refs": ["jezail"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["jezail"],
+                                  "amount": 18
+                                }
+                              ],
+                              "option_id": "2q37kp0qorto1l5rrsvhyg"
+                            }
+                          ],
+                          "option_id": "yapqmjhsl5dzh7h0c4pa5"
+                        }
+                      ],
+                      "option_id": "ymd13pzuzeo27ajqnx0ibs",
+                      "refs": ["experimental_weapon_teams_amount"]
+                    }
+                  ],
+                  "option_id": "fpzy7ewpmogtumre8ixk3"
+                }
+              ],
+              "refs": ["experimentalWeaponTeams", "non_core_unit", "tag_Vermin", "tag_Metal Armour"],
+              "unit_id": "experimental_weapon_teams",
+              "armyHasNotOption": [
+                {
+                  "refs": ["experimentalWeaponTeams"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "blwo5tptes7e4lij7ekgw",
+              "logo": "pistols"
+            },
+            {
+              "name": "Ignifier Grenadiers",
+              "cost": 70,
+              "category": "tunnel_gunners",
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 12,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "eo483h89triqvz9lpmu8bd",
+                      "refs": ["ignifier_grenadiers_amount"]
+                    }
+                  ],
+                  "option_id": "ftnj9g93meoxcym55wxi"
+                }
+              ],
+              "refs": ["ignifierGrenadiers", "non_core_unit", "tag_Vermin", "tag_Metal Armour"],
+              "unit_id": "ignifier_grenadiers",
+              "armyHasNotOption": [
+                {
+                  "refs": ["ignifierGrenadiers"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "sosrd2vy7kbc580xt7fhcc",
+              "logo": "pistols"
+            },
+            {
+              "name": "Vermin Artillery",
+              "cost": 190,
+              "category": "tunnel_gunners",
+              "options": [
+                {
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Rakachit Mauss Rifle (4+)",
+                      "cost": 0,
+                      "refs": ["mauss_cannon"],
+                      "option_id": "vttekpg9enrgavwa1skc0j",
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["mauss_cannon"],
+                          "amount": 3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Skorchit Ordnance (4+)",
+                      "cost": 15,
+                      "refs": ["skorchit ordnance_5sjmtk3s"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["skorchit ordnance_5sjmtk3s"],
+                          "amount": 2
+                        }
+                      ],
+                      "option_id": "ovba4purdoz0x0qqevj"
+                    }
+                  ],
+                  "option_id": "zwznn8kg6dfmhoclsh5wt"
+                }
+              ],
+              "refs": ["verminArtillery", "war_machine", "non_core_unit", "tag_Vermin"],
+              "unit_id": "vermin_artillery",
+              "armyHasNotOption": [
+                {
+                  "refs": ["verminArtillery"],
+                  "amount": 4
+                }
+              ],
+              "option_id": "rdmgw1suo40oa0iaj4tv6",
+              "logo": "pistols"
+            }
+          ],
+          "option_id": "hlg80wwsra8un5brvjg9ul"
+        },
+        {
+          "name": "Bread and Games",
+          "maxPercent": 0.2,
+          "refs": ["bread_and_games"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Arena Beast",
+              "cost": 290,
+              "category": "bread_and_games",
+              "options": [
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Underworld Beast",
+                      "cost": 15,
+                      "refs": [],
+                      "option_id": "7ldujwbq18mvygb1utvkhb"
+                    }
+                  ],
+                  "option_id": "b9tjh7ouoeouarbxi67j5"
+                }
+              ],
+              "refs": ["arenaBeast", "non_core_unit", "tag_Beast", "tag_Mutant"],
+              "unit_id": "arena_beast",
+              "armyHasNotOption": [
+                {
+                  "refs": ["arenaBeast"],
+                  "amount": 3
+                }
+              ],
+              "override": [
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["ruinousDictator"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["arenaBeast"],
+                        "amount": 2
+                      }
+                    ]
+                  }
+                }
+              ],
+              "option_id": "40p3o104hzb5mq68ob90i7",
+              "logo": "monster"
+            },
+            {
+              "name": "Dreadmill Chariots",
+              "cost": 15,
+              "category": "bread_and_games",
+              "options": [
+                {
+                  "minSize": 1,
+                  "maxSize": 3,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 85,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "kptvjerjukieqvi97u036u",
+                      "refs": ["dreadmill_chariots_amount"]
+                    }
+                  ],
+                  "option_id": "kv0mhl50jopmln8h55sqd"
+                }
+              ],
+              "refs": ["dreadmillChariots", "non_core_unit", "tag_Vermin"],
+              "unit_id": "dreadmill_chariots",
+              "armyHasNotOption": [
+                {
+                  "refs": ["dreadmillChariots"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "12vbs5prfix308n7fvhnbh",
+              "logo": "monster"
+            },
+            {
+              "name": "Stygian Earthbreaker",
+              "cost": 270,
+              "category": "bread_and_games",
+              "options": [],
+              "refs": ["stygianEarthbreaker", "non_core_unit", "tag_Construct", "tag_Metal Armour"],
+              "unit_id": "stygian_earthbreaker",
+              "armyHasNotOption": [
+                {
+                  "refs": ["stygianEarthbreaker"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "k01osz9blodssribkly",
+              "logo": "monster"
+            },
+            {
+              "name": "Verminous Giant",
+              "cost": 270,
+              "category": "bread_and_games",
+              "options": [
+                {
+                  "optionsLabel": "Weapons",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Giant Club",
+                      "cost": 0,
+                      "refs": [],
+                      "option_id": "qk19099vacdqyv8wqnj7hs"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Living Bomb",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "5rwpdibqcoqosb2jlydtmk"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Big Sneaker",
+                      "cost": 30,
+                      "refs": [],
+                      "option_id": "c6bc28kf1ykwnholnti94"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "option_id": "mk0dtw7a92fmqirxyxwjvc"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Big Brother",
+                      "cost": 25,
+                      "refs": [],
+                      "option_id": "8ucgfzn3or8uph3ucdoi4"
+                    }
+                  ],
+                  "option_id": "xaf730804enq4mpl1quzc"
+                }
+              ],
+              "refs": ["verminousGiant", "non_core_unit"],
+              "unit_id": "verminous_giant",
+              "armyHasNotOption": [
+                {
+                  "refs": ["verminousGiant"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "4lxfpjvqz3qb3uv01kma0f",
+              "logo": "monster"
+            }
+          ],
+          "option_id": "7a405jfh25eng17ks6tu1k"
+        },
+        {
+          "name": "Extra",
+          "invisible": true,
+          "refs": ["mounts"],
+          "options": [
+            {
+              "name": "Senatorial Litter *Mount",
+              "cost": null,
+              "category": "mounts",
+              "refs": ["senatorial_litter_mount", "mount", "tag_Mount"],
+              "unit_id": "senatorial_litter_mount",
+              "invisible": true,
+              "option_id": "948trebvvhf3452rejk786herbew3253",
+              "logo": "character"
+            },
+            {
+              "name": "Praetorian Brute *Mount",
+              "cost": null,
+              "category": "mounts",
+              "refs": ["praetorianPalanquin_brute_mount", "mount", "tag_Mount", "tag_Mutant"],
+              "unit_id": "praetorian_brute_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["praetorianPalanquin_brute_mount"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "432grebvrejk786herbew3253",
+              "logo": "character"
+            },
+            {
+              "name": "Sacred Platform *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [
+                {
+                  "optionsLabel": "Type",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Whispering Bell",
+                      "cost": 0,
+                      "refs": ["whispering bell_k2ynffnu", "extra_spell"],
+                      "hasOption": ["caelysianPantheon"],
+                      "option_id": "egar1y3pdzw7knuat28tfl",
+                      "magic": {
+                        "amount": 1
+                      }
+                    },
+                    {
+                      "type": "check",
+                      "name": "Pestilent Pulpit",
+                      "cost": 35,
+                      "refs": ["pestilent pulpit_a77ce1gi"],
+                      "hasOption": ["cult_of_errahman"],
+                      "option_id": "yh64zfb6g1pe7n2t5kgpd"
+                    }
+                  ],
+                  "option_id": "ygg2ekf5522nl2wghcapc"
+                }
+              ],
+              "refs": ["sacredPlatform_mount_unit", "mount", "tag_Vermin"],
+              "unit_id": "sacred_platform_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["sacredPlatform_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "xxamy2s17od2753afhyosm",
+              "logo": "character"
+            },
+            {
+              "name": "Triumphal Platform *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["triumphalPlatform_mount_unit", "mount", "tag_Vermin", "tag_Mutant"],
+              "unit_id": "triumphal_platform_mount",
+              "invisible": true,
+              "option_id": "zpmhpx5bqwcvhbu9w11k5n",
+              "logo": "character"
+            }
+          ],
+          "option_id": "1kcxr4xumhsacp61aowdib"
+        }
+      ],
+      "option_id": "sl7ing1fguthidxnd1riln"
+    }
+  ]
+}

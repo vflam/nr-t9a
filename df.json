@@ -1,0 +1,1465 @@
+{
+  "name": "Dread Fleet",
+  "translation": {
+    "fr": "Dread Fleet",
+    "cn": "Dread Fleet"
+  },
+  "short": "df",
+  "version": "alpha1",
+  "nrversion": 12,
+  "playable": 1,
+  "id": 25,
+  "include": [102],
+  "hereditary": [
+    {
+      "path": "hereditary",
+      "ref": "tempest_of_the_storm_witch"
+    }
+  ],
+  "indicators": ["terrors_of_the_deep"],
+  "reference_details": {
+    "army_general": "General",
+    "army_bsb": "Battle Standard",
+    "wizard": "Wizard",
+    "wizardApprentice": "Wizard Apprentice",
+    "wizardAdept": "Wizard Adept",
+    "wizardMaster": "Wizard Master",
+    "mount": "Mount",
+    "weaponEnchantUni": "Weapon Enchant",
+    "dominant": "Dominant",
+    "sizeLarge": "Large Size",
+    "sizeGigantic": "Gigantic Size",
+    "core_unit": "Core Unit",
+    "terrors_of_the_deep": "Terrors of the Deep"
+  },
+  "dictionnary": [
+    {
+      "refs": ["bannerEnchant"],
+      "options": [
+        {
+          "option_id": "rno8m37dzbr4v7yzi6t4",
+          "type": "check",
+          "name": "Banner of Tides",
+          "cost": 30,
+          "description": "The bearer’s unit gains <span class=\"textbf\">Feigned Flight</span>.",
+          "refs": ["banner of tides_zilgyhaj"],
+          "armyHasNotOption": [
+            {
+              "refs": ["banner of tides_zilgyhaj"],
+              "amount": 2
+            }
+          ],
+          "hasNotOption": []
+        },
+        {
+          "option_id": "kstq1a4kz19vfmar8mqak",
+          "type": "check",
+          "name": "Black Flag",
+          "cost": 50,
+          "description": "The bearer's unit gains <span class=\"textbf\">Fear</span>, and while in base contact with the bearer's unit, enemy units gain <span class=\"textbf\">Maximised (Fear Tests)</span>. In addition, friendly units Engaged in the same Combat as the bearer's unit <span class=\"textbf\">must</span> reroll natural to-wound rolls of  '1'.\n",
+          "refs": ["black flag_5ov47at"],
+          "armyHasNotOption": [
+            {
+              "refs": ["black flag_5ov47at"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": ["core_unit"]
+        }
+      ],
+      "option_id": "3j37tahw68sfey2juxgul"
+    },
+    {
+      "refs": ["spearEnchant"],
+      "options": [],
+      "option_id": "azi94qpci0dvcaep0fqj5n"
+    },
+    {
+      "refs": ["magneticShortBowEnchant"],
+      "options": [],
+      "option_id": "utgt2qa54yp9f7ozakf8bw"
+    },
+    {
+      "refs": ["suitOfArmourEnchant"],
+      "options": [],
+      "option_id": "qzh4693rkwe09t4dlp9tjg8"
+    },
+    {
+      "refs": ["shieldEnchant"],
+      "options": [],
+      "option_id": "gry9zzv6ze5mnj56dbogep"
+    },
+    {
+      "refs": ["artefact"],
+      "options": [
+        {
+          "option_id": "rtt90zr3xaozwmz492kb",
+          "type": "check",
+          "name": "Chest of Envoloping Fog",
+          "cost": 40,
+          "description": "One use only. The owner may activate this Artefact at the end of any friendly Movement Phase and place a Water Terrain Feature in contact with the bearer and at least 1\" away from any enemy units and other Terrain Features. The Water Terrain must fit within a circle with a diameter of 6\".",
+          "refs": ["chest of envoloping fog_6c7honza"],
+          "armyHasNotOption": [
+            {
+              "refs": ["chest of envoloping fog_6c7honza"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": []
+        },
+        {
+          "option_id": "xz0yr23kppe25hs0j2z8hk",
+          "type": "check",
+          "name": "Storm Cloak",
+          "cost": 55,
+          "description": "The bearer gains <span class=\"textbf\">Magic Resistance (2)</span> and <span class=\"textbf\">Hard Target (1)</span>.",
+          "refs": ["storm cloak_wj4ualvk"],
+          "armyHasNotOption": [
+            {
+              "refs": ["storm cloak_wj4ualvk"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": []
+        },
+        {
+          "option_id": "d6yk9b6bnnhvrqc8of1js8",
+          "type": "check",
+          "name": "Veil of Harag",
+          "cost": 50,
+          "description": "The bearer can cast <i>Tempest of the Storm Witch</i> (Hereditary Spell) as a Bound Spell with Power Level (4/8).",
+          "refs": ["veil of harag_6rumph6"],
+          "armyHasNotOption": [
+            {
+              "refs": ["veil of harag_6rumph6"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "boundSpells": [
+            {
+              "path": "bound",
+              "ref": "tempest_of_the_storm_witch"
+            }
+          ]
+        }
+      ],
+      "option_id": "p8gv6ktql5vweua3od1v"
+    },
+    {
+      "refs": ["repeaterHandbowEnchant"],
+      "options": [
+        {
+          "option_id": "hs31me6ck5wa1ey3agp0w",
+          "type": "check",
+          "name": "Hurricane's Fury",
+          "cost": 30,
+          "description": "Range 18\", Shots 2D6. Shooting Attacks of units that are hit by one or more attacks made with this weapon suffer -1 to hit until the end of the next Player Turn.",
+          "refs": ["hurricane's fury_te928cko"],
+          "armyHasNotOption": [
+            {
+              "refs": ["hurricane's fury_te928cko"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": []
+        }
+      ],
+      "option_id": "e7cyknqn2dva6c2fbcej4s"
+    },
+    {
+      "refs": ["pairedWeaponsEnchant"],
+      "options": [
+        {
+          "option_id": "nbong08dorbnyorjq52xnn",
+          "type": "check",
+          "name": "Lacerating Touch",
+          "cost": 65,
+          "description": "Attacks made with this weapon gain +2 Armour Penetration. While using this weapon, the wielder gains +2 Attack Value and Fear.",
+          "refs": ["lacerating touch_an8a4bis", "weaponEnchantUni"],
+          "armyHasNotOption": [
+            {
+              "refs": ["lacerating touch_an8a4bis"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [
+            {
+              "refs": ["weaponEnchantUni"],
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "option_id": "isd26uyuoqbavt50p82aer"
+    }
+  ],
+  "army": [
+    {
+      "name": "Army",
+      "optionsLabel": "Categories",
+      "maxCost": 4500,
+
+      "armyHasNotOption": [
+        {
+          "refs": ["terrors_of_the_deep"],
+          "amount": 1,
+          "perPoints": 1500
+        }
+      ],
+      "options": [
+        {
+          "name": "Characters",
+          "refs": ["characters"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "option_id": "d199kfkkz4ijb44mgwuyy",
+              "name": "Dread Captain",
+              "cost": 145,
+              "category": "characters",
+              "options": [
+                {
+                  "refs": ["army_general"],
+                  "armyHasNotOption": ["army_general"],
+                  "type": "check",
+                  "name": "General",
+                  "cost": 0,
+                  "option_id": "jvhy2377h7i4rkgryqchl"
+                },
+                {
+                  "option_id": "xz4jb15th8nwapkw1k33k",
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "option_id": "0qe190xw9wadiacp93ni7pp",
+                      "type": "check",
+                      "armyHasNotOption": ["army_bsb"],
+                      "refs": ["army_bsb"],
+                      "hasNotOption": ["army_general"],
+                      "name": "Battle Standard Bearer",
+                      "cost": 50,
+                      "collapsible": true,
+                      "optionsLabel": "Banner Enchants",
+                      "options": [
+                        {
+                          "option_id": "0jdy1jmig28nhos0e61ej9r",
+                          "optionsLabel": "First Enchant",
+                          "options": [],
+                          "optionsDict": ["bannerEnchant"],
+                          "maxSize": 1,
+                          "collapsible": true
+                        },
+                        {
+                          "option_id": "udspyqq9ijm43rj6jlg3l",
+                          "optionsLabel": "Second Enchant",
+                          "options": [],
+                          "optionsDict": ["bannerEnchant"],
+                          "maxSize": 1,
+                          "collapsible": true
+                        }
+                      ]
+                    },
+                    {
+                      "option_id": "s74qqb32fwz6ohth3pzv",
+                      "optionsLabel": "Melee Weapons",
+                      "options": [
+                        {
+                          "option_id": "xriutybz7bebt83p0fykoq",
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 5,
+                          "refs": [],
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "optionsSuffix": " (Paired Weapons)"
+                        },
+                        {
+                          "option_id": "7wzadegdtb9lhquodm3x2d",
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Great Weapon Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
+                          "optionsSuffix": " (Great Weapon)"
+                        },
+                        {
+                          "option_id": "ilpornggezrxk2sgxq7ee",
+                          "type": "check",
+                          "name": "Lance",
+                          "cost": 15,
+                          "refs": [],
+                          "optionsLabel": "Lance Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "lanceEnchant"],
+                          "optionsSuffix": " (Lance)"
+                        },
+                        {
+                          "option_id": "jx7hqsfnwbl982002ozn4l",
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Halberd Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "halberdEnchant"],
+                          "optionsSuffix": " (Halberd)"
+                        }
+                      ],
+                      "maxSize": 1
+                    },
+                    {
+                      "option_id": "43209jf34-90f342g34h53dsa",
+                      "optionsLabel": "Ranged Weapons",
+                      "options": [
+                        {
+                          "option_id": "mn8oaj3g6g0kmz9jk3gcy",
+                          "type": "check",
+                          "name": "Repeater Handbow (2, 2+)",
+                          "cost": 5,
+                          "refs": [],
+                          "optionsLabel": "Repeater Handbow Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["repeaterHandbowEnchant"],
+                          "optionsSuffix": " (Repeater Handbow)"
+                        }
+                      ]
+                    },
+                    {
+                      "option_id": "29x5awx7l1p3xe0avj7umm",
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"]
+                    },
+                    {
+                      "option_id": "ys69yz83it6hq5z0l61qm",
+                      "optionsLabel": "Sea Serpent's Hide Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Sea Serpent's Hide)",
+                      "options": [],
+                      "optionsDict": ["seaSerpent'sHideEnchant"],
+                      "exportGroup": "Sea Serpent's Hide",
+                      "parentRule": "sea_serpents_hide"
+                    },
+                    {
+                      "option_id": "n6ww42xhfmkh6xbg82of99",
+                      "optionsLabel": "Heavy Armour Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Heavy Armour)",
+                      "options": [],
+                      "optionsDict": ["suitOfArmourEnchant", "heavyArmourEnchant"],
+                      "exportGroup": "Heavy Armour",
+                      "parentRule": "heavy_armour"
+                    },
+                    {
+                      "option_id": "0365n6pnp62tvrmhgpthd6",
+                      "type": "group",
+                      "optionsLabel": "Artefacts",
+                      "maxSize": 2,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"]
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 100,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["obsidian_admiral"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 200
+                      }
+                    }
+                  ]
+                },
+                {
+                  "option_id": "bal9aew9l0wumv6ai9967n",
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "option_id": "1ew7nmk3s3cj5knle08eei",
+                      "type": "check",
+                      "name": "Obsidian Admiral",
+                      "cost": 60,
+                      "refs": ["obsidian_admiral"],
+                      "hasOption": ["army_general"]
+                    }
+                  ]
+                },
+                {
+                  "option_id": "f4kljppppgj6mtbaa67qod",
+                  "optionsLabel": "Mount",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Fleet Pegasus",
+                      "cost": 100,
+                      "refs": ["mount", "fleet_pegasus_mount_option"],
+                      "refopt": "fleet_pegasus_mount",
+                      "option_id": "kwswb995yfe49n8jiijhm"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Ocean Terror",
+                      "cost": 190,
+                      "refs": ["mount", "ocean_terror_mount_option"],
+                      "refopt": "ocean_terror_mount",
+                      "option_id": "907gn2yqskcawetvrndbcn",
+                      "extraCategories": ["fleet_menagerie"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Colossal Kraken",
+                      "cost": 390,
+                      "rules": [],
+                      "refs": ["mount", "colossal_kraken_mount_option"],
+                      "refopt": "colossal_kraken_mount",
+                      "option_id": "yyx06p0m65ysknz3drxp",
+                      "extraCategories": ["fleet_menagerie"]
+                    }
+                  ],
+                  "maxSize": 1,
+                  "collapsible": true
+                }
+              ],
+              "refs": ["dreadCaptain", "infantry"],
+              "unit_id": "dread_captain",
+              "logo": "character"
+            },
+            {
+              "option_id": "f4ckffzlgqn0ib6i65qcg",
+              "name": "Renegade Assassin",
+              "cost": 150,
+              "category": "characters",
+              "options": [],
+              "refs": ["renegadeAssassin", "infantry"],
+              "unit_id": "renegade_assassin",
+              "armyHasNotOption": [
+                {
+                  "refs": ["renegadeAssassin"],
+                  "amount": 2
+                }
+              ],
+              "logo": "character"
+            },
+            {
+              "option_id": "mc04wg2o0b5tf01iry6dc",
+              "name": "Seaboard Exarch",
+              "cost": 340,
+              "category": "characters",
+              "options": [
+                {
+                  "option_id": "fr0ikrlplve6qxylyflgfe",
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "option_id": "x7aonyslugm99x3qeg7qu8",
+                      "optionsLabel": "Melee Weapons",
+                      "options": [
+                        {
+                          "option_id": "8zi70dvvq4ciz5294wifco",
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "optionsSuffix": " (Paired Weapons)"
+                        },
+                        {
+                          "option_id": "h873j0fgcmosurmsdvb84",
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Halberd Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "halberdEnchant"],
+                          "optionsSuffix": " (Halberd)"
+                        },
+                        {
+                          "option_id": "uzlkscqjkpp4bbe1c8b7b",
+                          "type": "check",
+                          "name": "Spear",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Spear Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "spearEnchant"],
+                          "optionsSuffix": " (Spear)"
+                        },
+                        {
+                          "option_id": "wnjo190r5sil5xjwane4ps",
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Great Weapon Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
+                          "optionsSuffix": " (Great Weapon)"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "refs": ["seaboard_exarch_amount"]
+                    },
+                    {
+                      "option_id": "pgn6lr0g6tf39wkw4vam",
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"]
+                    },
+                    {
+                      "option_id": "qqorje7fkxkjoer5jafjs",
+                      "optionsLabel": "Light Armour Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Light Armour)",
+                      "options": [],
+                      "optionsDict": ["suitOfArmourEnchant", "lightArmourEnchant"],
+                      "exportGroup": "Light Armour",
+                      "parentRule": "light_armour"
+                    },
+                    {
+                      "option_id": "bp449jx75codes369out8",
+                      "type": "group",
+                      "optionsLabel": "Artefacts",
+                      "maxSize": 2,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"]
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 100
+                },
+                {
+                  "option_id": "7ajb90v0jsvvnr4qfpr95cb",
+                  "optionsLabel": "Magic",
+                  "options": [
+                    {
+                      "option_id": "ta69zlk61hs8dr5b28d4pz",
+                      "optionsLabel": "Path",
+                      "options": [
+                        {
+                          "option_id": "zmapciv053ksyfndat5kcr",
+                          "name": "Shamanism",
+                          "cost": 0,
+                          "type": "check",
+                          "refs": ["shamanism"]
+                        },
+                        {
+                          "option_id": "002fs3irsis9t4k0jd92unjpg",
+                          "name": "Witchcraft",
+                          "cost": 0,
+                          "type": "check",
+                          "refs": ["witchcraft"]
+                        }
+                      ],
+                      "minSize": 1,
+                      "maxSize": 1
+                    }
+                  ],
+                  "collapsible": true
+                },
+                {
+                  "option_id": "d612dxsth3sbenojr7soj",
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "option_id": "a6z3mwhltewh3amm8wc4xa",
+                      "type": "check",
+                      "name": "Storm Singer",
+                      "cost": 40,
+                      "refs": ["storm_singer"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["storm_singer"],
+                          "amount": 1
+                        }
+                      ],
+                      "magic": {
+                        "choices": ["H", "1", "2", "3", "4", "5", "6"]
+                      }
+                    }
+                  ]
+                }
+              ],
+              "refs": ["seaboardExarch", "infantry", "wizard", "wizardAdept"],
+              "unit_id": "seaboard_exarch",
+              "logo": "character"
+            },
+            {
+              "option_id": "w7pgqgelwyd16k7q41aig",
+              "name": "Warlock Freebooter",
+              "cost": 240,
+              "category": "characters",
+              "options": [
+                {
+                  "refs": ["army_general"],
+                  "armyHasNotOption": ["army_general"],
+                  "type": "check",
+                  "name": "General",
+                  "cost": 0,
+                  "option_id": "k7i6j8nf9grk7q414j0ag"
+                },
+                {
+                  "option_id": "qsngnx5mu9pdo1oqootcuf",
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "option_id": "9ilkxls1c2pnb3jgcfaa",
+                      "optionsLabel": "Melee Weapons",
+                      "options": [
+                        {
+                          "option_id": "mcfvwm2kq5aekzqrlppk",
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "optionsSuffix": " (Paired Weapons)"
+                        }
+                      ],
+                      "maxSize": 1
+                    },
+                    {
+                      "option_id": "insrlgsdt0o7mhrhd6o07w",
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"]
+                    },
+                    {
+                      "option_id": "lfzgvmbbqmr4yq4wb4kgqd",
+                      "optionsLabel": "Armour",
+                      "options": [
+                        {
+                          "option_id": "5icfw47lfi9ipfllbu8yq",
+                          "type": "check",
+                          "name": "Light Armour",
+                          "cost": 5,
+                          "refs": [],
+                          "optionsLabel": "Light Armour Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["suitOfArmourEnchant", "lightArmourEnchant"]
+                        }
+                      ],
+                      "maxSize": 1
+                    },
+                    {
+                      "option_id": "8aq25s72agm10ubgm1m6rc",
+                      "type": "group",
+                      "optionsLabel": "Artefacts",
+                      "maxSize": 2,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"]
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 100,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["wizardMaster"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 200
+                      }
+                    }
+                  ]
+                },
+                {
+                  "option_id": "jfdsy3aw8dszd472602po",
+                  "optionsLabel": "Mount",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Fleet Pegasus",
+                      "cost": 50,
+                      "refs": ["mount", "fleet_pegasus_mount_option"],
+                      "refopt": "fleet_pegasus_mount",
+                      "option_id": "rc56i3vk6u8r3tqaw5hc58"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Ocean Terror",
+                      "cost": 80,
+                      "refs": ["mount", "ocean_terror_mount_option"],
+                      "refopt": "ocean_terror_mount",
+                      "option_id": "aec71gft3ohcdyi8erzdo",
+                      "extraCategories": ["fleet_menagerie"],
+                      "hasOption": ["wizardMaster"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Colossal Kraken",
+                      "cost": 375,
+                      "rules": [],
+                      "refs": ["mount", "colossal_kraken_mount_option"],
+                      "refopt": "colossal_kraken_mount",
+                      "option_id": "tlkmxj82jtb8nmuohp5ge",
+                      "extraCategories": ["fleet_menagerie"],
+                      "hasOption": ["wizardMaster"]
+                    }
+                  ],
+                  "maxSize": 1,
+                  "collapsible": true
+                },
+                {
+                  "option_id": "7ajb90v0jvvnr4qfpr95cb",
+                  "optionsLabel": "Magic",
+                  "options": [
+                    {
+                      "option_id": "riyz77vgkoxc6u32isyo",
+                      "optionsLabel": "Level",
+                      "options": [
+                        {
+                          "option_id": "adwazdg4bvursbn8ylrktk",
+                          "cost": 0,
+                          "name": "Wizard Adept",
+                          "refs": ["wizardAdept"],
+                          "type": "check"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Wizard Master",
+                          "cost": 170,
+                          "refs": ["wizardMaster"],
+                          "option_id": "7vx8qxov8kmm1q06ulg63m"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "minSize": 1,
+                      "collapsible": true
+                    },
+                    {
+                      "option_id": "ta69zlk61h8dr5b28d4pz",
+                      "optionsLabel": "Path",
+                      "options": [
+                        {
+                          "option_id": "ic1d8ilik6gly1ax1svudh",
+                          "name": "Cosmology",
+                          "cost": 0,
+                          "type": "check",
+                          "refs": ["cosmology"]
+                        },
+                        {
+                          "option_id": "zmapciv053kyfndat5kcr",
+                          "name": "Shamanism",
+                          "cost": 0,
+                          "type": "check",
+                          "refs": ["shamanism"]
+                        },
+                        {
+                          "option_id": "002fs3iris9t4k0jd92unjpg",
+                          "name": "Witchcraft",
+                          "cost": 0,
+                          "type": "check",
+                          "refs": ["witchcraft"]
+                        }
+                      ],
+                      "minSize": 1,
+                      "maxSize": 1
+                    }
+                  ],
+                  "collapsible": true
+                }
+              ],
+              "refs": ["warlockFreebooter", "wizard", "infantry"],
+              "unit_id": "warlock_freebooter",
+              "logo": "character"
+            }
+          ],
+          "option_id": "krl9e60riig8f91e3gc3fx"
+        },
+        {
+          "name": "Core",
+          "minPercent": 0.25,
+          "refs": ["core"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "option_id": "8cew1a3vdoxcqhqmdnlhff",
+              "name": "Corsairs",
+              "cost": 30,
+              "category": "core",
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 14,
+                      "hide": true,
+                      "options": [
+                        {
+                          "option_id": "vwnpm62s692g2q4zjdhcv",
+                          "optionsLabel": "Type",
+                          "minSize": 1,
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "option_id": "3pftjrac1oj19tk1a18g8w",
+                              "type": "check",
+                              "name": "Corsair Boarders",
+                              "cost": 0,
+                              "refs": []
+                            },
+                            {
+                              "option_id": "8oomtjj588okd7f3fmh43",
+                              "type": "check",
+                              "name": "Corsair Ravagers",
+                              "cost": 0,
+                              "refs": ["corsair ravagers_2xtezpue"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["corsair ravagers_2xtezpue"],
+                                  "amount": 3,
+                                  "parentMult": false
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "option_id": "i121zmi3qii9a4yxet11",
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "option_id": "qa4i8k7yyvb0a4pzdk8bjy8",
+                              "type": "check",
+                              "name": "Repeater Handbow (2, 4+)",
+                              "cost": 2,
+                              "refs": []
+                            },
+                            {
+                              "option_id": "uncp65firamc2i34bi9pc",
+                              "type": "check",
+                              "name": "Vanguard",
+                              "cost": 1,
+                              "refs": ["vanguard_oh20z9ro"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["vanguard_oh20z9ro"],
+                                  "amount": 2,
+                                  "parentMult": false
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "refs": ["corsairs_amount"],
+                      "option_id": "9e3sqcjuqys2ga5yrso4oj"
+                    }
+                  ],
+                  "option_id": "3s1x0ro8w9csb7p2q2i4tr"
+                },
+                {
+                  "option_id": "cv502v5k6ftu8jr2jxzj9",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "option_id": "e6ccd4c83kbhmdunqsyty",
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"]
+                    },
+                    {
+                      "option_id": "guebvij8kiuxa90hvf0tb",
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": []
+                    },
+                    {
+                      "option_id": "wq1e29mf23pc3u9y13y37k",
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"]
+                    }
+                  ]
+                }
+              ],
+              "refs": ["corsairs", "core_unit"],
+              "unit_id": "corsairs",
+              "logo": "core"
+            },
+            {
+              "option_id": "fxb2c11pdq4nabgegubv5n",
+              "name": "Sea Wolves",
+              "cost": 85,
+              "category": "core",
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 11,
+                      "hide": true,
+                      "options": [],
+                      "refs": ["sea_wolves_amount"],
+                      "option_id": "k2buj6g7lcav81xmgr02sf"
+                    }
+                  ],
+                  "option_id": "e9fbj4whyswi4wn5w47i1"
+                }
+              ],
+              "refs": ["seaWolves", "core_unit"],
+              "unit_id": "sea_wolves",
+              "armyHasNotOption": [
+                {
+                  "refs": ["seaWolves"],
+                  "amount": 2
+                }
+              ],
+              "logo": "core"
+            }
+          ],
+          "option_id": "u7rp5h3k05ea64qu1m3n2s"
+        },
+        {
+          "name": "Special",
+          "refs": ["special"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "option_id": "9txl2yw5pervkiexab5htk",
+              "name": "Dread Mariners",
+              "cost": 35,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 20,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 16,
+                      "hide": true,
+                      "options": [
+                        {
+                          "option_id": "uf9zk0mvqrz951ooqjs3r",
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "option_id": "ega0uwg0pjdjqlybrvcr0d",
+                              "type": "check",
+                              "name": "Vanguard",
+                              "cost": 2,
+                              "refs": ["vanguard_3kkb7u3"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["vanguard_3kkb7u3"],
+                                  "amount": 2,
+                                  "parentMult": false
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "refs": ["dread_mariners_amount"],
+                      "option_id": "a7awcamoe4fetexkoof7c9"
+                    }
+                  ],
+                  "option_id": "0t0eh0xiapngb9w68xb07o"
+                },
+                {
+                  "option_id": "pf0n0w9v8x8pja8jgndrwq",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "option_id": "47ey5ext3sxd7nwfrya9q",
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"]
+                    },
+                    {
+                      "option_id": "yohn5p3xlzrkw0ic8i19p",
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": []
+                    },
+                    {
+                      "option_id": "yizf9dsz9k2m42lfie6ut",
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"]
+                    }
+                  ]
+                }
+              ],
+              "refs": ["dreadMariners"],
+              "unit_id": "dread_mariners",
+              "armyHasNotOption": [
+                {
+                  "refs": ["dreadMariners"],
+                  "amount": 5
+                }
+              ],
+              "logo": "special"
+            },
+            {
+              "option_id": "agyc3sh2kueol0z9ch522j",
+              "name": "Salt Veterans",
+              "cost": 40,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 12,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 22,
+                      "hide": true,
+                      "options": [
+                        {
+                          "option_id": "v1kjuaqaypgycco27zvc3a",
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "option_id": "zktb80estlceur8wxst3fv",
+                              "type": "check",
+                              "name": "Repeater Handbow (2, 4+)",
+                              "cost": 3,
+                              "refs": []
+                            }
+                          ]
+                        }
+                      ],
+                      "refs": ["salt_veterans_amount"],
+                      "option_id": "sl56qwrr2gdk1cu9ymwfan"
+                    }
+                  ],
+                  "option_id": "nhrnseerkzhezrmwfb52q"
+                },
+                {
+                  "option_id": "6x02zs5b6n3tm5c1ci45xh",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "option_id": "cbt72l5c6ha6gtnnnjm0n5",
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"]
+                    },
+                    {
+                      "option_id": "9lnihze8ka720h37wi2kg9",
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": []
+                    }
+                  ]
+                }
+              ],
+              "refs": ["saltVeterans"],
+              "unit_id": "salt_veterans",
+              "armyHasNotOption": [
+                {
+                  "refs": ["saltVeterans"],
+                  "amount": 2
+                }
+              ],
+              "logo": "special"
+            },
+            {
+              "option_id": "6cp0vv39ucqwd6k9lbeok",
+              "name": "Thunder Riders",
+              "cost": 100,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 4,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 60,
+                      "hide": true,
+                      "options": [],
+                      "refs": ["thunder_riders_amount"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["thunder_riders_amount"],
+                          "amount": 8
+                        }
+                      ],
+                      "option_id": "onrms73wcyasi59eimnhcj"
+                    }
+                  ],
+                  "option_id": "18spqqr4try6gt6n18lkmk"
+                },
+                {
+                  "option_id": "m3oiv09h13r46iv6xqo9",
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "option_id": "xs45h5o59vldpyfmkmghs",
+                      "type": "check",
+                      "name": "Barbed Nets",
+                      "cost": 50,
+                      "refs": []
+                    }
+                  ]
+                },
+                {
+                  "option_id": "zxldt5s3cgnls0hqsqoaub",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "option_id": "m03am82wbcd7v724h6pdi",
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"]
+                    },
+                    {
+                      "option_id": "sqsneg4w5drx2zfcdo54r",
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": []
+                    },
+                    {
+                      "option_id": "tr59p0oe3grp2nerdaib8",
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"]
+                    }
+                  ]
+                }
+              ],
+              "refs": ["thunderRiders"],
+              "unit_id": "thunder_riders",
+              "logo": "special"
+            }
+          ],
+          "option_id": "mvmuqcnma5px6w8gg6txn"
+        },
+        {
+          "name": "Fleet Menagerie",
+          "refs": ["fleet_menagerie"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "option_id": "brdrwabfqm4nlzc26wi9b8",
+              "name": "Avatar of Harag",
+              "cost": 355,
+              "category": "fleet_menagerie",
+              "options": [],
+              "refs": ["avatarOfHarag", "terrors_of_the_deep"],
+              "unit_id": "avatar_of_harag",
+              "armyHasNotOption": [
+                {
+                  "refs": ["avatarOfHarag"],
+                  "amount": 1
+                }
+              ],
+              "logo": "monster"
+            },
+            {
+              "option_id": "7ftxrcrnzqvkcrz1gysgp8",
+              "name": "Kraken",
+              "cost": 375,
+              "category": "fleet_menagerie",
+              "options": [
+                {
+                  "option_id": "jkdyv82onkrpn6oo4n4l9",
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "option_id": "jhc0lgjkc5lmh1jwm630xq",
+                      "type": "check",
+                      "name": "Colossal Kraken",
+                      "cost": 65,
+                      "refs": ["colossal kraken_rj1bfg2l"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["colossal kraken_rj1bfg2l"],
+                          "amount": 1,
+                          "parentMult": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "refs": ["kraken", "terrors_of_the_deep"],
+              "unit_id": "kraken",
+              "armyHasNotOption": [
+                {
+                  "refs": ["kraken"],
+                  "amount": 3
+                }
+              ],
+              "logo": "monster"
+            },
+            {
+              "option_id": "8o5cijvut0gv8df9wwhyd8",
+              "name": "Sea-Fog Leviathan",
+              "cost": 230,
+              "category": "fleet_menagerie",
+              "options": [],
+              "refs": ["sea-fogLeviathan", "terrors_of_the_deep"],
+              "unit_id": "sea-fog_leviathan",
+              "armyHasNotOption": [
+                {
+                  "refs": ["sea-fogLeviathan"],
+                  "amount": 2
+                }
+              ],
+              "logo": "monster"
+            },
+            {
+              "option_id": "vijfzmxxfvihgf3m9dvfq7",
+              "name": "Tritons",
+              "cost": 20,
+              "category": "fleet_menagerie",
+              "options": [
+                {
+                  "minSize": 2,
+                  "maxSize": 4,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 95,
+                      "hide": true,
+                      "options": [
+                        {
+                          "option_id": "homxwdifikf1djn2unnia",
+                          "optionsLabel": "Weapons",
+                          "options": [
+                            {
+                              "option_id": "lshkppcm21bfg5ngj03b3b",
+                              "type": "check",
+                              "name": "Paired Weapons",
+                              "cost": 0,
+                              "refs": []
+                            },
+                            {
+                              "option_id": "zsvhd7n96k647j8h5liq6",
+                              "type": "check",
+                              "name": "Halberd",
+                              "cost": 15,
+                              "refs": []
+                            }
+                          ],
+                          "maxSize": 1
+                        }
+                      ],
+                      "refs": ["tritons_amount"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["tritons_amount"],
+                          "amount": 6
+                        }
+                      ],
+                      "option_id": "cpuggvxdsofvy2w3vn60bd"
+                    }
+                  ],
+                  "option_id": "zinerc36vkaq6loxs51ua"
+                },
+                {
+                  "option_id": "5ti1txknybbybe071dkdbb",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "option_id": "d97nnoizxuf48wi8rp636l",
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 120,
+                      "refs": ["unit_champion"]
+                    }
+                  ]
+                }
+              ],
+              "refs": ["tritons"],
+              "unit_id": "tritons",
+              "armyHasNotOption": [
+                {
+                  "refs": ["tritons"],
+                  "amount": 2
+                }
+              ],
+              "logo": "monster"
+            }
+          ],
+          "option_id": "g34gfdgfdh5j54klklfdgfdg43"
+        },
+        {
+          "name": "Extra",
+          "invisible": true,
+          "refs": ["mounts"],
+          "options": [
+            {
+              "option_id": "sy8pr3mhs9f9a3kigej5k08",
+              "name": "Colossal Kraken *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["colossalKraken_mount_unit", "mount", "sizeGigantic", "beast", "terrors_of_the_deep"],
+              "unit_id": "colossal_kraken_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["colossalKraken_mount_unit"],
+                  "amount": 1
+                }
+              ],
+              "logo": "character_monster"
+            },
+            {
+              "option_id": "clc4d3prcy68luy1c24u0c",
+              "name": "Fleet Pegasus *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["fleetPegasus_mount_unit", "mount", "sizeLarge", "cavalry"],
+              "unit_id": "fleet_pegasus_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["fleetPegasus_mount_unit"],
+                  "amount": 3
+                }
+              ],
+              "logo": "character"
+            },
+            {
+              "option_id": "paxpupu8azbeszt6fha9at",
+              "name": "Ocean Terror *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["oceanTerror_mount_unit", "mount", "sizeLarge", "cavalry", "towering"],
+              "unit_id": "ocean_terror_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["oceanTerror_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "logo": "character_monster"
+            }
+          ],
+          "option_id": "ytyytbtxhr43ahwql2bee"
+        }
+      ],
+      "option_id": "v1yjqc2yu9tijxnvdq4pj"
+    }
+  ]
+}

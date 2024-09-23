@@ -1,0 +1,2380 @@
+{
+  "name": "Nippon",
+  "translation": {
+    "fr": "Nippon",
+    "cn": "Nippon"
+  },
+  "short": "np",
+  "version": "2023",
+  "nrversion": 21,
+  "playable": 1,
+  "id": 23,
+  "include": [102],
+  "hereditary": [
+    {
+      "path": "hereditary",
+      "ref": "enlightment"
+    }
+  ],
+  "reference_details": {
+    "army_general": "General",
+    "army_bsb": "Battle Standard",
+    "wizard": "Wizard",
+    "wizardApprentice": "Wizard Apprentice",
+    "wizardAdept": "Wizard Adept",
+    "wizardMaster": "Wizard Master",
+    "mount": "Mount",
+    "weaponEnchantUni": "Weapon Enchant",
+    "dominant": "Dominant",
+    "sizeLarge": "Large Size",
+    "sizeGigantic": "Gigantic Size",
+    "core_unit": "Core Unit"
+  },
+  "dictionnary": [
+    {
+      "refs": ["potions_and_scrolls"],
+      "options": []
+    },
+    {
+      "refs": ["bannerEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Mirumoto's Battle Standard",
+          "cost": 50,
+          "description": "Models in the bearer′s unit must re-roll natural tohit rolls of ‵1´ with Close Combat Attacks.",
+          "refs": ["mirumoto's battle standard_baghxc79"],
+          "armyHasNotOption": [
+            {
+              "refs": ["mirumoto's battle standard_baghxc79"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": ["core_unit"],
+          "option_id": "j3uteo1xdwnl8guh5wzgis"
+        }
+      ],
+      "option_id": "3j37tahw68sfey2juxgul"
+    },
+    {
+      "refs": ["katanaEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Dragon Claw",
+          "cost": 80,
+          "description": "Attacks made with this weapon become Magical Attacks and gain +1 Strength, +2 Armour Penetration and Lightning Reflexes.",
+          "refs": ["dragon claw_i2kfq71ch"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dragon claw_i2kfq71ch_i2kfq71ch"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "hasOption": ["daimyo"],
+          "option_id": "fNJQ97JxWUfU5iezs18d"
+        },
+        {
+          "type": "check",
+          "name": "Dance of the Cherry Blossom",
+          "cost": 50,
+          "description": "Attacks made with this weapon gain +1 Armour Penetration. Additionally,the bearer gains Kenjutsu (2).",
+          "refs": ["blossom_i2kfq71ch"],
+          "armyHasNotOption": [
+            {
+              "refs": ["blossom_i2kfq71ch"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "fNJQ97JxWbfvdgdwUfU5iezs18d"
+        }
+      ],
+      "option_id": "azi94qpci0dvcaep0fqj5n"
+    },
+    {
+      "refs": ["weaponEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Black Demon Essence",
+          "cost": 30,
+          "description": "Attacks made with this weapon always wound at least on a natural to-wound roll of ‵3´, ‵4´, ‵5´ and ‵6´. Additionally, the bearer gains Fear.",
+          "refs": ["black_i2kfq71ch"],
+          "armyHasNotOption": [
+            {
+              "refs": ["black_i2kfq71ch"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "tK46w0e8kwMe99jNI5Xq"
+        }
+      ],
+      "option_id": "utgt2qa54yp9f7ozakf8bw"
+    },
+    {
+      "refs": ["suitOfArmourEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Symbol of Imperial Rule",
+          "cost": 60,
+          "description": "The wearer gains +1 Armour. Melee Attacks against the bearer suffer a -1 to-wound modifier.",
+          "refs": ["symbol_i2kfq71ch"],
+          "armyHasNotOption": [
+            {
+              "refs": ["symbol_i2kfq71ch"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "rBcva9JhEraIK4J7d2QM"
+        },
+        {
+          "type": "check",
+          "name": "Nobunaga′s Honour",
+          "cost": 50,
+          "description": "The Armour Save of the Bearer is never worse than 5+.",
+          "refs": ["Honour_i2kfq71ch"],
+          "armyHasNotOption": [
+            {
+              "refs": ["Honour_i2kfq71ch"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "vCmukGwVrldV9RXPPgan"
+        }
+      ],
+      "option_id": "qzh4693rkwe09t4dlp9tjg8"
+    },
+    {
+      "refs": ["sodeEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "The River′s Blessing",
+          "cost": 20,
+          "description": "The bearer gains +2 Defensive Skill.",
+          "refs": ["Blessing_i2kfq71ch"],
+          "armyHasNotOption": [
+            {
+              "refs": ["Blessing_i2kfq71ch"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "fISU7ZXpV8JqANzzs1rB"
+        }
+      ],
+      "option_id": "gry9zzv6ze5mnj5dsd6dbogep"
+    },
+    {
+      "refs": ["longbowEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Curse of the Wind God",
+          "cost": 75,
+          "description": "The wielder always shoots before all other models in their unit. If there is at least one successful to-hit roll of attacks with this weapon, choose one of the following Attack Attributes (Shooting), which apply to all other friendly models making Shooting Attacks with a Longbow against the same target in this phase: • Natural to-hit rolls of ‘1’ must be rerolled. • The Armour Penetration of the attack is set to 1.",
+          "refs": ["curse_i2kfq71ch"],
+          "armyHasNotOption": [
+            {
+              "refs": ["curse_i2kfq71ch"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "szToAVChs2cBVraDwvqS"
+        }
+      ],
+      "option_id": "gry9zzv6ze5mnj56dbogep"
+    },
+    {
+      "refs": ["artefact"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Dragon Pearl",
+          "cost": 40,
+          "description": "The bearer gains Weapon Master. At the beginning of each Movement Phase, choose an enemy model in base contact with the bearer′s unit carrying a Special Item other than an enchanted Suit of Armour or a Banner enchantment. The Dragon Pearl becomes a copy of the chosen Item until the end of the turn. If an enchanted Weapon or Shield is copied, the effects of the mundane equipment are also retained by the copy.",
+          "refs": ["dragon pearl_i2kfq71ch"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dragon pearl_i2kfq71ch"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "68dj0usxf7rdc0lflb3fu"
+        },
+        {
+          "type": "check",
+          "name": "Candle of the Void",
+          "cost": 30,
+          "description": "One use only. This item can be used at the beginning of any phase and lasts until the end of the Player Turn. The bearer's unit gains +4\" March Rate, Swiftstride, Ghost Step and Strider. No models can join or leave the unit until the effect ends.",
+          "refs": ["candle of the void_93vk6t6j"],
+          "armyHasNotOption": [
+            {
+              "refs": ["candle of the void_93vk6t6j"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "xv3ghlw93on0pe51u4uye2r"
+        },
+        {
+          "type": "check",
+          "name": "General's Kabuto",
+          "cost": 40,
+          "description": "One use only. Must be activated when the bearer's model suffers its first wound in the game after Armour Saves. The bearer’s model gains Aegis (2+) against this wound.",
+          "refs": ["general's kabuto_i1rk5da"],
+          "armyHasNotOption": [
+            {
+              "refs": ["general's kabuto_i1rk5da"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "fcpna31ikqqddzfod19e"
+        },
+        {
+          "type": "check",
+          "name": "Mempo of Blood",
+          "cost": 10,
+          "description": "The bearer′s unit is immune to the effects of Fear and automatically passes Panic Tests caused by Terror",
+          "refs": ["mempo of blood_4yjshj6"],
+          "armyHasNotOption": [
+            {
+              "refs": ["mempo of blood_4yjshj6"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "of1snnfqgvoan962ev1o"
+        },
+        {
+          "type": "check",
+          "name": "Mempo of Honour",
+          "cost": 30,
+          "description": "Duels issued by the model must (if possible) be accepted by an enemy Character, unless a Champion accepts first. All enemy model parts suffer -1 Attack Value while fighting in a Duel with the bearer.",
+          "refs": ["mempo of honour_z3dplq2"],
+          "armyHasNotOption": [
+            {
+              "refs": ["mempo of honour_z3dplq2"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "option_id": "dosolysf776ox7c83q5x"
+        },
+        {
+          "type": "check",
+          "name": "Prayer Beads of the Inner Fire",
+          "cost": 50,
+          "description": "All models in the bearer′s unit gain Ritual Meditation.",
+          "refs": ["Prayer Beads of the Inner Fire_abcd1234"],
+          "armyHasNotOption": [
+            {
+              "refs": ["Prayer Beads of the Inner Fire_abcd1234"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "hasOption": ["yamabushi"],
+          "option_id": "dwadwadadgsgregeawsfds"
+        },
+        {
+          "type": "check",
+          "name": "Rod of the Horizons",
+          "cost": 50,
+          "description": "Choose a spell that is always cast with maximised roll",
+          "refs": ["rod of the horizons_nxrb6tmv"],
+          "armyHasNotOption": [
+            {
+              "refs": ["rod of the horizons_nxrb6tmv"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": [],
+          "hasOption": ["wizard"],
+          "option_id": "879evsl7wi782cpuou09xh"
+        }
+      ],
+      "option_id": "p8gv6ktql5vweua3od1v"
+    }
+  ],
+  "army": [
+    {
+      "name": "Army",
+      "optionsLabel": "Categories",
+      "maxCost": 4500,
+
+      "options": [
+        {
+          "name": "Characters",
+          "refs": ["characters"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "name": "Daimyo",
+              "cost": 160,
+              "category": "characters",
+              "options": [
+                {
+                  "refs": ["army_general"],
+                  "armyHasNotOption": ["army_general"],
+                  "type": "check",
+                  "name": "General",
+                  "cost": 0,
+                  "option_id": "gj41h3kffzddhtiuadja"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["army_bsb", "not_a_leader"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 100
+                      }
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 200,
+                  "options": [
+                    {
+                      "type": "check",
+                      "armyHasNotOption": ["army_bsb"],
+                      "refs": ["army_bsb", "not_a_leader"],
+                      "hasNotOption": ["army_general"],
+                      "name": "Battle Standard Bearer",
+                      "cost": 50,
+                      "collapsible": true,
+                      "optionsLabel": "Banner Enchants",
+                      "options": [
+                        {
+                          "optionsLabel": "First Enchant",
+                          "options": [],
+                          "optionsDict": ["bannerEnchant"],
+                          "maxSize": 1,
+                          "collapsible": true,
+                          "sortOptions": true,
+                          "option_id": "xwlw9z0j8fp2trjo2cri6k"
+                        },
+                        {
+                          "optionsLabel": "Second Enchant",
+                          "options": [],
+                          "optionsDict": ["bannerEnchant"],
+                          "maxSize": 1,
+                          "collapsible": true,
+                          "sortOptions": true,
+                          "option_id": "sgu9r9j8cqpxnsdjryd9mk"
+                        }
+                      ],
+                      "option_id": "d6936kiis0v6fkox0cetww"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Sode",
+                      "cost": 20,
+                      "optionsLabel": "Sode Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["sodeEnchant"],
+                      "option_id": "wn16q9sm6kqc63bedzjf"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Longbow(2+)",
+                      "cost": 5,
+                      "optionsLabel": "Longbow Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["longbowEnchant"],
+                      "option_id": "n6vnpbcxsbb2vwupkgx6ys"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Horo Cloak",
+                      "cost": 20,
+                      "ignoreCost": true,
+                      "option_id": "g43gfdgfdgfd5j54h5h45532"
+                    },
+                    {
+                      "optionsLabel": "Melee Weapons",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 5,
+                          "refs": [],
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "optionsSuffix": " (Paired Weapons)",
+                          "option_id": "ocz0m4b7rtdwadwar9uh9y53zd"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Spear",
+                          "cost": 5,
+                          "refs": [],
+                          "optionsLabel": "Spear Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "hasNotOption": ["mount"],
+                          "optionsDict": ["weaponEnchant"],
+                          "optionsSuffix": " (Spear)",
+                          "option_id": "vDSmnNHxkSOLwx8h55rl"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Light Lance",
+                          "cost": 5,
+                          "refs": [],
+                          "optionsLabel": "Light Lance Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "hasOption": ["mount"],
+                          "optionsDict": ["weaponEnchant", "LightLanceEnchant"],
+                          "optionsSuffix": " (Light Lance)",
+                          "option_id": "vDSmnNHxkfdfdaSOLwx8h55rl"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Halberd Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "optionsSuffix": " (Halberd)",
+                          "option_id": "f2UEprYwKHZpDaFUMgNI"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Katana",
+                          "cost": 20,
+                          "refs": [],
+                          "optionsLabel": "Katana Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "katanaEnchant"],
+                          "optionsSuffix": " (Katana)",
+                          "option_id": "K2BDl67xLDRH35L3oJpu"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 30,
+                          "refs": ["GW"],
+                          "optionsLabel": "Great Weapon Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "optionsSuffix": "(Great Weapon)",
+                          "option_id": "b4tgU3hzucIOW9R2Ezzd"
+                        }
+                      ],
+                      "option_id": "8gq05s1vzfldfdfgrwgw0xzkmgb7qgp"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "70c4x5p5u4gq25gdond5t"
+                    },
+                    {
+                      "optionsLabel": "Heavy Armour Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Heavy Armour)",
+                      "options": [],
+                      "optionsDict": ["suitOfArmourEnchant", "heavyArmourEnchant"],
+                      "exportGroup": "Heavy Armour",
+                      "parentRule": "heavy_armour",
+                      "option_id": "o5ty32uyxcboikxjdteu"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefacts",
+                      "maxSize": 2,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "ws3slvcvtc06rku45xsks4"
+                    }
+                  ],
+                  "option_id": "0d7xk0cuzy4ljrtuv4ha5no"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Warhorse",
+                      "cost": 30,
+                      "refs": ["mount", "warhorse_mount_option"],
+                      "refopt": "warhorse_mount",
+                      "option_id": "h1dx3q97zca7uql40sl89v"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Tatsu",
+                      "cost": 50,
+                      "refs": ["mount", "tatsu_mount_option"],
+                      "refopt": "tatsu_mount",
+                      "option_id": "mld3wj4nuhkg8y5expculp"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Battle Kago",
+                      "cost": 85,
+                      "refs": ["mount", "battle_kago_mount_option"],
+                      "refopt": "battle_kago_mount",
+                      "option_id": "4nmmtepi3vtta1h822ka2k"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Kirin",
+                      "cost": 110,
+                      "refs": ["mount", "kirin_mount_option"],
+                      "refopt": "kirin_mount",
+                      "option_id": "o2ngh9mf1n06skfbxoswl9"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Ancient Mizuchi",
+                      "cost": 300,
+                      "hasOption": ["army_general"],
+                      "refs": ["mount", "ancient_mizuchi_mount_option"],
+                      "extraCategories": ["will_of_the_kami"],
+                      "refopt": "ancient_mizuchi_mount",
+                      "option_id": "z1rktofuanaqf9cjaprvff"
+                    }
+                  ],
+                  "option_id": "c5yy58ftq6ebf21gojj6r6"
+                },
+                {
+                  "optionsLabel": "Mon Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Mon of the Ashiwara Clan",
+                      "cost": 20,
+                      "refs": [],
+                      "option_id": "05kwo29k6fa96z0oul3pihi"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Mon of the Taneka Clan",
+                      "cost": 25,
+                      "refs": [],
+                      "option_id": "wqxy9hr8l872g3il93uyl"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Mon of the Daimatsu Clan",
+                      "hasNotOption": ["mount"],
+                      "cost": 30,
+                      "refs": [],
+                      "option_id": "m0pue5gny91l8azgpiojy"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "option_id": "9b6phfzioo875x2hudc1hn"
+                }
+              ],
+              "refs": ["daimyo", "infantry"],
+              "unit_id": "daimyo",
+              "option_id": "8hhhd382rhhmj9o31mmla",
+              "logo": "character"
+            },
+            {
+              "name": "Kensai",
+              "cost": 220,
+              "category": "characters",
+              "options": [
+                {
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "optionsLabel": "Katana Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Katana)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant", "katanaEnchant"],
+                      "exportGroup": "Katana",
+                      "parentRule": "katana",
+                      "option_id": "7qaxau4pwted58s9gp5n47"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefacts",
+                      "maxSize": 2,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "56qkf7789t64pfdxcjd06s"
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 100,
+                  "option_id": "2dojzzf32bt46lt0jt39si"
+                }
+              ],
+              "refs": ["kensai", "infantry"],
+              "unit_id": "kensai",
+              "armyHasNotOption": [
+                {
+                  "refs": ["kensai"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "paskvj84f6k7ni2r0po69",
+              "logo": "character"
+            },
+            {
+              "name": "Shinobi",
+              "cost": 150,
+              "category": "characters",
+              "options": [
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Mon of the Shinsei Clan",
+                      "cost": 20,
+                      "refs": ["shinzeic"],
+                      "option_id": "h88566v7dd2tl7yx7lhf2"
+                    }
+                  ],
+                  "option_id": "krfza7eko8m6rco99my8gk"
+                }
+              ],
+              "override": [
+                {
+                  "armyHasNotOption": [
+                    {
+                      "refs": ["shinzeic"],
+                      "amount": 2
+                    }
+                  ]
+                }
+              ],
+              "refs": ["shinobi", "infantry"],
+              "unit_id": "shinobi",
+              "armyHasNotOption": [
+                {
+                  "refs": ["shinobi"],
+                  "amount": 1
+                }
+              ],
+              "option_id": "1kod99y6rqhigygwlsoejw",
+              "logo": "character"
+            },
+            {
+              "name": "Shugenja",
+              "cost": 120,
+              "category": "characters",
+              "options": [
+                {
+                  "refs": ["army_general"],
+                  "armyHasNotOption": ["army_general"],
+                  "type": "check",
+                  "name": "General",
+                  "cost": 0,
+                  "option_id": "pinhkgsp98mzud8mb5trp"
+                },
+                {
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "optionsLabel": "Armour",
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Light Armour",
+                          "cost": 5,
+                          "refs": [],
+                          "optionsLabel": "Light Armour Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["suitOfArmourEnchant", "lightArmourEnchant"],
+                          "option_id": "fdzll0mzqlcj5a8ihw8kg"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "option_id": "pahs21gyci9v7m3umium9"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "ntnidmn3gycdhz9i9esidn"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefacts",
+                      "maxSize": 2,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "in5lxptoe4hwe9uzq2esj"
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 100,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["wizardMaster"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 200
+                      }
+                    }
+                  ],
+                  "option_id": "rkofjtypwshfp4n0i6765t"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Mon of the Horumi Clan",
+                      "cost": 20,
+                      "refs": ["horumic"],
+                      "option_id": "zbc1voxzpjtta2p2sdf9j"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Mon of the Taneka Clan",
+                      "cost": 0,
+                      "refs": ["tan"],
+                      "option_id": "zbc1voxzdfdfaepjtta2p2sdf9j"
+                    }
+                  ],
+                  "option_id": "86kojf22gwa4o7fy8dimft"
+                },
+
+                {
+                  "optionsLabel": "Mount",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Warhorse",
+                      "cost": 10,
+                      "refs": ["mount", "warhorse_mount_option"],
+                      "refopt": "warhorse_mount",
+                      "option_id": "s9qz9y4yeq94127a672w4h"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Kirin",
+                      "cost": 25,
+                      "refs": ["mount", "kirin_mount_option"],
+                      "refopt": "kirin_mount",
+                      "option_id": "o2ngh9mf1n06skfbxoswdkamw"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "option_id": "5sofu0abgzqw11so0272y"
+                },
+                {
+                  "optionsLabel": "Magic",
+                  "options": [
+                    {
+                      "optionsLabel": "Level",
+                      "options": [
+                        {
+                          "cost": 0,
+                          "name": "Wizard Apprentice",
+                          "refs": ["wizardApprentice"],
+                          "type": "check",
+                          "option_id": "rmst8g8ga6gunyzfpsp21k"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Wizard Adept",
+                          "cost": 95,
+                          "refs": ["wizardAdept"],
+                          "option_id": "zyyjnl96h8dp71i600aqd"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Wizard Master",
+                          "cost": 265,
+                          "refs": ["wizardMaster"],
+                          "option_id": "lu1fy1gswrfgic6mtrghn5"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "minSize": 1,
+                      "collapsible": true,
+                      "option_id": "yr509evnmpcqcptf31xqs"
+                    },
+                    {
+                      "optionsLabel": "Path",
+                      "options": [
+                        {
+                          "name": "Cosmology",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "s4mqmevx8ngyatsia831lo",
+                          "refs": ["cosmology"]
+                        },
+                        {
+                          "name": "Druidism",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "yyjtt8i6dvhqac8tx0j6k",
+                          "refs": ["druidism"]
+                        },
+                        {
+                          "name": "Evocation",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "taw9op9nux9mvl7f44sxcs",
+                          "refs": ["evocation"]
+                        },
+                        {
+                          "name": "Divination",
+                          "cost": 0,
+                          "type": "check",
+                          "option_id": "UviyYZ6gtDLrvdtiYMT4",
+                          "hasOption": ["horumic"],
+                          "refs": ["divination"]
+                        }
+                      ],
+                      "collapsible": true,
+                      "maxSize": 1,
+                      "minSize": 1,
+                      "option_id": "gl4mrf4lwrluu9vb0kw1"
+                    }
+                  ],
+                  "collapsible": true,
+                  "option_id": "uc2zqasa5zh21wslbathoh"
+                }
+              ],
+              "refs": ["shugenja", "wizard", "infantry"],
+              "unit_id": "shugenja",
+              "option_id": "02f380qmp2py17ybgxgcvzn",
+              "logo": "character"
+            },
+            {
+              "name": "Yamabushi",
+              "cost": 150,
+              "category": "characters",
+              "options": [
+                {
+                  "refs": ["army_general"],
+                  "armyHasNotOption": ["army_general"],
+                  "type": "check",
+                  "name": "General",
+                  "cost": 0,
+                  "option_id": "qmj4qcz87lb562l44tyxnp"
+                },
+                {
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "optionsLabel": "Heavy Armour Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Heavy Armour)",
+                      "options": [],
+                      "optionsDict": ["suitOfArmourEnchant", "heavyArmourEnchant"],
+                      "exportGroup": "Heavy Armour",
+                      "parentRule": "heavy_armour",
+                      "option_id": "umhvv18bh7nere9qypmnbn"
+                    },
+                    {
+                      "optionsLabel": "Halberd Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Halberd)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant"],
+                      "option_id": "ntnidmn3gycdhz9i9essdasafgwaidn"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefacts",
+                      "maxSize": 2,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "x6td5jv3i1gqyefgzn0h7"
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 150,
+                  "option_id": "2s0lwlopfxh9lq0n51s9mp"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Mon of the Taneka Clan",
+                      "cost": 5,
+                      "refs": [],
+                      "option_id": "d90ayubq2u8rh34lcaf2gh"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Mon of the Horumi Clan",
+                      "cost": 45,
+                      "refs": [],
+                      "option_id": "gl1vpk72kzu10xpqa4rcvlm"
+                    }
+                  ],
+                  "option_id": "cftwfw4na55j6508ikat9"
+                },
+                {
+                  "optionsLabel": "Mount",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Warhorse",
+                      "cost": 30,
+                      "refs": ["mount", "warhorse_mount_option"],
+                      "refopt": "warhorse_mount",
+                      "option_id": "itq38g0pn78dps506ceq0c"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "option_id": "o5jg01q9vyreu468jrzrg"
+                }
+              ],
+              "refs": ["yamabushi", "infantry"],
+              "unit_id": "yamabushi",
+              "armyHasNotOption": [
+                {
+                  "refs": ["yamabushi"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "llt1xcqex68oz8htxil1i",
+              "logo": "character"
+            }
+          ],
+          "option_id": "krl9e60riig8f91e3gc3fx"
+        },
+        {
+          "name": "Core",
+          "minPercent": 0.25,
+          "refs": ["core"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Ashigaru Bowmen",
+              "cost": 20,
+              "category": "core",
+              "extraCategories": ["ranged_warfare"],
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 30,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 8,
+                      "hide": true,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Longbow (4+)",
+                              "cost": 0,
+                              "option_id": "KnNg6pg4rBWFTrZHWeTY"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Handgun (4+)",
+                              "cost": 1,
+                              "option_id": "W4GS5jfD6eFImZUvMRTw"
+                            }
+                          ],
+                          "option_id": "QdokDySfRTNdoZMUPxiE"
+                        }
+                      ],
+                      "option_id": "rt2dvezgbxo5n84vf3l"
+                    }
+                  ],
+                  "option_id": "iuq45nqi0fdohfu9674eig"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "r2bo9xtu3kzezbb11xw2"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "denhl320rtn1b94t31yfxn"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "fepq36sycqylbmmy6d5g"
+                    }
+                  ],
+                  "option_id": "pxrmojgioe40zaj7nxrqy"
+                }
+              ],
+              "refs": ["ashigaruBowmen", "core_unit"],
+              "unit_id": "ashigaru_bowmen",
+              "armyHasNotOption": [
+                {
+                  "refs": ["ashigaruBowmen"],
+                  "amount": 5
+                }
+              ],
+              "option_id": "p89mwptr931tmzbhdv70t",
+              "logo": "core"
+            },
+            {
+              "name": "Samurai Cavalry",
+              "cost": 68,
+              "category": "core",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["sparty"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ranged_warfare"]
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 8,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 19,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Mon Options",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Mon of the Ashiwara Clan",
+                              "cost": 2,
+                              "refs": [],
+                              "option_id": "47yylkd9z94bae8jdjg26g"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Mon of the Taneka Clan",
+                              "cost": 2,
+                              "refs": [],
+                              "option_id": "q2bqkjvniia3obt0mqhwph"
+                            }
+                          ],
+                          "option_id": "ej726uxjdg879vxwhahn3o"
+                        },
+                        {
+                          "optionsLabel": "Ranged Weapons",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Longbow (3+)",
+                              "cost": 2,
+                              "option_id": "8hvb56cgpldsafawfq3ltm5koirqe",
+                              "refs": ["sparty"]
+                            }
+                          ],
+                          "option_id": "thwk8lxz26ubo75k4jz6r"
+                        }
+                      ],
+                      "option_id": "bki0q4pwjgq68uem9jufmu"
+                    }
+                  ],
+                  "option_id": "gtg7pphiw3pp0bem90p5k"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "x6nsq5ogj87g2ptuhn5k58"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "jgi3yl75qy1uvkqx45wn3j"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "1bvrrwqdldzbo5sjs79w8"
+                    }
+                  ],
+                  "option_id": "mve1e8sp1al05tbdg37uxpc"
+                }
+              ],
+              "refs": ["samuraiCavalry", "core_unit"],
+              "unit_id": "samurai_cavalry",
+              "armyHasNotOption": [
+                {
+                  "refs": ["samuraiCavalry"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "9cy4skg5hawq5cjddvqd4a",
+              "logo": "core"
+            },
+            {
+              "name": "Samurai Warriors",
+              "cost": 15,
+              "category": "core",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["yumi123"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": "ranged_warfare"
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 40,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 9,
+                      "hide": true,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Spear",
+                              "cost": 0,
+                              "option_id": "X2k3t67yYQqU8RQ1CeVZ"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Halberd",
+                              "cost": 1,
+                              "option_id": "MuCoWkEubjdkDdc4wt4x"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Katana",
+                              "cost": 0,
+                              "option_id": "lzo0Fdrn54kTjtA4USqn"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Great Weapon",
+                              "cost": 2,
+                              "option_id": "jCpqONHPvS07Fh2zIeli"
+                            }
+                          ],
+                          "option_id": "I05fl0LzSXlH6xvMIEzJ"
+                        },
+                        {
+                          "type": "group",
+                          "optionsLabel": "Range Weapon",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Longbow (3+)",
+                              "cost": 4,
+                              "refs": ["yumi123"],
+                              "option_id": "djq8zaf6m9jm99kkvqbp6g"
+                            }
+                          ],
+                          "option_id": "byu8ut7dvkv0250393rwhp"
+                        },
+                        {
+                          "optionsLabel": "Options",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Mon of the Ashiwara Clan",
+                              "cost": 3,
+                              "refs": [],
+                              "option_id": "ou3TQVHPDk4FoAW4CTIH"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Mon of the Daimatsu Clan",
+                              "cost": 3,
+                              "refs": [],
+                              "option_id": "um9GZCkvmWCiW2i26JvI"
+                            }
+                          ],
+                          "option_id": "uQkiOd69nNTsoIHLx3dP"
+                        }
+                      ],
+                      "option_id": "FwIZE9yEv6fjYSoPKsoT"
+                    }
+                  ],
+                  "option_id": "jgx7egnbpwpora525vyof"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "l2ulb82uohaf4kgfm5kmcd"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "792dro8mfx7nnviljclcx"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "yflpne6i46ak5iv31h08r8"
+                    }
+                  ],
+                  "option_id": "2oe4ljizc6lvxy7ehx9r8"
+                }
+              ],
+              "refs": ["samuraiWarriors", "core_unit"],
+              "unit_id": "samurai_warriors",
+              "option_id": "q6ediajwpi12l8lf3hp3an",
+              "logo": "core"
+            },
+            {
+              "name": "Ashigaru",
+              "cost": 50,
+              "category": "core",
+              "options": [
+                {
+                  "minSize": 25,
+                  "maxSize": 60,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 4,
+                      "hide": true,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Spear",
+                              "cost": 0,
+                              "option_id": "8la2m2eahsoyubliy2vdk8"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Halberd",
+                              "cost": 1,
+                              "option_id": "bj30f3suie8z1iqxie8mlh"
+                            }
+                          ],
+                          "option_id": "hehjt37xyo9jpmlxz1hfup"
+                        }
+                      ],
+                      "option_id": "6r7lixjir2szug711l2a9"
+                    }
+                  ],
+                  "option_id": "d633hcuxrzfhdk7zbtl58a"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "jgybvbmt3g73t5mtu04ib"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "815rkpd656mftp71j98nk7"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "2fsz7seyx0hu6bk8zlnt3"
+                    }
+                  ],
+                  "option_id": "wypi9v8q4c7f2jlymeh3e"
+                }
+              ],
+              "refs": ["ashigaru", "core_unit"],
+              "unit_id": "ashigaru",
+              "option_id": "vqcgx53axlr1sj5n2y6gc",
+              "logo": "core"
+            }
+          ],
+          "option_id": "u7rp5h3k05ea64qu1m3n2s"
+        },
+        {
+          "name": "Special",
+          "refs": ["special"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Kabuki Dolls",
+              "cost": 10,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 20,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 15,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Mon of the Shinsei Clan",
+                              "cost": 4,
+                              "refs": [],
+                              "option_id": "9f0k3oxo869r6hh4k0lvmh"
+                            }
+                          ],
+                          "option_id": "8zv57xfp3a2pvzf1j13oi"
+                        }
+                      ],
+                      "option_id": "0gdw88cm8n6s61jjxi99ws"
+                    }
+                  ],
+                  "option_id": "zopqr6cnxggm14x6a4de7d"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "bucf6dkdgfjwzpo4ybghjg"
+                    }
+                  ],
+                  "option_id": "2zd3958zvegmmjuqsedmb"
+                }
+              ],
+              "refs": ["kabukiDolls"],
+              "unit_id": "kabuki_dolls",
+              "armyHasNotOption": [
+                {
+                  "refs": ["kabukiDolls"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "ragzwtzhqndhyewyrsyst",
+              "logo": "special"
+            },
+            {
+              "name": "Oath Keepers",
+              "cost": -40,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 30,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 18,
+                      "hide": true,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Halberd",
+                              "cost": 2,
+                              "option_id": "8hvb56cgplq3ltm5koirqe"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Katana",
+                              "cost": 0,
+                              "option_id": "zWxUYzklsYQ0zRBDS9j9"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Great Weapon",
+                              "cost": 2,
+                              "option_id": "M7xliox9S5OPZFbEyefV"
+                            }
+                          ],
+                          "option_id": "thwk8lxz26ubfergfrgawdo75k4jz6r"
+                        },
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Mon of the Daimatsu Clan",
+                              "cost": 3,
+                              "refs": [],
+                              "option_id": "vHkqjfot9CcZCONm4o70"
+                            }
+                          ],
+                          "option_id": "p43bPEf1LKoTDTWtyRiU"
+                        }
+                      ],
+                      "option_id": "x4fk54u6bz5lz6zg6dbsv"
+                    }
+                  ],
+                  "option_id": "8lb1kc0klirfztj9vrrwkr"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "c14c6obpjjitdgvqnsmx4"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "tsusw2volod63av7zp6cg"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "x5jrq2cx86coum436k9g9"
+                    }
+                  ],
+                  "option_id": "kddeqdrevu9w3282lbom6q"
+                }
+              ],
+              "refs": ["oathKeepers"],
+              "unit_id": "oath_keepers",
+              "option_id": "opiw21sh0eqn5a408l68mj",
+              "logo": "special"
+            },
+            {
+              "name": "Red Devils",
+              "cost": 75,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 23,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Mon of the Taneka Clan",
+                              "cost": 5,
+                              "refs": [],
+                              "option_id": "d6mnrs90qkc6vuse963af8"
+                            }
+                          ],
+                          "option_id": "pwp3crqjttj2riosnpd0wd"
+                        }
+                      ],
+                      "option_id": "pezvt2celr1j51wiybgj2"
+                    }
+                  ],
+                  "option_id": "5wmhtqmj3xr87rox3jf3xl"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "sv9mhcu8vq9kahrwp94xk"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "6had4u324dev9ykl7lu5wi"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "m6o5ixbtcyxon2opbqgg"
+                    }
+                  ],
+                  "option_id": "2hsvypftopx3x5sl1w7edm"
+                }
+              ],
+              "refs": ["redDevils"],
+              "unit_id": "red_devils",
+              "armyHasNotOption": [
+                {
+                  "refs": ["redDevils"],
+                  "amount": 4
+                }
+              ],
+              "option_id": "yrj8c5mgr6zwuaiznc39",
+              "logo": "special"
+            },
+            {
+              "name": "Warrior Monks",
+              "cost": -30,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 35,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 16,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Mon of the Horumi Clan",
+                              "cost": 3,
+                              "refs": [],
+                              "option_id": "ghshdcyvawiixdskw1pf6r"
+                            }
+                          ],
+                          "option_id": "dksz0vevrhh3lr5r6ab989"
+                        },
+                        {
+                          "type": "group",
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Halberd",
+                              "cost": 0,
+                              "option_id": "8hvbsafawfq3ltm5koirqe"
+                            }
+                          ],
+                          "option_id": "thwk8lxz2wadwadaw6ubo75k4jz6r"
+                        }
+                      ],
+                      "option_id": "yeaj2btqko1kc7xqhnnb6"
+                    }
+                  ],
+                  "option_id": "yphi8leiz192tnh74as5ca"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "0m3ffaqduh7ej7qoz9w6xl"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "vc036j92t2iw4fnv83k6i"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "1fj75yofo29z9mvt2agvq"
+                    }
+                  ],
+                  "option_id": "qsdnirih9ha3kcnfvw2gt6"
+                }
+              ],
+              "refs": ["warriorMonks"],
+              "unit_id": "warrior_monks",
+              "option_id": "8peps3txrr9xizv5bayiif",
+              "logo": "special"
+            },
+            {
+              "name": "Mikoshi Shrine",
+              "cost": 180,
+              "category": "special",
+              "options": [
+                {
+                  "optionsLabel": "Options",
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "War Shrine",
+                      "cost": 0,
+                      "refs": ["WarShrine"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["warshrine"],
+                          "amount": 2
+                        }
+                      ],
+                      "option_id": "hf7rgexfh44mn2l0yum4"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Blessing of the Kami",
+                      "cost": 40,
+                      "refs": ["botk"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["botk"],
+                          "amount": 2
+                        }
+                      ],
+                      "option_id": "bz2fwy1j0qiz0qqdfnrrfo"
+                    }
+                  ],
+                  "option_id": "28egjux8ukacv1iejnd698"
+                },
+                {
+                  "optionsLabel": "Mon Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Mon of the Horumi Clan",
+                      "cost": 20,
+                      "refs": [],
+                      "option_id": "bz2fwydaw1j0qiz0qqdfnrrfo"
+                    }
+                  ],
+                  "option_id": "28egj8ukacv1iejnd698"
+                }
+              ],
+              "refs": ["mikoshiShrine"],
+              "unit_id": "mikoshi_shrine",
+              "armyHasNotOption": [
+                {
+                  "refs": ["mikoshiShrine"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "pgdpdef2tjlv4yw67orod",
+              "logo": "kami"
+            }
+          ],
+          "option_id": "mvmuqcnma5px6w8gg6txn"
+        },
+        {
+          "name": "Ranged Warfare",
+          "refs": ["ranged_warfare"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.35,
+          "options": [
+            {
+              "name": "Ninja",
+              "cost": 70,
+              "category": "ranged_warfare",
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 16,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Mon of the Shinsei Clan",
+                              "cost": 3,
+                              "refs": [],
+                              "option_id": "cefndk2xdnq7xsnnmkq38i"
+                            }
+                          ],
+                          "option_id": "pihlu8ubbscvkcry9wsyw"
+                        }
+                      ],
+                      "option_id": "5lovxpdi0ljum8ll138qxc"
+                    }
+                  ],
+                  "option_id": "9k6u7gea6tjy80wr4kbnhn"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "xrwjhmce1eaa1sqbsymo67"
+                    }
+                  ],
+                  "option_id": "y76ysa8hx0qtv48jyh8h2q"
+                }
+              ],
+              "refs": ["ninja"],
+              "unit_id": "ninja",
+              "armyHasNotOption": [
+                {
+                  "refs": ["ninja"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "uyxh8kf54wmwflvf7e23m",
+              "logo": "arrows"
+            },
+            {
+              "name": "War Machine",
+              "cost": 140,
+              "category": "ranged_warfare",
+              "options": [
+                {
+                  "optionsLabel": "Options",
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Fire Arrow",
+                      "cost": 30,
+                      "refs": ["fire arrow_8iq2xj"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["fire arrow_8iq2xj"],
+                          "amount": 2,
+                          "parentMult": false
+                        }
+                      ],
+                      "option_id": "urhouz87titnyrwxfa7v"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Firebomb",
+                      "cost": 0,
+                      "refs": ["firebomb_rbyipkog"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["firebomb_rbyipkog"],
+                          "amount": 2,
+                          "parentMult": false
+                        }
+                      ],
+                      "option_id": "a6b7apxxb4po02w36csk7b"
+                    }
+                  ],
+                  "option_id": "wpg971tczb80qjf455c6t"
+                }
+              ],
+              "refs": ["warMachine"],
+              "unit_id": "war_machine",
+              "armyHasNotOption": [
+                {
+                  "refs": ["warMachine"],
+                  "amount": 4
+                }
+              ],
+              "option_id": "ijd9r3jfv6f0fmhsmoyrraa",
+              "logo": "arrows"
+            },
+            {
+              "name": "Yabusame",
+              "cost": 90,
+              "category": "ranged_warfare",
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 18,
+                      "hide": true,
+                      "refs": ["Yabusame_numbers"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["Yabusame_numbers"],
+                          "amount": 20
+                        }
+                      ],
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Mon of the Ashiwara Clan",
+                              "cost": 4,
+                              "refs": [],
+                              "option_id": "k8dpdycnumo2km113u4rf7"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Mon of the Taneka Clan",
+                              "cost": 0,
+                              "refs": [],
+                              "option_id": "wx4sfp8x5lekkbamr3uno"
+                            }
+                          ],
+                          "option_id": "6fqf61wf5uty5zx3a3dq"
+                        }
+                      ],
+                      "option_id": "bq2tct1vng4bcl31fku59n"
+                    }
+                  ],
+                  "option_id": "cuxqvmkneopzpthh6i2qof"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "pla8zfvgykpaie59r9s4j"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "e7ljxsu4syl4h3kir93jsj"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "eoiz6edtcycq2f8vr0pzfo"
+                    }
+                  ],
+                  "option_id": "22k7ovrmszf6ifxjp2wv5"
+                }
+              ],
+              "refs": ["yabusame"],
+              "unit_id": "yabusame",
+              "armyHasNotOption": [
+                {
+                  "refs": ["yabusame"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "rmxkf8pbyysfcd91d8aqjg",
+              "logo": "arrows"
+            }
+          ],
+          "option_id": "dsaf342gerg34g43fgsdfds"
+        },
+        {
+          "name": "Will of the Kami",
+          "refs": ["will_of_the_kami"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "name": "Great Guard",
+              "cost": 45,
+              "category": "will_of_the_kami",
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 95,
+                      "hide": true,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Mon of the Taneka Clan",
+                              "cost": 10,
+                              "refs": [],
+                              "option_id": "mfq3kza34kfksrtu21xxds"
+                            }
+                          ],
+                          "option_id": "osjr1frak7n8rz6crr3bc"
+                        }
+                      ],
+                      "option_id": "eszk343zg77ydegsuu9wa"
+                    }
+                  ],
+                  "option_id": "f610t44jq9l0x67o91goe7c"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "2f1v84nlw7av9ci8pkq2m"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "d0q2v2xzfvk7mq6pug6v06"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "oc12h1s6hmagvqhisp9hjw"
+                    }
+                  ],
+                  "option_id": "abra29dyenmqofjkk2vad"
+                }
+              ],
+              "refs": ["greatGuard"],
+              "unit_id": "great_guard",
+              "armyHasNotOption": [
+                {
+                  "refs": ["greatGuard"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "qgrwdsxxc2mixo044jl5z",
+              "logo": "kami"
+            },
+            {
+              "name": "Kitsune",
+              "cost": 100,
+              "category": "will_of_the_kami",
+              "options": [
+                {
+                  "minSize": 2,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 40,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "9xrt4t8l2u7xf8m5qqkx8g"
+                    }
+                  ],
+                  "option_id": "zd61yksu68hf4ek7k840cg"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "abviox2u3bnmkyyuctbakb"
+                    }
+                  ],
+                  "option_id": "bf20g416omil3oivpmlo9"
+                }
+              ],
+              "refs": ["kitsune"],
+              "unit_id": "kitsune",
+              "armyHasNotOption": [
+                {
+                  "refs": ["kitsune"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "ypsghd14d0gmqizauvmlrm",
+              "logo": "kami"
+            },
+            {
+              "name": "Mizuchi",
+              "cost": 360,
+              "category": "will_of_the_kami",
+              "options": [],
+              "refs": ["mizuchi"],
+              "unit_id": "mizuchi",
+              "armyHasNotOption": [
+                {
+                  "refs": ["mizuchi"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "2ngbocdast8sbev4qsyiys",
+              "logo": "kami"
+            },
+            {
+              "name": "Oni",
+              "cost": -20,
+              "category": "will_of_the_kami",
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 8,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 80,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "qpcl65ycpzk8o33v0ibkr"
+                    }
+                  ],
+                  "option_id": "sca9t980qrwmbt1adkqk"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "option_id": "fgu3xckazssa7c8mum624a"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "9132v67816ejk4jy068lwn"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "option_id": "7uvlacpro5rkeyxqaavld"
+                    }
+                  ],
+                  "option_id": "s61595ko6eb7n59ka9dh9"
+                }
+              ],
+              "refs": ["oni"],
+              "unit_id": "oni",
+              "armyHasNotOption": [
+                {
+                  "refs": ["oni"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "fsapmplyv3dkbanzlm1t4",
+              "logo": "kami"
+            }
+          ],
+          "option_id": "g34gfdgfdh5j54klklfdgfdg43"
+        },
+        {
+          "name": "Extra",
+          "invisible": true,
+          "refs": ["mounts"],
+          "options": [
+            {
+              "name": "Battle Kago *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["battleKago_mount_unit", "mount", "infantry"],
+              "unit_id": "battle_kago_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["battleKago_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "w1l1u8z1a0adl7a4x4tek6",
+              "logo": "character"
+            },
+            {
+              "name": "Kirin *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["kirin_mount_unit", "mount", "sizeLarge", "cavalry"],
+              "unit_id": "kirin_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["kirin_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "gjltlv2vbxv6wu6d1ce5k7",
+              "logo": "character"
+            },
+            {
+              "name": "Ancient Mizuchi *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["ancientMizuchi_mount_unit", "mount", "sizeGigantic", "beast"],
+              "unit_id": "ancient_mizuchi_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["ancientMizuchi_mount_unit"],
+                  "amount": 1
+                }
+              ],
+              "option_id": "kj5umenluxhgybzwvcjvg",
+              "logo": "character_kami"
+            },
+            {
+              "name": "Tatsu *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["tatsu_mount_unit", "mount", "sizeLarge", "cavalry"],
+              "unit_id": "tatsu_mount",
+              "invisible": true,
+              "option_id": "n1phgqm85jvj2neys45eo",
+              "logo": "character"
+            },
+            {
+              "name": "Warhorse *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["warhorse_mount_unit", "mount", "cavalry"],
+              "unit_id": "warhorse_mount",
+              "invisible": true,
+              "option_id": "bkqk65sm6nwcmyt0snbljh",
+              "logo": "character"
+            }
+          ],
+          "option_id": "ytyytbtxhr43ahwql2bee"
+        }
+      ],
+      "option_id": "v1yjqc2yu9tijxnvdq4pj"
+    }
+  ]
+}

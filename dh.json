@@ -1,0 +1,2800 @@
+{
+  "name": "Dwarven Holds",
+  "translation": {
+    "fr": "Forteresses Naines",
+    "cn": "要塞矮人"
+  },
+  "short": "dh",
+  "version": "2024 beta1",
+  "nrversion": 344,
+  "playable": 1,
+  "id": 4,
+  "include": [102],
+  "indicators": ["grudge"],
+  "reference_details": {
+    "army_general": "General",
+    "army_bsb": "Battle Standard",
+    "wizard": "Wizard",
+    "wizardApprentice": "Wizard Apprentice",
+    "wizardAdept": "Wizard Adept",
+    "wizardMaster": "Wizard Master",
+    "mount": "Mount",
+    "weaponEnchantUni": "Weapon Enchant",
+    "dominant": "Dominant",
+    "sizeGigantic": "Gigantic Size",
+    "core_unit": "Core Unit",
+    "runic_smith": "Runic Smith",
+    "deep_watch": "Deep Watch",
+    "kings_guard": "King's Guard",
+    "grudge": "Grudges"
+  },
+  "dictionnary": [
+    {
+      "refs": ["bannerEnchant"],
+      "options": [],
+      "option_id": "wikci3bizkqbmkrlbq87"
+    },
+    {
+      "refs": ["weaponRune"],
+      "options": [
+        {
+          "type": "numeric",
+          "name": "Rune of Destruction",
+          "cost": 80,
+          "armyHasNotOption": ["dh_wr_destruction"],
+          "refs": ["dh_wr_destruction"],
+          "description": "<span class=\"textbf\">Multiple Wounds (D3)</span>.",
+          "option_id": "b41nof2tsu2uch6od66ik"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Smashing",
+          "hasNotOption": ["mount"],
+          "cost": 55,
+          "armyHasNotOption": ["dh_wr_smash"],
+          "refs": ["dh_wr_smash"],
+          "description": "Attacks allocated towards a model with Res 5 or more have their Str <span class=\"textbf\">set</span> to 10 and AP <span class=\"textbf\">set</span> to 10.\r\n",
+          "option_id": "2y3xdhmu07flhlt4vv7qhj"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Penetration",
+          "cost": 35,
+          "refs": ["dh_wr_penetrating"],
+          "description": "+3 AP.\r\n",
+          "option_id": "ptjn0bpd4xtryjofe67vl"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Might",
+          "cost": 35,
+          "refs": ["dh_wr_might"],
+          "description": "+1 Str and +1 AP.\r\n",
+          "option_id": "2bkpyvm3mlpqll0mlulhs"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Precision",
+          "refs": ["dh_wr_precision"],
+          "cost": 25,
+          "description": "+1 to hit.",
+          "option_id": "qji6h5gq8jq3i08rjkn1c9"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Craftsmanship",
+          "refs": ["dh_wr_craftman"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dh_wr_craftman"],
+              "amount": 3
+            }
+          ],
+          "cost": 20,
+          "description": "The weapon follows the rules for Great Weapon instead of the original weapon's rules. This does not prevent the weapon from being engraved with additional Runic Weapon Enchantments.\r\n",
+          "option_id": "1eitnqtkz6ahowbtzsih5"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Quickening",
+          "refs": ["dh_wr_quick"],
+          "cost": 40,
+          "description": "+3 Agi.\r\n",
+          "option_id": "iki75v0tijgkjtg3ht3go"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Anger",
+          "refs": ["dh_wr_fury"],
+          "cost": 30,
+          "description": "+1 Att.\r\n",
+          "option_id": "2zatubbh15gaqx90tl6dih"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Lightning",
+          "refs": ["dh_wr_lightning"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dh_wr_lightning"],
+              "amount": 2
+            }
+          ],
+          "cost": 20,
+          "description": "Grind Attack (D3, Str 4, AP 1, Lightning Attacks). A model with two or more instances of this enchantment increases the number of hits to 2D3. <i>Note that these hits are not affected by the effects of other Runic Weapon Enchantments</i>.\r\n",
+          "option_id": "bb807pf147t5e6mo095n9g"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Returning",
+          "refs": ["dh_wr_returning"],
+          "cost": 10,
+          "description": "Can be used as a Shooting Weapon with the following profile: Range 8\", Shots 1, Str , AP , Quick to Fire,Accurate,Reload!The effects of other Runic Weapon Enchantments apply to Shooting Attacks made with this weapon (<i>even if the effects are normally restricted to Melee Attacks</i>).\r\n",
+          "option_id": "8kw255jfj5cg8sf0w5qyug"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Fire",
+          "refs": ["dh_wr_fire"],
+          "cost": 15,
+          "description": "When Choosing Equipment and Abilities, may gain <span class=\"textbf\">Flaming Attacks</span> until the end of the phase.\r\n",
+          "option_id": "n4mtrtcjfqpk2rfnqry1q"
+        }
+      ],
+      "option_id": "97zt73kfpxa4s5j0safz38"
+    },
+    {
+      "refs": ["armorRune"],
+      "options": [
+        {
+          "type": "numeric",
+          "name": "Rune of Resistance",
+          "refs": ["dh_ar_resistance"],
+          "armyHasNotOption": ["dh_ar_resistance"],
+          "cost": 40,
+          "description": "<span class=\"textbf\">Resistance</span>.\r\n",
+          "option_id": "xks0ukcm30cwhylkbj3l2"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Steel",
+          "refs": ["dh_ar_steel"],
+          "cost": 55,
+          "description": "Must reroll failed Armour Save rolls.",
+          "option_id": "zpui6ua3hybnokgb6n9c4h"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Retribution",
+          "refs": ["dh_ar_retribution"],
+          "cost": 15,
+          "description": "When rolling a successful <span class=\"textbf\">Aegis Save</span> from <span class=\"textbf\">Shield Wall</span>, the model inflicts a hit with the same Str and AP as the attack that was saved onto the Health Pool of the model that caused the wound. <i>This occurs before any casualties are removed. These hits do not benefit from Weapon Rules or Runic Weapon Enchantments</i>.\r\n",
+          "option_id": "byd55tfz1dqnc9xnpkfxv"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Iron",
+          "refs": ["dh_ar_iron"],
+          "cost": 25,
+          "description": "+1 Arm.\r\n",
+          "option_id": "bkst1ud479r7341t4v3oqd"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of the Forge",
+          "refs": ["dh_ar_forge"],
+          "cost": 10,
+          "description": "<span class=\"textbf\">Aegis (3+, against Flaming Attacks)</span>.",
+          "option_id": "2azsyc4bvgymekjfxf18mg"
+        }
+      ],
+      "option_id": "oxhnj86gfd4hvbt91acyc"
+    },
+    {
+      "refs": ["talismanicRune"],
+      "options": [
+        {
+          "type": "numeric",
+          "name": "Rune of Denial",
+          "refs": ["dh_ar_denial", "dominant"],
+          "armyHasNotOption": ["dh_ar_denial"],
+          "hasNotOption": ["dominant"],
+          "cost": 90,
+          "description": "One use only. The player may choose to use this Runic Artefact instead of performing a Dispelling Roll. The spell is automatically dispelled.",
+          "option_id": "f9eq7klufeovftpfygnep8"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Devouring",
+          "refs": ["dh_ar_devouring", "dominant"],
+          "armyHasNotOption": ["dh_ar_devouring"],
+          "hasOption": ["runic_smith"],
+          "cost": 65,
+          "description": "One use only. The player may choose to use this Runic Artefact instead of performing a Dispelling Roll. The spell is cast as normal but the Caster may not cast it again for the rest of the game.",
+          "option_id": "s9x0avxazmpkgor6m8nft"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Harnessing",
+          "refs": ["dh_ar_harnessing"],
+          "hasOption": ["runic_smith"],
+          "cost": 40,
+          "description": "In the opponent's Magic Phase, after rolling for Excess Magic, remove one Magic Dice from the opponent's pool.\r\n",
+          "option_id": "pgkeqdk7dbescbb2o9261k"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of the Courage",
+          "refs": ["dh_ar_courage"],
+          "cost": 35,
+          "description": "One use only. May be activated when Choosing Equipment and Abilities. For the duration of the phase, the bearer gains <span class=\"textbf\">Stubborn</span>.",
+          "option_id": "aaqhyg0xeoat199jima3ql"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Dragon's Breath",
+          "refs": ["dh_ar_dragon"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dh_ar_dragon"],
+              "amount": 3
+            }
+          ],
+          "cost": 60,
+          "description": "<span class=\"textbf\">Breath Attack (Str 4, AP 1, Flaming Attacks, Magical Attacks)</span>.\r\n",
+          "option_id": "4w8bojzbngupnxom8fwwi"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Grounding",
+          "refs": ["dh_ar_grounding"],
+          "armyHasNotOption": ["dh_ar_grounding"],
+          "hasOption": ["runic_smith"],
+          "cost": 40,
+          "description": "One use only. May be activated when Choosing Equipment and Abilities. All spells with Duration: One Turn that affect any of the following units come to an end:<br>&nbsp;&nbsp;&bull;  The bearer's unit;<br>&nbsp;&nbsp;&bull;  Enemy units in contact with the bearer's unit.<br>",
+          "option_id": "72yud5rgsmiabiqdo6mgzp"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Readiness",
+          "refs": ["dh_ar_readiness"],
+          "cost": 30,
+          "description": "One use only. May be activated at the end of the Charge Phase, immediately after all Charge Moves have been resolved. If the bearer's unit was successfully Charged during this phase, it may perform a Combat Reform (<i>following the normal rules for Combat Reforms</i>).",
+          "option_id": "3ng0qj6buy5v18lxp4djm"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Storms",
+          "refs": ["dh_ar_storms"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dh_ar_storms"],
+              "amount": 2
+            }
+          ],
+          "cost": 15,
+          "description": "One use only. May be activated at the start of the opponent's Player Turn. Choose a single enemy unit within 24\" of the bearer. Until the end of the Player Turn, Cha and Mob of all models with <span class=\"textbf\">Fly</span> in that unit are halved, rounding fractions up.\r\n",
+          "option_id": "3e8j606j0uhbq3q0sknhto"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Shielding",
+          "refs": ["dh_ar_shielding"],
+          "cost": 30,
+          "description": "<span class=\"textbf\">Aegis (+1, max. 4+)</span>. The Aegis from this Runic Artefact can <span class=\"textbf\">only</span> stack with itself and <span class=\"textbf\">Shield Wall</span>.",
+          "option_id": "e05groqvz5j0z88a49tdrui"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Mastery",
+          "refs": ["dh_ar_mastery"],
+          "cost": 15,
+          "description": "One use only. A single <i>Rune of Mastery</i> may be activated immediately before the bearer attempts to cast a Bound Spell. The Casting Roll for this Bound Spell gains +1.",
+          "option_id": "yosa1nvc87t4lqsovahwl"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Mining",
+          "refs": ["dh_ar_mining"],
+          "cost": 10,
+          "description": "During Pre-game Selections, choose a Terrain Feature on the Battlefield. As long as the bearer is on the Battlefield, all friendly models may treat this Terrain Feature as Open Terrain when making a Move Maneuvre (<i>Reform, Advance or March Move</i>), but must still follow the Unit Spacing rule at the end of their move.\r\n",
+          "option_id": "2dojhku6zt3qf48cu48dys"
+        },
+        {
+          "type": "numeric",
+          "name": "Rune of Kinship",
+          "refs": ["dh_ar_kinship"],
+          "cost": 10,
+          "hasNotOption": ["war_throne"],
+          "description": "The bearer gains Ambush (Board Edge), Scout, Vanguard.",
+          "option_id": "x1dge58d0jdajek5t659b"
+        }
+      ],
+      "option_id": "mls6brek3pkmd12vc8hv8p"
+    },
+    {
+      "refs": ["runicBanner"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Runic Standard of Shielding",
+          "refs": ["dh_rs_shielding"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dh_rs_shielding"],
+              "amount": 1
+            }
+          ],
+          "hasOption": [
+            {
+              "refs": ["army_bsb", "deep_watch", "kings_guard"],
+              "amount": 1
+            }
+          ],
+          "cost": 35,
+          "description": "The bearer's unit gains <span class=\"textbf\">Aegis (5+, against Ranged Attacks)</span>.",
+          "option_id": "y4s97rww0qexf2d471ypt"
+        },
+        {
+          "type": "check",
+          "name": "Runic Standard of Swiftness",
+          "refs": ["dh_rs_swiftness"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dh_rs_swiftness"],
+              "amount": 1
+            }
+          ],
+          "cost": 65,
+          "description": "The bearer's unit gains <span class=\"textbf\">Vanguard</span>.",
+          "option_id": "1i5ety1zc5lstdwf08xi4p"
+        },
+        {
+          "type": "check",
+          "name": "Runic Standard of Dismay",
+          "refs": ["dh_rs_dismay"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dh_rs_dismay"],
+              "amount": 1
+            }
+          ],
+          "cost": 25,
+          "description": "Charge Range rolls against the bearer's unit are Minimised.",
+          "option_id": "p9g7cll4yke19uvf6iy58"
+        },
+        {
+          "type": "check",
+          "name": "Runic Standard of Steadiness",
+          "refs": ["dh_rs_steady"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dh_rs_steady"],
+              "amount": 3
+            }
+          ],
+          "cost": 10,
+          "description": "One use only. May be activated at the start of any Movement Phase. The bearer's unit loses <span class=\"textbf\">Unwieldy</span> until the end of the Player Turn.",
+          "option_id": "q6mdv5qfmhsgjqazqatef"
+        },
+        {
+          "type": "check",
+          "name": "Runic Standard of the Anvil",
+          "refs": ["dh_rs_anvil"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dh_rs_anvil"],
+              "amount": 3
+            }
+          ],
+          "cost": 10,
+          "description": "Failed Charge Range rolls by other friendly units must be rerolled when directed against enemy units already Engaged in Combat with the bearer's unit.",
+          "option_id": "qy842hhlisqfb2pcbqz7"
+        },
+        {
+          "type": "check",
+          "name": "Runic Standard of Wisdom",
+          "refs": ["dh_rs_wisdom"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dh_rs_wisdom"],
+              "amount": 3
+            }
+          ],
+          "cost": 35,
+          "description": "Select a single Battle Rune and note which one on the Army List. This Battle Rune can be cast by the bearer as a Bound Spell. It can only target the bearer's own unit.\r\n",
+          "option_id": "m4ct15jcguuw5jgmyw3t",
+          "optionsLabel": "Spells",
+          "maxSize": 1,
+          "minSize": 1,
+          "options": [
+            {
+              "name": "Rune of Revocation",
+              "type": "check",
+              "cost": 0,
+              "option_id": "fmewifni032fi023anf032f23f32",
+              "boundSpells": [
+                {
+                  "path": "runecraft",
+                  "ref": "rune_revocation",
+                  "mods": {
+                    "range": 0
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Rune of Reckoning",
+              "type": "check",
+              "cost": 0,
+              "option_id": "fwef3232h43g43g43h4kjhj54t43",
+              "boundSpells": [
+                {
+                  "path": "runecraft",
+                  "ref": "rune_reckoning",
+                  "mods": {
+                    "range": 0
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Rune of Oaths",
+              "type": "check",
+              "cost": 0,
+              "option_id": "fwef3232h43ggfgf4343g43h4kjhj54t43",
+              "boundSpells": [
+                {
+                  "path": "runecraft",
+                  "ref": "rune_resolve",
+                  "mods": {
+                    "range": 0
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Rune of Resolve",
+              "type": "check",
+              "cost": 0,
+              "option_id": "f43g43g43kbgb543gdf433gg54",
+              "boundSpells": [
+                {
+                  "path": "runecraft",
+                  "ref": "rune_resolve",
+                  "mods": {
+                    "range": 0
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Rune of Gleaming",
+              "type": "check",
+              "cost": 0,
+              "option_id": "fjef9230jf023jg034jg43gogfd",
+              "boundSpells": [
+                {
+                  "path": "runecraft",
+                  "ref": "rune_gleaming",
+                  "mods": {
+                    "range": 0
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Rune of Resilience",
+              "type": "check",
+              "cost": 0,
+              "option_id": "fdgfdg348j34gj430g34j9g34",
+              "boundSpells": [
+                {
+                  "path": "runecraft",
+                  "ref": "rune_resilience",
+                  "mods": {
+                    "range": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "name": "Runic Standard of the Hold",
+          "refs": ["dh_rs_hold"],
+          "armyHasNotOption": [
+            {
+              "refs": ["dh_rs_hold"],
+              "amount": 3
+            }
+          ],
+          "cost": 50,
+          "description": "A unit with one or more <i>Runic Standard of the Hold</i> are considered to have one additional Proper Rank for Steady, Steadfast, Surrounded, and Rank Bonus purposes.\r\n",
+          "option_id": "88xf0qg6i1x4byqixbtzt8"
+        }
+      ],
+      "option_id": "5io5qqh6zupk04fgv2ds4b"
+    }
+  ],
+  "army": [
+    {
+      "name": "Army",
+      "optionsLabel": "Categories",
+      "maxCost": 4500,
+      "options": [
+        {
+          "name": "Characters",
+          "refs": ["perso"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "name": "King",
+              "cost": 210,
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "k2jys3uwh2mhowkbmqqa",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "optionsLabel": "Options",
+                      "options": [
+                        {
+                          "name": "Ancient Grudge",
+                          "cost": 50,
+                          "type": "check",
+                          "refs": ["grudge"],
+                          "option_id": "8ytc54n673f28z9yhn5xpx"
+                        }
+                      ],
+                      "option_id": "4h95q99nbpm8idsfbtq409"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "fuzyyean397tgifwwx4k6",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Shield Bearers",
+                      "cost": 90,
+                      "option_id": "tvnkak20a1j9cxe86alc9p",
+                      "refopt": "shield_bearers_mount"
+                    },
+                    {
+                      "type": "check",
+                      "name": "War Throne",
+                      "cost": 170,
+                      "refopt": "war_throne_mount",
+                      "option_id": "d1g4e6kpd5md93jx89pd",
+                      "maxUnitCost": 700
+                    }
+                  ],
+                  "option_id": "0jwouxcpgczhu49yxzi7d1l",
+                  "minSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 250,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 20,
+                      "ignoreCost": true,
+                      "option_id": "7412lzxdqi3dvyeifw6w6i"
+                    },
+                    {
+                      "optionsLabel": "Ranged Weapon",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Pistol (3+)",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "3y207p5hb3xh4uslvn47mo"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Guild-Crafted Handgun (3+)",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "cjaj2jgu7pluwgvxhb6jf"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Crossbow (3+)",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "j1n40qz6r0ar8ldrzb76sl"
+                        }
+                      ],
+                      "option_id": "1ca5ph35zj8zvamn06c3u"
+                    },
+                    {
+                      "optionsLabel": "Armour Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "uniqueChildrenCombo": true,
+                      "optionsDict": ["armorRune"],
+                      "option_id": "1usk2cr5y08zo9sp3wymm"
+                    },
+                    {
+                      "type": "group",
+                      "name": "Close Combat Weapon",
+                      "collapsible": true,
+                      "optionsLabel": "Weapon",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 10,
+                          "ignoreCost": true,
+                          "option_id": "66u62t78q05bfayinszk1m"
+                        }
+                      ],
+                      "option_id": "fvjry5ijw5ed5qyiw0k9n8"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponRune"],
+                      "uniqueChildrenCombo": true,
+                      "option_id": "txfhwf9zolgfhifhp50ru"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Talismanic Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["talismanicRune"],
+                      "uniqueChildrenCombo": true,
+                      "option_id": "h8b8dtts116usd9qqyn3r"
+                    }
+                  ],
+                  "option_id": "3e39mmt9cw7czauefu16g"
+                },
+                {
+                  "optionsLabel": "Battle Runes",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Battle Rune",
+                      "parsername": "Up to 1 Battle Rune",
+                      "type": "numeric",
+                      "cost": 40,
+                      "magic": {
+                        "amount": "1",
+                        "spells": [
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_revocation"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_reckoning"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_oaths"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_resolve"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_gleaming"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_resilience"
+                          }
+                        ]
+                      },
+                      "option_id": "h3htrfdhfgj456j54j54j54f"
+                    }
+                  ],
+                  "option_id": "340gre0bker-b34-b3h3h"
+                }
+              ],
+              "option_id": "iohlww4vvwsqorm6jeevx",
+              "unit_id": "king",
+              "refs": ["grudge", "tag_Dwarf", "tag_Metal Armour"],
+              "logo": "character"
+            },
+            {
+              "name": "Thane",
+              "cost": 90,
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "gs4ysura2itov7l8sto38b",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Captain and Attached",
+                      "cost": 0,
+                      "option_id": "v5f43g53454j7ksf67fgsfdf32",
+                      "refs": ["leadership_amount"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["leadership_amount"],
+                          "amount": 6
+                        }
+                      ]
+                    },
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["army_general"],
+                          "amount": 6
+                        }
+                      ],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "optionsLabel": "Options",
+                      "options": [
+                        {
+                          "name": "Ancient Grudge",
+                          "cost": 5,
+                          "type": "check",
+                          "refs": ["grudge"],
+                          "option_id": "4uxibyxwwxiekb19kapa59",
+                          "armyHasNotOption": [
+                            {
+                              "refs": ["grudge"],
+                              "amount": 6
+                            }
+                          ]
+                        }
+                      ],
+                      "option_id": "j5kc26kid3h0yk9hk9i1eum"
+                    },
+                    {
+                      "type": "check",
+                      "armyHasNotOption": ["army_bsb"],
+                      "refs": ["army_bsb", "not_a_leader"],
+                      "name": "Battle Standard Bearer",
+                      "cost": 50,
+                      "option_id": "ffsfsv342wv34534b45h54h54"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "01njy066juyh7a8yihykboa",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Shield Bearers",
+                      "cost": 90,
+                      "option_id": "gnwmeyvmh8n69akodpt0i5",
+                      "refopt": "shield_bearers_mount"
+                    }
+                  ],
+                  "option_id": "cddjsdg7gq7gkcxfzc2d09",
+                  "minSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 150,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "option_id": "k15khay84fj0aczal5vfjil",
+                      "optionsLabel": "Banner Enchant",
+                      "options": [],
+                      "type": "group",
+                      "optionsDict": ["bannerEnchant", "runicBanner"],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "childrenOptions": {
+                        "hasOption": [
+                          {
+                            "refs": ["army_bsb"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 20,
+                      "ignoreCost": true,
+                      "option_id": "1c486hhpykvskm6yy68bj"
+                    },
+                    {
+                      "optionsLabel": "Ranged Weapon",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Pistol (3+)",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "emwjz6blepf2sia879pwdp"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Guild-Crafted Handgun (3+)",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "u4zf4gdfb70apux7l7xf5v"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Crossbow (3+)",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "wd2526zrw3lxcsctzwcth"
+                        }
+                      ],
+                      "option_id": "p6jkjrkhdjn1ant1a4jq1l"
+                    },
+                    {
+                      "optionsLabel": "Armour Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "uniqueChildrenCombo": true,
+                      "optionsDict": ["armorRune"],
+                      "option_id": "djheas4bxjvsj9458c02ls"
+                    },
+                    {
+                      "type": "group",
+                      "name": "Close Combat Weapon",
+                      "collapsible": true,
+                      "optionsLabel": "Weapon",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "mnf1ghhf0img7s1o05weq"
+                        }
+                      ],
+                      "option_id": "nv3274o374rypk0tzrel2"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponRune"],
+                      "uniqueChildrenCombo": true,
+                      "option_id": "h7hld67ny12dkc2smfbsl"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Talismanic Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["talismanicRune"],
+                      "uniqueChildrenCombo": true,
+                      "option_id": "yl5zd6vit3d1k1lanoxvi6"
+                    }
+                  ],
+                  "option_id": "tm0q9gt3qgr26lv9i8deq"
+                },
+                {
+                  "optionsLabel": "Battle Runes",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Battle Rune",
+                      "parsername": "Up to 1 Battle Rune",
+                      "type": "numeric",
+                      "cost": 40,
+                      "magic": {
+                        "amount": "1",
+                        "spells": [
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_revocation"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_reckoning"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_oaths"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_resolve"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_gleaming"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_resilience"
+                          }
+                        ]
+                      },
+                      "option_id": "hg5hg54-h54h3g34f=jhggfd"
+                    }
+                  ],
+                  "option_id": "3sdggrgb534hj564-fdgrg"
+                }
+              ],
+              "option_id": "p3j2jjzcvqnp4v3e6qpcem",
+              "unit_id": "thane",
+              "refs": ["tag_Dwarf", "tag_Metal Armour"],
+              "logo": "character"
+            },
+            {
+              "name": "Dragon Seeker",
+              "cost": 190,
+              "refs": ["dragon_seeker", "not_a_leader", "tag_Dwarf"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["dragon_seeker"],
+                  "amount": 3
+                }
+              ],
+              "options": [
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 150,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "optionsLabel": "Paired Weapons Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Paired Weapons)",
+                      "exportGroup": "Paired Weapons",
+                      "parentRule": "paired_weapons",
+                      "options": [],
+                      "optionsDict": ["weaponRune"],
+                      "uniqueChildrenCombo": true,
+                      "option_id": "b8rxmtp3vcpbu6yge9ug",
+                      "refs": ["dragon_seeker_amount"]
+                    }
+                  ],
+                  "option_id": "z4t831374rh0f7xuri3oedn"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Monster Seeker",
+                      "type": "check",
+                      "cost": 85,
+                      "option_id": "jchweuxsi4mpemm8eu1wjf"
+                    },
+                    {
+                      "name": "Grim Resolve",
+                      "type": "check",
+                      "cost": 70,
+                      "option_id": "l1v4me9kcpmx1eavvyxsn"
+                    }
+                  ],
+                  "option_id": "cvsx4q79k0lfnfljahjkh"
+                }
+              ],
+              "option_id": "ds4kqir5y5tzk5oalqxhvg",
+              "unit_id": "dragon_seeker",
+              "logo": "character"
+            },
+            {
+              "name": "Runic Smith",
+              "refs": ["runic_smith", "tag_Dwarf", "tag_Metal Armour"],
+              "cost": 135,
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "o9kx4xhmhpuv2i2dsyo4c",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["army_general"],
+                          "amount": 3
+                        }
+                      ],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "optionsLabel": "Options",
+                      "options": [
+                        {
+                          "name": "Ancient Grudge",
+                          "cost": 45,
+                          "type": "check",
+                          "refs": ["grudge"],
+                          "option_id": "8zmgwd79ez5o6qbutna2yb",
+                          "armyHasNotOption": [
+                            {
+                              "refs": ["grudge"],
+                              "amount": 3
+                            }
+                          ]
+                        }
+                      ],
+                      "option_id": "6erar55rcwa6esu4qdukge"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 200,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 20,
+                      "ignoreCost": true,
+                      "option_id": "r0ndo25z7m1dtnx0fmgju"
+                    },
+                    {
+                      "optionsLabel": "Armour Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "uniqueChildrenCombo": true,
+                      "optionsDict": ["armorRune"],
+                      "option_id": "82oia0weifcib6szgyvd48"
+                    },
+                    {
+                      "type": "group",
+                      "name": "Close Combat Weapon",
+                      "collapsible": true,
+                      "optionsLabel": "Weapon",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "1ve12y6zqjp7lyzy82673p"
+                        }
+                      ],
+                      "option_id": "ayiafzt9rjo8fxqk7j17dq"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponRune"],
+                      "uniqueChildrenCombo": true,
+                      "option_id": "obtupwbo3gfxx74hb4f0h"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Talismanic Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["talismanicRune"],
+                      "uniqueChildrenCombo": true,
+                      "option_id": "zn7g1snc4hgrzp74vf3o79"
+                    }
+                  ],
+                  "option_id": "dwtenh1rdnozptv6n7wsan"
+                },
+                {
+                  "optionsLabel": "Battle Runes",
+                  "maxSize": 3,
+                  "options": [
+                    {
+                      "name": "Battle Rune(s)",
+                      "parsername": "Up to 3 different Battle Runes",
+                      "type": "numeric",
+                      "cost": 30,
+                      "magic": {
+                        "amount": "x",
+                        "spells": [
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_revocation"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_reckoning"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_oaths"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_resolve"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_gleaming"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_resilience"
+                          }
+                        ]
+                      },
+                      "option_id": "u8b7wuo6wp9ho7xleu21n"
+                    }
+                  ],
+                  "option_id": "r29oqhcuu1284y04rorn1"
+                }
+              ],
+              "option_id": "ikcj2r2mpsjrcy7h1h97p",
+              "unit_id": "runic_smith",
+              "logo": "character"
+            },
+            {
+              "name": "Engineer",
+              "cost": 120,
+              "refs": ["engineer", "tag_Dwarf", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["engineer"],
+                  "amount": 2
+                }
+              ],
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "88ous8te6cfhqa9jtyav3s",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "optionsLabel": "Options",
+                      "options": [
+                        {
+                          "name": "Ancient Grudge",
+                          "cost": 35,
+                          "type": "check",
+                          "refs": ["grudge"],
+                          "option_id": "m7q6ci1tbiapf3vta2zjhs"
+                        }
+                      ],
+                      "option_id": "io0aivfw9hebaahs6953yr"
+                    }
+                  ],
+                  "maxSize": 1
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 100,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 15,
+                      "ignoreCost": true,
+                      "option_id": "mj4qt6g59d9vdhvyw97nj"
+                    },
+                    {
+                      "optionsLabel": "Ranged Weapon",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Pistol (3+)",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "27xsgsb7z62ljaznvqgkq"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Guild-Crafted Handgun (3+)",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "2lphiqhqn5ji58ro37t1vl"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Crossbow (3+)",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "9grycsyo4w9opelolo2sz"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Forge Repeater (4+)",
+                          "cost": 20,
+                          "ignoreCost": true,
+                          "option_id": "lo5ur3r41udjoskvwivkp"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Wyrm-Slayer Rocket (3+)",
+                          "cost": 30,
+                          "ignoreCost": true,
+                          "option_id": "bj50cdt4ammaxzbzlv6qrh"
+                        }
+                      ],
+                      "option_id": "wzyti0rg8xc6rr8nzk0lw"
+                    },
+                    {
+                      "optionsLabel": "Armour Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "uniqueChildrenCombo": true,
+                      "optionsDict": ["armorRune"],
+                      "option_id": "mu1vdudrj9sfjh8mekqzx"
+                    },
+                    {
+                      "type": "group",
+                      "name": "Close Combat Weapon",
+                      "collapsible": true,
+                      "optionsLabel": "Weapon",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 5,
+                          "ignoreCost": true,
+                          "option_id": "w439xz9avqexttoeoy3mg"
+                        }
+                      ],
+                      "option_id": "0gt9k2bigog9n2qdwar761"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponRune"],
+                      "uniqueChildrenCombo": true,
+                      "option_id": "j777qxdsl1wy4gn94l8mj"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Talismanic Runes",
+                      "maxSize": 3,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["talismanicRune"],
+                      "uniqueChildrenCombo": true,
+                      "option_id": "gqiok9qydldnykhf4bwda"
+                    }
+                  ],
+                  "option_id": "42upa1psqlmiag1gnmch5j"
+                },
+                {
+                  "optionsLabel": "Battle Runes",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Battle Rune",
+                      "parsername": "Up to 1 Battle Rune",
+                      "type": "numeric",
+                      "cost": 35,
+                      "magic": {
+                        "amount": "1",
+                        "spells": [
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_revocation"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_reckoning"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_oaths"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_resolve"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_gleaming"
+                          },
+                          {
+                            "path": "runecraft",
+                            "ref": "rune_resilience"
+                          }
+                        ]
+                      },
+                      "option_id": "fgdgf-gfd=jhggf4546gsdd"
+                    }
+                  ],
+                  "option_id": "sdefg437867u567-fdgrg"
+                }
+              ],
+              "option_id": "lg2w8c8kyspj5r8g18e8l",
+              "unit_id": "engineer",
+              "logo": "character"
+            }
+          ],
+          "option_id": "5zg1hrrhlnrq66jljqcbp"
+        },
+        {
+          "name": "Core Units",
+          "minPercent": 0.25,
+          "refs": ["base"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Clan Warriors",
+              "cost": 20,
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 35,
+                  "addToUnitSize": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["vanguard_warriors"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 25
+                      }
+                    }
+                  ],
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 12,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 2,
+                              "option_id": "w5nqlrr2pvrf9ladzl7gf"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Throwing Weapons (5+)",
+                              "cost": 1,
+                              "option_id": "p6bkqcfl9zbx4lotf6tlo"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Vanguard",
+                              "cost": 2,
+                              "refs": ["vanguard_warriors"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["vanguard_warriors"],
+                                  "amount": 1,
+                                  "parentMult": false
+                                }
+                              ],
+                              "option_id": "nfa91y8azpe40r86r3e3h"
+                            }
+                          ],
+                          "option_id": "zf3iw6pzq40f37ejgsewd"
+                        },
+                        {
+                          "type": "group",
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Paired Weapons",
+                              "cost": 0,
+                              "option_id": "53mtksf22m9hl9dtxao2r"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Spear and Shield",
+                              "cost": 2,
+                              "option_id": "jo92sjklzxk6mx6v6pyd4p"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Great Weapon",
+                              "cost": 1,
+                              "option_id": "8pajp23f99thbll2d7e4yt"
+                            }
+                          ],
+                          "option_id": "wa00jqvr4oc9rt2ln9ypy"
+                        }
+                      ],
+                      "option_id": "i2mkeba6yqb8zj5qm6to6x",
+                      "refs": ["clan_warriors_amount"]
+                    }
+                  ],
+                  "option_id": "uscm0xso28422r2jar1ev"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 5,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant", "runicBanner"],
+                      "option_id": "31lwluwujixvknfaaviv6"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "judkod5lwoojdb7wsxijj"
+                    }
+                  ],
+                  "option_id": "r8ieqn1ukd9kog195tnmc"
+                }
+              ],
+              "option_id": "pnlgc2b8b5htnuktsb0j",
+              "unit_id": "clan_warriors",
+              "logo": "core",
+              "refs": ["core_unit", "tag_Dwarf", "tag_Metal Armour"]
+            },
+            {
+              "name": "Greybeards",
+              "cost": 20,
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["vanguard_warriors"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 15
+                      }
+                    }
+                  ],
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 16,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 2,
+                              "option_id": "smu7dsji0ofdbvaumenzl7"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Throwing Weapons (5+)",
+                              "cost": 3,
+                              "option_id": "tv9siasz7onkqprnaa5bb"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Vanguard",
+                              "cost": 2,
+                              "refs": ["vanguard_warriors"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["vanguard_warriors"],
+                                  "amount": 1,
+                                  "parentMult": false
+                                }
+                              ],
+                              "option_id": "x74pefhhfv8h2968q5ux1u"
+                            }
+                          ],
+                          "option_id": "hepgowc7u2p8lqkrcjlcgn"
+                        },
+                        {
+                          "type": "group",
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Great Weapon",
+                              "cost": 1,
+                              "option_id": "b2uzpw6184hlytr3j9a7m"
+                            }
+                          ],
+                          "option_id": "ablyhg13d7q2oicx7vayjr"
+                        }
+                      ],
+                      "option_id": "8wxvpapb8vo67gxem22luf",
+                      "refs": ["greybeards_amount"]
+                    }
+                  ],
+                  "option_id": "xruj61chn1itrq1cw5sgm9"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 5,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant", "runicBanner"],
+                      "option_id": "3xkmks87rmphmsxqudr5w8"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "ca0rxj2u7oq01zdcbsemzkg"
+                    }
+                  ],
+                  "option_id": "g0lwgpb9bnvegol6o2x6zn"
+                }
+              ],
+              "option_id": "7heqqxalvg20xhbbn313u0b",
+              "unit_id": "greybeards",
+              "logo": "core",
+              "refs": ["core_unit", "tag_Dwarf", "tag_Metal Armour"]
+            },
+            {
+              "name": "Clan Marksmen",
+              "cost": 40,
+              "refs": ["clan_marksmen", "core_unit", "tag_Dwarf", "tag_Metal Armour"],
+              "extraCategories": ["clans_thunder"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["clan_marksmen"],
+                  "amount": 4
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 20,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 15,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Ranged Weapons",
+                          "minSize": 1,
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Crossbow (4+)",
+                              "cost": 0,
+                              "option_id": "vq5erib6gve0a931ptrzh5l"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Crossbow (4+) and Great Weapon",
+                              "cost": 1,
+                              "option_id": "gwcrxbos34214ve0a931ptrzh5l"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Guild-Crafted Handgun (4+)",
+                              "cost": 3,
+                              "refs": ["handguns"],
+                              "option_id": "cqx0rp19se6x223ohal1hd"
+                            }
+                          ],
+                          "option_id": "tyiifyv93gr8dgsg931pcu"
+                        },
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 2,
+                              "option_id": "48q87b0ocxtwhows24dvfp"
+                            }
+                          ],
+                          "option_id": "rykwahanhd5xp7ja4q412"
+                        }
+                      ],
+                      "option_id": "ib9bw4mi0rkzjizasrobe",
+                      "refs": ["clan_marksmen_amount"]
+                    }
+                  ],
+                  "option_id": "bu9dhcmchmr020446lhxyu1"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 5,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant", "runicBanner"],
+                      "option_id": "ap5tw4mf8qi36e9gxpbye2"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "ztc4g7aprzjphn2amdevu"
+                    }
+                  ],
+                  "option_id": "rnxqkpoykphh0pjspcigr8"
+                }
+              ],
+              "option_id": "dakiowl2tc5noftaf00xj",
+              "unit_id": "clan_marksmen",
+              "logo": "core"
+            }
+          ],
+          "option_id": "2rs66n1dqsl9fzrf2bphhm"
+        },
+        {
+          "name": "Special",
+          "refs": ["special"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Deep Watch",
+              "cost": -50,
+              "refs": ["deep_watch", "tag_Dwarf", "tag_Metal Armour"],
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 18,
+                      "option_id": "z4p93qd7uhbn90s19h4k2e",
+                      "refs": ["deep_watch_amount"]
+                    }
+                  ],
+                  "option_id": "zg7f4214y2anpbk3ndor08"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant", "runicBanner"],
+                      "option_id": "cgv5y6pn74u4wo548cnn7y"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "99d0l90xb7ais1qf7d7z4"
+                    }
+                  ],
+                  "option_id": "ezflcw7nqg5kt9b78ukxyq"
+                }
+              ],
+              "option_id": "mzjlqkktmajcuqrbnmkec5",
+              "unit_id": "deep_watch",
+              "logo": "special"
+            },
+            {
+              "name": "Anvil of Power",
+              "refs": ["anvil_of_power", "war_machine", "not_a_leader", "tag_Dwarf", "tag_Metal Armour", "tag_Construct"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["anvil_of_power"],
+                  "amount": 1
+                }
+              ],
+              "cost": 180,
+              "options": [
+                {
+                  "option_id": "p7xoh2yagr0hr6q4u29j",
+                  "type": "group",
+                  "hide": true,
+                  "hidden": true,
+                  "cost": 0,
+                  "magic": {
+                    "amount": 2,
+                    "spells": [
+                      {
+                        "path": "greater_runecraft",
+                        "ref": "rune_revocation"
+                      },
+                      {
+                        "path": "greater_runecraft",
+                        "ref": "rune_reckoning"
+                      },
+                      {
+                        "path": "greater_runecraft",
+                        "ref": "rune_oaths"
+                      },
+                      {
+                        "path": "greater_runecraft",
+                        "ref": "rune_resolve"
+                      },
+                      {
+                        "path": "greater_runecraft",
+                        "ref": "rune_gleaming"
+                      },
+                      {
+                        "path": "greater_runecraft",
+                        "ref": "rune_resilience"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "option_id": "slikgro59okgxing3twd1b",
+              "unit_id": "anvil_of_power",
+              "logo": "special"
+            },
+            {
+              "name": "King's Guard",
+              "cost": 75,
+              "refs": ["kings_guard", "tag_Dwarf", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["kings_guard"],
+                  "amount": 5
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 15,
+                      "option_id": "bsubsx37lb5c5whdbsk0jv",
+                      "refs": ["king's_guard_amount"]
+                    }
+                  ],
+                  "option_id": "1bf2mlcg6z1df09olpucvi"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant", "runicBanner"],
+                      "option_id": "9dvgf49simtngvl1tnozs"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "x39pmamqlefs9ccdvslyga"
+                    }
+                  ],
+                  "option_id": "qox21sv34tbofjkhhp1fr"
+                }
+              ],
+              "option_id": "uam09d24cmgblejkri7rrq",
+              "unit_id": "kings_guard",
+              "logo": "special"
+            },
+            {
+              "name": "Miners",
+              "cost": 65,
+              "refs": ["miners", "tag_Dwarf", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["miners"],
+                  "amount": 2
+                }
+              ],
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["extra_clan"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["clans_thunder"]
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 20,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 11,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Throwing Weapons (5+)",
+                              "cost": 4,
+                              "refs": ["extra_clan"],
+                              "option_id": "anenuk9mhyjq4o8xfhkdod"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Pistol (4+)",
+                              "cost": 3,
+                              "refs": ["extra_clan"],
+                              "option_id": "zzwu5yxv3xcbaspf4109ft"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Great Weapon",
+                              "cost": 0,
+                              "option_id": "2vtzdsn4hrdkgok6ls4y1q"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Paired Weapons",
+                              "cost": 1,
+                              "option_id": "y6lvbm456pev1ktpq8rccr"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 1,
+                              "option_id": "gf5ynsecsr8baienldzma"
+                            }
+                          ],
+                          "option_id": "rb9ufu5lpco45uzflxz99t"
+                        }
+                      ],
+                      "option_id": "rejma72xyempk2gdqf1of",
+                      "refs": ["miners_amount"]
+                    }
+                  ],
+                  "option_id": "iqy83p888hc4ptzlvowysi"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "76cciofdwets44zdokeiz"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "8xur572jd05t6j4f7ilwek"
+                    }
+                  ],
+                  "option_id": "9qaz7x7r3rqzdxs57nvz4"
+                }
+              ],
+              "option_id": "cw7wnqeht1wlkiu0lxut7l",
+              "unit_id": "miners",
+              "logo": "special"
+            },
+            {
+              "name": "Seekers",
+              "cost": 5,
+              "refs": ["seekers", "tag_Dwarf"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["seekers"],
+                  "amount": 3
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 8,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "minSinze": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Vanguard",
+                              "cost": 3,
+                              "option_id": "c7r8n8argq5cd7e8bke6j"
+                            }
+                          ],
+                          "option_id": "76cakl20h3h7lf9hyxu1ho"
+                        }
+                      ],
+                      "option_id": "y3cchyzmhhdfxlxm8t81v",
+                      "refs": ["seekers_amount"]
+                    }
+                  ],
+                  "option_id": "l5gsuv03awb2fla8nl1n4"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "6j2qcvknbocqyxqy6q2pd"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "69van2frxiltdk3qojjdca"
+                    }
+                  ],
+                  "option_id": "739gae3q8z42klgqu7mkfx"
+                }
+              ],
+              "option_id": "8lwrsnfgze8u099razvrd",
+              "unit_id": "seekers",
+              "logo": "special"
+            },
+            {
+              "name": "Brothers of Vengeance",
+              "cost": -6,
+              "refs": ["seekers", "brothers_of_vengeance", "tag_Dwarf"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["seekers"],
+                  "amount": 3
+                },
+                {
+                  "refs": ["brothers_of_vengeance"],
+                  "amount": 1
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 8,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 22,
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "minSinze": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Vanguard",
+                              "cost": 3,
+                              "option_id": "c7r8n8argsq5cd7e8bke6j"
+                            }
+                          ],
+                          "option_id": "76cakl20hs3h7lf9hyxu1ho"
+                        }
+                      ],
+                      "option_id": "y3cchyzmhhdfxlsxm8t81v",
+                      "refs": ["seekers_amount"]
+                    }
+                  ],
+                  "option_id": "l5gsuv0s3awb2fla8nl1n4"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "6j2qcvsknbocqyxqy6q2pd"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "69vsan2frxiltdk3qojjdca"
+                    }
+                  ],
+                  "option_id": "7s39gae3q8z42klgqu7mkfx"
+                }
+              ],
+              "option_id": "s8lwrsnfgze8u099razvrd",
+              "unit_id": "seekers",
+              "logo": "special"
+            },
+            {
+              "name": "Vengeance Seeker",
+              "refs": ["vengeance_seeker", "tag_Dwarf"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["vengeance_seeker"],
+                  "amount": 2
+                }
+              ],
+              "cost": 120,
+              "option_id": "vgp2oc88eoge8jlmp3te6",
+              "unit_id": "vengeance_seeker",
+              "logo": "special"
+            },
+            {
+              "name": "Hold Guardians",
+              "cost": -20,
+              "refs": ["hold_guardians", "tag_Dwarf", "tag_Metal Armour"],
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["extra_clan"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["clans_thunder"]
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 90,
+                      "option_id": "7yicq5zknsmcqwu813enpi",
+                      "refs": ["hold_guardians_amount"]
+                    }
+                  ],
+                  "option_id": "cq80nhs1qxryoi5v6z1yon"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant", "runicBanner"],
+                      "option_id": "4ibyr9s3bhv5w577o8lgz3"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "inmrfup1r1at9pz5tqvawn"
+                    }
+                  ],
+                  "option_id": "d1bpmokvzlflwc6uyn4c68"
+                }
+              ],
+              "option_id": "e37tokk4mgyzo6chuxmpp",
+              "unit_id": "hold_guardians",
+              "logo": "special"
+            },
+            {
+              "name": "Grudge Buster",
+              "refs": ["grudge_buster", "tag_Dwarf", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["grudge_buster"],
+                  "amount": 2
+                }
+              ],
+              "cost": 280,
+              "option_id": "dlnsy3ktpvcd0lm888h298",
+              "unit_id": "grudge_buster",
+              "logo": "special"
+            }
+          ],
+          "option_id": "pjyqn6smxfoxu18cibak"
+        },
+        {
+          "name": "Clans' Thunder",
+          "maxPercent": 0.3,
+          "refs": ["clans_thunder"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Rangers",
+              "cost": 40,
+              "refs": ["rangers", "tag_Dwarf", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["rangers"],
+                  "amount": 2
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 20,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 11,
+                      "options": [
+                        {
+                          "optionsLabel": "Ranged Weapons",
+                          "option_id": "wmUSjhW8racLmkZoWiTF",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Throwing Weapons (4+)",
+                              "cost": 0,
+                              "refs": ["extra_clan"],
+                              "option_id": "o6jkj85c863gi4srrjdvv"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Crossbow (3+)",
+                              "cost": 6,
+                              "refs": ["extra_clan"],
+                              "option_id": "wfc68goshgmginnpksg0ic"
+                            }
+                          ]
+                        },
+                        {
+                          "optionsLabel": "Close Combat Weapons",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Paired Weapons",
+                              "cost": 0,
+                              "option_id": "9urza2lbbul1h31aqueqr"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Great Weapon",
+                              "cost": 1,
+                              "option_id": "ta7r2xnpk1hat95eb0hc17"
+                            }
+                          ],
+                          "option_id": "97yxsbbzeizss5b95to8f"
+                        },
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Crag Warden",
+                              "loses_rules": ["rulebook-scoring"],
+                              "cost": 1,
+                              "refs": ["ranger_skirmishers"],
+                              "hasNotOption": [
+                                {
+                                  "amount": 15,
+                                  "refs": ["ranger_skirmishers"]
+                                }
+                              ],
+                              "option_id": "9oazj0iiobmqy3c1u2uki"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 2,
+                              "option_id": "fduz0smxtwegdx2zyqjzrm"
+                            }
+                          ],
+                          "option_id": "lulxt2d7x3v8mkorvffvi"
+                        }
+                      ],
+                      "option_id": "7edq9ki6k2esqa96tb40us",
+                      "refs": ["rangers_amount"]
+                    }
+                  ],
+                  "option_id": "hccj1kbjysm5d50clyh5yt"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "hgdp8oqqn9szas9z5nmm5"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "f0vsv5ws4zcli3r5xdesr"
+                    }
+                  ],
+                  "option_id": "jsv2lgaf7hcd8tiycpn0d"
+                }
+              ],
+              "option_id": "bjf1ukgina763w7ejlduf6",
+              "unit_id": "rangers",
+              "logo": "pistols"
+            },
+            {
+              "name": "Forge Wardens",
+              "cost": 20,
+              "refs": ["forge_wardens", "tag_Dwarf", "tag_Metal Armour"],
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 16,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 18,
+                      "refs": ["forge_wardens_numbers"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["forge_wardens_numbers"],
+                          "amount": 30
+                        }
+                      ],
+                      "option_id": "vonwf6j6nrn07mbrmo7lwcm"
+                    }
+                  ],
+                  "option_id": "1g1k1pj0lf1iw4dp5qpjkd"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant", "runicBanner"],
+                      "option_id": "q54x2hmgv2o26m26491"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "iwarkwvxk7dluvn5e5mq9"
+                    }
+                  ],
+                  "option_id": "vq0yoooe27c1nqkzcnwv6"
+                }
+              ],
+              "option_id": "t037tkh4k87fbxqeodum9",
+              "unit_id": "forge_wardens",
+              "logo": "pistols"
+            },
+            {
+              "name": "Steam Copters",
+              "refs": ["steam_copter", "tag_Dwarf", "tag_Metal Armour", "tag_Construct"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["steam_copter"],
+                  "amount": 3
+                }
+              ],
+              "cost": 55,
+              "options": [
+                {
+                  "minSize": 1,
+                  "maxSize": 2,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 130,
+                      "options": [
+                        {
+                          "optionsLabel": "Type",
+                          "minSize": 1,
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "name": "Shrapnel Grenades",
+                              "cost": 0,
+                              "type": "check",
+                              "refs": ["attack_copter"],
+                              "option_id": "3s2hfkvz71dfy5yq24pwgt"
+                            },
+                            {
+                              "name": "Shrapnel Bombs",
+                              "cost": 35,
+                              "type": "check",
+                              "refs": ["steam_bomber"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["steam_bomber"],
+                                  "amount": 2
+                                }
+                              ],
+                              "option_id": "rg8imisgiavshz8c0c2xj"
+                            }
+                          ],
+                          "option_id": "9z0903ztglpxdjpodf31bf"
+                        }
+                      ],
+                      "option_id": "fk531d5p2ofnmfcq2f15nf",
+                      "refs": ["steam_copters_amount"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["steam_copters_amount"],
+                          "amount": 5
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "hgq2qcgtoq8qr4f6jex6g9"
+                }
+              ],
+              "option_id": "0ztoz1oqlxu9zfthappx7cs",
+              "unit_id": "steam_copters",
+              "logo": "pistols"
+            }
+          ],
+          "option_id": "l4twrca52ae4neao6s9shn"
+        },
+        {
+          "name": "Engines of War",
+          "refs": ["engines_of_war"],
+          "maxPercent": 0.2,
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Field Artillery",
+              "refs": ["field_artillery", "war_machine", "tag_Dwarf", "tag_Metal Armour", "tag_Construct"],
+              "cost": 100,
+              "options": [
+                {
+                  "optionsLabel": "Artillery Weapon",
+                  "collapsible": true,
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "definesType": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "cost": 0,
+                      "name": "Dwarf Ballista (4+)",
+                      "refs": ["dwarf_balista"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["dwarf_balista"],
+                          "amount": 4
+                        }
+                      ],
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Rune Crafted (+1 to hit towards Fly)",
+                              "cost": 15,
+                              "option_id": "z3a9tz3k74whhnemnaw4"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Flaming Shot",
+                              "cost": 0,
+                              "option_id": "f32fsdfgdshg34fg32few"
+                            }
+                          ],
+                          "option_id": "pai83tufv7hfiyj3lvsgmt"
+                        }
+                      ],
+                      "option_id": "ehwltz86lm11o6j8l1b17"
+                    },
+                    {
+                      "type": "check",
+                      "cost": 70,
+                      "name": "Flame Cannon (2+)",
+                      "refs": ["flame_cannon"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["flame_cannon"],
+                          "amount": 2
+                        }
+                      ],
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Flaming Shot",
+                              "cost": 0,
+                              "option_id": "fg342g34g34fxcffgdgbfd34g34"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Rune Crafted (+1 Str)",
+                              "cost": 70,
+                              "option_id": "ca2ofxogcps8cj2yy3dge"
+                            }
+                          ],
+                          "option_id": "dg4h448wgwyct2damg7u"
+                        }
+                      ],
+                      "option_id": "37mdlce8shw88t26jsg2mw"
+                    },
+                    {
+                      "type": "check",
+                      "cost": 110,
+                      "name": "Dwarf Catapult (4+)",
+                      "refs": ["catapult"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["catapult"],
+                          "amount": 2
+                        }
+                      ],
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Flaming Shot",
+                              "cost": 0,
+                              "option_id": "f324gdfh565h34g34g34f6fj"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Rune Crafted (Area Attack (3×2))",
+                              "cost": 90,
+                              "option_id": "olsa1q55wj9q72dptzsvtq"
+                            }
+                          ],
+                          "option_id": "xlacb4bxck0ge9s29c1ylv"
+                        }
+                      ],
+                      "option_id": "q8mvlvaynb9zdz4kzhewli"
+                    },
+                    {
+                      "type": "check",
+                      "cost": 145,
+                      "name": "Dwarf Cannon (4+)",
+                      "refs": ["artillery_canon"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["artillery_canon"],
+                          "amount": 2
+                        }
+                      ],
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Flaming Shot",
+                              "cost": 0,
+                              "option_id": "k4fgd3fewdb5454bb53v54"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Rune Crafted (Direct Hit (D3+2) towards Height 5)",
+                              "cost": 40,
+                              "option_id": "9f9jh1pdd096djjp1wvc52"
+                            }
+                          ],
+                          "option_id": "gupn27m6f6x5sps5jvve8"
+                        }
+                      ],
+                      "option_id": "441365dn8mse6ba51cqni7"
+                    },
+                    {
+                      "type": "check",
+                      "cost": 150,
+                      "name": "Organ Gun (4+)",
+                      "refs": ["artillery_organ"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["artillery_organ"],
+                          "amount": 2
+                        }
+                      ],
+                      "options": [
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Flaming Shot",
+                              "cost": 0,
+                              "option_id": "6b7ifv3ew32vc34v43v534"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Rune Crafted (+1 to wound)",
+                              "cost": 80,
+                              "option_id": "wa57vjvgvubak9zgyxj5zr"
+                            }
+                          ],
+                          "option_id": "aw2iuh63tgbluq7rf1yjzm"
+                        }
+                      ],
+                      "option_id": "iqu25bxi1xfk4scl3h0s6n"
+                    }
+                  ],
+                  "option_id": "o6ulbdlfcccbwh8b2eoof"
+                }
+              ],
+              "option_id": "r1riufbrxto99jur1glzas",
+              "unit_id": "field_artillery",
+              "logo": "cannonballs"
+            },
+            {
+              "name": "Giant Dwarf",
+              "cost": 330,
+              "category": "engines_of_war",
+              "options": [
+                {
+                  "optionsLabel": "Weapons",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Giant Club",
+                      "cost": 0,
+                      "refs": [],
+                      "option_id": "5epty7wl9ljzweqa37lirc"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Giant Seeker",
+                      "cost": 20,
+                      "refs": [],
+                      "option_id": "yylw4877i6pe9k2t743io"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Giant of the Deep",
+                      "cost": 30,
+                      "refs": [],
+                      "option_id": "4s7ktjr24weqpfkhm743hk"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "option_id": "xjpjhcedbgm6rejoxr7ttx"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Big Brother",
+                      "cost": 25,
+                      "refs": [],
+                      "option_id": "89d2nsea8nc6o3ochg8gg"
+                    }
+                  ],
+                  "option_id": "bw87t5p6v0vkp2da0858s"
+                }
+              ],
+              "refs": ["giantDwarf"],
+              "unit_id": "giant_dwarf",
+              "armyHasNotOption": [
+                {
+                  "refs": ["giantDwarf"],
+                  "amount": 2
+                }
+              ],
+              "option_id": "19rng7bo528nuspnf4c8a7",
+              "logo": "cannonballs"
+            }
+          ],
+          "option_id": "myih8incx2dkp7re1pxztj"
+        },
+        {
+          "name": "Mounts",
+          "invisible": true,
+          "refs": ["mounts"],
+          "options": [
+            {
+              "name": "Shield Bearers *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "shieldBearers_mount_unit", "tag_Dwarf", "tag_Mount"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["shieldBearers_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "unit_id": "shield_bearers_mount",
+              "invisible": true,
+              "option_id": "5ljhvqulejdmg4ljfova5o",
+              "logo": "character"
+            },
+            {
+              "name": "War Throne *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": [
+                "mount",
+                "warThrone_mount_unit",
+                {
+                  "ref": "grudge",
+                  "amount": 1
+                },
+                "tag_Dwarf",
+                "tag_Mount"
+              ],
+              "armyHasNotOption": [
+                {
+                  "refs": ["warThrone_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "unit_id": "war_throne_mount",
+              "invisible": true,
+              "option_id": "zxvq71y49zahl2tkeytlrq",
+              "logo": "character"
+            }
+          ],
+          "option_id": "nqqgf9i7cfcwtljf5o87d"
+        }
+      ],
+      "option_id": "j4ismay4slbtgunpiqezr"
+    }
+  ]
+}

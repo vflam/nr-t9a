@@ -1,0 +1,3116 @@
+{
+  "name": "Vampire Covenant",
+  "translation": {
+    "fr": "Conclave Vampirique",
+    "cn": "吸血鬼秘会"
+  },
+  "short": "vc",
+  "version": "3rd ed",
+  "nrversion": 414,
+  "playable": 1,
+  "id": 16,
+  "include": [102],
+  "hereditary": [
+    {
+      "path": "hereditary",
+      "ref": "arise"
+    }
+  ],
+  "reference_details": {
+    "army_general": "General",
+    "army_bsb": "Battle Standard",
+    "wizard": "Wizard",
+    "wizardApprentice": "Wizard Apprentice",
+    "wizardAdept": "Wizard Adept",
+    "wizardMaster": "Wizard Master",
+    "mount": "Mount",
+    "weaponEnchantUni": "Weapon Enchant",
+    "dominant": "Dominant",
+    "core_unit": "Core Unit",
+    "shriek_horror": "Shrieking Horror",
+    "unit_ghouls": "Ghouls",
+    "vampire_char": "Vampire",
+    "tertre": "Barrow Guard or King",
+    "blood_power": "Blood Powers",
+    "mysteries": "Mysteries of the Night",
+    "wizardApprenticeOrAdept": "Wizard Apprentice or Adept",
+    "spell": "Spell",
+    "gates_of_the_netherworld": "Gates of the Netherworld"
+  },
+  "dictionnary": [
+    {
+      "refs": ["shieldEnchant"],
+      "options": [
+        {
+          "name": "Dusk Forged",
+          "cost": 75,
+          "option_id": "knurrbl2kigx744fp3uc2j",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "idya4e0s3pj8qzgyhimbd"
+    },
+    {
+      "refs": ["armourEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "refs": ["ae_vc_black_king"],
+          "armyHasNotOption": ["ae_vc_black_king"],
+          "name": "Legend of the Black King",
+          "cost": 110,
+          "description": "+1 Arm and <span class=\"textbf\">Aegis (4+)</span>.",
+          "option_id": "c7xrvyy0f7t1ufpkajv2on",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "excluded": ["5"]
+              }
+            }
+          }
+        },
+        {
+          "name": "Death Cheater",
+          "cost": 100,
+          "option_id": "uj8l0ynzmboicjy26u68fe",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Ghostly Guard",
+          "cost": 30,
+          "option_id": "bj6vwjucs7za7wjru23mb",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "1s13enh1w9mj40jjpzhhoa"
+    },
+    {
+      "refs": ["bannerEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "hasOption": ["tertre"],
+          "refs": ["be_barrow"],
+          "armyHasNotOption": ["be_barrow"],
+          "name": "Black Standard of Zagvozd",
+          "cost": 55,
+          "description": "Melee Attacks made by Rank-and-File model parts without Mount in the bearer's unit gains +1 to hit.",
+          "option_id": "973ykkblf2uri0p1fucnr9"
+        },
+        {
+          "name": "Banner of Speed",
+          "cost": 45,
+          "option_id": "3sn37l22n0ztvj9rmqq7e",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "u1ku5dupuumz61j7y5mhap"
+    },
+    {
+      "refs": ["handWeaponEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Reaper's Harvest",
+          "cost": 90,
+          "armyHasNotOption": ["we_vc_harvester"],
+          "refs": ["weaponEnchantUni", "we_vc_harvester"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "description": "Str is <span class=\"textbf\">set</span> to 10, AP is <span class=\"textbf\">set</span> to 10, <span class=\"textbf\">Divine Attacks</span>. When rolling to wound use the enemy's Courage instead of its Resilience.",
+          "option_id": "am702ki757ngj9a6v95k89"
+        },
+        {
+          "type": "check",
+          "name": "True Thirst",
+          "armyHasNotOption": ["we_vc_true_thi"],
+          "refs": ["weaponEnchantUni", "we_vc_true_thi"],
+          "hasNotOption": ["weaponEnchantUni"],
+          "hasOption": ["vampire_char"],
+          "cost": 45,
+          "description": "+1 Str, +1 AP, Unholy Appetite, Vampiric (3+). If the wielder's model has Height 4 or more, the attacks gain <span class=\"textbf\">Vampiric (5+)</span> instead of <span class=\"textbf\">Vampiric (3+)</span>.",
+          "option_id": "95axz4aqfjs3pziahcomlz"
+        }
+      ],
+      "option_id": "c2x9oaf26k9jjy7kq2chme"
+    },
+    {
+      "refs": ["weaponEnchant"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Supernatural Dexterity",
+          "cost": 45,
+          "option_id": "4rtg3e4rg34hgfewg43g34",
+          "shared": true
+        },
+        {
+          "type": "check",
+          "name": "Eldritch Inscriptions",
+          "cost": 30,
+          "option_id": "d23dfwg43g23f32df32324",
+          "shared": true
+        }
+      ],
+      "option_id": "ntcu8mdkfonsl48yo3wor"
+    },
+    {
+      "refs": ["artefact"],
+      "options": [
+        {
+          "type": "check",
+          "hasOption": [
+            {
+              "refs": ["wizard"],
+              "amount": 1
+            }
+          ],
+          "name": "Necromantic Staff",
+          "cost": 85,
+          "boundSpells": [
+            {
+              "ref": "arise",
+              "path": "hereditary",
+              "mods": {
+                "castValue": 5,
+                "range": 12,
+                "types": ["augment", "aura"]
+              }
+            }
+          ],
+          "armyHasNotOption": ["art_vc_necro_staff"],
+          "refs": ["art_vc_necro_staff"],
+          "description": "The bearer gains <span class=\"textbf\">Channel (1)</span> and can cast <i>Arise!</i> (Hereditary Spell) as a Bound Spell (5+), with the following changes : its Range is 6\", and it has type Aura.",
+          "option_id": "ygvvfe5j6xp001z3y474syyz"
+        },
+        {
+          "type": "check",
+          "name": "Hypnotic Pendant",
+          "cost": 60,
+          "armyHasNotOption": ["art_vc_hypno"],
+          "refs": ["art_vc_hypno"],
+          "description": "The bearer gains <span class=\"textbf\">Parry</span>. All Rank-and-File models with Height 2 or less in the bearer's unit gain <span class=\"textbf\">Parry</span>.",
+          "option_id": "y7tpn4apgj3p1463shw1q",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "excluded": ["5"]
+              }
+            }
+          }
+        },
+        {
+          "type": "check",
+          "name": "Eternity Gem",
+          "cost": 45,
+          "armyHasNotOption": ["art_vc_eternity_gem"],
+          "refs": ["art_vc_eternity_gem"],
+          "description": "The bearer's model gains <span class=\"textbf\">Immune (Lethal Strike, Poison Attacks, Multiple Wounds (X))</span>.",
+          "option_id": "9ii8z61i8zj1761mnblkvt",
+          "hasOption": ["tag_Vampire"],
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1", "2", "3"]
+              }
+            }
+          },
+          "override": {
+            "hasOption": [
+              {
+                "refs": ["moustrous_revenant_mount_unit"],
+                "amount": 1
+              }
+            ],
+            "options": {
+              "hasStat": {}
+            }
+          }
+        },
+        {
+          "type": "check",
+          "name": "Night's Crown",
+          "cost": 55,
+          "refs": ["art_vc_nightcrown"],
+          "armyHasNotOption": ["art_vc_nightcrown"],
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1", "2"]
+              }
+            }
+          },
+          "description": "Attacks towards the bearer suffer -1 to wound.\r\n",
+          "option_id": "0ifjy1d2xl6jmt4v8g8rp"
+        },
+        {
+          "type": "check",
+          "name": "Cursed Medallion",
+          "cost": 35,
+          "refs": ["art_cursed_med"],
+          "armyHasNotOption": ["art_cursed_med"],
+          "description": "During Pre-game Selections choose a Character, or a single model unit on the opponent's Army List. The bearer must reroll failed to-hit and to-wound rolls against the chosen model.",
+          "option_id": "cshsesv68fhoqwmi64yfar"
+        },
+        {
+          "name": "Mask of Mindless Violence",
+          "cost": 60,
+          "option_id": "u7hv8rbi7mjocxrs657gs",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Essence of a Free Mind",
+          "cost": 25,
+          "option_id": "9s9m619xf635hioonjko7",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Rod of Battle",
+          "cost": 30,
+          "option_id": "dcgewmlotekcrdspha2i2",
+          "type": "check",
+          "shared": true
+        },
+        {
+          "name": "Obsidian Rock",
+          "cost": 20,
+          "option_id": "px0n5yp2s4mwl5lu7lvx7o",
+          "type": "check",
+          "shared": true
+        }
+      ],
+      "option_id": "gxesbg593a6jtsjy5symj"
+    },
+    {
+      "refs": ["potions_and_scrolls"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Elixir of Death",
+          "cost": 45,
+          "description": "The bearer's model gains Ghost Step,Ghostly Form. The model cannot join Rank-and-File units with <span class=\"textbf\">Ghostly Form</span>.",
+          "option_id": "qy310ethb8nnbhyrgl9ij",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "max": 5
+              }
+            }
+          },
+          "refs": ["elixir_death"],
+          "armyHasNotOption": ["elixir_death"]
+        }
+      ],
+      "option_id": "m70x7yinws6buseula99h"
+    },
+    {
+      "refs": ["dominantBloodPowers"],
+      "options": [
+        {
+          "type": "check",
+          "cost": 45,
+          "name": "Lahmia",
+          "description": "\r\n\tThe bearer's Arm is <span class=\"textbf\">set</span> to 1, it loses Metal Armour and gains Distracting (1, if Height 1--4), Elven Finesse.\r\n",
+          "option_id": "qEcQKTG5pcscaqCxUvuG",
+          "refs": ["lahmia", "blood_power", "ancestral_blood_power"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2
+            }
+          ],
+          "neverHide": true
+        },
+        {
+          "type": "check",
+          "cost": 60,
+          "name": "Strigoi",
+          "description": "\r\n\tThe bearer's Arm is <span class=\"textbf\">set</span> to 0 and its HP are <span class=\"textbf\">set</span> to 4, it loses Metal Armour and gains <span class=\"textbf\">First Strike (Hatred)</span>. If taken on a model on foot, it gains <span class=\"textbf\">Fortitude (4+)</span>.\r\n",
+          "option_id": "4J4rW4064TmII9lrFTDP",
+          "refs": ["strigoi", "blood_power", "ancestral_blood_power"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2
+            }
+          ],
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["army_general"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "minSize": 1
+              }
+            }
+          ],
+          "options": [
+            {
+              "option_id": "fsdf34209fj23f32hg432h",
+              "hasOption": ["army_general"],
+              "type": "check",
+              "name": "Strigoi General",
+              "refs": ["strigoi_general"],
+              "hide": true,
+              "invisible": true
+            }
+          ],
+          "neverHide": true
+        },
+        {
+          "type": "check",
+          "cost": 40,
+          "name": "Sangreal",
+          "description": "\r\n\t The model part gains +1 Arm and <span class=\"textbf\">Fury</span>.\r\n",
+          "option_id": "Fby2PDV86O5UkfxGg499",
+          "refs": ["sangreal", "blood_power", "ancestral_blood_power"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2
+            }
+          ],
+          "neverHide": true
+        },
+        {
+          "type": "check",
+          "cost": 0,
+          "name": "Vetala",
+          "description": "\r\n\t  The model gains Vampiric (4+), Disciplined, Awaken (Bat Swarms, Dire Wolves, Great Bats, Zombies). The bearer's unit gains <span class=\"textbf\">Autonomous</span>.\r\n\t ",
+          "option_id": "pUDA6woO2OByU5kyGqY9",
+          "refs": ["vetala", "blood_power", "ancestral_blood_power"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2
+            }
+          ],
+          "neverHide": true
+        }
+      ],
+      "option_id": "vqz547xrterse97i56jra"
+    },
+    {
+      "refs": ["bloodPowers"],
+      "options": [
+        {
+          "type": "check",
+          "cost": 70,
+          "name": "Blood Magic",
+          "description": "\r\n\tThe first time each Magic Phase that the bearer fails a Casting Roll for a Learned Spell, the bearer may reroll all Magic Dice for this Casting Roll. If this option is used, the bearer chooses a Character in its unit to lose 1 HP.\r\n",
+          "option_id": "IWNNgi6B27DVlYwHxSTJ",
+          "refs": ["blood_power", "blood_magic"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ],
+          "armyHasNotOption": [
+            {
+              "refs": ["blood_magic"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 70,
+          "name": "Ghoul Lord",
+          "description": "\r\n\tThe bearer and all Rank-and-File models in the bearer's unit gains <span class=\"textbf\">Poison Attacks</span>.\r\n",
+          "option_id": "d23fefgd5uy5456j63g34g3g34",
+          "hasOption": ["vampire_count", "strigoi"],
+          "refs": ["blood_power", "ghoul_lord"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ],
+          "armyHasNotOption": [
+            {
+              "refs": ["ghoul_lord"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 60,
+          "name": "Commandment",
+          "description": "\r\n\tThe Def and Off of Rank-and-File models in the bearer's unit are <span class=\"textbf\">set</span> to 6.\r\n",
+          "option_id": "UcCf8WmjYYC8HrxuugYx",
+          "hasOption": ["vampire_count", "lahmia"],
+          "refs": ["blood_power", "commandment"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ],
+          "armyHasNotOption": [
+            {
+              "refs": ["commandment"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 40,
+          "name": "Crimson Rage",
+          "description": "\r\n\t The model part gains <span class=\"textbf\">Hatred</span>, and its <span class=\"textbf\">Vampiric</span> rolls are Maximised.\r\n",
+          "option_id": "Iz5z5OPcnjgtYMOmWIBP",
+          "hasOption": ["vampire_count", "sangreal"],
+          "refs": ["blood_power", "crimson_rage"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ],
+          "armyHasNotOption": [
+            {
+              "refs": ["crimson_rage"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 40,
+          "name": "Storm Caller",
+          "description": "\r\n\tAll units within 12\" of the bearer gains <span class=\"textbf\">Hard Target (1)</span>.\r\n",
+          "option_id": "Wr0mq1FhE4xUZP1INVcv",
+          "hasOption": ["vampire_count", "vetala"],
+          "refs": ["blood_power", "storm_caller"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ],
+          "armyHasNotOption": [
+            {
+              "refs": ["storm_caller"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 40,
+          "name": "Arcane Knowledge",
+          "description": "\r\n\tLearned Spells cast by the model gains +6\" Range. Aura Spells gain +3\" Range instead.\r\n",
+          "option_id": "CqpfdQR0dds7cFDEU77p",
+          "hasOption": ["vampire_count"],
+          "refs": ["blood_power", "arcane_knowledge"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            },
+            {
+              "refs": ["ancestral_blood_power"],
+              "amount": 1
+            }
+          ],
+          "armyHasNotOption": [
+            {
+              "refs": ["arcane_knowledge"],
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 60,
+          "name": "Eternal Duellist",
+          "description": "The bearer's Melee Attacks ignore <span class=\"textbf\">Parry</span>, and must reroll natural to-hit and to-wound rolls of ‘1’.",
+          "option_id": "ySRGiCXETrxuuW1ExZ9V",
+          "refs": ["blood_power"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 45,
+          "name": "Monster Hunter",
+          "description": "The model part gains <span class=\"textbf\">Multiple Wounds (2, towards Height 4--5)</span>.",
+          "option_id": "FVotJ8l2kztApZjRdjHv",
+          "refs": ["blood_power"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 35,
+          "name": "Flying Horror",
+          "description": "The model gains Fly, Swiftstride, +2\" Cha and +2\" Mob.",
+          "option_id": "u8gCwBAKv8ZaNDGNHOgV",
+          "refs": ["blood_power"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 30,
+          "name": "Unbreakable Will",
+          "description": "When Choosing Equipment and Abilities, select a single friendly unit Engaged in the same Combat as the bearer (<i>this can be its own unit</i>). This unit gains <span class=\"textbf\">Stubborn</span> until the end of the Player Turn.",
+          "option_id": "QjMQW26jzVnd2wCII5NJ",
+          "refs": ["blood_power"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 0,
+          "name": "Bestial Bulk",
+          "description": "The model's Height is <span class=\"textbf\">set</span> to 3, and its base size to 40×40mm. The model gains Stomp Attack (1), Attached (Ghasts, Vampire Spawn).\r\n",
+          "option_id": "u39NynpyCGoNuG2Uct5X",
+          "refs": ["blood_power"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 15,
+          "name": "Mesmerising Gaze",
+          "description": "The model must issue a Duel whenever possible. This cannot be prevented by issuing a Duel with another firendly model first. This Duel must, if possible, be accepted. When this model is a Duellist, it gains <span class=\"textbf\">Distracting (1, against non-Duellists*)</span>.<br>* <i>i.e. enemy models that ar not part of the duel.</i>",
+          "option_id": "kN3V23qvcR4GZ43s4ce4",
+          "refs": ["blood_power"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "cost": 10,
+          "name": "Mysteries of the Night",
+          "description": "\r\n\t The model's Path Access is replaced with Shamanism, Witchcraft.\r\n",
+          "option_id": "Pl5HhLfXUd0uAunv4G51",
+          "hasOption": ["wizardApprenticeOrAdept"],
+          "refs": ["blood_power", "mysteries"],
+          "hasNotOption": [
+            {
+              "refs": ["blood_power"],
+              "amount": 2,
+              "neverHide": true
+            }
+          ]
+        }
+      ],
+      "option_id": "v6t8uav8siphababwbdqhp"
+    }
+  ],
+  "army": [
+    {
+      "name": "Army",
+      "optionsLabel": "Categories",
+      "maxCost": 4500,
+      "armyHasOption": [
+        {
+          "refs": ["gates_of_the_netherworld"],
+          "amount": 1
+        }
+      ],
+      "options": [
+        {
+          "name": "Characters",
+          "refs": ["perso"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "refs": ["wizard", "vampire_char", "vampire_count", "tag_Vampire", "tag_Metal Armour"],
+              "name": "Vampire Count",
+              "overrideInactiveNodes": false,
+              "cost": 280,
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "qovq97is6np8wuxtk9tkfs",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "type": "check",
+                      "name": "General, Disciplined and The Dead Arise",
+                      "cost": 35,
+                      "option_id": "0lwh9quaq64r6l6oc31iv"
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Gates of the Netherworld",
+                      "cost": 20,
+                      "option_id": "fg234gfdsfgdsvg342gf3w2df3q2",
+                      "refs": ["gates_of_the_netherworld"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["gates_of_the_netherworld"],
+                          "amount": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "73uyu97b1vbntk5qyt9ic"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Blood Powers",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Ancestral Blood Powers",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "options": [],
+                      "option_id": "SU1XaM5ukPKyVhJVE6ZA",
+                      "optionsDict": ["dominantBloodPowers"]
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Other Blood Powers",
+                      "collapsible": true,
+                      "options": [],
+                      "option_id": "xw85hdlxmYKVcZ67ilPD",
+                      "optionsDict": ["bloodPowers"]
+                    }
+                  ],
+                  "option_id": "es3XS9yqGvqG8145zLVE"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Path",
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["art_free_ess"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "maxSize": 2
+                          }
+                        }
+                      ],
+                      "options": [
+                        {
+                          "name": "Evocation",
+                          "refs": ["evocation"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "wahp10431s9169wqz5hsv8",
+                          "hasNotOption": ["mysteries"]
+                        },
+                        {
+                          "name": "Occultism",
+                          "refs": ["occultism"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "3rfyryegem8ac486e72n6q",
+                          "hasNotOption": ["mysteries"]
+                        },
+                        {
+                          "name": "Witchcraft",
+                          "refs": ["witchcraft"],
+                          "type": "check",
+                          "cost": 0,
+                          "hasOption": ["mysteries"],
+                          "option_id": "npm4n894kor17ca7tfdwh"
+                        },
+                        {
+                          "name": "Shamanism",
+                          "refs": ["shamanism"],
+                          "type": "check",
+                          "cost": 0,
+                          "hasOption": ["mysteries"],
+                          "option_id": "e086er60rijhu68ml3sunr"
+                        }
+                      ],
+                      "option_id": "53texk938kvn5myb90kqte"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Level",
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "refs": ["wizardApprentice", "wizardApprenticeOrAdept"],
+                          "name": "Wizard Apprentice",
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "fz73leuaf2415o5bnphnm"
+                        },
+                        {
+                          "refs": ["wizardAdept", "wizardApprenticeOrAdept"],
+                          "name": "Wizard Adept",
+                          "type": "check",
+                          "cost": 100,
+                          "option_id": "ui2401bh4siywmcaaq11co"
+                        },
+                        {
+                          "refs": ["wizardMaster"],
+                          "name": "Wizard Master",
+                          "type": "check",
+                          "cost": 225,
+                          "hasNotOption": ["sangreal", "strigoi"],
+                          "option_id": "ivtv1w70isspgu2bz2k6a9"
+                        }
+                      ],
+                      "option_id": "zyuqjs3vrci9z0rxqyzwn"
+                    }
+                  ],
+                  "option_id": "26mcvmt24ggrnxovi1r7w"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "eru123v49yom2z6f9ye2c",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Skeletal Steed",
+                      "cost": 75,
+                      "options": [],
+                      "refopt": "skeletal_steed_mount",
+                      "option_id": "11eqj359efy98qilg85p7ng"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Spectral Steed",
+                      "cost": 105,
+                      "options": [],
+                      "refopt": "spectral_steed_mount",
+                      "option_id": "42a11n5ehm9ji23ggebx2n"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Monstrous Revenant",
+                      "cost": 120,
+                      "options": [],
+                      "refopt": "monstrous_revenant_mount",
+                      "option_id": "7ic0ev7zdhpg1b3mfi5hrf",
+                      "maxUnitCost": 900
+                    },
+                    {
+                      "type": "check",
+                      "name": "Court of the Damned",
+                      "cost": 300,
+                      "options": [],
+                      "refopt": "court_of_the_damned_mount",
+                      "option_id": "p55ms9n003egirpn0hylm9"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Zombie Dragon",
+                      "cost": 350,
+                      "options": [],
+                      "refopt": "zombie_dragon_mount",
+                      "option_id": "hzrupymgi3kkxbe16tu3j",
+                      "maxUnitCost": 900
+                    },
+                    {
+                      "type": "check",
+                      "name": "Colossal Zombie Dragon",
+                      "cost": 500,
+                      "options": [],
+                      "refopt": "colossal_zombie_dragon_mount",
+                      "option_id": "zicmsbjjwqfpydbxlz6xci",
+                      "maxUnitCost": 900
+                    },
+                    {
+                      "type": "check",
+                      "name": "Shrieking Horror",
+                      "cost": 300,
+                      "options": [],
+                      "refopt": "shrieking_horror_mount",
+                      "option_id": "wn92u16n37g5x6uv5id8",
+                      "maxUnitCost": 900
+                    }
+                  ],
+                  "option_id": "2elfycoo2efcs158uocoll"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 200,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "hasNotOption": ["strigoi", "lich", "lahmia"],
+                      "cost": 5,
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "qxsd7rvazxglzb4unoqpth"
+                    },
+                    {
+                      "optionsLabel": "Armour Enchant",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "options": [],
+                      "optionsDict": ["armourEnchant"],
+                      "option_id": "85psijy6sm7we3fdujkhl"
+                    },
+                    {
+                      "type": "group",
+                      "name": "Weapon",
+                      "collapsible": true,
+                      "optionsLabel": "Weapon",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 10,
+                          "maxSize": 1,
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "optionsSuffix": " (Paired Weapons)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "e4foto8w0do7xskf3is3"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 20,
+                          "maxSize": 1,
+                          "optionsLabel": "Great Weapon Enchant",
+                          "optionsSuffix": " (Great Weapon)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "86e6b5uibum3bsz7e64ugo"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Lance",
+                          "cost": 20,
+                          "maxSize": 1,
+                          "hasOption": ["mount"],
+                          "optionsSuffix": " (Lance)",
+                          "optionsLabel": "Lance Enchant",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "p2nieds5w0mzkii6q1g9tl"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 10,
+                          "maxSize": 1,
+                          "optionsSuffix": " (Halberd)",
+                          "optionsLabel": "Halberd Enchant",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "tkx2pp8smgmzpfrlop2wu"
+                        }
+                      ],
+                      "option_id": "kdqk7svc2hkc9fvui82xw"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "66zf52f3sprhfla0yaf1ac"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "h3jmx27o7owr75chy21qd"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Potions and Scrolls",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "option_id": "q73l6khz5l8hz7ryr39kqn"
+                    }
+                  ],
+                  "option_id": "st05kh7b0kgsnsnajyofbt"
+                }
+              ],
+              "unit_id": "vampire_count",
+              "option_id": "ejlny08k4pqobea1lmjlvj",
+              "logo": "character",
+              "hasOption": [
+                {
+                  "refs": ["blood_power"],
+                  "amount": 1,
+                  "lenient": true
+                }
+              ],
+              "maxUnitCost": 700
+            },
+            {
+              "name": "Vampire Courtier",
+              "hasOption": [
+                {
+                  "refs": ["blood_power"],
+                  "amount": 1,
+                  "lenient": true
+                }
+              ],
+              "overrideInactiveNodes": false,
+              "cost": 140,
+              "refs": ["vampire_char", "vampire_courtier", "tag_Vampire", "tag_Metal Armour"],
+              "options": [
+                {
+                  "type": "group",
+                  "optionsLabel": "Leadership",
+                  "option_id": "4g34g43g342f32fd32d32h3g",
+                  "options": [
+                    {
+                      "type": "group",
+                      "option_id": "l9maowf7uxi5sz50wih5l",
+                      "name": "Leadership",
+                      "optionsLabel": "Leadership",
+                      "options": [
+                        {
+                          "type": "check",
+                          "refs": ["army_general"],
+                          "armyHasNotOption": ["army_general"],
+                          "name": "General and The Dead Arise",
+                          "cost": 20,
+                          "option_id": "gqh0c8yuv44rkwekfnipb"
+                        },
+                        {
+                          "type": "check",
+                          "armyHasNotOption": ["army_bsb"],
+                          "refs": ["army_bsb", "not_a_leader"],
+                          "name": "Battle Standard Bearer",
+                          "cost": 50,
+                          "option_id": "lemtszucybb5h1szjbicm5"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "refs": ["vampire_courtier_amount"]
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Gates of the Netherworld",
+                      "cost": 20,
+                      "option_id": "ee4dgtufz6l1d3uia16phn",
+                      "refs": ["gates_of_the_netherworld"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["gates_of_the_netherworld"],
+                          "amount": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "81z6qk9ne5fsxjrlapsika"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Blood Powers",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Ancestral Blood Powers",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "options": [],
+                      "option_id": "gfdxgfreg34fdhjfdgfd",
+                      "optionsDict": ["dominantBloodPowers"]
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Other Blood Powers",
+                      "collapsible": true,
+                      "options": [],
+                      "option_id": "32e43254h34hfghg344",
+                      "optionsDict": ["bloodPowers"]
+                    }
+                  ],
+                  "option_id": "fdsfge43342t34gfdgfdg34"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "collapsible": true,
+                      "optionsLabel": "Level",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "refs": ["wizard", "wizardApprentice", "wizardApprenticeOrAdept"],
+                          "name": "Wizard Apprentice",
+                          "type": "check",
+                          "cost": 50,
+                          "option_id": "wx0xmso3ap8bo3nrd6hnds"
+                        },
+                        {
+                          "refs": ["wizard", "wizardAdept", "wizardApprenticeOrAdept"],
+                          "name": "Wizard Adept",
+                          "type": "check",
+                          "cost": 150,
+                          "option_id": "q1f1ytff1yj04ufdnoay9n"
+                        }
+                      ],
+                      "option_id": "h8wdo67k5a4cenmhk6znw"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Path",
+                      "minSize": 0,
+                      "maxSize": 1,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["wizard"],
+                              "amount": "1"
+                            }
+                          ],
+                          "options": {
+                            "minSize": 1
+                          }
+                        },
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["art_free_ess"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "maxSize": 2
+                          }
+                        }
+                      ],
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "hasOption": ["wizard"],
+                          "name": "Evocation",
+                          "refs": ["evocation"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "4z3s7nrnloq17uvopwlfzq",
+                          "hasNotOption": ["mysteries"]
+                        },
+                        {
+                          "hasOption": ["wizard"],
+                          "name": "Occultism",
+                          "refs": ["occultism"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "vndxd71yam9mzjlfoy3t8j",
+                          "hasNotOption": ["mysteries"]
+                        },
+                        {
+                          "name": "Witchcraft",
+                          "refs": ["witchcraft"],
+                          "type": "check",
+                          "cost": 0,
+                          "hasOption": [
+                            {
+                              "refs": ["wizard"],
+                              "amount": 1
+                            },
+                            {
+                              "refs": ["mysteries"],
+                              "amount": 1
+                            }
+                          ],
+                          "option_id": "sxib1pul8clnqevtnapx0l"
+                        },
+                        {
+                          "name": "Shamanism",
+                          "refs": ["shamanism"],
+                          "type": "check",
+                          "cost": 0,
+                          "hasOption": [
+                            {
+                              "refs": ["wizard"],
+                              "amount": 1
+                            },
+                            {
+                              "refs": ["mysteries"],
+                              "amount": 1
+                            }
+                          ],
+                          "option_id": "f6e3a3pc8xd3etxrqidas"
+                        }
+                      ],
+                      "option_id": "d6vzmxrpkhfgyl6fjqij4"
+                    }
+                  ],
+                  "option_id": "vsdkxeoha7dg9s53ms6l1r"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "zulg3x9od615qdvwvbbo9",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Skeletal Steed",
+                      "cost": 75,
+                      "options": [],
+                      "refopt": "skeletal_steed_mount",
+                      "option_id": "9txmexyl3r5nmmx0u3eqf"
+                    },
+                    {
+                      "type": "check",
+                      "refs": ["mount"],
+                      "name": "Spectral Steed",
+                      "cost": 95,
+                      "option_id": "turaq4y01qqw8e3x7nrd2",
+                      "refopt": "spectral_steed_mount"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Monstrous Revenant",
+                      "cost": 140,
+                      "options": [],
+                      "refopt": "monstrous_revenant_mount",
+                      "option_id": "kvxofee6pe3nj1quhg382",
+                      "maxUnitCost": 700
+                    },
+                    {
+                      "type": "check",
+                      "name": "Court of the Damned",
+                      "cost": 300,
+                      "options": [],
+                      "refopt": "court_of_the_damned_mount",
+                      "option_id": "iavc3cf3j3jlt1id5jzdif",
+                      "maxUnitCost": 700
+                    }
+                  ],
+                  "option_id": "f332104hd3zzn3bu9cr5"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 100,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "optionsLabel": " Enchant",
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "option_id": "9uwlikuimubfu353h2wx6",
+                      "childrenOptions": {
+                        "hasOption": [
+                          {
+                            "refs": ["army_bsb"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "check",
+                      "name": "Shield",
+                      "cost": 5,
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "hasNotOption": ["strigoi", "lich", "lahmia"],
+                      "option_id": "chob04ciska9ezh6965vnm"
+                    },
+                    {
+                      "optionsLabel": "Armour Enchant",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "options": [],
+                      "optionsDict": ["armourEnchant"],
+                      "option_id": "q0ff2lwhqd64avu9zx8yy"
+                    },
+                    {
+                      "type": "group",
+                      "name": "Weapon",
+                      "collapsible": true,
+                      "optionsLabel": "Weapon",
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 10,
+                          "maxSize": 1,
+                          "optionsSuffix": " (Paired Weapons)",
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "gkdy11z2paeszn1gqpoyi"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 10,
+                          "maxSize": 1,
+                          "optionsSuffix": " (Great Weapon)",
+                          "optionsLabel": "Great Weapon Enchant",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "4c3c6mu5rieg9wvv1k70ad"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Lance",
+                          "cost": 10,
+                          "maxSize": 1,
+                          "hasOption": ["mount"],
+                          "optionsSuffix": " (Lance)",
+                          "optionsLabel": "Lance Enchant",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "n364ok7vp7h8dwl0ivhgnu"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 10,
+                          "maxSize": 1,
+                          "optionsSuffix": " (Halberd)",
+                          "optionsLabel": "Halberd Enchant",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "aepuadx3q0i9rvfhw3gn6t"
+                        }
+                      ],
+                      "option_id": "6o9lummudmhzpwcn4hia6"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "8v8ddzqobc1jumx6c6yfu"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "xw7b6elfqr9a4558vorzvq"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Potions and Scrolls",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "option_id": "qh3ngxxqjz71eqlre158o"
+                    }
+                  ],
+                  "option_id": "vyls24ayonparhlibphqn"
+                }
+              ],
+              "unit_id": "vampire_courtier",
+              "option_id": "x7s9zmmgcose8uyy8pxzn",
+              "logo": "character"
+            },
+            {
+              "name": "Necromancer",
+              "refs": ["wizard", "necromancer", "tag_Human"],
+              "cost": 270,
+              "options": [
+                {
+                  "type": "group",
+                  "option_id": "rt4i8ylqnri8g2rbkyomp7",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "options": [
+                    {
+                      "type": "check",
+                      "refs": ["army_general"],
+                      "armyHasNotOption": ["army_general"],
+                      "name": "General and The Dead Arise",
+                      "cost": 20,
+                      "option_id": "8pxul1v65k838nl5o0w4xx"
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Path",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["art_free_ess"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 2
+                      }
+                    }
+                  ],
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "name": "Evocation",
+                      "refs": ["evocation"],
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "e8r1hl9vw0u8y19epvzku3"
+                    },
+                    {
+                      "name": "Alchemy",
+                      "refs": ["alchemy"],
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "bmbhs08yb8pq43z4sei9j"
+                    },
+                    {
+                      "name": "Cosmology",
+                      "refs": ["cosmology"],
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "r3429f034j-0vcf342f34f34",
+                      "hasOption": ["lich"]
+                    }
+                  ],
+                  "option_id": "c5a3l2ncsjuste5utas5tn"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Level",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "refs": ["wizardApprentice"],
+                      "name": "Wizard Apprentice",
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "76riim77bpu7ppw2qbf3qk"
+                    },
+                    {
+                      "refs": ["wizardAdept"],
+                      "name": "Wizard Adept",
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "xsm8gc7d6k9du0i2rz53h8"
+                    },
+                    {
+                      "refs": ["wizardMaster"],
+                      "name": "Wizard Master",
+                      "type": "check",
+                      "cost": 150,
+                      "option_id": "ohre1mb4whl7dlea31oz",
+                      "optionsLabel": "Lich",
+                      "options": [
+                        {
+                          "option_id": "3gregermvoerkv9034jv3432",
+                          "type": "check",
+                          "name": "Lich",
+                          "cost": 25,
+                          "refs": ["lich"]
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "bj94ioicifmuxniwlbx3"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Light Troops",
+                      "cost": 0,
+                      "options": [],
+                      "option_id": "fewf32fsdf23jgfgewrv34f433"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Skeletal Steed",
+                      "cost": 20,
+                      "options": [],
+                      "refopt": "skeletal_steed_mount",
+                      "option_id": "74m00bzt7u96rn5xwjfs2o"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Monstrous Revenant",
+                      "cost": 90,
+                      "hasOption": ["wizardMaster"],
+                      "refopt": "monstrous_revenant_mount",
+                      "option_id": "kullcrmcaqcaopoj0aonj8",
+                      "maxUnitCost": 700
+                    },
+                    {
+                      "type": "check",
+                      "name": "Cadaver Wagon",
+                      "cost": 230,
+                      "options": [],
+                      "refopt": "cadaver_wagon_mount",
+                      "option_id": "k30ihe8elel14olxt65ixf",
+                      "maxUnitCost": 700
+                    },
+                    {
+                      "type": "check",
+                      "name": "Zombie Dragon",
+                      "cost": 330,
+                      "options": [],
+                      "hasOption": ["lich"],
+                      "refopt": "zombie_dragon_mount",
+                      "option_id": "gfdggfdgg342g34g34g43",
+                      "maxUnitCost": 900
+                    }
+                  ],
+                  "option_id": "9e72zqbilf8091p5lkck81y"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 100,
+                  "collapsible": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["wizardMaster"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 200
+                      }
+                    }
+                  ],
+                  "options": [
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "8v5bjzuh4mjs26rhtks0j"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "zhkhckbqjdmtc9eu7x7k7"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Potions and Scrolls",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "option_id": "vux8rx3nogn0k0ew1vli"
+                    }
+                  ],
+                  "option_id": "ki0megvxswg2wro9fv93ro"
+                }
+              ],
+              "unit_id": "necromancer",
+              "option_id": "mv8hkzukgudg7y55xuaxqf",
+              "logo": "character"
+            },
+            {
+              "name": "Barrow King",
+              "refs": ["barrow_king", "not_a_leader", "tag_Skeleton", "tag_Metal Armour"],
+              "cost": 70,
+              "options": [
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Light Troops",
+                      "cost": 0,
+                      "options": [],
+                      "option_id": "fdsf32fsdfsdfsdv32",
+                      "refs": ["barrow_king_amount"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Skeletal Steed",
+                      "cost": 20,
+                      "options": [],
+                      "refopt": "skeletal_steed_mount",
+                      "option_id": "4chwsup6i5vcb9cwym4ztm"
+                    }
+                  ],
+                  "option_id": "xrj1lg7vppnt6hqhq5qn5"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Leadership",
+                  "option_id": "fsdf3243jmklpfds032432",
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Captain and Attached",
+                      "cost": 0,
+                      "option_id": "vcklv0439543bjewr0vb34jv034v43"
+                    },
+                    {
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "f32fsdf32fsdff32f32f32bvbvc"
+                    },
+                    {
+                      "type": "check",
+                      "armyHasNotOption": ["army_bsb"],
+                      "refs": ["army_bsb", "not_a_leader"],
+                      "name": "Battle Standard Bearer",
+                      "cost": 50,
+                      "collapsible": true,
+                      "option_id": "f32fsdfsdf32f32fsdfsdfmn"
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Equipment",
+                  "leafMaxCost": 150,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Banner Enchant",
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "option_id": "fdsf32fdsfsa23rf32f32f3",
+                      "childrenOptions": {
+                        "hasOption": [
+                          {
+                            "refs": ["army_bsb"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "group",
+                      "name": "Shield",
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "kn0hoow497ai38q9fodi"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Armour Enchant",
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "options": [],
+                      "optionsDict": ["armourEnchant"],
+                      "option_id": "cq4j8f6r87pba2rq5cfm"
+                    },
+                    {
+                      "type": "group",
+                      "name": "Weapon",
+                      "optionsLabel": "Weapon",
+                      "collapsible": true,
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Paired Weapons Enchant",
+                          "optionsSuffix": " (Paired Weapons)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "option_id": "06yaq5ka9lii0cyg3f35zd5"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Great Weapon Enchant",
+                          "optionsSuffix": " (Great Weapon)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "mzdyw4fdlrccs045hk7nnm"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Lance",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "hasOption": ["mount"],
+                          "optionsLabel": "Lance Enchant",
+                          "optionsSuffix": " (Lance)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "69b1e959i36y2rimfykqlh"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Halberd Enchant",
+                          "optionsSuffix": " (Halberd)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant"],
+                          "option_id": "bujh7azl1ocwhxef4a8mvf"
+                        }
+                      ],
+                      "option_id": "1u8s0j6iuvp8ff7jpttj3d"
+                    },
+                    {
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "option_id": "uz8xnfdkosd4kso4lmnzfq"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Artefact",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"],
+                      "option_id": "pg7qrsv8fwbu7zu044yl9"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Potions and Scrolls",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["potions_and_scrolls"],
+                      "option_id": "glghd3ys9rp13g3fb6p839c"
+                    }
+                  ],
+                  "option_id": "4fg0ui3tb9tedzposbhaa"
+                }
+              ],
+              "unit_id": "barrow_king",
+              "option_id": "43s5a9wyaf2xeifh0uolio",
+              "logo": "character"
+            },
+            {
+              "name": "Banshee",
+              "armyHasNotOption": [
+                {
+                  "refs": ["banshee"],
+                  "amount": 3
+                }
+              ],
+              "refs": ["banshee", "not_a_leader", "tag_Spirit"],
+              "cost": 160,
+              "unit_id": "banshee",
+              "option_id": "neox3b3k2mtfwpzt2qe6f",
+              "logo": "character"
+            }
+          ],
+          "option_id": "tfdwlhq2ler504i0hn55tj"
+        },
+        {
+          "name": "Core Units",
+          "minPercent": 0.25,
+          "refs": ["base"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Zombies",
+              "cost": 50,
+              "refs": ["zombies", "core_unit", "tag_Zombie"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["zombies"],
+                  "amount": 4
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 20,
+                  "maxSize": 80,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 5,
+                      "option_id": "dio7w0rkzxwhu4mg5l3b",
+                      "refs": ["zombies_amount"]
+                    }
+                  ],
+                  "option_id": "fr535h1wahiabin3zk79f9"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "option_id": "83v2u0c69xig2aag7gi4"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "irk312tjd4ksfb9eif4od"
+                    }
+                  ],
+                  "option_id": "lhbak6jfut5774x7xnln7"
+                }
+              ],
+              "unit_id": "zombies",
+              "option_id": "oozgiaxl0kdoej0r6wq3q",
+              "logo": "core"
+            },
+            {
+              "name": "Skeletons",
+              "cost": -10,
+              "options": [
+                {
+                  "minSize": 20,
+                  "maxSize": 60,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 9,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Spear and Shield",
+                              "cost": 0,
+                              "option_id": "4r1mnf4bz9hta09q023cbi"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 0,
+                              "option_id": "f3dsfewf32f32f32fdsfds"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Halberd",
+                              "cost": 0,
+                              "option_id": "4ypdp6712bgmlh0pjnwmem"
+                            }
+                          ],
+                          "option_id": "1d6c5gklsht2082cml9ay4h"
+                        }
+                      ],
+                      "option_id": "hilzyxrdn2ddf0az9de39",
+                      "refs": ["skeletons_amount"]
+                    }
+                  ],
+                  "option_id": "wrxpgxvgjscvm8diaazr"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 5,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "nv5wjlov8xd6w6oefwhhif"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "a1lqpwvqcodxnkteg0xd"
+                    }
+                  ],
+                  "option_id": "i9hq2j4r8ant96ma0yohi"
+                }
+              ],
+              "unit_id": "skeletons",
+              "option_id": "dyxrtrqulty6sw2xeu9sq",
+              "logo": "core",
+              "refs": ["core_unit", "tag_Skeleton", "tag_Light Armour"]
+            },
+            {
+              "name": "Ghouls",
+              "armyHasNotOption": [
+                {
+                  "refs": ["unit_ghouls"],
+                  "amount": 4
+                }
+              ],
+              "refs": ["unit_ghouls", "core_unit", "tag_Zombie"],
+              "cost": -40,
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 40,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 15,
+                      "optionsLabel": "Options",
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Vanguard",
+                          "cost": 2,
+                          "armyHasOption": ["strigoi_general"],
+                          "refs": ["stryg_bloodlink"],
+                          "hasNotOption": [
+                            {
+                              "refs": ["stryg_bloodlink"],
+                              "amount": 35
+                            }
+                          ],
+                          "option_id": "vlmto1m3qz8jm6zzmw15j"
+                        }
+                      ],
+                      "option_id": "ad6dqadnsiww9z837xw1uo",
+                      "refs": ["ghouls_amount"]
+                    }
+                  ],
+                  "option_id": "mnl708ivwz1cdos31xkjbh"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "option_id": "yxmg3ssnrldtvvzu6z1n6j"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "fdggfdgewg43342453464"
+                    }
+                  ],
+                  "option_id": "2gjwssbi3ja1itvpttx7b3"
+                }
+              ],
+              "unit_id": "ghouls",
+              "option_id": "xf3kmrqwybnw0fkwdqkk8",
+              "logo": "core"
+            },
+            {
+              "name": "Dire Wolves",
+              "refs": ["sinister_wolves", "tag_Zombie", "tag_Beast", "core_unit"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["sinister_wolves"],
+                  "amount": 4
+                }
+              ],
+              "cost": 46,
+              "options": [
+                {
+                  "minSize": 8,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "refs": ["wolf_count"],
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 18,
+                      "option_id": "h2coooscvebtkbu7rx792"
+                    }
+                  ],
+                  "option_id": "csqnfmyhpeufqpezvdus2e"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "ew8cmmfyra4yz20l9fol1g"
+                    }
+                  ],
+                  "option_id": "1m3di7s6tf3ekfoyx9v1vm"
+                }
+              ],
+              "unit_id": "dire_wolves",
+              "option_id": "vyl6r646yz9jh3qzyqoo2g",
+              "logo": "core"
+            },
+            {
+              "name": "Bat Swarms",
+              "refs": ["bat_swarm", "core_unit", "tag_Zombie", "tag_Beast"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["bat_swarm"],
+                  "amount": 4
+                }
+              ],
+              "cost": 90,
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 30,
+                      "option_id": "oizyo8sc3wmosg3gg3gte",
+                      "refs": ["bat_swarms_amount"]
+                    }
+                  ],
+                  "option_id": "jrc4kmh5x1p5lzregkwu"
+                }
+              ],
+              "unit_id": "bat_swarms",
+              "option_id": "4v0gk8u2h0svtdcyegawo9",
+              "logo": "core"
+            }
+          ],
+          "option_id": "6toytznl4mgmdh9rufyyo"
+        },
+        {
+          "name": "Special",
+          "refs": ["special"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Barrow Guard",
+              "cost": -100,
+              "refs": ["tertre", "barrow_guards", "tag_Skeleton", "tag_Metal Armour"],
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 40,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 17,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Options",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 0,
+                              "option_id": "hv60qxjb4hp9xafa7g1zv5"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Halberd",
+                              "cost": 2,
+                              "option_id": "bb7a3pz3rsm462i0quri6t"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Great Weapon",
+                              "cost": 4,
+                              "option_id": "fwsneaqkq4pi84voeisy5"
+                            }
+                          ],
+                          "option_id": "kmnoujd8r940zetcwvwws"
+                        }
+                      ],
+                      "option_id": "5tz4tqoha52dit9zt0p9wu",
+                      "refs": ["barrow_guard_amount"]
+                    }
+                  ],
+                  "option_id": "1bra7t7vhxrpaezrbj4ml"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "ob1tjq8ferlxozk1diqlp"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "zivbx9f10gswsqq0kdtff"
+                    }
+                  ],
+                  "option_id": "5rmrvpbwy64dm0q0o8ybnb"
+                }
+              ],
+              "unit_id": "barrow_guard",
+              "option_id": "2wkhxn2l9b981wmhc5pyd4",
+              "logo": "special"
+            },
+            {
+              "name": "Barrow Knights",
+              "armyHasNotOption": [
+                {
+                  "refs": ["barrow_knights"],
+                  "amount": 4
+                }
+              ],
+              "refs": ["tertre", "barrow_knights", "tag_Skeleton", "tag_Metal Armour"],
+              "cost": 0,
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 32,
+                      "option_id": "dacr8yrmpyntu8ef46fdq9",
+                      "refs": ["barrow_knights_amount"]
+                    }
+                  ],
+                  "option_id": "4l06kkub24wdoa7w4jv91q"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "kxu2l2h0hks2dtl8nc2tvl"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "aqgvdjvobufv8g4ihu22br"
+                    }
+                  ],
+                  "option_id": "hf6d6i3lumepf800d5eu5"
+                }
+              ],
+              "unit_id": "barrow_knights",
+              "option_id": "8xt73s3nvib9i997m8jh8w",
+              "logo": "special"
+            },
+            {
+              "name": "Ghasts",
+              "refs": ["ghasts", "tag_Zombie"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["ghasts"],
+                  "amount": 5
+                }
+              ],
+              "cost": -85,
+              "extraCost": 95,
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 8,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 85,
+                      "option_id": "rlk6gwiw4zqg1gsyc0vyy",
+                      "refs": ["ghasts_amount"]
+                    }
+                  ],
+                  "option_id": "y3dgt2c5ayihqmz4efau4m"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "jzj7yyfaos7e0wlihfz2f"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "fdsfsf312fsdfsdf23f23"
+                    }
+                  ],
+                  "option_id": "8bhzwc2pvcosqsxeoceky"
+                }
+              ],
+              "unit_id": "ghasts",
+              "option_id": "y4bkbjenxwhhzdw61392b",
+              "logo": "special"
+            },
+            {
+              "name": "Great Bats",
+              "refs": ["great_bats", "tag_Zombie", "tag_Beast"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["great_bats"],
+                  "amount": 4
+                }
+              ],
+              "cost": 75,
+              "options": [
+                {
+                  "minSize": 2,
+                  "maxSize": 9,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 10,
+                      "option_id": "dmbvabcioogklplf5gc7kg",
+                      "refs": ["great_bats_amount"]
+                    }
+                  ],
+                  "option_id": "8gfl3rwcbgjvjxsb202rfe"
+                }
+              ],
+              "unit_id": "great_bats",
+              "option_id": "9zp5wgb36fiyvfmbu0iew",
+              "logo": "special"
+            },
+            {
+              "name": "Cadaver Wagon",
+              "refs": ["cadaver_wag", "not_a_leader", "tag_Human"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["cadaver_wag"],
+                  "amount": 2
+                }
+              ],
+              "cost": 260,
+              "unit_id": "cadaver_wagon",
+              "option_id": "uq8qhzk0v4n4lgozemebgt",
+              "logo": "special"
+            },
+            {
+              "name": "Court of the Damned",
+              "refs": ["court_damned", "not_a_leader", "tag_Vampire"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["court_damned"],
+                  "amount": 2
+                }
+              ],
+              "hasNotOption": ["strigoi"],
+              "cost": 320,
+              "unit_id": "court_of_the_damned",
+              "option_id": "dt1rdnkwa83gikh3md3xn",
+              "logo": "special"
+            },
+            {
+              "name": "Altar of Undeath",
+              "refs": ["altar_undeath", "tag_Human"],
+              "boundSpells": [
+                {
+                  "ref": "the_devouring_dark",
+                  "path": "bound",
+                  "mods": {
+                    "castValue": 3
+                  }
+                }
+              ],
+              "armyHasNotOption": [
+                {
+                  "refs": ["altar_undeath"],
+                  "amount": 2
+                }
+              ],
+              "cost": 320,
+              "unit_id": "altar_of_undeath",
+              "option_id": "7fnwc8znh1sqdgqbequt",
+              "logo": "special"
+            },
+            {
+              "name": "Dark Coach",
+              "refs": ["dark_coach", "tag_Vampire", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["dark_coach"],
+                  "amount": 2
+                }
+              ],
+              "cost": 380,
+              "options": [
+                {
+                  "optionsLabel": "Options",
+                  "option_id": "2ajh5e1c0m08rd8726l3",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Extended Chassis",
+                      "cost": 20,
+                      "option_id": "gelm7m2ugzhx5zwqt2kpd",
+                      "refs": ["dark_coach_amount"]
+                    }
+                  ]
+                }
+              ],
+              "unit_id": "dark_coach",
+              "option_id": "09pgrv5jyj6c0bval2yizhsv",
+              "logo": "special"
+            },
+            {
+              "name": "Corpse Giant",
+              "cost": 275,
+              "category": "special",
+              "options": [
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Big Brother",
+                      "cost": 25,
+                      "refs": [],
+                      "option_id": "x80a7yyqfqm3rejp64gsb"
+                    }
+                  ],
+                  "option_id": "j0q7qcwah6meatnucu7ck"
+                },
+                {
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "optionsLabel": "Type",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Barrow Giant",
+                      "cost": 0,
+                      "refs": [],
+                      "option_id": "5ph76yb9brsm532h6pua4m"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Ghoul Giant",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "zk8a1ebhnkcur70xlh4ec"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Zombie Giant",
+                      "cost": 10,
+                      "refs": [],
+                      "option_id": "ykcmtedy8mo3yng7o5260h"
+                    }
+                  ],
+                  "option_id": "xexnewj7zrbptwbkioqon"
+                }
+              ],
+              "refs": ["corpseGiant"],
+              "unit_id": "corpse_giant",
+              "armyHasNotOption": [
+                {
+                  "refs": ["corpseGiant"],
+                  "amount": 3
+                }
+              ],
+              "option_id": "r7m3ty7qz5phxadqxmqic",
+              "logo": "special"
+            }
+          ],
+          "option_id": "xe7sfra1eiquzqlfqgu0om"
+        },
+        {
+          "name": "The Suffering",
+          "maxPercent": 0.2,
+          "refs": ["ames"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Phantom Hosts",
+              "refs": ["phantom_host", "tag_Spirit"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["phantom_host"],
+                  "amount": 2
+                }
+              ],
+              "cost": 55,
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "refs": ["phantom_host_amount"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["phantom_host_amount"],
+                          "amount": 10
+                        }
+                      ],
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 65,
+                      "option_id": "521dt3pxg791100b8jqcqub"
+                    }
+                  ],
+                  "option_id": "lt2yd2acia7f5l8i6a48"
+                }
+              ],
+              "unit_id": "phantom_hosts",
+              "option_id": "c2vfrfucdr41733xpu5dr5",
+              "logo": "tower"
+            },
+            {
+              "name": "Wraiths",
+              "refs": ["wraith_unit", "tag_Spirit"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["wraith_unit"],
+                  "amount": 2
+                }
+              ],
+              "cost": -10,
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 40,
+                      "option_id": "risdi62e8od8jg6qi71vn5",
+                      "refs": ["wraiths_amount"]
+                    }
+                  ],
+                  "option_id": "l65nqdfk3g5ey3dqnz2sb"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "vbtpdhpvxlhdnzv1v2jcun"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Wizard Conclave (2)",
+                      "cost": 120,
+                      "option_id": "hs8wpm571fwg8ci47h40ls",
+                      "magic": {
+                        "amount": 2,
+                        "spells": [
+                          {
+                            "path": "evocation",
+                            "ref": "danse_macabre"
+                          },
+                          {
+                            "path": "evocation",
+                            "ref": "touch_of_the_reaper"
+                          },
+                          {
+                            "path": "witchcraft",
+                            "ref": "evil_eye"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "option_id": "ze9f4dlstpo9fnfywmwyjr"
+                }
+              ],
+              "unit_id": "wraiths",
+              "option_id": "hve1z8cukyk31a9dryuz9",
+              "logo": "tower"
+            },
+            {
+              "name": "Spectral Hunters",
+              "refs": ["wraith_hunter", "tag_Spirit"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["wraith_hunter"],
+                  "amount": 2
+                }
+              ],
+              "cost": -5,
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 36,
+                      "option_id": "q56063jvpnb529ebb9rx",
+                      "refs": ["spectral_hunters_amount"]
+                    }
+                  ],
+                  "option_id": "vnfkw5xzwz67tllfjpdwb"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "32rf32fewf3e2f32fdsfsd"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Wizard Conclave (2)",
+                      "cost": 100,
+                      "option_id": "kfnu3r3947daigfomdj1ql",
+                      "magic": {
+                        "amount": 2,
+                        "spells": [
+                          {
+                            "path": "evocation",
+                            "ref": "danse_macabre"
+                          },
+                          {
+                            "path": "evocation",
+                            "ref": "whispers_of_the_veil"
+                          },
+                          {
+                            "path": "evocation",
+                            "ref": "chorus_of_the_damned"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "option_id": "80vg038ulxrvm5fzjtnfn"
+                }
+              ],
+              "unit_id": "spectral_hunters",
+              "option_id": "ozmq2g5e40it7in58rfjq",
+              "logo": "tower"
+            }
+          ],
+          "option_id": "m1qe3x1bgdgiqq8bch328"
+        },
+        {
+          "name": "Swift Death",
+          "maxPercent": 0.3,
+          "refs": ["mort"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Shrieking Horror",
+              "cost": 440,
+              "refs": ["shriek_horror", "shriek_horror_unit", "tag_Beast", "tag_Zombie"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["shriek_horror"],
+                  "amount": 2
+                }
+              ],
+              "override": [
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["giganticMount"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["shriek_horror_unit"],
+                        "amount": 1
+                      }
+                    ]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["giganticMount"],
+                      "amount": 2
+                    }
+                  ],
+                  "options": {
+                    "armyHasNotOption": [
+                      {
+                        "refs": ["shriek_horror_unit"],
+                        "amount": 0
+                      }
+                    ]
+                  }
+                }
+              ],
+              "unit_id": "shrieking_horror",
+              "option_id": "sv9d95il8kbbo22v6b5vdn",
+              "logo": "bat"
+            },
+            {
+              "name": "Vampire Knights",
+              "refs": ["vampire_knight", "tag_Vampire", "tag_Metal Armour"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["vampire_knight"],
+                  "amount": 2
+                }
+              ],
+              "cost": 40,
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 80,
+                      "option_id": "zm2fye1tffq6hwhtuhya1u",
+                      "refs": ["vampire_knights_amount"]
+                    }
+                  ],
+                  "option_id": "cimwj4lkccm6j2qpe02cde"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "cost": 15,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "zlls6mxv3vklokocbjyetq"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "ckvq8lv1tpmczwn9ymq2kk"
+                    }
+                  ],
+                  "option_id": "qd1o70r0oo8l78leoft01"
+                }
+              ],
+              "unit_id": "vampire_knights",
+              "option_id": "knslua1e57txal8go5n7",
+              "logo": "bat"
+            },
+            {
+              "name": "Winged Reapers",
+              "refs": ["winged_reaper", "tag_Statue"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["winged_reaper"],
+                  "amount": 2
+                }
+              ],
+              "cost": -40,
+              "options": [
+                {
+                  "minSize": 2,
+                  "maxSize": 4,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 140,
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 15,
+                          "option_id": "ai0bbi5mqicpandji4ob3"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Paired Weapons",
+                          "cost": 15,
+                          "option_id": "w6gfgg8egvh4lees93qt6"
+                        }
+                      ],
+                      "option_id": "j6oyod9hhmosikxegmg6",
+                      "refs": ["winged_reapers_amount"]
+                    }
+                  ],
+                  "option_id": "z25gpd06haae0alqmhr"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "g4ygpb52zkuir14pqj3op"
+                    }
+                  ],
+                  "option_id": "0v1bcbm19rbkyihey6krbwa"
+                }
+              ],
+              "unit_id": "winged_reapers",
+              "option_id": "6jw20mpmfk56szsdynfx6u",
+              "logo": "bat"
+            },
+            {
+              "name": "Varkolak",
+              "refs": ["varkolak", "tag_Beast"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["varkolak"],
+                  "amount": 3
+                }
+              ],
+              "cost": 300,
+              "unit_id": "varkolak",
+              "option_id": "h8keycvcdpwwgfn954al",
+              "logo": "bat"
+            },
+            {
+              "name": "Vampire Spawn",
+              "refs": ["vampiric_spawn", "tag_Vampire"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["vampiric_spawn"],
+                  "amount": 2
+                }
+              ],
+              "cost": -10,
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 80,
+                      "option_id": "xxowd07pay2zve2bpz67",
+                      "refs": ["vampire_spawn_amount"]
+                    }
+                  ],
+                  "option_id": "uyn83nlnueu52oq3z0o6"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "3945qmi0u9nuy9wqnx470j"
+                    }
+                  ],
+                  "option_id": "35x7pm0e1awxwj1goqmx0a"
+                }
+              ],
+              "unit_id": "vampire_spawn",
+              "option_id": "xwwvqu0my6rmf2x2taxbq",
+              "logo": "bat"
+            }
+          ],
+          "option_id": "ym7mtgx7f7trcvh86m3gm"
+        },
+        {
+          "name": "Mounts",
+          "invisible": true,
+          "refs": ["mounts"],
+          "options": [
+            {
+              "name": "Cadaver Wagon *Mount",
+              "type": "check",
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "tag_Zombie", "tag_Mount"],
+              "unit_id": "cadaver_wagon_mount",
+              "invisible": true,
+              "option_id": "gw56ie2cjao4ndh0shwtdf",
+              "logo": "character",
+              "boundSpells": [
+                {
+                  "ref": "arise",
+                  "path": "hereditary",
+                  "mods": {
+                    "castValue": 5,
+                    "range": 6,
+                    "types": ["augment", "aura"]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Court of the Damned *Mount",
+              "type": "check",
+              "category": "mounts",
+              "refs": ["mount", "courtDamned", "tag_Vampire"],
+              "unit_id": "court_of_the_damned_mount",
+              "invisible": true,
+              "option_id": "9d0u49m4bqqqso6ny46oim",
+              "logo": "character"
+            },
+            {
+              "name": "Monstrous Revenant *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "optionsLabel": "Options",
+              "options": [
+                {
+                  "type": "check",
+                  "name": "Great Monstrous Revenant",
+                  "cost": 10,
+                  "refs": [],
+                  "option_id": "sly0mm7k50oxt6fxi75gok"
+                }
+              ],
+              "refs": ["moustrous_revenant_mount_unit", "mount", "tag_Zombie", "tag_Mount", "tag_Beast"],
+              "unit_id": "monstrous_revenant_mount",
+              "invisible": true,
+              "extraCategories": ["mort"],
+              "hasNotOption": ["strigoi"],
+              "option_id": "ulgbjjv5nf3mhdqeowib8",
+              "armyHasNotOption": [
+                {
+                  "refs": ["moustrous_revenant_mount_unit"],
+                  "amount": 3
+                }
+              ],
+              "logo": "character_bat"
+            },
+            {
+              "name": "Skeletal Steed *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "tag_Skeleton", "tag_Mount"],
+              "unit_id": "skeletal_steed_mount",
+              "invisible": true,
+              "hasNotOption": ["strigoi"],
+              "option_id": "6u52rcj6w5apvaq0i6j3n",
+              "logo": "character"
+            },
+            {
+              "name": "Spectral Steed *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "tag_Spirit", "tag_Mount"],
+              "unit_id": "spectral_steed_mount",
+              "hasNotOption": ["strigoi"],
+              "invisible": true,
+              "option_id": "3lk4o98w02r5tw9elicqmj",
+              "logo": "character"
+            },
+            {
+              "name": "Shrieking Horror *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "shriek_horror", "mountShriek", "giganticMount", "tag_Zombie", "tag_Mount", "tag_Beast"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["shriek_horror"],
+                  "amount": 2
+                },
+                {
+                  "refs": ["mountShriek"],
+                  "amount": 1
+                }
+              ],
+              "unit_id": "shrieking_horror_mount",
+              "invisible": true,
+              "hasOption": ["strigoi"],
+              "extraCategories": ["mort"],
+              "option_id": "8b0yhejgzu5bwnetbr7f95",
+              "logo": "character_bat"
+            },
+            {
+              "name": "Zombie Dragon *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "mountDragon", "giganticMount", "tag_Zombie", "tag_Mount", "tag_Beast"],
+              "unit_id": "zombie_dragon_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["mountDragon"],
+                  "amount": 1
+                }
+              ],
+              "extraCategories": ["mort"],
+              "option_id": "6ar1bjfey0k1dq0x3x941b",
+              "logo": "character_bat",
+              "hasNotOption": ["strigoi"]
+            },
+            {
+              "name": "Colossal Zombie Dragon *Mount",
+              "type": "check",
+              "category": "mounts",
+              "options": [],
+              "refs": ["mount", "giganticMount", "tag_Zombie", "tag_Mount", "tag_Beast"],
+              "unit_id": "colossal_zombie_dragon_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["mountDragon"],
+                  "amount": 1
+                }
+              ],
+              "extraCategories": ["mort"],
+              "option_id": "0seehvc5c4ed2rtvdmclfv",
+              "logo": "character_bat",
+              "hasNotOption": ["strigoi"]
+            }
+          ],
+          "option_id": "m4jmbd8d0w6sanrc1e5hx"
+        }
+      ],
+      "option_id": "l50rlrfmqdlsnhg97a5ff"
+    }
+  ]
+}

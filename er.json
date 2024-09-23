@@ -1,0 +1,1392 @@
+{
+  "name": "Cult of Errahman",
+  "translation": {
+    "fr": "Culte d'Errahman",
+    "cn": "Cult of Errahman"
+  },
+  "short": "er",
+  "version": "2ed_2023_alpha1",
+  "nrversion": 12,
+  "playable": 1,
+  "id": 24,
+  "include": [102],
+  "hereditary": [],
+  "reference_details": {
+    "army_general": "General",
+    "army_bsb": "Battle Standard",
+    "wizard": "Wizard",
+    "wizardApprentice": "Wizard Apprentice",
+    "wizardAdept": "Wizard Adept",
+    "wizardMaster": "Wizard Master",
+    "mount": "Mount",
+    "weaponEnchantUni": "Weapon Enchant",
+    "dominant": "Dominant",
+    "sizeLarge": "Large Size",
+    "sizeGigantic": "Gigantic Size",
+    "core_unit": "Core Unit",
+    "underworldBeastOrGiant": "Underworld Best or Infected Giant"
+  },
+  "dictionnary": [
+    {
+      "refs": ["potions_and_scrolls"],
+      "options": []
+    },
+    {
+      "refs": ["sacredPlagues"],
+      "option_id": "f2389jf034f32f34hf32",
+      "options": [
+        {
+          "name": "Dread Rot",
+          "option_id": "fm3492f34-0jf-34gk=34g34g34",
+          "cost": 0,
+          "type": "check"
+        },
+        {
+          "name": "Gnashing Fever",
+          "option_id": "fenv403fj0934gj34g34g34sd",
+          "cost": 0,
+          "type": "check"
+        },
+        {
+          "name": "Slug Pox",
+          "option_id": "k5560giervm,der-v0934cwq]d23-f9g43fi34",
+          "cost": 0,
+          "type": "check"
+        },
+        {
+          "name": "Trollscale",
+          "option_id": "p4gvdmvi8jghvbw-=023dqwj0ewf",
+          "cost": 0,
+          "type": "check"
+        }
+      ]
+    },
+    {
+      "refs": ["bannerEnchant"],
+      "options": [
+        {
+          "option_id": "mdd6hl86xdcmez9sb9jet",
+          "type": "check",
+          "name": "Eye of Errahman",
+          "cost": 50,
+          "description": "The bearer and R&F models in the bearer's unit gain <span class=\"textbf\">Battle Focus</span>. In addition, for each natural to-hit roll of ‘1’ with a Close Combat Attack made by the bearer's unit, the bearer's unit suffers 1 hit with Strength 3 and Armour Penetration 0 in the same Initiative Step. This is considered a Special Attack.",
+          "refs": ["eye of errahman_7bxm3td6"],
+          "armyHasNotOption": [
+            {
+              "refs": ["eye of errahman_7bxm3td6"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": []
+        },
+        {
+          "option_id": "fy1gc0nayepp01luc89ba",
+          "type": "check",
+          "name": "Martyr's Shroud",
+          "cost": 55,
+          "description": "R&F models with Cult of Errahman in the bearer's unit gain <span class=\"textbf\">Fortitude (6+)</span>.",
+          "refs": ["martyr's shroud_a1vt5qnj"],
+          "armyHasNotOption": [
+            {
+              "refs": ["martyr's shroud_a1vt5qnj"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": []
+        }
+      ],
+      "option_id": "munzs1nnc3oip9i973d3lh"
+    },
+    {
+      "refs": ["artefact"],
+      "options": [
+        {
+          "option_id": "vjn3czavzfpjvxo4gmlcci",
+          "type": "check",
+          "name": "Orator's Toga",
+          "cost": 35,
+          "description": "The bearer gains <span class=\"textbf\">Stand Behind</span> and cannot issue Duels.",
+          "refs": ["orators toga_6j55ivza"],
+          "armyHasNotOption": [
+            {
+              "refs": ["orators toga_6j55ivza"],
+              "amount": 2
+            }
+          ],
+          "hasNotOption": []
+        },
+        {
+          "option_id": "bveyj24dxpfzp4mrgl4bd",
+          "type": "check",
+          "name": "Putrid Pamphlet",
+          "cost": 40,
+          "description": "The bearer’s unit <span class=\"textbf\">must</span> reroll natural to-hit rolls of ‘1’.",
+          "refs": ["putrid_pamphlet"],
+          "armyHasNotOption": [
+            {
+              "refs": ["putrid_pamphlet"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": []
+        },
+        {
+          "option_id": "v7cr81ym51kks2eyn453cg",
+          "type": "check",
+          "name": "Crucible of Contagion",
+          "cost": 90,
+          "description": "The bearer’s model gains +1 Health Point, and enemy units in base contact with the bearer’s model suffer -1 Resilience.",
+          "refs": ["curcible_of_contagion"],
+          "armyHasNotOption": [
+            {
+              "refs": ["curcible_of_contagion"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": ["construct"]
+        }
+      ],
+      "option_id": "e294nnq761nm98swfj0awj"
+    },
+    {
+      "refs": ["suitOfArmourEnchant"],
+      "options": [
+        {
+          "option_id": "8qtl8rwzmleqo9axmuejtm",
+          "type": "check",
+          "name": "Plague Prophet's Blessing",
+          "cost": 50,
+          "description": "The wearer gains +1 Health Point and <span class=\"textbf\">Fortitude (5+)</span>. Successful to-hit rolls with Close Combat Attacks against the wearer <span class=\"textbf\">must</span> be rerolled.",
+          "refs": ["plague prophet's blessing_k2blx7bs"],
+          "armyHasNotOption": [
+            {
+              "refs": ["plague prophet's blessing_k2blx7bs"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": ["mount"]
+        }
+      ],
+      "option_id": "aatn6lnlhznt4y53h74igs"
+    },
+    {
+      "refs": ["plagueFlailEnchant"],
+      "options": [
+        {
+          "option_id": "ier0zbsgz6rrc98o5ofb",
+          "type": "check",
+          "name": "Toxic Incense",
+          "cost": 35,
+          "description": "While using this weapon, the wielder gains <span class=\"textbf\">Grind Attacks (D3)</span> that are resolved with <span class=\"textbf\">Toxic Attacks</span> at Initiative Step 10.",
+          "refs": ["dominant", "toxic incense_2ulo3drv"],
+          "armyHasNotOption": [
+            {
+              "refs": ["toxic incense_2ulo3drv"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": ["dominant"]
+        }
+      ],
+      "option_id": "5jfu946pr5cyqjns73qsoa"
+    },
+    {
+      "refs": ["bloodpoxBladesEnchant"],
+      "options": [
+        {
+          "option_id": "l531tit5wbflu0mirv8969",
+          "type": "check",
+          "name": "Pestilential Wrath",
+          "cost": 70,
+          "description": "Attacks made with this weapon gain +1 Armour Penetration. In addition, attacks with a natural to-hit roll of ‘6’ made with this weapon become <span class=\"textbf\">Divine Attacks</span> and gain <span class=\"textbf\">Multiple Wounds (D3)</span>.",
+          "refs": ["pestilential wrath_s97qph9r"],
+          "armyHasNotOption": [
+            {
+              "refs": ["pestilential wrath_s97qph9r"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": []
+        }
+      ],
+      "option_id": "vvnv78run9xiogensi6s"
+    }
+  ],
+  "army": [
+    {
+      "name": "Army",
+      "optionsLabel": "Categories",
+      "maxCost": 4500,
+
+      "options": [
+        {
+          "name": "Characters",
+          "refs": ["characters"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "option_id": "463ariic2za9kx0ieclfz4",
+              "name": "Plague Patriarch",
+              "cost": 160,
+              "category": "characters",
+              "options": [
+                {
+                  "refs": ["army_general"],
+                  "armyHasNotOption": ["army_general"],
+                  "type": "check",
+                  "name": "General",
+                  "cost": 0,
+                  "option_id": "18ecenqforuima4kmt0ryrg"
+                },
+                {
+                  "option_id": "6jy8l7x9t5iezid0meg6c5",
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "option_id": "d4r44jf8rup724i2y414p9",
+                      "optionsLabel": "Shield",
+                      "options": [
+                        {
+                          "option_id": "cmgyjbf8wbrgqcdpu2my4",
+                          "type": "check",
+                          "name": "Shield",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Shield Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["shieldEnchant", "shieldEnchant"]
+                        }
+                      ],
+                      "maxSize": 1
+                    },
+                    {
+                      "option_id": "o7u0f6zwzdmzk2be3vc14",
+                      "optionsLabel": "Melee Weapons",
+                      "options": [
+                        {
+                          "option_id": "wz50f0h7cf9wysbvqfrpq",
+                          "type": "check",
+                          "name": "Great Weapon",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Great Weapon Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
+                          "optionsSuffix": " (Great Weapon)"
+                        },
+                        {
+                          "option_id": "q1gzwasr8l1tb3khqioea",
+                          "type": "check",
+                          "name": "Bloodpox Blades",
+                          "cost": 10,
+                          "refs": [],
+                          "optionsLabel": "Bloodpox Blades Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant", "bloodpoxBladesEnchant"],
+                          "optionsSuffix": " (Paired Weapons)"
+                        },
+                        {
+                          "option_id": "75yijis53ocl1h23c2tays",
+                          "type": "check",
+                          "name": "Plague Flail",
+                          "cost": 20,
+                          "refs": [],
+                          "optionsLabel": "Plague Flail Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "halberdEnchant", "plagueFlailEnchant"],
+                          "optionsSuffix": " (Halberd)"
+                        }
+                      ],
+                      "maxSize": 1
+                    },
+                    {
+                      "option_id": "3f5iomiv3l1kwtefye0k6m",
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"]
+                    },
+                    {
+                      "option_id": "wjtam767k2lnrxmh5o1kue",
+                      "optionsLabel": "Heavy Armour Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Heavy Armour)",
+                      "options": [],
+                      "optionsDict": ["suitOfArmourEnchant", "heavyArmourEnchant"],
+                      "exportGroup": "Heavy Armour",
+                      "parentRule": "heavy_armour"
+                    },
+                    {
+                      "option_id": "fs3tewu49cs33wpyx3psfu",
+                      "type": "group",
+                      "optionsLabel": "Artefacts",
+                      "maxSize": 2,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"]
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 150,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["army_general"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "leafMaxCost": 200
+                      }
+                    }
+                  ]
+                },
+                {
+                  "option_id": "d9r8aw3bsdpq2f9zsyouj",
+                  "optionsLabel": "Mount",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Favoured Disciple",
+                      "cost": 50,
+                      "refs": ["mount", "favoured_disciple_mount_option"],
+                      "refopt": "favoured_disciple_mount",
+                      "option_id": "kl81vdfzg5go4rq5ij8a6"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Leprous Cauldron",
+                      "cost": 270,
+                      "refs": ["mount", "leprous_cauldron_mount_option"],
+                      "refopt": "leprous_cauldron_mount",
+                      "option_id": "sw45srgv7njfc2odv5xrd"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "collapsible": true
+                },
+                {
+                  "option_id": "3mfkges2cq5wiw5l0stqgb",
+                  "optionsLabel": "Magic",
+                  "maxSize": 4,
+                  "options": [
+                    {
+                      "type": "numeric",
+                      "parsername": "Up to 4 Sacred Plagues",
+                      "name": "Sacred Plagues",
+                      "cost": 20,
+                      "refs": ["upTo4SacredPlagues"],
+                      "option_id": "ki3mosyykjyxbbdbfnlmd"
+                    }
+                  ],
+                  "collapsible": true
+                }
+              ],
+              "refs": ["plaguePatriarch", "infantry"],
+              "unit_id": "plague_patriarch",
+              "armyHasNotOption": [
+                {
+                  "refs": ["plaguePatriarch"],
+                  "amount": 3
+                }
+              ],
+              "logo": "character"
+            },
+            {
+              "option_id": "txtcuor9iu58uiic37sfd",
+              "name": "Swarm Priest",
+              "cost": 115,
+              "category": "characters",
+              "options": [
+                {
+                  "refs": ["army_general"],
+                  "armyHasNotOption": ["army_general"],
+                  "type": "check",
+                  "name": "General",
+                  "cost": 0,
+                  "option_id": "vguuolv4bip91sgjf60zq"
+                },
+                {
+                  "option_id": "8xrjozwv919431hqo1alkt",
+                  "optionsLabel": "Equipment",
+                  "options": [
+                    {
+                      "option_id": "4c3zprlm26u3t62enesmw",
+                      "optionsLabel": "Armour",
+                      "options": [
+                        {
+                          "option_id": "06ed9yp0ai9ui5xerpqeoqe",
+                          "type": "check",
+                          "name": "Light Armour",
+                          "cost": 5,
+                          "refs": [],
+                          "optionsLabel": "Light Armour Enchant",
+                          "maxSize": 1,
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["suitOfArmourEnchant", "lightArmourEnchant"]
+                        }
+                      ],
+                      "maxSize": 1
+                    },
+                    {
+                      "option_id": "9rs9bwjp0w78nx7k8i8hrm",
+                      "optionsLabel": "Hand Weapon Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Hand Weapon)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"]
+                    },
+                    {
+                      "option_id": "4bbg981jhxcligoz9m5yvo",
+                      "optionsLabel": "Bloodpox Blades Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "optionsSuffix": " (Bloodpox Blades)",
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "bloodpoxBladesEnchant"],
+                      "exportGroup": "Bloodpox Blades",
+                      "parentRule": "bloodpox_blades"
+                    },
+                    {
+                      "option_id": "3x7qw8q3rk53ggsdv63zlx",
+                      "type": "group",
+                      "optionsLabel": "Artefacts",
+                      "maxSize": 2,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["artefact"]
+                    }
+                  ],
+                  "collapsible": true,
+                  "leafMaxCost": 100
+                },
+                {
+                  "option_id": "llz4jqpag2h0s00qlftb1f",
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "option_id": "yndevwl3yvarablbj4ndde",
+                      "type": "check",
+                      "name": "Holy Triumvirate",
+                      "cost": 25,
+                      "refs": ["holy triumvirate_fft5vn6"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["holy triumvirate_fft5vn6"],
+                          "amount": 3
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "option_id": "n2wtqw11srk5i587ditguf",
+                  "optionsLabel": "Mount",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Favoured Disciple",
+                      "cost": 55,
+                      "refs": ["mount", "favoured_disciple_mount_option"],
+                      "refopt": "favoured_disciple_mount",
+                      "option_id": "a25dqdyywiodg5wl2oqiq"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Sacred Platform",
+                      "cost": 250,
+                      "refs": ["mount", "sacred_platform_mount_option"],
+                      "refopt": "sacred_platform_mount",
+                      "option_id": "ueg54woqcp81k4uypb5lm2"
+                    }
+                  ],
+                  "maxSize": 1,
+                  "collapsible": true
+                },
+                {
+                  "option_id": "xc0crvow0ej5mamoptyf3m",
+                  "optionsLabel": "Magic",
+                  "options": [
+                    {
+                      "option_id": "zllnea81nbmeh4dhgooh66",
+                      "optionsLabel": "Level",
+                      "options": [
+                        {
+                          "option_id": "t5q3h8h1tus089ztwwqhifq",
+                          "cost": 0,
+                          "name": "Wizard Apprentice",
+                          "refs": ["wizardApprentice"],
+                          "type": "check"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Wizard Adept",
+                          "cost": 95,
+                          "refs": ["wizardAdept"],
+                          "option_id": "p5fcx2mli8vlt24cb063"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "minSize": 1,
+                      "collapsible": true
+                    },
+                    {
+                      "option_id": "euydhmafcsb0jcw6i42989c",
+                      "optionsLabel": "Path",
+                      "options": [
+                        {
+                          "option_id": "g4raqaei8bptfcu0lhgyd",
+                          "name": "Occultism",
+                          "cost": 0,
+                          "type": "check"
+                        },
+                        {
+                          "option_id": "494u6t6bc5wzvizaslbfg",
+                          "name": "Thaumaturgy",
+                          "cost": 0,
+                          "type": "check"
+                        }
+                      ],
+                      "minSize": 1,
+                      "collapsible": true,
+                      "maxSize": 1
+                    }
+                  ],
+                  "collapsible": true
+                }
+              ],
+              "refs": ["swarmPriest", "wizard", "infantry"],
+              "unit_id": "swarm_priest",
+              "logo": "character"
+            }
+          ],
+          "option_id": "fewf32grtdfhtrh54hg54h5"
+        },
+        {
+          "name": "Core Units",
+          "minPercent": 0.25,
+          "refs": ["core"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "option_id": "v7r5n04526tc7sjgssfkh",
+              "name": "Cult Converts",
+              "cost": 50,
+              "category": "core",
+              "options": [
+                {
+                  "minSize": 30,
+                  "maxSize": 80,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 4,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "lbp5mhh18d7czxhj5jxxv",
+                      "refs": ["cult_converts_amount"]
+                    }
+                  ],
+                  "option_id": "u0ro7wc6b0r1l6an9m3ovm"
+                },
+                {
+                  "option_id": "n0ch5jw8n3qc4m1mycy9pu",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "option_id": "sqdjf75jr0pi8dggmp034",
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"]
+                    },
+                    {
+                      "option_id": "mnk4plm6ce6xe15jt9g9",
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": []
+                    },
+                    {
+                      "option_id": "joh2f245zw8fk783hzfla",
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": []
+                    }
+                  ]
+                }
+              ],
+              "refs": ["cultConverts", "core_unit"],
+              "unit_id": "cult_converts",
+              "logo": "core"
+            },
+            {
+              "option_id": "rk243vaa319bayoniog0bf",
+              "name": "Plague Disciples",
+              "cost": 20,
+              "category": "core",
+              "extraCategories": ["towering_faith"],
+              "options": [
+                {
+                  "minSize": 20,
+                  "maxSize": 40,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 9,
+                      "hide": true,
+                      "options": [
+                        {
+                          "option_id": "0qca1r924nhrp3bbarm02i",
+                          "optionsLabel": "Weapons",
+                          "options": [
+                            {
+                              "option_id": "bovwzbiqd8xqog166qh3p",
+                              "type": "check",
+                              "name": "Great Weapon",
+                              "cost": 1,
+                              "refs": []
+                            },
+                            {
+                              "option_id": "mnbntkw5gjliwl44isiiuk",
+                              "type": "check",
+                              "name": "Bloodpox Blades",
+                              "cost": 0,
+                              "refs": []
+                            }
+                          ],
+                          "maxSize": 1
+                        }
+                      ],
+                      "option_id": "0zuc1o26gn5hjioa1r8w7t",
+                      "refs": ["plague_disciples_amount"]
+                    }
+                  ],
+                  "option_id": "vilhix0owspmtxv59njwcl"
+                },
+                {
+                  "option_id": "lwacjklnada7rsj20x2q8e",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "option_id": "xc8p2typ1ejtbw61d8eh8",
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "optionsLabel": "Sacred Plague",
+                      "options": [
+                        {
+                          "option_id": "t5b3e5lkunkmbwkshtusko",
+                          "type": "check",
+                          "parsername": "Up to 1 Sacred Plague",
+                          "name": "Sacred Plague",
+                          "cost": 15,
+                          "refs": [],
+                          "optionsLabel": "Sacred Plague",
+                          "optionsDict": ["sacredPlagues"],
+                          "options": [],
+                          "minSize": 1,
+                          "maxSize": 1
+                        }
+                      ]
+                    },
+                    {
+                      "option_id": "hqhwy3p9teo3c7b3iab6ru",
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": []
+                    },
+                    {
+                      "option_id": "lt7gy6wbhp9rlydck4jqtc",
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"]
+                    }
+                  ]
+                }
+              ],
+              "refs": ["plagueDisciples", "core_unit"],
+              "unit_id": "plague_disciples",
+              "logo": "core"
+            }
+          ],
+          "option_id": "dfsf32g34g43g34safddsfsd"
+        },
+        {
+          "name": "Special",
+          "refs": ["special"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "option_id": "kbzgh4zh21fk81bdsqdyt",
+              "name": "Brute Disciples",
+              "cost": -55,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 6,
+                  "maxSize": 12,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 55,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "da9wcu4z5gr0s5f6nemz99q",
+                      "refs": ["brute_disciples_amount"]
+                    }
+                  ],
+                  "option_id": "32difat0ovogjkjl29u4"
+                },
+                {
+                  "option_id": "qy30ivthf35g4wwzf69y",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "option_id": "x0e574kujzyu386nwbzd",
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"]
+                    }
+                  ]
+                }
+              ],
+              "refs": ["bruteDisciples"],
+              "unit_id": "brute_disciples",
+              "logo": "special"
+            },
+            {
+              "option_id": "72r53mndwyxnomvlp3rix",
+              "name": "Giant Plague Rats",
+              "cost": 30,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 30,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 5,
+                      "hide": true,
+                      "refs": ["giant_rats_count"],
+                      "option_id": "hk3n7l9ppy45jlk8vh8nvu"
+                    },
+                    {
+                      "optionsLabel": "Category",
+                      "option_id": "e32fjk23gf934jg3443g43g34",
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "options": [
+                        {
+                          "name": "Core",
+                          "type": "check",
+                          "option_id": "412349r2f-034jg43g34g43fr",
+                          "cost": 0,
+                          "replaceCategory": "core",
+                          "refs": ["core_giant_rats"],
+                          "armyHasNotOption": [
+                            {
+                              "refs": ["core_giant_rats"],
+                              "amount": 2
+                            }
+                          ],
+                          "hasOption": [
+                            {
+                              "refs": ["giant_rats_count"],
+                              "amount": 20
+                            }
+                          ],
+                          "hide": true,
+                          "invisible": true
+                        },
+                        {
+                          "name": "Special",
+                          "type": "check",
+                          "hide": true,
+                          "invisible": true,
+                          "option_id": "f423m9v342j-0f34-f23d231d32",
+                          "cost": 0,
+                          "hasNotOption": [
+                            {
+                              "refs": ["giant_rats_count"],
+                              "amount": 20
+                            }
+                          ],
+                          "override": [
+                            {
+                              "armyHasOption": [
+                                {
+                                  "refs": ["core_giant_rats"],
+                                  "amount": 2
+                                }
+                              ],
+                              "options": {
+                                "hasNotOption": []
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "option_id": "17w07vu76or7fmwnnblsyn"
+                }
+              ],
+              "refs": ["giantPlagueRats"],
+              "unit_id": "giant_plague_rats",
+              "armyHasNotOption": [
+                {
+                  "refs": ["giantPlagueRats"],
+                  "amount": 4
+                }
+              ],
+              "logo": "special"
+            },
+            {
+              "option_id": "nwjyr3o1ikrpdcfwaa7kvc",
+              "name": "Pestilent Onager",
+              "cost": 180,
+              "category": "special",
+              "options": [],
+              "refs": ["pestilentOnager"],
+              "unit_id": "pestilent_onager",
+              "armyHasNotOption": [
+                {
+                  "refs": ["pestilentOnager"],
+                  "amount": 2
+                }
+              ],
+              "logo": "special"
+            },
+            {
+              "option_id": "az6u3ar8s0ofbng0795o59",
+              "name": "Plague Swarms",
+              "cost": 45,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 2,
+                  "maxSize": 8,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 30,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "fbm0z7ntp7htnn7n32p8k",
+                      "refs": ["plague_swarms_amount"]
+                    }
+                  ],
+                  "option_id": "nb3qc8sw3wikk0gie522cc"
+                }
+              ],
+              "refs": ["plagueSwarms"],
+              "unit_id": "plague_swarms",
+              "armyHasNotOption": [
+                {
+                  "refs": ["plagueSwarms"],
+                  "amount": 3
+                }
+              ],
+              "logo": "special"
+            },
+            {
+              "option_id": "ezw6d2pmodq9mp0wzpvle",
+              "name": "Underworld Beast",
+              "cost": 310,
+              "category": "special",
+              "options": [],
+              "refs": ["underworldBeast", "underworldBeastOrGiant"],
+              "unit_id": "underworld_beast",
+              "armyHasNotOption": [
+                {
+                  "refs": ["underworldBeastOrGiant"],
+                  "amount": 3
+                }
+              ],
+              "logo": "special"
+            },
+            {
+              "option_id": "brsnz11g1nw1j82pph56u6",
+              "name": "Urban Agitators",
+              "cost": 30,
+              "category": "special",
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 30,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 6,
+                      "hide": true,
+                      "options": [
+                        {
+                          "option_id": "t79f9uattnh3agb16tgd98",
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "option_id": "ezlcne7gtttubxv89ojoyd",
+                              "optionsLabel": "Weapons",
+                              "options": [
+                                {
+                                  "option_id": "tm0jvczx6is7nu2zdmm6l9",
+                                  "type": "check",
+                                  "name": "Throwing Weapons (4+)",
+                                  "cost": 0,
+                                  "refs": []
+                                },
+                                {
+                                  "option_id": "grev4334f43f34g43g43",
+                                  "type": "check",
+                                  "name": "Sling (4+)",
+                                  "cost": 0,
+                                  "refs": []
+                                }
+                              ],
+                              "maxSize": 1
+                            },
+                            {
+                              "option_id": "hiwt9e27tj6ex3di2egc3w",
+                              "type": "check",
+                              "name": "Insurgents",
+                              "cost": 1,
+                              "refs": ["insurgents_jzfoa79q"],
+                              "hasNotOption": [
+                                {
+                                  "refs": ["insurgents_jzfoa79q"],
+                                  "amount": 15
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "option_id": "iyyuv1r7qqlkxm58wzq81",
+                      "refs": ["urban_agitators_amount"]
+                    }
+                  ],
+                  "option_id": "hkniip4bgk6a4b3wi63p5e"
+                },
+                {
+                  "option_id": "vpe3ms5ji0pb36nzrur6ng",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "option_id": "qrnfer0pze1d7827pvv",
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"]
+                    },
+                    {
+                      "option_id": "3ljtir54akskzddc20oucs",
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": []
+                    },
+                    {
+                      "option_id": "hoeg18969djxybvc1beoe",
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"]
+                    }
+                  ]
+                }
+              ],
+              "refs": ["urbanAgitators"],
+              "unit_id": "urban_agitators",
+              "armyHasNotOption": [
+                {
+                  "refs": ["urbanAgitators"],
+                  "amount": 3
+                }
+              ],
+              "logo": "special"
+            }
+          ],
+          "option_id": "adsaf3234g43g34ffsg43"
+        },
+        {
+          "name": "Towering Faith",
+          "maxPercent": 0.45,
+          "refs": ["towering_faith"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "option_id": "yqnx7tfetprofdfdt3bte",
+              "name": "Infected Giant",
+              "cost": 275,
+              "category": "towering_faith",
+              "options": [
+                {
+                  "option_id": "ctla5c1cn9adu6ty2hdk",
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "option_id": "w54jz0uzkjqm4lmk7wjf0j",
+                      "type": "check",
+                      "name": "Big Brother",
+                      "cost": 25,
+                      "refs": []
+                    }
+                  ]
+                },
+                {
+                  "option_id": "sqrvsz9duuh6v0pa6i9vzu",
+                  "optionsLabel": "Weapons",
+                  "options": [
+                    {
+                      "option_id": "0jeo0ib65m1ayk6oz7e9dm",
+                      "type": "check",
+                      "name": "Bloodpox Blades",
+                      "cost": 0,
+                      "refs": []
+                    },
+                    {
+                      "option_id": "k7yfkby6lmzqqcawy25bm",
+                      "type": "check",
+                      "name": "Giant Club",
+                      "cost": 25,
+                      "refs": []
+                    },
+                    {
+                      "option_id": "xa2yskycqs4sd4l6d44sp",
+                      "type": "check",
+                      "name": "Plague Flail and Frenzy",
+                      "cost": 10,
+                      "refs": []
+                    }
+                  ],
+                  "maxSize": 1,
+                  "minSize": 1
+                }
+              ],
+              "refs": ["infectedGiant", "underworldBeastOrGiant"],
+              "unit_id": "infected_giant",
+              "armyHasNotOption": [
+                {
+                  "refs": ["underworldBeastOrGiant"],
+                  "amount": 3
+                }
+              ],
+              "logo": "rat_standing"
+            },
+            {
+              "option_id": "d2iiipf6d5cngtjhwd7f4f",
+              "name": "Leper Monks",
+              "cost": 30,
+              "category": "towering_faith",
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 30,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 12,
+                      "hide": true,
+                      "options": [],
+                      "option_id": "8dk30d2cs0mevyyoz9nuvh",
+                      "refs": ["leper_monks_amount"]
+                    }
+                  ],
+                  "option_id": "9oezcvkwelpfcljhvhqx6b"
+                },
+                {
+                  "option_id": "m9ovqe2f7jd4kwnwy5oxc",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "option_id": "112zk3zu4boi42rakqifhd9",
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "optionsLabel": "Sacred Plague",
+                      "options": [
+                        {
+                          "option_id": "qet057yetleolh0y81wyb",
+                          "type": "check",
+                          "parsername": "Up to 1 Sacred Plague",
+                          "name": "Sacred Plague",
+                          "cost": 15,
+                          "refs": [],
+                          "optionsLabel": "Sacred Plague",
+                          "optionsDict": ["sacredPlagues"],
+                          "options": [],
+                          "minSize": 1,
+                          "maxSize": 1
+                        }
+                      ]
+                    },
+                    {
+                      "option_id": "fyvi8kkw7l7zwy6pyrmsz",
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": []
+                    },
+                    {
+                      "option_id": "64vzt3sbs1nvyypu9n1a3n",
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"]
+                    }
+                  ]
+                }
+              ],
+              "refs": ["leperMonks"],
+              "unit_id": "leper_monks",
+              "armyHasNotOption": [
+                {
+                  "refs": ["leperMonks"],
+                  "amount": 4
+                }
+              ],
+              "logo": "rat_standing"
+            },
+            {
+              "option_id": "yu4dyv7yjpxvt0d4qs71e",
+              "name": "Plague Acolytes",
+              "cost": 15,
+              "category": "towering_faith",
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 50,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 11,
+                      "hide": true,
+                      "options": [
+                        {
+                          "option_id": "98p28wcpavlotruik477w",
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "option_id": "z1n168wkauk88lsj0smc",
+                              "type": "check",
+                              "name": "Vanguard",
+                              "cost": 2,
+                              "refs": ["vanguard_nkgwtxd"],
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["vanguard_nkgwtxd"],
+                                  "amount": 60
+                                }
+                              ]
+                            },
+                            {
+                              "option_id": "47cx8b2jf2kcwdd6e29vj",
+                              "type": "check",
+                              "name": "The End is Nigh",
+                              "cost": 0,
+                              "refs": ["the end is nigh_4004q1ra"],
+                              "hasNotOption": [
+                                {
+                                  "refs": ["the end is nigh_4004q1ra"],
+                                  "amount": 15
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "option_id": "h2t7e1qx1pkjcii1pa7aws",
+                      "refs": ["plague_acolytes_amount"]
+                    }
+                  ],
+                  "option_id": "nlcsbgo27tcrbnbltynkl"
+                },
+                {
+                  "option_id": "qtgyet8ar1lny9gzl65b6",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "option_id": "rsogoo1gvd84g4dcay1akd",
+                      "type": "check",
+                      "name": "Champion",
+                      "cost": 10,
+                      "refs": ["unit_champion"],
+                      "optionsLabel": "Sacred Plague",
+                      "options": [
+                        {
+                          "option_id": "ie86v6ho1tqml3usfzwwn",
+                          "type": "check",
+                          "parsername": "Up to 1 Sacred Plague",
+                          "name": "Sacred Plague",
+                          "cost": 15,
+                          "refs": [],
+                          "optionsLabel": "Sacred Plague",
+                          "optionsDict": ["sacredPlagues"],
+                          "options": [],
+                          "minSize": 1,
+                          "maxSize": 1
+                        }
+                      ]
+                    },
+                    {
+                      "option_id": "ep96vw8z9rovxit4fqgi2g",
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "refs": []
+                    },
+                    {
+                      "option_id": "8uzw87qoqsl62reyo3x9rl",
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "refs": [],
+                      "options": [],
+                      "maxSize": 1,
+                      "collapsible": true,
+                      "sortOptions": true,
+                      "optionsLabel": "Banner Enchant",
+                      "optionsDict": ["bannerEnchant"]
+                    }
+                  ]
+                }
+              ],
+              "refs": ["plagueAcolytes"],
+              "unit_id": "plague_acolytes",
+              "logo": "rat_standing"
+            }
+          ],
+          "option_id": "32f32g3465jkl2214fgdfds"
+        },
+        {
+          "name": "Mounts",
+          "invisible": true,
+          "refs": ["mounts"],
+          "options": [
+            {
+              "option_id": "c76scuqo9tgzp1g5zf6af",
+              "name": "Favoured Disciple *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["favouredDisciple_mount_unit", "mount", "sizeLarge", "infantry"],
+              "unit_id": "favoured_disciple_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["favouredDisciple_mount_unit"],
+                  "amount": 4
+                }
+              ],
+              "logo": "character"
+            },
+            {
+              "option_id": "uen3fp61mto7oip6yyrmnh",
+              "name": "Leprous Cauldron *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["leprousCauldron_mount_unit", "mount", "sizeLarge", "construct"],
+              "unit_id": "leprous_cauldron_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["leprousCauldron_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "logo": "character"
+            },
+            {
+              "option_id": "ksqes7imtsgmsi5tsab1i",
+              "name": "Sacred Platform *Mount",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["sacredPlatform_mount_unit", "mount", "sizeGigantic", "construct"],
+              "unit_id": "sacred_platform_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["sacredPlatform_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "logo": "character"
+            }
+          ],
+          "option_id": "dwdgxb93exl3p25hhbhree"
+        }
+      ],
+      "option_id": "8s62g0akphyb91q38wn44di"
+    }
+  ]
+}

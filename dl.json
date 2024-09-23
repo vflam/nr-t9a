@@ -1,0 +1,4228 @@
+{
+  "name": "Daemon Legions",
+  "translation": {
+    "fr": "Légions Démoniaques",
+    "cn": "恶魔军团"
+  },
+  "short": "dl",
+  "version": "2024 beta1",
+  "nrversion": 374,
+  "playable": 1,
+  "id": 5,
+  "include": [102],
+  "hereditary": [
+    {
+      "path": "hereditary",
+      "ref": "spear_of_infinity"
+    }
+  ],
+  "reference_details": {
+    "army_general": "General",
+    "army_bsb": "Battle Standard",
+    "wizard": "Wizard",
+    "wizardApprentice": "Wizard Apprentice",
+    "wizardAdept": "Wizard Adept",
+    "wizardMaster": "Wizard Master",
+    "mount": "Mount",
+    "weaponEnchantUni": "Weapon Enchant",
+    "dominant": "Dominant",
+    "core_unit": "Core Unit",
+    "generalEnvy": "Kuulima's Deceiver General",
+    "generalGluttony": "Maw of Akaan General",
+    "generalGreed": "Miser of Sugulag General",
+    "generalLust": "Courtesan of Cibaresh General",
+    "generalSloth": "Sentinel of Nukuja General",
+    "generalPride": "Omen of Savar General",
+    "generalWrath": "Vanadra’s Scourge General"
+  },
+  "dictionnary": [
+    {
+      "refs": ["manifestationFather"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Iron Husk",
+          "cost": 90,
+          "description": "Res is set to 6.",
+          "option_id": "0dt4ca337ofphfeehmtfmte"
+        },
+        {
+          "type": "check",
+          "name": "Hellish Larynx",
+          "cost": 50,
+          "description": "The bearer gains <span class=\"textbf\">Breath Attack (Str 3, AP 2, Magical Attacks)</span>. This Manifestation only affects the model part taking it, not its mount.",
+          "option_id": "gf423g34reigj340g34g43",
+          "refs": ["hellish_larynx"],
+          "armyHasNotOption": [
+            {
+              "refs": ["hellish_larynx"],
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "name": "Visage of Cosmic Horror",
+          "cost": 40,
+          "description": "One use only. Can be activated at the start of any phase or when Choosing Equipment and Abilities in the Melee Phase. When activated, all friendly units within 6\" gain <span class=\"textbf\">Horror</span>. Effects last until the end of the Player Turn.",
+          "option_id": "f32g34g54h54h54h54h54",
+          "refs": ["hellish_larynx"],
+          "armyHasNotOption": [
+            {
+              "refs": ["hellish_larynx"],
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "name": "Mirrored Scales",
+          "cost": 55,
+          "description": "Each Melee Attack allocated towards the model  for which a natural ‘1’ is rolled to hit hits the attacking model's Health Pool instead.",
+          "countAsLeaf": true,
+          "optionsLabel": "Guiding Mirrored Scales",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_mirscale"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "cost": 0,
+                "hide": true,
+                "countAsLeaf": false
+              }
+            }
+          ],
+          "options": [
+            {
+              "type": "check",
+              "cost": 75,
+              "name": "Guiding Mirrored Scales",
+              "refs": ["guiding_mirscale", "dominant"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "dt5ovzltmp4lkflkq34kx"
+            }
+          ],
+          "option_id": "m5xr5bep3js3kx61lzxson"
+        },
+        {
+          "type": "check",
+          "name": "Kaleidoscopic Flesh",
+          "cost": 50,
+          "refs": ["mfa_kaleido"],
+          "description": "<span class=\"textbf\">Hard Target (1)</span>.",
+          "optionsLabel": "Guiding Kaleidoscopic Flesh",
+          "countAsLeaf": true,
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_keleido"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "cost": 0,
+                "hide": true,
+                "countAsLeaf": false
+              }
+            }
+          ],
+          "options": [
+            {
+              "type": "check",
+              "cost": 65,
+              "name": "Guiding Kaleidoscopic Flesh",
+              "refs": ["guiding_keleido", "dominant"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "ireafpyadpa8f6ywtydl9b",
+              "description": "The model and each R&F model in its unit gains Hard Target (1)."
+            }
+          ],
+          "option_id": "33fgtyp7hkwniab7f58ew9"
+        },
+        {
+          "type": "check",
+          "name": "Mark of the Eternal Champion",
+          "hasNotOption": ["possessed_giant"],
+          "cost": 50,
+          "refs": ["wizard", "dl_mark_eternal_champ"],
+          "description": "If taken by a Wizard, the model knows <i>Spear of Infinity</i> (Hereditary Spell) as an additional spell. If taken by a unit or model that is not a Wizard, it gains <span class=\"textbf\">Wizard Conclave (1)</span> with <i>Spear of Infinity</i> (Hereditary Spell) instead.",
+          "option_id": "d4rq4p2hr8jj9exnbfa6ag",
+          "magic": {
+            "amount": 0,
+            "spells": [
+              {
+                "path": "hereditary",
+                "ref": "spear_of_infinity",
+                "mods": {
+                  "mandatory": true,
+                  "free": true
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "check",
+          "name": "Hammer Hand",
+          "cost": 40,
+          "description": "+1 Att.",
+          "option_id": "bjel2nhb755ni1t79z8xs"
+        },
+        {
+          "type": "check",
+          "name": "Unnatural Roots",
+          "hasNotOption": ["possessed_giant"],
+          "cost": 30,
+          "description": "A side with one or more models with Unnatural Roots Engaged in Combat adds +1 to its Combat Score.",
+          "option_id": "sgy87ipoplsaifqodk87x6"
+        },
+        {
+          "type": "check",
+          "name": "Brimstone Secretions",
+          "cost": 30,
+          "description": "Immune (<span class=\"textbf\">Divine Attacks</span>).",
+          "optionsLabel": "Guiding Brimstone Secretions",
+          "countAsLeaf": true,
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_brimstone"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "cost": 0,
+                "hide": true,
+                "countAsLeaf": false
+              }
+            }
+          ],
+          "options": [
+            {
+              "type": "check",
+              "cost": 30,
+              "name": "Guiding Brimstone Secretions",
+              "refs": ["dominant", "guiding_brimstone"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "4gqflzeoqiop8er6cpg0pe"
+            }
+          ],
+          "option_id": "27y12ijwl0gibv8amqw0le"
+        },
+        {
+          "type": "check",
+          "name": "Centipede Legs",
+          "cost": 20,
+          "description": "+2\" Mob.",
+          "countAsLeaf": true,
+          "optionsLabel": "Guiding Centipede Legs",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_centipede"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "options": [
+            {
+              "type": "check",
+              "cost": 35,
+              "name": "Guiding Centipede Legs",
+              "refs": ["dominant", "guiding_centipede"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "ty3yku2i8itpnh30vtu5"
+            }
+          ],
+          "option_id": "i5ca0ub09cb83cwx7zo449"
+        },
+        {
+          "type": "check",
+          "name": "Chitinous Scales",
+          "cost": 25,
+          "description": "+2 Arm, to a maximum of 3.",
+          "option_id": "t7edqgia1d5ykm08nz3sj"
+        },
+        {
+          "type": "check",
+          "name": "Dark Hide",
+          "cost": 25,
+          "description": "<span class=\"textbf\">Ambush (Terrain Feature touching your Deployment Zone)</span>. The roll for this Ambush is done in Game Turn 1, and it is automatically successful.",
+          "option_id": "kh6n0ksnc74e0m1nri03s",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1"]
+              }
+            }
+          }
+        },
+        {
+          "type": "check",
+          "name": "Living Shield",
+          "cost": 30,
+          "countAsLeaf": true,
+          "hasNotOption": ["possessed_giant"],
+          "description": "One use only. Can be activated at the start of any phase or when Choosing Equipment and Abilitites in the Melee Phase. When activated: +2 Def. Effects last until the end of the Player Turn.",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_living_shield"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Living Shield",
+          "options": [
+            {
+              "type": "check",
+              "cost": 50,
+              "name": "Guiding Living Shield",
+              "refs": ["dominant", "guiding_living_shield"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "zdqxrgsnkrgcc3pljwih"
+            }
+          ],
+          "option_id": "dlwrlhpdcbwqupa62olw"
+        }
+      ],
+      "option_id": "oxonsjndlcrjb7t7q7kiq8"
+    },
+    {
+      "refs": ["manifestationEnvy"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Piercing Spike",
+          "cost": 25,
+          "countAsLeaf": true,
+          "description": "+1 AP.",
+          "optionsLabel": "Guiding Piercing Spike",
+          "options": [
+            {
+              "type": "check",
+              "cost": 60,
+              "name": "Guiding Piercing Spike",
+              "refs": ["dominant", "guiding_spike"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "8ft31b4055jlg7lwk8bkom"
+            }
+          ],
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_spike"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "option_id": "0ni4vgsmufqqcewpe67mbsl"
+        },
+        {
+          "type": "check",
+          "name": "Greenfire Eyes",
+          "cost": 25,
+          "description": "The model's Charge Range rolls when made towards a unit containing Light Armour or Metal Armour are Maximised.\n",
+          "option_id": "225dqxdq8o3hiumqe1gvcoc"
+        },
+        {
+          "type": "check",
+          "name": "Venom Sacs",
+          "cost": 25,
+          "countAsLeaf": true,
+          "description": "<span class=\"textbf\">Poison Attacks</span>.",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_venom"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Venom Sacs",
+          "options": [
+            {
+              "type": "check",
+              "cost": 80,
+              "name": "Guiding Venom Sacs",
+              "refs": ["dominant", "guiding_venom"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "y599x05gvqpg2hdz8iwqbu"
+            }
+          ],
+          "option_id": "7t9hkx8h9hfjbdjf112cs"
+        }
+      ],
+      "option_id": "j1bwexrgisavplmbi93eh"
+    },
+    {
+      "refs": ["manifestationGluttony"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Digestive Vomit",
+          "refs": ["one_use_item"],
+          "cost": 40,
+          "countAsLeaf": true,
+          "description": "If the model has previously been on the winning side of a combat while having this Manifestation, it gains +1 Str and +1 AP. ",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_vomit"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Digestive Vomit",
+          "options": [
+            {
+              "type": "check",
+              "cost": 50,
+              "name": "Guiding Digestive Vomit",
+              "refs": ["dominant", "guiding_vomit", "one_use_item"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "tpx6ws3q8mdtn9nv7krtq"
+            }
+          ],
+          "option_id": "acwepsa42tzouusp4dus"
+        },
+        {
+          "type": "check",
+          "name": "Broodmother",
+          "cost": 35,
+          "refs": ["dominant"],
+          "countAsLeaf": true,
+          "hasNotOption": ["dominant"],
+          "description": "For each Health Point loss the model causes with Melee Attacks towards enemy units, roll a D6 at the end of the Agility Step. For each rolled 6+, the model's Health Pool <span class=\"textbf\">Raises</span> 1 Health Point.",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_broodmother"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Broodmother",
+          "options": [
+            {
+              "type": "check",
+              "cost": 50,
+              "name": "Guiding Broodmother",
+              "refs": ["guiding_broodmother"],
+              "hasNotOption": ["possessed_giant"],
+              "option_id": "0jptlg8m0mjkqnuaqhyo1oc"
+            }
+          ],
+          "option_id": "up0sz5s8oxjq4s2a12e3y"
+        },
+        {
+          "type": "check",
+          "name": "Unhinging Jaw",
+          "cost": 40,
+          "countAsLeaf": true,
+          "description": "<span class=\"textbf\">Zeal (towards Height 3--5)</span>.",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_jaw"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Unhinging Jaw",
+          "options": [
+            {
+              "type": "check",
+              "cost": 55,
+              "name": "Guiding Unhinging Jaw",
+              "refs": ["dominant", "guiding_jaw"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "17wwe5hj1xu7dlktz35i12"
+            }
+          ],
+          "option_id": "t8x6jv52suh0rzmpbo2d08"
+        }
+      ],
+      "option_id": "s5hds534gcr8xyhtnkfeb9"
+    },
+    {
+      "refs": ["manifestationGreed"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Segmented Shell",
+          "cost": 25,
+          "countAsLeaf": true,
+          "description": "When the model  suffers a wound from an attack with <span class=\"textbf\">Multiple Wounds (X)</span>, reduce X by 1, to a minimum of 1.",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_shell"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Segmented Shell",
+          "options": [
+            {
+              "type": "check",
+              "cost": 25,
+              "name": "Guiding Segmented Shell",
+              "refs": ["dominant", "guiding_shell"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "tliblakmyop5giy8ez101m"
+            }
+          ],
+          "option_id": "5reux3g2youhw2mxedfc8l"
+        },
+        {
+          "type": "check",
+          "name": "Divining Snout",
+          "cost": 15,
+          "countAsLeaf": true,
+          "description": "Charge Range rolls made towards units containing at least one Enchanted Item are Maximised.",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_snout"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Divining Snout",
+          "options": [
+            {
+              "type": "check",
+              "cost": 35,
+              "name": "Guiding Divining Snout",
+              "refs": ["dominant", "guiding_snout"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "gzag9ty8p26o07f3d0hpq"
+            }
+          ],
+          "option_id": "8lkwnnhiy1qms13qezz1m"
+        },
+        {
+          "type": "check",
+          "name": "Smothering Coils",
+          "cost": 30,
+          "countAsLeaf": true,
+          "description": "<span class=\"textbf\">Zeal (towards Scoring)</span>.",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_coils"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Smothering Coils",
+          "options": [
+            {
+              "type": "check",
+              "cost": 50,
+              "name": "Guiding Smothering Coils",
+              "refs": ["dominant", "guiding_coils"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "2avr9fkfyxw0r31q7hebda"
+            }
+          ],
+          "option_id": "z6icukd2qtjgrcp2jbk8et"
+        }
+      ],
+      "option_id": "tmceg79edk8bzioi1c7ln"
+    },
+    {
+      "refs": ["manifestationLust"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Mesmerising Plumage",
+          "refs": ["dominant"],
+          "cost": 40,
+          "description": "<span class=\"textbf\">Afflict (1 Def, 1 Off)</span>.",
+          "option_id": "pokji5qhmblru18amjf08"
+        },
+        {
+          "type": "check",
+          "name": "Hidden Knives",
+          "cost": 35,
+          "countAsLeaf": true,
+          "description": "Attacks allocated towards an enemy unit's Flank or Rear Facing from the model  gain +1 Str and +1 AP.",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_hands"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Hidden Knives",
+          "options": [
+            {
+              "type": "check",
+              "cost": 35,
+              "name": "Guiding Hidden Knives",
+              "refs": ["dominant", "guiding_hands"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "32a40jc1zfjlr0pjpjp00p"
+            }
+          ],
+          "option_id": "674dorifbdkfq0bh2hjneb"
+        },
+        {
+          "type": "check",
+          "name": "Hot Blood",
+          "cost": 10,
+          "countAsLeaf": true,
+          "description": "<span class=\"textbf\">Devastating Charge (+2 Agi)</span>.",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_blood"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Hot Blood",
+          "options": [
+            {
+              "type": "check",
+              "cost": 25,
+              "name": "Guiding Hot Blood",
+              "refs": ["dominant", "guiding_blood"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "hljdw3v3c3hua665y5oovn"
+            }
+          ],
+          "option_id": "prm7ny5cylsq1hkiv5g0l"
+        }
+      ],
+      "option_id": "ffqgtsnyt57zf80s9jrfz"
+    },
+    {
+      "refs": ["manifestationSloth"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Torporous Tendrils",
+          "refs": ["dominant"],
+          "cost": 75,
+          "description": "<span class=\"textbf\">Afflict (-2 Agi)</span>.",
+          "option_id": "p2pqonn6xkcxexc2sybaqr"
+        },
+        {
+          "type": "check",
+          "name": "Sorcerous Antennae",
+          "hasNotOption": ["possessed_giant"],
+          "cost": 40,
+          "refs": ["mfa_sorcerous", "magic_start"],
+          "armyHasNotOption": [
+            {
+              "refs": ["mfa_sorcerous"],
+              "amount": 2,
+              "parentMult": false
+            }
+          ],
+          "description": "Add one additional Magic Dice to your pool during Siphon the Veil in your Magic Phase for each unit containing this Manifestation.",
+          "option_id": "42qdxiclwhiyvfzf3itvio"
+        },
+        {
+          "type": "check",
+          "name": "All-Seeing Eye",
+          "cost": 10,
+          "description": "<span class=\"textbf\">Accurate</span>.\n ",
+          "option_id": "51n1o8q0ssuzt1dnjh9038",
+          "countAsLeaf": true,
+          "optionsLabel": "Guiding Aura of Despair",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_aura_of_despair"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "cost": 0,
+                "hide": true,
+                "countAsLeaf": false
+              }
+            }
+          ],
+          "options": [
+            {
+              "type": "check",
+              "cost": 20,
+              "name": "Guiding Aura of Despair",
+              "refs": ["guiding_aura_of_despair", "dominant"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "ffdsfdsg34f32dfgfdsg34"
+            }
+          ]
+        }
+      ],
+      "option_id": "km7doyz36egv0a6a69rpk"
+    },
+    {
+      "refs": ["manifestationWrath"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Whipcrack Tail",
+          "cost": 50,
+          "countAsLeaf": true,
+          "description": "Melee Attacks gain +1 to hit.\n",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_tail"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Whipcrack Tail",
+          "options": [
+            {
+              "type": "check",
+              "cost": 75,
+              "name": "Guiding Whipcrack Tail",
+              "refs": ["dominant", "guiding_tail"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "4rwgna4j7i9yqxdlx9c4k8"
+            }
+          ],
+          "option_id": "i5cfnn4a0ai8r0o8mnj1"
+        },
+        {
+          "type": "check",
+          "name": "Curved Tusks",
+          "cost": 40,
+          "countAsLeaf": true,
+          "description": "The model's Melee Attacks gain +1 Str and +1 AP. For each Melee Attack for which a natural ‘1’ is rolled to wound, this model suffers a hit that wounds automatically, with AP 10.",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_haze"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Red Haze",
+          "options": [
+            {
+              "type": "check",
+              "cost": 75,
+              "name": "Guiding Red Haze",
+              "refs": ["dominant", "guiding_haze"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "q37bpyvv581bijwrq5hqg"
+            }
+          ],
+          "option_id": "0v9732eptws9gtrhljo4dbe"
+        },
+        {
+          "type": "check",
+          "name": "Incendiary Ichor",
+          "cost": 10,
+          "description": "<span class=\"textbf\">Aegis (3+, against Flaming Attacks)</span> and <span class=\"textbf\">Flaming Attacks</span>. The model automatically fails any Fortitude Saves it takes.",
+          "countAsLeaf": true,
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_ichor"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Incendiary Ichor",
+          "options": [
+            {
+              "type": "check",
+              "cost": 30,
+              "name": "Guiding Incendiary Ichor",
+              "refs": ["dominant", "guiding_ichor"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "5dv7d9jrh6idcdqy79vfuv"
+            }
+          ],
+          "option_id": "9v9a3nyalim3g1clajqzr"
+        }
+      ],
+      "option_id": "vbn7lq64sul6ld0ouaccd"
+    },
+    {
+      "refs": ["manifestationPride"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Bronze Backbone",
+          "cost": 30,
+          "countAsLeaf": true,
+          "description": "<span class=\"textbf\">First Strike (Hatred)</span>",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_backbone"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Bronze Backbone",
+          "options": [
+            {
+              "type": "check",
+              "cost": 70,
+              "name": "Guiding Bronze Backbone",
+              "refs": ["dominant", "guiding_backbone"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "26gddbtgnxifqs7aadygdi"
+            }
+          ],
+          "option_id": "vw2docehs7ls2d77hl949"
+        },
+        {
+          "type": "check",
+          "name": "Golden Helm",
+          "cost": 35,
+          "description": "Courage Tests taken by the unit are subject to <span class=\"textbf\">Minimised Roll</span>.",
+          "option_id": "i01mfv79n0boap7uk2ym5l"
+        },
+        {
+          "type": "check",
+          "name": "Horns of Hubris",
+          "cost": 25,
+          "countAsLeaf": true,
+          "description": "<span class=\"textbf\">Vanguard (3\")</span>.",
+          "override": [
+            {
+              "hasOption": [
+                {
+                  "refs": ["guiding_hubris"],
+                  "amount": 1
+                }
+              ],
+              "options": {
+                "countAsLeaf": false,
+                "cost": 0,
+                "hide": true
+              }
+            }
+          ],
+          "optionsLabel": "Guiding Horns of Hubris",
+          "options": [
+            {
+              "type": "check",
+              "cost": 35,
+              "name": "Guiding Horns of Hubris",
+              "refs": ["dominant", "guiding_hubris"],
+              "hasNotOption": ["dominant", "possessed_giant"],
+              "option_id": "mp8npub1z2u3nw5pvmty"
+            }
+          ],
+          "option_id": "gfzesdrxietrq0q182ehm"
+        }
+      ],
+      "option_id": "bz44sxxjmqwrpgdf88lqzc"
+    }
+  ],
+  "army": [
+    {
+      "name": "Army",
+      "optionsLabel": "Categories",
+      "maxCost": 4500,
+      "options": [
+        {
+          "name": "Characters",
+          "refs": ["perso"],
+          "optionsLabel": "Units",
+          "maxPercent": 0.4,
+          "options": [
+            {
+              "name": "Harbinger of Father Chaos",
+              "refs": ["harbinger", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["harbinger"],
+                  "amount": 4
+                }
+              ],
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["count_towards_aves"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["aves"]
+                  }
+                }
+              ],
+              "cost": 150,
+              "options": [
+                {
+                  "maxSize": 1,
+                  "optionsLabel": "Command",
+                  "options": [
+                    {
+                      "type": "group",
+                      "option_id": "qpg1ar0gakfeowzxqfdf4a",
+                      "name": "Leadership",
+                      "optionsLabel": "Leadership",
+                      "minSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Captain and Attached",
+                          "cost": 0,
+                          "option_id": "vcklv0439543bjewssr0vb34jv034v43"
+                        },
+                        {
+                          "name": "General",
+                          "refs": ["army_general"],
+                          "type": "check",
+                          "cost": 0,
+                          "armyHasNotOption": ["army_general"],
+                          "option_id": "c7uvvhoausovjruw5nyiv"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "refs": ["harbinger_of_father_chaos_amount"]
+                    },
+                    {
+                      "name": "Battle Standard Bearer",
+                      "type": "check",
+                      "refs": ["army_bsb", "not_a_leader"],
+                      "cost": 50,
+                      "armyHasNotOption": ["army_bsb"],
+                      "option_id": "utq8eezi6zc14ulvdmum"
+                    }
+                  ],
+                  "option_id": "z2w4ie9j0pz3caqs1vsrk"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "maxSize": 1,
+                  "minSize": 1,
+                  "options": [
+                    {
+                      "name": "Light Troops",
+                      "type": "check",
+                      "option_id": "ziqjdrn9kctv5vikhpgo1c",
+                      "cost": 0
+                    },
+                    {
+                      "type": "check",
+                      "name": "Dark Pulpit",
+                      "cost": 110,
+                      "options": [],
+                      "refopt": "dark_pulpit_mount",
+                      "option_id": "4hlh5dds5kniudcb185koo"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Hellsteed",
+                      "cost": 50,
+                      "options": [],
+                      "refopt": "hellsteed_mount",
+                      "option_id": "npymlpy1i65gazqp7jnzt"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Burning Wheel",
+                      "cost": 85,
+                      "options": [],
+                      "refopt": "burning_wheel_mount",
+                      "option_id": "nlhyysjag2qe6t81w8o84i"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Great Beast of Prophecy",
+                      "cost": 90,
+                      "optionsLabel": "Options",
+                      "options": [],
+                      "refopt": "great_beast_of_prophecy_mount",
+                      "option_id": "i2bhubbujmn5bj3yb7hqt5"
+                    }
+                  ],
+                  "option_id": "muz6sxbl76823dmvneiw1li"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Wizard",
+                      "refs": ["wizard"],
+                      "cost": 0,
+                      "hide": true,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Path",
+                          "minSize": 1,
+                          "maxSize": 1,
+                          "override": [
+                            {
+                              "hasOption": [
+                                {
+                                  "refs": ["art_free_ess"],
+                                  "amount": 1
+                                }
+                              ],
+                              "options": {
+                                "maxSize": 2
+                              }
+                            }
+                          ],
+                          "collapsible": true,
+                          "options": [
+                            {
+                              "name": "Divination",
+                              "refs": ["divination"],
+                              "type": "check",
+                              "cost": 0,
+                              "option_id": "ar9cgx8llucd0rm6l1gdh"
+                            },
+                            {
+                              "name": "Evocation",
+                              "refs": ["evocation"],
+                              "type": "check",
+                              "cost": 0,
+                              "option_id": "0vgc5x8o1aedagv2jmw5566"
+                            },
+                            {
+                              "name": "Thaumaturgy",
+                              "refs": ["thaumaturgy"],
+                              "type": "check",
+                              "cost": 0,
+                              "option_id": "7xqe1tx96zsphvqtl0e5er"
+                            },
+                            {
+                              "name": "Witchcraft",
+                              "refs": ["witchcraft"],
+                              "type": "check",
+                              "cost": 0,
+                              "option_id": "r16s4h4zuqcs0ilxo4gg"
+                            }
+                          ],
+                          "option_id": "dsmqh4im87knxs5t9co11f"
+                        },
+                        {
+                          "type": "group",
+                          "collapsible": true,
+                          "optionsLabel": "Level",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "refs": ["wizardApprentice"],
+                              "name": "Wizard Apprentice",
+                              "type": "check",
+                              "cost": 50,
+                              "option_id": "wr9nwil49igxpvlux9ov3s"
+                            },
+                            {
+                              "refs": ["wizardAdept"],
+                              "name": "Wizard Adept",
+                              "type": "check",
+                              "cost": 150,
+                              "option_id": "s50m7hhunslgavgmchttqc"
+                            }
+                          ],
+                          "option_id": "vuwgnrf0lsjgudw4oapj6n"
+                        }
+                      ],
+                      "option_id": "rulsvumtt6putq6fspjzw"
+                    }
+                  ],
+                  "option_id": "8iptcpurxx59tssimmbrnh"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestations",
+                  "leafMaxCost": 150,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Father Chaos",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationFather"],
+                      "option_id": "3ugr2hcmsomxhdgechn4kd"
+                    },
+                    {
+                      "childrenOptions": {
+                        "armyHasOption": [
+                          {
+                            "refs": ["generalEnvy"],
+                            "amount": 1
+                          }
+                        ]
+                      },
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Envy",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationEnvy"],
+                      "option_id": "v9sxxl0cfueibqlvej48n"
+                    },
+                    {
+                      "childrenOptions": {
+                        "armyHasOption": [
+                          {
+                            "refs": ["generalGluttony"],
+                            "amount": 1
+                          }
+                        ]
+                      },
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Gluttony",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationGluttony"],
+                      "option_id": "rffhjsfga5d6nmc7yh7"
+                    },
+                    {
+                      "childrenOptions": {
+                        "armyHasOption": [
+                          {
+                            "refs": ["generalGreed"],
+                            "amount": 1
+                          }
+                        ]
+                      },
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Greed",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationGreed"],
+                      "option_id": "igsg5xpgu901p2jt8zpx6b"
+                    },
+                    {
+                      "childrenOptions": {
+                        "armyHasOption": [
+                          {
+                            "refs": ["generalLust"],
+                            "amount": 1
+                          }
+                        ]
+                      },
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Lust",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationLust"],
+                      "option_id": "qa6ztnvvw1jiru3tlp5top"
+                    },
+                    {
+                      "childrenOptions": {
+                        "armyHasOption": [
+                          {
+                            "refs": ["generalSloth"],
+                            "amount": 1
+                          }
+                        ]
+                      },
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Sloth",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationSloth"],
+                      "option_id": "e9ukkq6wd5tyl3mf4t19xk"
+                    },
+                    {
+                      "childrenOptions": {
+                        "armyHasOption": [
+                          {
+                            "refs": ["generalPride"],
+                            "amount": 1
+                          }
+                        ]
+                      },
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Pride",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationPride"],
+                      "option_id": "k24pynxshqas46jvkvyv2"
+                    },
+                    {
+                      "childrenOptions": {
+                        "armyHasOption": [
+                          {
+                            "refs": ["generalWrath"],
+                            "amount": 1
+                          }
+                        ]
+                      },
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Wrath",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationWrath"],
+                      "option_id": "wxmklxkkz3phwp1h7k777"
+                    }
+                  ],
+                  "option_id": "tbazjihsy9bl2u2qtgpvhp"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Dark Fire (3+)",
+                      "cost": 15,
+                      "hasNotOption": ["mount"],
+                      "option_id": "x0txd45g7bgzn2teoyn3i"
+                    }
+                  ],
+                  "option_id": "la9stisr8uej2zaalb4ze"
+                }
+              ],
+              "unit_id": "harbinger_of_father_chaos",
+              "option_id": "u064oz4n9vi8zzwbum09",
+              "logo": "character"
+            },
+            {
+              "name": "Kuulima's Deceiver",
+              "refs": ["kuulima_deceiver", "wizard", "protean_magic", "tag_Daemon"],
+              "magic": {
+                "amount": 4,
+                "spells": [
+                  {
+                    "path": "divination",
+                    "ref": "foresight"
+                  },
+                  {
+                    "path": "evocation",
+                    "ref": "whispers_of_the_veil"
+                  },
+                  {
+                    "path": "thaumaturgy",
+                    "ref": "smite_unbeliever"
+                  },
+                  {
+                    "path": "witchcraft",
+                    "ref": "evil_eye"
+                  }
+                ]
+              },
+              "armyHasNotOption": [
+                {
+                  "refs": ["kuulima_deceiver"],
+                  "amount": 3
+                }
+              ],
+              "cost": 330,
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "amount": 1,
+                      "refs": ["flyer"]
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["aves"]
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "maxSize": 1,
+                  "optionsLabel": "Command",
+                  "options": [
+                    {
+                      "type": "group",
+                      "option_id": "qdggqgawwyq1xc9xj10csn",
+                      "name": "Leadership",
+                      "optionsLabel": "Leadership",
+                      "options": [
+                        {
+                          "name": "General and Greater Dominion",
+                          "refs": ["army_general", "generalEnvy"],
+                          "type": "check",
+                          "cost": 10,
+                          "armyHasNotOption": ["army_general"],
+                          "option_id": "u3ppxsze23zgp8timafyk"
+                        }
+                      ],
+                      "refs": ["kuulima's_deceiver_amount"]
+                    }
+                  ],
+                  "option_id": "ro22i1hx56vs5p4oyp0zt"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestations",
+                  "leafMaxCost": 150,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Father Chaos",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationFather"],
+                      "option_id": "k21cmpiyrnmebd9kkyrr"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Envy",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationEnvy"],
+                      "option_id": "2h2w0a7uuop2nan7wik34q"
+                    }
+                  ],
+                  "option_id": "7tfh9pfynk9oiboaezctyo"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Fly (7\", 14\")",
+                      "cost": 35,
+                      "refs": ["flyer"],
+                      "option_id": "84sojwuzkyl0m9661ybnop"
+                    }
+                  ],
+                  "option_id": "llyoaxrjptjmptovuhei1"
+                }
+              ],
+              "unit_id": "kuulimas_deceiver",
+              "option_id": "6220wq29ksh9z0mk08j7yn",
+              "logo": "character"
+            },
+            {
+              "name": "Maw of Akaan",
+              "refs": ["maw_akaan", "wizard", "noHope", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["maw_akaan"],
+                  "amount": 1
+                }
+              ],
+              "cost": 530,
+              "options": [
+                {
+                  "maxSize": 1,
+                  "optionsLabel": "Command",
+                  "options": [
+                    {
+                      "type": "group",
+                      "option_id": "7mb1gmndsiga2g63kfvrkn",
+                      "name": "Leadership",
+                      "optionsLabel": "Leadership",
+                      "options": [
+                        {
+                          "name": "General and Greater Dominion",
+                          "refs": ["army_general", "generalGluttony"],
+                          "type": "check",
+                          "cost": 10,
+                          "armyHasNotOption": ["army_general"],
+                          "option_id": "jl4xuo826sr4b9x0dvkw4i"
+                        }
+                      ],
+                      "refs": ["maw_of_akaan_amount"]
+                    }
+                  ],
+                  "option_id": "0k58dgi8hfzl6ize7ph6yuq"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Path",
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["art_free_ess"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "maxSize": 2
+                          }
+                        }
+                      ],
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "name": "Evocation",
+                          "refs": ["evocation"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "3029ljhwpv5mmru9uc7b28"
+                        },
+                        {
+                          "name": "Witchcraft",
+                          "refs": ["witchcraft"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "267zfx5l9vfiq4oayaci7bj"
+                        }
+                      ],
+                      "option_id": "ej55niits28b42bxp8iywt"
+                    },
+                    {
+                      "type": "group",
+                      "collapsible": true,
+                      "optionsLabel": "Level",
+                      "maxSize": 1,
+                      "minSize": 1,
+                      "options": [
+                        {
+                          "refs": ["wizardApprentice"],
+                          "name": "Wizard Apprentice",
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "ialitc8d2s7dc18nf7ndxr"
+                        },
+                        {
+                          "refs": ["wizardAdept"],
+                          "name": "Wizard Adept",
+                          "type": "check",
+                          "cost": 100,
+                          "option_id": "0566dq6mp345zd8hnaeuydn"
+                        },
+                        {
+                          "refs": ["wizardMaster"],
+                          "name": "Wizard Master",
+                          "type": "check",
+                          "cost": 250,
+                          "option_id": "ds9oxmty0u76ivxduyvkuo"
+                        }
+                      ],
+                      "option_id": "5eo3ncd4qe8a4fpg6sd7j"
+                    }
+                  ],
+                  "option_id": "hstbfhi9cd7u44epys42tm"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestations",
+                  "leafMaxCost": 150,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Father Chaos",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationFather"],
+                      "option_id": "o07f2hqhhhojqx3z4figs"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Gluttony",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationGluttony"],
+                      "option_id": "t0lbx3u6mycmqkk6y5oqw"
+                    }
+                  ],
+                  "option_id": "np0dugimya582vgilfrha"
+                }
+              ],
+              "unit_id": "maw_of_akaan",
+              "option_id": "c9iha3a2nrp06fdj9n9vgd3",
+              "logo": "character",
+              "maxUnitCost": 900
+            },
+            {
+              "name": "Miser of Sugulag",
+              "refs": ["miser_sugulag", "wizard", "noHope", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["miser_sugulag"],
+                  "amount": 1
+                }
+              ],
+              "cost": 630,
+              "options": [
+                {
+                  "maxSize": 1,
+                  "optionsLabel": "Command",
+                  "options": [
+                    {
+                      "type": "group",
+                      "option_id": "giy31xv9sypjfiwnr16rck",
+                      "name": "Leadership",
+                      "optionsLabel": "Leadership",
+                      "options": [
+                        {
+                          "name": "General and Greater Dominion",
+                          "refs": ["army_general", "generalGreed"],
+                          "type": "check",
+                          "cost": 10,
+                          "armyHasNotOption": ["army_general"],
+                          "option_id": "ty8orreqr88ncdj2yozi3t"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "refs": ["miser_of_sugulag_amount"]
+                    }
+                  ],
+                  "option_id": "kqnlgw253w9r80rjm0394"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Path",
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["art_free_ess"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "maxSize": 2
+                          }
+                        }
+                      ],
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "name": "Divination",
+                          "refs": ["divination"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "gjt5dwnq3ibtw4o9muttj"
+                        },
+                        {
+                          "name": "Evocation",
+                          "refs": ["evocation"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "l9zdg543as4lguw71r9cr"
+                        },
+                        {
+                          "name": "Thaumaturgy",
+                          "refs": ["thaumaturgy"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "92ar9no3ornm9hl998dei"
+                        }
+                      ],
+                      "option_id": "hal4ytq2aiktntmu0283"
+                    },
+                    {
+                      "type": "group",
+                      "collapsible": true,
+                      "optionsLabel": "Level",
+                      "maxSize": 1,
+                      "minSize": 1,
+                      "options": [
+                        {
+                          "refs": ["wizardApprentice"],
+                          "name": "Wizard Apprentice",
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "t4cqu0tme8ixbfacsfnh"
+                        },
+                        {
+                          "refs": ["wizardAdept"],
+                          "name": "Wizard Adept",
+                          "type": "check",
+                          "cost": 95,
+                          "option_id": "3iyn41xs8w631d2kcb5gsq"
+                        },
+                        {
+                          "refs": ["wizardMaster"],
+                          "name": "Wizard Master",
+                          "type": "check",
+                          "cost": 150,
+                          "option_id": "dzc6f7ef0984exfhv294lb"
+                        }
+                      ],
+                      "option_id": "rnri2007k7tu2dsqrris"
+                    }
+                  ],
+                  "option_id": "1k3zeo6r5kvv6zux2vnjl8"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestations",
+                  "leafMaxCost": 150,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Father Chaos",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationFather"],
+                      "option_id": "254ijxngcrjryonvixhlx"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Greed",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationGreed"],
+                      "option_id": "71dsf5uod763m539mscyu2"
+                    }
+                  ],
+                  "option_id": "g2ts1kudfyevycto46p2c"
+                }
+              ],
+              "unit_id": "miser_of_sugulag",
+              "option_id": "o8tu9k4p8i6vmvefxoqmn",
+              "logo": "character",
+              "maxUnitCost": 900
+            },
+            {
+              "name": "Courtesan of Cibaresh",
+              "refs": ["courtesan_cibaresh", "wizard", "noHope", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["courtesan_cibaresh"],
+                  "amount": 1
+                }
+              ],
+              "cost": 530,
+              "options": [
+                {
+                  "maxSize": 1,
+                  "optionsLabel": "Command",
+                  "options": [
+                    {
+                      "type": "group",
+                      "option_id": "wdc4tqu4bt5rdwlgplt0y",
+                      "name": "Leadership",
+                      "optionsLabel": "Leadership",
+                      "options": [
+                        {
+                          "name": "General and Greater Dominion",
+                          "refs": ["army_general", "generalLust"],
+                          "type": "check",
+                          "cost": 10,
+                          "armyHasNotOption": ["army_general"],
+                          "option_id": "y7km9qtli4gu6d8zzwnqcm"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "refs": ["courtesan_of_cibaresh_amount"]
+                    }
+                  ],
+                  "option_id": "vdvqcwc2wcjf93mrin4kz9"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Path",
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["art_free_ess"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "maxSize": 2
+                          }
+                        }
+                      ],
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "name": "Divination",
+                          "refs": ["divination"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "lunpmtqs5kvx8wsn5hmz7"
+                        },
+                        {
+                          "name": "Witchcraft",
+                          "refs": ["witchcraft"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "otb9fvy31um9ofhqfqlm"
+                        }
+                      ],
+                      "option_id": "myntpvvlpskfbydiargb2c"
+                    },
+                    {
+                      "type": "group",
+                      "collapsible": true,
+                      "optionsLabel": "Level",
+                      "maxSize": 1,
+                      "minSize": 1,
+                      "options": [
+                        {
+                          "refs": ["wizardApprentice"],
+                          "name": "Wizard Apprentice",
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "danrary0cicqoq9hfm1g5k"
+                        },
+                        {
+                          "refs": ["wizardAdept"],
+                          "name": "Wizard Adept",
+                          "type": "check",
+                          "cost": 100,
+                          "option_id": "8t52jqfx4qizlsp8u13vcg"
+                        },
+                        {
+                          "refs": ["wizardMaster"],
+                          "name": "Wizard Master",
+                          "type": "check",
+                          "cost": 250,
+                          "option_id": "qpafjlt5bnxiokwnkj4rm"
+                        }
+                      ],
+                      "option_id": "6aj8qm59faenyuk9cid1k"
+                    }
+                  ],
+                  "option_id": "vkmzkvqehrsp7knumnsaal"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestations",
+                  "leafMaxCost": 150,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Father Chaos",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationFather"],
+                      "option_id": "1d4snfid9s1eeeqn9v561"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Lust",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationLust"],
+                      "option_id": "4dtucndylvk59hrv7usujk"
+                    }
+                  ],
+                  "option_id": "6y20wxgrju510axogvdes49"
+                }
+              ],
+              "unit_id": "courtesan_of_cibaresh",
+              "option_id": "ava39x928nk0qsl4l2gbn5",
+              "logo": "character",
+              "maxUnitCost": 900
+            },
+            {
+              "name": "Omen of Savar",
+              "refs": ["omen_savar", "wizard", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["omen_savar"],
+                  "amount": 1
+                }
+              ],
+              "cost": 400,
+              "options": [
+                {
+                  "maxSize": 1,
+                  "optionsLabel": "Command",
+                  "options": [
+                    {
+                      "type": "group",
+                      "option_id": "jd2q6vvv4szuk8q59mfoc",
+                      "name": "Leadership",
+                      "optionsLabel": "Leadership",
+                      "options": [
+                        {
+                          "name": "General and Greater Dominion",
+                          "refs": ["army_general", "generalPride"],
+                          "type": "check",
+                          "cost": 10,
+                          "armyHasNotOption": ["army_general"],
+                          "option_id": "51ve0qydoibf7m3rnz1yxp"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "refs": ["omen_of_savar_amount"]
+                    }
+                  ],
+                  "option_id": "pcys3ru66t8v8qegyarxr"
+                },
+                {
+                  "optionsLabel": "Mount",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "cost": 130,
+                      "name": "Throne of Overwhelming Splendour",
+                      "options": [],
+                      "refopt": "throne_of_overwhelming_splendour_mount",
+                      "option_id": "9u62dx1gs2a9hj1tfbds5w"
+                    }
+                  ],
+                  "option_id": "alwymubcosrzloa1twsaf"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Path",
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["art_free_ess"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "maxSize": 2
+                          }
+                        }
+                      ],
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "name": "Divination",
+                          "refs": ["divination"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "bw9hcngw464wfvkyqorote"
+                        },
+                        {
+                          "name": "Thaumaturgy",
+                          "refs": ["thaumaturgy"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "i0noeihrbsimpsre7blpfa"
+                        }
+                      ],
+                      "option_id": "k9dmheg50ha5e7tvw4boja"
+                    },
+                    {
+                      "type": "group",
+                      "collapsible": true,
+                      "optionsLabel": "Level",
+                      "maxSize": 1,
+                      "minSize": 1,
+                      "options": [
+                        {
+                          "refs": ["wizardApprentice"],
+                          "name": "Wizard Apprentice",
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "st82phu4h8krm09g3cj9y"
+                        },
+                        {
+                          "refs": ["wizardAdept"],
+                          "name": "Wizard Adept",
+                          "type": "check",
+                          "cost": 100,
+                          "option_id": "k99j9okczu46cij48goj6"
+                        },
+                        {
+                          "refs": ["wizardMaster"],
+                          "name": "Wizard Master",
+                          "type": "check",
+                          "cost": 265,
+                          "option_id": "g0ykmvchkresfmf5yf2nfl"
+                        }
+                      ],
+                      "option_id": "qajcifwghro26azxrky9"
+                    }
+                  ],
+                  "option_id": "d32jwo6ves4kincvfxuknp"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestations",
+                  "leafMaxCost": 150,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Father Chaos",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationFather"],
+                      "option_id": "iipknlgei4iax7e26dfnr7"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Pride",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationPride"],
+                      "option_id": "mmhozbx5cvfbhb54yenpc"
+                    }
+                  ],
+                  "option_id": "qmk16j1b1xpsyofu8rm9"
+                }
+              ],
+              "unit_id": "omen_of_savar",
+              "option_id": "ixcj8w2x6t980rdcu73erf",
+              "logo": "character"
+            },
+            {
+              "name": "Sentinel of Nukuja",
+              "refs": ["sentinel_nukuja", "wizard", "wizardMaster", "tag_Daemon"],
+              "cost": 640,
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "amount": 1,
+                      "refs": ["strixian"]
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["aves"]
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "maxSize": 1,
+                  "optionsLabel": "Command",
+                  "options": [
+                    {
+                      "type": "group",
+                      "option_id": "gt91poxswgqtoom38vvcm",
+                      "name": "Leadership",
+                      "optionsLabel": "Leadership",
+                      "options": [
+                        {
+                          "name": "General and Greater Dominion",
+                          "refs": ["army_general", "generalSloth"],
+                          "type": "check",
+                          "cost": 10,
+                          "armyHasNotOption": ["army_general"],
+                          "option_id": "lspq0zmyxbb9ufghomp7qk"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "refs": ["sentinel_of_nukuja_amount"]
+                    }
+                  ],
+                  "option_id": "7ehj67a1hda9o3yd01jv3h"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Path",
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["art_free_ess"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "maxSize": 2
+                          }
+                        }
+                      ],
+                      "collapsible": true,
+                      "options": [
+                        {
+                          "name": "Divination",
+                          "refs": ["divination"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "4ujz6z6c6ppxsy0oqch9wb"
+                        },
+                        {
+                          "name": "Evocation",
+                          "refs": ["evocation"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "6kxg1s2q4w4e0gqyxu1bjc"
+                        },
+                        {
+                          "name": "Thaumaturgy",
+                          "refs": ["thaumaturgy"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "ifdd5t70fte2z54mh99nje"
+                        },
+                        {
+                          "name": "Witchcraft",
+                          "refs": ["witchcraft"],
+                          "type": "check",
+                          "cost": 0,
+                          "option_id": "7kcxfw7wotrx60mqkbr9kh"
+                        }
+                      ],
+                      "option_id": "vx5wvc60ecptqgbs73pig"
+                    }
+                  ],
+                  "option_id": "8m87qypyprqpx9itshw1fi"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestations",
+                  "leafMaxCost": 175,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Father Chaos",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationFather"],
+                      "option_id": "d1aq4v47nhbmw8164fsvs"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Sloth",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationSloth"],
+                      "option_id": "r692a6nvtsrxq9k1375iy"
+                    }
+                  ],
+                  "option_id": "acstl8lzfacef7lce4npdj"
+                },
+                {
+                  "optionsLabel": "Mount",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Dark Pulpit",
+                      "cost": 0,
+                      "refopt": "dark_pulpit_mount",
+                      "option_id": "6z57ffqwg4cbtgvielu84g"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Strixian Spirit",
+                      "parsername": "On foot and Strixian Spirit [Av]",
+                      "cost": 40,
+                      "refs": ["flyer", "strixian", "sizeGigantic"],
+                      "armyHasNotOption": ["strixian"],
+                      "option_id": "0073qfeikd4fvp206a58am9h",
+                      "maxUnitCost": 850
+                    }
+                  ],
+                  "option_id": "xyjkh8es3ejt6rze96r17"
+                }
+              ],
+              "unit_id": "sentinel_of_nukuja",
+              "option_id": "lk1pmwfiqzm23sh50lkrd",
+              "logo": "character",
+              "maxUnitCost": 800
+            },
+            {
+              "name": "Vanadra's Scourge",
+              "refs": ["vanadras_scourge", "noHope", "tag_Daemon"],
+              "extraCategories": ["aves"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["vanadras_scourge"],
+                  "amount": 1
+                }
+              ],
+              "cost": 700,
+              "options": [
+                {
+                  "maxSize": 1,
+                  "optionsLabel": "Command",
+                  "options": [
+                    {
+                      "type": "group",
+                      "option_id": "ox6pqjbl59b14kkb67sw5s",
+                      "name": "Leadership",
+                      "optionsLabel": "Leadership",
+                      "options": [
+                        {
+                          "name": "General and Greater Dominion",
+                          "refs": ["army_general", "generalWrath"],
+                          "type": "check",
+                          "cost": 10,
+                          "armyHasNotOption": ["army_general"],
+                          "option_id": "r8l5o5aidewhq7q4uk9ld"
+                        }
+                      ],
+                      "maxSize": 1,
+                      "refs": ["vanadra's_scourge_amount"]
+                    }
+                  ],
+                  "option_id": "92meputfm28dpq4w561wvk"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Wizard",
+                      "refs": ["wizard"],
+                      "cost": 0,
+                      "hide": true,
+                      "options": [
+                        {
+                          "type": "group",
+                          "collapsible": true,
+                          "optionsLabel": "Level",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "refs": ["wizardApprentice"],
+                              "name": "Wizard Apprentice",
+                              "type": "check",
+                              "cost": 50,
+                              "option_id": "09x5uet6ixzeq9b2bgd4m8j"
+                            },
+                            {
+                              "refs": ["wizardAdept"],
+                              "name": "Wizard Adept",
+                              "type": "check",
+                              "cost": 100,
+                              "option_id": "dl9b54hve8t1ohrld72cje"
+                            }
+                          ],
+                          "option_id": "avs6zxbnto4lkttzmnnn"
+                        },
+                        {
+                          "type": "group",
+                          "optionsLabel": "Path",
+                          "minSize": 1,
+                          "maxSize": 1,
+                          "override": [
+                            {
+                              "hasOption": [
+                                {
+                                  "refs": ["art_free_ess"],
+                                  "amount": 1
+                                }
+                              ],
+                              "options": {
+                                "maxSize": 2
+                              }
+                            }
+                          ],
+                          "collapsible": true,
+                          "options": [
+                            {
+                              "name": "Evocation",
+                              "refs": ["evocation"],
+                              "type": "check",
+                              "cost": 0,
+                              "option_id": "0wwpxny3mcejtv3ada4qtw"
+                            },
+                            {
+                              "name": "Thaumaturgy",
+                              "refs": ["thaumaturgy"],
+                              "type": "check",
+                              "cost": 0,
+                              "option_id": "dm6n1vvrl25k06mpp0pp9e"
+                            }
+                          ],
+                          "option_id": "475b812wsu28zd63jv85f"
+                        }
+                      ],
+                      "option_id": "8xsp50ofmmj3j0lqfghzal"
+                    }
+                  ],
+                  "option_id": "pviks5vx4e9xxrougrmuo"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestations",
+                  "leafMaxCost": 150,
+                  "collapsible": true,
+                  "options": [
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Father Chaos",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationFather"],
+                      "option_id": "t504126yugs00zdevynrc98"
+                    },
+                    {
+                      "type": "group",
+                      "optionsLabel": "Manifestations of Wrath",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["manifestationWrath"],
+                      "option_id": "z7eu6vc1uujel7epifkfsr"
+                    }
+                  ],
+                  "option_id": "jycm5qtt1nq6p9h85fom75"
+                }
+              ],
+              "unit_id": "vanadras_scourge",
+              "option_id": "zc2bpeqqgi8v5dcjllmhxb",
+              "logo": "character",
+              "maxUnitCost": 900
+            }
+          ],
+          "option_id": "kseijmc91zaiuv3rvslrl"
+        },
+        {
+          "name": "Core Units",
+          "minPercent": 0.25,
+          "refs": ["base"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Imps",
+              "refs": ["core_unit", "tag_Daemon"],
+              "cost": 50,
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 15,
+                      "refs": ["imp_amount"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["imp_amount"],
+                          "amount": 40
+                        }
+                      ],
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Incendiary Ichor",
+                              "cost": 1,
+                              "option_id": "zlzdo8erfbeuhwee9y4iw"
+                            },
+                            {
+                              "type": "check",
+                              "name": "All-Seeing Eye",
+                              "cost": 1,
+                              "option_id": "fsdgdfhg43hhgfdhfgd32y43"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Dark Hide",
+                              "cost": 3,
+                              "option_id": "ezqtyaz11df93li3pwr7a"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Mark of the Eternal Champion",
+                              "cost": 30,
+                              "costParentMult": false,
+                              "option_id": "gysln5xk4kmw58bveref7f",
+                              "refs": ["wizard", "dl_mark_eternal_champ"],
+                              "magic": {
+                                "amount": 0,
+                                "spells": [
+                                  {
+                                    "path": "hereditary",
+                                    "ref": "spear_of_infinity",
+                                    "mods": {
+                                      "mandatory": true,
+                                      "free": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "type": "check",
+                              "name": "Sorcerous Antennae",
+                              "refs": ["mfa_sorcerous", "magic_start"],
+                              "cost": 50,
+                              "costParentMult": false,
+                              "option_id": "35yhlzapqgrbebtf1i6llu",
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["mfa_sorcerous"],
+                                  "amount": 2,
+                                  "parentMult": false
+                                }
+                              ]
+                            }
+                          ],
+                          "option_id": "83pvylgggdn0oejm7f2mt1i"
+                        }
+                      ],
+                      "option_id": "zja3n5fi2hfxvd811ta2p"
+                    }
+                  ],
+                  "option_id": "bgpunql47lupo4u92z4rkh"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 0,
+                      "optionsLabel": "Options",
+                      "maxSize": 1,
+                      "minSize": 1,
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Firestarter (Spear of Infinity)",
+                          "parsername": "Firestarter (Spear of Infinity)",
+                          "cost": 40,
+                          "option_id": "92chhq9uer4b0gemeogbj",
+                          "boundSpells": [
+                            {
+                              "path": "hereditary",
+                              "ref": "spear_of_infinity",
+                              "mods": {
+                                "castValue": 3
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Firestarter (Hand of Heaven)",
+                          "parsername": "Firestarter (Smite the Unbeliever)",
+                          "cost": 45,
+                          "option_id": "ca4p2uae6nv0xntzwrc6rof",
+                          "boundSpells": [
+                            {
+                              "path": "thaumaturgy",
+                              "ref": "smite_unbeliever",
+                              "mods": {
+                                "castValue": 3
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "option_id": "xlv57h63tlea3javucwh8a"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "vjbi4n5zann4tdxpwqc9w7"
+                    }
+                  ],
+                  "option_id": "897supm8huu3xaak2mxkwg"
+                }
+              ],
+              "unit_id": "imps",
+              "option_id": "hgy2u41n9hvnb7pzagvdv",
+              "logo": "core"
+            },
+            {
+              "name": "Succubi",
+              "refs": ["core_unit", "tag_Daemon"],
+              "cost": 40,
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Dark Hide",
+                              "cost": 1,
+                              "option_id": "ggvaeo19nft47vvgy7h6if"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Mesmerising Plumage",
+                              "cost": 2,
+                              "option_id": "9pp3e1dao3isk0yz0nbmq"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Torporous Tendrils",
+                              "cost": 4,
+                              "option_id": "e4mdsgsve1ret6lycz142r"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Bronze Backbone",
+                              "cost": 5,
+                              "option_id": "u40el764prmt2lp0psurx"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Divining Snout",
+                              "cost": 1,
+                              "option_id": "gfdgrehsdfjrgfdgfd4r3"
+                            }
+                          ],
+                          "option_id": "fkbhalxvmsh3rqolxef3zj"
+                        }
+                      ],
+                      "option_id": "rslu0e5oy3bi2a3xuxrct",
+                      "refs": ["succubi_amount"]
+                    }
+                  ],
+                  "option_id": "eac7ere1ba76at3g882xnt"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "option_id": "0glo207cyfht72x7jb2ucl"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "ye7yplpq2vsvoo2doj6vn"
+                    }
+                  ],
+                  "option_id": "6s3fetqpc2s4wzt8z56tda"
+                }
+              ],
+              "unit_id": "succubi",
+              "option_id": "zz9okz52rjnupe45q85",
+              "logo": "core"
+            },
+            {
+              "name": "Lemures",
+              "refs": ["core_unit", "tag_Daemon"],
+              "cost": 20,
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Brimstone Secretions",
+                              "cost": 1,
+                              "option_id": "a9x3pfu29szxo02v4j6n"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Golden Helm",
+                              "cost": 1,
+                              "option_id": "hdpth7tbyko4w6bm6ga1"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Venom Sacs",
+                              "cost": 2,
+                              "option_id": "gpgd4dyuhfc0ix5uoqecp6t"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Torporous Tendrils",
+                              "cost": 3,
+                              "option_id": "39ijofps52q8nwbgleoj"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Unnatural Roots",
+                              "cost": 45,
+                              "option_id": "5h9v22d5g7za38aw2mwtga",
+                              "costParentMult": false
+                            }
+                          ],
+                          "option_id": "hhhvcvc259d8qhgi8t8uje"
+                        }
+                      ],
+                      "option_id": "p4yelia92i73q72k9eo4",
+                      "refs": ["lemures_amount"]
+                    }
+                  ],
+                  "option_id": "udaq51p0xwlj0wr901d9y9"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "option_id": "99qf1qtcga7vmjrhstzz8n"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "jg0q9apomlehhn0w203di"
+                    }
+                  ],
+                  "option_id": "0am5qnn6bj8t5ra23ijv0j2"
+                }
+              ],
+              "unit_id": "lemures",
+              "option_id": "wsiy4sf26oabhddbgc1v0c",
+              "logo": "core"
+            },
+            {
+              "name": "Myrmidons",
+              "refs": ["core_unit", "tag_Daemon"],
+              "cost": 0,
+              "options": [
+                {
+                  "minSize": 10,
+                  "maxSize": 25,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Hot Blood",
+                              "cost": 1,
+                              "option_id": "ovrwcqycdxn4r6tjekln62"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Unhinging Jaw",
+                              "cost": 2,
+                              "option_id": "yst0yc0uzf8oh98pljajo"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Whipcrack Tail",
+                              "cost": 5,
+                              "option_id": "t9gsdn9ntr103dccry5ee"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Bronze Backbone",
+                              "cost": 3,
+                              "option_id": "jbc950rvcbsgnrqdsgmf"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Piercing Spike",
+                              "cost": 4,
+                              "option_id": "blp9r69b08ifked693h0vb"
+                            }
+                          ],
+                          "option_id": "bndkpm7m84f5db26uynl3s"
+                        }
+                      ],
+                      "option_id": "8z6k9w9vc5c2tmuhopo9u9",
+                      "refs": ["myrmidons_amount"]
+                    }
+                  ],
+                  "option_id": "dq7veban8lziyp86ggwqd"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 5,
+                      "option_id": "hnb4ieh4tatupfr8cg8ki"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "7jzk005qdgaleb1tktt95n"
+                    }
+                  ],
+                  "option_id": "dc5ele872onjkc2yomthe8"
+                }
+              ],
+              "unit_id": "myrmidons",
+              "option_id": "sto0wuw8w5m10v6lm0a2mks",
+              "logo": "core"
+            }
+          ],
+          "option_id": "e5x05icpo5afdqcv1cipmp"
+        },
+        {
+          "name": "Special",
+          "refs": ["special"],
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Eidolons",
+              "cost": 10,
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 30,
+                      "refs": ["eidolon_amount"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["eidolon_amount"],
+                          "amount": 18
+                        }
+                      ],
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Incendiary Ichor",
+                              "cost": 2,
+                              "option_id": "ihe7kmvyabolbaaqpc8c8"
+                            },
+                            {
+                              "type": "check",
+                              "name": "All-Seeing Eye",
+                              "cost": 4,
+                              "option_id": "olex8jhj6g9kj1ge8fdikd"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Kaleidoscopic Flesh",
+                              "cost": 6,
+                              "option_id": "hywxolhaki983a1ig1wao4"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Sorcerous Antennae",
+                              "refs": ["mfa_sorcerous", "magic_start"],
+                              "cost": 25,
+                              "costParentMult": false,
+                              "option_id": "tv0u610exmhlesh2sllwkp",
+                              "armyHasNotOption": [
+                                {
+                                  "refs": ["mfa_sorcerous"],
+                                  "amount": 2,
+                                  "parentMult": false
+                                }
+                              ]
+                            }
+                          ],
+                          "option_id": "ri5k30gie60ec3224563ye"
+                        },
+                        {
+                          "optionsLabel": "Options",
+                          "options": [
+                            {
+                              "type": "check",
+                              "cost": 4,
+                              "name": "Scout",
+                              "option_id": "a7j174vs552ks494sn5vq"
+                            }
+                          ],
+                          "option_id": "e77ls0jdnmkjocacr7586"
+                        }
+                      ],
+                      "option_id": "8f32nvd748o8qfhbrm1sg"
+                    }
+                  ],
+                  "option_id": "t3oawa14xxsyco54q9f8"
+                },
+                {
+                  "type": "check",
+                  "name": "Wizard Conclave (2)",
+                  "cost": 100,
+                  "option_id": "fn328fj23f98342f43f43f34",
+                  "magic": {
+                    "amount": 2,
+                    "spells": [
+                      {
+                        "path": "divination",
+                        "ref": "fate_judgement"
+                      },
+                      {
+                        "path": "evocation",
+                        "ref": "danse_macabre"
+                      },
+                      {
+                        "path": "thaumaturgy",
+                        "ref": "smite_unbeliever"
+                      },
+                      {
+                        "path": "hereditary",
+                        "ref": "spear_of_infinity"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "unit_id": "eidolons",
+              "option_id": "69da3swydpjl3phhbs9qz",
+              "logo": "special",
+              "refs": ["tag_Daemon"]
+            },
+            {
+              "name": "Hellhounds",
+              "cost": 60,
+              "refs": ["hellhounds", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["hellhounds"],
+                  "amount": 4
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 20,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Hot Blood",
+                              "cost": 1,
+                              "option_id": "2q5e6fj29vcla1gzkm7e8e"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Incendiary Ichor",
+                              "cost": 1,
+                              "option_id": "7p9vn33i0tm974p7adir9n"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Digestive Vomit",
+                              "cost": 2,
+                              "refs": ["one_use_item"],
+                              "option_id": "dojoi0hs89usfq8bvkq3km"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Horns of Hubris",
+                              "cost": 1,
+                              "option_id": "2g01e0uinfw1uq9kx1chtq"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Centipede Legs",
+                              "cost": 1,
+                              "option_id": "3xzriy9p1uwsdjfgrmxtdk"
+                            }
+                          ],
+                          "option_id": "y7bsggnlsks736jhpdtz0c"
+                        }
+                      ],
+                      "option_id": "a367i7d64ia6mb1d7niete",
+                      "refs": ["hellhounds_amount"]
+                    }
+                  ],
+                  "option_id": "e7yaapltmohfq3hq7qg9"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "option_id": "8hpm5cmah93ntldachipvt"
+                    }
+                  ],
+                  "option_id": "urx4bc6dfechpntstwx2z6"
+                }
+              ],
+              "unit_id": "hellhounds",
+              "option_id": "hn4y104szfwkjyu0smabl",
+              "logo": "special"
+            },
+            {
+              "name": "Threshing Engine",
+              "refs": ["threshing_engine", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["threshing_engine"],
+                  "amount": 5
+                }
+              ],
+              "cost": 150,
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["flyer"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["aves"]
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "optionsLabel": "Options",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Fly",
+                      "cost": 20,
+                      "refs": ["flyer"],
+                      "option_id": "mizbkhsmuikt8ye5vloe2"
+                    },
+                    {
+                      "name": "Horde Thresher",
+                      "cost": 110,
+                      "type": "check",
+                      "option_id": "zt2x5be8vui3mxr090dy6r"
+                    },
+                    {
+                      "name": "Legion Thresher",
+                      "cost": 190,
+                      "type": "check",
+                      "option_id": "2i51d9r4j1qxdqtanqflr"
+                    }
+                  ],
+                  "option_id": "jdm6406k45by38wpt4nesr"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestation",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Divining Snout",
+                      "cost": 15,
+                      "option_id": "bn1268uzstv52hkwsq59y2"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Horns of Hubris",
+                      "cost": 15,
+                      "option_id": "etaelnk0jzmkv8my1nczp"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Whipcrack Tail",
+                      "cost": 25,
+                      "option_id": "5zszg4qx1muvx5kj4j119"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Mark of the Eternal Champion",
+                      "cost": 40,
+                      "option_id": "6ussuwm825aege2r7ejmv6",
+                      "refs": ["wizard", "dl_mark_eternal_champ"],
+                      "magic": {
+                        "amount": 0,
+                        "spells": [
+                          {
+                            "path": "hereditary",
+                            "ref": "spear_of_infinity",
+                            "mods": {
+                              "mandatory": true,
+                              "free": true
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "check",
+                      "name": "Hidden Knives",
+                      "cost": 45,
+                      "option_id": "a5d48btd2w5ox2ucnboyro"
+                    }
+                  ],
+                  "option_id": "m4jtwvj5348tgfxc6trs3"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "type": "check",
+                      "option_id": "7dxicuvvpo6vm7x7y2r03"
+                    }
+                  ],
+                  "option_id": "5v8c44sqm4utyyh0f8qyw"
+                }
+              ],
+              "unit_id": "threshing_engine",
+              "option_id": "2zuxw5kctnxjhxjer0vbb",
+              "logo": "special"
+            },
+            {
+              "name": "Titanslayer Chariot",
+              "refs": ["titanslayer", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["titanslayer"],
+                  "amount": 2
+                }
+              ],
+              "cost": 200,
+              "options": [
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestation",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Golden Helm",
+                      "cost": 5,
+                      "option_id": "aru52z1uywftqunc84qhg",
+                      "refs": ["titanslayer_chariot_amount"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Digestive Vomit",
+                      "cost": 10,
+                      "refs": ["one_use_item"],
+                      "option_id": "h91te5pldo7nz9r2eehyk"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Hammer Hand",
+                      "cost": 35,
+                      "option_id": "g43gfdgfdsfhjksdfg434"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Segmented Shell",
+                      "cost": 5,
+                      "option_id": "4xu644b2lzwl3a1t93b96"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Centipede Legs",
+                      "cost": 15,
+                      "option_id": "jv170ashu1lm5ln7x1ty1"
+                    }
+                  ],
+                  "option_id": "evp25sepdp4oknax8w4wq"
+                },
+                {
+                  "optionsLabel": "Command Group",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "type": "check",
+                      "option_id": "mrjjj2aaxhrszspfxwahff"
+                    }
+                  ],
+                  "option_id": "cv4659hp0dmld53l8vn0f"
+                }
+              ],
+              "unit_id": "titanslayer_chariot",
+              "option_id": "a8nuxmrjabskam11y1uv2o",
+              "logo": "special"
+            },
+            {
+              "name": "Mageblight Gremlins",
+              "cost": 110,
+              "refs": ["mageblight_gremlins", "tag_Daemon", "tag_Swarm"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["mageblight_gremlins"],
+                  "amount": 4
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 2,
+                  "maxSize": 5,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 45,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Greenfire Eyes",
+                              "cost": 5,
+                              "option_id": "fz3l8mhoa3g323lxwvgmqp"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Unnatural Roots",
+                              "cost": 15,
+                              "option_id": "6kpg4dnhvvutbhgzlbpe",
+                              "costParentMult": false
+                            },
+                            {
+                              "type": "check",
+                              "name": "Living Shield",
+                              "cost": 9,
+                              "option_id": "sjm108hzzkyc89fkdm86"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Piercing Spike",
+                              "cost": 10,
+                              "option_id": "7mf4hm3vih3sunfksd3j6b"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Venom Sacs",
+                              "cost": 20,
+                              "option_id": "kxw06hegvha1mp9gtx3b6u"
+                            }
+                          ],
+                          "option_id": "whruzt9mlvcmwrulo98c"
+                        }
+                      ],
+                      "option_id": "no63f1ey3ak0i27qh3zkbjp",
+                      "refs": ["mageblight_gremlins_amount"]
+                    }
+                  ],
+                  "option_id": "iajscyt1irfby97lpy7mmg"
+                }
+              ],
+              "unit_id": "mageblight_gremlins",
+              "option_id": "2u1bbvqw7gsr1eqkcldpqp",
+              "logo": "special"
+            },
+            {
+              "name": "Clawed Fiends",
+              "cost": -30,
+              "refs": ["clawed_fiends", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["clawed_fiends"],
+                  "amount": 3
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 90,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Centipede Legs",
+                              "cost": 4,
+                              "option_id": "90p02wmogbsf7if7jqyi7yg"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Mesmerising Plumage",
+                              "cost": 8,
+                              "option_id": "nv4w7scv1poegvuel8mdbk"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Piercing Spike",
+                              "cost": 12,
+                              "option_id": "i6ymti79flceonfoq3a6fj"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Broodmother",
+                              "cost": 6,
+                              "option_id": "a0rptiwha5rbxpkv6wyt"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Unhinging Jaw",
+                              "cost": 14,
+                              "option_id": "yst5zjoo9jjbs9axakf7n9"
+                            }
+                          ],
+                          "option_id": "6jnjf9v4o8x84jpbstrbbd"
+                        }
+                      ],
+                      "option_id": "ayjqwmzx6zhfkuksj72r84",
+                      "refs": ["clawed_fiends_amount"]
+                    }
+                  ],
+                  "option_id": "fiuud8w1rzitnuan2e489"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "u1rwda4ctag0kfoj3vzcxu"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "22on1jk9r0gr1797l67wf"
+                    }
+                  ],
+                  "option_id": "j5r8klpouyjyw17brtmqg"
+                }
+              ],
+              "unit_id": "clawed_fiends",
+              "option_id": "c3gz661ky9bvetapqm4vvo",
+              "logo": "special"
+            },
+            {
+              "name": "Hoarders",
+              "cost": -60,
+              "refs": ["hoarders", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["hoarders"],
+                  "amount": 3
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 100,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 2,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Chitinous Scales",
+                              "cost": 4,
+                              "option_id": "mik0oxbezc9cwz2sjgz38"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Segmented Shell",
+                              "cost": 4,
+                              "option_id": "gfdgghfdjgvfhgfh54h54h54"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Divining Snout",
+                              "cost": 2,
+                              "option_id": "x4vqm2lrznhzu06eh987mk"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Mirrored Scales",
+                              "cost": 21,
+                              "option_id": "dfz6l0e78gld7iwvfuauz"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Unnatural Roots",
+                              "cost": 30,
+                              "option_id": "wki5wb5tad926j5udqhgkc",
+                              "costParentMult": false
+                            },
+                            {
+                              "type": "check",
+                              "name": "Smothering Coils",
+                              "cost": 10,
+                              "option_id": "4s9yuh5h8bgfw9udhc9vcj"
+                            }
+                          ],
+                          "option_id": "oxmxb4g00ma5r9vphpx8lv"
+                        }
+                      ],
+                      "option_id": "5ohdzf2dz9avrz3fdjpfv",
+                      "refs": ["hoarders_amount"]
+                    }
+                  ],
+                  "option_id": "xp50n3fpm5hpe6nkbgx2q"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "kp8sc188xya6ie69xgfbie"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "0wbrckxw7c1w2mir741i6"
+                    }
+                  ],
+                  "option_id": "udelkymelvlgmjc60h5t"
+                }
+              ],
+              "unit_id": "hoarders",
+              "option_id": "sak61veh6veng6mnre85hb",
+              "logo": "special"
+            },
+            {
+              "name": "Succubi Tempters",
+              "cost": 110,
+              "refs": ["succubi_tempters", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["succubi_tempters"],
+                  "amount": 3
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 10,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 18,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Centipede Legs",
+                              "cost": 2,
+                              "option_id": "bw29w6bx7yrgagwwb4r8l"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Hot Blood",
+                              "cost": 2,
+                              "option_id": "i6fbdptpsgl2a6n2t4mx"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Mesmerising Plumage",
+                              "cost": 4,
+                              "option_id": "xtojcicyardfw7bljjuen"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Hidden Knives",
+                              "cost": 4,
+                              "option_id": "0qtvawd4dkiwgegtsfo1b"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Hammer Hand",
+                              "cost": 6,
+                              "option_id": "hib5uviwmp96gtpenksyul"
+                            }
+                          ],
+                          "option_id": "ytuvz9i1yb22y7zqr6cjl"
+                        }
+                      ],
+                      "option_id": "8fke4xdp85q2tveosd5mjw",
+                      "refs": ["sirens_amount"]
+                    }
+                  ],
+                  "option_id": "l3jzdvxgf0ise3e92n956g"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "n1b7acgn8zighbgrmdy6o"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "afa4nj3cfen64t1iqp0g"
+                    }
+                  ],
+                  "option_id": "bi709aj8mujns5t6i9lp5"
+                }
+              ],
+              "unit_id": "succubi_tempters",
+              "option_id": "dnruxthqyrutmqdethm1h",
+              "logo": "special"
+            },
+            {
+              "name": "Blazing Glory",
+              "refs": ["blazing_glories", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["blazing_glories"],
+                  "amount": 2
+                }
+              ],
+              "cost": 320,
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["flyer"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["aves"]
+                  }
+                }
+              ],
+              "options": [
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Fly (8\", 16\")",
+                      "cost": 55,
+                      "refs": ["flyer"],
+                      "option_id": "jtm7izicnhgxdvrvb8r34q"
+                    }
+                  ],
+                  "option_id": "z5mdmdj9c1gobnrknzynq"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestation",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Brimstone Secretions",
+                      "cost": 10,
+                      "option_id": "u9yy5fiu6qhqxe7tvev6p"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Horns of Hubris",
+                      "cost": 15,
+                      "option_id": "zlzi4rqh10nbcnavy9pguc"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Golden Helm",
+                      "cost": 20,
+                      "option_id": "9x3osjso5llgar2s30km"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Bronze Backbone",
+                      "cost": 30,
+                      "option_id": "naibwveri3kg5bxelcayj"
+                    }
+                  ],
+                  "option_id": "yu4tc4fq20i9w60di59q9"
+                }
+              ],
+              "unit_id": "blazing_glory",
+              "option_id": "n0w3tgg3k2n90c3v9bolq",
+              "logo": "special"
+            },
+            {
+              "name": "Hope Harvester",
+              "refs": ["hope_harverster", "not_a_leader", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["hope_harverster"],
+                  "amount": 2
+                }
+              ],
+              "cost": 280,
+              "options": [
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestation",
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Sorcerous Antennae",
+                      "cost": 30,
+                      "option_id": "hgfhfg213fdsfsdgdfgfdgdfg4g4",
+                      "refs": ["mfa_sorcerous"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["mfa_sorcerous"],
+                          "amount": 2,
+                          "parentMult": false
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Iron Husk",
+                      "cost": 65,
+                      "option_id": "gfdgfdmn56y34gvb534jngfgfdgfd"
+                    },
+                    {
+                      "type": "check",
+                      "name": "All-Seeing Eye",
+                      "cost": 25,
+                      "option_id": "tr52c1ftwoc03dosme3d5"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Mark of the Eternal Champion",
+                      "cost": 50,
+                      "option_id": "kkkt6yxr5xtruwzteckh",
+                      "refs": ["wizard", "dl_mark_eternal_champ"],
+                      "magic": {
+                        "amount": 0,
+                        "spells": [
+                          {
+                            "path": "hereditary",
+                            "ref": "spear_of_infinity",
+                            "mods": {
+                              "mandatory": true,
+                              "free": true
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "check",
+                      "name": "Torporous Tendrils",
+                      "cost": 55,
+                      "option_id": "lpmrmatwu3ba39wwpe7hb4"
+                    }
+                  ],
+                  "option_id": "ign7pdj3kvh39szwiyl9o9"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Engine of Damnation",
+                      "loses_rules": ["rulebook-war_platform"],
+                      "refs": ["engine_damnation"],
+                      "cost": 80,
+                      "option_id": "6gqtdbmmllusqzedtm6wy"
+                    }
+                  ],
+                  "option_id": "0kra21lwc4glwcm3iyqasei"
+                }
+              ],
+              "unit_id": "hope_harvester",
+              "option_id": "szsfjtpv2o9y6h6syk4qak",
+              "logo": "special"
+            },
+            {
+              "name": "Brazen Beasts",
+              "cost": 65,
+              "refs": ["brazen_beasts", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["brazen_beasts"],
+                  "amount": 3
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 5,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 95,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Incendiary Ichor",
+                              "cost": 2,
+                              "option_id": "5ltt2yubrq23g21998mv04"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Centipede Legs",
+                              "cost": 4,
+                              "option_id": "xu4gyvku3zp6wyg1pqeyg"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Chitinous Scales",
+                              "cost": 6,
+                              "option_id": "lwilkv352nad97t0uc94ug"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Whipcrack Tail",
+                              "cost": 12,
+                              "option_id": "6kspzfxufnaaz6ic71b8xn"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Curved Tusks",
+                              "cost": 20,
+                              "option_id": "95njxwx3n7sr8mjy92owe"
+                            }
+                          ],
+                          "option_id": "sopiuo1yfscdp2he67zayq"
+                        }
+                      ],
+                      "option_id": "oven6h8na27cjulaz1inc",
+                      "refs": ["brazen_beasts_amount"]
+                    }
+                  ],
+                  "option_id": "enfsmxncvqrx4rkaaltum"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "rpxht9f67ko31brfx36fh"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "7qhprn4n62ja0ygm4n1lxa"
+                    }
+                  ],
+                  "option_id": "h6yey8q32rnv5dgd5hmu"
+                }
+              ],
+              "unit_id": "brazen_beasts",
+              "option_id": "kv9n5jxxtnnehtuzsgb14",
+              "logo": "special"
+            },
+            {
+              "name": "Possessed Giant",
+              "cost": 260,
+              "refs": ["possessed_giant"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["possessed_giant"],
+                  "amount": 3
+                },
+                {
+                  "refs": ["sizeGigantic"],
+                  "amount": 3
+                }
+              ],
+              "options": [
+                {
+                  "type": "group",
+                  "optionsLabel": "Manifestations",
+                  "maxSize": 2,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Dark Hide",
+                      "cost": 15,
+                      "option_id": "fsdf32gdsfgsfdsgsd32ggdfgffd",
+                      "refs": ["general_exception"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Centipede Legs",
+                      "cost": 20,
+                      "option_id": "gdfg43fdgfdgh4r3h34h43",
+                      "refs": ["general_exception"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Chitinous Scales",
+                      "cost": 25,
+                      "option_id": "fdgdfgfdghfdj54jk324346436",
+                      "refs": ["general_exception"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Living Shield",
+                      "cost": 25,
+                      "option_id": "asjp53st7ti9zobefqblr4n",
+                      "refs": ["general_exception"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Unnatural Roots",
+                      "cost": 25,
+                      "option_id": "2sasa4rgoj728be2i4048a3bzt",
+                      "refs": ["general_exception"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Mark of the Eternal Champion",
+                      "cost": 40,
+                      "option_id": "ifqjsasa0c1rn7st6el41t5fwi",
+                      "refs": ["wizard", "dl_mark_eternal_champ", "general_exception"],
+                      "magic": {
+                        "amount": 0,
+                        "spells": [
+                          {
+                            "path": "hereditary",
+                            "ref": "spear_of_infinity",
+                            "mods": {
+                              "mandatory": true,
+                              "free": true
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "generalHasOption": true,
+                  "optionsDict": [
+                    "manifestationLust",
+                    "manifestationFather",
+                    "manifestationEnvy",
+                    "manifestationGluttony",
+                    "manifestationGreed",
+                    "manifestationSloth",
+                    "manifestationPride",
+                    "manifestationWrath"
+                  ],
+                  "option_id": "280swxxdnb9t5i9u7g1kb"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Big Brother",
+                      "cost": 25,
+                      "option_id": "gzrsq56wgnrqauv1h7a1x"
+                    }
+                  ],
+                  "option_id": "rgksxv85yip3qorw5d97"
+                }
+              ],
+              "unit_id": "possessed_giant",
+              "option_id": "c3gz661ky9b123pqm4vvo",
+              "logo": "special"
+            }
+          ],
+          "option_id": "sknp8y2tzzm2ki4p3zhcg"
+        },
+        {
+          "name": "Aves",
+          "refs": ["aves"],
+          "maxPercent": 0.35,
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Furies",
+              "cost": 125,
+              "refs": ["furies", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["furies"],
+                  "amount": 3
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 5,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 9,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Curved Tusks",
+                              "cost": 1,
+                              "option_id": "vsy4o6g6i0r7y7cej9rcrm"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Venom Sacs",
+                              "cost": 1,
+                              "option_id": "c68ozlcnrts3etyw6fqrke"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Dark Hide",
+                              "cost": 1,
+                              "option_id": "yahqhexd84kfc7sw2vsh9"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Kaleidoscopic Flesh",
+                              "cost": 2,
+                              "option_id": "0d993khpbd4nrht86appitj"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Mesmerising Plumage",
+                              "cost": 4,
+                              "option_id": "qliy1osd4iqtq8mxe333mg"
+                            }
+                          ],
+                          "option_id": "64jptuweksd5357u030o5"
+                        }
+                      ],
+                      "option_id": "9yh8c7dgd5ho356ubwa63",
+                      "refs": ["furies_amount"]
+                    }
+                  ],
+                  "option_id": "y1e2zx67hmrkalkx5xbr3"
+                }
+              ],
+              "unit_id": "furies",
+              "option_id": "bzo4jgkpedu8oi6m0aoi8m",
+              "logo": "bird"
+            },
+            {
+              "name": "Veil Serpents",
+              "cost": 138,
+              "refs": ["veil_serpents", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["veil_serpents"],
+                  "amount": 3
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 6,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 34,
+                      "option_id": "002pyk1jic8146955g8qcds",
+                      "refs": ["veil_serpents_amount"]
+                    }
+                  ],
+                  "option_id": "susixvq5pe2rz1dexv1wm"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Wizard Conclave(2)",
+                      "cost": 100,
+                      "option_id": "vteki5ba9x09pslls69fvx",
+                      "magic": {
+                        "amount": 2,
+                        "spells": [
+                          {
+                            "path": "thaumaturgy",
+                            "ref": "light_of_faith"
+                          },
+                          {
+                            "path": "witchcraft",
+                            "ref": "soured_luck"
+                          },
+                          {
+                            "path": "witchcraft",
+                            "ref": "illusory_paths"
+                          },
+                          {
+                            "path": "hereditary",
+                            "ref": "spear_of_infinity"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "option_id": "2p17kxaxgcfv4h1g53xs"
+                }
+              ],
+              "unit_id": "veil_serpents",
+              "option_id": "wcg6ug2xexo55j47me4ca2",
+              "logo": "bird"
+            },
+            {
+              "name": "Bloat Flies",
+              "cost": 25,
+              "refs": ["bloat_flies", "tag_Daemon"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["bloat_flies"],
+                  "amount": 3
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 3,
+                  "maxSize": 5,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 85,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Manifestation",
+                          "maxSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Unhinging Jaw",
+                              "cost": 14,
+                              "option_id": "k83rl3b6ttmygv7zzvz3b"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Digestive Vomit",
+                              "cost": 8,
+                              "refs": ["one_use_item"],
+                              "option_id": "ro45npo9748aqy1dlgwjfe"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Kaleidoscopic Flesh",
+                              "cost": 6,
+                              "option_id": "3508rgom05ebuhuo8d2ly8"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Broodmother",
+                              "cost": 10,
+                              "option_id": "y2yybr7b9lsqsyjaaafjtf"
+                            }
+                          ],
+                          "option_id": "51u98l7jr2e6a3kxurrv5f"
+                        }
+                      ],
+                      "option_id": "zh8y1lhca0d6e07hk3242r",
+                      "refs": ["bloat_flies_amount"]
+                    }
+                  ],
+                  "option_id": "8ch4qi0ozzpghz49ihtndo"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 15,
+                      "option_id": "3lh8akgap7suxotf79tjt9"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 15,
+                      "option_id": "h5v2sg0nrzoxrz1yiz5jjg"
+                    }
+                  ],
+                  "option_id": "fe6bfkz0764xk5ljlxsi7"
+                }
+              ],
+              "unit_id": "bloat_flies",
+              "option_id": "vmm06nf7gsxykl1yu62zj",
+              "logo": "bird",
+              "maxUnitCost": 500
+            }
+          ],
+          "option_id": "iczn7wsp8m5q5l8z15gc4"
+        },
+        {
+          "name": "Mounts",
+          "invisible": true,
+          "refs": ["mounts"],
+          "options": [
+            {
+              "name": "Burning Wheel *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["burning_wheel_mount_unit", "count_towards_aves", "flyer", "mount", "tag_Mount", "tag_Construct"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["burning_wheel_mount_unit"],
+                  "amount": 3
+                }
+              ],
+              "loses_rules": ["rulebook-attached"],
+              "unit_id": "burning_wheel_mount",
+              "invisible": true,
+              "option_id": "bvz6xekykennyfexzujnh",
+              "logo": "character"
+            },
+            {
+              "name": "Dark Pulpit *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["darkPulpit_mount_unit", "mount", "tag_Mount"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["darkPulpit_mount_unit"],
+                  "amount": 2
+                }
+              ],
+              "unit_id": "dark_pulpit_mount",
+              "invisible": true,
+              "option_id": "osn72y1a3sdb74n4sqxfgn",
+              "logo": "character"
+            },
+            {
+              "name": "Great Beast of Prophecy *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "minSize": 1,
+              "maxSize": 1,
+              "options": [
+                {
+                  "type": "check",
+                  "name": "Fly",
+                  "cost": 30,
+                  "refs": ["flyer", "count_towards_aves"],
+                  "option_id": "fdor0rjlo7humkysjw8j9k"
+                },
+                {
+                  "type": "check",
+                  "name": "Impact Hits (2 hits) and Fury",
+                  "cost": 0,
+                  "option_id": "fdor0rjlo7humkysjfdfdw8j9k"
+                }
+              ],
+              "refs": ["greatBeastOfProphecy_mount_unit", "mount", "tag_Mount"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["greatBeastOfProphecy_mount_unit"],
+                  "amount": 3
+                }
+              ],
+              "unit_id": "great_beast_of_prophecy_mount",
+              "invisible": true,
+              "option_id": "1o4vuajhnga4388byzaarg",
+              "logo": "character"
+            },
+            {
+              "name": "Hellsteed *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["hellseed_mount_unit", "mount", "tag_Mount"],
+              "armyHasNotOption": [
+                {
+                  "refs": ["hellseed_mount_unit"],
+                  "amount": 3
+                }
+              ],
+              "unit_id": "hellsteed_mount",
+              "invisible": true,
+              "option_id": "76r46krllzaha2sxnwh2j8",
+              "logo": "character"
+            },
+            {
+              "name": "Throne of Overwhelming Splendour *Mount",
+              "type": "check",
+              "cost": null,
+              "category": "mounts",
+              "options": [],
+              "refs": ["throneOfOverwhelmingSplendour_mount_unit", "mount", "flyer", "tag_Mount"],
+              "extraCategories": ["aves"],
+              "unit_id": "throne_of_overwhelming_splendour_mount",
+              "invisible": true,
+              "armyHasNotOption": [
+                {
+                  "refs": ["throneOfOverwhelmingSplendour_mount_unit"],
+                  "amount": 1
+                }
+              ],
+              "option_id": "rrtvvqt2qy9oi3a2e5y2",
+              "logo": "character"
+            }
+          ],
+          "option_id": "owarmacifxrtrliak1lvjg"
+        }
+      ],
+      "option_id": "8s62g0kphyb91q38wn44di"
+    }
+  ]
+}

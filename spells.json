@@ -1,0 +1,2378 @@
+{
+  "name": "Spells",
+  "nrversion": 350,
+  "version": "2023",
+  "permission": 1,
+  "playable": 0,
+  "id": 103,
+  "paths": {
+    "flux": {
+      "name": "Flux",
+      "ref": "flux",
+      "spells": [
+        {
+          "number": "1",
+          "name": "Flux Card 1",
+          "description": "Both Players gain: 4 Magic Dices",
+          "ref": "flux1",
+          "cast": []
+        },
+        {
+          "number": "2",
+          "name": "Flux Card 2",
+          "description": "Both Players gain: 4 Magic Dices",
+          "ref": "flux2",
+          "cast": []
+        },
+        {
+          "number": "3",
+          "name": "Flux Card 3",
+          "description": "Both Players gain: 4 Magic Dices",
+          "ref": "flux3",
+          "cast": []
+        },
+        {
+          "number": "4",
+          "name": "Flux Card 4",
+          "description": "Both Players gain: 5 Magic Dices",
+          "ref": "flux4",
+          "cast": []
+        },
+        {
+          "number": "5",
+          "name": "Flux Card 5",
+          "description": "Both Players gain: 6 Magic Dices",
+          "ref": "flux5",
+          "cast": []
+        },
+        {
+          "number": "6",
+          "name": "Flux Card 6",
+          "description": "Both Players gain: 5 Magic Dices",
+          "duration": 1,
+          "ref": "flux6",
+          "cast": []
+        },
+        {
+          "number": "7",
+          "name": "Flux Card 7",
+          "description": "Both Players gain: 6 Magic Dices",
+          "ref": "flux7",
+          "cast": []
+        },
+        {
+          "number": "8",
+          "name": "Flux Card 8",
+          "description": "Both Players gain: 6 Magic Dices",
+          "ref": "flux8",
+          "cast": []
+        },
+        {
+          "number": "9",
+          "name": "Flux Card 9",
+          "description": "Both Players gain: 5 Magic Dices",
+          "ref": "flux9",
+          "cast": []
+        },
+        {
+          "number": "10",
+          "name": "Flux Card 10",
+          "description": "Both Players gain: 7 Magic Dices",
+          "ref": "flux10",
+          "cast": []
+        },
+        {
+          "number": "11",
+          "name": "Flux Card 11",
+          "description": "Both Players gain: 7 Magic Dices",
+          "ref": "flux11",
+          "cast": []
+        },
+        {
+          "number": "12",
+          "name": "Flux Card 12",
+          "description": "Both Players gain: 9 Magic Dices",
+          "ref": "flux12",
+          "cast": []
+        },
+        {
+          "number": "13",
+          "name": "Flux Card 13",
+          "description": "Both Players gain: 6 Magic Dices",
+          "ref": "flux13",
+          "cast": []
+        },
+        {
+          "number": "14",
+          "name": "Flux Card 14",
+          "description": "Both Players gain: 8 Magic Dices",
+          "ref": "flux14",
+          "cast": []
+        },
+        {
+          "number": "15",
+          "name": "Flux Card 15",
+          "description": "Both Players gain: 9 Magic Dices",
+          "ref": "flux15",
+          "cast": []
+        },
+        {
+          "number": "16",
+          "name": "Flux Card 16",
+          "description": "Both Players gain: 10 Magic Dices",
+          "ref": "flux16",
+          "cast": []
+        }
+      ]
+    },
+    "alchemy": {
+      "name": "Alchemy",
+      "ref": "alchemy",
+      "spells": [
+        {
+          "number": "1",
+          "name": "Molten Copper",
+          "rep": true,
+          "description": "The target suffers D3+1 hits with Str 3, AP 3, Flaming Attacks, Magical Attacks.<br>\n\tIf the target has Metal Armour, these hits are instead resolved with Str 4 and AP 4.",
+          "cast": [
+            {
+              "value": "7",
+              "range": "24",
+              "types": ["Damage", "Hex", "Missile", "Replicable"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ],
+          "ref": "molten_copper"
+        },
+        {
+          "number": "2",
+          "name": "Corruption of Tin",
+          "description": "The target suffers -1 Arm and gains Metal Armour.",
+          "cast": [
+            {
+              "value": "6",
+              "range": "24",
+              "types": ["Hex"],
+              "duration": 1,
+              "effects": [
+                {
+                  "type": "debuff",
+                  "rule": {
+                    "id": "Arm",
+                    "value": -1
+                  }
+                }
+              ]
+            }
+          ],
+          "ref": "corruption_of_tin"
+        },
+        {
+          "ref": "living_steel",
+          "name": "Living Steel",
+          "number": "3",
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 0,
+              "value": "8"
+            }
+          ],
+          "description": "The target gains +1 to hit and <span class=\"textbf\">Magical Attacks</span>."
+        },
+        {
+          "ref": "wall_of_lead",
+          "name": "Wall of Lead",
+          "number": "4",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Ground*"],
+              "duration": 0,
+              "value": "8"
+            }
+          ],
+          "description": "Place a Wall Terrain Feature with dimensions 1×6\" on the target.<br>\n\t<i>Remove the Terrain Feature when the spell ends.</i>"
+        },
+        {
+          "number": "5",
+          "name": "Word of Iron",
+          "ref": "word_iron",
+          "description": "The target suffers +2 Arm and gains Metal Armour.",
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 1,
+              "value": "11",
+              "effects": [
+                {
+                  "type": "buff",
+                  "rule": {
+                    "id": "Arm",
+                    "value": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "ref": "quicksilver_lash",
+          "name": "Quicksilver Lash",
+          "description": "The target suffers 2D6 hits with Str 3, AP 3, Flaming Attacks, Magical Attacks.<br>\n\tIf the target has Metal Armour, these hits are instead resolved with Str 4 and AP 4.",
+          "cast": [
+            {
+              "value": "12",
+              "range": "24",
+              "types": ["Damage", "Hex", "Missile"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "cosmology": {
+      "name": "Cosmology",
+      "ref": "cosmology",
+      "spells": [
+        {
+          "ref": "weal_and_woe",
+          "name": "Weal and Woe",
+          "number": "1",
+          "rep": true,
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Universal", "Replicable"],
+              "duration": 0,
+              "value": "7"
+            }
+          ],
+          "description": [
+            "The target must reroll [𝛼] to-wound rolls, except natural rolls of [𝛽].",
+            {
+              "icon": "chaos",
+              "description": "[𝛼]: Failed<br/><br/>[𝛼]: 1"
+            },
+            {
+              "icon": "cosmos",
+              "description": "[𝛼]: Successful<br/><br/>[𝛼]: 6"
+            }
+          ]
+        },
+        {
+          "ref": "hearts_and_minds",
+          "name": "Hearts and Minds",
+          "number": "2",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Universal"],
+              "duration": 0,
+              "value": "6"
+            }
+          ],
+          "description": [
+            "The target [𝛼], and [𝛽] are Minimised.",
+            {
+              "icon": "chaos",
+              "description": "[𝛼]: is considered Steady<br/><br/>[𝛽]: Courage Tests"
+            },
+            {
+              "icon": "cosmos",
+              "description": "[𝛼]: gains Unruly<br/><br/>[𝛽]: Command Tests"
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "name": "Truth of Time",
+          "ref": "truth_time",
+          "icon": "cosmos",
+          "fontSize": 12,
+          "description": [
+            "The target’s Cha and Mob are set to [𝛼].",
+            {
+              "icon": "chaos",
+              "description": "[𝛼]: 8″"
+            },
+            {
+              "icon": "cosmos",
+              "description": "[𝛼]: 3″"
+            }
+          ],
+          "cast": [
+            {
+              "value": "9",
+              "range": "24",
+              "types": ["Universal"],
+              "duration": 1,
+              "effects": [
+                {
+                  "type": "special"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "icon": "cosmos",
+          "name": "Ice and Fire",
+          "fontSize": 11,
+          "ref": "ice_fire",
+          "description": [
+            "The target suffers 2D6 hits with Str 4, AP 0, and Magical Attacks. Successful [𝛼] against wounds caused by this spell must be rerolled.",
+            {
+              "icon": "chaos",
+              "description": "[𝛼]: Special Saves"
+            },
+            {
+              "icon": "cosmos",
+              "description": "[𝛼]: Armour Saves"
+            }
+          ],
+          "cast": [
+            {
+              "value": "10",
+              "range": "24",
+              "types": ["Hex", "Damage", "Missile"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "cosmic_scales",
+          "name": "Cosmic Scales",
+          "number": "5",
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 0,
+              "value": "11"
+            }
+          ],
+          "description": [
+            "The target gains Divine Attacks and Magical Attacks, and it’s [𝛼] is set to at least 8.",
+            {
+              "icon": "chaos",
+              "description": "[𝛼]: Def"
+            },
+            {
+              "icon": "cosmos",
+              "description": "[𝛼]: Off"
+            }
+          ]
+        },
+        {
+          "ref": "near_and_far",
+          "name": "Near and Far",
+          "number": "6",
+          "cast": [
+            {
+              "types": ["Damage", "[]"],
+              "duration": 0,
+              "value": "13"
+            }
+          ],
+          "description": [
+            "The target suffers D3+1 hits with Str 6, AP 3, and Magical Attacks.",
+            {
+              "icon": "chaos",
+              "description": "[𝛼]: Hex, Range 24″"
+            },
+            {
+              "icon": "cosmos",
+              "description": "[𝛼]: Aura*, Range 6″, Universal<br/><i>*The caster’s unit is not targeted</i>"
+            }
+          ]
+        }
+      ]
+    },
+    "divination": {
+      "ref": "divination",
+      "name": "Divination",
+      "spells": [
+        {
+          "ref": "foresight",
+          "name": "Foresight",
+          "number": "1",
+          "rep": true,
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Augment", "Replicable"],
+              "duration": 0,
+              "value": "7"
+            }
+          ],
+          "description": "The target gains +Y Def and +X Off, where X and Y depend on the Game Turn number when the spell was cast.<br>\n\t\n\t<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">Game Turn 1-2</span>: +0 Def and +4 Off\n\t\t<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">Game Turn 3-4</span>: +2 Def and +2 Off\n\t\t<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">Game Turn 5-6</span>: +4 Def and +0 Off\n\t<br>\n\t\n\tNo model or unit can be affected by more than one instance of this spell simultaneously."
+        },
+        {
+          "number": "2",
+          "name": "Fate's Judgement",
+          "ref": "fate_judgement",
+          "description": "The target suffers D6+X hits, where X is the Game Turn number when the spell was cast. These hits are <span class=\"textbf\">set</span> to wound on 4+ and are resolved with AP 0 and <span class=\"textbf\">Magical Attacks</span>.",
+          "cast": [
+            {
+              "value": "6",
+              "range": "24",
+              "types": ["Damage", "Hex", "Missile"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "name": "The Stars Align",
+          "description": "Target unit must reroll failed to-hit rolls.",
+          "cast": [
+            {
+              "value": "10",
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 1,
+              "effects": [
+                {
+                  "type": "buff",
+                  "rule": {
+                    "id": "divine_attacks"
+                  }
+                },
+                {
+                  "type": "special"
+                }
+              ]
+            }
+          ],
+          "ref": "the_stars_align"
+        },
+        {
+          "ref": "chance_of_redemption",
+          "name": "Chance of Redemption",
+          "number": "4",
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 0,
+              "value": "9"
+            }
+          ],
+          "description": "The target may immediately perform a 5\" Magical Move.<br>\n\tIn addition, it gains <span class=\"textbf\">Divine Attacks (Melee)</span>."
+        },
+        {
+          "ref": "inescapable_doom",
+          "name": "Inescapable Doom",
+          "number": "5",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Damage", "Hex", "Missile"],
+              "duration": 0,
+              "value": "12"
+            }
+          ],
+          "description": "Immediately when the spell is cast, and at the start of each of the caster's subsequent Magic Phases, the target suffers 1 hit that wounds automatically with AP 10 and <span class=\"textbf\">Magical Attacks</span>.<br>\n\t<br>\n\tNo model or unit can be affected by more than one instance of this spell simultaneously."
+        },
+        {
+          "ref": "augury_of_dispair",
+          "name": "Augury of Dispair",
+          "number": "6",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Hex"],
+              "duration": 0,
+              "value": "11"
+            }
+          ],
+          "description": "The target suffers -3 Off, -3 Agi (to a minimum of 1), and treats all Terrain Features as <span class=\"textbf\">Dangerous Terrain</span>, including Open Terrain."
+        }
+      ]
+    },
+    "druidism": {
+      "ref": "druidism",
+      "name": "Druidism",
+      "spells": [
+        {
+          "number": "1",
+          "rep": true,
+          "name": "Fountain of Youth",
+          "description": "Raise 1 HP in the target's Health Pool.<br>\n<br>\nNo model can Raise more than 1 HP per turn from this spell.",
+          "cast": [
+            {
+              "value": "7",
+              "range": "18",
+              "types": ["Augment", "Focused", "Replicable"],
+              "duration": 0
+            }
+          ],
+          "ref": "fountain_of_youth"
+        },
+        {
+          "number": "2",
+          "name": "Entwining Roots",
+          "description": "The target suffers -2\" Cha and -2\" Mob, both to a minimum of 2\".<br>\n\n\tIf the target or the caster is in contact with a Forest when the spell is cast:<br>\n\tThe target suffers an additional -1\" Cha and -1\" Mob, both to a minimum of 2\".",
+          "cast": [
+            {
+              "value": "7",
+              "range": "24",
+              "types": ["Hex"],
+              "duration": 1
+            }
+          ],
+          "ref": "entwining_roots"
+        },
+        {
+          "number": "3",
+          "name": "Healing Waters",
+          "ref": "healing_waters",
+          "description": "The target gains <span class=\"textbf\">Fortitude (6+)</span> and <span class=\"textbf\">Fortitude (+1)</span>.<br>\n\t\n\tIf the target or the caster is in contact with a Water Terrain when the spell is cast:<br>\n\tThe target also gains <span class=\"textbf\">Immune (Flaming Attacks)</span>.",
+          "cast": [
+            {
+              "value": "9",
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "nature's_venom",
+          "name": "Nature's Venom",
+          "number": "4",
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 0,
+              "value": "10"
+            }
+          ],
+          "description": "The target gains <span class=\"textbf\">Poison Attacks (Melee)</span>.<br>\n\t\n\tIf the target or the caster is in contact with a Field when the spell is cast:<br>\n\tThe target also gains <span class=\"textbf\">Poison Attacks (Shooting)</span>."
+        },
+        {
+          "number": "5",
+          "name": "Stone Skin",
+          "description": "The target gains +1 Res, and Melee Attacks allocated towards it <span class=\"textbf\">never</span> wound on better than 4+.",
+          "cast": [
+            {
+              "value": "12",
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 1
+            }
+          ],
+          "ref": "stone_skin"
+        },
+        {
+          "ref": "earth's_blessing",
+          "name": "Earth's Blessing",
+          "number": "6",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Ground*"],
+              "duration": 0,
+              "value": "11"
+            }
+          ],
+          "description": "Place a round Forest, Field or Water Terrain feature (declare which when casting the spell) with a 6\" diameter on the target. This Terrain Feature has <span class=\"textbf\">Dangerous Terrain</span>. If the chosen Terrain Feature has already been created by the caster using this spell, first remove the Terrain Feature from the Battlefield before placing it again on the target."
+        }
+      ]
+    },
+    "evocation": {
+      "ref": "evocation",
+      "name": "Evocation",
+      "spells": [
+        {
+          "number": "1",
+          "name": "Whispers of the Veil",
+          "ref": "whispers_of_the_veil",
+          "rep": true,
+          "description": "The target suffers -1 Res.<br>\n\t<br>\n\tNo model or unit can be affected by more than one instance of this spell simultaneously.",
+          "cast": [
+            {
+              "value": "7",
+              "range": "18",
+              "types": ["Hex", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "name": "Touch of the Reaper",
+          "description": "The target suffers D3 hits with Str 9, AP 10, and <span class=\"textbf\">Magical Attacks</span>.<br>\n\tWhen rolling to wound with this attack, substitute the target's Res with its Cou.",
+          "cast": [
+            {
+              "value": "7",
+              "range": "",
+              "types": ["Hex", "Damage"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ],
+          "ref": "touch_of_the_reaper"
+        },
+        {
+          "number": "3",
+          "name": "Danse Macabre",
+          "description": "The target may immediately perform a 4\" Magical Move.<br>\n\tIn addition, it gains Dying Blow, Ghost Step.",
+          "cast": [
+            {
+              "value": "9",
+              "range": "8",
+              "types": ["Aura", "Augment"],
+              "duration": 1,
+              "effects": [
+                {
+                  "type": "special"
+                }
+              ]
+            }
+          ],
+          "ref": "danse_macabre"
+        },
+        {
+          "ref": "chorus_of_the_damned",
+          "name": "Chorus of the Damned",
+          "number": "4",
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 0,
+              "value": "10"
+            }
+          ],
+          "description": "The target gains Distracting (1), Horror."
+        },
+        {
+          "number": "5",
+          "name": "Spectral Blades",
+          "ref": "spectral_blades",
+          "description": "Standard Melee Attacks from Rank-and-File models in the target have their Str <span class=\"textbf\">always</span> <span class=\"textbf\">set</span> to 4, AP <span class=\"textbf\">always</span> <span class=\"textbf\">set</span> to 4, and gain <span class=\"textbf\">Magical Attacks</span>.",
+          "cast": [
+            {
+              "value": "12",
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 1,
+              "effects": [
+                {
+                  "type": "special"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "soul_blight",
+          "name": "Soul Blight",
+          "number": "6",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Hex", "Damage", "Missile"],
+              "duration": 0,
+              "value": "13"
+            }
+          ],
+          "description": "The target takes a Courage Test:\n\t\n\t\t<br>&nbsp;&nbsp;&bull;  If passed it suffers D6 hits.\n\t\t<br>&nbsp;&nbsp;&bull;  If failed it suffers 2D6 hits.\n\t<br>\n\tHits are with Str 9, AP 10, and <span class=\"textbf\">Magical Attacks</span>.<br>\n\tWhen rolling to wound with this attack, substitute the target's Res with its Cou."
+        }
+      ]
+    },
+    "occultism": {
+      "ref": "occultism",
+      "name": "Occultism",
+      "spells": [
+        {
+          "ref": "the_devouring_dark",
+          "name": "The Devouring Dark",
+          "number": "1",
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Damage", "Hex"],
+              "duration": 0,
+              "value": "7"
+            }
+          ],
+          "description": "The target suffers a hit with <span class=\"textbf\">Area Attack (2×2)</span>, Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.\n<br>\n<br>\nNo model or unit can be affected by more than one instance of this spell during the same Magic Phase, including The Sacrifice."
+        },
+        {
+          "number": "2",
+          "ref": "hand_glory",
+          "name": "Hand of Glory",
+          "description": "The target gains <span class=\"textbf\">Aegis (6+)</span> and <span class=\"textbf\">Aegis (+1, max. 3+)</span>.<br>\n\t<br>\n\tThe Sacrifice may be performed for this spell.",
+          "cast": [
+            {
+              "value": "8",
+              "range": "12",
+              "types": ["Augment"],
+              "duration": 1,
+              "effects": [
+                {
+                  "type": "addRule",
+                  "rule": {
+                    "id": "aegis",
+                    "parameters": ["6"]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "blood_curse",
+          "name": "Blood Curse",
+          "number": "3",
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Hex"],
+              "duration": 0,
+              "value": "9"
+            }
+          ],
+          "description": "The target suffers -1 Str and -1 AP.<br>\n\t<br>\n\tThe Sacrifice may be performed for this spell."
+        },
+        {
+          "number": "4",
+          "ref": "pentagram_pain",
+          "name": "Pentagram of Pain",
+          "description": "The target suffers 3 hits, with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>. If one ore more unsaved wounds are caused with this spell, the Caster of the spell Recovers 1 HP.",
+          "cast": [
+            {
+              "value": "9",
+              "range": "12",
+              "types": ["Aura*", "Universal"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "ref": "grave_calls",
+          "name": "The Grave Calls",
+          "description": "The target suffers 8 hits, with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.<br>\n\t<br>\n\tThe Sacrifice may be performed for this spell.",
+          "cast": [
+            {
+              "value": "13",
+              "range": "12",
+              "types": ["Damage", "Hex"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "umbral_majesty",
+          "name": "Umbral Majesty",
+          "number": "6",
+          "cast": [
+            {
+              "types": ["Augment", "Caster"],
+              "duration": 0,
+              "value": "11"
+            }
+          ],
+          "description": "The target gains <span class=\"textbf\">Dying Blow</span>, and a single model part in the target gains <span class=\"textbf\">Grind Attack (4, Str 5, AP 2, Magical Attacks)</span>.<br>\n\tWherever possible, enemy models must allocate their Melee Attacks towards a Health Pool that is not the target."
+        }
+      ]
+    },
+    "pyromancy": {
+      "ref": "pyromancy",
+      "name": "Pyromancy",
+      "spells": [
+        {
+          "number": "1",
+          "ref": "fireball",
+          "name": "Fireball",
+          "rep": true,
+          "description": "The target suffers 2D3 \n\thits with Str 4, AP 0, Flaming Attacks, Magical Attacks\n.",
+          "cast": [
+            {
+              "value": "6",
+              "range": "36",
+              "types": ["Damage", "Hex", "Missile", "Replicable"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "name": "Flaming Swords",
+          "ref": "flaming_swords",
+          "description": "The target gains +1 to wound, Magical Attacks, Flaming Attacks.",
+          "cast": [
+            {
+              "value": "7",
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 1,
+              "effects": [
+                {
+                  "type": "buff",
+                  "rule": {
+                    "id": "wound",
+                    "value": 1
+                  }
+                },
+                {
+                  "type": "addRule",
+                  "rule": {
+                    "id": "flamming_attacks"
+                  }
+                },
+                {
+                  "type": "addRule",
+                  "rule": {
+                    "id": "magical_attacks"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "dragon's_roar",
+          "name": "Dragon's Roar",
+          "number": "3",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Augment", "Focused*"],
+              "duration": 0,
+              "value": "9"
+            }
+          ],
+          "description": "A single model part in the target gains <span class=\"textbf\">Breath Attack (Str 4, AP 0, Flaming Attacks, Magical Attacks)</span>, and<br>\n\t<span class=\"textbf\">Grind Attack (2D6, Str 4, AP 0, Flaming Attacks, Magical Attacks)</span>."
+        },
+        {
+          "number": "4",
+          "name": "Pyroclastic Flow",
+          "description": "The target suffers 5D3 \n\thits with Str 4, AP 0, Flaming Attacks, Magical Attacks\n.",
+          "cast": [
+            {
+              "value": "9",
+              "range": "24",
+              "types": ["Damage", "Hex", "Missile"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ],
+          "ref": "pyroclastic_flow"
+        },
+        {
+          "ref": "pillars_of_fire",
+          "name": "Pillars of Fire",
+          "number": "5",
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 0,
+              "value": "12"
+            }
+          ],
+          "description": "Standard Melee Attacks from Rank-and-File models in the target hit automatically, have their Str <span class=\"textbf\">always</span> <span class=\"textbf\">set</span> to 4, AP <span class=\"textbf\">always</span> <span class=\"textbf\">set</span> to 0, and gain Flaming Attacks,Magical Attacks."
+        },
+        {
+          "ref": "cage_of_embers",
+          "name": "Cage of Embers",
+          "number": "6",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Hex"],
+              "duration": 0,
+              "value": "10"
+            }
+          ],
+          "description": "Immediately when the spell is cast, and whenever the target moves, it suffers 2D3 \n\thits with Str 4, AP 0, Flaming Attacks, Magical Attacks\n. If this damage causes the target to suffer at least one HP loss, it gains <span class=\"textbf\">Weakness (Flaming Attacks)</span>."
+        }
+      ]
+    },
+    "shamanism": {
+      "ref": "shamanism",
+      "name": "Shamanism",
+      "spells": [
+        {
+          "ref": "predator's_instinct",
+          "name": "Predator's Instinct",
+          "number": "1",
+          "rep": true,
+          "cast": [
+            {
+              "range": "8",
+              "types": ["Augment", "Aura", "Replicable"],
+              "duration": 0,
+              "value": "7"
+            }
+          ],
+          "description": "The target gains +2\" Cha and <span class=\"textbf\">Resistance (Ranged Attacks)</span>.<br>\n\t<br>\n\tNo model or unit can be affected by more than one instance of this spell simultaneously."
+        },
+        {
+          "number": "2",
+          "name": "Awaken the Beast",
+          "ref": "awaken_beast",
+          "description": "The target gains +1 Str and +1 AP.",
+          "cast": [
+            {
+              "value": "7",
+              "range": "18",
+              "types": ["Augment"],
+              "duration": 2
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "name": "Swarm of Insects",
+          "ref": "swarm_insects",
+          "description": "The target suffers 5D6 hits with AP 0 and <span class=\"textbf\">Magical Attacks</span>. These hits <span class=\"textbf\">always</span> wound on 6+.<br>\n\tIn addition, it suffers -1 to hit with Shooting Attacks.",
+          "cast": [
+            {
+              "value": "9",
+              "range": "36",
+              "types": ["Hex", "Damage", "Missile"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "name": "Savage Fury",
+          "ref": "savage_fury",
+          "description": "The target gains Fury, Fearless,Frenzy.",
+          "cast": [
+            {
+              "value": "8",
+              "range": "18",
+              "types": ["Universal"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "name": "Totemic Summon",
+          "ref": "totemic_summon",
+          "description": "Summon a Totemic Beast (profile below), that is immediately placed on the Battlefield using the rules for <span class=\"textbf\">Ambush (Board Edge)</span>.",
+          "cast": [
+            {
+              "value": "12",
+              "types": [""],
+              "duration": 0
+            }
+          ]
+        },
+        {
+          "ref": "wild_shape",
+          "name": "Wild Shape",
+          "number": "6",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Universal"],
+              "duration": 0,
+              "value": "12"
+            }
+          ],
+          "description": "The target's Height is increased by +1, to a maximum of 5, and it gains +1 Res and <span class=\"textbf\">Stomp Attack (1)</span>. If it already had <span class=\"textbf\">Stomp Attack</span>, the number of hits caused by its <span class=\"textbf\">Stomp Attack</span> is increased by +1. In models with multiple model parts, only a single model part, chosen by the caster, is affected."
+        }
+      ]
+    },
+    "thaumaturgy": {
+      "ref": "thaumaturgy",
+      "name": "Thaumaturgy",
+      "spells": [
+        {
+          "number": "1",
+          "ref": "smite_unbeliever",
+          "name": "Smite the Unbeliever",
+          "description": "The target suffers D6 hits with Str 4, AP 2, and <span class=\"textbf\">Magical Attacks</span>.<br/><br/>&malt; : These hits are instead resolved with Str 6.<br><br/>&times; : These hits are instead resolved with Str 2.\n\t<br>",
+          "cast": [
+            {
+              "value": "7",
+              "range": "24",
+              "types": ["Damage", "Hex", "Missile"],
+              "duration": 0
+            }
+          ]
+        },
+        {
+          "ref": "light_of_faith",
+          "name": "Light of Faith",
+          "number": "2",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Augment"],
+              "duration": 0,
+              "value": "6"
+            }
+          ],
+          "description": "The target gains Fearless, Stubborn.\n\t\n\t\t<br><br/>&malt; : The target is considered to have one additional Proper Rank*.<br><br/>&times; : The target is considered to have one less Proper Rank*.\n\t<br>\n\t*For Steady, Steadfast, Surrounded and Rank Bonus purposes."
+        },
+        {
+          "ref": "weight_of_judgement",
+          "name": "Weight of Judgement",
+          "number": "3",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Hex"],
+              "duration": 0,
+              "value": "9"
+            }
+          ],
+          "description": "The target's Agi is <span class=\"textbf\">set</span> to 1.<br/><br>&malt; : Enemy* units in the same combat as the target has their Agi <span class=\"textbf\">set</span> to 1.\n\t\t<br><br/>&times; : Friendly* units in the same combat as the target has their Agi <span class=\"textbf\">set</span> to 1.\n\t<br>\n\t*From the perspective of the caster.<br>\n\tAt the time of casting the spell."
+        },
+        {
+          "ref": "holy_affliction",
+          "name": "Holy Affliction",
+          "number": "4",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Hex"],
+              "duration": 0,
+              "value": "10"
+            }
+          ],
+          "description": "The target suffers -1 to wound.<br><br/>&malt; : The target suffers -1 AP.\n\t\t<br><br/>&times; : The target gains +1 AP.\n\t<br>"
+        },
+        {
+          "ref": "rain_of_fire",
+          "name": "Rain of Fire",
+          "number": "5",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Damage", "Universal"],
+              "duration": 0,
+              "value": "12"
+            }
+          ],
+          "description": "The target suffers D3 hits with Str 8, AP 4, Magical Attacks,Flaming Attacks.<br><br/>&malt; : The caster picks an additional target.\n\t\t<br><br/>&times;: The opponent picks an additional target.\n\t<br>\n\t67.2"
+        },
+        {
+          "number": "6",
+          "name": "Wrath of God",
+          "description": "Place a marker on the target point. Instead of rolling for Divine Intervention when the spell is cast, do it at the start of each subsequent Magic Phase.\n\n\t<br><br/>&malt; : Each unit within 2D6\" from the center of the marker suffers 2D6 with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>. Then remove the marker.\n\t<br><br/>&times; : The opponent may move the marker in any direction up to 3\".\n<br>",
+          "cast": [
+            {
+              "value": "13",
+              "range": "48",
+              "types": ["Ground"],
+              "duration": 2
+            }
+          ],
+          "ref": "wrath_of_god"
+        }
+      ]
+    },
+    "witchcraft": {
+      "ref": "witchcraft",
+      "name": "Witchcraft",
+      "spells": [
+        {
+          "ref": "evil_eye",
+          "number": "1",
+          "name": "Evil Eye",
+          "description": "The target suffers -1 Cou and loses <span class=\"textbf\">Devastating Charge</span> and/or <span class=\"textbf\">First Strike</span> (if it has them). If the target rolls for the number of <span class=\"textbf\">Impact Hits</span>, this roll is Minimised.<br>\n\t<br>\n\tNo model or unit can be affected by more than one instance of this spell simultaneously.",
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Hex"],
+              "duration": 1,
+              "value": "7"
+            }
+          ]
+        },
+        {
+          "ref": "soured_luck",
+          "name": "Soured Luck",
+          "number": "2",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Hex"],
+              "duration": 0,
+              "value": "6"
+            }
+          ],
+          "description": "Melee Attacks against the target are <span class=\"textbf\">set</span> to hit on 3+."
+        },
+        {
+          "ref": "illusory_paths",
+          "name": "Illusory Paths",
+          "number": "3",
+          "cast": [
+            {
+              "range": "18",
+              "types": ["Universal"],
+              "duration": 0,
+              "value": "10"
+            }
+          ],
+          "description": "Choose which effect to apply when casting the spell:\n\n\t<br>&nbsp;&nbsp;&bull;  The target gains <span class=\"textbf\">Random Movement (2D6\")</span>.\n\t<br>&nbsp;&nbsp;&bull;  The target gains <span class=\"textbf\">Random Movement (3D6\")</span>.\n<br>"
+        },
+        {
+          "ref": "cauldron's_curse",
+          "name": "Cauldron's Curse",
+          "number": "4",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Hex"],
+              "duration": 0,
+              "value": "9"
+            }
+          ],
+          "description": "The target gains <span class=\"textbf\">Weakness (Ranged Attacks)</span>."
+        },
+        {
+          "ref": "mists_of_invisibility",
+          "name": "Mists of Invisibility",
+          "number": "5",
+          "cast": [
+            {
+              "range": "12",
+              "types": ["Augment"],
+              "duration": 0,
+              "value": "12"
+            }
+          ],
+          "description": "Mark the ground under the center of the target. The target gains <span class=\"textbf\">Ambush (within 12\" of the marked point)</span>. Then remove the target from the Battlefield. It automatically passes the roll to return to the Battlefield in your next Player Turn."
+        },
+        {
+          "ref": "clouded_sight",
+          "name": "Clouded Sight",
+          "number": "6",
+          "cast": [
+            {
+              "range": "24",
+              "types": ["Hex"],
+              "duration": 0,
+              "value": "13"
+            }
+          ],
+          "description": "The target cannot draw Line of Sight to a target more than 12\" from it."
+        }
+      ]
+    },
+    "bound": {
+      "ref": "bound",
+      "name": "Bound Spells",
+      "spells": [
+        {
+          "ref": "the_dead_arise",
+          "rep": true,
+          "number": "DA",
+          "name": "The Dead Arise",
+          "description": "Summon a Skeletons or Zombies unit. Declare which when selecting the target for the spell. The unit has a number of Health Points corresponding to the Rsr value of the unit. All models must be placed within the spell’s Range, with at least one model touching the target point.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 12,
+              "types": ["ground", "duration", "Replicable"],
+              "duration": 0
+            }
+          ]
+        }
+      ]
+    },
+    "totemism": {
+      "ref": "totemism",
+      "name": "Totems",
+      "spells": [
+        {
+          "ref": "black_wing_totem",
+          "rep": true,
+          "number": "1",
+          "whNumber": "BW",
+          "name": "Black Wing Totem",
+          "description": "A unit with all models affected by the spell gains +3 Agility and adds D3+1″ to its Charge Range.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 0,
+              "types": ["Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "blooded_horn_totem",
+          "number": "2",
+          "rep": true,
+          "whNumber": "BH",
+          "name": "Blooded Horn Totem",
+          "description": "The target gains +1 Attack Value, and its Close Combat Attacks gain +2 Armour Penetration.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 0,
+              "types": ["Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "clouded_eye_totem",
+          "number": "3",
+          "rep": true,
+          "whNumber": "CE",
+          "name": "Clouded Eye Totem",
+          "description": "A unit with all models affected by the spell gains Hard Target (1) and Magic Resistance (3).",
+          "cast": [
+            {
+              "value": 5,
+              "range": 0,
+              "types": ["Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "gnarled_hide_totem",
+          "rep": true,
+          "number": "4",
+          "whNumber": "GH",
+          "name": "Gnarled Hide Totem",
+          "description": "The target gains +1 Armour and Distracting.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 0,
+              "types": ["Replicable"],
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    "greater_totemism": {
+      "ref": "greater_totemism",
+      "name": "Greater Totems",
+      "spells": [
+        {
+          "ref": "black_wing_totem",
+          "rep": true,
+          "number": "1",
+          "whNumber": "BW",
+          "name": "Black Wing Totem",
+          "description": "A unit with all models affected by the spell gains +3 Agility and adds D3+1″ to its Charge Range.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 18,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "blooded_horn_totem",
+          "number": "2",
+          "rep": true,
+          "name": "Blooded Horn Totem",
+          "whNumber": "BH",
+          "description": "The target gains +1 Attack Value, and its Close Combat Attacks gain +2 Armour Penetration.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 18,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "clouded_eye_totem",
+          "number": "3",
+          "rep": true,
+          "whNumber": "CE",
+          "name": "Clouded Eye Totem",
+          "description": "A unit with all models affected by the spell gains Hard Target (1) and Magic Resistance (3).",
+          "cast": [
+            {
+              "value": 5,
+              "range": 18,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "gnarled_hide_totem",
+          "rep": true,
+          "number": "4",
+          "whNumber": "GH",
+          "name": "Gnarled Hide Totem",
+          "description": "The target gains +1 Armour and Distracting.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 0,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    "runecraft": {
+      "ref": "runecraft",
+      "name": "Battle Runes",
+      "spells": [
+        {
+          "ref": "rune_revocation",
+          "rep": true,
+          "fontSize": 13,
+          "number": "1",
+          "whNumber": "RV",
+          "name": "Rune of Revocation",
+          "description": "Ignore all other spell effects on the target from spells with Duration: One Turn.",
+          "cast": [
+            {
+              "value": "3",
+              "range": 18,
+              "types": ["universal", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "rune_reckoning",
+          "rep": true,
+          "number": "2",
+          "whNumber": "RK",
+          "name": "Rune of Reckoning",
+          "description": "The target gains Hatred (Melee).",
+          "cast": [
+            {
+              "value": "3",
+              "range": 18,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "rune_oaths",
+          "rep": true,
+          "number": "3",
+          "name": "Rune of Oaths",
+          "whNumber": "OA",
+          "description": "The target gains Zeal (Melee).",
+          "cast": [
+            {
+              "value": "3",
+              "range": 18,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "rune_resolve",
+          "rep": true,
+          "number": "4",
+          "name": "Rune of Resolve",
+          "whNumber": "RL",
+          "description": "The target may perform an 4″ Magical Move and gains Light Troops until the end of the Player Turn.",
+          "cast": [
+            {
+              "value": "3",
+              "range": 18,
+              "types": ["augment", "Replicable"],
+              "duration": 0
+            }
+          ]
+        },
+        {
+          "ref": "rune_gleaming",
+          "rep": true,
+          "number": "5",
+          "whNumber": "GL",
+          "name": "Rune of Gleaming",
+          "description": "The target gains Distracting and Hard Target (1).",
+          "cast": [
+            {
+              "value": "3",
+              "range": 18,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "rune_resilience",
+          "rep": true,
+          "number": "6",
+          "whNumber": "RS",
+          "name": "Rune of Resilience",
+          "description": "To-wound rolls against the target suffer a −1 modifier.",
+          "cast": [
+            {
+              "value": "3",
+              "range": 18,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    "greater_runecraft": {
+      "ref": "greater_runecraft",
+      "name": "Battle Runes (Anvil)",
+      "spells": [
+        {
+          "ref": "rune_revocation",
+          "rep": true,
+          "fontSize": 13,
+          "number": "1",
+          "whNumber": "RV",
+          "name": "Rune of Revocation",
+          "description": "Ignore all other spell effects on the target from spells with Duration: One Turn.",
+          "cast": [
+            {
+              "value": "3",
+              "range": 36,
+              "types": ["universal", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "rune_reckoning",
+          "rep": true,
+          "number": "2",
+          "whNumber": "RK",
+          "name": "Rune of Reckoning",
+          "description": "The target gains Hatred (Melee).",
+          "cast": [
+            {
+              "value": "3",
+              "range": 36,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "rune_oaths",
+          "rep": true,
+          "number": "3",
+          "whNumber": "OA",
+          "name": "Rune of Oaths",
+          "description": "The target gains Zeal (Melee).",
+          "cast": [
+            {
+              "value": "3",
+              "range": 36,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "rune_resolve",
+          "rep": true,
+          "number": "4",
+          "whNumber": "RL",
+          "name": "Rune of Resolve",
+          "description": "The target may perform an 4″ Magical Move and gains Light Troops until the end of the Player Turn.",
+          "cast": [
+            {
+              "value": "3",
+              "range": 36,
+              "types": ["augment", "Replicable"],
+              "duration": 0
+            }
+          ]
+        },
+        {
+          "ref": "rune_gleaming",
+          "rep": true,
+          "number": "5",
+          "whNumber": "GL",
+          "name": "Rune of Gleaming",
+          "description": "The target gains Distracting and Hard Target (1).",
+          "cast": [
+            {
+              "value": "3",
+              "range": 36,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "rune_resilience",
+          "rep": true,
+          "number": "6",
+          "whNumber": "RS",
+          "name": "Rune of Resilience",
+          "description": "To-wound rolls against the target suffer a −1 modifier.",
+          "cast": [
+            {
+              "value": "3",
+              "range": 36,
+              "types": ["augment", "Replicable"],
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    "manifestation": {
+      "ref": "manifestation",
+      "name": "Manifestation",
+      "spells": [
+        {
+          "army": "wdg",
+          "number": "1",
+          "path": "thaumaturgy",
+          "ref": "smite_unbeliever",
+          "name": "Smite the Unbeliever",
+          "attribute": [
+            {
+              "path": "divination",
+              "ref": "guiding_light"
+            }
+          ],
+          "description": "<span class='cast_0'>⟨Immediately after successfully casting this spell, roll a D6.⟩</span> <span class='cast_1'>{Choose which effect to apply when casting the spell.}</span><ul> <li> <span class='cast_0'>⟨If 1–3 is rolled,⟩</span> the target suffers −1 Resilience.</li> <li> <span class='cast_0'>⟨If 4–6 is rolled,⟩</span> the target suffers −1 Strength and −1 Armour Penetration.</li></ul>",
+          "cast": [
+            {
+              "value": 6,
+              "range": 24,
+              "types": ["hex"],
+              "duration": 1
+            },
+            {
+              "value": "9",
+              "range": "24",
+              "types": ["hex"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "army": "wdg",
+          "ref": "breath_corruption",
+          "path": "occultism",
+          "attribute": [
+            {
+              "path": "divination",
+              "ref": "guiding_light"
+            }
+          ],
+          "name": "Breath of Corruption",
+          "description": "The target gains Breath Attack (Magical Attacks, Toxic Attacks).<br><span class='cast_1'>{This spell may only target Characters, Champions, and single model units.}</span><br><span class='cast_amp'>⟨⟨If the Breath Attack is used as a Shooting Attack, its range is increased to 18.⟩⟩</span>",
+          "cast": [
+            {
+              "value": 6,
+              "range": 0,
+              "types": ["focused"],
+              "duration": 1,
+              "effects": [
+                {
+                  "type": "special"
+                }
+              ]
+            },
+            {
+              "value": 9,
+              "range": 12,
+              "types": ["focused", "augment"],
+              "duration": 1,
+              "effects": [
+                {
+                  "type": "special"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "army": "wdg",
+          "ref": "pentagram_pain",
+          "path": "occultism",
+          "name": "Pentagram of Pain",
+          "attribute": [
+            {
+              "path": "divination",
+              "ref": "guiding_light"
+            }
+          ],
+          "description": "The target suffers D6 hits with Strength 4, Armour Penetration 1, and Magical Attacks.<br><span class='cast_1'>{The Caster's unit is unaffected}</span><br><span class='cast_amp'>⟨⟨If one or more unsaved wounds are caused with this spell, the Caster Recovers 1 Health Point.⟩⟩</span>",
+          "cast": [
+            {
+              "value": 5,
+              "range": 24,
+              "types": ["hex"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            },
+            {
+              "value": 6,
+              "range": 12,
+              "types": ["aura", "universal"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "army": "wdg",
+          "ref": "marked_doom",
+          "path": "occultism",
+          "attribute": [
+            {
+              "path": "divination",
+              "ref": "guiding_light"
+            }
+          ],
+          "name": "Marked for Doom",
+          "description": "The target suffers 1 hit with Strength 10, Armour Penetration 10, Magical Attacks, and Multiple Wounds (D3).<br><span class='cast_amp'>⟨⟨If the target is within 12″ of the Caster, choose a single Character or Champion joined to the target unit. That model suffers the hit.⟩⟩</span>",
+          "cast": [
+            {
+              "value": 9,
+              "range": 24,
+              "types": ["damage", "direct", "hex"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "army": "wdg",
+          "ref": "grave_calls",
+          "path": "occultism",
+          "attribute": [
+            {
+              "path": "divination",
+              "ref": "guiding_light"
+            }
+          ],
+          "name": "The Grave Calls",
+          "description": "The target suffers 2D6 hits with Strength 5, Armour Penetration 2, and Magical Attacks.<br><span class='cast_amp'>⟨⟨The hits gain +1 Strength and +1 Armour Penetration.⟩⟩</span>",
+          "cast": [
+            {
+              "value": 11,
+              "range": 12,
+              "types": ["damage", "direct", "hex"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "army": "wdg",
+          "ref": "rot_within",
+          "name": "The Rot Within",
+          "path": "occultism",
+          "attribute": [
+            {
+              "path": "divination",
+              "ref": "guiding_light"
+            }
+          ],
+          "description": "The target suffers −1 Offensive Skill and −1 Defensive Skill. <span class='cast_amp'>⟨⟨The Caster gains +1 Offensive Skill and +1 Defensive Skill.⟩⟩</span>",
+          "cast": [
+            {
+              "value": 6,
+              "range": 24,
+              "types": ["hex"],
+              "duration": 2,
+              "effects": [
+                {
+                  "type": "debuff",
+                  "rule": {
+                    "id": "Of",
+                    "value": -1
+                  }
+                },
+                {
+                  "type": "debuff",
+                  "rule": {
+                    "id": "Df",
+                    "value": -1
+                  }
+                }
+              ],
+              "ampeffects": [
+                {
+                  "type": "buff",
+                  "rule": {
+                    "id": "Of",
+                    "value": 1
+                  },
+                  "target": "caster"
+                },
+                {
+                  "type": "buff",
+                  "rule": {
+                    "id": "Df",
+                    "value": 1
+                  },
+                  "target": "caster"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hereditary": {
+      "name": "Hereditary",
+      "ref": "hereditary",
+      "spells": [
+        {
+          "army": "al",
+          "number": "H1",
+          "dispNumber": "H",
+          "name": "Frostbite",
+          "ref": "frostbite",
+          "description": "If this spell targets a friendly unit, the target gains +1 Armour. If this spell targets an enemy unit, the target suffers −1 Armour. <span class='cast_1'>{This spell may target two units instead of one (declare the additional target before the Casting Attempt).}</span>",
+          "cast": [
+            {
+              "value": 5,
+              "range": 24,
+              "types": ["universal"],
+              "duration": 1
+            },
+            {
+              "value": 8,
+              "range": 24,
+              "types": ["universal"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "sa",
+          "number": "H10",
+          "dispNumber": "H",
+          "ref": "astral_union",
+          "name": "Astral Union",
+          "description": "The target must reroll natural ‘1’s to hit (for both Melee and Shooting Attacks), as long as there is another friendly unit within 6″ of it (when performing the attack).",
+          "cast": [
+            {
+              "value": 9,
+              "range": 12,
+              "types": ["augment", "aura"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "ref": "death_beginning",
+          "free": true,
+          "mandatory": true,
+          "army": "ud",
+          "number": "H11",
+          "fontSize": 11,
+          "dispNumber": "A",
+          "name": "Death is Only The Beginning",
+          "description": "Choose one of the following effects when resolving the spell*.<ul><li>The Rank-and-File part of the target Raises HP equal to its Rsr.</li><li>An Attachable Model in the target Recovers HP equal to its Rsr.</li></ul>Height 4–5 models with Exclusive, and Attachable Models, cannot Recover more than 2 HP from this spell in each Magic Phase.<br/><i> If multiple targets, each target can make a different choice.</i>",
+          "cast": [
+            {
+              "range": "*",
+              "types": ["augment"],
+              "duration": 0
+            }
+          ]
+        },
+        {
+          "army": "vc",
+          "number": "H12",
+          "dispNumber": "H",
+          "ref": "arise",
+          "name": "Arise!",
+          "fontSize": 10,
+          "rep": true,
+          "description": "Choose one of the following effects when resolving the spell*:<ul><li>The Rank-and-File part of the target Raises HP equal to its Resurrected value.</li><li>An Attachable Model in the target Recovers HP equal to its Resurrected value.</li></ul>Height 4–5 models with Exclusive, and Attachable Models cannot Recover more than 2 HP from this spell each Magic Phase.<br/><br/>*If multiple targets, each target can make a different choice",
+          "cast": [
+            {
+              "value": 6,
+              "range": 18,
+              "types": ["Augment", "Replicable"],
+              "duration": 0,
+              "effects": [
+                {
+                  "type": "special"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "army": "vs",
+          "number": "H13",
+          "dispNumber": "H",
+          "ref": "awakened_swarm",
+          "rep": true,
+          "name": "The Awakened Swarm",
+          "description": "The target’s number of Health Point losses that are ignored due to Life is Cheap is increased by 2. No model or unit Augment can be affected by more than one instance of this spell simultaneously.<br/><br/>The range of this spell can be measured from the Caster or from the centre of any friendly Tunnel Marker on the Battlefield.",
+          "cast": [
+            {
+              "value": 6,
+              "range": 18,
+              "types": ["augment", "replicable"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "wdg",
+          "number": "H14",
+          "dispNumber": "H",
+          "name": "Hellfire",
+          "ref": "hellfire",
+          "description": "The target suffers  <span class='cast_0'>⟨2D3⟩</span> <span class='cast_1'>{2D6}</span> hits with Strength 6, Armour Penetration 0, and Magical Attacks.<br><br>*The spell can target units Engaged and in base contact with the Caster's Front Facing.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 18,
+              "types": ["damage", "direct", "hex"],
+              "duration": 0
+            },
+            {
+              "value": 10,
+              "range": 18,
+              "types": ["damage", "direct", "hex"],
+              "duration": 0
+            }
+          ]
+        },
+        {
+          "army": "ong",
+          "number": "H15",
+          "dispNumber": "H",
+          "ref": "guile_and_fury",
+          "name": "Guile and Fury",
+          "description": "Cannot be cast by Goblin Witches. The target gains +1 to hit, and its Charge Range, Flee Distance, and Pursuit Distance are all increased by 1″.",
+          "cast": [
+            {
+              "value": 9,
+              "range": 24,
+              "types": ["augment"],
+              "duration": 1
+            }
+          ],
+          "alt": {
+            "description": "Cannot be cast by Orc Shamans. The target suffers −1 to hit, and its Charge Range, Flee Distance, and Pursuit Distance are reduced by 1″",
+            "cast": [
+              {
+                "value": 9,
+                "range": 24,
+                "types": ["hex"],
+                "duration": 1
+              }
+            ]
+          }
+        },
+        {
+          "army": "se",
+          "number": "H16",
+          "dispNumber": "H",
+          "ref": "forest_embrace",
+          "name": "Forest Embrace",
+          "description": "Place a Forest* underneath the target. This Forest always extends to the edges of the target’s Unit Boundary (even if the unit moves or changes formation).<br/><br/><i>* You may place a marker next to the unit instead</i>",
+          "cast": [
+            {
+              "value": 6,
+              "range": 24,
+              "types": ["augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "hg",
+          "number": "H17",
+          "dispNumber": "H",
+          "ref": "chains_of_pride",
+          "name": "Chains of Pride",
+          "description": "The target gainst Unstable and Fearless.<span class='cast_1'>{Targets with Supernal cannot take Break Tests.}</span>",
+          "cast": [
+            {
+              "value": 5,
+              "range": 18,
+              "types": ["augment"],
+              "duration": 1
+            },
+            {
+              "value": 9,
+              "range": 18,
+              "types": ["hex"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "df",
+          "number": "H18",
+          "dispNumber": "H",
+          "ref": "tempest_of_the_storm_witch",
+          "name": "Tempest of the Storm Witch",
+          "description": "The target may immediately perform a 12″ Magical Move and loses Scoring. <span class='cast_1'>{In addition, the target gains Coastal Predator.}</span>",
+          "cast": [
+            {
+              "value": 6,
+              "range": 18,
+              "types": ["augment"],
+              "duration": 1
+            },
+            {
+              "value": 7,
+              "range": 18,
+              "types": ["augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "bh",
+          "ref": "echoes_dark_forest",
+          "number": "H2",
+          "dispNumber": "H",
+          "name": "Echoes of the Dark Forest",
+          "description": "The target gains Fearless. The target may perform a 4″ Magical Move.",
+          "cast": [
+            {
+              "value": 6,
+              "range": 24,
+              "types": ["augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "dl",
+          "number": "H3",
+          "dispNumber": "H",
+          "ref": "spear_of_infinity",
+          "name": "Spear of Infinity",
+          "rep": true,
+          "description": "The target suffers 1 hit with Str 2, AP 2, Area Attack (1×5), Magical Attacks, and Direct Hit (2). The hits from Spear of Infinity gain +1 Str for each spell successfully cast in this Magic Phase (including other instances of Spear of Infinity).",
+          "cast": [
+            {
+              "value": 6,
+              "range": 24,
+              "types": ["damage", "hex", "missile", "Replicable"],
+              "duration": 0
+            }
+          ]
+        },
+        {
+          "army": "de",
+          "ref": "curse_phantom_queen",
+          "number": "H4",
+          "dispNumber": "H",
+          "name": "Curse of the Phantom Queen",
+          "description": "Attacks made by the target suffer −1 AP, and attacks made against the target gain +1 AP. Attacks from spells are not affected.",
+          "cast": [
+            {
+              "value": 9,
+              "types": ["hex"],
+              "duration": 1,
+              "range": 24
+            }
+          ]
+        },
+        {
+          "army": "he",
+          "number": "H5",
+          "dispNumber": "H",
+          "ref": "favour_meladys",
+          "name": "Favour of Meladys",
+          "description": "The player gains 2 Protection Tokens which are removed when the Spell ends. When a friendly unit within 18″ of the Caster suffers a wound, before any Special Saves are taken, you may discard a Protection Token and ignore the wound applying the following rules:<br/><ul><li>Rank-and-File models of Height 1 ignore up to 2 wounds per token, provided they are suffered simultaneously.</li><li>Characters, and models of Height 4 or 5, can each only ignore a single wound per Phase.</li><li>Wounds from attacks with Multiple Wounds are not ignored, they inflict one less wound instead.</li></ul>",
+          "cast": [
+            {
+              "value": 9,
+              "range": 0,
+              "types": [""],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "id",
+          "number": "H6",
+          "dispNumber": "H",
+          "ref": "curse_nezibkesh",
+          "name": "Curse of Nezibkesh",
+          "description": "The target gains one Incendiary Marker that is not removed when the spell ends. The target suffers −1 Def and −1 Off for every Incendiary Marker on it, up to a maximum of −3.",
+          "cast": [
+            {
+              "value": 9,
+              "range": 36,
+              "types": ["hex"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "koe",
+          "number": "H7",
+          "dispNumber": "H",
+          "ref": "breath_lady",
+          "name": "Breath of the Lady",
+          "description": "Add 2 Blessing Tokens to your Blessing Token pool.",
+          "cast": [
+            {
+              "value": 9,
+              "types": ["caster"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "mh",
+          "number": "H8",
+          "dispNumber": "H",
+          "ref": "breath_steppe",
+          "name": "Breath of the Steppe",
+          "description": "Place a round Tornado Marker with a 3″ diameter with its centre on the target point. The Tornado Marker must be placed more than 1″ away from any unit. The marker is considered Covering Terrain for units inside and/or behind them that contributes to <span class='cast_0'>⟨Soft⟩</span> <span class='cast_1'>{Hard}</span> Cover. The Tornado Marker is Dangerous Terrain (<span class='cast_0'>⟨2⟩</span> <span class='cast_1'>{3}</span>), even for models with Strider",
+          "cast": [
+            {
+              "value": 6,
+              "range": 36,
+              "types": ["ground"],
+              "duration": 1
+            },
+            {
+              "value": 8,
+              "range": 18,
+              "types": ["ground"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "ok",
+          "number": "H9",
+          "dispNumber": "H",
+          "ref": "children_umi",
+          "name": "Children of Umi",
+          "description": "All Melee Attacks against the target suffer −1 to wound.",
+          "cast": [
+            {
+              "value": 6,
+              "range": 18,
+              "types": ["augment"],
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    "orders": {
+      "name": "Orders",
+      "ref": "orders",
+      "spells": [
+        {
+          "army": "orders",
+          "number": "1",
+          "whNumber": "BI",
+          "ref": "brace_for_impact",
+          "name": "Brace for Impact!",
+          "description": "The target gains Fight in Extra Rank",
+          "cast": [
+            {
+              "value": "",
+              "range": 8,
+              "types": ["augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "orders",
+          "number": "2",
+          "whNumber": "OD",
+          "ref": "on_the_double",
+          "name": "On The Double!",
+          "description": "The target gains +1″ Advance Rate and +4″ March Rate",
+          "cast": [
+            {
+              "value": "",
+              "range": 8,
+              "types": ["augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "orders",
+          "number": "3",
+          "whNumber": "RF",
+          "ref": "ready_aim_fire",
+          "name": "Ready! Aim! Fire!",
+          "description": "The target gains Accurate",
+          "cast": [
+            {
+              "value": "",
+              "range": 8,
+              "types": ["augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "orders",
+          "number": "4",
+          "whNumber": "SM",
+          "ref": "steady_men",
+          "name": "Steady, Men!",
+          "description": "Discipline Tests taken by the target are subject to MinimisedRoll. A unit that receives this Order and passes a Rally Test doesn't become Shaken, and the Reform that is made after Rallying doesn't prevent the unit from moving and/or shooting (but it still counts as having moved for shooting purposes).",
+          "cast": [
+            {
+              "value": "",
+              "range": 8,
+              "types": ["augment"],
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    "blessings": {
+      "name": "Blessings",
+      "ref": "blessings",
+      "spells": [
+        {
+          "army": "eos",
+          "ref": "ullor_blessing",
+          "number": "1",
+          "whNumber": "UB",
+          "dispNumber": "B",
+          "name": "Ullor's Blessing",
+          "rep": true,
+          "description": "The target gains Aegis (5+, against Melee Attacks).",
+          "cast": [
+            {
+              "value": 5,
+              "range": 0,
+              "types": ["caster_unit", "augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "eos",
+          "ref": "sunna_blessing",
+          "number": "2",
+          "whNumber": "SB",
+          "dispNumber": "B",
+          "name": "Sunna's Blessing",
+          "rep": true,
+          "description": "The target gains Flaming Attacks. All enemy units in base contact with one or more targets of this spell when the spell is cast suffer D6 hits with Strength 4, Armour Penetration 1, Flaming Attacks, and Magical Attacks.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 0,
+              "types": ["caster_unit", "augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "eos",
+          "ref": "volund_blessing",
+          "number": "3",
+          "whNumber": "VB",
+          "dispNumber": "B",
+          "name": "Volund's Blessing",
+          "rep": true,
+          "description": "The target's failed to-wound rolls with Melee Attacks must be rerolled.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 0,
+              "types": ["caster_unit", "augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "eos",
+          "ref": "greater_ullor_blessing",
+          "number": "4",
+          "whNumber": "UB",
+          "dispNumber": "B",
+          "name": "Ullor's Blessing",
+          "rep": true,
+          "description": "The target gains Aegis (5+, against Melee Attacks).",
+          "cast": [
+            {
+              "value": 5,
+              "range": 6,
+              "types": ["aura", "augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "eos",
+          "ref": "greater_sunna_blessing",
+          "number": "5",
+          "whNumber": "SB",
+          "dispNumber": "B",
+          "name": "Sunna's Blessing",
+          "rep": true,
+          "description": "The target gains Flaming Attacks. All enemy units in base contact with one or more targets of this spell when the spell is cast suffer D6 hits with Strength 4, Armour Penetration 1, Flaming Attacks, and Magical Attacks.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 6,
+              "types": ["aura", "augment"],
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "army": "eos",
+          "ref": "greater_volund_blessing",
+          "number": "6",
+          "whNumber": "VB",
+          "dispNumber": "B",
+          "name": "Volund's Blessing",
+          "rep": true,
+          "description": "The target's failed to-wound rolls with Melee Attacks must be rerolled.",
+          "cast": [
+            {
+              "value": 5,
+              "range": 6,
+              "types": ["aura", "augment"],
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    "manifestations": {
+      "name": "Manifestations",
+      "ref": "manifestations",
+      "spells": [
+        {
+          "army": "wdg",
+          "number": "1",
+          "ref": "abiding_spirit",
+          "name": "Abiding Spirit",
+          "description": "<b>Hard Target (1)</b>. At the end of each friendly Melee Phase, if the Exalted Herald has been on the winning side of a combat in this phase, it Recovers 1 Health Point<br/><br/>Spells:<br/><i>Smite the Unbeliever (Thaumaturgy)</i>",
+          "cast": []
+        },
+        {
+          "army": "wdg",
+          "number": "2",
+          "ref": "brand_of_the_dragon",
+          "name": "Brand of the Dragon",
+          "description": "<b>Breath Attack (Str 4, AP 1, Flaming Attacks), Fly (7″, 14″),</b> and <b>Swiftstride</b><br/><br/>Spells: <br/><i>Breath of Corruption (Occultism)</i>",
+          "cast": []
+        },
+        {
+          "army": "wdg",
+          "number": "3",
+          "ref": "emissary_of_chaos",
+          "name": "Emissary of Chaos",
+          "description": "<b>Stomp Attacks (D6), Stubborn, Tall</b>, and <b>Terror</b> <br/><br/>Spells: <br/><i>Pentagram of Pain (Occultism)</i>",
+          "cast": []
+        },
+        {
+          "army": "wdg",
+          "number": "4",
+          "ref": "sorcerer_immortal",
+          "name": "Sorcerer Immortal",
+          "description": "<b>Channel (1)</b>, and <b>Veil Walker</b><br/><br/>Spells: <br/><i>Marked for Doom (Occultism) and The Grave Calls (Occultism)</i>",
+          "cast": []
+        },
+        {
+          "army": "wdg",
+          "number": "5",
+          "ref": "unholy_avatar",
+          "name": "Unholy Avatar",
+          "description": "+1 Strength, +1 Armour Penetration, and <b>Divine Attacks</b><br/><br/>Spells: <br/><i>The Rot Within (Occultism)</i>",
+          "cast": []
+        }
+      ]
+    }
+  }
+}
