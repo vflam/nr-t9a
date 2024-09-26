@@ -128,7 +128,7 @@
           "armyHasNotOption": ["ae_warding_unity"],
           "name": "Warding of Unity",
           "cost": 40,
-          "description": "Attached, Resistance (Melee Attacks).\n",
+          "description": "Attached, that cannot be lost, Resistance (Melee Attacks).\n",
           "option_id": "z9jl20l8yz8jhbibib1jy",
           "hasStat": {
             "global": {
@@ -165,6 +165,20 @@
     {
       "refs": ["bannerEnchant"],
       "options": [
+        {
+          "option_id": "mfewifm32f23wqf32f3232",
+          "type": "numeric",
+          "cost": 40,
+          "name": "Banner of Recruitment",
+          "description": "The bearer’s unit gains Exclusive and changes its Maximum Points Cost to max 800 points.",
+          "refs": ["bannerOfRecruitment"],
+          "armyHasNotOption": [
+            {
+              "refs": ["bannerOfRecruitment"],
+              "amount": 1
+            }
+          ]
+        },
         {
           "type": "numeric",
           "name": "Stalker's Standard",
@@ -315,7 +329,7 @@
           ],
           "name": "King Slayer",
           "cost": 35,
-          "description": "<span class=\"textbf\">Attached</span>. While there is an enemy Character in contact with the wielder's unit: +1 Att, +2 Str, and +2 AP.\n    ",
+          "description": "<span class=\"textbf\">Attached</span>, that cannot be lost. While there is an enemy Character in contact with the wielder's unit: +1 Att, +2 Str, and +2 AP.\n    ",
           "option_id": "9nbhwy7x5j8arx2vum3628",
           "hasRule": {
             "id": "rulebook-exclusive",

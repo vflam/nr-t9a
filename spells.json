@@ -77,21 +77,21 @@
         {
           "number": "10",
           "name": "Flux Card 10",
-          "description": "Both Players gain: 7 Magic Dices",
+          "description": "Both Players gain: 5 Magic Dices",
           "ref": "flux10",
           "cast": []
         },
         {
           "number": "11",
           "name": "Flux Card 11",
-          "description": "Both Players gain: 7 Magic Dices",
+          "description": "Both Players gain: 6 Magic Dices",
           "ref": "flux11",
           "cast": []
         },
         {
           "number": "12",
           "name": "Flux Card 12",
-          "description": "Both Players gain: 9 Magic Dices",
+          "description": "Both Players gain: 7 Magic Dices",
           "ref": "flux12",
           "cast": []
         },
@@ -105,21 +105,21 @@
         {
           "number": "14",
           "name": "Flux Card 14",
-          "description": "Both Players gain: 8 Magic Dices",
+          "description": "Both Players gain: 7 Magic Dices",
           "ref": "flux14",
           "cast": []
         },
         {
           "number": "15",
           "name": "Flux Card 15",
-          "description": "Both Players gain: 9 Magic Dices",
+          "description": "Both Players gain: 8 Magic Dices",
           "ref": "flux15",
           "cast": []
         },
         {
           "number": "16",
           "name": "Flux Card 16",
-          "description": "Both Players gain: 10 Magic Dices",
+          "description": "Both Players gain: 8 Magic Dices",
           "ref": "flux16",
           "cast": []
         }
@@ -137,7 +137,7 @@
           "cast": [
             {
               "value": "7",
-              "range": "24",
+              "range": "18",
               "types": ["Damage", "Hex", "Missile", "Replicable"],
               "duration": 0,
               "effects": [
@@ -152,7 +152,7 @@
         {
           "number": "2",
           "name": "Corruption of Tin",
-          "description": "The target suffers -1 Arm and gains Metal Armour.",
+          "description": "The target suffers -1 Arm, -1 Agi and gains Metal Armour.",
           "cast": [
             {
               "value": "6",
@@ -230,7 +230,7 @@
           "description": "The target suffers 2D6 hits with Str 3, AP 3, Flaming Attacks, Magical Attacks.<br>\n\tIf the target has Metal Armour, these hits are instead resolved with Str 4 and AP 4.",
           "cast": [
             {
-              "value": "12",
+              "value": "11",
               "range": "24",
               "types": ["Damage", "Hex", "Missile"],
               "duration": 0,
@@ -252,13 +252,12 @@
           "ref": "weal_and_woe",
           "name": "Weal and Woe",
           "number": "1",
-          "rep": true,
           "cast": [
             {
               "range": "18",
-              "types": ["Universal", "Replicable"],
+              "types": ["Universal"],
               "duration": 0,
-              "value": "7"
+              "value": "8"
             }
           ],
           "description": [
@@ -280,20 +279,20 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Universal"],
+              "types": ["[𝛼]"],
               "duration": 0,
               "value": "6"
             }
           ],
           "description": [
-            "The target [𝛼], and [𝛽] are Minimised.",
+            "If the target is Shaken, it stops being Shaken. If the target is not Shaken, it must take a Panic Test.",
             {
               "icon": "chaos",
-              "description": "[𝛼]: is considered Steady<br/><br/>[𝛽]: Courage Tests"
+              "description": "[𝛼]: Hex, Damage"
             },
             {
               "icon": "cosmos",
-              "description": "[𝛼]: gains Unruly<br/><br/>[𝛽]: Command Tests"
+              "description": "[𝛼]: Augment"
             }
           ]
         },
@@ -389,9 +388,9 @@
           "number": "6",
           "cast": [
             {
-              "types": ["Damage", "[]"],
+              "types": ["Damage", "[𝛼]"],
               "duration": 0,
-              "value": "13"
+              "value": "11"
             }
           ],
           "description": [
@@ -402,7 +401,7 @@
             },
             {
               "icon": "cosmos",
-              "description": "[𝛼]: Aura*, Range 6″, Universal<br/><i>*The caster’s unit is not targeted</i>"
+              "description": "[𝛼]: Aura*, Range 9″, Universal<br/><i>*The caster’s unit is not targeted</i>"
             }
           ]
         }
@@ -505,7 +504,7 @@
           "number": "6",
           "cast": [
             {
-              "range": "24",
+              "range": "36",
               "types": ["Hex"],
               "duration": 0,
               "value": "11"
@@ -527,7 +526,7 @@
           "cast": [
             {
               "value": "7",
-              "range": "18",
+              "range": "36",
               "types": ["Augment", "Focused", "Replicable"],
               "duration": 0
             }
@@ -537,7 +536,7 @@
         {
           "number": "2",
           "name": "Entwining Roots",
-          "description": "The target suffers -2\" Cha and -2\" Mob, both to a minimum of 2\".<br>\n\n\tIf the target or the caster is in contact with a Forest when the spell is cast:<br>\n\tThe target suffers an additional -1\" Cha and -1\" Mob, both to a minimum of 2\".",
+          "description": "The target suffers -2\" Cha and -2\" Mob, both to a minimum of 2\".<br>\n\n\tIf the target or the caster is in contact with a Forest when the spell is cast:<br>\n\tThe target suffers D6 hits with Str 4, AP1, and Magical Attacks. These hits are resolved immediately when the spell is cast.",
           "cast": [
             {
               "value": "7",
@@ -582,7 +581,7 @@
           "description": "The target gains +1 Res, and Melee Attacks allocated towards it <span class=\"textbf\">never</span> wound on better than 4+.",
           "cast": [
             {
-              "value": "12",
+              "value": "11",
               "range": "18",
               "types": ["Augment"],
               "duration": 1
@@ -684,7 +683,7 @@
           "description": "Standard Melee Attacks from Rank-and-File models in the target have their Str <span class=\"textbf\">always</span> <span class=\"textbf\">set</span> to 4, AP <span class=\"textbf\">always</span> <span class=\"textbf\">set</span> to 4, and gain <span class=\"textbf\">Magical Attacks</span>.",
           "cast": [
             {
-              "value": "12",
+              "value": "11",
               "range": "18",
               "types": ["Augment"],
               "duration": 1,
@@ -705,7 +704,7 @@
               "range": "24",
               "types": ["Hex", "Damage", "Missile"],
               "duration": 0,
-              "value": "13"
+              "value": "11"
             }
           ],
           "description": "The target takes a Courage Test:\n\t\n\t\t<br>&nbsp;&nbsp;&bull;  If passed it suffers D6 hits.\n\t\t<br>&nbsp;&nbsp;&bull;  If failed it suffers 2D6 hits.\n\t<br>\n\tHits are with Str 9, AP 10, and <span class=\"textbf\">Magical Attacks</span>.<br>\n\tWhen rolling to wound with this attack, substitute the target's Res with its Cou."
@@ -720,6 +719,7 @@
           "ref": "the_devouring_dark",
           "name": "The Devouring Dark",
           "number": "1",
+          "rep": true,
           "cast": [
             {
               "range": "18",
@@ -728,7 +728,7 @@
               "value": "7"
             }
           ],
-          "description": "The target suffers a hit with <span class=\"textbf\">Area Attack (2×2)</span>, Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.\n<br>\n<br>\nNo model or unit can be affected by more than one instance of this spell during the same Magic Phase, including The Sacrifice."
+          "description": "The target suffers a hit with <span class=\"textbf\">Area Attack (2×2)</span>, Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>."
         },
         {
           "number": "2",
@@ -771,7 +771,7 @@
           "number": "4",
           "ref": "pentagram_pain",
           "name": "Pentagram of Pain",
-          "description": "The target suffers 3 hits, with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>. If one ore more unsaved wounds are caused with this spell, the Caster of the spell Recovers 1 HP.",
+          "description": "The target suffers 3 hits, with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>. If one ore more unsaved wounds are caused with this spell, the Caster of the spell Recovers 1 HP.<br/><br/>The Sacrifice may be performed for this spell.",
           "cast": [
             {
               "value": "9",
@@ -793,7 +793,7 @@
           "description": "The target suffers 8 hits, with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.<br>\n\t<br>\n\tThe Sacrifice may be performed for this spell.",
           "cast": [
             {
-              "value": "13",
+              "value": "11",
               "range": "12",
               "types": ["Damage", "Hex"],
               "duration": 0,
@@ -921,7 +921,7 @@
               "range": "18",
               "types": ["Augment"],
               "duration": 0,
-              "value": "12"
+              "value": "11"
             }
           ],
           "description": "Standard Melee Attacks from Rank-and-File models in the target hit automatically, have their Str <span class=\"textbf\">always</span> <span class=\"textbf\">set</span> to 4, AP <span class=\"textbf\">always</span> <span class=\"textbf\">set</span> to 0, and gain Flaming Attacks,Magical Attacks."
@@ -932,13 +932,13 @@
           "number": "6",
           "cast": [
             {
-              "range": "24",
+              "range": "36",
               "types": ["Hex"],
               "duration": 0,
               "value": "10"
             }
           ],
-          "description": "Immediately when the spell is cast, and whenever the target moves, it suffers 2D3 \n\thits with Str 4, AP 0, Flaming Attacks, Magical Attacks\n. If this damage causes the target to suffer at least one HP loss, it gains <span class=\"textbf\">Weakness (Flaming Attacks)</span>."
+          "description": "Immediately when the spell is cast, and whenever the target moves, it suffers 2D3 \n\thits with Str 4, AP 0, Flaming Attacks, Magical Attacks\n. Afterwards, it gains <span class=\"textbf\">Weakness (Flaming Attacks)</span>."
         }
       ]
     },
@@ -979,7 +979,7 @@
           "number": "3",
           "name": "Swarm of Insects",
           "ref": "swarm_insects",
-          "description": "The target suffers 5D6 hits with AP 0 and <span class=\"textbf\">Magical Attacks</span>. These hits <span class=\"textbf\">always</span> wound on 6+.<br>\n\tIn addition, it suffers -1 to hit with Shooting Attacks.",
+          "description": "Immediately when the spell is cast, the target suffers 5D6 hits with AP 0 and <span class=\"textbf\">Magical Attacks</span>. These hits <span class=\"textbf\">always</span> wound on 6+.<br>\n\tIn addition, it suffers -1 to hit with Shooting Attacks.",
           "cast": [
             {
               "value": "9",
@@ -993,7 +993,7 @@
           "number": "4",
           "name": "Savage Fury",
           "ref": "savage_fury",
-          "description": "The target gains Fury, Fearless,Frenzy.",
+          "description": "The target gains Fury, Fearless, Frenzy and Unruly.",
           "cast": [
             {
               "value": "8",
@@ -1010,7 +1010,7 @@
           "description": "Summon a Totemic Beast (profile below), that is immediately placed on the Battlefield using the rules for <span class=\"textbf\">Ambush (Board Edge)</span>.",
           "cast": [
             {
-              "value": "12",
+              "value": "11",
               "types": [""],
               "duration": 0
             }
@@ -1025,7 +1025,7 @@
               "range": "24",
               "types": ["Universal"],
               "duration": 0,
-              "value": "12"
+              "value": "11"
             }
           ],
           "description": "The target's Height is increased by +1, to a maximum of 5, and it gains +1 Res and <span class=\"textbf\">Stomp Attack (1)</span>. If it already had <span class=\"textbf\">Stomp Attack</span>, the number of hits caused by its <span class=\"textbf\">Stomp Attack</span> is increased by +1. In models with multiple model parts, only a single model part, chosen by the caster, is affected."
@@ -1040,7 +1040,7 @@
           "number": "1",
           "ref": "smite_unbeliever",
           "name": "Smite the Unbeliever",
-          "description": "The target suffers D6 hits with Str 4, AP 2, and <span class=\"textbf\">Magical Attacks</span>.<br/><br/>&malt; : These hits are instead resolved with Str 6.<br><br/>&times; : These hits are instead resolved with Str 2.\n\t<br>",
+          "description": "The target suffers D6 hits with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.<br/><br/>&malt; : These hits are instead resolved with Str 7.<br><br/>&times; : These hits are instead resolved with Str 3.\n\t<br>",
           "cast": [
             {
               "value": "7",
@@ -1062,7 +1062,7 @@
               "value": "6"
             }
           ],
-          "description": "The target gains Fearless, Stubborn.\n\t\n\t\t<br><br/>&malt; : The target is considered to have one additional Proper Rank*.<br><br/>&times; : The target is considered to have one less Proper Rank*.\n\t<br>\n\t*For Steady, Steadfast, Surrounded and Rank Bonus purposes."
+          "description": "The target immediately suffers 2D6 hits with Str 2, AP 0, Magical Attacks, and Divine Attacks.<br><br/>&malt; : The target gains Minimise Flee rolls.<br><br/>&times; : The target gains Maximised Flee rolls."
         },
         {
           "ref": "weight_of_judgement",
@@ -1101,7 +1101,7 @@
               "range": "24",
               "types": ["Damage", "Universal"],
               "duration": 0,
-              "value": "12"
+              "value": "11"
             }
           ],
           "description": "The target suffers D3 hits with Str 8, AP 4, Magical Attacks,Flaming Attacks.<br><br/>&malt; : The caster picks an additional target.\n\t\t<br><br/>&times;: The opponent picks an additional target.\n\t<br>\n\t67.2"
@@ -1112,7 +1112,7 @@
           "description": "Place a marker on the target point. Instead of rolling for Divine Intervention when the spell is cast, do it at the start of each subsequent Magic Phase.\n\n\t<br><br/>&malt; : Each unit within 2D6\" from the center of the marker suffers 2D6 with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>. Then remove the marker.\n\t<br><br/>&times; : The opponent may move the marker in any direction up to 3\".\n<br>",
           "cast": [
             {
-              "value": "13",
+              "value": "11",
               "range": "48",
               "types": ["Ground"],
               "duration": 2
@@ -1149,7 +1149,7 @@
               "range": "24",
               "types": ["Hex"],
               "duration": 0,
-              "value": "6"
+              "value": "7"
             }
           ],
           "description": "Melee Attacks against the target are <span class=\"textbf\">set</span> to hit on 3+."
@@ -1166,7 +1166,7 @@
               "value": "10"
             }
           ],
-          "description": "Choose which effect to apply when casting the spell:\n\n\t<br>&nbsp;&nbsp;&bull;  The target gains <span class=\"textbf\">Random Movement (2D6\")</span>.\n\t<br>&nbsp;&nbsp;&bull;  The target gains <span class=\"textbf\">Random Movement (3D6\")</span>.\n<br>"
+          "description": "Choose which effect to apply when casting the spell:\n\n\t<br>&nbsp;&nbsp;&bull;  The target gains <span class=\"textbf\">Random Movement (2D6\")</span>.\n\t<br>&nbsp;&nbsp;&bull;  The target gains <span class=\"textbf\">Random Movement (3D6\")</span>.\n<br><br/>The target must perform a move in the movement phase if able to."
         },
         {
           "ref": "cauldron's_curse",
@@ -1191,10 +1191,10 @@
               "range": "12",
               "types": ["Augment"],
               "duration": 0,
-              "value": "12"
+              "value": "11"
             }
           ],
-          "description": "Mark the ground under the center of the target. The target gains <span class=\"textbf\">Ambush (within 12\" of the marked point)</span>. Then remove the target from the Battlefield. It automatically passes the roll to return to the Battlefield in your next Player Turn."
+          "description": "Mark the ground under the center of the target. The target gains <span class=\"textbf\">Ambush (within 12\" of the marked point)</span>. Then remove the target from the Battlefield. It automatically passes the roll to return to the Battlefield in your next Player Turn. *Cannot target Shaken units"
         },
         {
           "ref": "clouded_sight",
@@ -1205,7 +1205,7 @@
               "range": "24",
               "types": ["Hex"],
               "duration": 0,
-              "value": "13"
+              "value": "11"
             }
           ],
           "description": "The target cannot draw Line of Sight to a target more than 12\" from it."

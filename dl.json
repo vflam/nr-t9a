@@ -6,7 +6,7 @@
   },
   "short": "dl",
   "version": "2024 beta1",
-  "nrversion": 375,
+  "nrversion": 376,
   "playable": 1,
   "id": 5,
   "include": [102],
@@ -624,7 +624,7 @@
           "name": "Hidden Knives",
           "cost": 35,
           "countAsLeaf": true,
-          "description": "Attacks allocated towards an enemy unit's Flank or Rear Facing from the model  gain +1 Str and +1 AP.",
+          "description": "Melee Attacks allocated towards an enemy unit's Flank or Rear Facing from the model  gain +1 Str and +1 AP.",
           "override": [
             {
               "hasOption": [
@@ -1320,34 +1320,13 @@
             {
               "name": "Kuulima's Deceiver",
               "refs": ["kuulima_deceiver", "wizard", "protean_magic", "tag_Daemon"],
-              "magic": {
-                "amount": 4,
-                "spells": [
-                  {
-                    "path": "divination",
-                    "ref": "foresight"
-                  },
-                  {
-                    "path": "evocation",
-                    "ref": "whispers_of_the_veil"
-                  },
-                  {
-                    "path": "thaumaturgy",
-                    "ref": "smite_unbeliever"
-                  },
-                  {
-                    "path": "witchcraft",
-                    "ref": "evil_eye"
-                  }
-                ]
-              },
               "armyHasNotOption": [
                 {
                   "refs": ["kuulima_deceiver"],
                   "amount": 3
                 }
               ],
-              "cost": 330,
+              "cost": 360,
               "override": [
                 {
                   "hasOption": [
@@ -1387,6 +1366,70 @@
                   "option_id": "ro22i1hx56vs5p4oyp0zt"
                 },
                 {
+                  "option_id": "fnewifm320fm032f32f23",
+                  "optionsLabel": "Magic",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "option_id": "fewf32f2e3f32f2f23f2",
+                      "name": "Protean Magic [2]",
+                      "hide": true,
+                      "cost": 0,
+                      "type": "check",
+                      "magic": {
+                        "amount": 2,
+                        "spells": [
+                          {
+                            "path": "divination",
+                            "ref": "foresight"
+                          },
+                          {
+                            "path": "evocation",
+                            "ref": "whispers_of_the_veil"
+                          },
+                          {
+                            "path": "thaumaturgy",
+                            "ref": "smite_unbeliever"
+                          },
+                          {
+                            "path": "witchcraft",
+                            "ref": "evil_eye"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "option_id": "nfd3i20nf320f32f32",
+                      "name": "Protean Magic [4]",
+                      "cost": 80,
+                      "type": "check",
+
+                      "magic": {
+                        "amount": 4,
+                        "spells": [
+                          {
+                            "path": "divination",
+                            "ref": "foresight"
+                          },
+                          {
+                            "path": "evocation",
+                            "ref": "whispers_of_the_veil"
+                          },
+                          {
+                            "path": "thaumaturgy",
+                            "ref": "smite_unbeliever"
+                          },
+                          {
+                            "path": "witchcraft",
+                            "ref": "evil_eye"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
                   "type": "group",
                   "optionsLabel": "Manifestations",
                   "leafMaxCost": 150,
@@ -1418,7 +1461,7 @@
                   "options": [
                     {
                       "type": "check",
-                      "name": "Fly (7\", 14\")",
+                      "name": "Wings",
                       "cost": 35,
                       "refs": ["flyer"],
                       "option_id": "84sojwuzkyl0m9661ybnop"
@@ -1440,7 +1483,7 @@
                   "amount": 1
                 }
               ],
-              "cost": 530,
+              "cost": 500,
               "options": [
                 {
                   "maxSize": 1,
@@ -1584,7 +1627,7 @@
                   "amount": 1
                 }
               ],
-              "cost": 630,
+              "cost": 600,
               "options": [
                 {
                   "maxSize": 1,
@@ -1736,7 +1779,7 @@
                   "amount": 1
                 }
               ],
-              "cost": 530,
+              "cost": 550,
               "options": [
                 {
                   "maxSize": 1,
@@ -2034,7 +2077,7 @@
             {
               "name": "Sentinel of Nukuja",
               "refs": ["sentinel_nukuja", "wizard", "wizardMaster", "tag_Daemon"],
-              "cost": 640,
+              "cost": 650,
               "override": [
                 {
                   "hasOption": [
@@ -2767,7 +2810,7 @@
           "options": [
             {
               "name": "Eidolons",
-              "cost": 10,
+              "cost": 30,
               "options": [
                 {
                   "minSize": 5,
@@ -2801,7 +2844,7 @@
                             {
                               "type": "check",
                               "name": "All-Seeing Eye",
-                              "cost": 4,
+                              "cost": 8,
                               "option_id": "olex8jhj6g9kj1ge8fdikd"
                             },
                             {
@@ -2849,7 +2892,7 @@
                 {
                   "type": "check",
                   "name": "Wizard Conclave (2)",
-                  "cost": 100,
+                  "cost": 120,
                   "option_id": "fn328fj23f98342f43f43f34",
                   "magic": {
                     "amount": 2,
@@ -3156,7 +3199,7 @@
             },
             {
               "name": "Mageblight Gremlins",
-              "cost": 110,
+              "cost": 112,
               "refs": ["mageblight_gremlins", "tag_Daemon", "tag_Swarm"],
               "armyHasNotOption": [
                 {
@@ -3174,7 +3217,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 45,
+                      "cost": 44,
                       "options": [
                         {
                           "type": "group",
@@ -3366,7 +3409,7 @@
                             {
                               "type": "check",
                               "name": "Mirrored Scales",
-                              "cost": 21,
+                              "cost": 20,
                               "option_id": "dfz6l0e78gld7iwvfuauz"
                             },
                             {
@@ -3418,7 +3461,7 @@
             },
             {
               "name": "Succubi Tempters",
-              "cost": 110,
+              "cost": 95,
               "refs": ["succubi_tempters", "tag_Daemon"],
               "armyHasNotOption": [
                 {
@@ -3436,7 +3479,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 18,
+                      "cost": 21,
                       "options": [
                         {
                           "type": "group",
