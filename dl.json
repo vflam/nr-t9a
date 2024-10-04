@@ -220,33 +220,6 @@
           "name": "Centipede Legs",
           "cost": 20,
           "description": "+2\" Mob.",
-          "countAsLeaf": true,
-          "optionsLabel": "Guiding Centipede Legs",
-          "override": [
-            {
-              "hasOption": [
-                {
-                  "refs": ["guiding_centipede"],
-                  "amount": 1
-                }
-              ],
-              "options": {
-                "countAsLeaf": false,
-                "cost": 0,
-                "hide": true
-              }
-            }
-          ],
-          "options": [
-            {
-              "type": "check",
-              "cost": 35,
-              "name": "Guiding Centipede Legs",
-              "refs": ["dominant", "guiding_centipede"],
-              "hasNotOption": ["dominant", "possessed_giant"],
-              "option_id": "ty3yku2i8itpnh30vtu5"
-            }
-          ],
           "option_id": "i5ca0ub09cb83cwx7zo449"
         },
         {
@@ -981,33 +954,25 @@
               "cost": 150,
               "options": [
                 {
-                  "maxSize": 1,
-                  "optionsLabel": "Command",
+                  "type": "group",
+                  "option_id": "qpg1ar0gakfeowzxqfdf4a",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "minSize": 1,
                   "options": [
                     {
-                      "type": "group",
-                      "option_id": "qpg1ar0gakfeowzxqfdf4a",
-                      "name": "Leadership",
-                      "optionsLabel": "Leadership",
-                      "minSize": 1,
-                      "options": [
-                        {
-                          "type": "check",
-                          "name": "Captain and Attached",
-                          "cost": 0,
-                          "option_id": "vcklv0439543bjewssr0vb34jv034v43"
-                        },
-                        {
-                          "name": "General",
-                          "refs": ["army_general"],
-                          "type": "check",
-                          "cost": 0,
-                          "armyHasNotOption": ["army_general"],
-                          "option_id": "c7uvvhoausovjruw5nyiv"
-                        }
-                      ],
-                      "maxSize": 1,
-                      "refs": ["harbinger_of_father_chaos_amount"]
+                      "type": "check",
+                      "name": "Captain and Attached",
+                      "cost": 0,
+                      "option_id": "vcklv0439543bjewssr0vb34jv034v43"
+                    },
+                    {
+                      "name": "General",
+                      "refs": ["army_general"],
+                      "type": "check",
+                      "cost": 0,
+                      "armyHasNotOption": ["army_general"],
+                      "option_id": "c7uvvhoausovjruw5nyiv"
                     },
                     {
                       "name": "Battle Standard Bearer",
@@ -1018,7 +983,8 @@
                       "option_id": "utq8eezi6zc14ulvdmum"
                     }
                   ],
-                  "option_id": "z2w4ie9j0pz3caqs1vsrk"
+                  "maxSize": 1,
+                  "refs": ["harbinger_of_father_chaos_amount"]
                 },
                 {
                   "type": "group",
@@ -2497,7 +2463,7 @@
                       "options": [
                         {
                           "type": "check",
-                          "name": "Firestarter (Spear of Infinity)",
+                          "name": "Firestarter - Spear of Infinity",
                           "parsername": "Firestarter (Spear of Infinity)",
                           "cost": 40,
                           "option_id": "92chhq9uer4b0gemeogbj",
@@ -2513,8 +2479,8 @@
                         },
                         {
                           "type": "check",
-                          "name": "Firestarter (Hand of Heaven)",
-                          "parsername": "Firestarter (Smite the Unbeliever)",
+                          "name": "Firestarter - Hand of Heaven",
+                          "parsername": "Firestarter (Hand of Heaven)",
                           "cost": 45,
                           "option_id": "ca4p2uae6nv0xntzwrc6rof",
                           "boundSpells": [

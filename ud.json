@@ -90,7 +90,14 @@
           ],
           "refs": ["be_ud_entombed", "underground_ambush"],
           "description": "-1.The bearer count towards Entombed.<br>\nIf taken by a Character, the bearer gains  <span class=\"textbf\">Ambush (Open Terrain)</span>. If taken by a Rank-and-File model, the bearer’s unit gains <span class=\"textbf\">Ambush (Open Terrain)</span> and additional models cannot be added to the unit during Army List creation.\n",
-          "option_id": "worf64xdplxc97upqijy"
+          "option_id": "worf64xdplxc97upqijy",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "excluded": ["5"]
+              }
+            }
+          }
         },
         {
           "type": "check",
@@ -1335,6 +1342,19 @@
                   "minSize": 20,
                   "maxSize": 60,
                   "addToUnitSize": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["be_ud_entombed"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 20
+                      }
+                    }
+                  ],
                   "options": [
                     {
                       "hide": true,
@@ -1508,6 +1528,19 @@
                 {
                   "minSize": 15,
                   "maxSize": 30,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["be_ud_entombed"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 15
+                      }
+                    }
+                  ],
                   "addToUnitSize": true,
                   "options": [
                     {
@@ -1667,6 +1700,19 @@
                   "minSize": 10,
                   "maxSize": 24,
                   "addToUnitSize": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["be_ud_entombed"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 10
+                      }
+                    }
+                  ],
                   "options": [
                     {
                       "hide": true,
@@ -1790,6 +1836,19 @@
                   "minSize": 5,
                   "maxSize": 10,
                   "addToUnitSize": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["be_ud_entombed"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 5
+                      }
+                    }
+                  ],
                   "options": [
                     {
                       "hide": true,
@@ -1928,6 +1987,7 @@
                   "minSize": 3,
                   "maxSize": 7,
                   "addToUnitSize": true,
+
                   "override": [
                     {
                       "armyHasOption": [
@@ -1938,6 +1998,17 @@
                       ],
                       "options": {
                         "maxSize": 6
+                      }
+                    },
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["be_ud_entombed"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 20
                       }
                     }
                   ],

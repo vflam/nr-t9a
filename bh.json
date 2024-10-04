@@ -390,7 +390,8 @@
                       "type": "check",
                       "option_id": "fwef32fwfsdfdsf32f234",
                       "cost": 5,
-                      "hasOption": ["army_general"]
+                      "hasOption": ["army_general"],
+                      "refs": ["ambush"]
                     },
                     {
                       "type": "check",
@@ -1661,6 +1662,19 @@
                   "minSize": 15,
                   "maxSize": 50,
                   "addToUnitSize": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["ambush"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 30
+                      }
+                    }
+                  ],
                   "options": [
                     {
                       "hide": true,
@@ -1854,6 +1868,20 @@
                   "minSize": 25,
                   "maxSize": 50,
                   "addToUnitSize": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["ambush"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 40,
+                        "minSize": 20
+                      }
+                    }
+                  ],
                   "options": [
                     {
                       "hide": true,
@@ -2038,7 +2066,8 @@
                   ],
                   "options": {
                     "replaceCategory": "base",
-                    "cost": 66
+                    "cost": 66,
+                    "extraCategories": ["ambush_predators"]
                   }
                 }
               ],
@@ -2086,6 +2115,19 @@
                   "minSize": 10,
                   "maxSize": 30,
                   "addToUnitSize": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["ambush"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 25
+                      }
+                    }
+                  ],
                   "options": [
                     {
                       "hide": true,
@@ -2425,6 +2467,19 @@
                   "minSize": 5,
                   "maxSize": 15,
                   "addToUnitSize": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["ambush"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 12
+                      }
+                    }
+                  ],
                   "options": [
                     {
                       "hide": true,
