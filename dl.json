@@ -1677,17 +1677,10 @@
                       "minSize": 1,
                       "options": [
                         {
-                          "refs": ["wizardApprentice"],
-                          "name": "Wizard Apprentice",
-                          "type": "check",
-                          "cost": 0,
-                          "option_id": "t4cqu0tme8ixbfacsfnh"
-                        },
-                        {
                           "refs": ["wizardAdept"],
                           "name": "Wizard Adept",
                           "type": "check",
-                          "cost": 95,
+                          "cost": 0,
                           "option_id": "3iyn41xs8w631d2kcb5gsq"
                         },
                         {
@@ -1890,6 +1883,19 @@
                   "amount": 1
                 }
               ],
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["throne_overwhelming"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["aves"]
+                  }
+                }
+              ],
               "cost": 400,
               "options": [
                 {
@@ -1927,7 +1933,9 @@
                       "name": "Throne of Overwhelming Splendour",
                       "options": [],
                       "refopt": "throne_of_overwhelming_splendour_mount",
-                      "option_id": "9u62dx1gs2a9hj1tfbds5w"
+                      "option_id": "9u62dx1gs2a9hj1tfbds5w",
+                      "maxUnitCost": 800,
+                      "refs": ["throne_overwhelming"]
                     }
                   ],
                   "option_id": "alwymubcosrzloa1twsaf"
@@ -1994,13 +2002,6 @@
                           "type": "check",
                           "cost": 100,
                           "option_id": "k99j9okczu46cij48goj6"
-                        },
-                        {
-                          "refs": ["wizardMaster"],
-                          "name": "Wizard Master",
-                          "type": "check",
-                          "cost": 265,
-                          "option_id": "g0ykmvchkresfmf5yf2nfl"
                         }
                       ],
                       "option_id": "qajcifwghro26azxrky9"
@@ -4215,7 +4216,6 @@
               "category": "mounts",
               "options": [],
               "refs": ["throneOfOverwhelmingSplendour_mount_unit", "mount", "flyer", "tag_Mount"],
-              "extraCategories": ["aves"],
               "unit_id": "throne_of_overwhelming_splendour_mount",
               "invisible": true,
               "armyHasNotOption": [

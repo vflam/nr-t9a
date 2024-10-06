@@ -36,10 +36,12 @@
     "brood_rivalry": "Brood Rivalry",
     "goblin_cunning": "Goblin Cunning",
     "gogtukInitiate": "Gogtuk Initiate",
-    "poisoned_spears": "Poisoned Spears"
+    "poisoned_spears": "Poisoned Spears",
+    "tag_Orc": "Orc",
+    "tag_Goblin": "Goblin"
   },
   "indicators": ["bows_or_crossbows", "poisoned_spears"],
-  "costIndicators": ["brood_rivalry", "goblin_cunning"],
+  "costIndicators": ["tag_Orc", "tag_Goblin"],
   "dictionnary": [
     {
       "refs": ["potions_and_scrolls"],
@@ -2891,7 +2893,7 @@
                   "option_id": "wzggw0wj0cdbdnpsy81z2q"
                 }
               ],
-              "refs": ["giant", "brood_rivalry", "tag_Giant"],
+              "refs": ["giant", "brood_rivalry", "tag_Giant", "tag_Orc"],
               "unit_id": "giant",
               "armyHasNotOption": [
                 {
@@ -3031,6 +3033,28 @@
               "name": "Gnashers Dashers",
               "cost": 5,
               "category": "special",
+              "rules": [
+                {
+                  "id": "extra_support",
+                  "params": ["2"]
+                },
+                {
+                  "id": "fly",
+                  "params": []
+                },
+                {
+                  "id": "hard_target",
+                  "params": ["1"]
+                },
+                {
+                  "id": "light_troops",
+                  "params": []
+                },
+                {
+                  "id": "skirmisher",
+                  "params": []
+                }
+              ],
               "options": [
                 {
                   "minSize": 10,
@@ -3308,31 +3332,7 @@
                         }
                       ],
                       "option_id": "dgqz138qfjn9zi8ijr1ic",
-                      "refs": ["gogtuk_neophytes_amount", "poisoned_spears"],
-                      "armyHasNotOption": [
-                        {
-                          "refs": ["poisoned_spears"],
-                          "amount": 70
-                        }
-                      ],
-                      "override": [
-                        {
-                          "armyHasOption": [
-                            {
-                              "refs": ["darrmu"],
-                              "amount": 1
-                            }
-                          ],
-                          "options": {
-                            "armyHasNotOption": [
-                              {
-                                "refs": ["poisoned_spears"],
-                                "amount": 100
-                              }
-                            ]
-                          }
-                        }
-                      ]
+                      "refs": ["gogtuk_neophytes_amount", "poisoned_spears"]
                     }
                   ],
                   "option_id": "am4nunix4ndd9m1q7j06xd"

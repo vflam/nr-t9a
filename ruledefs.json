@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 279,
+  "nrversion": 280,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -732,10 +732,21 @@
               "id": "skirmisher"
             },
             {
-              "id": "fly",
+              "id": "fly"
+            },
+            {
+              "id": "light_troops"
+            },
+            {
+              "id": "hard_target",
               "params": [
-                "6",
-                "12"
+                "1"
+              ]
+            },
+            {
+              "id": "extra_support",
+              "params": [
+                "2"
               ]
             }
           ]
@@ -8336,14 +8347,6 @@
       "def": "The model gains <span class=\"textbf\">Vanguard</span>. The model and Rank-and-File models in the model's unit gain <span class=\"textbf\">First Strike (Hatred)</span>.",
       "type": "attack_attribute",
       "mod": [
-        {
-          "affects": [
-            "offense"
-          ],
-          "stats": {
-            "At": "+1"
-          }
-        },
         {
           "rules": {
             "id": "hatred"
@@ -17832,7 +17835,7 @@
           ],
           "stats": {
             "Ad": "+1",
-            "Ma": "+2"
+            "Ma": "+1"
           }
         }
       ]
