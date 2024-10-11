@@ -1286,6 +1286,27 @@
             {
               "name": "Kuulima's Deceiver",
               "refs": ["kuulima_deceiver", "wizard", "protean_magic", "tag_Daemon"],
+              "magic": {
+                "amount": 4,
+                "spells": [
+                  {
+                    "path": "divination",
+                    "ref": "foresight"
+                  },
+                  {
+                    "path": "evocation",
+                    "ref": "whispers_of_the_veil"
+                  },
+                  {
+                    "path": "thaumaturgy",
+                    "ref": "smite_unbeliever"
+                  },
+                  {
+                    "path": "witchcraft",
+                    "ref": "evil_eye"
+                  }
+                ]
+              },
               "armyHasNotOption": [
                 {
                   "refs": ["kuulima_deceiver"],
@@ -1335,65 +1356,7 @@
                   "option_id": "fnewifm320fm032f32f23",
                   "optionsLabel": "Magic",
                   "minSize": 1,
-                  "maxSize": 1,
-                  "options": [
-                    {
-                      "option_id": "fewf32f2e3f32f2f23f2",
-                      "name": "Protean Magic [2]",
-                      "hide": true,
-                      "cost": 0,
-                      "type": "check",
-                      "magic": {
-                        "amount": 2,
-                        "spells": [
-                          {
-                            "path": "divination",
-                            "ref": "foresight"
-                          },
-                          {
-                            "path": "evocation",
-                            "ref": "whispers_of_the_veil"
-                          },
-                          {
-                            "path": "thaumaturgy",
-                            "ref": "smite_unbeliever"
-                          },
-                          {
-                            "path": "witchcraft",
-                            "ref": "evil_eye"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "option_id": "nfd3i20nf320f32f32",
-                      "name": "Protean Magic [4]",
-                      "cost": 80,
-                      "type": "check",
-
-                      "magic": {
-                        "amount": 4,
-                        "spells": [
-                          {
-                            "path": "divination",
-                            "ref": "foresight"
-                          },
-                          {
-                            "path": "evocation",
-                            "ref": "whispers_of_the_veil"
-                          },
-                          {
-                            "path": "thaumaturgy",
-                            "ref": "smite_unbeliever"
-                          },
-                          {
-                            "path": "witchcraft",
-                            "ref": "evil_eye"
-                          }
-                        ]
-                      }
-                    }
-                  ]
+                  "maxSize": 1
                 },
                 {
                   "type": "group",

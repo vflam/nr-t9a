@@ -10,7 +10,7 @@
   "playable": 1,
   "id": 9,
   "include": [102],
-  "indicators": ["tag_Holy Vows"],
+  "indicators": ["tag_Holy Vows", "gallantry"],
   "hereditary": [
     {
       "path": "hereditary",
@@ -542,6 +542,15 @@
       "name": "Army",
       "optionsLabel": "Categories",
       "maxCost": 4500,
+      "armyHasNotOption": [
+        {
+          "refs": ["gallantry"],
+          "perPoints": 650,
+          "amount": 1,
+          "armyTypeMult": false,
+          "roundUp": true
+        }
+      ],
       "options": [
         {
           "name": "Characters",
@@ -832,6 +841,19 @@
             {
               "name": "Duke",
               "cost": 120,
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["sainted"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["gallantry"]
+                  }
+                }
+              ],
               "options": [
                 {
                   "type": "group",
@@ -964,8 +986,8 @@
                       "type": "check",
                       "name": "Sainted and Gallantry (1)",
                       "cost": 95,
-                      "refs": ["sainted", "army_unique"],
-                      "extraCategories": ["gallantry"],
+                      "refs": ["sainted", "army_unique", "gallantry"],
+
                       "neverHide": true,
                       "hasNotOption": ["army_bsb"],
                       "option_id": "u540wjw0msh2up23fy9n18",
@@ -1297,8 +1319,7 @@
                       "type": "check",
                       "name": "Sainted and Gallantry (1)",
                       "cost": 140,
-                      "refs": ["sainted", "army_unique"],
-                      "extraCategories": ["gallantry"],
+                      "refs": ["sainted", "army_unique", "gallantry"],
                       "option_id": "6f2wsea0c4jn54bkomvem2",
                       "armyHasNotOption": [
                         {
@@ -2292,8 +2313,16 @@
                   "option_id": "c083th70wsbwwkaqt4vgd"
                 }
               ],
-              "refs": ["hedgeKnights", "core_unit", "tag_Human", "tag_Metal Armour"],
-              "extraCategories": ["gallantry"],
+              "refs": [
+                "hedgeKnights",
+                "core_unit",
+                "tag_Human",
+                "tag_Metal Armour",
+                {
+                  "ref": "gallantry",
+                  "amount": 2
+                }
+              ],
               "unit_id": "hedge_knights",
               "option_id": "m4krikjxl65h2pgt9d0tq",
               "logo": "core"
@@ -2826,8 +2855,15 @@
                   "option_id": "h5nfyv0ln6tu9pxj7uysh"
                 }
               ],
-              "refs": ["pegasusKnights", "tag_Human", "tag_Metal Armour"],
-              "extraCategories": ["gallantry"],
+              "refs": [
+                "pegasusKnights",
+                "tag_Human",
+                "tag_Metal Armour",
+                {
+                  "ref": "gallantry",
+                  "amount": 2
+                }
+              ],
               "unit_id": "pegasus_knights",
               "option_id": "3jpyefs2nz85i3r1riox9u",
               "logo": "special"
@@ -2959,11 +2995,10 @@
                   "option_id": "z2en16cxy2n7aaae1sce95"
                 }
               ],
-              "refs": ["skyHeralds", "tag_Human", "tag_Light Armour"],
+              "refs": ["skyHeralds", "tag_Human", "tag_Light Armour", "gallantry"],
               "unit_id": "sky_heralds",
               "option_id": "569vcdgatr5f756hh6r08",
-              "logo": "special",
-              "extraCategories": ["gallantry"]
+              "logo": "special"
             },
             {
               "name": "Yeoman Outriders",
@@ -3171,7 +3206,7 @@
                   "option_id": "qcb95d363qaozloai1vc"
                 }
               ],
-              "refs": ["feyKnight", "fey_steed_or_knight", "tag_Fey", "tag_Metal Armour"],
+              "refs": ["feyKnight", "fey_steed_or_knight", "tag_Fey", "tag_Metal Armour", "gallantry"],
               "unit_id": "fey_knight",
               "option_id": "kox868zrz8nynkooy7r33",
               "logo": "fey"
@@ -3282,7 +3317,6 @@
               "name": "The Lady's Courtier",
               "cost": 410,
               "category": "fey",
-              "extraCategories": ["gallantry"],
               "options": [
                 {
                   "optionsLabel": "Options",
@@ -3293,14 +3327,20 @@
                       "type": "check",
                       "name": "Courtier of the Dawn",
                       "cost": 0,
-                      "refs": ["courtier_of_the_dawn"],
+                      "refs": [
+                        "courtier_of_the_dawn",
+                        {
+                          "ref": "gallantry",
+                          "amount": 2
+                        }
+                      ],
                       "option_id": "jzvs6kxqk7fw4r7rcilbj8"
                     },
                     {
                       "type": "check",
                       "name": "Courtier of the Dusk",
                       "cost": 15,
-                      "refs": ["wizard", "wizardAdept"],
+                      "refs": ["wizard", "wizardAdept", "gallantry"],
                       "option_id": "c0ujr8xvwg54vzruxk8h",
                       "replaceSpells": true,
                       "magic": {
@@ -3342,16 +3382,6 @@
             }
           ],
           "option_id": "qzoh1sumhxcw2xok749nz"
-        },
-        {
-          "name": "Gallantry",
-          "option_id": "fe8fn23i0fn230fd23mdf32f2",
-          "options": [],
-          "refs": ["gallantry"],
-          "maxPerPoints": {
-            "value": 1,
-            "perPoints": 650
-          }
         },
         {
           "name": "Mounts",

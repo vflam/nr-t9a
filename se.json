@@ -16,7 +16,7 @@
       "path": "hereditary"
     }
   ],
-  "indicators": ["sylvan_longbow"],
+  "indicators": ["sylvan_longbow", "sylvan_beasts"],
   "reference_details": {
     "army_general": "General",
     "army_bsb": "Battle Standard",
@@ -32,7 +32,8 @@
     "core_unit": "Core Unit",
     "kin_pathfinder": "Pathfinder",
     "sylvan_monster": "Avatar of Nature, Dragon or Treefather",
-    "sylvan_longbow": "Sylvan Longbow"
+    "sylvan_longbow": "Sylvan Longbow",
+    "sylvan_beasts": "Sylvan Beasts"
   },
   "dictionnary": [
     {
@@ -464,6 +465,13 @@
           "amount": 10,
           "perPoints": 1000,
           "extra": 10,
+          "armyTypeMult": false,
+          "roundUp": true
+        },
+        {
+          "refs": ["sylvan_beasts"],
+          "perPoints": 1500,
+          "amount": 1,
           "armyTypeMult": false,
           "roundUp": true
         }
@@ -1247,7 +1255,16 @@
             {
               "name": "Treefather Ancient",
               "cost": 600,
-              "refs": ["treefather_ancient", "sylvan_monster", "sylvan_spirit", "tag_Sylvan Spirit"],
+              "refs": [
+                "treefather_ancient",
+                "sylvan_monster",
+                "sylvan_spirit",
+                "tag_Sylvan Spirit",
+                {
+                  "ref": "sylvan_beasts",
+                  "amount": 1
+                }
+              ],
               "armyHasNotOption": [
                 {
                   "refs": ["treefather_ancient"],
@@ -1370,7 +1387,16 @@
             {
               "name": "Avatar of Nature",
               "cost": 600,
-              "refs": ["avatar_of_nature", "sylvan_monster", "sylvan_spirit", "tag_Sylvan Spirit"],
+              "refs": [
+                "avatar_of_nature",
+                "sylvan_monster",
+                "sylvan_spirit",
+                "tag_Sylvan Spirit",
+                {
+                  "ref": "sylvan_beasts",
+                  "amount": 2
+                }
+              ],
               "armyHasNotOption": [
                 {
                   "refs": ["avatar_of_nature"],
@@ -2137,7 +2163,14 @@
             {
               "name": "Treefather",
               "cost": 440,
-              "refs": ["treefather", "tag_Sylvan Spirit"],
+              "refs": [
+                "treefather",
+                "tag_Sylvan Spirit",
+                {
+                  "ref": "sylvan_beasts",
+                  "amount": 1
+                }
+              ],
               "override": [
                 {
                   "armyHasOption": [
@@ -2611,7 +2644,18 @@
               "cost": null,
               "category": "mounts",
               "options": [],
-              "refs": ["mount", "sylvan_monster", "dragon_mount_unit", "tag_Beast", "tag_Mount", "flyer"],
+              "refs": [
+                "mount",
+                "sylvan_monster",
+                "dragon_mount_unit",
+                "tag_Beast",
+                "tag_Mount",
+                "flyer",
+                {
+                  "ref": "sylvan_beasts",
+                  "amount": 2
+                }
+              ],
               "unit_id": "forest_dragon_mount",
               "invisible": true,
               "armyHasNotOption": [
