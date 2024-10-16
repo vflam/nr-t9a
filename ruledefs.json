@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 284,
+  "nrversion": 288,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -136,48 +136,6 @@
     "de-dancers_of_yema": {
       "title": "Dancers of Yema",
       "def": "The model gains Aegis (5+, against Melee Attacks), First Strike (+1 Att), Elven Finesse, Weapon Master. It also gains Shield, Hand Weapon, Great Weapon, Halberd, Spear."
-    },
-    "de-giant_see_giant_do": {
-      "title": "Giant See, Giant Do",
-      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/scent_of_blood\">Scent of Blood</nuxt-link></span>."
-    },
-    "de-big_brother": {
-      "title": "Big Brother",
-      "def": "<i> - Universal Rule</i>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
-    },
-    "de-giant_club": {
-      "title": "Giant Club",
-      "def": "<i> - Melee Weapon</i>Attacks made with this weapon gain +1 Strength and +1 Armour Penetration.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "stats": {
-            "AP": "+1",
-            "St": "+1"
-          }
-        }
-      ]
-    },
-    "de-dread_mask": {
-      "title": "Dread Mask",
-      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\">Devastating Charge (Distracting)</span> and can cast <i>Illusory Paths</i> (Witchcraft) as a Bound Spell with Power Level (4/8). In addition, Fear Tests caused by the model and rolls for Flee Distance of enemy units that Break from Combat while in base contact with the model are subject to Maximised Roll."
-    },
-    "de-monstrous_whip": {
-      "title": "Monstrous Whip",
-      "def": "<i> - Universal Rule</i>Rolls for Charge Range of other friendly Gigantic models that are within 12\" of one or more models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/monstrous_whip\">Monstrous Whip</nuxt-link> are subject to Maximised Roll."
     },
     "de-daeb_warfare": {
       "title": "Daeb Warfare",
@@ -663,7 +621,7 @@
     },
     "ong-giant_see_giant_do": {
       "title": "Giant See, Giant Do",
-      "def": "The model gains <span class=\"textbf\">Born to Fight</span>.",
+      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/brood_rivalry\">Brood Rivalry</nuxt-link>, Unruly</span>, and gains Orc.",
       "mod": [
         {
           "rules": [
@@ -1069,10 +1027,6 @@
         }
       ]
     },
-    "ong-belly_flop": {
-      "title": "Belly Flop",
-      "def": "<i> - </i>When declaring a Charge, the model may declare to perform a <nuxt-link class=\"ruleLink\" to=\"/app/rule/belly_flop\">Belly Flop</nuxt-link> in the First Round of Combat. If so, this Special Attack must be made against the Charged unit at the model's Agility.<br>&nbsp;&nbsp;&bull;  The Charged unit suffers 1 hit with Str 5, AP 2, and <span class=\"textbf\">Area Attack (3×4)</span>.<br>&nbsp;&nbsp;&bull;  The model's Defensive Skill is <span class=\"textbf\">set</span> to 1, it cannot perform any other Special Attacks nor Close Combat Attacks, and it becomes Shaken.<br>The effects last until the end of the Round of Combat."
-    },
     "ong-tribe_leader": {
       "title": "Tribe Leader",
       "def": "If the General is a <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/tribe_leader\">Tribe Leader</nuxt-link></span>, apply the following changes to Army List creation:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Max. 10% of the Army Points may be spent on units with Goblin.<br>\t\t<br>&nbsp;&nbsp;&bull;  The -1. Death From Above Army Category Limit is decreased to 20%.<br>\t\t<br>&nbsp;&nbsp;&bull;  The Duplication Limits Max. X items/army (<i>i.e. Max. X units/army, Max. X models/army, and </i>) in the unit profiles of certain units with Orc are modified, as indicated by TL Max. X.<br><i>For example, Max. 1  units/army means that if the General is a <nuxt-link class=\"ruleLink\" to=\"/app/rule/tribe_leader\">Tribe Leader</nuxt-link>, the Duplication Limit becomes Max. 2 units/army</i>.<br>\t"
@@ -1280,7 +1234,7 @@
     },
     "id-giant_see_giant_do": {
       "title": "Giant See, Giant Do",
-      "def": "The model gains <nuxt-link class=\"ruleLink\" to=\"/app/rule/infernal_armour\">Infernal Armour</nuxt-link> and <span class=\"textbf\">Infernal Brand</span>.",
+      "def": "The model gains <nuxt-link class=\"ruleLink\" to=\"/app/rule/infernal_armour\">Infernal Armour</nuxt-link>, Commanding Presence (12\", Insignificant).",
       "mod": [
         {
           "rules": [
@@ -1541,10 +1495,6 @@
     "id-unbranded": {
       "title": "Unbranded",
       "def": "The model cannot take any Army specific Magic Items, and cannot choose <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/curse_of_nezibkesh\">Curse of Nezibkesh</nuxt-link></i> (Hereditary Spell)."
-    },
-    "id-oil_kegs": {
-      "title": "Oil Kegs",
-      "def": "<i> - Universal Rule</i>The model loses Infernal Brand and <nuxt-link class=\"ruleLink\" to=\"/app/rule/infernal_armour\">Infernal Armour</nuxt-link> and gains Light Armour, <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/oil_flasks\">Oil Flasks</nuxt-link></span>, <span class=\"textbf\">Flammable</span>, <span class=\"textbf\">Insignificant</span>, and <span class=\"textbf\">Throwing Weapons (4+)</span> with Shots 4. "
     },
     "id-first_amongst_inferiors": {
       "title": "First Amongst Inferiors",
@@ -2478,27 +2428,6 @@
     "dl-morphlings": {
       "title": "Morphlings",
       "def": "During Pre-game Selections, each unit of Veil Serpents must choose a <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestation</nuxt-link> from the list below and apply the effects during the game:"
-    },
-    "dl-giant_see_giant_do": {
-      "title": "Giant See, Giant Do",
-      "def": "The model gains <span class=\"textbf\">Fearless</span>, <span class=\"textbf\">Frenzy</span>, and <span class=\"textbf\">Supernal</span>. "
-    },
-    "dl-big_brother": {
-      "title": "Big Brother",
-      "def": "<i> - Universal Rule</i>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
     },
     "dl-greater_dominion": {
       "title": "Greater Dominion",
@@ -4151,7 +4080,7 @@
     },
     "bh-giant_see_giant_do": {
       "title": "Giant See, Giant Do",
-      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/drunkard\">Drunkard</nuxt-link></span> and <span class=\"textbf\">Strider (Forest)</span>. At the end of a friendly Movement Phase, if the model is in contact with a Forest Terrain Feature it may lose its current weapon (if applicable) and gain <nuxt-link class=\"ruleLink\" to=\"/app/rule/uprooted_tree\">Uprooted Tree</nuxt-link>.",
+      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/drunkard\">Drunkard</nuxt-link></span> and <span class=\"textbf\">Strider (Forest)</span>. At the end of a friendly Movement Phase, if the model is in contact with a Forest, it may lose all its current weapons and gain <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/uprooted_tree\">Uprooted Tree</nuxt-link></span>.",
       "mod": [
         {
           "rules": {
@@ -4240,21 +4169,6 @@
       "title": "Blood Offering",
       "def": "A unit that includes at least one Character with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/blood_offering\">Blood Offering</nuxt-link></span> may reroll failed Panic Tests at the cost of inflicting one wound with no saves of any kind allowed on a Character with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/blood_offering\">Blood Offering</nuxt-link></span> in the unit."
     },
-    "bh-fame": {
-      "title": "Fame",
-      "def": "<i> - Universal Rule</i>The Beast Giant model part gains <span class=\"textbf\">Harnessed</span> and the model gains an additional model part:<br><br>Friendly units within 6\" of one or more models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/fame\">Fame</nuxt-link> gain a +2 Discipline modifier for Discipline Tests for <nuxt-link class=\"ruleLink\" to=\"/app/rule/primal_instinct\">Primal Instinct</nuxt-link>. The model's range of <nuxt-link class=\"ruleLink\" to=\"/app/rule/fame\">Fame</nuxt-link> is increased to:<br>&nbsp;&nbsp;&bull;  9\" the first time an enemy Large Height model is removed as a casualty due to the model's attacks.<br>&nbsp;&nbsp;&bull;  12\" the first time an enemy Gigantic Height model is removed as a casualty due to the model's attacks.",
-      "mod": [
-        {
-          "rules": {
-            "id": "harnessed"
-          }
-        }
-      ]
-    },
-    "bh-beer_barrel": {
-      "title": "Beer Barrel",
-      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/looted_booze\">Looted Booze</nuxt-link></span>. Once per game, this weapon may be used as a Shooting Weapon with the following profile:"
-    },
     "bh-beast_axe": {
       "title": "Beast Axe",
       "def": "+1 Str, +1 AP, +2 Def, Agi <span class=\"textbf\">set</span> to 0*. This weapon cannot be enchanted with Weapon Enchantments from the list of Common Magic Items.<br>*Always strike at Agility Step 0, regardless of the wielder's Agility.",
@@ -4284,6 +4198,10 @@
       "type": "Shooting Weapon",
       "title": "Hurl Attack",
       "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/hurl_attack\">Hurl Attack</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/hurl_attack\">Hurl Attack</nuxt-link></td><td>4</td><td>24\"</td><td>1</td><td>6</td><td>3</td><td>Artillery, Area Attack (2×2), Multiple Wounds (2), Hatred (towards Aegis)*</td></tr></table>"
+    },
+    "bh-beer_barrel": {
+      "title": "Beer Barrel",
+      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/looted_booze\">Looted Booze</nuxt-link></span>. Once per game, this weapon may be used as a Shooting Weapon with the following profile:"
     },
     "bh-pack_tactics": {
       "title": "Pack Tactics",
@@ -5016,48 +4934,6 @@
       "title": "Steam Cannon",
       "def": "<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Steam Cannon</td><td>3</td><td>36\"</td><td>1</td><td>5</td><td>2</td><td>Artillery, Area Attack (1×3), Direct Hit (D3+1), Unwieldy (1)</td></tr></table>"
     },
-    "eos-giant_see_giant_do": {
-      "title": "Giant See, Giant Do",
-      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/support_unit\">Support Unit</nuxt-link></span>."
-    },
-    "eos-big_brother": {
-      "title": "Big Brother",
-      "def": "<i> - Universal Rule</i>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
-    },
-    "eos-giant_club": {
-      "title": "Giant Club",
-      "def": "<i> - Melee Weapon</i>Attacks made with this weapon gain +1 Strength and +1 Armour Penetration.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "stats": {
-            "AP": "+1",
-            "St": "+1"
-          }
-        }
-      ]
-    },
-    "eos-giant_repeater": {
-      "title": "Giant Repeater",
-      "def": "<i> - </i><span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/volley_gun\">Volley Gun</nuxt-link></span>. Range 24\", Shots 3D6×2, Str 4, AP 4."
-    },
-    "eos-big_fan_of_sunna": {
-      "title": "Big Fan of Sunna",
-      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\">Fury</span>, <span class=\"textbf\">Fearless</span>, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/fanatical\">Fanatical</nuxt-link></span> (see Flagellants unit)."
-    },
     "eos-blessings": {
       "title": "Blessings",
       "def": "A unit containing <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/blessings\">Blessings</nuxt-link></span> gains <span class=\"textbf\">First Strike (Hatred)</span>. Model parts with Mount are not affected. The model can cast the following three Bound Spells (3+), these spells have Type: Caster, and Duration: One Turn.ullorUllor's BlessingThe target's unit gains <span class=\"textbf\">Aegis (5+, against Melee Attacks)</span>.sunnaSunna's BlessingThe target's unit gains <span class=\"textbf\">Flaming Attacks</span>. Each enemy unit in contact with one the target's unit, when the spell is cast, suffers D6 hits with Str 4, AP 0, Flaming Attacks, Magical Attacks.volundVolund's BlessingThe target's unit gains <span class=\"textbf\">Zeal (Melee)</span>.",
@@ -5603,48 +5479,6 @@
         }
       ]
     },
-    "he-giant_see_giant_do": {
-      "title": "Giant See, Giant Do",
-      "def": "The model gains Light Armour and <span class=\"textbf\">Martial Discipline</span>."
-    },
-    "he-big_brother": {
-      "title": "Big Brother",
-      "def": "<i> - Universal Rule</i>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
-    },
-    "he-giant_club": {
-      "title": "Giant Club",
-      "def": "<i> - Melee Weapon</i>Attacks made with this weapon gain +1 Strength and +1 Armour Penetration.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "stats": {
-            "AP": "+1",
-            "St": "+1"
-          }
-        }
-      ]
-    },
-    "he-shoreguardian_bow": {
-      "title": "Shoreguardian Bow",
-      "def": "<i> - </i>Range 24\", Shots 4, Str 5, AP 3."
-    },
-    "he-lion_cloak_and_axe": {
-      "title": "Lion Cloak and Axe",
-      "def": "<i> - Universal Rule</i>The model replaces its Light Armour with <nuxt-link class=\"ruleLink\" to=\"/app/rule/lions_fur\">Lion's Fur</nuxt-link> and gains <span class=\"textbf\">Multiple Wounds (2, against Large and Beasts, Large and Cavalry, Gigantic)</span>."
-    },
     "he-master_of_spellcrafting": {
       "title": "Master of Spellcrafting",
       "def": "The Wizard's Learned Spells have their Casting Value reduced by  1, to a minimum Casting Value of 6."
@@ -6180,44 +6014,6 @@
     "koe-courtier_of_the_dusk": {
       "title": "Courtier of the Dusk",
       "def": "Gallantry(1)<br><br>The model gains Wizard Conclave (2).<br><br>The model selects its spells from the following:"
-    },
-    "koe-giant_see_giant_do": {
-      "title": "Giant See, Giant Do",
-      "def": "The model gains <span class=\"textbf\">Shield</span>, , <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/the_blessing\">The Blessing</nuxt-link></span>, and <span class=\"textbf\">Ordeal</span>, and its Aegis can never be improved beyond Aegis (5+)."
-    },
-    "koe-big_brother": {
-      "title": "Big Brother",
-      "def": "<i> - Universal Rule</i>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
-    },
-    "koe-giant_club": {
-      "title": "Giant Club",
-      "def": "<i> - Melee Weapon</i>Attacks made with this weapon gain +1 Strength and +1 Armour Penetration.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "stats": {
-            "AP": "+1",
-            "St": "+1"
-          }
-        }
-      ]
-    },
-    "koe-knighted_giant": {
-      "title": "Knighted Giant",
-      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\">Devastating Charge (+3 Str, +3 AP)</span>, , Light Armour, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/courage\">Courage</nuxt-link></span>, and loses   <span class=\"textbf\">Ordeal</span> and Shield."
     },
     "koe-knight_banneret": {
       "title": "Knight Banneret",
@@ -7094,7 +6890,7 @@
     },
     "ok-giant_see_giant_do": {
       "title": "Giant See, Giant Do",
-      "def": "The model gains <span class=\"textbf\">Sons of the Avalanche</span> and counts as a Character for the purpose of Sons of the Avalanche.<br>The model is a <span class=\"textbf\">Musician</span>. The range of the model's March to the Beat, and to enemy units that are required to take a March Test due to the Slave Giant, are both extended to 18\".",
+      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\">Deafening Clamour</span>.",
       "mod": [
         {
           "rules": {
@@ -7132,20 +6928,6 @@
           }
         }
       ]
-    },
-    "ok-rage": {
-      "title": "Rage",
-      "def": "<i> - Attack Attribute -- Close Combat</i>Whenever the model loses a Health Point, it gains +1 Attack Value. Whenever it <span class=\"textbf\">Recovers</span> or <span class=\"textbf\">Raises</span> a Health Point, it suffers -1 Attack Value.",
-      "type": "attack_attribute",
-      "mod": [
-        {
-          "special": "rage"
-        }
-      ]
-    },
-    "ok-troll_stew_cauldron": {
-      "title": "Troll Stew Cauldron",
-      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\">Breath Attack (Str 3, AP 1)</span> and <span class=\"textbf\">Fortitude (5+)</span>. If the model has used this Breath Attack, it regains <span class=\"textbf\">Breath Attack (Str 3, AP 1)</span> at the end of a Melee Phase during which the bearer caused at least four Health Point losses against enemy units with Close Combat Attacks and Stomp Attacks."
     },
     "ok-mountain_hide": {
       "title": "Mountain Hide",
@@ -7810,48 +7592,6 @@
       "title": "Salamander",
       "def": "\tThe model gains Resistance (Flaming Attacks), Breath Attack (Str 4, AP 0, Flaming Attacks)."
     },
-    "sa-giant_see_giant_do": {
-      "title": "Giant See, Giant Do",
-      "def": "The model gains +1 Armour and <span class=\"textbf\">Cold Blooded</span>."
-    },
-    "sa-big_brother": {
-      "title": "Big Brother",
-      "def": "<i> - Universal Rule</i>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
-    },
-    "sa-giant_club": {
-      "title": "Giant Club",
-      "def": "<i> - Melee Weapon</i>Attacks made with this weapon gain +1 Strength and +1 Armour Penetration.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "stats": {
-            "AP": "+1",
-            "St": "+1"
-          }
-        }
-      ]
-    },
-    "sa-pet_salamander": {
-      "title": "Pet Salamander",
-      "def": "<i> - </i><span class=\"textbf\">Flamethrower</span>. Range 18\", Shots 1, Str 3 {4}, AP 1 {2}, Flaming Attacks, {Multiple Wounds (D3)}. Whenever a Misfire is rolled, instead of rolling on the Misfire Table, the model suffers D3 hits that wound automatically with no saves of any kind allowed."
-    },
-    "sa-skink_companion": {
-      "title": "Skink Companion",
-      "def": "<i> - Universal Rule</i>The Saurian Giant model part gains <span class=\"textbf\">Poison Attacks</span>. The model gains the following additional model parts:"
-    },
     "sa-chameleon": {
       "title": "Chameleon",
       "def": "\tThe model gains Ambush (Board Edge), Hard Target (1), Scout."
@@ -8152,52 +7892,6 @@
     "se-herald_of_sura": {
       "title": "Herald of Sura",
       "def": "The model's unit is considered to be in <span class=\"textbf\">Soft Cover</span> and within 3\" of a Forest for the purposes of <nuxt-link class=\"ruleLink\" to=\"/app/rule/forest_dweller\">Forest Dweller</nuxt-link>, <nuxt-link class=\"ruleLink\" to=\"/app/rule/elven_cloak\">Elven Cloak</nuxt-link>."
-    },
-    "se-giant_see_giant_do": {
-      "title": "Giant See, Giant Do",
-      "def": "The model gains <span class=\"textbf\">Feigned Flight</span>, , and <span class=\"textbf\">Strider (Forest)</span>."
-    },
-    "se-big_brother": {
-      "title": "Big Brother",
-      "def": "<i> - Universal Rule</i>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
-    },
-    "se-giant_club": {
-      "title": "Giant Club",
-      "def": "<i> - Melee Weapon</i>Attacks made with this weapon gain +1 Strength and +1 Armour Penetration.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "stats": {
-            "AP": "+1",
-            "St": "+1"
-          }
-        }
-      ]
-    },
-    "se-sapling_bow": {
-      "title": "Sapling Bow",
-      "def": "<i> - </i>Range 30\", Shots 1, Str 3 [6], AP 3 [10], Area Attack (1×5), Quick to Fire."
-    },
-    "se-giant_sentinel": {
-      "title": "Giant Sentinel",
-      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\">Light Troops</span>, <span class=\"textbf\">Poison Attacks</span>, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/sapling_bow\">Sapling Bow</nuxt-link> (4+)</span>."
-    },
-    "se-bone_break_dancer": {
-      "title": "Bone Break Dancer",
-      "def": "<i> - Universal Rule</i>At the start of each Round of Combat, choose one of the dances listed below and apply its effects until the end of the Round of Combat. The model cannot choose this dance again until after one of the following has happened:<br>&nbsp;&nbsp;&bull;  The model is no longer Engaged in Combat.<br>&nbsp;&nbsp;&bull;  The model has chosen a different dance.<br>The TwistEnemy units in base contact do not receive any Rank Bonus to their Combat Score.Jump!+1 Armour Penetration and <span class=\"textbf\">Lethal Strike</span>.Belly Dancing+2 Offensive Skill and +2 Defensive Skill.Tap Dancing<span class=\"textbf\">Stomp Attacks (D6+2)</span>."
     },
     "se-the_forest_follows": {
       "title": "The Forest Follows",
@@ -8799,39 +8493,6 @@
           }
         }
       ]
-    },
-    "vc-giant_see_giant_do": {
-      "title": "Giant See, Giant Do",
-      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/ashes_to_ashes\">Ashes to Ashes</nuxt-link></span>, <span class=\"textbf\">Fearless</span>, and <span class=\"textbf\">Undead</span>."
-    },
-    "vc-big_brother": {
-      "title": "Big Brother",
-      "def": "<i> - Universal Rule</i>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
-    },
-    "vc-barrow_giant": {
-      "title": "Barrow Giant",
-      "def": "<i> - Universal Rule</i>The model gains a Halberd and <span class=\"textbf\">Multiple Wounds (2, against Standard)</span>."
-    },
-    "vc-ghoul_giant": {
-      "title": "Ghoul Giant",
-      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\">Poison Attacks</span> and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/unholy_appetite\">Unholy Appetite</nuxt-link></span>."
-    },
-    "vc-zombie_giant": {
-      "title": "Zombie Giant",
-      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\">Stubborn</span>, its Reanimated is <span class=\"textbf\">set</span> to D6+1, and its Offensive Skill and Defensive Skill are <span class=\"textbf\">set</span> to 1. The model does not count as a model with Towering Presence for the purpose of <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/arise\">Arise</nuxt-link>!</i> (Hereditary Spell)."
     },
     "vc-ashes_to_ashes": {
       "title": "Ashes to Ashes",
@@ -9625,48 +9286,6 @@
         }
       ]
     },
-    "ud-giant_see_giant_do": {
-      "title": "Giant See, Giant Do",
-      "def": "The Ancient Giant model part gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/dust_to_dust\">Dust to Dust</nuxt-link></span>, <span class=\"textbf\">Fearless</span>, <span class=\"textbf\">Lethal Strike</span>, and <span class=\"textbf\">Undead</span>."
-    },
-    "ud-big_brother": {
-      "title": "Big Brother",
-      "def": "<i> - Universal Rule</i>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
-    },
-    "ud-giant_club": {
-      "title": "Giant Club",
-      "def": "<i> - Melee Weapon</i>Attacks made with this weapon gain +1 Strength and +1 Armour Penetration.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "stats": {
-            "AP": "+1",
-            "St": "+1"
-          }
-        }
-      ]
-    },
-    "ud-bone_chariot": {
-      "title": "Bone Chariot",
-      "def": "<i> - Universal Rule</i>The model part gains <span class=\"textbf\">Harnessed</span>, <span class=\"textbf\">Impact Hits (D6)</span>, <span class=\"textbf\">Swiftstride</span>, and the model gains the following additional model parts:"
-    },
-    "ud-scarab_giant": {
-      "title": "Scarab Giant",
-      "def": "<i> - Universal Rule</i>The Ancient Giant model part gains <span class=\"textbf\">Harnessed</span>. The model gains <span class=\"textbf\">Distracting</span> and the following additional model part that is not affected by <nuxt-link class=\"ruleLink\" to=\"/app/rule/undying_will\">Undying Will:</nuxt-link>"
-    },
     "ud-hierophant": {
       "title": "Hierophant",
       "def": "<i>An Undying Dynasties army <span class=\"textbf\">must</span> include at least 1 <nuxt-link class=\"ruleLink\" to=\"/app/rule/hierophant\">Hierophant</nuxt-link></i>.<br><br>\t<br>&nbsp;&nbsp;&bull;   If the model has chosen <i>Evocation</i> as its Path of Magic : whenever the model casts the spell <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/death_is_only_the_beginning\">Death is Only the Beginning</nuxt-link></i>, you may choose to <span class=\"textbf\">set</span> its Range to 18\" (<i>i.e. it is not limited to targeting the same unit as the Original Spell, and may instead target any friendly unit within 18\"</i>).<br>\t<br>&nbsp;&nbsp;&bull;   If the model has chosen a different path than <i>Evocation</i> as its Path of Magic : the model knows the Apprentice Spell(<i>#1</i>) in <i>Evocation</i> in addition to its other spells."
@@ -10369,48 +9988,6 @@
       "title": "Cannon Fodder",
       "def": "\tShooting Attacks against enemy units in contact with one or more models with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/cannon_fodder\">Cannon Fodder</nuxt-link></span> gain +1 to hit."
     },
-    "vs-giant_see_giant_do": {
-      "title": "Giant See, Giant Do",
-      "def": "The model gains <span class=\"textbf\">Eagle Standard</span> . In addition, the range of the General's Commanding Presence is <span class=\"textbf\">always</span> set to 18\" when measured to a Verminous Giant."
-    },
-    "vs-big_brother": {
-      "title": "Big Brother",
-      "def": "<i> - Universal Rule</i>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
-    },
-    "vs-giant_club": {
-      "title": "Giant Club",
-      "def": "<i> - Melee Weapon</i>Attacks made with this weapon gain +1 Strength and +1 Armour Penetration.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "stats": {
-            "AP": "+1",
-            "St": "+1"
-          }
-        }
-      ]
-    },
-    "vs-living_bomb": {
-      "title": "Living Bomb",
-      "def": "<i> - Universal Rule</i>When the model is removed as a casualty, all units within 6\" suffer 2D6 hits with Strength 4 and Armour Penetration 1."
-    },
-    "vs-big_sneaker": {
-      "title": "Big Sneaker",
-      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\">Multiple Wounds (2, against  Large, Gigantic)</span> and Paired Weapons . In addition, while within 6\" of any other Large or Gigantic unit or any Terrain Feature other than Open Terrain, the model gains <span class=\"textbf\">Hard Target (1)</span>."
-    },
     "vs-callous": {
       "title": "Callous",
       "def": "The model may use Shooting Attacks against enemy units Engaged in Combat, with the following rules and restrictions:<br>&nbsp;&nbsp;&bull;  Friendly units Engaged in this Combat are ignored for Cover purposes (but not for drawing Line of Sight).<br>&nbsp;&nbsp;&bull;  Roll to hit as normal against the intended target. Immediately after determining the number of hits, roll a D6 for each hit. On a roll of 4+, the hit is distributed onto a randomly chosen friendly unit Engaged with the original target. Otherwise, proceed as normal."
@@ -10908,58 +10485,6 @@
           }
         }
       ]
-    },
-    "dh-giant_see_giant_do": {
-      "title": "Giant See, Giant Do",
-      "def": "The model gains <span class=\"textbf\">Hatred (against Gigantic)</span> and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/sturdy\">Sturdy</nuxt-link></span>."
-    },
-    "dh-rage": {
-      "title": "Rage",
-      "def": "<i> - Attack Attribute -- Close Combat</i>Whenever the model loses a Health Point, it gains +1 Attack Value. Whenever it <span class=\"textbf\">Recovers</span> or <span class=\"textbf\">Raises</span> a Health Point, it suffers -1 Attack Value.",
-      "type": "attack_attribute",
-      "mod": [
-        {
-          "special": "rage"
-        }
-      ]
-    },
-    "dh-big_brother": {
-      "title": "Big Brother",
-      "def": "<i> - Universal Rule</i>The model's Health Points are <span class=\"textbf\">set</span> to 7, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
-    },
-    "dh-giant_club": {
-      "title": "Giant Club",
-      "def": "<i> - Melee Weapon</i>Attacks made with this weapon gain +1 Strength and +1 Armour Penetration.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "stats": {
-            "AP": "+1",
-            "St": "+1"
-          }
-        }
-      ]
-    },
-    "dh-giant_seeker": {
-      "title": "Giant Seeker",
-      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\">Aegis (6+)</span>, <span class=\"textbf\">Fearless</span>, <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/the_bigger_they_are\">The bigger they are</nuxt-link></span>, <span class=\"textbf\">Unbreakable</span>, <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/yer_comin_with_me\">Yer comin' with me</nuxt-link>!</span>, and loses Shield."
-    },
-    "dh-giant_of_the_deep": {
-      "title": "Giant of the Deep",
-      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/shield_wall\">Shield Wall</nuxt-link></span> and Light Armour."
     },
     "dh-shield_wall": {
       "title": "Shield Wall",
@@ -11766,7 +11291,7 @@
     },
     "wdg-primal_legend": {
       "title": "Primal Legend",
-      "def": "\t While the model is on the board, friendly units with <span class=\"textbf\">Fly</span> may not use Flying Movement. In addition, if the model is the General, the maximum sum of <nuxt-link class=\"ruleLink\" to=\"/app/rule/legendary_beasts\">Legendary Beasts</nuxt-link> (1) values in the army is increased by 1."
+      "def": "\t While the model is on the board, friendly units with <span class=\"textbf\">Fly</span> may not use Flying Movement. In addition, if the model is the General, the maximum sum of <nuxt-link class=\"ruleLink\" to=\"/app/rule/legendary_beasts\">Legendary Beasts</nuxt-link> values in the army is increased by 1."
     },
     "wdg-skinning_lash": {
       "title": "Skinning Lash",
@@ -11945,10 +11470,6 @@
     "wdg-writhing_mass": {
       "title": "Writhing Mass",
       "def": "When in the second rank and not in contact with any enemy model, the model can make <span class=\"textbf\">Grind Attack</span> across models in the first rank directly in front of it."
-    },
-    "wdg-favoured_giant": {
-      "title": "Favoured Giant",
-      "def": "<i> - Universal Rule</i>The model loses <nuxt-link class=\"ruleLink\" to=\"/app/rule/battle_fever\">Battle Fever</nuxt-link> and gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/trophy_rack\">Trophy Rack</nuxt-link></span>, <nuxt-link class=\"ruleLink\" to=\"/app/rule/hellforged_armour\">Hellforged Armour</nuxt-link>, Paired Weapons, and counts as a Character for the purpose of issuing, accepting, and refusing Duels."
     },
     "wdg-trophy_rack": {
       "title": "Trophy Rack",
@@ -14815,367 +14336,6 @@
     "df-banner_of_tides": {
       "title": "Banner of Tides",
       "def": "The bearer’s unit gains <span class=\"textbf\">Feigned Flight</span>."
-    },
-    "giants-giant_club": {
-      "title": "Giant Club",
-      "def": "Attacks made with this weapon gain +1 Strength and +1 Armour Penetration.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "stats": {
-            "AP": "+1",
-            "St": "+1"
-          }
-        }
-      ]
-    },
-    "giants-big_brother": {
-      "title": "Big Brother",
-      "def": "The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The roll for the number of hits from its Stomp Attacks is subject to Maximised Roll.",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "=8"
-          }
-        },
-        {
-          "basesize": "75×100"
-        }
-      ]
-    },
-    "giants-uprooted_tree": {
-      "title": "Uprooted Tree",
-      "def": "Attacks made with this weapon hit automatically and have their Strength <span class=\"textbf\">set</span> to 5 and their Armour Penetration <span class=\"textbf\">set</span> to 0.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "stats": {
-            "AP": "=0",
-            "St": "=5",
-            "Of": "=A"
-          }
-        }
-      ]
-    },
-    "giants-beer_barrel": {
-      "title": "Beer Barrel",
-      "def": "The bearer gains <span class=\"textbf\">Looted Booze</span>. Once per game, the weapon may be used as a Shooting Weapon with the following profile:<br>Range 8\", Shots 1, Str 4, AP 0, <span class=\"textbf\">Area Attack (3×3)</span>, <span class=\"textbf\">Reload!</span>, hits automatically. After being used as a Shooting Weapon, the bearer loses Looted Booze."
-    },
-    "giants-fame": {
-      "title": "Fame",
-      "def": "The Beast Giant model part gains <span class=\"textbf\">Harnessed</span> and the model gains an additional model part:<br><br>Friendly units within 6\" of one or more models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/fame\">Fame</nuxt-link> gain a +2 Discipline modifier for Discipline Tests for <nuxt-link class=\"ruleLink\" to=\"/app/rule/primal_instinct\">Primal Instinct</nuxt-link>. The model's range of <nuxt-link class=\"ruleLink\" to=\"/app/rule/fame\">Fame</nuxt-link> is increased to:<br>&nbsp;&nbsp;&bull;  9\" the first time an enemy Large Height model is removed as a casualty due to the model's attacks.<br>&nbsp;&nbsp;&bull;  12\" the first time an enemy Gigantic Height model is removed as a casualty due to the model's attacks.",
-      "mod": [
-        {
-          "rules": {
-            "id": "harnessed"
-          }
-        }
-      ]
-    },
-    "giants-primal_instinct": {
-      "title": "Primal Instinct",
-      "def": "During Choose Equipment and Abilities, each unit containing this Attack Attribute <span class=\"textbf\">must</span> take a Command Test. If the test is passed, all model parts with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/primal_instinct\">Primal Instinct</nuxt-link></span> in the unit gain <span class=\"textbf\">Hatred</span> during this Round of Combat.",
-      "type": "attack_attribute",
-      "startofround": [
-        {
-          "test": {
-            "Di": true
-          },
-          "skiptest": [
-            "crown_of_horns_aura"
-          ],
-          "results": [
-            {
-              "on": [
-                true
-              ],
-              "buffs": [
-                {
-                  "id": "reroll_to_hit"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "giants-mark_of_the_eternal_champion": {
-      "title": "Mark of the Eternal Champion",
-      "def": "If the bearer is not a Wizard, it becomes a <span class=\"textbf\">Wizard Apprentice</span> that does not select spells as normal but always knows <i>Spear of Infinity</i> (Hereditary Spell). If the bearer is already a Wizard, it knows <i>Spear of Infinity</i> in addition to its other spells and cannot select it during Spell Selection."
-    },
-    "giants-withering_vapour": {
-      "title": "Withering Vapour",
-      "def": "",
-      "mod": [
-        {
-          "rules": {
-            "id": "breath_attack",
-            "params": [
-              "Str 3",
-              "AP 2"
-            ]
-          }
-        }
-      ]
-    },
-    "giants-sorcerous_antennae": {
-      "title": "Sorcerous Antennae",
-      "def": "At the start of Siphon the Veil in each of your Magic Phases, choose a single model part in each unit with one or more instances of this Manifestation. The chosen model part gains <span class=\"textbf\">Channel (1)</span> until the end of the Magic Phase."
-    },
-    "giants-living_shield": {
-      "title": "Living Shield",
-      "def": "The model gains <span class=\"textbf\">Parry</span>.",
-      "mod": [
-        {
-          "rules": {
-            "id": "parry"
-          }
-        }
-      ]
-    },
-    "giants-unnatural_roots": {
-      "title": "Unnatural Roots",
-      "def": "A side with one or more models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/unnatural_roots\">Unnatural Roots</nuxt-link> Engaged in Combat when Combat Scores are calculated adds +1 to its Combat Score."
-    },
-    "giants-monstrous_whip": {
-      "title": "Monstrous Whip",
-      "def": "Rolls for Charge Range of other friendly Gigantic models that are within 12\" of one or more models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/monstrous_whip\">Monstrous Whip</nuxt-link> are subject to Maximised Roll."
-    },
-    "giants-dread_mask": {
-      "title": "Dread Mask",
-      "def": "The model gains <span class=\"textbf\">Devastating Charge (Distracting)</span> and can cast <i>Illusory Paths</i> (Witchcraft) as a Bound Spell with Power Level (4/8). In addition, Fear Tests caused by the model and rolls for Flee Distance of enemy units that Break from Combat while in base contact with the model are subject to Maximised Roll."
-    },
-    "giants-giant_seeker": {
-      "title": "Giant Seeker",
-      "def": "The model gains <span class=\"textbf\">Aegis (6+)</span>, <span class=\"textbf\">Fearless</span>, <span class=\"textbf\">The bigger they are</span>, <span class=\"textbf\">Unbreakable</span>, <span class=\"textbf\">Yer comin' with me!</span>, and loses Shield."
-    },
-    "giants-giant_of_the_deep": {
-      "title": "Giant of the Deep",
-      "def": "The model gains <span class=\"textbf\">Shield Wall</span> and Light Armour."
-    },
-    "giants-big_fan_of_sunna": {
-      "title": "Big Fan of Sunna",
-      "def": "The model gains <span class=\"textbf\">Fury</span>, <span class=\"textbf\">Fearless</span>, and <span class=\"textbf\">Fanatical</span> (see Flagellants unit)."
-    },
-    "giants-lion_cloak_and_axe": {
-      "title": "Lion Cloak and Axe",
-      "def": "The model replaces its Light Armour with Lion's Fur and gains <span class=\"textbf\">Multiple Wounds (2, against Large and Beasts, Large and Cavalry, Gigantic)</span>."
-    },
-    "giants-infernal_armour": {
-      "title": "Infernal Armour",
-      "def": "Plate Armour. The wearer gains <span class=\"textbf\">Aegis (5+, against Flaming Attacks)</span>.",
-      "type": "armour",
-      "mod": [
-        {
-          "rules": [
-            {
-              "id": "resistance",
-              "params": [
-                "Flaming Attacks"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "giants-tower_shield": {
-      "title": "Tower Shield",
-      "def": "The model gains Soft Cover against attacks from models Located in its Front Arc, and <span class=\"textbf\">Parry</span>.",
-      "type": "protection",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "rules": {
-            "id": "parry"
-          }
-        }
-      ]
-    },
-    "giants-infernal_lash": {
-      "title": "Infernal Lash",
-      "def": "The model gains +2 Agility. At the start of each Melee Phase, you may choose a single friendly unit within 6\" of the wielder (including the wielder itself). The chosen unit's Close Combat Attacks become <span class=\"textbf\">Flaming Attacks</span> and <span class=\"textbf\">Magical Attacks</span> until the end of the Melee Phase.",
-      "type": "cc_weapon",
-      "stats": {
-        "affects": [
-          0
-        ],
-        "Ag": "+2"
-      }
-    },
-    "giants-oil_kegs": {
-      "title": "Oil Kegs",
-      "def": "The model loses Infernal Brand and <nuxt-link class=\"ruleLink\" to=\"/app/rule/infernal_armour\">Infernal Armour</nuxt-link> and gains Light Armour, <span class=\"textbf\">Oil Flasks</span>, <span class=\"textbf\">Flammable</span>, <span class=\"textbf\">Insignificant</span>, and <span class=\"textbf\">Throwing Weapons (4+)</span> with Shots 4. "
-    },
-    "giants-serf_helper": {
-      "title": "Serf Helper",
-      "def": "The model gains <span class=\"textbf\">Honesty</span> and <span class=\"textbf\">Orison</span> (0), and loses <span class=\"textbf\">Ordeal</span> and Shield."
-    },
-    "giants-knighted_giant": {
-      "title": "Knighted Giant",
-      "def": "The model gains <span class=\"textbf\">Devastating Charge (+3 Str, +3 AP)</span>, , Light Armour, and <span class=\"textbf\">Courage</span>, and loses   <span class=\"textbf\">Ordeal</span> and Shield."
-    },
-    "giants-iron_fist": {
-      "title": "Iron Fist",
-      "def": "This weapon cannot be enchanted with Weapon Enchantments from the List of Common or Shared Magic Items.<br>+1 Arm, +1 Att, and <span class=\"textbf\">Parry</span>.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "Arm": "+1"
-          },
-          "rules": {
-            "id": "parry"
-          }
-        },
-        {
-          "affects": [
-            0
-          ],
-          "stats": {
-            "At": "+1"
-          }
-        }
-      ]
-    },
-    "giants-troll_stew_cauldron": {
-      "title": "Troll Stew Cauldron",
-      "def": "The model gains <span class=\"textbf\">Breath Attack (Str 3, AP 1)</span> and <span class=\"textbf\">Fortitude (5+)</span>. If the model has used this Breath Attack, it regains <span class=\"textbf\">Breath Attack (Str 3, AP 1)</span> at the end of a Melee Phase during which the bearer caused at least four Health Point losses against enemy units with Close Combat Attacks and Stomp Attacks."
-    },
-    "giants-wrecking_ball": {
-      "title": "Wrecking Ball",
-      "def": "The wielder gains <span class=\"textbf\">Fearless</span>, <span class=\"textbf\">Random Movement (3D6\")</span>, <span class=\"textbf\">Shambolic</span>, and <span class=\"textbf\">Grind Attack (D6+X)</span>, where X is equal to the Attack Value modifier the model gains from Rage. The wielder cannot perform any Close Combat Attacks."
-    },
-    "giants-belly_flop": {
-      "title": "Belly Flop",
-      "def": "When declaring a Charge, the model may declare to perform a <nuxt-link class=\"ruleLink\" to=\"/app/rule/belly_flop\">Belly Flop</nuxt-link> in the First Round of Combat. If so, this Special Attack must be made against the Charged unit at the model's Agility.<br>&nbsp;&nbsp;&bull;  The Charged unit suffers 1 hit with Str 5, AP 2, and <span class=\"textbf\">Area Attack (3×4)</span>.<br>&nbsp;&nbsp;&bull;  The model's Defensive Skill is <span class=\"textbf\">set</span> to 1, it cannot perform any other Special Attacks nor Close Combat Attacks, and it becomes Shaken.<br>The effects last until the end of the Round of Combat."
-    },
-    "giants-pet_salamander": {
-      "title": "Pet Salamander",
-      "def": "Whenever a Misfire is rolled, instead of rolling on the Misfire Table, the model suffers D3 hits that wound automatically with no saves of any kind allowed."
-    },
-    "giants-skink_companion": {
-      "title": "Skink Companion",
-      "def": "The Saurian Giant model part gains <span class=\"textbf\">Poison Attacks</span>. The model gains the following additional model parts:"
-    },
-    "giants-bone_break_dancer": {
-      "title": "Bone Break Dancer",
-      "def": "At the start of each Round of Combat, choose one of the dances listed below and apply its effects until the end of the Round of Combat. The model cannot choose this dance again until after one of the following has happened:<br>&nbsp;&nbsp;&bull;  The model is no longer Engaged in Combat.<br>&nbsp;&nbsp;&bull;  The model has chosen a different dance."
-    },
-    "giants-the_twist": {
-      "title": "The Twist",
-      "def": "Enemy units in base contact do not receive any Rank Bonus to their Combat Score."
-    },
-    "giants-giant_sentinel": {
-      "title": "Giant Sentinel",
-      "def": "The model gains <span class=\"textbf\">Light Troops</span>, <span class=\"textbf\">Poison Attacks</span>, and <span class=\"textbf\">Sapling Bow (4+)</span>."
-    },
-    "giants-living_bomb": {
-      "title": "Living Bomb",
-      "def": "When the model is removed as a casualty, all units within 6\" suffer 2D6 hits with Strength 4 and Armour Penetration 1."
-    },
-    "giants-big_sneaker": {
-      "title": "Big Sneaker",
-      "def": "The model gains <span class=\"textbf\">Multiple Wounds (2, against  Large, Gigantic)</span> and Paired Weapons . In addition, while within 6\" of any other Large or Gigantic unit or any Terrain Feature other than Open Terrain, the model gains <span class=\"textbf\">Hard Target (1)</span>."
-    },
-    "giants-bone_chariot": {
-      "title": "Bone Chariot",
-      "def": "The model part gains <span class=\"textbf\">Harnessed</span>, <span class=\"textbf\">Impact Hits (D6)</span>, <span class=\"textbf\">Swiftstride</span>, and the model gains the following additional model parts:"
-    },
-    "giants-scarab_giant": {
-      "title": "Scarab Giant",
-      "def": "The Ancient Giant model part gains <span class=\"textbf\">Harnessed</span>. The model gains <span class=\"textbf\">Distracting</span> and the following additional model part that is not affected by Undying Will:"
-    },
-    "giants-barrow_giant": {
-      "title": "Barrow Giant",
-      "def": "The model gains a Halberd and <span class=\"textbf\">Multiple Wounds (2, against Standard)</span>."
-    },
-    "giants-ghoul_giant": {
-      "title": "Ghoul Giant",
-      "def": "The model gains <span class=\"textbf\">Poison Attacks</span> and <span class=\"textbf\">Unholy Appetite</span>."
-    },
-    "giants-zombie_giant": {
-      "title": "Zombie Giant",
-      "def": "The model gains <span class=\"textbf\">Stubborn</span>, its Reanimated is <span class=\"textbf\">set</span> to D6+1, and its Offensive Skill and Defensive Skill are <span class=\"textbf\">set</span> to 1. The model does not count as a model with Towering Presence for the purpose of <i>Arise!</i> (Hereditary Spell)."
-    },
-    "giants-legendary_beasts": {
-      "title": "Legendary Beasts (1)",
-      "def": "The sum of the <nuxt-link class=\"ruleLink\" to=\"/app/rule/legendary_beasts\">Legendary Beasts</nuxt-link> values stated in brackets of all models in the army is restricted to 1 per 750 Army Points, rounding fractions up."
-    },
-    "giants-monstrous_familiar": {
-      "title": "Monstrous Familiar",
-      "def": "The model gains <span class=\"textbf\">Wizard Apprentice</span>. Instead of selecting spells as normal, it <span class=\"textbf\">must</span> select one of the following spells (during Spell Selection): <i>Living Steel</i> (Alchemy), <i>Pentagram of Pain</i> (Occultism), or <i>Hellfire</i> (Hereditary Spell)."
-    },
-    "giants-tribal_warspear": {
-      "title": "Tribal Warspear",
-      "def": "Attacks with a <nuxt-link class=\"ruleLink\" to=\"/app/rule/tribal_warspear\">Tribal Warspear</nuxt-link> gain +1 Strength and <span class=\"textbf\">Multiple Wounds (D3, against Towering Presence)</span>. Charging enemy units in base contact with the wielder suffer -1 Agility. The wielder gains <span class=\"textbf\">War Platform</span> and <span class=\"textbf\">Not a Leader</span> with the following exception: it can only join units that include at least one Barbarians model.",
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "affects": [
-            0
-          ],
-          "stats": {
-            "St": "+1"
-          }
-        },
-        {
-          "rules": {
-            "id": "multiple_wounds",
-            "params": [
-              "D3"
-            ]
-          },
-          "conditions": [
-            {
-              "against": {
-                "id": "rulebook-towering_presence",
-                "value": true
-              }
-            }
-          ]
-        },
-        {
-          "rules": [
-            {
-              "id": "war_platform"
-            },
-            {
-              "id": "not_a_leader"
-            }
-          ]
-        }
-      ],
-      "ennemymod": [
-        {
-          "affects": [
-            "offense"
-          ],
-          "stats": {
-            "Ag": "-1"
-          },
-          "conditions": [
-            {
-              "charging": true
-            }
-          ]
-        }
-      ]
-    },
-    "giants-favoured_giant": {
-      "title": "Favoured Giant",
-      "def": "The model loses Battle Fever and gains <span class=\"textbf\">Trophy Rack</span>, Hellforged Armour, Paired Weapons, and counts as a Character for the purpose of issuing, accepting, and refusing Duels."
-    },
-    "giants-credits": {
-      "def": "Cover image<br><br>Michele Bertilorenzi<br><br>Conceptual design, support, and rules<br><br>Blonde Beer, Eisenheinrich, Palmu, Scottish Knight, Skipschnit, and The Doctor",
-      "title": "Credits"
     },
     "rulebook-mount": {
       "title": "Mount",

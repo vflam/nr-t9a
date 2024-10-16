@@ -1,7 +1,7 @@
 {
   "name": "Unit Stats",
   "version": 3,
-  "nrversion": 1102,
+  "nrversion": 1104,
   "permission": 10,
   "playable": 0,
   "id": 100,
@@ -2221,50 +2221,6 @@
         "fluff": "\n\tLike the steppes of Augea, the wide prairies of Silexia are home to remarkable megafauna, from giant bison to stranger species. Some live in herds known for earth-shaking stampedes. Corralled by taming school graduates, these beasts provide excellent meat and leather; they can also be trained to develop a bloodscent, and sent into battle on thunderous charges.\n",
         "unit_id": "thunder_pack",
         "option_id": "lj3xztierzfg0rxki1by9m"
-      },
-      "dreaded_giant": {
-        "name": "Dreaded Giant",
-        "cost": "270",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8"
-        },
-        "globalrules": [
-          {
-            "id": "de-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "defenserules": [],
-        "offensename": "Dreaded Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "dreaded_giant",
-        "option_id": "eywzuhh7atm3anta1xzdax"
       }
     },
     "ong": {
@@ -2680,9 +2636,12 @@
         },
         "globalrules": [
           {
-            "id": "ong-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
+            "name": "Giant See",
+            "id": "giant_see"
+          },
+          {
+            "name": "Giant Do",
+            "id": "giant_do"
           },
           {
             "name": "Light Troops",
@@ -4446,49 +4405,6 @@
         "fluff": "\n    Draconic in appearance, wyverns are smaller than dragons, have only two limbs in addition to their wings, and lack both intelligence and firebreathing. Though no other species has been able to tame them, their very wildness gives these venomous flying serpents a close affinity to the Warborn.\n",
         "unit_id": "wyvern_mount",
         "option_id": "d44ot2wg4hmofvrc4gc4qk"
-      },
-      "supplement_giant": {
-        "name": "Supplement Giant",
-        "cost": "310",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8"
-        },
-        "globalrules": [
-          {
-            "id": "ong-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "offensename": "Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "supplement_giant",
-        "option_id": "sl18woyv16dtvrf6lkzuy"
       }
     },
     "id": {
@@ -4653,9 +4569,12 @@
         },
         "globalrules": [
           {
-            "id": "id-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
+            "name": "Giant See",
+            "id": "giant_see"
+          },
+          {
+            "name": "Giant Do",
+            "id": "giant_do"
           },
           {
             "name": "Light Troops",
@@ -6691,50 +6610,6 @@
         "fluff": "\n\tAmbitious dwarves seek positions of power, and the roles of vizier or satrap are certainly appealing to such determined individuals. Viziers advise the overlords, while satraps serve as regional governors overseeing conquered vassals.\n",
         "unit_id": "vizier",
         "option_id": "4lm76ptaznp5z26q6eeq2"
-      },
-      "supplement_citizen_giant": {
-        "name": "Supplement Citizen Giant",
-        "cost": "330",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8"
-        },
-        "globalrules": [
-          {
-            "id": "id-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "defensearmour": [],
-        "offensename": "Citizen Giant",
-        "offense": {
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2",
-          "Ag": "3"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "supplement_citizen_giant",
-        "option_id": "lj1uwwmnlpjkm4pe48zv"
       },
       "mounted_vassal_chieftain": {
         "name": "Mounted Vassal Chieftain",
@@ -9282,52 +9157,6 @@
         "fluff": "\n\tWrithing through the air, seemingly part fish and part serpent, these Veil-attuned predators have no eyes nor other sensory organs, being simply drawn by a nameless hunger and an uncanny ability to locate new victims. They channel their otherworldly powers into spells that drain their prey’s strength and courage, while adapting their forms to the world as they require.\n",
         "unit_id": "veil_serpents",
         "option_id": "wcg6ug2xexo55j47me4ca2"
-      },
-      "possessed_giant": {
-        "name": "Possessed Giant",
-        "cost": "260",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8"
-        },
-        "globalrules": [
-          {
-            "id": "dl-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1",
-          "Aeg": "5+"
-        },
-        "printAeg": "defined",
-        "defenserules": [],
-        "offensename": "Possessed Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "explicitoptions": "<span class=\"textbf\">Big Brother</span>=25,\n\t\t§prename=chaos,name=Mark of the Eternal Champion,cost=40§,\n\t\t\t§prename=chaos,name=,cost=40§,\n\t\t\t§prename=chaos,name=,cost=40§,\n\t\t\t§prename=chaos,name=Living Shield,cost=25§,\n\t\t\t§prename=chaos,name=Unnatural Roots,cost=25§,\n\t\t\t§prename=chaos,name=,cost=20§,\n\t\t\t§prename=chaos,name=Centipede Legs,cost=20§,\n\t\t\t§prename=chaos,name=Chitinous Scales,cost=25§,\n\t\t\t§prename=chaos,name=Dark Hide,cost=15§,\n\t\t\t§prename=chaos,name=A single Manifestation available to the General*§,\n\t\t*See DL Army Book for points=,",
-        "unit_id": "possessed_giant",
-        "option_id": "c3gz661ky9b123pqm4vvo"
       }
     },
     "cl": {
@@ -10940,24 +10769,37 @@
       "beast_giant": {
         "name": "Beast Giant",
         "cost": "270",
-        "type": "Infantry",
-        "size": "",
+        "height": "5",
         "basesize": "50×75",
         "global": {
           "Ad": "7",
-          "Ma": "14",
+          "Ma": "7",
           "Di": "8"
         },
         "globalrules": [
           {
-            "id": "bh-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
+            "name": "Giant See",
+            "id": "giant_see"
           },
-          null
+          {
+            "name": "Giant Do",
+            "id": "giant_do"
+          },
+          {
+            "name": "Light Troops",
+            "id": "light_troops"
+          },
+          {
+            "name": "Terror",
+            "id": "terror"
+          },
+          {
+            "name": "Exclusive",
+            "id": "exclusive"
+          }
         ],
         "defense": {
-          "HP": "7",
+          "HP": "8",
           "Df": "3",
           "Re": "5",
           "Arm": "1"
@@ -10974,9 +10816,19 @@
           {
             "name": "Rage",
             "id": "rage"
+          },
+          {
+            "name": "Stomp Attacks",
+            "id": "stomp_attacks",
+            "params": [
+              "D6"
+            ]
           }
         ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
+        "tags": "Giant, Light Armour",
+        "optionalshootingweaponsdef": "Beer Barrel<i> - Shooting Weapon</i>The model gains <span class=\"textbf\">Looted Booze</span>. Once per game, this weapon may be used as a Shooting Weapon with the following profile: <br><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Beer Barrel</td><td>2</td><td>8\"</td><td>1</td><td>4</td><td>0</td><td>Accurate, Quick to Fire, Area Attack (3×3), March and Shoot</td></tr></table><br>\n<br>\nAfter this weapon has being used as a Shooting Weapon, the model loses <span class=\"textbf\">Looted Booze</span>.",
+        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdefonecolprintoptionalshootingweaponsdeftwocolprintoptionalshootingweaponsdef",
+        "fluff": "\r\n\tTowering humanoids that make up in size what they lack in intellect, some giants have been known to follow migrating beast herds to sate the wanderlust in their hearts. For their part, the beasts are quick to accept the company and protection provided by these dim-witted but loyal allies and drinking partners.\r\n",
         "unit_id": "beast_giant",
         "option_id": "2opbsqy04k47vb9ek9k0ru"
       },
@@ -14035,50 +13887,6 @@
         "fluff": "\r\n\tCombining eagle and lion, the griffon remains a terrifying predator in the wild, though those ridden in battle have been bred in captivity. While commonly called young, these smaller griffons are those that have been neutered in their first year to limit growth and make them easier to train.\r\n",
         "unit_id": "young_griffon_mount",
         "option_id": "rr6ggjfbthkhslfq0ipas"
-      },
-      "imperial_giant": {
-        "name": "Imperial Giant",
-        "cost": "270",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8"
-        },
-        "globalrules": [
-          {
-            "id": "eos-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "defenserules": [],
-        "offensename": "Imperial Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "imperial_giant",
-        "option_id": "f368t0957lwuon4n5pzqj"
       }
     },
     "he": {
@@ -16015,56 +15823,6 @@
         "fluff": "\n\tThe most famous of all the soldiers of Celeda Ablan are those of the Order of the Sword Masters, also known as Paladins of Nab. They are warrior aesthetes par excellence, sometimes dubbed “blade poets” and “painters in red”. Once shunned for embracing the “beauty” of the War Crow, a goddess beloved of dread elves, they’re now a common sight in many armies.\n",
         "unit_id": "sword_masters",
         "option_id": "05tlh0h4o4m30imomz2f2r28"
-      },
-      "highborn_giant": {
-        "name": "Highborn Giant",
-        "cost": "265",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8"
-        },
-        "globalrules": [
-          {
-            "id": "he-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          {
-            "name": "Ancient Allies",
-            "id": "ancient_allies",
-            "params": [
-              "1"
-            ]
-          }
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "defensearmour": [],
-        "offensename": "Highborn Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "highborn_giant",
-        "option_id": "a17bx384p6rzvktpl1f39b"
       }
     },
     "koe": {
@@ -17973,52 +17731,6 @@
         "fluff": "\n\tYeomen hold the highest position of soldiery allowed to the lowborn. These outriders are placed in charge of their lord’s riding horses and dogs, acting as patrolmen and vanguards; their own steeds are bred and famed for swiftness. Yeomen are given the best food and pay among the milites, and are sworn to permanent service to their lord’s household.\n",
         "unit_id": "yeoman_outriders",
         "option_id": "09acsib22bff21pul0zfwvq"
-      },
-      "feudal_giant": {
-        "name": "Feudal Giant",
-        "cost": "295",
-        "addrestriction": "Max. 2 units/army",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8"
-        },
-        "globalrules": [
-          {
-            "id": "koe-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1",
-          "Aeg": "6+"
-        },
-        "defensearmour": [],
-        "offensename": "Feudal Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "feudal_giant",
-        "option_id": "fzjrkuzvb2kgi6ulnnpds"
       }
     },
     "ok": {
@@ -19083,11 +18795,6 @@
         },
         "globalrules": [
           {
-            "id": "ok-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          {
             "name": "Light Troops",
             "id": "light_troops"
           },
@@ -19098,6 +18805,14 @@
           {
             "name": "Exclusive",
             "id": "exclusive"
+          },
+          {
+            "name": "Giant See",
+            "id": "giant_see"
+          },
+          {
+            "name": "Giant Do",
+            "id": "giant_do"
           }
         ],
         "defense": {
@@ -19459,48 +19174,6 @@
         "fluff": "\n\tA strange species of remote mountain dwellers that normally keeps itself hidden, yetis can be coaxed down to fight in exchange for supplies. As large as ogres, they’re adapted to their frozen mountaintops with long hair covering their bodies and the ability to absorb heat directly from other beings.\n",
         "unit_id": "yetis",
         "option_id": "2qlgvzss2roj3dv2av52p"
-      },
-      "supplement_mercenary_giant": {
-        "name": "Supplement Mercenary Giant",
-        "cost": "270",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8"
-        },
-        "globalrules": [
-          {
-            "id": "ok-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "offensename": "Mercenary Giant",
-        "offense": {
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2",
-          "Ag": "3"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "supplement_mercenary_giant"
       }
     },
     "sa": {
@@ -21512,50 +21185,6 @@
         "fluff": "\n    Certain smaller examples of the magna sauria can attack or defend themselves at range, discharging gouts of fire or shards of their own bones – both abilities exploited by saurians for military purposes. Hating fire, saurians are particularly keen that salamanders are pointed in a direction where their undesirable jets of flame can at least do some good.\n",
         "unit_id": "weapon_beasts",
         "option_id": "id3hxtltqz2lgsv4uh56p"
-      },
-      "saurian_giant": {
-        "name": "Saurian Giant",
-        "cost": "275",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8"
-        },
-        "globalrules": [
-          {
-            "id": "sa-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "defensearmour": [],
-        "offensename": "Saurian Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "saurian_giant",
-        "option_id": "onnl7wf3511tbl9wga8nh"
       }
     },
     "se": {
@@ -23525,50 +23154,6 @@
         "fluff": "\n\tMadness accompanies those who have surrendered to the path of the hunt, for they are the heralds of the Forest King himself. Savage and belligerent, festooned with scrimshaw bones and teeth, the crazed deerback charge of a band of huntsmen has been known to break even the steadiest of lines, for the world trembles whenever the Wild Hunt rides forth.\n",
         "unit_id": "wild_huntsmen",
         "option_id": "dljdwj3ctl579uwan3v0lo"
-      },
-      "sylvan_giant": {
-        "name": "Sylvan Giant",
-        "cost": "270",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8"
-        },
-        "globalrules": [
-          {
-            "id": "se-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "defensearmour": [],
-        "offensename": "Sylvan Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "sylvan_giant",
-        "option_id": "5m53hwdr3cbdz5wrk158iw"
       }
     },
     "vc": {
@@ -26336,51 +25921,6 @@
         "fluff": "\n    Groaning, shambling hordes of the recently slain, these mindless cadavers can overwhelm the living through sheer weight of numbers. Driven by the souls of simple creatures, their instincts are basic and animalistic, seeking only to grasp and dismember whatever they encounter.\n",
         "unit_id": "zombies",
         "option_id": "oozgiaxl0kdoej0r6wq3q"
-      },
-      "corpse_giant": {
-        "name": "Corpse Giant",
-        "cost": "275",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "7",
-          "Rsr": "1"
-        },
-        "globalrules": [
-          {
-            "id": "vc-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "defenserules": [],
-        "offensename": "Corpse Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "corpse_giant",
-        "option_id": "r7m3ty7qz5phxadqxmqic"
       }
     },
     "ud": {
@@ -27513,7 +27053,7 @@
             "id": "poison_attacks"
           }
         ],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion and <span class=\"textbf\">Ghastly Swarm</span>*=30/model,\n\t\t=,\n\t\t*Cannot be taken with <span class=\"textbf\">Ambush</span>. 4, and 7.=\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion and <span class=\"textbf\">Ghastly Swarm</span>*=30/model,\n\t\t=,\n\t\t*Cannot be taken with <span class=\"textbf\">Ambush</span>. Max. 4 models/unit, and Max. 7 models/army.=\n\t",
         "fluff": "\n    A lone, docile scarab is a jewel among beetles, and a holy symbol in Naptesh. But in an undead, hungry swarm, these flesh-eating insects can attack from any hidden crevice, overwhelming and devouring victims in minutes thanks to their razor sharp mandibles and acidic secretions.\n",
         "unit_id": "scarab_swarms",
         "option_id": "75nw1g3lb0dceqae8m9kp"
@@ -28331,51 +27871,6 @@
         "fluff": "\n    Despite Naptesh’s perilous reputation, there are always those foolish enough to attempt to rob its sacred tombs. Some desecrators even escape unscathed – until they are visited by the Desert’s avengers. From the skies they descend, like angels of death: flying stone creatures armed with long blades, exacting retribution with swiftness and efficiency.\n",
         "unit_id": "tomb_reapers",
         "option_id": "68ro8yq8ji56vka3inpwz8"
-      },
-      "ancient_giant": {
-        "name": "Ancient Giant",
-        "cost": "275",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8",
-          "Rsr": "1"
-        },
-        "globalrules": [
-          {
-            "id": "ud-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "defenserules": [],
-        "offensename": "Ancient Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "ancient_giant",
-        "option_id": "bw30wjwswqg8l4egmoq72s"
       }
     },
     "vs": {
@@ -30174,50 +29669,6 @@
         "fluff": "\n\tThe term for the javelin-welding skirmishers of the ancients has been somewhat misappropriated by the Vermin. These detachments are equipped with knives and simple ranged weapons, used to harry enemies and draw their formations out of position.\n",
         "unit_id": "vermin_slingers",
         "option_id": "wbmyfsqzval0ccxw8yflwz9"
-      },
-      "verminous_giant": {
-        "name": "Verminous Giant",
-        "cost": "270",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "7"
-        },
-        "globalrules": [
-          {
-            "id": "vs-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          null
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "defenserules": [],
-        "offensename": "Verminous Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "verminous_giant",
-        "option_id": "4lxfpjvqz3qb3uv01kma0f"
       }
     },
     "dh": {
@@ -31639,69 +31090,6 @@
         "fluff": "\r\n\tHold dwarves draw comfort from all things solid and unchanging, particularly earthen minerals. Their kings are often carried to battle on stone constructs designed for combat; proximity to the ancient rock gives the rider confidence and authority. It also has the advantage of raising the monarch to a height at which their great deeds can be witnessed across the field.\r\n",
         "unit_id": "war_throne_mount",
         "option_id": "zxvq71y49zahl2tkeytlrq"
-      },
-      "giant_dwarf": {
-        "name": "Giant Dwarf",
-        "cost": "330",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "5",
-          "Ma": "15",
-          "Di": "9"
-        },
-        "globalrules": [
-          {
-            "id": "dh-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          {
-            "name": "Fear",
-            "id": "fear"
-          },
-          {
-            "name": "Towering Presence",
-            "id": "towering_presence"
-          }
-        ],
-        "defense": {
-          "HP": "6",
-          "Df": "3",
-          "Re": "6",
-          "Arm": "1"
-        },
-        "defensearmour": [
-          {
-            "name": "Shield",
-            "id": "shield"
-          }
-        ],
-        "offensename": "Giant Dwarf",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          },
-          {
-            "name": "Stomp Attacks",
-            "id": "stomp_attacks",
-            "params": [
-              "D3"
-            ]
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "giant_dwarf",
-        "option_id": "19rng7bo528nuspnf4c8a7"
       }
     },
     "wdg": {
@@ -33263,9 +32651,12 @@
         },
         "globalrules": [
           {
-            "id": "wdg-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
+            "name": "Giant See",
+            "id": "giant_see"
+          },
+          {
+            "name": "Giant Do",
+            "id": "giant_do"
           },
           {
             "name": "Light Troops",
@@ -33983,52 +33374,6 @@
         "fluff": "\n\tFormer Warriors who incur the Dark Gods’ wrath, and whom even Father Chaos does not save, always have further to fall. Rock bottom rests in the forms of these tortured creatures. Misshapen figures betraying just the barest vestiges of their former selves, they seem to exist only to shamble in the direction of the enemies of their one-time comrades.\n",
         "unit_id": "wretched_ones",
         "option_id": "nsqmu9gk7fxpxe1inefq9"
-      },
-      "supplement_marauding_giant": {
-        "name": "Supplement Marauding Giant",
-        "cost": "290",
-        "type": "Infantry",
-        "size": "",
-        "basesize": "50×75",
-        "global": {
-          "Ad": "7",
-          "Ma": "14",
-          "Di": "8"
-        },
-        "globalrules": [
-          {
-            "id": "wdg-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
-          },
-          {
-            "name": "Legendary Beasts",
-            "id": "legendary_beasts"
-          }
-        ],
-        "defense": {
-          "HP": "7",
-          "Df": "3",
-          "Re": "5",
-          "Arm": "1"
-        },
-        "offensename": "Marauding Giant",
-        "offense": {
-          "Ag": "3",
-          "At": "5",
-          "Of": "3",
-          "St": "5",
-          "AP": "2"
-        },
-        "offenserules": [
-          {
-            "name": "Rage",
-            "id": "rage"
-          }
-        ],
-        "toggles": "onecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef",
-        "unit_id": "supplement_marauding_giant",
-        "option_id": "ssnrr66jcz7vzza49z4j7d"
       }
     },
     "mh": {
@@ -34672,11 +34017,13 @@
         },
         "globalrules": [
           {
-            "id": "mh-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
+            "name": "Giant See",
+            "id": "giant_see"
           },
-          null
+          {
+            "name": "Giant Do",
+            "id": "giant_do"
+          }
         ],
         "defense": {
           "HP": "7",
@@ -35824,11 +35171,13 @@
         },
         "globalrules": [
           {
-            "id": "al-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
+            "name": "Giant See",
+            "id": "giant_see"
           },
-          null
+          {
+            "name": "Giant Do",
+            "id": "giant_do"
+          }
         ],
         "defense": {
           "HP": "7",
@@ -42146,9 +41495,12 @@
         },
         "globalrules": [
           {
-            "id": "er-giant_see_giant_do",
-            "name": "Giant See, Giant Do",
-            "params": []
+            "name": "Giant See",
+            "id": "giant_see"
+          },
+          {
+            "name": "Giant Do",
+            "id": "giant_do"
           }
         ],
         "defense": {
