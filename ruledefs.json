@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 288,
+  "nrversion": 294,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -5807,6 +5807,14 @@
           "stats": {
             "Arm": "+3",
             "Df": "+3"
+          }
+        },
+        {
+          "affects": [
+            "defense"
+          ],
+          "stats": {
+            "Arm": "<5"
           }
         }
       ]
@@ -14939,24 +14947,7 @@
     "rulebook-wizard_conclave": {
       "title": "Wizard Conclave",
       "def": "When deploying the unit, choose one <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> in the unit with <nuxt-link class=\"ruleLink\" to=\"/app/rule/wizard_conclave\">Wizard Conclave</nuxt-link> as the Conduit. This choice can be changed at the start of your <nuxt-link class=\"ruleLink\" to=\"/app/rule/magic_phase\">Magic Phase</nuxt-link>. The Conduit knows <span class=\"textbf\">X <nuxt-link class=\"ruleLink\" to=\"/app/rule/spells\">spells</nuxt-link></span>, and if X is 2 or larger it also gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel</nuxt-link> (1)</span>. The <nuxt-link class=\"ruleLink\" to=\"/app/rule/spells\">spells</nuxt-link> are chosen for the whole unit <i>(i.e. changing Conduit does not change the <nuxt-link class=\"ruleLink\" to=\"/app/rule/spells\">spells</nuxt-link> known)</i>, are written on the Army List, and are chosen from the list of available <nuxt-link class=\"ruleLink\" to=\"/app/rule/spells\">spells</nuxt-link> listed in the Unit Entry. <i>Note that <nuxt-link class=\"ruleLink\" to=\"/app/rule/wizard_conclave\">Wizard Conclaves</nuxt-link> cannot swap <nuxt-link class=\"ruleLink\" to=\"/app/rule/spells\">spells</nuxt-link> for the Hereditary spell.</i>",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "HP": "+1"
-          },
-          "conditions": [
-            {
-              "hasrule": {
-                "id": "rulebook-champion",
-                "value": true
-              }
-            }
-          ]
-        }
-      ]
+      "unique": true
     },
     "rulebook-mindless": {
       "title": "Mindless",
@@ -15259,24 +15250,42 @@
     },
     "rulebook-spear": {
       "title": "Spear",
-      "def": "Mounted <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link> cannot use <nuxt-link class=\"ruleLink\" to=\"/app/rule/spear\">Spears</nuxt-link>. +1 Agi, <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/fight_in_extra_rank\">Fight in Extra Rank</nuxt-link></span>, <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/lethal_strike\">Lethal Strike</nuxt-link> (against Swiftstride)</span>*. *Cannot be used when Charging.",
+      "def": "Mounted <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link> cannot use <nuxt-link class=\"ruleLink\" to=\"/app/rule/spear\">Spears</nuxt-link>. +1 Agi, <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/fight_in_extra_rank\">Fight in Extra Rank</nuxt-link></span>, +3 AP against <nuxt-link class=\"ruleLink\" to=\"/app/rule/swiftstride\">Swiftstride*</nuxt-link>. *AP Bonus Cannot be used when Charging.",
       "type": "cc_weapon",
       "mod": [
         {
           "rules": {
             "id": "fight_in_extra_rank"
-          },
+          }
+        },
+        {
+          "affects": [
+            0
+          ],
           "stats": {
             "Ag": "+1"
           }
         },
         {
-          "rules": {
-            "id": "lethal_strike"
+          "affects": [
+            0
+          ],
+          "stats": {
+            "AP": "=3"
           },
           "conditions": [
             {
               "charging": false
+            },
+            {
+              "opponent": [
+                {
+                  "hasrule": {
+                    "id": "rulebook-swiftstride",
+                    "value": true
+                  }
+                }
+              ]
             }
           ]
         }
@@ -15708,10 +15717,6 @@
     "rulebook-standard_melee_attacks": {
       "def": "The most common type of attack in the <nuxt-link class=\"ruleLink\" to=\"/app/rule/melee_phase\">Melee Phase</nuxt-link> is the Standard Melee Attack, which all <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link> can perform provided they have an Attack Value on their profile <i>(see <nuxt-link class=\"ruleLink\" to=\"/app/rule/characteristic_profiles\">Characteristic Profiles</nuxt-link> in the <nuxt-link class=\"ruleLink\" to=\"/app/rule/definitions_and_terminology\">Definitions and Terminology</nuxt-link> chapter)</i>. To resolve these <nuxt-link class=\"ruleLink\" to=\"/app/rule/attacks\">attacks</nuxt-link>, roll a number of D6 equal to the Attack Value of the attacking <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> part. This roll is called a to-hit roll.<br><br>Compare the attacking <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> part's Offensive Skill with the target <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model's</nuxt-link> Defensive Skill and consult the table below for the needed <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">dice</nuxt-link> roll to score a successful hit. A natural roll of ‘1’ is always a failure. Both tables present the same relation, visualised in different ways.<br><br><table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">  <tr>    <td><span class=\"textbf\">Offensive Skill -<br>Defensive Skill</span></td>    <td><span class=\"textbf\">Needed roll to hit</span><br></td>  </tr>  <tr>    <td>4 or more</td>    <td>2+<br></td>  </tr>  <tr>    <td>1 to 3</td>    <td>3+<br></td>  </tr>  <tr>    <td>-3 to 0</td>    <td>4+<br></td>  </tr>  <tr>    <td>-4 or less</td>    <td>5+</td>  </tr></table><br><br>Once you have determined the number of hits, follow the <nuxt-link class=\"ruleLink\" to=\"/app/rule/attack_sequence\">Attack Sequence</nuxt-link>, using the Strength, Armour Penetration, and on the profile of the attacking <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> part, potentially modified by things like Weapon, <nuxt-link class=\"ruleLink\" to=\"/app/rule/spells\">Spells</nuxt-link> and <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">Model</nuxt-link> Rules.<br><br><h5>Non-<nuxt-link class=\"ruleLink\" to=\"/app/rule/standard_melee_attacks\">Standard Melee Attacks</nuxt-link></h5><br>Attacks that do not fall under the category of <nuxt-link class=\"ruleLink\" to=\"/app/rule/standard_melee_attacks\">Standard Melee Attacks</nuxt-link>, have their own specific rules for <nuxt-link class=\"ruleLink\" to=\"/app/rule/determining_the_number_of_hits\">determining the number of hits</nuxt-link>, as well as the Strength, Armour Penetration, and additional rules to use.<br><br><h5></h5><br><br><table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">  <tr>    <td></td>    <td><span class=\"textbf\">Off 1</span></td>    <td><span class=\"textbf\">Off 2</span></td>    <td><span class=\"textbf\">Off 3</span></td>    <td><span class=\"textbf\">Off 4</span></td>    <td><span class=\"textbf\">Off 5</span></td>    <td><span class=\"textbf\">Off 6</span></td>    <td><span class=\"textbf\">Off 7</span></td>    <td><span class=\"textbf\">Off 8</span></td>    <td><span class=\"textbf\">Off 9</span></td>    <td><span class=\"textbf\">Off 10</span><br></td>  </tr>  <tr>    <td><span class=\"textbf\">Def 1</span></td>    <td>4+</td>    <td>3+</td>    <td>3+</td>    <td>3+</td>    <td>2+</td>    <td>2+</td>    <td>2+</td>    <td>2+</td>    <td>2+</td>    <td>2+<br></td>  </tr>  <tr>    <td><span class=\"textbf\">Def 2</span></td>    <td>4+</td>    <td>4+</td>    <td>3+</td>    <td>3+</td>    <td>3+</td>    <td>2+</td>    <td>2+</td>    <td>2+</td>    <td>2+</td>    <td>2+<br></td>  </tr>  <tr>    <td><span class=\"textbf\">Def 3</span></td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>3+</td>    <td>3+</td>    <td>3+</td>    <td>2+</td>    <td>2+</td>    <td>2+</td>    <td>2+<br></td>  </tr>  <tr>    <td><span class=\"textbf\">Def 4</span></td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>3+</td>    <td>3+</td>    <td>3+</td>    <td>2+</td>    <td>2+</td>    <td>2+<br></td>  </tr>  <tr>    <td><span class=\"textbf\">Def 5</span></td>    <td>5+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>3+</td>    <td>3+</td>    <td>3+</td>    <td>2+</td>    <td>2+<br></td>  </tr>  <tr>    <td><span class=\"textbf\">Def 6</span></td>    <td>5+</td>    <td>5+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>3+</td>    <td>3+</td>    <td>3+</td>    <td>2+<br></td>  </tr>  <tr>    <td><span class=\"textbf\">Def 7</span></td>    <td>5+</td>    <td>5+</td>    <td>5+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>3+</td>    <td>3+</td>    <td>3+<br></td>  </tr>  <tr>    <td><span class=\"textbf\">Def 8</span></td>    <td>5+</td>    <td>5+</td>    <td>5+</td>    <td>5+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>3+</td>    <td>3+<br></td>  </tr>  <tr>    <td><span class=\"textbf\">Def 9</span></td>    <td>5+</td>    <td>5+</td>    <td>5+</td>    <td>5+</td>    <td>5+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>3+<br></td>  </tr>  <tr>    <td><span class=\"textbf\">Def 10</span></td>    <td>5+</td>    <td>5+</td>    <td>5+</td>    <td>5+</td>    <td>5+</td>    <td>5+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>    <td>4+</td>  </tr></table>",
       "title": "Standard Melee Attacks"
-    },
-    "rulebook-general": {
-      "def": "/subsection{the_general}",
-      "title": "General"
     },
     "rulebook-model": {
       "title": "model",
@@ -16160,6 +16165,10 @@
     "rulebook-make_way": {
       "def": "Sometimes <nuxt-link class=\"ruleLink\" to=\"/app/rule/characters\">characters</nuxt-link> find themselves <nuxt-link class=\"ruleLink\" to=\"/app/rule/engaged_in_combat\">Engaged in Combat</nuxt-link>, but not in contact with any enemy <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link>. When this happens, the Character may be eligible for a <nuxt-link class=\"ruleLink\" to=\"/app/rule/make_way\">Make Way</nuxt-link> move.<br><br>To be able to perform a <nuxt-link class=\"ruleLink\" to=\"/app/rule/make_way\">Make Way</nuxt-link> move, the Character:<br><br>&nbsp;&nbsp;&bull;  Must be in the First Rank of its unit.<br><br>&nbsp;&nbsp;&bull;  Must not be in contact with any enemy <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link>.<br><br>&nbsp;&nbsp;&bull;  Must not have a <nuxt-link class=\"ruleLink\" to=\"/app/rule/mismatching_bases\">Mismatching Bases</nuxt-link>.<br><br><nuxt-link class=\"ruleLink\" to=\"/app/rule/make_way\">Make Way</nuxt-link> moves are performed when Choosing Equipment and Abilities. The Character switches positions with a Rank-and-File <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> or <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link> in its unit that is in contact with an enemy. The <nuxt-link class=\"ruleLink\" to=\"/app/rule/characters\">Characters</nuxt-link> must end up in a legal position. <i>Normally this means that the Character can only swap positions with <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link> in the Front Rank.  </i>",
       "title": "Make Way"
+    },
+    "rulebook-general": {
+      "def": "An army may include a <nuxt-link class=\"ruleLink\" to=\"/app/rule/general\">General</nuxt-link>, and this upgrade is One of a Kind. A <nuxt-link class=\"ruleLink\" to=\"/app/rule/general\">General</nuxt-link> gains <nuxt-link class=\"ruleLink\" to=\"/app/rule/commanding_presence\">Commanding Presence</nuxt-link>.",
+      "title": "General"
     },
     "rulebook-battle_standard_bearer": {
       "def": "1beastmanBSB_Hardstyle.pngHardstyle<br>An army may include a <nuxt-link class=\"ruleLink\" to=\"/app/rule/battle_standard_bearer\">Battle Standard Bearer</nuxt-link>, and this upgrade is <span class=\"textbf\">One of a Kind</span>.<br><br>A <nuxt-link class=\"ruleLink\" to=\"/app/rule/battle_standard_bearer\">Battle Standard Bearer</nuxt-link> gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/rally_around_the_flag\">Rally Around the Flag</nuxt-link></span> <i>(See Appendix I: <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">Model</nuxt-link> Rules)</i>, and if the <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> has the option to buy Magic Items, it is allowed to buy a Banner Enchantment.",
@@ -17698,7 +17707,7 @@
     },
     "custom-general": {
       "title": "General",
-      "def": ""
+      "def": "An army may include a <nuxt-link class=\"ruleLink\" to=\"/app/rule/general\">General</nuxt-link>, and this upgrade is One of a Kind.<br><br>A <nuxt-link class=\"ruleLink\" to=\"/app/rule/general\">General</nuxt-link> gains Commanding Presence"
     },
     "custom-reroll_to_hit": {
       "mod": [
