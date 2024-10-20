@@ -32,7 +32,7 @@
     "scorption_trebuchet": "Scorpion or Trebuchet",
     "gallantry": "Gallantry",
     "fey_steed_or_knight": "Fey Steed or Fey Knight",
-    "siegeOrLowBorn": "Siege Weapon, Lowborn Archers or Hooded Men",
+    "tag_Siege": "Siege",
     "tag_Holy Vows": "Holy Vows"
   },
   "dictionnary": [
@@ -2052,16 +2052,16 @@
                   "option_id": "zt8i8p6tbalrh1zew6pya"
                 }
               ],
-              "refs": ["lowbornArchers", "siegeOrLowBorn", "core_unit", "tag_Human"],
+              "refs": ["lowbornArchers", "tag_Siege", "core_unit", "tag_Human"],
               "unit_id": "lowborn_archers",
               "armyHasNotOption": [
                 {
                   "refs": ["lowbornArchers"],
-                  "amount": 3
+                  "amount": 4
                 },
                 {
-                  "refs": ["siegeOrLowBorn"],
-                  "amount": 3
+                  "refs": ["tag_Siege"],
+                  "amount": 4
                 }
               ],
               "option_id": "jey2rx78j6bxf4ofwwuvnh",
@@ -2396,32 +2396,17 @@
                   "option_id": "c991ttabuagu89h1fz0ymi"
                 },
                 {
-                  "option_id": "f2309fj23fsdfdsf09ewc32fc3",
-                  "type": "check",
-                  "invisible": true,
-                  "hide": true,
-                  "refs": ["siegeOrLowBorn"],
-                  "hasOption": ["hooded_men"],
-                  "override": [
-                    {
-                      "hasOption": [
-                        {
-                          "refs": ["hooded_men"],
-                          "amount": 1
-                        }
-                      ],
-                      "options": {
-                        "minAmount": 1
-                      }
-                    }
-                  ]
-                },
-                {
                   "type": "check",
                   "name": "Prepared Position",
                   "cost": 20,
-                  "refs": [],
-                  "option_id": "g34g34fdhlku34wf32y54h43hb534"
+                  "refs": ["prepared_position"],
+                  "option_id": "g34g34fdhlku34wf32y54h43hb534",
+                  "armyHasNotOption": [
+                    {
+                      "refs": ["prepared_position"],
+                      "amount": 3
+                    }
+                  ]
                 }
               ],
               "refs": ["enlistedOutlaws", "tag_Human", "tag_Siege"],
@@ -2430,6 +2415,10 @@
                 {
                   "refs": ["enlistedOutlaws"],
                   "amount": 2
+                },
+                {
+                  "refs": ["tag_Siege"],
+                  "amount": 4
                 }
               ],
               "option_id": "m9gfosyqh9dyx77w2ploai",
@@ -2912,7 +2901,7 @@
                   "option_id": "9kcg3w210mu4n5u6msrukd"
                 }
               ],
-              "refs": ["siegeWarMachine", "siegeOrLowBorn", "tag_Human", "tag_Construct", "tag_Siege"],
+              "refs": ["siegeWarMachine", "tag_Human", "tag_Construct", "tag_Siege"],
               "unit_id": "siege_war_machine",
               "option_id": "s1vhwn5eadnbuzush217ml",
               "logo": "special",
@@ -2920,6 +2909,10 @@
                 {
                   "refs": ["siegeWarMachine"],
                   "amount": 2
+                },
+                {
+                  "refs": ["tag_Siege"],
+                  "amount": 4
                 }
               ]
             },
