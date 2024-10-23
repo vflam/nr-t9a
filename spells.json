@@ -1,6 +1,6 @@
 {
   "name": "Spells",
-  "nrversion": 352,
+  "nrversion": 354,
   "version": "2023",
   "permission": 1,
   "playable": 0,
@@ -536,7 +536,7 @@
         {
           "number": "2",
           "name": "Entwining Roots",
-          "description": "The target suffers -2\" Cha and -2\" Mob, both to a minimum of 2\".<br>\n\n\tIf the target or the caster is in contact with a Forest when the spell is cast:<br>\n\tThe target suffers D6 hits with Str 4, AP1, and Magical Attacks. These hits are resolved immediately when the spell is cast.",
+          "description": "Range: can be cast 6\" from Forest.<br/><br/>The target suffers -2\" Cha and -2\" Mob, both to a minimum of 2\".<br>\n\n\tIf the target or the caster is in contact with a Forest when the spell is cast:<br>\n\tThe target suffers D6 hits with Str 4, AP1, and Magical Attacks. These hits are resolved immediately when the spell is cast. In addition the target suffers −2 Agi to a minimum of 1.",
           "cast": [
             {
               "value": "7",
@@ -551,12 +551,12 @@
           "number": "3",
           "name": "Healing Waters",
           "ref": "healing_waters",
-          "description": "The target gains <span class=\"textbf\">Fortitude (6+)</span> and <span class=\"textbf\">Fortitude (+1)</span>.<br>\n\t\n\tIf the target or the caster is in contact with a Water Terrain when the spell is cast:<br>\n\tThe target also gains <span class=\"textbf\">Immune (Flaming Attacks)</span>.",
+          "description": "Range: You can measure the distance either from the Caster or from a chosen Water Terrain.<br/><br/>The target gains Hard Target (1) and Magic Resistance (2).",
           "cast": [
             {
-              "value": "9",
-              "range": "18",
-              "types": ["Augment"],
+              "value": "10",
+              "range": "6",
+              "types": ["Aura", "Augment"],
               "duration": 1
             }
           ]
@@ -568,12 +568,12 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Augment"],
+              "types": ["Damage", "Hex"],
               "duration": 0,
-              "value": "10"
+              "value": "8"
             }
           ],
-          "description": "The target gains <span class=\"textbf\">Poison Attacks (Melee)</span>.<br>\n\t\n\tIf the target or the caster is in contact with a Field when the spell is cast:<br>\n\tThe target also gains <span class=\"textbf\">Poison Attacks (Shooting)</span>."
+          "description": "Range: can be cast 6\" from Field.<br/><br/>The target suffers 3D3 hits with Str 3, AP 1, and Magical Attacks. Against units with Light Troops these hits are instead resolved with Str 4 and AP 2."
         },
         {
           "number": "5",
@@ -631,14 +631,9 @@
           "cast": [
             {
               "value": "7",
-              "range": "",
+              "range": "24",
               "types": ["Hex", "Damage"],
-              "duration": 0,
-              "effects": [
-                {
-                  "type": "damage"
-                }
-              ]
+              "duration": 0
             }
           ],
           "ref": "touch_of_the_reaper"
@@ -652,12 +647,7 @@
               "value": "9",
               "range": "8",
               "types": ["Aura", "Augment"],
-              "duration": 1,
-              "effects": [
-                {
-                  "type": "special"
-                }
-              ]
+              "duration": 1
             }
           ],
           "ref": "danse_macabre"
