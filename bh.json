@@ -6,9 +6,10 @@
   },
   "short": "bh",
   "version": "3rd ed",
-  "nrversion": 358,
+  "nrversion": 361,
   "id": 2,
   "include": [102],
+  "indicators": ["sticks_and_stones", "eyeballers"],
   "playable": 1,
   "hereditary": [
     {
@@ -28,7 +29,9 @@
     "dominant": "Dominant",
     "sizeGigantic": "Gigantic Size",
     "core_unit": "Core Unit",
-    "soothsayer": "Soothsayer"
+    "soothsayer": "Soothsayer",
+    "sticks_and_stones": "Sticks and Stones",
+    "eyeballers": "Eyeballers"
   },
   "dictionnary": [
     {
@@ -78,9 +81,9 @@
         {
           "type": "check",
           "name": "Hawthorne Curse",
-          "cost": 50,
+          "cost": 60,
           "armyHasNotOption": ["we_bh_hawthrone_curse"],
-          "refs": ["weaponEnchantUni", "we_bh_hawthrone_curse"],
+          "refs": ["weaponEnchantUni", "we_bh_hawthrone_curse", "eyeballers"],
           "hasNotOption": [
             {
               "refs": ["weaponEnchantUni"],
@@ -93,6 +96,27 @@
           ],
           "description": "<span class=\"textbf\">Devastating Charge (+2 Str, +2 AP)</span>. The weapon can be used as a Shooting Weapon (3+) with the following profile: Range 18\", Shots 1, Str 3 [], AP 10, <span class=\"textbf\">Area Attack (1×5)</span>, [] <span class=\"textbf\">Direct Hit (D3)</span>. This Shooting Attack never suffers negative to-hit modifiers.",
           "option_id": "rh0cwwhe1wnc7675whhedm"
+        },
+        {
+          "type": "check",
+          "name": "Ancestral Carvings",
+          "cost": 50,
+          "armyHasNotOption": [
+            {
+              "refs": ["we_bh_ancestral_carvings"],
+              "amount": 3
+            }
+          ],
+          "refs": ["weaponEnchantUni", "we_bh_ancestral_carvings"],
+          "hasNotOption": [
+            {
+              "refs": ["weaponEnchantUni"],
+              "amount": 1
+            }
+          ],
+          "hasOption": ["soothsayer"],
+          "description": "+2 Att, +2 Str and +2 AP. <span class=\"textbf\">Distracting (1)</span>.",
+          "option_id": "dodc9odxm6edd4ap7yx2fj"
         }
       ],
       "option_id": "cdos44tz5lhd7rfizdhyef"
@@ -123,27 +147,6 @@
     {
       "refs": ["weaponEnchant"],
       "options": [
-        {
-          "type": "check",
-          "name": "Ancestral Carvings",
-          "cost": 50,
-          "armyHasNotOption": [
-            {
-              "refs": ["we_bh_ancestral_carvings"],
-              "amount": 3
-            }
-          ],
-          "refs": ["weaponEnchantUni", "we_bh_ancestral_carvings"],
-          "hasNotOption": [
-            {
-              "refs": ["weaponEnchantUni"],
-              "amount": 1
-            }
-          ],
-          "hasOption": ["soothsayer"],
-          "description": "+2 Att, +2 Str and +2 AP. <span class=\"textbf\">Distracting (1)</span>.",
-          "option_id": "dodc9odxm6edd4ap7yx2fj"
-        },
         {
           "type": "check",
           "name": "Supernatural Dexterity",
@@ -185,7 +188,7 @@
           "cost": 80,
           "refs": ["la_bh_aagor"],
           "armyHasNotOption": ["la_bh_aagor"],
-          "description": "+1 Res and <span class=\"textbf\">Fortitude (4)</span>. The model automatically fails all  its Armour Saves.",
+          "description": "+1 Res and <span class=\"textbf\">Fortitude (4+)</span>. The model automatically fails all its Armour Saves. Model loses Light Armour and Metal Armour.",
           "option_id": "bzpqrp8lfu796elpz9kv6d"
         },
         {
@@ -215,10 +218,10 @@
         {
           "type": "check",
           "name": "Obscuring Fog",
-          "cost": 10,
+          "cost": 15,
           "refs": ["se_bh_obc"],
           "armyHasNotOption": ["se_bh_obc"],
-          "description": "<span class=\"textbf\">Afflict (-1 Agi)</span>. The bearer's unit does not benefit from +1 Agi from Charging Momentum.",
+          "description": "<span class=\"textbf\">Afflict (-1 Agi)</span>.",
           "option_id": "8orv2975humrs3yrjlmyod"
         }
       ],
@@ -233,17 +236,18 @@
           "cost": 50,
           "refs": ["art_bh_pilla"],
           "armyHasNotOption": ["art_bh_pilla"],
-          "description": "All friendly units within 12\" of the bearer comprised entirely of Razortusks, single model units of Raiding Chariots, or Razortusk Chariots (excluding Characters() gain <span class=\"textbf\">Vanguard</span>.",
+          "description": "All friendly units  of Razortusks,  Raiding Chariots and Razortusk Chariots, excluding Characters, within 12\" of the bearer gain <span class=\"textbf\">Vanguard</span>.",
           "option_id": "op4e6wx0lh8fgscz0ff4f"
         },
         {
           "type": "check",
-          "name": "Inscribing Burin",
-          "cost": 20,
-          "refs": ["art_bh_burin"],
-          "armyHasNotOption": ["art_bh_burin"],
-          "description": "While the bearer is in contact with a Forest, all friendly units in contact with any Forest on the Battlefield gain <span class=\"textbf\">Magic Resistance (2)</span>.",
-          "option_id": "fvb3s2z4cp8k34y32ow0pt"
+          "name": "Horn of Bragh",
+          "cost": 40,
+          "refs": ["art_horn_Bragh"],
+          "hasNotOption": ["mount"],
+          "armyHasNotOption": ["art_horn_Bragh"],
+          "description": "<span class=\"textbf\">Fury</span> and <span class=\"textbf\">Dying Blow</span>",
+          "option_id": "dsad21dd1d21d12"
         },
         {
           "type": "check",
@@ -256,11 +260,11 @@
         },
         {
           "type": "check",
-          "name": "Crown of Horns",
+          "name": "Crown of Madness",
           "cost": 45,
           "refs": ["art_bh_crownhorn"],
           "armyHasNotOption": ["art_bh_crownhorn"],
-          "description": "The bearer's unit and all units within range of its <span class=\"textbf\">Commanding Presence</span> (if applicable) automatically pass Command Tests taken due to <span class=\"textbf\">Primal Instinct</span>.",
+          "description": "The wearer's unit gain Unruly and First Strike (Stubborn). In addition, all units with Unruly within range of the wearer's Commanding Presence (<i>if applicable</i>) gain First Strike (Stubborn).",
           "option_id": "ihki12slfspyh2jooujgrp"
         },
         {
@@ -288,10 +292,10 @@
         {
           "type": "check",
           "name": "Seed of the Dark Forest",
-          "cost": 35,
+          "cost": 40,
           "refs": ["art_bh_seed", "before_game_start", "one_use_item"],
           "armyHasNotOption": ["art_bh_seed"],
-          "description": "During Pre-game Selections, place a Forest:\n\t\t<br>&nbsp;&nbsp;&bull;   Touching your Deployment Zone.<br>&nbsp;&nbsp;&bull;   Not in contact with any other Terrain Feature except Open Terrain.<br>\n\tThis Forest may not be larger than 10\" in length and 6\" in width.",
+          "description": "During Pre-game Selections, place a Forest:\n\t\t<br>&nbsp;&nbsp;&bull;   Touching your Deployment Zone.<br>&nbsp;&nbsp;&bull;   Not in contact with any other Terrain Feature .<br>\n\tThis Forest is a 106\" rectangle.<br>All friendly units with Pack Tactics gain Scout, but their scout deployment must end fully inside this Forest.<br>",
           "option_id": "zghtfkske5sunlosr8phil"
         },
         {
@@ -323,6 +327,18 @@
       "name": "Army",
       "optionsLabel": "Categories",
       "maxCost": 4500,
+      "armyHasNotOption": [
+        {
+          "refs": ["sticks_and_stones"],
+          "amount": 10,
+          "perPoints": 600
+        },
+        {
+          "refs": ["eyeballers"],
+          "amount": 1,
+          "perPoints": 1500
+        }
+      ],
       "options": [
         {
           "name": "Characters",
@@ -447,7 +463,8 @@
                       "name": "Throwing Weapons (4+)",
                       "cost": 5,
                       "ignoreCost": true,
-                      "option_id": "7yck6ulohd4vpmg3iyawah"
+                      "option_id": "7yck6ulohd4vpmg3iyawah",
+                      "refs": ["sticks_and_stones"]
                     },
                     {
                       "type": "group",
@@ -555,7 +572,7 @@
             },
             {
               "name": "Beast Chieftain",
-              "cost": 85,
+              "cost": 60,
               "override": [
                 {
                   "hasOption": [
@@ -590,7 +607,7 @@
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
-                      "cost": 0,
+                      "cost": 55,
                       "optionsLabel": "Options",
                       "options": [
                         {
@@ -604,11 +621,17 @@
                       "option_id": "6c9mlr1duwbd8rmqbyiq1"
                     },
                     {
+                      "option_id": "f32fewedmf23j89c023h9df23c2",
+                      "name": "Exclusive",
+                      "type": "check",
+                      "cost": 25
+                    },
+                    {
                       "type": "check",
                       "armyHasNotOption": ["army_bsb"],
                       "refs": ["army_bsb", "not_a_leader"],
                       "name": "Battle Standard Bearer",
-                      "cost": 50,
+                      "cost": 75,
                       "option_id": "cfve3wv34wbv34eg34gv34g34g34"
                     }
                   ]
@@ -723,7 +746,8 @@
                       "name": "Throwing Weapons (4+)",
                       "cost": 5,
                       "ignoreCost": true,
-                      "option_id": "nft1n7qc2tbdxpa3oeqn6l"
+                      "option_id": "nft1n7qc2tbdxpa3oeqn6l",
+                      "refs": ["sticks_and_stones"]
                     },
                     {
                       "type": "group",
@@ -1146,7 +1170,7 @@
                         {
                           "type": "check",
                           "name": "Beast Axe",
-                          "cost": 20,
+                          "cost": 25,
                           "maxSize": 1,
                           "optionsSuffix": " (Beast Axe)",
                           "optionsLabel": "Beast Axe Enchant",
@@ -1201,7 +1225,7 @@
             },
             {
               "name": "Minotaur Chieftain",
-              "cost": 190,
+              "cost": 160,
               "options": [
                 {
                   "type": "group",
@@ -1221,15 +1245,21 @@
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
-                      "cost": 25,
+                      "cost": 30,
                       "option_id": "f9rdj99iuc8ir8tk8fdxw"
+                    },
+                    {
+                      "option_id": "dew2f23f23f23f23h823d923",
+                      "name": "Exclusive",
+                      "type": "check",
+                      "cost": 30
                     },
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
                       "refs": ["army_bsb", "not_a_leader"],
                       "armyHasNotOption": ["army_bsb"],
-                      "cost": 75,
+                      "cost": 80,
                       "options": [],
                       "option_id": "f34fsdfsf32g34gh34f43f43"
                     }
@@ -1340,7 +1370,7 @@
                         {
                           "type": "check",
                           "name": "Beast Axe",
-                          "cost": 20,
+                          "cost": 25,
                           "maxSize": 1,
                           "optionsSuffix": " (Beast Axe)",
                           "optionsLabel": "Beast Axe Enchant",
@@ -1395,7 +1425,7 @@
             },
             {
               "name": "Centaur Chieftain",
-              "cost": 185,
+              "cost": 160,
               "refs": ["centaur_chieftain", "tag_Centaur", "tag_Metal Armour"],
               "armyHasNotOption": [
                 {
@@ -1429,15 +1459,21 @@
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
-                      "cost": 0,
+                      "cost": 55,
                       "option_id": "wyfsbkorp5dzlnp00cc2v"
+                    },
+                    {
+                      "option_id": "d21d21d32fn2389fh239fhn932f",
+                      "name": "Exclusive",
+                      "type": "check",
+                      "cost": 25
                     },
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
                       "refs": ["army_bsb", "not_a_leader"],
                       "armyHasNotOption": ["army_bsb"],
-                      "cost": 50,
+                      "cost": 75,
                       "options": [],
                       "option_id": "du6hwju4czmqs4qp81nm87"
                     }
@@ -1519,7 +1555,8 @@
                       "name": "Throwing Weapons (4+)",
                       "cost": 5,
                       "ignoreCost": true,
-                      "option_id": "w0mrp5ppf61bfjqcux26h"
+                      "option_id": "w0mrp5ppf61bfjqcux26h",
+                      "refs": ["sticks_and_stones"]
                     },
                     {
                       "type": "group",
@@ -1541,7 +1578,7 @@
                         {
                           "type": "check",
                           "name": "Paired Weapons",
-                          "cost": 20,
+                          "cost": 15,
                           "maxSize": 1,
                           "optionsLabel": "Paired Weapons Enchant",
                           "optionsSuffix": " (Paired Weapons)",
@@ -1705,13 +1742,15 @@
                               "type": "check",
                               "name": "Throwing Weapons (5+)",
                               "cost": 1,
-                              "option_id": "9dcdbl0dwr7dhogn6p3ne"
+                              "option_id": "9dcdbl0dwr7dhogn6p3ne",
+                              "refs": ["sticks_and_stones"]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons and Throwing Weapons (5+)",
                               "cost": 2,
-                              "option_id": "ty1dybkz1kqd3sheueyfq4"
+                              "option_id": "ty1dybkz1kqd3sheueyfq4",
+                              "refs": ["sticks_and_stones"]
                             }
                           ],
                           "option_id": "sb3o3qtpgcsdibc4atu77d"
@@ -1970,7 +2009,7 @@
             {
               "name": "Mongrel Raiders",
               "cost": 70,
-              "refs": ["mongrel_raiders", "core_unit", "tag_Warherd"],
+              "refs": ["mongrel_raiders", "core_unit", "tag_Warherd", "sticks_and_stones"],
               "armyHasNotOption": [
                 {
                   "refs": ["mongrel_raiders"],
@@ -2289,7 +2328,7 @@
             },
             {
               "name": "Minotaurs",
-              "cost": 25,
+              "cost": 35,
               "refs": ["minotaurs", "tag_Minotaur", "tag_Light Armour"],
               "armyHasNotOption": [
                 {
@@ -2300,14 +2339,14 @@
               "options": [
                 {
                   "minSize": 3,
-                  "maxSize": 6,
+                  "maxSize": 10,
                   "addToUnitSize": true,
                   "options": [
                     {
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 65,
+                      "cost": 55,
                       "options": [
                         {
                           "type": "group",
@@ -2323,13 +2362,13 @@
                             {
                               "type": "check",
                               "name": "Great Weapon",
-                              "cost": 10,
+                              "cost": 8,
                               "option_id": "w70v7fufbk9bjgpxuo8cf"
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
-                              "cost": 10,
+                              "cost": 4,
                               "option_id": "ruzytx4e5qcwt4v05wg8h"
                             }
                           ],
@@ -2506,8 +2545,8 @@
                             },
                             {
                               "type": "check",
-                              "name": "Lance",
-                              "cost": 7,
+                              "name": "Light Lance",
+                              "cost": 2,
                               "option_id": "nmzzm2p2cym5pr680ng757"
                             }
                           ],
@@ -2520,7 +2559,8 @@
                               "name": "Throwing Weapons (5+)",
                               "cost": 4,
                               "type": "check",
-                              "option_id": "d03ovs7uflknwqi7kvqej"
+                              "option_id": "d03ovs7uflknwqi7kvqej",
+                              "refs": ["sticks_and_stones"]
                             }
                           ],
                           "option_id": "oz8g0q0q9cfxb7e53cr3wd"
@@ -2696,7 +2736,7 @@
             {
               "name": "Razortusk Herd",
               "refs": ["razortusk_herd", "tag_Beast"],
-              "cost": 20,
+              "cost": 25,
               "armyHasNotOption": [
                 {
                   "refs": ["razortusk_herd"],
@@ -2713,7 +2753,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 55,
+                      "cost": 50,
                       "option_id": "5858piwowpiaw0gqhzv2wf",
                       "refs": ["razortusk_herd_amount"]
                     }
@@ -2756,7 +2796,7 @@
             {
               "name": "Gargoyles",
               "refs": ["gargoyles", "tag_Beast"],
-              "cost": 78,
+              "cost": 100,
               "armyHasNotOption": [
                 {
                   "refs": ["gargoyles"],
@@ -2765,7 +2805,7 @@
               ],
               "options": [
                 {
-                  "minSize": 7,
+                  "minSize": 5,
                   "maxSize": 10,
                   "addToUnitSize": true,
                   "options": [
@@ -2808,8 +2848,8 @@
           "options": [
             {
               "name": "Cyclops",
-              "refs": ["cyclop", "tag_Cyclops"],
-              "cost": 330,
+              "refs": ["cyclop", "tag_Cyclops", "eyeballers"],
+              "cost": 340,
               "armyHasNotOption": [
                 {
                   "refs": ["cyclop"],
@@ -2823,7 +2863,7 @@
             {
               "name": "Gortach",
               "refs": ["gortach", "tag_Minotaur"],
-              "cost": 440,
+              "cost": 420,
               "armyHasNotOption": [
                 {
                   "refs": ["gortach"],
@@ -2837,7 +2877,7 @@
             {
               "name": "Jabberwock",
               "refs": ["jabberwock", "tag_Beast"],
-              "cost": 280,
+              "cost": 270,
               "armyHasNotOption": [
                 {
                   "refs": ["jabberwock"],

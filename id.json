@@ -6,7 +6,7 @@
   },
   "short": "id",
   "version": "2023 beta2",
-  "nrversion": 388,
+  "nrversion": 389,
   "playable": 1,
   "id": 8,
   "include": [102],
@@ -16,7 +16,7 @@
       "path": "hereditary"
     }
   ],
-  "indicators": ["fires_of_industry"],
+  "indicators": ["fires_of_industry", "black_powder"],
   "reference_details": {
     "army_general": "General",
     "army_bsb": "Battle Standard",
@@ -28,7 +28,8 @@
     "weaponEnchantUni": "Weapon Enchant",
     "dominant": "Dominant",
     "core_unit": "Core Unit",
-    "fires_of_industry": "Fires of Industry"
+    "fires_of_industry": "Fires of Industry",
+    "black_powder": "Black Powder"
   },
   "dictionnary": [
     {
@@ -49,8 +50,8 @@
         {
           "type": "check",
           "name": "Flame of the East",
-          "cost": 60,
-          "description": "Flaming Attacks, Volcanic Embrace(D6+1).\n",
+          "cost": 50,
+          "description": "Flaming Attacks, Volcanic Embrace (D3+1).\n",
           "refs": ["flame of the east_jfbk6kse", "weaponEnchantUni", "id_special_item"],
           "hasNotOption": ["weaponEnchantUni"],
           "hasStat": {
@@ -119,7 +120,7 @@
         {
           "type": "check",
           "name": "Onyx Core",
-          "cost": 90,
+          "cost": 80,
           "armyHasNotOption": ["we_id_onyx"],
           "refs": ["id_special_item", "weaponEnchantUni", "we_id_onyx"],
           "hasNotOption": ["weaponEnchantUni"],
@@ -135,8 +136,8 @@
         {
           "type": "check",
           "name": "Banner of the Twice-Branded",
-          "cost": 55,
-          "description": "Models in the bearer's unit gain <span class=\"textbf\">Shoot in Extra Rank</span>. In addition, the bearer may activate the following One Use Only effect in the Charge Phase, immediately after all Charge Moves have been resolved, and if the bearer's unit was successfully Charged during this phase:<br>\n\tThe bearer's unit may perform a Combat Reform (<i>following the normal rules for Combat Reforms</i>).\n",
+          "cost": 30,
+          "description": "Models in the bearer's unit gain <span class=\"textbf\">Shoot in Extra Rank</span>.\n",
           "refs": ["id_banner_twice_branded", "id_special_item"],
           "armyHasNotOption": [
             {
@@ -220,7 +221,7 @@
           "type": "check",
           "name": "Blaze of Protection",
           "cost": 65,
-          "description": "Arm is <span class=\"textbf\">set</span> to 6. Every enemy model in contact with the wearer's model that could allocate attacks towards it but doesn't, suffers 1 hit with Str 4, AP 0, and <span class=\"textbf\">Flaming Attacks</span>.\n",
+          "description": "Arm is <span class=\"textbf\">set</span> to 6. At the end of Agility Step 0, each  enemy model in contact with the bearer's model that could have allocated attacks towards it, but chose not to, suffers 1 hit with Str 4, AP 0, <span class=\"textbf\">Magical Attacks</span>, and <span class=\"textbf\">Flaming Attacks</span>.\n",
           "refs": ["id_special_item", "blaze of protection_g4n0jp9o"],
           "armyHasNotOption": [
             {
@@ -249,7 +250,7 @@
           "type": "check",
           "name": "Kadim Binding",
           "cost": 25,
-          "description": "Aegis (+1, against Flaming Attacks, max. 3+), Parry. The bearer's weapons lose <span class=\"textbf\">Two-Handed</span> if they had it.\n",
+          "description": "Aegis (+1, against Flaming Attacks, max. 3+), , .\n",
           "refs": ["id_special_item", "kadim binding_2duxeqy"],
           "armyHasNotOption": [
             {
@@ -300,7 +301,7 @@
         {
           "type": "check",
           "name": "Golden Idol of Shamut",
-          "cost": 30,
+          "cost": 35,
           "description": "If the bearer's model is Height 1 it gains <span class=\"textbf\">Ghost Step</span>, its Cha is <span class=\"textbf\">set</span> to 4\" and its Mob is <span class=\"textbf\">set</span> to 6\". In addition, the bearer can cast <i>Flaming Swords</i> (Pyromancy) as a Bound Spell (3+).",
           "refs": ["id_special_item", "golden idol of shamut_5zfn92k"],
           "armyHasNotOption": [
@@ -324,7 +325,7 @@
         {
           "type": "check",
           "name": "Mask of Ages",
-          "cost": 35,
+          "cost": 40,
           "description": "The bearer gains Aegis (5+, against Grind Attack, Impact Hits, Magical Attacks, and Stomp Attacks), Terror, Hatred.\n",
           "refs": ["id_special_item", "mask of ages_vj6or7u"],
           "armyHasNotOption": [
@@ -376,7 +377,7 @@
         {
           "type": "check",
           "name": "Tablet of Vezodinezh",
-          "cost": 60,
+          "cost": 50,
           "description": "When the bearer attempts to cast a Learned Spell using four or more Magic Dice, treat a single rolled ‘1’ or ‘2’ as a natural ‘3’.",
           "refs": ["id_special_item", "tablet of vezodinezh_mygyzo4t", "dominant"],
           "armyHasNotOption": [
@@ -416,7 +417,12 @@
         {
           "refs": ["fires_of_industry"],
           "amount": 1,
-          "perPoints": 750
+          "perPoints": 800
+        },
+        {
+          "refs": ["black_powder"],
+          "amount": 10,
+          "perPoints": 400
         }
       ],
       "options": [
@@ -435,7 +441,7 @@
                   "lenient": true
                 }
               ],
-              "refs": ["overlord_unit", "tag_Dwarf", "tag_Metal Armour"],
+              "refs": ["overlord_unit", "tag_Dwarf", "tag_Metal Armour", { "ref": "black_powder", "amount": 2 }],
               "armyHasNotOption": [
                 {
                   "refs": ["overlord_unit"],
@@ -637,7 +643,8 @@
                       "name": "Blunderbuss (5+)",
                       "cost": 5,
                       "ignoreCost": true,
-                      "option_id": "scc384uajfjkrzb7u4zxn"
+                      "option_id": "scc384uajfjkrzb7u4zxn",
+                      "refs": [{ "ref": "black_powder", "amount": 2 }]
                     },
                     {
                       "optionsLabel": "Armour Enchant",
@@ -686,7 +693,7 @@
                           "amount": 2
                         }
                       ],
-                      "cost": 80,
+                      "cost": 30,
                       "type": "check",
                       "option_id": "wg7c5eh745gnjm9evn0iba",
                       "refs": ["taurukh_ritual", "beast"]
@@ -730,7 +737,7 @@
                     {
                       "name": "Prophet of Lugar",
                       "type": "check",
-                      "cost": 25,
+                      "cost": 30,
                       "refs": ["prophet_lugar"],
                       "armyHasNotOption": [
                         {
@@ -744,7 +751,7 @@
                     {
                       "name": "Prophet of Nezibkesh",
                       "type": "check",
-                      "cost": 45,
+                      "cost": 30,
                       "refs": ["prophet_nezibkesh"],
                       "armyHasNotOption": [
                         {
@@ -770,7 +777,7 @@
                     {
                       "name": "Prophet of Ashuruk",
                       "type": "check",
-                      "cost": 35,
+                      "cost": 30,
                       "refs": ["prophet_ashuruk"],
                       "magic": {
                         "spells": [
@@ -927,7 +934,7 @@
                     },
                     {
                       "name": "Seat of Authority",
-                      "cost": 50,
+                      "cost": 40,
                       "refopt": "seat_of_authority_mount",
                       "option_id": "3dxcu861ca3wmcr5v1pdpf",
                       "hasOption": ["prophet_ashuruk"]
@@ -949,27 +956,27 @@
                     {
                       "name": "Kadim Chariot",
                       "refopt": "kadim_chariot_mount",
-                      "cost": 35,
+                      "cost": 75,
                       "hasOption": ["prophet_lugar"],
                       "option_id": "yehy3mak685lw4gabvqpu"
                     },
                     {
                       "name": "Infernal Bastion",
                       "refopt": "infernal_bastion_mount",
-                      "cost": 260,
+                      "cost": 300,
                       "hasOption": ["prophet_nezibkesh"],
                       "option_id": "qa1656z71qan9u166k31m"
                     },
                     {
                       "name": "Bull of Shamut",
-                      "cost": 140,
+                      "cost": 150,
                       "refopt": "bull_of_shamut_mount",
                       "hasOption": ["prophet_shamut"],
                       "option_id": "2hilwff7z96ir0yp7pmbnn"
                     },
                     {
                       "name": "Great Bull of Shamut",
-                      "cost": 390,
+                      "cost": 380,
                       "refopt": "great_bull_of_shamut_mount",
                       "hasOption": [
                         {
@@ -1046,7 +1053,8 @@
                           "cost": 5,
                           "ignoreCost": true,
                           "option_id": "k708m0sjvsrgtgqywaz4h",
-                          "hasOption": ["prophet_nezibkesh"]
+                          "hasOption": ["prophet_nezibkesh"],
+                          "refs": [{ "ref": "black_powder", "amount": 2 }]
                         },
                         {
                           "type": "check",
@@ -1060,7 +1068,8 @@
                           "options": [],
                           "optionsDict": ["flintlockAxeEnchant"],
                           "hasOption": ["prophet_nezibkesh"],
-                          "option_id": "ravof14mvxibpqkoaiq97h"
+                          "option_id": "ravof14mvxibpqkoaiq97h",
+                          "refs": [{ "ref": "black_powder", "amount": 2 }]
                         }
                       ],
                       "option_id": "jxs54029ms89g8borxui9"
@@ -1184,7 +1193,7 @@
             },
             {
               "name": "Vizier",
-              "cost": 90,
+              "cost": 70,
               "options": [
                 {
                   "type": "group",
@@ -1204,13 +1213,19 @@
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
-                      "cost": 0,
+                      "cost": 20,
                       "option_id": "cmp27f2iy2cuwpp6uv2wy"
+                    },
+                    {
+                      "option_id": "dnwe90f32dsdsfn3490nf9nfee3",
+                      "name": "Exclusive",
+                      "type": "check",
+                      "cost": 20
                     },
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
-                      "cost": 50,
+                      "cost": 70,
                       "option_id": "fdsf32fsdf23f23",
                       "refs": ["army_bsb"],
                       "armyHasNotOption": ["army_bsb"]
@@ -1239,14 +1254,14 @@
                     },
                     {
                       "name": "Bull of Shamut",
-                      "cost": 195,
+                      "cost": 190,
                       "refopt": "bull_of_shamut_mount",
                       "option_id": "y3ks47zbqdnt4qe0hye"
                     },
                     {
                       "name": "Infernal Bastion",
                       "refopt": "infernal_bastion_mount",
-                      "cost": 330,
+                      "cost": 320,
                       "option_id": "543fdggfdu68532tr32"
                     }
                   ],
@@ -1298,14 +1313,16 @@
                           "name": "Pistol (3+)",
                           "cost": 10,
                           "option_id": "v37n2dewse9j1bll4pbv",
-                          "ignoreCost": true
+                          "ignoreCost": true,
+                          "refs": ["black_powder"]
                         },
                         {
                           "type": "check",
                           "name": "Blunderbuss (5+)",
                           "cost": 5,
                           "ignoreCost": true,
-                          "option_id": "lj0m6u5q4juke7exxi9hn"
+                          "option_id": "lj0m6u5q4juke7exxi9hn",
+                          "refs": [{ "ref": "black_powder", "amount": 2 }]
                         }
                       ],
                       "option_id": "xes8zxfth7jb30os8inv5s"
@@ -1348,7 +1365,8 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["flintlockAxeEnchant"]
+                          "optionsDict": ["flintlockAxeEnchant"],
+                          "refs": [{ "ref": "black_powder", "amount": 2 }]
                         },
                         {
                           "type": "check",
@@ -1432,7 +1450,7 @@
                     {
                       "type": "check",
                       "name": "Taurukh Ritual",
-                      "cost": 45,
+                      "cost": 15,
                       "hasNotOption": ["mount"],
                       "option_id": "4q4vtiq62lsgk69kasqd7j",
                       "refs": ["taurukh_ritual", "beast"],
@@ -1460,7 +1478,7 @@
             },
             {
               "name": "Taurukh Commissioner",
-              "cost": 240,
+              "cost": 220,
               "category": "perso",
               "options": [
                 {
@@ -1515,7 +1533,7 @@
                         {
                           "type": "check",
                           "name": "Shield",
-                          "cost": 35,
+                          "cost": 25,
                           "refs": [],
                           "optionsLabel": "Shield Enchant",
                           "maxSize": 1,
@@ -1771,7 +1789,7 @@
             },
             {
               "name": "Lamassu Scholar",
-              "cost": 275,
+              "cost": 300,
               "options": [
                 {
                   "type": "group",
@@ -1836,21 +1854,8 @@
           "options": [
             {
               "name": "Infernal Warriors",
-              "cost": 70,
+              "cost": 60,
               "refs": ["core_unit", "tag_Dwarf", "tag_Metal Armour"],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["rf_flint_blunder"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["black_powder"]
-                  }
-                }
-              ],
               "options": [
                 {
                   "minSize": 20,
@@ -1860,7 +1865,7 @@
                     {
                       "hasOption": [
                         {
-                          "refs": ["rf_flint_blunder"],
+                          "refs": ["blunderbuss"],
                           "amount": 1
                         }
                       ],
@@ -1894,8 +1899,8 @@
                             {
                               "type": "check",
                               "name": "Blunderbuss (5+)",
-                              "cost": 5,
-                              "refs": ["rf_flint_blunder"],
+                              "cost": 6,
+                              "refs": ["blunderbuss", { "ref": "black_powder", "amount": 2 }],
                               "option_id": "9vkh31j1s6f1zqrwhs8zc5"
                             }
                           ],
@@ -1940,7 +1945,7 @@
             },
             {
               "name": "Citadel Guard",
-              "cost": 35,
+              "cost": 55,
               "refs": ["core_unit", "tag_Dwarf", "tag_Metal Armour"],
               "override": [
                 {
@@ -1990,20 +1995,20 @@
                               "name": "Pistol (4+)",
                               "cost": 0,
                               "option_id": "26lx78k6f8p0n7nt7tmfpep",
-                              "refs": ["rf_flint_blunder"]
+                              "refs": ["black_powder"]
                             },
                             {
                               "type": "check",
                               "name": "Pistol (4+) and Spear",
-                              "cost": 4,
+                              "cost": 3,
                               "option_id": "zp6nbyxiabahfhnpvw3dd",
-                              "refs": ["rf_flint_blunder"]
+                              "refs": ["black_powder"]
                             },
                             {
                               "type": "check",
                               "name": "Flintlock Axe (3+)",
-                              "cost": 7,
-                              "refs": ["rf_flint_blunder", "guards_flintock"],
+                              "cost": 3,
+                              "refs": [{ "ref": "black_powder", "amount": 2 }, "guards_flintock"],
                               "option_id": "fkmf681j43gruqro1dic2p"
                             }
                           ],
@@ -2048,7 +2053,7 @@
             },
             {
               "name": "Vassal Levies",
-              "cost": 55,
+              "cost": 50,
               "category": "base",
               "options": [
                 {
@@ -2094,8 +2099,9 @@
                             {
                               "type": "check",
                               "name": "Bow (4+)",
-                              "cost": 5,
-                              "option_id": "ibki6g25opi4iq1f6c1o"
+                              "cost": 3,
+                              "option_id": "ibki6g25opi4iq1f6c1o",
+                              "refs": ["black_powder"]
                             }
                           ],
                           "option_id": "x9h5tbgtehpauel4xyee"
@@ -2141,7 +2147,7 @@
             },
             {
               "name": "Shackled Slaves",
-              "cost": 45,
+              "cost": 40,
               "category": "base",
               "options": [
                 {
@@ -2218,7 +2224,7 @@
           "options": [
             {
               "name": "Immortals",
-              "cost": -80,
+              "cost": -30,
               "options": [
                 {
                   "minSize": 15,
@@ -2229,7 +2235,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 24,
+                      "cost": 22,
                       "options": [
                         {
                           "optionsLabel": "Options",
@@ -2309,7 +2315,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 20,
+                      "cost": 18,
                       "refs": ["lugar_numbers"],
                       "options": [
                         {
@@ -2427,7 +2433,7 @@
             },
             {
               "name": "Kadim Chariot",
-              "cost": 200,
+              "cost": 220,
               "category": "special",
               "refs": ["kadimChariot", "tag_Dwarf", "tag_Kadim", "tag_Mount", "tag_Construct"],
               "unit_id": "kadim_chariot",
@@ -2459,7 +2465,7 @@
             },
             {
               "name": "Taurukh Enforcers",
-              "cost": 80,
+              "cost": 75,
               "category": "special",
               "override": [
                 {
@@ -2499,7 +2505,7 @@
                             {
                               "type": "check",
                               "name": "Blunderbuss (5+)",
-                              "refs": ["rf_flint_blunder", "taurukh_blunderbuss"],
+                              "refs": [{ "ref": "black_powder", "amount": 2 }, "taurukh_blunderbuss"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["taurukh_blunderbuss"],
@@ -2507,7 +2513,7 @@
                                   "parentMult": false
                                 }
                               ],
-                              "cost": 5,
+                              "cost": 3,
                               "option_id": "vdrxdic7qmculrz102a9z"
                             }
                           ],
@@ -2533,7 +2539,7 @@
                             {
                               "type": "check",
                               "name": "Infernal Weapon",
-                              "cost": 4,
+                              "cost": 3,
                               "refs": [],
                               "option_id": "r5xalsaxj8jfknjm2jv1va"
                             }
@@ -2588,7 +2594,7 @@
             },
             {
               "name": "Taurukh Anointed",
-              "cost": 35,
+              "cost": 45,
               "refs": ["taurukh_anointed", "tall", "tag_Dwarf", "tag_Metal Armour"],
               "armyHasNotOption": [
                 {
@@ -2606,7 +2612,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 95,
+                      "cost": 85,
                       "options": [
                         {
                           "optionsLabel": "Options",
@@ -2614,7 +2620,7 @@
                             {
                               "type": "check",
                               "name": "Shield",
-                              "cost": 15,
+                              "cost": 10,
                               "option_id": "15m9rylwhmmc2s2fgfomhc"
                             }
                           ],
@@ -2628,7 +2634,7 @@
                             {
                               "type": "check",
                               "name": "Paired Weapons",
-                              "cost": 0,
+                              "cost": 5,
                               "option_id": "36bos5doj7lu3lcksm5mp"
                             },
                             {
@@ -2691,7 +2697,7 @@
             },
             {
               "name": "Vassal Cavalry",
-              "cost": 135,
+              "cost": 110,
               "category": "special",
               "options": [
                 {
@@ -2702,7 +2708,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 9,
+                      "cost": 14,
                       "hide": true,
                       "options": [],
                       "option_id": "rfbgbvcw6id62vv7ntn6gi",
@@ -2736,7 +2742,7 @@
                   "option_id": "hq9ke78c6rfsxnsc3rivwo"
                 }
               ],
-              "refs": ["vassalCavalry", "tag_Vassal", "tag_Light Armour", "tag_Mount"],
+              "refs": ["vassalCavalry", "tag_Vassal", "tag_Light Armour", "tag_Mount", "black_powder"],
               "unit_id": "vassal_cavalry",
               "armyHasNotOption": [
                 {
@@ -2782,7 +2788,7 @@
             {
               "name": "Gunnery Team",
               "refs": ["gunnary_team", "not_a_leader", "exclusive", "tag_Dwarf", "tag_Metal Armour"],
-              "cost": 140,
+              "cost": 170,
               "armyHasNotOption": [
                 {
                   "refs": ["gunnary_team"],
@@ -2798,7 +2804,7 @@
                   "options": [
                     {
                       "type": "check",
-                      "cost": 30,
+                      "cost": 0,
                       "name": "Naphtha Thrower",
                       "refs": [
                         "naphta_thrower",
@@ -2817,13 +2823,13 @@
                     },
                     {
                       "type": "check",
-                      "cost": 10,
+                      "cost": 30,
                       "name": "Titan Mortar (4+)",
                       "refs": [
                         "titan_mortar",
                         {
                           "ref": "fires_of_industry",
-                          "amount": 2
+                          "amount": 1
                         }
                       ],
                       "armyHasNotOption": [
@@ -2836,13 +2842,13 @@
                     },
                     {
                       "type": "check",
-                      "cost": 0,
+                      "cost": 30,
                       "name": "Rocket Battery (4+)",
                       "refs": [
                         "rocket_battery",
                         {
                           "ref": "fires_of_industry",
-                          "amount": 2
+                          "amount": 1
                         }
                       ],
                       "armyHasNotOption": [
@@ -2864,7 +2870,7 @@
             {
               "name": "Infernal Artillery",
               "refs": ["infernal_artillery", "war_machine", "tag_Dwarf", "tag_Metal Armour"],
-              "cost": 185,
+              "cost": 170,
               "options": [
                 {
                   "optionsLabel": "Artillery Weapon",
@@ -2893,7 +2899,7 @@
                     },
                     {
                       "type": "check",
-                      "cost": 110,
+                      "cost": 115,
                       "name": "Titan Mortar (4+)",
                       "refs": [
                         "titan_mortar",
@@ -2912,7 +2918,7 @@
                     },
                     {
                       "type": "check",
-                      "cost": 105,
+                      "cost": 115,
                       "name": "Rocket Battery (4+)",
                       "refs": [
                         "rocket_battery",
@@ -2949,7 +2955,7 @@
             {
               "name": "Infernal Engine",
               "refs": ["infernal_engine", "tag_Metal Armour", "tag_Construct"],
-              "cost": 410,
+              "cost": 440,
               "armyHasNotOption": [
                 {
                   "refs": ["infernal_engine"],
@@ -2965,14 +2971,14 @@
                   "options": [
                     {
                       "type": "check",
-                      "cost": 55,
+                      "cost": 35,
                       "name": "Rock Crusher",
                       "refs": ["engine_rock_crusher"],
                       "option_id": "2vov0uag9xfgzv9pdusgla"
                     },
                     {
                       "type": "check",
-                      "cost": 30,
+                      "cost": 0,
                       "name": "Naphtha Thrower",
                       "refs": [
                         "naphta_thrower",
@@ -2991,13 +2997,13 @@
                     },
                     {
                       "type": "check",
-                      "cost": 0,
+                      "cost": 10,
                       "name": "Titan Mortar (4+)",
                       "refs": [
                         "titan_mortar",
                         {
                           "ref": "fires_of_industry",
-                          "amount": 2
+                          "amount": 1
                         }
                       ],
                       "armyHasNotOption": [
@@ -3010,13 +3016,13 @@
                     },
                     {
                       "type": "check",
-                      "cost": 20,
+                      "cost": 30,
                       "name": "Rocket Battery (4+)",
                       "refs": [
                         "rocket_battery",
                         {
                           "ref": "fires_of_industry",
-                          "amount": 2
+                          "amount": 1
                         }
                       ],
                       "armyHasNotOption": [
@@ -3038,7 +3044,7 @@
             {
               "name": "Kadim Titan",
               "refs": ["kadim_titan", "tag_Kadim"],
-              "cost": 550,
+              "cost": 500,
               "armyHasNotOption": [
                 {
                   "refs": ["kadim_titan"],
@@ -3053,7 +3059,7 @@
                 {
                   "name": "Walking Earthquake",
                   "type": "check",
-                  "cost": 10,
+                  "cost": 0,
                   "option_id": "34osj5tkjefamrq15mk62r",
                   "refs": ["walking_earthquake"],
                   "armyHasNotOption": [
@@ -3098,13 +3104,13 @@
                     {
                       "type": "check",
                       "name": "Rocket Battery (4+)",
-                      "cost": 45,
+                      "cost": 35,
                       "refs": [
                         "rocket_battery",
                         "titan_rocket",
                         {
                           "ref": "fires_of_industry",
-                          "amount": 2
+                          "amount": 1
                         }
                       ],
                       "armyHasNotOption": [
@@ -3122,13 +3128,13 @@
                     {
                       "type": "check",
                       "name": "Titan Mortar (4+)",
-                      "cost": 15,
+                      "cost": 20,
                       "refs": [
                         "titan_mortar",
                         "titan_titan_mortar",
                         {
                           "ref": "fires_of_industry",
-                          "amount": 2
+                          "amount": 1
                         }
                       ],
                       "armyHasNotOption": [
@@ -3151,7 +3157,7 @@
             },
             {
               "name": "Citizen Giant",
-              "cost": 330,
+              "cost": 300,
               "category": "instruments_of_destruction",
               "options": [
                 {
@@ -3162,7 +3168,7 @@
                     {
                       "type": "check",
                       "name": "Tower Shield",
-                      "cost": 0,
+                      "cost": 25,
                       "refs": [],
                       "option_id": "wenk0gr6boqcaqauwsw4oh"
                     },
@@ -3282,13 +3288,6 @@
             }
           ],
           "option_id": "dbtv2o3ppgy9uechiyvid"
-        },
-        {
-          "name": "Black Powder",
-          "options": [],
-          "refs": ["black_powder"],
-          "option_id": "nf3289fn320fn32809fn32f32",
-          "maxPercent": 0.35
         },
         {
           "name": "Mounts",

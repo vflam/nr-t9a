@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 296,
+  "nrversion": 300,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -665,7 +665,7 @@
     },
     "ong-giant_club": {
       "title": "Giant Club",
-      "def": "+1 Str and +1 AP.",
+      "def": "+1~Str and +1~AP.",
       "type": "cc_weapon",
       "mod": [
         {
@@ -713,7 +713,16 @@
     },
     "ong-git_launcher": {
       "title": "Git Launcher",
-      "def": "A unit hit by a <nuxt-link class=\"ruleLink\" to=\"/app/rule/git_launcher\">Git Launcher</nuxt-link> suffers 2D6 hits with Str 4 and AP 2. However, on a natural to-hit roll of ‘6’, instead, place a Mad Git within 3\" of the target, following the rules for <span class=\"textbf\">Summoned Units</span>."
+      "def": "A unit hit by a <nuxt-link class=\"ruleLink\" to=\"/app/rule/git_launcher\">Git Launcher</nuxt-link> suffers 2D6 hits with Str~4 and AP~2. However, on a natural to-hit roll of ‘6’, instead, place a Mad Git within 3\" of the target, following the rules for <span class=\"textbf\">Summoned Units</span>."
+    },
+    "ong-skewerer": {
+      "title": "Skewerer",
+      "def": "The model's base is changed to 60×60~mm.",
+      "mod": [
+        {
+          "basesize": "60x60"
+        }
+      ]
     },
     "ong-goblin_gardens": {
       "title": "Goblin Gardens",
@@ -721,7 +730,7 @@
     },
     "ong-spies": {
       "title": "Spies",
-      "def": "The model gains Feigned Flight, Light Troops, Vanguard."
+      "def": "The model gains , Light Troops, Vanguard."
     },
     "ong-beastie_whisperer": {
       "title": "Beastie Whisperer",
@@ -729,7 +738,7 @@
     },
     "ong-headhunter": {
       "title": "Headhunter",
-      "def": "The model part with Goblin gains March and Shoot, Poison Attacks (Melee and Shooting), and gains Throwing Weapons(4+) with Shots 3.",
+      "def": "The model part with Goblin gains March and Shoot, Poison Attacks (Melee and Shooting), and gains Throwing Weapons~(4+) with Shots 3.",
       "mod": [
         {
           "special": "headhunter"
@@ -760,7 +769,7 @@
     },
     "ong-netter": {
       "title": "Netter",
-      "def": "When Choosing Equipment and Abilities, roll a D6 for each model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/netter\">Netter</nuxt-link></span>. Each model that rolls a 3+ gains <span class=\"textbf\">Afflict (-1 AP, -2 Agi*)</span>.<br>*To a minimum of 1.",
+      "def": "\tAfflict (-3 Off)",
       "ennemymod": [
         {
           "affects": [
@@ -810,11 +819,11 @@
     },
     "ong-symbol_of_the_warborn_alliance": {
       "title": "Symbol of the Warborn Alliance",
-      "def": "The model can cast <i>Guile and Fury</i> (Hereditary Spell) as a Bound Spell (5+). When attempting to cast the Bound Spell, the owner can choose which version to cast."
+      "def": "The model can cast <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/guile_and_fury\">Guile and Fury</nuxt-link></i> (Hereditary Spell) as a Bound Spell (5+). When attempting to cast the Bound Spell, the owner can choose which version to cast."
     },
     "ong-immense_bulk": {
       "title": "Immense Bulk",
-      "def": "The model's HP are <span class=\"textbf\">set</span> to 8, its base size is changed to 100×150 mm, and the number of Rider model parts is <span class=\"textbf\">set</span> to 8.",
+      "def": "The model's HP are <span class=\"textbf\">set</span> to 8, its base size is changed to 100×150~mm, and the number of Rider model parts is <span class=\"textbf\">set</span> to 8.",
       "mod": [
         {
           "basesize": "100x150"
@@ -914,7 +923,7 @@
     },
     "ong-surprise": {
       "title": "Surprise",
-      "def": "The model cannot be deployed normally. Instead, at the start of any Player Turn, the owner may choose a friendly non-Fleeing unengaged unit of Goblin Rabble or Gogtuk Neophytes. Any unit can be chosen up to three times per Player Turn. Deploy the model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/surprise\">Surprise</nuxt-link></span> within 3\" of the chosen unit and more than 1\" away from Impassable Terrain and other units. If the model is not deployed by the end of Game Turn 4, it counts as a casualty and cannot be deployed for the rest of the game."
+      "def": "The model cannot be deployed normally. Instead, at the start of any Player Turn, the owner may choose a friendly non-Fleeing unengaged unit of Goblin Rabble or Gogtuk Neophytes. Any unit can be chosen up to three~times per Player Turn. Deploy the model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/surprise\">Surprise</nuxt-link></span> within 3\" of the chosen unit and more than 1\" away from Impassable Terrain and other units. If the model is not deployed by the end of Game Turn 4, it counts as a casualty and cannot be deployed for the rest of the game."
     },
     "ong-orc_horde": {
       "title": "Orc Horde",
@@ -922,7 +931,7 @@
     },
     "ong-huntsman_spider": {
       "title": "Huntsman Spider",
-      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/creepycrawlies\">Creepy-Crawlies</nuxt-link></span>, and its base size is changed to 50×50 mm.",
+      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/creepycrawlies\">Creepy-Crawlies</nuxt-link></span>, and its base size is changed to 50×50~mm.",
       "mod": [
         {
           "basesize": "50x50"
@@ -1004,7 +1013,7 @@
     },
     "ong-big_wing": {
       "title": "Big Wing",
-      "def": "The model gains <span class=\"textbf\">Stomp Attacks (D3)</span> and its base size is changed to 75×100 mm.",
+      "def": "The model gains <span class=\"textbf\">Stomp Attacks (D3+1)</span> and its base size is changed to 75×100~mm.",
       "mod": [
         {
           "rules": {
@@ -1029,15 +1038,15 @@
     },
     "ong-tribe_leader": {
       "title": "Tribe Leader",
-      "def": "If the General is a <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/tribe_leader\">Tribe Leader</nuxt-link></span>, apply the following changes to Army List creation:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Max. 10% of the Army Points may be spent on units with Goblin.<br>\t\t<br>&nbsp;&nbsp;&bull;  The -1. Death From Above Army Category Limit is decreased to 20%.<br>\t\t<br>&nbsp;&nbsp;&bull;  The Duplication Limits Max. X items/army (<i>i.e. Max. X units/army, Max. X models/army, and </i>) in the unit profiles of certain units with Orc are modified, as indicated by TL Max. X.<br><i>For example, Max. 1  units/army means that if the General is a <nuxt-link class=\"ruleLink\" to=\"/app/rule/tribe_leader\">Tribe Leader</nuxt-link>, the Duplication Limit becomes Max. 2 units/army</i>.<br>\t"
+      "def": "If the General is a <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/tribe_leader\">Tribe Leader</nuxt-link></span>, apply the following changes to Army List creation:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Max. 10% of the Army Points may be spent on units with Goblin.<br>\t\t<br>&nbsp;&nbsp;&bull;<br>\t\t<br>&nbsp;&nbsp;&bull;  The Duplication Limits Max. X items/army (<i>i.e. Max. X units/army, Max. X models/army, and </i>) in the unit profiles of certain units with Orc are modified, as indicated by TL~Max.~X.<br><i>For example, Max. 1  units/army means that if the General is a <nuxt-link class=\"ruleLink\" to=\"/app/rule/tribe_leader\">Tribe Leader</nuxt-link>, the Duplication Limit becomes Max. 2 units/army</i>.<br>\t"
     },
     "ong-darrmu": {
       "title": "Darrmu",
-      "def": "If the General is a <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/darrmu\">Darrmu</nuxt-link></span>, apply the following changes to Army List creation:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Max. 10% of the Army Points may be spent on units with Orc.<br>\t\t<br>&nbsp;&nbsp;&bull;  The -1. Death From Above Army Category Limit is increased to 30%.<br>\t\t<br>&nbsp;&nbsp;&bull;  The Duplication Limits Max. X items/army (<i>i.e. Max. X units/army, Max. X models/army, and </i>) in the unit profiles of certain units with Goblin are modified, as indicated by D  Max. X.<br><i>For example, Max. 1  units/army means that if the General is a <nuxt-link class=\"ruleLink\" to=\"/app/rule/darrmu\">Darrmu</nuxt-link>, the Duplication Limit becomes Max. 2 units/army</i>.<br>\t"
+      "def": "If the General is a <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/darrmu\">Darrmu</nuxt-link></span>, apply the following changes to Army List creation:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Max. 10% of the Army Points may be spent on units with Orc.<br>\t\t<br>&nbsp;&nbsp;&bull;<br>\t\t<br>&nbsp;&nbsp;&bull;  The Duplication Limits Max. X items/army (<i>i.e. Max. X units/army, Max. X models/army, and </i>) in the unit profiles of certain units with Goblin are modified, as indicated by D~ Max.~X.<br><i>For example, Max. 1  units/army means that if the General is a <nuxt-link class=\"ruleLink\" to=\"/app/rule/darrmu\">Darrmu</nuxt-link>, the Duplication Limit becomes Max. 2 units/army</i>.<br>\t"
     },
     "ong-goblin_cunning": {
       "title": "Goblin Cunning",
-      "def": "Apply the following rules to any unit consisting entirely of models with <span class=\"textbf\">Goblin Cunning</span>:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Its Flee Distance rolls are Maximised.<br>\t\t<br>&nbsp;&nbsp;&bull;  Before rolling any dice for any Courage Test, that is not automatically passed, it may choose to fail it instead.<br>\t\t<br>&nbsp;&nbsp;&bull;  If it Flees voluntarily, either with a Flee! Charge Reaction or due to choosing to fail a Panic or Break Test, it automatically passes its next Rally Test. <i>Note that this does not apply if the unit Flees involuntarily.</i><br>\t\t<br>&nbsp;&nbsp;&bull;  <i>Remember that a voluntary Flee Move does not cause a Panic Test in friendly units that the Fleeing unit moves through.</i><br>\t"
+      "def": "Immediately before taking any Courage Test, which is not automatically passed; units consisting entirely of models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/goblin_cunning\">Goblin Cunning</nuxt-link>, may choose to fail, instead of roll."
     },
     "ong-creepycrawlies": {
       "title": "Creepy-Crawlies",
@@ -1045,7 +1054,7 @@
     },
     "ong-headbashers": {
       "title": "Headbashers",
-      "def": "One of a Kind.<br><br>Units containing <nuxt-link class=\"ruleLink\" to=\"/app/rule/headbashers\">Headbashers</nuxt-link> gain Bodyguard (General) and Rank-and-File model parts with Orc in the unit gain Lethal Strike. Additionally, units with <nuxt-link class=\"ruleLink\" to=\"/app/rule/headbashers\">Headbashers</nuxt-link> that count towards Core count towards Special instead.",
+      "def": "One of a Kind.<br>Units containing <nuxt-link class=\"ruleLink\" to=\"/app/rule/headbashers\">Headbashers</nuxt-link> gain Bodyguard (General) and Rank-and-File model parts with Orc in the unit gain Lethal Strike. Additionally, units with <nuxt-link class=\"ruleLink\" to=\"/app/rule/headbashers\">Headbashers</nuxt-link> that count towards Core count towards Special instead.",
       "mod": [
         {
           "rules": {
@@ -1065,7 +1074,7 @@
     },
     "ong-brood_rivalry": {
       "title": "Brood Rivalry",
-      "def": "The model part gains +1 Att while another friendly unit is Engaged in Combat, anywhere on the Battlefield. Units composed entirely of Characters cannot benefit from this rule.",
+      "def": "The model part gains +1~Att while another friendly unit is Engaged in Combat, anywhere on the Battlefield. Units composed entirely of Characters cannot benefit from this rule.",
       "selectable": true,
       "defaultSelection": true,
       "mod": [
@@ -1089,33 +1098,24 @@
     },
     "ong-force_of_destruction": {
       "title": "Force of Destruction",
-      "def": "The model must perform a move in the movement phase if able to, and cannot declare any Charges, and other units cannot Declare any Charges against the model. The model and other units ignore each other regarding the Unit Spacing rule for all movement and can touch and move through one another during any movement (<i>excluding <span class=\"textbf\">Ambush</span></i>). The model never treats units outside its Front Arc as obstacles when performing <span class=\"textbf\">Random Movement</span>.<br><br>\tWhen the model touches another unit, the model is immediately removed as a casualty, and the other unit immediately suffers X hits with the model's Str and AP. If several units are touched simultaneously, the owner of the model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/force_of_destruction\">Force of Destruction</nuxt-link></span> chooses which unit suffers the hits.<br><br>\tIf the model was removed due to another unit moving into contact with it, that unit suffers an additional D6 hits.<br><br>\t<br><br>\tHealth Point losses caused by <nuxt-link class=\"ruleLink\" to=\"/app/rule/force_of_destruction\">Force of Destruction</nuxt-link> in the Charge Phase do not cause Panic Test"
+      "def": "The model must perform a move in the movement phase if able to, and cannot declare any Charges, and other units cannot Declare any Charges against the model. The model and other units ignore each other regarding the Unit Spacing rule for all movement and can touch and move through one another during any movement (<i>excluding <span class=\"textbf\">Ambush</span></i>).<br><br>\tWhen the model touches another unit, the model is immediately removed as a casualty, and the other unit immediately suffers X hits with the model's Str and AP. If several units are touched simultaneously, the owner of the model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/force_of_destruction\">Force of Destruction</nuxt-link></span> chooses which unit suffers the hits.<br><br>\tIf the model was removed due to another unit moving into contact with it, that unit suffers an additional D6 hits.<br><br>\t<br><br>\tHealth Point losses caused by <nuxt-link class=\"ruleLink\" to=\"/app/rule/force_of_destruction\">Force of Destruction</nuxt-link> in the Charge Phase do not cause Panic Test"
     },
     "ong-poisoned_spear": {
       "title": "Poisoned Spear",
       "def": "Spear. <span class=\"textbf\">Poison Attacks</span>."
     },
-    "ong-ramshacklebreaks": {
-      "title": "",
-      "def": ""
-    },
-    "ong-skewerer": {
-      "title": "Skewerer",
-      "def": "The model's base is changed to 60×60 mm.",
-      "mod": [
-        {
-          "basesize": "60x60"
-        }
-      ]
-    },
     "ong-war_cry": {
       "title": "War Cry!",
-      "def": "One use only. May be activated at the start of any friendly Player Turn, provided the General is on the Battlefield and not Shaken. Apply the following effects until the start of the next friendly Player Turn:<br>\t\t<br>&nbsp;&nbsp;&bull;  Friendly units gain +1\" Cha and +1\" Mob.<br>\t\t<br>&nbsp;&nbsp;&bull;  If the General is a Goblin Demagogue or a Goblin Witch,  friendly units with Goblin, while not Engaged in Combat, gain <span class=\"textbf\">Light Troops</span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  If the General is an Orc Warlord or an Orc Shaman, friendly units with Orc have their Charge Range rolls Maximised.<br>\t",
+      "def": "One use only. May be activated at the start of any friendly Player Turn, provided the General is on the Battlefield and not Shaken. Apply the following effects until the start of the next friendly Player Turn:<br>\t\t<br>&nbsp;&nbsp;&bull;  Friendly units gain +1\"~Cha and +1\"~Mob.<br>\t\t<br>&nbsp;&nbsp;&bull;  If the General is a Goblin Demagogue or a Goblin Witch,  friendly units with Goblin, while not Engaged in Combat, gain <span class=\"textbf\">Light Troops</span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  If the General is an Orc Warlord or an Orc Shaman, friendly units with Orc have their Charge Range rolls Maximised.<br>\t",
       "uses": 1
+    },
+    "ong-guile_and_fury": {
+      "title": "Guile and Fury",
+      "def": "<span class=\"textbf\">Augment</span>:<br>\tCannot be cast by Goblin Witches.<br>\tThe target gains <span class=\"textbf\">+1</span> to hit, and its Charge Range, Flee Distance, and Pursuit Distance are all <span class=\"textbf\">increased</span> by 1\".<br><br><span class=\"textbf\">Hex</span>:<br>\tCannot be cast by Orc Shamans.<br>The target suffers <span class=\"textbf\">-1</span> to hit, and its Charge Range, Flee Distance, and Pursuit Distance are <span class=\"textbf\">reduced</span> by 1\"."
     },
     "ong-omen_of_the_apocalypse": {
       "title": "Omen of the Apocalypse",
-      "def": "+X Att, +X Str, and +X AP. X is equal to the number of friendly units containing Orc that are Engaged in Combat anywhere on the Battlefield, up to a maximum of 3.",
+      "def": "+X~Att, +X~Str, and +X~AP. X is equal to the number of friendly units containing Orc that are Engaged in Combat anywhere on the Battlefield, up to a maximum of~3.",
       "type": "weapon_enchant",
       "mod": [
         {
@@ -1131,7 +1131,7 @@
     },
     "ong-tazreks_guard": {
       "title": "Tazrek's Guard",
-      "def": "+1 HP and Res is <span class=\"textbf\">set</span> to 6.",
+      "def": "+1~HP and Res is <span class=\"textbf\">set</span> to 6.",
       "mod": [
         {
           "affects": [
@@ -1146,16 +1146,16 @@
     },
     "ong-troll_hide": {
       "title": "Troll Hide",
-      "def": "<span class=\"textbf\">Fortitude (4+)</span>. Mob is <span class=\"textbf\">set</span> to 6\". The model's base is changed to 40×40 mm and its Height is <span class=\"textbf\">set</span> to 3. The model fails all its Armour Save rolls and cannot take Weapon Enchantments."
+      "def": " Mob is <span class=\"textbf\">set</span> to 6\". The model's base is changed to 40×40 mm and its Height is <span class=\"textbf\">set</span> to 3. The model's base change cannot be ignored. ."
     },
     "ong-goga_cauldron": {
       "title": "Goga Cauldron",
-      "def": "One use only. May be activated at the start of any Player Turn. Until the end of the Player Turn, the bearer’s unit gains Fearless, Unstable.",
+      "def": "One use only. May be activated at the start of any Phase . Until the end of the Player Turn, the bearer’s unit gains Fearless, Unstable, Dying Blow.",
       "uses": 1
     },
     "ong-skull_fetish": {
       "title": "Skull Fetish",
-      "def": "During the Siphon the Veil of your Magic Phase, the bearer may gain <span class=\"textbf\">Channel (D3)</span> with Duration: One Turn. If a ‘3’ is rolled for this, the bearer loses 1 HP, and this Magic Item stops working, Duration: Permanent."
+      "def": "During the Siphon the Veil step of your Magic Phase, the  wearer may gain <span class=\"textbf\">Channel (D3)</span> with Duration: One Turn. If a ‘3’ is rolled for this: all units within 6\" of the wearer, suffers the Witchfire Miscast effect, where X is equal to 5."
     },
     "ong-monster_munch": {
       "title": "Monster Munch",
@@ -1182,8 +1182,8 @@
     },
     "ong-splatterer": {
       "type": "Shooting Weapon",
-      "title": "Splatterer\n\t\t\t",
-      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/splatterer\">Splatterer</nuxt-link><br>\t\t\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/splatterer\">Splatterer</nuxt-link></td><td>4</td><td>60\"</td><td>1</td><td>6</td><td>3</td><td>Artillery, Area Attack (2×2), Multiple Wounds (2)</td></tr></table><br><br>\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/git_launcher\">Git Launcher</nuxt-link><br>\t\t\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/git_launcher\">Git Launcher</nuxt-link></td><td>4</td><td>48\"</td><td>1</td><td>-</td><td>-</td><td>Artillery, <nuxt-link class=\"ruleLink\" to=\"/app/rule/git_launcher\">Git Launcher</nuxt-link></td></tr></table><br><br>\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/skewerer\">Skewerer</nuxt-link><br>\t\t\tThe model's base is changed to 60×60 mm.<br><br>\t\t\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/skewerer\">Skewerer</nuxt-link></td><td>4</td><td>48\"</td><td>1</td><td>3</td><td>10</td><td>Direct Hit (D3), Area Attack (1×5)</td></tr></table><br><br>\t"
+      "title": "Splatterer",
+      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/splatterer\">Splatterer</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/splatterer\">Splatterer</nuxt-link></td><td>4</td><td>60\"</td><td>1</td><td>6</td><td>3</td><td>Artillery, Area Attack (2×2), Multiple Wounds (2)</td></tr></table><br><br>\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/git_launcher\">Git Launcher</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/git_launcher\">Git Launcher</nuxt-link></td><td>4</td><td>48\"</td><td>1</td><td>-</td><td>-</td><td>Artillery, <nuxt-link class=\"ruleLink\" to=\"/app/rule/git_launcher\">Git Launcher</nuxt-link></td></tr></table><br><br>\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/skewerer\">Skewerer</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/skewerer\">Skewerer</nuxt-link></td><td>4</td><td>48\"</td><td>1</td><td>3</td><td>10</td><td>Direct Hit (D3), Area Attack (1×5), <nuxt-link class=\"ruleLink\" to=\"/app/rule/skewerer\">Skewerer</nuxt-link></td></tr></table>"
     },
     "ong-forest_goblin": {
       "mod": [
@@ -1234,7 +1234,7 @@
     },
     "id-giant_see_giant_do": {
       "title": "Giant See, Giant Do",
-      "def": "The model gains <nuxt-link class=\"ruleLink\" to=\"/app/rule/infernal_armour\">Infernal Armour</nuxt-link>, Commanding Presence (12\", Insignificant).",
+      "def": "The model gains <nuxt-link class=\"ruleLink\" to=\"/app/rule/infernal_armour\">Infernal Armour</nuxt-link>, Commanding Presence (12\", Insignificant), First Strike (Stubborn).",
       "mod": [
         {
           "rules": [
@@ -1264,7 +1264,7 @@
     },
     "id-giant_club": {
       "title": "Giant Club",
-      "def": "+1 Str and +1 AP.",
+      "def": "+1~Str and +1~AP.",
       "type": "cc_weapon",
       "mod": [
         {
@@ -1277,7 +1277,7 @@
     },
     "id-tower_shield": {
       "title": "Tower Shield",
-      "def": "The model gains Parry, Hard Target (1, against attacks from models located in its Front Arc).",
+      "def": "The model gains +1 Arm, Parry, Hard Target (1).",
       "type": "protection",
       "mod": [
         {
@@ -1292,7 +1292,7 @@
     },
     "id-infernal_lash": {
       "title": "Infernal Lash",
-      "def": "+2 Agi. Once per Melee Phase, when Choosing Equipment and Abilities in a combat within 6\" of the wielder, you may activate the following ability:<br><br>\tChoose a single friendly unit within 6\" of the wielder (<i>which could be the wielder itself</i>). The chosen unit gains Flaming Attacks (Melee), Magical Attacks (Melee) until the end of the Melee Phase.",
+      "def": "+2~Agi. Once per Melee Phase, when Choosing Equipment and Abilities in a combat within 6\" of the wielder, you may activate the following ability:<br><br>\tChoose a single friendly unit within 6\" of the wielder (<i>which could be the wielder itself</i>). The chosen unit gains Flaming Attacks (Melee), Magical Attacks (Melee) until the end of the Melee Phase.",
       "type": "cc_weapon",
       "stats": {
         "affects": [
@@ -1324,9 +1324,13 @@
       "title": "Theocratic Litigators",
       "def": "The model's unit and enemy units in contact with the model's unit gain <span class=\"textbf\">Magic Resistance (2)</span>, which is also applied to friendly spells. This <span class=\"textbf\">Magic Resistance</span> value cannot be increased."
     },
+    "id-defy_death": {
+      "title": "Defy Death",
+      "def": "To wound rolls of Melee Attacks distributed onto a model with this rule of ‘1’, ‘2’, ‘3’ are <span class=\"textbf\">always</span> considered failed."
+    },
     "id-higher_calibre": {
       "title": "Higher Calibre",
-      "def": "The Range of the model's Shooting Weapon is doubled. Enemy units hit by the weapon suffer -1\" Cha and -1\" Mob, both to a minimum of 3\" until the end of the affected model's Player Turn."
+      "def": "The Range of the model's Shooting Weapon is doubled. Enemy units hit by the weapon suffer -1\"~Cha and -1\"~Mob, both to a minimum of~3\" until the end of the affected model's Player Turn."
     },
     "id-firing_platform": {
       "title": "Firing Platform",
@@ -1375,7 +1379,7 @@
     },
     "id-walking_earthquake": {
       "title": "Walking Earthquake",
-      "def": "The model gains Swiftstride, <nuxt-link class=\"ruleLink\" to=\"/app/rule/volcanic_embrace\">Volcanic Embrace(D6+1)</nuxt-link>,  and its Mob is <span class=\"textbf\">set</span> to 7\". ",
+      "def": "The model gains Swiftstride, <nuxt-link class=\"ruleLink\" to=\"/app/rule/volcanic_embrace\">Volcanic Embrace</nuxt-link> (D3+1),  and its Mob is <span class=\"textbf\">set</span> to 7\". ",
       "mod": [
         {
           "rules": [
@@ -1405,7 +1409,7 @@
     },
     "id-walking_volcano": {
       "title": "Walking Volcano",
-      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/volcanic_embrace\">Volcanic Embrace(2)</nuxt-link></span>.",
+      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/volcanic_embrace\">Volcanic Embrace</nuxt-link> (2)</span>.",
       "mod": [
         {
           "rules": [
@@ -1436,7 +1440,7 @@
     },
     "id-prophet_of_lugar": {
       "title": "Prophet of Lugar",
-      "def": "The model gains <span class=\"textbf\">Aegis (4+)</span> and -3 Arm, and loses Metal Armour and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/infernal_armour\">Infernal Armour</nuxt-link></span>. The model part gains Flaming Attacks, Magical Attacks. If on foot, the model gains <span class=\"textbf\">Ghost Step</span>, its Cha is <span class=\"textbf\">set</span> to 4\" and its Mob is <span class=\"textbf\">set</span> to 6\". The model gains access to the options below.",
+      "def": "The model gains <span class=\"textbf\">Aegis (4+)</span>, <span class=\"textbf\">Aegis (3+, against Flaming Attacks)</span>, and -3~Arm, and loses Metal Armour and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/infernal_armour\">Infernal Armour</nuxt-link></span>. The model part gains Flaming Attacks, Magical Attacks. If on foot, the model gains <span class=\"textbf\">Ghost Step</span>, its Cha is <span class=\"textbf\">set</span> to 4\" and its Mob is <span class=\"textbf\">set</span> to 6\". The model gains access to the options below.",
       "mod": [
         {
           "rules": [
@@ -1486,7 +1490,7 @@
     },
     "id-vassal_governor": {
       "title": "Vassal Governor",
-      "def": "Friendly units  with Vassal within 12\" of one or more models with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/vassal_governor\">Vassal Governor</nuxt-link></span> gain +1\" Mob."
+      "def": "Friendly units  with Vassal within 12\" of one or more models with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/vassal_governor\">Vassal Governor</nuxt-link></span> gain +1\"~Mob."
     },
     "id-chained_together": {
       "title": "Chained Together",
@@ -1549,7 +1553,7 @@
     },
     "id-volcanic_embrace": {
       "title": "Volcanic Embrace",
-      "def": "The model part gains <span class=\"textbf\">Grind Attack (X, Str 3[4*], AP 3[4*], Flaming Attacks, Magical Attacks)</span>.<br>*When the <span class=\"textbf\">Grind Attack</span> is allocated towards a model with Metal Armour, the Str and AP are both <span class=\"textbf\">set</span> to 4.",
+      "def": "The model part gains <span class=\"textbf\">Grind Attack (X,  AP4, Flaming Attacks, Magical Attacks), Zeal (against Metal Armour)</span>.<br>*These hits <span class=\"textbf\">always</span> wound on a 4+.",
       "type": "universal",
       "mod": [
         {
@@ -1597,7 +1601,7 @@
     },
     "id-oil_flasks": {
       "title": "Oil Flasks",
-      "def": "If one or more simultaneous attacks with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/oil_flasks\">Oil Flasks</nuxt-link></span> hit, after resolving these attacks, the target unit gains one <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Marker."
+      "def": "A Health Pool can use <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/oil_flasks\">Oil Flasks</nuxt-link></span> X times. Each use reduces X by 1, and when X is 0, the rule cannot be used. Before rolling to hit with an attack using <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/oil_flasks\">Oil Flasks</nuxt-link></span>, you may declare that the rule is used.<br>When using <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/oil_flasks\">Oil Flasks</nuxt-link></span>, apply the following rules:<br>After resolving all simultaneous attacks, any unit hit by at least one attack with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/oil_flasks\">Oil Flasks</nuxt-link></span> gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link></span>."
     },
     "id-flintlock_axe": {
       "title": "Flintlock Axe",
@@ -1632,7 +1636,7 @@
     "id-titan_mortar": {
       "type": null,
       "title": "Titan Mortar",
-      "def": "\t\t-1.Fires of Industry(2)<br><i>Max. 2 units/army.</i><br><br><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Titan Mortar</td><td>4</td><td>18\"</td><td>1</td><td>5</td><td>2</td><td>Artillery, Area Attack (3×3)</td></tr></table>",
+      "def": "\t\t-1.<br><i>Max. 2 units/army.</i><br><br><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Titan Mortar</td><td>4</td><td>18\"</td><td>1</td><td>5</td><td>2</td><td>Artillery, Area Attack (3×3)</td></tr></table>",
       "ruletype": "Artillery Weapon"
     },
     "id-infernal_weapon": {
@@ -1651,7 +1655,7 @@
     "id-vassal_slingshot": {
       "type": "Shooting Weapon",
       "title": "\n\t\tVassal Slingshot",
-      "def": "\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/vassal_slingshot\">Vassal Slingshot</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/vassal_slingshot\">Vassal Slingshot</nuxt-link></td><td>4</td><td>48\"</td><td>1</td><td>3</td><td>10</td><td>Area Attack (1×5), Direct Hit (D3), Oil Flasks</td></tr></table><br><br>\t"
+      "def": "\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/vassal_slingshot\">Vassal Slingshot</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/vassal_slingshot\">Vassal Slingshot</nuxt-link></td><td>4</td><td>48\"</td><td>1</td><td>3</td><td>10</td><td>Area Attack (1×5), Direct Hit (D3), Oil Flasks (4)</td></tr></table><br><br>\t"
     },
     "id-arrogance": {
       "title": "Arrogance",
@@ -1686,7 +1690,7 @@
     },
     "id-incendiary": {
       "title": "Incendiary",
-      "def": "Place one <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Marker for each instance of <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link></span> next to the unit. A unit with one or more <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Markers gains <span class=\"textbf\">Weakness (Flaming Attacks)</span>. Remove one <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Marker:<br>&nbsp;&nbsp;&bull;  Immediately when the unit suffers one or more wounding hits (<i>before saves are performed</i>) from Ranged Attacks that are <span class=\"textbf\">Flaming Attacks</span>.<br>&nbsp;&nbsp;&bull;  At the end of a Round of Combat in which the unit suffers one or more wounding hits (<i>before saves are performed</i>) from Melee Attacks that are <span class=\"textbf\">Flaming Attacks</span>.<br>A Character leaving a unit affected by <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link></span> is no longer affected, unless the Character was a single model unit when it gained <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link></span>. In that case, the Character keeps those <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Markers.",
+      "def": "Give one <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Marker , with Duration: Permanent,  to the unit. A unit with one or more <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Markers gains <span class=\"textbf\">Weakness (Flaming Attacks)</span>. Remove one <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Marker:<br>&nbsp;&nbsp;&bull;  Immediately when the unit suffers one or more wounding hits (<i>before saves are performed</i>) from Ranged Attacks with  <span class=\"textbf\">Flaming Attacks</span>.<br>&nbsp;&nbsp;&bull;  At the end of a Round of Combat in which the unit suffers one or more wounding hits (<i>before saves are performed</i>) from Melee Attacks with  <span class=\"textbf\">Flaming Attacks</span>.<br>A Character leaving a unit affected by <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link></span> is no longer affected, unless the Character was a single model unit when it gained <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link></span>. In that case, the Character keeps those <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Markers.",
       "aura": true,
       "descriptions": "Flammable",
       "mod": [
@@ -1728,7 +1732,7 @@
     },
     "id-curse_of_nezibkesh": {
       "title": "Curse of Nezibkesh",
-      "def": "The target gains one <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Marker that is not removed when the spell ends. The target suffers -1 Def and -1 Off for every <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Marker on it, up to a maximum of -3."
+      "def": "The target gains <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link>.  The target suffers -1~Def and -1~Off, and an additional -1~Def and -1~Off, as long as it has 1 or more <nuxt-link class=\"ruleLink\" to=\"/app/rule/incendiary\">Incendiary</nuxt-link> Markers on it."
     },
     "id-onyx_core": {
       "title": "Onyx Core",
@@ -1775,7 +1779,7 @@
     },
     "id-flame_of_the_east": {
       "title": "Flame of the East",
-      "def": "Flaming Attacks, <nuxt-link class=\"ruleLink\" to=\"/app/rule/volcanic_embrace\">Volcanic Embrace(D6+1)</nuxt-link>.",
+      "def": "Flaming Attacks, <nuxt-link class=\"ruleLink\" to=\"/app/rule/volcanic_embrace\">Volcanic Embrace</nuxt-link> (D3+1).",
       "type": "weapon_enchant",
       "mod": [
         {
@@ -1814,7 +1818,7 @@
     },
     "id-kadim_binding": {
       "title": "Kadim Binding",
-      "def": "Aegis (+1, against Flaming Attacks, max. 3+), Parry. The bearer's weapons lose <span class=\"textbf\">Two-Handed</span> if they had it.",
+      "def": "Aegis (+1, against Flaming Attacks, max. 3+), , .",
       "type": "armour_enchant",
       "mod": [
         {
@@ -1853,7 +1857,7 @@
     },
     "id-blaze_of_protection": {
       "title": "Blaze of Protection",
-      "def": "Arm is <span class=\"textbf\">set</span> to 6. Every enemy model in contact with the wearer's model that could allocate attacks towards it but doesn't, suffers 1 hit with Str 4, AP 0, and <span class=\"textbf\">Flaming Attacks</span>.",
+      "def": "Arm is <span class=\"textbf\">set</span> to 6. At the end of Agility Step 0, each  enemy model in contact with the bearer's model that could have allocated attacks towards it, but chose not to, suffers 1 hit with Str~4, AP~0, <span class=\"textbf\">Magical Attacks</span>, and <span class=\"textbf\">Flaming Attacks</span>.",
       "type": "armour_enchant",
       "mod": [
         {
@@ -1868,11 +1872,11 @@
     },
     "id-banner_of_the_twicebranded": {
       "title": "Banner of the Twice-Branded",
-      "def": "Models in the bearer's unit gain <span class=\"textbf\">Shoot in Extra Rank</span>. In addition, the bearer may activate the following One Use Only effect in the Charge Phase, immediately after all Charge Moves have been resolved, and if the bearer's unit was successfully Charged during this phase:<br><br>\tThe bearer's unit may perform a Combat Reform (<i>following the normal rules for Combat Reforms</i>)."
+      "def": "Models in the bearer's unit gain <span class=\"textbf\">Shoot in Extra Rank</span>."
     },
     "id-banner_of_shamut": {
       "title": "Banner of Shamut",
-      "def": "Models in the bearer's unit gain +1 Off and +1 Combat Score."
+      "def": "Models in the bearer's unit gain +1~Off and +1 Combat Score."
     },
     "id-their_masters_banner": {
       "title": "Their Master's Banner",
@@ -4171,7 +4175,7 @@
     },
     "bh-beast_axe": {
       "title": "Beast Axe",
-      "def": "+1 Str, +1 AP, +2 Def, Agi <span class=\"textbf\">set</span> to 0*. This weapon cannot be enchanted with Weapon Enchantments from the list of Common Magic Items.<br>*Always strike at Agility Step 0, regardless of the wielder's Agility.",
+      "def": "+1 Str, +1 AP, +2 Def, Agi <span class=\"textbf\">set</span> to 0*.<br>*Always strike at Agility Step 0, regardless of the wielder's Agility.",
       "type": "cc_weapon",
       "mod": [
         {
@@ -4197,7 +4201,7 @@
     "bh-hurl_attack": {
       "type": "Shooting Weapon",
       "title": "Hurl Attack",
-      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/hurl_attack\">Hurl Attack</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/hurl_attack\">Hurl Attack</nuxt-link></td><td>4</td><td>24\"</td><td>1</td><td>6</td><td>3</td><td>Artillery, Area Attack (2×2), Multiple Wounds (2), Hatred (towards Aegis)*</td></tr></table>"
+      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/hurl_attack\">Hurl Attack</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/hurl_attack\">Hurl Attack</nuxt-link></td><td>4</td><td>24\"</td><td>1</td><td>6</td><td>3</td><td>Artillery, Area Attack (2×2), Multiple Wounds (2), Divine Attacks, </td></tr></table>"
     },
     "bh-beer_barrel": {
       "title": "Beer Barrel",
@@ -4252,7 +4256,7 @@
     },
     "bh-drunk": {
       "title": "Drunk",
-      "def": "The model gains <span class=\"textbf\">Devastating Charge (+1 Str, +1 AP)</span> and <span class=\"textbf\">Fearless</span>. <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/drunk\">Drunk</nuxt-link></i> units cannot choose to Ambush.",
+      "def": "The model gains <span class=\"textbf\">Devastating Charge (+1 Str, +1 AP)</span>, <span class=\"textbf\">Fearless</span>, and <span class=\"textbf\">Unruly</span>. <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/drunk\">Drunk</nuxt-link></i> units cannot choose to Ambush.",
       "selectionGroup": "drunken",
       "selectable": true,
       "defaultSelection": false,
@@ -4275,11 +4279,11 @@
     },
     "bh-hunting_call": {
       "title": "Hunting Call",
-      "def": "If the Army List includes a model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/hunting_call\">Hunting Call</nuxt-link></span>, the owner may reroll <span class=\"textbf\">Ambush</span> rolls of ‘1’ and ‘2’. If the owner has the second Player Turn, any unit containing <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/pack_tactics\">Pack Tactics</nuxt-link></span> may choose to roll for its <span class=\"textbf\">Ambush</span> starting from Player Turn 1."
+      "def": "If the Army List includes a model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/hunting_call\">Hunting Call</nuxt-link></span>, the owner may reroll <span class=\"textbf\">Ambush</span> rolls of ‘1’ and ‘2’. If the owner has the second Player Turn, any unit containing <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/pack_tactics\">Pack Tactics</nuxt-link></span> may choose to roll for its <span class=\"textbf\">Ambush</span> starting from Player Turn~1."
     },
     "bh-primal_instinct": {
       "title": "Primal Instinct",
-      "def": "During Choose Equipment and Abilities, each unit containing this Attack Attribute <span class=\"textbf\">must</span> take a Command Test. If the test is passed, all model parts with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/primal_instinct\">Primal Instinct</nuxt-link></span> in the unit gain <span class=\"textbf\">Hatred</span> during this Round of Combat.",
+      "def": "During Choose Equipment and Abilities, each unit containing this Attack Attribute <span class=\"textbf\">must</span> take a Command Test. Each unit within range of its General’s Commanding Presence is considered Disciplined for the purpose of this test. If the test is passed, all model parts with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/primal_instinct\">Primal Instinct</nuxt-link></span> in the unit gain <span class=\"textbf\">Hatred</span> during this Round of Combat.",
       "type": "attack_attribute",
       "startofround": [
         {
@@ -4306,7 +4310,7 @@
     },
     "bh-echoes_of_the_dark_forest": {
       "title": "Echoes of the Dark Forest",
-      "def": "The target gains <span class=\"textbf\">Fearless</span>.<br>The target may perform a 4\" <span class=\"textbf\">Magical Move</span>."
+      "def": "The target gains <span class=\"textbf\">Fearless</span>.<br>The target may perform a  5\" <span class=\"textbf\">Magical Move</span>. This spell may target units in Ambush. If so, the target unit immediately enters the Battlefied following normal Ambush rules."
     },
     "bh-hawthorne_curse": {
       "title": "Hawthorne Curse",
@@ -4377,7 +4381,7 @@
     },
     "bh-aaghors_affliction": {
       "title": "Aaghor's Affliction",
-      "def": "+1 Res and <span class=\"textbf\">Fortitude (4)</span>. The model automatically fails all  its Armour Saves.",
+      "def": "+1 Res and <span class=\"textbf\">Fortitude (4+)</span>. The model automatically fails all its Armour Saves. Model loses Light Armour and Metal Armour.",
       "type": "armour_enchant",
       "mod": [
         {
@@ -4402,7 +4406,7 @@
     },
     "bh-obscuring_fog": {
       "title": "Obscuring Fog",
-      "def": "<span class=\"textbf\">Afflict (-1 Agi)</span>. The bearer's unit does not benefit from +1 Agi from Charging Momentum.",
+      "def": "<span class=\"textbf\">Afflict (-1 Agi)</span>.",
       "mod": [
         {
           "affects": [
@@ -4491,15 +4495,19 @@
     },
     "bh-pillager_icon": {
       "title": "Pillager Icon",
-      "def": "All friendly units within 12\" of the bearer comprised entirely of Razortusks, single model units of Raiding Chariots, or Razortusk Chariots (excluding Characters() gain <span class=\"textbf\">Vanguard</span>."
+      "def": "All friendly units  of Razortusks,  Raiding Chariots and Razortusk Chariots, excluding Characters, within 12\" of the bearer gain <span class=\"textbf\">Vanguard</span>."
     },
     "bh-seed_of_the_dark_forest": {
       "title": "Seed of the Dark Forest",
-      "def": "During Pre-game Selections, place a Forest:<br>\t\t<br>&nbsp;&nbsp;&bull;   Touching your Deployment Zone.<br>&nbsp;&nbsp;&bull;   Not in contact with any other Terrain Feature except Open Terrain.<br><br>\tThis Forest may not be larger than 10\" in length and 6\" in width."
+      "def": "During Pre-game Selections, place a Forest:<br>\t\t<br>&nbsp;&nbsp;&bull;   Touching your Deployment Zone.<br>&nbsp;&nbsp;&bull;   Not in contact with any other Terrain Feature .<br><br>\tThis Forest is a 106\" rectangle.<br>All friendly units with <nuxt-link class=\"ruleLink\" to=\"/app/rule/pack_tactics\">Pack Tactics</nuxt-link> gain Scout, but their scout deployment must end fully inside this Forest."
     },
-    "bh-inscribing_burin": {
-      "title": "Inscribing Burin",
-      "def": "While the bearer is in contact with a Forest, all friendly units in contact with any Forest on the Battlefield gain <span class=\"textbf\">Magic Resistance (2)</span>."
+    "bh-inscribingburin": {
+      "title": "",
+      "def": ""
+    },
+    "bh-horn_of_bragh": {
+      "title": "Horn of Bragh",
+      "def": "<span class=\"textbf\">Fury</span> and <span class=\"textbf\">Dying Blow</span>"
     },
     "bh-eye_of_dominance": {
       "title": "Eye of Dominance",
@@ -4675,9 +4683,9 @@
         }
       ]
     },
-    "bh-crown_of_horns": {
-      "title": "Crown of Horns",
-      "def": "The bearer's unit and all units within range of its <span class=\"textbf\">Commanding Presence</span> (if applicable) automatically pass Command Tests taken due to <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/primal_instinct\">Primal Instinct</nuxt-link></span>."
+    "bh-crown_of_madness": {
+      "title": "Crown of Madness",
+      "def": "The wearer's unit gain Unruly and First Strike (Stubborn). In addition, all units with Unruly within range of the wearer's Commanding Presence (<i>if applicable</i>) gain First Strike (Stubborn)."
     },
     "bh-gnarled_hide_totem": {
       "title": "Gnarled Hide Totem",
@@ -4693,7 +4701,7 @@
     },
     "bh-black_wing_totem": {
       "title": "Black Wing Totem",
-      "def": "The target gains +D3+1\" Cha and +3 Agi."
+      "def": "The target gains  +2\" Cha and +3 Agi."
     },
     "bh-totem_bearers": {
       "title": "Totem Bearers",
@@ -4817,11 +4825,15 @@
       "type": "attack_attribute",
       "mod": [
         {
-          "stats": {
-            "Ag": "+2",
-            "St": "+1",
-            "AP": "+1"
-          }
+          "rules": [
+            {
+              "id": "multiple_wounds",
+              "params": [
+                "D3",
+                "Melee"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4847,14 +4859,6 @@
               "id": "the_light_of_sonnstahl"
             }
           ]
-        },
-        {
-          "affects": [
-            0
-          ],
-          "stats": {
-            "At": "+1"
-          }
         }
       ]
     },
@@ -6881,11 +6885,11 @@
     },
     "ok-wildheart": {
       "title": "Wildheart",
-      "def": "Core limit is reduced to Min. 20% and Mammoth Hunter becomes Max. 4 units/army.<br>The Armylist may not include any Great Khans, Khans, Bruisers, Bombardiers, Mercenary Veterans, Mercenary Gunners or <nuxt-link class=\"ruleLink\" to=\"/app/rule/thunder_cannon\">Thunder Cannons</nuxt-link>."
+      "def": "Core limit is reduced to Min. 20% and Mammoth Hunter becomes Max. 4 units/army.<br>The Armylist may not include: Great Khans, Khans, Bruisers, Bombardiers, Mercenary Veterans, Mercenary Gunners with <nuxt-link class=\"ruleLink\" to=\"/app/rule/brace_of_ogre_pistols\">Brace of Ogre Pistols</nuxt-link> or <nuxt-link class=\"ruleLink\" to=\"/app/rule/thunder_cannon\">Thunder Cannons</nuxt-link>."
     },
     "ok-leader_of_the_pack": {
       "title": "Leader of the Pack",
-      "def": "The Mammoth Hunter's base size is changed to 50×50 mm.<br><br>\tThe model replaces <span class=\"textbf\">Exclusive (Yetis)</span> with <span class=\"textbf\">Exclusive (Sabretooth Tigers)</span>. While joined to a unit of Sabretooth Tigers, the unit gains <span class=\"textbf\">Vanguard</span>, loses <span class=\"textbf\">Unruly</span>, and the Mammoth Hunter counts as being Height  2 for the purposes of allocating enemy Ranged Attacks to its unit.",
+      "def": "The Mammoth Hunter's base size is changed to 50×50 mm.<br><br>\tThe model replaces <span class=\"textbf\">Exclusive (Yetis)</span> with <span class=\"textbf\">Exclusive (Sabretooth Tigers)</span>. While joined to a unit of Sabretooth Tigers, the unit gains <span class=\"textbf\">Vanguard</span>, loses <span class=\"textbf\">Unruly</span>, and the Mammoth Hunter counts as being  of the same height as the unit  for the purposes of allocating  Ranged Attacks .",
       "mod": [
         {
           "basesize": "50×50"
@@ -6894,11 +6898,11 @@
     },
     "ok-its_a_trap": {
       "title": "It's a Trap!",
-      "def": "When an enemy unit performs any of the following actions, it suffers 2D6 hits with Str 5 and AP 1:<br><br>&nbsp;&nbsp;&bull;<br>&nbsp;&nbsp;&bull;<br><br>Resolve the hits at the end of the move or action that triggered them. No unit can be affected by <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/its_a_trap\">It's a Trap</nuxt-link>!</span> more than once in each Player Turn <i>(including from different units containing <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/its_a_trap\">It's a Trap</nuxt-link>!</span>)</i>."
+      "def": "When an enemy unit performs any of the following actions, it suffers 2D6 hits with Str  4 and AP 1:<br><br>&nbsp;&nbsp;&bull;<br>&nbsp;&nbsp;&bull;<br><br>Resolve the hits at the end of the move or action that triggered them. No unit can be affected by <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/its_a_trap\">It's a Trap</nuxt-link>!</span> more than once in each Player Turn <i>(including from different units containing <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/its_a_trap\">It's a Trap</nuxt-link>!</span>)</i>."
     },
     "ok-giant_see_giant_do": {
       "title": "Giant See, Giant Do",
-      "def": "<i> - Universal Rule</i>The model gains <span class=\"textbf\">Deafening Clamour</span>.",
+      "def": "<i> - Universal Rule</i><br>During Build an Army: choose one of the following model rules, and note it on the Army List:<br>&nbsp;&nbsp;&bull;  First Strike (Fury)<br>&nbsp;&nbsp;&bull;  Lethal Strike<br>&nbsp;&nbsp;&bull;  Devastating Charge (+1 Str, +1 AP)",
       "mod": [
         {
           "rules": {
@@ -6962,7 +6966,7 @@
     },
     "ok-iron_fist": {
       "title": "Iron Fist",
-      "def": "This weapon cannot be enchanted with Weapon Enchantments from the List of Common or Shared Magic Items.<br>+1 Arm, +1 Att, and <span class=\"textbf\">Parry</span>.",
+      "def": "+1 Arm against Melee Attacks, +1 Att, and <span class=\"textbf\">Parry</span>.",
       "type": "cc_weapon",
       "mod": [
         {
@@ -7000,7 +7004,7 @@
     },
     "ok-ogre_crossbow": {
       "title": "Ogre Crossbow",
-      "def": "<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Ogre Crossbow</td><td>X</td><td>30\"</td><td>1</td><td>3</td><td>1</td><td>Area Attack (1×3), Direct Hit</td></tr></table>"
+      "def": "<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Ogre Crossbow</td><td>X</td><td>30\"</td><td>1</td><td>3</td><td>1</td><td>Area Attack (1×5), Direct Hit</td></tr></table>"
     },
     "ok-hunting_spear": {
       "title": "Hunting Spear",
@@ -7046,7 +7050,7 @@
     "ok-hand_cannon": {
       "type": "Shooting Weapon",
       "title": "Hand Cannon",
-      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/hand_cannon\">Hand Cannon</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/hand_cannon\">Hand Cannon</nuxt-link></td><td>4</td><td>30\"</td><td>2</td><td>5</td><td>3</td><td></td></tr></table>"
+      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/hand_cannon\">Hand Cannon</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/hand_cannon\">Hand Cannon</nuxt-link></td><td>5</td><td>12\"</td><td>3</td><td>5</td><td>3</td><td>Accurate, March and Shoot, Stand and Shoot, Quick to Fire</td></tr></table>"
     },
     "ok-trolleater": {
       "title": "Trolleater",
@@ -7109,7 +7113,7 @@
     },
     "ok-godspeaker": {
       "title": "Godspeaker",
-      "def": "<span class=\"textbf\">Attached</span>. The bearer and its unit gain Fearless, Unstable."
+      "def": "Attached, Fearless. The model's unit gains Unstable. When Deploying the model, choose a unit the bearer can and must join."
     },
     "ok-firebrand": {
       "title": "Firebrand",
@@ -7257,7 +7261,7 @@
     },
     "ok-scraplord": {
       "title": "Scraplord",
-      "def": "<span class=\"textbf\">Commanding Presence (12\", Scrapling)</span>. As long as the model is joined to a unit of Scraplings, the model counts as being Height 1 for the purposes of allocating Ranged Attacks."
+      "def": "<span class=\"textbf\">Commanding Presence (12\", Scrapling)</span>. As long as the model is joined to a unit of Scraplings, the model counts as being  of the same height as the unit for the purposes of allocating Ranged Attacks."
     },
     "ok-children_of_umi": {
       "title": "Children of Umi",
@@ -7433,15 +7437,14 @@
     },
     "ok-pennant_of_the_great_grass_sky": {
       "title": "Pennant of the Great Grass Sky",
-      "def": "One use only. May be activated when Declaring a Charge. The bearer's unit gains <span class=\"textbf\">Swiftstride</span> with Duration One Turn.",
+      "def": " The unit gains Maximized Charge Range and Minimised Flee Range.",
       "mod": [
         {
           "rules": {
             "id": "swiftstride"
           }
         }
-      ],
-      "uses": 1
+      ]
     },
     "ok-skull_of_qenghet": {
       "title": "Skull of Qenghet",
@@ -9846,27 +9849,9 @@
         }
       ]
     },
-    "vs-testudo": {
-      "title": "Testudo",
-      "def": "\tThe model gains +1 Str when using a Hand Weapon.",
-      "selectable": true,
-      "type": "cc_weapon",
-      "mod": [
-        {
-          "affects": [
-            0
-          ],
-          "stats": {
-            "St": "+1"
-          }
-        },
-        {
-          "rules": {
-            "id": "parry",
-            "params": []
-          }
-        }
-      ]
+    "vs-gladius": {
+      "title": "Gladius",
+      "def": "\tThe model gains +1 Str when using a Hand Weapon."
     },
     "vs-bloodfur_praetorians": {
       "title": "Bloodfur Praetorians",
@@ -9889,7 +9874,7 @@
     },
     "vs-unstable_engines": {
       "title": "Unstable Engines",
-      "def": "Immediately before the model is removed as a casualty, it inflicts D6 hits with Str 4, AP 0 and <span class=\"textbf\">Flaming Attacks</span> on all other units within 6\" of the model's unit."
+      "def": "Immediately before the model is removed as a casualty, it inflicts D6 hits with Str 4, AP 0 and <span class=\"textbf\">Flaming Attacks</span> on all units, other than it's own, within 6\" of the model's unit."
     },
     "vs-unit_of_artillery": {
       "title": "Unit of Artillery",
@@ -9897,15 +9882,15 @@
     },
     "vs-fire_rats": {
       "title": "Fire Rats",
-      "def": "\tThe model gains Flaming Attacks, Weakness (Flaming Attacks), and its base size is changed to 25×50 mm. Immediately before the model is removed as a casualty as a result of any enemy Melee Attack, it inflicts 1 hit with Str 3, AP 0, and <span class=\"textbf\">Flaming Attacks</span> on the attacking unit."
+      "def": "\tThe model gains Flaming Attacks, Weakness (Flaming Attacks), and its base size is changed to 25×50~mm. Immediately before the model is removed as a casualty as a result of any enemy Melee Attack, it inflicts 1 hit with Str 3, AP 0, and <span class=\"textbf\">Flaming Attacks</span>  on the Health Pool of the attacking model."
     },
     "vs-fetthis_fleshmaster": {
       "title": "Fetthis Fleshmaster",
-      "def": "Units containing Mutant, that are within 12\" of a <nuxt-link class=\"ruleLink\" to=\"/app/rule/fetthis_fleshmaster\">Fetthis Fleshmaster</nuxt-link> gain <span class=\"textbf\">Maximised (Charge Range)</span>."
+      "def": "\tThe Charge Range rolls of units with Mutant within 12\" of at leaste one <nuxt-link class=\"ruleLink\" to=\"/app/rule/fetthis_fleshmaster\">Fetthis Fleshmaster</nuxt-link> are <span class=\"textbf\">Maximised</span>."
     },
     "vs-stygian_overseer": {
       "title": "Stygian Overseer",
-      "def": "Immediately after Siphon the Veil in each friendly Magic Phase, each <nuxt-link class=\"ruleLink\" to=\"/app/rule/stygian_overseer\">Stygian Overseer</nuxt-link> may move a single friendly Tunnel Marker within 24\" that is not in contact with any unit. Move this marker in a straight line up to 6\", stopping immediately before moving into contact with any units. Each Tunnel Marker may only be moved once per Magic Phase.<br>\t<br>In addition, each <nuxt-link class=\"ruleLink\" to=\"/app/rule/stygian_overseer\">Stygian Overseer</nuxt-link> on the Army List increases the duplication limit of Legionary Drill Teams by 1."
+      "def": "\tAmbush (Terrain Feature with a friendly Tunnel Marker), Tunnel Digger.<br>\t<br>In addition, each <nuxt-link class=\"ruleLink\" to=\"/app/rule/stygian_overseer\">Stygian Overseer</nuxt-link> on the Army List increases the duplication limit of Legionary Drill Teams by 1."
     },
     "vs-rakachit_technocrat": {
       "title": "Rakachit Technocrat",
@@ -9960,9 +9945,9 @@
         }
       ]
     },
-    "vs-back_to_the_burrows": {
-      "title": "Back to the Burrows",
-      "def": "One use only. May be activated at the end of a friendly Movement Phase, if the model's unit:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Except this model, consists entirely of Height 1 models.<br>\t\t<br>&nbsp;&nbsp;&bull;  is neither Engaged nor Shaken.<br>\t\t<br>&nbsp;&nbsp;&bull;  is touching a friendly Tunnel Marker.<br>\t<br><br>\tEffect:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Remove the model's unit from the Battlefield.<br>\t\t<br>&nbsp;&nbsp;&bull;  Place it back on the Battlefield with <span class=\"textbf\">Ambush (within 1.5\" of a friendly Tunnel Marker)</span>. If placement is impossible, the unit is destroyed.<br>\t",
+    "vs-drill_down": {
+      "title": "Drill Down!",
+      "def": "One use only. May be activated at the end of a friendly Movement Phase, if:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  The model's unit, with the exception of the model itself, consists entirely of Height 1 models.<br>\t\t<br>&nbsp;&nbsp;&bull;  The model's unit is neither Engaged or Shaken.<br>\t<br><br>\tEffect:<br>\t<br>&nbsp;&nbsp;&bull;  Remove the model's unit from the Battlefield.<br>&nbsp;&nbsp;&bull;  The model's unit gains <span class=\"textbf\">Ambush (Terrain Feature with a friendly Tunnel Marker)</span>. It automatically passes any <span class=\"textbf\">Ambush</span> Rolls.",
       "uses": 1
     },
     "vs-plague_flail": {
@@ -9971,11 +9956,11 @@
     },
     "vs-imperator": {
       "title": "Imperator",
-      "def": "While within range of the model's <span class=\"textbf\">Commanding Presence</span>, other friendly units gain Fearless, Unstable and the number of Health Point losses ignored due to <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/life_is_cheap\">Life is Cheap</nuxt-link></span> is decreased by 2."
+      "def": "While within range of the model's <span class=\"textbf\">Commanding Presence</span>, other friendly units gain Fearless, Unstable and lose <nuxt-link class=\"ruleLink\" to=\"/app/rule/life_is_cheap\">Life is Cheap</nuxt-link>, <nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm</nuxt-link>."
     },
     "vs-girded_by_acratos": {
       "title": "Girded by Acratos",
-      "def": "The model's Armour is <span class=\"textbf\">set</span> to 5 and it gains <span class=\"textbf\">Magic Resistance (2)</span> and Metal Armour."
+      "def": "The model's Armour is <span class=\"textbf\">set</span> to 4, and it gains <span class=\"textbf\">Magic Resistance (2)</span> and Metal Armour."
     },
     "vs-enlightened_by_favana": {
       "title": "Enlightened by Favana",
@@ -9983,19 +9968,19 @@
     },
     "vs-fortified_by_udius": {
       "title": "Fortified by Udius",
-      "def": "The model gains Fortitude (4+), Distracting (1), Hard Target (1)."
+      "def": "The model gains Fortitude (4+), Hard Target (1)."
     },
     "vs-pestilent_pulpit": {
       "title": "Pestilent Pulpit",
-      "def": "The model gains <span class=\"textbf\">Exclusive (Plague Cultists, <nuxt-link class=\"ruleLink\" to=\"/app/rule/plague_disciples\">Plague Disciples)</nuxt-link></span>, and the number of its <span class=\"textbf\">Impact Hits</span> is increased by D3.<br>The model's unit gains <span class=\"textbf\">Poison Attacks</span>. "
+      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/diseased\">Diseased</nuxt-link></span> and <span class=\"textbf\">Exclusive (Plague Cultists, <nuxt-link class=\"ruleLink\" to=\"/app/rule/plague_disciples\">Plague Disciples)</nuxt-link></span>. The Chassis model part's Agi is set to~4. It gains <span class=\"textbf\">Grind Attack (D3+1)</span> and <span class=\"textbf\">Devastating Charge (+10 Agi)</span>.<br>The model's unit gains <span class=\"textbf\">Poison Attacks</span>."
     },
     "vs-whispering_bell": {
       "title": "Whispering Bell",
-      "def": "The model knows one additional spell. The model gains Deafening Clamour, Exclusive (Blackfur Veterans, <nuxt-link class=\"ruleLink\" to=\"/app/rule/bloodfur_praetorians\">Bloodfur Praetorians</nuxt-link>, Vermin Legionaries)."
+      "def": "The model gains Deafening Clamour, Exclusive (Blackfur Veterans, <nuxt-link class=\"ruleLink\" to=\"/app/rule/bloodfur_praetorians\">Bloodfur Praetorians</nuxt-link>, Vermin Legionaries), Impact Hits (D3+1).<br>Friendly units with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/life_is_cheap\">Life is Cheap</nuxt-link></span> that are within 12\" of the <nuxt-link class=\"ruleLink\" to=\"/app/rule/whispering_bell\">Whispering Bell</nuxt-link> increase the number of HP losses they and friendly units in the same combats as them ignore due to <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/life_is_cheap\">Life is Cheap</nuxt-link></span> by 2."
     },
-    "vs-underground_arrival": {
-      "title": "Underground Arrival",
-      "def": "Once per game, at the end of the owner's Movement Phase if the model is not Engaged or Shaken you may:<br>&nbsp;&nbsp;&bull;  Mark a point on the Battlefield with a Tunnel Marker touching the model, unless there are 4 friendly Tunnel Markers on the Battlefield.<br>&nbsp;&nbsp;&bull;  Remove the model from the Battlefield.<br>&nbsp;&nbsp;&bull;  The model is now in <span class=\"textbf\">Ambush (within 1.5\" of a friendly Tunnel Marker)</span> and may roll Ambush rolls normally next turns."
+    "vs-cutting_corners": {
+      "title": "Cutting Corners",
+      "def": "The model select one fewer Spell than normal."
     },
     "vs-cannon_fodder": {
       "title": "Cannon Fodder",
@@ -10017,13 +10002,9 @@
         }
       ]
     },
-    "vs-holy_triumvirate": {
-      "title": "Holy Triumvirate",
-      "def": "Max. 3 models/army.<br>If there are at least 3 models with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/holy_triumvirate\">Holy Triumvirate</nuxt-link></span> on your Army List, and they all have either Caelysian Pantheon, either <nuxt-link class=\"ruleLink\" to=\"/app/rule/cult_of_errahman\">Cult of Errahman</nuxt-link>, each of these models knows <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/the_awakened_swarm\">The Awakened Swarm</nuxt-link></i> (Hereditary Spell) and can select spells as follows:<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">Wizard Apprentices</span>: Select 1 spell from the Apprentice Spell and Adept Spells of their chosen Path.<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">Wizard Adepts</span>: Select 3 spells from the Apprentice Spell, Adept Spells, and Master Spells of their chosen Path."
-    },
     "vs-maniacal_enthusiasm": {
       "title": "Maniacal Enthusiasm",
-      "def": "When the model makes a dice roll of the type defined in brackets (X), after seeing the result you may choose to add +2 to the result rolled; determine the initial rolls for number of shots and the strength of any shots fired in this way for all models in the unit before deciding whether to use <nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm</nuxt-link> for a model. If this modifier is used, immediately roll a D6 and consult the table below:<br>\t<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">1--2 Oops</span>: Change the target of the spell or Shooting Attack being rolled for to the nearest other friendly unit (<i>to the model making the attack. This unit does not ned to be within Line of Sight or Range.</i>).<br>\t\t<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">3--4 Room for Improvement</span>:  The model's unit suffers D6 hits with Str 4 AP 1.<br>\t\t<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">5--6 Glorious Success!</span>:  No additional effect.<br>\t"
+      "def": "When  models in a unit make a dice roll of the type defined in brackets (X), after seeing the result you may choose to add +2 to the result rolled. If this modifier is used by one or more models in a unit, immediately roll a D6 and consult the table below:<br>\t<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">1--2 Oops</span>: Change the target of the spell or Shooting Attack(s) being rolled for to  a friendly unit within Range (<i>chosen by the controlling player</i>). <i>Note, the model's own unit is always an eligible target</i>.<br>\t\t<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">3--4 Room for Improvement</span>: After resolving the event that triggered the roll on this table, the model's unit suffers 3 hits with Str 4 and AP 10.<br>\t\t<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">5--6 Glorious Success!</span>:  No additional effect.<br>\t"
     },
     "vs-cohort_coordination": {
       "title": "Cohort Coordination",
@@ -10031,7 +10012,7 @@
     },
     "vs-diseased": {
       "title": "Diseased",
-      "def": "Whenever a natural ‘1’ is rolled to hit for an enemy Melee Attack allocated towards a model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/diseased\">Diseased</nuxt-link></span>, the model part inflicts 1 hit with <span class=\"textbf\">Toxic Attacks</span> on the attacking model's unit in the same Agility Step, before any casualties are removed."
+      "def": "Whenever a natural ‘1’ is rolled to hit for an enemy Melee Attack allocated towards a model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/diseased\">Diseased</nuxt-link></span>, the model part inflicts 1 hit with <span class=\"textbf\">Toxic Attacks</span> on the attacking model's unit in the same Agility Step, before any casualties are removed. This attack cannot benefit from Zeal, Steadfast."
     },
     "vs-bloodpox_blades": {
       "title": "Bloodpox Blades",
@@ -10050,10 +10031,8 @@
       ]
     },
     "vs-canister_launcher": {
-      "type": null,
       "title": "Canister Launcher",
-      "def": "<i>Max. 6 models/army.</i><br><br>\t\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Canister Launcher</td><td>X</td><td>18\"</td><td>1</td><td></td><td></td><td>Artillery, Area Attack (2×2), Toxic Attacks, <nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm(To-hit roll)</nuxt-link>, Quick to Fire</td></tr></table>",
-      "ruletype": "Shooting Weapon"
+      "def": "Only one model per unit may use a <nuxt-link class=\"ruleLink\" to=\"/app/rule/canister_launcher\">Canister Launcher</nuxt-link> in any one Shooting Phase. Increase the Aim of the <nuxt-link class=\"ruleLink\" to=\"/app/rule/canister_launcher\">Canister Launcher</nuxt-link> by 1 for each other model in the unit armed with a <nuxt-link class=\"ruleLink\" to=\"/app/rule/canister_launcher\">Canister Launcher</nuxt-link>."
     },
     "vs-deepfire_thrower": {
       "title": "Deepfire Thrower",
@@ -10062,13 +10041,13 @@
     "vs-rotary_gun": {
       "type": null,
       "title": "Rotary Gun",
-      "def": "<i>Max. 12 models/army.</i><br><br>\t\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Rotary Gun</td><td>X</td><td>18\"</td><td>D6</td><td>4</td><td>2</td><td>Maniacal Enthusiasm(Roll for number of Shots), Quick to Fire</td></tr></table>",
+      "def": "<i>Max. 12 models/army.</i><br><br>\t\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Rotary Gun</td><td>X</td><td>18\"</td><td>D6</td><td>4</td><td>2</td><td>Maniacal Enthusiasm (To-hit roll), Quick to Fire</td></tr></table>",
       "ruletype": "Shooting Weapon"
     },
     "vs-jezail": {
       "type": null,
       "title": "Jezail",
-      "def": "<i>Max. 18 models/army.</i><br><br>\t\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Jezail</td><td>X</td><td>36\"</td><td>1</td><td>5</td><td>3</td><td>Accurate, Unwieldy (-1)</td></tr></table>",
+      "def": "<i>Max. 18 models/army.</i><br><br>\t\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Jezail</td><td>X</td><td>36\"</td><td>1</td><td>5</td><td>3</td><td>Accurate, Unwieldy (-1), Maniacal Enthusiasm (To-hit roll)</td></tr></table>",
       "ruletype": "Shooting Weapon"
     },
     "vs-plague_disciples": {
@@ -10077,7 +10056,7 @@
     },
     "vs-supreme_augur": {
       "title": "Supreme Augur",
-      "def": "The model gains +1 Courage while Engaged in Combat."
+      "def": "When calculating Combat Score for combats containing one or more friendly unit within 12\" of the Ruinous Dictator, your side adds +1 to their Combat Score."
     },
     "vs-lord_of_the_legions": {
       "title": "Lord of the Legions",
@@ -10118,7 +10097,7 @@
     "vs-sling": {
       "type": "Shooting Weapon",
       "title": "Sling",
-      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/sling\">Sling</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/sling\">Sling</nuxt-link></td><td>4</td><td>18\"</td><td>1</td><td>3</td><td>0</td><td>+1 Str when shooting from Short Range., Quick to Fire</td></tr></table>"
+      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/sling\">Sling</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/sling\">Sling</nuxt-link></td><td>4</td><td>18\"</td><td>1</td><td>3</td><td>0</td><td>+1~Str when shooting not at Long Range., Quick to Fire</td></tr></table>"
     },
     "vs-fear_no_evil": {
       "title": "Fear no Evil",
@@ -10132,7 +10111,11 @@
     "vs-darkstone_generator": {
       "type": "Shooting Weapon",
       "title": "Darkstone Generator",
-      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/darkstone_generator\">Darkstone Generator</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/darkstone_generator\">Darkstone Generator</nuxt-link></td><td>--</td><td>12\"</td><td>D3+1</td><td>D6+1</td><td>3</td><td>March and Shoot, Lightning Attacks, <nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm(Roll for number of Shots)</nuxt-link>, Hits automatically.</td></tr></table>"
+      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/darkstone_generator\">Darkstone Generator</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/darkstone_generator\">Darkstone Generator</nuxt-link></td><td>--</td><td>12\"</td><td>D3+1</td><td>D6+1</td><td>3</td><td>March and Shoot, Lightning Attacks, <nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm</nuxt-link> (To-wound roll), Hits automatically.</td></tr></table>"
+    },
+    "vs-holy_triumvirate": {
+      "title": "",
+      "def": "If there are at least 3 models with <span class=\"textbf\"></span> on your Army List, these models can all select spells as follows:<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">Wizard Apprentices</span>: select from the Learned Spells 1, 2, 3, and 4 of their chosen Path.<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">Wizard Adepts</span>: select from the Learned Spells 1, 2, 3, 4, 5, and 6 of their chosen Path.<br>&nbsp;&nbsp;&bull;  During Spell Selection, each Wizard can choose to select one Learned Spell fewer than usual and to select 1 <span class=\"textbf\">Sacred Plague</span> instead."
     },
     "vs-cult_of_errahman": {
       "title": "Cult of Errahman",
@@ -10146,9 +10129,9 @@
         }
       ]
     },
-    "vs-the_awakened_swarm": {
-      "title": "The Awakened Swarm",
-      "def": "The target's number of Health Point losses that are ignored due to <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/life_is_cheap\">Life is Cheap</nuxt-link></span> is increased by 2. No model or unit can be affected by more than one instance of this spell simultaneously."
+    "vs-unseal_the_darkstone": {
+      "title": "Unseal the Darkstone",
+      "def": "The target suffers 2D3 hits with Str~4, AP~1, Lightning Attacks, Magical Attacks, <nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm</nuxt-link> (To-wound roll)."
     },
     "vs-swarm_master": {
       "title": "Swarm Master",
@@ -10181,7 +10164,7 @@
     },
     "vs-secrets_of_the_doom_blade": {
       "title": "Secrets of the Doom Blade",
-      "def": "Strength is <span class=\"textbf\">set</span> to 10, AP is <span class=\"textbf\">set</span> to 10 and gains Divine Attacks, Fury, Frenzy, Multiple Wounds (2, against Aegis)",
+      "def": "+1~Att, +2~AP. <nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm</nuxt-link> (To-wound roll), Multiple Wounds (D3). Rolls this model makes on the <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm</nuxt-link></span> chart gain a +2 modifier.",
       "type": "weapon_enchant",
       "mod": [
         {
@@ -10215,11 +10198,11 @@
     },
     "vs-storm_rocket": {
       "title": "Storm Rocket",
-      "def": "\tAim 3+. Range is <span class=\"textbf\">set</span> to 24\", Str is <span class=\"textbf\">set</span> to 5 and AP is <span class=\"textbf\">set</span> to 2. The weapon gains Flaming Attacks, <nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm(To-hit roll)</nuxt-link>. If the weapon hits, it causes D6 hits instead of 1."
+      "def": "\tAim 3+. Range is <span class=\"textbf\">set</span> to 24\", Str is <span class=\"textbf\">set</span> to 5 and AP is <span class=\"textbf\">set</span> to 2. The weapon gains Flaming Attacks, <nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm</nuxt-link> (To-hit roll). If the weapon hits, it causes D6 hits instead of 1."
     },
     "vs-bell_of_the_deep_roads": {
       "title": "Bell of the Deep Roads",
-      "def": "The bearer's unit gains <span class=\"textbf\">Ambush (within 1.5\" of a friendly Tunnel Marker)</span>."
+      "def": "The bearer's unit gains <span class=\"textbf\">Ambush (Terrain Feature with a friendly Tunnel Marker)</span>."
     },
     "vs-sacred_aquila": {
       "title": "Sacred Aquila",
@@ -10257,9 +10240,9 @@
       "title": "Orator's Toga",
       "def": "The bearer gains <span class=\"textbf\">Stand Behind</span>."
     },
-    "vs-cowl_of_the_apostate": {
-      "title": "Cowl of the Apostate",
-      "def": "If  there are two other models with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/holy_triumvirate\">Holy Triumvirate</nuxt-link></span> on the army the list, its Path access is replaced with Occultism, Thaumaturgy, Witchcraft."
+    "vs-crown_of_the_usurper": {
+      "title": "Crown of the Usurper",
+      "def": "The bearer's unit gains <span class=\"textbf\">Fearless</span>. If the General is removed as a casualty, the bearer becomes the General."
     },
     "vs-tome_of_the_ratking": {
       "title": "Tome of the Ratking",
@@ -10267,7 +10250,7 @@
     },
     "vs-crown_of_hubris": {
       "title": "Crown of Hubris",
-      "def": "At the start of any friendly Magic Phase, the bearer may choose to inflict 3 HP losses on its unit. If this is used, the model gains <span class=\"textbf\">Channel (2)</span> with Duration: One Turn."
+      "def": "At the start of any friendly Magic Phase, the bearer may choose to inflict 3~HP losses on its unit. If this is used, the model gains <span class=\"textbf\">Channel (2)</span> with Duration: One Turn."
     },
     "vs-tarinas_lyre": {
       "title": "Tarina's Lyre",
@@ -10275,11 +10258,11 @@
     },
     "vs-darkstone_detonator": {
       "title": "Darkstone Detonator",
-      "def": "At the end of any friendly Movement Phase after the first, the bearer may remove a single friendly Tunnel Marker within 24\" of it.<br>\tIf so, apply the following effects before removing the Tunnel Marker:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;   Each unengaged unit within 4\" of the Tunnel Marker suffers 2D6 hits with Str 4 and AP 1.<br>\t\t<br>&nbsp;&nbsp;&bull;   If one or more units that are Engaged in the same Combat are within 4\" of the Tunnel Marker, a total of 2D6 hits with Str 4 and AP 1 is inflicted.<br>\t\t\tRoll a D6 for each hit: on a roll of 4+, the hit is distributed onto a randomly chosen friendly unit; otherwise, the hit is distributed onto a randomly chosen enemy unit.<br>\t<br><br>\t"
+      "def": "At the end of any friendly Movement Phase after the first, the bearer may remove all friendly Tunnel Markers placed on a single Terrain Feature within 24\" of the bearer.<br>\tIf so, <br>\tone unengaged unit in contact with that Terrain Feature suffers 2D6 hits with Str~4 and AP~1.<br>\t"
     },
     "vs-favanite_powder": {
       "title": "Favanite Powder",
-      "def": "When casting a Hex spell, after seeing the result of the roll, the bearer can choose to gain <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm(Casting Roll)</nuxt-link></span>."
+      "def": "When casting a Hex spell, after seeing the result of the roll, the bearer can choose to gain <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/maniacal_enthusiasm\">Maniacal Enthusiasm</nuxt-link> (Casting Roll)</span>."
     },
     "vs-potion_of_rat_form": {
       "title": "Potion of Rat Form",
@@ -10336,17 +10319,33 @@
         }
       ]
     },
+    "vs-testudo": {
+      "selectable": true,
+      "type": "cc_weapon",
+      "mod": [
+        {
+          "affects": [
+            0
+          ],
+          "stats": {
+            "St": "+1"
+          }
+        },
+        {
+          "rules": {
+            "id": "parry",
+            "params": []
+          }
+        }
+      ]
+    },
     "dh-runic_anvil": {
       "title": "Runic Anvil",
-      "def": "The model must select two Battle Runes. Note which spells are selected on the Army List. The Range of these spells are <span class=\"textbf\">set</span> to 36\"."
-    },
-    "dh-resolute": {
-      "title": "Resolute",
-      "def": "A unit with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/resolute\">Resolute</nuxt-link></span> is considered to have one additional Proper Rank for Steady, Steadfast, Surrounded, and Rank Bonus purposes."
+      "def": "The model must select three Battle Runes. Note which spells are selected on the Army List. The Range of these spells are <span class=\"textbf\">set</span> to 36\". The model cannot cast Bound Spells in the same Player Turn that it performed a Move Manoeuvre."
     },
     "dh-monster_seeker": {
       "title": "Monster Seeker",
-      "def": "The model gains <span class=\"textbf\">Multiple Wounds (2, towards Height 3 or more)</span>.",
+      "def": "The model gains <span class=\"textbf\">Multiple Wounds (2, towards Height 3 or more)</span>. When rolling for Charge Range, if the charged unit contains a model with Height (3-5), units containing <nuxt-link class=\"ruleLink\" to=\"/app/rule/monster_seeker\">Monster Seeker</nuxt-link> gain <span class=\"textbf\">Swiftstride</span> for this Charge Range roll (<i>this does not apply to Pursuit and Overrun Moves</i>).",
       "type": "attack_attribute",
       "mod": [
         {
@@ -10383,7 +10382,7 @@
     },
     "dh-grim_resolve": {
       "title": "Grim Resolve",
-      "def": "The model gains +1 Att for each enemy model in contact with it (<i>including the model it is fighting a Duel with if applicable</i>).",
+      "def": "The model gains +1~Att for each enemy model in contact with it (<i>including the model it is fighting a Duel with if applicable</i>). When rolling for Charge Range, if the charged unit contains a model with Height (0-2), units containing <nuxt-link class=\"ruleLink\" to=\"/app/rule/grim_resolve\">Grim Resolve</nuxt-link> gain <span class=\"textbf\">Swiftstride</span> for this Charge Range roll (<i>this does not apply to Pursuit and Overrun Moves</i>).",
       "type": "attack_attribute",
       "mod": [
         {
@@ -10397,11 +10396,11 @@
     },
     "dh-rune_crafted": {
       "title": "Rune Crafted",
-      "def": "  &bull; <nuxt-link class=\"ruleLink\" to=\"/app/rule/dwarf_ballista\">Dwarf Ballista:</nuxt-link> +1 to hit towards Fly<br><br>&bull; <nuxt-link class=\"ruleLink\" to=\"/app/rule/flame_cannon\">Flame Cannon:</nuxt-link> +1 Str<br><br>&bull; <nuxt-link class=\"ruleLink\" to=\"/app/rule/dwarf_catapult\">Dwarf Catapult:</nuxt-link> Area Attack (32)<br>&bull; <nuxt-link class=\"ruleLink\" to=\"/app/rule/dwarf_cannon\">Dwarf Cannon:</nuxt-link> Direct Hit (D3+2)<br>towards Height 5<br><br>&bull; <nuxt-link class=\"ruleLink\" to=\"/app/rule/organ_gun\">Organ Gun:</nuxt-link> +1 to wound"
+      "def": "  &bull; <nuxt-link class=\"ruleLink\" to=\"/app/rule/dwarf_ballista\">Dwarf Ballista:</nuxt-link> +1 to hit towards Fly<br><br>&bull; <nuxt-link class=\"ruleLink\" to=\"/app/rule/flame_cannon\">Flame Cannon:</nuxt-link> +1~AP<br><br>&bull; <nuxt-link class=\"ruleLink\" to=\"/app/rule/dwarf_catapult\">Dwarf Catapult:</nuxt-link> +1~Str, +2~AP<br>&bull; <nuxt-link class=\"ruleLink\" to=\"/app/rule/dwarf_cannon\">Dwarf Cannon:</nuxt-link> Direct Hit (D3+2)<br>towards Height 5<br><br>&bull; <nuxt-link class=\"ruleLink\" to=\"/app/rule/organ_gun\">Organ Gun:</nuxt-link> +1 to wound"
     },
     "dh-runic_engravings": {
       "title": "Runic Engravings",
-      "def": "During Pre-game Selections, each Hold Guardians unit must choose one of the following effects. The effect is Permanent.<br>&nbsp;&nbsp;&bull;  +1 Str and +1 AP<br>\t\t<br>&nbsp;&nbsp;&bull;  +3 Agi<br>&nbsp;&nbsp;&bull;  Vanguard",
+      "def": "During Pre-game Selections, each Hold Guardians unit must choose one of the following effects. The effect is Permanent.<br>&nbsp;&nbsp;&bull;  +1 Str and +1 AP<br>\t\t<br>&nbsp;&nbsp;&bull;  +3 Agi and Vanguard<br>&nbsp;&nbsp;&bull;",
       "mod": [
         {
           "rules": [
@@ -10417,6 +10416,10 @@
           ]
         }
       ]
+    },
+    "dh-kingsoath": {
+      "title": "Kingsoath",
+      "def": "The model part gains +1~Att, which can only be allocated towards targets in a unit containing a model with a Grudge Marker."
     },
     "dh-crag_warden": {
       "title": "Crag Warden",
@@ -10442,7 +10445,7 @@
     },
     "dh-rune_craft_mastery": {
       "title": "Rune Craft Mastery",
-      "def": "Melee Attacks from models in a unit containing one or more models with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/rune_craft_mastery\">Rune Craft Mastery</nuxt-link></span> gain +1 AP.",
+      "def": "Melee Attacks from models in a unit containing one or more models with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/rune_craft_mastery\">Rune Craft Mastery</nuxt-link></span> gain +1~AP.",
       "type": "attack_attribute",
       "mod": [
         {
@@ -10483,7 +10486,7 @@
     },
     "dh-shrapnel_bombs": {
       "title": "Shrapnel Bombs",
-      "def": "The model gains Sweeping Attack (D6×2, Str 3, AP 1)."
+      "def": "The model gains Sweeping Attack (2D6, Str 3, AP 1)."
     },
     "dh-whirling_chains_of_doom": {
       "title": "Whirling Chains of Doom",
@@ -10575,16 +10578,16 @@
       ]
     },
     "dh-forge_repeater": {
-      "type": null,
       "title": "Forge Repeater",
-      "def": "\t\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Forge Repeater</td><td>4</td><td>18\"</td><td>4</td><td>5</td><td>2</td><td>Flaming Attacks, Quick to Fire</td></tr></table>",
-      "ruletype": "Shooting Weapon"
+      "def": "Range 18\", Shots 5, STR 2, AP 4, Flaming Attacks, Quick to Fire"
     },
     "dh-guildcrafted_handgun": {
-      "type": null,
       "title": "Guild-Crafted Handgun",
-      "def": "\t\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Guild-Crafted Handgun</td><td>X</td><td>24\"</td><td>1</td><td>4</td><td>2</td><td>Accurate, Stand and Shoot, Unwieldy (1)</td></tr></table>",
-      "ruletype": "Shooting Weapon"
+      "def": "Range 24\", Shots 4, STR 2, AP 1, Accurate, Unwieldy (1), Stand and Shoot"
+    },
+    "dh-wyrmslayer_rocket": {
+      "title": "Wyrm-Slayer Rocket",
+      "def": "Range 24\", Shots 6, STR 3, AP 1, Flaming Attacks, Multiple Wounds (D3)"
     },
     "dh-entrench": {
       "title": "Entrench",
@@ -10594,21 +10597,26 @@
       "title": "Majesty of High Kings",
       "def": "A General mounted on a War Throne  gains <span class=\"textbf\">Commanding Presence (18\")</span>."
     },
+    "dh-forge_gun": {
+      "type": "Shooting Weapon",
+      "title": "\n\t\tForge Gun",
+      "def": "\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/forge_gun\">Forge Gun</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/forge_gun\">Forge Gun</nuxt-link></td><td>3</td><td>18\"</td><td>1</td><td>4</td><td>0</td><td>March and Shoot, Flaming Attacks, Stand and Shoot, Always hits on 3+</td></tr></table><br><br>\t"
+    },
     "dh-engineering_rune": {
       "title": "Engineering Rune",
       "def": "Add +4 to the model's rolls on the Misfire Table."
     },
     "dh-dwarf_ballista": {
       "title": "Dwarf Ballista",
-      "def": "48\", Shots 1, Str 3 [6], AP 10, Area Attack (1×5), [Multiple Wounds (D3)]"
+      "def": "Range 48\", Shots 3 [6], STR 10, AP 1, Area Attack (1×5), Direct Hit (D3)"
     },
     "dh-flame_cannon": {
       "title": "Flame Cannon",
-      "def": "Flamethrower 24\" Shots 1, Str 4 [5], AP 1 [2], [Multiple Wounds (D3)], Flaming Attacks"
+      "def": "Range 24\", Shots 4, STR 1, AP 1, Area Attack (3×5), Artillery, Flaming Attacks"
     },
     "dh-dwarf_catapult": {
       "title": "Dwarf Catapult",
-      "def": "Catapult (4×4), Shots 1, 12--60\", Str 3 [7], AP 0 [4], [Multiple Wounds (D3, Clipped Wings)], The model’s Height is changed to Large",
+      "def": "Range 60\", Shots 6, STR 3, AP 1, Artillery, Area Attack (2×2), Multiple Wounds (2) Height : 3",
       "mod": [
         {
           "height": "Large"
@@ -10617,27 +10625,27 @@
     },
     "dh-dwarf_cannon": {
       "title": "Dwarf Cannon",
-      "def": "This Artillery Weapon can be fired in two ways:<br><br>&bull; Cannon 60\"  Shots  1, Str 4, [10], AP 0 [10], Area Attack (1×5), [Multiple Wounds (D3+1)]<br>&bull; Volley Gun, 12\", Shots  2D6, Str 4 AP 4"
+      "def": "Range 48\", Shots 5, STR 2, AP 1, Artillery, Area Attack (1×3), Direct Hit (D3+1)"
     },
     "dh-organ_gun": {
       "title": "Organ Gun",
-      "def": "Volley Gun, Shots 2D6×2, 30\", Str 5, AP 3"
+      "def": "Range 30\", Shots 5, STR 3, AP 3D6, -"
     },
     "dh-rune_of_revocation": {
       "title": "Rune of Revocation",
-      "def": "Ignore all other spell effects on the target from spells with Duration: One Turn."
+      "def": "Ignore all other spell effects on the target from spells with Duration: One Turn. The target unit gains <span class=\"textbf\">Magic Resistance (2)</span>, which is also applied to friendly spells."
     },
     "dh-rune_of_reckoning": {
       "title": "Rune of Reckoning",
-      "def": "The target gains <span class=\"textbf\">Hatred (Melee)</span>."
+      "def": "Friendly models in the target unit gain <span class=\"textbf\">Hatred (Melee)</span>. Friendly models attacking the target unit gain <span class=\"textbf\">Hatred (Melee)</span>."
     },
     "dh-rune_of_oaths": {
       "title": "Rune of Oaths",
-      "def": "The target gains <span class=\"textbf\">Zeal (Melee)</span>."
+      "def": "Friendly models in the target unit gain <span class=\"textbf\">Zeal (Melee)</span>. Friendly models attacking the target unit gain <span class=\"textbf\">Zeal (Melee)</span>."
     },
     "dh-rune_of_resolve": {
       "title": "Rune of Resolve",
-      "def": "The target may perform an 4\" Magical Move and gains <span class=\"textbf\">Light Troops</span> until the end of the Player Turn."
+      "def": "The target may perform an 4\" Magical Move and gains <span class=\"textbf\">Light Troops</span> until the end of the Player Turn. In addition, it gains <span class=\"textbf\">Swiftstride</span>"
     },
     "dh-rune_of_gleaming": {
       "title": "Rune of Gleaming",
@@ -10774,7 +10782,7 @@
     },
     "dh-rune_of_penetration": {
       "title": "Rune of Penetration",
-      "def": "+3 AP.",
+      "def": "+3~AP.",
       "type": "weapon_enchant",
       "unique": true,
       "mod": [
@@ -10792,7 +10800,7 @@
     },
     "dh-rune_of_quickening": {
       "title": "Rune of Quickening",
-      "def": "+3 Agi.",
+      "def": "+3~Agi.",
       "type": "weapon_enchant",
       "mod": [
         {
@@ -10809,7 +10817,7 @@
     },
     "dh-rune_of_might": {
       "title": "Rune of Might",
-      "def": "+1 Str and +1 AP.",
+      "def": "+1~Str and +1~AP.",
       "type": "weapon_enchant",
       "mod": [
         {
@@ -10861,7 +10869,7 @@
     },
     "dh-rune_of_anger": {
       "title": "Rune of Anger",
-      "def": "+1 Att.",
+      "def": "+1~Att.",
       "type": "weapon_enchant",
       "mod": [
         {
@@ -10946,7 +10954,7 @@
     },
     "dh-rune_of_iron": {
       "title": "Rune of Iron",
-      "def": "+1 Arm.",
+      "def": "+1~Arm.",
       "type": "armour_enchant",
       "maxOccurences": 2,
       "mod": [
@@ -11031,7 +11039,7 @@
     },
     "dh-rune_of_harnessing": {
       "title": "Rune of Harnessing",
-      "def": "In the opponent's Magic Phase, after rolling for Excess Magic, remove one Magic Dice from the opponent's pool."
+      "def": "In the opponent's Magic Phase, after Excess Magic, remove one Magic Dice from the opponent's pool."
     },
     "dh-rune_of_the_courage": {
       "title": "Rune of the Courage",
@@ -11072,10 +11080,9 @@
         }
       ]
     },
-    "dh-rune_of_mastery": {
-      "title": "Rune of Mastery",
-      "def": "One use only. A single <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/rune_of_mastery\">Rune of Mastery</nuxt-link></i> may be activated immediately before the bearer attempts to cast a Bound Spell. The Casting Roll for this Bound Spell gains +1.",
-      "uses": 1
+    "dh-rune_of_channelling": {
+      "title": "Rune of Channelling",
+      "def": "Channel (1). This Runic Artefact can only be used if the model’s army total combined Channel is 3 or less (excluding Channel from this Runic Artefact)."
     },
     "dh-rune_of_mining": {
       "title": "Rune of Mining",
@@ -11083,7 +11090,7 @@
     },
     "dh-rune_of_kinship": {
       "title": "Rune of Kinship",
-      "def": "The bearer gains Ambush (Board Edge), Scout, Vanguard.",
+      "def": "The bearer gains Ambush, Scout, Vanguard.",
       "mod": [
         {
           "rules": [
@@ -11101,9 +11108,9 @@
       "title": "Runic Banner Enchantments",
       "def": "Dwarven Holds armies may use Banner Enchantments from the list of Common Banner Enchantments as well as the <nuxt-link class=\"ruleLink\" to=\"/app/rule/runic_banner_enchantments\">Runic Banner Enchantments</nuxt-link> listed below."
     },
-    "dh-runic_standard_of_shielding": {
-      "title": "Runic Standard of Shielding",
-      "def": "The bearer's unit gains <span class=\"textbf\">Aegis (5+, against Ranged Attacks)</span>."
+    "dh-runic_standard_of_grudges": {
+      "title": "Runic Standard of Grudges",
+      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/ancient_grudge\">Ancient Grudge</nuxt-link> (1)."
     },
     "dh-runic_standard_of_swiftness": {
       "title": "Runic Standard of Swiftness",
@@ -11128,12 +11135,7 @@
     },
     "dh-runic_standard_of_the_hold": {
       "title": "Runic Standard of the Hold",
-      "def": "A unit with one or more <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/runic_standard_of_the_hold\">Runic Standard of the Hold</nuxt-link></i> are considered to have one additional Proper Rank for Steady, Steadfast, Surrounded, and Rank Bonus purposes."
-    },
-    "dh-forge_gun": {
-      "type": "Shooting Weapon",
-      "title": "\r\n\t\tForge Gun",
-      "def": "\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/forge_gun\">Forge Gun</nuxt-link><i> - Shooting Weapon</i><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/forge_gun\">Forge Gun</nuxt-link></td><td>3</td><td>18\"</td><td>1</td><td>4</td><td>0</td><td>March and Shoot, Flaming Attacks, Stand and Shoot, Always hits on 3+</td></tr></table><br><br>\t"
+      "def": "The bearer's unit gains 1."
     },
     "dh-ancient_grudge_mark": {
       "title": "Ancient Grudge Mark",
@@ -13981,7 +13983,7 @@
     },
     "er-holy_triumvirate": {
       "title": "Holy Triumvirate",
-      "def": "If there are at least 3 models with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/holy_triumvirate\">Holy Triumvirate</nuxt-link></span> on your Army List, these models can all select spells as follows:<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">Wizard Apprentices</span>: select from the Learned Spells 1, 2, 3, and 4 of their chosen Path.<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">Wizard Adepts</span>: select from the Learned Spells 1, 2, 3, 4, 5, and 6 of their chosen Path.<br>&nbsp;&nbsp;&bull;  During Spell Selection, each Wizard can choose to select one Learned Spell fewer than usual and to select 1 <span class=\"textbf\">Sacred Plague</span> instead."
+      "def": "If there are at least 3 models with <span class=\"textbf\"></span> on your Army List, these models can all select spells as follows:<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">Wizard Apprentices</span>: select from the Learned Spells 1, 2, 3, and 4 of their chosen Path.<br>&nbsp;&nbsp;&bull;  <span class=\"textbf\">Wizard Adepts</span>: select from the Learned Spells 1, 2, 3, 4, 5, and 6 of their chosen Path.<br>&nbsp;&nbsp;&bull;  During Spell Selection, each Wizard can choose to select one Learned Spell fewer than usual and to select 1 <span class=\"textbf\">Sacred Plague</span> instead."
     },
     "er-sling": {
       "title": "Sling",

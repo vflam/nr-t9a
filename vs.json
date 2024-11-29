@@ -6,14 +6,14 @@
   },
   "short": "vs",
   "version": "2023 alpha3",
-  "nrversion": 506,
+  "nrversion": 508,
   "playable": 1,
   "id": 21,
   "include": [102],
   "hereditary": [
     {
       "path": "hereditary",
-      "ref": "awakened_swarm"
+      "ref": "unseal_the_darkstone"
     }
   ],
   "reference_details": {
@@ -56,16 +56,16 @@
           "shared": true
         },
         {
-          "name": "Spell Scroll (Weight of Judgement)",
+          "name": "Spell Scroll (Rain of Fire)",
           "cost": 35,
-          "option_id": "ux86dw6op217qw3ynvj2r",
+          "option_id": "32f32f32fdsfsdfsf32f3",
           "type": "check",
           "shared": true
         },
         {
           "type": "check",
           "name": "Potion of Rat Form",
-          "cost": 25,
+          "cost": 10,
           "description": "During any friendly Magic Phase, the bearer can choose to lose <span class=\"textbf\">Attached</span> (if they have it) and make a 6\" Magical Move. They must end this move by joining another friendly unit (<i>following the normal rules for joining units</i>).\n",
           "refs": ["potion_ratform"],
           "hasStat": {
@@ -96,7 +96,7 @@
       "options": [
         {
           "name": "Death Cheater",
-          "cost": 100,
+          "cost": 80,
           "option_id": "9liy3kzxa5eagim6s235pu",
           "type": "check",
           "shared": true
@@ -104,7 +104,7 @@
         {
           "type": "check",
           "name": "Plague-Hermit's Blessing",
-          "cost": 70,
+          "cost": 50,
           "description": "The number of HP is <span class=\"textbf\">set</span> to 6. Model gains the Cult of Errahman property. The model automatically fails all its Armour Saves rolls.\n",
           "refs": ["pestilent plate_1dl4iyof", "cult_of_errahman"],
           "loses_rules": ["vs-caelysian_pantheon"],
@@ -143,8 +143,8 @@
         {
           "type": "check",
           "name": "Bell of the Deep Roads",
-          "cost": 20,
-          "description": "The bearer's unit gains <span class=\"textbf\">Ambush (within 1.5\" of a friendly Tunnel Marker)</span>.\n",
+          "cost": 25,
+          "description": "The bearer's unit gains <span class=\"textbf\">Ambush (Terrain Feature with a friendly Tunnel Marker)</span>.\n",
           "refs": ["banner of mining_60ha69tw"],
           "armyHasNotOption": [
             {
@@ -208,7 +208,7 @@
           "type": "check",
           "name": "Storm Rocket",
           "cost": 70,
-          "description": "\n\tAim 3+. Range is <span class=\"textbf\">set</span> to 24\", Str is <span class=\"textbf\">set</span> to 5 and AP is <span class=\"textbf\">set</span> to 2. The weapon gains Flaming Attacks, Maniacal Enthusiasm(To-hit roll). If the weapon hits, it causes D6 hits instead of 1.\n",
+          "description": "\n\tAim 3+. Range is <span class=\"textbf\">set</span> to 24\", Str is <span class=\"textbf\">set</span> to 5 and AP is <span class=\"textbf\">set</span> to 2. The weapon gains Flaming Attacks, Maniacal Enthusiasm (To-hit roll). If the weapon hits, it causes D6 hits instead of 1.\n",
           "refs": ["magnesium fireworks_l5f8rtkm"],
           "armyHasNotOption": [
             {
@@ -234,8 +234,8 @@
         {
           "type": "check",
           "name": "Secrets of the Doom Blade",
-          "cost": 100,
-          "description": "Strength is <span class=\"textbf\">set</span> to 10, AP is <span class=\"textbf\">set</span> to 10 and gains Divine Attacks,Fury, Frenzy,Multiple Wounds (2, against Aegis)\n",
+          "cost": 140,
+          "description": "+1 Att, +2 AP. Maniacal Enthusiasm (To-wound roll),Multiple Wounds (D3). Rolls this model makes on the <span class=\"textbf\">Maniacal Enthusiasm</span> chart gain a +2 modifier.\n",
           "refs": ["doom blade_ux76y1nv", "weaponEnchantUni"],
           "armyHasNotOption": [
             {
@@ -351,8 +351,8 @@
         {
           "type": "check",
           "name": "Favanite Powder",
-          "cost": 25,
-          "description": "When casting a Hex spell, after seeing the result of the roll, the bearer can choose to gain <span class=\"textbf\">Maniacal Enthusiasm(Casting Roll)</span>.\n",
+          "cost": 10,
+          "description": "When casting a Hex spell, after seeing the result of the roll, the bearer can choose to gain <span class=\"textbf\">Maniacal Enthusiasm (Casting Roll)</span>.\n",
           "refs": ["favanite_powder"],
           "armyHasNotOption": [
             {
@@ -366,9 +366,9 @@
         {
           "type": "check",
           "name": "Crown of Hubris",
-          "cost": 85,
+          "cost": 70,
           "description": "At the start of any friendly Magic Phase, the bearer may choose to inflict 3 HP losses on its unit. If this is used, the model gains <span class=\"textbf\">Channel (2)</span> with Duration: One Turn.\n",
-          "refs": ["dominant", "soulstone_z9gynq02"],
+          "refs": ["soulstone_z9gynq02"],
           "armyHasNotOption": [
             {
               "refs": ["soulstone_z9gynq02"],
@@ -381,9 +381,25 @@
         },
         {
           "type": "check",
+          "name": "Crown of the Usurper",
+          "cost": 30,
+          "description": "The bearer's unit gains <span class=\"textbf\">Fearless</span>. If the General is removed as a casualty, the bearer becomes the General.\n",
+          "refs": ["crow_of_usuerper"],
+          "armyHasNotOption": [
+            {
+              "refs": ["crow_of_usuerper"],
+              "amount": 1
+            }
+          ],
+          "hasNotOption": ["army_bsb"],
+          "categories": [],
+          "option_id": "fewfe2faa32f23f23fdsf32f32"
+        },
+        {
+          "type": "check",
           "name": "Darkstone Detonator",
-          "cost": 45,
-          "description": "At the end of any friendly Movement Phase after the first, the bearer may remove a single friendly Tunnel Marker within 24\" of it.\n\tIf so, apply the following effects before removing the Tunnel Marker:\n\t\n\t\t<br>&nbsp;&nbsp;&bull;   Each unengaged unit within 4\" of the Tunnel Marker suffers 2D6 hits with Str 4 and AP 1.\n\t\t<br>&nbsp;&nbsp;&bull;   If one or more units that are Engaged in the same Combat are within 4\" of the Tunnel Marker, a total of 2D6 hits with Str 4 and AP 1 is inflicted.\n\t\t\tRoll a D6 for each hit: on a roll of 4+, the hit is distributed onto a randomly chosen friendly unit; otherwise, the hit is distributed onto a randomly chosen enemy unit.\n\t<br>\n\t\n",
+          "cost": 30,
+          "description": "At the end of any friendly Movement Phase after the first, the bearer may remove all friendly Tunnel Markers placed on a single Terrain Feature within 24\" of the bearer.\n\tIf so, \n\tone unengaged unit in contact with that Terrain Feature suffers 2D6 hits with Str 4 and AP 1.\n\t\n",
           "refs": ["staff of tectonic shift_tbl6tdo5e"],
           "armyHasNotOption": [
             {
@@ -396,25 +412,9 @@
           "option_id": "kkfewv4ewikcicjj3e4rk65hbh56"
         },
         {
-          "type": "check",
-          "name": "Cowl of the Apostate",
+          "name": "Rod of Battle",
           "cost": 30,
-          "description": "If  there are two other models with <span class=\"textbf\">Holy Triumvirate</span> on the army the list, its Path access is replaced with Occultism, Thaumaturgy, Witchcraft.",
-          "refs": ["cowl_apostate"],
-          "armyHasNotOption": [
-            {
-              "refs": ["cowl_apostate"],
-              "amount": 1
-            }
-          ],
-          "hasOption": ["wizard"],
-          "categories": [],
-          "option_id": "553fgewrgi6hfgksdf43fgsdaw"
-        },
-        {
-          "name": "Mask of Mindless Violence",
-          "cost": 30,
-          "option_id": "9238id2y52qa4lg4efikk",
+          "option_id": "fewf32fesfdsh55g43g43g434g3",
           "type": "check",
           "shared": true
         },
@@ -443,7 +443,7 @@
           "options": [
             {
               "name": "Ruinous Dictator",
-              "cost": 460,
+              "cost": 440,
               "category": "perso",
               "options": [
                 {
@@ -489,14 +489,14 @@
                     {
                       "type": "check",
                       "name": "Lord of the Legions",
-                      "cost": 70,
+                      "cost": 90,
                       "refs": [],
                       "option_id": "0u7xzndrztx9xa4fp2bmay"
                     },
                     {
                       "type": "check",
                       "name": "Supreme Augur",
-                      "cost": 30,
+                      "cost": 50,
                       "option_id": "3gxg798mbh3aveta5kkm4t"
                     }
                   ],
@@ -580,50 +580,6 @@
                           "hasOption": ["favana"]
                         },
                         {
-                          "name": "Thaumaturgy",
-                          "cost": 0,
-                          "type": "check",
-                          "option_id": "fewfewf3e2r31243ehgerdfewf34",
-                          "refs": ["thaumaturgy"],
-                          "hasNotOption": ["favana"],
-                          "armyHasOption": [
-                            {
-                              "refs": ["cowl_apostate"],
-                              "amount": 1
-                            },
-                            {
-                              "refs": ["holy_triumvirate"],
-                              "amount": 3
-                            },
-                            {
-                              "refs": ["caelysianPantheon"],
-                              "amount": 3
-                            }
-                          ]
-                        },
-                        {
-                          "name": "Witchcraft",
-                          "cost": 0,
-                          "type": "check",
-                          "option_id": "fsdfdsf32fsdfewv32vsdfds",
-                          "refs": ["witchcraft"],
-                          "hasNotOption": ["favana"],
-                          "armyHasOption": [
-                            {
-                              "refs": ["cowl_apostate"],
-                              "amount": 1
-                            },
-                            {
-                              "refs": ["holy_triumvirate"],
-                              "amount": 3
-                            },
-                            {
-                              "refs": ["caelysianPantheon"],
-                              "amount": 3
-                            }
-                          ]
-                        },
-                        {
                           "name": "Witchcraft",
                           "cost": 0,
                           "type": "check",
@@ -646,7 +602,7 @@
                           "type": "check",
                           "name": "Great Weapon",
                           "option_id": "yRubxDpHu7t43XkXuW0pQFo6",
-                          "cost": 30
+                          "cost": 20
                         },
                         {
                           "type": "check",
@@ -672,7 +628,6 @@
                 "army_unique",
                 "ruinousDictator",
                 "wizard",
-                "holy_triumvirate",
                 "caelysianPantheon",
                 "tag_Supernal",
                 "tag_Caelysian Pantheon"
@@ -682,41 +637,15 @@
                 {
                   "refs": ["ruinousDictator"],
                   "amount": 1
-                },
-                {
-                  "refs": ["holy_triumvirate"],
-                  "amount": 3
                 }
               ],
               "option_id": "ebzmoieimwcfmkhqk5k6w9",
               "logo": "character",
-              "magic": {},
-              "override": [
-                {
-                  "armyHasOption": [
-                    {
-                      "refs": ["holy_triumvirate"],
-                      "amount": 3
-                    },
-                    {
-                      "refs": ["caelysianPantheon"],
-                      "amount": 3
-                    }
-                  ],
-                  "options": {
-                    "magic": {
-                      "choices": ["H", "1", "2", "3", "4", "5", "6"]
-                    }
-                  },
-                  "push": {
-                    "refs": ["wizardMasterChoices"]
-                  }
-                }
-              ]
+              "magic": {}
             },
             {
               "name": "Vermin Senator",
-              "cost": 120,
+              "cost": 90,
               "category": "perso",
               "options": [
                 {
@@ -737,7 +666,7 @@
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
-                      "cost": 0,
+                      "cost": 30,
                       "option_id": "6ku5qoptl0g1zp4yofl13"
                     }
                   ],
@@ -755,15 +684,7 @@
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["armourEnchant"],
-                      "option_id": "534gesgrh3fwqdgfref324g34",
-                      "childrenOptions": {
-                        "hasNotOption": [
-                          {
-                            "refs": ["doom blade_ux76y1nv"],
-                            "amount": 1
-                          }
-                        ]
-                      }
+                      "option_id": "534gesgrh3fwqdgfref324g34"
                     },
                     {
                       "optionsLabel": "Hand Weapon Enchant",
@@ -795,15 +716,7 @@
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["artefact"],
-                      "option_id": "kk33u371uxwhax4isy1gc",
-                      "childrenOptions": {
-                        "hasNotOption": [
-                          {
-                            "refs": ["doom blade_ux76y1nv"],
-                            "amount": 1
-                          }
-                        ]
-                      }
+                      "option_id": "kk33u371uxwhax4isy1gc"
                     },
                     {
                       "type": "group",
@@ -814,15 +727,7 @@
                       "optionsDict": ["potions_and_scrolls"],
                       "maxSize": 1,
                       "sortOptions": true,
-                      "collapsible": true,
-                      "childrenOptions": {
-                        "hasNotOption": [
-                          {
-                            "refs": ["doom blade_ux76y1nv"],
-                            "amount": 1
-                          }
-                        ]
-                      }
+                      "collapsible": true
                     }
                   ],
                   "collapsible": true,
@@ -841,7 +746,7 @@
                     {
                       "type": "check",
                       "name": "Senatorial Litter",
-                      "cost": 55,
+                      "cost": 30,
                       "refs": ["mount"],
                       "refopt": "senatorial_litter_mount",
                       "option_id": "vsul1iedhtu7g0aw3cv38"
@@ -866,7 +771,7 @@
             },
             {
               "name": "Bloodfur Legate",
-              "cost": 135,
+              "cost": 150,
               "category": "perso",
               "options": [
                 {
@@ -903,44 +808,16 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "nmlm0blp54sp2mm5qj9dx",
-                      "childrenOptions": {
-                        "hasNotOption": [
-                          {
-                            "refs": ["doom blade_ux76y1nv"],
-                            "amount": 1
-                          }
-                        ]
-                      }
+                      "option_id": "nmlm0blp54sp2mm5qj9dx"
                     },
                     {
-                      "optionsLabel": "Shield",
-                      "options": [
-                        {
-                          "type": "check",
-                          "name": "Shield",
-                          "cost": 5,
-                          "refs": [],
-                          "optionsLabel": "Shield Enchant",
-                          "maxSize": 1,
-                          "sortOptions": true,
-                          "collapsible": true,
-                          "options": [],
-                          "optionsDict": ["shieldEnchant"],
-                          "option_id": "dtbp7mexzypg13aa7oz23a",
-                          "childrenOptions": {
-                            "hasNotOption": [
-                              {
-                                "refs": ["doom blade_ux76y1nv"],
-                                "amount": 1
-                              }
-                            ]
-                          }
-                        }
-                      ],
+                      "optionsLabel": "Shield Enchant",
                       "maxSize": 1,
+                      "sortOptions": true,
                       "collapsible": true,
-                      "option_id": "kldj8vo98kq3882p17hu8"
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "dtbp7mexzypg13aa7oz23a"
                     },
                     {
                       "refs": [],
@@ -950,15 +827,7 @@
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["armourEnchant"],
-                      "option_id": "53fdrggfdhtru564wgfdsgj",
-                      "childrenOptions": {
-                        "hasNotOption": [
-                          {
-                            "refs": ["doom blade_ux76y1nv"],
-                            "amount": 1
-                          }
-                        ]
-                      }
+                      "option_id": "53fdrggfdhtru564wgfdsgj"
                     },
                     {
                       "optionsLabel": "Ranged Weapons",
@@ -1049,15 +918,7 @@
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["artefact"],
-                      "option_id": "bc75c6225d6t8a7u0xmvan",
-                      "childrenOptions": {
-                        "hasNotOption": [
-                          {
-                            "refs": ["doom blade_ux76y1nv"],
-                            "amount": 1
-                          }
-                        ]
-                      }
+                      "option_id": "bc75c6225d6t8a7u0xmvan"
                     },
                     {
                       "type": "group",
@@ -1068,15 +929,7 @@
                       "optionsDict": ["potions_and_scrolls"],
                       "maxSize": 1,
                       "sortOptions": true,
-                      "collapsible": true,
-                      "childrenOptions": {
-                        "hasNotOption": [
-                          {
-                            "refs": ["doom blade_ux76y1nv"],
-                            "amount": 1
-                          }
-                        ]
-                      }
+                      "collapsible": true
                     }
                   ],
                   "collapsible": true,
@@ -1095,7 +948,7 @@
                     {
                       "type": "check",
                       "name": "Triumphal Platform",
-                      "cost": 270,
+                      "cost": 260,
                       "refs": ["mount"],
                       "refopt": "triumphal_platform_mount",
                       "option_id": "ych3phgcc1ev8ul9oy84f"
@@ -1113,6 +966,18 @@
                   "collapsible": true,
                   "option_id": "g6zhefmvxgi2nuk0yceuun",
                   "minSize": 1
+                },
+                {
+                  "optionsLabel": "Options",
+                  "option_id": "nf4238nf230inf032nmf023f23",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Gladius and Weapon Master",
+                      "cost": 20,
+                      "option_id": "fdsnfi230f23nf23f32f"
+                    }
+                  ]
                 }
               ],
               "refs": ["bloodfurCommander", "non_core_unit", "tag_Vermin", "tag_Metal Armour"],
@@ -1122,7 +987,7 @@
             },
             {
               "name": "House Prefect",
-              "cost": 50,
+              "cost": 60,
               "category": "perso",
               "override": [
                 {
@@ -1241,7 +1106,7 @@
                         {
                           "type": "check",
                           "name": "Canister Launcher (3+)",
-                          "cost": 45,
+                          "cost": 25,
                           "refs": ["canister_launcher"],
                           "armyHasNotOption": [
                             {
@@ -1336,7 +1201,7 @@
                       "type": "check",
                       "name": "Stygian Overseer",
                       "loses_rules": ["light_armour"],
-                      "cost": 40,
+                      "cost": 20,
                       "refs": ["stygianOverseer", "heavy_armour"],
                       "option_id": "ee9fnoekqkuy1g2njp9tjp",
                       "armyHasNotOption": [
@@ -1386,9 +1251,11 @@
             },
             {
               "name": "Swarm Priest",
-              "cost": 100,
+              "cost": 200,
               "category": "perso",
-              "magic": {},
+              "magic": {
+                "amount": -1
+              },
               "override": [],
               "options": [
                 {
@@ -1498,37 +1365,6 @@
                   "option_id": "22z7cri4h6e9rva0salhb4"
                 },
                 {
-                  "optionsLabel": "Options",
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "Holy Triumvirate",
-                      "cost": 20,
-                      "refs": ["holy_triumvirate"],
-                      "armyHasNotOption": [
-                        {
-                          "refs": ["holy_triumvirate"],
-                          "amount": 3
-                        }
-                      ],
-                      "option_id": "70hzxcp22tn77lft5lqhaa",
-                      "magic": {
-                        "spells": [
-                          {
-                            "path": "hereditary",
-                            "ref": "awakened_swarm",
-                            "mods": {
-                              "mandatory": true,
-                              "free": true
-                            }
-                          }
-                        ]
-                      }
-                    }
-                  ],
-                  "option_id": "3mrkf4i3ofm3402ifj0233208"
-                },
-                {
                   "optionsLabel": "Mount",
                   "options": [
                     {
@@ -1540,7 +1376,7 @@
                     {
                       "type": "check",
                       "name": "Sacred Platform",
-                      "cost": 260,
+                      "cost": 240,
                       "refs": ["mount"],
                       "refopt": "sacred_platform_mount",
                       "option_id": "4i8uoxupres9hbrw0b4ato"
@@ -1558,18 +1394,18 @@
                       "optionsLabel": "Level",
                       "options": [
                         {
-                          "cost": "0",
-                          "name": "Wizard Apprentice and Attached",
-                          "refs": ["wizardApprentice"],
                           "type": "check",
-                          "option_id": "dp1y8nmixxl9awrpm7f"
+                          "name": "Wizard Adept",
+                          "cost": 0,
+                          "refs": ["wizardAdept"],
+                          "option_id": "mwm7mrdjhyl75opo8j4nqc"
                         },
                         {
                           "type": "check",
-                          "name": "Wizard Adept",
+                          "name": "Wizard Master",
                           "cost": 150,
-                          "refs": ["wizardAdept"],
-                          "option_id": "mwm7mrdjhyl75opo8j4nqc"
+                          "refs": ["wizardMaster"],
+                          "option_id": "fwnsef8j320f823f23f32"
                         }
                       ],
                       "maxSize": 1,
@@ -1621,7 +1457,7 @@
             },
             {
               "name": "Duskblade Assassin",
-              "cost": 135,
+              "cost": 120,
               "category": "perso",
               "options": [],
               "refs": ["duskbladeAssassin", "non_core_unit", "not_a_leader", "tag_Vermin"],
@@ -1646,7 +1482,7 @@
           "options": [
             {
               "name": "Blackfur Veterans",
-              "cost": 10,
+              "cost": 0,
               "category": "base",
               "override": [
                 {
@@ -1670,7 +1506,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 11,
                       "hide": true,
                       "option_id": "vm28q00c8jqxxune3wuh68",
                       "refs": ["blackfur_veterans_amount"],
@@ -1770,7 +1606,7 @@
             },
             {
               "name": "Vermin Legionaries",
-              "cost": 10,
+              "cost": 15,
               "category": "base",
               "options": [
                 {
@@ -1781,7 +1617,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 8,
+                      "cost": 7,
                       "hide": true,
                       "options": [
                         {
@@ -1838,7 +1674,7 @@
             },
             {
               "name": "Vermin Slaves",
-              "cost": 55,
+              "cost": 80,
               "category": "base",
               "options": [
                 {
@@ -1849,7 +1685,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 4,
+                      "cost": 3,
                       "hide": true,
                       "option_id": "yhtgnf14qravc8eou0lpej",
                       "refs": ["vermin_slaves_amount"]
@@ -1891,7 +1727,7 @@
             },
             {
               "name": "Vermin Slingers",
-              "cost": 35,
+              "cost": 20,
               "category": "base",
               "options": [
                 {
@@ -1957,7 +1793,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 11,
                       "hide": true,
                       "option_id": "g3433f34f34g43g34g3g34"
                     }
@@ -1994,11 +1830,17 @@
               "armyHasNotOption": ["bloodfurPraetorians"],
               "unit_id": "blackfur_veterans",
               "option_id": "g43gergfdg4334gj034g34g34",
-              "logo": "core"
+              "logo": "core",
+              "rules": [
+                {
+                  "id": "bloodfur_praetorians",
+                  "params": []
+                }
+              ]
             },
             {
               "name": "Vermin Brutes",
-              "cost": -70,
+              "cost": -120,
               "category": "special",
               "options": [
                 {
@@ -2009,7 +1851,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 55,
+                      "cost": 60,
                       "hide": true,
                       "options": [],
                       "option_id": "49en9k20spcefk82ialnm7",
@@ -2099,7 +1941,7 @@
             },
             {
               "name": "Rat Swarm",
-              "cost": 78,
+              "cost": 90,
               "category": "special",
               "options": [
                 {
@@ -2110,7 +1952,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 24,
+                      "cost": 20,
                       "hide": true,
                       "option_id": "xygbcdsdszmqzyjsjbj55qmrt",
                       "refs": ["rat_swarm_amount"]
@@ -2126,7 +1968,7 @@
             },
             {
               "name": "Legionary Drill Team",
-              "cost": 75,
+              "cost": 80,
               "category": "special",
               "options": [],
               "refs": ["legionaryDrillTeam", "non_core_unit", "tag_Construct", "tag_Metal Armour"],
@@ -2272,7 +2114,7 @@
             },
             {
               "name": "Gladiator Brutes",
-              "cost": 50,
+              "cost": 40,
               "category": "special",
               "options": [
                 {
@@ -2397,7 +2239,7 @@
             },
             {
               "name": "Doomspark Device",
-              "cost": 260,
+              "cost": 240,
               "category": "tunnel_gunners",
               "refs": ["doomsparkDevices", "non_core_unit", "tag_Vermin", "tag_Construct", "tag_Metal Armour"],
               "unit_id": "doomspark_device",
@@ -2408,11 +2250,11 @@
                 }
               ],
               "option_id": "gf19l3tdamll84augmbpu",
-              "logo": "special"
+              "logo": "pistols"
             },
             {
               "name": "Shadowfur Stalkers",
-              "cost": 55,
+              "cost": 70,
               "category": "special",
               "options": [
                 {
@@ -2423,7 +2265,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 8,
+                      "cost": 7,
                       "hide": true,
                       "refs": ["stalkers_numbers"],
                       "armyHasNotOption": [
@@ -2497,7 +2339,7 @@
           "options": [
             {
               "name": "Thunder Brutes",
-              "cost": 50,
+              "cost": 75,
               "category": "special",
               "options": [
                 {
@@ -2508,7 +2350,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 60,
+                      "cost": 55,
                       "hide": true,
                       "refs": ["brute_force"],
                       "armyHasNotOption": [
@@ -2524,7 +2366,7 @@
                             {
                               "type": "check",
                               "name": "Deepfire Thrower",
-                              "cost": 15,
+                              "cost": 10,
                               "refs": ["deepfire_thrower"],
                               "option_id": "fw1ewuzr9lp59ygplkg7cc",
                               "armyHasNotOption": [
@@ -2537,7 +2379,7 @@
                             {
                               "type": "check",
                               "name": "Canister Launcher (4+)",
-                              "cost": 7,
+                              "cost": 10,
                               "refs": ["canister_launcher"],
                               "option_id": "tdrgv72hfypamqkeoxi3v4",
                               "armyHasNotOption": [
@@ -2550,7 +2392,7 @@
                             {
                               "type": "check",
                               "name": "Rotary Gun (4+)",
-                              "cost": 20,
+                              "cost": 25,
                               "refs": ["rotary_gun"],
                               "option_id": "bw27gzgjcumz7ak7uai24i",
                               "armyHasNotOption": [
@@ -2645,7 +2487,7 @@
                             {
                               "type": "check",
                               "name": "Rotary Gun (4+)",
-                              "cost": 20,
+                              "cost": 25,
                               "refs": ["rotary_gun"],
                               "armyHasNotOption": [
                                 {
@@ -2658,7 +2500,7 @@
                             {
                               "type": "check",
                               "name": "Canister Launcher (4+)",
-                              "cost": 2,
+                              "cost": 5,
                               "refs": ["canister_launcher"],
                               "armyHasNotOption": [
                                 {
@@ -2683,7 +2525,7 @@
                             },
                             {
                               "type": "check",
-                              "name": "Jezail (4+)",
+                              "name": "Jezail (4+) and Shield",
                               "cost": 0,
                               "refs": ["jezail"],
                               "armyHasNotOption": [
@@ -2718,7 +2560,7 @@
             },
             {
               "name": "Ignifier Grenadiers",
-              "cost": 70,
+              "cost": 80,
               "category": "tunnel_gunners",
               "options": [
                 {
@@ -2729,7 +2571,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 10,
                       "hide": true,
                       "options": [],
                       "option_id": "eo483h89triqvz9lpmu8bd",
@@ -2748,11 +2590,11 @@
                 }
               ],
               "option_id": "sosrd2vy7kbc580xt7fhcc",
-              "logo": "pistols"
+              "logo": "arrows"
             },
             {
               "name": "Vermin Artillery",
-              "cost": 190,
+              "cost": 180,
               "category": "tunnel_gunners",
               "options": [
                 {
@@ -2763,7 +2605,7 @@
                     {
                       "type": "check",
                       "name": "Rakachit Mauss Rifle (4+)",
-                      "cost": 0,
+                      "cost": 15,
                       "refs": ["mauss_cannon"],
                       "option_id": "vttekpg9enrgavwa1skc0j",
                       "armyHasNotOption": [
@@ -2776,7 +2618,7 @@
                     {
                       "type": "check",
                       "name": "Skorchit Ordnance (4+)",
-                      "cost": 15,
+                      "cost": 0,
                       "refs": ["skorchit ordnance_5sjmtk3s"],
                       "armyHasNotOption": [
                         {
@@ -2806,13 +2648,13 @@
         },
         {
           "name": "Bread and Games",
-          "maxPercent": 0.2,
+          "maxPercent": 0.25,
           "refs": ["bread_and_games"],
           "optionsLabel": "Units",
           "options": [
             {
               "name": "Arena Beast",
-              "cost": 290,
+              "cost": 280,
               "category": "bread_and_games",
               "options": [
                 {
@@ -2821,7 +2663,7 @@
                     {
                       "type": "check",
                       "name": "Underworld Beast",
-                      "cost": 15,
+                      "cost": 20,
                       "refs": [],
                       "option_id": "7ldujwbq18mvygb1utvkhb"
                     }
@@ -2860,7 +2702,7 @@
             },
             {
               "name": "Dreadmill Chariots",
-              "cost": 15,
+              "cost": 20,
               "category": "bread_and_games",
               "options": [
                 {
@@ -2871,7 +2713,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 85,
+                      "cost": 80,
                       "hide": true,
                       "options": [],
                       "option_id": "kptvjerjukieqvi97u036u",
@@ -2894,7 +2736,7 @@
             },
             {
               "name": "Stygian Earthbreaker",
-              "cost": 270,
+              "cost": 260,
               "category": "bread_and_games",
               "options": [],
               "refs": ["stygianEarthbreaker", "non_core_unit", "tag_Construct", "tag_Metal Armour"],
