@@ -6,7 +6,7 @@
   },
   "short": "ud",
   "version": "2023",
-  "nrversion": 353,
+  "nrversion": 354,
   "playable": 1,
   "id": 15,
   "include": [102],
@@ -626,7 +626,7 @@
             {
               "name": "Nomarch",
               "refs": ["nomarch", "tag_Skeleton", "tag_Light Armour"],
-              "cost": 90,
+              "cost": 70,
               "override": [
                 {
                   "hasOption": [
@@ -710,7 +710,7 @@
                       "refs": ["army_general"],
                       "armyHasNotOption": ["army_general"],
                       "name": "General",
-                      "cost": 0,
+                      "cost": 20,
                       "option_id": "ib03q5mw3tbjvdsh3ejwy2kf"
                     },
                     {
@@ -720,11 +720,18 @@
                       "option_id": "vcklv0439543bjewr0vb34jv034v43"
                     },
                     {
+                      "option_id": "ff23n8f32jf0329f23g23g2",
+                      "name": "Exclusive",
+                      "type": "check",
+                      "cost": 20,
+                      "refs": ["exclusive"]
+                    },
+                    {
                       "type": "check",
                       "armyHasNotOption": ["army_bsb"],
                       "refs": ["army_bsb", "not_a_leader"],
                       "name": "Battle Standard Bearer",
-                      "cost": 50,
+                      "cost": 70,
                       "collapsible": true,
                       "option_id": "f32fsddsfsdf32f32fsdfsdfmn",
                       "hasOption": [
@@ -2461,7 +2468,7 @@
               "armyHasNotOption": [
                 {
                   "refs": ["shabtis"],
-                  "amount": 5
+                  "amount": 4
                 }
               ],
               "options": [

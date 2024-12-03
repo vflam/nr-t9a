@@ -6,7 +6,7 @@
   },
   "short": "koe",
   "version": "2023 beta4",
-  "nrversion": 483,
+  "nrversion": 484,
   "playable": 1,
   "id": 9,
   "include": [102],
@@ -388,7 +388,8 @@
               "name": "Witchcraft",
               "option_id": "fn209fn320f032f032f32h5"
             }
-          ]
+          ],
+          "hasNotOption": ["castellan"]
         },
         {
           "cost": 55,
@@ -398,17 +399,17 @@
           "refs": ["cleric", "ordo_minister", "tag_Holy Vows"],
           "loses_rules": ["koe-ordeal"],
           "description": "The model gains <span class=\"textbf\">Clergy</span>, <span class=\"textbf\">Ordo Minister</span>, Holy Vows, and loses <span class=\"textbf\">Commonfolk</span>.\n",
-          "hasNotOption": ["quin"],
+          "hasNotOption": ["quin", "castellan"],
           "neverHide": true
         },
         {
-          "cost": 50,
+          "cost": 60,
           "name": "Bannerman",
           "type": "check",
           "option_id": "fgfdg8ii65h54g54g34f34f",
           "refs": ["bannerman", "army_bsb"],
           "description": "The model becomes the Battle Standard Bearer.",
-          "hasNotOption": ["army_general", "quin"],
+          "hasNotOption": ["army_general", "quin", "castellan"],
           "neverHide": true,
           "armyHasNotOption": [
             {
@@ -424,7 +425,7 @@
           "option_id": "vfmv3ovm34-v3k-0v34k-v43",
           "refs": ["troubadour", "wizard", "wizardApprentice"],
           "description": "The model gains <span class=\"textbf\">Musician</span> and is a <span class=\"textbf\">Wizard Apprentice</span> that uses <i>Divination</i> as its Path of Magic.",
-          "hasNotOption": ["quin"],
+          "hasNotOption": ["quin", "castellan"],
           "neverHide": true,
           "optionsLabel": "Path",
           "minSize": 1,
@@ -440,13 +441,13 @@
           ]
         },
         {
-          "cost": 35,
+          "cost": 0,
           "name": "Castellan",
           "type": "check",
           "option_id": "vdver348jv3094u4trf3f",
           "refs": ["castellan"],
-          "description": "The model part gains <span class=\"textbf\">Captain</span>, <span class=\"textbf\">Commanding Presence (6\", Commonfolk)</span> and <span class=\"textbf\">Disciplined</span>.\n",
-          "hasNotOption": ["quin"],
+          "description": "The model part gains <span class=\"textbf\">Captain</span> and <span class=\"textbf\">Commanding Presence (6\", Commonfolk)</span> .\n",
+          "hasNotOption": ["quin", "army_general"],
           "neverHide": true
         }
       ],
@@ -1505,7 +1506,7 @@
             },
             {
               "name": "Folk Hero",
-              "cost": 60,
+              "cost": 50,
               "options": [
                 {
                   "type": "group",
@@ -1518,7 +1519,7 @@
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
-                      "cost": 0,
+                      "cost": 10,
                       "option_id": "x5juoe22mcmx9ctvi8g9hl",
                       "hasNotOption": ["army_bsb"]
                     }

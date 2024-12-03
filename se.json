@@ -6,7 +6,7 @@
   },
   "short": "se",
   "version": "2023 beta2",
-  "nrversion": 345,
+  "nrversion": 346,
   "playable": 1,
   "id": 14,
   "include": [
@@ -425,9 +425,10 @@
           "name": "Shapeshifter",
           "cost": 40,
           "hasNotOption": [
-            "mount"
+            "mount",
+            "captain"
           ],
-          "description": "The model gains Exclusive,Fortitude (4+),Vanguard. Its Mob is <span class=\"textbf\">set</span> to 10\". The model loses <span class=\"textbf\">Attached</span> (if it has it).<br>",
+          "description": "The model gains Exclusive,Fortitude (4+),Vanguard. Its Mob is <span class=\"textbf\">set</span> to 10\". <br>",
           "option_id": "m8hkm4kcdg05ha2aswdu3"
         },
         {
@@ -575,7 +576,7 @@
           "refs": [
             "se_verdant_rebirth"
           ],
-          "description": "The first time each Magic Phase that the model successfully casts a Learned Spell that targets a friendly unit, it <span class=\"textbf\">Recovers</span> 1 HP. \nThe model cannot Recover more than 1 HP per Magic Phase from this spell or <i>Fountain of Youth</i> (Druidism).<br>",
+          "description": "This model Recovers 1 HP the first time each Magic Phase that it successfully casts a Learned Spell that targets a friendly unit. \nThe model cannot Recover more than 1 HP per Magic Phase from this spell or <i>Fountain of Youth</i> (Druidism).<br>",
           "hasOption": [
             "treefather_ancient"
           ],
@@ -945,7 +946,7 @@
             },
             {
               "name": "Chieftain",
-              "cost": 110,
+              "cost": 90,
               "refs": [
                 "chieftain",
                 "tag_Elf",
@@ -967,14 +968,17 @@
                       ],
                       "type": "check",
                       "name": "General",
-                      "cost": 0,
+                      "cost": 20,
                       "option_id": "o9yv0aigsmh9tdvodkvoqn"
                     },
                     {
                       "type": "check",
                       "name": "Captain and Attached",
                       "cost": 0,
-                      "option_id": "f23f3ew2g43g342g34f3434"
+                      "option_id": "f23f3ew2g43g342g34f3434",
+                      "refs": [
+                        "captain"
+                      ]
                     },
                     {
                       "type": "check",
@@ -986,7 +990,7 @@
                         "not_a_leader"
                       ],
                       "name": "Battle Standard Bearer",
-                      "cost": 50,
+                      "cost": 70,
                       "collapsible": true,
                       "option_id": "f34f34g34g34f34f34f34g34"
                     }
@@ -1774,7 +1778,7 @@
             },
             {
               "name": "Dryad Ancient",
-              "cost": 100,
+              "cost": 80,
               "refs": [
                 "sylvan_spirit",
                 "tag_Sylvan Spirit"
@@ -1792,7 +1796,7 @@
                       "cost": 0,
                       "option_id": "f23f23f3254n56m5m56j56",
                       "refs": [
-                        "leadership_amount"
+                        "captain"
                       ]
                     },
                     {
@@ -1804,7 +1808,7 @@
                       ],
                       "type": "check",
                       "name": "General",
-                      "cost": 0,
+                      "cost": 20,
                       "option_id": "qna30tdfiqkf2oe1ucetp"
                     }
                   ],
@@ -1959,12 +1963,6 @@
                       "cost": 50,
                       "options": [],
                       "option_id": "et7dffuyb3spvp136m2eff"
-                    },
-                    {
-                      "type": "check",
-                      "name": "Captain and Attached",
-                      "cost": 0,
-                      "option_id": "f34f43g34g34f34fd34g35g54"
                     }
                   ],
                   "maxSize": 1
@@ -2393,7 +2391,7 @@
                   "refs": [
                     "forest_rangers"
                   ],
-                  "amount": 5
+                  "amount": 4
                 }
               ],
               "cost": -20,

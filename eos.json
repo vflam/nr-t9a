@@ -6,7 +6,7 @@
   },
   "short": "eos",
   "version": "2024 beta1",
-  "nrversion": 357,
+  "nrversion": 359,
   "playable": 1,
   "id": 6,
   "include": [
@@ -99,7 +99,7 @@
           ],
           "name": "Regimental Colours",
           "cost": 10,
-          "description": "If the bearer's unit contains a <span class=\"textbf\">Captain</span>, the unit is considered to be within range of any model with <span class=\"textbf\">Orders</span> for the purposes of choosing a target to give an Order.\r\n",
+          "description": "If the bearer's unit contains a <span class=\"textbf\">Captain</span>, the unit is considered to be within range of any model with <span class=\"textbf\">Orders</span> for the purposes of choosing a target to give an Order.\n",
           "option_id": "gb8jbd4gzzaqynzsltxxo9"
         },
         {
@@ -167,7 +167,7 @@
             "we_eos_light_sonn",
             "weaponEnchantUni"
           ],
-          "description": "AP 10. Wounds automatically.\r\n",
+          "description": "AP 10. Wounds automatically.\n",
           "option_id": "vq9djbnhrr7z80tqznpon"
         },
         {
@@ -184,7 +184,7 @@
             "we_eos_death_warrant",
             "weaponEnchantUni"
           ],
-          "description": "+X Att, +X Str, and +X AP, where X is the number of friendly Parent Units and Support Units of Height 1 (<i>including the bearer's unit if applicable</i>) Engaged in the same Combat as the wielder.\r\n",
+          "description": "+X Att, +X Str, and +X AP, where X is the number of friendly Parent Units and Support Units of Height 1 (<i>including the bearer's unit if applicable</i>) Engaged in the same Combat as the wielder.\n",
           "option_id": "g3yz6p23s35wt5gje21r"
         },
         {
@@ -305,7 +305,7 @@
           "refs": [
             "art_eos_flame"
           ],
-          "description": "The bearer can cast <i>Living Steel</i> (Alchemy) as a Bound Spell (5+).\r\n",
+          "description": "The bearer can cast <i>Living Steel</i> (Alchemy) as a Bound Spell (5+).\n",
           "option_id": "jxb9n5v1o8d6x5famkmi09",
           "boundSpells": [
             {
@@ -373,7 +373,7 @@
           "refs": [
             "pae_eos_impseal"
           ],
-          "description": "Arm is <span class=\"textbf\">set</span> to 6. +1 Cou. The wearer's unit cannot voluntarily declare Flee! as a Charge Reaction.\r\n",
+          "description": "Arm is <span class=\"textbf\">set</span> to 6. +1 Cou. The wearer's unit cannot voluntarily declare Flee! as a Charge Reaction.\n",
           "option_id": "dg65393ke97mplogoogakg"
         },
         {
@@ -386,7 +386,7 @@
           "refs": [
             "pae_eos_blacksteel"
           ],
-          "description": "<span class=\"textbf\">Immune (Flaming Attacks, Lightning Attacks)</span>. +1 Arm.<br>\r\n\tIf the wearer is on foot, it gains an additional +1 Arm.",
+          "description": "<span class=\"textbf\">Immune (Flaming Attacks, Lightning Attacks)</span>. +1 Arm.<br>\n\tIf the wearer is on foot, it gains an additional +1 Arm.",
           "option_id": "89pdrtlsx7gmnspb7u2z",
           "hasStat": {
             "global": {
@@ -424,7 +424,7 @@
           "options": [
             {
               "name": "Marshal",
-              "cost": 70,
+              "cost": 50,
               "options": [
                 {
                   "type": "group",
@@ -439,7 +439,16 @@
                       "cost": 0,
                       "option_id": "fgsggkm54h534g3g34g345g534",
                       "refs": [
-                        "leadership_amount"
+                        "catpain"
+                      ]
+                    },
+                    {
+                      "option_id": "f32f23fj238fh239fn239f32",
+                      "name": "Exclusive",
+                      "type": "check",
+                      "cost": 30,
+                      "refs": [
+                        "exclusive"
                       ]
                     },
                     {
@@ -481,7 +490,7 @@
                     {
                       "name": "Battle Standard Bearer and Orders",
                       "type": "check",
-                      "cost": 50,
+                      "cost": 70,
                       "option_id": "43t34g43g34fsafweeg32g432",
                       "refs": [
                         "army_bsb"
@@ -533,6 +542,9 @@
                       "option_id": "pguju4d8grt28qap6j19",
                       "refs": [
                         "horse_mount_unit"
+                      ],
+                      "hasNotOption": [
+                        "exclusive"
                       ]
                     },
                     {
@@ -541,7 +553,10 @@
                       "cost": 85,
                       "options": [],
                       "refopt": "pegasus_mount",
-                      "option_id": "rm56380bjmaf1r4egvotd5"
+                      "option_id": "rm56380bjmaf1r4egvotd5",
+                      "hasNotOption": [
+                        "catpain"
+                      ]
                     },
                     {
                       "type": "check",
@@ -845,12 +860,6 @@
                   "maxSize": 1,
                   "minSize": 1,
                   "options": [
-                    {
-                      "name": "Light Troops",
-                      "type": "check",
-                      "option_id": "7k81yb2yca2zunv9jmroti",
-                      "cost": 0
-                    },
                     {
                       "type": "check",
                       "name": "Horse",
@@ -2015,6 +2024,12 @@
                           "options": [
                             {
                               "type": "check",
+                              "name": "Shield",
+                              "cost": 0,
+                              "option_id": "f23f23f832h90fen98n89f23hf"
+                            },
+                            {
+                              "type": "check",
                               "name": "Spear and Shield",
                               "cost": 0,
                               "option_id": "329rj239jf3024f234g342g43"
@@ -2097,6 +2112,21 @@
                     "state_militia"
                   ],
                   "amount": 4
+                }
+              ],
+              "override": [
+                {
+                  "hasOption": {
+                    "refs": [
+                      "militia_skirmishers"
+                    ],
+                    "amount": 1
+                  },
+                  "options": {
+                    "extraCategories": [
+                      "imperial_auxiliaries"
+                    ]
+                  }
                 }
               ],
               "options": [
@@ -2498,7 +2528,7 @@
               "options": [
                 {
                   "minSize": 3,
-                  "maxSize": 6,
+                  "maxSize": 5,
                   "addToUnitSize": true,
                   "options": [
                     {

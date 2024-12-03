@@ -6,7 +6,7 @@
   },
   "short": "he",
   "version": "2023",
-  "nrversion": 374,
+  "nrversion": 375,
   "playable": 1,
   "indicators": [
     "ancient_allies"
@@ -179,6 +179,31 @@
     },
     {
       "refs": [
+        "halberdEnchant",
+        "greatWeaponEnchant"
+      ],
+      "options": [
+        {
+          "name": "Elemental Blade",
+          "type": "check",
+          "refs": [
+            "elemental_blade",
+            "weaponEnchantUni"
+          ],
+          "armyHasNotOption": [
+            "we_he_elemental_blade"
+          ],
+          "hasNotOption": [
+            "weaponEnchantUni"
+          ],
+          "cost": 60,
+          "description": "+1 Att, +1 Str. When Choosing Equipment and Abilities, choose to gain either Flaming Attacks, Lightning Attacks. The effects last until the end of the Round of Combat.<br>",
+          "option_id": "4o25h0yqvrqo0fujw6ej79"
+        }
+      ]
+    },
+    {
+      "refs": [
         "bannerEnchant"
       ],
       "options": [
@@ -257,23 +282,6 @@
           "option_id": "o5opzcpw5glp309c1hies",
           "type": "check",
           "shared": true
-        },
-        {
-          "name": "Elemental Blade",
-          "type": "check",
-          "refs": [
-            "elemental_blade",
-            "weaponEnchantUni"
-          ],
-          "armyHasNotOption": [
-            "we_he_elemental_blade"
-          ],
-          "hasNotOption": [
-            "weaponEnchantUni"
-          ],
-          "cost": 60,
-          "description": "+1 Att, +1 Str. When Choosing Equipment and Abilities, choose to gain either Flaming Attacks, Lightning Attacks. The effects last until the end of the Round of Combat.<br>",
-          "option_id": "4o25h0yqvrqo0fujw6ej79"
         }
       ],
       "option_id": "6rxax6ow5yy18fz53hv2lv"
@@ -737,7 +745,7 @@
             }
           ],
           "cost": 25,
-          "description": "The model part gains <span class=\"textbf\">First Strike (+1 Att, +1 Off)</span>, and the model's unit may reroll Failed Charge rolls.<br><br>If the model has Height 5,  Dragons (Regal and Ancient) replace their Ancient Allies value with <span class=\"textbf\">Ancient Allies(1)</span> and Phoenixes replace it with  <span class=\"textbf\">Ancient Allies(2)</span>.<br>",
+          "description": "The model part gains <span class=\"textbf\">First Strike (+1 Att, +1 Off)</span>, and the model's unit may reroll Failed Charge rolls.<br><br>If the model has Height 5,  Dragons (Regal and Ancient) replace their Ancient Allies value with <span class=\"textbf\">Ancient Allies (1)</span> and Phoenixes replace it with  <span class=\"textbf\">Ancient Allies (2)</span>.<br>",
           "hasOption": [
             {
               "refs": [
@@ -1106,7 +1114,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": [
-                            "weaponEnchant"
+                            "weaponEnchant",
+                            "greatWeaponEnchant"
                           ],
                           "option_id": "qleimm76turar5dqbtvx74"
                         },
@@ -1124,7 +1133,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": [
-                            "weaponEnchant"
+                            "weaponEnchant",
+                            "halberdEnchant"
                           ],
                           "option_id": "nt0k59vitmfamjhk0hivhp"
                         },
@@ -1207,7 +1217,7 @@
                 "tag_Metal Armour"
               ],
               "name": "Commander",
-              "cost": 100,
+              "cost": 80,
               "options": [
                 {
                   "type": "group",
@@ -1221,13 +1231,13 @@
                       "cost": 0,
                       "option_id": "g34g432g43g34dsafewg34g34",
                       "refs": [
-                        "leadership_amount"
+                        "captain"
                       ]
                     },
                     {
                       "type": "check",
                       "name": "General",
-                      "cost": 0,
+                      "cost": 20,
                       "refs": [
                         "army_general"
                       ],
@@ -1237,9 +1247,18 @@
                       "option_id": "w670p01oxne9k2pyd4w5w"
                     },
                     {
+                      "option_id": "fewf32f32gf23g234g432g43",
+                      "name": "Exclusive",
+                      "type": "check",
+                      "cost": 20,
+                      "refs": [
+                        "exclusive"
+                      ]
+                    },
+                    {
                       "name": "Battle Standard Bearer",
                       "type": "check",
-                      "cost": 50,
+                      "cost": 70,
                       "option_id": "3fgf32fg32g234g54",
                       "refs": [
                         "army_bsb"
@@ -1277,6 +1296,9 @@
                       "cost": 0,
                       "refs": [
                         "light_troops"
+                      ],
+                      "hasNotOption": [
+                        "exclusive"
                       ]
                     },
                     {
@@ -1284,7 +1306,10 @@
                       "cost": 25,
                       "name": "Elven Horse",
                       "refopt": "he_elven_horse_mount",
-                      "option_id": "6zueycyu2poq3k9hdk0jvq"
+                      "option_id": "6zueycyu2poq3k9hdk0jvq",
+                      "hasNotOption": [
+                        "exclusive"
+                      ]
                     },
                     {
                       "type": "check",
@@ -1308,7 +1333,10 @@
                       "cost": 220,
                       "refopt": "griffon_mount",
                       "option_id": "kj163koiblenj9v4hsi6",
-                      "maxUnitCost": 800
+                      "maxUnitCost": 800,
+                      "hasNotOption": [
+                        "captain"
+                      ]
                     },
                     {
                       "type": "check",
@@ -1317,7 +1345,10 @@
                       "options": [],
                       "refopt": "sky_sloop_mount",
                       "option_id": "ydu4cpz2n2hroortvy3h3",
-                      "maxUnitCost": 800
+                      "maxUnitCost": 800,
+                      "hasNotOption": [
+                        "captain"
+                      ]
                     },
                     {
                       "type": "check",
@@ -1325,7 +1356,10 @@
                       "name": "Lion Chariot",
                       "cost": 180,
                       "option_id": "uz1k5m7y93zqghq4bk9eo",
-                      "maxUnitCost": 800
+                      "maxUnitCost": 800,
+                      "hasNotOption": [
+                        "captain"
+                      ]
                     },
                     {
                       "type": "check",
@@ -1342,7 +1376,10 @@
                         }
                       ],
                       "option_id": "dzoxdy2hynbzcfyirm1g3",
-                      "maxUnitCost": 800
+                      "maxUnitCost": 800,
+                      "hasNotOption": [
+                        "captain"
+                      ]
                     }
                   ],
                   "option_id": "buel0le8ppbx6hmeo169te"
@@ -1503,7 +1540,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": [
-                            "weaponEnchant"
+                            "weaponEnchant",
+                            "greatWeaponEnchant"
                           ],
                           "option_id": "y1ltr1uatrr8umjhqwog"
                         },
@@ -1521,7 +1559,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": [
-                            "weaponEnchant"
+                            "weaponEnchant",
+                            "halberdEnchant"
                           ],
                           "option_id": "bzzvrjgr95lvmz3a8qje4"
                         },
@@ -2397,7 +2436,7 @@
                   "refs": [
                     "lion_guard"
                   ],
-                  "amount": 5
+                  "amount": 4
                 }
               ],
               "options": [
@@ -2478,7 +2517,7 @@
                   "refs": [
                     "flame_wardens"
                   ],
-                  "amount": 5
+                  "amount": 4
                 }
               ],
               "options": [

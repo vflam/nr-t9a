@@ -1233,7 +1233,7 @@
           "number": "1",
           "whNumber": "BW",
           "name": "Black Wing Totem",
-          "description": "A unit with all models affected by the spell gains +3 Agility and adds D3+1″ to its Charge Range.",
+          "description": "A unit with all models affected by the spell gains +3 Agility and adds 2″ to its Charge Range.",
           "cast": [
             {
               "value": 5,
@@ -1303,7 +1303,7 @@
           "number": "1",
           "whNumber": "BW",
           "name": "Black Wing Totem",
-          "description": "A unit with all models affected by the spell gains +3 Agility and adds D3+1″ to its Charge Range.",
+          "description": "A unit with all models affected by the spell gains +3 Agility and adds 2″ to its Charge Range.",
           "cast": [
             {
               "value": 5,
@@ -1374,7 +1374,7 @@
           "number": "1",
           "whNumber": "RV",
           "name": "Rune of Revocation",
-          "description": "Ignore all other spell effects on the target from spells with Duration: One Turn.",
+          "description": "Ignore all other spell effects on the target from spells with Duration: One Turn. The target unit gains Magic Resistance (2), which is also applied to friendly spells.",
           "cast": [
             {
               "value": "3",
@@ -1390,12 +1390,12 @@
           "number": "2",
           "whNumber": "RK",
           "name": "Rune of Reckoning",
-          "description": "The target gains Hatred (Melee).",
+          "description": "Friendly models in the target unit gain Hatred (Melee). Friendly models attacking the target unit gain Hatred (Melee).",
           "cast": [
             {
               "value": "3",
               "range": 18,
-              "types": ["augment", "Replicable"],
+              "types": ["Universal", "Replicable"],
               "duration": 1
             }
           ]
@@ -1406,12 +1406,12 @@
           "number": "3",
           "name": "Rune of Oaths",
           "whNumber": "OA",
-          "description": "The target gains Zeal (Melee).",
+          "description": "Friendly models in the target unit gain Zeal (Melee). Friendly models attacking the target unit gain Zeal (Melee).",
           "cast": [
             {
               "value": "3",
               "range": 18,
-              "types": ["augment", "Replicable"],
+              "types": ["Universal", "Replicable"],
               "duration": 1
             }
           ]
@@ -1422,13 +1422,13 @@
           "number": "4",
           "name": "Rune of Resolve",
           "whNumber": "RL",
-          "description": "The target may perform an 4″ Magical Move and gains Light Troops until the end of the Player Turn.",
+          "description": "The target may perform an 4″ Magical Move and gains Light Troops until the end of the Player Turn. In addition, it gains Swiftstride",
           "cast": [
             {
               "value": "3",
               "range": 18,
               "types": ["augment", "Replicable"],
-              "duration": 0
+              "duration": 1
             }
           ]
         },
@@ -1441,7 +1441,7 @@
           "description": "The target gains Distracting and Hard Target (1).",
           "cast": [
             {
-              "value": "3",
+              "value": "4",
               "range": 18,
               "types": ["augment", "Replicable"],
               "duration": 1
@@ -1457,7 +1457,7 @@
           "description": "To-wound rolls against the target suffer a −1 modifier.",
           "cast": [
             {
-              "value": "3",
+              "value": "4",
               "range": 18,
               "types": ["augment", "Replicable"],
               "duration": 1
@@ -1477,7 +1477,7 @@
           "number": "1",
           "whNumber": "RV",
           "name": "Rune of Revocation",
-          "description": "Ignore all other spell effects on the target from spells with Duration: One Turn.",
+          "description": "Ignore all other spell effects on the target from spells with Duration: One Turn. The target unit gains Magic Resistance (2), which is also applied to friendly spells.",
           "cast": [
             {
               "value": "3",
@@ -1493,12 +1493,12 @@
           "number": "2",
           "whNumber": "RK",
           "name": "Rune of Reckoning",
-          "description": "The target gains Hatred (Melee).",
+          "description": "Friendly models in the target unit gain Hatred (Melee). Friendly models attacking the target unit gain Hatred (Melee).",
           "cast": [
             {
               "value": "3",
               "range": 36,
-              "types": ["augment", "Replicable"],
+              "types": ["Universal", "Replicable"],
               "duration": 1
             }
           ]
@@ -1507,14 +1507,14 @@
           "ref": "rune_oaths",
           "rep": true,
           "number": "3",
-          "whNumber": "OA",
           "name": "Rune of Oaths",
-          "description": "The target gains Zeal (Melee).",
+          "whNumber": "OA",
+          "description": "Friendly models in the target unit gain Zeal (Melee). Friendly models attacking the target unit gain Zeal (Melee).",
           "cast": [
             {
               "value": "3",
               "range": 36,
-              "types": ["augment", "Replicable"],
+              "types": ["Universal", "Replicable"],
               "duration": 1
             }
           ]
@@ -1523,15 +1523,15 @@
           "ref": "rune_resolve",
           "rep": true,
           "number": "4",
-          "whNumber": "RL",
           "name": "Rune of Resolve",
-          "description": "The target may perform an 4″ Magical Move and gains Light Troops until the end of the Player Turn.",
+          "whNumber": "RL",
+          "description": "The target may perform an 4″ Magical Move and gains Light Troops until the end of the Player Turn. In addition, it gains Swiftstride",
           "cast": [
             {
               "value": "3",
               "range": 36,
               "types": ["augment", "Replicable"],
-              "duration": 0
+              "duration": 1
             }
           ]
         },
@@ -1544,7 +1544,7 @@
           "description": "The target gains Distracting and Hard Target (1).",
           "cast": [
             {
-              "value": "3",
+              "value": "4",
               "range": 36,
               "types": ["augment", "Replicable"],
               "duration": 1
@@ -1560,7 +1560,7 @@
           "description": "To-wound rolls against the target suffer a −1 modifier.",
           "cast": [
             {
-              "value": "3",
+              "value": "4",
               "range": 36,
               "types": ["augment", "Replicable"],
               "duration": 1

@@ -10,6 +10,7 @@
   "playable": 1,
   "id": 11,
   "include": [102],
+  "indicators": ["hired_guns", "powder_keg"],
   "hereditary": [
     {
       "ref": "children_umi",
@@ -27,7 +28,9 @@
     "weaponEnchantUni": "Weapon Enchant",
     "dominant": "Dominant",
     "core_unit": "Core Unit",
-    "ok_bn_wildheart": "Wildheart"
+    "ok_bn_wildheart": "Wildheart",
+    "powder_keg": "Powder Keg",
+    "hired_guns": "Hired Guns"
   },
   "dictionnary": [
     {
@@ -420,6 +423,18 @@
       "name": "Army",
       "optionsLabel": "Categories",
       "maxCost": 4500,
+      "armyHasNotOption": [
+        {
+          "refs": ["powder_keg"],
+          "amount": 1,
+          "perPoints": 1500
+        },
+        {
+          "refs": ["hired_guns"],
+          "amount": 10,
+          "perPoints": 800
+        }
+      ],
       "options": [
         {
           "name": "Characters",
@@ -658,6 +673,12 @@
                       "maxSize": 1,
                       "options": [
                         {
+                          "refs": [
+                            {
+                              "refs": ["hired_guns"],
+                              "amount": 3
+                            }
+                          ],
                           "type": "check",
                           "name": "Brace of Ogre Pistols (4+)",
                           "cost": 10,
@@ -682,6 +703,12 @@
                         {
                           "type": "check",
                           "name": "Ogre Crossbow (3+)",
+                          "refs": [
+                            {
+                              "refs": ["hired_guns"],
+                              "amount": 3
+                            }
+                          ],
                           "cost": 5,
                           "maxSize": 1,
                           "optionsLabel": "Ogre Crossbow Enchant",
@@ -956,6 +983,12 @@
                       "options": [
                         {
                           "type": "check",
+                          "refs": [
+                            {
+                              "refs": ["hired_guns"],
+                              "amount": 3
+                            }
+                          ],
                           "name": "Brace of Ogre Pistols (4+)",
                           "cost": 10,
                           "maxSize": 1,
@@ -969,6 +1002,12 @@
                         },
                         {
                           "type": "check",
+                          "refs": [
+                            {
+                              "refs": ["hired_guns"],
+                              "amount": 3
+                            }
+                          ],
                           "name": "Ogre Crossbow (3+)",
                           "cost": 5,
                           "maxSize": 1,
@@ -1421,10 +1460,22 @@
                           "name": "Hunting Spear (2+)",
                           "cost": 0,
                           "ignoreCost": true,
-                          "option_id": "x8us606l04ehsjmqtdkgks"
+                          "option_id": "x8us606l04ehsjmqtdkgks",
+                          "refs": [
+                            {
+                              "refs": ["hired_guns"],
+                              "amount": 3
+                            }
+                          ]
                         },
                         {
                           "type": "check",
+                          "refs": [
+                            {
+                              "refs": ["hired_guns"],
+                              "amount": 3
+                            }
+                          ],
                           "name": "Ogre Crossbow (2+)",
                           "cost": 0,
                           "maxSize": 1,
@@ -1719,13 +1770,14 @@
                               "type": "check",
                               "name": "Throwing Weapons (5+)",
                               "cost": 0,
-                              "option_id": "1xl9by95em5vm8a6o3pgta"
+                              "option_id": "1xl9by95em5vm8a6o3pgta",
+                              "refs": ["hired_guns"]
                             },
                             {
                               "type": "check",
                               "name": "Bow (4+)",
                               "cost": 1,
-                              "refs": ["scrapling_bows"],
+                              "refs": ["scrapling_bows", "hired_guns"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["scrapling_bows"],
@@ -2115,7 +2167,7 @@
             {
               "name": "Scrapling Trappers",
               "cost": 60,
-              "refs": ["scrappling_trappers", "tag_Scrapling"],
+              "refs": ["scrappling_trappers", "tag_Scrapling", "hired_guns"],
               "armyHasNotOption": [
                 {
                   "refs": ["scrappling_trappers"],
@@ -2215,16 +2267,7 @@
               "unit_id": "kin-eater",
               "option_id": "dqrjc96795iwz5v1hku4",
               "logo": "special"
-            }
-          ],
-          "option_id": "763tk2q95zf7ca3g77nrrp"
-        },
-        {
-          "name": "Powder Keg",
-          "maxPercent": 0.3,
-          "refs": ["powder_keg"],
-          "optionsLabel": "Units",
-          "options": [
+            },
             {
               "name": "Mercenary Gunners",
               "refs": ["mercenary_veterans", "tag_Ogre", "tag_Metal Armour"],
@@ -2257,7 +2300,13 @@
                               "name": "Hunting Spear (4+), Iron Fist and Poison Attacks (Shooting)",
                               "cost": 5,
                               "type": "check",
-                              "refs": ["scar_throwing"],
+                              "refs": [
+                                "scar_throwing",
+                                {
+                                  "refs": ["hired_guns"],
+                                  "amount": 3
+                                }
+                              ],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["scar_throwing"],
@@ -2271,7 +2320,13 @@
                               "name": "Brace of Ogre Pistols (4+) and Lethal Strike (Shooting)",
                               "cost": 0,
                               "type": "check",
-                              "refs": ["scare_lethal"],
+                              "refs": [
+                                "scare_lethal",
+                                {
+                                  "refs": ["hired_guns"],
+                                  "amount": 3
+                                }
+                              ],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["scare_lethal"],
@@ -2287,9 +2342,16 @@
                             },
                             {
                               "name": "Ogre Crossbow (4+) and Accurate",
+
                               "cost": 10,
                               "type": "check",
-                              "refs": ["scar_accurate"],
+                              "refs": [
+                                "scar_accurate",
+                                {
+                                  "refs": ["hired_guns"],
+                                  "amount": 3
+                                }
+                              ],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["scar_accurate"],
@@ -2393,7 +2455,16 @@
             {
               "name": "Thunder Cannon",
               "cost": 290,
-              "refs": ["thunder_canon", "tag_Ogre", "tag_Light Armour", "tag_Scrapling", "tag_Mount", "tag_Beast", "tag_Construct", "tag_"],
+              "refs": [
+                "thunder_canon",
+                "tag_Ogre",
+                "tag_Light Armour",
+                "tag_Scrapling",
+                "tag_Mount",
+                "tag_Beast",
+                "tag_Construct",
+                "powder_keg"
+              ],
               "armyHasNotOption": [
                 {
                   "refs": ["thunder_canon"],
@@ -2411,7 +2482,7 @@
             {
               "name": "Scratapult",
               "cost": 250,
-              "refs": ["scratapult", "tag_Scrapling", "tag_Mount", "tag_Beast", "tag_Construct"],
+              "refs": ["scratapult", "tag_Scrapling", "tag_Mount", "tag_Beast", "tag_Construct", "powder_keg"],
               "armyHasNotOption": [
                 {
                   "refs": ["scratapult"],
@@ -2425,7 +2496,7 @@
             {
               "name": "Bombardiers",
               "cost": -10,
-              "refs": ["bombardiers", "tag_Ogre", "tag_Light Armour"],
+              "refs": ["bombardiers", "tag_Ogre", "tag_Light Armour", { "ref": "hired_guns", "amount": 3 }],
               "armyHasNotOption": [
                 {
                   "refs": ["bombardiers"],
@@ -2485,7 +2556,7 @@
               "maxUnitCost": 500
             }
           ],
-          "option_id": "snahe03mclyptgtxa5swr"
+          "option_id": "763tk2q95zf7ca3g77nrrp"
         },
         {
           "name": "Chained Beasts",
@@ -2514,13 +2585,25 @@
                       "cost": 0,
                       "type": "check",
                       "option_id": "0p4pk3ypbxhfc7qa28dn25",
-                      "refs": ["rock_aurochs_amount"]
+                      "refs": [
+                        "rock_aurochs_amount",
+                        {
+                          "refs": ["hired_guns"],
+                          "amount": 3
+                        }
+                      ]
                     },
                     {
                       "name": "Hunting Spear (3+)",
                       "cost": 0,
                       "type": "check",
-                      "option_id": "p54qlfjzv3gwwny6kpjk2d"
+                      "option_id": "p54qlfjzv3gwwny6kpjk2d",
+                      "refs": [
+                        {
+                          "refs": ["hired_guns"],
+                          "amount": 3
+                        }
+                      ]
                     },
                     {
                       "name": "Lance",
@@ -2566,13 +2649,25 @@
                       "cost": 20,
                       "type": "check",
                       "option_id": "dsevm8wtsilq29idzajx",
-                      "refs": ["frost_mammoth_amount"]
+                      "refs": [
+                        "frost_mammoth_amount",
+                        {
+                          "refs": ["hired_guns"],
+                          "amount": 3
+                        }
+                      ]
                     },
                     {
                       "name": "Hunting Spear (3+)",
                       "cost": 0,
                       "type": "check",
-                      "option_id": "14paghtkfvi1at0hr66jm"
+                      "option_id": "14paghtkfvi1at0hr66jm",
+                      "refs": [
+                        {
+                          "refs": ["hired_guns"],
+                          "amount": 3
+                        }
+                      ]
                     }
                   ],
                   "option_id": "if7w70vxyefqaa3c1temtf"

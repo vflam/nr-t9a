@@ -6,7 +6,7 @@
   },
   "short": "de",
   "version": "2024 beta1",
-  "nrversion": 377,
+  "nrversion": 379,
   "id": 3,
   "include": [
     102
@@ -843,7 +843,7 @@
             },
             {
               "name": "Silexian Officer",
-              "cost": 130,
+              "cost": 100,
               "category": "perso",
               "options": [
                 {
@@ -858,7 +858,7 @@
                       "cost": 0,
                       "option_id": "989343vgewjnmv03j20f3h2fu32",
                       "refs": [
-                        "leadership_amount"
+                        "captain"
                       ]
                     },
                     {
@@ -870,8 +870,17 @@
                       ],
                       "type": "check",
                       "name": "General",
-                      "cost": 0,
+                      "cost": 30,
                       "option_id": "xhvhesvcvb8ha6oip1gmzj"
+                    },
+                    {
+                      "option_id": "fewf32f32gf23g234g432g43",
+                      "name": "Exclusive",
+                      "type": "check",
+                      "cost": 30,
+                      "refs": [
+                        "exclusive"
+                      ]
                     },
                     {
                       "type": "check",
@@ -883,7 +892,7 @@
                         "not_a_leader"
                       ],
                       "name": "Battle Standard Bearer",
-                      "cost": 50,
+                      "cost": 80,
                       "option_id": "3f32fdsggfbreb345g54h54fsd"
                     }
                   ],
@@ -897,7 +906,10 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "4v6mvmn16vua2d8qugci45",
-                      "cost": 0
+                      "cost": 0,
+                      "hasNotOption": [
+                        "exclusive"
+                      ]
                     },
                     {
                       "type": "check",
@@ -907,7 +919,10 @@
                         "mount"
                       ],
                       "refopt": "de_elven_horse_mount",
-                      "option_id": "r0b5yc5yegi9gcfo3s79s5"
+                      "option_id": "r0b5yc5yegi9gcfo3s79s5",
+                      "hasNotOption": [
+                        "exclusive"
+                      ]
                     },
                     {
                       "type": "check",
@@ -917,7 +932,10 @@
                         "mount"
                       ],
                       "refopt": "coastal_raptor_mount",
-                      "option_id": "rxpvxjqo28bdlma4lyjew"
+                      "option_id": "rxpvxjqo28bdlma4lyjew",
+                      "hasNotOption": [
+                        "exclusive"
+                      ]
                     },
                     {
                       "type": "check",
@@ -927,7 +945,10 @@
                         "mount"
                       ],
                       "refopt": "blackmane_pegasus_mount",
-                      "option_id": "tcez9uw0xcjma014vwa1o"
+                      "option_id": "tcez9uw0xcjma014vwa1o",
+                      "hasNotOption": [
+                        "captain"
+                      ]
                     },
                     {
                       "type": "check",
@@ -937,7 +958,10 @@
                         "mount"
                       ],
                       "refopt": "raptor_chariot_mount",
-                      "option_id": "v15h5udhw4zshiq5kizga"
+                      "option_id": "v15h5udhw4zshiq5kizga",
+                      "hasNotOption": [
+                        "captain"
+                      ]
                     },
                     {
                       "type": "check",
@@ -947,7 +971,10 @@
                         "mount"
                       ],
                       "refopt": "manticore_mount",
-                      "option_id": "1ht5h23we6ed03esgow3hk"
+                      "option_id": "1ht5h23we6ed03esgow3hk",
+                      "hasNotOption": [
+                        "captain"
+                      ]
                     }
                   ],
                   "maxSize": 1,
@@ -2238,14 +2265,6 @@
                 "tag_Metal Armour",
                 "tag_Mount"
               ],
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "dread_knights"
-                  ],
-                  "amount": 4
-                }
-              ],
               "options": [
                 {
                   "minSize": 5,
@@ -2585,14 +2604,6 @@
                 "tag_Metal Armour"
               ],
               "unit_id": "judicators",
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "judicators"
-                  ],
-                  "amount": 5
-                }
-              ],
               "option_id": "d5zt2o412rzfaw86dgaxn",
               "logo": "special"
             },
@@ -2656,14 +2667,6 @@
                 "tag_Metal Armour"
               ],
               "unit_id": "obsidian_guard",
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "obsidian_guard"
-                  ],
-                  "amount": 5
-                }
-              ],
               "option_id": "4skls9zahh8qam3dv61ty",
               "logo": "special"
             },
