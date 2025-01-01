@@ -6,7 +6,7 @@
   },
   "short": "eos",
   "version": "2024 beta1",
-  "nrversion": 359,
+  "nrversion": 361,
   "playable": 1,
   "id": 6,
   "include": [
@@ -115,7 +115,7 @@
           ],
           "name": "Banner of Unity",
           "cost": 45,
-          "description": "Whenever the bearer's unit is targeted by an Order, it may immediately give that same Order (<i>for free</i>) to up to two Support Units within 8\" of the bearer's unit.",
+          "description": "\tWhenever the bearer's unit is targeted by an Order, it may immediately give that same Order (<i>for free</i>) to up to two Support Units within 8\" of the bearer's unit.",
           "option_id": "aegjrilo9zqs7ng6ehy2o"
         },
         {
@@ -128,7 +128,7 @@
           ],
           "name": "Marksman's Pennant",
           "cost": 10,
-          "description": "The bearer's unit gains <span class=\"textbf\">Stand and Shoot</span>.",
+          "description": "\tThe bearer's unit gains <span class=\"textbf\">Stand and Shoot</span>.",
           "option_id": "1sieylul9bv1k8p94j7ahk"
         },
         {
@@ -167,7 +167,7 @@
             "we_eos_light_sonn",
             "weaponEnchantUni"
           ],
-          "description": "AP 10. Wounds automatically.\n",
+          "description": "\tAP 10. Wounds automatically.\n",
           "option_id": "vq9djbnhrr7z80tqznpon"
         },
         {
@@ -201,7 +201,7 @@
             "we_eos_hammer_witch",
             "weaponEnchantUni"
           ],
-          "description": "Att is <span class=\"textbf\">set</span> to 5. <span class=\"textbf\">Fury (towards Channel (X))</span>.",
+          "description": "\tAtt is <span class=\"textbf\">set</span> to 5. <span class=\"textbf\">Fury(towards Channel(X))</span>.",
           "option_id": "5cvilzgyyygogc9j0cglbb"
         }
       ],
@@ -222,7 +222,7 @@
           "refs": [
             "se_eoes_wfire"
           ],
-          "description": "<span class=\"textbf\">Aegis (4+, against Magical Attacks)</span>.",
+          "description": "\t<span class=\"textbf\">Aegis(4+, against Magical Attacks)</span>.",
           "option_id": "ypzdrvnwoeywcbr4o6dw"
         },
         {
@@ -235,7 +235,7 @@
           "refs": [
             "we_se_volund"
           ],
-          "description": "<span class=\"textbf\">Immune (Fury, Lethal Strike)</span>.",
+          "description": "\t<span class=\"textbf\">Immune(Fury, Lethal Strike)</span>.",
           "option_id": "zw9lchw8g0c8k9n5tp6a7c"
         },
         {
@@ -270,7 +270,7 @@
           "refs": [
             "art_eos_winter"
           ],
-          "description": "The bearer gains Aegis (3+, against Flaming Attacks),Aegis (5+),Distracting (1). The bearer automatically fails all Fortitude Saves.",
+          "description": "\tThe bearer gains Aegis(3+, against Flaming Attacks),Aegis(5+),Distracting(1). The wearer automatically fails all Regeneration Saves.",
           "option_id": "lklusb0swus4d19qu2uvua"
         },
         {
@@ -283,7 +283,7 @@
           "refs": [
             "art_eos_locket"
           ],
-          "description": "In a Duel, choose one model part without neither Construct nor Mount that the bearer is fighting with. The bearer and the chosen model part <span class=\"textbf\">must</span> swap their corresponding Characteristic values of Att, Str, AP, and Agi, and their models swap their Res values. This is done before applying other modifiers.",
+          "description": "When choosing Weapons and Equipment, choose one enemy Character model part in base contact with the wearer's unit. During this Round of Combat the chosen model part suffers: -2 Att, -2 Str, -2 Off, and -2 AP.<br>\n",
           "option_id": "xp0hvbbtwpuum0tyayoo"
         },
         {
@@ -305,7 +305,7 @@
           "refs": [
             "art_eos_flame"
           ],
-          "description": "The bearer can cast <i>Living Steel</i> (Alchemy) as a Bound Spell (5+).\n",
+          "description": "\tThe bearer can cast <i>Living Steel</i> (Alchemy) as a Bound Spell(5+).\n",
           "option_id": "jxb9n5v1o8d6x5famkmi09",
           "boundSpells": [
             {
@@ -327,7 +327,7 @@
           "refs": [
             "art_eos_ullor"
           ],
-          "description": "Enemy units within 8\" of the bearer lose the Charging Momentum Agi bonus and +1 Combat Score from Charging.",
+          "description": "Enemy units within 8\" of the wearer lose the Charging Momentum Agi bonus and +1 Combat Score from Charging.",
           "option_id": "urrks4m5p7rukid7lylcva"
         },
         {
@@ -386,7 +386,7 @@
           "refs": [
             "pae_eos_blacksteel"
           ],
-          "description": "<span class=\"textbf\">Immune (Flaming Attacks, Lightning Attacks)</span>. +1 Arm.<br>\n\tIf the wearer is on foot, it gains an additional +1 Arm.",
+          "description": "\t<span class=\"textbf\">Immune(Flaming Attacks, Lightning Attacks)</span>. +1 Arm.<br>\n\tIf the wearer is without Mount, it gains an additional +1 Arm.",
           "option_id": "89pdrtlsx7gmnspb7u2z",
           "hasStat": {
             "global": {
@@ -822,14 +822,7 @@
                 "tag_Human",
                 "tag_Metal Armour"
               ],
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "knight_commander"
-                  ],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "cost": 180,
               "options": [
                 {
@@ -2001,8 +1994,22 @@
             {
               "name": "Light Infantry",
               "cost": -5,
-              "extraCategories": [
-                "imperial_auxiliaries"
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": [
+                        "auxilia"
+                      ],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": [
+                      "imperial_auxiliaries"
+                    ]
+                  }
+                }
               ],
               "options": [
                 {
@@ -2044,13 +2051,19 @@
                               "type": "check",
                               "name": "Handgun (4+)",
                               "cost": 4,
-                              "option_id": "3itw7qju03vm1ee3zasz8"
+                              "option_id": "3itw7qju03vm1ee3zasz8",
+                              "refs": [
+                                "auxilia"
+                              ]
                             },
                             {
                               "type": "check",
                               "name": "Crossbow (4+)",
                               "cost": 6,
-                              "option_id": "rf9vzc7gwdknf4stlhz1q"
+                              "option_id": "rf9vzc7gwdknf4stlhz1q",
+                              "refs": [
+                                "auxilia"
+                              ]
                             }
                           ],
                           "option_id": "vm56hm9bkikcxl99zd612r"
@@ -2106,22 +2119,17 @@
                 "core_unit",
                 "tag_Human"
               ],
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "state_militia"
-                  ],
-                  "amount": 4
-                }
-              ],
+              "armyHasNotOption": [],
               "override": [
                 {
-                  "hasOption": {
-                    "refs": [
-                      "militia_skirmishers"
-                    ],
-                    "amount": 1
-                  },
+                  "hasOption": [
+                    {
+                      "refs": [
+                        "militia_skirmishers"
+                      ],
+                      "amount": 1
+                    }
+                  ],
                   "options": {
                     "extraCategories": [
                       "imperial_auxiliaries"
@@ -2204,12 +2212,6 @@
                 "tag_Mount"
               ],
               "armyHasNotOption": [
-                {
-                  "refs": [
-                    "electoral_cavalry"
-                  ],
-                  "amount": 4
-                },
                 {
                   "refs": [
                     "knightly_electoral"
@@ -2306,12 +2308,6 @@
                 "tag_Mount"
               ],
               "armyHasNotOption": [
-                {
-                  "refs": [
-                    "knightly_orders"
-                  ],
-                  "amount": 1
-                },
                 {
                   "refs": [
                     "knightly_electoral"
@@ -2517,14 +2513,7 @@
                 "tag_Metal Armour",
                 "tag_Mount"
               ],
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "sun_griffon"
-                  ],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "options": [
                 {
                   "minSize": 3,
@@ -2606,14 +2595,7 @@
                 "tag_Construct"
               ],
               "cost": 260,
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "unit_arcane_engine"
-                  ],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "options": [
                 {
                   "optionsLabel": "Spell",
@@ -2651,7 +2633,7 @@
         },
         {
           "name": "Imperial Auxiliaries",
-          "maxPercent": 0.35,
+          "maxPercent": 0.3,
           "refs": [
             "imperial_auxiliaries"
           ],
@@ -2664,14 +2646,7 @@
                 "imperial_rangers",
                 "tag_Human"
               ],
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "imperial_rangers"
-                  ],
-                  "amount": 4
-                }
-              ],
+              "armyHasNotOption": [],
               "options": [
                 {
                   "minSize": 8,
@@ -2718,14 +2693,7 @@
                 "tag_Light Armour",
                 "tag_Mount"
               ],
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "reiters"
-                  ],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "options": [
                 {
                   "minSize": 5,
@@ -2814,14 +2782,7 @@
                 "tag_Human"
               ],
               "cost": 150,
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "artillery"
-                  ],
-                  "amount": 4
-                }
-              ],
+              "armyHasNotOption": [],
               "options": [
                 {
                   "optionsLabel": "Artillery Weapon",
@@ -2923,14 +2884,7 @@
                 "flagellants",
                 "tag_Human"
               ],
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "flagellants"
-                  ],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "options": [
                 {
                   "minSize": 15,
@@ -2979,14 +2933,7 @@
               "extraCategories": [
                 "imperial_armoury"
               ],
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "steam_tank"
-                  ],
-                  "amount": 1
-                }
-              ],
+              "armyHasNotOption": [],
               "unit_id": "steam_tank",
               "option_id": "oavqr7ni8da55c4mplpdel",
               "logo": "EoS"
@@ -3117,14 +3064,7 @@
               ],
               "unit_id": "altar_of_battle_mount",
               "invisible": true,
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "altarOfBattle_mount_unit"
-                  ],
-                  "amount": 1
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "dgzona0bc1e1rzyuuwiynq",
               "logo": "character_EoS"
             },
@@ -3204,14 +3144,7 @@
                 "tag_Mount",
                 "tag_Beast"
               ],
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "greatGriffon_mount_unit"
-                  ],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "unit_id": "great_griffon_mount",
               "invisible": true,
               "option_id": "gsp5krrswosxghxnzsz6jo",
@@ -3260,14 +3193,7 @@
                 "mount",
                 "tag_Mount"
               ],
-              "armyHasNotOption": [
-                {
-                  "refs": [
-                    "youngGriffon_mount_unit"
-                  ],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "unit_id": "young_griffon_mount",
               "invisible": true,
               "option_id": "rr6ggjfbthkhslfq0ipas",

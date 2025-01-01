@@ -6,7 +6,7 @@
   },
   "short": "vs",
   "version": "2023 alpha3",
-  "nrversion": 508,
+  "nrversion": 510,
   "playable": 1,
   "id": 21,
   "include": [102],
@@ -66,7 +66,7 @@
           "type": "check",
           "name": "Potion of Rat Form",
           "cost": 10,
-          "description": "During any friendly Magic Phase, the bearer can choose to lose <span class=\"textbf\">Attached</span> (if they have it) and make a 6\" Magical Move. They must end this move by joining another friendly unit (<i>following the normal rules for joining units</i>).\n",
+          "description": "\tDuring any friendly Magic Phase, the bearer can choose to lose <span class=\"textbf\">Attached</span> (if they have it) and make a 6\" Magical Move. They must end this move by joining another friendly unit (<i>following the normal rules for joining units</i>).\n",
           "refs": ["potion_ratform"],
           "hasStat": {
             "global": {
@@ -83,6 +83,21 @@
           ],
           "hasNotOption": [],
           "option_id": "rrr4r3jif3jf8fd9023cwqdw"
+        },
+        {
+          "type": "check",
+          "name": "Favanite Powder",
+          "cost": 10,
+          "description": "\tWhen casting a Hex spell, after seeing the result of the roll, the bearer can choose to gain <span class=\"textbf\">Maniacal Enthusiasm(Casting Roll)</span>.\n",
+          "refs": ["favanite_powder"],
+          "armyHasNotOption": [
+            {
+              "refs": ["favanite_powder"],
+              "amount": 1
+            }
+          ],
+          "categories": [],
+          "option_id": "3e4wfsdfedf32wgfsddc32f32fd32"
         }
       ]
     },
@@ -105,7 +120,7 @@
           "type": "check",
           "name": "Plague-Hermit's Blessing",
           "cost": 50,
-          "description": "The number of HP is <span class=\"textbf\">set</span> to 6. Model gains the Cult of Errahman property. The model automatically fails all its Armour Saves rolls.\n",
+          "description": "\tThe number of HP is <span class=\"textbf\">set</span> to 6. Model gains the Cult of Errahman property. The model automatically fails all its Armour Saves rolls.\n",
           "refs": ["pestilent plate_1dl4iyof", "cult_of_errahman"],
           "loses_rules": ["vs-caelysian_pantheon"],
           "armyHasNotOption": [
@@ -128,7 +143,7 @@
           "type": "check",
           "name": "Sacred Aquila",
           "cost": 60,
-          "description": "The bearer and Rank-and-File models in the bearer's unit gain <span class=\"textbf\">Fury</span>. Additionally, for each natural to-hit roll of ‘1’ with a Melee Attack made by the bearer's unit, the bearer's unit suffers 1 hit with Str 3 and AP 0 in the same Agility Step.\n",
+          "description": "\tThe bearer and Rank-and-File models in the bearer's unit gain <span class=\"textbf\">Fury</span>; in addition, for each natural to-hit roll of ‘1’ with a Melee Attack made by  the bearer or a Rank-and-File model in its unit, the bearer's unit suffers 1 hit with Str 3 and AP 0 at the same Agility Step.\n",
           "refs": ["banner of avrasi superiority_782byx0c"],
           "armyHasNotOption": [
             {
@@ -144,7 +159,7 @@
           "type": "check",
           "name": "Bell of the Deep Roads",
           "cost": 25,
-          "description": "The bearer's unit gains <span class=\"textbf\">Ambush (Terrain Feature with a friendly Tunnel Marker)</span>.\n",
+          "description": "\tThe bearer's unit gains <span class=\"textbf\">Ambush(Terrain Feature with a friendly Tunnel Marker)</span>.\n",
           "refs": ["banner of mining_60ha69tw"],
           "armyHasNotOption": [
             {
@@ -187,7 +202,7 @@
           "type": "check",
           "name": "Rodentium Bullets",
           "cost": 20,
-          "description": "The weapon's Range is <span class=\"textbf\">set</span> to 18\". The weapon gains +2 Shots, +1 AP, and <span class=\"textbf\">Accurate</span>.",
+          "description": "\tThe weapon's Range is <span class=\"textbf\">set</span> to 18\". The weapon gains +2 Shots, +1 AP, and <span class=\"textbf\">Accurate</span>.",
           "refs": ["darkstone shot_xp2dd06", "weaponEnchantUni"],
           "armyHasNotOption": [
             {
@@ -208,7 +223,7 @@
           "type": "check",
           "name": "Storm Rocket",
           "cost": 70,
-          "description": "\n\tAim 3+. Range is <span class=\"textbf\">set</span> to 24\", Str is <span class=\"textbf\">set</span> to 5 and AP is <span class=\"textbf\">set</span> to 2. The weapon gains Flaming Attacks, Maniacal Enthusiasm (To-hit roll). If the weapon hits, it causes D6 hits instead of 1.\n",
+          "description": "\n\tAim 3+. Range is <span class=\"textbf\">set</span> to 24\", Str is <span class=\"textbf\">set</span> to 5 and AP is <span class=\"textbf\">set</span> to 2. The weapon gains Flaming Attacks, Maniacal Enthusiasm(To-hit roll). If the weapon hits, it causes D6 hits instead of 1.\n",
           "refs": ["magnesium fireworks_l5f8rtkm"],
           "armyHasNotOption": [
             {
@@ -235,7 +250,7 @@
           "type": "check",
           "name": "Secrets of the Doom Blade",
           "cost": 140,
-          "description": "+1 Att, +2 AP. Maniacal Enthusiasm (To-wound roll),Multiple Wounds (D3). Rolls this model makes on the <span class=\"textbf\">Maniacal Enthusiasm</span> chart gain a +2 modifier.\n",
+          "description": "\t+1 Att, +2 AP. Maniacal Enthusiasm(To-wound roll),Multiple Wounds(D3). Rolls this model makes on the <span class=\"textbf\">Maniacal Enthusiasm</span> chart gain a +2 modifier.\n",
           "refs": ["doom blade_ux76y1nv", "weaponEnchantUni"],
           "armyHasNotOption": [
             {
@@ -263,7 +278,7 @@
           "type": "check",
           "name": "Swarm Master",
           "cost": 20,
-          "description": "While using this weapon, the wielder gains <span class=\"textbf\">Grind Attack (X, Str 3, AP 1)</span>, where X is the number of Proper Ranks in the wielder's unit, up to a maximum of 10.\n",
+          "description": "\tWhile using this weapon, the wielder gains <span class=\"textbf\">Grind Attack(X, Str 3, AP 1)</span>, where X is the number of Proper Ranks in the wielder's unit, up to a maximum of 10.\n",
           "refs": ["swarm_master_432y1nv", "weaponEnchantUni"],
           "armyHasNotOption": [
             {
@@ -293,7 +308,7 @@
         },
         {
           "name": "Eldritch Inscriptions",
-          "cost": 30,
+          "cost": 20,
           "option_id": "5r6iujrpi4brxzks7gmzw",
           "type": "check",
           "shared": true
@@ -308,7 +323,7 @@
           "type": "check",
           "name": "Tome of the Ratking",
           "cost": 30,
-          "description": "The bearer's unit gains <span class=\"textbf\">Unstable</span>.\n",
+          "description": "\tThe bearer's unit gains <span class=\"textbf\">Unstable</span>.\n",
           "refs": ["tome_of_the_ratking"],
           "armyHasNotOption": [
             {
@@ -336,7 +351,7 @@
           "type": "check",
           "name": "Tarina's Lyre",
           "cost": 10,
-          "description": "<span class=\"textbf\">Stomp Attacks</span> made by enemy units within 8\" of the bearer suffer a -2 to-wound modifier.",
+          "description": "<span class=\"textbf\">Stomp Attack</span> made by enemy units within 8\" of the bearer suffer a -2 to-wound modifier.",
           "refs": ["razor whip_qq7791xs"],
           "armyHasNotOption": [
             {
@@ -350,24 +365,9 @@
         },
         {
           "type": "check",
-          "name": "Favanite Powder",
-          "cost": 10,
-          "description": "When casting a Hex spell, after seeing the result of the roll, the bearer can choose to gain <span class=\"textbf\">Maniacal Enthusiasm (Casting Roll)</span>.\n",
-          "refs": ["favanite_powder"],
-          "armyHasNotOption": [
-            {
-              "refs": ["favanite_powder"],
-              "amount": 1
-            }
-          ],
-          "categories": [],
-          "option_id": "3e4wfsdfedf32wgfsddc32f32fd32"
-        },
-        {
-          "type": "check",
           "name": "Crown of Hubris",
           "cost": 70,
-          "description": "At the start of any friendly Magic Phase, the bearer may choose to inflict 3 HP losses on its unit. If this is used, the model gains <span class=\"textbf\">Channel (2)</span> with Duration: One Turn.\n",
+          "description": "\tAt the start of any friendly Magic Phase, the bearer may choose to inflict 3 HP losses on its unit. If this is used, the model gains <span class=\"textbf\">Channel(2)</span> with Duration: One Turn.\n",
           "refs": ["soulstone_z9gynq02"],
           "armyHasNotOption": [
             {
@@ -383,7 +383,7 @@
           "type": "check",
           "name": "Crown of the Usurper",
           "cost": 30,
-          "description": "The bearer's unit gains <span class=\"textbf\">Fearless</span>. If the General is removed as a casualty, the bearer becomes the General.\n",
+          "description": "\tThe bearer's unit gains <span class=\"textbf\">Fearless</span>. If the General is removed as a casualty, the bearer becomes the General.\n",
           "refs": ["crow_of_usuerper"],
           "armyHasNotOption": [
             {
@@ -399,7 +399,7 @@
           "type": "check",
           "name": "Darkstone Detonator",
           "cost": 30,
-          "description": "At the end of any friendly Movement Phase after the first, the bearer may remove all friendly Tunnel Markers placed on a single Terrain Feature within 24\" of the bearer.\n\tIf so, \n\tone unengaged unit in contact with that Terrain Feature suffers 2D6 hits with Str 4 and AP 1.\n\t\n",
+          "description": "\tAt the end of any friendly Movement Phase after the first, the bearer may remove all friendly Tunnel Markers placed on a single Terrain Feature within 24\" of the bearer.\n\tIf so, \n\tone unengaged unit in contact with that Terrain Feature suffers 2D6 hits with Str 4 and AP 1.\n\t\n",
           "refs": ["staff of tectonic shift_tbl6tdo5e"],
           "armyHasNotOption": [
             {
@@ -633,12 +633,7 @@
                 "tag_Caelysian Pantheon"
               ],
               "unit_id": "ruinous_dictator",
-              "armyHasNotOption": [
-                {
-                  "refs": ["ruinousDictator"],
-                  "amount": 1
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "ebzmoieimwcfmkhqk5k6w9",
               "logo": "character",
               "magic": {}
@@ -759,12 +754,7 @@
                 }
               ],
               "refs": ["verminSenator", "non_core_unit", "tag_Vermin", "tag_Light Armour"],
-              "armyHasNotOption": [
-                {
-                  "refs": ["verminSenator"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "unit_id": "vermin_senator",
               "option_id": "hkp71v03ipwx86imbstv4g",
               "logo": "character"
@@ -1105,7 +1095,7 @@
                         },
                         {
                           "type": "check",
-                          "name": "Canister Launcher (3+)",
+                          "name": "Canister Launcher (5+)",
                           "cost": 25,
                           "refs": ["canister_launcher"],
                           "armyHasNotOption": [
@@ -1462,12 +1452,7 @@
               "options": [],
               "refs": ["duskbladeAssassin", "non_core_unit", "not_a_leader", "tag_Vermin"],
               "unit_id": "duskblade_assassin",
-              "armyHasNotOption": [
-                {
-                  "refs": ["duskbladeAssassin"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "nti7n7yy2x3t6fxkg2t75",
               "logo": "character"
             }
@@ -1893,7 +1878,7 @@
               "options": [
                 {
                   "minSize": 10,
-                  "maxSize": 30,
+                  "maxSize": 19,
                   "addToUnitSize": true,
                   "options": [
                     {
@@ -1973,12 +1958,7 @@
               "options": [],
               "refs": ["legionaryDrillTeam", "non_core_unit", "tag_Construct", "tag_Metal Armour"],
               "unit_id": "legionary_drill_team",
-              "armyHasNotOption": [
-                {
-                  "refs": ["legionaryDrillTeam"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -2168,12 +2148,7 @@
               ],
               "refs": ["murmilloBrutes", "non_core_unit", "tag_Vermin", "tag_Mutant", "tag_Metal Armour"],
               "unit_id": "gladiator_brutes",
-              "armyHasNotOption": [
-                {
-                  "refs": ["murmilloBrutes"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "26486idw2jrpdcavfhy1jf",
               "logo": "special"
             },
@@ -2243,12 +2218,7 @@
               "category": "tunnel_gunners",
               "refs": ["doomsparkDevices", "non_core_unit", "tag_Vermin", "tag_Construct", "tag_Metal Armour"],
               "unit_id": "doomspark_device",
-              "armyHasNotOption": [
-                {
-                  "refs": ["doomsparkDevices"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "gf19l3tdamll84augmbpu",
               "logo": "pistols"
             },
@@ -2319,12 +2289,7 @@
               ],
               "refs": ["shadowfurStalkers", "non_core_unit", "tag_"],
               "unit_id": "shadowfur_stalkers",
-              "armyHasNotOption": [
-                {
-                  "refs": ["shadowfurStalkers"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "oqg6ny4fcai4lynwymqjw7",
               "logo": "special"
             }
@@ -2454,12 +2419,7 @@
               ],
               "refs": ["thunderBrutes", "non_core_unit", "tag_Vermin", "tag_Mutant", "tag_Metal Armour"],
               "unit_id": "thunder_brutes",
-              "armyHasNotOption": [
-                {
-                  "refs": ["thunderBrutes"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "26486idw2dsdsjrpdcavfhy1jf",
               "logo": "pistols"
             },
@@ -2549,12 +2509,7 @@
               ],
               "refs": ["experimentalWeaponTeams", "non_core_unit", "tag_Vermin", "tag_Metal Armour"],
               "unit_id": "experimental_weapon_teams",
-              "armyHasNotOption": [
-                {
-                  "refs": ["experimentalWeaponTeams"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "blwo5tptes7e4lij7ekgw",
               "logo": "pistols"
             },
@@ -2583,12 +2538,7 @@
               ],
               "refs": ["ignifierGrenadiers", "non_core_unit", "tag_Vermin", "tag_Metal Armour"],
               "unit_id": "ignifier_grenadiers",
-              "armyHasNotOption": [
-                {
-                  "refs": ["ignifierGrenadiers"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "sosrd2vy7kbc580xt7fhcc",
               "logo": "arrows"
             },
@@ -2634,12 +2584,7 @@
               ],
               "refs": ["verminArtillery", "war_machine", "non_core_unit", "tag_Vermin"],
               "unit_id": "vermin_artillery",
-              "armyHasNotOption": [
-                {
-                  "refs": ["verminArtillery"],
-                  "amount": 4
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "rdmgw1suo40oa0iaj4tv6",
               "logo": "pistols"
             }
@@ -2673,12 +2618,7 @@
               ],
               "refs": ["arenaBeast", "non_core_unit", "tag_Beast", "tag_Mutant", "tag_Vermin"],
               "unit_id": "arena_beast",
-              "armyHasNotOption": [
-                {
-                  "refs": ["arenaBeast"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -2725,12 +2665,7 @@
               ],
               "refs": ["dreadmillChariots", "non_core_unit", "tag_Vermin", "tag_Construct", "tag_Light Armour"],
               "unit_id": "dreadmill_chariots",
-              "armyHasNotOption": [
-                {
-                  "refs": ["dreadmillChariots"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "12vbs5prfix308n7fvhnbh",
               "logo": "monster"
             },
@@ -2741,12 +2676,7 @@
               "options": [],
               "refs": ["stygianEarthbreaker", "non_core_unit", "tag_Construct", "tag_Metal Armour"],
               "unit_id": "stygian_earthbreaker",
-              "armyHasNotOption": [
-                {
-                  "refs": ["stygianEarthbreaker"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "k01osz9blodssribkly",
               "logo": "monster"
             },
@@ -2833,12 +2763,7 @@
               "refs": ["praetorianPalanquin_brute_mount", "mount", "tag_Mount", "tag_Mutant"],
               "unit_id": "praetorian_brute_mount",
               "invisible": true,
-              "armyHasNotOption": [
-                {
-                  "refs": ["praetorianPalanquin_brute_mount"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "432grebvrejk786herbew3253",
               "logo": "character"
             },
@@ -2878,12 +2803,7 @@
               "refs": ["sacredPlatform_mount_unit", "mount", "tag_Vermin", "tag_Mount", "tag_Construct"],
               "unit_id": "sacred_platform_mount",
               "invisible": true,
-              "armyHasNotOption": [
-                {
-                  "refs": ["sacredPlatform_mount_unit"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "xxamy2s17od2753afhyosm",
               "logo": "character"
             },

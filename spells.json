@@ -133,11 +133,11 @@
           "number": "1",
           "name": "Molten Copper",
           "rep": true,
-          "description": "The target suffers D3+1 hits with Str 3, AP 3, Flaming Attacks, Magical Attacks.<br>\n\tIf the target has Metal Armour, these hits are instead resolved with Str 4 and AP 4.",
+          "description": "The target suffers D3+1 hits with AP 4, Flaming Attacks, Magical Attacks, and Zeal (against Metal Armour). These hits always wound on 4+.",
           "cast": [
             {
               "value": "8",
-              "range": "18",
+              "range": "24",
               "types": ["Damage", "Hex", "Missile", "Replicable"],
               "duration": 0,
               "effects": [
@@ -194,17 +194,17 @@
             {
               "range": "24",
               "types": ["Ground*"],
-              "duration": 0,
+              "duration": 1,
               "value": "8"
             }
           ],
-          "description": "Place a Wall Terrain Feature with dimensions 1×6\" on the target.<br>\n\t<i>Remove the Terrain Feature when the spell ends.</i>"
+          "description": "Place a Wall Terrain Feature with dimensions 1×6″ on the target. Remove the Terrain Feature when the spell ends."
         },
         {
           "number": "5",
           "name": "Word of Iron",
           "ref": "word_iron",
-          "description": "The target suffers +2 Arm and gains Metal Armour.",
+          "description": "The target gains +2 Arm and Metal Armour.",
           "cast": [
             {
               "range": "18",
@@ -549,8 +549,8 @@
         },
         {
           "number": "3",
-          "name": "Healing Waters",
-          "ref": "healing_waters",
+          "name": "Veil of Mist",
+          "ref": "veil_of_mist",
           "description": "Range: You can measure the distance either from the Caster or from a chosen Water Terrain.<br/><br/>The target gains Hard Target (1) and Magic Resistance (2).",
           "cast": [
             {
@@ -838,7 +838,7 @@
           "number": "2",
           "name": "Flaming Swords",
           "ref": "flaming_swords",
-          "description": "The target gains +1 to wound, Magical Attacks, Flaming Attacks.",
+          "description": "The target gains +1 to wound, Flaming Attacks (Melee & Shooting) and Magical Attacks (Melee & Shooting).",
           "cast": [
             {
               "value": "7",
@@ -943,8 +943,8 @@
           "rep": true,
           "cast": [
             {
-              "range": "8",
-              "types": ["Augment", "Aura", "Replicable"],
+              "range": "18",
+              "types": ["Augment", "Replicable"],
               "duration": 0,
               "value": "7"
             }
@@ -1066,7 +1066,7 @@
               "value": "9"
             }
           ],
-          "description": "The target's Agi is <span class=\"textbf\">set</span> to 1.<br/><br>&malt; : Enemy* units in the same combat as the target has their Agi <span class=\"textbf\">set</span> to 1.\n\t\t<br><br/>&times; : Friendly* units in the same combat as the target has their Agi <span class=\"textbf\">set</span> to 1.\n\t<br>\n\t*From the perspective of the caster.<br>\n\tAt the time of casting the spell."
+          "description": "The target suffers −10 Agi, to a minimum of 1.<br/><br>&malt; : Enemy* units in the same combat† as the target suffer −10 Agi, to a minimum of 1.\n\t\t<br><br/>&times; :  Friendly* units in the same combat† as the target suffer −10 Agi, to a minimum of 1.\n\t<br>\n\t*From the perspective of the Caster.<br/>†At the time of casting the spell."
         },
         {
           "ref": "holy_affliction",
@@ -1094,7 +1094,7 @@
               "value": "11"
             }
           ],
-          "description": "The target suffers D3+1 hits with Str 9, AP 4, Magical Attacks, Flaming Attacks.<br><br/>&malt; : The caster picks an additional target.\n\t\t<br><br/>&times;: The opponent picks an additional target.\n\t<br>\n\t67.2"
+          "description": "The target suffers D3+1 hits, and all units within 3″ of the target suffer 1 hit. These hits are resolved with Str 9, AP 4, Flaming Attacks and Magical Attacks.<br><br/>&malt; : Increase the number of hits each unit suffers from this Spell by 1.<br><br/>&times;: Decrease the number of hits each unit suffers from this Spell by 1"
         },
         {
           "number": "6",
@@ -1184,7 +1184,7 @@
               "value": "11"
             }
           ],
-          "description": "Mark the ground under the center of the target. The target gains <span class=\"textbf\">Ambush (within 12\" of the marked point)</span>. Then remove the target from the Battlefield. It automatically passes the roll to return to the Battlefield in your next Player Turn. *Cannot target Shaken units"
+          "description": "Mark the ground under the center of the target. The target gains Ambush (within 12″ of the marked point). Then remove the target from the Battlefield. It automatically passes the roll to return to the Battlefield in your next Player Turn.<br/><br/> *Cannot target Shaken units"
         },
         {
           "ref": "clouded_sight",

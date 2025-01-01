@@ -6,7 +6,7 @@
   },
   "short": "sa",
   "version": "2023",
-  "nrversion": 441,
+  "nrversion": 442,
   "playable": 1,
   "id": 13,
   "include": [102],
@@ -30,7 +30,8 @@
     "sizeGigantic": "Gigantic Size",
     "core_unit": "Core Unit",
     "magnetic_short_bow": "Magnetic Short Bow",
-    "caimanEldersUnit": "Caiman Elders Unit"
+    "caimanEldersUnit": "Caiman Elders Unit",
+    "small_arms_fire": "Small Arms Fire"
   },
   "dictionnary": [
     {
@@ -62,7 +63,7 @@
           "type": "check",
           "name": "Stampede Resonator Crystal",
           "cost": 50,
-          "description": "\n\tMay be activated at the start of any Charge Phase. Choose one friendly unit containing models with Height 4 or 5 within 18\". The chosen unit loses <span class=\"textbf\">Stomp Attacks</span> and gains <span class=\"textbf\">Impact Hits (X)</span>, where X is equal to its amount of hits from its <span class=\"textbf\">Stomp Attacks</span>. If a model already had <span class=\"textbf\">Impact Hits</span>, increase the number of hits by its amount of <span class=\"textbf\">Stomp Attacks</span> instead.\n",
+          "description": "\n\tMay be activated at the start of any Charge Phase. Choose one friendly unit containing models with Height 4 or 5 within 18\". The chosen unit loses <span class=\"textbf\">Stomp Attack</span> and gains <span class=\"textbf\">Impact Hits(X)</span>, where X is equal to its amount of hits from its <span class=\"textbf\">Stomp Attack</span>. If a model already had <span class=\"textbf\">Impact Hits</span>, increase the number of hits by its amount of <span class=\"textbf\">Stomp Attack</span> instead.\n",
           "refs": ["stampede resonator crystal_bf32lrqs"],
           "armyHasNotOption": [
             {
@@ -81,7 +82,7 @@
         {
           "type": "check",
           "name": "Koru Stone",
-          "cost": 60,
+          "cost": 50,
           "description": "\n\tThe bearer's unit gains <span class=\"textbf\">Rally Around the Flag</span>.\n",
           "refs": ["koru_stone"],
           "armyHasNotOption": [
@@ -145,7 +146,7 @@
           "type": "check",
           "name": "Glory of the Dawn Age",
           "cost": 45,
-          "description": "\n\t+1 Str and <span class=\"textbf\">Lethal Strike</span>. Natural to-wound rolls of ‘6’ gain <span class=\"textbf\">Multiple Wounds (2)</span>.\n",
+          "description": "\n\t+1 Str and <span class=\"textbf\">Lethal Strike</span>. Natural to-wound rolls of ‘6’ gain <span class=\"textbf\">Multiple Wounds(2)</span>.\n",
           "refs": ["glory_of_dawn_age", "weaponEnchantUni"],
           "armyHasNotOption": [
             {
@@ -166,7 +167,7 @@
           "type": "check",
           "name": "Alchemical Arrows",
           "cost": 40,
-          "description": "\n\tNumber of Shots is <span class=\"textbf\">set</span> to 4, and Str is <span class=\"textbf\">set</span> to 4.  If the weapon inflicts one or more hits, all Shooting Attacks with Magnetic Short Bows that are simultaneously made by the bearer's unit have their Str <span class=\"textbf\">set</span> to 4.\n",
+          "description": "\n\tNumber of Shots is <span class=\"textbf\">set</span> to 4. All Magnetic Short Bows in the wielder's unit have their Str <span class=\"textbf\">set</span> to 4.\n",
           "refs": ["alchemical arrows_iuyntw59", "weaponEnchantUni"],
           "armyHasNotOption": [
             {
@@ -191,8 +192,8 @@
         {
           "type": "check",
           "name": "Imbued Jade",
-          "cost": 60,
-          "description": "\n\tChannel (+1), Cantrips(Preservation & Projection). <i>This means that both rules for Cantrips are activated when a Magic Dice is discarded. See Tegu Mystics for rules.</i>\n",
+          "cost": 70,
+          "description": "\n\t<span class=\"textbf\">Channel(+1)</span> and <span class=\"textbf\">Regeneration(5+)</span>. \n",
           "refs": ["imbued_jade"],
           "armyHasNotOption": [
             {
@@ -218,8 +219,8 @@
         {
           "type": "check",
           "name": "Vital Essence",
-          "cost": 90,
-          "description": "\n\t+1 HP and <span class=\"textbf\">Fortitude (4+)</span>.\n",
+          "cost": 95,
+          "description": "\n\t+1 HP and <span class=\"textbf\">Regeneration(4+)</span>.\n",
           "refs": ["vital essence_0o783y9m"],
           "armyHasNotOption": [
             {
@@ -247,7 +248,7 @@
           "type": "check",
           "name": "Starfall Lodestone",
           "cost": 50,
-          "description": "\n\tThe bearer's model gains Immune (Flaming Attacks), Hard Target (1).\n",
+          "description": "\n\tThe bearer's model gains Immune(Flaming Attacks), Hard Target(1).\n",
           "refs": ["starfall scales_kameza4"],
           "armyHasNotOption": [
             {
@@ -277,7 +278,7 @@
           "type": "check",
           "name": "Carved Tablet",
           "cost": 45,
-          "description": "\n\tWhen Building your Army, the model must choose one of the spells from <span class=\"textbf\">Carved Wisdom</span> (<i>see Howdah Devices</i>). The model can cast the chosen spell as a Bound Spell. See <span class=\"textbf\">Carved Wisdom</span> for Casting Values.\n",
+          "description": "\n\t<span class=\"textbf\">Carved Wisdom</span> (<i>see Howdah Devices</i>).\n",
           "refs": ["carved_tablet"],
           "armyHasNotOption": [
             {
@@ -383,7 +384,7 @@
           "type": "check",
           "name": "Carved Wisdom",
           "cost": 35,
-          "description": "\n\tSelect one of the following spells as a Bound Spell, and note which on the Army List.\n\t\t Fate's JudgementDivination as Bound Spell (3+),\n\t\t Molten CopperAlchemy as Bound Spell (4+),\n\t\t Swarm of InsectsShamanism as Bound Spell (5+),\n\t\t Touch of the ReaperEvocation as Bound Spell (3+),\n\t\n",
+          "description": "\n\tSelect one of the following spells as a Bound Spell. It may not be changed during Pre-Game Selections.\n\t\t Fate's JudgementDivination as Bound Spell(3+),\n\t\t Molten CopperAlchemy as Bound Spell(4+),\n\t\t Swarm of InsectsShamanism as Bound Spell(5+),\n\t\t Touch of the ReaperEvocation as Bound Spell(3+),\n\t\n",
           "refs": ["carved wisdom_doleke0k"],
           "armyHasNotOption": [
             {
@@ -462,8 +463,8 @@
         {
           "type": "check",
           "name": "Lodestone Shield",
-          "cost": 40,
-          "description": "\n\tFriendly units within 8\" of the model gain <span class=\"textbf\">Aegis (5+, against Ranged Attacks)</span>.\n",
+          "cost": 45,
+          "description": "\n\tFriendly units within 8\" of the model gain <span class=\"textbf\">Aegis(5+, against Ranged Attacks)</span>.\n",
           "refs": ["lodestone shield_8b8acrfi"],
           "armyHasNotOption": [
             {
@@ -477,9 +478,9 @@
         {
           "type": "check",
           "name": "Magnetic Great Bow",
-          "cost": 50,
-          "description": "\n\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Magnetic Great Bow</td><td>4</td><td>18\"</td><td>3</td><td>6</td><td>3</td><td>Lodestone, Accurate, March and Shoot, Quick to Fire</td></tr></table><br>\n<br>\n",
-          "refs": ["magnetic great bow_5qr6wuzb"],
+          "cost": 45,
+          "description": "\n\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Magnetic Great Bow</td><td>4</td><td>18\"</td><td>3</td><td>6</td><td>3</td><td>Accurate, March and Shoot, Quick to Fire, +1 to hit against Metal Armour</td></tr></table><br>\n<br>\n",
+          "refs": ["magnetic great bow_5qr6wuzb", { "ref": "small_arms_fire", "amount": 5 }],
           "armyHasNotOption": [
             {
               "refs": ["magnetic great bow_5qr6wuzb"],
@@ -492,8 +493,8 @@
         {
           "type": "check",
           "name": "Monolith of Vitalism",
-          "cost": 60,
-          "description": "The model becomes the Battle Standard Bearer.",
+          "cost": 50,
+          "description": "\tThe model gains <span class=\"textbf\">Rally Around the Flag</span>.",
           "refs": ["monolith of vitalism_6l7off1", "army_unique"],
           "extraVp": 200,
           "armyHasNotOption": [
@@ -530,8 +531,8 @@
         {
           "type": "check",
           "name": "Suncatcher Crystal",
-          "cost": 30,
-          "description": "\n\tThe model gains an additional model part:<br><font color='black!50'></font>\n\t<font color='black!50'></font>&<font color='black!50'></font>&<font color='black!50'></font>&<font color='black!50'></font>& <font color='black!50'></font>&<font color='black!50'></font>&<font color='black!50'></font><br>Suncatcher Crystal&<span class=\"textbf\">2</span>&<span class=\"textbf\">3</span>&<span class=\"textbf\">6</span>&<span class=\"textbf\">3</span>&<span class=\"textbf\">2</span>&Flaming Attacks, Construct<br><br>",
+          "cost": 20,
+          "description": "\n\tThe model gains an additional model part:<br>\t\t\t<font color='black!50'></font>\t\t\t\n\t<font color='black!50'></font>&\t<font color='black!50'></font>&\t<font color='black!50'></font>&\t<font color='black!50'></font>& \t<font color='black!50'></font>&\t<font color='black!50'></font>&\t<font color='black!50'></font>\t<br>\tSuncatcher Crystal\t&\t<span class=\"textbf\">2</span>&\t<span class=\"textbf\">3</span>&\t<span class=\"textbf\">6</span>&\t<span class=\"textbf\">3</span>&\t<span class=\"textbf\">2</span>&\t\tFlaming Attacks, Construct\t<br>\t<br>",
           "refs": ["suncatcher crystal_9l638i1g"],
           "armyHasNotOption": [
             {
@@ -545,8 +546,8 @@
         {
           "type": "check",
           "name": "Venomous Fortress",
-          "cost": 50,
-          "description": "\n\tThe model’s base size is changed to 60×100 mm and it gains 6 additional Skink Riders. If applicable, <span class=\"textbf\">Exclusive (Tegu Warriors, Tegu Guard)</span> is replaced with <span class=\"textbf\">Exclusive (Skink Warriors, Skink Hunters)</span>. Model parts with Skink and without Mount in the bearer’s unit gain First Strike (Hatred), Poison Attacks.\n",
+          "cost": 40,
+          "description": "\n\tThe model’s base size is changed to 60×100 mm and it gains 6 additional Skink Riders. If applicable, <span class=\"textbf\">Exclusive(Tegu Warriors, Tegu Guard)</span> is replaced with <span class=\"textbf\">Exclusive(Skink Warriors, Skink Hunters)</span>. Model parts with Skink in the bearer’s unit gain First Strike(Hatred), Poison Attacks.\n",
           "refs": ["venomous fortress_u7bc0asa"],
           "armyHasNotOption": [
             {
@@ -577,7 +578,7 @@
           "name": "Veil Mastery",
           "cost": 100,
           "option_id": "ogaz9db0fjncs26xewxig6",
-          "description": "\n\tThe model gains <span class=\"textbf\">Channel (2)</span>.\n"
+          "description": "\n\tThe model gains <span class=\"textbf\">Channel(2)</span>.\n"
         },
         {
           "type": "check",
@@ -592,7 +593,7 @@
           "name": "Farseeing Mastery",
           "cost": 40,
           "option_id": "q9nhqxerg1dnslwziiqpsd",
-          "description": "Learned Spells cast by the model gain +6\" Range. Aura Spells gain +3\" Range instead.\n"
+          "description": " Learned Spells cast by the model gain +6\" Range. Aura Spells gain +3\" Range instead.\n"
         },
         {
           "type": "check",
@@ -647,7 +648,7 @@
               }
             ]
           },
-          "description": "\n\tThe model knows two additional Apprentice or Adept Spells that it must select from Pyromancy,Occultism. Casting Rolls for these spells suffer a -1 modifier.\n\t"
+          "description": "\n\t. \n\tSelect either Pyromancy,Occultism, the model knows two additional spells from the chosen Path, which must be selected from the Apprentice Spell and Adept Spells (#1--#4). Casting Rolls for these spells suffer a -1 modifier.\n\t"
         }
       ]
     },
@@ -661,7 +662,7 @@
           "name": "Mystifying Mastery",
           "cost": 50,
           "option_id": "g43g3g43g43g34g4",
-          "description": "\n\tThe first failed Dispelling Roll during each enemy Magic Phase must be rerolled.\n"
+          "description": "\n\tThe first failed Dispell Roll during each enemy Magic Phase must be rerolled.\n"
         },
         {
           "type": "check",
@@ -670,14 +671,14 @@
           "name": "Guiding Mastery",
           "cost": 20,
           "option_id": "g43g43fdsgfdgfdg34g43",
-          "description": "\n\tAt the start of each friendly Player Turn, the model may choose a friendly unit with Magnasaur within 12\". The unit must reroll failed Charge Range rolls, with Duration: One Turn.\n"
+          "description": "\n\tAt the start of each friendly Player Turn, the model may choose a friendly unit with Magnasaur within 12\". The unit must reroll failed Charge Range rolls. Duration: One Turn.\n"
         },
         {
           "type": "check",
           "refs": ["maddening_mastery"],
           "armyHasNotOption": ["maddening_mastery"],
           "name": "Maddening Mastery",
-          "cost": 35,
+          "cost": 30,
           "option_id": "65jfhgfh54h534hg34f43j65432",
           "description": "\n\tThe model gains Deafening Clamour, Horror.\n"
         },
@@ -688,7 +689,7 @@
           "name": "Invasive Mastery",
           "cost": 25,
           "option_id": "f32f32f32f32g34",
-          "description": "Once per friendly Magic Phase, the model may choose a spell that was successfully cast by an enemy Wizard during the previous Magic Phase. Bound Spells and Hereditary Spells cannot be chosen. The model knows the chosen spell until the end of the phase."
+          "description": "\tOnce per friendly Magic Phase, the model may choose a Learned Spell that was successfully cast by an enemy Wizard in the previous Magic Phase. Hereditary Spells cannot be chosen. The model knows the chosen spell until the end of the phase."
         }
       ]
     },
@@ -741,6 +742,11 @@
           "refs": ["caimanEldersUnit"],
           "amount": 2,
           "parentMult": false
+        },
+        {
+          "refs": ["small_arms_fire"],
+          "amount": 10,
+          "perPoints": 500
         }
       ],
       "options": [
@@ -832,7 +838,7 @@
                     {
                       "type": "check",
                       "name": "Anurarch Wardens",
-                      "cost": 55,
+                      "cost": 40,
                       "refs": ["mount", "anurarch_wardens_mount_option"],
                       "refopt": "anurarch_wardens_mount",
                       "option_id": "sznha9yr3m2gs10x1orgj"
@@ -1168,7 +1174,7 @@
                           "type": "check",
                           "name": "Blowpipe (3+)",
                           "cost": 5,
-                          "refs": [],
+                          "refs": [{ "ref": "small_arms_fire", "amount": 2 }],
                           "ignoreCost": true,
                           "option_id": "c50fpce7gyt6cykww3pka"
                         },
@@ -1176,7 +1182,7 @@
                           "type": "check",
                           "name": "Poisoned Javelin (2+)",
                           "cost": 0,
-                          "refs": [],
+                          "refs": ["small_arms_fire"],
                           "ignoreCost": true,
                           "option_id": "dm9y1nmmo7rwld2sm9rz1k"
                         },
@@ -1190,7 +1196,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["magneticShortBowEnchant"],
-                          "option_id": "dpeztjyri4aezlyy4uu5mp"
+                          "option_id": "dpeztjyri4aezlyy4uu5mp",
+                          "refs": ["small_arms_fire"]
                         }
                       ],
                       "maxSize": 1,
@@ -1319,7 +1326,7 @@
                     {
                       "type": "check",
                       "name": "Master Strategist",
-                      "cost": 35,
+                      "cost": 30,
                       "refs": ["master strategist_6k8qupmm"],
                       "armyHasNotOption": [
                         {
@@ -1351,8 +1358,8 @@
                     {
                       "type": "check",
                       "name": "Mountain Pteradon",
-                      "cost": 90,
-                      "refs": ["mount", "mountain_pteradon_mount_option"],
+                      "cost": 80,
+                      "refs": ["mount", "mountain_pteradon_mount_option", { "ref": "small_arms_fire", "amount": 5 }],
                       "refopt": "mountain_pteradon_mount",
                       "option_id": "va56o6z8nefmza7kfjut5o",
                       "extraCategories": ["guerilla_warriors"]
@@ -1360,7 +1367,7 @@
                     {
                       "type": "check",
                       "name": "Pouakai Sky Tyrant",
-                      "cost": 180,
+                      "cost": 190,
                       "refs": ["mount", "pouakai_sky_tyrant_mount_option"],
                       "refopt": "pouakai_sky_tyrant_mount",
                       "extraCategories": ["magna_sauria", "guerilla_warriors"],
@@ -1370,7 +1377,7 @@
                       "type": "check",
                       "name": "Taurosaur",
                       "cost": 380,
-                      "refs": ["mount", "taurosaur_mount_option"],
+                      "refs": ["mount", "taurosaur_mount_option", { "ref": "small_arms_fire", "amount": 4 }],
                       "refopt": "taurosaur_mount",
                       "extraCategories": ["magna_sauria"],
                       "option_id": "8qs275z3yng27iqdqgm97m"
@@ -1384,12 +1391,7 @@
               ],
               "refs": ["skinkVeteran", "character", "tag_Skink", "tag_Light Armour"],
               "unit_id": "skink_veteran",
-              "armyHasNotOption": [
-                {
-                  "refs": ["skinkVeteran"],
-                  "amount": 4
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "sgv1d4x4q6otuozyg0jtc",
               "logo": "character"
             },
@@ -1471,7 +1473,7 @@
                         {
                           "type": "check",
                           "name": "Shield",
-                          "cost": 10,
+                          "cost": 5,
                           "refs": [],
                           "optionsLabel": "Shield Enchant",
                           "maxSize": 1,
@@ -1620,7 +1622,7 @@
                     {
                       "type": "check",
                       "name": "Alpha Carnosaur",
-                      "cost": 500,
+                      "cost": 480,
                       "refs": ["mount", "alpha_carnosaur_mount_option"],
                       "refopt": "alpha_carnosaur_mount",
                       "extraCategories": ["magna_sauria"],
@@ -1638,12 +1640,7 @@
               "unit_id": "tegu_veteran",
               "option_id": "t2rch76zhb0c4shk1rzs7",
               "logo": "character",
-              "armyHasNotOption": [
-                {
-                  "refs": ["teguVeteran"],
-                  "amount": 4
-                }
-              ]
+              "armyHasNotOption": []
             }
           ],
           "option_id": "krl9e60riig8f91e3gc3fx"
@@ -1782,13 +1779,15 @@
                           "type": "check",
                           "name": "Poisoned Javelin (4+)",
                           "cost": 0,
-                          "option_id": "fdggfdg34g34g34ddsfdsf"
+                          "option_id": "fdggfdg34g34g34ddsfdsf",
+                          "refs": ["small_arms_fire"]
                         },
                         {
                           "type": "check",
                           "name": "Magnetic Short Bow (4+)",
                           "cost": 1,
-                          "option_id": "fdsff43g5e4rfhjgfb3wv34g34hg34"
+                          "option_id": "fdsff43g5e4rfhjgfb3wv34g34hg34",
+                          "refs": ["small_arms_fire"]
                         }
                       ],
                       "option_id": "id3y4amip5nzzadlhz2up",
@@ -1834,18 +1833,13 @@
               ],
               "refs": ["skinkHunters", "core_unit", "tag_Skink"],
               "unit_id": "skink_hunters",
-              "armyHasNotOption": [
-                {
-                  "refs": ["skinkHunters"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "u1w8nax5svqc8lgx8doiaw",
               "logo": "core"
             },
             {
               "name": "Skink Warriors",
-              "cost": 35,
+              "cost": 60,
               "category": "core",
               "override": [
                 {
@@ -1869,7 +1863,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 7,
+                      "cost": 6,
                       "hide": true,
                       "options": [
                         {
@@ -1893,7 +1887,7 @@
                               "type": "check",
                               "name": "Magnetic Short Bow (4+)",
                               "cost": 2,
-                              "refs": ["skink_magnetic_short_bow"],
+                              "refs": ["skink_magnetic_short_bow", "small_arms_fire"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["skink_magnetic_short_bow"],
@@ -1964,12 +1958,7 @@
               ],
               "refs": ["skinkWarriors", "core_unit", "tag_Skink"],
               "unit_id": "skink_warriors",
-              "armyHasNotOption": [
-                {
-                  "refs": ["skinkWarriors"],
-                  "amount": 5
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "2fx027kyarxecugcf5auzn",
               "logo": "core"
             },
@@ -2060,12 +2049,7 @@
               ],
               "refs": ["teguWarriors", "core_unit", "tag_Tegu"],
               "unit_id": "tegu_warriors",
-              "armyHasNotOption": [
-                {
-                  "refs": ["teguWarriors"],
-                  "amount": 5
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "frl86chl47jxlbxmqw5xq",
               "logo": "core"
             }
@@ -2143,7 +2127,7 @@
             },
             {
               "name": "Caiman Elders",
-              "cost": 30,
+              "cost": 35,
               "category": "special",
               "options": [
                 {
@@ -2154,7 +2138,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 80,
+                      "cost": 75,
                       "hide": true,
                       "option_id": "nkfcsszafgc5aio2cckxj4",
                       "refs": ["caiman_elders_amount"]
@@ -2180,7 +2164,7 @@
                           },
                           {
                             "path": "druidism",
-                            "ref": "healing_waters"
+                            "ref": "veil_of_mist"
                           },
                           {
                             "path": "shamanism",
@@ -2224,18 +2208,13 @@
               ],
               "refs": ["caimanElders", "caimanEldersUnit", "tag_Caiman"],
               "unit_id": "caiman_elders",
-              "armyHasNotOption": [
-                {
-                  "refs": ["caimanElders"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "68wdlbek3caezli630l3mf",
               "logo": "special"
             },
             {
               "name": "Raptor Pack",
-              "cost": 83,
+              "cost": 88,
               "category": "special",
               "options": [
                 {
@@ -2258,7 +2237,7 @@
                               "type": "check",
                               "name": "Corrosive Spitter",
                               "cost": 0,
-                              "refs": ["corrosive_spitter", "count_special"],
+                              "refs": ["corrosive_spitter", "count_special", "small_arms_fire"],
                               "option_id": "4ds1em7p4an355gfx42q7p"
                             },
                             {
@@ -2298,7 +2277,7 @@
             },
             {
               "name": "Raptor Riders",
-              "cost": 16,
+              "cost": 10,
               "category": "special",
               "options": [
                 {
@@ -2309,7 +2288,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 38,
+                      "cost": 40,
                       "hide": true,
                       "option_id": "5jijse5t7ab4tzbkmqp3yb",
                       "refs": ["raptor_riders_amount"]
@@ -2346,12 +2325,7 @@
               ],
               "refs": ["raptorRiders", "tag_Tegu", "tag_Light Armour", "tag_Mount", "tag_Magnasaur"],
               "unit_id": "raptor_riders",
-              "armyHasNotOption": [
-                {
-                  "refs": ["raptorRiders"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "9za2b74fioosnikwac2k9",
               "logo": "special"
             },
@@ -2395,12 +2369,7 @@
               "unit_id": "rhamphodon_riders",
               "option_id": "abmyw2f7r0llh36ilkyl2",
               "logo": "special",
-              "armyHasNotOption": [
-                {
-                  "refs": ["rhamphodonRiders"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -2422,7 +2391,7 @@
             },
             {
               "name": "Saurian Swarms",
-              "cost": 82,
+              "cost": 50,
               "category": "special",
               "options": [
                 {
@@ -2433,16 +2402,8 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 46,
+                      "cost": 40,
                       "hide": true,
-                      "options": [
-                        {
-                          "type": "check",
-                          "cost": 5,
-                          "name": "Scout",
-                          "option_id": "sdgv4329g34g34-gfj349g34g34"
-                        }
-                      ],
                       "option_id": "do0hocu7g21cnvz9nfu5l",
                       "refs": ["saurian_swarms_amount"]
                     }
@@ -2452,18 +2413,13 @@
               ],
               "refs": ["saurianSwarms", "tag_Saurian"],
               "unit_id": "saurian_swarms",
-              "armyHasNotOption": [
-                {
-                  "refs": ["saurianSwarms"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "680d7g5j4sd1hfmfsr0zz6j",
               "logo": "special"
             },
             {
               "name": "Tegu Guards",
-              "cost": -30,
+              "cost": -15,
               "category": "special",
               "options": [
                 {
@@ -2474,7 +2430,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 22,
+                      "cost": 21,
                       "hide": true,
                       "option_id": "jdh0dz9fjnp9hwlt5985a",
                       "refs": ["tegu_guards_amount"]
@@ -2516,7 +2472,7 @@
             },
             {
               "name": "Tegu Mystics",
-              "cost": 40,
+              "cost": 50,
               "category": "special",
               "override": [
                 {
@@ -2540,32 +2496,8 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 18,
+                      "cost": 20,
                       "hide": true,
-                      "options": [
-                        {
-                          "optionsLabel": "Cantrips",
-                          "maxSize": 1,
-                          "options": [
-                            {
-                              "name": "Cantrips (Projection)",
-                              "parsername": "Cantrips (Projection) [GW]",
-                              "refs": ["projection"],
-                              "type": "check",
-                              "cost": 0,
-                              "option_id": "dcfve3v9j340v4309f3-v342"
-                            },
-                            {
-                              "name": "Cantrips (Preservation)",
-                              "parsername": "Cantrips (Preservation)",
-                              "type": "check",
-                              "cost": 2,
-                              "option_id": "fgsdg43g34-534353432fdsfsd"
-                            }
-                          ],
-                          "option_id": "l39u492jg0234jgf034vj34v34v"
-                        }
-                      ],
                       "option_id": "fxd3lzkkcx4yyb6zosv70q",
                       "refs": ["tegu_mystics_amount"]
                     }
@@ -2654,11 +2586,12 @@
                   "minSize": 1,
                   "maxSize": 3,
                   "addToUnitSize": true,
+                  "refs": [{ "ref": "small_arms_fire", "amount": 4 }],
                   "options": [
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 150,
+                      "cost": 140,
                       "hide": true,
                       "refs": ["thyroscutusHerd_model"],
                       "armyHasNotOption": [
@@ -2681,7 +2614,7 @@
                             {
                               "type": "check",
                               "name": "Great Protector",
-                              "cost": 30,
+                              "cost": 25,
                               "refs": ["great protector_2cb7cip"],
                               "hasNotOption": [
                                 {
@@ -2702,12 +2635,7 @@
                 }
               ],
               "refs": ["thyroscutusHerd", "tag_Skink", "tag_Mount", "tag_Magnasaur"],
-              "armyHasNotOption": [
-                {
-                  "refs": ["thyroscutusHerd"],
-                  "amount": 4
-                }
-              ],
+              "armyHasNotOption": [],
               "unit_id": "thyroscutus_herd",
               "option_id": "9k6jjb2gw9reo8ume87qw6",
               "logo": "special"
@@ -2745,14 +2673,15 @@
                               "type": "check",
                               "name": "Poisoned Javelin (4+)",
                               "cost": 0,
-                              "refs": [],
+                              "refs": ["small_arms_fire"],
                               "option_id": "ydokqgtz5ukc63em2g14"
                             },
                             {
                               "type": "check",
                               "name": "Magnetic Short Bow (3+)",
                               "cost": 0,
-                              "option_id": "rr7qwo8ngf64u33mcn9kv"
+                              "option_id": "rr7qwo8ngf64u33mcn9kv",
+                              "refs": ["small_arms_fire"]
                             }
                           ],
                           "maxSize": 1,
@@ -2760,7 +2689,7 @@
                         }
                       ],
                       "option_id": "hk5nzwv9bt6rjxxhjyke9",
-                      "refs": ["pteradon_riders_amount"]
+                      "refs": ["pteradon_riders_amount", { "ref": "small_arms_fire", "amount": 5 }]
                     }
                   ],
                   "option_id": "nx03hhuy7zo2aorr56ticr"
@@ -2789,7 +2718,7 @@
                           },
                           {
                             "path": "druidism",
-                            "ref": "healing_waters"
+                            "ref": "veil_of_mist"
                           }
                         ]
                       },
@@ -2833,12 +2762,7 @@
               ],
               "refs": ["pteradonRiders", "tag_Skink", "tag_Mount", "tag_Magnasaur"],
               "unit_id": "pteradon_riders",
-              "armyHasNotOption": [
-                {
-                  "refs": ["pteradonRiders"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "u11y9ov6vbty1k3qcr2y9",
               "logo": "arrows"
             },
@@ -2866,14 +2790,15 @@
                               "type": "check",
                               "name": "Blowpipe (4+)",
                               "cost": 2,
-                              "refs": [],
+                              "refs": [{ "ref": "small_arms_fire", "amount": 2 }],
                               "option_id": "rdy6od5hneewboc8zl1dq8"
                             },
                             {
                               "type": "check",
                               "name": "Magnetic Short Bow (3+)",
                               "cost": 0,
-                              "option_id": "nfvwu0z6o27akpbw3t85j4"
+                              "option_id": "nfvwu0z6o27akpbw3t85j4",
+                              "refs": ["small_arms_fire"]
                             }
                           ],
                           "maxSize": 1,
@@ -2930,18 +2855,13 @@
               ],
               "refs": ["skinkGuerrillas", "tag_Skink"],
               "unit_id": "skink_guerrillas",
-              "armyHasNotOption": [
-                {
-                  "refs": ["skinkGuerrillas"],
-                  "amount": 4
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "7lb7aupievmcnjhnx4u1ut",
               "logo": "arrows"
             },
             {
               "name": "Weapon Beasts",
-              "cost": 20,
+              "cost": 10,
               "category": "guerilla_warriors",
               "options": [
                 {
@@ -2962,7 +2882,7 @@
                             {
                               "type": "check",
                               "name": "Spearback",
-                              "cost": 10,
+                              "cost": 15,
                               "refs": ["spearback_gvximbkg"],
                               "armyHasNotOption": [
                                 {
@@ -2997,7 +2917,7 @@
                         }
                       ],
                       "option_id": "ts44mmf3fjknm1mx55vxpl",
-                      "refs": ["weapon_beasts_amount"]
+                      "refs": [{ "ref": "small_arms_fire", "amount": 5 }]
                     }
                   ],
                   "option_id": "8ddeuwyew5jlhlyqvbdd7q"
@@ -3005,12 +2925,7 @@
               ],
               "refs": ["weaponBeasts", "tag_Beast", "tag_Magnasaur"],
               "unit_id": "weapon_beasts",
-              "armyHasNotOption": [
-                {
-                  "refs": ["weaponBeasts"],
-                  "amount": 3
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "id3hxtltqz2lgsv4uh56p",
               "logo": "arrows"
             }
@@ -3066,18 +2981,13 @@
               ],
               "refs": ["carnosaur", "tag_Tegu", "tag_Mount", "tag_Magnasaur"],
               "unit_id": "carnosaur",
-              "armyHasNotOption": [
-                {
-                  "refs": ["carnosaur"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "7rrwrx288mb43oqaod5hld",
               "logo": "monster"
             },
             {
               "name": "Stygiosaur Pack",
-              "cost": 20,
+              "cost": 30,
               "category": "magna_sauria",
               "options": [
                 {
@@ -3088,7 +2998,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 140,
+                      "cost": 135,
                       "hide": true,
                       "options": [],
                       "option_id": "mrb0iyu3cz03eef02m432q",
@@ -3159,12 +3069,7 @@
               ],
               "refs": ["stygiosaurPack", "tag_Skink", "tag_Mount", "tag_Magnasaur"],
               "unit_id": "stygiosaur_pack",
-              "armyHasNotOption": [
-                {
-                  "refs": ["stygiosaurPack"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "rlp1316x8x9w5hxwcc72j",
               "logo": "monster"
             },
@@ -3181,20 +3086,24 @@
                   "option_id": "a4v4b2ab2ff58122x1a2x"
                 }
               ],
-              "refs": ["taurosaur", "tag_Skink", "tag_Mount", "tag_Magnasaur"],
-              "unit_id": "taurosaur",
-              "armyHasNotOption": [
+              "refs": [
+                "taurosaur",
+                "tag_Skink",
+                "tag_Mount",
+                "tag_Magnasaur",
                 {
-                  "refs": ["taurosaur"],
-                  "amount": 2
+                  "ref": "small_arms_fire",
+                  "amount": 5
                 }
               ],
+              "unit_id": "taurosaur",
+              "armyHasNotOption": [],
               "option_id": "yg2igze9vga0jd5n2j4s4",
               "logo": "monster"
             },
             {
               "name": "Titanopod",
-              "cost": 550,
+              "cost": 520,
               "category": "magna_sauria",
               "options": [
                 {
@@ -3205,14 +3114,19 @@
                   "option_id": "74tm3syc1v82zsr8l3ed9x"
                 }
               ],
-              "refs": ["titanopod", "tag_Skink", "tag_Mount", "tag_Titanopod"],
-              "unit_id": "titanopod",
-              "armyHasNotOption": [
+              "refs": [
+                "titanopod",
+                "tag_Skink",
+                "tag_Mount",
+                "tag_Titanopod",
+                "tag_Magnasaur",
                 {
-                  "refs": ["titanopod"],
-                  "amount": 1
+                  "ref": "small_arms_fire",
+                  "amount": 6
                 }
               ],
+              "unit_id": "titanopod",
+              "armyHasNotOption": [],
               "option_id": "r97k74582qqg96aontuxyu",
               "logo": "monster"
             }
@@ -3242,19 +3156,14 @@
               "invisible": true,
               "option_id": "8ocedsokg9g8ft3wgzpqiy",
               "logo": "character_monster",
-              "armyHasNotOption": [
-                {
-                  "refs": ["alphaCarnosaur_mount_unit"],
-                  "amount": 1
-                }
-              ]
+              "armyHasNotOption": []
             },
             {
               "name": "Anurarch Wardens *Mount",
               "cost": null,
               "category": "mounts",
               "options": [],
-              "refs": ["anurarchWardens_mount_unit", "mount", "tag_Tegu", "tag_Mount"],
+              "refs": ["anurarchWardens_mount_unit", "mount", "tag_Tegu", "tag_Mount", "tag_Mount\n\t\tLight Armour"],
               "unit_id": "anurarch_wardens_mount",
               "invisible": true,
               "option_id": "4707cnhqugm95po0yg5v1",
@@ -3279,12 +3188,7 @@
               "refs": ["mountainPteradon_mount_unit", "mount", "tag_Mount", "tag_Magnasaur"],
               "unit_id": "mountain_pteradon_mount",
               "invisible": true,
-              "armyHasNotOption": [
-                {
-                  "refs": ["mountainPteradon_mount_unit"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -3314,14 +3218,9 @@
               "refs": ["pouakaiSkyTyrant_mount_unit", "mount", "tag_Mount", "tag_Magnasaur"],
               "unit_id": "pouakai_sky_tyrant_mount",
               "invisible": true,
-              "armyHasNotOption": [
-                {
-                  "refs": ["pouakaiSkyTyrant_mount_unit"],
-                  "amount": 1
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "fasssktztq8m1imu1ll958",
-              "logo": "character"
+              "logo": "character_monster"
             },
             {
               "name": "Raptor *Mount",
@@ -3361,12 +3260,7 @@
               "refs": ["taurosaur_mount_unit", "mount", "tag_Skink", "tag_Mount", "tag_Beast", "tag_Magnasaur"],
               "unit_id": "taurosaur_mount",
               "invisible": true,
-              "armyHasNotOption": [
-                {
-                  "refs": ["taurosaur_mount_unit"],
-                  "amount": 1
-                }
-              ],
+              "armyHasNotOption": [],
               "option_id": "9plnhq6c5ivizectd1yck",
               "logo": "character_monster"
             }
