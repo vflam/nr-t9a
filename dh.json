@@ -2219,7 +2219,7 @@
                             {
                               "type": "check",
                               "name": "Rune Crafted (+1 AP)",
-                              "cost": 70,
+                              "cost": 50,
                               "option_id": "ca2ofxogcps8cj2yy3dge"
                             }
                           ],
@@ -2230,7 +2230,7 @@
                     },
                     {
                       "type": "check",
-                      "cost": 111,
+                      "cost": 110,
                       "name": "Dwarf Catapult (4+)",
                       "refs": [
                         "catapult",
@@ -2583,16 +2583,7 @@
             },
             {
               "name": "Steam Copters",
-              "refs": [
-                "steam_copter",
-                "tag_Dwarf",
-                "tag_Metal Armour",
-                "tag_Construct",
-                {
-                  "ref": "clans_thunder",
-                  "amount": 5
-                }
-              ],
+              "refs": ["steam_copter", "tag_Dwarf", "tag_Metal Armour", "tag_Construct"],
               "armyHasNotOption": [],
               "cost": 60,
               "options": [
@@ -2637,7 +2628,13 @@
                         }
                       ],
                       "option_id": "fk531d5p2ofnmfcq2f15nf",
-                      "refs": ["steam_copters_amount"],
+                      "refs": [
+                        "steam_copters_amount",
+                        {
+                          "ref": "clans_thunder",
+                          "amount": 5
+                        }
+                      ],
                       "armyHasNotOption": [
                         {
                           "refs": ["steam_copters_amount"],

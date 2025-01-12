@@ -62,7 +62,7 @@
       "options": [
         {
           "name": "Hero's Heart",
-          "cost": 65,
+          "cost": 60,
           "option_id": "v9wjqnzex58f14zcxyzg1c",
           "type": "check",
           "shared": true
@@ -110,7 +110,7 @@
           "armyHasNotOption": [
             {
               "refs": ["caedhrens_pennon"],
-              "amount": 1
+              "amount": 2
             }
           ],
           "option_id": "07f234432423aqd123sd76hg"
@@ -293,7 +293,7 @@
         },
         {
           "name": "Death Cheater",
-          "cost": 100,
+          "cost": 90,
           "option_id": "oqrjh7h94g0fdatjojagqe",
           "type": "check",
           "shared": true
@@ -1546,7 +1546,6 @@
               "name": "Silexian Auxiliaries",
               "cost": 70,
               "category": "base",
-              "extraCategories": ["raiders"],
               "options": [
                 {
                   "minSize": 10,
@@ -1621,12 +1620,6 @@
                               "name": "Repeater Handbow (4+)",
                               "cost": 3,
                               "refs": ["corsairs_rhb"],
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["corsairs_rhb"],
-                                  "amount": 30
-                                }
-                              ],
                               "option_id": "fsdf5432e2htujkhujljk654"
                             }
                           ],
@@ -1759,8 +1752,7 @@
                     }
                   ],
                   "options": {
-                    "replaceCategory": "raiders",
-                    "logo": "arrows"
+                    "replaceCategory": "special"
                   }
                 }
               ],
@@ -2337,25 +2329,56 @@
               ],
               "option_id": "n2k6f6jb1vidi1zgt2ab2b",
               "logo": "special"
-            }
-          ],
-          "option_id": "sz3tefrrj1p0buh1epfndn9"
-        },
-        {
-          "name": "Raiders",
-          "maxPercent": 0.15,
-          "refs": ["raiders"],
-          "optionsLabel": "Units",
-          "options": [
+            },
             {
               "name": "Black Cloaks",
               "cost": -12,
-              "category": "raiders",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["covert_operatives"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "cost": 0
+                  }
+                }
+              ],
+              "category": "special",
               "options": [
+                {
+                  "definesType": true,
+                  "optionsLabel": "Type",
+                  "option_id": "fn3289gfn329gn239gf32g32g32",
+                  "options": [
+                    {
+                      "name": "Covert Operatives",
+                      "type": "check",
+                      "cost": 0,
+                      "option_id": "fm432ign2390fn3290f32f23f23",
+                      "refs": ["covert_operatives"]
+                    }
+                  ]
+                },
                 {
                   "minSize": 8,
                   "maxSize": 10,
                   "addToUnitSize": true,
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["covert_operatives"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "minSize": 5
+                      }
+                    }
+                  ],
                   "options": [
                     {
                       "name": "Number",
@@ -2363,20 +2386,35 @@
                       "cost": 24,
                       "hide": true,
                       "optionsLabel": "Ranged Weapon",
-                      "minSize": 1,
                       "maxSize": 1,
+                      "override": [
+                        {
+                          "hasOption": [
+                            {
+                              "refs": ["covert_operatives"],
+                              "amount": 1
+                            }
+                          ],
+                          "options": {
+                            "cost": 30,
+                            "minSize": 1
+                          }
+                        }
+                      ],
                       "options": [
                         {
                           "type": "check",
                           "cost": 0,
                           "name": "Repeater Crossbow (3+)",
-                          "option_id": "3vbqeyazxz6ipz5a26u3yh"
+                          "option_id": "3vbqeyazxz6ipz5a26u3yh",
+                          "hasOption": ["covert_operatives"]
                         },
                         {
                           "type": "check",
                           "cost": 3,
                           "name": "Repeater Handbow (4+) and Poison Attacks",
-                          "option_id": "czpcepax1xszdejebhobqd"
+                          "option_id": "czpcepax1xszdejebhobqd",
+                          "hasOption": ["covert_operatives"]
                         }
                       ],
                       "option_id": "qrcxnhdcm9rx3xxjypkcb",
@@ -2406,7 +2444,7 @@
               "logo": "special"
             }
           ],
-          "option_id": "k8ilp9guxdc60orn819rpu"
+          "option_id": "sz3tefrrj1p0buh1epfndn9"
         },
         {
           "name": "The Menagerie",

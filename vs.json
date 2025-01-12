@@ -34,9 +34,11 @@
     "rotary_gun": "Rotary Gun",
     "jezail": "Jezail",
     "brute_force": "Brute Force",
-    "fetthisFleshmaster": "Fetthis Fleshmaster"
+    "fetthisFleshmaster": "Fetthis Fleshmaster",
+    "experimental_weapons": "Experimental Weapons",
+    "small_arms_fire": "Small Arms Fire"
   },
-  "indicators": ["jezail", "rotary_gun", "canister_launcher", "deepfire_thrower", "brute_force"],
+  "indicators": ["jezail", "rotary_gun", "canister_launcher", "deepfire_thrower", "brute_force", "small_arms_fire", "experimental_weapons"],
   "dictionnary": [
     {
       "refs": ["potions_and_scrolls"],
@@ -434,6 +436,22 @@
       "name": "Army",
       "optionsLabel": "Categories",
       "maxCost": 4500,
+      "armyHasNotOption": [
+        {
+          "refs": ["small_arms_fire"],
+          "amount": 10,
+          "perPoints": 1000
+        },
+        {
+          "refs": ["tunnel_gunners"],
+          "amount": 1,
+          "perPoints": 250
+        },
+        {
+          "refs": ["experimental_weapons"],
+          "amount": 3
+        }
+      ],
       "options": [
         {
           "name": "Characters",
@@ -753,7 +771,7 @@
                   "minSize": 1
                 }
               ],
-              "refs": ["verminSenator", "non_core_unit", "tag_Vermin", "tag_Light Armour"],
+              "refs": ["verminSenator", "non_core_unit", "tag_Vermin", "tag_Light Armour", "small_arms_fire"],
               "armyHasNotOption": [],
               "unit_id": "vermin_senator",
               "option_id": "hkp71v03ipwx86imbstv4g",
@@ -826,7 +844,7 @@
                           "type": "check",
                           "name": "Pistol (3+)",
                           "cost": 5,
-                          "refs": [],
+                          "refs": ["small_arms_fire"],
                           "optionsLabel": "Pistol Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -979,19 +997,6 @@
               "name": "House Prefect",
               "cost": 60,
               "category": "perso",
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["rakachitTechnocrat"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["tunnel_gunners"]
-                  }
-                }
-              ],
               "options": [
                 {
                   "type": "group",
@@ -1234,7 +1239,7 @@
                   "option_id": "aaypq30k376yr0mjflv2z"
                 }
               ],
-              "refs": ["housePrefect", "non_core_unit", "tag_Vermin", "tag_Metal Armour"],
+              "refs": ["housePrefect", "non_core_unit", "tag_Vermin", "tag_Metal Armour", "small_arms_fire"],
               "unit_id": "house_prefect",
               "option_id": "lcp7rw8t35ls8dnarttb",
               "logo": "character"
@@ -1450,7 +1455,7 @@
               "cost": 120,
               "category": "perso",
               "options": [],
-              "refs": ["duskbladeAssassin", "non_core_unit", "not_a_leader", "tag_Vermin"],
+              "refs": ["duskbladeAssassin", "non_core_unit", "not_a_leader", "tag_Vermin", "small_arms_fire"],
               "unit_id": "duskblade_assassin",
               "armyHasNotOption": [],
               "option_id": "nti7n7yy2x3t6fxkg2t75",
@@ -1727,7 +1732,7 @@
                       "hide": true,
                       "options": [],
                       "option_id": "ue934hnxdtiirc0poakvqa",
-                      "refs": ["vermin_velites_amount"]
+                      "refs": ["vermin_velites_amount", { "ref": "small_arms_fire", "amount": 0.5 }]
                     }
                   ],
                   "option_id": "basnkh413onlbguzvv1mxa"
@@ -1878,7 +1883,7 @@
               "options": [
                 {
                   "minSize": 10,
-                  "maxSize": 19,
+                  "maxSize": 30,
                   "addToUnitSize": true,
                   "options": [
                     {
@@ -1900,7 +1905,7 @@
             },
             {
               "name": "Fire Rats",
-              "cost": 50,
+              "cost": 10,
               "category": "special",
               "options": [
                 {
@@ -1911,7 +1916,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 4,
+                      "cost": 5,
                       "hide": true,
                       "option_id": "xygbczmqzysdjsjbj55qmrt"
                     }
@@ -2215,7 +2220,7 @@
             {
               "name": "Doomspark Device",
               "cost": 240,
-              "category": "tunnel_gunners",
+              "category": "special",
               "refs": ["doomsparkDevices", "non_core_unit", "tag_Vermin", "tag_Construct", "tag_Metal Armour"],
               "unit_id": "doomspark_device",
               "armyHasNotOption": [],
@@ -2237,7 +2242,7 @@
                       "type": "numeric",
                       "cost": 7,
                       "hide": true,
-                      "refs": ["stalkers_numbers"],
+                      "refs": ["stalkers_numbers", "small_arms_fire"],
                       "armyHasNotOption": [
                         {
                           "refs": ["stalkers_numbers"],
@@ -2292,16 +2297,7 @@
               "armyHasNotOption": [],
               "option_id": "oqg6ny4fcai4lynwymqjw7",
               "logo": "special"
-            }
-          ],
-          "option_id": "v33kd5j1ta88isnha69na"
-        },
-        {
-          "name": "Tunnel Gunners",
-          "maxPercent": 0.3,
-          "refs": ["tunnel_gunners"],
-          "optionsLabel": "Units",
-          "options": [
+            },
             {
               "name": "Thunder Brutes",
               "cost": 75,
@@ -2426,7 +2422,7 @@
             {
               "name": "Experimental Weapon Teams",
               "cost": 18,
-              "category": "tunnel_gunners",
+              "category": "special",
               "options": [
                 {
                   "minSize": 3,
@@ -2507,7 +2503,7 @@
                   "option_id": "fpzy7ewpmogtumre8ixk3"
                 }
               ],
-              "refs": ["experimentalWeaponTeams", "non_core_unit", "tag_Vermin", "tag_Metal Armour"],
+              "refs": ["experimentalWeaponTeams", "non_core_unit", "tag_Vermin", "tag_Metal Armour", "experimental_weapons"],
               "unit_id": "experimental_weapon_teams",
               "armyHasNotOption": [],
               "option_id": "blwo5tptes7e4lij7ekgw",
@@ -2516,7 +2512,7 @@
             {
               "name": "Ignifier Grenadiers",
               "cost": 80,
-              "category": "tunnel_gunners",
+              "category": "special",
               "options": [
                 {
                   "minSize": 5,
@@ -2530,7 +2526,7 @@
                       "hide": true,
                       "options": [],
                       "option_id": "eo483h89triqvz9lpmu8bd",
-                      "refs": ["ignifier_grenadiers_amount"]
+                      "refs": ["ignifier_grenadiers_amount", "small_arms_fire"]
                     }
                   ],
                   "option_id": "ftnj9g93meoxcym55wxi"
@@ -2545,7 +2541,7 @@
             {
               "name": "Vermin Artillery",
               "cost": 180,
-              "category": "tunnel_gunners",
+              "category": "special",
               "options": [
                 {
                   "minSize": 1,
@@ -2589,8 +2585,9 @@
               "logo": "pistols"
             }
           ],
-          "option_id": "hlg80wwsra8un5brvjg9ul"
+          "option_id": "v33kd5j1ta88isnha69na"
         },
+
         {
           "name": "Bread and Games",
           "maxPercent": 0.25,
@@ -2657,7 +2654,7 @@
                       "hide": true,
                       "options": [],
                       "option_id": "kptvjerjukieqvi97u036u",
-                      "refs": ["dreadmill_chariots_amount"]
+                      "refs": ["dreadmill_chariots_amount", "small_arms_fire"]
                     }
                   ],
                   "option_id": "kv0mhl50jopmln8h55sqd"
@@ -2783,10 +2780,7 @@
                       "cost": 0,
                       "refs": ["whispering bell_k2ynffnu", "extra_spell"],
                       "hasOption": ["caelysianPantheon"],
-                      "option_id": "egar1y3pdzw7knuat28tfl",
-                      "magic": {
-                        "amount": 1
-                      }
+                      "option_id": "egar1y3pdzw7knuat28tfl"
                     },
                     {
                       "type": "check",

@@ -8,7 +8,7 @@
   "version": "2023",
   "nrversion": 379,
   "playable": 1,
-  "indicators": ["ancient_allies"],
+  "indicators": ["ancient_allies", "queens_bows", "bolt_throwers"],
   "id": 7,
   "include": [102],
   "hereditary": [
@@ -36,6 +36,8 @@
     "elven_horse_mount": "Elven Horse",
     "dragon_army": "Queen's Cavalier with Height 5",
     "ancient_allies": "Ancient Allies",
+    "bolt_throwers": "Bolt Throwers",
+    "queens_bows": "Queen's Bows",
     "sea_guard_reaper_or_sky_sloop": "Sky Sloop or Sea Guard Reaper"
   },
   "dictionnary": [
@@ -44,7 +46,7 @@
       "options": [
         {
           "name": "Scroll of Power",
-          "cost": 30,
+          "cost": 20,
           "option_id": "vo95gv94z5kinhtsplpen",
           "type": "check",
           "shared": true
@@ -63,15 +65,6 @@
     {
       "refs": ["shieldEnchant"],
       "options": [
-        {
-          "type": "check",
-          "refs": ["be_he_metally"],
-          "armyHasNotOption": ["be_he_metally"],
-          "name": "Star Metal Alloy",
-          "cost": 80,
-          "description": "\t+1 Arm, which is improved to +2 Arm for models without Mount. The bearer can <span class=\"textbf\">never</span> be wounded on a roll better than 3+.<br>",
-          "option_id": "jg2zren397hqi4189m1s2"
-        },
         {
           "name": "Sigil of Protection",
           "cost": 15,
@@ -100,6 +93,15 @@
           "cost": 20,
           "description": "\t+2 Arm against <span class=\"textbf\">Magical Attacks</span>.<br>",
           "option_id": "mccp4vc0dv1rivmhib4nj"
+        },
+        {
+          "type": "check",
+          "refs": ["be_he_metally"],
+          "armyHasNotOption": ["be_he_metally"],
+          "name": "Star Metal Alloy",
+          "cost": 80,
+          "description": "\t+1 Arm, which is improved to +2 Arm for models without Mount. The bearer can <span class=\"textbf\">never</span> be wounded on a roll better than 3+.<br>",
+          "option_id": "jg2zren397hqi4189m1s2"
         },
         {
           "name": "Ghostly Guard",
@@ -191,8 +193,8 @@
           "option_id": "x8vq4xntlvga8jro3vrj2"
         },
         {
-          "name": "Banner of Speed",
-          "cost": 45,
+          "name": "Distortion Emblem",
+          "cost": 50,
           "option_id": "v0dkrtnka7ppkzn2pf9a",
           "type": "check",
           "shared": true
@@ -260,7 +262,7 @@
           "name": "Elu's Heartwood",
           "cost": 75,
           "armyHasNotOption": ["we_he_elus_heart"],
-          "refs": ["weaponEnchantUni", "we_he_elus_heart"],
+          "refs": ["weaponEnchantUni", "we_he_elus_heart", { "ref": "queens_bows", "amount": 5 }],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "\tShots 3, Str as user +1, and AP as user +1.<br>",
           "option_id": "6tbdq3x7ggmgzuowaqxy18"
@@ -590,7 +592,7 @@
         {
           "type": "check",
           "name": "Queen's Companion",
-          "refs": ["queens_companion"],
+          "refs": ["queens_companion", { "ref": "queens_bows", "amount": 5 }],
           "neverHide": true,
           "cost": 15,
           "armyHasNotOption": [
@@ -606,7 +608,7 @@
           "options": [
             {
               "type": "check",
-              "cost": 0,
+              "cost": 10,
               "name": "Moonlight Arrows",
               "option_id": "tic7hct2yklxpzyg9zf2b"
             },
@@ -641,6 +643,16 @@
       "armyHasNotOption": [
         {
           "refs": ["ancient_allies"],
+          "amount": 1,
+          "perPoints": 1500
+        },
+        {
+          "refs": ["queens_bows"],
+          "amount": 10,
+          "perPoints": 750
+        },
+        {
+          "refs": ["bolt_throwers"],
           "amount": 1,
           "perPoints": 1500
         }
@@ -798,7 +810,7 @@
                       "optionsLabel": "Bow Enchant",
                       "optionsDict": ["longbowEnchant"],
                       "option_id": "0600xsz87uuexeee9b3g6pj",
-                      "refs": ["longbow"]
+                      "refs": ["longbow", "queens_bows"]
                     },
                     {
                       "type": "group",
@@ -1138,7 +1150,7 @@
                       "optionsLabel": "Bow Enchant",
                       "optionsDict": ["longbowEnchant"],
                       "option_id": "ki1jt5hoo9cgdcapb44ie",
-                      "refs": ["longbow"]
+                      "refs": ["longbow", "queens_bows"]
                     },
                     {
                       "type": "group",
@@ -1701,7 +1713,7 @@
                       "type": "numeric",
                       "cost": 12,
                       "option_id": "o68yiapwhef7kwckc18sbj",
-                      "refs": ["citizen_archers_amount"]
+                      "refs": ["citizen_archers_amount", "queens_bows"]
                     }
                   ],
                   "option_id": "1rvqi8upvdha735wyrm3w"
@@ -1738,8 +1750,7 @@
             {
               "name": "Sea Guard",
               "cost": 0,
-              "refs": ["sea_guards", "core_unit", "tag_Elf", "tag_Light Armour"],
-              "extraCategories": ["queens_bows"],
+              "refs": ["sea_guards", "core_unit", "tag_Elf", "tag_Light Armour", "queens_bows"],
               "options": [
                 {
                   "minSize": 15,
@@ -1790,19 +1801,6 @@
               "name": "Erlein Reavers",
               "cost": 110,
               "refs": ["elein_reavers", "core_unit", "tag_Elf", "tag_Light Armour", "tag_Mount"],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["erlein_reaver_bows"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["queens_bows"]
-                  }
-                }
-              ],
               "armyHasNotOption": [],
               "options": [
                 {
@@ -1824,7 +1822,7 @@
                               "cost": 1,
                               "type": "check",
                               "option_id": "4qmohfqvt4yodcunuy46z9",
-                              "refs": ["erlein_reaver_bows"]
+                              "refs": ["queens_bows"]
                             }
                           ],
                           "option_id": "xt66ns7yh4nfyc292vnakb"
@@ -2107,7 +2105,7 @@
                       "type": "numeric",
                       "cost": 80,
                       "option_id": "h2xi6ji4zwox78wf96tjaj",
-                      "refs": ["reaver_chariots_amount"]
+                      "refs": ["reaver_chariots_amount", { "ref": "queens_bows", "amount": 2 }]
                     }
                   ],
                   "option_id": "va71xufixv2gs6vpplmtc"
@@ -2303,7 +2301,7 @@
             {
               "name": "Sea Guard Reaper",
               "cost": 220,
-              "refs": ["sea_guard_reaper", "war_machine", "sea_guard_reaper_or_sky_sloop", "tag_Elf", "tag_Light Armour"],
+              "refs": ["sea_guard_reaper", "war_machine", "sea_guard_reaper_or_sky_sloop", "tag_Elf", "tag_Light Armour", "bolt_throwers"],
               "armyHasNotOption": [
                 {
                   "refs": ["sea_guard_reaper_or_sky_sloop"],
@@ -2365,7 +2363,8 @@
                 "tag_Light Armour",
                 "tag_Mount",
                 "tag_Beast",
-                "tag_Construct"
+                "tag_Construct",
+                "bolt_throwers"
               ],
               "armyHasNotOption": [
                 {
@@ -2376,16 +2375,7 @@
               "unit_id": "sky_sloop",
               "option_id": "whmhj2n4au4js5ul75nu",
               "logo": "special"
-            }
-          ],
-          "option_id": "60kl9dgo50m05ngfxdc2etl"
-        },
-        {
-          "name": "Queen's Bows",
-          "maxPercent": 0.25,
-          "refs": ["queens_bows"],
-          "optionsLabel": "Units",
-          "options": [
+            },
             {
               "name": "Queen's Guard",
               "cost": 40,
@@ -2404,7 +2394,7 @@
                           "amount": 20
                         }
                       ],
-                      "refs": ["queen_guard_amount"],
+                      "refs": ["queen_guard_amount", "queens_bows"],
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
@@ -2482,7 +2472,7 @@
                         }
                       ],
                       "option_id": "rixzhkfknotwy6fc9exw",
-                      "refs": ["grey_watchers_amount"]
+                      "refs": ["queens_bows"]
                     }
                   ],
                   "option_id": "28cq3or6z6dtb5opjboo3"
@@ -2506,7 +2496,7 @@
               "logo": "special"
             }
           ],
-          "option_id": "dwilq09k7ze0vvnx7g9n"
+          "option_id": "60kl9dgo50m05ngfxdc2etl"
         },
         {
           "name": "Mounts",

@@ -1820,13 +1820,14 @@
           "number": "H10",
           "dispNumber": "H",
           "ref": "astral_union",
+          "rep": true,
           "name": "Astral Union",
-          "description": "The target must reroll natural ‘1’s to hit (for both Melee and Shooting Attacks), as long as there is another friendly unit within 6″ of it (when performing the attack).",
+          "description": "The target gains Regeneration (6+) and Regeneration (+1, max. 3+)",
           "cast": [
             {
-              "value": 9,
-              "range": 12,
-              "types": ["augment", "aura"],
+              "value": 8,
+              "range": 18,
+              "types": ["augment", "Replicable"],
               "duration": 1
             }
           ]
@@ -1840,7 +1841,7 @@
           "fontSize": 11,
           "dispNumber": "A",
           "name": "Death is Only The Beginning",
-          "description": "Choose one of the following effects when resolving the spell*.<ul><li>The Rank-and-File part of the target Raises HP equal to its Rsr.</li><li>An Attachable Model in the target Recovers HP equal to its Rsr.</li></ul>Height 4–5 models with Exclusive, and Attachable Models, cannot Recover more than 2 HP from this spell in each Magic Phase.<br/><i> If multiple targets, each target can make a different choice.</i>",
+          "description": "Choose one of the following effects when resolving the spell*.<ul><li>The Rank-and-File Health Pool of the target Raises HP equal to its Rsr.</li><li>An Attachable Model in the target Recovers HP equal to its Rsr.</li></ul>Height 4–5 models with Exclusive, and Attachable Models, cannot Recover more than 2 HP from this spell in each Magic Phase.<br/><i> If multiple targets, each target can make a different choice.</i>",
           "cast": [
             {
               "range": "*",
@@ -2015,7 +2016,7 @@
           "ref": "spear_of_infinity",
           "name": "Spear of Infinity",
           "rep": true,
-          "description": "The target suffers 1 hit with Str 2, AP 2, Area Attack (1×5), Magical Attacks, and Direct Hit (2). The hits from Spear of Infinity gain +1 Str for each spell successfully cast in this Magic Phase (including other instances of Spear of Infinity).",
+          "description": "The target suffers 1 hit with Str 2, AP 2, Area Attack (1×5), Magical Attacks, and Direct Hit (Str 4, AP 3, Multiple Wounds (2)). The hits from Spear of Infinity gain +1 Str for each spell successfully cast before this spell in this Magic Phase (including other instances of Spear of Infinity).",
           "cast": [
             {
               "value": 6,
@@ -2050,7 +2051,7 @@
           "description": "The player gains 2 Protection Tokens which are removed when the Spell ends. When a friendly unit within 18″ of the Caster suffers a wound, before any Special Saves are taken, you may discard a Protection Token and ignore the wound applying the following rules:<br/><ul><li>Rank-and-File models of Height 1 ignore up to 2 wounds per token, provided they are suffered simultaneously.</li><li>Characters, and models of Height 4 or 5, can each only ignore a single wound per Phase.</li><li>Wounds from attacks with Multiple Wounds are not ignored, they inflict one less wound instead.</li></ul>",
           "cast": [
             {
-              "value": 9,
+              "value": 10,
               "range": 0,
               "types": [""],
               "duration": 1
