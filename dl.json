@@ -10,6 +10,7 @@
   "playable": 1,
   "id": 5,
   "include": [102],
+  "indicators": ["small_arms_fire"],
   "hereditary": [
     {
       "path": "hereditary",
@@ -33,7 +34,8 @@
     "generalLust": "Courtesan of Cibaresh General",
     "generalSloth": "Sentinel of Nukuja General",
     "generalPride": "Omen of Savar General",
-    "generalWrath": "Vanadra’s Scourge General"
+    "generalWrath": "Vanadra’s Scourge General",
+    "small_arms_fire": "Small Arms Fire"
   },
   "dictionnary": [
     {
@@ -924,6 +926,13 @@
       "name": "Army",
       "optionsLabel": "Categories",
       "maxCost": 4500,
+      "armyHasNotOption": [
+        {
+          "refs": ["small_arms_fire"],
+          "amount": 15,
+          "perPoints": 1500
+        }
+      ],
       "options": [
         {
           "name": "Characters",
@@ -1277,8 +1286,13 @@
                       "type": "check",
                       "name": "Dark Fire (3+)",
                       "cost": 15,
-                      "hasNotOption": ["mount"],
-                      "option_id": "x0txd45g7bgzn2teoyn3i"
+                      "option_id": "x0txd45g7bgzn2teoyn3i",
+                      "refs": [
+                        {
+                          "ref": "small_arms_fire",
+                          "amount": 3
+                        }
+                      ]
                     }
                   ],
                   "option_id": "la9stisr8uej2zaalb4ze"
@@ -1439,7 +1453,13 @@
                       "type": "check",
                       "name": "Dark Fire (3+)",
                       "cost": 15,
-                      "option_id": "84dsdssojwuzkyl0m9661ybnop"
+                      "option_id": "84dsdssojwuzkyl0m9661ybnop",
+                      "refs": [
+                        {
+                          "ref": "small_arms_fire",
+                          "amount": 3
+                        }
+                      ]
                     },
                     {
                       "type": "check",
@@ -2430,7 +2450,7 @@
                       "name": "Number",
                       "type": "numeric",
                       "cost": 11,
-                      "refs": ["imp_amount"],
+                      "refs": ["imp_amount", "small_arms_fire"],
                       "armyHasNotOption": [
                         {
                           "refs": ["imp_amount"],
@@ -2845,7 +2865,13 @@
                       "name": "Number",
                       "type": "numeric",
                       "cost": 30,
-                      "refs": ["eidolon_amount"],
+                      "refs": [
+                        "eidolon_amount",
+                        {
+                          "ref": "small_arms_fire",
+                          "amount": 3
+                        }
+                      ],
                       "armyHasNotOption": [
                         {
                           "refs": ["eidolon_amount"],
@@ -3808,7 +3834,15 @@
             },
             {
               "name": "Hope Harvester",
-              "refs": ["hope_harverster", "not_a_leader", "tag_Daemon"],
+              "refs": [
+                "hope_harverster",
+                "not_a_leader",
+                "tag_Daemon",
+                {
+                  "ref": "small_arms_fire",
+                  "amount": 5
+                }
+              ],
               "armyHasNotOption": [],
               "cost": 260,
               "options": [
@@ -4380,8 +4414,7 @@
               ],
               "unit_id": "bloat_flies",
               "option_id": "vmm06nf7gsxykl1yu62zj",
-              "logo": "bird",
-              "maxUnitCost": 500
+              "logo": "bird"
             }
           ],
           "option_id": "iczn7wsp8m5q5l8z15gc4"

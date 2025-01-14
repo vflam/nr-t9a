@@ -459,24 +459,6 @@
               "amount": 1
             }
           ],
-          "override": [
-            {
-              "hasOption": [
-                {
-                  "refs": ["light_troops"],
-                  "amount": 1
-                }
-              ],
-              "options": {
-                "hasOption": [
-                  {
-                    "refs": ["spear"],
-                    "amount": 1
-                  }
-                ]
-              }
-            }
-          ],
           "armyHasNotOption": [
             {
               "refs": ["fleet_officer"],
@@ -592,7 +574,7 @@
         {
           "type": "check",
           "name": "Queen's Companion",
-          "refs": ["queens_companion", { "ref": "queens_bows", "amount": 5 }],
+          "refs": ["queens_companion", { "ref": "queens_bows", "amount": 4 }],
           "neverHide": true,
           "cost": 15,
           "armyHasNotOption": [
@@ -1750,7 +1732,7 @@
             {
               "name": "Sea Guard",
               "cost": 0,
-              "refs": ["sea_guards", "core_unit", "tag_Elf", "tag_Light Armour", "queens_bows"],
+              "refs": ["sea_guards", "core_unit", "tag_Elf", "tag_Light Armour"],
               "options": [
                 {
                   "minSize": 15,
@@ -1763,7 +1745,7 @@
                       "type": "numeric",
                       "cost": 18,
                       "option_id": "pdnel4skwi8ihqgsixyv",
-                      "refs": ["sea_guard_amount"]
+                      "refs": ["sea_guard_amount", "queens_bows"]
                     }
                   ],
                   "option_id": "d5y04ms372wonqqcbi45l"

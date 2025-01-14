@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 315,
+  "nrversion": 326,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -948,6 +948,9 @@
       "type": "protection",
       "mod": [
         {
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+3"
           }
@@ -1151,7 +1154,21 @@
     },
     "ong-troll_hide": {
       "title": "Troll Hide",
-      "def": "\t Mob is <span class=\"textbf\">set</span> to 6\". The model's base is changed to 40×40 mm and its Height is <span class=\"textbf\">set</span> to 3. The model's base change cannot be ignored. ."
+      "def": "\t Mob is <span class=\"textbf\">set</span> to 6\". The model's base is changed to 40×40 mm and its Height is <span class=\"textbf\">set</span> to 3. The model's base change cannot be ignored. .",
+      "mod": [
+        {
+          "basesize": "40x40"
+        },
+        {
+          "affects": [
+            "global"
+          ],
+          "stats": {
+            "Hgt": "=3",
+            "Ma": "=6"
+          }
+        }
+      ]
     },
     "ong-goga_cauldron": {
       "title": "Goga Cauldron",
@@ -6987,24 +7004,10 @@
       "def": " Once in your Magic Phase, immediately after  Excess Magic, a single model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/tree_singing\">Tree Singing</nuxt-link></span> may move a Forest Terrain Feature following the steps below. The owner may  discard a Magic Die to increase the range to  the distances written  in square brackets [X\"].<br><br>&nbsp;&nbsp;&bull;<br>&nbsp;&nbsp;&bull;"
     },
     "se-elven_cloak": {
-      "type": "armour",
+      "type": null,
       "title": "Elven Cloak",
       "def": "Shooting Attacks towards units with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/elven_cloak\">Elven Cloak</nuxt-link></span> can <span class=\"textbf\">never</span> hit on a roll of better than 4+.",
-      "ruletype": "Armour Equipment",
-      "mod": [
-        {
-          "affects": [
-            "defense"
-          ],
-          "stats": {
-            "Arm": "+1"
-          },
-          "hasrule": {
-            "id": "rulebook-light_armour",
-            "value": true
-          }
-        }
-      ]
+      "ruletype": "Armour Equipment"
     },
     "se-forests_thorns": {
       "type": null,
@@ -16625,6 +16628,135 @@
     "special-effect": {
       "title": "Effect",
       "def": "    The <nuxt-link class=\"ruleLink\" to=\"/app/rule/effect\">effect</nuxt-link> of a spell describes what happens to the target when the spell is successfully cast."
+    },
+    "season-recommended_army_size_and_table_size": {
+      "title": "Recommended Army Size and Table Size",
+      "def": "    This Season Pack was prepared for Field Army of 4000 points to be used on 48\"x72\" Battlefield."
+    },
+    "season-leadership_skills": {
+      "title": "Leadership Skills",
+      "def": "    When playing with Season Packs - Season 1, a single Character in your Army List may take one of the upgrades listed below."
+    },
+    "season-battleline_hero": {
+      "title": "Battleline Hero",
+      "def": "    The range of the model's <span class=\"textbf\">Commanding Presence</span> is increased to 18\"."
+    },
+    "season-trusted_adviser": {
+      "title": "Trusted Adviser",
+      "def": "When determining the Secondary Objective, randomize two objectives instead of one, and choose which of the two objectives to play."
+    },
+    "season-arcane_volcanist": {
+      "title": "Arcane Volcanist",
+      "def": ""
+    },
+    "season-glory_hunter": {
+      "title": "Glory Hunter",
+      "def": "    When Choosing Weapons and Equipment, if the model's unit is Engaged with an enemy unit that contains a Character, it must issue a Duel. The opponent may either accept or refuse the Duel.<br><br>If <span class=\"textbf\">refused</span>; the model that issued the Duel gains +1 to their side's Combat Score this Round of Combat.<br><br>If <span class=\"textbf\">accepted</span>; the opponent selects a Character in a unit Engaged with the model that issued the Duel. Apply the following rules to the two models: Duellists (the model issuing the Duel, and the model chosen to accept the Duel) during this Round of Combat:<br><br>&nbsp;&nbsp;&bull;  Other models may not allocate Standard Melee Attacks towards the Duellists.<br><br>&nbsp;&nbsp;&bull;  The Duellists are considered to be in base contact with each other.<br><br>&nbsp;&nbsp;&bull;  The Duellists must allocate their Standard Melee Attacks towards each other (even if their models are not physically in contact).<br><br>&nbsp;&nbsp;&bull;  Other Melee Attacks, such as Grind Attacks, Impact Hits and Stomp Attacks, follow their normal rules for allocation.<br><br>&nbsp;&nbsp;&bull;  If either or both Duellists causes the last HP loss to the opposing Duellist, it has won the Duel. The winner(s) counts as having successfully accomplished their Secondary Objective.<br><br>If both players have models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/glory_hunter\">Glory Hunter</nuxt-link>, whose units are Engaged, the Active Player must issue a Duel with their model with <nuxt-link class=\"ruleLink\" to=\"/app/rule/glory_hunter\">Glory Hunter</nuxt-link>, and the Reactive Player must accept the Duel with their model with <nuxt-link class=\"ruleLink\" to=\"/app/rule/glory_hunter\">Glory Hunter</nuxt-link>."
+    },
+    "season-curse_of_lycanthropy": {
+      "title": "Curse of Lycanthropy",
+      "def": "   One use only. Duration: One Turn. You may activate this ability when Choosing Equipment and Abilities. Set the model part's: Att to 4, Str to 5, and AP to 3. The model part also gains Regeneration (4+) and Innate Weapons. Whilst active the model part can only use Innate Weapons.",
+      "uses": 1
+    },
+    "season-innovative_leader": {
+      "title": "Innovative Leader",
+      "def": "    An army with an  may use different Base Sizes than those listed in the Unit Entries. Any Unit Entry using this option must have the new base size noted on the Army List, and all models in the  unit must have the same Base Size. The new bases must:<br><br>&nbsp;&nbsp;&bull;  Be between 100% -- 125% of the original width.<br><br>&nbsp;&nbsp;&bull;  Be between 100% -- 150% of the original depth.<br><br>&nbsp;&nbsp;&bull;  Both width and depth must be divisible by 5mm."
+    },
+    "season-deployment_types": {
+      "title": "Deployment Types",
+      "def": "    <nuxt-link class=\"ruleLink\" to=\"/app/rule/ancient_ruins\">Ancient Ruins</nuxt-link> follows the rules for Ruins, whth the following addition. Follow the rules in the Rulebook, except where those rules are overridden by the details under each Deployment Type. Unless mentioned otherwise, a Central Line is the line drawn through the centre of the board and parallel to the Long Table Edges.<br><br>1214.4<span class=\"textbf\">1. </span><br><br>Deployment Zones are more than 12\" away from the Central Line, towards your Long Table Edge, and more than 6\" from the Short Table Edges.<br><br>1214.4<span class=\"textbf\">2. </span><br><br>Player A's Deployment Zone is more than 9\" away from the Central Line, towards your Long Table Edge, and more than 12\" from the Short Table Edges.<br><br>Player B's Deployment Zone is more than 15\" away from the Central Line.<br><br>Whoever chooses its Deployment Zone also chooses if they are player A or player B.<br><br>1214.4<span class=\"textbf\">3. </span><br><br>Deployment Zones are more than 15\" away from the Central Line.<br><br>The table is divided along the long Table Edge into 3 equal areas (west, centre, east). The player who chooses its Deployment Zone also chooses one of these thirds to be their Spearhead Area. The other player then chooses one of the remaining two thirds as their Spearhead Area.<br>Units deployed fully within their Spearhead Area gain <span class=\"textbf\">Vanguard (3\")</span>.<br><br>1214.4<span class=\"textbf\">4. </span><br><br>Deployment Zones are more than 12\" away from the Central Line, towards your Long Table Edge, and more than 6\" from the Short Table Edges.<br><br>When deploying, each player may Deploy up to two of their Core Scoring Units fully on their own half of the Battlefield and fully within any Forest, Ruins, Field (<i>i.e. no parts of the Unit Boundary outside the Terrain Feature or on the opponent's half of the Battlefield</i>).<br><br>Units Deployed in this way cannot declare a Charge, perform Advance Move, or perform a March Move in the first Player Turn of the first Game Turn.<br><br>1214.4<span class=\"textbf\">5. </span><br><br>Deployment Zones are  are more than 9″ away from the Central Line (<i>see figure</i>).<br>The Central Line is the line drawn from one corner to the opposite corner. The player that chooses its Deployment Zone also chooses which corners to use for the Central Line.<br><br>1214.4<span class=\"textbf\">6. </span><br><br>Deployment Zones are more than 12\" away from the Central Line, towards your Long Table Edge, and more than 6\" from the Short Table Edges.<br><br>The first unit each player deploys must be their most expensive Rank-and-File unit (<i>on the Army List</i>). This unit must be deployed within 6\" of the Central Line that is parallel to the Short Table Edges (dashed red line in the figure).<br><br>When deployment is finished, each player must have deployed an as equal number of units as possible on each side of the first deployed unit. Which side a unit is deployed on is defined by which short table edge the unit's centre is closer to (compared to the first deployed unit). Ignore Attachable Models that start the game joined to a unit for this."
+    },
+    "season-selecting_terrain_map_and_deployment_types": {
+      "title": "Selecting Terrain Map and Deployment Types",
+      "def": "    In the absence of already chosen <nuxt-link class=\"ruleLink\" to=\"/app/rule/deployment_types\">Deployment Types</nuxt-link> and/or Terrain <nuxt-link class=\"ruleLink\" to=\"/app/rule/maps\">Maps</nuxt-link>, e.g. due to players agreeing to play particular ones, or playing in a tournament where these are already set for each game, we recommend consulting the tables below:<br><br><span class=\"textbf\">Terrain Map table</span><br><br>Roll a single D6.<br><br>&nbsp;&nbsp;&bull;<br><br>&nbsp;&nbsp;&bull;<br><br>&nbsp;&nbsp;&bull;<br><br>&nbsp;&nbsp;&bull;<br><br>&nbsp;&nbsp;&bull;<br><br>&nbsp;&nbsp;&bull;<br><br><span class=\"textbf\">Deployment Type table</span><br><br>Roll a single D6.<br><br>&nbsp;&nbsp;&bull;<br><br>&nbsp;&nbsp;&bull;<br><br>&nbsp;&nbsp;&bull;<br><br>&nbsp;&nbsp;&bull;<br><br>&nbsp;&nbsp;&bull;<br><br>&nbsp;&nbsp;&bull;"
+    },
+    "season-spoils_of_war": {
+      "title": "Spoils of War",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> None.<br><span class=\"textbf\">Rules:</span> When an enemy Scoring Unit is Destroyed in Combat, the opposing player puts one Spoils Token on one of their Scoring Units (if there are any) that was just engaged with the unit Destroyed in Combat. A unit loses all its Spoils Tokens when any of the following occurs:<br><br>&nbsp;&nbsp;&bull;  The last Health Point on its Rank-and-File models <i>(see Models and Units in the Definitions and Terminology chapter)</i> is lost.<br><br>&nbsp;&nbsp;&bull;  It becomes Shaken. <i>Remember that units that perform a Flee Move automatically become Shaken.</i><br><br><span class=\"textbf\">Winning conditions:</span> At the end of the game, the player with the most Spoils Token on their units wins this Primary Objective."
+    },
+    "season-breakthrough": {
+      "title": "Breakthrough",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> Mark Deployment Zones.<br><span class=\"textbf\">Rules:</span> None.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, each player adds together the number of Scoring Units in their opponent’s Deployment Zone and the number of enemy units that were Scoring at the start of the game that were Destroyed in Combat. The player with the highest total wins the Primary Objective."
+    },
+    "season-secure_target": {
+      "title": "Secure Target",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> Place two markers with their centers on the line dividing the board into halves (the dashed line in the figures describing <nuxt-link class=\"ruleLink\" to=\"/app/rule/deployment_types\">Deployment Types)</nuxt-link>, one on each side of the centre of the table, as close as possible to a third of the length of the long Board Edge (24\" on a 72\" wide board) away from it, and more than 1\" away from Impassable Terrain.<br><span class=\"textbf\">Rules:</span> A marker is controlled if a player has at least one Scoring Unit within 6\" of the centre of the marker, and the other player does not.<br><span class=\"textbf\">Winning conditions:</span> At the end of Game Turns 3--6, a Victory Counter is awarded to a Player which controls an Objective. The player with the most such Victory Counters at the end of the game wins this Primary Objective."
+    },
+    "season-forage_and_plunder": {
+      "title": "Forage and Plunder",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> Both players nominate a Terrain Feature that is fully outside their Deployment Zone , they may nominate the same. Impassable Terrain and Walls cannot be nominated.<br><span class=\"textbf\">Rules:</span> You automatically plunder a nominated Terrain Feature when one of your Scoring Units starts any of its Player Turn 3--6 in contact with it, each Terrain Feature can only be plundered once by each player.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, if one player has plundered more nominated Terrain Features than the other player they win this Primary Objective. "
+    },
+    "season-hold_the_centre": {
+      "title": "Hold the Centre",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> Mark the centre of the table.<br><span class=\"textbf\">Rules:</span> The battlefield is controlled by the player with the most Scoring Units within 9\" of the centre of the table (if both players have an equal number of Scoring Units, no one controls it).<br><span class=\"textbf\">Winning conditions:</span> At the end of Game Turns 3--6, a Victory Counter is awarded to a Player who controls  at least one marker. The player with the most such Victory Counters at the end of the game wins this Primary Objective."
+    },
+    "season-hidden_agendas": {
+      "title": "Hidden Agendas",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> None.<br><span class=\"textbf\">Rules:</span> None.<br><span class=\"textbf\">Winning conditions:</span>  If one player is the sole winner of their Secondary Objective, this player is rewarded +4 Battle Points and the opponent loses 4 Battle Points. This replaces the normal Battle Points bonus for winning Primary and Secondary Objectives."
+    },
+    "season-capture_the_flag": {
+      "title": "Capture the Flag",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> None.<br><span class=\"textbf\">Rules:</span> None.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, you win this Secondary Objective if you have more Standard Bearers and Battle Standard Bearers on the Battlefield, than the opponent has."
+    },
+    "season-commit_to_battle": {
+      "title": "Commit to Battle",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> None.<br><span class=\"textbf\">Rules:</span> None.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, you win this Secondary Objective if you have more Scoring Units in your opponent’s Deployment Zone than the opponent has (<i>in their own Deployment Zone</i>)."
+    },
+    "season-demonstrate_superiority": {
+      "title": "Demonstrate Superiority",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> The opponent nominates the two most expensive Scoring Units from their Army List. In case of a tie, randomize. If there are no Scoring Units, nominate the most expensive Rank-and-File unit instead.<br><span class=\"textbf\">Rules:</span> None.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, you win this Secondary Objective if at least one of the nominated units is  Destroyed, Decimated, Shaken, or if it is touching its own Deployment Zone."
+    },
+    "season-enslave_and_ransom": {
+      "title": "Enslave and Ransom",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> None.<br><span class=\"textbf\">Rules:</span> An enemy unit is enslaved whenever it is destroyed during a Round of Combat in step 5 of the Round of Combat sequence (Breaking and Pursuing). This includes failing a Break Test and being caught or dying during the Flee Move, Supernal unit failing a Break Test or Unstable unit losing a Combat and being wiped due to HP loss. This does not include units being destroyed as a direct result of Melee Attacks. Ignore Attachable Models joined to units with Rank-and-File models.<br><span class=\"textbf\">Winning conditions:</span> You win this Secondary Objective if at least two enemy units have been enslaved during the course of the game."
+    },
+    "season-forbid_trespass": {
+      "title": "Forbid Trespass",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> You nominate a Terrain Feature on the Battlefield that is fully outside your Deployment Zone. Impassable Terrain and Walls cannot be nominated.<br><span class=\"textbf\">Rules:</span> A nominated Terrain Feature is plundered when an enemy Scoring Unit starts any of its Player Turn 3--6 in contact with it.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, you win this Secondary Objective if the nominated Terrain Feature was not plundered."
+    },
+    "season-master_the_veil": {
+      "title": "Master the Veil",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> Mark the centre of the table.<br><span class=\"textbf\">Rules:</span> None.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, you win this Secondary Objective if you have a model with Channel, or that knows a spell (Learned Spell or Bound Spell), within 9\" of the centre of table, and the opponent has not."
+    },
+    "season-seize_and_secure": {
+      "title": "Seize and Secure",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> The opponent nominates a Terrain Feature on the Battlefield that is fully outside their Deployment Zone. Impassable Terrain and Walls cannot be nominated.<br><span class=\"textbf\">Rules:</span> A nominated Terrain Feature is plundered when a friendly Scoring Unit starts any of its Player Turn 3--6 in contact with it.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, you win this Secondary Objective if the nominated Terrain Feature was plundered."
+    },
+    "season-settle_the_score": {
+      "title": "Settle the Score",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> You nominate a unit from the opponent's Army List.<br><span class=\"textbf\">Rules:</span> None.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, you win this Secondary Objective, if the nominated unit is  Destroyed, Decimated, or Shaken."
+    },
+    "season-slay_the_beast": {
+      "title": "Slay the Beast",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> The opponent nominates the two most expensive non-Scoring Units from their Army List. In case of a tie, randomize. If there are not enough non-Scoring Units, nominate the most expensive Scoring Units instead.<br><span class=\"textbf\">Rules:</span> None.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, you win this Secondary Objective, if at least one of the nominated units is  Destroyed, Decimated, Shaken, or if it is touching its own Deployment Zone.."
+    },
+    "season-stand_firm": {
+      "title": "Stand Firm",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> The opponent nominates two Scoring units from your Army List. If there are no Scoring Units, instead they nominate Rank-and-File units.<br><span class=\"textbf\">Rules:</span> None.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, you win this Secondary Objective if neither of the nominated units are Destroyed, Decimated, or Shaken."
+    },
+    "season-unleash_the_big_guns": {
+      "title": "Unleash the Big Guns",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> You nominate two Terrain Features on the Battlefield that are not fully within your Deployment Zone. Impassable Terrain and Walls cannot be nominated. Then mark up to two units, the most expensive Scoring units from your Army List. In case of a tie, randomize.<br><span class=\"textbf\">Rules:</span> None.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, you win this Secondary Objective if you have a model with a Shooting Weapon or a marked Scoring Unit, in both nominated Terrain Features. One unit cannot be counted against both Terrain Features. Characters do not count."
+    },
+    "season-work_as_one": {
+      "title": "Work as One",
+      "def": "    <span class=\"textbf\">Setup during Pre-game Selections:</span> Mark the centre of the table.<br><span class=\"textbf\">Rules:</span> None.<br><span class=\"textbf\">Winning conditions:</span> At the end of the game, you win this Secondary Objective if you have at least two Scoring Units within 9\" of the centre of table, and the opponent  does not have two or more."
+    },
+    "season-selecting_primary_and_secondary_objectives": {
+      "title": "Selecting Primary and Secondary Objectives",
+      "def": "    In the absence of already chosen Primary Objective and/or Secondary Objectives, e.g. due to players agreeing to play particular ones, or playing in a tournament where these are already set for each game, we recommend consulting the tables below:<br><br><span class=\"textbf\">Primary Objective</span><br><br>Roll a D6 to determine what Primary Objective to play.<br><br>\t<br>&nbsp;&nbsp;&bull;<br>\t<br>&nbsp;&nbsp;&bull;<br>\t<br>&nbsp;&nbsp;&bull;<br>\t<br>&nbsp;&nbsp;&bull;<br>\t<br>&nbsp;&nbsp;&bull;<br>\t<br>&nbsp;&nbsp;&bull;<br><br><span class=\"textbf\">Secondary Objective</span><br><br>Each player rolls a D3, and consults the column corresponding to their Army Book.<br><br><span class=\"textbf\">Table for secondary objectives</span><br><br>\t    1whiteblack!5<br><br><hr>& BH & DE & DH & DL & EOS & HE & KOE & ID & OK & ONG & SA & SE & UD & VC & VS & WDG<br><hr>           & 1 -  1 -    & 1 -    &   &   &   &   & 1 -    &   &   &   &   &<br><hr>           & 2 -    &   &   &   &   &   &   & 1 -  2 -    &   &   &   &   & 1<br><hr>   &   & 2 -    &   &   & 1 -    &   &   &   &   &   &   & 1 -    & 2<br><hr>         &   & 3 -    &   &   &   &   & 1 -  2 -    &   &   &   &   & 1 -<br><hr>            &   &   &   & 2 -    & 2 -    &   &   &   &   &   & 1 -  2 -    &<br><hr>           & 3 -    &   &   &   &   & 1 -    &   &   & 1 -  1 -    &   &   &<br><hr>           &   &   &   & 3 -    &   & 2 -    &   &   &   & 2 -  2 -    &   &<br><hr>           &   &   & 1 -    &   &   &   & 2 -    &   &   & 3 -    & 3 -    &<br><hr>             &   &   &   &   &   &   & 3 -    & 3 -  3 -    &   &   &   &   & 3<br><hr>                &   &   & 2 -    & 1 -  3 -    &   &   &   & 2 -    &   &   &   &<br><hr>        &   &   & 3 -    & 2 -    &   & 3 -    &   &   &   &   &   & 2 -<br><hr>                &   &   &   &   & 3 -    &   &   &   &   & 3 -    & 3 -    & 3 -<br><hr>"
+    },
+    "season-terrain_feature_sizes": {
+      "title": "Terrain Feature Sizes",
+      "def": "    The table below gives a recommendation for the size of Terrain Features.<br><br>Hill & Forest & Ruin & Impassable Terrain & Impassable Terrain & Water Terrain & Field & Wall<br><hr>hill15mm90 -  forest15mm90 -  ruins15mm90 -  impassableterrain15mm0 -  impassableterrain_small15mm90 -  waterterrain15mm90 -  field15mm90 -  wall5mm90<br><hr>15×20m & 15×25m & 20×20m & 15×20m & 15×15m & 15×25m & 15×20m & 2.5×20m"
+    },
+    "season-maps": {
+      "title": "Maps",
+      "def": "<br><br><span class=\"textbf\">Map 1 -  </span><br><br><span class=\"textbf\">Map 2 -  </span><br><br><span class=\"textbf\">Map 3 -  </span><br><br><span class=\"textbf\">Map 4 -  </span><br><br><span class=\"textbf\">Map 5 -  </span><br><br><span class=\"textbf\">Map 6 -  </span>"
+    },
+    "season-ancient_ruins": {
+      "title": "Ancient Ruins",
+      "def": "    <nuxt-link class=\"ruleLink\" to=\"/app/rule/ancient_ruins\">Ancient Ruins</nuxt-link> follows the rules for Ruins, whth the following addition.<br><br><span class=\"textbf\">Exploration</span><br><br>The first time a unit ends their Movement Phase in contact with an Ancient Ruin, the following actions are performed:<br><br>&nbsp;&nbsp;&bull;  The Active Player nominates a unit in contact with the Ancient Ruin to be the Exploring Unit.<br><br>&nbsp;&nbsp;&bull;  Roll a D6 and consult the table below to see which type of Ancient Ruin it is.<br><br>&nbsp;&nbsp;&bull;  <span class=\"textbf\"></span>: Apply the effects listed under <span class=\"textbf\"></span> for the appropriate type of Ancient Ruin.<br><br>&nbsp;&nbsp;&bull;  <span class=\"textbf\"></span>: Place an Artefact Marker at the centre of the Ruin (<i>determined by drawing the smallest possible rectangle around the Ruin, and then applying the same rules as for determining the centre of a unit</i>). The Character model that is the closest to the centre of this marker can cast the Bound Spell listed under <span class=\"textbf\"></span> for the appropriate type of Ancient Ruin. If multiple Characters are equally close to the centre of the marker, no model can cast the Bound Spell.<br><br>1214.4<span class=\"textbf\">1. </span><br><br><span class=\"textbf\"> - Booby-traps</span><br><br>The Exploring Unit suffers D6 hits with Str 5 and AP 1.<br><br><span class=\"textbf\"></span><br><br><i>Foresight</i> (Divination). Bound Spell(4+).<br><br>1214.4<span class=\"textbf\">2. </span><br><br><span class=\"textbf\"> - Hidden Roots</span><br><br>The Ancient Ruin becomes a Forest, and ceases to be a Ruin. The Exploring Unit gains Magic Resistance (2). Duration: Permanent.<br><br><span class=\"textbf\"></span><br><br><i>Weal and Woe</i> (Cosmology). Bound Spell(4+).<br><br>1214.4<span class=\"textbf\">3. </span><br><br><span class=\"textbf\"> - Curse</span><br><br>The Exploring Unit gains Unruly, Horror. Duration: Permanent.<br><br><span class=\"textbf\"></span><br><br><i>Whispers of the Veil</i> (Evocation). Bound Spell(4+).<br><br>1214.4<span class=\"textbf\">4. </span><br><br><span class=\"textbf\"> - No effect</span><br><br><span class=\"textbf\"></span><br><br><i>Fountain of Youth</i> (Druidism). Bound Spell(4+).<br><br>1214.4<span class=\"textbf\">5. </span><br><br><span class=\"textbf\"> - Aquila</span><br><br>The Exploring Unit gains +1 Combat Score and <span class=\"textbf\">Disciplined</span>. This only affects Rank-and-File models. Duration: Permanent.<br><br><span class=\"textbf\"></span><br><br><i>Living Steel</i> (Alchemy). Bound Spell(4+).<br><br>1214.4<span class=\"textbf\">6. </span><br><br><span class=\"textbf\"> - The Roads Beneath</span><br><br>The Exploring Unit gains <span class=\"textbf\">Ambush(Table Edge)</span>.  Duration: Permanent. Unless it is Game Turn 6, the Exploring Unit is removed from the Battlefield and placed in Ambush.<br><br><span class=\"textbf\"></span><br><br><i>Smite the Unbeliever</i> (Thaumaturgy). Bound Spell(4+)."
     },
     "custom-netted": {
       "title": "Netted",

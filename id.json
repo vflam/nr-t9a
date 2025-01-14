@@ -1216,7 +1216,7 @@
                       "type": "check",
                       "cost": 0,
                       "option_id": "f32f32ky7t34f34g34hj34j54",
-                      "refs": ["leadership_amount"]
+                      "refs": ["captain"]
                     },
                     {
                       "refs": ["army_general"],
@@ -1230,7 +1230,8 @@
                       "option_id": "dnwe90f32dsdsfn3490nf9nfee3",
                       "name": "Exclusive",
                       "type": "check",
-                      "cost": 20
+                      "cost": 20,
+                      "refs": ["exclusive"]
                     },
                     {
                       "name": "Battle Standard Bearer",
@@ -1254,7 +1255,16 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "3g9wu2byvzkvs6pvjqelk",
-                      "cost": 0
+                      "cost": 0,
+                      "hasNotOption": ["exclusive"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Taurukh Ritual",
+                      "cost": 15,
+                      "hasNotOption": ["exclusive"],
+                      "option_id": "4q4vtiq62lsgk69kasqd7j",
+                      "refs": ["taurukh_ritual", "beast"]
                     },
                     {
                       "name": "Seat of Authority",
@@ -1266,7 +1276,8 @@
                       "name": "Bull of Shamut",
                       "cost": 190,
                       "refopt": "bull_of_shamut_mount",
-                      "option_id": "y3ks47zbqdnt4qe0hye"
+                      "option_id": "y3ks47zbqdnt4qe0hye",
+                      "hasNotOption": ["captain"]
                     },
                     {
                       "name": "Infernal Bastion",
@@ -1463,26 +1474,6 @@
                     }
                   ],
                   "option_id": "kb6djymoempsnz3b30mvq"
-                },
-                {
-                  "optionsLabel": "Options",
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "Taurukh Ritual",
-                      "cost": 15,
-                      "hasNotOption": ["mount"],
-                      "option_id": "4q4vtiq62lsgk69kasqd7j",
-                      "refs": ["taurukh_ritual", "beast"],
-                      "armyHasNotOption": [
-                        {
-                          "refs": ["taurukh_ritual"],
-                          "amount": 2
-                        }
-                      ]
-                    }
-                  ],
-                  "option_id": "ifgnwvmkyx1tqmz55r11h"
                 }
               ],
               "option_id": "4lm76ptaznp5z26q6eeq2",
