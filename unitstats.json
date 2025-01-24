@@ -1,12 +1,58 @@
 {
   "name": "Unit Stats",
   "version": 3,
-  "nrversion": 1113,
+  "nrversion": 1116,
   "permission": 10,
   "playable": 0,
   "id": 100,
   "units": {
     "de": {
+      "beastmaster": {
+        "name": "Beastmaster",
+        "cost": "140",
+        "size": "",
+        "basesize": "20×20",
+        "global": {
+          "Ad": "5",
+          "Ma": "10",
+          "Di": "9"
+        },
+        "globalrules": [],
+        "defense": {
+          "HP": "3",
+          "Df": "5",
+          "Re": "3",
+          "Arm": "0"
+        },
+        "defenserules": [
+          {
+            "name": "Cannot be Stomped",
+            "id": "cannot_be_stomped"
+          }
+        ],
+        "defensearmour": [
+          {
+            "name": "Heavy Armour",
+            "id": "heavy_armour"
+          }
+        ],
+        "offensename": "Beastmaster",
+        "offense": {
+          "At": "4",
+          "Of": "5",
+          "St": "4",
+          "AP": "1",
+          "Ag": "7"
+        },
+        "offenserules": [
+          {
+            "name": "Ruthless Efficiency",
+            "id": "ruthless_efficiency"
+          }
+        ],
+        "fluff": "\n\tCountless savage beasts are tamed in Dathen by these renowned handlers. Having earned the approbation of arena crowds for their skill in willbreaking, those who have reached the pinnacle of their art may pursue a career in Caedhren’s temples; others seek military engagements. Their prestige is often so great that they’re immediately granted high-ranking commissions.\n",
+        "unit_id": "beastmaster"
+      },
       "black_cloaks": {
         "name": "Black Cloaks",
         "optionalprices": "\n\t\t,\n\t",
@@ -44,15 +90,7 @@
           "Arm": "1"
         },
         "defensearmour": [],
-        "defenserules": [
-          {
-            "name": "Hard Target",
-            "id": "hard_target",
-            "params": [
-              "1"
-            ]
-          }
-        ],
+        "defenserules": [],
         "offensename": "Black Cloak",
         "offense": {
           "At": "1",
@@ -100,6 +138,7 @@
         "name": "Corsairs",
         "cost": "155",
         "height": "1",
+        "rarity": "Regular",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -303,6 +342,7 @@
         "name": "Dread Knights",
         "cost": "240",
         "height": "2",
+        "rarity": "Common",
         "basesize": "25×50",
         "global": {
           "Ad": "7",
@@ -376,6 +416,7 @@
         "name": "Dread Prince",
         "cost": "210",
         "height": "1",
+        "rarity": "Common",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -417,6 +458,7 @@
       "de_elven_horse_mount": {
         "name": "Elven Horse",
         "height": "2",
+        "rarity": "Common",
         "basesize": "25×50",
         "global": {
           "Ad": "9",
@@ -505,7 +547,7 @@
           "AP": "1",
           "Ag": "5"
         },
-        "tags": "\n\t\tElf,\n\t",
+        "tags": "\n\t\tElf,Temple,\n\t",
         "offenserules": [
           {
             "name": "First Strike",
@@ -882,6 +924,7 @@
         "name": "Judicators",
         "cost": "210",
         "height": "1",
+        "rarity": "Common",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -1343,6 +1386,7 @@
       "coastal_raptor_mount": {
         "name": "Raptor",
         "height": "2",
+        "rarity": "Common",
         "basesize": "25×50",
         "global": {
           "Ad": "7",
@@ -1592,6 +1636,7 @@
         "maxpointcost": "700",
         "cost": "290",
         "height": "1",
+        "rarity": "Common",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -1809,6 +1854,7 @@
         "name": "Silexian Auxiliaries",
         "cost": "210",
         "height": "1",
+        "rarity": "Regular",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -1873,6 +1919,7 @@
         "name": "Silexian Officer",
         "cost": "80",
         "height": "1",
+        "rarity": "Common",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -1918,6 +1965,7 @@
         "name": "Silexian Spears",
         "cost": "195",
         "height": "1",
+        "rarity": "Regular",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -1975,6 +2023,7 @@
         "name": "Temple Exarch",
         "cost": "200",
         "height": "1",
+        "rarity": "Common",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -2035,6 +2084,7 @@
         "name": "Temple Militants",
         "cost": "150",
         "height": "1",
+        "rarity": "Regular",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -2588,12 +2638,9 @@
         },
         "globalrules": [
           {
-            "name": "Giant See",
-            "id": "giant_see"
-          },
-          {
-            "name": "Giant Do",
-            "id": "giant_do"
+            "name": "Giant See, Giant Do",
+            "id": "ong-giant_see_giant_do",
+            "params": []
           },
           {
             "name": "Light Troops",
@@ -4040,12 +4087,11 @@
             "id": "unruly"
           },
           {
-            "name": "Exclusive(Orc",
-            "id": "exclusiveorc"
-          },
-          {
-            "name": ")",
-            "id": ""
+            "name": "Exclusive",
+            "id": "exclusive",
+            "params": [
+              "Orc"
+            ]
           },
           {
             "name": "Disciplined",
@@ -4590,12 +4636,9 @@
         },
         "globalrules": [
           {
-            "name": "Giant See",
-            "id": "giant_see"
-          },
-          {
-            "name": "Giant Do",
-            "id": "giant_do"
+            "name": "Giant See, Giant Do",
+            "id": "id-giant_see_giant_do",
+            "params": []
           },
           {
             "name": "Light Troops",
@@ -5850,7 +5893,7 @@
         "name": "Overlord",
         "maxpointcost": "600*",
         "cost": "180",
-        "rarity": "Common",
+        "rarity": "Extraordinary",
         "height": "1",
         "basesize": "20×20",
         "global": {
@@ -6862,7 +6905,7 @@
           }
         ],
         "tags": "Daemon",
-        "explicitoptions": "\n\t\t\n\t\t§prename=chaos,hypertag=brimstonesecretions,name=Brimstone Secretions,cost=10§,\n\t\t\t§prename=pride,hypertag=hornsofhubris,name=Horns of Hubris,cost=15§,\n\t\t\t§prename=pride,hypertag=stiffupperlip,name=Golden Helm,cost=20§,\t\t\t\n\t\t\t§prename=pride,hypertag=bronzebackbone,name=Bronze Backbone,cost=25§,\n\t\t\t§prename=chaos,hypertag=clovenhooves,name=Cloven Hooves,cost=40§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t§prename=chaos,hypertag=brimstonesecretions,name=Brimstone Secretions,cost=10§,\n\t\t\t§prename=pride,hypertag=hornsofhubris,name=Horns of Hubris,cost=15§,\n\t\t\t§prename=pride,hypertag=stiffupperlip,name=Golden Helm,cost=20§,\t\t\t\n\t\t\t§prename=pride,hypertag=bronzebackbone,name=Bronze Backbone,cost=25§,\n\t\t\t§prename=chaos,hypertag=clovenhooves,name=Trampling Hooves,cost=40§,\n\t\t\n\t",
         "toggles": "\n\t\tonecolprintmodelrulesdef\n\t\ttwocolprintmodelrulesdef\n\t\tonecolprintoptions\n\t\ttwocolprintoptions\n\t",
         "fluff": "\n\tLarge, imperious and scornful daemons of Pride, a glory’s power lies in its untouchable prestige and arrogance. Once they’ve been wounded by an opponent, their deadliness begins to wane, yet they remain formidable figures so long as their form endures.\n",
         "unit_id": "blazing_glory",
@@ -6949,7 +6992,7 @@
           }
         ],
         "tags": "Daemon",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=gluttony,hypertag=broodmother,name=Broodmother,cost=8/model§,\n\t\t\t§prename=gluttony,hypertag=digestivevomit,name=Digestive Vomit,cost=8/model§,\n\t\t\t§prename=gluttony,hypertag=unhingingjaw,name=Unhinging Jaw,cost=12/model§,\n\t\t\t§prename=chaos,hypertag=kaleidoscopicflesh,name=Kaleidoscopic Flesh,cost=6/model§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=gluttony,hypertag=broodmother,name=Unholy Appetite,cost=8/model§,\n\t\t\t§prename=gluttony,hypertag=digestivevomit,name=Digestive Vomit,cost=8/model§,\n\t\t\t§prename=gluttony,hypertag=unhingingjaw,name=Unhinging Jaw,cost=12/model§,\n\t\t\t§prename=chaos,hypertag=kaleidoscopicflesh,name=Kaleidoscopic Flesh,cost=6/model§,\n\t\t\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
         "fluff": "\n\tRepulsive, wasp-like daemons of Gluttony, bloat flies are deadly, striking hard and fast with sharpened stingers or mandibles. Their blood is lethally noxious, and some seem to have humanoid riders – though in truth these body parts are offshoots of the same daemon. They can be notoriously difficult to injure, even more so than other daemons.\n",
         "unit_id": "bloat_flies",
@@ -7052,7 +7095,7 @@
           }
         ],
         "tagsB": "Daemon,Mount",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=wrath,hypertag=incendiaryichor,name=Incendiary Ichor,cost=4/model§,\n\t\t\t§prename=wrath,hypertag=curvedtusks,name=Curved Tusks,cost=16/model§,\n\t\t\t§prename=wrath,hypertag=whipcracktail,name=Whipcrack Tail,cost=10/model§,\n\t\t\t§prename=chaos,hypertag=centipedelegs,name=,cost=§,\n\t\t\t§prename=chaos,hypertag=visageofcosmichorror,name=Visage of Cosmic Horror,cost=5/model§,\n\t\t\t§prename=chaos,hypertag=chitinousscales,name=Chitinous Scales,cost=6/model§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=wrath,hypertag=incendiaryichor,name=Incendiary Ichor,cost=4/model§,\n\t\t\t§prename=wrath,hypertag=curvedtusks,name=Curved Tusks,cost=16/model§,\n\t\t\t§prename=wrath,hypertag=whipcracktail,name=Whipcrack Tail,cost=10/model§,\n\t\t\t§prename=chaos,hypertag=visageofcosmichorror,name=Horrifying Vissage,cost=5/model§,\n\t\t\t§prename=chaos,hypertag=chitinousscales,name=Chitinous Scales,cost=6/model§,\n\t\t\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
         "fluff": "\n\tIt can be hard for some to tell whether these daemons of Wrath – stampeding engines of war driven by dark energies and hellish contraptions – are beast or machine. They encourage smaller devils of Wrath to accompany them, only enhancing the devastation of their charges.\n",
         "unit_id": "brazen_beasts",
@@ -7177,7 +7220,7 @@
           }
         ],
         "tags": "Daemon",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=gluttony,hypertag=broodmother,name=Broodmother,cost=7/model§,\n\t\t\t§prename=gluttony,hypertag=unhingingjaw,name=Unhinging Jaw,cost=12/model§,\n\t\t\t§prename=chaos,hypertag=centipedelegs,name=,cost=§,\n\t\t\t§prename=wrath,hypertag=incendiaryichor,name=Incendiary Ichor,cost=3/model§,\n\t\t\t§prename=envy,hypertag=piercingspike,name=Piercing Spike,cost=10/model§,\n\t\t\t§prename=lust,hypertag=mesmerisingplumage,name=Mesmerising Plumage,cost=6/model§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=gluttony,hypertag=broodmother,name=Unholy Appetite,cost=7/model§,\n\t\t\t§prename=gluttony,hypertag=unhingingjaw,name=Unhinging Jaw,cost=12/model§,\n\t\t\t§prename=wrath,hypertag=incendiaryichor,name=Incendiary Ichor,cost=3/model§,\n\t\t\t§prename=envy,hypertag=piercingspike,name=Piercing Spike,cost=10/model§,\n\t\t\t§prename=lust,hypertag=mesmerisingplumage,name=Mesmerising Plumage,cost=6/model§,\n\t\t\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
         "fluff": "\n\tLarge centaur-like creatures with a rudimentary exoskeleton and vicious claws, these terrifyingly fast, insectoid daemons are desperate for attention and love. Particularly attracted to mortals of their own size, they embrace them, not realising their own strength or the sharpness of their claws. When their victims stop moving, they look for new ones.\n",
         "unit_id": "clawed_fiends",
@@ -7664,7 +7707,7 @@
           }
         ],
         "tags": "Daemon",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=lust,hypertag=hotblood,name=Hot Blood,cost=1/model§,\n\t\t\t§prename=wrath,hypertag=incendiaryichor,name=Incendiary Ichor,cost=1/model§,\n\t\t\t§prename=chaos,hypertag=centipedelegs,name=,cost=§,\n\t\t\t§prename=chaos,hypertag=darkhide,name=Dark Hide,cost=2/model§,\n\t\t\t§prename=gluttony,hypertag=digestivevomit,name=Digestive Vomit,cost=2/model§,\n\t\t\t§prename=pride,hypertag=hornsofhubris,name=Horns of Hubris,cost=1/model§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=lust,hypertag=hotblood,name=Hot Blood,cost=1/model§,\t§prename=wrath,hypertag=incendiaryichor,name=Incendiary Ichor,cost=1/model§,\t\t§prename=chaos,hypertag=darkhide,name=Dark Hide,cost=2/model§,\n\t\t\t§prename=gluttony,hypertag=digestivevomit,name=Digestive Vomit,cost=2/model§,\n\t\t\t§prename=pride,hypertag=hornsofhubris,name=Horns of Hubris,cost=1/model§,\n\t\t\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
         "fluff": "\n\tGreat canine brutes, most often covered in thick black fur, with jagged teeth protruding from elongated snouts and eyes that smoulder with unholy fire, these fiends of Hell put the knowledge of ancient, primordial fear into the hearts of all who hear their awful baying.\n",
         "unit_id": "hellhounds",
@@ -7796,7 +7839,7 @@
           }
         ],
         "tags": "Daemon",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=greed,hypertag=diviningsnout,name=,cost=§,\n\t\t\t§prename=greed,hypertag=graspingproboscis,name=Grasping Proboscis,cost=3/model§,\n\t\t\t§prename=greed,hypertag=smotheringcoils,name=Smothering Coils,cost=14/model§,\n\t\t\t§prename=chaos,hypertag=mirroredscales,name=Mirrored Scales,cost=15/model§,\n\t\t\t§prename=chaos,hypertag=unnaturalroots,name=Unnatural Roots,cost=50§,\n\t\t\t§prename=chaos,hypertag=chitinousscales,name=Chitinous Scales,cost=4/model§,\n\t\t\t§prename=greed,hypertag=segmentedshell,name=Segmented Shell,cost=3/model§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=greed,hypertag=graspingproboscis,name=Clinging Ichor,cost=3/model§,\n\t\t\t§prename=greed,hypertag=smotheringcoils,name=Smothering Coils,cost=14/model§,\n\t\t\t§prename=chaos,hypertag=mirroredscales,name=Mirrored Scales,cost=15/model§,\n\t\t\t§prename=chaos,hypertag=unnaturalroots,name=Unnatural Roots,cost=50§,\n\t\t\t§prename=chaos,hypertag=chitinousscales,name=Chitinous Scales,cost=4/model§,\n\t\t\t§prename=greed,hypertag=segmentedshell,name=Segmented Shell,cost=3/model§,\n\t\t\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
         "fluff": "\n\tThese large daemons of Greed slime and writhe their way over the ground. Some resemble grotesque toads, insects, serpents or simply globules of slimy flesh, gathering up detritus and riches alike as they move. They smother or strangle their victims, growing stronger and gripping ever-tighter the longer they struggle.\n",
         "unit_id": "hoarders",
@@ -7874,7 +7917,7 @@
           }
         ],
         "tags": "Daemon",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=sloth,hypertag=allseeingeye,name=All-Seeing Eye,cost=30§,\n\t\t\t§prename=sloth,hypertag=torporoustendrils,name=Torporous Tendrils,cost=55§,\n\t\t\t§prename=sloth,hypertag=sorcerousantennae,name=Sorcerous Antennae,cost=35§,\n\t\t\t§prename=chaos,hypertag=ironhusk,name=,cost=§,\n\t\t\t§prename=chaos,hypertag=livingshield,name=Living Shield,cost=40§,\n\t\t\t§prename=chaos,hypertag=markoftheeternalchampion,name=Mark of the Eternal Champion,cost=50§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=sloth,hypertag=allseeingeye,name=All-Seeing Eye,cost=30§,\n\t\t\t§prename=sloth,hypertag=torporoustendrils,name=Torporous Tendrils,cost=55§,\n\t\t\t§prename=sloth,hypertag=sorcerousantennae,name=Sorcerous Antennae,cost=35§,\n\t\t\t§prename=chaos,hypertag=livingshield,name=Hell Can Wait,cost=40§,\n\t\t\t§prename=chaos,hypertag=markoftheeternalchampion,name=Mark of the Eternal Champion,cost=50§,\n\t\t\n\t",
         "shootingweaponsdef": "Aether Battery<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Aeth. Battery</td><td>3</td><td>18\"</td><td>3D6</td><td>4</td><td>1</td><td>\tIf the model did not move this turn, the number of Shots gain <span class=\"textbf\">Maximized</span></td></tr></table><br>\n<br>\n\n\t",
         "toggles": "\n\t\tonecolprintoptionalmodelrulesdef\n\t\ttwocolprintoptionalmodelrulesdef\n\t\tonecolprintoptions\n\t\ttwocolprintoptions\n\t",
         "fluff": "\n\tDespite having the power to crush anything that dares approach, hope harvesters prefer to attack their foes with projectiles of pure magic, before feeding on the despair of survivors. Creatures of Sloth, these patient structures often attach themselves to other groups of daemons who can do most of the work for them, or else form immense bodies to house their potency.\n",
@@ -8087,7 +8130,7 @@
           }
         ],
         "tags": "Daemon",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=sloth,hypertag=torporoustendrils,name=Torporous Tendrils,cost=2/model§,\n\t\t\t§prename=chaos,hypertag=unnaturalroots,name=Unnatural Roots,cost=50§,\n\t\t\t§prename=envy,hypertag=venomsacs,name=,cost=§,\n\t\t\t§prename=chaos,hypertag=centipedelegs,name=Centipede Legs,cost=2/model§,\n\t\t\t§prename=pride,hypertag=stiffupperlip,name=Golden Helm,cost=1/model§,\n\t\t\t§prename=chaos,hypertag=brimstonesecretions,name=Brimstone Secretions,cost=1/model§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=sloth,hypertag=torporoustendrils,name=Torporous Tendrils,cost=2/model§,\n\t\t\t§prename=chaos,hypertag=unnaturalroots,name=Unnatural Roots,cost=50§,\n\t\t\t§prename=chaos,hypertag=centipedelegs,name=Centipede Legs,cost=2/model§,\n\t\t\t§prename=pride,hypertag=stiffupperlip,name=Golden Helm,cost=1/model§,\n\t\t\t§prename=chaos,hypertag=brimstonesecretions,name=Brimstone Secretions,cost=1/model§,\n\t\t\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
         "fluff": "\n\tThese daemons typically appear as sickly or deceased mortals. Some take bodies with no definition at all: shapeshifting mutants of fleshy tumours. Their malleable forms are difficult to fatally wound, or even to strike at effectively.\n",
         "unit_id": "lemures",
@@ -8109,7 +8152,7 @@
             "name": "Ambush",
             "id": "ambush",
             "params": [
-              "Table Edge",
+              "Board Edge",
               "or unit containing Wizard"
             ]
           },
@@ -8144,8 +8187,8 @@
         "printAeg": "defined",
         "defenserules": [
           {
-            "name": "Attracted by magic",
-            "id": "attracted_by_magic"
+            "name": "Veil Stalker",
+            "id": "veil_stalker"
           },
           {
             "name": "Hard Target",
@@ -8184,9 +8227,8 @@
           }
         ],
         "tags": "Daemon,Swarm",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=envy,hypertag=greenfireeyes,name=,cost=§,\n\t\t\t§prename=chaos,hypertag=unnaturalroots,name=,cost=§,\n\t\t\t§prename=envy,hypertag=venomsacs,name=Venom Sacs,cost=10/model§,\n\t\t\t§prename=envy,hypertag=piercingspike,name=Piercing Spike,cost=10/model§,\n\t\t\t§prename=chaos,hypertag=livingshield,name=Living Shield,cost=12/model§,\n\t\t\t§prename=envy,hypertag=chargedtendrils,name=Charged Tendrils,cost=10/model§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=envy,hypertag=venomsacs,name=Venom Sacs,cost=10/model§,\n\t\t\t§prename=envy,hypertag=piercingspike,name=Piercing Spike,cost=10/model§,\n\t\t\t§prename=chaos,hypertag=livingshield,name=Hell Can Wait,cost=12/model§,\n\t\t\t§prename=envy,hypertag=chargedtendrils,name=Charged Tendrils,cost=10/model§,\n\t\t\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
-        "endtext": "*",
         "fluff": "\n\tWith their wicked grins full of razor teeth, their gelatinous flesh and their little protruding horns, these small, obese daemons of Envy are quite deadly in a swarm. They despise mortal wizards, intensely jealous of their ability to use the substance of the Immortal in the Mortal Realm, and are an ever-present threat to a spellcaster who thins the Veil too far.\n",
         "unit_id": "mageblight_gremlins",
         "option_id": "2u1bbvqw7gsr1eqkcldpqp"
@@ -8332,8 +8374,8 @@
             "id": "disciplined"
           },
           {
-            "name": "Abyssal Armour",
-            "id": "abyssal_armour"
+            "name": "Bribed Enchantments",
+            "id": "bribed_enchantments"
           }
         ],
         "defense": {
@@ -8675,7 +8717,7 @@
           }
         ],
         "tags": "Daemon",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=chaos,hypertag=darkhide,name=Dark Hide,cost=1/model§,\n\t\t\t§prename=chaos,hypertag=visageofcosmichorror,name=Visage of Cosmic Horror,cost=1/model§,\n\t\t\t§prename=lust,hypertag=mesmerisingplumage,name=Mesmerising Plumage,cost=2/model§,\n\t\t\t§prename=greed,hypertag=diviningsnout,name=,cost=§,\n\t\t\t§prename=sloth,hypertag=torporoustendrils,name=Torporous Tendrils,cost=3/model§,\n\t\t\t§prename=pride,hypertag=bronzebackbone,name=Bronze Backbone,cost=4/model§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=chaos,hypertag=darkhide,name=Dark Hide,cost=1/model§,\n\t\t\t§prename=chaos,hypertag=visageofcosmichorror,name=Horrifying Vissage,cost=1/model§,\n\t\t\t§prename=lust,hypertag=mesmerisingplumage,name=Mesmerising Plumage,cost=2/model§,\n\t\t\t§prename=sloth,hypertag=torporoustendrils,name=Torporous Tendrils,cost=3/model§,\n\t\t\t§prename=pride,hypertag=bronzebackbone,name=Bronze Backbone,cost=4/model§,\n\t\t\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
         "fluff": "\n\tLithe, nimble, humanoid creatures that move with unnatural grace and swiftness, succubi can tear through hordes of foes with their scythe-like talons, often giggling uncontrollably while they play with their victims. Dancing gleefully away from larger opponents, they reserve their primary torments for those of similar proportions to their own.\n",
         "unit_id": "succubi",
@@ -8771,7 +8813,7 @@
           }
         ],
         "tagsB": "Daemon,Mount",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=lust,hypertag=mesmerisingplumage,name=Mesmerising Plumage,cost=3/model§,\n\t\t\t§prename=lust,hypertag=roaminghands,name=Hidden Knives,cost=4/model§,\n\t\t\t§prename=lust,hypertag=hotblood,name=Hot Blood,cost=1/model§,\n\t\t\t§prename=chaos,hypertag=centipedelegs,name=,cost=§,\n\t\t\t§prename=chaos,hypertag=kaleidoscopicflesh,name=Kaleidoscopic Flesh,cost=3/model§,\n\t\t\t§prename=chaos,hypertag=hammerhand,name=Hammer Hand,cost=5/model§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=lust,hypertag=mesmerisingplumage,name=Mesmerising Plumage,cost=3/model§,\n\t\t\t§prename=lust,hypertag=roaminghands,name=Hidden Knives,cost=4/model§,\n\t\t\t§prename=lust,hypertag=hotblood,name=Hot Blood,cost=1/model§,\n\t\t\t§prename=chaos,hypertag=kaleidoscopicflesh,name=Kaleidoscopic Flesh,cost=3/model§,\n\t\t\t§prename=chaos,hypertag=hammerhand,name=Hammer Hand,cost=5/model§,\n\t\t\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
         "fluff": "\n\tThough many are not aligned to any of the Seven, succubi commonly follow Cibaresh the Tempter. Those dedicated to the God of Lust are permitted congress with His salacious pets: mounts artfully formed for symbiosis with their riders. These pairs of daemons are perfectly matched: one fleet and built for speed, the other adapted to ride its fragile form and deal death from its back with razor-sharp, steel-like claws.\n",
         "unit_id": "succubi_tempters",
@@ -8879,7 +8921,7 @@
           }
         ],
         "tagsI": "Construct",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=greed,hypertag=diviningsnout,name=,cost=§,\n\t\t\t§prename=pride,hypertag=hornsofhubris,name=Horns of Hubris,cost=10/model*§,\n\t\t\t§prename=wrath,hypertag=whipcracktail,name=Whipcrack Tail,cost=10/model*§,\n\t\t\t§prename=chaos,hypertag=markoftheeternalchampion,name=Mark of the Eternal Champion,cost=40/model§,\n\t\t\t§prename=chaos,hypertag=visageofcosmichorror,name=Visage of Cosmic Horror,cost=10/model*§,\n\t\t\t§prename=lust,hypertag=roaminghands,name=Hidden Knives,cost=15/model*§,\n\t\t<br><br>*<i>    for units with Horde Thresher and Legion Thresher use points indicated in [brackets]\n</i>\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=pride,hypertag=hornsofhubris,name=Horns of Hubris,cost=10[20]/model*§,\n\t\t\t§prename=wrath,hypertag=whipcracktail,name=Whipcrack Tail,cost=10[25]/model*§,\n\t\t\t§prename=chaos,hypertag=markoftheeternalchampion,name=Mark of the Eternal Champion,cost=40/model§,\n\t\t\t§prename=chaos,hypertag=visageofcosmichorror,name=Horrifying Vissage,cost=10[25]/model*§,\n\t\t\t§prename=lust,hypertag=roaminghands,name=Hidden Knives,cost=15[50]/model*§,\n\t\t<br><br>*<i>    for units with Horde Thresher and Legion Thresher use points indicated in [brackets]\n</i>=\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
         "fluff": "\n\tHurtling across the field with unnatural speed, these daemonic contraptions can decimate enemy troops. Usually pulled by sleek, elongated bipeds and crewed by smaller fiends, these hellish chariots use seething, flesh-rending blades to create a nightmare imitation of agricultural practices.\n",
         "unit_id": "threshing_engine",
@@ -9061,7 +9103,7 @@
           }
         ],
         "tagsI": "Construct",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=gluttony,hypertag=digestivevomit,name=Digestive Vomit,cost=10§,\n\t\t\t§prename=pride,hypertag=stiffupperlip,name=Golden Helm,cost=5§,\n\t\t\t§prename=greed,hypertag=segmentedshell,name=Segmented Shell,cost=5§,\n\t\t\t§prename=chaos,hypertag=centipedelegs,name=Centipede Legs,cost=15§,\n\t\t\t§prename=chaos,hypertag=hammerhand,name= ,cost=§,\n\t\t\t§prename=chaos,hypertag=chitinousscales,name=Chitinous Scales,cost=20§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=gluttony,hypertag=digestivevomit,name=Digestive Vomit,cost=10§,\n\t\t\t§prename=pride,hypertag=stiffupperlip,name=Golden Helm,cost=5§,\n\t\t\t§prename=greed,hypertag=segmentedshell,name=Segmented Shell,cost=5§,\n\t\t\t§prename=chaos,hypertag=centipedelegs,name=Centipede Legs,cost=15§,\n\t\t\t§prename=chaos,hypertag=chitinousscales,name=Chitinous Scales,cost=20§,\n\t\t\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
         "fluff": "\n\tThis living engine, made of arcane metals and unnatural technologies, seeks the largest and most fearsome enemies before ramming itself as hard as possible into its enormous prey. It draws smaller daemons who cling to its chassis, aiding it in its mission of slaughter.\n",
         "unit_id": "titanslayer_chariot",
@@ -9241,7 +9283,7 @@
         "name": "Wildhorn Chieftain",
         "cost": "60",
         "height": "1",
-        "rarity": "Uncommon",
+        "rarity": "Common",
         "basesize": "25×25",
         "global": {
           "Ad": "5",
@@ -9282,7 +9324,7 @@
           }
         ],
         "tags": "Wildhorn, Metal Armour",
-        "leadership": "\n\t\t,\n\t\t\tGeneral=55,\n\t\t\tBattle Standard Bearer=75,\n\t\t\tCaptain and Attached=free,\n\t\t\tExclusive=25,\n\t",
+        "leadership": "\n\t\t,\n\t\t\tGeneral=25,\n\t\t\tBattle Standard Bearer=75,\n\t\t\tCaptain and Attached=free,\n\t\t\tExclusive=25,\n\t",
         "fluff": "\n\tWar leaders of smaller herds or trusted kin-beasts of herd commanders, many chiefs willingly accept the supremacy of a regional beast born lord. They direct portions of the herd in his absence, or have the honour of bearing the totems of the greatest heroes of the past, striking fear into the hearts of the foe and inspiring ferocity in their fellows.\n",
         "unit_id": "wildhorn_chieftain",
         "option_id": "z1x9fhce8fsyfy9jcswcyj"
@@ -9300,12 +9342,9 @@
         },
         "globalrules": [
           {
-            "name": "Giant See",
-            "id": "giant_see"
-          },
-          {
-            "name": "Giant Do",
-            "id": "giant_do"
+            "name": "Giant See, Giant Do",
+            "id": "bh-giant_see_giant_do",
+            "params": []
           },
           {
             "name": "Light Troops",
@@ -9537,7 +9576,7 @@
           }
         ],
         "tags": "Metal Armour, Centauroid",
-        "leadership": "\n\t\tOne choice only:,\n\t\t\tGeneral=55,\n\t\t\tBattle Standard Bearer=75,\n\t\t\tExclusive=25,\n\t\t\tCaptain and Attached=free,\n\t",
+        "leadership": "\n\t\tOne choice only:,\n\t\t\tGeneral=25,\n\t\t\tBattle Standard Bearer=75,\n\t\t\tExclusive=25,\n\t\t\tCaptain and Attached=free,\n\t",
         "fluff": "\n\tFierce and charismatic, centaur chiefs combine their marking’s wild power and impulsive speed with the ability to keep their unruly kin in line, knowing precisely when and where to strike for maximum effect. When the battle horn sounds, they lead their troop on headlong charges, delighting in the thrill of combat and the debauchery and looting that inevitably follows.\n",
         "unit_id": "centaur_chieftain",
         "option_id": "e99ja4pjawbvxrdb02fn8l"
@@ -10897,6 +10936,7 @@
           }
         ],
         "tags": "Wildhorn",
+        "leadership": "\n\t\tGeneral=free,\n\t",
         "paths": "Druidism=druidism,Evocation=evocation,Shamanism=shamanism",
         "fluff": "\n\tAble to walk the paths of both warherd and hidden herd, those who can master the primal magecraft of the beasts act as storytellers, guides, and womb markers, shaping the herds’ destiny. Some advise the chiefs, while others take the mantle of leadership directly. In battle, their wild magics prove that arcane might is not the exclusive domain of sheltered scholars.\n",
         "unit_id": "soothsayer",
@@ -11081,7 +11121,7 @@
       },
       "arcane_engine": {
         "name": "Arcane Engine",
-        "cost": "260",
+        "cost": "250",
         "rarity": "Rare",
         "height": "4",
         "basesize": "50×100",
@@ -11467,7 +11507,7 @@
       },
       "flagellants": {
         "name": "Flagellants",
-        "cost": "150",
+        "cost": "160",
         "rarity": "Uncommon",
         "height": "1",
         "basesize": "20×20",
@@ -11488,7 +11528,7 @@
             "name": "Resistance",
             "id": "resistance",
             "params": [
-              "Melee"
+              "against Str 1-5"
             ]
           },
           {
@@ -11591,12 +11631,8 @@
         },
         "offenserules": [
           {
-            "name": "First Strike",
-            "id": "first_strike",
-            "params": [
-              "+1 Att",
-              "Hatred"
-            ]
+            "name": "Trained Ferocity",
+            "id": "trained_ferocity"
           },
           {
             "name": "Stomp Attack",
@@ -11610,48 +11646,6 @@
         "fluff": "\n\tGriffons left to grow to full size develop wings large enough to fly. They are challenging to master but tremendously powerful assets in battle, kept only by those with the strongest will.\n",
         "unit_id": "great_griffon_mount",
         "option_id": "gsp5krrswosxghxnzsz6jo"
-      },
-      "heavy_infantry": {
-        "name": "Heavy Infantry",
-        "cost": "160",
-        "rarity": "Regular",
-        "height": "1",
-        "basesize": "20×20",
-        "global": {
-          "Ad": "4",
-          "Ma": "4",
-          "Di": "7"
-        },
-        "globalrules": [
-          {
-            "name": "Parent Unit",
-            "id": "parent_unit"
-          }
-        ],
-        "defense": {
-          "HP": "1",
-          "Df": "3",
-          "Re": "3",
-          "Arm": "1"
-        },
-        "defensearmour": [
-          {
-            "name": "Shield",
-            "id": "shield"
-          }
-        ],
-        "offensename": "Heavy Infantry",
-        "offense": {
-          "At": "1",
-          "Of": "3",
-          "St": "3",
-          "AP": "0",
-          "Ag": "3"
-        },
-        "tags": "\n        Human, Light Armour\n    ",
-        "fluff": "\n\tThe backbone of Sonnstahl’s military has always been the serried ranks of infantry that each local authority maintains. Armed and trained in a common manner across the land, even if the names and uniforms of each regiment vary, these professional soldiers are rigorously drilled in discipline and tactics.\n",
-        "unit_id": "heavy_infantry",
-        "option_id": "oap04i73sesyo3pl7ulwh"
       },
       "horse_mount": {
         "name": "Horse",
@@ -11691,6 +11685,7 @@
       },
       "imperial_guard": {
         "name": "Imperial Guard",
+        "optionalprices": "\n\t\tspecialImperial Detachment*151517016,\n\t",
         "cost": "170",
         "rarity": "Common",
         "height": "1",
@@ -11764,6 +11759,14 @@
           {
             "name": "Exclusive",
             "id": "exclusive"
+          },
+          {
+            "name": "Disciplined",
+            "id": "disciplined"
+          },
+          {
+            "name": "Support Unit",
+            "id": "support_unit"
           }
         ],
         "defense": {
@@ -11795,14 +11798,14 @@
             "name": "Bow",
             "id": "bow",
             "params": [
-              "4+"
+              "3+"
             ]
           }
         ],
         "offenserules": [
           {
-            "name": "Beast Hunters",
-            "id": "beast_hunters"
+            "name": "Wilderness Guides",
+            "id": "wilderness_guides"
           }
         ],
         "fluff": "\n\tCommonly deployed on Sonnstahl’s frontiers, rangers monitor the most empty and perilous regions of the Empire. Experts in the many dangers of the wilderness, they’re particularly familiar with monstrous animals. Firing with twice the speed of a typical archer, they know exactly where to place their arrows; those who didn’t have left their bones in the wilds.\n",
@@ -11811,7 +11814,7 @@
       },
       "inquisitor": {
         "name": "Inquisitor",
-        "cost": "70",
+        "cost": "65",
         "rarity": "Common",
         "height": "1",
         "basesize": "20×20",
@@ -11828,36 +11831,47 @@
           {
             "name": "Attached",
             "id": "attached"
+          },
+          {
+            "name": "Exclusive",
+            "id": "exclusive",
+            "params": [
+              "Units without Inquisitor"
+            ]
           }
         ],
         "defense": {
           "HP": "3",
-          "Df": "4",
+          "Df": "5",
           "Re": "4",
           "Arm": "3"
         },
         "offensename": "Inquisitor",
         "offense": {
-          "At": "2",
-          "Of": "4",
+          "At": "3",
+          "Of": "5",
           "St": "4",
           "AP": "1",
-          "Ag": "4"
+          "Ag": "5"
         },
         "offenserules": [
           {
             "name": "Lethal Strike",
             "id": "lethal_strike",
             "params": [
-              "Melee"
+              "Melee & Shooting"
             ]
           },
           {
             "name": "Zeal",
             "id": "zeal",
             "params": [
-              "Melee"
+              "Melee & Shooting"
             ]
+          },
+          {
+            "name": "March and Shoot",
+            "id": "march_and_shoot"
           }
         ],
         "tags": "\n\t\tHuman, Metal Armour\n\t",
@@ -11913,7 +11927,6 @@
         "cost": "175",
         "height": "2",
         "basesize": "25×50",
-        "rarity": "Legendary",
         "addrestriction": "Legendary*",
         "global": {
           "Ad": "8",
@@ -11957,7 +11970,7 @@
       },
       "knights_of_the_sun_griffon": {
         "name": "Knights of the Sun Griffon",
-        "cost": "220",
+        "cost": "200",
         "rarity": "Uncommon",
         "height": "4",
         "basesize": "50×75",
@@ -12027,51 +12040,69 @@
         "unit_id": "knights_of_the_sun_griffon",
         "option_id": "nczj90ehq2u9ri7mzwn6"
       },
-      "light_infantry": {
-        "name": "Light Infantry",
-        "cost": "130",
-        "rarity": "Regular",
+      "state_militia": {
+        "name": "Local Militia",
+        "cost": "180",
+        "rarity": "Common",
         "height": "1",
         "basesize": "20×20",
         "global": {
           "Ad": "4",
           "Ma": "4",
-          "Di": "7"
+          "Di": "6"
         },
         "globalrules": [
           {
-            "name": "Support Unit",
-            "id": "support_unit"
+            "name": "Reserves",
+            "id": "reserves"
+          },
+          {
+            "name": "Light Troops",
+            "id": "light_troops"
+          },
+          {
+            "name": "Unruly",
+            "id": "unruly"
           }
         ],
         "defense": {
           "HP": "1",
-          "Df": "3",
+          "Df": "2",
           "Re": "3",
           "Arm": "0"
         },
-        "offensename": "Light Infantry",
+        "offensename": "Local Militia",
         "offense": {
           "At": "1",
-          "Of": "3",
+          "Of": "2",
           "St": "3",
           "AP": "0",
           "Ag": "3"
         },
-        "offenserules": [
+        "tags": "\n\t\tHuman\n\t",
+        "offenseweapons": [
           {
-            "name": "Fight in Extra Rank",
-            "id": "fight_in_extra_rank"
+            "name": "Paired Weapons",
+            "id": "paired_weapons"
           },
           {
-            "name": "Shoot in Extra Rank",
-            "id": "shoot_in_extra_rank"
+            "name": "Bow",
+            "id": "bow",
+            "params": [
+              "4+"
+            ]
+          },
+          {
+            "name": "Pistol",
+            "id": "pistol",
+            "params": [
+              "4+"
+            ]
           }
         ],
-        "tags": "\n\t\tHuman\n\t",
-        "fluff": "\n\tRanged support is a cornerstone of Sonnstahl’s military method. Powerful crossbows combine a tremendous range with the ability to skewer even the toughest hide. New black powder technology is increasingly available as well, able to punch solid shot through even the best armour.\n",
-        "unit_id": "light_infantry",
-        "option_id": "87d8ysls3d82qtvsvgw6xe"
+        "fluff": "\n\tIn times of need, citizens can be called upon to band together as local militias. Many are former soldiers, others farmers or even city gangs. Armed with a wider range of weapons than conventional soldiers, these conscripts lack vital training, but they can still harry the enemy with unorthodox manoeuvres.\n",
+        "unit_id": "state_militia",
+        "option_id": "4qqcplcft7omchj6sf3zrs"
       },
       "marshal": {
         "name": "Marshal",
@@ -12105,7 +12136,7 @@
           "Ag": "5"
         },
         "tags": "\n\t\tHuman, Metal Armour\n\t",
-        "leadership": "\n\t    ,\n    \t\tCaptain and Attached=free,\n    \t\tExclusive=30,\t\n    \t\tGeneral,{} Orders, and +1 Cou=50,\n    \t\tBattle Standard Bearer and Orders=70,\n    \t\t<span class=\"textbf\">Great Tactician</span> (Battle Standard Bearer only)=60,\n    \t\t<span class=\"textbf\">Imperial Prince</span> (General only)=70,\n\t",
+        "leadership": "\n\t    ,\n    \t\tCaptain and Attached=free,\n    \t\tExclusive=30,\t\n    \t\tGeneral, Orders, and +1 Cou=45,\n    \t\tBattle Standard Bearer and Orders=60,\n    \t\t<span class=\"textbf\">Great Tactician</span> (Battle Standard Bearer only)=50,\n    \t\t<span class=\"textbf\">Imperial Prince</span> (General only)=65,\n\t",
         "fluff": "\n\tImperial Marshals are professional soldiers schooled in the art of war. Some are talented nobles born to lead, others are grizzled veterans from the ranks, but all are gifted in strategy and tactics. The only other qualifications are an unshakable loyalty to Sunna and the Emperor, and the ability to inculcate devotion in their troops.\n",
         "unit_id": "marshal",
         "option_id": "d7ua7pszibc3tyfx3g0xk"
@@ -12165,7 +12196,7 @@
       },
       "prelate": {
         "name": "Prelate",
-        "cost": "150",
+        "cost": "140",
         "height": "1",
         "rarity": "Common",
         "basesize": "20×20",
@@ -12209,7 +12240,7 @@
       "reiters": {
         "name": "Reiters",
         "cost": "180",
-        "rarity": "Uncommon",
+        "rarity": "Common",
         "height": "2",
         "basesize": "25×50",
         "global": {
@@ -12265,69 +12296,42 @@
         "unit_id": "reiters",
         "option_id": "m29783l01ncz5n53znjkfk"
       },
-      "state_militia": {
-        "name": "State Militia",
-        "cost": "180",
-        "rarity": "Common",
+      "state_infantry": {
+        "name": "State Marksmen",
+        "cost": "130",
+        "rarity": "Regular",
         "height": "1",
         "basesize": "20×20",
         "global": {
           "Ad": "4",
           "Ma": "4",
-          "Di": "6"
+          "Di": "7"
         },
         "globalrules": [
           {
-            "name": "Reserves",
-            "id": "reserves"
-          },
-          {
-            "name": "Light Troops",
-            "id": "light_troops"
-          },
-          {
-            "name": "Unruly",
-            "id": "unruly"
+            "name": "Support Unit",
+            "id": "support_unit"
           }
         ],
         "defense": {
           "HP": "1",
-          "Df": "2",
+          "Df": "3",
           "Re": "3",
           "Arm": "0"
         },
-        "offensename": "State Militia",
+        "offensename": "State Marksman",
         "offense": {
           "At": "1",
-          "Of": "2",
+          "Of": "3",
           "St": "3",
           "AP": "0",
           "Ag": "3"
         },
+        "offenserules": [],
         "tags": "\n\t\tHuman\n\t",
-        "offenseweapons": [
-          {
-            "name": "Paired Weapons",
-            "id": "paired_weapons"
-          },
-          {
-            "name": "Bow",
-            "id": "bow",
-            "params": [
-              "4+"
-            ]
-          },
-          {
-            "name": "Pistol",
-            "id": "pistol",
-            "params": [
-              "4+"
-            ]
-          }
-        ],
-        "fluff": "\n\tIn times of need, citizens can be called upon to band together as local militias. Many are former soldiers, others farmers or even city gangs. Armed with a wider range of weapons than conventional soldiers, these conscripts lack vital training, but they can still harry the enemy with unorthodox manoeuvres.\n",
-        "unit_id": "state_militia",
-        "option_id": "4qqcplcft7omchj6sf3zrs"
+        "fluff": "\n\tRanged support is a cornerstone of Sonnstahl’s military method. Powerful crossbows combine a tremendous range with the ability to skewer even the toughest hide. New black powder technology is increasingly available as well, able to punch solid shot through even the best armour.\n",
+        "unit_id": "state_infantry",
+        "option_id": "oap04i73sesyo3pl7ulwh"
       },
       "steam_tank": {
         "name": "Steam Tank",
@@ -12372,6 +12376,13 @@
           {
             "name": "Steam Powered",
             "id": "steam_powered"
+          },
+          {
+            "name": "Rally Around the Flag",
+            "id": "rally_around_the_flag",
+            "params": [
+              "6"
+            ]
           }
         ],
         "defense": {
@@ -12392,7 +12403,8 @@
             "id": "breath_attack",
             "params": [
               "Str 2",
-              "AP 3"
+              "AP 3",
+              "Stand and Shoot"
             ]
           },
           {
@@ -12458,12 +12470,8 @@
         },
         "offenserules": [
           {
-            "name": "First Strike",
-            "id": "first_strike",
-            "params": [
-              "+1 Att",
-              "Hatred"
-            ]
+            "name": "Trained Ferocity",
+            "id": "trained_ferocity"
           },
           {
             "name": "Stomp Attack",
@@ -12560,6 +12568,7 @@
         "name": "Citizen Archers",
         "cost": "200",
         "height": "1",
+        "rarity": "Regular",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -12607,6 +12616,7 @@
         "name": "Citizen Spears",
         "cost": "250",
         "height": "1",
+        "rarity": "Regular",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -12661,6 +12671,7 @@
         "name": "Commander",
         "cost": "80",
         "height": "1",
+        "rarity": "Common",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -12842,6 +12853,7 @@
       "he_elven_horse_mount": {
         "name": "Elven Horse",
         "height": "2",
+        "rarity": "Regular",
         "basesize": "25×50",
         "global": {
           "Ad": "9",
@@ -12878,6 +12890,7 @@
         "name": "Flame Wardens",
         "cost": "240",
         "height": "1",
+        "rarity": "Common",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -13259,6 +13272,7 @@
         "cost": "210",
         "maxpointcost": "600*",
         "height": "1",
+        "rarity": "Common",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -13404,6 +13418,7 @@
         "name": "Knights of Rymâ",
         "cost": "300",
         "height": "2",
+        "rarity": "Common",
         "basesize": "25×50",
         "global": {
           "Ad": "9",
@@ -13631,6 +13646,7 @@
         "name": "Lion Guard",
         "cost": "200",
         "height": "1",
+        "rarity": "Common",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -13712,6 +13728,7 @@
         "cost": "290",
         "maxpointcost": "700",
         "height": "1",
+        "rarity": "Common",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -14052,6 +14069,7 @@
         "name": "Sea Guard",
         "cost": "270",
         "height": "1",
+        "rarity": "Regular",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -14371,6 +14389,7 @@
         "name": "Sword Masters",
         "cost": "200",
         "height": "1",
+        "rarity": "Common",
         "basesize": "20×20",
         "global": {
           "Ad": "5",
@@ -14519,7 +14538,7 @@
       },
       "duke": {
         "name": "Duke",
-        "cost": "120",
+        "cost": "140",
         "rarity": "Uncommon",
         "height": "1",
         "basesize": "20×20",
@@ -14546,6 +14565,10 @@
           {
             "name": "Nobility",
             "id": "nobility"
+          },
+          {
+            "name": "Shield",
+            "id": "shield"
           }
         ],
         "offensename": "Duke",
@@ -14587,10 +14610,6 @@
           {
             "name": "Insignificant",
             "id": "insignificant"
-          },
-          {
-            "name": "Unstable",
-            "id": "unstable"
           }
         ],
         "defense": {
@@ -14769,9 +14788,18 @@
           "Df": "C",
           "Re": "4",
           "Arm": "C+1",
-          "Aeg": "C+1"
+          "Aeg": "C"
         },
-        "defenserules": [],
+        "defenserules": [
+          {
+            "name": "Aegis",
+            "id": "aegis",
+            "params": [
+              "+1",
+              "Max 4+"
+            ]
+          }
+        ],
         "offensename": "Fey Steed",
         "offense": {
           "At": "3",
@@ -14839,7 +14867,7 @@
         },
         "offenserules": [],
         "tags": "Human,Metal Armour",
-        "leadership": "\n    General = 10,\n  ",
+        "leadership": "\n    General = 30,\n  ",
         "endtext": "\n\t\t<span class=\"textbf\">Heroic Traits</span>\n\t\t\t../heroictraitsfolder/bannerman.tex\n\t\t\t../heroictraitsfolder/castellan.tex\n\t\t\t../heroictraitsfolder/cleric.tex\n\t\t\t../heroictraitsfolder/quin.tex\n\t\t\t../heroictraitsfolder/minstrel.tex\n\t\t\n\t",
         "fluff": "\n\tIn the land of heroes, even the lowest born can reach heights of renown and glory. A motley assortment from all walks of life, these brave folk fight with cunning and courage. From the shadowy Quin who serve the Trickster god, to the dour castellans who protect all who live within their estates, any of stout heart can answer the kingdom’s call.\n",
         "unit_id": "folk_hero",
@@ -15129,6 +15157,10 @@
           {
             "name": "Light Troops",
             "id": "light_troops"
+          },
+          {
+            "name": "Stubborn",
+            "id": "stubborn"
           }
         ],
         "defense": {
@@ -15162,7 +15194,7 @@
       },
       "knights_of_the_court": {
         "name": "Knights of the Court",
-        "cost": "315",
+        "cost": "320",
         "rarity": "Uncommon",
         "height": "2",
         "basesize": "25×50",
@@ -15213,10 +15245,9 @@
             "name": "Devastating Charge",
             "id": "devastating_charge",
             "params": [
-              "+1\" Cha",
               "+1 Att",
-              "+1 Agi",
-              "Magical Attacks"
+              "+1Off",
+              "+1 Agi"
             ]
           }
         ],
@@ -15324,7 +15355,7 @@
       },
       "knights_of_the_realm": {
         "name": "Knights of the Realm",
-        "cost": "270",
+        "cost": "250",
         "rarity": "Regular",
         "height": "2",
         "basesize": "25×50",
@@ -15393,7 +15424,7 @@
       },
       "knights_penitent": {
         "name": "Knights Penitent",
-        "cost": "230",
+        "cost": "240",
         "rarity": "Rare",
         "height": "2",
         "basesize": "25×50",
@@ -15414,16 +15445,28 @@
           {
             "name": "Unstable",
             "id": "unstable"
+          },
+          {
+            "name": "First Strike",
+            "id": "first_strike",
+            "params": [
+              "Stubborn"
+            ]
           }
         ],
         "defense": {
           "HP": "2",
           "Df": "4",
           "Re": "4",
-          "Arm": "5",
+          "Arm": "4",
           "Aeg": "6+"
         },
-        "defensearmour": [],
+        "defensearmour": [
+          {
+            "name": "Shield",
+            "id": "shield"
+          }
+        ],
         "defenserules": [
           {
             "name": "Clergy",
@@ -15442,6 +15485,10 @@
           {
             "name": "Lance Formation",
             "id": "lance_formation"
+          },
+          {
+            "name": "Hand-and-a-Half",
+            "id": "handandahalf"
           }
         ],
         "tags": "Human,Metal Armour",
@@ -15469,7 +15516,7 @@
       "lowborn_archers": {
         "name": "Lowborn Archers",
         "secondlogo": "arrows",
-        "cost": "155",
+        "cost": "160",
         "rarity": "Regular",
         "height": "1",
         "basesize": "20×20",
@@ -15482,6 +15529,10 @@
           {
             "name": "Insignificant",
             "id": "insignificant"
+          },
+          {
+            "name": "Braziers",
+            "id": "braziers"
           }
         ],
         "defense": {
@@ -15601,7 +15652,7 @@
       },
       "mounted_serjeants": {
         "name": "Mounted Serjeants",
-        "cost": "240",
+        "cost": "250",
         "rarity": "Uncommon",
         "height": "2",
         "basesize": "25×50",
@@ -15632,6 +15683,10 @@
           {
             "name": "Clergy",
             "id": "clergy"
+          },
+          {
+            "name": "Shield",
+            "id": "shield"
           }
         ],
         "offensename": "Mounted Serjeant",
@@ -15668,7 +15723,7 @@
       },
       "naiads": {
         "name": "Naiads",
-        "cost": "145",
+        "cost": "150",
         "rarity": "Rare",
         "basesize": "25×25",
         "height": "1",
@@ -15745,7 +15800,7 @@
       },
       "paladin": {
         "name": "Paladin",
-        "cost": "125",
+        "cost": "140",
         "rarity": "Rare",
         "height": "1",
         "basesize": "20×20",
@@ -15775,6 +15830,10 @@
               "4+",
               "against Magical Attacks"
             ]
+          },
+          {
+            "name": "Shield",
+            "id": "shield"
           }
         ],
         "offensename": "Paladin",
@@ -16010,7 +16069,7 @@
       },
       "sacred_reliquary": {
         "name": "Sacred Reliquary",
-        "cost": "170",
+        "cost": "180",
         "rarity": "Rare",
         "height": "3",
         "basesize": "40×60",
@@ -16221,8 +16280,8 @@
       },
       "the_ladys_courtier": {
         "name": "The Lady's Courtier",
-        "cost": "410",
-        "rarity": "Legendary",
+        "cost": "400",
+        "rarity": "Extraordinary",
         "height": "4",
         "basesize": "50×50",
         "global": {
@@ -16815,7 +16874,7 @@
         "name": "Mercenary Gunners",
         "cost": "200",
         "maxpointcost": "500",
-        "rarity": "Common",
+        "rarity": "Uncommon",
         "height": "3",
         "basesize": "40×40",
         "global": {
@@ -16867,7 +16926,7 @@
       "mercenary_veterans": {
         "name": "Mercenary Veterans",
         "cost": "180",
-        "rarity": "Common",
+        "rarity": "Uncommon",
         "height": "3",
         "basesize": "40×40",
         "global": {
@@ -16919,8 +16978,7 @@
       "rock_aurochs": {
         "name": "Rock Aurochs",
         "cost": "460",
-        "rarity": "Rare",
-        "addrestriction": "Max. 2 units/army*",
+        "rarity": "Rare*",
         "height": "5",
         "basesize": "100×150",
         "global": {
@@ -17455,6 +17513,11 @@
         },
         "globalrules": [
           {
+            "name": "Giant See, Giant Do",
+            "id": "ok-giant_see_giant_do",
+            "params": []
+          },
+          {
             "name": "Light Troops",
             "id": "light_troops"
           },
@@ -17465,14 +17528,6 @@
           {
             "name": "Exclusive",
             "id": "exclusive"
-          },
-          {
-            "name": "Giant See",
-            "id": "giant_see"
-          },
-          {
-            "name": "Giant Do",
-            "id": "giant_do"
           }
         ],
         "defense": {
@@ -18780,7 +18835,7 @@
       "saurian_raptor_mount": {
         "name": "Saurian Raptor",
         "height": "2",
-        "rarity": "Common",
+        "rarity": "Regular",
         "basesize": "25×50",
         "global": {
           "Ad": "7",
@@ -19553,7 +19608,6 @@
           }
         ],
         "wizardconclave": "\n\t\tThe unit selects its spells from the following:\n\t",
-        "toggles": "\n\t\tonecolprintoptionalmodelrulesdeftwocolprintoptionalmodelrulesdef\n\t",
         "fluff": "\n    The Collaboration enclave on the island of Patarang is known for its jade palaces and experimental meditative techniques, practised by monastic (though non-religious) saurians. These eldritch spiritualists have developed a unique form of elegant, unhurried martial arts that incorporates simple spellcasting – arts that have spread somewhat through the wider Collaboration.\n",
         "unit_id": "tegu_mystics",
         "option_id": "uuvcriml86f9gc2guwzc"
@@ -20503,57 +20557,6 @@
         "unit_id": "dryads",
         "option_id": "meiram78yonwo1vgus4fh"
       },
-      "eagle_king_mount": {
-        "name": "Eagle King",
-        "height": "3",
-        "rarity": "Common",
-        "basesize": "50×50",
-        "global": {
-          "Ad": "9",
-          "Ma": "9",
-          "Di": "C"
-        },
-        "globalrules": [
-          {
-            "name": "Fly",
-            "id": "fly"
-          },
-          {
-            "name": "Hard Target",
-            "id": "hard_target",
-            "params": [
-              "1"
-            ]
-          },
-          {
-            "name": "Light Troops",
-            "id": "light_troops"
-          },
-          {
-            "name": "Swiftstride",
-            "id": "swiftstride"
-          }
-        ],
-        "defense": {
-          "HP": "4",
-          "Df": "C",
-          "Re": "4",
-          "Arm": "C+1"
-        },
-        "offensename": "Eagle King",
-        "offense": {
-          "At": "3",
-          "Of": "5",
-          "St": "5",
-          "AP": "1",
-          "Ag": "4"
-        },
-        "tags": "\n\t\tBeast,\n\t\tMount,\n\t",
-        "offenserules": [],
-        "fluff": "\n\tMajestic creatures, bigger still than any giant kestrel, the royal eagles are truly the finest of avian species. Their friendship does not come lightly, but once given, it’s never rescinded.\n",
-        "unit_id": "eagle_king_mount",
-        "option_id": "ibwu71n1xbbfkjq9eoxn36"
-      },
       "se_elven_horse_mount": {
         "name": "Elven Horse",
         "height": "2",
@@ -20593,6 +20596,57 @@
         "fluff": "\n\tFast, nimble and reliable, the steeds favoured by the Sylvan elves are uniquely capable of navigating forest terrain.\n",
         "unit_id": "se_elven_horse_mount",
         "option_id": "9o11vmurvnwiw3bgueu4zb"
+      },
+      "eagle_king_mount": {
+        "name": "Forest Eagle",
+        "height": "3",
+        "rarity": "Common",
+        "basesize": "50×50",
+        "global": {
+          "Ad": "9",
+          "Ma": "9",
+          "Di": "C"
+        },
+        "globalrules": [
+          {
+            "name": "Fly",
+            "id": "fly"
+          },
+          {
+            "name": "Hard Target",
+            "id": "hard_target",
+            "params": [
+              "1"
+            ]
+          },
+          {
+            "name": "Light Troops",
+            "id": "light_troops"
+          },
+          {
+            "name": "Swiftstride",
+            "id": "swiftstride"
+          }
+        ],
+        "defense": {
+          "HP": "4",
+          "Df": "C",
+          "Re": "4",
+          "Arm": "C+1"
+        },
+        "offensename": "Forest Eagle",
+        "offense": {
+          "At": "3",
+          "Of": "5",
+          "St": "5",
+          "AP": "1",
+          "Ag": "4"
+        },
+        "tags": "\n\t\tBeast,\n\t\tMount,\n\t",
+        "offenserules": [],
+        "fluff": "\n\tMajestic creatures, bigger still than any giant kestrel, the royal eagles are truly the finest of avian species. Their friendship does not come lightly, but once given, it’s never rescinded.\n",
+        "unit_id": "eagle_king_mount",
+        "option_id": "ibwu71n1xbbfkjq9eoxn36"
       },
       "forest_eagles": {
         "name": "Forest Eagles",
@@ -21013,12 +21067,11 @@
         },
         "offenserules": [
           {
-            "name": "Devastating Charge(+1 Att",
-            "id": "devastating_charge1_att"
-          },
-          {
-            "name": ")",
-            "id": ""
+            "name": "Devastating Charge",
+            "id": "devastating_charge",
+            "params": [
+              "+1 Att"
+            ]
           }
         ],
         "offenseweapons": [],
@@ -21783,12 +21836,11 @@
         },
         "offenserules": [
           {
-            "name": "Devastating Charge(+1 Att",
-            "id": "devastating_charge1_att"
-          },
-          {
-            "name": ")",
-            "id": ""
+            "name": "Devastating Charge",
+            "id": "devastating_charge",
+            "params": [
+              "+1 Att"
+            ]
           },
           {
             "name": "Fury",
@@ -21828,7 +21880,7 @@
     "vc": {
       "altar_of_undeath": {
         "name": "Altar of Undeath",
-        "cost": "320",
+        "cost": "300",
         "rarity": "Rare",
         "height": "4",
         "basesize": "50×100",
@@ -21839,6 +21891,10 @@
           "Rsr": "1"
         },
         "globalrules": [
+          {
+            "name": "Horror",
+            "id": "horror"
+          },
           {
             "name": "Autonomous",
             "id": "autonomous"
@@ -21897,14 +21953,22 @@
         ],
         "offensename": "Dark Conductor",
         "offense": {
-          "At": "1",
+          "At": "2",
           "Of": "3",
-          "St": "3",
-          "AP": "0",
-          "Ag": "3"
+          "St": "4",
+          "AP": "4",
+          "Ag": "2"
         },
         "tags": "\n\t\tHuman\n\t",
         "offenserules": [
+          {
+            "name": "First Strike",
+            "id": "first_strike",
+            "params": [
+              "+1 Str",
+              "+1 AP"
+            ]
+          },
           {
             "name": "Aura of Undeath",
             "id": "aura_of_undeath"
@@ -22003,22 +22067,12 @@
         "offense": {
           "At": "1",
           "Of": "3",
-          "St": "3",
-          "AP": "0",
+          "St": "4",
+          "AP": "4",
           "Ag": "3"
         },
         "tags": "\n\t\tSpirit\n\t",
         "offenserules": [
-          {
-            "name": "Sweeping Attack",
-            "id": "sweeping_attack",
-            "params": [
-              "1",
-              "Str 5",
-              "AP 10",
-              "Magical Attacks"
-            ]
-          },
           {
             "name": "Wail of Woe",
             "id": "wail_of_woe"
@@ -22041,7 +22095,7 @@
       },
       "barrow_guard": {
         "name": "Barrow Guard",
-        "cost": "155",
+        "cost": "150",
         "height": "1",
         "rarity": "Common",
         "basesize": "20×20",
@@ -22422,6 +22476,14 @@
         },
         "globalrules": [
           {
+            "name": "Awaken",
+            "id": "awaken",
+            "params": [
+              "Skeletons",
+              "Zombies"
+            ]
+          },
+          {
             "name": "WarPlatform",
             "id": "warplatform"
           },
@@ -22523,6 +22585,14 @@
         },
         "globalrules": [
           {
+            "name": "Awaken",
+            "id": "awaken",
+            "params": [
+              "Skeletons",
+              "Zombies"
+            ]
+          },
+          {
             "name": "WarPlatform",
             "id": "warplatform"
           },
@@ -22586,7 +22656,7 @@
         "name": "Colossal Zombie Dragon",
         "height": "5",
         "basesize": "100×150",
-        "rarity": "Extraordinary",
+        "rarity": "Extraordinary*",
         "global": {
           "Ad": "7",
           "Ma": "7",
@@ -22661,8 +22731,8 @@
       },
       "court_of_the_damned": {
         "name": "Court of the Damned",
-        "cost": "320",
-        "rarity": "Rare",
+        "cost": "300",
+        "rarity": "Rare*",
         "height": "4",
         "basesize": "60×100",
         "global": {
@@ -22672,6 +22742,14 @@
           "Rsr": "1"
         },
         "globalrules": [
+          {
+            "name": "Horror",
+            "id": "horror"
+          },
+          {
+            "name": "Attached",
+            "id": "attached"
+          },
           {
             "name": "Autonomous",
             "id": "autonomous"
@@ -22787,8 +22865,16 @@
           "Ma": "4",
           "Di": "C"
         },
-        "rarity": "Rare",
+        "rarity": "Rare*",
         "globalrules": [
+          {
+            "name": "Horror",
+            "id": "horror"
+          },
+          {
+            "name": "Attached",
+            "id": "attached"
+          },
           {
             "name": "Autonomous",
             "id": "autonomous"
@@ -22885,6 +22971,10 @@
           "Rsr": "1"
         },
         "globalrules": [
+          {
+            "name": "Horror",
+            "id": "horror"
+          },
           {
             "name": "Autonomous",
             "id": "autonomous"
@@ -22987,7 +23077,7 @@
       },
       "dire_wolves": {
         "name": "Dire Wolves",
-        "cost": "190",
+        "cost": "180",
         "rarity": "Common",
         "height": "1",
         "basesize": "25×50",
@@ -23137,7 +23227,7 @@
       },
       "ghouls": {
         "name": "Ghouls",
-        "cost": "185",
+        "cost": "180",
         "rarity": "Regular",
         "height": "1",
         "basesize": "20×20",
@@ -23192,6 +23282,13 @@
           {
             "name": "Unholy Appetite",
             "id": "unholy_appetite"
+          },
+          {
+            "name": "Extra Support",
+            "id": "extra_support",
+            "params": [
+              "2"
+            ]
           }
         ],
         "fluff": "\n    Reanimated corpses that hunger for the flesh of the living, these nightmarish creatures are empowered by the souls of vicious predators. This makes them faster and more ravenous than most undead, and their frenzied assaults are often enhanced by the natural graveyard toxins found in their rotting mouths – the ghoul’s weapon of choice.\n",
@@ -23406,7 +23503,7 @@
       },
       "phantom_hosts": {
         "name": "Phantom Hosts",
-        "cost": "250",
+        "cost": "220",
         "rarity": "Rare",
         "height": "1",
         "basesize": "40×40",
@@ -23417,6 +23514,10 @@
           "Rsr": "1"
         },
         "globalrules": [
+          {
+            "name": "Horror",
+            "id": "horror"
+          },
           {
             "name": "Undead",
             "id": "undead"
@@ -23503,7 +23604,7 @@
         "name": "Shrieking Horror",
         "height": "5",
         "basesize": "100×150",
-        "cost": "440",
+        "cost": "420",
         "rarity": "Rare*",
         "global": {
           "Ad": "8",
@@ -23583,6 +23684,10 @@
             "id": "chilling_shriek"
           },
           {
+            "name": "Chilling Howl",
+            "id": "chilling_howl"
+          },
+          {
             "name": "Stomp Attack",
             "id": "stomp_attack",
             "params": [
@@ -23590,6 +23695,7 @@
             ]
           }
         ],
+        "shootingweaponsdef": "Chilling Howl<i> - Shooting Weapon</i><br/><br/><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Chilling Howl</td><td>--</td><td>8\"</td><td>*</td><td>9</td><td>10</td><td>March and Shoot, Magical Attacks, Hits Automatically,Chilling Howl</td></tr></table><br>\n<br>\n",
         "fluff": "\n    Bat-like creatures of draconic proportions, these monsters dwell in remote and uninhabited lands, but their corpses are sought by vampires as the mightiest of war mounts and the highest symbols of the Covenant. Some say they’re reanimated with the souls of banshees, others that they possess enhanced versions of bats’ natural screeching. In either case, their cry is horrifically lethal.\n",
         "unit_id": "shrieking_horror",
         "option_id": "sv9d95il8kbbo22v6b5vdn"
@@ -23654,6 +23760,10 @@
           {
             "name": "Chilling Shriek",
             "id": "chilling_shriek"
+          },
+          {
+            "name": "Chilling Howl",
+            "id": "chilling_howl"
           }
         ],
         "unit_id": "shrieking_horror_mount",
@@ -23760,7 +23870,7 @@
       },
       "spectral_hunters": {
         "name": "Spectral Hunters",
-        "cost": "175",
+        "cost": "165",
         "rarity": "Rare",
         "height": "2",
         "basesize": "25×50",
@@ -23827,18 +23937,21 @@
         "offense": {
           "At": "2",
           "Of": "3",
-          "St": "3",
-          "AP": "10",
+          "St": "4",
+          "AP": "4",
           "Ag": "2"
         },
         "tags": "\n\t\tSpirit\n\t",
-        "offenseweapons": [
-          {
-            "name": "Great Weapon",
-            "id": "great_weapon"
-          }
-        ],
+        "offenseweapons": [],
         "offenserules": [
+          {
+            "name": "First Strike",
+            "id": "first_strike",
+            "params": [
+              "+1 Str",
+              "+1 AP"
+            ]
+          },
           {
             "name": "Flaming Attacks",
             "id": "flaming_attacks"
@@ -23983,7 +24096,7 @@
             ]
           }
         ],
-        "leadership": "\n\t\tGeneral,{} Disciplined, and The Dead Arise=35,\n\t",
+        "leadership": "\n\t\tGeneral,Disciplined, and The Dead Arise=35,\n\t",
         "paths": "Evocation=evocation,Occultism=occultism",
         "fluff": "\n    A dark mirror of human nobility, “Count” is the best known among the highest ranks of the Covenant. Having conquered death itself, these ancient vampires seek mastery over the living and the dead. In addition to their already formidable abilities, many have amassed significant temporal power over mortal realms, hiding in plain sight to further their goals.\n",
         "unit_id": "vampire_count",
@@ -24210,7 +24323,7 @@
           "Of": "4",
           "St": "5",
           "AP": "2",
-          "Ag": "4"
+          "Ag": "5"
         },
         "tags": "\n\t\tVampire\n\t",
         "offenserules": [
@@ -24234,7 +24347,7 @@
         "name": "Varkolak",
         "height": "4",
         "basesize": "50×50",
-        "cost": "300",
+        "cost": "340",
         "rarity": "Uncommon",
         "global": {
           "Ad": "8",
@@ -24327,7 +24440,7 @@
         "name": "Winged Reapers",
         "height": "4",
         "basesize": "50×75",
-        "cost": "240",
+        "cost": "280",
         "rarity": "Rare",
         "global": {
           "Ad": "6",
@@ -24353,19 +24466,15 @@
             "id": "fearless"
           },
           {
-            "name": "Necromantic Aura",
-            "id": "necromantic_aura"
-          },
-          {
             "name": "Swiftstride",
             "id": "swiftstride"
           }
         ],
         "defense": {
-          "HP": "3",
+          "HP": "4",
           "Df": "5",
           "Re": "5",
-          "Arm": "3"
+          "Arm": "4"
         },
         "offensename": "Winged Reaper",
         "offense": {
@@ -24395,7 +24504,7 @@
       },
       "wraiths": {
         "name": "Wraiths",
-        "cost": "190",
+        "cost": "150",
         "rarity": "Rare",
         "height": "1",
         "basesize": "20×20",
@@ -24462,26 +24571,19 @@
         "offense": {
           "At": "2",
           "Of": "3",
-          "St": "3",
-          "AP": "10",
+          "St": "4",
+          "AP": "4",
           "Ag": "2"
         },
         "tags": "\n\t\tSpirit\n\t",
-        "offenseweapons": [
-          {
-            "name": "Great Weapon",
-            "id": "great_weapon"
-          }
-        ],
+        "offenseweapons": [],
         "offenserules": [
           {
-            "name": "Sweeping Attack",
-            "id": "sweeping_attack",
+            "name": "First Strike",
+            "id": "first_strike",
             "params": [
-              "1",
-              "Str 5",
-              "AP 10",
-              "Magical Attacks"
+              "+1 Str",
+              "+1 AP"
             ]
           },
           {
@@ -24498,7 +24600,7 @@
         "name": "Zombie Dragon",
         "height": "5",
         "basesize": "50×100",
-        "rarity": "Extraordinary",
+        "rarity": "Extraordinary*",
         "global": {
           "Ad": "7",
           "Ma": "7",
@@ -24683,11 +24785,15 @@
         "height": "4",
         "basesize": "60×100",
         "global": {
-          "Ad": "4",
+          "Ad": "0",
           "Ma": "4",
           "Di": "C"
         },
         "globalrules": [
+          {
+            "name": "WarPlatform",
+            "id": "warplatform"
+          },
           {
             "name": "Light Troops",
             "id": "light_troops"
@@ -24698,7 +24804,10 @@
           },
           {
             "name": "Exclusive",
-            "id": "exclusive"
+            "id": "exclusive",
+            "params": [
+              "Height 1"
+            ]
           }
         ],
         "defense": {
@@ -24736,12 +24845,12 @@
         ],
         "offenserules": [
           {
-            "name": "Aspen Arrows",
-            "id": "aspen_arrows"
+            "name": "Aspis Arrows",
+            "id": "aspis_arrows"
           },
           {
-            "name": "Poison Attacks",
-            "id": "poison_attacks"
+            "name": "Lethal Strike",
+            "id": "lethal_strike"
           }
         ],
         "offensenameB": "Bound Spirits",
@@ -24780,7 +24889,7 @@
       },
       "battle_sphinx": {
         "name": "Battle Sphinx",
-        "cost": "420",
+        "cost": "440",
         "rarity": "Uncommon",
         "height": "5",
         "basesize": "50×100",
@@ -24828,9 +24937,9 @@
           "HP": "6",
           "Df": "4",
           "Re": "8",
-          "Arm": "3"
+          "Arm": "4"
         },
-        "offensename": "Rider (4)",
+        "offensename": "Rider (5)",
         "offense": {
           "At": "1",
           "Of": "3",
@@ -24841,8 +24950,8 @@
         "tags": "\n\t\tSkeleton\n\t",
         "offenserules": [
           {
-            "name": "Poison Attacks",
-            "id": "poison_attacks"
+            "name": "Lethal Strike",
+            "id": "lethal_strike"
           }
         ],
         "offenseweapons": [
@@ -24866,18 +24975,11 @@
             "id": "poison_attacks"
           },
           {
-            "name": "Breath Attack",
-            "id": "breath_attack",
-            "params": [
-              "Str 4",
-              "AP 1"
-            ]
-          },
-          {
             "name": "Stomp Attack",
             "id": "stomp_attack",
             "params": [
-              "D6"
+              "D6",
+              "Maximised"
             ]
           }
         ],
@@ -24888,9 +24990,9 @@
       },
       "casket_of_phatep": {
         "name": "Casket of Phatep",
-        "cost": "180",
+        "cost": "230",
         "rarity": "Rare",
-        "height": "1",
+        "height": "2",
         "basesize": "75×75",
         "global": {
           "Ad": "0",
@@ -24916,23 +25018,19 @@
             "id": "emplacement"
           },
           {
-            "name": "Channel",
-            "id": "channel",
-            "params": [
-              "1"
-            ]
-          },
-          {
-            "name": "Divine Light",
-            "id": "divine_light"
-          },
-          {
-            "name": "Phatep's Curse",
-            "id": "phateps_curse"
+            "name": "Curse of Phatep",
+            "id": "curse_of_phatep"
           },
           {
             "name": "Fearless",
             "id": "fearless"
+          },
+          {
+            "name": "Wizard Conclave",
+            "id": "wizard_conclave",
+            "params": [
+              "2"
+            ]
           }
         ],
         "defense": {
@@ -24967,18 +25065,19 @@
         ],
         "offenserules": [
           {
-            "name": "Poison Attacks",
-            "id": "poison_attacks"
+            "name": "Lethal Strike",
+            "id": "lethal_strike"
           }
         ],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=5,\n\t\tTerracotta Army=5\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=5,\n\t\tTerracotta Army=10\n\t",
+        "wizardconclave": "\n\tThe unit selects its spells from the following:\n",
         "fluff": "\n    Betrayed by the Great Jackal Setesh, the last High King’s dismembered body was interred in arcane devices that preserved his godly powers. These rare, heavily guarded and powerful artefacts, and others modelled on their design, are said to drain enemy mages, and unleash torrents of divine, face-melting magic that assail their victims’ very souls.\n",
         "unit_id": "casket_of_phatep",
         "option_id": "t1e4mrj2z5m1f5qg65d1zk"
       },
       "charnel_catapult": {
         "name": "Charnel Catapult",
-        "cost": "190",
+        "cost": "210",
         "rarity": "Rare",
         "height": "2",
         "basesize": "75×75",
@@ -25026,7 +25125,7 @@
         },
         "tags": "\n\t\tSkeleton, Construct\n\t",
         "offenserules": [],
-        "shootingweaponsdef": "\n\t\tCharnel Catapult<i> - </i><br/><br/><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Charnel Catapult</td><td>4</td><td>48\"</td><td>1</td><td>4</td><td>1</td><td>Artillery, Area Attack(3×3), Flaming Attacks, Magical Attacks, Panic Tests caused by this weapon are taken at -1 Cou.</td></tr></table><br>\n<br>\n\n\t",
+        "shootingweaponsdef": "\n\t\tCharnel Catapult<i> - Shooting Weapon</i><br/><br/><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Charnel Catapult</td><td>4</td><td>48\"</td><td>1</td><td>7</td><td>3</td><td>Artillery, Area Attack(2×2), Multiple Wounds(2),, </td></tr></table> <br>If this weapon causes any unsaved wounds, the target must immediately take a Panic Test. <br>\n<br>\n\n\t",
         "offenseweapons": [
           {
             "name": "Charnel Catapult",
@@ -25036,20 +25135,20 @@
             ]
           }
         ],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=5,\n\t\tTerracotta Army=free\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=5,\n\t\tTerracotta Army=10\n\t",
         "fluff": "\n    With their massive frames and flexible arms, the catapults of old were devastating weapons that could turn the tides of ancient battles. Now, in addition to huge rocks, these magically-preserved machines can fling enchanted volleys of burning flesh and bones at the enemy, combining destruction and terror.\n",
         "unit_id": "charnel_catapult",
         "option_id": "tqosmce5zm2vjxvqe6bnd"
       },
       "colossus": {
         "name": "Colossus",
-        "cost": "380",
+        "cost": "400",
         "rarity": "Rare",
         "height": "5",
         "basesize": "50×50",
         "global": {
-          "Ad": "6",
-          "Ma": "6",
+          "Ad": "7",
+          "Ma": "7",
           "Di": "8",
           "Rsr": "1"
         },
@@ -25115,8 +25214,8 @@
             ]
           }
         ],
-        "shootingweaponsdef": "\n\t\tGiant Aspen Bow<i> - </i><br/><br/><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Giant Aspen Bow</td><td>5</td><td>48\"</td><td>1</td><td>3</td><td>10</td><td>Area Attack(1×5), Direct Hit(Str 6, Multiple Wounds(D3)),Aspen Arrows</td></tr></table><br>\n<br>\n\n\t",
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tTerracotta Army=free\n\t",
+        "shootingweaponsdef": "\n\t\tGiant Aspis Bow<i> - Shooting Weapon</i><br/><br/><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Giant Aspis Bow</td><td>4</td><td>48\"</td><td>1</td><td>3</td><td>10</td><td>Area Attack(1×5), Direct Hit(Str 6, Multiple Wounds(D3)),Aspis Arrows</td></tr></table><br>\n<br>\n\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tTerracotta Army=free,\n\t\tBarrow Legion=free\n\t",
         "toggles": "\n\t\tonecolprintshootingweaponsdef\n\t\ttwocolprintshootingweaponsdef\n\t",
         "fluff": "\n    Originally constructed (and sometimes still used) as labourers, the Colossi of Naptesh now primarily stand guard over what they helped to build. They are the pharaohs’ hands, a shield against the storms of war. Eerily still for centuries, these titans can shake the earth once roused, and have been armed with devastating magical weaponry.\n",
         "unit_id": "colossus",
@@ -25124,7 +25223,7 @@
       },
       "death_cult_hierarch": {
         "name": "Death Cult Hierarch",
-        "cost": "250",
+        "cost": "270",
         "rarity": "Common",
         "height": "1",
         "basesize": "20×20",
@@ -25146,6 +25245,10 @@
           {
             "name": "Fearless",
             "id": "fearless"
+          },
+          {
+            "name": "Death is Only the Beginning",
+            "id": "death_is_only_the_beginning"
           }
         ],
         "defense": {
@@ -25165,14 +25268,14 @@
         "tags": "\n\t\tSkeleton\n\t",
         "leadership": "\n\t\tGeneral=free\n\t\t",
         "paths": "Cosmology=cosmology,Divination=divination,Evocation=evocation",
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=5,\n\t\tTerracotta Army=5\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=5,\n\t\tTerracotta Army=10\n\t",
         "fluff": "\n    Masters of ancient magic, these sorcerers were – and are – priests of Hanu, Napteshi God of Embalming. It was their ability to raise the fallen that saved Naptesh in the civil war. Even today, they alone allow the kingdom’s armies to march to battle. To stand before a hierarch of the Death Cult is to witness the true depths of Naptesh’s Curse.\n",
         "unit_id": "death_cult_hierarch",
         "option_id": "toed1syddasr9foa5t2rzzr5bgo"
       },
       "dread_sphinx": {
         "name": "Dread Sphinx",
-        "cost": "420",
+        "cost": "400",
         "rarity": "Rare",
         "height": "5",
         "basesize": "50×100",
@@ -25402,19 +25505,23 @@
         "tags": "\n\t\tSkeleton, Light Armour\n\t",
         "offenserules": [
           {
-            "name": "Poison Attacks",
-            "id": "poison_attacks"
+            "name": "Lethal Strike",
+            "id": "lethal_strike"
+          },
+          {
+            "name": "Dying Blow",
+            "id": "dying_blow"
           }
         ],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\tTerracotta Army=1/model,\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\tTerracotta Army=5/model,\n\t",
         "fluff": "\n    Chosen from the kingdom’s most proven warriors, these guardians are responsible for the ultimate defence of Naptesh’s holy tombs and buried cities. Versatile combatants capable of multiple forms of armed combat, they escort their rulers to war, ready to repel any threat to their eternal lords.\n",
         "unit_id": "necropolis_guard",
         "option_id": "l47b0gr7ouopp2tc8ckuve"
       },
       "nomarch": {
         "name": "Nomarch",
-        "cost": "70",
-        "rarity": "Common",
+        "cost": "50",
+        "rarity": "Regular",
         "height": "1",
         "basesize": "20×20",
         "global": {
@@ -25463,12 +25570,12 @@
         "tags": "\n\t\tSkeleton, Light Armour\n\t",
         "offenserules": [
           {
-            "name": "Aspen Arrows",
-            "id": "aspen_arrows"
+            "name": "Aspis Arrows",
+            "id": "aspis_arrows"
           }
         ],
         "leadership": "\n\t\t,\n\t\t\tGeneral=20,\n\t\t\tBattle Standard Bearer*=70,\n\t\t\tExclusive=20,\n\t\t\tCaptain and Attached=free,\n\t\t\t=,\n\t\t*Deathless Noble and Tomb Harbinger only=,\n\t",
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=15,\n\t\tTerracotta Army=5\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=15,\n\t\tTerracotta Army=20\n\t",
         "fluff": "\n    Royal courtiers were also revered by their people as lords, warriors and trusted advisors to the monarch. Bannermen serving as incarnate symbols of the enemy's certain demise; revered craftspeople ensuring the kingdom's monuments last the ages; or mighty mummified nobles – whatever their role, they remain merciless defenders of their lands, and their actions on the battlefield represent the will of the Pharaoh.\n",
         "unit_id": "nomarch",
         "option_id": "ffvhcuft1dhldllm36bjcr"
@@ -25533,7 +25640,7 @@
         "tags": "\n\t\tSkeleton, Light Armour\n\t",
         "offenserules": [],
         "leadership": "\n\t\tGeneral=free,\n\t",
-        "armyorganisationoptions": "\n\t\tOne choice only:,\n\t\t\t<span class=\"textbf\">Commander of the Terracotta Army</span>=5,\n\t\t\t<span class=\"textbf\">Lord of the Barrow Legion</span>=15,\n\t",
+        "armyorganisationoptions": "\n\t\tOne choice only:,\n\t\t\t<span class=\"textbf\">Commander of the Terracotta Army</span>=25,\n\t\t\t<span class=\"textbf\">Lord of the Barrow Legion</span>=15,\n\t",
         "fluff": "\n    The rulers of the desert sands are revered as demigods by their subjects. In life, their power was absolute, commanding legions of loyal followers. In unlife, it has only grown, becoming a remorseless, everlasting authority over the desert itself. Divine, skeletal avatars clad in ancient finery, they have faced countless foes and yet still they rule supreme.\n",
         "toggles": "\n\t\ttwocolprintoptionalmodelrulesdef\n\t\tonecolprintoptionalmodelrulesdef\n\t",
         "unit_id": "pharaoh",
@@ -25541,7 +25648,7 @@
       },
       "sand_scorpion": {
         "name": "Sand Scorpion",
-        "cost": "150",
+        "cost": "140",
         "rarity": "Uncommon",
         "height": "3",
         "basesize": "50×50",
@@ -25609,14 +25716,14 @@
             "id": "lethal_strike"
           }
         ],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=free,\n\t\tTerracotta Army=free\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion and loses Ambush=free,\n\t\tTerracotta Army and loses Ambush=free\n\t",
         "fluff": "\n    This fearsome sentinel of the necropolis represents the deadliness of the desert itself. A carved imitation of Naptesh’s giant scorpions, it emerges from the dunes to strike its prey with enormous, bone-crushing claws and a lethal stinger, containing venom that can kill in minutes.\n",
         "unit_id": "sand_scorpion",
         "option_id": "2aa3hbjor8h70futfibykk"
       },
       "sand_stalkers": {
         "name": "Sand Stalkers",
-        "cost": "280",
+        "cost": "260",
         "rarity": "Uncommon",
         "height": "3",
         "basesize": "50×100",
@@ -25660,10 +25767,10 @@
         },
         "offensename": "Sand Stalker",
         "offense": {
-          "At": "2",
+          "At": "3",
           "Of": "3",
-          "St": "4",
-          "AP": "1",
+          "St": "5",
+          "AP": "2",
           "Ag": "3"
         },
         "tags": "\n\t\tStatue, Beast\n\t",
@@ -25673,20 +25780,16 @@
             "id": "petrifying_gaze"
           }
         ],
-        "offenseweapons": [
-          {
-            "name": "Halberd",
-            "id": "halberd"
-          }
-        ],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion and loses <span class=\"textbf\">Ambush</span>=free,\n\t\tTerracotta Army=free\n\t",
+        "offenseweapons": [],
+        "shootingweaponsdef": "\n\t\tPetrifying Gaze<i> - Shooting Weapon</i><br/><br/><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Petrifying Gaze</td><td>0*</td><td>12\"</td><td>2</td><td>-*</td><td>10</td><td>Stand and Shoot<br>*\tThis attack hits automatically, and its to-wound rolls are set to 5+.</td></tr></table><br>\n<br>\n\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion and loses <span class=\"textbf\">Ambush</span>=free,\n\t\tTerracotta Army and loses Ambush=free\n\t",
         "fluff": "\n    These statues were long ago fitted with gemstone eyes ensorcelled to provide a connection to the Thewat afterlife. Following the Curse that cut Naptesh off from that realm, these portals now show nothing but void, turning all before them to lifeless rock. Animated by the dynasty, they stalk the dead kingdom, usually with serpentine forms that can burrow under the sands.\n",
         "unit_id": "sand_stalkers",
         "option_id": "t89csg6ayxdq8ese1t1uf"
       },
       "scarab_swarms": {
         "name": "Scarab Swarms",
-        "cost": "200",
+        "cost": "180",
         "rarity": "Uncommon",
         "height": "0",
         "basesize": "40×40",
@@ -25733,7 +25836,7 @@
             "name": "Afflict",
             "id": "afflict",
             "params": [
-              "-1 Def"
+              "-1 Agi"
             ]
           }
         ],
@@ -25774,15 +25877,15 @@
             "id": "poison_attacks"
           }
         ],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion and <span class=\"textbf\">Ghastly Swarm</span>*=30/model,\n\t\t=,\n\t\t*Cannot be taken with <span class=\"textbf\">Ambush</span>. 4, and 7.=\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion and <span class=\"textbf\">Ghastly Swarm</span>*=30/model,\n\t\t=,\n\t\t*Cannot be taken with <span class=\"textbf\">Ambush</span>. 4, and Rarity:  Rare.=\n\t",
         "fluff": "\n    A lone, docile scarab is a jewel among beetles, and a holy symbol in Naptesh. But in an undead, hungry swarm, these flesh-eating insects can attack from any hidden crevice, overwhelming and devouring victims in minutes thanks to their razor sharp mandibles and acidic secretions.\n",
         "unit_id": "scarab_swarms",
         "option_id": "75nw1g3lb0dceqae8m9kp"
       },
       "shabti_archers": {
         "name": "Shabti Archers",
-        "cost": "170",
-        "rarity": "Uncommon",
+        "cost": "180",
+        "rarity": "Rare",
         "height": "3",
         "basesize": "40×40",
         "global": {
@@ -25822,15 +25925,15 @@
           "Of": "4",
           "St": "5",
           "AP": "2",
-          "Ag": "3"
+          "Ag": "2"
         },
         "tags": "\n\t\tStatue\n\t",
         "offenseweapons": [
           {
-            "name": "Great Aspen Bow",
-            "id": "great_aspen_bow",
+            "name": "Great Aspis Bow",
+            "id": "great_aspis_bow",
             "params": [
-              "5+"
+              "4+"
             ]
           }
         ],
@@ -25841,8 +25944,8 @@
       },
       "shabtis": {
         "name": "Shabtis",
-        "cost": "170",
-        "rarity": "",
+        "cost": "190",
+        "rarity": "Uncommon",
         "height": "3",
         "basesize": "40×40",
         "global": {
@@ -25882,7 +25985,7 @@
           "Of": "4",
           "St": "5",
           "AP": "2",
-          "Ag": "3"
+          "Ag": "2"
         },
         "tags": "\n\t\tStatue\n\t",
         "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=free,\n\t\tTerracotta Army=free\n\t",
@@ -25919,9 +26022,9 @@
           }
         ],
         "defense": {
-          "HP": "7",
-          "Df": "5",
-          "Re": "7",
+          "HP": "6",
+          "Df": "4",
+          "Re": "8",
           "Arm": "4"
         },
         "defenserules": [
@@ -25932,11 +26035,11 @@
         ],
         "offensename": "Sha Guardian",
         "offense": {
-          "At": "4",
+          "At": "5",
           "Of": "4",
           "St": "5",
           "AP": "2",
-          "Ag": "3"
+          "Ag": "1"
         },
         "tags": "\n\t\tStatue, Mount\n\t",
         "offenserules": [
@@ -25997,7 +26100,6 @@
       },
       "skeleton_archers": {
         "name": "Skeleton Archers",
-        "secondlogo": "arrows",
         "cost": "145",
         "rarity": "Regular",
         "height": "1",
@@ -26042,20 +26144,20 @@
         },
         "offenserules": [
           {
-            "name": "Aspen Arrows",
-            "id": "aspen_arrows"
+            "name": "Aspis Arrows",
+            "id": "aspis_arrows"
           }
         ],
         "tags": "\n\t\tSkeleton, Light Armour\n\t",
         "offenseweapons": [],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\tTerracotta Army=free\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\tTerracotta Army=1\n\t",
         "fluff": "\n    The enchanted bows of Naptesh are said to recreate the lethal bite of the desert serpents, which hold great symbolic value. Enabling undead archers to hit their targets with eerie precision, these weapons embody the futility of attempting to outrun death. None escape the wrath of the Desert.\n",
         "unit_id": "skeleton_archers",
         "option_id": "ohrmzqmjlbf5cj617hxhzg"
       },
       "skeleton_cavalry": {
         "name": "Skeleton Cavalry",
-        "cost": "170",
+        "cost": "160",
         "rarity": "Uncommon",
         "height": "2",
         "basesize": "25×50",
@@ -26128,7 +26230,7 @@
         },
         "tagsB": "\n\t\tSkeleton, Mount\n\t",
         "offenserulesB": [],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=2/model,\n\t\tTerracotta Army=free\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=2/model,\n\t\tTerracotta Army=2\n\t",
         "toggles": "onecolprintcommandgrouptwocolprintcommandgroup",
         "fluff": "\n    These mounted regiments were once tribes of nomadic horse masters, lightly armoured, yet fast and deadly, until they suffered the Curse side by side with their mounts. Despite their fragile appearance, their ability to swiftly reach around enemy flanks and strike in quick, decisive blows makes them a fearsome addition to Undying forces.\n",
         "unit_id": "skeleton_cavalry",
@@ -26179,8 +26281,8 @@
         "offenserules": [],
         "offensenameI": "Chassis",
         "offenseI": {
-          "St": "4",
-          "AP": "1"
+          "St": "5",
+          "AP": "2"
         },
         "offenserulesI": [
           {
@@ -26232,6 +26334,10 @@
           {
             "name": "Fearless",
             "id": "fearless"
+          },
+          {
+            "name": "Autonomous",
+            "id": "autonomous"
           }
         ],
         "defense": {
@@ -26250,21 +26356,8 @@
           "Ag": "3"
         },
         "tags": "\n\t\tSkeleton, Light Armour\n\t",
-        "offenserules": [
-          {
-            "name": "Aspen Arrows",
-            "id": "aspen_arrows"
-          }
-        ],
-        "offenseweapons": [
-          {
-            "name": "Bow",
-            "id": "bow",
-            "params": [
-              "5+"
-            ]
-          }
-        ],
+        "offenserules": [],
+        "offenseweapons": [],
         "offensenameB": "Skeletal Horse (2)",
         "offenseB": {
           "At": "1",
@@ -26277,8 +26370,8 @@
         "offenserulesB": [],
         "offensenameI": "Chassis",
         "offenseI": {
-          "St": "4",
-          "AP": "1"
+          "St": "5",
+          "AP": "2"
         },
         "offenserulesI": [
           {
@@ -26290,14 +26383,13 @@
           }
         ],
         "tagsI": "\n\t\tConstruct\n\t",
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=15/model,\n\t\tTerracotta Army=free\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=10/model,\n\t\tTerracotta Army=15\n\t",
         "fluff": "\n    Meticulously crafted, Napteshi chariots have for centuries crushed the kingdom’s enemies beneath their wheels. Able to operate either as manoeuvrable skirmishers or in vast, unstoppable battalions, the crew atop the chariot’s platform were not only drivers but honoured warriors, and even in death they often form the close retinue of kings and princes.\n",
         "unit_id": "skeleton_chariots",
         "option_id": "tzrh115eeyaqnnnhovqe0s"
       },
       "skeleton_scouts": {
         "name": "Skeleton Scouts",
-        "secondlogo": "arrows",
         "cost": "150",
         "rarity": "Uncommon",
         "height": "2",
@@ -26368,8 +26460,8 @@
         ],
         "offenserules": [
           {
-            "name": "Aspen Arrows",
-            "id": "aspen_arrows"
+            "name": "Aspis Arrows",
+            "id": "aspis_arrows"
           }
         ],
         "offensenameB": "Skeletal Horse",
@@ -26382,7 +26474,7 @@
         },
         "tagsB": "\n\t\tSkeleton, Mount\n\t",
         "offenserulesB": [],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\tTerracotta Army=free\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\t=\n\t",
         "toggles": "onecolprintcommandgrouptwocolprintcommandgroup",
         "fluff": "\n    In ancient Naptesh, the most talented archers became scouts on horseback. Their skill retained throughout the centuries, their skeletal steeds still run with a twisted grace, and their bows continue to deliver only death.\n",
         "unit_id": "skeleton_scouts",
@@ -26398,7 +26490,7 @@
           "Ad": "4",
           "Ma": "4",
           "Di": "4",
-          "Rsr": "7"
+          "Rsr": "6"
         },
         "globalrules": [
           {
@@ -26434,7 +26526,7 @@
           "Ag": "2"
         },
         "tags": "\n\t\tSkeleton, Light Armour\n\t",
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\tTerracotta Army=free\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\tTerracotta Army=2\n\t",
         "fluff": "\n    Bound by ancient magic, the spirits of the loyal soldiers of the Undying Dynasties usually inhabit their own remains, so their dusty bones may know bloodshed once again. No vampire’s rotted puppets driven by animal hunger, these are proud warriors, cold and relentless, skeletons and weaponry kept in service ​by incomparable secrets of preservation.\n",
         "unit_id": "skeleton_warriors",
         "option_id": "ua54o4stuqpw12h9tya8"
@@ -26491,8 +26583,8 @@
         "tags": "\n\t\tSkeleton, Light Armour\n\t",
         "offenserules": [
           {
-            "name": "Poison Attacks",
-            "id": "poison_attacks"
+            "name": "Lethal Strike",
+            "id": "lethal_strike"
           }
         ],
         "offenseweapons": [
@@ -26523,14 +26615,14 @@
             ]
           }
         ],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tTerracotta Army=free\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tTerracotta Army and loses Ambush=free\n\t",
         "fluff": "\n    Charioteers who prove their worth may be permitted to ride upon a living statue of a holy animal, such as a snake, crocodile, or beetle. These remarkable constructs are coated in toxins and are able to bury themselves beneath the sand to surprise their enemies. Armed with long blades, this unique cavalry offers a deadly combination of brute force and tactical manoeuvring.\n",
         "unit_id": "tomb_cataphracts",
         "option_id": "npaj29c21yg0us28hlwo"
       },
       "tomb_reapers": {
         "name": "Tomb Reapers",
-        "cost": "220",
+        "cost": "300",
         "rarity": "Uncommon",
         "height": "4",
         "basesize": "50×75",
@@ -26538,7 +26630,7 @@
           "Ad": "6",
           "Ma": "6",
           "Di": "8",
-          "Rsr": "1"
+          "Rsr": "2"
         },
         "globalrules": [
           {
@@ -26568,10 +26660,17 @@
           {
             "name": "Unstable",
             "id": "unstable"
+          },
+          {
+            "name": "Vanguard",
+            "id": "vanguard",
+            "params": [
+              "3\""
+            ]
           }
         ],
         "defense": {
-          "HP": "3",
+          "HP": "4",
           "Df": "5",
           "Re": "5",
           "Arm": "3"
@@ -28147,8 +28246,8 @@
             "id": "exclusive"
           },
           {
-            "name": "Crooked Periscope",
-            "id": "crooked_periscope"
+            "name": "Tracking Telescope",
+            "id": "tracking_telescope"
           }
         ],
         "defense": {
@@ -28870,7 +28969,7 @@
       },
       "field_artillery": {
         "name": "Field Artillery",
-        "rarity": "Common",
+        "rarity": "Regular",
         "cost": "100",
         "height": "2",
         "basesize": "60×60",
@@ -29434,7 +29533,7 @@
       },
       "runic_smith": {
         "name": "Runic Smith",
-        "rarity": "Common",
+        "rarity": "Uncommon",
         "cost": "130",
         "height": "1",
         "basesize": "20×20",
@@ -29698,8 +29797,7 @@
       },
       "thane": {
         "name": "Thane",
-        "cost": "70",
-        "rarity": "Common",
+        "cost": "70rarity=Common",
         "height": "1",
         "basesize": "20×20",
         "global": {
@@ -29918,14 +30016,14 @@
     "wdg": {
       "barbarian_chief": {
         "name": "Barbarian Chief",
-        "cost": "75",
+        "cost": "60",
         "rarity": "Common",
         "height": "1",
         "basesize": "25×25",
         "global": {
           "Ad": "4",
           "Ma": "4",
-          "Di": "9"
+          "Di": "8"
         },
         "globalrules": [
           {
@@ -29941,14 +30039,14 @@
           "HP": "3",
           "Df": "5",
           "Re": "4",
-          "Arm": "2"
+          "Arm": "1"
         },
         "offensename": "Barbarian Chief",
         "offense": {
           "Ag": "5",
           "At": "3",
           "Of": "5",
-          "St": "5",
+          "St": "4",
           "AP": "1"
         },
         "offenserules": [
@@ -29957,15 +30055,15 @@
             "id": "deeds_not_words"
           }
         ],
-        "tags": "\n\t\tHuman,\n\t\tMetal Armour\n\t",
-        "leadership": "\n\t\tGeneral=free\n\t",
+        "tags": "\n\t\tHuman,\n\t\t\n\t\tLight Armour\n\t",
+        "leadership": "\n\t,\n\t\tGeneral=30,\n\t\tCaptain and Attached=free,\n\t\tExclusive=30,\n\t",
         "fluff": "\n\tFirst among the tribes who often ally with Warriors, chief is not a position attained easily. Only by demonstrating the ability to inspire and drive their people to great deeds can such leaders win the respect of the tribe.\n",
         "unit_id": "barbarian_chief",
         "option_id": "93lfw9f6ks58nzainwx9t"
       },
       "barbarian_horsemen": {
         "name": "Barbarian Horsemen",
-        "cost": "150",
+        "cost": "170",
         "rarity": "Common",
         "height": "2",
         "basesize": "25×50",
@@ -30001,7 +30099,7 @@
           "At": "1",
           "Of": "4",
           "St": "4",
-          "AP": "0",
+          "AP": "1",
           "Ag": "3"
         },
         "offensenameB": "Black Steed",
@@ -30020,7 +30118,7 @@
       },
       "barbarians": {
         "name": "Barbarians",
-        "cost": "160",
+        "cost": "150",
         "rarity": "Regular",
         "height": "1",
         "basesize": "25×25",
@@ -30046,7 +30144,7 @@
           "At": "1",
           "Of": "4",
           "St": "4",
-          "AP": "0",
+          "AP": "1",
           "Ag": "3"
         },
         "tags": "\n\t\tHuman,\n\t\tLight Armour\n\t",
@@ -30056,13 +30154,13 @@
       },
       "battleshrine": {
         "name": "Battleshrine",
-        "cost": "300",
+        "cost": "320",
         "rarity": "Rare",
         "height": "4",
         "basesize": "50×100",
         "global": {
-          "Ad": "6",
-          "Ma": "6",
+          "Ad": "5",
+          "Ma": "5",
           "Di": "8"
         },
         "globalrules": [
@@ -30073,6 +30171,10 @@
           {
             "name": "Exclusive",
             "id": "exclusive"
+          },
+          {
+            "name": "Veil Walker",
+            "id": "veil_walker"
           },
           {
             "name": "Wizard Conclave",
@@ -30140,8 +30242,8 @@
         "height": "4",
         "basesize": "50×100",
         "global": {
-          "Ad": "6",
-          "Ma": "6",
+          "Ad": "5",
+          "Ma": "5",
           "Di": "C"
         },
         "globalrules": [
@@ -30234,7 +30336,7 @@
       },
       "chimera": {
         "name": "Chimera",
-        "cost": "240",
+        "cost": "260",
         "rarity": "Uncommon*",
         "height": "4",
         "basesize": "50×100",
@@ -30311,13 +30413,6 @@
           {
             "name": "Light Troops",
             "id": "light_troops"
-          },
-          {
-            "name": "Legendary Beasts",
-            "id": "legendary_beasts",
-            "params": [
-              "1"
-            ]
           }
         ],
         "defense": {
@@ -30380,8 +30475,8 @@
             "id": "hellforged_armour"
           },
           {
-            "name": "Spiked Shield",
-            "id": "spiked_shield"
+            "name": "Shield",
+            "id": "shield"
           }
         ],
         "offensename": "Chosen",
@@ -30408,7 +30503,7 @@
       },
       "chosen_chariot": {
         "name": "Chosen Chariot",
-        "cost": "290",
+        "cost": "310",
         "rarity": "Rare",
         "height": "4",
         "basesize": "50×100",
@@ -30463,20 +30558,11 @@
         "offenseB": {
           "At": "2",
           "Of": "3",
-          "St": "4",
-          "AP": "1",
+          "St": "5",
+          "AP": "2",
           "Ag": "2"
         },
-        "offenserulesB": [
-          {
-            "name": "Devastating Charge",
-            "id": "devastating_charge",
-            "params": [
-              "+1 Str",
-              "+1 AP"
-            ]
-          }
-        ],
+        "offenserulesB": [],
         "offenseweapons": [
           {
             "name": "Halberd",
@@ -30507,7 +30593,7 @@
       },
       "chosen_knights": {
         "name": "Chosen Knights",
-        "cost": "380",
+        "cost": "360",
         "rarity": "Rare",
         "height": "4",
         "basesize": "50×75",
@@ -30560,17 +30646,16 @@
         "offenseB": {
           "At": "2",
           "Of": "3",
-          "St": "4",
-          "AP": "1",
+          "St": "5",
+          "AP": "2",
           "Ag": "2"
         },
         "offenserulesB": [
           {
-            "name": "Devastating Charge",
-            "id": "devastating_charge",
+            "name": "Impact Hits",
+            "id": "impact_hits",
             "params": [
-              "+1 Str",
-              "+1 AP"
+              "1"
             ]
           },
           {
@@ -30627,6 +30712,10 @@
           {
             "name": "Hell-Forged Armour",
             "id": "hellforged_armour"
+          },
+          {
+            "name": "Shield",
+            "id": "shield"
           }
         ],
         "offensename": "Chosen Lord",
@@ -30717,10 +30806,6 @@
         },
         "globalrules": [
           {
-            "name": "Light Troops",
-            "id": "light_troops"
-          },
-          {
             "name": "Fearless",
             "id": "fearless"
           },
@@ -30751,6 +30836,10 @@
           {
             "name": "Hell-Forged Armour",
             "id": "hellforged_armour"
+          },
+          {
+            "name": "Shield",
+            "id": "shield"
           }
         ],
         "offensename": "Doomlord",
@@ -30803,13 +30892,6 @@
             "id": "manifestation"
           },
           {
-            "name": "Legendary Beasts",
-            "id": "legendary_beasts",
-            "params": [
-              "2"
-            ]
-          },
-          {
             "name": "Light Troops",
             "id": "light_troops"
           },
@@ -30848,11 +30930,15 @@
             "params": [
               "1"
             ]
+          },
+          {
+            "name": "Magical Attacks",
+            "id": "magical_attacks"
           }
         ],
-        "tags": "Daemon,Metal Armour",
+        "tags": "Daemon,",
         "leadership": "\n\t\tGeneral=free\n\t",
-        "endtext": "\n\t\t\t\n\t\t\t\tAbiding Spirit\n\t\t\t\t\t<span class=\"textbf\">Hard Target(1)</span>. At the end of each friendly Melee Phase, if the Exalted Herald has been on the winning side of a combat in this phase, it <span class=\"textbf\">Recovers</span> 1 Health Point.\n\t\t\t\t\n\t\t\t\t\t<i>Hand of Glory</i> (Occultism)\n\t\t\t\t\n\t\t\t\tBrand of the Dragon\n\t\t\t\t\tFly,Swiftstride,Breath Attack(Str 4, AP 1, Flaming Attacks).\n\t\t\t\t\n\t\t\t\t\t<i>The Devouring Dark</i> (Occultism)\n\t\t\t\t\n\t\t\t\tEmissary of Chaos\n\t\t\t\t\tStomp Attack(D6),Battle Fever,Terror.\n\t\t\t\t\n\t\t\t\t\t<i>Pentagram of Pain</i> (Occultism)\n\t\t\t\t\n\t\t\t\tSorcerer Immortal\n\t\t\t\t\t<span class=\"textbf\">Veil Walker</span>,Channel (1).\n\t\t\t\t\n\t\t\t\t\t<i>The Grave Calls</i> (Occultism) and<br><i>Umbral Majesty</i> (Occultism)\n\t\t\t\t\n\t\t\t\tUnholy Avatar\n\t\t\t\t\t+1 Str, +1 AP, and <span class=\"textbf\">Divine Attacks</span>.\n\t\t\t\t\n\t\t\t\t\t<i>Blood Curse</i> (Occultism)\n\t\t\t\t\n\t\t\t\n\t\t",
+        "endtext": "\n\t\t\t\n\t\t\t\tAbiding Spirit\n\t\t\t\t\t<span class=\"textbf\">Hard Target(1)</span>. \n\t\t\t\t\n\t\t\t\t\t<i>Hand of Glory</i> (Occultism)\n\t\t\t\t\n\t\t\t\tBrand of the Dragon\n\t\t\t\t\tFly,Swiftstride,Breath Attack(Str 4, AP 1, Flaming Attacks).\n\t\t\t\t\n\t\t\t\t\t<i>The Devouring Dark</i> (Occultism)\n\t\t\t\t\n\t\t\t\tEmissary of Chaos\n\t\t\t\t\tStomp Attack(D6),Battle Fever,.\n\t\t\t\t\n\t\t\t\t\t<i>Pentagram of Pain</i> (Occultism)\n\t\t\t\t\n\t\t\t\tSorcerer Immortal\n\t\t\t\t\t<span class=\"textbf\">Veil Walker</span>,.\n\t\t\t\t\n\t\t\t\t\t<i>Umbral Majesty</i> (Occultism) and<br><i>The Grave Calls</i> (Occultism)\n\t\t\t\t\n\t\t\t\tUnholy Avatar\n\t\t\t\t\t+1 Str, +1 AP, and <span class=\"textbf\">Divine Attacks</span>.\n\t\t\t\t\n\t\t\t\t\t<i>Blood Curse</i> (Occultism)\n\t\t\t\t\n\t\t\t\n\t\t",
         "fluff": "\n\tThe pinnacle of a Warrior’s journey, these former mortals have Ascended to become ageless supernal avatars: the manifestation of Father Chaos’ will in this plane. Adopting whatever form best suits their task, they return from the Immortal Realm filled with Abyssal power and a drive to champion their eternal master.\n",
         "unit_id": "exalted_herald",
         "option_id": "l6xvufn83p31zg13lg2vk"
@@ -30919,7 +31005,7 @@
       },
       "feldrak_ancestor": {
         "name": "Feldrak Ancestor",
-        "cost": "550",
+        "cost": "560",
         "rarity": "Rare",
         "maxpointcost": "800",
         "height": "5",
@@ -30935,11 +31021,8 @@
             "id": "primal_legend"
           },
           {
-            "name": "Legendary Beasts",
-            "id": "legendary_beasts",
-            "params": [
-              "2"
-            ]
+            "name": "Battle Fever",
+            "id": "battle_fever"
           },
           {
             "name": "Swiftstride",
@@ -30962,8 +31045,11 @@
         },
         "defenserules": [
           {
-            "name": "Unburnt",
-            "id": "unburnt"
+            "name": "Resistance",
+            "id": "resistance",
+            "params": [
+              "Flaming Attacks"
+            ]
           }
         ],
         "offensename": "Feldrak Ancestor",
@@ -31011,7 +31097,7 @@
       },
       "feldrak_elder": {
         "name": "Feldrak Elder",
-        "cost": "440",
+        "cost": "400",
         "rarity": "Uncommon",
         "height": "5",
         "basesize": "50×100",
@@ -31021,6 +31107,10 @@
           "Di": "9"
         },
         "globalrules": [
+          {
+            "name": "Battle Fever",
+            "id": "battle_fever"
+          },
           {
             "name": "Swiftstride",
             "id": "swiftstride"
@@ -31032,25 +31122,21 @@
           {
             "name": "Exclusive",
             "id": "exclusive"
-          },
-          {
-            "name": "Legendary Beasts",
-            "id": "legendary_beasts",
-            "params": [
-              "2"
-            ]
           }
         ],
         "defense": {
-          "HP": "7",
+          "HP": "6",
           "Df": "5",
           "Re": "6",
           "Arm": "4"
         },
         "defenserules": [
           {
-            "name": "Unburnt",
-            "id": "unburnt"
+            "name": "Resistance",
+            "id": "resistance",
+            "params": [
+              "Flaming Attacks"
+            ]
           }
         ],
         "offensename": "Feldrak Elder",
@@ -31084,7 +31170,7 @@
       },
       "feldraks": {
         "name": "Feldraks",
-        "cost": "340",
+        "cost": "300",
         "rarity": "Rare",
         "height": "4",
         "basesize": "50×75",
@@ -31095,12 +31181,20 @@
         },
         "globalrules": [
           {
+            "name": "Battle Fever",
+            "id": "battle_fever"
+          },
+          {
             "name": "Swiftstride",
             "id": "swiftstride"
+          },
+          {
+            "name": "Exclusive",
+            "id": "exclusive"
           }
         ],
         "defense": {
-          "HP": "4",
+          "HP": "3",
           "Df": "4",
           "Re": "5",
           "Arm": "3"
@@ -31108,8 +31202,11 @@
         "defensearmour": [],
         "defenserules": [
           {
-            "name": "Unburnt",
-            "id": "unburnt"
+            "name": "Resistance",
+            "id": "resistance",
+            "params": [
+              "Flaming Attacks"
+            ]
           }
         ],
         "offensename": "Feldrak",
@@ -31143,7 +31240,7 @@
       },
       "flayers": {
         "name": "Flayers",
-        "cost": "150",
+        "cost": "170",
         "rarity": "Common",
         "height": "2",
         "basesize": "25×50",
@@ -31200,7 +31297,7 @@
           "At": "1",
           "Of": "4",
           "St": "4",
-          "AP": "0"
+          "AP": "1"
         },
         "offensenameB": "Shadow Chaser",
         "offenseB": {
@@ -31220,7 +31317,7 @@
       },
       "forsaken_one": {
         "name": "Forsaken One",
-        "cost": "390",
+        "cost": "340",
         "rarity": "Rare",
         "height": "5",
         "basesize": "50×100",
@@ -31256,13 +31353,6 @@
           {
             "name": "Unstable",
             "id": "unstable"
-          },
-          {
-            "name": "Legendary Beasts",
-            "id": "legendary_beasts",
-            "params": [
-              "2"
-            ]
           },
           {
             "name": "Dying Blow",
@@ -31308,7 +31398,7 @@
       },
       "forsworn": {
         "name": "Forsworn",
-        "cost": "180",
+        "cost": "195",
         "rarity": "Uncommon",
         "height": "3",
         "basesize": "40×40",
@@ -31348,9 +31438,19 @@
           {
             "name": "Hell-Forged Armour",
             "id": "hellforged_armour"
+          },
+          {
+            "name": "Shield",
+            "id": "shield"
           }
         ],
         "offensename": "Forsworn",
+        "offenserules": [
+          {
+            "name": "Hand-and-a-Half",
+            "id": "handandahalf"
+          }
+        ],
         "offense": {
           "At": "2",
           "Of": "5",
@@ -31366,20 +31466,16 @@
       },
       "hellmaw": {
         "name": "Hellmaw",
-        "cost": "310",
+        "cost": "320",
         "rarity": "Rare",
         "height": "5",
         "basesize": "100×150",
         "global": {
-          "Ad": "5",
-          "Ma": "5",
-          "Di": "5"
+          "Ad": "6",
+          "Ma": "6",
+          "Di": "7"
         },
         "globalrules": [
-          {
-            "name": "Light Troops",
-            "id": "light_troops"
-          },
           {
             "name": "Fearless",
             "id": "fearless"
@@ -31402,9 +31498,9 @@
           }
         ],
         "defense": {
-          "HP": "7",
+          "HP": "6",
           "Df": "3",
-          "Re": "7",
+          "Re": "6",
           "Arm": "2"
         },
         "defensearmour": [
@@ -31414,6 +31510,12 @@
             "params": [
               "5+"
             ]
+          }
+        ],
+        "offenserules": [
+          {
+            "name": "Magical Attacks",
+            "id": "magical_attacks"
           }
         ],
         "offensename": "Hellmaw",
@@ -31455,17 +31557,16 @@
         "offense": {
           "At": "2",
           "Of": "3",
-          "St": "4",
-          "AP": "1",
+          "St": "5",
+          "AP": "2",
           "Ag": "2"
         },
         "offenserules": [
           {
-            "name": "Devastating Charge",
-            "id": "devastating_charge",
+            "name": "Impact Hits",
+            "id": "impact_hits",
             "params": [
-              "+1 Str",
-              "+1 AP"
+              "1"
             ]
           },
           {
@@ -31494,12 +31595,9 @@
         },
         "globalrules": [
           {
-            "name": "Giant See",
-            "id": "giant_see"
-          },
-          {
-            "name": "Giant Do",
-            "id": "giant_do"
+            "name": "Giant See, Giant Do",
+            "id": "wdg-giant_see_giant_do",
+            "params": []
           },
           {
             "name": "Light Troops",
@@ -31512,13 +31610,6 @@
           {
             "name": "Exclusive",
             "id": "exclusive"
-          },
-          {
-            "name": "Legendary Beasts",
-            "id": "legendary_beasts",
-            "params": [
-              "1"
-            ]
           }
         ],
         "defense": {
@@ -31684,7 +31775,7 @@
       },
       "sorcerer": {
         "name": "Sorcerer",
-        "cost": "270",
+        "cost": "290",
         "rarity": "Common",
         "height": "1",
         "basesize": "25×25",
@@ -31698,6 +31789,10 @@
           {
             "name": "Battle Fever",
             "id": "battle_fever"
+          },
+          {
+            "name": "Veil Walker",
+            "id": "veil_walker"
           }
         ],
         "defense": {
@@ -31807,7 +31902,7 @@
       },
       "warrior_chariot": {
         "name": "Warrior Chariot",
-        "cost": "210",
+        "cost": "200",
         "rarity": "Common",
         "height": "4",
         "basesize": "50×100",
@@ -31957,7 +32052,7 @@
       },
       "warriors": {
         "name": "Warriors",
-        "cost": "230",
+        "cost": "200",
         "rarity": "Regular",
         "height": "1",
         "basesize": "25×25",
@@ -31988,8 +32083,8 @@
             "id": "hellforged_armour"
           },
           {
-            "name": "Spiked Shield",
-            "id": "spiked_shield"
+            "name": "Shield",
+            "id": "shield"
           }
         ],
         "offensename": "Warrior",
@@ -32027,13 +32122,6 @@
           {
             "name": "Exclusive",
             "id": "exclusive"
-          },
-          {
-            "name": "Legendary Beasts",
-            "id": "legendary_beasts",
-            "params": [
-              "1"
-            ]
           }
         ],
         "defense": {
@@ -32086,13 +32174,6 @@
           {
             "name": "Exclusive",
             "id": "exclusive"
-          },
-          {
-            "name": "Legendary Beasts",
-            "id": "legendary_beasts",
-            "params": [
-              "1"
-            ]
           },
           {
             "name": "Meeting of Minds",
@@ -32818,13 +32899,11 @@
         },
         "globalrules": [
           {
-            "name": "Giant See",
-            "id": "giant_see"
+            "name": "Giant See, Giant Do",
+            "id": "mh-giant_see_giant_do",
+            "params": []
           },
-          {
-            "name": "Giant Do",
-            "id": "giant_do"
-          }
+          null
         ],
         "defense": {
           "HP": "7",
@@ -33872,12 +33951,11 @@
             ]
           },
           {
-            "name": "Hatred (against",
-            "id": "hatred_against"
-          },
-          {
-            "name": ")",
-            "id": ""
+            "name": "Hatred",
+            "id": "hatred",
+            "params": [
+              "against"
+            ]
           }
         ],
         "unit_id": "kraken",
@@ -33897,13 +33975,11 @@
         },
         "globalrules": [
           {
-            "name": "Giant See",
-            "id": "giant_see"
+            "name": "Giant See, Giant Do",
+            "id": "al-giant_see_giant_do",
+            "params": []
           },
-          {
-            "name": "Giant Do",
-            "id": "giant_do"
-          }
+          null
         ],
         "defense": {
           "HP": "7",
@@ -35515,12 +35591,9 @@
         },
         "globalrules": [
           {
-            "name": "Giant See",
-            "id": "giant_see"
-          },
-          {
-            "name": "Giant Do",
-            "id": "giant_do"
+            "name": "Giant See, Giant Do",
+            "id": "er-giant_see_giant_do",
+            "params": []
           }
         ],
         "defense": {
@@ -36500,12 +36573,11 @@
             ]
           },
           {
-            "name": "Hatred (against",
-            "id": "hatred_against"
-          },
-          {
-            "name": ")",
-            "id": ""
+            "name": "Hatred",
+            "id": "hatred",
+            "params": [
+              "against"
+            ]
           }
         ],
         "unit_id": "colossal_kraken_mount",
@@ -36818,12 +36890,11 @@
             ]
           },
           {
-            "name": "Hatred(against",
-            "id": "hatredagainst"
-          },
-          {
-            "name": ")",
-            "id": ""
+            "name": "Hatred",
+            "id": "hatred",
+            "params": [
+              "against"
+            ]
           }
         ],
         "offensenameB": "Lashmaster (2)",

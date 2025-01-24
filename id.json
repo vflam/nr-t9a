@@ -6,7 +6,7 @@
   },
   "short": "id",
   "version": "2023 beta2",
-  "nrversion": 392,
+  "nrversion": 393,
   "playable": 1,
   "id": 8,
   "include": [102],
@@ -173,7 +173,7 @@
           "type": "check",
           "name": "Banner of Shamut",
           "cost": 50,
-          "description": "\tModels in the bearer's unit gain +1 Off. The bearer's unit gain +1 Combat Score.\n",
+          "description": "\tModels in the bearer's unit gain +1 Off.  In addition, a unit containing a Banner of Shamut adds +1 to the Combat Score of its side.\n",
           "refs": ["id_special_item", "banner_of_shamut"],
           "armyHasNotOption": [
             {
@@ -193,7 +193,7 @@
           "shared": true
         },
         {
-          "name": "Banner of Discipline",
+          "name": "Banner of Courage",
           "cost": 15,
           "option_id": "v5puwocebkdvua2yo26nqh",
           "type": "check",
@@ -422,7 +422,7 @@
         {
           "refs": ["black_powder"],
           "amount": 10,
-          "perPoints": 400
+          "perPoints": 750
         }
       ],
       "options": [
@@ -447,15 +447,10 @@
                 "tag_Metal Armour",
                 {
                   "ref": "black_powder",
-                  "amount": 2
-                }
-              ],
-              "armyHasNotOption": [
-                {
-                  "refs": ["overlord_unit"],
                   "amount": 1
                 }
               ],
+              "armyHasNotOption": [],
               "cost": 180,
               "options": [
                 {
@@ -655,7 +650,7 @@
                       "refs": [
                         {
                           "ref": "black_powder",
-                          "amount": 2
+                          "amount": 1
                         }
                       ]
                     },
@@ -1062,7 +1057,7 @@
                           "refs": [
                             {
                               "ref": "black_powder",
-                              "amount": 2
+                              "amount": 1
                             }
                           ]
                         },
@@ -1082,7 +1077,7 @@
                           "refs": [
                             {
                               "ref": "black_powder",
-                              "amount": 2
+                              "amount": 1
                             }
                           ]
                         }
@@ -1335,7 +1330,12 @@
                           "cost": 10,
                           "option_id": "v37n2dewse9j1bll4pbv",
                           "ignoreCost": true,
-                          "refs": ["black_powder"]
+                          "refs": [
+                            {
+                              "ref": "black_powder",
+                              "amount": 1
+                            }
+                          ]
                         },
                         {
                           "type": "check",
@@ -1346,7 +1346,7 @@
                           "refs": [
                             {
                               "ref": "black_powder",
-                              "amount": 2
+                              "amount": 1
                             }
                           ]
                         }
@@ -1395,7 +1395,7 @@
                           "refs": [
                             {
                               "ref": "black_powder",
-                              "amount": 2
+                              "amount": 1
                             }
                           ]
                         },
@@ -1896,7 +1896,7 @@
                                 "blunderbuss",
                                 {
                                   "ref": "black_powder",
-                                  "amount": 2
+                                  "amount": 1
                                 }
                               ],
                               "option_id": "9vkh31j1s6f1zqrwhs8zc5"
@@ -1920,7 +1920,7 @@
                       "name": "Standard Bearer",
                       "collapsible": true,
                       "sortOptions": true,
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -1930,7 +1930,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "ruf395affc9ncaj73es67f"
                     }
                   ],
@@ -1945,19 +1945,6 @@
               "name": "Citadel Guard",
               "cost": 55,
               "refs": ["core_unit", "tag_Dwarf", "tag_Metal Armour"],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["rf_flint_blunder"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["black_powder"]
-                  }
-                }
-              ],
               "options": [
                 {
                   "minSize": 15,
@@ -1993,14 +1980,24 @@
                               "name": "Pistol (4+)",
                               "cost": 0,
                               "option_id": "26lx78k6f8p0n7nt7tmfpep",
-                              "refs": ["black_powder"]
+                              "refs": [
+                                {
+                                  "ref": "black_powder",
+                                  "amount": 1
+                                }
+                              ]
                             },
                             {
                               "type": "check",
                               "name": "Pistol (4+) and Spear",
                               "cost": 3,
                               "option_id": "zp6nbyxiabahfhnpvw3dd",
-                              "refs": ["black_powder"]
+                              "refs": [
+                                {
+                                  "ref": "black_powder",
+                                  "amount": 1
+                                }
+                              ]
                             },
                             {
                               "type": "check",
@@ -2009,7 +2006,7 @@
                               "refs": [
                                 {
                                   "ref": "black_powder",
-                                  "amount": 2
+                                  "amount": 1
                                 },
                                 "guards_flintock"
                               ],
@@ -2034,7 +2031,7 @@
                       "name": "Standard Bearer",
                       "collapsible": true,
                       "sortOptions": true,
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2044,7 +2041,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "ca2mf0jvunvre8zgu8e0h"
                     }
                   ],
@@ -2105,7 +2102,12 @@
                               "name": "Bow (4+)",
                               "cost": 3,
                               "option_id": "ibki6g25opi4iq1f6c1o",
-                              "refs": ["black_powder"]
+                              "refs": [
+                                {
+                                  "ref": "black_powder",
+                                  "amount": 0.5
+                                }
+                              ]
                             }
                           ],
                           "option_id": "x9h5tbgtehpauel4xyee"
@@ -2123,14 +2125,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "ndxqhd2orextzoikqvqbo"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "refs": [],
                       "options": [],
                       "maxSize": 1,
@@ -2200,7 +2202,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "v9oi3nqh19pr2931w7e3tq"
                     }
                   ],
@@ -2278,7 +2280,7 @@
                       "name": "Standard Bearer",
                       "collapsible": true,
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2288,7 +2290,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "489wzj8ybi96je2xp0lez5"
                     }
                   ],
@@ -2352,7 +2354,7 @@
                       "name": "Standard Bearer",
                       "collapsible": true,
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2362,7 +2364,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "9pmudanshwft20c1n27p"
                     }
                   ],
@@ -2409,7 +2411,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "bdj0wj7p0za42rrfrm0yof"
                     }
                   ],
@@ -2451,19 +2453,6 @@
               "name": "Taurukh Enforcers",
               "cost": 75,
               "category": "special",
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["rf_flint_blunder"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["black_powder"]
-                  }
-                }
-              ],
               "options": [
                 {
                   "minSize": 5,
@@ -2492,7 +2481,7 @@
                               "refs": [
                                 {
                                   "ref": "black_powder",
-                                  "amount": 2
+                                  "amount": 1
                                 },
                                 "taurukh_blunderbuss"
                               ],
@@ -2550,14 +2539,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "6hpuvo98doq1gbwdse2eyc"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "options": [],
                       "maxSize": 1,
@@ -2654,7 +2643,7 @@
                       "name": "Standard Bearer",
                       "collapsible": true,
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2664,7 +2653,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "bg6084z30ho2c3ztdud0qa"
                     }
                   ],
@@ -2692,7 +2681,13 @@
                       "hide": true,
                       "options": [],
                       "option_id": "rfbgbvcw6id62vv7ntn6gi",
-                      "refs": ["vassal_cavalry_amount", "black_powder"]
+                      "refs": [
+                        "vassal_cavalry_amount",
+                        {
+                          "ref": "black_powder",
+                          "amount": 0.5
+                        }
+                      ]
                     }
                   ],
                   "option_id": "r37z4pvfois2qzw6wkuz9"
@@ -2705,7 +2700,7 @@
                       "name": "Standard Bearer",
                       "collapsible": true,
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2714,7 +2709,7 @@
                     },
                     {
                       "type": "check",
-                      "cost": 15,
+                      "cost": 10,
                       "name": "Musician",
                       "option_id": "ug92hcmxrdc7pviitvbngk"
                     }

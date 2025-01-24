@@ -6,7 +6,7 @@
   },
   "short": "ong",
   "version": "2023 alpha4",
-  "nrversion": 457,
+  "nrversion": 458,
   "playable": 1,
   "id": 12,
   "include": [102],
@@ -48,7 +48,7 @@
       "refs": ["potions_and_scrolls"],
       "options": [
         {
-          "name": "Elixir of Negation",
+          "name": "Scroll of Draining",
           "cost": 20,
           "option_id": "7yw4hqcjfdjqpapni7gixi",
           "type": "check",
@@ -131,7 +131,7 @@
           "shared": true
         },
         {
-          "name": "Banner of Discipline",
+          "name": "Banner of Courage",
           "cost": 20,
           "option_id": "0rkthy82a410voss51htwc",
           "type": "check",
@@ -259,7 +259,7 @@
           "type": "check",
           "name": "Monster Munch",
           "cost": 60,
-          "description": "\tThe bearer can cast <i>Totemic Summon</i> (Shamanism) as a Bound Spell(6+).",
+          "description": "\tThe bearer can cast <i>Wild Spikes</i> (Shamanism) as a Bound Spell(6+).",
           "refs": ["monster munch_qdpf71aa"],
           "armyHasNotOption": [
             {
@@ -1302,13 +1302,6 @@
                       "option_id": "dg8xkqq7ypakmctxpkj6q",
                       "optionsLabel": "Level",
                       "options": [
-                        {
-                          "option_id": "dpbxunqvcri6ciplvyrm7w",
-                          "cost": 0,
-                          "name": "Wizard Apprentice",
-                          "refs": ["wizardApprentice"],
-                          "type": "check"
-                        },
                         {
                           "type": "check",
                           "name": "Wizard Adept",
@@ -2462,7 +2455,13 @@
                 }
               ],
               "option_id": "nmmoy69clijnf5qg79c2k",
-              "logo": "core"
+              "logo": "core",
+              "armyHasNotOption": [
+                {
+                  "refs": ["goblinReavers"],
+                  "amount": 3
+                }
+              ]
             },
             {
               "name": "Veteran Orcs",
@@ -2694,7 +2693,6 @@
               ],
               "refs": ["veteranOrcMarauders", "brood_rivalry", "core_unit", "tag_Orc", "tag_Light Armour", "tag_Mount"],
               "unit_id": "veteran_orc_marauders",
-
               "override": [
                 {
                   "armyHasOption": [
@@ -2720,7 +2718,13 @@
                 }
               ],
               "option_id": "kftajiy7oohlkrhjple7dg",
-              "logo": "core"
+              "logo": "core",
+              "armyHasNotOption": [
+                {
+                  "refs": ["veteranOrcMarauders"],
+                  "amount": 1
+                }
+              ]
             }
           ],
           "option_id": "3sthmtter8jyo52o0jytr",
@@ -3499,12 +3503,7 @@
               ],
               "refs": ["ironOrcChariots", "brood_rivalry", "tag_Orc", "tag_Metal Armour", "tag_Mount", "tag_Construct"],
               "unit_id": "iron_orc_chariots",
-              "armyHasNotOption": [
-                {
-                  "refs": ["ironOrcChariots"],
-                  "amount": 2
-                }
-              ],
+              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [

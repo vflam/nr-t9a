@@ -6,7 +6,7 @@
   },
   "short": "wdg",
   "version": "2023",
-  "nrversion": 372,
+  "nrversion": 376,
   "playable": 1,
   "id": 18,
   "include": [102],
@@ -82,6 +82,7 @@
         {
           "type": "check",
           "refs": ["wdg_be_infinite"],
+          "hasNotOption": ["core_unit"],
           "armyHasNotOption": [
             {
               "refs": ["wdg_be_infinite"],
@@ -89,12 +90,15 @@
             }
           ],
           "name": "Icon of the Infinite",
-          "cost": 35,
-          "description": "\tThe bearer can cast <i>Hellfire</i> (Hereditary Spell) as a Bound Spell(5+).",
+          "cost": 40,
+          "description": "\tThe bearer can cast <i>Hellfire</i> (Hereditary Spell) as a Bound Spell(6+).",
           "boundSpells": [
             {
               "path": "bound",
-              "ref": "hellfire"
+              "ref": "hellfire",
+              "mods": {
+                "castValue": 6
+              }
             }
           ],
           "option_id": "llv7291vtetr1w4l278f"
@@ -128,13 +132,13 @@
             }
           ],
           "name": "Zealots' Banner",
-          "cost": 55,
-          "description": "\tModels in the second rank of the bearer's unit gains <span class=\"textbf\">Extra Support (2)</span>.\n\t",
+          "cost": 60,
+          "description": "\tModels in the  bearer's unit gain <span class=\"textbf\">Extra Support (3)</span>.\n",
           "option_id": "785yka8fayjj8doto4lrw"
         },
         {
           "name": "Banner of Speed",
-          "cost": 45,
+          "cost": 40,
           "option_id": "gmfs1vssk1usej3gibv5ic",
           "type": "check",
           "shared": true
@@ -154,7 +158,7 @@
         },
         {
           "name": "Supernatural Dexterity",
-          "cost": 25,
+          "cost": 30,
           "option_id": "29chg5aiym8pg0zpry1lzn",
           "type": "check",
           "shared": true
@@ -183,7 +187,7 @@
         {
           "type": "check",
           "name": "Burning Portent",
-          "cost": 130,
+          "cost": 110,
           "armyHasNotOption": ["burning_portent"],
           "refs": ["weaponEnchantUni", "burning_portent"],
           "hasNotOption": ["weaponEnchantUni"],
@@ -199,7 +203,7 @@
         {
           "type": "check",
           "name": "Symbol of Slaughter",
-          "cost": 30,
+          "cost": 35,
           "armyHasNotOption": ["symbol_slaughter"],
           "refs": ["army_unique", "weaponEnchantUni", "symbol_slaughter"],
           "hasNotOption": ["weaponEnchantUni"],
@@ -221,29 +225,29 @@
       "options": [
         {
           "type": "check",
-          "name": "Ledger of Souls",
+          "name": "Dark Familiar",
           "cost": 60,
-          "armyHasNotOption": ["wdg_ledger_souls"],
-          "refs": ["army_unique", "wdg_ledger_souls"],
-          "description": "\tAfter removing a friendly model without <span class=\"textbf\">Insignificant</span> in a unit within 9\" of the bearer's model due to enemy attacks, you gain one Magic Dice at the start of Siphon the Veil of your next Magic Phase. No more than 2 Magic Dice can be gained this way in a Magic Phase.",
-          "option_id": "ewg6hraadttzen1mzz87aj"
+          "armyHasNotOption": ["wdg_dark_familiar"],
+          "refs": ["army_unique", "wdg_dark_familiar"],
+          "description": "\tLearned Spells cast by the model part gain +6\" Range. Aura Spells gain +3\" Range instead.\n",
+          "option_id": "f3f32f32ifgn3420gni420g43m9"
         },
         {
           "type": "check",
           "name": "Immortal Gauntlets",
-          "cost": 20,
+          "cost": 50,
           "armyHasNotOption": ["wdg_immogaunt"],
           "refs": ["army_unique", "wdg_immogaunt"],
-          "description": "\tAt the start of any Round of Combat that the bearer is fighting, you may discard a stored Magic Dice. If so, choose either Divine Attacks, Flaming Attacks, Magical Attacks. The bearer's Melee Attacks gain the chosen Attack Attribute. The chosen effect lasts until the end of the phase.\n",
+          "description": "\tWhen Choosing Weapons and Equipment choose one of the following Attack Attributes for the bearer's Melee Attacks, with duration One Turn: Divine Attacks, Flaming Attacks, Magical Attacks. \n",
           "option_id": "gyzoiw5mljcbb5xehe33nw"
         },
         {
           "type": "check",
           "name": "Veilgate Orb",
-          "cost": 20,
+          "cost": 100,
           "armyHasNotOption": ["wdg_forebodorb"],
           "refs": ["army_unique", "wdg_forebodorb"],
-          "description": "\tDuring Storing Magic, the player may store up to two magic dice.\n",
+          "description": "\tDuring Pre-game Selection: Mark a point on the Battlefield within 24\" of your Deployment Zone, and outside the opponent's Deployment Zone, with a Gateway Marker. Once per game, at the start of a friendly Magic Phase (<i>before drawing a Flux Card</i>), if the bearer's unit was allowed to move in the prior Movement Phase (<i>is not Shaken, did not Ambush, Failed Charge, Unengaged etc.</i>), remove the unit from the Battlefield and immediately place it back on the Battlefield with <span class=\"textbf\">Ambush(friendly Gateway Marker, that was not placed during this Player Turn)</span>.\n\t",
           "option_id": "f4kkpxk95vl5z6ndjyyswa"
         },
         {
@@ -284,7 +288,7 @@
         {
           "type": "check",
           "name": "Daemonic Wings",
-          "cost": 70,
+          "cost": 65,
           "hasNotOption": ["mount"],
           "refs": ["wdg_demon_wings", "flyer"],
           "armyHasNotOption": ["wdg_demon_wings"],
@@ -294,20 +298,26 @@
         {
           "type": "check",
           "name": "Dark Prelate",
-          "cost": 55,
+          "cost": 50,
           "boundSpells": [
             {
-              "path": "bound",
-              "ref": "hand_glory"
+              "path": "occultism",
+              "ref": "pentagram_pain",
+              "mods": {
+                "castValue": 5
+              }
             },
             {
-              "path": "bound",
-              "ref": "spectral_blades"
+              "path": "occultism",
+              "ref": "umbral_majesty",
+              "mods": {
+                "castValue": 5
+              }
             }
           ],
           "refs": ["wsg_dark_prelate"],
           "armyHasNotOption": ["wsg_dark_prelate"],
-          "description": "\tThe bearer can cast <i>Danse Macabre</i> (Evocation) and <i>Chorus of the Damned</i> (Evocation) as a Bound Spell(4+), which can only target the Caster's own unit.",
+          "description": "\tThe model can cast  <i>Pentagram of Pain</i> (Occultism) and <i>Umbral Majesty</i> (Occultism) as a Bound Spell(5+).",
           "option_id": "04x2u826xq6uiw1ypetpknn"
         },
         {
@@ -323,7 +333,7 @@
         {
           "type": "check",
           "name": "Luck of the Dark Gods",
-          "cost": 65,
+          "cost": 60,
           "refs": ["wdg_luckdg"],
           "armyHasNotOption": ["wdg_luckdg"],
           "description": "\tThe bearer's model gains <span class=\"textbf\">Aegis(+1, max. 4+)</span>.",
@@ -332,7 +342,7 @@
         {
           "type": "check",
           "name": "Idol of Spite",
-          "cost": 75,
+          "cost": 70,
           "refs": ["wdg_idolspite"],
           "armyHasNotOption": ["wdg_idolspite"],
           "description": "\tOne use only. May be activated at the start of a Round of Combat. For the duration of that Round of Combat, the bearer gains +1 Att, +1 Str, and +1 AP.",
@@ -382,7 +392,7 @@
         {
           "refs": ["legendary_beast"],
           "amount": 1,
-          "perPoints": 650
+          "perPoints": 700
         }
       ],
       "override": [
@@ -419,10 +429,11 @@
                 "wizardAdept",
                 {
                   "ref": "legendary_beast",
-                  "amount": 2
+                  "amount": 3
                 },
                 "tag_Daemon",
-                "tag_Metal Armour"
+                "tag_Metal Armour",
+                "tag_"
               ],
               "replaceSpells": true,
               "magic": {
@@ -505,7 +516,7 @@
               ],
               "name": "Feldrak Ancestor",
               "armyHasNotOption": [],
-              "cost": 550,
+              "cost": 560,
               "options": [
                 {
                   "type": "group",
@@ -567,7 +578,7 @@
                     {
                       "type": "check",
                       "name": "Paired Weapons",
-                      "cost": 90,
+                      "cost": 70,
                       "maxSize": 1,
                       "optionsLabel": "Paired Weapons Enchant",
                       "optionsSuffix": " (Paired Weapons)",
@@ -639,7 +650,7 @@
                       "type": "check",
                       "name": "Gluttony",
                       "refs": ["fv_akaan"],
-                      "cost": 20,
+                      "cost": 0,
                       "description": "The first time a model with this Favour is on the winning side of a combat, its model parts with Path of the Favoured gain +1 Str with Duration: Permanent.",
                       "option_id": "cfjrumbeplknftjts7sqzb"
                     },
@@ -711,7 +722,7 @@
                     {
                       "type": "check",
                       "name": "War Dais",
-                      "cost": 110,
+                      "cost": 10,
                       "options": [],
                       "refopt": "war_dais_mount",
                       "option_id": "6xrjx3lkfisujrdgfbde8f"
@@ -727,7 +738,7 @@
                     {
                       "type": "check",
                       "name": "Black Steed",
-                      "cost": 135,
+                      "cost": 130,
                       "options": [],
                       "refopt": "black_steed_mount",
                       "option_id": "du05gw6comoyt6bulxrb"
@@ -743,7 +754,7 @@
                     {
                       "type": "check",
                       "name": "Dark Chariot",
-                      "cost": 140,
+                      "cost": 130,
                       "options": [],
                       "refopt": "dark_chariot_mount",
                       "option_id": "2lihjxk65rouf36yfzuar"
@@ -751,7 +762,7 @@
                     {
                       "type": "check",
                       "name": "Chimera",
-                      "cost": 150,
+                      "cost": 160,
                       "refopt": "chimera_mount",
                       "option_id": "sl7p88754n3761trzy3wo",
                       "maxUnitCost": 800
@@ -759,7 +770,7 @@
                     {
                       "type": "check",
                       "name": "Wasteland Dragon",
-                      "cost": 380,
+                      "cost": 340,
                       "hasOption": ["army_general"],
                       "refopt": "wasteland_dragon_mount",
                       "option_id": "wk745m5kuwpcjs9zatts",
@@ -800,8 +811,15 @@
                   "options": [
                     {
                       "type": "check",
+                      "name": "Spiked Shield",
+                      "cost": 10,
+                      "ignoreCost": true,
+                      "option_id": "9cdg96d9tb5dhde80ojbgg"
+                    },
+                    {
+                      "type": "check",
                       "name": "Trophy Rack",
-                      "cost": 0,
+                      "cost": 10,
                       "collapsible": true,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
@@ -818,48 +836,6 @@
                       ]
                     },
                     {
-                      "type": "group",
-                      "name": "Shield",
-                      "optionsLabel": "Shield",
-                      "collapsible": true,
-                      "maxSize": 1,
-                      "minSize": 1,
-                      "options": [
-                        {
-                          "type": "check",
-                          "name": "Shield",
-                          "cost": 0,
-                          "optionsLabel": "Shield Enchant",
-                          "maxSize": 1,
-                          "sortOptions": true,
-                          "collapsible": true,
-                          "options": [],
-                          "optionsDict": ["shieldEnchant"],
-                          "option_id": "8tihj2jmtqcobyfltirmkc"
-                        },
-                        {
-                          "type": "check",
-                          "name": "Spiked Shield",
-                          "cost": 10,
-                          "optionsLabel": "Shield Enchant",
-                          "maxSize": 1,
-                          "sortOptions": true,
-                          "collapsible": true,
-                          "options": [],
-                          "hasStat": {
-                            "global": {
-                              "Hgt": {
-                                "values": ["1", "2", "3"]
-                              }
-                            }
-                          },
-                          "optionsDict": ["shieldEnchant", "spikedShieldEnchant"],
-                          "option_id": "9cdg96d9tb5dhde80ojbgg"
-                        }
-                      ],
-                      "option_id": "456nv6si22qmmy3xza4vp"
-                    },
-                    {
                       "optionsLabel": "Armour Enchant",
                       "maxSize": 1,
                       "collapsible": true,
@@ -867,6 +843,15 @@
                       "options": [],
                       "optionsDict": ["armourEnchant"],
                       "option_id": "uv00ftogqweuewfsryxqxe"
+                    },
+                    {
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "8tihj2jmtqcobyfltirmkc"
                     },
                     {
                       "type": "group",
@@ -926,7 +911,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "lanceEnchant"],
-                          "option_id": "ineermhrldczzai1dxzjv"
+                          "option_id": "ineermhrldczzai1dxzjv",
+                          "hasNotOption": ["warDais_mount_unit"]
                         }
                       ],
                       "option_id": "gqf3vd19jdd39w67oz5w2k"
@@ -1053,7 +1039,7 @@
                     {
                       "type": "check",
                       "name": "Wasteland Behemoth",
-                      "cost": 200,
+                      "cost": 180,
                       "refopt": "wasteland_behemoth_mount",
                       "option_id": "nok4ejlrqzfvv4co25eizp"
                     }
@@ -1081,8 +1067,15 @@
                   "options": [
                     {
                       "type": "check",
+                      "name": "Spiked Shield",
+                      "cost": 40,
+                      "ignoreCost": true,
+                      "option_id": "cezfujfdyu7xajmwgb4p0n"
+                    },
+                    {
+                      "type": "check",
                       "name": "Trophy Rack",
-                      "cost": 0,
+                      "cost": 10,
                       "collapsible": true,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
@@ -1097,41 +1090,6 @@
                           "noArmyMult": true
                         }
                       ]
-                    },
-                    {
-                      "type": "group",
-                      "optionsLabel": "Shield",
-                      "collapsible": true,
-                      "maxSize": 1,
-                      "minSize": 1,
-                      "options": [
-                        {
-                          "type": "check",
-                          "name": "Shield",
-                          "cost": 0,
-                          "optionsLabel": "Shield Enchant",
-                          "maxSize": 1,
-                          "sortOptions": true,
-                          "collapsible": true,
-                          "options": [],
-                          "optionsDict": ["shieldEnchant"],
-                          "option_id": "br3og5f3wcv7g6csqtlehf"
-                        },
-                        {
-                          "type": "check",
-                          "name": "Spiked Shield",
-                          "cost": 50,
-                          "optionsLabel": "Shield Enchant",
-                          "maxSize": 1,
-                          "sortOptions": true,
-                          "collapsible": true,
-                          "options": [],
-                          "hasNotOption": ["mount"],
-                          "optionsDict": ["shieldEnchant", "spikedShieldEnchant"],
-                          "option_id": "cezfujfdyu7xajmwgb4p0n"
-                        }
-                      ],
-                      "option_id": "kw04mgdp35p4tpothvghi"
                     },
                     {
                       "type": "group",
@@ -1152,6 +1110,15 @@
                       "option_id": "cql7zaw1id8jw9asoei96c"
                     },
                     {
+                      "optionsLabel": "Shield Enchant",
+                      "maxSize": 1,
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["shieldEnchant"],
+                      "option_id": "br3og5f3wcv7g6csqtlehf"
+                    },
+                    {
                       "type": "group",
                       "name": "Weapon",
                       "collapsible": true,
@@ -1161,7 +1128,7 @@
                         {
                           "type": "check",
                           "name": "Paired Weapons",
-                          "cost": 5,
+                          "cost": 10,
                           "maxSize": 1,
                           "optionsLabel": "Paired Weapons Enchant",
                           "optionsSuffix": " (Paired Weapons)",
@@ -1174,7 +1141,7 @@
                         {
                           "type": "check",
                           "name": "Halberd",
-                          "cost": 25,
+                          "cost": 20,
                           "maxSize": 1,
                           "optionsLabel": "Halberd Enchant",
                           "optionsSuffix": " (Halberd)",
@@ -1187,7 +1154,7 @@
                         {
                           "type": "check",
                           "name": "Great Weapon",
-                          "cost": 45,
+                          "cost": 40,
                           "maxSize": 1,
                           "optionsLabel": "Great Weapon Enchant",
                           "optionsSuffix": " (Great Weapon)",
@@ -1243,7 +1210,7 @@
             {
               "name": "Sorcerer",
               "refs": ["wizard", "sorcerer", "tag_Human", "tag_Metal Armour"],
-              "cost": 270,
+              "cost": 290,
               "category": "perso",
               "options": [
                 {
@@ -1262,12 +1229,6 @@
                     }
                   ],
                   "maxSize": 1
-                },
-                {
-                  "type": "check",
-                  "name": "Veil Walker",
-                  "cost": 70,
-                  "option_id": "qu6dz6ir9ofiprgq8rdrn9"
                 },
                 {
                   "type": "group",
@@ -1360,7 +1321,7 @@
                     {
                       "type": "check",
                       "name": "War Dais",
-                      "cost": 50,
+                      "cost": 45,
                       "options": [],
                       "refopt": "war_dais_mount",
                       "option_id": "6f0ld7ojotlys5qsvmgs5r"
@@ -1368,7 +1329,7 @@
                     {
                       "type": "check",
                       "name": "Dark Chariot",
-                      "cost": 80,
+                      "cost": 70,
                       "options": [],
                       "refopt": "dark_chariot_mount",
                       "option_id": "nfir0rbb4glo1l28v25fhl",
@@ -1386,7 +1347,7 @@
                     {
                       "type": "check",
                       "name": "Battleshrine",
-                      "cost": 200,
+                      "cost": 190,
                       "refopt": "battleshrine_mount",
                       "option_id": "6ln4fcna2gc0mwzc5td7fee",
                       "maxUnitCost": 800
@@ -1394,7 +1355,7 @@
                     {
                       "type": "check",
                       "name": "Wasteland Behemoth",
-                      "cost": 330,
+                      "cost": 300,
                       "refopt": "wasteland_behemoth_mount",
                       "option_id": "96oggxnumqmpxp9483g50s",
                       "maxUnitCost": 800
@@ -1402,7 +1363,7 @@
                     {
                       "type": "check",
                       "name": "Wasteland Dragon",
-                      "cost": 360,
+                      "cost": 320,
                       "refopt": "wasteland_dragon_mount",
                       "option_id": "hrfxamtceqfm5pe9110ft",
                       "hasOption": ["army_general"],
@@ -1519,9 +1480,9 @@
               "maxUnitCost": 700
             },
             {
-              "refs": ["barbarian_chief", "tag_Human", "tag_Metal Armour"],
+              "refs": ["barbarian_chief", "tag_Human", "tag_Metal Armour", "tag_Light Armour"],
               "name": "Barbarian Chief",
-              "cost": 75,
+              "cost": 60,
               "options": [
                 {
                   "type": "group",
@@ -1532,7 +1493,7 @@
                     {
                       "type": "check",
                       "name": "General",
-                      "cost": 0,
+                      "cost": 30,
                       "refs": ["army_general"],
                       "armyHasNotOption": [
                         {
@@ -1541,6 +1502,20 @@
                         }
                       ],
                       "option_id": "96xb75aq4wfwa4huqeyzz8"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Exclusive",
+                      "cost": 30,
+                      "refs": ["exclusive"],
+                      "option_id": "f32f32f23unf329fn923f32f32"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Captain and Attached",
+                      "cost": 0,
+                      "refs": ["captain", "attached"],
+                      "option_id": "32r4328g34n9g439gn453g54g54"
                     }
                   ],
                   "maxSize": 1
@@ -1569,7 +1544,7 @@
                     {
                       "type": "check",
                       "name": "Shadow Chaser",
-                      "cost": 110,
+                      "cost": 70,
                       "options": [],
                       "refopt": "shadow_chaser_mount",
                       "option_id": "41q2ms2wgvgmdtbr7wgseh"
@@ -1577,7 +1552,7 @@
                     {
                       "type": "check",
                       "name": "Black Steed",
-                      "cost": 75,
+                      "cost": 60,
                       "refopt": "black_steed_mount",
                       "options": [],
                       "option_id": "arcq5byf126ofqvclxkoq"
@@ -1585,7 +1560,7 @@
                     {
                       "type": "check",
                       "name": "Dark Chariot",
-                      "cost": 140,
+                      "cost": 10,
                       "options": [],
                       "refopt": "dark_chariot_mount",
                       "option_id": "nydzbwqiuqu9482zw7m9"
@@ -1593,14 +1568,14 @@
                     {
                       "type": "check",
                       "name": "Chimera",
-                      "cost": 240,
+                      "cost": 220,
                       "refopt": "chimera_mount",
                       "option_id": "q8tyspieoaksftwoi7y6qq"
                     },
                     {
                       "type": "check",
                       "name": "Wasteland Behemoth",
-                      "cost": 360,
+                      "cost": 300,
                       "refopt": "wasteland_behemoth_mount",
                       "option_id": "yc315259w4louypaf6r5"
                     }
@@ -1629,7 +1604,7 @@
                     {
                       "type": "check",
                       "name": "Trophy Rack",
-                      "cost": 0,
+                      "cost": 10,
                       "collapsible": true,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
@@ -1709,7 +1684,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "b2248lo8q8i9kf7q86apin"
+                          "option_id": "b2248lo8q8i9kf7q86apin",
+                          "hasNotOption": ["warDais_mount_unit"]
                         },
                         {
                           "type": "check",
@@ -1803,7 +1779,7 @@
           "options": [
             {
               "name": "Warriors",
-              "cost": 30,
+              "cost": 0,
               "refs": ["warriors", "core_unit", "tag_Path of the Favoured", "tag_Metal Armour"],
               "options": [
                 {
@@ -1843,8 +1819,14 @@
                             },
                             {
                               "type": "check",
+                              "name": "Spiked Shield",
+                              "cost": 2,
+                              "option_id": "dfdfdh1xyn913zqi79o2xv7tes"
+                            },
+                            {
+                              "type": "check",
                               "name": "Great Weapon",
-                              "cost": 3,
+                              "cost": 4,
                               "option_id": "aierhvfzaeas1s30nsqyof"
                             },
                             {
@@ -1863,14 +1845,14 @@
                           "options": [
                             {
                               "name": "Gluttony",
-                              "cost": 3,
+                              "cost": 2,
                               "type": "check",
                               "refs": ["warrior_favour"],
                               "option_id": "w6730yrwi116g3vnv5w62"
                             },
                             {
                               "name": "Envy",
-                              "cost": 3,
+                              "cost": 2,
                               "type": "check",
                               "refs": ["warrior_favour"],
                               "option_id": "imynhxfqa1dmx40zzg4io"
@@ -1884,21 +1866,21 @@
                             },
                             {
                               "name": "Lust",
-                              "cost": 3,
+                              "cost": 2,
                               "type": "check",
                               "refs": ["warrior_favour"],
                               "option_id": "80ndcu88s5ad7132g9k2l"
                             },
                             {
                               "name": "Pride",
-                              "cost": 3,
+                              "cost": 2,
                               "type": "check",
                               "refs": ["warrior_favour"],
                               "option_id": "md4ndcqfxtcomitqj0y6w"
                             },
                             {
                               "name": "Sloth",
-                              "cost": 3,
+                              "cost": 6,
                               "type": "check",
                               "refs": ["warrior_favour"],
                               "option_id": "hh77ycqpm2p38v4romtrs9"
@@ -1928,7 +1910,7 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "sortOptions": true,
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -1938,7 +1920,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "p8f4ovp75xjtkg8kotqpan"
                     }
                   ],
@@ -1991,7 +1973,7 @@
             },
             {
               "name": "Barbarians",
-              "cost": 40,
+              "cost": 0,
               "refs": ["barbarians", "core_unit", "tag_Human", "tag_Light Armour"],
               "options": [
                 {
@@ -2003,7 +1985,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 8,
+                      "cost": 10,
                       "options": [
                         {
                           "optionsLabel": "Equipment",
@@ -2072,7 +2054,7 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "sortOptions": true,
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2082,7 +2064,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "bcspgbzjtq6k760blffrw"
                     }
                   ],
@@ -2095,7 +2077,7 @@
             },
             {
               "name": "Barbarian Horsemen",
-              "cost": 90,
+              "cost": 95,
               "refs": ["barbarian_horsemen", "tag_Human", "tag_Light Armour", "core_unit", "tag_Mount"],
               "armyHasNotOption": [],
               "options": [
@@ -2108,7 +2090,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 15,
                       "refs": ["horsement_count"],
                       "options": [
                         {
@@ -2129,7 +2111,7 @@
                             },
                             {
                               "name": "Light Lance",
-                              "cost": 2,
+                              "cost": 0,
                               "type": "check",
                               "option_id": "084ge5q57i1vcg016xbnf6b"
                             }
@@ -2150,7 +2132,7 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "sortOptions": true,
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2160,7 +2142,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "moi4r5q15doma54elyk1b"
                     }
                   ],
@@ -2181,7 +2163,7 @@
           "options": [
             {
               "name": "Warrior Knights",
-              "cost": 50,
+              "cost": 0,
               "refs": ["warrior_knights", "tag_Metal Armour", "tag_Path of the Favoured", "tag_", "tag_Mount"],
               "armyHasNotOption": [],
               "options": [
@@ -2194,7 +2176,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 40,
+                      "cost": 50,
                       "options": [
                         {
                           "maxSize": 1,
@@ -2204,20 +2186,20 @@
                             {
                               "type": "check",
                               "name": "Great Weapon",
-                              "cost": 1,
+                              "cost": 3,
                               "option_id": "4f2me4qq3r4n6xzuh53gb"
                             },
                             {
                               "type": "check",
                               "name": "Lance",
-                              "cost": 6,
+                              "cost": 5,
                               "option_id": "6xp8ra2717hp0i45wlnf4r"
                             },
                             {
                               "type": "check",
                               "name": "Spiked Shield",
                               "option_id": "nf382fn32nf0932fn832f32",
-                              "cost": 6
+                              "cost": 2
                             }
                           ],
                           "option_id": "gfk8ln9am1dz4q1ctw170m"
@@ -2241,7 +2223,7 @@
                             },
                             {
                               "name": "Greed",
-                              "cost": 3,
+                              "cost": 7,
                               "type": "check",
                               "option_id": "488clrwjrew6boniqiuyam",
                               "refs": ["favour_greed"]
@@ -2266,7 +2248,7 @@
                             },
                             {
                               "name": "Wrath",
-                              "cost": 6,
+                              "cost": 7,
                               "type": "check",
                               "option_id": "xz8t7iqbarydqmnr8pq5"
                             }
@@ -2288,7 +2270,7 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2298,7 +2280,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "86d8qfxxh98pkb5i37c59"
                     }
                   ],
@@ -2311,12 +2293,66 @@
             },
             {
               "name": "Warrior Chariot",
-              "cost": 210,
+              "cost": 200,
               "refs": ["warrior_charriot", "tag_Path of the Favoured", "tag_Metal Armour", "tag_", "tag_Mount", "tag_Construct"],
               "armyHasNotOption": [],
               "unit_id": "warrior_chariot",
               "option_id": "58w4b8xokp70od3e3mdcqb",
-              "logo": "special"
+              "logo": "special",
+              "options": [
+                {
+                  "optionsLabel": "Favour",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "options": [
+                    {
+                      "name": "Envy",
+                      "cost": 20,
+                      "type": "check",
+                      "option_id": "089t771ig765tdsrtee4868z",
+                      "refs": ["warrior_chariot_amount"]
+                    },
+                    {
+                      "name": "Gluttony",
+                      "cost": 10,
+                      "type": "check",
+                      "option_id": "qn80d0yq9pdsq9fkldx7g2"
+                    },
+                    {
+                      "name": "Greed",
+                      "cost": 20,
+                      "type": "check",
+                      "option_id": "sv3b8cjn5dsmfkxl6mwe6o9",
+                      "refs": ["favour_greed"]
+                    },
+                    {
+                      "name": "Lust",
+                      "cost": 10,
+                      "type": "check",
+                      "option_id": "ilxja90ds86v3euwy8cfqmd"
+                    },
+                    {
+                      "name": "Pride",
+                      "cost": 10,
+                      "type": "check",
+                      "option_id": "lsmmx4mddsgc9fvjrcaupp8"
+                    },
+                    {
+                      "name": "Sloth",
+                      "cost": 10,
+                      "type": "check",
+                      "option_id": "497vgmaldszdagttszitoffb"
+                    },
+                    {
+                      "name": "Wrath",
+                      "cost": 10,
+                      "type": "check",
+                      "option_id": "h1n85puqv3dsgxl8hk542ud"
+                    }
+                  ],
+                  "option_id": "obx3p01bdsiqsaevgjjt2qk5"
+                }
+              ]
             },
             {
               "name": "Chosen",
@@ -2348,14 +2384,20 @@
                             },
                             {
                               "type": "check",
+                              "name": "Spiked Shield",
+                              "cost": 2,
+                              "option_id": "5kvydsad8t73pgpmb65n35j65"
+                            },
+                            {
+                              "type": "check",
                               "name": "Great Weapon",
-                              "cost": 3,
+                              "cost": 6,
                               "option_id": "vyh4lswsojmf8shg7skz"
                             },
                             {
                               "type": "check",
                               "name": "Halberd",
-                              "cost": 7,
+                              "cost": 6,
                               "option_id": "tkf19z6zh9drpejwc4zpw"
                             }
                           ],
@@ -2381,7 +2423,7 @@
                             },
                             {
                               "name": "Greed",
-                              "cost": 7,
+                              "cost": 8,
                               "type": "check",
                               "option_id": "fmte84rajw8a7qivjtwz4d",
                               "refs": ["favour_greed"]
@@ -2400,13 +2442,13 @@
                             },
                             {
                               "name": "Sloth",
-                              "cost": 0,
+                              "cost": 5,
                               "type": "check",
                               "option_id": "liaksre7pi9f5j425pki"
                             },
                             {
                               "name": "Wrath",
-                              "cost": 7,
+                              "cost": 5,
                               "type": "check",
                               "option_id": "xat063zsm3d7yt54kna3wg"
                             }
@@ -2428,7 +2470,7 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2438,7 +2480,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "tpiufgci02ixei1pcn3et"
                     }
                   ],
@@ -2451,12 +2493,12 @@
             },
             {
               "name": "Chosen Knights",
-              "cost": 50,
+              "cost": 0,
               "refs": ["chosen_knights", "chosen_model", "tag_Path of the Favoured", "tag_Metal Armour", "tag_", "tag_Mount"],
               "options": [
                 {
                   "minSize": 3,
-                  "maxSize": 5,
+                  "maxSize": 4,
                   "addToUnitSize": true,
                   "options": [
                     {
@@ -2470,29 +2512,8 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 110,
+                      "cost": 120,
                       "options": [
-                        {
-                          "type": "group",
-                          "optionsLabel": "Weapons",
-                          "maxSize": 1,
-                          "minSize": 1,
-                          "options": [
-                            {
-                              "option_id": "fn289f82nf83492nf932f32f32",
-                              "type": "check",
-                              "name": "Lance",
-                              "cost": 0
-                            },
-                            {
-                              "type": "check",
-                              "name": "Halberd",
-                              "cost": 0,
-                              "option_id": "chosen_knights_halberd"
-                            }
-                          ],
-                          "option_id": "chosen_knights_weapons"
-                        },
                         {
                           "minSize": 1,
                           "maxSize": 1,
@@ -2559,7 +2580,7 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2569,7 +2590,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "nx6wk8pevqshhfklmtskl8"
                     }
                   ],
@@ -2582,7 +2603,7 @@
             },
             {
               "name": "Chosen Chariot",
-              "cost": 290,
+              "cost": 310,
               "refs": ["chosen_charriot", "tag_Path of the Favoured", "tag_Metal Armour", "tag_", "tag_Mount", "tag_Construct"],
               "armyHasNotOption": [],
               "options": [
@@ -2645,7 +2666,7 @@
             },
             {
               "name": "Forsworn",
-              "cost": 15,
+              "cost": 0,
               "refs": ["forsworn", "tag_Path of the Exiled", "tag_Metal Armour"],
               "armyHasNotOption": [],
               "options": [
@@ -2671,7 +2692,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 55,
+                      "cost": 65,
                       "options": [
                         {
                           "maxSize": 1,
@@ -2681,19 +2702,19 @@
                             {
                               "type": "check",
                               "name": "Paired Weapons",
-                              "cost": 0,
+                              "cost": 5,
                               "option_id": "7dne0xca6vkypilduzcen9"
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
-                              "cost": 2,
+                              "cost": 5,
                               "option_id": "k8h2u46v7vhylcu1or0zk"
                             },
                             {
                               "type": "check",
                               "name": "Halberd",
-                              "cost": 2,
+                              "cost": 5,
                               "option_id": "kbqqknznueoqmwyssy9yve"
                             }
                           ],
@@ -2706,7 +2727,7 @@
                             {
                               "type": "check",
                               "name": "Spiked Shield",
-                              "cost": 15,
+                              "cost": 5,
                               "option_id": "ejqkdgms716ohnot5giqzh"
                             },
                             {
@@ -2741,7 +2762,7 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2751,7 +2772,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "lw4ojdi5qvd6l5tfjy5qd4"
                     }
                   ],
@@ -2764,7 +2785,7 @@
             },
             {
               "name": "Wretched Ones",
-              "cost": 15,
+              "cost": 30,
               "refs": ["wrteched_ones", "tag_Irredeemable"],
               "armyHasNotOption": [],
               "options": [
@@ -2777,7 +2798,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 85,
+                      "cost": 70,
                       "option_id": "clxq1pa8kmuq82nd2jqhmg",
                       "refs": ["wretched_ones_amount"]
                     }
@@ -2791,7 +2812,7 @@
             },
             {
               "name": "Battleshrine",
-              "cost": 300,
+              "cost": 320,
               "refs": ["battle_shrine", "wizard", "not_a_leader", "tag_Human", "tag_Light Armour", "tag_Mount", "tag_Irredeemable"],
               "armyHasNotOption": [],
               "magic": {
@@ -2799,15 +2820,15 @@
                 "spells": [
                   {
                     "path": "alchemy",
-                    "ref": "corruption_of_tin"
+                    "ref": "molten_copper"
                   },
                   {
                     "path": "evocation",
                     "ref": "whispers_of_the_veil"
                   },
                   {
-                    "path": "occultism",
-                    "ref": "grave_calls"
+                    "path": "evocation",
+                    "ref": "danse_macabre"
                   },
                   {
                     "path": "hereditary",
@@ -2820,7 +2841,7 @@
                   "type": "check",
                   "name": "Standard Bearer",
                   "option_id": "fn238fn23dfsfsd9f8j32f32f32mf32f32",
-                  "cost": 15
+                  "cost": 10
                 }
               ],
               "unit_id": "battleshrine",
@@ -2829,7 +2850,7 @@
             },
             {
               "name": "Flayers",
-              "cost": 90,
+              "cost": 95,
               "refs": ["flayers", "tag_Human", "tag_Light Armour", "tag_Mount"],
               "armyHasNotOption": [],
               "options": [
@@ -2842,14 +2863,14 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 15,
                       "options": [
                         {
                           "optionsLabel": "Options",
                           "options": [
                             {
                               "name": "Light Lance",
-                              "cost": 2,
+                              "cost": 0,
                               "type": "check",
                               "option_id": "rh9i9zgvflc4jukf9mch4h"
                             }
@@ -2863,13 +2884,13 @@
                           "options": [
                             {
                               "name": "Bow (4+)",
-                              "cost": 1,
+                              "cost": 2,
                               "type": "check",
                               "option_id": "6bx64g996dn87bjerjwhxk"
                             },
                             {
                               "name": "Throwing Weapons (5+)",
-                              "cost": 2,
+                              "cost": 4,
                               "type": "check",
                               "option_id": "t7vjpcr81brr7ki4jwt6u"
                             },
@@ -2903,7 +2924,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "s0e3md3njpawidn45rp1u"
                     }
                   ],
@@ -2956,14 +2977,14 @@
             },
             {
               "name": "Chimera",
-              "cost": 240,
+              "cost": 260,
               "refs": ["chimera_unit", "tag_Beast"],
               "armyHasNotOption": [],
               "options": [
                 {
                   "name": "Wings",
                   "type": "check",
-                  "cost": 40,
+                  "cost": 30,
                   "refs": ["chimera_wings", "flyer"],
                   "armyHasNotOption": [
                     {
@@ -2981,7 +3002,7 @@
             },
             {
               "name": "Feldraks",
-              "cost": -5,
+              "cost": 0,
               "refs": ["unit_feldraks", "tag_Beast", "tag_Feldrak", "tag_Centauroid"],
               "options": [
                 {
@@ -2993,7 +3014,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 115,
+                      "cost": 100,
                       "refs": ["feldrak"],
                       "armyHasNotOption": [
                         {
@@ -3006,22 +3027,23 @@
                           "optionsLabel": "Weapons",
                           "type": "group",
                           "maxSize": 1,
+                          "minSize": 1,
                           "options": [
                             {
                               "name": "Paired Weapons",
-                              "cost": 15,
+                              "cost": 5,
                               "type": "check",
                               "option_id": "or3ma31uzdokh6w92zx1f"
                             },
                             {
                               "name": "Halberd",
-                              "cost": 10,
+                              "cost": 0,
                               "type": "check",
                               "option_id": "wjb8tzhzqfkf6pdz9zdmxl"
                             },
                             {
                               "name": "Great Weapon",
-                              "cost": 8,
+                              "cost": 0,
                               "type": "check",
                               "option_id": "mky1xv2g6hmnp4ureghcvp"
                             }
@@ -3042,7 +3064,7 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -3052,7 +3074,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "hq3wf8ta8krex3wii9l5in"
                     }
                   ],
@@ -3065,7 +3087,7 @@
             },
             {
               "name": "Feldrak Elder",
-              "cost": 440,
+              "cost": 400,
               "refs": [
                 "feldrak_elder",
                 {
@@ -3085,20 +3107,20 @@
                   "options": [
                     {
                       "name": "Great Weapon",
-                      "cost": 25,
+                      "cost": 20,
                       "type": "check",
                       "option_id": "uhwpgp3qx7exarpp0u2pw",
                       "refs": ["feldrak_elder_amount"]
                     },
                     {
                       "name": "Paired Weapons",
-                      "cost": 65,
+                      "cost": 60,
                       "type": "check",
                       "option_id": "jp3yx6jnqw68fmutpztwg"
                     },
                     {
                       "name": "Halberd",
-                      "cost": 45,
+                      "cost": 40,
                       "type": "check",
                       "option_id": "bjmbgl42iwr3j450b5226x"
                     }
@@ -3268,7 +3290,7 @@
             },
             {
               "name": "Forsaken One",
-              "cost": 390,
+              "cost": 340,
               "refs": [
                 "forsaken_one",
                 {
@@ -3285,7 +3307,7 @@
             },
             {
               "name": "Hellmaw",
-              "cost": 310,
+              "cost": 320,
               "refs": ["hellmaw", "tag_Daemon"],
               "armyHasNotOption": [],
               "unit_id": "hellmaw",
@@ -3324,15 +3346,15 @@
                 "spells": [
                   {
                     "path": "alchemy",
-                    "ref": "corruption_of_tin"
+                    "ref": "molten_copper"
                   },
                   {
                     "path": "evocation",
                     "ref": "whispers_of_the_veil"
                   },
                   {
-                    "path": "occultism",
-                    "ref": "grave_calls"
+                    "path": "evocation",
+                    "ref": "danse_macabre"
                   },
                   {
                     "path": "thaumaturgy",
@@ -3370,7 +3392,7 @@
                 {
                   "type": "check",
                   "name": "Wings",
-                  "cost": 40,
+                  "cost": 30,
                   "refs": [],
                   "option_id": "xz7ss2qwktl2868t5kpl5j"
                 }
@@ -3455,7 +3477,7 @@
                 {
                   "type": "check",
                   "name": "Additional Limbs",
-                  "cost": 20,
+                  "cost": 10,
                   "refs": [],
                   "option_id": "ctflhockmjdsqqxo2eonic"
                 }

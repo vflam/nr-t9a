@@ -6,7 +6,7 @@
   },
   "short": "eos",
   "version": "2024 beta1",
-  "nrversion": 362,
+  "nrversion": 366,
   "playable": 1,
   "id": 6,
   "include": [102],
@@ -22,14 +22,16 @@
     "dominant": "Dominant",
     "core_unit": "Core Unit",
     "we_eos_light_sonn": "Light of Sonnstahl",
-    "knightly_electoral": "Core Cavalry"
+    "knightly_electoral": "Core Cavalry",
+    "parentUnit": "Parent Unit",
+    "supportUnit": "Support Unit"
   },
   "dictionnary": [
     {
       "refs": ["potions_and_scrolls"],
       "options": [
         {
-          "name": "Elixir of Negation",
+          "name": "Scroll of Draining",
           "cost": 30,
           "option_id": "xbbpxspqshmevixknbv4",
           "type": "check",
@@ -78,10 +80,16 @@
           "type": "check",
           "refs": ["be_eos_houshold"],
           "armyHasNotOption": ["be_eos_houshold"],
-          "name": "Regimental Colours",
-          "cost": 10,
-          "description": "If the bearer's unit contains a <span class=\"textbf\">Captain</span>, the unit is considered to be within range of any model with <span class=\"textbf\">Orders</span> for the purposes of choosing a target to give an Order.\n",
-          "option_id": "gb8jbd4gzzaqynzsltxxo9"
+          "name": "War College Banner",
+          "cost": 45,
+          "description": "\tThe unit gains <span class=\"textbf\">Orders</span>. When using the <span class=\"textbf\">Orders</span> rule, choose a single model in the unit to use the rule. It must target the unit itself. This overrides the normal restriction of only targeting a unit within range of <span class=\"textbf\">Commanding Presence</span> or <span class=\"textbf\">Rally Around the Flag</span>.\n",
+          "option_id": "gb8jbd4gzzaqynzsltxxso9",
+          "hasOption": [
+            {
+              "refs": ["parentUnit", "supportUnit"],
+              "amount": 1
+            }
+          ]
         },
         {
           "type": "check",
@@ -89,7 +97,7 @@
           "armyHasNotOption": ["be_eos_unity"],
           "hasOption": ["parentUnit"],
           "name": "Banner of Unity",
-          "cost": 45,
+          "cost": 40,
           "description": "\tWhenever the bearer's unit is targeted by an Order, it may immediately give that same Order (<i>for free</i>) to up to two Support Units within 8\" of the bearer's unit.",
           "option_id": "aegjrilo9zqs7ng6ehy2o"
         },
@@ -125,7 +133,7 @@
         {
           "type": "check",
           "name": "The Light of Sonnstahl",
-          "cost": 150,
+          "cost": 140,
           "hasNotOption": ["weaponEnchantUni"],
           "armyHasNotOption": ["we_eos_light_sonn"],
           "refs": ["we_eos_light_sonn", "weaponEnchantUni"],
@@ -145,11 +153,11 @@
         {
           "type": "check",
           "name": "Hammer of Witches",
-          "cost": 45,
+          "cost": 65,
           "hasNotOption": ["weaponEnchantUni"],
           "armyHasNotOption": ["we_eos_hammer_witch"],
           "refs": ["we_eos_hammer_witch", "weaponEnchantUni"],
-          "description": "\tAtt is <span class=\"textbf\">set</span> to 5. <span class=\"textbf\">Fury(towards Channel(X))</span>.",
+          "description": "\t <span class=\"textbf\">Afflict(-1 Channel)</span>. After determining the number of hits, one single hit chosen by the attacker, has its Str and AP multiplied by two, and gains <span class=\"textbf\">Multiple Wounds((2))</span>.\n",
           "option_id": "5cvilzgyyygogc9j0cglbb"
         }
       ],
@@ -185,7 +193,7 @@
         },
         {
           "name": "Dusk Forged",
-          "cost": 65,
+          "cost": 60,
           "option_id": "6hbrus42m8bhe4czns24zs",
           "type": "check",
           "shared": true
@@ -208,10 +216,10 @@
         {
           "type": "check",
           "name": "Locket of Sunna",
-          "cost": 85,
+          "cost": 100,
           "armyHasNotOption": ["art_eos_locket"],
           "refs": ["art_eos_locket"],
-          "description": "When choosing Weapons and Equipment, choose one enemy Character model part in base contact with the wearer's unit. During this Round of Combat the chosen model part suffers: -2 Att, -2 Str, -2 Off, and -2 AP.<br>\n",
+          "description": "When choosing Weapons and Equipment, choose one enemy Character model part in base contact with the wearer's unit. During this Round of Combat the chosen model part suffers: -2 Att, -2 Str, -2 Off, and -2 AP.<br>",
           "option_id": "xp0hvbbtwpuum0tyayoo"
         },
         {
@@ -240,8 +248,8 @@
         },
         {
           "type": "check",
-          "name": "Mantle of Ullor",
-          "cost": 25,
+          "name": "Ullor's Horn",
+          "cost": 20,
           "armyHasNotOption": ["art_eos_ullor"],
           "refs": ["art_eos_ullor"],
           "description": "Enemy units within 8\" of the wearer lose the Charging Momentum Agi bonus and +1 Combat Score from Charging.",
@@ -275,7 +283,7 @@
         {
           "type": "check",
           "name": "Imperial Seal",
-          "cost": 100,
+          "cost": 90,
           "hasNotOption": ["mount"],
           "armyHasNotOption": ["pae_eos_impseal"],
           "refs": ["pae_eos_impseal"],
@@ -285,10 +293,10 @@
         {
           "type": "check",
           "name": "Blacksteel",
-          "cost": 30,
+          "cost": 35,
           "armyHasNotOption": ["pae_eos_blacksteel"],
           "refs": ["pae_eos_blacksteel"],
-          "description": "\t<span class=\"textbf\">Immune(Flaming Attacks, Lightning Attacks)</span>. +1 Arm.<br>\n\tIf the wearer is without Mount, it gains an additional +1 Arm.",
+          "description": "\t<span class=\"textbf\">Immune(Flaming Attacks, )</span>. +1 Arm.<br>\n\tIf the wearer is without Mount, it gains an additional +1 Arm.",
           "option_id": "89pdrtlsx7gmnspb7u2z",
           "hasStat": {
             "global": {
@@ -349,15 +357,15 @@
                       "refs": ["army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
-                      "name": "General, Orders, +1 Cou",
-                      "cost": 50,
+                      "name": "General, Orders, and +1 Cou",
+                      "cost": 45,
                       "option_id": "l80lev8z18ijztwqalffe",
                       "optionsLabel": "Options",
                       "options": [
                         {
                           "type": "check",
                           "name": "Imperial Prince",
-                          "cost": 70,
+                          "cost": 65,
                           "refs": ["imperial_prince", "we_eos_light_sonn"],
                           "armyHasNotOption": [
                             {
@@ -373,7 +381,7 @@
                     {
                       "name": "Battle Standard Bearer and Orders",
                       "type": "check",
-                      "cost": 70,
+                      "cost": 60,
                       "option_id": "43t34g43g34fsafweeg32g432",
                       "refs": ["army_bsb"],
                       "armyHasNotOption": ["army_bsb"],
@@ -382,7 +390,7 @@
                         {
                           "type": "check",
                           "name": "Great Tactician",
-                          "cost": 60,
+                          "cost": 50,
                           "refs": ["great_tactician"],
                           "option_id": "5yuun81i0t6doz0qmckwnt"
                         }
@@ -413,7 +421,7 @@
                     {
                       "type": "check",
                       "name": "Horse",
-                      "cost": 55,
+                      "cost": 50,
                       "options": [],
                       "refopt": "horse_mount",
                       "option_id": "pguju4d8grt28qap6j19",
@@ -423,7 +431,7 @@
                     {
                       "type": "check",
                       "name": "Pegasus",
-                      "cost": 85,
+                      "cost": 80,
                       "options": [],
                       "refopt": "pegasus_mount",
                       "option_id": "rm56380bjmaf1r4egvotd5",
@@ -432,8 +440,7 @@
                     {
                       "type": "check",
                       "name": "Great Griffon",
-                      "hasNotOption": ["army_bsb"],
-                      "cost": 145,
+                      "cost": 140,
                       "options": [],
                       "refopt": "great_griffon_mount",
                       "option_id": "bi1kdhr7wufyj7o957znz"
@@ -441,10 +448,9 @@
                     {
                       "type": "check",
                       "name": "Commanding Dragon",
-                      "hasNotOption": ["army_bsb"],
                       "hasOption": ["imperial_prince"],
                       "extraCategories": ["sunnas_fury"],
-                      "cost": 400,
+                      "cost": 360,
                       "options": [],
                       "refopt": "commanding_dragon_mount",
                       "option_id": "3dofkse79131eex3kg8bc"
@@ -527,7 +533,7 @@
                         {
                           "type": "check",
                           "name": "Repeater Pistol (3+)",
-                          "cost": 15,
+                          "cost": 10,
                           "ignoreCost": true,
                           "option_id": "432fgbh544qhjmtkmlpi32543"
                         }
@@ -733,7 +739,7 @@
                         {
                           "type": "check",
                           "name": "Cavalry Pick",
-                          "cost": 30,
+                          "cost": 20,
                           "maxSize": 1,
                           "optionsLabel": "Cavalry Pick Enchant",
                           "optionsSuffix": " (Cavalry Pick)",
@@ -822,7 +828,7 @@
             },
             {
               "name": "Prelate",
-              "cost": 150,
+              "cost": 140,
               "boundSpells": [
                 {
                   "path": "blessings",
@@ -888,7 +894,7 @@
                       "type": "check",
                       "name": "Altar of Battle",
                       "neverHide": true,
-                      "cost": 250,
+                      "cost": 240,
                       "options": [],
                       "refopt": "altar_of_battle_mount",
                       "option_id": "onlornamyojugxz0n0t5q"
@@ -936,7 +942,7 @@
                         {
                           "type": "check",
                           "name": "Great Weapon",
-                          "cost": 15,
+                          "cost": 10,
                           "maxSize": 1,
                           "optionsLabel": "Great Weapon Enchant",
                           "optionsSuffix": " (Great Weapon)",
@@ -1063,7 +1069,7 @@
                     {
                       "type": "check",
                       "name": "Pegasus",
-                      "cost": 45,
+                      "cost": 40,
                       "options": [],
                       "refopt": "pegasus_mount",
                       "option_id": "snrojpe9evfsfsx14x7bic"
@@ -1071,7 +1077,7 @@
                     {
                       "name": "Great Griffon",
                       "type": "check",
-                      "cost": 130,
+                      "cost": 125,
                       "options": [],
                       "refopt": "great_griffon_mount",
                       "option_id": "twdy64kymrswmpzaqrz1mr"
@@ -1377,7 +1383,7 @@
             },
             {
               "name": "Inquisitor",
-              "cost": 70,
+              "cost": 65,
               "override": [
                 {
                   "hasOption": [
@@ -1505,7 +1511,7 @@
                         {
                           "type": "check",
                           "name": "Repeater Pistol (3+)",
-                          "cost": 20,
+                          "cost": 15,
                           "ignoreCost": true,
                           "option_id": "196751nzil9skrtb3lan"
                         }
@@ -1557,22 +1563,13 @@
                 },
                 {
                   "optionsLabel": "Options",
-                  "collapsible": true,
-                  "maxSize": 1,
                   "options": [
                     {
                       "type": "check",
-                      "name": "Blessed Steel",
-                      "cost": 70,
-                      "option_id": "wuv4v7gt57gqvfxdw0f9p"
-                    },
-                    {
-                      "type": "check",
-                      "name": "Silver Shots",
-                      "cost": 65,
-                      "refs": ["silver_shots"],
-                      "armyHasNotOption": ["silver_shots"],
-                      "option_id": "7md6e33kdjv061wsqzu5em2"
+                      "name": "Hidden",
+                      "cost": 20,
+                      "option_id": "wuv4v7gt57gqvfxdw0fdf9p",
+                      "hasNotOption": ["mount"]
                     }
                   ],
                   "option_id": "6h1lucjtmhdxrhq7vn1t5l"
@@ -1593,8 +1590,8 @@
           "optionsLabel": "Units",
           "options": [
             {
-              "name": "Heavy Infantry",
-              "cost": -20,
+              "name": "State Infantry",
+              "cost": 0,
               "options": [
                 {
                   "minSize": 20,
@@ -1641,7 +1638,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -1651,34 +1648,32 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "g9v8nf8aptnnwdpm40h9"
                     }
                   ],
                   "option_id": "207ngqhkcpg7sx4e69fp3i"
                 }
               ],
-              "unit_id": "heavy_infantry",
+              "unit_id": "state_infantry",
               "option_id": "oap04i73sesyo3pl7ulwh",
               "logo": "core",
-              "refs": ["core_unit", "tag_Human", "tag_Light Armour", "parentUnit"]
+              "refs": ["core_unit", "tag_Human", "parentUnit", "tag_", "tag_Metal Armour"]
             },
             {
-              "name": "Light Infantry",
-              "cost": -5,
-              "override": [
+              "name": "State Detatchment",
+              "cost": 0,
+              "rules": [
                 {
-                  "hasOption": [
-                    {
-                      "refs": ["auxilia"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["imperial_auxiliaries"]
-                  }
+                  "id": "state_detachment",
+                  "params": []
+                },
+                {
+                  "id": "support_unit",
+                  "params": []
                 }
               ],
+              "loses_rules": ["Metal Armour", "eos-parent_unit"],
               "options": [
                 {
                   "minSize": 15,
@@ -1695,49 +1690,27 @@
                           "type": "group",
                           "optionsLabel": "Weapons",
                           "maxSize": 1,
-                          "minSize": 1,
                           "options": [
                             {
                               "type": "check",
-                              "name": "Shield",
-                              "cost": 0,
-                              "option_id": "f23f23f832h90fen98n89f23hf"
-                            },
-                            {
-                              "type": "check",
-                              "name": "Spear and Shield",
-                              "cost": 0,
-                              "option_id": "329rj239jf3024f234g342g43"
+                              "name": "Spear",
+                              "cost": 1,
+                              "option_id": "u7pkd2ankpjpcsptlceakt"
                             },
                             {
                               "type": "check",
                               "name": "Halberd",
                               "cost": 1,
-                              "option_id": "89nb43gvrew54j54gewr34ggdf"
-                            },
-                            {
-                              "type": "check",
-                              "name": "Handgun (4+)",
-                              "cost": 4,
-                              "option_id": "3itw7qju03vm1ee3zasz8",
-                              "refs": ["auxilia"]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Crossbow (4+)",
-                              "cost": 6,
-                              "option_id": "rf9vzc7gwdknf4stlhz1q",
-                              "refs": ["auxilia"]
+                              "option_id": "01j7qosa8ua9otywjfbwxsed"
                             }
                           ],
-                          "option_id": "vm56hm9bkikcxl99zd612r"
+                          "option_id": "rnp1kkt7laqfhdbagydfwa"
                         }
                       ],
-                      "option_id": "zogps9opeefywfxaaouonl",
-                      "refs": ["light_infantry_amount"]
+                      "option_id": "zguv30oc8wkd6abrt1c1td"
                     }
                   ],
-                  "option_id": "ax8395ttb9j7pzf0mts9"
+                  "option_id": "f6gtd5o86w9qdtao2ab920b"
                 },
                 {
                   "type": "group",
@@ -1746,31 +1719,103 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "mbgpieh0uvaiyv6ou4cg8s"
+                      "option_id": "sp4evgjvo7dmggp36ozlhwt"
                     },
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
-                      "option_id": "3vbl3enarjjdj0vw16ulk"
+                      "cost": 10,
+                      "option_id": "g9v8nf8apatnnwdpm40h9"
                     }
                   ],
-                  "option_id": "gge86ytv5ndpn3jrrozh6s"
+                  "option_id": "207ngqhkcpga7sx4e69fp3i"
                 }
               ],
-              "unit_id": "light_infantry",
-              "option_id": "87d8ysls3d82qtvsvgw6xe",
+              "unit_id": "state_infantry",
+              "option_id": "32f23f230fn230f23f23",
               "logo": "core",
-              "refs": ["core_unit", "tag_Human"]
+              "refs": ["core_unit", "tag_Human", "tag_Light Armour", "supportUnit", "tag_"]
             },
             {
-              "name": "State Militia",
-              "cost": 60,
+              "name": "State Marksmen",
+              "cost": 10,
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 20,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 8,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Handgun (4+)",
+                              "cost": 4,
+                              "option_id": "u7pkd2ndskpjpcsptlceakt"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Crossbow (4+)",
+                              "cost": 6,
+                              "option_id": "01j7qosafd8u9fsdotywjfbwxsed"
+                            }
+                          ],
+                          "option_id": "rnpfd1kkt7laqfhbagydfwa"
+                        }
+                      ],
+                      "option_id": "zguv30odc8wk6abrt1c1td",
+                      "refs": ["state_marksmen_amount"]
+                    }
+                  ],
+                  "option_id": "f6gtd5o86w9dsqtao2ab920b"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "sp4evgjvo7mggp36ozlhwt"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "option_id": "g9v8nf8aptnnwdpm40h9"
+                    }
+                  ],
+                  "option_id": "207ngqhkcpg7sx4e69fp3i"
+                }
+              ],
+              "unit_id": "state_infantry",
+              "option_id": "oap04i73sesyo3pl7ulwh",
+              "logo": "core",
+              "refs": ["core_unit", "tag_Human", "supportUnit"]
+            },
+            {
+              "name": "Local Militia",
+              "cost": 75,
               "refs": ["state_militia", "core_unit", "tag_Human"],
               "armyHasNotOption": [],
               "override": [
@@ -1796,7 +1841,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 8,
+                      "cost": 7,
                       "refs": ["militia_numbers"],
                       "options": [
                         {
@@ -1832,7 +1877,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "xlpe9qkrfwk2hx4sy82m0e"
                     }
                   ],
@@ -1845,7 +1890,7 @@
             },
             {
               "name": "Electoral Cavalry",
-              "cost": 40,
+              "cost": 56,
               "refs": ["electoral_cavalry", "knightly_electoral", "core_unit", "tag_Human", "tag_Metal Armour", "tag_Mount"],
               "armyHasNotOption": [
                 {
@@ -1863,7 +1908,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 20,
+                      "cost": 18,
                       "options": [
                         {
                           "type": "check",
@@ -1905,7 +1950,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -1915,7 +1960,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "5aaf5p7j74mnehej8mo6jn"
                     }
                   ],
@@ -1928,7 +1973,7 @@
             },
             {
               "name": "Knightly Orders",
-              "cost": 15,
+              "cost": 25,
               "refs": ["knightly_orders", "core_unit", "knightly_electoral", "tag_Human", "tag_Metal Armour", "tag_Mount"],
               "armyHasNotOption": [
                 {
@@ -1959,7 +2004,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 32,
+                      "cost": 30,
                       "options": [
                         {
                           "type": "check",
@@ -2001,7 +2046,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2011,7 +2056,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "gfdgfdg534g543g54g54"
                     }
                   ],
@@ -2081,7 +2126,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2091,7 +2136,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "vn7ngii1rjd14p7ed18w71j"
                     }
                   ],
@@ -2103,8 +2148,87 @@
               "logo": "special"
             },
             {
+              "name": "Imperial Detachment",
+              "cost": 170,
+              "refs": ["supportUnit", "tag_Human", "tag_Metal Armour"],
+              "loses_rules": ["eos-parent_unit"],
+              "rules": [
+                {
+                  "id": "support_unit",
+                  "params": []
+                }
+              ],
+              "options": [
+                {
+                  "minSize": 15,
+                  "maxSize": 15,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 0,
+                      "options": [
+                        {
+                          "type": "group",
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "options": [
+                            {
+                              "type": "check",
+                              "name": "Shield",
+                              "cost": 0,
+                              "option_id": "41f8fq2uds5sfrk6rlkzycgd"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Great Weapon",
+                              "cost": 2,
+                              "option_id": "g8qh8dqdsojiwcmymajjidqd"
+                            }
+                          ],
+                          "option_id": "4te6otwtdsb9muzwoe5pvefm"
+                        }
+                      ],
+                      "option_id": "lts2kdidsqzdbym2hegp8qi",
+                      "refs": ["imperial_guard_amount"]
+                    }
+                  ],
+                  "option_id": "uqczn8l861osdshzmjity6q"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "optionsLabel": "Banner Enchant",
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["bannerEnchant"],
+                      "option_id": "mf55d15uq7asdscp55juyw5"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "option_id": "vn7ngii1rjdds14p7ed18w71j"
+                    }
+                  ],
+                  "option_id": "02xsqbq421tds6prq2venjkl"
+                }
+              ],
+              "unit_id": "imperial_guard",
+              "option_id": "mcejar1c09ddsrxaxawdo3i8",
+              "logo": "special"
+            },
+            {
               "name": "Knights of the Sun Griffon",
-              "cost": -5,
+              "cost": -10,
               "refs": ["sun_griffon", "tag_Human", "tag_Metal Armour", "tag_Mount"],
               "armyHasNotOption": [],
               "options": [
@@ -2117,7 +2241,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 75,
+                      "cost": 70,
                       "options": [
                         {
                           "type": "group",
@@ -2154,7 +2278,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2164,7 +2288,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "e667wz4rhf6nrjeh7h2k7n"
                     }
                   ],
@@ -2178,7 +2302,7 @@
             {
               "name": "Arcane Engine",
               "refs": ["unit_arcane_engine", "tag_Human", "tag_Mount", "tag_Construct"],
-              "cost": 260,
+              "cost": 250,
               "armyHasNotOption": [],
               "options": [
                 {
@@ -2195,7 +2319,7 @@
                     },
                     {
                       "type": "check",
-                      "name": "Weight of Judgement (Thaumaturgy)",
+                      "name": "The Stars Align (Divination)",
                       "cost": 0,
                       "refs": ["spell"],
                       "option_id": "mhlb6uwj1oe71jivjzbqls"
@@ -2220,7 +2344,7 @@
             {
               "name": "Imperial Rangers",
               "cost": 30,
-              "refs": ["imperial_rangers", "tag_Human"],
+              "refs": ["imperial_rangers", "tag_Human", "supportUnit"],
               "armyHasNotOption": [],
               "options": [
                 {
@@ -2246,7 +2370,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "9l0h8m388umwx8yuw6npjo"
                     }
                   ],
@@ -2255,11 +2379,11 @@
               ],
               "unit_id": "imperial_rangers",
               "option_id": "udvftxybn0hd8sx8y7jxwh",
-              "logo": "pistols"
+              "logo": "special"
             },
             {
               "name": "Reiters",
-              "cost": 40,
+              "cost": 50,
               "refs": ["reiters", "tag_Human", "tag_Light Armour", "tag_Mount"],
               "armyHasNotOption": [],
               "options": [
@@ -2272,7 +2396,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 28,
+                      "cost": 26,
                       "refs": ["reiters_numbers"],
                       "armyHasNotOption": [
                         {
@@ -2316,7 +2440,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "kv3xnuyjpqwv9xb77vyl"
                     }
                   ],
@@ -2325,7 +2449,7 @@
               ],
               "unit_id": "reiters",
               "option_id": "m29783l01ncz5n53znjkfk",
-              "logo": "pistols"
+              "logo": "special"
             }
           ],
           "option_id": "r9hbnw0jonm4umnsf7eg9"
@@ -2363,7 +2487,7 @@
                     },
                     {
                       "type": "check",
-                      "cost": 50,
+                      "cost": 45,
                       "name": "Mortar (4+)",
                       "refs": ["artillery_mortar"],
                       "armyHasNotOption": [
@@ -2419,7 +2543,7 @@
           "options": [
             {
               "name": "Flagellants",
-              "cost": -45,
+              "cost": -35,
               "refs": ["flagellants", "tag_Human"],
               "armyHasNotOption": [],
               "options": [
@@ -2446,7 +2570,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "nntwlaa9rqexgtwvn6nkrq"
                     }
                   ],
@@ -2596,7 +2720,7 @@
                     },
                     {
                       "type": "check",
-                      "name": "Weight of Judgement (Thaumaturgy)",
+                      "name": "The Stars Align (Divination)",
                       "cost": 0,
                       "refs": ["spell"],
                       "option_id": "o19g1w6zy0snwaswpkg73m"

@@ -6,9 +6,9 @@
   },
   "short": "he",
   "version": "2023",
-  "nrversion": 380,
+  "nrversion": 381,
   "playable": 1,
-  "indicators": ["ancient_allies", "queens_bows", "bolt_throwers"],
+  "indicators": ["ancient_allies", "queens_bows", "naval_ordnance"],
   "id": 7,
   "include": [102],
   "hereditary": [
@@ -36,7 +36,7 @@
     "elven_horse_mount": "Elven Horse",
     "dragon_army": "Queen's Cavalier with Height 5",
     "ancient_allies": "Ancient Allies",
-    "bolt_throwers": "Bolt Throwers",
+    "naval_ordnance": "Naval Ordanance",
     "queens_bows": "Queen's Bows",
     "sea_guard_reaper_or_sky_sloop": "Sky Sloop or Sea Guard Reaper"
   },
@@ -259,10 +259,17 @@
       "options": [
         {
           "type": "check",
-          "name": "Elu's Heartwood",
+          "name": "Cadaron’s Heartwood",
           "cost": 75,
           "armyHasNotOption": ["we_he_elus_heart"],
-          "refs": ["weaponEnchantUni", "we_he_elus_heart", { "ref": "queens_bows", "amount": 5 }],
+          "refs": [
+            "weaponEnchantUni",
+            "we_he_elus_heart",
+            {
+              "ref": "queens_bows",
+              "amount": 5
+            }
+          ],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "\tShots 3, Str as user +1, and AP as user +1.<br>",
           "option_id": "6tbdq3x7ggmgzuowaqxy18"
@@ -574,7 +581,13 @@
         {
           "type": "check",
           "name": "Queen's Companion",
-          "refs": ["queens_companion", { "ref": "queens_bows", "amount": 4 }],
+          "refs": [
+            "queens_companion",
+            {
+              "ref": "queens_bows",
+              "amount": 4
+            }
+          ],
           "neverHide": true,
           "cost": 15,
           "armyHasNotOption": [
@@ -634,7 +647,7 @@
           "perPoints": 750
         },
         {
-          "refs": ["bolt_throwers"],
+          "refs": ["naval_ordnance"],
           "amount": 1,
           "perPoints": 1500
         }
@@ -1604,7 +1617,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "sortOptions": true,
                       "maxSize": 1,
@@ -1615,7 +1628,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "kwo7ix5jlgdbcillrgqis9"
                     }
                   ],
@@ -1656,7 +1669,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "sortOptions": true,
                       "maxSize": 1,
@@ -1667,7 +1680,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "ebjuv5kslch3ht8win75j8"
                     }
                   ],
@@ -1682,7 +1695,6 @@
               "name": "Citizen Archers",
               "cost": 20,
               "refs": ["citizen_spears", "core_unit", "tag_Elf", "tag_Light Armour"],
-              "extraCategories": ["queens_bows"],
               "options": [
                 {
                   "minSize": 15,
@@ -1707,7 +1719,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "sortOptions": true,
                       "maxSize": 1,
@@ -1718,7 +1730,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "8udmh47ku3xju3bre0viuk"
                     }
                   ],
@@ -1757,7 +1769,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "sortOptions": true,
                       "maxSize": 1,
@@ -1768,7 +1780,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "m3w0c4ztz5novki1g4ahc"
                     }
                   ],
@@ -1823,7 +1835,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "sortOptions": true,
                       "maxSize": 1,
@@ -1834,7 +1846,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "x23oeiabxbpy9kx7egafq"
                     }
                   ],
@@ -1882,7 +1894,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "sortOptions": true,
                       "maxSize": 1,
@@ -1893,7 +1905,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "n06n25c9ahqgdctxzr6286"
                     }
                   ],
@@ -1946,7 +1958,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "sortOptions": true,
                       "maxSize": 1,
@@ -1957,7 +1969,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "z0or65qfqkgrq1wicf3tli"
                     }
                   ],
@@ -1997,7 +2009,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "sortOptions": true,
                       "maxSize": 1,
@@ -2008,7 +2020,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "nkciv235i8qq2d251p14ts"
                     }
                   ],
@@ -2048,7 +2060,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "sortOptions": true,
                       "maxSize": 1,
@@ -2059,7 +2071,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "5qj1rfns3wwl05kda7gcsn"
                     }
                   ],
@@ -2087,7 +2099,13 @@
                       "type": "numeric",
                       "cost": 80,
                       "option_id": "h2xi6ji4zwox78wf96tjaj",
-                      "refs": ["reaver_chariots_amount", { "ref": "queens_bows", "amount": 2 }]
+                      "refs": [
+                        "reaver_chariots_amount",
+                        {
+                          "ref": "queens_bows",
+                          "amount": 2
+                        }
+                      ]
                     }
                   ],
                   "option_id": "va71xufixv2gs6vpplmtc"
@@ -2099,13 +2117,13 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "1ar0t0fvxy2fwvcjpsbwg7"
                     },
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "kyqb8xkenxao6uyl6ux2n"
                     }
                   ],
@@ -2283,7 +2301,7 @@
             {
               "name": "Sea Guard Reaper",
               "cost": 220,
-              "refs": ["sea_guard_reaper", "war_machine", "sea_guard_reaper_or_sky_sloop", "tag_Elf", "tag_Light Armour", "bolt_throwers"],
+              "refs": ["sea_guard_reaper", "war_machine", "sea_guard_reaper_or_sky_sloop", "tag_Elf", "tag_Light Armour", "naval_ordnance"],
               "armyHasNotOption": [
                 {
                   "refs": ["sea_guard_reaper_or_sky_sloop"],
@@ -2346,7 +2364,7 @@
                 "tag_Mount",
                 "tag_Beast",
                 "tag_Construct",
-                "bolt_throwers"
+                "naval_ordnance"
               ],
               "armyHasNotOption": [
                 {
@@ -2401,7 +2419,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "sortOptions": true,
                       "maxSize": 1,
@@ -2412,7 +2430,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "vkxan0zkh9q1a67131xbtm"
                     }
                   ],
@@ -2466,7 +2484,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "5bzlhtgvsusgnbi9yb3g4u"
                     }
                   ],

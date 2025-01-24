@@ -6,7 +6,7 @@
   },
   "short": "vc",
   "version": "3rd ed",
-  "nrversion": 420,
+  "nrversion": 422,
   "playable": 1,
   "id": 16,
   "include": [102],
@@ -101,6 +101,16 @@
           "option_id": "973ykkblf2uri0p1fucnr9"
         },
         {
+          "type": "check",
+          "hasOption": ["core_unit"],
+          "refs": ["be_eldritch_might"],
+          "armyHasNotOption": ["be_eldritch_might"],
+          "name": "Banner of Eldritch Might",
+          "cost": 50,
+          "description": "\tDuring friendly Magic Phases: All spells targeting only the bearer’s unit gain a +1 modifier to their Casting Rolls.<br><br>In addition, if the unit is targeted by a successfully cast Spell in a friendly Magic Phase. (Spell may include other targets) it gains <span class=\"textbf\">Fight in Extra Rank</span> with Duration: One Turn. <br>It can only benefit from this once in each Magic Phase. \n",
+          "option_id": "f43g43g43g43hk90g430"
+        },
+        {
           "name": "Banner of Speed",
           "cost": 45,
           "option_id": "3sn37l22n0ztvj9rmqq7e",
@@ -120,7 +130,7 @@
           "armyHasNotOption": ["we_vc_harvester"],
           "refs": ["weaponEnchantUni", "we_vc_harvester"],
           "hasNotOption": ["weaponEnchantUni"],
-          "description": "\tStr is <span class=\"textbf\">set</span> to 10, AP is <span class=\"textbf\">set</span> to 10, <span class=\"textbf\">Divine Attacks</span>. When rolling to wound use the enemy's Courage instead of its Resilience.",
+          "description": "\tStr is <span class=\"textbf\">set</span> to 10, AP is <span class=\"textbf\">set</span> to 10, <span class=\"textbf\">Divine Attacks</span>. When rolling to wound, substitute the target's Courage for its Resilience.",
           "option_id": "am702ki757ngj9a6v95k89"
         },
         {
@@ -131,7 +141,7 @@
           "hasNotOption": ["weaponEnchantUni"],
           "hasOption": ["vampire_char"],
           "cost": 45,
-          "description": "\t+1 Str, +1 AP, Unholy Appetite, Vampiric(3+). If the wielder's model has Height 4 or more, the attacks gain <span class=\"textbf\">Vampiric(5+)</span> instead of <span class=\"textbf\">Vampiric(3+)</span>.",
+          "description": "\t+1 Str, +1 AP, Unholy Appetite, Vampiric(3+). If the wielder's model has Height 4 or more, the wielder gain <span class=\"textbf\">Vampiric(5+)</span> instead of <span class=\"textbf\">Vampiric(3+)</span>.",
           "option_id": "95axz4aqfjs3pziahcomlz"
         }
       ],
@@ -183,16 +193,16 @@
           ],
           "armyHasNotOption": ["art_vc_necro_staff"],
           "refs": ["art_vc_necro_staff"],
-          "description": "\tThe bearer gains <span class=\"textbf\">Channel(1)</span> and can cast <i>Arise!</i> (Hereditary Spell) as a Bound Spell(5+), with the following changes : its Range is 6\", and it has type Aura.",
+          "description": "\tThe wielder gains <span class=\"textbf\">Channel(1)</span> and can cast <i>Arise!</i> (Hereditary Spell) as a Bound Spell(5+), with the following changes : Range is <span class=\"textbf\">set</span> 6\", and it gains Type: Aura.",
           "option_id": "ygvvfe5j6xp001z3y474syyz"
         },
         {
           "type": "check",
           "name": "Hypnotic Pendant",
-          "cost": 60,
+          "cost": 50,
           "armyHasNotOption": ["art_vc_hypno"],
           "refs": ["art_vc_hypno"],
-          "description": "\tThe bearer gains <span class=\"textbf\">Parry</span>. All Rank-and-File models with Height 2 or less in the bearer's unit gain <span class=\"textbf\">Parry</span>.",
+          "description": "\tThe wearer gains <span class=\"textbf\">Parry</span>. All Rank-and-File models with Height 2 or less in the wearer's unit gain <span class=\"textbf\">Parry</span>.",
           "option_id": "y7tpn4apgj3p1463shw1q",
           "hasStat": {
             "global": {
@@ -205,10 +215,10 @@
         {
           "type": "check",
           "name": "Eternity Gem",
-          "cost": 45,
+          "cost": 35,
           "armyHasNotOption": ["art_vc_eternity_gem"],
           "refs": ["art_vc_eternity_gem"],
-          "description": "\tThe bearer's model gains <span class=\"textbf\">Immune(Lethal Strike, Poison Attacks, Multiple Wounds(X))</span>.",
+          "description": "\tThe bearer's model gains <span class=\"textbf\">Immune(Lethal Strike, , )</span>.\t<br>When the model suffers a wound from an attack with <span class=\"textbf\">Multiple Wounds(X)</span>, reduce the amount of wounds by 1, to a minimum of 1.\n",
           "option_id": "9ii8z61i8zj1761mnblkvt",
           "hasOption": ["tag_Vampire"],
           "hasStat": {
@@ -245,16 +255,16 @@
               }
             }
           },
-          "description": "\tAttacks towards the bearer suffer -1 to wound.\n",
+          "description": "\tAttacks against the bearer suffer -1 to wound.\n",
           "option_id": "0ifjy1d2xl6jmt4v8g8rp"
         },
         {
           "type": "check",
           "name": "Cursed Medallion",
-          "cost": 35,
+          "cost": 25,
           "refs": ["art_cursed_med"],
           "armyHasNotOption": ["art_cursed_med"],
-          "description": "\tDuring Pre-game Selections choose a Character, or a single model unit on the opponent's Army List. The bearer must reroll failed to-hit and to-wound rolls against the chosen model.",
+          "description": "\tDuring Pre-game Selections choose a single model unit on the opponent's Army List. <i>/Remember that all Characters are single model units)</i><br>The wearer gains Hatred(Chosen model) and Zeal(chosen model).",
           "option_id": "cshsesv68fhoqwmi64yfar"
         },
         {
@@ -290,24 +300,7 @@
     },
     {
       "refs": ["potions_and_scrolls"],
-      "options": [
-        {
-          "type": "check",
-          "name": "Elixir of Death",
-          "cost": 45,
-          "description": "\tThe bearer's model gains Ghost Step,Ghostly Form. The model cannot join Rank-and-File units with <span class=\"textbf\">Ghostly Form</span>.",
-          "option_id": "qy310ethb8nnbhyrgl9ij",
-          "hasStat": {
-            "global": {
-              "Hgt": {
-                "max": 5
-              }
-            }
-          },
-          "refs": ["elixir_death"],
-          "armyHasNotOption": ["elixir_death"]
-        }
-      ],
+      "options": [],
       "option_id": "m70x7yinws6buseula99h"
     },
     {
@@ -315,9 +308,9 @@
       "options": [
         {
           "type": "check",
-          "cost": 45,
+          "cost": 40,
           "name": "Lahmia",
-          "description": "\n\tThe bearer's Arm is <span class=\"textbf\">set</span> to 1, it loses Metal Armour, gains <span class=\"textbf\">Elven Finesse</span> and if the model is Height 1–4 it also gains <span class=\"textbf\">Distracting(1)</span> .\n",
+          "description": "\n\tThe bearer's Arm is <span class=\"textbf\">set</span> to 1, it loses Metal Armour, gains <span class=\"textbf\">Elven Finesse</span> and if the model is Height 1–2 it also gains <span class=\"textbf\">Distracting(1)</span> .\n",
           "option_id": "qEcQKTG5pcscaqCxUvuG",
           "refs": ["lahmia", "blood_power", "ancestral_blood_power"],
           "hasNotOption": [
@@ -332,7 +325,7 @@
           "type": "check",
           "cost": 60,
           "name": "Strigoi",
-          "description": "\n\tThe bearer's Arm is <span class=\"textbf\">set</span> to 0 and its HP are <span class=\"textbf\">set</span> to 4, it loses Metal Armour and gains <span class=\"textbf\">First Strike(Hatred)</span>. A model without Mount, gains <span class=\"textbf\">Regeneration(4+)</span>.\n",
+          "description": "\n\tThe model part's Arm is <span class=\"textbf\">set</span> to 0 and its HP are <span class=\"textbf\">set</span> to 4, it loses Metal Armour and gains <span class=\"textbf\">First Strike(Hatred)</span>. A model without Mount, gains <span class=\"textbf\">Regeneration(4+)</span>.\n",
           "option_id": "4J4rW4064TmII9lrFTDP",
           "refs": ["strigoi", "blood_power", "ancestral_blood_power"],
           "hasNotOption": [
@@ -384,9 +377,9 @@
         },
         {
           "type": "check",
-          "cost": 0,
+          "cost": 10,
           "name": "Vetala",
-          "description": "\n\t  The model gains Vampiric(4+), Disciplined, Awaken(Bat Swarms, Dire Wolves, Great Bats, Zombies). The bearer's unit gains <span class=\"textbf\">Autonomous</span>.\n\t ",
+          "description": "\n\t  The model gains Disciplined, Unholy Conduit, Awaken(Bat Swarms, Dire Wolves, Great Bats, Zombies), and the model part gains <span class=\"textbf\">Vampiric(4+)</span>. \n\t ",
           "option_id": "pUDA6woO2OByU5kyGqY9",
           "refs": ["vetala", "blood_power", "ancestral_blood_power"],
           "hasNotOption": [
@@ -405,9 +398,9 @@
       "options": [
         {
           "type": "check",
-          "cost": 70,
+          "cost": 80,
           "name": "Blood Magic",
-          "description": "\n\tThe first time each Magic Phase that the bearer fails a Casting Roll for a Learned Spell, the bearer may reroll all Magic Dice for this Casting Roll. If this option is used, the bearer chooses a Character in its unit to lose 1 HP.\n",
+          "description": "\n\t<br>The bearer cannot know the Hereditary Spell, or have it as a Bound Spell, in any way.<br><br>Each time the bearer successfully casts a Learned Spell, you may discard one Magic Dice to successfully cast <i>Arise!</i> targeting only the bearer's unit.\n",
           "option_id": "IWNNgi6B27DVlYwHxSTJ",
           "refs": ["blood_power", "blood_magic"],
           "hasNotOption": [
@@ -426,7 +419,7 @@
         },
         {
           "type": "check",
-          "cost": 70,
+          "cost": 60,
           "name": "Ghoul Lord",
           "description": "\n\tThe bearer and all Rank-and-File models in the bearer's unit gains <span class=\"textbf\">Poison Attacks</span>.\n",
           "option_id": "d23fefgd5uy5456j63g34g3g34",
@@ -494,7 +487,7 @@
           "type": "check",
           "cost": 40,
           "name": "Storm Caller",
-          "description": "\n\tAll units within 12\" of the bearer gains <span class=\"textbf\">Hard Target(1)</span>.\n",
+          "description": "\n\tAll units within 12\" of the bearer's model gains <span class=\"textbf\">Hard Target(1)</span>.\n",
           "option_id": "Wr0mq1FhE4xUZP1INVcv",
           "hasOption": ["vampire_count", "vetala"],
           "refs": ["blood_power", "storm_caller"],
@@ -514,9 +507,9 @@
         },
         {
           "type": "check",
-          "cost": 40,
+          "cost": 50,
           "name": "Arcane Knowledge",
-          "description": "\n\tLearned Spells cast by the model gains +6\" Range. Aura Spells gain +3\" Range instead.\n",
+          "description": "\n\t \n\tThe bearer selects a second Path of Magic. It knows one spell from this Path, selected from the Apprentice Spell or Adept Spells (#1 - #4), and is otherwise not allowed to choose spells from this Path.\n",
           "option_id": "CqpfdQR0dds7cFDEU77p",
           "hasOption": ["vampire_count"],
           "refs": ["blood_power", "arcane_knowledge"],
@@ -542,7 +535,7 @@
           "type": "check",
           "cost": 60,
           "name": "Eternal Duellist",
-          "description": "\tThe bearer's Melee Attacks ignore <span class=\"textbf\">Parry</span>, and must reroll natural to-hit and to-wound rolls of ‘1’.",
+          "description": "\tThe model parts Melee Attacks ignore <span class=\"textbf\">Parry</span>, and must reroll natural to-hit and to-wound rolls of ‘1’.",
           "option_id": "ySRGiCXETrxuuW1ExZ9V",
           "refs": ["blood_power"],
           "hasNotOption": [
@@ -555,7 +548,7 @@
         },
         {
           "type": "check",
-          "cost": 45,
+          "cost": 50,
           "name": "Monster Hunter",
           "description": "\tThe model part gains <span class=\"textbf\">Multiple Wounds(2, towards Height 4--5)</span>.",
           "option_id": "FVotJ8l2kztApZjRdjHv",
@@ -617,9 +610,9 @@
         },
         {
           "type": "check",
-          "cost": 15,
+          "cost": 30,
           "name": "Mesmerising Gaze",
-          "description": "\tThe model must issue a Duel whenever possible. This cannot be prevented by issuing a Duel with another friendly model first. This Duel must, if possible, be accepted. If accepted, the model receives +1 Combat Score in this Round of Combat.<br>",
+          "description": "    The model gains <span class=\"textbf\">Afflict (-1 Att, -1 Off)</span>. Only Character models are affected by this instance of <span class=\"textbf\">Afflict</span>.\n",
           "option_id": "kN3V23qvcR4GZ43s4ce4",
           "refs": ["blood_power"],
           "hasNotOption": [
@@ -634,7 +627,7 @@
           "type": "check",
           "cost": 10,
           "name": "Mysteries of the Night",
-          "description": "\n\t The model's Path Access is replaced with Shamanism, Witchcraft.\n",
+          "description": "\n\t The bearer's Path Access is replaced with Shamanism, Witchcraft.\n",
           "option_id": "Pl5HhLfXUd0uAunv4G51",
           "hasOption": ["wizardApprenticeOrAdept"],
           "refs": ["blood_power", "mysteries"],
@@ -684,7 +677,7 @@
                       "refs": ["army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
-                      "name": "General, Disciplined and The Dead Arise",
+                      "name": "General, Disciplined, and The Dead Arise",
                       "cost": 35,
                       "option_id": "0lwh9quaq64r6l6oc31iv"
                     }
@@ -862,7 +855,7 @@
                     {
                       "type": "check",
                       "name": "Monstrous Revenant",
-                      "cost": 120,
+                      "cost": 140,
                       "options": [],
                       "refopt": "monstrous_revenant_mount",
                       "option_id": "7ic0ev7zdhpg1b3mfi5hrf",
@@ -880,7 +873,7 @@
                     {
                       "type": "check",
                       "name": "Zombie Dragon",
-                      "cost": 320,
+                      "cost": 300,
                       "options": [],
                       "refopt": "zombie_dragon_mount",
                       "option_id": "hzrupymgi3kkxbe16tu3j",
@@ -889,7 +882,7 @@
                     {
                       "type": "check",
                       "name": "Colossal Zombie Dragon",
-                      "cost": 480,
+                      "cost": 440,
                       "options": [],
                       "refopt": "colossal_zombie_dragon_mount",
                       "option_id": "zicmsbjjwqfpydbxlz6xci",
@@ -1284,7 +1277,7 @@
                     {
                       "type": "check",
                       "name": "Monstrous Revenant",
-                      "cost": 180,
+                      "cost": 200,
                       "options": [],
                       "refopt": "monstrous_revenant_mount",
                       "option_id": "kvxofee6pe3nj1quhg382",
@@ -1293,7 +1286,7 @@
                     {
                       "type": "check",
                       "name": "Court of the Damned",
-                      "cost": 300,
+                      "cost": 280,
                       "options": [],
                       "refopt": "court_of_the_damned_mount",
                       "option_id": "iavc3cf3j3jlt1id5jzdif",
@@ -1582,7 +1575,7 @@
                     {
                       "type": "check",
                       "name": "Cadaver Wagon",
-                      "cost": 230,
+                      "cost": 210,
                       "options": [],
                       "refopt": "cadaver_wagon_mount",
                       "option_id": "k30ihe8elel14olxt65ixf",
@@ -1591,7 +1584,7 @@
                     {
                       "type": "check",
                       "name": "Zombie Dragon",
-                      "cost": 300,
+                      "cost": 280,
                       "options": [],
                       "hasOption": ["lich"],
                       "refopt": "zombie_dragon_mount",
@@ -1871,7 +1864,15 @@
               "cost": 160,
               "unit_id": "banshee",
               "option_id": "neox3b3k2mtfwpzt2qe6f",
-              "logo": "character"
+              "logo": "character",
+              "options": [
+                {
+                  "option_id": "fn2938nf3u92nf93u2ng32f32",
+                  "type": "check",
+                  "cost": 10,
+                  "name": "Sweeping Attack"
+                }
+              ]
             }
           ],
           "option_id": "tfdwlhq2ler504i0hn55tj"
@@ -1911,13 +1912,13 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "option_id": "83v2u0c69xig2aag7gi4"
                     },
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "irk312tjd4ksfb9eif4od"
                     }
                   ],
@@ -1930,7 +1931,7 @@
             },
             {
               "name": "Skeletons",
-              "cost": -10,
+              "cost": 10,
               "options": [
                 {
                   "minSize": 20,
@@ -1941,7 +1942,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 9,
+                      "cost": 8,
                       "options": [
                         {
                           "type": "group",
@@ -1985,7 +1986,7 @@
                       "name": "Standard Bearer",
                       "collapsible": true,
                       "sortOptions": true,
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -1995,7 +1996,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "a1lqpwvqcodxnkteg0xd"
                     }
                   ],
@@ -2011,7 +2012,7 @@
               "name": "Ghouls",
               "armyHasNotOption": [],
               "refs": ["unit_ghouls", "core_unit", "tag_Zombie"],
-              "cost": -40,
+              "cost": -45,
               "options": [
                 {
                   "minSize": 15,
@@ -2053,13 +2054,13 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "option_id": "yxmg3ssnrldtvvzu6z1n6j"
                     },
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "fdggfdgewg43342453464"
                     }
                   ],
@@ -2074,7 +2075,7 @@
               "name": "Dire Wolves",
               "refs": ["sinister_wolves", "tag_Zombie", "tag_Beast", "core_unit"],
               "armyHasNotOption": [],
-              "cost": 46,
+              "cost": 20,
               "options": [
                 {
                   "minSize": 8,
@@ -2086,7 +2087,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 18,
+                      "cost": 20,
                       "option_id": "h2coooscvebtkbu7rx792"
                     }
                   ],
@@ -2134,7 +2135,7 @@
           "options": [
             {
               "name": "Barrow Guard",
-              "cost": -100,
+              "cost": -90,
               "refs": ["tertre", "barrow_guards", "tag_Skeleton", "tag_Metal Armour"],
               "options": [
                 {
@@ -2146,7 +2147,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 17,
+                      "cost": 16,
                       "options": [
                         {
                           "type": "group",
@@ -2156,13 +2157,13 @@
                             {
                               "type": "check",
                               "name": "Shield",
-                              "cost": 0,
+                              "cost": 1,
                               "option_id": "hv60qxjb4hp9xafa7g1zv5"
                             },
                             {
                               "type": "check",
                               "name": "Halberd",
-                              "cost": 2,
+                              "cost": 3,
                               "option_id": "bb7a3pz3rsm462i0quri6t"
                             },
                             {
@@ -2190,7 +2191,7 @@
                       "name": "Standard Bearer",
                       "collapsible": true,
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2200,7 +2201,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "zivbx9f10gswsqq0kdtff"
                     }
                   ],
@@ -2215,7 +2216,7 @@
               "name": "Barrow Knights",
               "armyHasNotOption": [],
               "refs": ["tertre", "barrow_knights", "tag_Skeleton", "tag_Metal Armour", "tag_Mount"],
-              "cost": 0,
+              "cost": 10,
               "options": [
                 {
                   "minSize": 5,
@@ -2226,7 +2227,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 32,
+                      "cost": 30,
                       "option_id": "dacr8yrmpyntu8ef46fdq9",
                       "refs": ["barrow_knights_amount"]
                     }
@@ -2242,7 +2243,7 @@
                       "name": "Standard Bearer",
                       "collapsible": true,
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2252,7 +2253,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "aqgvdjvobufv8g4ihu22br"
                     }
                   ],
@@ -2267,7 +2268,7 @@
               "name": "Ghasts",
               "refs": ["ghasts", "tag_Zombie"],
               "armyHasNotOption": [],
-              "cost": -85,
+              "cost": -70,
               "extraCost": 95,
               "options": [
                 {
@@ -2279,7 +2280,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 85,
+                      "cost": 80,
                       "option_id": "rlk6gwiw4zqg1gsyc0vyy",
                       "refs": ["ghasts_amount"]
                     }
@@ -2293,13 +2294,13 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "jzj7yyfaos7e0wlihfz2f"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "fdsfsf312fsdfsdf23f23"
                     }
                   ],
@@ -2351,7 +2352,7 @@
               "refs": ["court_damned", "not_a_leader", "tag_Vampire", "tag_Spirit", "tag_Construct"],
               "armyHasNotOption": [],
               "hasNotOption": ["strigoi"],
-              "cost": 320,
+              "cost": 300,
               "unit_id": "court_of_the_damned",
               "option_id": "dt1rdnkwa83gikh3md3xn",
               "logo": "special"
@@ -2361,7 +2362,7 @@
               "refs": ["altar_undeath", "tag_Human", "tag_Spirit", "tag_Construct"],
               "boundSpells": [
                 {
-                  "ref": "the_devouring_dark",
+                  "ref": "pentagram_pain",
                   "path": "bound",
                   "mods": {
                     "castValue": 3
@@ -2369,7 +2370,7 @@
                 }
               ],
               "armyHasNotOption": [],
-              "cost": 320,
+              "cost": 300,
               "unit_id": "altar_of_undeath",
               "option_id": "7fnwc8znh1sqdgqbequt",
               "logo": "special"
@@ -2488,7 +2489,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 65,
+                      "cost": 55,
                       "option_id": "521dt3pxg791100b8jqcqub"
                     }
                   ],
@@ -2503,7 +2504,7 @@
               "name": "Wraiths",
               "refs": ["wraith_unit", "tag_Spirit"],
               "armyHasNotOption": [],
-              "cost": -10,
+              "cost": 25,
               "options": [
                 {
                   "minSize": 5,
@@ -2514,7 +2515,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 40,
+                      "cost": 25,
                       "option_id": "risdi62e8od8jg6qi71vn5",
                       "refs": ["wraiths_amount"]
                     }
@@ -2524,7 +2525,14 @@
                 {
                   "type": "group",
                   "optionsLabel": "Options",
+                  "maxSize": 1,
                   "options": [
+                    {
+                      "option_id": "g23fn2390nf239f23f32",
+                      "type": "check",
+                      "cost": 10,
+                      "name": "Sweeping Attack (1 hit)"
+                    },
                     {
                       "type": "check",
                       "name": "Wizard Conclave (2)",
@@ -2534,16 +2542,20 @@
                         "amount": 2,
                         "spells": [
                           {
+                            "path": "alchemy",
+                            "ref": "molten_copper"
+                          },
+                          {
                             "path": "evocation",
                             "ref": "danse_macabre"
                           },
                           {
                             "path": "evocation",
-                            "ref": "touch_of_the_reaper"
+                            "ref": "chorus_of_the_damned"
                           },
                           {
-                            "path": "witchcraft",
-                            "ref": "evil_eye"
+                            "path": "occultism",
+                            "ref": "the_devouring_dark"
                           }
                         ]
                       }
@@ -2560,7 +2572,7 @@
               "name": "Spectral Hunters",
               "refs": ["wraith_hunter", "tag_Spirit", "tag_Skeleton", "tag_Mount"],
               "armyHasNotOption": [],
-              "cost": -5,
+              "cost": -10,
               "options": [
                 {
                   "minSize": 5,
@@ -2571,7 +2583,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 36,
+                      "cost": 35,
                       "option_id": "q56063jvpnb529ebb9rx",
                       "refs": ["spectral_hunters_amount"]
                     }
@@ -2580,27 +2592,38 @@
                 },
                 {
                   "type": "group",
-                  "optionsLabel": "Command Group",
+                  "optionsLabel": "Options",
+                  "maxSize": 1,
                   "options": [
+                    {
+                      "option_id": "f32f32328gn943ng43g43",
+                      "type": "check",
+                      "cost": 15,
+                      "name": "Sweeping Attack (1 hit)"
+                    },
                     {
                       "type": "check",
                       "name": "Wizard Conclave (2)",
-                      "cost": 100,
+                      "cost": 120,
                       "option_id": "kfnu3r3947daigfomdj1ql",
                       "magic": {
                         "amount": 2,
                         "spells": [
                           {
-                            "path": "evocation",
-                            "ref": "danse_macabre"
+                            "path": "cosmology",
+                            "ref": "weal_and_woe"
                           },
                           {
                             "path": "evocation",
                             "ref": "whispers_of_the_veil"
                           },
                           {
-                            "path": "evocation",
-                            "ref": "chorus_of_the_damned"
+                            "path": "occultism",
+                            "ref": "bloody_curse"
+                          },
+                          {
+                            "path": "witchcraft",
+                            "ref": "illusory_paths"
                           }
                         ]
                       }
@@ -2624,7 +2647,7 @@
           "options": [
             {
               "name": "Shrieking Horror",
-              "cost": 440,
+              "cost": 420,
               "refs": ["shriek_horror", "shriek_horror_unit", "tag_Beast", "tag_Zombie"],
               "armyHasNotOption": [],
               "rarityModifier": 0,
@@ -2648,8 +2671,7 @@
             {
               "name": "Vampire Knights",
               "refs": ["vampire_knight", "tag_Vampire", "tag_Metal Armour", "tag_Zombie", "tag_Mount"],
-
-              "cost": 40,
+              "cost": 70,
               "options": [
                 {
                   "minSize": 3,
@@ -2660,7 +2682,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 80,
+                      "cost": 70,
                       "option_id": "zm2fye1tffq6hwhtuhya1u",
                       "refs": ["vampire_knights_amount"]
                     }
@@ -2676,7 +2698,7 @@
                       "name": "Standard Bearer",
                       "collapsible": true,
                       "sortOptions": true,
-                      "cost": 15,
+                      "cost": 10,
                       "optionsLabel": "Banner Enchant",
                       "maxSize": 1,
                       "options": [],
@@ -2686,7 +2708,7 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "ckvq8lv1tpmczwn9ymq2kk"
                     }
                   ],
@@ -2695,7 +2717,13 @@
               ],
               "unit_id": "vampire_knights",
               "option_id": "knslua1e57txal8go5n7",
-              "logo": "bat"
+              "logo": "bat",
+              "armyHasNotOption": [
+                {
+                  "refs": ["vampire_knight"],
+                  "amount": 2
+                }
+              ]
             },
             {
               "name": "Winged Reapers",
@@ -2712,19 +2740,20 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 140,
+                      "cost": 160,
                       "maxSize": 1,
+                      "minSize": 1,
                       "options": [
                         {
                           "type": "check",
                           "name": "Halberd",
-                          "cost": 15,
+                          "cost": 0,
                           "option_id": "ai0bbi5mqicpandji4ob3"
                         },
                         {
                           "type": "check",
                           "name": "Paired Weapons",
-                          "cost": 15,
+                          "cost": 0,
                           "option_id": "w6gfgg8egvh4lees93qt6"
                         }
                       ],
@@ -2733,19 +2762,6 @@
                     }
                   ],
                   "option_id": "z25gpd06haae0alqmhr"
-                },
-                {
-                  "type": "group",
-                  "optionsLabel": "Command Group",
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "Musician",
-                      "cost": 15,
-                      "option_id": "g4ygpb52zkuir14pqj3op"
-                    }
-                  ],
-                  "option_id": "0v1bcbm19rbkyihey6krbwa"
                 }
               ],
               "unit_id": "winged_reapers",
@@ -2756,7 +2772,7 @@
               "name": "Varkolak",
               "refs": ["varkolak", "tag_Beast"],
               "armyHasNotOption": [],
-              "cost": 300,
+              "cost": 340,
               "unit_id": "varkolak",
               "option_id": "h8keycvcdpwwgfn954al",
               "logo": "bat"

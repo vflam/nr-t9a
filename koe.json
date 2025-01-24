@@ -6,7 +6,7 @@
   },
   "short": "koe",
   "version": "2023 beta4",
-  "nrversion": 486,
+  "nrversion": 491,
   "playable": 1,
   "id": 9,
   "include": [102],
@@ -41,13 +41,13 @@
       "options": [
         {
           "name": "Potion of Healing",
-          "cost": 60,
+          "cost": 30,
           "option_id": "vcp0f2bvhzj5pu1ueo5gle",
           "type": "check",
           "shared": true
         },
         {
-          "name": "Elixir of Negation",
+          "name": "Scroll of Draining",
           "cost": 30,
           "option_id": "xmj7ovun5iniff1zo8pyrs",
           "type": "check",
@@ -62,7 +62,7 @@
               "amount": 1
             }
           ],
-          "cost": 45,
+          "cost": 40,
           "name": "Black Knight's Tonic",
           "option_id": "432f342f43g54h3h43h3",
           "description": "  The first time the bearer’s model suffers an unsaved wound from an attack with Multiple Wounds(X), the model gains <span class=\"textbf\">Immune(Multiple Wounds)</span> until the end of the phase.\n"
@@ -81,10 +81,10 @@
               "amount": 1
             }
           ],
-          "cost": 55,
+          "cost": 50,
           "name": "Oriflamme",
           "option_id": "hn054iyt43gm45309gj534g3",
-          "description": "The bearer's unit gains <span class=\"textbf\">Horror</span>.\n",
+          "description": "The bearer's unit gains <span class=\"textbf\">Afflict(-1 Cou)</span> and <span class=\"textbf\">Horror</span>.\n",
           "hasNotOption": ["core_unit"]
         },
         {
@@ -96,10 +96,10 @@
               "amount": 1
             }
           ],
-          "cost": 35,
+          "cost": 40,
           "name": "Banner of Roland",
           "option_id": "432fewv34h65nmu7k87ol6",
-          "description": "  The bearer’s unit gains <span class=\"textbf\">Devastating Charge(Aegis(5+))</span>. In addition, enemy units with <span class=\"textbf\">Stand and Shoot</span> cannot use this rule against the bearer’s unit.\n"
+          "description": "  The bearer’s unit gains Aegis(5+, against Ranged Attacks). In addition, enemy units with <span class=\"textbf\">Stand and Shoot</span> cannot use this rule against the bearer’s unit.\n"
         },
         {
           "type": "check",
@@ -127,16 +127,10 @@
               "amount": 1
             }
           ],
-          "cost": 30,
-          "hasOption": [
-            {
-              "refs": ["army_bsb"],
-              "amount": 1
-            }
-          ],
-          "name": "Lord's Arms",
-          "option_id": "4mom34ggk340g3ms0g43g43g43o",
-          "description": "  The restriction on the maximum number of Proper Ranks  from <span class=\"textbf\">Lance Formation</span> is increased to three for the bearer's unit.\n"
+          "cost": 35,
+          "name": "Lady's Favour",
+          "option_id": "4mom34ggk34fdfd0g3ms0g43g43g43o",
+          "description": "\tOne use only. The first time the unit is the target of an Orisons effect, apply the effect if all Orisons <i>(i.e <span class=\"textbf\">Aegis(5+)</span>, <span class=\"textbf\">Magical Attacks</span>, +2 Off and Ignore Parry, Cou set to 9</i>).\n"
         },
         {
           "type": "check",
@@ -150,7 +144,7 @@
           "cost": 40,
           "name": "Castellan's Crest",
           "option_id": "fdsgf3g41fg34g3g43",
-          "description": "\tOne use only. May be activated immediately before declaring a Charge with the bearer or the bearer’s unit in the Charge Phase. Failed Charge Range rolls of the bearer or the bearer’s unit must be rerolled until the end of the phase. Other Characters Charging out of the bearer’s unit are not affected."
+          "description": "\tOne use only. May be activated immediately after failing a Charge Range roll with the bearer or the bearer’s unit in the Charge Phase. Failed Charge Range rolls of the bearer or the bearer’s unit must be rerolled until the end of the Phase: other Characters Charging out of the bearer’s unit are not affected."
         }
       ]
     },
@@ -165,7 +159,7 @@
           "shared": true
         },
         {
-          "name": "Banner of Discipline",
+          "name": "Banner of Courage",
           "cost": 20,
           "option_id": "y9nqk2ugfymwqyw7gf4mjk",
           "type": "check",
@@ -240,7 +234,7 @@
       "options": [
         {
           "type": "check",
-          "cost": 75,
+          "cost": 65,
           "name": "Divine Judgement",
           "option_id": "432f34v3e4rgvb3432hth541r",
           "description": "After the wielder successfully completes a Charge, apply the following until the wielder is no longer Engaged in Combat: +2 Str and +2 AP.\n",
@@ -258,7 +252,7 @@
           "cost": 30,
           "name": "Uther's Mettle",
           "option_id": "jds0349rbmv3-09jg3vm340",
-          "description": "  +X Att, where X is equal to the number of ranks of a single enemy unit on contact with the wielder up to a maximum of 4. If multiple units, use the unit with the most ranks. These extra Attacks can only be allocated towards Rank-and-File models. <i>If the attacks cannot be allocated towards Rank-and-File models, such as when the wielder is in a Duel, the attacks are lost.</i>\n",
+          "description": "  +X Att, where X is equal to the number of ranks of a single enemy unit on contact with the wielder up to a maximum of 4. If multiple units, use the unit with the most ranks. These extra Attacks can only be allocated towards Rank-and-File models. <i>If the attacks cannot be allocated towards Rank-and-File models the attacks are lost.</i>\n",
           "refs": ["warsong_stirng", "weaponEnchantUni"],
           "hasNotOption": ["weaponEnchantUni"],
           "armyHasNotOption": [
@@ -320,8 +314,8 @@
           "type": "check",
           "name": "Fortress of Faith",
           "option_id": "fsdjfidsjf0320fhgsdhgfdhfd",
-          "cost": 20,
-          "description": "<span class=\"textbf\">Immune(Lethal Strike)</span> while the bearer's unit contains at least one Rank-and-File model.\n",
+          "cost": 40,
+          "description": "\nThe wearer gains Holy Vows. All Armour Save rolls of a natural '1' made by the wearer must be rerolled.\n",
           "refs": ["fortress_faith"],
           "armyHasNotOption": [
             {
@@ -371,7 +365,7 @@
       "refs": ["heroicTraits"],
       "options": [
         {
-          "cost": 205,
+          "cost": 200,
           "name": "Quin",
           "type": "check",
           "option_id": "vrvv43iv34kvc3432r231",
@@ -403,7 +397,7 @@
           "neverHide": true
         },
         {
-          "cost": 60,
+          "cost": 80,
           "name": "Bannerman",
           "type": "check",
           "option_id": "fgfdg8ii65h54g54g34f34f",
@@ -462,7 +456,7 @@
           "cost": 65,
           "refs": ["kp_honour"],
           "name": "Honour",
-          "description": "  The bearer's unit Charge Range rolls are Maximised. While Engaged with an enemy unit’s Front Facing, the bearer gains <span class=\"textbf\">Devastating Charge(+2 Att)</span>.\n"
+          "description": "  The model's units Charge Range rolls are <span class=\"textbf\">Maximised</span>.  The model gains <span class=\"textbf\">Devastating Charge(+2 Att)</span>.\n"
         },
         {
           "option_id": "43moifm2309f320c32c32",
@@ -475,7 +469,7 @@
         {
           "option_id": "433fm32v439gbk5gdflf923",
           "type": "check",
-          "cost": 70,
+          "cost": 65,
           "refs": ["kp_valour"],
           "name": "Valour",
           "description": "The bearer gains <span class=\"textbf\">Fearless</span> and its Standard Melee Attacks gain <span class=\"textbf\">Multiple Wounds(2, towards Res 5 or more)</span>.\n"
@@ -483,10 +477,10 @@
         {
           "option_id": "543ib09tvfdmskf3209f32",
           "type": "check",
-          "cost": 55,
+          "cost": 60,
           "refs": ["kp_excellence"],
           "name": "Excellence",
-          "description": "   The model part gains <span class=\"textbf\">Lethal Strike</span>, and when its Standard Melee Attacks Roll a natural ‘6’ to wound, the attack gains <span class=\"textbf\">Multiple Wounds(2)</span>.\n"
+          "description": "   \nThe model part gains <span class=\"textbf\">Zeal</span> and its Melee Attacks allocated towards a Character gain +2AP.\n"
         },
         {
           "option_id": "b094igmg3j0vmg3f4fgsddf",
@@ -727,7 +721,7 @@
                     {
                       "type": "check",
                       "name": "Revered Unicorn",
-                      "cost": 85,
+                      "cost": 80,
                       "options": [],
                       "refopt": "revered_unicorn_mount",
                       "option_id": "e0gh1k0inor0rqrms7c4f6e"
@@ -744,7 +738,7 @@
                     {
                       "type": "check",
                       "name": "Sainted",
-                      "cost": 25,
+                      "cost": 30,
                       "refs": ["sainted", "army_unique"],
                       "option_id": "ny3tcqb2hzsto6rlqm53yh",
                       "armyHasNotOption": [
@@ -841,7 +835,7 @@
             },
             {
               "name": "Duke",
-              "cost": 120,
+              "cost": 140,
               "override": [
                 {
                   "hasOption": [
@@ -897,7 +891,7 @@
                     {
                       "type": "check",
                       "name": "Destrier",
-                      "cost": 75,
+                      "cost": 70,
                       "options": [],
                       "refopt": "destrier_mount",
                       "option_id": "k0c9r9upagmf0583a6vkc"
@@ -905,7 +899,7 @@
                     {
                       "type": "check",
                       "name": "Fey Steed",
-                      "cost": 145,
+                      "cost": 140,
                       "options": [],
                       "refopt": "fey_steed_mount",
                       "hasOption": ["sainted"],
@@ -945,7 +939,7 @@
                     {
                       "type": "check",
                       "name": "Hippogriff",
-                      "cost": 245,
+                      "cost": 260,
                       "options": [],
                       "refopt": "hippogriff_mount",
                       "option_id": "54zksnjn37yh0zgtbpwr7",
@@ -986,7 +980,7 @@
                       "maxUnitCost": 700,
                       "type": "check",
                       "name": "Sainted and Gallantry (1)",
-                      "cost": 95,
+                      "cost": 80,
                       "refs": ["sainted", "army_unique", "gallantry"],
                       "neverHide": true,
                       "hasNotOption": ["army_bsb"],
@@ -1049,9 +1043,6 @@
                       }
                     },
                     {
-                      "type": "check",
-                      "name": "Shield",
-                      "cost": 20,
                       "optionsLabel": "Shield Enchant",
                       "maxSize": 1,
                       "sortOptions": true,
@@ -1116,7 +1107,7 @@
                         {
                           "type": "check",
                           "name": "Great Weapon",
-                          "cost": 30,
+                          "cost": 25,
                           "maxSize": 1,
                           "optionsLabel": "Great Weapon Enchant",
                           "optionsSuffix": " (Great Weapon)",
@@ -1199,7 +1190,7 @@
             },
             {
               "name": "Paladin",
-              "cost": 125,
+              "cost": 140,
               "options": [
                 {
                   "type": "group",
@@ -1243,7 +1234,7 @@
                     {
                       "type": "check",
                       "name": "Revered Unicorn",
-                      "cost": 70,
+                      "cost": 60,
                       "options": [],
                       "refopt": "revered_unicorn_mount",
                       "option_id": "sgtklk2dal5hped460ktgo9"
@@ -1251,7 +1242,7 @@
                     {
                       "type": "check",
                       "name": "Pegasus Charger",
-                      "cost": 135,
+                      "cost": 140,
                       "options": [],
                       "refopt": "pegasus_charger_mount",
                       "option_id": "s9ugabq1gwxtix732gigcj"
@@ -1259,7 +1250,7 @@
                     {
                       "type": "check",
                       "name": "Fey Steed",
-                      "cost": 145,
+                      "cost": 140,
                       "options": [],
                       "refopt": "fey_steed_mount",
                       "option_id": "s7okf7u8851hhwtmx3dhk7j",
@@ -1281,7 +1272,7 @@
                     {
                       "type": "check",
                       "name": "Hippogriff",
-                      "cost": 245,
+                      "cost": 260,
                       "options": [],
                       "refopt": "hippogriff_mount",
                       "option_id": "5s4zksnjn37yh0zgtbpwr7",
@@ -1313,7 +1304,7 @@
                     {
                       "type": "check",
                       "name": "Sainted and Gallantry (1)",
-                      "cost": 140,
+                      "cost": 100,
                       "refs": ["sainted", "army_unique", "gallantry"],
                       "option_id": "6f2wsea0c4jn54bkomvem2",
                       "armyHasNotOption": [
@@ -1363,9 +1354,6 @@
                       ]
                     },
                     {
-                      "type": "check",
-                      "name": "Shield",
-                      "cost": 20,
                       "optionsLabel": "Shield Enchant",
                       "maxSize": 1,
                       "sortOptions": true,
@@ -1395,7 +1383,7 @@
                         {
                           "type": "check",
                           "name": "Great Weapon",
-                          "cost": 30,
+                          "cost": 25,
                           "maxSize": 1,
                           "optionsLabel": "Great Weapon Enchant",
                           "optionsSuffix": " (Great Weapon)",
@@ -1509,7 +1497,7 @@
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
-                      "cost": 10,
+                      "cost": 30,
                       "option_id": "x5juoe22mcmx9ctvi8g9hl",
                       "hasNotOption": ["army_bsb"]
                     }
@@ -1566,7 +1554,7 @@
                     {
                       "type": "check",
                       "name": "Pegasus Charger",
-                      "cost": 35,
+                      "cost": 30,
                       "options": [],
                       "refopt": "pegasus_charger_mount",
                       "hasOption": ["sainted"],
@@ -1601,7 +1589,7 @@
                     {
                       "type": "check",
                       "name": "Sainted",
-                      "cost": 70,
+                      "cost": 80,
                       "refs": ["sainted", "army_unique"],
                       "hasNotOption": ["army_bsb"],
                       "option_id": "6f2wea0c4jn54bkomvem2",
@@ -1860,7 +1848,7 @@
           "options": [
             {
               "name": "Knights of the Realm",
-              "cost": 90,
+              "cost": 40,
               "category": "core",
               "options": [
                 {
@@ -1871,7 +1859,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 30,
+                      "cost": 35,
                       "hide": true,
                       "option_id": "xtfwdnn5xhoif0c9z3ksn",
                       "refs": ["knights_of_the_realm_amount"],
@@ -1881,7 +1869,7 @@
                           "option_id": "fsd3942tg934rjb95hj032fg342d123",
                           "type": "check",
                           "name": "Solemn Oath",
-                          "cost": 3,
+                          "cost": 5,
                           "refs": ["solemn_oath"]
                         }
                       ]
@@ -1920,14 +1908,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "3nminm52xz3dfhksibrkfr"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "refs": [],
                       "options": [],
                       "maxSize": 1,
@@ -1949,11 +1937,11 @@
             },
             {
               "name": "Lowborn Archers",
-              "cost": 47,
+              "cost": 25,
               "category": "core",
               "options": [
                 {
-                  "minSize": 12,
+                  "minSize": 15,
                   "maxSize": 30,
                   "addToUnitSize": true,
                   "options": [
@@ -2016,14 +2004,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "fh7kl7o54i537tcfp6t2w"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "vipbrehio9nypg9lkabkd"
                     }
@@ -2107,14 +2095,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "xjunm19jirfy6rv6uu6ef"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "t1ih4bijv5ptd943qm2i3"
                     }
@@ -2129,7 +2117,7 @@
             },
             {
               "name": "Mounted Serjeants",
-              "cost": 80,
+              "cost": 90,
               "category": "core",
               "options": [
                 {
@@ -2148,7 +2136,7 @@
                           "options": [
                             {
                               "type": "check",
-                              "name": "Light Lance and Shield",
+                              "name": "Light Lance",
                               "cost": 0,
                               "refs": [],
                               "option_id": "pec7dcotyikq3eco16k2zg"
@@ -2184,14 +2172,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "vb573a1at4869bgkpl4yaa"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 5,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "ze4p8ng0oyqmckq9hb139",
                       "options": [],
@@ -2269,14 +2257,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "xn4u4iv0bom9bme7cv5s0e"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "option_id": "3yz8gkeiordlasqgh1o4w",
                       "maxSize": 1,
                       "collapsible": true,
@@ -2352,14 +2340,14 @@
                             {
                               "type": "check",
                               "name": "Longbow (3+)",
-                              "cost": 1,
+                              "cost": 0,
                               "refs": [],
                               "option_id": "342grehbfdfsdkhgkfggwe43g34"
                             },
                             {
                               "type": "check",
                               "name": "Crossbow (4+)",
-                              "cost": 3,
+                              "cost": 2,
                               "refs": ["hodded_crossbow"],
                               "option_id": "j56j54htrhewgfdfqjykjwf32"
                             }
@@ -2398,18 +2386,18 @@
             },
             {
               "name": "Knights of the Quest",
-              "cost": -70,
+              "cost": -40,
               "category": "special",
               "options": [
                 {
                   "minSize": 6,
-                  "maxSize": 8,
+                  "maxSize": 9,
                   "addToUnitSize": true,
                   "options": [
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 70,
+                      "cost": 65,
                       "hide": true,
                       "options": [],
                       "option_id": "zfxk2yscgjl5p14dqa0zyx",
@@ -2443,14 +2431,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "a225mzhkzy4cszzwaa8ehq"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "options": [],
                       "maxSize": 1,
@@ -2472,18 +2460,18 @@
             },
             {
               "name": "Knights Penitent",
-              "cost": 35,
+              "cost": 30,
               "category": "special",
               "options": [
                 {
                   "minSize": 3,
-                  "maxSize": 7,
+                  "maxSize": 9,
                   "addToUnitSize": true,
                   "options": [
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 65,
+                      "cost": 70,
                       "hide": true,
                       "options": [],
                       "option_id": "mtziyt5g5rne493ddnv4r6",
@@ -2498,14 +2486,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "aqq6y4tx259pc6snwenpm"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "je8rqbseshdl4b8e8re1u",
                       "options": [],
@@ -2527,12 +2515,12 @@
             },
             {
               "name": "Knights of the Court",
-              "cost": 45,
+              "cost": 50,
               "category": "special",
               "options": [
                 {
                   "minSize": 6,
-                  "maxSize": 9,
+                  "maxSize": 12,
                   "addToUnitSize": true,
                   "options": [
                     {
@@ -2584,7 +2572,7 @@
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "options": [],
                       "maxSize": 1,
@@ -2634,14 +2622,14 @@
                             {
                               "type": "check",
                               "name": "Ordo Wardens",
-                              "cost": 2,
+                              "cost": 0,
                               "refs": ["ma_ordo_wardens"],
                               "option_id": "8neisl7ti572piuj7vkc9u"
                             },
                             {
                               "type": "check",
                               "name": "Castle Guard",
-                              "cost": 0,
+                              "cost": 1,
                               "option_id": "fdsfgdsgdsgdsf32r32"
                             }
                           ],
@@ -2689,14 +2677,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "uxq1vi23uwmpagf8y7ikp"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "options": [],
                       "maxSize": 1,
@@ -2780,14 +2768,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "emc4mhqte06wb2y3mkaaa"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "options": [],
                       "maxSize": 1,
@@ -2817,7 +2805,7 @@
             },
             {
               "name": "Sacred Reliquary",
-              "cost": 170,
+              "cost": 180,
               "category": "special",
               "options": [],
               "refs": ["sacredReliquary", "not_a_leader", "tag_Human", "tag_Metal Armour", "tag_Holy Vows"],
@@ -2839,7 +2827,7 @@
                   "options": [
                     {
                       "type": "check",
-                      "name": "Trebuchet (4+) and change its Height to 3",
+                      "name": "Trebuchet and change its Height to 3",
                       "cost": 70,
                       "refs": [],
                       "option_id": "qk22v7lpcny5uusxvwkj"
@@ -2923,14 +2911,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "lvdbzxu2stmlspw27gv4n"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "8t1b0x21m3362b3g5szpwk"
                     }
@@ -3008,14 +2996,14 @@
                     {
                       "type": "check",
                       "name": "Musician",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "a8aj9251ipwpeqj0e85ai"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
-                      "cost": 15,
+                      "cost": 10,
                       "refs": [],
                       "option_id": "cbpepm2lfijaq1vfui27zm"
                     }
@@ -3117,7 +3105,7 @@
                     {
                       "type": "check",
                       "name": "Chosen of the Snow Childe",
-                      "cost": 0,
+                      "cost": 20,
                       "refs": ["army_unique", "snow_chosen"],
                       "armyHasNotOption": [
                         {
@@ -3151,7 +3139,7 @@
             },
             {
               "name": "Friar's Lanterns",
-              "cost": 110,
+              "cost": 100,
               "category": "fey",
               "options": [
                 {
@@ -3162,7 +3150,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 40,
+                      "cost": 45,
                       "hide": true,
                       "options": [],
                       "option_id": "g43g34gsdgsfg3g34g34g4jdd3",
@@ -3180,7 +3168,7 @@
             },
             {
               "name": "Naiads",
-              "cost": 45,
+              "cost": 50,
               "category": "fey",
               "options": [
                 {
@@ -3243,7 +3231,7 @@
             },
             {
               "name": "The Lady's Courtier",
-              "cost": 410,
+              "cost": 400,
               "category": "fey",
               "options": [
                 {
@@ -3289,7 +3277,7 @@
                     {
                       "type": "check",
                       "name": "Courtier of the Dusk",
-                      "cost": 15,
+                      "cost": 25,
                       "refs": ["wizard", "wizardAdept", "gallantry"],
                       "option_id": "c0ujr8xvwg54vzruxk8h",
                       "replaceSpells": true,
