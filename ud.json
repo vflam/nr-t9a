@@ -6,8 +6,12 @@
   },
   "short": "ud",
   "version": "2023",
-  "nrversion": 359,
+  "nrversion": 361,
   "playable": 1,
+  "indicators": [
+    "aspis_arrows",
+    "death_from_afar"
+  ],
   "id": 15,
   "include": [
     102
@@ -72,7 +76,7 @@
           "refs": [
             "art_ud_scroll"
           ],
-          "description": "\tDuring Pre-game Selections, choose a Field, Forest, or Water Terrain Feature. This Terrain Feature ceases to be the Terrain Feature it used to be and loses all its rules. It is treated as <span class=\"textbf\">Dangerous Terrain</span> for all enemy units.\n",
+          "description": "\tDuring Pre-game Selections, choose a Field, Forest, or Water Terrain Feature. This Terrain Feature ceases to be the Terrain Feature it used to be and loses all its rules. It is treated as <span class=\"textbf\">Dangerous Terrain(6+)</span> for all enemy units.\n",
           "option_id": "zx6nusovwdg1kplanum625"
         }
       ]
@@ -320,7 +324,7 @@
           "refs": [
             "we_ud_bookdead"
           ],
-          "description": "\tThe bearer can cast <i>Duty is Eternal</i> as a Bound Spell(4+). The spell's Type is changed to: Range 12\" and Aura. <i>Note that no increase in Casting Value is required when targeting units with Height 5</i>.\n",
+          "description": "\tThe bearer can cast a unique Bound Spell: <i>Eternal Souls</i>. Casting Value (4+), Range 12\", Aura. All friendly units <span class=\"textbf\">Raise</span> one HP. <i>Remember that models with Undead <span class=\"textbf\">Raise</span> their full Rsr value instead.</i> .\n",
           "option_id": "i8r69j3wuv8tm98xwhyq7n"
         },
         {
@@ -461,6 +465,22 @@
       "name": "Army",
       "optionsLabel": "Categories",
       "maxCost": 4500,
+      "armyHasNotOption": [
+        {
+          "refs": [
+            "aspis_arrows"
+          ],
+          "amount": 20,
+          "perPoints": 750
+        },
+        {
+          "refs": [
+            "death_from_afar"
+          ],
+          "amount": 1,
+          "perPoints": 2000
+        }
+      ],
       "armyHasOption": [
         {
           "refs": [
@@ -613,7 +633,13 @@
                           "name": "Great Aspis Bow (4+)",
                           "cost": 5,
                           "ignoreCost": true,
-                          "option_id": "vnk61pwy35rudctohcaj"
+                          "option_id": "vnk61pwy35rudctohcaj",
+                          "refs": [
+                            {
+                              "ref": "aspis_arrows",
+                              "amount": 3
+                            }
+                          ]
                         }
                       ],
                       "option_id": "q324c2gj4i82y6eobqxsp"
@@ -1053,9 +1079,12 @@
                     {
                       "ignoreCost": true,
                       "option_id": "fmn3209fm3920f32f32f",
-                      "name": "Bow",
+                      "name": "Bow (4+)",
                       "type": "check",
-                      "cost": 5
+                      "cost": 5,
+                      "refs": [
+                        "aspis_arrows"
+                      ]
                     },
                     {
                       "type": "check",
@@ -1455,7 +1484,13 @@
                       "options": [],
                       "refopt": "ark_of_ages_mount",
                       "option_id": "rhgvywo5vo6du1rxu3bllp",
-                      "maxUnitCost": 700
+                      "maxUnitCost": 700,
+                      "refs": [
+                        {
+                          "ref": "aspis_arrows",
+                          "amount": 2
+                        }
+                      ]
                     }
                   ],
                   "option_id": "cl4bea0r26ik3rb6avtrxc",
@@ -1859,7 +1894,10 @@
                               "type": "check",
                               "name": "Bow (5+)",
                               "cost": 0,
-                              "option_id": "4059095bermv-34v34vc34bfdg3"
+                              "option_id": "4059095bermv-34v34vc34bfdg3",
+                              "refs": [
+                                "aspis_arrows"
+                              ]
                             },
                             {
                               "type": "check",
@@ -1867,7 +1905,11 @@
                               "cost": 2,
                               "option_id": "34343u4g53h2309f3429hf43",
                               "refs": [
-                                "archer_longbow"
+                                "archer_longbow",
+                                {
+                                  "ref": "aspis_arrows",
+                                  "amount": 2
+                                }
                               ],
                               "armyHasNotOption": [
                                 {
@@ -2380,7 +2422,10 @@
                               "name": "Aspis Arrows and Bow (5+)",
                               "type": "check",
                               "cost": 0,
-                              "option_id": "ca77mlt5p44rfdfdokhizcbqpm"
+                              "option_id": "ca77mlt5p44rfdfdokhizcbqpm",
+                              "refs": [
+                                "aspis_arrows"
+                              ]
                             }
                           ],
                           "option_id": "jg215ehtpknfi9dzpic2p"
@@ -3307,7 +3352,11 @@
                       "cost": 85,
                       "option_id": "5in9x2aa6wq8aqe2umxmb4",
                       "refs": [
-                        "shabti_archers_amount"
+                        "shabti_archers_amount",
+                        {
+                          "ref": "aspis_arrows",
+                          "amount": 3
+                        }
                       ]
                     }
                   ],
@@ -3450,7 +3499,11 @@
                       "type": "numeric",
                       "cost": 70,
                       "refs": [
-                        "sand_stalkers_number"
+                        "sand_stalkers_number",
+                        {
+                          "ref": "aspis_arrows",
+                          "amount": 3
+                        }
                       ],
                       "armyHasNotOption": [
                         {
@@ -3579,7 +3632,8 @@
               "refs": [
                 "charnel_catapult",
                 "tag_Skeleton",
-                "tag_Construct"
+                "tag_Construct",
+                "death_from_afar"
               ],
               "armyHasNotOption": [],
               "options": [
@@ -4005,7 +4059,8 @@
                     {
                       "name": "Giant Aspis Bow (5+)",
                       "refs": [
-                        "giant_aspen_bow"
+                        "giant_aspen_bow",
+                        "death_from_afar"
                       ],
                       "type": "check",
                       "cost": 15,

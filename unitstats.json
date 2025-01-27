@@ -1,7 +1,7 @@
 {
   "name": "Unit Stats",
   "version": 3,
-  "nrversion": 1116,
+  "nrversion": 1117,
   "permission": 10,
   "playable": 0,
   "id": 100,
@@ -97,7 +97,7 @@
           "Of": "6",
           "St": "4",
           "AP": "1",
-          "Ag": "5"
+          "Ag": "6"
         },
         "tags": "\n\t\tAcademy,\n\t\tElf,\n\t\tLight Armour\n\t",
         "offenserules": [
@@ -1263,6 +1263,7 @@
       "obsidian_guard": {
         "name": "Obsidian Guard",
         "cost": "220",
+        "rarity": "Common",
         "height": "1",
         "basesize": "20×20",
         "global": {
@@ -6868,13 +6869,6 @@
             ]
           },
           {
-            "name": "Distracting",
-            "id": "distracting",
-            "params": [
-              "1"
-            ]
-          },
-          {
             "name": "Hard Target",
             "id": "hard_target",
             "params": [
@@ -7918,7 +7912,7 @@
         ],
         "tags": "Daemon",
         "explicitoptions": "\n\t\t\n\t\t\t§prename=sloth,hypertag=allseeingeye,name=All-Seeing Eye,cost=30§,\n\t\t\t§prename=sloth,hypertag=torporoustendrils,name=Torporous Tendrils,cost=55§,\n\t\t\t§prename=sloth,hypertag=sorcerousantennae,name=Sorcerous Antennae,cost=35§,\n\t\t\t§prename=chaos,hypertag=livingshield,name=Hell Can Wait,cost=40§,\n\t\t\t§prename=chaos,hypertag=markoftheeternalchampion,name=Mark of the Eternal Champion,cost=50§,\n\t\t\n\t",
-        "shootingweaponsdef": "Aether Battery<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Aeth. Battery</td><td>3</td><td>18\"</td><td>3D6</td><td>4</td><td>1</td><td>\tIf the model did not move this turn, the number of Shots gain <span class=\"textbf\">Maximized</span></td></tr></table><br>\n<br>\n\n\t",
+        "shootingweaponsdef": "Aether Battery<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Aeth. Battery</td><td>3</td><td>18\"</td><td>3D6</td><td>4</td><td>1</td><td>\tIf the model did not move this turn, the number of Shots gain <span class=\"textbf\">Maximised</span>.</td></tr></table><br>\n<br>\n\n\t",
         "toggles": "\n\t\tonecolprintoptionalmodelrulesdef\n\t\ttwocolprintoptionalmodelrulesdef\n\t\tonecolprintoptions\n\t\ttwocolprintoptions\n\t",
         "fluff": "\n\tDespite having the power to crush anything that dares approach, hope harvesters prefer to attack their foes with projectiles of pure magic, before feeding on the despair of survivors. Creatures of Sloth, these patient structures often attach themselves to other groups of daemons who can do most of the work for them, or else form immense bodies to house their potency.\n",
         "unit_id": "hope_harvester",
@@ -8227,7 +8221,7 @@
           }
         ],
         "tags": "Daemon,Swarm",
-        "explicitoptions": "\n\t\t\n\t\t\t§prename=envy,hypertag=venomsacs,name=Venom Sacs,cost=10/model§,\n\t\t\t§prename=envy,hypertag=piercingspike,name=Piercing Spike,cost=10/model§,\n\t\t\t§prename=chaos,hypertag=livingshield,name=Hell Can Wait,cost=12/model§,\n\t\t\t§prename=envy,hypertag=chargedtendrils,name=Charged Tendrils,cost=10/model§,\n\t\t\n\t",
+        "explicitoptions": "\n\t\t\n\t\t\t§prename=envy,hypertag=venomsacs,name=Venom Sacs,cost=10/model§,\n\t\t\t§prename=envy,hypertag=piercingspike,name=Piercing Spike,cost=10/model§,\n\t\t\t§prename=chaos,hypertag=livingshield,name=Hell Can Wait,cost=12/model§,\n\t\t\t§prename=envy,hypertag=chargedtendrils,name=Charged Tendrils,cost=10/model§,\n\t\t,\n\t",
         "toggles": "onecolprintoptionstwocolprintoptions",
         "fluff": "\n\tWith their wicked grins full of razor teeth, their gelatinous flesh and their little protruding horns, these small, obese daemons of Envy are quite deadly in a swarm. They despise mortal wizards, intensely jealous of their ability to use the substance of the Immortal in the Mortal Realm, and are an ever-present threat to a spellcaster who thins the Veil too far.\n",
         "unit_id": "mageblight_gremlins",
@@ -11685,7 +11679,7 @@
       },
       "imperial_guard": {
         "name": "Imperial Guard",
-        "optionalprices": "\n\t\tspecialImperial Detachment*151517016,\n\t",
+        "optionalprices": "\n\t\tspecialImperial Detachment*15151700,\n\t",
         "cost": "170",
         "rarity": "Common",
         "height": "1",
@@ -12020,12 +12014,8 @@
         },
         "offenserulesB": [
           {
-            "name": "First Strike",
-            "id": "first_strike",
-            "params": [
-              "+1 Att",
-              "Hatred"
-            ]
+            "name": "Trained Ferocity",
+            "id": "trained_ferocity"
           },
           {
             "name": "Stomp Attack",
@@ -21477,7 +21467,7 @@
             "id": "magical_attacks"
           }
         ],
-        "leadership": "\n\t(one choice only),\n\t\tGeneral=free,\n\t\tBattle Standard Bearer=50,\n\t\t\t=,\n\t",
+        "leadership": "\n\t(one choice only),\n\t\tGeneral=free,\n\t\tBattle Standard Bearer=50,\n\t",
         "fluff": "\n\tWhile most thicket beasts are all but mindless, acting upon base anger and hungers, those few with intellects intact often seek to guide the instincts of their wilder siblings, acting as stewards of the darker woods. These shepherds are tragic figures, burdened by the knowledge of their loss, but with a drive to see the forests protected at all costs.\n",
         "unit_id": "thicket_shepherd",
         "option_id": "yv01fd0nrtdi5tsns5ejdk"
@@ -22011,7 +22001,7 @@
       "banshee": {
         "name": "Banshee",
         "secondlogo": "tower",
-        "cost": "160",
+        "cost": "150",
         "height": "1",
         "rarity": "Uncommon",
         "basesize": "20×20",
@@ -24830,7 +24820,7 @@
           "At": "1",
           "Of": "3",
           "St": "4",
-          "AP": "0",
+          "AP": "1",
           "Ag": "3"
         },
         "tags": "\n\t\tSkeleton\n\t",
@@ -25125,7 +25115,7 @@
         },
         "tags": "\n\t\tSkeleton, Construct\n\t",
         "offenserules": [],
-        "shootingweaponsdef": "\n\t\tCharnel Catapult<i> - Shooting Weapon</i><br/><br/><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Charnel Catapult</td><td>4</td><td>48\"</td><td>1</td><td>7</td><td>3</td><td>Artillery, Area Attack(2×2), Multiple Wounds(2),, </td></tr></table> <br>If this weapon causes any unsaved wounds, the target must immediately take a Panic Test. <br>\n<br>\n\n\t",
+        "shootingweaponsdef": "\n\t\tCharnel Catapult<i> - Shooting Weapon</i><br/><br/><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Charnel Catapult</td><td>4</td><td>48\"</td><td>1</td><td>7</td><td>3</td><td>Artillery, Area Attack(2×2), Direct Hit(Multiple Wounds(2)),, </td></tr></table> <br>If this weapon causes any unsaved wounds, the target must immediately take a Panic Test. <br>\n<br>\n\n\t",
         "offenseweapons": [
           {
             "name": "Charnel Catapult",
@@ -25714,6 +25704,13 @@
           {
             "name": "Lethal Strike",
             "id": "lethal_strike"
+          },
+          {
+            "name": "Stomp Attack",
+            "id": "stomp_attack",
+            "params": [
+              "1"
+            ]
           }
         ],
         "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion and loses Ambush=free,\n\t\tTerracotta Army and loses Ambush=free\n\t",
@@ -25877,7 +25874,7 @@
             "id": "poison_attacks"
           }
         ],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion and <span class=\"textbf\">Ghastly Swarm</span>*=30/model,\n\t\t=,\n\t\t*Cannot be taken with <span class=\"textbf\">Ambush</span>. 4, and Rarity:  Rare.=\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion and <span class=\"textbf\">Ghastly Swarm</span>*=30/model,\n\t\t=,\n\t\t*Cannot be taken with <span class=\"textbf\">Ambush</span>. 4, and Rarity: Rare.=\n\t",
         "fluff": "\n    A lone, docile scarab is a jewel among beetles, and a holy symbol in Naptesh. But in an undead, hungry swarm, these flesh-eating insects can attack from any hidden crevice, overwhelming and devouring victims in minutes thanks to their razor sharp mandibles and acidic secretions.\n",
         "unit_id": "scarab_swarms",
         "option_id": "75nw1g3lb0dceqae8m9kp"
@@ -26150,7 +26147,7 @@
         ],
         "tags": "\n\t\tSkeleton, Light Armour\n\t",
         "offenseweapons": [],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\tTerracotta Army=1\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\tTerracotta Army=1/model\n\t",
         "fluff": "\n    The enchanted bows of Naptesh are said to recreate the lethal bite of the desert serpents, which hold great symbolic value. Enabling undead archers to hit their targets with eerie precision, these weapons embody the futility of attempting to outrun death. None escape the wrath of the Desert.\n",
         "unit_id": "skeleton_archers",
         "option_id": "ohrmzqmjlbf5cj617hxhzg"
@@ -26230,7 +26227,7 @@
         },
         "tagsB": "\n\t\tSkeleton, Mount\n\t",
         "offenserulesB": [],
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=2/model,\n\t\tTerracotta Army=2\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=2/model,\n\t\tTerracotta Army=2/model\n\t",
         "toggles": "onecolprintcommandgrouptwocolprintcommandgroup",
         "fluff": "\n    These mounted regiments were once tribes of nomadic horse masters, lightly armoured, yet fast and deadly, until they suffered the Curse side by side with their mounts. Despite their fragile appearance, their ability to swiftly reach around enemy flanks and strike in quick, decisive blows makes them a fearsome addition to Undying forces.\n",
         "unit_id": "skeleton_cavalry",
@@ -26247,6 +26244,10 @@
           "Di": "C"
         },
         "globalrules": [
+          {
+            "name": "Autonomous",
+            "id": "autonomous"
+          },
           {
             "name": "Light Troops",
             "id": "light_troops"
@@ -26383,7 +26384,7 @@
           }
         ],
         "tagsI": "\n\t\tConstruct\n\t",
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=10/model,\n\t\tTerracotta Army=15\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=10/model,\n\t\tTerracotta Army=15/model\n\t",
         "fluff": "\n    Meticulously crafted, Napteshi chariots have for centuries crushed the kingdom’s enemies beneath their wheels. Able to operate either as manoeuvrable skirmishers or in vast, unstoppable battalions, the crew atop the chariot’s platform were not only drivers but honoured warriors, and even in death they often form the close retinue of kings and princes.\n",
         "unit_id": "skeleton_chariots",
         "option_id": "tzrh115eeyaqnnnhovqe0s"
@@ -26526,7 +26527,7 @@
           "Ag": "2"
         },
         "tags": "\n\t\tSkeleton, Light Armour\n\t",
-        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\tTerracotta Army=2\n\t",
+        "armyorganisationoptions": "\n\t\t\n    <i>Note that these options require all models in an army to be upgraded with the same option and a Pharaoh must be the army General:</i>\n=,\n\t\tBarrow Legion=1/model,\n\t\tTerracotta Army=2/model\n\t",
         "fluff": "\n    Bound by ancient magic, the spirits of the loyal soldiers of the Undying Dynasties usually inhabit their own remains, so their dusty bones may know bloodshed once again. No vampire’s rotted puppets driven by animal hunger, these are proud warriors, cold and relentless, skeletons and weaponry kept in service ​by incomparable secrets of preservation.\n",
         "unit_id": "skeleton_warriors",
         "option_id": "ua54o4stuqpw12h9tya8"
@@ -30481,7 +30482,7 @@
         ],
         "offensename": "Chosen",
         "offense": {
-          "At": "3",
+          "At": "2",
           "Of": "6",
           "St": "4",
           "AP": "1",

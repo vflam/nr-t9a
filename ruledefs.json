@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 333,
+  "nrversion": 334,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -131,7 +131,7 @@
     },
     "de-dancers_of_yema": {
       "title": "Dancers of Yema",
-      "def": "The unit's restriction is changed from Regular to Common. The model gains Aegis(5+, against Melee Attacks), First Strike(+1 Att), Elven Finesse, Weapon Master. It also gains Shield, Hand Weapon, Great Weapon, Halberd ."
+      "def": "The unit's restriction is changed from Regular to Common. The model gains Aegis(5+, against Melee Attacks), First Strike(+1 Att), Elven Finesse, Weapon Master. It also gains Shield, Hand Weapon, Great Weapon, Halberd."
     },
     "de-daeb_warfare": {
       "type": null,
@@ -341,7 +341,7 @@
     },
     "de-moithirs_mirror": {
       "title": "Moithir's Mirror",
-      "def": "\tThe bearer gains <span class=\"textbf\">Aegis(5+, {} against Melee Attacks)</span>. If one or more Melee Attacks are allocated towards the bearer, the bearer gains <span class=\"textbf\">Grind Attack(3, Str 4, AP 2, Magical Attacks)</span> until the end of the Round of Combat. This <span class=\"textbf\">Grind Attack</span> is resolved with Agi 0.<br><br>(<i>Note that attacks made at Agi step 0 can trigger this effect.</i>)",
+      "def": "\tThe bearer gains <span class=\"textbf\">Aegis(5+, against Melee Attacks)</span>. If one or more Melee Attacks are allocated towards the bearer, the bearer gains <span class=\"textbf\">Grind Attack(3, Str 4, AP 2, Magical Attacks)</span> until the end of the Round of Combat. This <span class=\"textbf\">Grind Attack</span> is resolved with Agi 0.<br>(<i>Note that Attacks made at Agi step 0 can trigger this effect.</i>)",
       "type": "protection",
       "mod": [
         {
@@ -672,7 +672,7 @@
     },
     "ong-armed_to_the_teeth": {
       "title": "Armed to the Teeth",
-      "def": "<i> - Melee Weapon</i><br/><br/>The model gains <span class=\"textbf\">Weapon Master</span> and its Arm is <span class=\"textbf\">set</span> to 2.<br>At the start of each Round of Combat that the model is fighting, if the model is within 12\" of one or more friendly models that are equipped with: Great Weapon, Paired Weapons, and/or Shield, the model gains the corresponding equipment until the end of the Round of Combat.<br><br>\tThe model gains <span class=\"textbf\">Weapon Master</span> and its Arm is <span class=\"textbf\">set</span> to 2.<br>\tAt the start of each Round of Combat that the model is fighting, if the model is within 12\" of one or more friendly models that are equipped with: Great Weapon, Paired Weapons, and/or Shield, the model gains the corresponding equipment until the end of the Round of Combat."
+      "def": "<i> - Melee Weapon</i><br/><br/>The model gains <span class=\"textbf\">Weapon Master</span> and its Arm is <span class=\"textbf\">set</span> to 2.<br>At the start of each Round of Combat that the model is fighting, if the model is within 12\" of one or more friendly models that are equipped with a Great Weapon, Paired Weapons, and/or Shield, the model gains the corresponding equipment until the end of the Round of Combat.<br><br>\tThe model gains <span class=\"textbf\">Weapon Master</span> and its Arm is <span class=\"textbf\">set</span> to 2.<br>\tAt the start of each Round of Combat that the model is fighting, if the model is within 12\" of one or more friendly models that are equipped with a Great Weapon, Paired Weapons, and/or Shield, the model gains the corresponding equipment until the end of the Round of Combat."
     },
     "ong-gnasher_dashers": {
       "title": "Gnasher Dashers",
@@ -720,7 +720,7 @@
     },
     "ong-goblin_gardens": {
       "title": "Goblin Gardens",
-      "def": "During Pre-game Selections, you may choose a Terrain Type from: Field, Forest, Ruins, Water Terrain. All models (<i>friend and foe</i>) treat Terrain Features of the chosen Terrain Type as <span class=\"textbf\">Dangerous Terrain(6)</span>. In addition, friendly models with Goblin gain <span class=\"textbf\">Strider(X)</span>, where X is the chosen Terrain."
+      "def": "During Pre-game Selections, you may choose a Terrain Type from: Field, Forest, Ruins, Water Terrain. All models (<i>friend and foe</i>) treat Terrain Features of the chosen Terrain Type as <span class=\"textbf\">Dangerous Terrain(6+)</span>. In addition, friendly models with Goblin gain <span class=\"textbf\">Strider(X)</span>, where X is the chosen Terrain."
     },
     "ong-spies": {
       "title": "Spies",
@@ -741,7 +741,7 @@
     },
     "ong-mauler": {
       "title": "Mauler",
-      "def": "The model part with Goblin gains Fury, First Strike(Hatred), and gains Great Weapon.",
+      "def": "The model part with Goblin gains Fury, First Strike(Hatred), and gains a Great Weapon.",
       "mod": [
         {
           "affects": [
@@ -763,7 +763,7 @@
     },
     "ong-netter": {
       "title": "Netter",
-      "def": "Afflict(-3 Off)",
+      "def": "<span class=\"textbf\">Afflict(-3 Off)</span>",
       "ennemymod": [
         {
           "affects": [
@@ -813,7 +813,7 @@
     },
     "ong-symbol_of_the_warborn_alliance": {
       "title": "Symbol of the Warborn Alliance",
-      "def": "The model can cast <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/guile_and_fury\">Guile and Fury</nuxt-link></i> (Hereditary Spell) as a Bound Spell(5+). Each time the model arrmpts to cast the Bound Spell, the owner must choose which version to cast."
+      "def": "The model can cast <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/guile_and_fury\">Guile and Fury</nuxt-link></i> (Hereditary Spell) as a Bound Spell(5+), for this purpose it is considered to have both the Goblin and Orc property. Each time the model attempts to cast the Bound Spell, the owner must choose which version to cast."
     },
     "ong-immense_bulk": {
       "title": "Immense Bulk",
@@ -917,7 +917,7 @@
     },
     "ong-surprise": {
       "title": "Surprise",
-      "def": "The model cannot be deployed normally. Instead, at the start of any Player Turn, the owner may choose a friendly non-Shaken  Unengaged unit of Goblin Rabble or Gogtuk Neophytes. Any unit can be chosen up to three times per Player Turn. Deploy the model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/surprise\">Surprise</nuxt-link></span> within 3\" of the chosen unit and more than 1\" away from Impassable Terrain and other units. If the model is not deployed by the end of Game Turn 4, it is Destroyed and is removed as a casualty ."
+      "def": "The model cannot be deployed normally. Instead, at the start of any Player Turn, the owner may choose a friendly non-Shaken  Unengaged unit of Goblin Rabble or Gogtuk Neophytes. Any unit can be chosen up to three times per Player Turn. Deploy the model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/surprise\">Surprise</nuxt-link></span> within 3\" of the chosen unit and more than 1\" away from any Impassable Terrain and other units. If the model is not deployed by the end of Game Turn 4, it is Destroyed and is removed as a casualty."
     },
     "ong-orc_horde": {
       "title": "Orc Horde",
@@ -1036,17 +1036,17 @@
     "ong-tribe_leader": {
       "type": null,
       "title": "Tribe Leader",
-      "def": "\tIf the General is a <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/tribe_leader\">Tribe Leader</nuxt-link></span>, apply the following changes to Army List creation:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Max. 10% of the Army Points may be spent on units with Goblin.<br>\t\t<br>&nbsp;&nbsp;&bull;  The Duplication Limits Max. X items/army (<i>i.e. Max. X units/army, Max. X models/army, and </i>) in the unit profiles of certain units with Orc are modified, as indicated by TL X.<br><i>For example, Max. 1  units/army means that if the General is a <nuxt-link class=\"ruleLink\" to=\"/app/rule/tribe_leader\">Tribe Leader</nuxt-link>, the Duplication Limit becomes Max. 2 units/army</i>.<br>\t"
+      "def": "\tIf the General is a <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/tribe_leader\">Tribe Leader</nuxt-link></span>, apply the following changes to Army List creation:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Max. 10% of the Army Points may be spent on units with Goblin.<br>\t\t<br>&nbsp;&nbsp;&bull;  The Duplication Limits Max. X items/army (<i>i.e. Max. X units/army, Max. X models/army, and </i>) and Rarity in the unit profiles of certain units with Orc are modified, as indicated by TL X.<br><i>For example, Max. 1  units/army means that if the General is a <nuxt-link class=\"ruleLink\" to=\"/app/rule/tribe_leader\">Tribe Leader</nuxt-link>, the Duplication Limit becomes Max. 2 units/army and Uncommon (TL Regular) means that if the General is a <nuxt-link class=\"ruleLink\" to=\"/app/rule/tribe_leader\">Tribe Leader</nuxt-link>, Rarity becomes Regular</i>.<br>\t"
     },
     "ong-darrmu": {
       "type": null,
       "title": "Darrmu",
-      "def": "\tIf the General is a <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/darrmu\">Darrmu</nuxt-link></span>, apply the following changes to Army List creation:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Max. 10% of the Army Points may be spent on units with Orc.<br>\t\t<br>&nbsp;&nbsp;&bull;  The Duplication Limits Max. X items/army (<i>i.e. Max. X units/army, Max. X models/army, and </i>) in the unit profiles of certain units with Goblin are modified, as indicated by D X.<br><i>For example, Max. 1  units/army means that if the General is a <nuxt-link class=\"ruleLink\" to=\"/app/rule/darrmu\">Darrmu</nuxt-link>, the Duplication Limit becomes Max. 2 units/army</i>.<br>\t"
+      "def": "\tIf the General is a <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/darrmu\">Darrmu</nuxt-link></span>, apply the following changes to Army List creation:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Max. 10% of the Army Points may be spent on units with Orc.<br>\t\t<br>&nbsp;&nbsp;&bull;  The Duplication Limits Max. X items/army (<i>i.e. Max. X units/army, Max. X models/army, and </i>) and Rarity in the unit profiles of certain units with Goblin are modified, as indicated by D X.<br><i>For example, Max. 1  units/army means that if the General is a <nuxt-link class=\"ruleLink\" to=\"/app/rule/darrmu\">Darrmu</nuxt-link>, the Duplication Limit becomes Max. 2 units/army and Uncommon (D Regular) means that if the General is a <nuxt-link class=\"ruleLink\" to=\"/app/rule/darrmu\">Darrmu</nuxt-link>, Rarity becomes Regular</i>.<br>\t"
     },
     "ong-goblin_cunning": {
       "type": null,
       "title": "Goblin Cunning",
-      "def": "\tImmediately before taking any Courage Test, which is not automatically passed; units consisting entirely of models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/goblin_cunning\">Goblin Cunning</nuxt-link>, may choose to fail, instead of roll."
+      "def": "\tImmediately before taking any Courage Test, which is not automatically passed; units consisting entirely of models with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/goblin_cunning\">Goblin Cunning</nuxt-link></span>, may choose to fail the Courage Test, instead of rolling for it."
     },
     "ong-creepycrawlies": {
       "type": null,
@@ -1056,7 +1056,7 @@
     "ong-headbashers": {
       "type": null,
       "title": "Headbashers",
-      "def": "Legendary.<br>Units containing <nuxt-link class=\"ruleLink\" to=\"/app/rule/headbashers\">Headbashers</nuxt-link> gain <span class=\"textbf\">Bodyguard(General)</span>, and Rank-and-File model parts with Orc in the unit gain <span class=\"textbf\">Lethal Strike</span>. Additionally, units with <nuxt-link class=\"ruleLink\" to=\"/app/rule/headbashers\">Headbashers</nuxt-link> that count towards Core count towards Special instead.",
+      "def": "Legendary.<br>Units containing <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/headbashers\">Headbashers</nuxt-link></span> gain <span class=\"textbf\">Bodyguard(General)</span>, and Rank-and-File model parts with Orc in the unit gain <span class=\"textbf\">Lethal Strike</span>. Additionally, units with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/headbashers\">Headbashers</nuxt-link></span> that count towards Core count towards Special instead.",
       "mod": [
         {
           "rules": {
@@ -1104,7 +1104,7 @@
     "ong-force_of_destruction": {
       "type": "attack_attribute",
       "title": "Force of Destruction",
-      "def": "\tThe model must perform a move in the movement phase if able to, and cannot declare any Charges, and other units cannot Declare any Charges against the model. The model and other units ignore each other regarding the Unit Spacing rule for all movement and can touch and move through one another during any movement (<i>excluding <span class=\"textbf\">Ambush</span></i>).<br><br>\tWhen the model touches another unit, the model is immediately removed as a casualty, and the other unit immediately suffers X hits with the model's Str and AP. If several units are touched simultaneously, the owner of the model with <nuxt-link class=\"ruleLink\" to=\"/app/rule/force_of_destruction\">Force of Destruction</nuxt-link> chooses which unit suffers the hits.<br><br>\tIf the model was removed due to another unit moving into contact with it, that unit suffers an additional D6 hits.<br><br>\t<br><br>\tHealth Point losses caused by <nuxt-link class=\"ruleLink\" to=\"/app/rule/force_of_destruction\">Force of Destruction</nuxt-link> in the Charge Phase do not cause Panic Test"
+      "def": "\tThe model <span class=\"textbf\">must</span> perform a move in the Movement Phase if able to, and cannot declare any Charges; other units cannot Declare any Charges against the model. The model and other units ignore each other regarding the Unit Spacing rule for all movement and can touch and move through one another during any movement (<i>excluding <span class=\"textbf\">Ambush</span></i>).<br><br>\tWhen the model touches another unit, the model is immediately removed as a casualty, and the other unit immediately suffers X hits with the model's Str and AP. If several units are touched simultaneously, the owner of the model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/force_of_destruction\">Force of Destruction</nuxt-link></span> chooses which unit suffers the hits.<br><br>\tIf the model was removed due to another unit moving into contact with it, that unit suffers an additional D6 hits.<br><br>\t<br><br>\tHealth Point losses caused by <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/force_of_destruction\">Force of Destruction</nuxt-link></span> in the Charge Phase do not cause Panic Test"
     },
     "ong-poisoned_spear": {
       "type": null,
@@ -1114,16 +1114,16 @@
     },
     "ong-war_cry": {
       "title": "War Cry!",
-      "def": "\tOne use only. Duration: One Turn. May be activated at the start of any friendly Player Turn, provided the General is on the Battlefield and not Shaken. Apply the following effects until :\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Friendly units gain +1\" Cha and +1\" Mob.<br>\t\t<br>&nbsp;&nbsp;&bull;  If the General is a Goblin Demagogue or a Goblin Witch,  friendly units with Goblin, while not Engaged in Combat, gain <span class=\"textbf\">Light Troops</span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  If the General is an Orc Warlord or an Orc Shaman, friendly units with Orc have their Charge Range rolls <span class=\"textbf\">Maximised</span>.<br>\t",
+      "def": "\tOne use only. Duration: One Turn. May be activated at the start of any friendly Player Turn, provided the General is on the Battlefield and not Shaken. Apply the following effects:\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Friendly units gain +1\" Cha and +1\" Mob.<br>\t\t<br>&nbsp;&nbsp;&bull;  If the General is a Goblin Demagogue or a Goblin Witch,  friendly units with Goblin, while not Engaged in Combat, gain <span class=\"textbf\">Light Troops</span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  If the General is an Orc Warlord or an Orc Shaman, friendly units with Orc have their Charge Range rolls <span class=\"textbf\">Maximised</span>.<br>\t",
       "uses": 1
     },
     "ong-guile_and_fury": {
       "title": "Guile and Fury",
-      "def": "\tCan be cast in one of two versions:<br><span class=\"textbf\">Augment</span>:<br>\tCannot be cast by Goblin.<br>\tThe target gains <span class=\"textbf\">+1</span> to hit, and its Charge Range, Flee Distance, and Pursuit Distance are all <span class=\"textbf\">increased</span> by 1\".<br><br><span class=\"textbf\">Hex</span>:<br>\tCannot be cast by Orc.<br>The target suffers <span class=\"textbf\">-1</span> to hit, and its Charge Range, Flee Distance, and Pursuit Distance are <span class=\"textbf\">reduced</span> by 1\"."
+      "def": "\tCan be cast in one of two versions:<br><span class=\"textbf\">Augment</span>:<br>\tCannot be cast by a Goblin.<br>\tThe target gains <span class=\"textbf\">+1</span> to hit, and its Charge Range, Flee Distance, and Pursuit Distance are all <span class=\"textbf\">increased</span> by 1\".<br><br><span class=\"textbf\">Hex</span>:<br>\tCannot be cast by an Orc.<br>The target suffers <span class=\"textbf\">-1</span> to hit, and its Charge Range, Flee Distance, and Pursuit Distance are <span class=\"textbf\">reduced</span> by 1\"."
     },
     "ong-omen_of_the_apocalypse": {
       "title": "Omen of the Apocalypse",
-      "def": "+X Att, +X Str, and +X AP. X is equal to the number of friendly units containing Orc that are Engaged in Combat anywhere on the Battlefield, up to a maximum of 3.",
+      "def": "+X Att, +X Str, and +X AP. X is equal to the number of friendly units containing Orc that are Engaged in Combat anywhere on the Battlefield, up to a maximum of +3.",
       "type": "weapon_enchant",
       "mod": [
         {
@@ -1135,7 +1135,7 @@
     },
     "ong-attack_gnasher": {
       "title": "Attack Gnasher",
-      "def": "\tThe wielder must perform 3 additional Standard Melee Attacks, that have their Str <span class=\"textbf\">always</span> set to 5 and AP <span class=\"textbf\">always</span> set to 2."
+      "def": "\tThe wielder must perform 3 additional Standard Melee Attacks,  their Str is <span class=\"textbf\">always set</span> to 5 and AP <span class=\"textbf\">always set</span> to 2."
     },
     "ong-tazreks_guard": {
       "title": "Tazrek's Guard",
@@ -1154,7 +1154,7 @@
     },
     "ong-troll_hide": {
       "title": "Troll Hide",
-      "def": "\t Mob is <span class=\"textbf\">set</span> to 6\". The model's base is changed to 40×40 mm and its Height is <span class=\"textbf\">set</span> to 3. The model's base change cannot be ignored. .",
+      "def": "\t Mob is <span class=\"textbf\">set</span> to 6\". The model's base is changed to 40×40 mm and its Height is <span class=\"textbf\">set</span> to 3. The model's base change cannot be ignored.",
       "mod": [
         {
           "basesize": "40x40"
@@ -1172,20 +1172,20 @@
     },
     "ong-goga_cauldron": {
       "title": "Goga Cauldron",
-      "def": "\tOne use only. May be activated at the start of any Phase . Until the end of the Player Turn, the bearer’s unit gains Fearless, Unstable, Dying Blow.",
+      "def": "\tOne use only. May be activated at the start of any Phase. Until the end of the Player Turn, the bearer’s unit gains Fearless, Unstable, Dying Blow.",
       "uses": 1
     },
     "ong-skull_fetish": {
       "title": "Skull Fetish",
-      "def": "\tDuring the Siphon the Veil step of your Magic Phase, the  wearer may gain <span class=\"textbf\">Channel(D3)</span> with Duration: One Turn. If a ‘3’ is rolled for this: all units within 6\" of the wearer, suffers the Witchfire Miscast effect, where X is equal to 5."
+      "def": "\tDuring the Siphon the Veil step of your Magic Phase, the  wearer may gain <span class=\"textbf\">Channel(D3)</span> with Duration: One Turn. If a ‘3’ is rolled for this, all units within 6\" of the wearer, suffer the Witchfire Miscast effect, where X is equal to 5."
     },
     "ong-monster_munch": {
       "title": "Monster Munch",
-      "def": "\tThe bearer can cast <i>Wild Spikes</i> (Shamanism) as a Bound Spell(6+)."
+      "def": "\tThe bearer can cast <i>Totemic Summon</i> (Shamanism) as a Bound Spell(6+)."
     },
     "ong-pan_of_protection_pinchin": {
       "title": "Pan of Protection Pinchin'",
-      "def": "\tWhen successfully wounded, the bearer may choose to use the attacker's Arm and/or its Special Save:\t\t\t<br>&nbsp;&nbsp;&bull;  Use the Arm that the attacking model would have against the attack that inflicted the wound (<i>including Conditional Application, modifiers, etc.</i>). If so, the bearer cannot use its own Arm (<i>including any modifiers</i>), if available.\t\t<br>&nbsp;&nbsp;&bull;  Use the Special Save that the attacking model would have against the attack that inflicted the wound (<i>including Conditional Application, modifiers, etc.</i>). If so, the bearer cannot use its own Special Save (<i>including any modifiers</i>), if available.\t",
+      "def": "\tWhen successfully wounded, the bearer may choose to use the attacker's Arm and/or its Special Save:\t\t\t<br>&nbsp;&nbsp;&bull;  Use the Arm that the attacking model would have against the Attack that inflicted the wound (<i>including Conditional Application, modifiers, etc.</i>). If so, the bearer cannot use its own Arm (<i>including any modifiers</i>), if available.\t\t<br>&nbsp;&nbsp;&bull;  Use the Special Save that the attacking model would have against the Attack that inflicted the wound (<i>including Conditional Application, modifiers, etc.</i>). If so, the bearer cannot use its own Special Save (<i>including any modifiers</i>), if available.\t",
       "type": "protection",
       "selectable": true,
       "mod": [
@@ -1200,7 +1200,7 @@
     },
     "ong-moon_shrooms": {
       "title": "Moon Shrooms",
-      "def": "\tCannot be activated at the same turn as the <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/war_cry\">War Cry</nuxt-link>!</span> The bearer's unit acts as if the General had used the <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/war_cry\">War Cry</nuxt-link>!</span> this turn."
+      "def": "\tCannot be activated at the same turn as <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/war_cry\">War Cry</nuxt-link>!</span> The bearer's unit acts as if the General had used <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/war_cry\">War Cry</nuxt-link>!</span> this turn."
     },
     "ong-splatterer": {
       "type": "Shooting Weapon",
@@ -2026,7 +2026,7 @@
     },
     "dl-falling_star": {
       "title": "Falling Star",
-      "def": "The model's Def, Off , and Agiare set to twice the model's current number of HP, at the start of each Agility Step. ",
+      "def": "The model's Def, Off, and Agi are <span class=\"textbf\">set</span> to twice the model's current number of HP, at the start of each Agility Step. ",
       "mod": [
         {
           "affects": [
@@ -2044,7 +2044,7 @@
     },
     "dl-favoured_of_pride": {
       "title": "Favoured of Pride",
-      "def": "Legendary.<br>Can only be taken in an army with Omen of Savar as the General.<br>The unit gains Exclusive and may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
+      "def": "Legendary.<br>Can only be taken in an army with Omen of Savar as the General.<br>The unit  may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
     },
     "dl-acid_blood": {
       "title": "Acid Blood",
@@ -2061,11 +2061,11 @@
     },
     "dl-favoured_of_gluttony": {
       "title": "Favoured of Gluttony",
-      "def": "Legendary.<br>Can only be taken in an army with Maw of Akaan as the General.<br>The unit gains Exclusive and may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
+      "def": "Legendary.<br>Can only be taken in an army with Maw of Akaan as the General.<br>The unit gains <span class=\"textbf\">Exclusive</span> and may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
     },
     "dl-favoured_of_wrath": {
       "title": "Favoured of Wrath",
-      "def": "Legendary.<br>Can only be taken in an army with Vanadra's Scourge as the General.<br>The unit gains Exclusive and may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
+      "def": "Legendary.<br>Can only be taken in an army with Vanadra's Scourge as the General.<br>The unit gains <span class=\"textbf\">Exclusive</span> and may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
     },
     "dl-razor_tentacles": {
       "title": "Razor Tentacles",
@@ -2102,7 +2102,7 @@
     },
     "dl-tightening_grasp": {
       "title": "Tightening Grasp",
-      "def": "The model gains <span class=\"textbf\">Grind Attack(X)</span>. When a model is in the second rank, and not in contact with any enemy model,  it can make all it Grind Attacks across models in the  front rank directly in front of it.<br>When the model is not in Engaged in Combat, X is set to  1. After each Round of Combat, X increases by 1 <i>(e.g., Grind Attack(1) becomes Grind Attack(2))</i>.",
+      "def": "The model gains <span class=\"textbf\">Grind Attack(X)</span>. When a model is in the second rank, and not in contact with any enemy model,  it can make all its hits from Grind Attack across models in the front rank directly in front of it.<br>When the model is not Engaged in Combat, X is <span class=\"textbf\">set</span> to 1. After each Round of Combat, X increases by 1 <i>(e.g., Grind Attack(1) becomes Grind Attack(2))</i>.",
       "mod": [
         {
           "rules": {
@@ -2116,11 +2116,11 @@
     },
     "dl-favoured_of_greed": {
       "title": "Favoured of Greed",
-      "def": "Legendary.<br>Can only be taken in an army with Miser of Sugulag as the General.<br>The unit gains Exclusive and may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
+      "def": "Legendary.<br>Can only be taken in an army with Miser of Sugulag as the General.<br>The unit gains <span class=\"textbf\">Exclusive</span> and may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
     },
     "dl-engine_of_damnation": {
-      "title": "Engine of Damnation (Extraordinary)",
-      "def": "The model's base size is changed to 150×100 mm, its Height is changed to 5; and it loses WarPlatform and <span class=\"textbf\">Attached</span>. Its HP are set to 9 and its Cha is set to 5. The model gains Terror, Stomp Attack(D6), Exclusive.",
+      "title": "Engine of Damnation",
+      "def": "Extraordinary. The model's base size is changed to 150×100 mm, its Height is changed to 5; and it loses WarPlatform and <span class=\"textbf\">Attached</span>. Its HP are <span class=\"textbf\">set</span> to 9 and its Cha is <span class=\"textbf\">set</span> to 5. The model gains Terror, Stomp Attack(D6), Exclusive.",
       "mod": [
         {
           "basesize": "150×100",
@@ -2161,11 +2161,11 @@
     },
     "dl-firestarter": {
       "title": "Firestarter(X)",
-      "def": "The  unit can cast the spell stated in brackets as a Bound Spell ( 4). When casting the spell choose one Rank-and-File model to be the Caster."
+      "def": "The  unit can cast the spell stated in brackets as a Bound Spell (4+). When casting the spell choose one Rank-and-File model to be the Caster."
     },
     "dl-wings": {
       "title": "Wings",
-      "def": "The model’s Cha and Mob are both Set to 7\" and it gains <span class=\"textbf\">Fly</span>.",
+      "def": "The model’s Cha and Mob are both <span class=\"textbf\">set</span> to 7\" and it gains <span class=\"textbf\">Fly</span>.",
       "mod": [
         {
           "stats": {
@@ -2188,7 +2188,7 @@
     },
     "dl-know_thyself": {
       "title": "Know Thyself",
-      "def": "At the begining of the Agility Step when the model's Standard Melee Attacks are made, select one model part from each enemy model in contact. Add their Attack Value Characteristics, excluding any modifiers, to the Attack Value of the Kuulima's Deceiver. At the end of each Round of Combat, the model's Attack Value is set to 1.",
+      "def": "At the begining of the Agility Step when the model's Standard Melee Attacks are made, select one model part from each enemy model in contact. Add their Attack Value Characteristics, excluding any modifiers, to the Attack Value of the Kuulima's Deceiver. At the end of each Round of Combat, the model's Attack Value is <span class=\"textbf\">set</span> to 1.",
       "type": "attack_attribute",
       "mod": [
         {
@@ -2198,11 +2198,11 @@
     },
     "dl-veil_stalker": {
       "title": "Veil Stalker",
-      "def": "Even if the unit is not on the battlefield. For every successfully cast spell in opponents previous Magic Phase this unit's <span class=\"textbf\">Ambush</span> roll gain <span class=\"textbf\">Maximized</span>."
+      "def": "For every successfully cast spell in the opponents previous Magic Phase this unit's <span class=\"textbf\">Ambush</span> roll gains <span class=\"textbf\">Maximised</span>, even if the unit is not on the battlefield."
     },
     "dl-favoured_of_envy": {
       "title": "Favoured of Envy",
-      "def": "Legendary.<br>Can only be taken in an army with Kuulima's Deceiver as the General.<br>The unit gains Exclusive and may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
+      "def": "Legendary.<br>Can only be taken in an army with Kuulima's Deceiver as the General.<br>The unit gains <span class=\"textbf\">Exclusive</span> and may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
     },
     "dl-devour": {
       "title": "Devour",
@@ -2216,11 +2216,11 @@
     },
     "dl-path_of_destruction": {
       "title": "Path of Destruction",
-      "def": "This model part can allocate <span class=\"textbf\">Stomp Attack</span> onto Health Pools of Height 4 or less (<i>rather than 0-1</i>). If the model part’s <span class=\"textbf\">Stomp Attack</span> is allocated onto a Health Pool with Height (3–4), the total number of hits is halved, rounding fractions up."
+      "def": "This model part can allocate its <span class=\"textbf\">Stomp Attack</span> onto Health Pools of Height 4 or less (<i>rather than 0-1</i>). If the model part’s <span class=\"textbf\">Stomp Attack</span> is allocated onto a Health Pool with Height (3–4), the total number of hits is halved, rounding fractions up."
     },
     "dl-bribed_enchantments": {
       "title": "Bribed Enchantments",
-      "def": "During Step 2. C Static Combat Score in a Round of Combat; select a single enemy unit the model is in contact with. For each Magic Item in the selected unit, to a maximum of 3. The wearer's unit gain +1 Combat Resolution."
+      "def": "During Step 2. C Static Combat Score in a Round of Combat; select a single enemy unit the model is in contact with. For each Magic Item in the selected unit, the wearer's unit gains +1 Combat Score, to a maximum of +3."
     },
     "dl-divine_right": {
       "title": "Divine Right",
@@ -2312,7 +2312,7 @@
     },
     "dl-favoured_of_lust": {
       "title": "Favoured of Lust",
-      "def": "Legendary.<br>Can only be taken in an army with Courtesan of Cibaresh as the General.<br>The unit gains Exclusive and may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
+      "def": "Legendary.<br>Can only be taken in an army with Courtesan of Cibaresh as the General.<br>The unit gains <span class=\"textbf\">Exclusive</span> and may select up to two <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link>, instead of one."
     },
     "dl-horde_thresher": {
       "title": "Horde Thresher",
@@ -2402,7 +2402,7 @@
     },
     "dl-mountain_breaker": {
       "title": "Mountain Breaker",
-      "def": "The model's Charge Range rolls towards units containing Height  5 are <span class=\"textbf\">Maximized</span>.<br>Impact Hits gain <span class=\"textbf\">Multiple Wounds(D3, towards Height   5)</span>.",
+      "def": "The model's Charge Range rolls towards units containing Height 5 are <span class=\"textbf\">Maximised</span>.<br>Impact Hits gain <span class=\"textbf\">Multiple Wounds(D3, towards Height 5)</span>.",
       "mod": [
         {
           "affects": [
@@ -2466,7 +2466,7 @@
     },
     "dl-span_classtextbfpath_of_destructionspan": {
       "title": "Path of Destruction",
-      "def": "\tThis model part can allocate <span class=\"textbf\">Stomp Attack</span> onto Health Pools of Height 4 or less (<i>rather than 0-1</i>). If the model part’s <span class=\"textbf\">Stomp Attack</span> is allocated onto a Health Pool with Height (3–4), the total number of hits is halved, rounding fractions up."
+      "def": "\tThis model part can allocate its <span class=\"textbf\">Stomp Attack</span> onto Health Pools of Height 4 or less (<i>rather than 0-1</i>). If the model part’s <span class=\"textbf\">Stomp Attack</span> is allocated onto a Health Pool with Height (3–4), the total number of hits is halved, rounding fractions up."
     },
     "dl-dominionofsloth": {
       "title": "",
@@ -2491,7 +2491,7 @@
     },
     "dl-aether_battery": {
       "title": "Aether Battery",
-      "def": "\tIf the model did not move this turn, the number of Shots gain <span class=\"textbf\">Maximized</span><br><br>Aether Battery<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Aeth. Battery</td><td>3</td><td>18\"</td><td>3D6</td><td>4</td><td>1</td><td>\tIf the model did not move this turn, the number of Shots gain <span class=\"textbf\">Maximized</span></td></tr></table><br><br>\t"
+      "def": "\tIf the model did not move this turn, the number of Shots gain <span class=\"textbf\">Maximised</span>.<br><br>Aether Battery<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Aeth. Battery</td><td>3</td><td>18\"</td><td>3D6</td><td>4</td><td>1</td><td>\tIf the model did not move this turn, the number of Shots gain <span class=\"textbf\">Maximised</span>.</td></tr></table><br><br>\t"
     },
     "dl-manifestation": {
       "title": "Manifestation",
@@ -2580,7 +2580,7 @@
     },
     "dl-unnatural_roots": {
       "title": "Unnatural Roots",
-      "def": "\tA unit containing this <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">manifestation</nuxt-link> once or more gain <span class=\"textbf\">Resolute(1)</span>"
+      "def": "\tA unit containing one or more <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestations</nuxt-link> of <nuxt-link class=\"ruleLink\" to=\"/app/rule/unnatural_roots\">Unnatural Roots</nuxt-link> gains <span class=\"textbf\">Resolute(1)</span>."
     },
     "dl-mark_of_the_eternal_champion": {
       "title": "Mark of the Eternal Champion",
@@ -2588,11 +2588,11 @@
     },
     "dl-clinging_ichor": {
       "title": "Clinging Ichor",
-      "def": "\tUnits in base contact with the bearer loses Devastating Charge."
+      "def": "\tUnits in base contact with the bearer lose Devastating Charge(<i>If they had it</i>)."
     },
     "dl-mirrored_scales": {
       "title": "Mirrored Scales",
-      "def": "\tEach Melee Attack allocated towards the model  for which a natural ‘1’ is rolled to hit hits the attacking model's Health Pool instead.",
+      "def": "\tEach Melee Attack allocated towards the model for which a natural ‘1’ to hit is rolled, hits the attacking model's Health Pool instead.",
       "type": "protection",
       "affect_rf": true,
       "mod": [
@@ -2649,7 +2649,7 @@
     },
     "dl-trampling_hooves": {
       "title": "Trampling Hooves",
-      "def": "\tModel parts without Mount or Construct gain Grind Attack(D3, Str 5 AP 2, Magical Attacks)"
+      "def": "\tModel parts without Mount or Construct gain <span class=\"textbf\">Grind Attack(D3, Str 5 AP 2, Magical Attacks)</span>."
     },
     "dl-hellish_larynx": {
       "title": "Hellish Larynx",
@@ -2671,7 +2671,7 @@
     },
     "dl-horrifying_vissage": {
       "title": "Horrifying Vissage",
-      "def": "\tOne use only; Duration: Until the end of the Phase.<br>May be activated at the at start of a friendly Charge Phase. When activated, the model gains <span class=\"textbf\">Horror</span> and its Charge Range rolls gain <span class=\"textbf\">Maximized</span>."
+      "def": "\tOne use only; Duration: Until the end of the Phase.<br>May be activated at the at start of a friendly Charge Phase. When activated, the model gains <span class=\"textbf\">Horror</span> and its Charge Range rolls gain <span class=\"textbf\">Maximised</span>."
     },
     "dl-venom_sacs": {
       "title": "Venom Sacs",
@@ -2763,7 +2763,7 @@
     },
     "dl-unholy_appetite": {
       "title": "Unholy Appetite",
-      "def": "\tAfter a Round of Combat in which at least one attack with this <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestation</nuxt-link> caused an unsaved wound, all attacks from models in the unit with this <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestation</nuxt-link> gain <span class=\"textbf\">Hatred</span> until the end of the next Player Turn.",
+      "def": "\tAfter a Round of Combat in which at least one Attack with this <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestation</nuxt-link> caused an unsaved wound, all Attacks from models in the unit with this <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestation</nuxt-link> gain <span class=\"textbf\">Hatred</span> until the end of the next Player Turn.",
       "type": "attack_attribute",
       "mod": [
         {
@@ -2803,7 +2803,7 @@
     },
     "dl-segmented_shell": {
       "title": "Segmented Shell",
-      "def": "\tWhen the model  suffers a wound from an attack with <span class=\"textbf\">Multiple Wounds(X)</span>, reduce X by 1, to a minimum of 1.",
+      "def": "\tWhen the model  suffers a wound from an Attack with <span class=\"textbf\">Multiple Wounds(X)</span>, reduce X by 1, to a minimum of 1.",
       "mod": [
         {
           "rules": {
@@ -3730,7 +3730,7 @@
     },
     "eos-master_artificer": {
       "title": "Master Artificer",
-      "def": "The model may give the Order <span class=\"textbf\">Ready! Aim! Fire!</span> to a <nuxt-link class=\"ruleLink\" to=\"/app/rule/parent_unit\">Parent Unit</nuxt-link>, <nuxt-link class=\"ruleLink\" to=\"/app/rule/support_unit\">Support Unit</nuxt-link> or Reiters it has joined."
+      "def": "The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/orders\">Orders</nuxt-link></span>, but is limited to the Order <span class=\"textbf\">Ready! Aim! Fire!</span> and for the purpose of this rule, any unit of Reiters the model has joined is considered to be a <nuxt-link class=\"ruleLink\" to=\"/app/rule/parent_unit\">Parent Unit</nuxt-link>."
     },
     "eos-cannon": {
       "title": "Cannon",
@@ -3881,7 +3881,7 @@
     "eos-orders": {
       "type": null,
       "title": "Orders",
-      "def": "\t At the start of each friendly Player Turn, each model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/orders\">Orders</nuxt-link></span> may select one Order and apply it to a single unit. Duration: One Turn. The target unit must:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Be a Parent or <nuxt-link class=\"ruleLink\" to=\"/app/rule/support_unit\">Support Unit</nuxt-link>.<br>\t\t<br>&nbsp;&nbsp;&bull;  Be within  range of the model's <span class=\"textbf\">Commanding Presence</span> or <span class=\"textbf\">Rally Around the Flag</span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  The chosen target cannot already be under the effect of an Order.<br>\t<br><br>\t\t\t\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/on_the_double\">On The Double</nuxt-link>!The target gains +1\" Cha and +2\" Mob.<br>\t\t\tSteady, Men!\t\t\t\t The target gains <span class=\"textbf\">Disciplined</span>, and its Courage Tests are <span class=\"textbf\">Minimised</span>.<br>\t\t\t\t\t\tReady! Aim! Fire!The target gains <span class=\"textbf\">Accurate</span>.\t\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/brace_for_impact\">Brace For Impact</nuxt-link>!The target gains <span class=\"textbf\">Fight in Extra Rank</span>.\t\t"
+      "def": "\t At the start of each friendly Player Turn, each model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/orders\">Orders</nuxt-link></span> may select one Order and apply it to a single unit. Duration: One Turn. The target unit must:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Be a Parent or <nuxt-link class=\"ruleLink\" to=\"/app/rule/support_unit\">Support Unit</nuxt-link>.<br>\t\t<br>&nbsp;&nbsp;&bull;  Be the model's own unit or be within  range of the model's <span class=\"textbf\">Commanding Presence</span> or <span class=\"textbf\">Rally Around the Flag</span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  The chosen target cannot already be under the effect of an Order.<br>\t<br><br>\t\t\t\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/on_the_double\">On The Double</nuxt-link>!The target gains +1\" Cha and +2\" Mob.<br>\t\t\tSteady, Men!\t\t\t\t The target gains <span class=\"textbf\">Disciplined</span>, and its Courage Tests are <span class=\"textbf\">Minimised</span>.<br>\t\t\t\t\t\tReady! Aim! Fire!The target gains <span class=\"textbf\">Accurate</span>.\t\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/brace_for_impact\">Brace For Impact</nuxt-link>!The target gains <span class=\"textbf\">Fight in Extra Rank</span>.\t\t"
     },
     "eos-trained_ferocity": {
       "type": null,
@@ -4127,7 +4127,7 @@
     },
     "eos-war_college_banner": {
       "title": "War College Banner",
-      "def": "\tThe unit gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/orders\">Orders</nuxt-link></span>. When using the <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/orders\">Orders</nuxt-link></span> rule, choose a single model in the unit to use the rule. It must target the unit itself. This overrides the normal restriction of only targeting a unit within range of <span class=\"textbf\">Commanding Presence</span> or <span class=\"textbf\">Rally Around the Flag</span>."
+      "def": "\tThe bearer gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/orders\">Orders</nuxt-link></span>."
     },
     "eos-banner_of_unity": {
       "title": "Banner of Unity",
@@ -4198,7 +4198,7 @@
     },
     "eos-ullors_horn": {
       "title": "Ullor's Horn",
-      "def": "Enemy units within 8\" of the wearer lose the Charging Momentum Agi bonus and +1 Combat Score from Charging."
+      "def": "Enemy units within 8\" of the bearer lose the Charging Momentum Agi bonus and +1 Combat Score from Charging."
     },
     "eos-scroll_of_conquest": {
       "title": "Scroll of Conquest",
@@ -6794,11 +6794,11 @@
     },
     "se-meeting_of_minds": {
       "title": "Meeting of Minds",
-      "def": "    The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/tree_singing\">Tree Singing</nuxt-link></span> and Shooting Attacks against the model can <span class=\"textbf\">never</span> hit on a natural roll of better than 4+ ."
+      "def": "    The model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/tree_singing\">Tree Singing</nuxt-link></span>, and Shooting Attacks against the model can <span class=\"textbf\">never</span> hit on a natural roll of better than 4+ ."
     },
     "se-clearing_spirits": {
       "title": "Clearing Spirits",
-      "def": "The model gains <span class=\"textbf\">Hard Target(1)</span>, <span class=\"textbf\">Light Troops</span>, and <span class=\"textbf\">Skirmisher</span>.",
+      "def": "The model gains Hard Target(1), Light Troops, Skirmisher.",
       "mod": [
         {
           "rules": {
@@ -6870,11 +6870,11 @@
     },
     "se-heath_lancers": {
       "title": "Heath Lancers",
-      "def": "The model gains <span class=\"textbf\"> </span>, Lance, and Shield."
+      "def": "The model gains <span class=\"textbf\">Shield</span> and Lance."
     },
     "se-big_game_hunters": {
-      "title": " Big Game Hunters (Shooting)",
-      "def": "    When rolling to wound against a Health Pool with Height 5, the attack always wounds on at least 4+."
+      "title": "Big Game Hunters (Shooting)",
+      "def": "    When rolling to wound against a Health Pool with Height 5, the Attack <span class=\"textbf\">always</span> wounds on at least 4+."
     },
     "se-herald_of_sura": {
       "title": "Herald of Sura",
@@ -6883,46 +6883,46 @@
     "se-the_forest_follows": {
       "type": "universal",
       "title": "The Forest Follows",
-      "def": "During Pre-game Selections, you may place a single Forest Terrain Feature on the Battlefield, so that it is  not inside  either Deployment Zone and not in contact with any other Terrain Feature. This Forest is a 10\"×6\" rectangle and it follows the normal rules for a Forest, except it is also <span class=\"textbf\">Dangerous Terrain(6+)</span>, and it can never be chosen for Primary- or Secondary Objectives. ."
+      "def": "\tDuring Pre-game Selections, you may place a single Forest Terrain Feature on the Battlefield, so that it is  not inside  either Deployment Zone and not in contact with any other Terrain Feature. This Forest is a 10\"×6\" rectangle and it follows the normal rules for a Forest, except it is also <span class=\"textbf\">Dangerous Terrain(6+)</span>, and it can never be chosen for Primary- or Secondary Objectives."
     },
     "se-forest_dweller": {
       "type": "universal",
       "title": "Forest Dweller",
-      "def": "While the model's unit is within 3\" of Forest Terrain Feature, the model gains <span class=\"textbf\">Stubborn</span>. If the model's unit already contains <span class=\"textbf\">Stubborn</span>, the unit is considered <span class=\"textbf\">Steady</span> when rolling Break Tests."
+      "def": "\tWhile the model's unit is within 3\" of Forest Terrain Feature, the model gains <span class=\"textbf\">Stubborn</span>. If the model's unit already contains <span class=\"textbf\">Stubborn</span>, the unit is considered <span class=\"textbf\">Steady</span> when rolling Break Tests."
     },
     "se-tree_singing": {
       "type": "universal",
       "title": "Tree Singing",
-      "def": " Once in your Magic Phase, immediately after  Excess Magic, a single model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/tree_singing\">Tree Singing</nuxt-link></span> may move a Forest Terrain Feature following the steps below. The owner may  discard a Magic Die to increase the range to  the distances written  in square brackets [X\"].<br><br>&nbsp;&nbsp;&bull;<br>&nbsp;&nbsp;&bull;"
+      "def": " \tOnce in your Magic Phase, immediately after  Excess Magic, a single model with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/tree_singing\">Tree Singing</nuxt-link></span> may move a Forest Terrain Feature following the steps below. The owner may  discard a Magic Die to increase the range to  the distances written  in square brackets [X\"].<br><br>&nbsp;&nbsp;&bull;<br>&nbsp;&nbsp;&bull;"
     },
     "se-elven_cloak": {
       "type": null,
       "title": "Elven Cloak",
-      "def": "Shooting Attacks allocated towards a Health Pool with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/elven_cloak\">Elven Cloak</nuxt-link></span> can <span class=\"textbf\">never</span> hit on better than 4+.",
+      "def": "\tShooting Attacks allocated towards a Health Pool with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/elven_cloak\">Elven Cloak</nuxt-link></span> can <span class=\"textbf\">never</span> hit on better than 4+.",
       "ruletype": "Armour Equipment"
     },
     "se-forests_thorns": {
       "type": null,
       "title": "Forest's Thorns",
-      "def": "The attack's AP is <span class=\"textbf\">set</span> to at least 3. This can only be used with a <nuxt-link class=\"ruleLink\" to=\"/app/rule/sylvan_bow\">Sylvan Bow</nuxt-link>.",
+      "def": "\tThe Attack's AP is <span class=\"textbf\">set</span> to at least 3. This can only be used with a <nuxt-link class=\"ruleLink\" to=\"/app/rule/sylvan_bow\">Sylvan Bow</nuxt-link>.",
       "ruletype": "Shooting"
     },
     "se-impaling_roots": {
       "type": null,
       "title": "Impaling Roots",
-      "def": "<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Impaling Roots</td><td>3</td><td>12\"</td><td>D6+1</td><td>4<br></td><td>1<br></td><td><span class=\"textbf\">Gnarled and Knotted</span>, March and Shoot, Quick to Fire, <span class=\"textbf\"></span> The attack ignores to-hit modifiers from Cover.</td></tr></table><br><br><span class=\"textbf\">Gnarled and Knotted</span><br>If the target is within 3\" of a Forest Terrain Feature, use the Str and AP values in brackets.",
+      "def": "\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Impaling Roots</td><td>3</td><td>12\"</td><td>D6+1</td><td>4<br></td><td>1<br></td><td>\t<span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/gnarled_and_knotted\">Gnarled and Knotted</nuxt-link></span>, March and Shoot, Quick to Fire, <span class=\"textbf\"></span> The attack ignores to-hit modifiers from Cover.</td></tr></table><br><br><span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/gnarled_and_knotted\">Gnarled and Knotted</nuxt-link></span><br>\tIf the target is within 3\" of a Forest Terrain Feature, use the Str and AP values in brackets.",
       "ruletype": "Shooting Weapon"
     },
     "se-sylvan_bow": {
       "type": null,
       "title": "Sylvan Bow",
-      "def": "<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Sylvan Bow</td><td>X</td><td>30\"</td><td>1</td><td> 4</td><td>1</td><td> Quick to Fire, <span class=\"textbf\"></span>.<br></td></tr></table>",
+      "def": "\t<table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>Sylvan Bow</td><td>X</td><td>30\"</td><td>1</td><td> 4</td><td>1</td><td>\tQuick to Fire.<br></td></tr></table>",
       "ruletype": "Shooting Weapon"
     },
     "se-sylvan_blades": {
       "type": "cc_weapon",
       "title": "Sylvan Blades",
-      "def": "Paired <nuxt-link class=\"ruleLink\" to=\"/app/rule/weapons\">Weapons</nuxt-link>. +1 AP",
+      "def": "\tPaired <nuxt-link class=\"ruleLink\" to=\"/app/rule/weapons\">Weapons</nuxt-link>, +1 AP.",
       "ruletype": "Melee Weapon",
       "mod": [
         {
@@ -6942,7 +6942,7 @@
     },
     "se-shapeshifter": {
       "title": "Shapeshifter",
-      "def": "The model gains +2 Cha and +2 Mob, as well as Exclusive, Vanguard, Multiple Wounds(2, towards Height 4 - 5), Devastating Charge(the model's Height is set to 3).",
+      "def": "\tThe model gains +2\" Cha and +2\" Mob, as well as Exclusive, Vanguard, Multiple Wounds(2, towards Height 4-5), Devastating Charge(the model's Height is set to 3).",
       "mod": [
         {
           "affects": [
@@ -6979,7 +6979,7 @@
     },
     "se-wild_hunter": {
       "title": "Wild Hunter",
-      "def": "The model gains Fearless, Frenzy, Light Troops.In addition the model part gains Devastating Charge(+1 Att, ), Fury, Lethal Strike.",
+      "def": "\tThe model gains Fearless, Frenzy, Light Troops. In addition the model part gains Devastating Charge(+1 Att), Fury, Lethal Strike.",
       "type": "universal",
       "mod": [
         {
@@ -7033,7 +7033,7 @@
     },
     "se-forest_guardian": {
       "title": "Forest Guardian",
-      "def": "The model gains <span class=\"textbf\">Vanguard</span>. The model and Rank-and-File models in the model's unit gain <span class=\"textbf\">First Strike(Hatred)</span>.",
+      "def": "\tThe model gains <span class=\"textbf\">Vanguard</span>. The model and Rank-and-File models in the model's unit gain <span class=\"textbf\">First Strike(Hatred)</span>.",
       "type": "attack_attribute",
       "mod": [
         {
@@ -7045,7 +7045,7 @@
     },
     "se-blade_dancer": {
       "title": "Blade Dancer",
-      "def": "\tThe model gains Aegis(6+), <nuxt-link class=\"ruleLink\" to=\"/app/rule/dances_of_cenyrn\">Dances of Cenyrn</nuxt-link> (<i>see <nuxt-link class=\"ruleLink\" to=\"/app/rule/blade_dancer\">Blade Dancer</nuxt-link> unit</i>), Exclusive(<nuxt-link class=\"ruleLink\" to=\"/app/rule/blade_dancer\">Blade Dancer</nuxt-link> Kindred, <nuxt-link class=\"ruleLink\" to=\"/app/rule/blade_dancer\">Blade Dancer</nuxt-link>s), Fearless, Magic Resistance( 1). The model's unit gains Swiftstride, Devastating Charge(Fly).",
+      "def": "\tThe model gains Aegis(6+), <nuxt-link class=\"ruleLink\" to=\"/app/rule/dances_of_cenyrn\">Dances of Cenyrn</nuxt-link> (<i>see <nuxt-link class=\"ruleLink\" to=\"/app/rule/blade_dancer\">Blade Dancer</nuxt-link> unit</i>), Exclusive(<nuxt-link class=\"ruleLink\" to=\"/app/rule/blade_dancer\">Blade Dancer</nuxt-link> Kindred, <nuxt-link class=\"ruleLink\" to=\"/app/rule/blade_dancer\">Blade Dancer</nuxt-link>s), Fearless, Magic Resistance(1). The model's unit gains Swiftstride, Devastating Charge(Fly).",
       "mod": [
         {
           "rules": {
@@ -7092,7 +7092,7 @@
     },
     "se-entangling_vines": {
       "title": "Entangling Vines",
-      "def": "\tThe model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/impaling_roots\">Impaling Roots</nuxt-link></span> if it did not already have it.  When choosing <nuxt-link class=\"ruleLink\" to=\"/app/rule/weapons\">Weapons</nuxt-link> and Equipment, choose one enemy Character model in base contact with the wielder. During this Round of Combat, Melee Attacks from the chosen model must reroll successful to-hit rolls against the wielder.",
+      "def": "\tThe model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/impaling_roots\">Impaling Roots</nuxt-link></span> if it did not already have it. When choosing <nuxt-link class=\"ruleLink\" to=\"/app/rule/weapons\">Weapons</nuxt-link> and Equipment, choose one enemy Character model in contact with the wielder. During this Round of Combat, Melee Attacks from the chosen model must reroll successful to-hit rolls against the wielder.",
       "ennemymod": [
         {
           "affects": [
@@ -7111,7 +7111,7 @@
     },
     "se-toxic_spores": {
       "title": "Toxic Spores",
-      "def": "\tThe model's units Standard Melee Attacks gain <span class=\"textbf\">Lethal Strike</span>.",
+      "def": "\tThe model's unit's Standard Melee Attacks gain <span class=\"textbf\">Lethal Strike</span>.",
       "type": "attack_attribute",
       "mod": [
         {
@@ -7124,7 +7124,7 @@
     },
     "se-oaken_crown": {
       "title": "Oaken Crown",
-      "def": "\tThe  wearer gains <span class=\"textbf\">Disciplined</span> and  Magic Resistance(2).",
+      "def": "\tThe wearer gains Disciplined, Magic Resistance(2).",
       "mod": [
         {
           "rules": {
@@ -7135,7 +7135,7 @@
     },
     "se-verdant_rebirth": {
       "title": "Verdant Rebirth",
-      "def": "\tThis model <span class=\"textbf\">Recovers</span> 1 HP the first time each Magic Phase that it successfully casts a Learned Spell that targets a friendly unit.<br>The model cannot <span class=\"textbf\">Recover</span> more than 1 HP in total per Magic Phase from this spell or <i>Fountain of Youth</i> (Druidism)."
+      "def": "\tThis model <span class=\"textbf\">Recovers</span> 1 HP the first time each Magic Phase that it successfully casts a Learned Spell that targets a friendly unit.  The model cannot <span class=\"textbf\">Recover</span> more than 1 HP in total per Magic Phase from this spell or <i>Fountain of Youth</i> (Druidism)."
     },
     "se-sylvan_beasts": {
       "title": "Sylvan Beasts",
@@ -7143,7 +7143,7 @@
     },
     "se-gnarled_and_knotted": {
       "title": "Gnarled and Knotted",
-      "def": "If the target is within 3\" of a Forest Terrain Feature, use the Str and AP values in brackets."
+      "def": "\tIf the target is within 3\" of a Forest Terrain Feature, use the Str and AP values in brackets."
     },
     "se-forest_embrace": {
       "title": "Forest Embrace",
@@ -7163,7 +7163,7 @@
     },
     "se-hunters_honour": {
       "title": "Hunter's Honour",
-      "def": "    +1 Str and +1 AP. If the wielder causes at least one unsaved wound with this weapon, the wielder and all Rank-and-File models in its unit gain <span class=\"textbf\">Distracting(1)</span> until the end of the Round of Combat.",
+      "def": "    +1 Str and +1 AP. If the wielder causes at least one HP loss with this weapon, the wielder and all Rank-and-File models in its unit gain <span class=\"textbf\">Distracting(1)</span> until the end of the Round of Combat.",
       "type": "weapon_enchant",
       "mod": [
         {
@@ -7257,11 +7257,11 @@
     },
     "se-banner_of_deception": {
       "title": "Banner of Deception",
-      "def": "    At the beginning of step 3. E Defender's Advantage The owner may remove the bearer's unit from the Battlefield and deploy it again in a new formation following the usual restrictions. Attached Models remain Attached."
+      "def": "    At the beginning of step 3.E Battle Setup The owner may remove the bearer's unit from the Battlefield and deploy it in a new formation following the usual restrictions. Attached Models remain Attached."
     },
     "se-banner_of_silent_mist": {
       "title": "Banner of Silent Mist",
-      "def": "\tThe bearer's unit gains <span class=\"textbf\">Magic Resistance(1)</span> and is always considered to be in <span class=\"textbf\">Soft Cover</span>."
+      "def": "\tThe bearer's unit gains <span class=\"textbf\">Magic Resistance(1)</span> and is always considered to be in Soft Cover."
     },
     "se-predator_pennant": {
       "title": "Predator Pennant",
@@ -7280,7 +7280,7 @@
     },
     "se-hail_shot": {
       "title": "Hail Shot",
-      "def": "\tOne use only; Duration: Until end of Phase; May be activated in the Shooting Phase or in the Charge Phase. This is a Shooting Weapon with the following profile:<br>&nbsp;&nbsp;&bull;<br><br><i>Hail Shot</i> cannot benefit from <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/forests_thorns\">Forest's Thorns</nuxt-link></span>."
+      "def": "\tOne use only; Duration: Until end of Phase; May be activated in the Charge Phase or Shooting Phase. This is a Shooting Weapon with the following profile:<br>&nbsp;&nbsp;&bull;<br><br><i>Hail Shot</i> cannot benefit from <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/forests_thorns\">Forest's Thorns</nuxt-link></span>."
     },
     "se-mist_walkers_mirror": {
       "title": "Mist Walker's Mirror",
@@ -7974,7 +7974,7 @@
     },
     "vc-cursed_medallion": {
       "title": "Cursed Medallion",
-      "def": "\tDuring Pre-game Selections choose a single model unit on the opponent's Army List. <i>/Remember that all Characters are single model units)</i><br>The wearer gains Hatred(Chosen model) and Zeal(chosen model).",
+      "def": "\tDuring Pre-game Selections choose a single model unit on the opponent's Army List. <i>(Remember that all Characters are single model units)</i><br>The wearer gains Hatred(Chosen model) and Zeal(chosen model).",
       "selectable": true,
       "mod": [
         {
@@ -8232,7 +8232,7 @@
     },
     "ud-death_is_only_the_beginning": {
       "title": "Death is Only the Beginning",
-      "def": "Each time this model successfully casts an Augment or Universal spell; one Health Pool in one targeted friendly unit may Raise one HP (<i>remember that Health Pools with Undead will instead Raise equal to its Rsr</i>). No Health Pool can be chosen for this effect more than twice in each Magic Phase."
+      "def": "Each time this model successfully casts a Learned Augment or Universal Spell; one Health Pool in one targeted friendly unit may Raise one HP (<i>remember that Health Pools with Undead will instead Raise equal to its Rsr</i>). No Health Pool can be chosen for this effect more than twice in each Magic Phase."
     },
     "ud-soul_conduit": {
       "title": "Soul Conduit",
@@ -8260,7 +8260,7 @@
     },
     "ud-ghastly_swarm": {
       "title": "Ghastly Swarm",
-      "def": "The model's Rsr value is <span class=\"textbf\">set</span> to 1, and gains Spirit, and <span class=\"textbf\">Aegis(3+)</span>, {} which is reduced to <span class=\"textbf\">Aegis(5+)</span> against <span class=\"textbf\">Magical Attacks</span>.<br>The model also gains Ghost Step, Magical Attacks and loses Skirmisher, Hard Target(1)."
+      "def": "The model's Rsr value is <span class=\"textbf\">set</span> to 1, and gains Spirit, and <span class=\"textbf\">Aegis(3+)</span>, which is reduced to <span class=\"textbf\">Aegis(5+)</span> against <span class=\"textbf\">Magical Attacks</span>.<br>The model also gains Ghost Step, Magical Attacks and loses Skirmisher, Hard Target(1)."
     },
     "ud-eternal_guardian": {
       "title": "Eternal Guardian",
@@ -8324,7 +8324,7 @@
     "ud-undying_will": {
       "type": null,
       "title": "Undying Will",
-      "def": "Rank-and-File model parts with Skeleton in units  containing <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/undying_will\">Undying Will</nuxt-link></span> gain +2 Def, +2 Off, Magical Attacks, Lethal Strike, and replace their Shooting Weapons' Aim with (4+). ",
+      "def": "Rank-and-File model parts with Skeleton in units  containing <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/undying_will\">Undying Will</nuxt-link></span> gain +2 Def, +2 Off, Magical Attacks, Lethal Strike, and replace their Shooting Weapons' Aim with (4+). Model parts with Mount are not affected by <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/undying_will\">Undying Will</nuxt-link></span>.",
       "mod": [
         {
           "affects": [
@@ -8491,7 +8491,7 @@
     },
     "ud-charnel_catapult": {
       "title": "Charnel Catapult",
-      "def": "If this weapon causes any unsaved wounds, the target must immediately take a Panic Test.<br><br>\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/charnel_catapult\">Charnel Catapult</nuxt-link><i> - Shooting Weapon</i><br/><br/><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/charnel_catapult\">Charnel Catapult</nuxt-link></td><td>4</td><td>48\"</td><td>1</td><td>7</td><td>3</td><td>Artillery, Area Attack(2×2), Multiple Wounds(2), , </td></tr></table><br>If this weapon causes any unsaved wounds, the target must immediately take a Panic Test.<br><br>\t"
+      "def": "If this weapon causes any unsaved wounds, the target must immediately take a Panic Test.<br><br>\t\t<nuxt-link class=\"ruleLink\" to=\"/app/rule/charnel_catapult\">Charnel Catapult</nuxt-link><i> - Shooting Weapon</i><br/><br/><table><tr><th>Name</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td><nuxt-link class=\"ruleLink\" to=\"/app/rule/charnel_catapult\">Charnel Catapult</nuxt-link></td><td>4</td><td>48\"</td><td>1</td><td>7</td><td>3</td><td>Artillery, Area Attack(2×2), Direct Hit(Multiple Wounds(2)), , </td></tr></table><br>If this weapon causes any unsaved wounds, the target must immediately take a Panic Test.<br><br>\t"
     },
     "ud-divine_light": {
       "title": "Divine Light",
@@ -8681,7 +8681,7 @@
     },
     "ud-book_of_the_dead": {
       "title": "Book of the Dead",
-      "def": "\tThe bearer can cast <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/duty_is_eternal\">Duty is Eternal</nuxt-link></i> as a Bound Spell(4+). The spell's Type is changed to: Range 12\" and Aura. <i>Note that no increase in Casting Value is required when targeting units with Height 5</i>."
+      "def": "\tThe bearer can cast a unique Bound Spell: <i>Eternal Souls</i>. Casting Value (4+), Range 12\", Aura. All friendly units <span class=\"textbf\">Raise</span> one HP. <i>Remember that models with Undead <span class=\"textbf\">Raise</span> their full Rsr value instead.</i> ."
     },
     "ud-steedsofnephetra": {
       "title": "",
@@ -8753,7 +8753,7 @@
     },
     "ud-scroll_of_desiccation": {
       "title": "Scroll of Desiccation",
-      "def": "\tDuring Pre-game Selections, choose a Field, Forest, or Water Terrain Feature. This Terrain Feature ceases to be the Terrain Feature it used to be and loses all its rules. It is treated as <span class=\"textbf\">Dangerous Terrain</span> for all enemy units."
+      "def": "\tDuring Pre-game Selections, choose a Field, Forest, or Water Terrain Feature. This Terrain Feature ceases to be the Terrain Feature it used to be and loses all its rules. It is treated as <span class=\"textbf\">Dangerous Terrain(6+)</span> for all enemy units."
     },
     "ud-barrow_scarabs": {
       "mod": [
@@ -9334,7 +9334,7 @@
     },
     "dh-monster_seeker": {
       "title": "Monster Seeker",
-      "def": "The model gains <span class=\"textbf\">Multiple Wounds(2, towards Height 3 or more)</span>.<br>Additionally, when a unit containing this rule charges a unit containing a model with Height 3-5, its Charge Range roll is <span class=\"textbf\">Maximized</span>.",
+      "def": "The model gains <span class=\"textbf\">Multiple Wounds(2, towards Height 3 or more)</span>.<br>Additionally, when a unit containing this rule charges a unit containing a model with Height 3-5, its Charge Range roll is <span class=\"textbf\">Maximised</span>.",
       "type": "attack_attribute",
       "mod": [
         {
@@ -9371,7 +9371,7 @@
     },
     "dh-grim_resolve": {
       "title": "Grim Resolve",
-      "def": "The model gains +1 Att for each enemy model in contact with it.<br>Additionally, when a unit containing this rule charges a unit containing a model with Height 0-2, its Charge Range roll is <span class=\"textbf\">Maximized</span>.",
+      "def": "The model gains +1 Att for each enemy model in contact with it.<br>Additionally, when a unit containing this rule charges a unit containing a model with Height 0-2, its Charge Range roll is <span class=\"textbf\"></span>.",
       "type": "attack_attribute",
       "mod": [
         {

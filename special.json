@@ -1,25 +1,66 @@
 {
   "name": "Special Items",
   "version": "2023",
-  "nrversion": 299,
+  "nrversion": 300,
   "permission": 0,
   "playable": 0,
   "id": 102,
   "dictionnary": [
     {
-      "refs": [
-        "shieldEnchant"
-      ],
+      "refs": ["recruitingOfficer"],
+      "optionsLabel": "Recruiting Officer",
+      "option_id": "nf4u29n923nf43f43f43",
+      "options": [
+        {
+          "cost": 35,
+          "type": "check",
+          "armyHasOption": ["recruiting_officer"],
+          "name": "Fresh Meat",
+          "description": "The unit gains Exclusive, changes its maximum Points Cost to 800 points, and increases its maximum Unit Size by +20%, rounding fractions up.<br/><br/> E.g. a unit entry with Unit Size '10-24 models' increases its maximum by +4.8 models to '10-29 models'"
+        }
+      ]
+    },
+    {
+      "optionsLabel": "Leadership Skills",
+      "refs": ["leadershipSkills"],
+      "option_id": "nf932nf923n9fg23n9gf23ng432",
+      "maxSize": 1,
+      "options": [
+        {
+          "type": "check",
+          "name": "Battleline Hero",
+          "hasOption": ["army_general"],
+          "cost": 30,
+          "description": "\n\tThe range of the model's <span class=\"textbf\">Commanding Presence</span> is increased to 18\".\n",
+          "option_id": "fn392nfu932nf932f3sds2f32f2"
+        },
+        {
+          "type": "check",
+          "name": "Innovative Leader",
+          "hasOption": ["army_general"],
+          "cost": 30,
+          "description": "    In an army with an Innovative Leader units, may use different Base Sizes from those listed in the unit entries. Any unit entry using this option must have the new base size noted on the Army List and all models in the  unit must have the same Base Size. The new bases must adhere to the following restrictions:\n    \n        <br>&nbsp;&nbsp;&bull;  100% -- 125% of the original width\n        <br>&nbsp;&nbsp;&bull;  100% -- 150% of the original depth\n        <br>&nbsp;&nbsp;&bull;  Both width and depth must be divisible by 5mm\n    <br>\n",
+          "option_id": "f32f32f832n439g4a3g54g4545"
+        },
+        {
+          "type": "check",
+          "name": "Recruiting Officer",
+          "hasOption": ["army_general"],
+          "refs": ["recruiting_officer"],
+          "cost": 0,
+          "description": "\tAny unit in your Army list that is not a single model unit <i>(i.e. unit entries without size 'Single model')</i> may take the following upgrade:\n",
+          "option_id": "f332gf4ds3g45h6578jytt"
+        }
+      ]
+    },
+    {
+      "refs": ["shieldEnchant"],
       "options": [
         {
           "type": "check",
           "name": "Dusk Forged",
-          "refs": [
-            "ce_duskforge"
-          ],
-          "armyHasNotOption": [
-            "ce_duskforge"
-          ],
+          "refs": ["ce_duskforge"],
+          "armyHasNotOption": ["ce_duskforge"],
           "cost": 0,
           "description": "\tThe bearer must reroll its failed Armour Saves. The bearer automatically fails any Special Save, regardless of whether using the Shield or not.",
           "option_id": "1dtxsil1vdhf4zubs7m9nh",
@@ -27,9 +68,7 @@
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "5"
-                ]
+                "excluded": ["5"]
               }
             }
           }
@@ -37,12 +76,8 @@
         {
           "type": "check",
           "name": "Sigil of Protection",
-          "refs": [
-            "se_sigil_of_protection"
-          ],
-          "armyHasNotOption": [
-            "se_sigil_of_protection"
-          ],
+          "refs": ["se_sigil_of_protection"],
+          "armyHasNotOption": ["se_sigil_of_protection"],
           "cost": 0,
           "description": "\t+1 Arm.",
           "option_id": "sdfsdv43g3432d321h5434f34f",
@@ -50,34 +85,24 @@
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "5"
-                ]
+                "excluded": ["5"]
               }
             }
           },
-          "hasOption": [
-            "tag_Metal Armour"
-          ]
+          "hasOption": ["tag_Metal Armour"]
         },
         {
           "type": "check",
           "name": "Wild Warding",
-          "refs": [
-            "se_wild_warding"
-          ],
-          "armyHasNotOption": [
-            "se_wild_warding"
-          ],
+          "refs": ["se_wild_warding"],
+          "armyHasNotOption": ["se_wild_warding"],
           "cost": 40,
           "description": "    +3 Arm. The Armour Value can <span class=\"textbf\">never</span> be improved beyond 5.\n",
           "option_id": "fdsf3f32dsfh54g4sdfd3",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "5"
-                ]
+                "excluded": ["5"]
               }
             }
           }
@@ -86,18 +111,12 @@
       "option_id": "zext9af2s3l9w4gaos2ox8"
     },
     {
-      "refs": [
-        "armourEnchant"
-      ],
+      "refs": ["armourEnchant"],
       "options": [
         {
           "type": "check",
-          "refs": [
-            "ae_vc_deathcheat"
-          ],
-          "armyHasNotOption": [
-            "ae_vc_deathcheat"
-          ],
+          "refs": ["ae_vc_deathcheat"],
+          "armyHasNotOption": ["ae_vc_deathcheat"],
           "name": "Death Cheater",
           "description": "\t+1 Arm and <span class=\"textbf\">Regeneration(4+)</span>.",
           "option_id": "ddeqgw7silpyehc3dho56a",
@@ -105,9 +124,7 @@
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "5"
-                ]
+                "excluded": ["5"]
               }
             }
           },
@@ -115,12 +132,8 @@
         },
         {
           "type": "check",
-          "refs": [
-            "ae_phantom"
-          ],
-          "armyHasNotOption": [
-            "ae_phantom"
-          ],
+          "refs": ["ae_phantom"],
+          "armyHasNotOption": ["ae_phantom"],
           "name": "Ghostly Guard",
           "description": "\t+2 Arm against non-Magical Attacks.",
           "option_id": "rqdl9cpywzh262hohgle5",
@@ -128,9 +141,7 @@
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "5"
-                ]
+                "excluded": ["5"]
               }
             }
           },
@@ -138,42 +149,30 @@
         },
         {
           "type": "check",
-          "refs": [
-            "ae_destiny"
-          ],
-          "armyHasNotOption": [
-            "ae_destiny"
-          ],
+          "refs": ["ae_destiny"],
+          "armyHasNotOption": ["ae_destiny"],
           "name": "Destiny's Call",
           "cost": 70,
           "description": "\t<span class=\"textbf\">Aegis(4+)</span>, and the wearer's model's Arm is <span class=\"textbf\">set</span> to <span class=\"textbf\">always</span> 3.<br>\n    <i>Note that this means it cannot be improved beyond 3. It is still affected by AP.</i>\n",
           "option_id": "s9z04q3xgjjxel74a79o",
           "hasNotOption": [
             {
-              "refs": [
-                "tag_Construct"
-              ],
+              "refs": ["tag_Construct"],
               "amount": 1
             }
           ],
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "5"
-                ]
+                "excluded": ["5"]
               }
             }
           }
         },
         {
           "type": "check",
-          "refs": [
-            "ae_warding_unity"
-          ],
-          "armyHasNotOption": [
-            "ae_warding_unity"
-          ],
+          "refs": ["ae_warding_unity"],
+          "armyHasNotOption": ["ae_warding_unity"],
           "name": "Warding of Unity",
           "cost": 40,
           "description": "    <span class=\"textbf\">Attached</span>, which cannot be lost, and <span class=\"textbf\">Resistance(Melee Attacks)</span>.\n",
@@ -181,22 +180,15 @@
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "4",
-                  "5"
-                ]
+                "excluded": ["4", "5"]
               }
             }
           }
         },
         {
           "type": "check",
-          "refs": [
-            "ae_basalt_inject"
-          ],
-          "armyHasNotOption": [
-            "ae_basalt_inject"
-          ],
+          "refs": ["ae_basalt_inject"],
+          "armyHasNotOption": ["ae_basalt_inject"],
           "name": "Basalt Infusion",
           "cost": 40,
           "description": "\t+1 Arm, <span class=\"textbf\">Aegis(3+, against Flaming Attacks)</span>, and the wearer automatically fails all Regeneration Saves.",
@@ -204,9 +196,7 @@
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "5"
-                ]
+                "excluded": ["5"]
               }
             }
           }
@@ -215,22 +205,16 @@
       "option_id": "tn7cztve1uoafv68xax7ak"
     },
     {
-      "refs": [
-        "bannerEnchant"
-      ],
+      "refs": ["bannerEnchant"],
       "options": [
         {
           "type": "numeric",
           "name": "Stalker's Standard",
           "cost": 40,
-          "refs": [
-            "be_ranger"
-          ],
+          "refs": ["be_ranger"],
           "armyHasNotOption": [
             {
-              "refs": [
-                "be_ranger"
-              ],
+              "refs": ["be_ranger"],
               "amount": 2
             }
           ],
@@ -241,17 +225,11 @@
           "type": "numeric",
           "name": "Sheltering Standard",
           "cost": 30,
-          "refs": [
-            "be_sheltering"
-          ],
-          "hasOption": [
-            "tag_Light Armour"
-          ],
+          "refs": ["be_sheltering"],
+          "hasOption": ["tag_Light Armour"],
           "armyHasNotOption": [
             {
-              "refs": [
-                "be_sheltering"
-              ],
+              "refs": ["be_sheltering"],
               "amount": 2
             }
           ],
@@ -262,14 +240,10 @@
           "type": "numeric",
           "name": "Flaming Standard",
           "cost": 25,
-          "refs": [
-            "be_burning"
-          ],
+          "refs": ["be_burning"],
           "armyHasNotOption": [
             {
-              "refs": [
-                "be_burning"
-              ],
+              "refs": ["be_burning"],
               "amount": 2
             }
           ],
@@ -280,14 +254,10 @@
           "type": "numeric",
           "name": "Aether Icon",
           "cost": 10,
-          "refs": [
-            "be_ether"
-          ],
+          "refs": ["be_ether"],
           "armyHasNotOption": [
             {
-              "refs": [
-                "be_ether"
-              ],
+              "refs": ["be_ether"],
               "amount": 2
             }
           ],
@@ -299,14 +269,10 @@
           "type": "numeric",
           "name": "Banner of Courage",
           "cost": 0,
-          "refs": [
-            "be_discipline"
-          ],
+          "refs": ["be_discipline"],
           "armyHasNotOption": [
             {
-              "refs": [
-                "be_discipline"
-              ],
+              "refs": ["be_discipline"],
               "amount": 3
             }
           ],
@@ -317,14 +283,10 @@
           "type": "numeric",
           "name": "Banner of Speed",
           "cost": 0,
-          "refs": [
-            "be_speed"
-          ],
+          "refs": ["be_speed"],
           "armyHasNotOption": [
             {
-              "refs": [
-                "be_speed"
-              ],
+              "refs": ["be_speed"],
               "amount": 3
             }
           ],
@@ -336,14 +298,10 @@
           "type": "check",
           "name": "Distortion Emblem",
           "cost": 0,
-          "refs": [
-            "be_distortion"
-          ],
+          "refs": ["be_distortion"],
           "armyHasNotOption": [
             {
-              "refs": [
-                "be_distortion"
-              ],
+              "refs": ["be_distortion"],
               "amount": 1
             }
           ],
@@ -355,14 +313,10 @@
           "type": "check",
           "name": "Rending Banner",
           "cost": 0,
-          "refs": [
-            "be_rending"
-          ],
+          "refs": ["be_rending"],
           "armyHasNotOption": [
             {
-              "refs": [
-                "be_rending"
-              ],
+              "refs": ["be_rending"],
               "amount": 1
             }
           ],
@@ -374,25 +328,15 @@
       "option_id": "14jc82utsdskgjj8d5ww0s"
     },
     {
-      "refs": [
-        "weaponEnchant"
-      ],
+      "refs": ["weaponEnchant"],
       "options": [
         {
           "type": "check",
-          "armyHasNotOption": [
-            "we_vorpal_binding"
-          ],
-          "refs": [
-            "army_unique",
-            "weaponEnchantUni",
-            "we_vorpal_binding"
-          ],
+          "armyHasNotOption": ["we_vorpal_binding"],
+          "refs": ["army_unique", "weaponEnchantUni", "we_vorpal_binding"],
           "hasNotOption": [
             {
-              "refs": [
-                "weaponEnchantUni"
-              ],
+              "refs": ["weaponEnchantUni"],
               "amount": 1
             }
           ],
@@ -403,19 +347,11 @@
         },
         {
           "type": "check",
-          "armyHasNotOption": [
-            "we_king_slayer"
-          ],
-          "refs": [
-            "army_unique",
-            "weaponEnchantUni",
-            "we_king_slayer"
-          ],
+          "armyHasNotOption": ["we_king_slayer"],
+          "refs": ["army_unique", "weaponEnchantUni", "we_king_slayer"],
           "hasNotOption": [
             {
-              "refs": [
-                "weaponEnchantUni"
-              ],
+              "refs": ["weaponEnchantUni"],
               "amount": 1
             }
           ],
@@ -427,17 +363,9 @@
         {
           "type": "check",
           "name": "Touch of Greatness",
-          "armyHasNotOption": [
-            "we_grace_touched"
-          ],
-          "refs": [
-            "army_unique",
-            "weaponEnchantUni",
-            "we_grace_touched"
-          ],
-          "hasNotOption": [
-            "weaponEnchantUni"
-          ],
+          "armyHasNotOption": ["we_grace_touched"],
+          "refs": ["army_unique", "weaponEnchantUni", "we_grace_touched"],
+          "hasNotOption": ["weaponEnchantUni"],
           "cost": 30,
           "description": "\t+1 Str and +1 AP. \n",
           "option_id": "f4rvj2z0e17zf7kivsczl"
@@ -445,27 +373,16 @@
         {
           "type": "check",
           "name": "Giant Slayer",
-          "armyHasNotOption": [
-            "we_giant_slayer"
-          ],
-          "refs": [
-            "army_unique",
-            "weaponEnchantUni",
-            "we_giant_slayer"
-          ],
-          "hasNotOption": [
-            "weaponEnchantUni"
-          ],
+          "armyHasNotOption": ["we_giant_slayer"],
+          "refs": ["army_unique", "weaponEnchantUni", "we_giant_slayer"],
+          "hasNotOption": ["weaponEnchantUni"],
           "cost": 25,
           "description": "    <span class=\"textbf\">Crush Attack</span>. This Crush Attack gains +1 to hit against models with Height 5.\n",
           "option_id": "fed32jsfdf235jfg342f342",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "4",
-                  "5"
-                ]
+                "excluded": ["4", "5"]
               }
             }
           }
@@ -473,35 +390,26 @@
         {
           "type": "check",
           "name": "Supernatural Dexterity",
-          "armyHasNotOption": [
-            "we_sur_dex"
-          ],
-          "refs": [
-            "army_unique",
-            "weaponEnchantUni",
-            "we_sur_dex"
-          ],
-          "hasNotOption": [
-            "weaponEnchantUni"
-          ],
+          "armyHasNotOption": ["we_sur_dex"],
+          "refs": ["army_unique", "weaponEnchantUni", "we_sur_dex"],
+          "hasNotOption": ["weaponEnchantUni"],
           "description": "\t+3 Def and +3 Off.",
           "option_id": "mv855a917kgpn2e269486",
           "shared": true,
-          "cost": 0
+          "cost": 0,
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["4", "5"]
+              }
+            }
+          }
         },
         {
           "type": "check",
-          "armyHasNotOption": [
-            "we_eldritch_ins"
-          ],
-          "refs": [
-            "army_unique",
-            "weaponEnchantUni",
-            "we_eldritch_ins"
-          ],
-          "hasNotOption": [
-            "weaponEnchantUni"
-          ],
+          "armyHasNotOption": ["we_eldritch_ins"],
+          "refs": ["army_unique", "weaponEnchantUni", "we_eldritch_ins"],
+          "hasNotOption": ["weaponEnchantUni"],
           "name": "Eldritch Inscriptions",
           "description": "    <span class=\"textbf\">First Strike(Hatred, Zeal)</span>.\n",
           "option_id": "7q0v4r6y4am8ab7ct168bx",
@@ -511,17 +419,9 @@
         {
           "type": "check",
           "name": "Shield Breaker",
-          "armyHasNotOption": [
-            "we_shield_breaker"
-          ],
-          "refs": [
-            "army_unique",
-            "weaponEnchantUni",
-            "we_shield_breaker"
-          ],
-          "hasNotOption": [
-            "weaponEnchantUni"
-          ],
+          "armyHasNotOption": ["we_shield_breaker"],
+          "refs": ["army_unique", "weaponEnchantUni", "we_shield_breaker"],
+          "hasNotOption": ["weaponEnchantUni"],
           "description": "\t+6 AP.",
           "option_id": "llspua8sxbhbm9p2mr5lg",
           "shared": true,
@@ -531,25 +431,14 @@
       "option_id": "9dhvgrgi79wzm919xwkddh"
     },
     {
-      "refs": [
-        "handWeaponEnchant",
-        "pairedWeaponsEnchant"
-      ],
+      "refs": ["handWeaponEnchant", "pairedWeaponsEnchant"],
       "options": [
         {
           "type": "check",
           "name": "Hero's Heart",
-          "armyHasNotOption": [
-            "we_hero_heart"
-          ],
-          "refs": [
-            "army_unique",
-            "weaponEnchantUni",
-            "we_hero_heart"
-          ],
-          "hasNotOption": [
-            "weaponEnchantUni"
-          ],
+          "armyHasNotOption": ["we_hero_heart"],
+          "refs": ["army_unique", "weaponEnchantUni", "we_hero_heart"],
+          "hasNotOption": ["weaponEnchantUni"],
           "cost": 0,
           "description": "\t+1 Att and <span class=\"textbf\">always</span> at least Str 5 and AP 2.",
           "option_id": "tq76txrmr1lyzqyfjyir8f",
@@ -559,27 +448,16 @@
       "option_id": "m9j44d1l1tpz5lul36e64r"
     },
     {
-      "refs": [
-        "artefact"
-      ],
+      "refs": ["artefact"],
       "options": [
         {
           "type": "check",
           "name": "Magical Heirloom",
           "cost": 45,
-          "armyHasNotOption": [
-            "art_magical_inh"
-          ],
-          "refs": [
-            "army_unique",
-            "art_magical_inh"
-          ],
-          "hasNotOption": [
-            "bound_or_broken"
-          ],
-          "hasOption": [
-            "wizard"
-          ],
+          "armyHasNotOption": ["art_magical_inh"],
+          "refs": ["army_unique", "art_magical_inh"],
+          "hasNotOption": ["bound_or_broken"],
+          "hasOption": ["wizard"],
           "description": "\tThe bearer knows the Hereditary Spell of its Army Book in addition to its other spells, cannot select it during Spell Selection, and cannot replace or otherwise lose it.",
           "option_id": "f900q91pw2kbnpcjai2xxe"
         },
@@ -587,20 +465,14 @@
           "type": "check",
           "name": "Talisman of Shielding",
           "cost": 50,
-          "refs": [
-            "protect_talis"
-          ],
-          "armyHasNotOption": [
-            "protect_talis"
-          ],
+          "refs": ["protect_talis"],
+          "armyHasNotOption": ["protect_talis"],
           "description": "\t<span class=\"textbf\">Aegis(5+)</span>.",
           "option_id": "qgh98lzrupif6hlydex33u",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "5"
-                ]
+                "excluded": ["5"]
               }
             }
           }
@@ -609,15 +481,9 @@
           "type": "check",
           "name": "Crown of the Wizard King",
           "cost": 40,
-          "refs": [
-            "art_wizard_crown"
-          ],
-          "armyHasNotOption": [
-            "art_wizard_crown"
-          ],
-          "hasNotOption": [
-            "wizard"
-          ],
+          "refs": ["art_wizard_crown"],
+          "armyHasNotOption": ["art_wizard_crown"],
+          "hasNotOption": ["wizard"],
           "description": "\tDuring Spell Selection, randomise a Magic Path (from all Paths in this book). The bearer is a <span class=\"textbf\">Wizard Apprentice</span> using the randomised Path. It cannot select the Hereditary Spell. The bearer cannot take any Special Items nor any other upgrades that are restricted to Wizards (or any types of Wizards).",
           "option_id": "0xe0vzte8ybruhnpexpia8j"
         },
@@ -625,27 +491,17 @@
           "type": "check",
           "name": "Mimic Cloak",
           "cost": 40,
-          "refs": [
-            "art_mimic_cloak"
-          ],
-          "armyHasNotOption": [
-            "art_mimic_cloak"
-          ],
-          "hasOption": [
-            "wizard"
-          ],
+          "refs": ["art_mimic_cloak"],
+          "armyHasNotOption": ["art_mimic_cloak"],
+          "hasOption": ["wizard"],
           "description": "    <span class=\"textbf\">Stand Behind</span>. The wearer's model loses Stubborn and Bodyguard and cannot gain either in any way. In addition, the model cannot make any Supporting Attacks.\n",
           "option_id": "f32f32fewwfsdf32f32g32"
         },
         {
           "type": "check",
           "name": "Talisman of the Void",
-          "refs": [
-            "art_void_talis"
-          ],
-          "armyHasNotOption": [
-            "art_void_talis"
-          ],
+          "refs": ["art_void_talis"],
+          "armyHasNotOption": ["art_void_talis"],
           "cost": 50,
           "description": "\t<span class=\"textbf\">Channel(1)</span>. This item can only be used if the model's army total combined <span class=\"textbf\">Channel</span> is 3 or less (<i>excluding Channel from this Magic Item</i>).\n",
           "channel": 1,
@@ -655,16 +511,9 @@
           "type": "check",
           "name": "Essence of a Free Mind",
           "cost": 0,
-          "armyHasNotOption": [
-            "art_free_ess"
-          ],
-          "refs": [
-            "army_unique",
-            "art_free_ess"
-          ],
-          "hasOption": [
-            "wizard"
-          ],
+          "armyHasNotOption": ["art_free_ess"],
+          "refs": ["army_unique", "art_free_ess"],
+          "hasOption": ["wizard"],
           "description": "\tThe bearer may choose up to two Paths on the Army List instead of one (<i>from the ones normally available to it</i>). Select spells for both Paths on the Army List as normal. During Spell Selection, choose which one of the two Paths to use. The bearer cannot select Master Spells.\n",
           "option_id": "h5tyfl483j7wpov0jd0r2s",
           "shared": true
@@ -673,22 +522,14 @@
           "type": "check",
           "name": "Mask of Mindless Violence",
           "cost": 0,
-          "armyHasNotOption": [
-            "art_mask_of_mindless_violence"
-          ],
-          "refs": [
-            "army_unique",
-            "art_mask_of_mindless_violence"
-          ],
+          "armyHasNotOption": ["art_mask_of_mindless_violence"],
+          "refs": ["army_unique", "art_mask_of_mindless_violence"],
           "description": ",<span class=\"textbf\">Rage</span>. All Melee Attacks made by or against the wearer gain +1 to hit.\n",
           "option_id": "8923rce68gfdsdfsf62",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "4",
-                  "5"
-                ]
+                "excluded": ["4", "5"]
               }
             }
           },
@@ -698,12 +539,8 @@
           "type": "check",
           "name": "Obsidian Rock",
           "cost": 0,
-          "refs": [
-            "art_obsi_roc"
-          ],
-          "armyHasNotOption": [
-            "art_obsi_roc"
-          ],
+          "refs": ["art_obsi_roc"],
+          "armyHasNotOption": ["art_obsi_roc"],
           "description": "\t<span class=\"textbf\">Magic Resistance(2)</span>.",
           "option_id": "ck0fefg5g56ltydfpadwi",
           "shared": true
@@ -717,13 +554,8 @@
               "path": "alchemy"
             }
           ],
-          "refs": [
-            "art_rod_of_battle",
-            "bound_spell"
-          ],
-          "armyHasNotOption": [
-            "art_rod_of_battle"
-          ],
+          "refs": ["art_rod_of_battle", "bound_spell"],
+          "armyHasNotOption": ["art_rod_of_battle"],
           "cost": 0,
           "description": "\tThe bearer can cast <i>Living Steel</i> (Alchemy) as a Bound Spell(4+). \n",
           "option_id": "4kj8yym077guw0cq3wd2r",
@@ -733,22 +565,16 @@
       "option_id": "p6iba3h41dicj533gr0b"
     },
     {
-      "refs": [
-        "potions_and_scrolls"
-      ],
+      "refs": ["potions_and_scrolls"],
       "options": [
         {
           "type": "numeric",
           "name": "Binding Scroll",
           "cost": 50,
-          "refs": [
-            "art_blocking_scroll"
-          ],
+          "refs": ["art_blocking_scroll"],
           "armyHasNotOption": [
             {
-              "refs": [
-                "art_blocking_scroll"
-              ],
+              "refs": ["art_blocking_scroll"],
               "amount": 2
             }
           ],
@@ -759,12 +585,8 @@
           "type": "check",
           "name": "Potion of Power Preservation",
           "cost": 45,
-          "refs": [
-            "pot_dragon_brew"
-          ],
-          "armyHasNotOption": [
-            "pot_dragon_brew"
-          ],
+          "refs": ["pot_dragon_brew"],
+          "armyHasNotOption": ["pot_dragon_brew"],
           "description": "\tUse when a Casting Roll or Dispel Roll fails, due to not rolling high enough. Do not discard the Magic Dice used in this unsuccessful attempt.\n",
           "option_id": "f32ffdsfsdf3e2jgbj4342hj"
         },
@@ -772,13 +594,8 @@
           "type": "check",
           "name": "Potion of Swiftness",
           "cost": 20,
-          "refs": [
-            "art_speed_pot",
-            "one_use_item"
-          ],
-          "armyHasNotOption": [
-            "art_speed_pot"
-          ],
+          "refs": ["art_speed_pot", "one_use_item"],
+          "armyHasNotOption": ["art_speed_pot"],
           "description": "    +3 Agi.\n",
           "option_id": "o2tpicuu5kmtkw6tg2e4c"
         },
@@ -787,12 +604,8 @@
           "type": "check",
           "name": "Scroll of Draining",
           "cost": 0,
-          "refs": [
-            "pot_negation"
-          ],
-          "armyHasNotOption": [
-            "pot_negation"
-          ],
+          "refs": ["pot_negation"],
+          "armyHasNotOption": ["pot_negation"],
           "description": "\t.\n\tMay be activated in the opponent's Magic Phase, immediately after Excess Magic. The opponent immediately discards 1 Magic Dice.\n",
           "option_id": "932fn4w20v0342vj32fv32"
         },
@@ -801,20 +614,14 @@
           "type": "check",
           "name": "Potion of Healing",
           "cost": 0,
-          "refs": [
-            "pot_healing"
-          ],
-          "armyHasNotOption": [
-            "pot_healing"
-          ],
+          "refs": ["pot_healing"],
+          "armyHasNotOption": ["pot_healing"],
           "description": "\tThe bearer's model <span class=\"textbf\">Recovers</span> 1 HP.\n",
           "option_id": "gdfg324g34gfdsjj54g4g54g54",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": [
-                  "5"
-                ]
+                "excluded": ["5"]
               }
             }
           }
@@ -824,29 +631,19 @@
           "type": "check",
           "name": "Scroll of Power",
           "cost": 0,
-          "refs": [
-            "scroll_power"
-          ],
-          "armyHasNotOption": [
-            "scroll_power"
-          ],
+          "refs": ["scroll_power"],
+          "armyHasNotOption": ["scroll_power"],
           "description": "\t\n\tThe bearer may add one additional Magic Dice to its Casting Roll after seeing the result. This still cannot exceed the limit of 5 Magic Dice.\n",
           "option_id": "943jg349jg034f34f342h534",
-          "hasOption": [
-            "wizard"
-          ]
+          "hasOption": ["wizard"]
         },
         {
           "shared": true,
           "type": "check",
           "name": "Spell Scroll",
           "cost": 0,
-          "refs": [
-            "scroll_spell"
-          ],
-          "armyHasNotOption": [
-            "scroll_spell"
-          ],
+          "refs": ["scroll_spell"],
+          "armyHasNotOption": ["scroll_spell"],
           "description": "    May be activated at any time during your Magic Phase. The bearer knows the spell indicated in brackets (X) in addition to its other spells. <i>If the bearer already knows the spell, this has no effect.</i>\n",
           "option_id": "8o56hn54g34f34g34h54hg54",
           "exportParams": true
