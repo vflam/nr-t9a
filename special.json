@@ -12,9 +12,18 @@
       "option_id": "nf4u29n923nf43f43f43",
       "options": [
         {
+          "maxUnitCost": 800,
+          "rules": [
+            {
+              "id": "exclusive",
+              "params": []
+            }
+          ],
+          "maxSizeMult": 1.2,
           "cost": 35,
           "type": "check",
           "armyHasOption": ["recruiting_officer"],
+          "refs": ["fresh_meat"],
           "name": "Fresh Meat",
           "description": "The unit gains Exclusive, changes its maximum Points Cost to 800 points, and increases its maximum Unit Size by +20%, rounding fractions up.<br/><br/> E.g. a unit entry with Unit Size '10-24 models' increases its maximum by +4.8 models to '10-29 models'"
         }
@@ -45,7 +54,6 @@
         {
           "type": "check",
           "name": "Recruiting Officer",
-          "hasOption": ["army_general"],
           "refs": ["recruiting_officer"],
           "cost": 0,
           "description": "\tAny unit in your Army list that is not a single model unit <i>(i.e. unit entries without size 'Single model')</i> may take the following upgrade:\n",
