@@ -518,16 +518,61 @@
               "refs": ["blood_power"],
               "amount": 2,
               "neverHide": true
-            },
-            {
-              "refs": ["ancestral_blood_power"],
-              "amount": 1
             }
           ],
           "armyHasNotOption": [
             {
               "refs": ["arcane_knowledge"],
               "amount": 1
+            }
+          ],
+          "optionsLabel": "Path",
+          "minSize": 1,
+          "maxSize": 1,
+          "collapsible": true,
+          "magic": {
+            "amount": 1
+          },
+          "options": [
+            {
+              "name": "Evocation",
+              "refs": ["evocation"],
+              "type": "check",
+              "cost": 0,
+              "option_id": "wahp1043a1s9169wqz5hsv8",
+              "hasNotOption": ["mysteries"],
+              "maxSize": 1,
+              "spells": ["1", "2", "3", "4"]
+            },
+            {
+              "name": "Occultism",
+              "refs": ["occultism"],
+              "type": "check",
+              "cost": 0,
+              "option_id": "3rfyryegeam8ac486e72n6q",
+              "hasNotOption": ["mysteries"],
+              "maxSize": 1,
+              "spells": ["1", "2", "3", "4"]
+            },
+            {
+              "name": "Witchcraft",
+              "refs": ["witchcraft"],
+              "type": "check",
+              "cost": 0,
+              "hasOption": ["mysteries"],
+              "option_id": "npm4n894kdaor17ca7tfdwh",
+              "maxSize": 1,
+              "spells": ["1", "2", "3", "4"]
+            },
+            {
+              "name": "Shamanism",
+              "refs": ["shamanism"],
+              "type": "check",
+              "cost": 0,
+              "hasOption": ["mysteries"],
+              "option_id": "e086er60adrijhu68ml3sunr",
+              "maxSize": 1,
+              "spells": ["1", "2", "3", "4"]
             }
           ]
         },
@@ -2610,6 +2655,7 @@
                       "name": "Wizard Conclave (2)",
                       "cost": 120,
                       "option_id": "kfnu3r3947daigfomdj1ql",
+                      "refs": ["wizard"],
                       "magic": {
                         "amount": 2,
                         "spells": [
@@ -2623,7 +2669,7 @@
                           },
                           {
                             "path": "occultism",
-                            "ref": "bloody_curse"
+                            "ref": "blood_curse"
                           },
                           {
                             "path": "witchcraft",

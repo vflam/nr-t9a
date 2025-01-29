@@ -6,7 +6,7 @@
   },
   "short": "ud",
   "version": "2023",
-  "nrversion": 361,
+  "nrversion": 362,
   "playable": 1,
   "indicators": [
     "aspis_arrows",
@@ -1836,9 +1836,6 @@
                 "tag_Skeleton",
                 "tag_Light Armour"
               ],
-              "extraCategories": [
-                "ancient_ordnance"
-              ],
               "override": [
                 {
                   "hasOption": [
@@ -1851,8 +1848,7 @@
                   ],
                   "options": {
                     "extraCategories": [
-                      "entombed",
-                      "ancient_ordnance"
+                      "entombed"
                     ]
                   }
                 }
@@ -2215,9 +2211,6 @@
                 }
               ],
               "armyHasNotOption": [],
-              "extraCategories": [
-                "ancient_ordnance"
-              ],
               "options": [
                 {
                   "minSize": 5,
@@ -2406,6 +2399,7 @@
                           "optionsLabel": "Options",
                           "options": [
                             {
+                              "costParentMult": false,
                               "name": "Legion Charioteers",
                               "type": "check",
                               "cost": 5,
@@ -3319,18 +3313,7 @@
               "unit_id": "scarab_swarms",
               "option_id": "75nw1g3lb0dceqae8m9kp",
               "logo": "special"
-            }
-          ],
-          "option_id": "exkloatp7er0bievwcl6odd"
-        },
-        {
-          "name": "Ancient Ordnance",
-          "maxPercent": 0.3,
-          "refs": [
-            "ancient_ordnance"
-          ],
-          "optionsLabel": "Units",
-          "options": [
+            },
             {
               "name": "Shabti Archers",
               "cost": -75,
@@ -3710,7 +3693,7 @@
               "logo": "special"
             }
           ],
-          "option_id": "bj4xycff9kc52ahw3uzxqx"
+          "option_id": "exkloatp7er0bievwcl6odd"
         },
         {
           "name": "Entombed",
@@ -4017,23 +4000,6 @@
               "refs": [
                 "colossus",
                 "tag_Statue"
-              ],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": [
-                        "giant_aspen_bow"
-                      ],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": [
-                      "ancient_ordnance"
-                    ]
-                  }
-                }
               ],
               "armyHasNotOption": [],
               "options": [

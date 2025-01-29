@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 334,
+  "nrversion": 336,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -3126,7 +3126,8 @@
           ],
           "stats": {
             "St": "+1",
-            "AP": "+1"
+            "AP": "+1",
+            "Ag": "=0"
           },
           "special": "strike_last"
         },
@@ -5515,6 +5516,14 @@
                 "value": true
               }
             }
+          ]
+        },
+        {
+          "affects": [
+            0
+          ],
+          "tags": [
+            "Holy Vows"
           ]
         }
       ]
@@ -13938,7 +13947,7 @@
     },
     "rulebook-truth_of_time": {
       "title": "Truth of Time",
-      "def": "\tThe target's Cha and Mob are <span class=\"textbf\">set</span> to [𝛼].\\<br>\t<br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: 8\"</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: 4\"</td></tr></table>"
+      "def": "\tThe target's Cha and Mob are <span class=\"textbf\">set</span> to [𝛼].<br>\t<br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: 8\"</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: 4\"</td></tr></table>"
     },
     "rulebook-weal_and_woe": {
       "title": "Weal and Woe",
@@ -13954,7 +13963,7 @@
     },
     "rulebook-thunder_and_lightning": {
       "title": "Thunder and Lightning",
-      "def": "=1pt<br>\tAll hits are resolved with Str 6, AP 2, <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/lightning_attacks\">Lightning Attacks</nuxt-link></span>, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link></span>. The target suffers 3 hits. Before resolving hits, apply [𝛼]<br><br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: The target suffers 1 additional hit</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: Select a new Unengaged enemy unit within 6\" of the target: it suffers 2 hits. Before resolving hits, select a third Unengaged enemy unit within 6\" of the second unit to suffer 1 hit.</td></tr></table>"
+      "def": "\tAll hits are resolved with Str 6, AP 2, <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/lightning_attacks\">Lightning Attacks</nuxt-link></span>, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link></span>. The target suffers 3 hits. Before resolving hits, apply [𝛼]<br><br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: The target suffers 1 additional hit</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: Select a new Unengaged enemy unit within 6\" of the target: it suffers 2 hits. Before resolving hits, select a third Unengaged enemy unit within 6\" of the second unit to suffer 1 hit.</td></tr></table>"
     },
     "rulebook-foresight": {
       "title": "Foresight",
@@ -16331,7 +16340,25 @@
     },
     "special-wild_warding": {
       "title": "Wild Warding",
-      "def": "    +3 Arm. The Armour Value can <span class=\"textbf\">never</span> be improved beyond 5."
+      "def": "    +3 Arm. The Armour Value can <span class=\"textbf\">never</span> be improved beyond 5.",
+      "mod": [
+        {
+          "affects": [
+            "defense"
+          ],
+          "stats": {
+            "Arm": "+3"
+          }
+        },
+        {
+          "affects": [
+            "defense"
+          ],
+          "stats": {
+            "Arm": "<5"
+          }
+        }
+      ]
     },
     "special-banner_of_speed": {
       "title": "Banner of Speed",

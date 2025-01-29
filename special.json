@@ -1,7 +1,7 @@
 {
   "name": "Special Items",
   "version": "2023",
-  "nrversion": 300,
+  "nrversion": 301,
   "permission": 0,
   "playable": 0,
   "id": 102,
@@ -25,7 +25,7 @@
           "armyHasOption": ["recruiting_officer"],
           "refs": ["fresh_meat"],
           "name": "Fresh Meat",
-          "description": "The unit gains Exclusive, changes its maximum Points Cost to 800 points, and increases its maximum Unit Size by +20%, rounding fractions up.<br/><br/> E.g. a unit entry with Unit Size '10-24 models' increases its maximum by +4.8 models to '10-29 models'"
+          "description": "\tThe unit gains <span class=\"textbf\">Exclusive</span>, changes its maximum Points Cost to 800 points, and increases its maximum Unit Size by +20%, rounding fractions up. <br><i>E.g. a unit entry with Unit Size '10-24 models' increases its maximum by +4.8 models to '10-29 models'</i>\n"
         }
       ]
     },
@@ -408,7 +408,7 @@
           "hasStat": {
             "global": {
               "Hgt": {
-                "values": ["4", "5"]
+                "excluded": ["4", "5"]
               }
             }
           }
@@ -593,10 +593,19 @@
           "type": "check",
           "name": "Potion of Power Preservation",
           "cost": 45,
-          "refs": ["pot_dragon_brew"],
-          "armyHasNotOption": ["pot_dragon_brew"],
+          "refs": ["pot_preservation"],
+          "armyHasNotOption": ["pot_preservation"],
           "description": "\tUse when a Casting Roll or Dispel Roll fails, due to not rolling high enough. Do not discard the Magic Dice used in this unsuccessful attempt.\n",
-          "option_id": "f32ffdsfsdf3e2jgbj4342hj"
+          "option_id": "f32ffdsfsdf3e2dsjgbj4342hj"
+        },
+        {
+          "type": "check",
+          "name": "Dragon's Brew",
+          "cost": 40,
+          "refs": ["dragons_brew"],
+          "armyHasNotOption": ["dragons_brew"],
+          "description": "\t<span class=\"textbf\">Breath Attack(Str 4, AP 1, Flaming Attacks, Stand and Shoot)</span>.",
+          "option_id": "f32ffdsfdsdsdsdf3e2dsjgbj4342hj"
         },
         {
           "type": "check",
