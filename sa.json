@@ -295,12 +295,12 @@
             {
               "type": "check",
               "cost": 0,
-              "name": "Living Steel (4+)",
-              "option_id": "nfi2fn0aa23fn023nf023nf23",
+              "name": "Molten Copper (4+)",
+              "option_id": "nfi2fn02ds3fn023nf023nf23",
               "boundSpells": [
                 {
                   "path": "alchemy",
-                  "ref": "living_steel",
+                  "ref": "molten_copper",
                   "mods": {
                     "castingValue": 4
                   }
@@ -310,12 +310,12 @@
             {
               "type": "check",
               "cost": 0,
-              "name": "Chance of Redemption (3+)",
-              "option_id": "sfwefdsfwaaedgd32298fj0wejf0ew",
+              "name": "Fate's Judgement (3+)",
+              "option_id": "sfwefdsfwdsedgd3229a8fj0wejf0ew",
               "boundSpells": [
                 {
                   "path": "divination",
-                  "ref": "chance_of_redemption",
+                  "ref": "fate_judgement",
                   "mods": {
                     "castingValue": 3
                   }
@@ -325,12 +325,12 @@
             {
               "type": "check",
               "cost": 0,
-              "name": "Danse Macabre (3+)",
-              "option_id": "34g3gaa034m0gm3gim30g3g34g4",
+              "name": "Touch of the Reaper (3+)",
+              "option_id": "34g3g034sm0agm3gim30g3g34g4",
               "boundSpells": [
                 {
                   "path": "evocation",
-                  "ref": "danse_macabre",
+                  "ref": "touch_of_the_reaper",
                   "mods": {
                     "castingValue": 3
                   }
@@ -340,12 +340,12 @@
             {
               "type": "check",
               "cost": 0,
-              "name": "Awaken the Beast (5+)",
-              "option_id": "gdaargr3g3fdg454jj56j56gdf",
+              "name": "Swarm of Insects (5+)",
+              "option_id": "gdrgdsr3g3fdsg454jj56j56gdf",
               "boundSpells": [
                 {
                   "path": "shamanism",
-                  "ref": "awaken_beast",
+                  "ref": "swarm_insects",
                   "mods": {
                     "castingValue": 5
                   }
@@ -402,12 +402,12 @@
             {
               "type": "check",
               "cost": 0,
-              "name": "Living Steel (4+)",
+              "name": "Molten Copper (4+)",
               "option_id": "nfi2fn023fn023nf023nf23",
               "boundSpells": [
                 {
                   "path": "alchemy",
-                  "ref": "living_steel",
+                  "ref": "molten_copper",
                   "mods": {
                     "castingValue": 4
                   }
@@ -417,12 +417,12 @@
             {
               "type": "check",
               "cost": 0,
-              "name": "Chance of Redemption (3+)",
+              "name": "Fate's Judgement (3+)",
               "option_id": "sfwefdsfwedgd32298fj0wejf0ew",
               "boundSpells": [
                 {
                   "path": "divination",
-                  "ref": "chance_of_redemption",
+                  "ref": "fate_judgement",
                   "mods": {
                     "castingValue": 3
                   }
@@ -432,12 +432,12 @@
             {
               "type": "check",
               "cost": 0,
-              "name": "Danse Macabre (3+)",
+              "name": "Touch of the Reaper (3+)",
               "option_id": "34g3g034m0gm3gim30g3g34g4",
               "boundSpells": [
                 {
                   "path": "evocation",
-                  "ref": "danse_macabre",
+                  "ref": "touch_of_the_reaper",
                   "mods": {
                     "castingValue": 3
                   }
@@ -447,12 +447,12 @@
             {
               "type": "check",
               "cost": 0,
-              "name": "Awaken the Beast (5+)",
+              "name": "Swarm of Insects (5+)",
               "option_id": "gdrgr3g3fdg454jj56j56gdf",
               "boundSpells": [
                 {
                   "path": "shamanism",
-                  "ref": "awaken_beast",
+                  "ref": "swarm_insects",
                   "mods": {
                     "castingValue": 5
                   }
@@ -1371,14 +1371,7 @@
                       "type": "check",
                       "name": "Mountain Pteradon",
                       "cost": 80,
-                      "refs": [
-                        "mount",
-                        "mountain_pteradon_mount_option",
-                        {
-                          "ref": "saurian_shooting",
-                          "amount": 5
-                        }
-                      ],
+                      "refs": ["mount", "mountain_pteradon_mount_option"],
                       "refopt": "mountain_pteradon_mount",
                       "option_id": "va56o6z8nefmza7kfjut5o"
                     },
@@ -2579,19 +2572,19 @@
                   "minSize": 1,
                   "maxSize": 3,
                   "addToUnitSize": true,
-                  "refs": [
-                    {
-                      "ref": "saurian_shooting",
-                      "amount": 4
-                    }
-                  ],
                   "options": [
                     {
                       "name": "Number",
                       "type": "numeric",
                       "cost": 140,
                       "hide": true,
-                      "refs": ["thyroscutusHerd_model"],
+                      "refs": [
+                        "thyroscutusHerd_model",
+                        {
+                          "ref": "saurian_shooting",
+                          "amount": 4
+                        }
+                      ],
                       "armyHasNotOption": [
                         {
                           "refs": ["thyroscutusHerd_model"],
