@@ -6,7 +6,7 @@
   },
   "short": "eos",
   "version": "2024 beta1",
-  "nrversion": 369,
+  "nrversion": 370,
   "playable": 1,
   "id": 6,
   "include": [102],
@@ -468,18 +468,18 @@
                 {
                   "type": "group",
                   "optionsLabel": "Equipment",
-                  "leafMaxCost": 200,
+                  "leafMaxCost": 100,
                   "collapsible": true,
                   "override": [
                     {
                       "hasOption": [
                         {
-                          "refs": ["army_bsb", "not_a_leader"],
+                          "refs": ["army_general"],
                           "amount": 1
                         }
                       ],
                       "options": {
-                        "leafMaxCost": 100
+                        "leafMaxCost": 200
                       }
                     },
                     {
@@ -1672,7 +1672,7 @@
               "refs": ["core_unit", "tag_Human", "parentUnit", "tag_", "tag_Metal Armour"]
             },
             {
-              "name": "State Detatchment",
+              "name": "State Detachment",
               "cost": 0,
               "rules": [
                 {

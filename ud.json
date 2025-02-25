@@ -407,7 +407,7 @@
                   "options": [
                     {
                       "type": "check",
-                      "refs": ["army_general"],
+                      "refs": ["army_general", "pharaoh_general"],
                       "armyHasNotOption": ["army_general"],
                       "name": "General",
                       "cost": 0,
@@ -603,21 +603,38 @@
                 {
                   "optionsLabel": "Army Organisation",
                   "maxSize": 1,
+                  "minSize": 0,
+                  "override": [
+                    {
+                      "armyHasOption": [
+                        {
+                          "refs": ["specialized_army"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "minSize": 1
+                      }
+                    }
+                  ],
                   "options": [
                     {
                       "name": "Commander of the Terracotta Army",
                       "type": "check",
                       "cost": 5,
-                      "refs": ["terracotta"],
-                      "hasOption": ["army_general"],
-                      "option_id": "lnua9mwgsrh2ev8tu3k58"
+                      "refs": ["terracotta", "specialized_army"],
+                      "armyHasOption": ["pharaoh_general"],
+                      "armyHasNotOption": ["barrow_legion"],
+                      "option_id": "lnua9mwgsrh2ev8tu3k58",
+                      "neverHide": true
                     },
                     {
                       "name": "Lord of the Barrow Legion",
                       "type": "check",
                       "cost": 15,
-                      "refs": ["barrow_legion"],
-                      "hasOption": ["army_general"],
+                      "refs": ["barrow_legion", "specialized_army"],
+                      "neverHide": true,
+                      "armyHasOption": ["pharaoh_general"],
                       "armyHasNotOption": [
                         {
                           "refs": ["large_cavalry"],
@@ -629,6 +646,11 @@
                         },
                         {
                           "refs": ["towering"],
+                          "amount": 1
+                        },
+
+                        {
+                          "refs": ["terracotta"],
                           "amount": 1
                         }
                       ],
@@ -2125,19 +2147,26 @@
           "options": [
             {
               "name": "Casket of Phatep",
-              "boundSpells": [
-                {
-                  "ref": "soul_blight",
-                  "path": "evocation",
-                  "mods": {
-                    "castValue": 6,
-                    "range": 48
-                  }
-                }
-              ],
               "refs": ["casket_phtatep", "war_machine", "not_a_leader", "tag_Skeleton", "tag_Construct"],
               "armyHasNotOption": [],
               "cost": 230,
+              "magic": {
+                "amount": 2,
+                "spells": [
+                  {
+                    "ref": "thunder_and_lightning",
+                    "path": "cosmology"
+                  },
+                  {
+                    "ref": "augury_of_despair",
+                    "path": "divination"
+                  },
+                  {
+                    "ref": "soul_blight",
+                    "path": "evocation"
+                  }
+                ]
+              },
               "options": [
                 {
                   "override": [
@@ -3356,7 +3385,7 @@
                       "option_id": "o9hlbpyvondj356f15lrqn"
                     },
                     {
-                      "name": "Giant Aspis Bow (5+)",
+                      "name": "Giant Aspis Bow (4+)",
                       "refs": ["giant_aspen_bow", "death_from_afar"],
                       "type": "check",
                       "cost": 15,
