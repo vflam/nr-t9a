@@ -6,7 +6,7 @@
   },
   "short": "ud",
   "version": "2023",
-  "nrversion": 362,
+  "nrversion": 363,
   "playable": 1,
   "indicators": ["aspis_arrows", "death_from_afar"],
   "id": 15,
@@ -126,7 +126,7 @@
           ],
           "hasNotOption": ["core_unit"],
           "refs": ["be_ud_icon"],
-          "description": "\tOne Use Only. When a spell is successfully cast on this unit, you may use this Banner Enchantment. Immediately resolve the Effects of the spell on another friendly unit within 6\" of the bearer's unit, following the spells normal targeting restrictions, except Range. <i>Note that this does not trigger Death is Only the Beginning on the second unit.</i>\n",
+          "description": "\tOne use only. When a spell is successfully cast on the bearer's unit, you may use this Banner Enchantment. Immediately resolve the effects of the spell on another friendly unit within 6\" of the bearer's unit, following the spell's normal targeting restrictions, except Range. <i>Note that this does not trigger <span class=\"textbf\">Death is Only the Beginning</span> on the second unit.</i>\n",
           "option_id": "f3f32f23f23mi0g4m30gb435"
         },
         {
@@ -213,7 +213,7 @@
             }
           ],
           "refs": ["we_ud_crown_phar"],
-          "description": "\tDuration: One Turn. At the start of all friendly Player Turns, the wearer may lose <span class=\"textbf\">Undying Will</span>. If it does, choose a friendly unit within 12\"; this unit gains <span class=\"textbf\">Undying Will</span>. .\n",
+          "description": "\tDuration: One Turn. At the start of all friendly Player Turns, the wearer may lose <span class=\"textbf\">Undying Will</span>. If it does, choose a friendly unit within 12\": this unit gains <span class=\"textbf\">Undying Will</span>.\n",
           "option_id": "b2hx1je8y8b7vcrgo8lp5h"
         },
         {
@@ -243,7 +243,7 @@
           ],
           "armyHasNotOption": ["we_ud_bookdead"],
           "refs": ["we_ud_bookdead"],
-          "description": "\tThe bearer can cast a unique Bound Spell: <i>Eternal Souls</i>. Casting Value (4+), Range 12\", Aura. All friendly units <span class=\"textbf\">Raise</span> one HP. <i>Remember that models with Undead <span class=\"textbf\">Raise</span> their full Rsr value instead.</i> .\n",
+          "description": "\tThe bearer can cast a unique Bound Spell called <i>Unfinished Duty</i>: Casting Value (4+), Range 12\", Aura and Augment. Duration: Instant. <br>Choose one of the following effects for each target:\t\t\t<br>&nbsp;&nbsp;&bull;  The Rank-and-File part of the target <span class=\"textbf\">Raises</span> HP equal to its Rsr value. \n\t\t<br>&nbsp;&nbsp;&bull;  One Attachable Model in the target <span class=\"textbf\">Recovers</span> HP equal to its Rsr value.\n\t<br>\n",
           "option_id": "i8r69j3wuv8tm98xwhyq7n"
         },
         {
@@ -252,7 +252,7 @@
           "cost": 40,
           "armyHasNotOption": ["we_ud_nephetra"],
           "refs": ["we_ud_nephetra", "tag_Hierophant"],
-          "description": "\tThe wielder gains Hierophant.<br>In addition, the wielder can cast <i>Danse Macabre</i> (Evocation) as a Bound Spell(5+). ",
+          "description": "\tThe wielder gains Hierophant. In addition, the wielder can cast <i>Danse Macabre</i> (Evocation) as a Bound Spell(5+). ",
           "option_id": "i57ittgfgfpui5ez3jy3xy1q3l"
         },
         {
@@ -262,7 +262,7 @@
           "loses_rules": ["flammable"],
           "armyHasNotOption": ["we_ud_wrappings"],
           "refs": ["we_ud_wrappings"],
-          "description": "\tThe bearer gains +1 HP and loses <span class=\"textbf\">Weakness(Flaming Attacks)</span> if it had it. (<i>Note that this does not prevent the model from gaining Weakness(Flaming Attacks) from other sources</i>).",
+          "description": "\tThe bearer gains +1 HP and loses one instance of <span class=\"textbf\">Weakness(Flaming Attacks)</span>.\n",
           "option_id": "ocf1q3m5m7v68ef5yum1"
         },
         {
@@ -271,12 +271,12 @@
           "cost": 55,
           "armyHasNotOption": ["art_ud_teput"],
           "refs": ["art_ud_teput"],
-          "description": "\tAegis(5+), Horror, .\n",
+          "description": "\tAegis(5+), Horror.\n",
           "option_id": "bh8jakfh53oyi9l0lgmgh"
         },
         {
           "name": "Essence of a Free Mind",
-          "cost": 25,
+          "cost": 10,
           "option_id": "dln1qr46fiey2k6rsrdpgg",
           "type": "check",
           "shared": true
@@ -313,7 +313,7 @@
           "armyHasNotOption": ["art_ud_sandstorm"],
           "refs": ["art_ud_sandstorm"],
           "hasNotOption": ["mount"],
-          "description": "\tThe wearer's Mob is <span class=\"textbf\">set</span> to 8, and it gains Autonomous, Fly, , Sweeping Attack(2D6, Str 2, AP 1).\n",
+          "description": "\tThe wearer's Mob is <span class=\"textbf\">set</span> to 8, and it gains Autonomous, Fly, Sweeping Attack(2D6, Str 2, AP 1).\n",
           "option_id": "m0skivqfhyc6h9erd8objs"
         },
         {
@@ -648,7 +648,6 @@
                           "refs": ["towering"],
                           "amount": 1
                         },
-
                         {
                           "refs": ["terracotta"],
                           "amount": 1
@@ -762,10 +761,10 @@
                     },
                     {
                       "option_id": "ff23n8f32jf0329f23g23g2",
-                      "name": "Exclusive",
+                      "name": "Solitary",
                       "type": "check",
                       "cost": 20,
-                      "refs": ["exclusive"]
+                      "refs": ["solitary"]
                     },
                     {
                       "type": "check",
@@ -881,7 +880,7 @@
                     {
                       "ignoreCost": true,
                       "option_id": "fmn3209fm3920f32f32f",
-                      "name": "Bow (4+)",
+                      "name": "Longbow (4+)",
                       "type": "check",
                       "cost": 5,
                       "refs": ["aspis_arrows"]
@@ -2014,7 +2013,12 @@
                               "type": "check",
                               "cost": 0,
                               "option_id": "ca77mlt5p44rfdfdokhizcbqpm",
-                              "refs": [{ "ref": "aspis_arrows", "amount": 2 }]
+                              "refs": [
+                                {
+                                  "ref": "aspis_arrows",
+                                  "amount": 2
+                                }
+                              ]
                             }
                           ],
                           "option_id": "jg215ehtpknfi9dzpic2p"
@@ -3208,7 +3212,7 @@
           "options": [
             {
               "name": "Battle Sphinx",
-              "cost": 440,
+              "cost": 460,
               "refs": ["battle_sphinx", "tag_Skeleton", "tag_Statue", "tag_Beast", "tag_Mount"],
               "armyHasNotOption": [],
               "override": [

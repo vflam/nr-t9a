@@ -6,7 +6,7 @@
   },
   "short": "eos",
   "version": "2024 beta1",
-  "nrversion": 370,
+  "nrversion": 371,
   "playable": 1,
   "id": 6,
   "include": [102],
@@ -68,7 +68,7 @@
               "amount": 1
             }
           ],
-          "description": "Friendly units within 6\" of the bearer must reroll failed Charge Range rolls.",
+          "description": "\tFriendly units within 6\" of the bearer must reroll failed Charge Range rolls.",
           "option_id": "psudh9dk26q43u1qc6ro"
         }
       ],
@@ -83,7 +83,7 @@
           "armyHasNotOption": ["be_eos_houshold"],
           "name": "War College Banner",
           "cost": 45,
-          "description": "\tThe bearer gains <span class=\"textbf\">Orders</span>.\n",
+          "description": "\tThe bearer gains <span class=\"textbf\">Imperial Authority</span>.\n",
           "option_id": "gb8jbd4gzzaqynzsltxxso9",
           "hasOption": [
             {
@@ -99,7 +99,7 @@
           "hasOption": ["parentUnit"],
           "name": "Banner of Unity",
           "cost": 40,
-          "description": "\tWhenever the bearer's unit is targeted by an Order, it may immediately give that same Order (<i>for free</i>) to up to two Support Units within 8\" of the bearer's unit.",
+          "description": "\tWhenever the bearer's unit is targeted by an Order, it may immediately give that same Order (<i>for free</i>) to up to two Support Units within 8\" of the its unit.",
           "option_id": "aegjrilo9zqs7ng6ehy2o"
         },
         {
@@ -200,7 +200,7 @@
           "cost": 100,
           "armyHasNotOption": ["art_eos_locket"],
           "refs": ["art_eos_locket"],
-          "description": "When choosing Weapons and Equipment, choose one enemy Character model part in base contact with the wearer's unit. During this Round of Combat the chosen model part suffers: -2 Att, -2 Str, -2 Off, and -2 AP.<br>",
+          "description": "\tWhen , choose one enemy Character model part in base contact with the wearer's unit. During this Round of Combat the chosen model part suffers: -2 Att, -2 Off, -2 Str, and -2 AP.\n",
           "option_id": "xp0hvbbtwpuum0tyayoo"
         },
         {
@@ -215,7 +215,7 @@
             }
           ],
           "refs": ["art_eos_flame"],
-          "description": "\tThe bearer can cast <i>Living Steel</i> (Alchemy) as a Bound Spell(5+).\n",
+          "description": "\tThe bearer can cast <i>Corruption of Tin</i> (Alchemy) as a Bound Spell(5+).\n",
           "option_id": "jxb9n5v1o8d6x5famkmi09",
           "boundSpells": [
             {
@@ -233,12 +233,12 @@
           "cost": 20,
           "armyHasNotOption": ["art_eos_ullor"],
           "refs": ["art_eos_ullor"],
-          "description": "Enemy units within 8\" of the bearer lose the Charging Momentum Agi bonus and +1 Combat Score from Charging.",
+          "description": "\tEnemy units within 8\" of the bearer lose the Charging Momentum Agi bonus as well as the +1 Combat Score bonus from Charging.",
           "option_id": "urrks4m5p7rukid7lylcva"
         },
         {
           "name": "Essence of a Free Mind",
-          "cost": 25,
+          "cost": 10,
           "option_id": "ml050of1ooc1sttydy7pmo",
           "type": "check",
           "shared": true
@@ -263,7 +263,7 @@
           "hasNotOption": ["weaponEnchantUni"],
           "armyHasNotOption": ["we_eos_hammer_witch"],
           "refs": ["we_eos_hammer_witch", "weaponEnchantUni"],
-          "description": "\t <span class=\"textbf\">Afflict(-1 Channel)</span>. After determining the number of hits, one single hit chosen by the attacker, has its Str and AP multiplied by two, and gains <span class=\"textbf\">Multiple Wounds((2))</span>.\n",
+          "description": "\t <span class=\"textbf\">Afflict(-1 Channel)</span>. After determining the number of hits, one single hit chosen by the attacker, has its Str and AP multiplied by two, and gains <span class=\"textbf\">Multiple Wounds(2)</span>.\n",
           "option_id": "5cvilzgyyygogc9j0cglbb"
         },
         {
@@ -288,7 +288,7 @@
           "hasNotOption": ["mount"],
           "armyHasNotOption": ["pae_eos_impseal"],
           "refs": ["pae_eos_impseal"],
-          "description": "Arm is <span class=\"textbf\">set</span> to 6. +1 Cou. The wearer's unit cannot voluntarily declare Flee! as a Charge Reaction.\n",
+          "description": "Arm is <span class=\"textbf\">set</span> to 6. +1 Dis. <span class=\"textbf\">Fearless</span>.\n",
           "option_id": "dg65393ke97mplogoogakg"
         },
         {
@@ -297,7 +297,7 @@
           "cost": 35,
           "armyHasNotOption": ["pae_eos_blacksteel"],
           "refs": ["pae_eos_blacksteel"],
-          "description": "\t<span class=\"textbf\">Immune(Flaming Attacks, )</span>. +1 Arm.<br>\n\tIf the wearer is without Mount, it gains an additional +1 Arm.",
+          "description": "\t<span class=\"textbf\">Immune(Flaming Attacks)</span>. +1 Arm.\tIf the wearer is without Mount, it gains an additional +1 Arm.",
           "option_id": "89pdrtlsx7gmnspb7u2z",
           "hasStat": {
             "global": {
@@ -361,16 +361,16 @@
                     },
                     {
                       "option_id": "f32f23fj238fh239fn239f32",
-                      "name": "Exclusive",
+                      "name": "Solitary",
                       "type": "check",
                       "cost": 30,
-                      "refs": ["exclusive"]
+                      "refs": ["solitary"]
                     },
                     {
                       "refs": ["army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
-                      "name": "General, Orders, and +1 Cou",
+                      "name": "General, Imperial Authority, and +1 Cou",
                       "cost": 45,
                       "option_id": "l80lev8z18ijztwqalffe",
                       "optionsLabel": "Options",
@@ -392,7 +392,7 @@
                       ]
                     },
                     {
-                      "name": "Battle Standard Bearer and Orders",
+                      "name": "Battle Standard Bearer and Imperial Authority",
                       "type": "check",
                       "cost": 60,
                       "option_id": "43t34g43g34fsafweeg32g432",
@@ -432,7 +432,7 @@
                       "refopt": "horse_mount",
                       "option_id": "pguju4d8grt28qap6j19",
                       "refs": ["horse_mount_unit"],
-                      "hasNotOption": ["exclusive"]
+                      "hasNotOption": ["solitary"]
                     },
                     {
                       "type": "check",
@@ -1606,7 +1606,7 @@
               "options": [
                 {
                   "minSize": 20,
-                  "maxSize": 40,
+                  "maxSize": 50,
                   "addToUnitSize": true,
                   "options": [
                     {
@@ -2527,7 +2527,6 @@
           ],
           "option_id": "r9hbnw0jonm4umnsf7eg9"
         },
-
         {
           "name": "Sunna's Fury",
           "refs": ["sunnas_fury"],

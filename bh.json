@@ -6,7 +6,7 @@
   },
   "short": "bh",
   "version": "3rd ed",
-  "nrversion": 366,
+  "nrversion": 368,
   "id": 2,
   "include": [102],
   "indicators": ["sticks_and_stones", "eyeballers"],
@@ -48,7 +48,7 @@
           ],
           "name": "Banner of the Wild Herd",
           "cost": 60,
-          "description": "\tOne use only. . May be activated during Choose Equipment and Abilities: until the end of the phase, the Str of Rank-and-File models in the unit with Wildhorn is <span class=\"textbf\">set</span> to 4 and the AP is <span class=\"textbf\">set</span> to 1.",
+          "description": "\tOne use only. May be activated during Choose Equipment and Abilities: until the end of the phase, the Str of Rank-and-File models in the unit with Wildhorn is <span class=\"textbf\">set</span> to 4 and the AP is <span class=\"textbf\">set</span> to 1.",
           "option_id": "svurt5l35cqgco3p1dorm"
         },
         {
@@ -270,7 +270,7 @@
           "cost": 45,
           "refs": ["art_bh_crownhorn"],
           "armyHasNotOption": ["art_bh_crownhorn"],
-          "description": "\tThe wearer's unit gain Unruly, First Strike(Stubborn). In addition, all units with <span class=\"textbf\">Unruly</span> within range of the wearer's <span class=\"textbf\">Commanding Presence</span> (<i>if applicable</i>) gain <span class=\"textbf\">First Strike(Stubborn)</span>.",
+          "description": "\tThe wearer's unit gain Unruly, First Strike(Stubborn). In addition, all units entirely with <span class=\"textbf\">Unruly</span> within range of the wearer's <span class=\"textbf\">Commanding Presence</span> (<i>if applicable</i>) gain <span class=\"textbf\">First Strike(Stubborn)</span>.",
           "option_id": "ihki12slfspyh2jooujgrp"
         },
         {
@@ -301,7 +301,7 @@
           "cost": 40,
           "refs": ["art_bh_seed", "before_game_start", "one_use_item"],
           "armyHasNotOption": ["art_bh_seed"],
-          "description": "\tDuring Pre-game Selections, place a Forest Terrain Feature:\t\n\t\t<br>&nbsp;&nbsp;&bull;   Touching your Deployment Zone.\t\t<br>&nbsp;&nbsp;&bull;   Not in contact with any other Terrain Feature .\t<br>\n\tThis Forest is a 10\"6\" rectangle.<br>All friendly units with <span class=\"textbf\">Pack Tactics</span> gain <span class=\"textbf\">Scout</span>, but their <span class=\"textbf\">Scout</span> deployment must end fully inside this Forest.<br>",
+          "description": "\tDuring Pre-game Selections, place a Forest Terrain Feature:\t\n\t\t<br>&nbsp;&nbsp;&bull;   Touching your Deployment Zone.\t\t<br>&nbsp;&nbsp;&bull;   Not in contact with any other Terrain Feature .\t<br>\n\tThis Forest is a 10\"6\" rectangle.<br>Friendly units entirely with Pack Tactics treat the Forest as part of their Deployment Zone, for the purpose of Deployment.\n    \n",
           "option_id": "zghtfkske5sunlosr8phil"
         },
         {
@@ -431,7 +431,8 @@
                       "cost": 180,
                       "options": [],
                       "refopt": "razortusk_chariot_mount",
-                      "option_id": "h2tqd1ylwv8jtn8xsb842"
+                      "option_id": "h2tqd1ylwv8jtn8xsb842",
+                      "maxUnitCost": 700
                     }
                   ],
                   "option_id": "hjdkf5m88wxlfebr5s9f",
@@ -504,6 +505,19 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
                           "option_id": "angk18s0ykffo34j8udke"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 10,
+                          "maxSize": 1,
+                          "optionsLabel": "Halberd Enchant",
+                          "optionsSuffix": " (Halberd)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "halberdEnchant"],
+                          "option_id": "f32f423g43gh54h45h456h45"
                         },
                         {
                           "type": "check",
@@ -628,10 +642,10 @@
                     },
                     {
                       "option_id": "f32fewedmf23j89c023h9df23c2",
-                      "name": "Exclusive",
+                      "name": "Solitary",
                       "type": "check",
                       "cost": 25,
-                      "refs": ["exclusive"]
+                      "refs": ["solitary"]
                     },
                     {
                       "type": "check",
@@ -788,6 +802,19 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
                           "option_id": "lk7qnt7nskwp78fkm6eyr"
+                        },
+                        {
+                          "type": "check",
+                          "name": "Halberd",
+                          "cost": 5,
+                          "maxSize": 1,
+                          "optionsLabel": "Halberd Enchant",
+                          "optionsSuffix": " (Halberd)",
+                          "sortOptions": true,
+                          "collapsible": true,
+                          "options": [],
+                          "optionsDict": ["weaponEnchant", "halberdEnchant"],
+                          "option_id": "f432f8032fn3490ng43g43g43"
                         },
                         {
                           "type": "check",
@@ -1253,10 +1280,10 @@
                     },
                     {
                       "option_id": "dew2f23f23f23f23h823d923",
-                      "name": "Exclusive",
+                      "name": "Solitary",
                       "type": "check",
                       "cost": 30,
-                      "refs": ["exclusive"]
+                      "refs": ["solitary"]
                     },
                     {
                       "name": "Battle Standard Bearer",
@@ -1469,10 +1496,10 @@
                     },
                     {
                       "option_id": "d21d21d32fn2389fh239fhn932f",
-                      "name": "Exclusive",
+                      "name": "Solitary",
                       "type": "check",
                       "cost": 25,
-                      "refs": ["exclusive"]
+                      "refs": ["solitary"]
                     },
                     {
                       "name": "Battle Standard Bearer",

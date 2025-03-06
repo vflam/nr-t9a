@@ -1,6 +1,6 @@
 {
   "name": "Spells",
-  "nrversion": 356,
+  "nrversion": 359,
   "version": "2023",
   "permission": 1,
   "playable": 0,
@@ -136,12 +136,15 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Augment", "Replicable"],
+              "types": [
+                "Augment",
+                "Replicable"
+              ],
               "duration": 1,
               "value": "7"
             }
           ],
-          "description": "The target's Melee Attacks gains +1 to hit and <span class=\"textbf\">Magical Attacks </span>.<br>No model or unit can be affected by more than one instance of this spell simultaneously."
+          "description": "The target's Melee Attacks gains +1 to hit and <span class=\"textbf\">Magical Attacks </span>.<br>No model can be affected by more than one instance of this spell simultaneously."
         },
         {
           "number": "2",
@@ -151,7 +154,9 @@
             {
               "value": "6",
               "range": "24",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1,
               "effects": [
                 {
@@ -173,12 +178,15 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Ground*", ""],
+              "types": [
+                "Ground*",
+                ""
+              ],
               "duration": 1,
-              "value": "8"
+              "value": "7"
             }
           ],
-          "description": "Place a Wall Terrain Feature with dimensions 1×6\" anywhere on the target.<br>\n\t<i>Remove the Terrain Feature when the spell ends.</i>"
+          "description": "Place a Wall with dimensions 1×6\" anywhere on the target.<br>\n\t<i>Remove the Terrain Feature when the spell ends.</i>"
         },
         {
           "number": "4",
@@ -189,7 +197,12 @@
             {
               "value": "8",
               "range": "24",
-              "types": ["Hex", "Damage", "Missile", ""],
+              "types": [
+                "Hex",
+                "Damage",
+                "Missile",
+                ""
+              ],
               "duration": 0,
               "effects": [
                 {
@@ -208,7 +221,9 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1,
               "value": "11",
               "effects": [
@@ -232,7 +247,11 @@
             {
               "value": "11",
               "range": "24",
-              "types": ["Hex", "Damage", "Missile"],
+              "types": [
+                "Hex",
+                "Damage",
+                "Missile"
+              ],
               "duration": 0,
               "effects": [
                 {
@@ -255,12 +274,15 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Universal", "Replicable"],
-              "duration": 0,
+              "types": [
+                "Universal",
+                "Replicable"
+              ],
+              "duration": 1,
               "value": "6"
             }
           ],
-          "description": "The target's Off is modified by [𝛼]. No model can be affected by more than one instance of this spell simultaneously.\n\t<br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: +2</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: -2</td></tr></table>"
+          "description": "The target's Off is modified by [𝛼]. No model can be affected by more than one instance of each version of this spell simultaneously.\n\t<br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: +2</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: -2</td></tr></table>"
         },
         {
           "number": "2",
@@ -268,12 +290,14 @@
           "ref": "truth_time",
           "icon": "cosmos",
           "fontSize": 12,
-          "description": "The target's Cha and Mob are <span class=\"textbf\">set</span> to [𝛼].\n\t<br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: 8\"</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: 4\"</td></tr></table>",
+          "description": "The target's Cha and Mob are <span class=\"textbf\">set</span> to [𝛼].\\\n\t<br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: 8\"</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: 4\"</td></tr></table>",
           "cast": [
             {
               "value": "8",
               "range": "24",
-              "types": ["Universal"],
+              "types": [
+                "Universal"
+              ],
               "duration": 1,
               "effects": [
                 {
@@ -290,7 +314,10 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Universal", ""],
+              "types": [
+                "Universal",
+                ""
+              ],
               "duration": 1,
               "value": "8"
             }
@@ -308,7 +335,11 @@
             {
               "value": "10",
               "range": "24",
-              "types": ["Hex", "Damage", "Missile"],
+              "types": [
+                "Hex",
+                "Damage",
+                "Missile"
+              ],
               "duration": 0,
               "effects": [
                 {
@@ -325,12 +356,14 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Universal"],
+              "types": [
+                "Universal"
+              ],
               "duration": 1,
               "value": "9"
             }
           ],
-          "description": "The target <span class=\"textbf\">must</span> reroll natural to-hit and Armour Save rolls of [𝛼]\n\t<br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: 1</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: 6</td></tr></table>"
+          "description": "The target must reroll natural to-hit and Armour Save rolls of [𝛼].\n\t<br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: 1</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: 6</td></tr></table>"
         },
         {
           "ref": "thunder_and_lightning",
@@ -339,12 +372,16 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Damage", "Hex", "Missile"],
+              "types": [
+                "Damage",
+                "Hex",
+                "Missile"
+              ],
               "duration": 0,
               "value": "11"
             }
           ],
-          "description": "All hits are resolved with Str 6, AP 2, <span class=\"textbf\">Lightning Attacks</span>, and <span class=\"textbf\">Magical Attacks</span>. The target suffers 3 hits. Before resolving hits, apply [𝛼]\n    <br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: The target suffers 1 additional hit</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: Select a new Unengaged enemy unit within 6\" of the target: it suffers 2 hits. Before resolving hits, select a third Unengaged enemy unit within 6\" of the second unit to suffer 1 hit.</td></tr></table>"
+          "description": "=1pt\n\tAll hits are resolved with Str 6, AP 2, Lightning Attacks, Magical Attacks. The target suffers 3 hits. Before removing casulties, apply [𝛼]\n    <br/><table><tr><td><img src=\"/assets/game_assist/magic/cosmos.png\"></td><td style=\"text-align: left\">[𝛼]: The target suffers 1 additional hit</td></tr><tr><td><img src=\"/assets/game_assist/magic/chaos.png\"></td><td style=\"text-align: left\">[𝛽]: Select a new Unengaged enemy unit within 6\" of the target: it suffers 2 hits. Before removing casualties, select a 3rd Unengaged enemy unit within 6\" of the 2nd unit: it suffers 1 hit.</td></tr></table>"
         }
       ]
     },
@@ -360,7 +397,10 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Augment", "Replicable"],
+              "types": [
+                "Augment",
+                "Replicable"
+              ],
               "duration": 1,
               "value": "7"
             }
@@ -374,12 +414,14 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1,
               "value": "9"
             }
           ],
-          "description": "The target gains <span class=\"textbf\">Divine Attacks</span>.<br>\n\tIn addition it may immediately perform a 5\" Magical Move."
+          "description": "The target gains <span class=\"textbf\">Divine Attacks</span>.<br>\n\tIn addition, it may immediately perform a 5\" <span class=\"textbf\">Magical Move</span>."
         },
         {
           "number": "3",
@@ -389,7 +431,9 @@
             {
               "value": "9",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1,
               "effects": [
                 {
@@ -410,12 +454,16 @@
           "number": "4",
           "name": "Fate's Judgement",
           "ref": "fate_judgement",
-          "description": "The target suffers 2D3+1 hits with AP 1 and <span class=\"textbf\">Magical Attacks</span>. These hits are <span class=\"textbf\">set</span> to wound on 6+ and gain a +1 to wound for each friendly turn before the current one. <i>E.g. in the fourth Magic Phase it wounds on 3+</i>.",
+          "description": "The target suffers 2D3+1 hits with AP 1 and <span class=\"textbf\">Magical Attacks</span>. These hits are <span class=\"textbf\">set</span> to wound on 6+, and gain  +1 to wound for each friendly Player Turn before the current one. <i>E.g. in your fourth Magic Phase, it wounds on 3+</i>.",
           "cast": [
             {
               "value": "7",
               "range": "24",
-              "types": ["Damage", "Hex", "Missile"],
+              "types": [
+                "Damage",
+                "Hex",
+                "Missile"
+              ],
               "duration": 0,
               "effects": [
                 {
@@ -432,12 +480,14 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 2,
               "value": "9"
             }
           ],
-          "description": "The target suffers -1 Off and -1 Agi (to a minimum of 1)."
+          "description": "The target suffers -1 Off and -1 Agi, both to a minimum of 1.."
         },
         {
           "ref": "inescapable_doom",
@@ -446,7 +496,11 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Damage", "Hex", "Missile"],
+              "types": [
+                "Damage",
+                "Hex",
+                "Missile"
+              ],
               "duration": 2,
               "value": "11"
             }
@@ -463,12 +517,16 @@
           "number": "1",
           "rep": true,
           "name": "Fountain of Youth",
-          "description": "<span class=\"textbf\">Raise</span> 1 HP in the target's Health Pool.<br>\n<br>\nNo model can <span class=\"textbf\">Raise</span> more than 1 HP per turn from this spell.",
+          "description": "Choose one of the following effects for the target:\n\n\t<br>&nbsp;&nbsp;&bull;  The Rank-and-File part of the target <span class=\"textbf\">Raises</span> 1 HP.\n\t<br>&nbsp;&nbsp;&bull;  One Attachable Model in the target <span class=\"textbf\">Recovers</span> 1 HP.\n<br>\nNo Health Pool can <span class=\"textbf\">Raise</span> or <span class=\"textbf\">Recover</span> more than 1 HP per Magic Phase from this spell.",
           "cast": [
             {
               "value": "6",
               "range": "24*",
-              "types": ["Augment", "Focused", "Replicable"],
+              "types": [
+                "Augment",
+                "",
+                "Replicable"
+              ],
               "duration": 0
             }
           ],
@@ -477,12 +535,14 @@
         {
           "number": "2",
           "name": "Entwining Roots",
-          "description": "The target suffers -2\" Cha and -2\" Mob, both to a minimum of 2\".<br>\n\tIn addition the target suffers -2 Agi to a minimum of 1.<br>",
+          "description": "The target suffers -2\" Cha and -2\" Mob, both to a minimum of 2\".<br>\n\tIn addition the target suffers -2 Agi, to a minimum of 1.<br>",
           "cast": [
             {
               "value": "7",
               "range": "24*",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1
             }
           ],
@@ -492,26 +552,31 @@
           "number": "3",
           "name": "Veil of Mist",
           "ref": "veil_of_mist",
-          "description": "All units within 12\" of the target suffer - 1 to hit with Shooting Attacks and a - 1 modifier to their Casting Rolls.",
+          "description": "All units within 12\" of the target when Casting or Shooting suffer - 1 to hit with Shooting Attacks and a - 1 modifier to their Casting Rolls.",
           "cast": [
             {
               "value": "9",
               "range": "24*",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1
             }
           ]
         },
         {
-          "ref": "shower_of_rocks",
-          "name": "Shower of Rocks",
+          "ref": "gravel_storm",
+          "name": "Gravel Storm",
           "number": "4",
           "cast": [
             {
               "range": "24*",
-              "types": ["Damage", "Hex"],
+              "types": [
+                "Damage",
+                "Hex"
+              ],
               "duration": 0,
-              "value": "9"
+              "value": "8"
             }
           ],
           "description": "The target suffers 2D3+1 hits with Str 3, AP 1, and <span class=\"textbf\">Magical Attacks</span>. If the target contains a Rank-and-File model with <span class=\"textbf\">Light Troops</span>, these hits are instead resolved with Str 4, AP 2, and <span class=\"textbf\">Magical Attacks</span>."
@@ -524,7 +589,9 @@
             {
               "value": "11",
               "range": "24*",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1
             }
           ],
@@ -537,12 +604,14 @@
           "cast": [
             {
               "range": "24*",
-              "types": ["Hex"],
-              "duration": 0,
+              "types": [
+                "Hex"
+              ],
+              "duration": 1,
               "value": "11"
             }
           ],
-          "description": "The target suffers - 1 to-hit with its Melee Attacks. The first time in each Player Turn that it performs a Move <i>(See Definitions and Terminology Chapter)</i>, each of its Health Pools must take a <span class=\"textbf\">Dangerous Terrain(6+)</span> Test."
+          "description": "The target suffers -1 to-hit with its Melee Attacks. The first time in each Player Turn that it performs a Move <i>(see Definitions and Terminology Chapter)</i>, each of its Health Pools must take a <span class=\"textbf\">Dangerous Terrain(6+)</span> Test."
         }
       ]
     },
@@ -558,9 +627,12 @@
           "description": "The target suffers -1 Res.<br>\n\t<br>\n\tNo model can be affected by more than one instance of this spell simultaneously.",
           "cast": [
             {
-              "value": "7",
+              "value": "8",
               "range": "18",
-              "types": ["Hex", "Replicable"],
+              "types": [
+                "Hex",
+                "Replicable"
+              ],
               "duration": 1
             }
           ]
@@ -568,12 +640,15 @@
         {
           "number": "2",
           "name": "Danse Macabre",
-          "description": "The target gains Dying Blow, Ghost Step.  In addition, it may immediately perform a  5\" Magical Move.",
+          "description": "The target gains Dying Blow, Ghost Step.  In addition, it may immediately perform a  5\" <span class=\"textbf\">Magical Move</span>.",
           "cast": [
             {
               "value": "9",
               "range": "18",
-              "types": ["", "Augment"],
+              "types": [
+                "",
+                "Augment"
+              ],
               "duration": 1
             }
           ],
@@ -586,8 +661,10 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Augment"],
-              "duration": 0,
+              "types": [
+                "Augment"
+              ],
+              "duration": 1,
               "value": "9"
             }
           ],
@@ -596,12 +673,16 @@
         {
           "number": "4",
           "name": "Touch of the Reaper",
-          "description": "The target suffers D3+1 hits with Str 9, AP 10, and <span class=\"textbf\">Magical Attacks</span>.<br>\n\tWhen rolling to wound with this attack, substitute the target's Cou for its Res.",
+          "description": "The target suffers D3+1 hits with Str 9, AP 10, Magical Attacks, Psychic Attacks.<br>",
           "cast": [
             {
-              "value": "7",
+              "value": "8",
               "range": "24",
-              "types": ["Hex", "Damage", "Missile"],
+              "types": [
+                "Hex",
+                "Damage",
+                "Missile"
+              ],
               "duration": 0
             }
           ],
@@ -611,12 +692,14 @@
           "number": "5",
           "name": "Spectral Blades",
           "ref": "spectral_blades",
-          "description": "Standard Melee Attacks from Rank-and-File models in the target have their Str and AP <span class=\"textbf\">set</span> to at least 4 and gain <span class=\"textbf\">Magical Attacks</span>.",
+          "description": "Standard Melee Attacks from Rank-and-File models in the target are <span class=\"textbf\">always</span> at least Str 4, and <span class=\"textbf\">always</span> at least  AP 4, and gain <span class=\"textbf\">Magical Attacks</span>.",
           "cast": [
             {
               "value": "11",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1,
               "effects": [
                 {
@@ -633,12 +716,16 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Hex", "Damage", "Missile"],
+              "types": [
+                "Hex",
+                "Damage",
+                "Missile"
+              ],
               "duration": 0,
               "value": "11"
             }
           ],
-          "description": "The target suffer 2D3+1 hits with Str 9, AP 10, and <span class=\"textbf\">Magical Attacks</span>.<br>\n\tWhen rolling to wound with this attack, substitute the target's Cou for its Res."
+          "description": "The target suffer 2D3+1 hits with Str 9, AP 10, Magical Attacks, Psychic Attacks.<br>"
         }
       ]
     },
@@ -654,30 +741,38 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Damage", "Hex", "Replicable"],
-              "duration": 1,
+              "types": [
+                "Damage",
+                "Hex",
+                "Replicable"
+              ],
+              "duration": 0,
               "value": "7"
             }
           ],
-          "description": "The target suffers a hit with <span class=\"textbf\">Area Attack(2×2)</span>, Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.\n<br>\n<br>"
+          "description": "The target suffers a hit with <span class=\"textbf\">Area Attack(2×2)</span>, Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.\n<br>"
         },
         {
           "number": "2",
           "ref": "hand_glory",
           "name": "Hand of Glory",
-          "description": "The target gains <span class=\"textbf\">Aegis(6+)</span> and <span class=\"textbf\">Aegis(+1, max. 3+)</span>.<br>\n\t<br>\n\t\tThe Sacrifice may be performed for this spell.",
+          "description": "The target gains <span class=\"textbf\">Aegis(6+)</span> and <span class=\"textbf\">Aegis(+1, max. 3+)</span>.<br>\n\t<br>\n\t\t<i>The Sacrifice</i> may be performed for this spell.",
           "cast": [
             {
-              "value": "8",
+              "value": "9",
               "range": "12",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1,
               "effects": [
                 {
                   "type": "addRule",
                   "rule": {
                     "id": "aegis",
-                    "parameters": ["6"]
+                    "parameters": [
+                      "6"
+                    ]
                   }
                 }
               ]
@@ -691,12 +786,14 @@
           "cast": [
             {
               "range": "12",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1,
               "value": "9"
             }
           ],
-          "description": "The target suffers -1 Str and -1 AP.<br>\n\t<br>\n\t\tThe Sacrifice may be performed for this spell."
+          "description": "The target suffers -1 Str and -1 AP.<br>\n\t<br>\n\t\t<i>The Sacrifice</i> may be performed for this spell."
         },
         {
           "ref": "pentagram_of_pain",
@@ -705,12 +802,15 @@
           "cast": [
             {
               "range": "12",
-              "types": ["Aura*", "Universal"],
+              "types": [
+                "Aura*",
+                "Universal"
+              ],
               "duration": 0,
               "value": "9"
             }
           ],
-          "description": "The target suffers 3 hits with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.<br>\n\t If one or more unsaved wounds are caused by this spell, the Caster of the spell <span class=\"textbf\">Recovers</span> 1 HP.<br>\n\t<br>\n\t\tThe Sacrifice may be performed for this spell."
+          "description": "The target suffers 3 hits with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.<br>\n\t If one or more unsaved wounds are caused by this spell, the Caster of the spell <span class=\"textbf\">Recovers</span> 1 HP.<br>\n\t<br>\n\t\t<i>The Sacrifice</i> may be performed for this spell."
         },
         {
           "ref": "umbral_majesty",
@@ -718,24 +818,30 @@
           "number": "5",
           "cast": [
             {
-              "types": ["Augment", ""],
+              "types": [
+                "Augment",
+                ""
+              ],
               "duration": 1,
-              "value": "10",
+              "value": "11",
               "range": "12"
             }
           ],
-          "description": "Choose a single model part in the target unit when casting the spell. This model part gains <span class=\"textbf\">(Grind Attack(6, Str 5, AP 2))</span>.<br><br>\tThe Sacrifice may be performed for this spell."
+          "description": "Choose a single model part in the target unit when casting the spell. This model part gains <span class=\"textbf\">Grind Attack(5, Str 5, AP 2, Unmodifiable)</span>.<br>\t<br>\t\t<i>The Sacrifice</i> may be performed for this spell."
         },
         {
           "number": "6",
           "ref": "grave_calls",
           "name": "The Grave Calls",
-          "description": "The target suffers 8 hits with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.<br>\n\t<br>\n\t\tThe Sacrifice may be performed for this spell.",
+          "description": "The target suffers 8 hits with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.<br>\t<br>\t\t<i>The Sacrifice</i> may be performed for this spell.",
           "cast": [
             {
               "value": "11",
               "range": "12",
-              "types": ["Damage", "Hex"],
+              "types": [
+                "Damage",
+                "Hex"
+              ],
               "duration": 0,
               "effects": [
                 {
@@ -761,7 +867,12 @@
             {
               "value": "6",
               "range": "36",
-              "types": ["Damage", "Hex", "Missile", "Replicable"],
+              "types": [
+                "Damage",
+                "Hex",
+                "Missile",
+                "Replicable"
+              ],
               "duration": 0,
               "effects": [
                 {
@@ -780,7 +891,9 @@
             {
               "value": "8",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1,
               "effects": [
                 {
@@ -813,12 +926,14 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Augment", ""],
+              "types": [
+                "Augment"
+              ],
               "duration": 1,
               "value": "9"
             }
           ],
-          "description": "Choose a single model part in the target unit when casting the spell. This model part gains <span class=\"textbf\">Breath Attack(Str 4, AP 0, Flaming Attacks, Magical Attacks)</span> and <span class=\"textbf\">Grind Attack(2D6, Str 4, AP 0, Flaming Attacks, Magical Attacks)</span>."
+          "description": "Choose a single model part in the target unit when casting the spell. This model part gains <span class=\"textbf\">Breath Attack(Str 4,  AP 0, Flaming Attacks,Magical Attacks)</span> and <span class=\"textbf\">Grind Attack(2D6, Str 4, AP 0, Flaming Attacks, Magical Attacks and Unmodifiable)</span>."
         },
         {
           "number": "4",
@@ -828,7 +943,11 @@
             {
               "value": "9",
               "range": "24",
-              "types": ["Damage", "Hex", "Missile"],
+              "types": [
+                "Damage",
+                "Hex",
+                "Missile"
+              ],
               "duration": 0,
               "effects": [
                 {
@@ -846,12 +965,14 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1,
               "value": "11"
             }
           ],
-          "description": "Standard Melee Attacks from Rank-and-File models in the target hit automatically, have their Str <span class=\"textbf\">always</span> <span class=\"textbf\">set</span> to 4, and AP <span class=\"textbf\">always</span> <span class=\"textbf\">set</span> to 0, and gain Flaming Attacks,Magical Attacks."
+          "description": "Standard Melee Attacks from Rank-and-File models in the target hit automatically, are <span class=\"textbf\">always</span> Str 4, are <span class=\"textbf\">always</span> AP 0, and gain Flaming Attacks,Magical Attacks."
         },
         {
           "ref": "cage_of_embers",
@@ -860,12 +981,14 @@
           "cast": [
             {
               "range": "36",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1,
               "value": "10"
             }
           ],
-          "description": "The target gains <span class=\"textbf\">Weakness(Flaming Attacks)</span>. <br>Immediately when the spell is cast, it suffers 2D3 hits with Str 4, AP 0, and <span class=\"textbf\">Magical Attacks</span>.<br>In addition, whenever the target moves <i>(see Definition and Terminolog Chapter)</i>, it suffers 2D3 \n\thits with Str 4, AP 0, Flaming Attacks, Magical Attacks,\n."
+          "description": "Immediately when the spell is cast, the target suffers 2D3 \n\thits with Str 4, AP 0, Flaming Attacks, Magical Attacks,\n.<br>After the initial hits the target gains <span class=\"textbf\">Weakness(Flaming Attacks)</span>.\n\tIn addition, whenever the target moves <i>(see Definitions and Terminology chapter)</i>, it suffers 2D3 \n\thits with Str 4, AP 0, Flaming Attacks, Magical Attacks,\n."
         }
       ]
     },
@@ -881,7 +1004,11 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Augment", "", "Replicable"],
+              "types": [
+                "Augment",
+                "",
+                "Replicable"
+              ],
               "duration": 1,
               "value": "7"
             }
@@ -892,12 +1019,14 @@
           "number": "2",
           "name": "Savage Fury",
           "ref": "savage_fury",
-          "description": "The target gains Fury,Fearless,Unruly,Frenzy. In addition, the target can <span class=\"textbf\">never</span> be wounded on better than 3+",
+          "description": "The target gains Fury,Fearless,Unruly,Frenzy. In addition, the target can <span class=\"textbf\">never</span> be wounded on better than 3+.",
           "cast": [
             {
               "value": "8",
               "range": "18",
-              "types": ["Universal"],
+              "types": [
+                "Universal"
+              ],
               "duration": 1
             }
           ]
@@ -909,9 +1038,11 @@
           "description": "The target gains +1 Str and +1 AP.",
           "cast": [
             {
-              "value": "7",
+              "value": "8",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1
             }
           ]
@@ -925,7 +1056,11 @@
             {
               "value": "9",
               "range": "36",
-              "types": ["Hex", "Damage", "Missile"],
+              "types": [
+                "Hex",
+                "Damage",
+                "Missile"
+              ],
               "duration": 1
             }
           ]
@@ -937,22 +1072,27 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Augment"],
-              "duration": 0,
-              "value": "10"
+              "types": [
+                "Augment"
+              ],
+              "duration": 1,
+              "value": "11"
             }
           ],
-          "description": "Choose a single model part in the target unit when casting the spell. This model part gains <span class=\"textbf\">Grind Attack(4, Str 6, AP 3)</span>"
+          "description": "Choose a single model part in the target unit when casting the spell. This model part gains <span class=\"textbf\">Grind Attack(4, Str 6, AP 3, Unmodifiable)</span>"
         },
         {
           "number": "6",
           "name": "Totemic Summon",
           "ref": "totemic_summon",
-          "description": "Summon a Totemic Beast (profile below), which is immediately placed on the Battlefield using the rules for <span class=\"textbf\">Ambush(Board Edge)</span>.",
+          "description": "<span class=\"textbf\">Summon</span> a Totemic Beast (<i>profile below</i>).",
           "cast": [
             {
               "value": "11",
-              "types": [""],
+              "types": [
+                "Ground*",
+                ""
+              ],
               "duration": 0
             }
           ]
@@ -967,12 +1107,17 @@
           "number": "1",
           "ref": "smite_unbeliever",
           "name": "Smite the Unbeliever",
-          "description": "The target suffers D6 hits with Str  5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.\n\t\n\t\t<br>&nbsp;&nbsp;&bull;  : These hits are instead resolved with Str  7, AP 2, and <span class=\"textbf\">Magical Attacks</span>.\n\t\t<br>&nbsp;&nbsp;&bull;  : These hits are instead resolved with Str  3, AP 2, and <span class=\"textbf\">Magical Attacks</span>.\n\t<br>",
+          "description": "The target suffers D6 hits with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>.\n\t\n\t\t<br/>✠: These hits are instead resolved with Str 7, AP 2, and <span class=\"textbf\">Magical Attacks</span>.\n\t\t<br/>×: These hits are instead resolved with Str 3, AP 2, and <span class=\"textbf\">Magical Attacks</span>.\n\t<br>",
           "cast": [
             {
               "value": "7",
               "range": "24",
-              "types": ["Damage", "Hex", "Missile", "Replicable"],
+              "types": [
+                "Damage",
+                "Hex",
+                "Missile",
+                "Replicable"
+              ],
               "duration": 0
             }
           ]
@@ -984,12 +1129,14 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1,
               "value": "7"
             }
           ],
-          "description": "The target counts as having one fewer Proper Ranks when Engaged.\n\t\n\t\t<br>&nbsp;&nbsp;&bull;  : Two fewer Proper Ranks instead\n\t\t<br>&nbsp;&nbsp;&bull;  : Spell has no effect\n\t<br>"
+          "description": "The target counts as having one fewer Proper Ranks when Engaged.\n\t\n\t\t<br/>✠: Two fewer Proper Ranks instead\n\t\t<br/>×: Spell has no effect\n\t<br>"
         },
         {
           "ref": "weight_of_judgement",
@@ -998,12 +1145,14 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1,
               "value": "8"
             }
           ],
-          "description": "The target suffers  -2 Agi to a minimum of 1.\n\t\n\t\t<br>&nbsp;&nbsp;&bull;  : -3 Agi instead\n\t\t<br>&nbsp;&nbsp;&bull;  : -1 Agiinstead \n\t<br>"
+          "description": "The target suffers  -2 Agi, to a minimum of 1.\n\t\n\t\t<br/>✠: -3 Agi instead\n\t\t<br/>×: -1 Agi instead\n\t<br>"
         },
         {
           "ref": "holy_affliction",
@@ -1012,22 +1161,26 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1,
               "value": "10"
             }
           ],
-          "description": "The target suffers -1 to wound.\n\t\n\t\t<br>&nbsp;&nbsp;&bull;  : The target suffers -1 AP.\n\t\t<br>&nbsp;&nbsp;&bull;  : The target gains +1 AP.\n\t<br>"
+          "description": "The target suffers -1 to wound.\n\t\n\t\t<br/>✠: The target suffers -1 AP.\n\t\t<br/>×: The target gains +1 AP.\n\t<br>"
         },
         {
           "number": "5",
           "name": "Wrath of God",
-          "description": "Place a marker on the target point. You <span class=\"textbf\">must</span> roll for Divine Intervention at the start of each subsequent Magic Phase.\n\n\t<br>&nbsp;&nbsp;&bull;  : Each unit within 2D6\" of the centre of the marker suffers 2D6 with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>. Then remove the marker.\n\t<br>&nbsp;&nbsp;&bull;  : The opponent may move the marker up to 3\" in any direction.\n<br>",
+          "description": "Place a marker on the target point. You <span class=\"textbf\">must</span> roll for <i>Divine Intervention</i> at the start of each subsequent Magic Phase:\n\n\t<br/>✠: Each unit within 2D6\" of the centre of the marker suffers 2D6 hits with Str 5, AP 2, and <span class=\"textbf\">Magical Attacks</span>. Then remove the marker.\n\t<br/>×: The opponent may move the marker up to 3\" in any direction.\n<br>",
           "cast": [
             {
-              "value": "10",
+              "value": "9",
               "range": "48",
-              "types": ["Ground"],
+              "types": [
+                "Ground"
+              ],
               "duration": 2
             }
           ],
@@ -1040,12 +1193,15 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Damage", "Universal"],
+              "types": [
+                "Damage",
+                "Hex"
+              ],
               "duration": 0,
               "value": "11"
             }
           ],
-          "description": "The target suffers D3+1 hits. All other units within 3\" of the target suffer 1 hit. <br>All hits are resolved with Str 9, AP 4, Magical Attacks,Flaming Attacks,.\n\t\n\t\t<br>&nbsp;&nbsp;&bull;  : Increase the number of hits each unit suffers by 1.\n\t\t<br>&nbsp;&nbsp;&bull;  : Decrease the number of hits each unit suffers by 1.\n\t<br>"
+          "description": "The target suffers D3+1 hits. All other units within 3\" of the target suffer 1 hit. <br>All hits are resolved with Str 9, AP 4, Magical Attacks,Flaming Attacks,.\n\t\n\t\t<br/>✠: Increase the number of hits each unit suffers by 1.\n\t\t<br/>×: Decrease the number of hits each unit suffers by 1.\n\t<br>"
         }
       ]
     },
@@ -1057,13 +1213,16 @@
           "ref": "evil_eye",
           "number": "1",
           "name": "Evil Eye",
-          "description": "The target suffers -1 Cha and -1 Mob, both to a minimum of 3 and -1 Agi to a minimum of 1 .<br>\n\t<br>\n\tNo model can be affected by more than one instance of this spell simultaneously.",
+          "description": "The target suffers -1 Cha and -1 Mob, both to a minimum of 3, and -1 Agi, to a minimum of 1 .<br>\n\t<br>\n\tNo model can be affected by more than one instance of this spell simultaneously.",
           "cast": [
             {
               "range": "36",
-              "types": ["Hex", "Replicable"],
+              "types": [
+                "Hex",
+                "Replicable"
+              ],
               "duration": 1,
-              "value": "6"
+              "value": "5"
             }
           ]
         },
@@ -1074,7 +1233,9 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1,
               "value": "7"
             }
@@ -1088,7 +1249,9 @@
           "cast": [
             {
               "range": "18",
-              "types": ["Universal"],
+              "types": [
+                "Universal"
+              ],
               "duration": 1,
               "value": "10"
             }
@@ -1102,7 +1265,9 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1,
               "value": "9"
             }
@@ -1116,7 +1281,9 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1,
               "value": "11"
             }
@@ -1130,12 +1297,15 @@
           "cast": [
             {
               "range": "12",
-              "types": ["Augment*", "Damage"],
+              "types": [
+                "Augment*",
+                "Damage"
+              ],
               "duration": 0,
               "value": "11"
             }
           ],
-          "description": "Mark the ground under the centre of the target. The target gains <span class=\"textbf\">Ambush(within 12\" of the marked point)</span> then it is immediatly removed from the Battlefield. It automatically passes the roll to return to the Battlefield in the next friendly Player Turn.\n\t<br>\n\t<i>*Cannot target Shaken units</i>"
+          "description": "Mark the  point under the centre of the target. Remove the target from the Battlefield. Place it back using <span class=\"textbf\">Ambush (within 12″ of the marked point)</span> at the start of the next friendly Movement Phase. \n\t<br>\n\t<i>*Cannot target <span class=\"textbf\">Shaken</span> units</i>"
         }
       ]
     },
@@ -1153,7 +1323,11 @@
             {
               "value": 5,
               "range": 12,
-              "types": ["ground", "duration", "Replicable"],
+              "types": [
+                "ground",
+                "duration",
+                "Replicable"
+              ],
               "duration": 0
             }
           ]
@@ -1171,8 +1345,10 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Augment"],
-              "duration": 0,
+              "types": [
+                "Augment"
+              ],
+              "duration": 1,
               "value": "6"
             }
           ],
@@ -1189,7 +1365,9 @@
             {
               "value": "3",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1
             }
           ]
@@ -1205,7 +1383,9 @@
             {
               "value": "3",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1
             }
           ]
@@ -1221,7 +1401,9 @@
             {
               "value": "3",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1
             }
           ]
@@ -1237,7 +1419,9 @@
             {
               "value": "3",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1
             }
           ]
@@ -1260,7 +1444,9 @@
             {
               "value": "3",
               "range": "18",
-              "types": ["Universal"],
+              "types": [
+                "Universal"
+              ],
               "duration": 1
             }
           ]
@@ -1276,7 +1462,9 @@
             {
               "value": "3",
               "range": "18",
-              "types": ["Universal"],
+              "types": [
+                "Universal"
+              ],
               "duration": 1
             }
           ]
@@ -1292,7 +1480,9 @@
             {
               "value": "3",
               "range": "18",
-              "types": ["Universal"],
+              "types": [
+                "Universal"
+              ],
               "duration": 1
             }
           ]
@@ -1308,7 +1498,9 @@
             {
               "value": "3",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1
             }
           ]
@@ -1324,7 +1516,9 @@
             {
               "value": "4",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1
             }
           ]
@@ -1340,228 +1534,10 @@
             {
               "value": "4",
               "range": "18",
-              "types": ["Augment"],
-              "duration": 1
-            }
-          ]
-        }
-      ]
-    },
-    "manifestation": {
-      "ref": "manifestation",
-      "name": "Manifestation",
-      "spells": [
-        {
-          "army": "wdg",
-          "number": "1",
-          "path": "thaumaturgy",
-          "ref": "smite_unbeliever",
-          "name": "Smite the Unbeliever",
-          "attribute": [
-            {
-              "path": "divination",
-              "ref": "guiding_light"
-            }
-          ],
-          "description": "<span class='cast_0'>⟨Immediately after successfully casting this spell, roll a D6.⟩</span> <span class='cast_1'>{Choose which effect to apply when casting the spell.}</span><ul> <li> <span class='cast_0'>⟨If 1–3 is rolled,⟩</span> the target suffers −1 Resilience.</li> <li> <span class='cast_0'>⟨If 4–6 is rolled,⟩</span> the target suffers −1 Strength and −1 Armour Penetration.</li></ul>",
-          "cast": [
-            {
-              "value": 6,
-              "range": 24,
-              "types": ["hex"],
-              "duration": 1
-            },
-            {
-              "value": "9",
-              "range": "24",
-              "types": ["hex"],
-              "duration": 1
-            }
-          ]
-        },
-        {
-          "number": "2",
-          "army": "wdg",
-          "ref": "breath_corruption",
-          "path": "occultism",
-          "attribute": [
-            {
-              "path": "divination",
-              "ref": "guiding_light"
-            }
-          ],
-          "name": "Breath of Corruption",
-          "description": "The target gains Breath Attack (Magical Attacks, Toxic Attacks).<br><span class='cast_1'>{This spell may only target Characters, Champions, and single model units.}</span><br><span class='cast_amp'>⟨⟨If the Breath Attack is used as a Shooting Attack, its range is increased to 18.⟩⟩</span>",
-          "cast": [
-            {
-              "value": 6,
-              "range": 0,
-              "types": ["focused"],
-              "duration": 1,
-              "effects": [
-                {
-                  "type": "special"
-                }
-              ]
-            },
-            {
-              "value": 9,
-              "range": 12,
-              "types": ["focused", "augment"],
-              "duration": 1,
-              "effects": [
-                {
-                  "type": "special"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "number": "3",
-          "army": "wdg",
-          "ref": "pentagram_pain",
-          "path": "occultism",
-          "name": "Pentagram of Pain",
-          "attribute": [
-            {
-              "path": "divination",
-              "ref": "guiding_light"
-            }
-          ],
-          "description": "The target suffers D6 hits with Strength 4, Armour Penetration 1, and Magical Attacks.<br><span class='cast_1'>{The Caster's unit is unaffected}</span><br><span class='cast_amp'>⟨⟨If one or more unsaved wounds are caused with this spell, the Caster Recovers 1 Health Point.⟩⟩</span>",
-          "cast": [
-            {
-              "value": 5,
-              "range": 24,
-              "types": ["hex"],
-              "duration": 0,
-              "effects": [
-                {
-                  "type": "damage"
-                }
-              ]
-            },
-            {
-              "value": 6,
-              "range": 12,
-              "types": ["aura", "universal"],
-              "duration": 0,
-              "effects": [
-                {
-                  "type": "damage"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "number": "4",
-          "army": "wdg",
-          "ref": "marked_doom",
-          "path": "occultism",
-          "attribute": [
-            {
-              "path": "divination",
-              "ref": "guiding_light"
-            }
-          ],
-          "name": "Marked for Doom",
-          "description": "The target suffers 1 hit with Strength 10, Armour Penetration 10, Magical Attacks, and Multiple Wounds (D3).<br><span class='cast_amp'>⟨⟨If the target is within 12″ of the Caster, choose a single Character or Champion joined to the target unit. That model suffers the hit.⟩⟩</span>",
-          "cast": [
-            {
-              "value": 9,
-              "range": 24,
-              "types": ["damage", "direct", "hex"],
-              "duration": 0,
-              "effects": [
-                {
-                  "type": "damage"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "number": "5",
-          "army": "wdg",
-          "ref": "grave_calls",
-          "path": "occultism",
-          "attribute": [
-            {
-              "path": "divination",
-              "ref": "guiding_light"
-            }
-          ],
-          "name": "The Grave Calls",
-          "description": "The target suffers 2D6 hits with Strength 5, Armour Penetration 2, and Magical Attacks.<br><span class='cast_amp'>⟨⟨The hits gain +1 Strength and +1 Armour Penetration.⟩⟩</span>",
-          "cast": [
-            {
-              "value": 11,
-              "range": 12,
-              "types": ["damage", "direct", "hex"],
-              "duration": 0,
-              "effects": [
-                {
-                  "type": "damage"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "number": "6",
-          "army": "wdg",
-          "ref": "rot_within",
-          "name": "The Rot Within",
-          "path": "occultism",
-          "attribute": [
-            {
-              "path": "divination",
-              "ref": "guiding_light"
-            }
-          ],
-          "description": "The target suffers −1 Offensive Skill and −1 Defensive Skill. <span class='cast_amp'>⟨⟨The Caster gains +1 Offensive Skill and +1 Defensive Skill.⟩⟩</span>",
-          "cast": [
-            {
-              "value": 6,
-              "range": 24,
-              "types": ["hex"],
-              "duration": 2,
-              "effects": [
-                {
-                  "type": "debuff",
-                  "rule": {
-                    "id": "Of",
-                    "value": -1
-                  }
-                },
-                {
-                  "type": "debuff",
-                  "rule": {
-                    "id": "Df",
-                    "value": -1
-                  }
-                }
+              "types": [
+                "Augment"
               ],
-              "ampeffects": [
-                {
-                  "type": "buff",
-                  "rule": {
-                    "id": "Of",
-                    "value": 1
-                  },
-                  "target": "caster"
-                },
-                {
-                  "type": "buff",
-                  "rule": {
-                    "id": "Df",
-                    "value": 1
-                  },
-                  "target": "caster"
-                }
-              ]
+              "duration": 1
             }
           ]
         }
@@ -1582,7 +1558,9 @@
             {
               "value": "5",
               "range": "24",
-              "types": ["Universal"],
+              "types": [
+                "Universal"
+              ],
               "duration": 1
             }
           ]
@@ -1599,7 +1577,10 @@
             {
               "value": "8",
               "range": "18",
-              "types": ["Augment", "Replicable"],
+              "types": [
+                "Augment",
+                "Replicable"
+              ],
               "duration": 1
             }
           ]
@@ -1612,13 +1593,16 @@
           "name": "Arise!",
           "fontSize": 10,
           "rep": true,
-          "description": "Choose one of the following effects when resolving the spell*:\t\t\t<br>&nbsp;&nbsp;&bull;  The Rank-and-File part of the target <span class=\"textbf\">Raises</span> HP equal to its Resurrected value. \n\t\t<br>&nbsp;&nbsp;&bull;  An Attachable Model in the target <span class=\"textbf\">Recovers</span> HP equal to its Resurrected value. \n\t<br>\tHeight 4--5 models with Exclusive, and Attachable Models cannot <span class=\"textbf\">Recover</span> more than 2 HP from this spell each Magic Phase.",
+          "description": "Choose one of the following effects, for each target:\t\t\t<br>&nbsp;&nbsp;&bull;  The Rank-and-File part of the target <span class=\"textbf\">Raises</span> HP equal to its Rsr value. \n\t\t<br>&nbsp;&nbsp;&bull;  One Attachable Model in the target <span class=\"textbf\">Recovers</span> HP equal to its Rsr value. \n\t<br>\tThe following models cannot <span class=\"textbf\">Recover</span> more than 2 HP from this spell each Magic Phase:\n\t\n\t\t<br>&nbsp;&nbsp;&bull;  Height 4--5 models with Solitary\n\t\t<br>&nbsp;&nbsp;&bull;  Attachable Models\n\t<br>",
           "cast": [
             {
               "value": "6",
               "range": "18",
-              "types": ["Augment", "Replicable"],
-              "duration": 1,
+              "types": [
+                "Augment",
+                "Replicable"
+              ],
+              "duration": 0,
               "effects": [
                 {
                   "type": "special"
@@ -1638,7 +1622,10 @@
             {
               "value": "10",
               "range": "18",
-              "types": ["Damage*", "Hex"],
+              "types": [
+                "Damage*",
+                "Hex"
+              ],
               "duration": 0
             }
           ]
@@ -1649,7 +1636,7 @@
           "dispNumber": "H",
           "ref": "guile_and_fury",
           "name": "Guile and Fury",
-          "description": "Can be cast in one of two versions:\n    <span class=\"textbf\">Augment</span>:\n\tCannot be cast by a Goblin.\n\tThe target gains <span class=\"textbf\">+1</span> to hit, and its Charge Range, Flee Distance, and Pursuit Distance are all <span class=\"textbf\">increased</span> by 1\".<br><br><span class=\"textbf\">Hex</span>:\n\tCannot be cast by an Orc.\n    The target suffers <span class=\"textbf\">-1</span> to hit, and its Charge Range, Flee Distance, and Pursuit Distance are <span class=\"textbf\">reduced</span> by 1\".",
+          "description": "Can be cast in one of two versions:\n    <span class=\"textbf\">Augment</span>:\n\tCannot be cast by a Goblin.\n\tThe target gains <span class=\"textbf\">+1</span> to hit, and its Charge Range, Flee Distance, and Pursuit Distance are <span class=\"textbf\">increased</span> by 1\".<br><br><span class=\"textbf\">Hex</span>:\n\tCannot be cast by an Orc.\n    The target suffers <span class=\"textbf\">-1</span> to hit, and its Charge Range, Flee Distance, and Pursuit Distance are <span class=\"textbf\">reduced</span> by 1\".",
           "cast": [
             {
               "value": "8",
@@ -1664,7 +1651,9 @@
               {
                 "value": 9,
                 "range": 24,
-                "types": ["hex"],
+                "types": [
+                  "hex"
+                ],
                 "duration": 1
               }
             ]
@@ -1681,7 +1670,9 @@
             {
               "value": "6",
               "range": "24",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1
             }
           ]
@@ -1697,7 +1688,9 @@
             {
               "value": "5",
               "range": "24",
-              "types": ["Augment/Hex"],
+              "types": [
+                "Augment/Hex"
+              ],
               "duration": 1
             }
           ]
@@ -1713,7 +1706,9 @@
             {
               "value": "6",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1
             }
           ]
@@ -1730,8 +1725,13 @@
             {
               "value": "6",
               "range": "24",
-              "types": ["Damage", "Hex", "Missile", "Replicable"],
-              "duration": 1
+              "types": [
+                "Damage",
+                "Hex",
+                "Missile",
+                "Replicable"
+              ],
+              "duration": 0
             }
           ]
         },
@@ -1745,7 +1745,9 @@
           "cast": [
             {
               "value": "9",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1,
               "range": "24"
             }
@@ -1757,11 +1759,13 @@
           "dispNumber": "H",
           "ref": "favour_meladys",
           "name": "Favour of Meladys",
-          "description": "=1pt\nThe player gains 2 Protection Tokens which are removed when the spell ends.\nWhen a friendly unit within 18\" of the Caster suffers a wound, after Armour Saves have been taken, before any Special Saves are taken, you may discard a Protection Token and ignore the wound applying the following rules:\n    <br>&nbsp;&nbsp;&bull;  Rank-and-File models of Height 1 ignore up to 2 wounds per token, provided they are suffered simultaneously.    <br>&nbsp;&nbsp;&bull;  Characters, and models of Height 4 or 5, can each only ignore a single wound per Phase.    <br>&nbsp;&nbsp;&bull;  Wounds from attacks with <span class=\"textbf\">Multiple Wounds</span> are not ignored, they inflict one less wound instead.<br>",
+          "description": "=1pt\nThe target  gains 2 Protection Tokens which are removed when the spell ends.\nWhen a friendly unit within 18\" of the target suffers a wound, after Armour Saves have been taken, before any Special Saves are taken, the target may discard a Protection Token and ignore the wound applying the following rules:\n    <br>&nbsp;&nbsp;&bull;  Rank-and-File models of Height 1 ignore up to 2 wounds per token, provided they are suffered simultaneously.    <br>&nbsp;&nbsp;&bull;  Characters, and models of Height 4 or 5, can each only ignore a single wound per Phase.    <br>&nbsp;&nbsp;&bull;  Wounds from attacks with <span class=\"textbf\">Multiple Wounds</span> are not ignored, they inflict one less wound instead.<br>",
           "cast": [
             {
               "value": "10",
-              "types": ["Caster"],
+              "types": [
+                "Caster"
+              ],
               "duration": 1
             }
           ]
@@ -1777,7 +1781,9 @@
             {
               "value": "8",
               "range": "36",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 1
             }
           ]
@@ -1792,7 +1798,9 @@
           "cast": [
             {
               "value": "9",
-              "types": ["Caster"],
+              "types": [
+                "Caster"
+              ],
               "duration": 0
             }
           ]
@@ -1808,7 +1816,10 @@
             {
               "value": "6",
               "range": "36",
-              "types": ["Augment", "Replicable"],
+              "types": [
+                "Augment",
+                "Replicable"
+              ],
               "duration": 1
             }
           ]
@@ -1819,12 +1830,14 @@
           "dispNumber": "H",
           "ref": "children_umi",
           "name": "Children of Umi",
-          "description": "All Melee Attacks against the target suffer -1 to wound.",
+          "description": "All Melee Attacks allocated against the target suffer -1 to wound.",
           "cast": [
             {
               "value": "6",
               "range": "18",
-              "types": ["Augment"],
+              "types": [
+                "Augment"
+              ],
               "duration": 1
             }
           ]
@@ -1836,8 +1849,10 @@
           "cast": [
             {
               "range": "12",
-              "types": ["Augment"],
-              "duration": 0,
+              "types": [
+                "Augment"
+              ],
+              "duration": 1,
               "value": "9"
             }
           ],
@@ -1850,7 +1865,9 @@
           "cast": [
             {
               "range": "24",
-              "types": ["Hex"],
+              "types": [
+                "Hex"
+              ],
               "duration": 0,
               "value": "7"
             }
@@ -1870,7 +1887,9 @@
           "cast": [
             {
               "range": "*",
-              "types": ["augment"],
+              "types": [
+                "augment"
+              ],
               "duration": 0
             }
           ]
@@ -1903,7 +1922,9 @@
             {
               "value": 6,
               "range": 24,
-              "types": ["augment"],
+              "types": [
+                "augment"
+              ],
               "duration": 1
             }
           ]
@@ -1925,7 +1946,9 @@
             {
               "value": "",
               "range": 8,
-              "types": ["augment"],
+              "types": [
+                "augment"
+              ],
               "duration": 1
             }
           ]
@@ -1941,7 +1964,9 @@
             {
               "value": "",
               "range": 8,
-              "types": ["augment"],
+              "types": [
+                "augment"
+              ],
               "duration": 1
             }
           ]
@@ -1957,7 +1982,9 @@
             {
               "value": "",
               "range": 8,
-              "types": ["augment"],
+              "types": [
+                "augment"
+              ],
               "duration": 1
             }
           ]
@@ -1973,7 +2000,9 @@
             {
               "value": "",
               "range": 8,
-              "types": ["augment"],
+              "types": [
+                "augment"
+              ],
               "duration": 1
             }
           ]
@@ -1997,7 +2026,10 @@
             {
               "value": 5,
               "range": 0,
-              "types": ["caster_unit", "augment"],
+              "types": [
+                "caster_unit",
+                "augment"
+              ],
               "duration": 1
             }
           ]
@@ -2015,7 +2047,10 @@
             {
               "value": 5,
               "range": 0,
-              "types": ["caster_unit", "augment"],
+              "types": [
+                "caster_unit",
+                "augment"
+              ],
               "duration": 1
             }
           ]
@@ -2033,7 +2068,10 @@
             {
               "value": 5,
               "range": 0,
-              "types": ["caster_unit", "augment"],
+              "types": [
+                "caster_unit",
+                "augment"
+              ],
               "duration": 1
             }
           ]
@@ -2051,7 +2089,10 @@
             {
               "value": 5,
               "range": 6,
-              "types": ["aura", "augment"],
+              "types": [
+                "aura",
+                "augment"
+              ],
               "duration": 1
             }
           ]
@@ -2069,7 +2110,10 @@
             {
               "value": 5,
               "range": 6,
-              "types": ["aura", "augment"],
+              "types": [
+                "aura",
+                "augment"
+              ],
               "duration": 1
             }
           ]
@@ -2087,7 +2131,10 @@
             {
               "value": 5,
               "range": 6,
-              "types": ["aura", "augment"],
+              "types": [
+                "aura",
+                "augment"
+              ],
               "duration": 1
             }
           ]

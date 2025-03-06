@@ -6,7 +6,7 @@
   },
   "short": "id",
   "version": "2023 beta2",
-  "nrversion": 394,
+  "nrversion": 396,
   "playable": 1,
   "id": 8,
   "include": [
@@ -480,7 +480,7 @@
           "type": "check",
           "name": "Ring of Desiccation",
           "cost": 50,
-          "description": "\tWhen Choosing Equipment and Abilities at the start of a Round of Combat, each enemy unit in contact with the wearer's model gains one Incendiary Marker.",
+          "description": "\tWhen Choosing Equipment and Abilities, each enemy unit in contact with the wearer's model gains Incendiary.",
           "refs": [
             "id_special_item",
             "ring of desiccation_9k5mrpkc"
@@ -1522,11 +1522,11 @@
                     },
                     {
                       "option_id": "dnwe90f32dsdsfn3490nf9nfee3",
-                      "name": "Exclusive",
+                      "name": "Solitary",
                       "type": "check",
                       "cost": 20,
                       "refs": [
-                        "exclusive"
+                        "solitary"
                       ]
                     },
                     {
@@ -1557,7 +1557,7 @@
                       "option_id": "3g9wu2byvzkvs6pvjqelk",
                       "cost": 0,
                       "hasNotOption": [
-                        "exclusive"
+                        "solitary"
                       ]
                     },
                     {
@@ -1565,7 +1565,7 @@
                       "name": "Taurukh Ritual",
                       "cost": 15,
                       "hasNotOption": [
-                        "exclusive"
+                        "solitary"
                       ],
                       "option_id": "4q4vtiq62lsgk69kasqd7j",
                       "refs": [
@@ -2245,7 +2245,7 @@
                 ]
               },
               "refs": [
-                "exclusive",
+                "solitary",
                 "not_a_leader",
                 "lamassuScholar",
                 "wizard",
@@ -2439,7 +2439,8 @@
                             {
                               "type": "check",
                               "name": "Pistol (4+) and Spear",
-                              "cost": 3,
+                              "parsername": "Pistol (4+) and Spear",
+                              "cost": 4,
                               "option_id": "zp6nbyxiabahfhnpvw3dd",
                               "refs": [
                                 {
@@ -2722,7 +2723,7 @@
                             {
                               "type": "check",
                               "name": "Spear",
-                              "cost": 0,
+                              "cost": 1,
                               "option_id": "8w54t3dp0srpjtaf8pamz7"
                             },
                             {
@@ -2923,7 +2924,8 @@
                 "tag_Dwarf",
                 "tag_Kadim",
                 "tag_Mount",
-                "tag_Construct"
+                "tag_Construct",
+                "tag_Metal Armour"
               ],
               "unit_id": "kadim_chariot",
               "armyHasNotOption": [],
@@ -3259,7 +3261,7 @@
               "options": [],
               "refs": [
                 "infernalBastion",
-                "exclusive",
+                "solitary",
                 "tag_Dwarf",
                 "tag_Metal Armour",
                 "tag_Construct",
@@ -3292,7 +3294,7 @@
               "refs": [
                 "gunnary_team",
                 "not_a_leader",
-                "exclusive",
+                "solitary",
                 "tag_Dwarf",
                 "tag_Metal Armour"
               ],
@@ -3574,7 +3576,8 @@
               "name": "Kadim Titan",
               "refs": [
                 "kadim_titan",
-                "tag_Kadim"
+                "tag_Kadim",
+                "tag_Metal Armour"
               ],
               "cost": 500,
               "armyHasNotOption": [],
@@ -3850,7 +3853,7 @@
                 "mount",
                 "bull_of_shamut_mount_unit",
                 "flyer",
-                "exclusive",
+                "solitary",
                 "tag_Mount",
                 "tag_Beast"
               ],
@@ -3908,7 +3911,7 @@
                 "mount",
                 "infernal_bastion",
                 "infernalBastion_mount_unit",
-                "exclusive",
+                "solitary",
                 "tag_Dwarf",
                 "tag_Metal Armour",
                 "tag_Construct",
@@ -3946,7 +3949,8 @@
                 "kadimChariot",
                 "tag_Kadim",
                 "tag_Mount",
-                "tag_Construct"
+                "tag_Construct",
+                "tag_Metal Armour"
               ],
               "unit_id": "kadim_chariot_mount",
               "invisible": true,
