@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 344,
+  "nrversion": 345,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -59,12 +59,16 @@
           "rules": [
             {
               "id": "devastating_charge",
-              "params": ["+2 Adv"]
+              "params": [
+                "+2 Adv"
+              ]
             }
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": [
             {
               "id": "hard_target"
@@ -81,11 +85,15 @@
           "basesize": "100x150"
         },
         {
-          "affects": [1],
+          "affects": [
+            1
+          ],
           "statlineNumbers": 4
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "+2"
           }
@@ -99,14 +107,18 @@
         {
           "rules": {
             "id": "stomp_attacks",
-            "params": ["D3"]
+            "params": [
+              "D3"
+            ]
           }
         },
         {
           "basesize": "50x100"
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Re": "=5"
           }
@@ -179,7 +191,9 @@
         {
           "rules": {
             "id": "petrifying_stare_attack",
-            "params": ["params"]
+            "params": [
+              "params"
+            ]
           }
         }
       ]
@@ -260,7 +274,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "AP": "+2",
             "At": "+2"
@@ -331,7 +347,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["5+"]
+            "params": [
+              "5+"
+            ]
           },
           "special": "moithirss_mirror"
         }
@@ -361,13 +379,17 @@
         {
           "rules": {
             "id": "petrifying_stare",
-            "params": ["One Model Only"]
+            "params": [
+              "One Model Only"
+            ]
           }
         }
       ],
       "ennemymod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "rollmodifiers": {
             "discipline": "reroll_succeed"
           }
@@ -430,7 +452,9 @@
           "rules": {
             "id": "artistry_of_death"
           },
-          "loses_rules": ["ruthless_efficiency"],
+          "loses_rules": [
+            "ruthless_efficiency"
+          ],
           "conditions": [
             {
               "or": [
@@ -462,7 +486,9 @@
       "def": "/subsection{mask_of_the_war_crow}",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rollmodifiers": {
             "to_wound": "reroll_[1]"
           },
@@ -483,10 +509,14 @@
       "def": "/subsection{beast_breaker}",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rules": {
             "id": "devastating_charge",
-            "params": ["Hatred"]
+            "params": [
+              "Hatred"
+            ]
           },
           "conditions": [
             {
@@ -507,10 +537,14 @@
         {
           "rules": [
             {
-              "id": ["frenzy"]
+              "id": [
+                "frenzy"
+              ]
             },
             {
-              "id": ["battle_focus"]
+              "id": [
+                "battle_focus"
+              ]
             }
           ],
           "conditions": [
@@ -589,8 +623,14 @@
               "id": "brood_rivalry"
             },
             {
-              "id": ["minimized"],
-              "params": ["Break Tests", "Fear Tests", "Panic Tests"]
+              "id": [
+                "minimized"
+              ],
+              "params": [
+                "Break Tests",
+                "Fear Tests",
+                "Panic Tests"
+              ]
             }
           ]
         }
@@ -601,7 +641,9 @@
       "def": "The model's HP are <span class=\"textbf\">set</span> to 9, its base size is changed to 75×100 mm, and its rolls for the number of hits for <span class=\"textbf\">Stomp Attack</span> is <span class=\"textbf\">Maximised</span>.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=8"
           }
@@ -649,11 +691,15 @@
             },
             {
               "id": "hard_target",
-              "params": ["1"]
+              "params": [
+                "1"
+              ]
             },
             {
               "id": "extra_support",
-              "params": ["2"]
+              "params": [
+                "2"
+              ]
             }
           ]
         }
@@ -698,7 +744,9 @@
       "def": "The model part with Goblin gains Fury, First Strike(Hatred), and gains a Great Weapon.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": [
             {
               "id": "great_weapon"
@@ -718,7 +766,9 @@
       "def": "<span class=\"textbf\">Afflict(-3 Off)</span>",
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-1",
             "AP": "-1"
@@ -731,7 +781,9 @@
       "def": "The model gains Hard Target(1), Light Troops, Scout, Skirmisher, Strider.",
       "mod": [
         {
-          "loses_rules": ["scoring"]
+          "loses_rules": [
+            "scoring"
+          ]
         },
         {
           "rules": {
@@ -771,13 +823,17 @@
           "basesize": "100x150"
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "+2"
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "statlineNumbers": 8
         }
       ]
@@ -787,20 +843,28 @@
       "def": "The model gains Regeneration(5+), Random Movement(3D6\").",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": [
             {
               "id": "fortitude",
-              "params": ["6+"]
+              "params": [
+                "6+"
+              ]
             }
           ]
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "rules": [
             {
               "id": "random_movement",
-              "params": ["3D6"]
+              "params": [
+                "3D6"
+              ]
             }
           ],
           "stats": {
@@ -815,7 +879,9 @@
       "def": "The model gains +2 Arm.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+2"
           }
@@ -835,11 +901,15 @@
           ]
         },
         {
-          "affects": [1],
+          "affects": [
+            1
+          ],
           "rules": [
             {
               "id": "impact_hits",
-              "params": ["D6"]
+              "params": [
+                "D6"
+              ]
             }
           ]
         }
@@ -878,7 +948,9 @@
       "type": "protection",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+3"
           }
@@ -886,7 +958,9 @@
         {
           "rules": {
             "id": "strider",
-            "params": ["Ruins"]
+            "params": [
+              "Ruins"
+            ]
           }
         }
       ]
@@ -904,7 +978,9 @@
         {
           "rules": {
             "id": "strider",
-            "params": ["Water Terrain"]
+            "params": [
+              "Water Terrain"
+            ]
           }
         }
       ]
@@ -917,13 +993,17 @@
         {
           "rules": {
             "id": "strider",
-            "params": ["Ruins"]
+            "params": [
+              "Ruins"
+            ]
           }
         },
         {
           "rules": {
             "id": "magic_resistance",
-            "params": ["3"]
+            "params": [
+              "3"
+            ]
           }
         }
       ]
@@ -935,14 +1015,18 @@
         {
           "rules": {
             "id": "stomp_attacks",
-            "params": ["D3"]
+            "params": [
+              "D3"
+            ]
           }
         },
         {
           "basesize": "75x100"
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=5"
           }
@@ -1000,7 +1084,9 @@
       "defaultSelection": true,
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "At": "+1"
           },
@@ -1056,7 +1142,9 @@
       "def": "\t+1 HP and Res is <span class=\"textbf\">set</span> to 6.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Re": "=6",
             "HP": "+1"
@@ -1072,7 +1160,9 @@
           "basesize": "40x40"
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Hgt": "=3",
             "Ma": "=6"
@@ -1127,7 +1217,9 @@
         {
           "rules": {
             "id": "strider",
-            "params": ["Forest"]
+            "params": [
+              "Forest"
+            ]
           }
         }
       ]
@@ -1138,7 +1230,9 @@
       "aura": true,
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "special": "green_tide"
         }
       ]
@@ -1149,7 +1243,9 @@
       "aura": true,
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "At": "+1",
             "AP": "+1",
@@ -1176,7 +1272,9 @@
       "def": "The model's HP are <span class=\"textbf\">set</span> to 9, its base size is changed to 75×100 mm, and the roll for the number of hits it does with its <span class=\"textbf\">Stomp Attack</span> is Maximised.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=8"
           }
@@ -1205,7 +1303,9 @@
       "type": "protection",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": {
             "id": "parry"
           }
@@ -1217,7 +1317,9 @@
       "def": "<i> - Melee Weapon</i><br/><br/>+2 Agi. Once per Melee Phase, when Choosing Equipment and Abilities in a Combat within 6\" of the wielder, you may activate the following ability:<br>Choose a single friendly unit within 6\" of the wielder (<i>which can be the wielder itself</i>). The chosen unit gains Flaming Attacks(Melee), Magical Attacks(Melee) until the end of the Melee Phase.<br><br>\t+2 Agi. Once per Melee Phase, when Choosing Equipment and Abilities in a Combat within 6\" of the wielder, you may activate the following ability:<br><br>\tChoose a single friendly unit within 6\" of the wielder (<i>which can be the wielder itself</i>). The chosen unit gains Flaming Attacks(Melee), Magical Attacks(Melee) until the end of the Melee Phase.",
       "type": "cc_weapon",
       "stats": {
-        "affects": [0],
+        "affects": [
+          0
+        ],
         "Ag": "+2"
       },
       "mod": [
@@ -1266,7 +1368,9 @@
       "type": "universal",
       "mod": [
         {
-          "affects": ["special"],
+          "affects": [
+            "special"
+          ],
           "stats": {
             "At": "+2D3"
           },
@@ -1309,12 +1413,16 @@
             },
             {
               "id": "id-volcanic_embrace",
-              "params": ["D3+2"]
+              "params": [
+                "D3+2"
+              ]
             }
           ]
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "=14"
           }
@@ -1332,7 +1440,9 @@
             },
             {
               "id": "id-volcanic_embrace",
-              "params": ["2"]
+              "params": [
+                "2"
+              ]
             }
           ]
         }
@@ -1358,16 +1468,22 @@
           "rules": [
             {
               "id": "aegis",
-              "params": ["4+"]
+              "params": [
+                "4+"
+              ]
             },
             {
               "id": "volcanic_embrace",
-              "params": ["1"]
+              "params": [
+                "1"
+              ]
             }
           ]
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ad": "=4",
             "Ma": "=12"
@@ -1412,16 +1528,22 @@
       "def": "<i>Max. 2 models/army.</i><br><br>\tApply the following to the model:\t\t\t<br>&nbsp;&nbsp;&bull;  It gains <span class=\"textbf\">Impact Hits(1)</span>, <span class=\"textbf\">Swiftstride</span>, Centauroid, and its Height is <span class=\"textbf\">set</span> to 2.<br>\t\t<br>&nbsp;&nbsp;&bull;  Its Cha and Mob are both <span class=\"textbf\">set</span> to 7\".<br>\t\t<br>&nbsp;&nbsp;&bull;  Its base size is changed to 25×50mm.<br>\t<br><br>\tApply the following to the model:\t\t\t<br>&nbsp;&nbsp;&bull;  It gains <span class=\"textbf\">Impact Hits(1)</span>, <span class=\"textbf\">Swiftstride</span>, Centauroid, and its Height is <span class=\"textbf\">set</span> to 2.<br>\t\t<br>&nbsp;&nbsp;&bull;  Its Cha and Mob are both <span class=\"textbf\">set</span> to 7\".<br>\t\t<br>&nbsp;&nbsp;&bull;  Its base size is changed to 25×50mm.<br>\t",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": [
             {
               "id": "impact_hits",
-              "params": ["1"]
+              "params": [
+                "1"
+              ]
             }
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": [
             {
               "id": "cannot_be_stomped"
@@ -1433,7 +1555,9 @@
           "unittype": "Beast"
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "rules": [
             {
               "id": "tall"
@@ -1455,12 +1579,17 @@
           "rules": [
             {
               "id": "id-volcanic_embrace_attack",
-              "params": ["params"]
+              "params": [
+                "params"
+              ]
             }
           ]
         },
         {
-          "affects": [0, "special"],
+          "affects": [
+            0,
+            "special"
+          ],
           "rules": [
             {
               "id": "flaming_attacks"
@@ -1482,7 +1611,9 @@
           "rules": [
             {
               "id": "resistance",
-              "params": ["Flaming Attacks"]
+              "params": [
+                "Flaming Attacks"
+              ]
             }
           ]
         }
@@ -1586,7 +1717,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "@6"
           }
@@ -1605,7 +1738,9 @@
           "rules": [
             {
               "id": "multiple_wounds",
-              "params": ["D3"]
+              "params": [
+                "D3"
+              ]
             }
           ],
           "conditions": [
@@ -1627,7 +1762,9 @@
         {
           "rules": {
             "id": "volcanic_embrace",
-            "params": ["D3"]
+            "params": [
+              "D3"
+            ]
           }
         }
       ]
@@ -1638,7 +1775,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "Of": "@A",
             "AP": "@10",
@@ -1646,7 +1785,9 @@
           },
           "rules": {
             "id": "multiple_wounds",
-            "params": ["2"]
+            "params": [
+              "2"
+            ]
           },
           "special": "eye_of_the_bull"
         }
@@ -1658,8 +1799,12 @@
       "type": "armour_enchant",
       "mod": [
         {
-          "affects": [0],
-          "loses_rules": ["twohanded"]
+          "affects": [
+            0
+          ],
+          "loses_rules": [
+            "twohanded"
+          ]
         },
         {
           "rules": [
@@ -1671,7 +1816,10 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["+1", "<5"]
+            "params": [
+              "+1",
+              "<5"
+            ]
           },
           "conditions": [
             {
@@ -1690,7 +1838,9 @@
       "type": "armour_enchant",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+3"
           }
@@ -1714,11 +1864,15 @@
       "def": "\tThe wearer gains Aegis(5+, against Grind Attack, Impact Hits, Magical Attacks, and Stomp Attack), Terror, Hatred.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": [
             {
               "id": "aegis",
-              "params": ["5+"]
+              "params": [
+                "5+"
+              ]
             }
           ],
           "conditions": [
@@ -1731,11 +1885,15 @@
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": [
             {
               "id": "aegis",
-              "params": ["5+"]
+              "params": [
+                "5+"
+              ]
             }
           ],
           "conditions": [
@@ -1748,7 +1906,9 @@
           ]
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rollmodifiers": {
             "to_hit": "reroll_failed"
           }
@@ -1789,7 +1949,9 @@
       "mod": [
         {
           "type": "universal",
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "*1"
           }
@@ -1797,7 +1959,9 @@
         {
           "rules": {
             "id": "breat_attack",
-            "params": ["toxic_attacks"]
+            "params": [
+              "toxic_attacks"
+            ]
           }
         }
       ]
@@ -1841,7 +2005,9 @@
       "aura": true,
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-3"
           }
@@ -1849,8 +2015,12 @@
       ],
       "ennemymod": [
         {
-          "affects": ["offense"],
-          "loses_rules": ["flaming_attacks"]
+          "affects": [
+            "offense"
+          ],
+          "loses_rules": [
+            "flaming_attacks"
+          ]
         }
       ]
     },
@@ -1859,11 +2029,15 @@
       "def": "The model's Def, Off, and Agi are <span class=\"textbf\">set</span> to twice the model's current number of HP, at the start of each Agility Step. ",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "special": "falling_star"
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "special": "falling_star"
         }
       ]
@@ -1878,7 +2052,9 @@
       "type": "protection",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "special": "acid_blood"
         }
       ]
@@ -1899,7 +2075,10 @@
         {
           "rules": {
             "id": "area_attack",
-            "params": ["1", "5"]
+            "params": [
+              "1",
+              "5"
+            ]
           },
           "special": "razor_tentacles",
           "conditions": [
@@ -1928,7 +2107,9 @@
         {
           "rules": {
             "id": "tightening_grasp_attack",
-            "params": ["1"]
+            "params": [
+              "1"
+            ]
           }
         }
       ]
@@ -1946,20 +2127,30 @@
           "height": "Gigantic"
         },
         {
-          "affects": ["global"],
-          "loses_rules": ["rulebook-war_platform"]
+          "affects": [
+            "global"
+          ],
+          "loses_rules": [
+            "rulebook-war_platform"
+          ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=9"
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": {
             "id": "stomp_attacks",
-            "params": ["D6"]
+            "params": [
+              "D6"
+            ]
           }
         }
       ]
@@ -1983,7 +2174,10 @@
           "rules": [
             {
               "id": "fly",
-              "params": ["8\"", "16\""]
+              "params": [
+                "8\"",
+                "16\""
+              ]
             },
             {
               "id": "light_troops"
@@ -2045,7 +2239,9 @@
         {
           "rules": {
             "id": "multiple_wounds",
-            "params": ["2"]
+            "params": [
+              "2"
+            ]
           },
           "conditions": [
             {
@@ -2075,29 +2271,37 @@
         },
         {
           "rules": {
-            "id": "solitary"
+            "id": "exclusive"
           }
         },
         {
           "rules": {
             "id": "stomp_attacks",
-            "params": ["D6"]
+            "params": [
+              "D6"
+            ]
           }
         },
         {
           "rules": {
             "id": "grind_attack",
-            "params": ["5"]
+            "params": [
+              "5"
+            ]
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=8"
           }
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ad": "=7",
             "Ma": "=7",
@@ -2115,7 +2319,9 @@
       "def": "Changes to the model's profile:<br>&nbsp;&nbsp;&bull;  Base size changed to <span class=\"textbf\">100×100mm</span>.<br>&nbsp;&nbsp;&bull;  HP <span class=\"textbf\">set</span> to <span class=\"textbf\">6</span>.<br>&nbsp;&nbsp;&bull;  Number of Tillers and Hellsteeds is <span class=\"textbf\">set</span> to <span class=\"textbf\">(3)</span>.<br>&nbsp;&nbsp;&bull;  Tillers lose <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/smother\">Smother(1)</nuxt-link></span> and gain <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/smother\">Smother(2)</nuxt-link></span>.<br>&nbsp;&nbsp;&bull;  Chassis gains <span class=\"textbf\">Impact Hits(3D3)</span>.<br>&nbsp;&nbsp;&bull;  Max. 3 models/army.<br>&nbsp;&nbsp;&bull;  Single model.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=6"
           }
@@ -2127,18 +2333,26 @@
           }
         },
         {
-          "affects": [2],
+          "affects": [
+            2
+          ],
           "rules": {
             "id": "impact_hits",
-            "params": ["3D3"]
+            "params": [
+              "3D3"
+            ]
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "statlineNumbers": 3
         },
         {
-          "affects": [1],
+          "affects": [
+            1
+          ],
           "statlineNumbers": 3
         }
       ]
@@ -2148,7 +2362,9 @@
       "def": "Changes to the model's profile:<br>&nbsp;&nbsp;&bull;  Base size changed to <span class=\"textbf\">100×150mm</span>.<br>&nbsp;&nbsp;&bull;  HP <span class=\"textbf\">set</span> to <span class=\"textbf\">8</span>.<br>&nbsp;&nbsp;&bull;  Number of Tillers and Hellsteeds is <span class=\"textbf\">set</span> to <span class=\"textbf\">(4)</span>.<br>&nbsp;&nbsp;&bull;  Tillers lose <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/smother\">Smother(1)</nuxt-link></span> and gain <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/smother\">Smother(2)</nuxt-link></span>.<br>&nbsp;&nbsp;&bull;  Chassis gains <span class=\"textbf\">Impact Hits(4D3)</span>.<br>&nbsp;&nbsp;&bull;  Max. 2 models/army.<br>&nbsp;&nbsp;&bull;  Single model.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=8"
           }
@@ -2160,18 +2376,26 @@
           }
         },
         {
-          "affects": [2],
+          "affects": [
+            2
+          ],
           "rules": {
             "id": "impact_hits",
-            "params": ["4D3"]
+            "params": [
+              "4D3"
+            ]
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "statlineNumbers": 4
         },
         {
-          "affects": [1],
+          "affects": [
+            1
+          ],
           "statlineNumbers": 4
         }
       ]
@@ -2181,10 +2405,14 @@
       "def": "The model's Charge Range rolls towards units containing Height 5 are <span class=\"textbf\">Maximised</span>.<br><span class=\"textbf\">Impact Hits</span> gain <span class=\"textbf\">Multiple Wounds(D3, towards Height 5)</span>.",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rules": {
             "id": "multiple_wounds",
-            "params": ["D3"]
+            "params": [
+              "D3"
+            ]
           },
           "conditions": [
             {
@@ -2295,7 +2523,9 @@
       "def": "\tEnemy units in contact with one or more models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/writhing_nightmares\">Writhing Nightmares</nuxt-link> suffer -1 Dis.",
       "ennemymod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "Di": "-1"
         }
       ]
@@ -2318,13 +2548,17 @@
       "def": "\t+2 Arm, to a maximum of 3.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+2"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "<3"
           }
@@ -2336,7 +2570,9 @@
       "def": "\t+2\" Mob.",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "+2"
           }
@@ -2375,7 +2611,9 @@
       "def": "\t+1 Att.",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "At": "+1"
           }
@@ -2387,8 +2625,12 @@
       "def": "\t<span class=\"textbf\">Immune(Divine Attacks)</span>.",
       "ennemymod": [
         {
-          "affects": ["offense"],
-          "loses_rules": ["divine_attacks"]
+          "affects": [
+            "offense"
+          ],
+          "loses_rules": [
+            "divine_attacks"
+          ]
         }
       ]
     },
@@ -2407,7 +2649,9 @@
         {
           "rules": {
             "id": "hard_target",
-            "params": ["1"]
+            "params": [
+              "1"
+            ]
           }
         }
       ]
@@ -2443,7 +2687,9 @@
       "def": "    +1 AP.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "AP": "+1"
           }
@@ -2489,7 +2735,9 @@
       "selectable": true,
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "AP": "+1",
             "St": "+1"
@@ -2552,7 +2800,9 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+2 Agi"]
+            "params": [
+              "+2 Agi"
+            ]
           }
         }
       ]
@@ -2562,13 +2812,17 @@
       "def": "\t<span class=\"textbf\">Afflict(1 Def, 1 Off)</span>.",
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Of": "-1"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Df": "-1"
           }
@@ -2586,7 +2840,9 @@
         {
           "rules": {
             "id": "vanguard",
-            "params": ["6\""]
+            "params": [
+              "6\""
+            ]
           }
         }
       ]
@@ -2627,13 +2883,18 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["2+", "against Flaming Attacks"]
+            "params": [
+              "2+",
+              "against Flaming Attacks"
+            ]
           }
         },
         {
           "rules": {
             "id": "fortitude",
-            "params": ["@0"]
+            "params": [
+              "@0"
+            ]
           }
         }
       ]
@@ -2644,7 +2905,9 @@
       "type": "attack_attribute",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rules": {
             "id": "lightning_reflexes"
           }
@@ -2683,7 +2946,9 @@
       "require_parameters": 1,
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+params[0]"
           }
@@ -2696,7 +2961,9 @@
       "aura": true,
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rollmodifiers": {
             "to_wound": "reroll_failed"
           }
@@ -2708,7 +2975,9 @@
       "def": "/subsection{devour}",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "+params[0]"
           }
@@ -2746,7 +3015,9 @@
         {
           "rules": {
             "id": "strider",
-            "params": ["Forest"]
+            "params": [
+              "Forest"
+            ]
           }
         }
       ]
@@ -2756,7 +3027,9 @@
       "def": "The model's HP are <span class=\"textbf\">set</span> to 9, and its base size is changed to 75×100 mm, and its rolls for the number of <span class=\"textbf\">Stomp Attack</span> hits are <span class=\"textbf\">Maximised</span>.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=8"
           }
@@ -2802,7 +3075,9 @@
       "def": "<i> - Attack Attribute</i><br/><br/>Standard Melee Attacks that roll ‘6’ to wound gain <span class=\"textbf\">Multiple Wounds(D3)</span>. If at least one such attack causes HP loss, this model <span class=\"textbf\">Recovers</span> 1 HP at the end of the Agility Step (unless the model was removed as a casualty).<br><br>Standard Melee Attacks that roll ‘6’ to wound gain <span class=\"textbf\">Multiple Wounds(D3)</span>. If at least one such attack causes HP loss, this model <span class=\"textbf\">Recovers</span> 1 HP at the end of the Agility Step (unless the model was removed as a casualty).",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "special": "strength_from_flesh"
         }
       ]
@@ -2826,7 +3101,9 @@
       "ruletype": "Melee Weapon",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+1",
             "AP": "+1",
@@ -2835,7 +3112,9 @@
           "special": "strike_last"
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Df": "+2"
           }
@@ -2888,8 +3167,12 @@
           }
         },
         {
-          "affects": ["global"],
-          "loses_rules": ["scoring"]
+          "affects": [
+            "global"
+          ],
+          "loses_rules": [
+            "scoring"
+          ]
         }
       ]
     },
@@ -2903,7 +3186,10 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+1 Str", "+1 AP"]
+            "params": [
+              "+1 Str",
+              "+1 AP"
+            ]
           }
         }
       ]
@@ -2926,10 +3212,14 @@
           "test": {
             "Di": true
           },
-          "skiptest": ["crown_of_horns_aura"],
+          "skiptest": [
+            "crown_of_horns_aura"
+          ],
           "results": [
             {
-              "on": [true],
+              "on": [
+                true
+              ],
               "buffs": [
                 {
                   "id": "reroll_to_hit"
@@ -2957,7 +3247,10 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+2 Str", "+2 AP"]
+            "params": [
+              "+2 Str",
+              "+2 AP"
+            ]
           }
         }
       ]
@@ -3016,7 +3309,9 @@
         {
           "rules": {
             "id": "fortitude",
-            "params": ["4+"]
+            "params": [
+              "4+"
+            ]
           }
         },
         {
@@ -3036,7 +3331,9 @@
       "def": "\t<span class=\"textbf\">Afflict(-1 Agi)</span>.",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "conditions": [
             {
               "stats": {
@@ -3049,7 +3346,9 @@
       ],
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-1"
           }
@@ -3081,7 +3380,9 @@
       "uses": 1,
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "St": "+1",
             "AP": "+1"
@@ -3131,7 +3432,9 @@
       "def": "\tThe bearer gains <span class=\"textbf\">Distracting(2, against Beasts and Mounts)</span>.",
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "conditions": [
             {
               "hasrule": {
@@ -3154,7 +3457,9 @@
           }
         },
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "conditions": [
             {
               "hasrule": {
@@ -3183,7 +3488,9 @@
           }
         },
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "conditions": [
             {
               "hasrule": {
@@ -3206,7 +3513,9 @@
           }
         },
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "conditions": [
             {
               "hasrule": {
@@ -3235,7 +3544,9 @@
           }
         },
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "conditions": [
             {
               "hasrule": {
@@ -3258,7 +3569,9 @@
           }
         },
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "conditions": [
             {
               "hasrule": {
@@ -3322,7 +3635,9 @@
       "aura": true,
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Di": "-1"
           }
@@ -3342,13 +3657,17 @@
       "selectionGroup": "wildform",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Re": "-1"
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+1",
             "AP": "+1"
@@ -3364,13 +3683,17 @@
       "selectionGroup": "wildform",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Re": "+1"
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "-1",
             "AP": "-1"
@@ -3430,7 +3753,9 @@
           "rules": [
             {
               "id": "hard_target",
-              "params": ["1"]
+              "params": [
+                "1"
+              ]
             },
             {
               "id": "skirmisher"
@@ -3465,7 +3790,9 @@
       "def": "<i> - Attack Attribute</i><br/><br/><br><br>\tThe model part gains <span class=\"textbf\">Devastating Charge(always Str 4, always AP 2, always Agi 10)</span>.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "Ag": "@10",
             "St": "=4",
@@ -3513,7 +3840,9 @@
       "def": "\tA unit containing <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/blessings\">Blessings</nuxt-link></span> gains <span class=\"textbf\">First Strike(Hatred)</span>. Model parts with Mount are not affected. The model can cast the following three Bound Spells(3+), these spells have Type: Caster, and Duration: One Turn.\tullorUllor's Blessing\t\t\tThe target's unit gains <span class=\"textbf\">Aegis(5+, against Melee Attacks)</span>.\t\t\t\tsunnaSunna's Blessing\t\t\t\tThe target's unit gains <span class=\"textbf\">Flaming Attacks</span>. Each enemy unit in contact with the target's unit when the spell is cast, suffers D6 hits with Str 4, AP 0, Flaming Attacks, Magical Attacks.\t\t\t\tvolundVolund's Blessing\t\t\t\tThe target's unit gains <span class=\"textbf\">Zeal(Melee)</span>.\t\t\t",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rules": [
             {
               "id": "hatred"
@@ -3583,14 +3912,20 @@
       "def": "\tThe unit replaces <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/parent_unit\">Parent Unit</nuxt-link></span> and Metal Armour with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/support_unit\">Support Unit</nuxt-link></span> and Light Armour. Its Arm is <span class=\"textbf\">set</span> to 1.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "=1"
           }
         },
         {
-          "affects": [0],
-          "tags": ["Light Armour"]
+          "affects": [
+            0
+          ],
+          "tags": [
+            "Light Armour"
+          ]
         }
       ]
     },
@@ -3682,7 +4017,9 @@
           }
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Di": "+1"
           }
@@ -3727,7 +4064,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["4+"]
+            "params": [
+              "4+"
+            ]
           },
           "conditions": [
             {
@@ -3745,8 +4084,13 @@
       "def": "\t<span class=\"textbf\">Immune(Fury, Lethal Strike)</span>.",
       "ennemymod": [
         {
-          "affects": ["offense"],
-          "loses_rules": ["battle_focus", "lethal_strike"]
+          "affects": [
+            "offense"
+          ],
+          "loses_rules": [
+            "battle_focus",
+            "lethal_strike"
+          ]
         }
       ]
     },
@@ -3784,11 +4128,15 @@
           "rules": [
             {
               "id": "aegis",
-              "params": ["5+"]
+              "params": [
+                "5+"
+              ]
             },
             {
               "id": "fortitude",
-              "params": ["@0"]
+              "params": [
+                "@0"
+              ]
             },
             {
               "id": "distracting"
@@ -3798,7 +4146,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["2+"]
+            "params": [
+              "2+"
+            ]
           },
           "conditions": [
             {
@@ -3841,7 +4191,9 @@
       "aura": true,
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ad": "+1",
             "Ma": "+1"
@@ -3890,7 +4242,9 @@
       "type": "aura",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "conditions": [
             {
               "hasrule": {
@@ -3912,7 +4266,9 @@
       "type": "aura",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": {
             "id": "distracting"
           }
@@ -3926,7 +4282,9 @@
       "type": "aura",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rules": {
             "id": "lightning_reflexes"
           }
@@ -3944,7 +4302,10 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["2+", "against Flaming Attacks"]
+            "params": [
+              "2+",
+              "against Flaming Attacks"
+            ]
           }
         },
         {
@@ -3955,7 +4316,12 @@
         {
           "rules": {
             "id": "grind_attack",
-            "params": ["D6", "Str 4", "AP 1", "Flaming Attacks"]
+            "params": [
+              "D6",
+              "Str 4",
+              "AP 1",
+              "Flaming Attacks"
+            ]
           }
         }
       ]
@@ -3967,7 +4333,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["5+"]
+            "params": [
+              "5+"
+            ]
           }
         },
         {
@@ -3983,14 +4351,18 @@
       ],
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-2",
             "Of": "-2"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Df": "-2"
           }
@@ -4046,19 +4418,26 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["6+"]
+            "params": [
+              "6+"
+            ]
           }
         },
         {
           "rules": {
             "id": "aegis",
-            "params": ["2+", "against Flaming Attacks"]
+            "params": [
+              "2+",
+              "against Flaming Attacks"
+            ]
           }
         },
         {
           "rules": {
             "id": "fortitude",
-            "params": ["@0"]
+            "params": [
+              "@0"
+            ]
           }
         }
       ]
@@ -4131,7 +4510,10 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+1 Att", "Fear"]
+            "params": [
+              "+1 Att",
+              "Fear"
+            ]
           }
         }
       ]
@@ -4163,7 +4545,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["4+"]
+            "params": [
+              "4+"
+            ]
           }
         },
         {
@@ -4179,7 +4563,9 @@
         {
           "rules": {
             "id": "magic_resistance",
-            "params": ["1"]
+            "params": [
+              "1"
+            ]
           }
         }
       ]
@@ -4213,7 +4599,9 @@
         {
           "rules": {
             "id": "multiple_wounds",
-            "params": ["2"]
+            "params": [
+              "2"
+            ]
           },
           "conditions": [
             {
@@ -4296,7 +4684,9 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+1 Att"]
+            "params": [
+              "+1 Att"
+            ]
           }
         },
         {
@@ -4348,14 +4738,18 @@
       "type": "armour_enchant",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+3",
             "Df": "+3"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "<5"
           }
@@ -4428,7 +4822,10 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["+2", "<3"]
+            "params": [
+              "+2",
+              "<3"
+            ]
           }
         }
       ]
@@ -4461,13 +4858,17 @@
       "aura": true,
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "At": "+2"
           }
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ad": "+1",
             "Ma": "+2"
@@ -4578,16 +4979,22 @@
       "def": "<i>\tUncommon<br></i><br><br>A unit containing a <nuxt-link class=\"ruleLink\" to=\"/app/rule/knight_banneret\">Knight Banneret</nuxt-link> adds +1 to the Combat Score of its side. It can take a single Banner Enchantment and can only do so from the list of Army Specific Magic Items.<br><br>A unit containing a <nuxt-link class=\"ruleLink\" to=\"/app/rule/knight_banneret\">Knight Banneret</nuxt-link> adds +1 to the Combat Score of its side. It can take a single Banner Enchantment and can only do so from the list of Army Specific Magic Items.",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "rules": [
             {
               "id": "custom-combat_result_bonus",
-              "params": ["1"]
+              "params": [
+                "1"
+              ]
             }
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "+1"
           },
@@ -4615,7 +5022,9 @@
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "<3"
           },
@@ -4676,7 +5085,9 @@
           ]
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+1"
           }
@@ -4708,13 +5119,17 @@
           "special": "hand_weapon_effect"
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+1"
           },
           "rules": {
             "id": "rulebook-devastating_charge",
-            "params": ["+1 AP"]
+            "params": [
+              "+1 AP"
+            ]
           }
         }
       ]
@@ -4754,7 +5169,9 @@
             ]
           },
           {
-            "affects": [0],
+            "affects": [
+              0
+            ],
             "stats": {
               "At": "+1"
             }
@@ -4785,7 +5202,9 @@
               },
               {
                 "id": "orison",
-                "params": ["1"]
+                "params": [
+                  "1"
+                ]
               }
             ]
           }
@@ -4799,7 +5218,9 @@
       "def": "  The model part gains <span class=\"textbf\">Captain</span> and <span class=\"textbf\">Commanding Presence(6\", <nuxt-link class=\"ruleLink\" to=\"/app/rule/commonfolk\">Commonfolk)</nuxt-link></span>.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+2"
           }
@@ -4811,7 +5232,9 @@
       "def": "The model part gains <span class=\"textbf\">Zeal</span> and its Melee Attacks allocated towards a Character gain +2 AP.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "AP": "+2"
           }
@@ -4865,10 +5288,14 @@
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": {
             "id": "rulebook-multiple_wounds",
-            "params": ["2"]
+            "params": [
+              "2"
+            ]
           },
           "conditions": [
             {
@@ -4889,11 +5316,15 @@
           "rules": [
             {
               "id": "devastating_charge",
-              "params": ["+2 Adv"]
+              "params": [
+                "+2 Adv"
+              ]
             },
             {
               "id": "devastating_charge",
-              "params": ["+2 Att"]
+              "params": [
+                "+2 Att"
+              ]
             }
           ],
           "conditions": [
@@ -4927,7 +5358,9 @@
             },
             {
               "id": "rulebook-extra_support",
-              "params": ["2"]
+              "params": [
+                "2"
+              ]
             }
           ],
           "special": "koe-lance_formation"
@@ -4944,7 +5377,9 @@
       "type": "cc_weapon",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+2",
             "AP": "+2"
@@ -4963,7 +5398,9 @@
       "type": "cc_weapon",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+1",
             "AP": "+1"
@@ -4977,7 +5414,9 @@
       "type": "cc_weapon",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+1",
             "AP": "+1"
@@ -5006,7 +5445,9 @@
           ]
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+1",
             "AP": "+1"
@@ -5024,7 +5465,9 @@
       "type": "armour",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+2"
           }
@@ -5037,7 +5480,9 @@
       "type": "armour",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rollmodifiers": {
             "armour": "reroll_[1]"
           },
@@ -5051,8 +5496,12 @@
           ]
         },
         {
-          "affects": [0],
-          "tags": ["Holy Vows"]
+          "affects": [
+            0
+          ],
+          "tags": [
+            "Holy Vows"
+          ]
         }
       ]
     },
@@ -5068,7 +5517,9 @@
           "rules": [
             {
               "id": "devastating_charge",
-              "params": ["Aegis (4+)"]
+              "params": [
+                "Aegis (4+)"
+              ]
             }
           ]
         }
@@ -5115,7 +5566,9 @@
           ]
         },
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rules": {
             "id": "rulebook-magical_attacks"
           }
@@ -5125,7 +5578,9 @@
     "koe-ordo-minister": {
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "+1"
           },
@@ -5139,7 +5594,9 @@
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "<3"
           }
@@ -5152,7 +5609,9 @@
       "def": "/subsection{koe-orisons}",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Di": "=9"
           }
@@ -5168,7 +5627,9 @@
           "rules": [
             {
               "id": "rulebook-aegis",
-              "params": ["5+"]
+              "params": [
+                "5+"
+              ]
             }
           ]
         }
@@ -5180,7 +5641,9 @@
       "def": "/subsection{koe-orisons}",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rollmodifiers": {
             "to_hit": "+1"
           },
@@ -5201,7 +5664,9 @@
           "rules": [
             {
               "id": "aegis",
-              "params": ["5+"]
+              "params": [
+                "5+"
+              ]
             }
           ],
           "conditions": [
@@ -5218,7 +5683,9 @@
           "rules": [
             {
               "id": "aegis",
-              "params": ["5+"]
+              "params": [
+                "5+"
+              ]
             }
           ],
           "conditions": [
@@ -5255,7 +5722,9 @@
           "rules": [
             {
               "id": "aegis",
-              "params": ["5+"]
+              "params": [
+                "5+"
+              ]
             }
           ]
         }
@@ -5275,16 +5744,22 @@
           "rules": [
             {
               "id": "aegis",
-              "params": ["+1"]
+              "params": [
+                "+1"
+              ]
             },
             {
               "id": "aegis",
-              "params": ["<3"]
+              "params": [
+                "<3"
+              ]
             }
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+1"
           }
@@ -5336,7 +5811,9 @@
       "def": "<i> - Universal Rule</i><br/><br/>The model's HP are <span class=\"textbf\">set</span> to 9, its base size is changed to 75×100 mm, and its roll for the number of hits for <span class=\"textbf\">Stomp Attack</span> is <span class=\"textbf\">Maximised</span>.<br><br>\tThe model's HP are <span class=\"textbf\">set</span> to 9, its base size is changed to 75×100 mm, and its roll for the number of hits for <span class=\"textbf\">Stomp Attack</span> is <span class=\"textbf\">Maximised</span>.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=8"
           }
@@ -5365,7 +5842,9 @@
       "def": "Attacks with \t<span class=\"textbf\">Multiple Wounds (X)</span> against the model halve their X value, rounding fractions up.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "special": "halve_mw"
         }
       ]
@@ -5389,7 +5868,9 @@
       "ruletype": "Melee Weapon",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+1"
           },
@@ -5398,7 +5879,9 @@
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+1"
           }
@@ -5435,20 +5918,28 @@
       "def": "\tRegeneration(5+), Multiple Wounds(2, towards Height 3).",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": [
             {
               "id": "fortitude",
-              "params": ["4+"]
+              "params": [
+                "4+"
+              ]
             }
           ]
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": [
             {
               "id": "multiple_wounds",
-              "params": ["2"]
+              "params": [
+                "2"
+              ]
             }
           ],
           "conditions": [
@@ -5493,7 +5984,9 @@
           "rules": [
             {
               "id": "aegis",
-              "params": ["3+"]
+              "params": [
+                "3+"
+              ]
             }
           ],
           "conditions": [
@@ -5509,12 +6002,18 @@
           "rules": [
             {
               "id": "breath_attack",
-              "params": ["Str 4", "AP 0", "Flaming Attacks"]
+              "params": [
+                "Str 4",
+                "AP 0",
+                "Flaming Attacks"
+              ]
             }
           ]
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": {
             "id": "flaming_attacks"
           }
@@ -5522,7 +6021,9 @@
         {
           "rules": {
             "id": "fortitude",
-            "params": ["@0"]
+            "params": [
+              "@0"
+            ]
           }
         }
       ]
@@ -5532,7 +6033,9 @@
       "def": "\tChannel (1), Horror.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Re": "+1"
           }
@@ -5541,7 +6044,9 @@
           "rules": [
             {
               "id": "channel",
-              "params": ["1"]
+              "params": [
+                "1"
+              ]
             },
             {
               "id": "fear"
@@ -5555,11 +6060,18 @@
       "def": "\tThe model part gains <span class=\"textbf\">Devastating Charge(+1 Att, +1 Str, +1 AP)</span>.",
       "mod": [
         {
-          "affects": [0, "special"],
+          "affects": [
+            0,
+            "special"
+          ],
           "rules": [
             {
               "id": "devastating_charge",
-              "params": ["+1 Att", "+1 Str", "+1 AP"]
+              "params": [
+                "+1 Att",
+                "+1 Str",
+                "+1 AP"
+              ]
             }
           ],
           "conditions": [
@@ -5676,7 +6188,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "Of": "+1",
             "At": "+1"
@@ -5695,13 +6209,17 @@
       "type": "armour_enchant",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+2"
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+1"
           }
@@ -5714,7 +6232,9 @@
       "type": "armour_enchant",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+1"
           }
@@ -5722,7 +6242,10 @@
       ],
       "ennemymod": [
         {
-          "affects": ["offense", "special"],
+          "affects": [
+            "offense",
+            "special"
+          ],
           "stats": {
             "St": "<5"
           }
@@ -5739,7 +6262,9 @@
       "type": "armour_enchant",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+1"
           }
@@ -5747,7 +6272,9 @@
       ],
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-1"
           }
@@ -5796,13 +6323,17 @@
       "def": "\t<span class=\"textbf\">Afflict(-2 Off)</span>.",
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "At": "-1"
           }
         },
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "At": ">1"
           }
@@ -5816,11 +6347,15 @@
         {
           "rules": {
             "id": "stomp_attacks",
-            "params": ["D3+1"]
+            "params": [
+              "D3+1"
+            ]
           }
         },
         {
-          "affects": ["special"],
+          "affects": [
+            "special"
+          ],
           "affect_unit": true,
           "conditions": [
             {
@@ -5857,7 +6392,9 @@
       "aura": true,
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-3"
           }
@@ -5872,7 +6409,9 @@
           "basesize": "100x150"
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=7"
           }
@@ -6095,7 +6634,9 @@
       "def": "\tAtt is <span class=\"textbf\">set</span> to 6. <span class=\"textbf\">Poison Attacks</span>.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "=6"
           }
@@ -6189,7 +6730,9 @@
         {
           "rules": {
             "id": "hard_target",
-            "params": ["1"]
+            "params": [
+              "1"
+            ]
           }
         }
       ]
@@ -6201,7 +6744,9 @@
         {
           "rules": {
             "id": "sylvan_longbow",
-            "params": ["3+"]
+            "params": [
+              "3+"
+            ]
           }
         },
         {
@@ -6220,11 +6765,17 @@
           }
         },
         {
-          "affects": ["global"],
-          "loses_rules": ["scoring"]
+          "affects": [
+            "global"
+          ],
+          "loses_rules": [
+            "scoring"
+          ]
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "loses_rules": [
             {
               "id": "devastating_charge",
@@ -6297,7 +6848,9 @@
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "AP": "+1"
           }
@@ -6309,20 +6862,24 @@
       "def": "\tThe model gains +2\" Cha and +2\" Mob, as well as Solitary, Vanguard, Multiple Wounds(2, towards Height 4-5), Devastating Charge(the model's Height is set to 3).",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "=20"
           }
         },
         {
           "rules": {
-            "id": "solitary"
+            "id": "exclusive"
           }
         },
         {
           "rules": {
             "id": "fortitude",
-            "params": ["4+"]
+            "params": [
+              "4+"
+            ]
           }
         },
         {
@@ -6351,7 +6908,10 @@
           "rules": [
             {
               "id": "devastating_charge",
-              "params": ["+2 Att", "Fear"]
+              "params": [
+                "+2 Att",
+                "Fear"
+              ]
             }
           ]
         },
@@ -6407,7 +6967,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["6+"]
+            "params": [
+              "6+"
+            ]
           }
         },
         {
@@ -6450,7 +7012,9 @@
       "def": "\tThe model gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/impaling_roots\">Impaling Roots</nuxt-link></span> if it did not already have it. When Choosing Equipment and Abilities, choose one enemy Character model in contact with the wielder. During this Round of Combat, Melee Attacks from the chosen model must reroll successful to-hit rolls against the wielder.",
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rollmodifiers": {
             "to_hit": "reroll_succeed"
           },
@@ -6520,7 +7084,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+1",
             "AP": "+1"
@@ -6539,7 +7105,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+1",
             "St": "+1"
@@ -6563,7 +7131,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+3"
           }
@@ -6575,7 +7145,9 @@
       "def": "    +1 HP, Aegis(5+), Fearless, <nuxt-link class=\"ruleLink\" to=\"/app/rule/tree_singing\">Tree Singing</nuxt-link>, Weakness(Flaming Attacks). Arm is <span class=\"textbf\">set</span> to 4 and can <span class=\"textbf\">never</span> be improved beyond this.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+1"
           }
@@ -6583,7 +7155,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["5+"]
+            "params": [
+              "5+"
+            ]
           }
         },
         {
@@ -6614,7 +7188,9 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["distracting"]
+            "params": [
+              "distracting"
+            ]
           }
         }
       ]
@@ -6651,7 +7227,9 @@
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Df": "+3"
           },
@@ -6705,7 +7283,9 @@
       "def": "+1 Armour Penetration and Lethal Strike.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "AP": "+1"
           }
@@ -6726,11 +7306,15 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["3+"]
+            "params": [
+              "3+"
+            ]
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "-1",
             "AP": "-1"
@@ -6745,7 +7329,9 @@
       "def": "+1 Attack Value.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+1"
           }
@@ -6784,7 +7370,9 @@
           "basesize": "50×150"
         },
         {
-          "affects": [2],
+          "affects": [
+            2
+          ],
           "stats": {
             "At": "=2"
           }
@@ -6798,7 +7386,10 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+1 Str", "+1 AP"]
+            "params": [
+              "+1 Str",
+              "+1 AP"
+            ]
           },
           "basesize": "60×100"
         }
@@ -6814,7 +7405,9 @@
       "selectable": true,
       "mod": [
         {
-          "loses_rules": ["custom-close_combat_attacks"],
+          "loses_rules": [
+            "custom-close_combat_attacks"
+          ],
           "rules": {
             "id": "vc-chilling_shriek_attack"
           }
@@ -6867,7 +7460,9 @@
           }
         },
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rules": {
             "id": "magical_attacks"
           }
@@ -6919,13 +7514,17 @@
       "def": "\tThe bearer's Arm is <span class=\"textbf\">set</span> to 1, it loses Metal Armour, gains <span class=\"textbf\">Elven Finesse</span>, and if the model is Height 1--2 it also gains <span class=\"textbf\">Distracting(1)</span>.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": {
             "id": "lightning_reflexes"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": {
             "id": "distracting"
           }
@@ -6933,7 +7532,9 @@
       ],
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "At": "-1"
           },
@@ -6950,7 +7551,9 @@
           ]
         },
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-1"
           }
@@ -6962,17 +7565,23 @@
       "def": "\tThe model part's Arm is <span class=\"textbf\">set</span> to 0 and its HP are <span class=\"textbf\">set</span> to 4, it loses Metal Armour and gains <span class=\"textbf\">First Strike(Hatred)</span>. A model without Mount, gains <span class=\"textbf\">Regeneration(4+)</span>.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": {
             "id": "rulebook-fortitude",
-            "params": ["4+"]
+            "params": [
+              "4+"
+            ]
           },
           "stats": {
             "HP": "=4"
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": {
             "id": "rulebook-hatred"
           }
@@ -6985,7 +7594,9 @@
       "type": "attack_attribute",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "special": "crimson_rage"
         }
       ]
@@ -7003,7 +7614,9 @@
       "def": "\tThe bearer and all Rank-and-File models in the bearer's unit gains <span class=\"textbf\">Poison Attacks</span>.",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "affect_rf": true,
           "rules": [
             {
@@ -7029,10 +7642,15 @@
       "def": "\tThe model part gains <span class=\"textbf\">Multiple Wounds(2, towards Height 4--5)</span>.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": {
             "id": "multiple_wounds",
-            "params": ["2", "against Towering Presence"]
+            "params": [
+              "2",
+              "against Towering Presence"
+            ]
           }
         }
       ]
@@ -7050,7 +7668,9 @@
       "def": "\tThe model's Height is <span class=\"textbf\">set</span> to 3, and its base size to 40×40mm. The model gains Stomp Attack(1), Attached(Ghasts, Vampire Spawn).",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "basesize": "40x40",
           "stats": {
             "Hgt": "=3"
@@ -7065,7 +7685,10 @@
         {
           "rules": {
             "id": "fly",
-            "params": ["7", "14"]
+            "params": [
+              "7",
+              "14"
+            ]
           }
         },
         {
@@ -7108,7 +7731,9 @@
           ]
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "@10",
             "AP": "@10"
@@ -7131,7 +7756,9 @@
         {
           "rules": {
             "id": "vampiric",
-            "params": ["3+"]
+            "params": [
+              "3+"
+            ]
           }
         },
         {
@@ -7149,7 +7776,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["4+"]
+            "params": [
+              "4+"
+            ]
           }
         },
         {
@@ -7210,8 +7839,13 @@
       "def": "\tThe bearer's model gains <span class=\"textbf\">Immune(Lethal Strike)</span>.\tWhen the model suffers a wound from an attack with <span class=\"textbf\">Multiple Wounds(X)</span>, reduce the amount of wounds by 1, to a minimum of 1.",
       "ennemymod": [
         {
-          "affects": ["offense"],
-          "loses_rules": ["lethal_strike", "multiple_wounds"]
+          "affects": [
+            "offense"
+          ],
+          "loses_rules": [
+            "lethal_strike",
+            "multiple_wounds"
+          ]
         }
       ],
       "mod": [
@@ -7231,7 +7865,9 @@
       "def": "\tAttacks against the bearer suffer -1 to-wound.",
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rollmodifiers": {
             "to_wound": ">4"
           }
@@ -7244,7 +7880,9 @@
       "selectable": true,
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rollmodifiers": {
             "to_hit": "reroll_failed",
             "to_wound": "reroll_failed"
@@ -7268,7 +7906,9 @@
       "defaultSelection": true,
       "mod": [
         {
-          "loses_rules": ["custom-close_combat_attacks"],
+          "loses_rules": [
+            "custom-close_combat_attacks"
+          ],
           "rules": {
             "id": "vc-wail_of_woe_attack"
           }
@@ -7283,7 +7923,9 @@
         {
           "rules": {
             "id": "hard_target",
-            "params": ["1"]
+            "params": [
+              "1"
+            ]
           }
         }
       ]
@@ -7294,7 +7936,9 @@
       "aura": true,
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rollmodifiers": {
             "to_hit": "+1"
           },
@@ -7329,13 +7973,17 @@
         {
           "rules": {
             "id": "fortitude",
-            "params": ["6+"]
+            "params": [
+              "6+"
+            ]
           }
         },
         {
           "rules": {
             "id": "fortitude",
-            "params": ["4+"]
+            "params": [
+              "4+"
+            ]
           },
           "conditions": [
             {
@@ -7346,7 +7994,10 @@
         {
           "rules": {
             "id": "fortitude",
-            "params": ["+1", ">5"]
+            "params": [
+              "+1",
+              ">5"
+            ]
           },
           "conditions": [
             {
@@ -7364,13 +8015,17 @@
       "aura": true,
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-2"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Df": "-2"
           }
@@ -7382,20 +8037,28 @@
       "def": "Devastating Charge (+1 Att) and Plate Armour",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": [
             {
               "id": "devastating_charge",
-              "params": ["+1 Att"]
+              "params": [
+                "+1 Att"
+              ]
             }
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": {
             "id": "plate_armour"
           },
-          "loses_rules": ["heavy_armour"]
+          "loses_rules": [
+            "heavy_armour"
+          ]
         }
       ]
     },
@@ -7448,13 +8111,17 @@
       "type": "cc_weapon",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "-1"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "-1"
           }
@@ -7498,7 +8165,9 @@
       "def": "Attacks with <span class=\"textbf\">Multiple Wounds(X)</span> against the model halve the number of wounds they inflict, rounding fractions up.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "special": "halve_mw"
         }
       ]
@@ -7519,15 +8188,24 @@
           ]
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": {
             "id": "devastating_charge",
-            "params": ["+1 Str", "Fight in Extra Rank"]
+            "params": [
+              "+1 Str",
+              "Fight in Extra Rank"
+            ]
           }
         },
         {
-          "affects": ["global"],
-          "loses_rules": ["light_troops"]
+          "affects": [
+            "global"
+          ],
+          "loses_rules": [
+            "light_troops"
+          ]
         }
       ]
     },
@@ -7547,7 +8225,9 @@
       "def": "Rank-and-File model parts with Skeleton in units  containing <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/undying_will\">Undying Will</nuxt-link></span> gain +2 Def, +2 Off, Magical Attacks, Lethal Strike, and replace their Shooting Weapons' Aim with (4+). Model parts with Mount are not affected by <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/undying_will\">Undying Will</nuxt-link></span>.",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Of": "+2"
           },
@@ -7604,7 +8284,9 @@
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Df": "+2"
           },
@@ -7656,12 +8338,21 @@
       "def": "/subsection{lord_of_the_barrow_legion}",
       "mod": [
         {
-          "affects": ["global"],
-          "loses_rules": ["underground_ambush", "scout"]
+          "affects": [
+            "global"
+          ],
+          "loses_rules": [
+            "underground_ambush",
+            "scout"
+          ]
         },
         {
-          "affects": ["global"],
-          "loses_rules": ["light_troops"],
+          "affects": [
+            "global"
+          ],
+          "loses_rules": [
+            "light_troops"
+          ],
           "conditions": [
             {
               "hasrule": {
@@ -7731,7 +8422,9 @@
       "type": "cc_weapon",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+2",
             "AP": "+2"
@@ -7740,7 +8433,9 @@
         {
           "rules": {
             "id": "multiple_wounds",
-            "params": ["D3"]
+            "params": [
+              "D3"
+            ]
           },
           "conditions": [
             {
@@ -7767,7 +8462,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+1"
           },
@@ -7783,7 +8480,9 @@
         {
           "rules": {
             "id": "multiple_wounds",
-            "params": ["2"]
+            "params": [
+              "2"
+            ]
           },
           "conditions": [
             {
@@ -7802,7 +8501,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "=6"
           },
@@ -7811,7 +8512,9 @@
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rollmodifiers": {
             "to_wound": "reroll_failed"
           },
@@ -7829,14 +8532,18 @@
       "type": "armour_enchant",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "+2"
           },
           "rules": [
             {
               "id": "fortitude",
-              "params": ["5+"]
+              "params": [
+                "5+"
+              ]
             }
           ]
         }
@@ -7879,10 +8586,14 @@
       "def": "\tThe bearer gains +1 HP and loses one instance of <span class=\"textbf\">Weakness(Flaming Attacks)</span>.",
       "mod": [
         {
-          "loses_rules": ["flammable"]
+          "loses_rules": [
+            "flammable"
+          ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "+1"
           }
@@ -7905,7 +8616,10 @@
         {
           "rules": {
             "id": "fly",
-            "params": ["5", "15"]
+            "params": [
+              "5",
+              "15"
+            ]
           }
         }
       ]
@@ -7915,7 +8629,9 @@
       "def": "\tAegis(5+), Horror.",
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Of": "-2"
           }
@@ -7932,7 +8648,9 @@
           "rules": [
             {
               "id": "aegis",
-              "params": ["5+"]
+              "params": [
+                "5+"
+              ]
             }
           ]
         },
@@ -7943,7 +8661,9 @@
           "rules": [
             {
               "id": "aegis",
-              "params": ["3+"]
+              "params": [
+                "3+"
+              ]
             },
             {
               "id": "ghost_step"
@@ -7971,7 +8691,9 @@
         {
           "rules": {
             "id": "fortitude",
-            "params": ["5+"]
+            "params": [
+              "5+"
+            ]
           }
         }
       ]
@@ -7982,7 +8704,9 @@
       "def": "The model gains <span class=\"textbf\">Random Movement(3D6\")</span> and its Attack Value is <span class=\"textbf\">set</span> to 4D3. It loses the Pitmaster model part, and its base size is changed to 60×100 mm.",
       "mod": [
         {
-          "affects": [1],
+          "affects": [
+            1
+          ],
           "stats": {
             "At": "@0",
             "St": "@0",
@@ -7993,8 +8717,12 @@
           "special": "loses_part"
         },
         {
-          "affects": [0],
-          "loses_rules": ["harnessed"],
+          "affects": [
+            0
+          ],
+          "loses_rules": [
+            "harnessed"
+          ],
           "stats": {
             "At": "=4D3"
           }
@@ -8006,7 +8734,9 @@
           "rules": [
             {
               "id": "random_movement",
-              "params": ["3D6"]
+              "params": [
+                "3D6"
+              ]
             }
           ]
         }
@@ -8026,8 +8756,12 @@
           }
         },
         {
-          "affects": [0],
-          "loses_rules": ["halberd"]
+          "affects": [
+            0
+          ],
+          "loses_rules": [
+            "halberd"
+          ]
         }
       ]
     },
@@ -8058,7 +8792,9 @@
         {
           "rules": {
             "id": "engineer",
-            "params": ["3+"]
+            "params": [
+              "3+"
+            ]
           }
         }
       ]
@@ -8069,12 +8805,16 @@
       "selectable": true,
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "special": "skorchit_alchemist"
         },
         {
           "affect_rf": true,
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rules": {
             "stats": {
               "Of": "+2",
@@ -8154,7 +8894,9 @@
       "def": "\tWhen calculating Combat Score, ignore the first two Health Point losses of Health Pools with <nuxt-link class=\"ruleLink\" to=\"/app/rule/life_is_cheap\">Life is Cheap</nuxt-link> in each Combat. <i>Note, the number of ignored Health Point losses is not affected by the amount of Health Pools</i>. Units containing <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/life_is_cheap\">Life is Cheap</nuxt-link></span> that are Steady and Solid get +2 Dis while taking Break Tests.",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "special": "life_is_cheap"
         }
       ]
@@ -8226,7 +8968,9 @@
       "def": "\tWhen calculating Combat Score for combats containing one or more friendly unit within 12\" of the Ruinous Dictator, your side adds +1 to their Combat Score.",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Di": "+1"
           }
@@ -8266,7 +9010,9 @@
       "def": "\tWhenever a natural ‘1’ is rolled to hit for an enemy Close Combat Attack allocated towards a model with <nuxt-link class=\"ruleLink\" to=\"/app/rule/cult_of_errahman\">Cult of Errahman</nuxt-link>, the model part inflicts 1 hit with <span class=\"textbf\">Toxic Attacks</span> on the attacking model's unit in the same Initiative Step, before any casualties are removed.<br>\t models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/cult_of_errahman\">Cult of Errahman</nuxt-link> cannot be joined by models without <nuxt-link class=\"ruleLink\" to=\"/app/rule/cult_of_errahman\">Cult of Errahman</nuxt-link>.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "special": "cult_of_errahman"
         }
       ]
@@ -8281,14 +9027,20 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": [
             {
               "id": "magical_attacks"
             },
             {
               "id": "grind_attack",
-              "params": ["1", "St 3", "AP 1"]
+              "params": [
+                "1",
+                "St 3",
+                "AP 1"
+              ]
             }
           ]
         }
@@ -8304,7 +9056,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+1",
             "St": "@10",
@@ -8322,7 +9076,9 @@
             },
             {
               "id": "multiple_wounds",
-              "params": ["D6"]
+              "params": [
+                "D6"
+              ]
             }
           ]
         }
@@ -8349,13 +9105,17 @@
             "HP": "+1",
             "Arm": "@0"
           },
-          "affects": ["defense"]
+          "affects": [
+            "defense"
+          ]
         },
         {
           "rules": [
             {
               "id": "fortitude",
-              "params": ["4+"]
+              "params": [
+                "4+"
+              ]
             }
           ]
         },
@@ -8420,7 +9180,9 @@
       "aura": true,
       "ennemymod": [
         {
-          "affects": ["special"],
+          "affects": [
+            "special"
+          ],
           "rollmodifiers": {
             "to_wound": "-2"
           },
@@ -8438,7 +9200,9 @@
       "type": "cc_weapon",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+1"
           }
@@ -8463,7 +9227,9 @@
         {
           "rules": {
             "id": "multiple_wounds",
-            "params": ["2"]
+            "params": [
+              "2"
+            ]
           },
           "conditions": [
             {
@@ -8539,7 +9305,9 @@
           "rules": [
             {
               "id": "hard_target",
-              "params": ["1"]
+              "params": [
+                "1"
+              ]
             },
             {
               "id": "light_troops"
@@ -8573,7 +9341,9 @@
           "rules": [
             {
               "id": "hard_target",
-              "params": ["1"]
+              "params": [
+                "1"
+              ]
             },
             {
               "id": "light_troops"
@@ -8616,7 +9386,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["6+"]
+            "params": [
+              "6+"
+            ]
           },
           "conditions": [
             {
@@ -8648,7 +9420,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["5+"]
+            "params": [
+              "5+"
+            ]
           },
           "conditions": [
             {
@@ -8774,7 +9548,10 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+1 Str", "+1 AP"]
+            "params": [
+              "+1 Str",
+              "+1 AP"
+            ]
           }
         }
       ]
@@ -8786,14 +9563,19 @@
       "type": "universal",
       "mod": [
         {
-          "affects": ["offense", "special"],
+          "affects": [
+            "offense",
+            "special"
+          ],
           "rollmodifiers": {
             "to_wound": "<4"
           }
         },
         {
           "special": "yer_comin_with_me",
-          "affects": ["global"]
+          "affects": [
+            "global"
+          ]
         }
       ]
     },
@@ -8809,7 +9591,9 @@
         {
           "rules": {
             "id": "multiple_wounds",
-            "params": ["D3"]
+            "params": [
+              "D3"
+            ]
           }
         },
         {
@@ -8944,7 +9728,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+1",
             "AP": "=10"
@@ -8999,7 +9785,10 @@
       "type": "armour_enchant",
       "ennemymod": [
         {
-          "affects": ["offense", "special"],
+          "affects": [
+            "offense",
+            "special"
+          ],
           "rollmodifiers": {
             "to_wound": "reroll_succeed"
           }
@@ -9057,7 +9846,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["3+"]
+            "params": [
+              "3+"
+            ]
           },
           "conditions": [
             {
@@ -9091,7 +9882,12 @@
         {
           "rules": {
             "id": "breath_attack",
-            "params": ["Str 4", "AP 1", "Flaming Attacks", "Magical Attacks"]
+            "params": [
+              "Str 4",
+              "AP 1",
+              "Flaming Attacks",
+              "Magical Attacks"
+            ]
           }
         }
       ]
@@ -9129,7 +9925,10 @@
           "rules": [
             {
               "id": "aegis",
-              "params": ["+1", "<3"]
+              "params": [
+                "+1",
+                "<3"
+              ]
             }
           ],
           "special": "rune_of_shielding"
@@ -9204,7 +10003,9 @@
       "aura": true,
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "conditions": [
             {
               "firstround": true
@@ -9223,7 +10024,9 @@
       "selectionGroup": "runic_engravings",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+1",
             "AP": "+1"
@@ -9253,7 +10056,9 @@
       "def": "+2 Agi",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "Ag": "+2"
           }
@@ -9283,7 +10088,9 @@
           ],
           "conditions": [
             {
-              "unitHasRule": ["wdg-battle_fever"]
+              "unitHasRule": [
+                "wdg-battle_fever"
+              ]
             }
           ]
         }
@@ -9304,7 +10111,10 @@
           "rules": [
             {
               "id": "fly",
-              "params": ["8\"", "16\""]
+              "params": [
+                "8\"",
+                "16\""
+              ]
             },
             {
               "id": "light_troops"
@@ -9343,7 +10153,9 @@
       "def": "<i> - Attack Attribute</i><br/><br/><br><br>After using the <span class=\"textbf\">Breath Attack</span>, the model loses a Health Point with no saves of any kind allowed.",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "special": "dying_embers"
         }
       ]
@@ -9380,7 +10192,9 @@
       "def": "The model's HP are <span class=\"textbf\">set</span> to 9, its base size is changed to 75×100 mm, and its rolls for the number of hits for <span class=\"textbf\">Stomp Attack</span> is Maximised.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=8"
           }
@@ -9413,7 +10227,9 @@
       "type": "cc_weapon",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+1"
           }
@@ -9421,7 +10237,9 @@
         {
           "rules": {
             "id": "multiple_wounds",
-            "params": ["D3"]
+            "params": [
+              "D3"
+            ]
           },
           "conditions": [
             {
@@ -9445,7 +10263,9 @@
       ],
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-1"
           },
@@ -9463,7 +10283,9 @@
       "selectable": true,
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "+6"
           }
@@ -9471,7 +10293,10 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+1 Att", "+1 Str"]
+            "params": [
+              "+1 Att",
+              "+1 Str"
+            ]
           }
         }
       ]
@@ -9481,13 +10306,17 @@
       "def": "The model's  Mobility is <span class=\"textbf\">set</span> to 10\" and its Armour is <span class=\"textbf\">set</span> to 3.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "=3"
           }
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "=20"
           }
@@ -9499,7 +10328,9 @@
       "def": "At any time during the Movement Phase, the model can choose to lose <span class=\"textbf\">Fly</span> and gain +2 Mob. This lasts until the end of the Movement Phase.",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "+4"
           }
@@ -9545,7 +10376,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["5+"]
+            "params": [
+              "5+"
+            ]
           },
           "conditions": [
             {
@@ -9573,7 +10406,9 @@
               }
             }
           ],
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "special": "spiked_shield"
         },
         {
@@ -9592,7 +10427,9 @@
         {
           "rules": {
             "id": "hard_target",
-            "params": ["1"]
+            "params": [
+              "1"
+            ]
           },
           "special": "abiding_spirit"
         }
@@ -9608,11 +10445,18 @@
           "rules": [
             {
               "id": "breath_attack",
-              "params": ["Str 4", "AP 1", "Flaming Attacks"]
+              "params": [
+                "Str 4",
+                "AP 1",
+                "Flaming Attacks"
+              ]
             },
             {
               "id": "fly",
-              "params": ["8\"", "16\""]
+              "params": [
+                "8\"",
+                "16\""
+              ]
             },
             {
               "id": "swiftstride"
@@ -9631,7 +10475,9 @@
           "rules": [
             {
               "id": "stomp_attacks",
-              "params": ["D6"]
+              "params": [
+                "D6"
+              ]
             },
             {
               "id": "stubborn"
@@ -9666,7 +10512,9 @@
       "defaultSelection": false,
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": {
             "id": "divine_attacks"
           },
@@ -9685,7 +10533,10 @@
           "rules": [
             {
               "id": "fly",
-              "params": ["8\"", "16\""]
+              "params": [
+                "8\"",
+                "16\""
+              ]
             }
           ]
         }
@@ -9697,13 +10548,19 @@
       "mod": [
         {
           "affect_unit": true,
-          "affects": ["offense", "defense"],
+          "affects": [
+            "offense",
+            "defense"
+          ],
           "special": "entropic_aura"
         }
       ],
       "ennemymod": [
         {
-          "affects": ["offense", "defense"],
+          "affects": [
+            "offense",
+            "defense"
+          ],
           "affect_unit": true,
           "special": "entropic_aura"
         }
@@ -9716,7 +10573,10 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["+1", "<3"]
+            "params": [
+              "+1",
+              "<3"
+            ]
           }
         }
       ]
@@ -9727,7 +10587,9 @@
       "selectable": true,
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+1",
             "St": "+1",
@@ -9755,7 +10617,9 @@
       "def": "The model's March Rate is <span class=\"textbf\">set</span> to 16\".",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "=16"
           }
@@ -9849,7 +10713,9 @@
       "selectable": true,
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Re": "+1"
           }
@@ -9861,7 +10727,9 @@
       "def": "\tThe model part gains <span class=\"textbf\">First Strike(Hatred)</span>.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": {
             "id": "lightning_reflexes"
           },
@@ -9878,7 +10746,9 @@
       "def": "\tSuccessful to-wound rolls of attacks that are Flaming Attacks made against the model <span class=\"textbf\">must</span> be rerolled. In addition, the model considers all units consisting entirely of models without <nuxt-link class=\"ruleLink\" to=\"/app/rule/unburnt\">Unburnt</nuxt-link> as Insignificant.",
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rollmodifiers": {
             "to_wound": "reroll_succeed"
           },
@@ -9903,7 +10773,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": [
             {
               "id": "flaming_attacks"
@@ -9913,7 +10785,9 @@
             },
             {
               "id": "multiple_wounds",
-              "params": ["D3"]
+              "params": [
+                "D3"
+              ]
             }
           ],
           "stats": {
@@ -9928,7 +10802,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": [
             {
               "id": "magical_attacks"
@@ -9950,13 +10826,17 @@
       "type": "armour_enchant",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+3"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "<5"
           },
@@ -9977,7 +10857,9 @@
       "type": "armour_enchant",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+1"
           },
@@ -10002,7 +10884,9 @@
           "rules": [
             {
               "id": "extra_support",
-              "params": [2]
+              "params": [
+                2
+              ]
             }
           ]
         }
@@ -10014,7 +10898,9 @@
       "type": "banner_enchant",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "affect_unit": true,
           "rules": {
             "id": "flaming_attacks"
@@ -10073,7 +10959,9 @@
       "def": "/subsection{gluttony}",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "St": "+1"
           }
@@ -10129,7 +11017,9 @@
     "wdg-path_of_the_favoured": {
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "+1"
           },
@@ -10155,7 +11045,10 @@
           "rules": [
             {
               "id": "fly",
-              "params": ["8\"", "16\""]
+              "params": [
+                "8\"",
+                "16\""
+              ]
             },
             {
               "id": "light_troops"
@@ -10196,7 +11089,9 @@
           ],
           "conditions": [
             {
-              "unitHasRule": ["wdg-battle_fever"]
+              "unitHasRule": [
+                "wdg-battle_fever"
+              ]
             }
           ]
         }
@@ -10219,7 +11114,9 @@
       "def": "<i> - Universal Rule</i><br/><br/>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The model gains <span class=\"textbf\">Maximised(Stomp Attack)</span>.<br><br>\tThe model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The model gains <span class=\"textbf\">Maximised(Stomp Attack)</span>.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=8"
           }
@@ -10248,7 +11145,9 @@
       "type": "cc_weapon",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+1"
           }
@@ -10256,7 +11155,9 @@
         {
           "rules": {
             "id": "multiple_wounds",
-            "params": ["D3"]
+            "params": [
+              "D3"
+            ]
           },
           "conditions": [
             {
@@ -10280,7 +11181,9 @@
       ],
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-1"
           },
@@ -10313,7 +11216,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["5+"]
+            "params": [
+              "5+"
+            ]
           },
           "conditions": [
             {
@@ -10335,13 +11240,17 @@
       "def": "<i> - Universal Rule</i><br/><br/><br><br>The model's March Rate is <span class=\"textbf\">set</span> to 20\" and its Armour is <span class=\"textbf\">set</span> to 3.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "=3"
           }
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "=20"
           }
@@ -10397,7 +11306,10 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+2 Str", "+2 AP"]
+            "params": [
+              "+2 Str",
+              "+2 AP"
+            ]
           }
         }
       ]
@@ -10408,7 +11320,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": [
             {
               "id": "magical_attacks"
@@ -10430,7 +11344,9 @@
       "type": "banner_enchant",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "affect_unit": true,
           "rules": {
             "id": "flaming_attacks"
@@ -10444,7 +11360,9 @@
       "type": "armour_enchant",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+1"
           }
@@ -10452,7 +11370,10 @@
       ],
       "ennemymod": [
         {
-          "affects": ["offense", "special"],
+          "affects": [
+            "offense",
+            "special"
+          ],
           "stats": {
             "St": "<5"
           }
@@ -10483,7 +11404,9 @@
           ],
           "conditions": [
             {
-              "unitHasRule": ["wdg-battle_fever"]
+              "unitHasRule": [
+                "wdg-battle_fever"
+              ]
             }
           ]
         }
@@ -10494,7 +11417,9 @@
       "def": "<i> - Universal Rule</i><br/><br/><br><br>\tThe Åsklander Chief gains +2 Attack Value and may take Magic Items for an additional 50 pts.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+2"
           }
@@ -10520,7 +11445,10 @@
           "rules": [
             {
               "id": "fly",
-              "params": ["8\"", "16\""]
+              "params": [
+                "8\"",
+                "16\""
+              ]
             },
             {
               "id": "light_troops"
@@ -10551,12 +11479,16 @@
           "rules": [
             {
               "id": "devastating_charge",
-              "params": ["+2 Adv"]
+              "params": [
+                "+2 Adv"
+              ]
             }
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": [
             {
               "id": "hard_target"
@@ -10574,7 +11506,9 @@
       "def": "<i> - Universal Rule</i><br/><br/>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The model gains <span class=\"textbf\">Maximised (Stomp Attacks)</span>.<br><br>\tThe model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The model gains <span class=\"textbf\">Maximised (Stomp Attacks)</span>.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=8"
           }
@@ -10607,7 +11541,9 @@
       "type": "cc_weapon",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "St": "+1"
           }
@@ -10615,7 +11551,9 @@
         {
           "rules": {
             "id": "multiple_wounds",
-            "params": ["D3"]
+            "params": [
+              "D3"
+            ]
           },
           "conditions": [
             {
@@ -10639,7 +11577,9 @@
       ],
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-1"
           },
@@ -10657,7 +11597,9 @@
       "selectable": true,
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "+6"
           }
@@ -10665,7 +11607,10 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+1 Att", "+1 Str"]
+            "params": [
+              "+1 Att",
+              "+1 Str"
+            ]
           }
         }
       ],
@@ -10684,7 +11629,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["5+"]
+            "params": [
+              "5+"
+            ]
           },
           "conditions": [
             {
@@ -10711,7 +11658,9 @@
               }
             }
           ],
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "special": "spiked_shield"
         },
         {
@@ -10730,13 +11679,17 @@
       "def": "<i> - Universal Rule</i><br/><br/><br><br>\tThe model's March Rate is <span class=\"textbf\">set</span> to 20\" and its Armour is <span class=\"textbf\">set</span> to 3.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "=3"
           }
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "=20"
           }
@@ -10768,7 +11721,9 @@
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+1"
           },
@@ -10795,7 +11750,9 @@
       "def": "\tSuccessful to-wound rolls of attacks that are Flaming Attacks made against the model <span class=\"textbf\">must</span> be rerolled. In addition, the model considers all units consisting entirely of models without <nuxt-link class=\"ruleLink\" to=\"/app/rule/unburnt\">Unburnt</nuxt-link> as Insignificant.",
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rollmodifiers": {
             "to_wound": "reroll_succeed"
           },
@@ -10834,7 +11791,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": [
             {
               "id": "magical_attacks"
@@ -10877,7 +11836,9 @@
             },
             {
               "id": "rulebook-hard_target",
-              "params": ["1"]
+              "params": [
+                "1"
+              ]
             },
             {
               "id": "rulebook-insignificant"
@@ -10912,7 +11873,9 @@
           ]
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "AP": "+1"
           }
@@ -10948,14 +11911,18 @@
       "def": "<i> - Universal Rule</i><br/><br/>The model part gains <span class=\"textbf\">Hatred</span>, its Special Item allowance is increased to 200 pts, and its Discipline is <span class=\"textbf\">set</span> to 9.<br><br>\tThe model part gains <span class=\"textbf\">Hatred</span>, its Special Item allowance is increased to 200 pts, and its Discipline is <span class=\"textbf\">set</span> to 9.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "Ag": "+1",
             "At": "+1"
           }
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Di": "+1"
           }
@@ -10987,7 +11954,9 @@
           "rules": [
             {
               "id": "resistance",
-              "params": ["Flaming Attacks"]
+              "params": [
+                "Flaming Attacks"
+              ]
             }
           ]
         }
@@ -11066,7 +12035,9 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["distracting"]
+            "params": [
+              "distracting"
+            ]
           }
         }
       ]
@@ -11085,7 +12056,9 @@
       "mod": [
         {
           "type": "universal",
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "*1"
           }
@@ -11093,7 +12066,9 @@
         {
           "rules": {
             "id": "breat_attack",
-            "params": ["toxic_attacks"]
+            "params": [
+              "toxic_attacks"
+            ]
           }
         }
       ]
@@ -11111,7 +12086,9 @@
       "def": "<i> - Universal Rule</i><br/><br/>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The model gains <span class=\"textbf\">Maximised</span>.<br><br>The model's Health Points are <span class=\"textbf\">set</span> to 8, and its base size is changed to 75×100 mm. The model gains <span class=\"textbf\">Maximised</span>.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=8"
           }
@@ -11203,7 +12180,9 @@
       "def": "When calculating Combat Score, halve the first 10 Health Point losses of models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/life_is_cheap\">Life is Cheap</nuxt-link> per unit, rounding fractions up. This does not affect Combat Score bonuses from Overkill.",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "special": "life_is_cheap"
         }
       ]
@@ -11217,7 +12196,9 @@
       "def": "\tWhenever a natural ‘1’ is rolled to hit for an enemy Close Combat Attack allocated towards a model with <nuxt-link class=\"ruleLink\" to=\"/app/rule/cult_of_errahman\">Cult of Errahman</nuxt-link>, the model part inflicts 1 hit with <span class=\"textbf\">Toxic Attacks</span> on the attacking model's unit in the same Initiative Step, before any casualties are removed.<br>\t models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/cult_of_errahman\">Cult of Errahman</nuxt-link> cannot be joined by models without <nuxt-link class=\"ruleLink\" to=\"/app/rule/cult_of_errahman\">Cult of Errahman</nuxt-link>.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "special": "cult_of_errahman"
         }
       ]
@@ -11283,7 +12264,9 @@
       "def": "\tThe model gains <span class=\"textbf\">Random Movement(3D6\")</span> and its Attack Value is <span class=\"textbf\">set</span> to 4D3. It loses the Pitmaster model part, and its base size is changed to 60×100 mm.",
       "mod": [
         {
-          "affects": [1],
+          "affects": [
+            1
+          ],
           "stats": {
             "At": "@0",
             "St": "@0",
@@ -11294,8 +12277,12 @@
           "special": "loses_part"
         },
         {
-          "affects": [0],
-          "loses_rules": ["harnessed"],
+          "affects": [
+            0
+          ],
+          "loses_rules": [
+            "harnessed"
+          ],
           "stats": {
             "At": "=4D3"
           }
@@ -11307,7 +12294,9 @@
           "rules": [
             {
               "id": "random_movement",
-              "params": ["3D6"]
+              "params": [
+                "3D6"
+              ]
             }
           ]
         }
@@ -11334,7 +12323,9 @@
       "def": "<i> - Universal Rule</i><br/><br/>The model part gains +2 Attack Value and its Special Item allowance is increased by 100 pts. In addition, the army may modify the roll for choosing Deployment Zones by -1.<br><br>\tThe model part gains +2 Attack Value and its Special Item allowance is increased by 100 pts. In addition, the army may modify the roll for choosing Deployment Zones by -1.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "At": "+2"
           }
@@ -11349,11 +12340,15 @@
           "basesize": "100x150"
         },
         {
-          "affects": [1],
+          "affects": [
+            1
+          ],
           "statlineNumbers": 4
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "+2"
           }
@@ -11407,12 +12402,16 @@
           "rules": [
             {
               "id": "devastating_charge",
-              "params": ["+2 Adv"]
+              "params": [
+                "+2 Adv"
+              ]
             }
           ]
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "rules": [
             {
               "id": "hard_target"
@@ -11444,7 +12443,9 @@
       "ruletype": "Armour Equipment",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+1"
           }
@@ -11475,7 +12476,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "AP": "+2",
             "At": "+2"
@@ -11521,7 +12524,9 @@
       "def": "\tChanges to the model's profile:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Its base size is changed to <span class=\"textbf\">100×100mm</span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  Its Health Points are <span class=\"textbf\">set</span> to <span class=\"textbf\">6</span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  It gains <span class=\"textbf\">1</span> additional Tiller.<br>\t\t<br>&nbsp;&nbsp;&bull;  It gains <span class=\"textbf\">1</span> additional Draft Beast.<br>\t\t<br>&nbsp;&nbsp;&bull;  It gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/colossal_stature\">Colossal Stature</nuxt-link></span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  The Chassis gains <span class=\"textbf\">Impact Hits(3D3)</span>.<br>\t",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=6"
           }
@@ -11533,18 +12538,26 @@
           }
         },
         {
-          "affects": [2],
+          "affects": [
+            2
+          ],
           "rules": {
             "id": "impact_hits",
-            "params": ["3D3"]
+            "params": [
+              "3D3"
+            ]
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "statlineNumbers": 3
         },
         {
-          "affects": [1],
+          "affects": [
+            1
+          ],
           "statlineNumbers": 3
         }
       ]
@@ -11554,7 +12567,9 @@
       "def": "\tChanges to the model's profile:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  Its base size is changed to <span class=\"textbf\">100×150mm</span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  Its Health Points are <span class=\"textbf\">set</span> to <span class=\"textbf\">8</span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  It gains <span class=\"textbf\">2</span> additional Tillers.<br>\t\t<br>&nbsp;&nbsp;&bull;  It gains <span class=\"textbf\">2</span> additional Draft Beasts.<br>\t\t<br>&nbsp;&nbsp;&bull;  It gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/colossal_stature\">Colossal Stature</nuxt-link></span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  The Chassis gains <span class=\"textbf\">Impact Hits(4D3)</span>.<br>\t",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "=8"
           }
@@ -11566,18 +12581,26 @@
           }
         },
         {
-          "affects": [2],
+          "affects": [
+            2
+          ],
           "rules": {
             "id": "impact_hits",
-            "params": ["4D3"]
+            "params": [
+              "4D3"
+            ]
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "statlineNumbers": 4
         },
         {
-          "affects": [1],
+          "affects": [
+            1
+          ],
           "statlineNumbers": 4
         }
       ]
@@ -11701,7 +12724,9 @@
           },
           "results": [
             {
-              "on": [false],
+              "on": [
+                false
+              ],
               "ennemybuffs": [
                 {
                   "id": "hellish_growl_aura"
@@ -11721,10 +12746,14 @@
       "def": "\tIn the Charge Phase, the model gains <span class=\"textbf\">Maximised(Charge Range)</span> for Charges against units consisting entirely of models with Towering Presence. In addition, the model's Impact Hits gain <span class=\"textbf\">Multiple Wounds(D3, against )</span>.",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rules": {
             "id": "multiple_wounds",
-            "params": ["D3"]
+            "params": [
+              "D3"
+            ]
           },
           "conditions": [
             {
@@ -11758,7 +12787,9 @@
         {
           "rules": {
             "id": "tightening_grasp_attack",
-            "params": ["1"]
+            "params": [
+              "1"
+            ]
           }
         }
       ]
@@ -11772,11 +12803,15 @@
       "def": "\tThe model's Offensive Skill and Defensive Skill are <span class=\"textbf\">set</span> to twice the model's current number of Health Points.<br>The model counts as a Character for the purpose of issuing, accepting, and refusing Duels. When the model fights a Duel during a Round of Combat, it gains <span class=\"textbf\">Stubborn</span> until the end of the Round of Combat.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "special": "falling_star"
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "special": "falling_star"
         }
       ]
@@ -11815,7 +12850,9 @@
       "def": "\tEnemy units in base contact with one or more models with <nuxt-link class=\"ruleLink\" to=\"/app/rule/writhing_nightmares\">Writhing Nightmares</nuxt-link> suffer -1 Discipline.",
       "ennemymod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "Di": "-1"
         }
       ]
@@ -11830,7 +12867,9 @@
       "type": "protection",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "special": "acid_blood"
         }
       ]
@@ -11851,13 +12890,17 @@
       "def": "\tThe model gains +2 Armour, to a maximum of 3.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+2"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "<3"
           }
@@ -11869,7 +12912,9 @@
       "def": "\tThe model gains +2\" March Rate.",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "+2"
           }
@@ -11908,7 +12953,9 @@
       "def": "\tThe model gains +1 Attack Value.",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "At": "+1"
           }
@@ -11920,7 +12967,9 @@
       "def": "\tThe model's Resilience is <span class=\"textbf\">set</span> to 6.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Re": "=6"
           }
@@ -11932,8 +12981,12 @@
       "def": "\tThe model gains <span class=\"textbf\">Immune (Divine Attacks)</span>.<br>\t",
       "ennemymod": [
         {
-          "affects": ["offense"],
-          "loses_rules": ["divine_attacks"]
+          "affects": [
+            "offense"
+          ],
+          "loses_rules": [
+            "divine_attacks"
+          ]
         }
       ]
     },
@@ -11944,7 +12997,9 @@
         {
           "rules": {
             "id": "hard_target",
-            "params": ["1"]
+            "params": [
+              "1"
+            ]
           }
         }
       ]
@@ -11975,7 +13030,9 @@
       "def": "\tClose Combat Attacks made by the model gain +1 Armour Penetration.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "AP": "+1"
           }
@@ -12021,7 +13078,9 @@
       "selectable": true,
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "AP": "+1",
             "St": "+1"
@@ -12080,7 +13139,9 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+2 Agi"]
+            "params": [
+              "+2 Agi"
+            ]
           }
         }
       ]
@@ -12090,13 +13151,17 @@
       "def": "\tEnemy units in base contact with one or more models with this <nuxt-link class=\"ruleLink\" to=\"/app/rule/manifestation\">Manifestation</nuxt-link> suffer -1 Offensive Skill and -1 Defensive Skill.",
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Of": "-1"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Df": "-1"
           }
@@ -12114,7 +13179,9 @@
         {
           "rules": {
             "id": "vanguard",
-            "params": ["6\""]
+            "params": [
+              "6\""
+            ]
           }
         }
       ]
@@ -12155,13 +13222,18 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["2+", "against Flaming Attacks"]
+            "params": [
+              "2+",
+              "against Flaming Attacks"
+            ]
           }
         },
         {
           "rules": {
             "id": "fortitude",
-            "params": ["@0"]
+            "params": [
+              "@0"
+            ]
           }
         }
       ]
@@ -12172,7 +13244,9 @@
       "type": "attack_attribute",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rules": {
             "id": "lightning_reflexes"
           }
@@ -12297,7 +13371,9 @@
       "require_parameters": 1,
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+params[0]"
           }
@@ -12310,7 +13386,9 @@
       "aura": true,
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rollmodifiers": {
             "to_wound": "reroll_failed"
           }
@@ -12322,7 +13400,9 @@
       "def": "/subsection{devour}",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "HP": "+params[0]"
           }
@@ -12390,7 +13470,9 @@
       "def": "\t The model's unit <span class=\"textbf\">must</span> reroll natural to-hit rolls of ‘1’ against <nuxt-link class=\"ruleLink\" to=\"/app/rule/objects_of_envy\">Objects of Envy</nuxt-link>.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "Of": "+2"
           },
@@ -12426,7 +13508,9 @@
       "def": "\tFor every 3 Sin Tokens currently in the Sin Token pool, the model's unit gains +1 Defensive Skill.\t",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Df": "+2"
           },
@@ -12535,7 +13619,11 @@
         {
           "rules": {
             "id": "impact_hits",
-            "params": ["D3+1", "Str 5", "AP 2"]
+            "params": [
+              "D3+1",
+              "Str 5",
+              "AP 2"
+            ]
           },
           "hasrule": {
             "id": "rulebook-impact_hits",
@@ -12551,7 +13639,10 @@
         {
           "rules": {
             "id": "breath_attack",
-            "params": ["Str 3", "AP 2"]
+            "params": [
+              "Str 3",
+              "AP 2"
+            ]
           }
         }
       ]
@@ -12636,7 +13727,9 @@
       "selectable": true,
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Re": "+1"
           }
@@ -12648,7 +13741,9 @@
       "def": "\tThe model part gains <span class=\"textbf\">First Strike(Hatred)</span>.",
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": {
             "id": "lightning_reflexes"
           },
@@ -12898,31 +13993,31 @@
     },
     "rulebook-divine_intervention": {
       "title": "Divine Intervention",
-      "def": "\tWhen resolving the effects of a Thaumaturgy spell, roll  either 1D6 or 2D6:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  If every <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">dice</nuxt-link> rolls a ‘5’ or ‘6’: Apply the Blessing effects, marked with a .<br>\t\t<br>&nbsp;&nbsp;&bull;  If every <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">dice</nuxt-link> rolls a ‘1’: Apply the Admonition effects, marked with a .<br>\t"
+      "def": "\tWhen resolving the effects of a Thaumaturgy spell, roll  either 1D6 or 2D6:<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  If every <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">dice</nuxt-link> rolls a ‘5’ or ‘6’: Apply the Blessing effects, marked with a <br/>✠.<br>\t\t<br>&nbsp;&nbsp;&bull;  If every <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">dice</nuxt-link> rolls a ‘1’: Apply the Admonition effects, marked with a <br/>×.<br>\t"
     },
     "rulebook-smite_the_unbeliever": {
       "title": "Smite the Unbeliever",
-      "def": "\tThe target suffers D6 hits with Str 5, AP 2, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link></span>.<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  : These hits are instead resolved with Str 7, AP 2, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link></span>.<br>\t\t<br>&nbsp;&nbsp;&bull;  : These hits are instead resolved with Str 3, AP 2, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link></span>.<br>\t"
+      "def": "\tThe target suffers D6 hits with Str 5, AP 2, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link></span>.<br>\t<br>\t\t<br/>✠: These hits are instead resolved with Str 7, AP 2, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link></span>.<br>\t\t<br/>×: These hits are instead resolved with Str 3, AP 2, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link></span>.<br>\t"
     },
     "rulebook-light_of_faith": {
       "title": "Light of Faith",
-      "def": "\tThe target counts as having one fewer Proper Ranks when Engaged.<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  : Two fewer Proper Ranks instead<br>\t\t<br>&nbsp;&nbsp;&bull;  : Spell has no effect<br>\t"
+      "def": "\tThe target counts as having one fewer Proper Ranks when Engaged.<br>\t<br>\t\t<br/>✠: Two fewer Proper Ranks instead<br>\t\t<br/>×: Spell has no effect<br>\t"
     },
     "rulebook-weight_of_judgement": {
       "title": "Weight of Judgement",
-      "def": "\tThe target suffers  -2 Agi, to a minimum of 1.<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  : -3 Agi instead<br>\t\t<br>&nbsp;&nbsp;&bull;  : -1 Agi instead<br>\t"
+      "def": "\tThe target suffers  -2 Agi, to a minimum of 1.<br>\t<br>\t\t<br/>✠: -3 Agi instead<br>\t\t<br/>×: -1 Agi instead<br>\t"
     },
     "rulebook-holy_affliction": {
       "title": "Holy Affliction",
-      "def": "\tThe target suffers -1 to wound.<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  : The target suffers -1 AP.<br>\t\t<br>&nbsp;&nbsp;&bull;  : The target gains +1 AP.<br>\t"
+      "def": "\tThe target suffers -1 to wound.<br>\t<br>\t\t<br/>✠: The target suffers -1 AP.<br>\t\t<br/>×: The target gains +1 AP.<br>\t"
     },
     "rulebook-wrath_of_god": {
       "title": "Wrath of God",
-      "def": "Place a marker on the target point. You <span class=\"textbf\">must</span> roll for <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/divine_intervention\">Divine Intervention</nuxt-link></i> at the start of each subsequent <nuxt-link class=\"ruleLink\" to=\"/app/rule/magic_phase\">Magic Phase:</nuxt-link><br><br>\t<br>&nbsp;&nbsp;&bull;  : Each unit within 2D6\" of the centre of the marker suffers 2D6 hits with Str 5, AP 2, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link></span>. Then remove the marker.<br>\t<br>&nbsp;&nbsp;&bull;  : The opponent may move the marker up to 3\" in any direction."
+      "def": "Place a marker on the target point. You <span class=\"textbf\">must</span> roll for <i><nuxt-link class=\"ruleLink\" to=\"/app/rule/divine_intervention\">Divine Intervention</nuxt-link></i> at the start of each subsequent <nuxt-link class=\"ruleLink\" to=\"/app/rule/magic_phase\">Magic Phase:</nuxt-link><br><br>\t<br/>✠: Each unit within 2D6\" of the centre of the marker suffers 2D6 hits with Str 5, AP 2, and <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link></span>. Then remove the marker.<br>\t<br/>×: The opponent may move the marker up to 3\" in any direction."
     },
     "rulebook-rain_of_fire": {
       "title": "Rain of Fire",
-      "def": "\tThe target suffers D3+1 hits. All other units within 3\" of the target suffer 1 hit.<br>All hits are resolved with Str 9, AP 4, <nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link>, <nuxt-link class=\"ruleLink\" to=\"/app/rule/flaming_attacks\">Flaming Attacks</nuxt-link>, .<br>\t<br>\t\t<br>&nbsp;&nbsp;&bull;  : Increase the number of hits each unit suffers by 1.<br>\t\t<br>&nbsp;&nbsp;&bull;  : Decrease the number of hits each unit suffers by 1.<br>\t<br><br>\t"
+      "def": "\tThe target suffers D3+1 hits. All other units within 3\" of the target suffer 1 hit.<br>All hits are resolved with Str 9, AP 4, <nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_attacks\">Magical Attacks</nuxt-link>, <nuxt-link class=\"ruleLink\" to=\"/app/rule/flaming_attacks\">Flaming Attacks</nuxt-link>, .<br>\t<br>\t\t<br/>✠: Increase the number of hits each unit suffers by 1.<br>\t\t<br/>×: Decrease the number of hits each unit suffers by 1.<br>\t<br><br>\t"
     },
     "rulebook-evil_eye": {
       "title": "Evil Eye",
@@ -13024,7 +14119,7 @@
       "def": "Once during each <nuxt-link class=\"ruleLink\" to=\"/app/rule/shooting_phase\">Shooting Phase</nuxt-link>, a non-Shaken and Unengaged <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> with <nuxt-link class=\"ruleLink\" to=\"/app/rule/engineer\">Engineer</nuxt-link> can select a friendly <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> with X in a unit within 6\" of it.<br>The chosen <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> gains +1 to hit with Shooting <nuxt-link class=\"ruleLink\" to=\"/app/rule/attacks\">Attacks</nuxt-link>, to a maximum of 3+. No <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> can be affected by more than one instance of this effect simultaneously.<br>The usage of this must be declared before shooting with the chosen <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link>."
     },
     "rulebook-exclusive": {
-      "title": "Solitary",
+      "title": "Exclusive",
       "def": "This rule limits which Units an Attachable <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">Model</nuxt-link> is allowed to join.<br><br>\t<br>&nbsp;&nbsp;&bull;  <nuxt-link class=\"ruleLink\" to=\"/app/rule/attachable_models\">Attachable Models</nuxt-link> with <nuxt-link class=\"ruleLink\" to=\"/app/rule/exclusive\">Exclusive(X)</nuxt-link> can only join Units containing X.<br>\t<br>&nbsp;&nbsp;&bull;  Non-<nuxt-link class=\"ruleLink\" to=\"/app/rule/attachable_models\">Attachable Models</nuxt-link> with <nuxt-link class=\"ruleLink\" to=\"/app/rule/exclusive\">Exclusive(X)</nuxt-link> can only be joined by <nuxt-link class=\"ruleLink\" to=\"/app/rule/attachable_models\">Attachable Models</nuxt-link> with X.<br>\t<br>&nbsp;&nbsp;&bull;<br>\t<br>&nbsp;&nbsp;&bull;  If a unit has multiple instances of <nuxt-link class=\"ruleLink\" to=\"/app/rule/exclusive\">Exclusive</nuxt-link>, all criteria must be fullfilled.<br><br><i>Ex: a Goblin Chieftain with <nuxt-link class=\"ruleLink\" to=\"/app/rule/exclusive\">Exclusive</nuxt-link> (Goblin, Troll) and <nuxt-link class=\"ruleLink\" to=\"/app/rule/exclusive\">Exclusive</nuxt-link> (Orc) would not be able to join any units.</i><br><br><i>If it instead had <nuxt-link class=\"ruleLink\" to=\"/app/rule/exclusive\">Exclusive</nuxt-link> (Goblin, Troll) and <nuxt-link class=\"ruleLink\" to=\"/app/rule/exclusive\">Exclusive</nuxt-link> (Goblin, Orc) it would only be able to join goblins.</i><br><br>The specific criteria for X can include but is not limited to<br>: Unit names, <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">Model</nuxt-link> Rules, or upgrades.<br><br>If a <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> has both <nuxt-link class=\"ruleLink\" to=\"/app/rule/exclusive\">Exclusive</nuxt-link> and <nuxt-link class=\"ruleLink\" to=\"/app/rule/attached\">Attached</nuxt-link>, apply all requirements from both rules. (<i>Remember that a <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> that cannot be Deployed is considered a casualty.</i>)"
     },
     "rulebook-fearless": {
@@ -13084,7 +14179,9 @@
       "def": "Units entirely with <nuxt-link class=\"ruleLink\" to=\"/app/rule/random_movement\">Random Movement</nuxt-link> do not follow normal rules for Charging, <nuxt-link class=\"ruleLink\" to=\"/app/rule/move_manoeuvres\">Move Manoeuvres</nuxt-link>, <nuxt-link class=\"ruleLink\" to=\"/app/rule/pursue_moves\">Pursue Moves</nuxt-link> or <nuxt-link class=\"ruleLink\" to=\"/app/rule/flee_move\">Flee Moves</nuxt-link>. Instead, apply the following:<br><br>\t<br>&nbsp;&nbsp;&bull;  During the <nuxt-link class=\"ruleLink\" to=\"/app/rule/charge_phase\">Charge Phase</nuxt-link>, the <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> cannot Declare any Charges.<br>\t<br>&nbsp;&nbsp;&bull;  At any time the <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> would perform a Move Manoeuvre, the unit performs a Pursue Move (<i>see Melee chapter</i>) with the following exceptions:<br>\t<br>&nbsp;&nbsp;&bull;  It must move in the <nuxt-link class=\"ruleLink\" to=\"/app/rule/movement_phase\">Movement Phase</nuxt-link> if allowed to do so, and it must do so before any units without <nuxt-link class=\"ruleLink\" to=\"/app/rule/random_movement\">Random Movement</nuxt-link> have performed their <nuxt-link class=\"ruleLink\" to=\"/app/rule/move_manoeuvres\">Move Manoeuvres</nuxt-link>.<br>\t\t<br>&nbsp;&nbsp;&bull;  It moves the distance stated in brackets (X).<br>\t\t<br>&nbsp;&nbsp;&bull;  It can choose which direction it will move in. The owning player must choose which direction before rolling the Pursuit Distance.<br>\t\t<br>&nbsp;&nbsp;&bull;  It does not take <nuxt-link class=\"ruleLink\" to=\"/app/rule/dangerous_terrain\">Dangerous Terrain</nuxt-link> Tests unless Charging.<br>\t\t<br>&nbsp;&nbsp;&bull;  It treats the <nuxt-link class=\"ruleLink\" to=\"/app/rule/table_edge\">Table Edge</nuxt-link> as <nuxt-link class=\"ruleLink\" to=\"/app/rule/impassable_terrain\">Impassable Terrain</nuxt-link>.<br>\t\t<br>&nbsp;&nbsp;&bull;  It counts as an <nuxt-link class=\"ruleLink\" to=\"/app/rule/advance_move\">Advance Move</nuxt-link> for the purpose of Moving and Shooting.<br>\t<br><br>\t<br>&nbsp;&nbsp;&bull;  The <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model’s</nuxt-link> Pursue and <nuxt-link class=\"ruleLink\" to=\"/app/rule/flee_move\">Flee moves</nuxt-link> use the distance stated in brackets (X), instead of the normal distance.<br><br>Whenever a rule requires the Mobility or Charge Speed of the <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link>, use the potential maximum value of X.<br><br><i>Note that this means a <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> with <nuxt-link class=\"ruleLink\" to=\"/app/rule/random_movement\">Random Movement</nuxt-link> cannot perform <nuxt-link class=\"ruleLink\" to=\"/app/rule/magical_move\">Magical Moves</nuxt-link> or use <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/vanguard\">Vanguard</nuxt-link></span>. It also means that modification to Pursue distances such as Maximized and Minimized affect its moves.</i>",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ad": "@params[0]",
             "Ma": "@params[0]"
@@ -13125,7 +14222,10 @@
       "def": "When a unit entirely with <nuxt-link class=\"ruleLink\" to=\"/app/rule/supernal\">Supernal</nuxt-link> fails a Break Test, instead of being Broken and subsequently <nuxt-link class=\"ruleLink\" to=\"/app/rule/shaken\">Shaken</nuxt-link>, it suffers a number of Health Point losses equal to the amount by which the combat was lost, with no <nuxt-link class=\"ruleLink\" to=\"/app/rule/saves\">saves</nuxt-link> of any kind allowed.<br><br>These Health Point losses are first allocated towards Rank-and-File <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link>, and once enough Health Points losses are suffered to remove all Rank-and-File <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link>, remaining Health Point losses are allocated by the owner towards <nuxt-link class=\"ruleLink\" to=\"/app/rule/attachable_models\">Attachable Models</nuxt-link>, as evenly as possible.<br><br><nuxt-link class=\"ruleLink\" to=\"/app/rule/attachable_models\">Attachable Models</nuxt-link> with <nuxt-link class=\"ruleLink\" to=\"/app/rule/supernal\">Supernal</nuxt-link> can only join units containing <nuxt-link class=\"ruleLink\" to=\"/app/rule/supernal\">Supernal</nuxt-link>, and units containing <nuxt-link class=\"ruleLink\" to=\"/app/rule/supernal\">Supernal</nuxt-link> can only be joined by <nuxt-link class=\"ruleLink\" to=\"/app/rule/attachable_models\">Attachable Models</nuxt-link> with <nuxt-link class=\"ruleLink\" to=\"/app/rule/supernal\">Supernal</nuxt-link>.",
       "mod": [
         {
-          "affects": ["offense", "special"],
+          "affects": [
+            "offense",
+            "special"
+          ],
           "rules": {
             "id": "magical_attacks"
           }
@@ -13230,7 +14330,9 @@
       "mod": [
         {
           "special": "distracting",
-          "affects": ["defense"]
+          "affects": [
+            "defense"
+          ]
         }
       ]
     },
@@ -13419,7 +14521,11 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+2 Str", "+2 AP", "+1 Agi"]
+            "params": [
+              "+2 Str",
+              "+2 AP",
+              "+1 Agi"
+            ]
           },
           "conditions": [
             {
@@ -13437,7 +14543,10 @@
         {
           "rules": {
             "id": "devastating_charge",
-            "params": ["+1 Strength", "+1 Armour Penetration"]
+            "params": [
+              "+1 Strength",
+              "+1 Armour Penetration"
+            ]
           },
           "conditions": [
             {
@@ -13459,7 +14568,9 @@
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rules": [
             {
               "id": "twohanded"
@@ -13482,13 +14593,17 @@
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "Ag": "+1"
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "AP": "=3"
           },
@@ -13532,7 +14647,7 @@
     },
     "rulebook-throwing_weapons": {
       "title": "Throwing Weapons",
-      "def": "Range 8\", Shots 2, Str as user, AP as user, <nuxt-link class=\"ruleLink\" to=\"/app/rule/accurate\">Accurate</nuxt-link>, <nuxt-link class=\"ruleLink\" to=\"/app/rule/quick_to_fire\">Quick to Fire</nuxt-link>"
+      "def": "Range 8\", Shots 2, Str as user, AP as user, <nuxt-link class=\"ruleLink\" to=\"/app/rule/accurate\">Accurate</nuxt-link>, <nuxt-link class=\"ruleLink\" to=\"/app/rule/quick_to_fire\">Quick to Fire</nuxt-link>, <nuxt-link class=\"ruleLink\" to=\"/app/rule/stand_and_shoot\">Stand and Shoot</nuxt-link>"
     },
     "rulebook-stand_and_shoot": {
       "title": "Stand and Shoot",
@@ -13566,7 +14681,9 @@
           }
         },
         {
-          "loses_rules": ["custom-close_combat_attacks"]
+          "loses_rules": [
+            "custom-close_combat_attacks"
+          ]
         }
       ]
     },
@@ -13801,7 +14918,9 @@
         {
           "rules": {
             "id": "breath_attack_attack",
-            "params": ["params"]
+            "params": [
+              "params"
+            ]
           }
         }
       ]
@@ -13816,7 +14935,9 @@
         {
           "rules": {
             "id": "rulebook-grind_attack_attack",
-            "params": ["params"]
+            "params": [
+              "params"
+            ]
           }
         }
       ]
@@ -13833,7 +14954,9 @@
         {
           "rules": {
             "id": "impact_hits_attack",
-            "params": ["params"]
+            "params": [
+              "params"
+            ]
           },
           "conditions": [
             {
@@ -14603,7 +15726,9 @@
       "def": "Reduces At by X",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "At": "-params[0]"
           }
@@ -14699,7 +15824,9 @@
           },
           "rules": {
             "id": "multiple_wounds",
-            "params": ["D3+1"]
+            "params": [
+              "D3+1"
+            ]
           }
         }
       ]
@@ -14742,7 +15869,9 @@
       "unique": true,
       "ennemymod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Di": "-1"
           },
@@ -14776,7 +15905,9 @@
           },
           "results": [
             {
-              "on": [false],
+              "on": [
+                false
+              ],
               "ennemybuffs": [
                 {
                   "id": "custom-feared"
@@ -14917,7 +16048,9 @@
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "rollmodifiers": {
             "to_wound": ">3"
           }
@@ -14935,13 +16068,17 @@
           }
         },
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "Of": "+3"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Df": "+3"
           }
@@ -14960,7 +16097,9 @@
         {
           "rules": {
             "id": "fortitude",
-            "params": ["4+"]
+            "params": [
+              "4+"
+            ]
           }
         },
         {
@@ -14978,7 +16117,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["4+"]
+            "params": [
+              "4+"
+            ]
           }
         },
         {
@@ -15009,13 +16150,17 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["@0"]
+            "params": [
+              "@0"
+            ]
           }
         },
         {
           "rules": {
             "id": "fortitude",
-            "params": ["@0"]
+            "params": [
+              "@0"
+            ]
           }
         },
         {
@@ -15030,7 +16175,9 @@
       "def": "\t+1 Arm.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+1"
           }
@@ -15043,7 +16190,9 @@
       "type": "protection",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+2"
           },
@@ -15065,7 +16214,10 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["3+", "against Flaming Attacks"]
+            "params": [
+              "3+",
+              "against Flaming Attacks"
+            ]
           }
         },
         {
@@ -15076,7 +16228,9 @@
         {
           "rules": {
             "id": "fortitude",
-            "params": ["@0"]
+            "params": [
+              "@0"
+            ]
           }
         }
       ]
@@ -15090,13 +16244,17 @@
       "def": "    +3 Arm. The Armour value can <span class=\"textbf\">never</span> be improved beyond 5.",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+3"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "<5"
           }
@@ -15109,7 +16267,9 @@
       "type": "banner",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ad": "+1",
             "Ma": "+1"
@@ -15149,7 +16309,9 @@
       "type": "banner",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rules": {
             "id": "flaming_attacks"
           }
@@ -15165,7 +16327,9 @@
         {
           "rules": {
             "id": "magic_resistance",
-            "params": ["1"]
+            "params": [
+              "1"
+            ]
           }
         }
       ]
@@ -15178,7 +16342,9 @@
       "type": "banner",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "AP": "+1"
           }
@@ -15222,7 +16388,9 @@
         {
           "rules": {
             "id": "aegis",
-            "params": ["5+"]
+            "params": [
+              "5+"
+            ]
           }
         }
       ]
@@ -15250,7 +16418,9 @@
         {
           "rules": {
             "id": "magic_resistance",
-            "params": ["2"]
+            "params": [
+              "2"
+            ]
           }
         }
       ]
@@ -15267,7 +16437,9 @@
       "defaultSelection": false,
       "mod": [
         {
-          "affects": [0],
+          "affects": [
+            0
+          ],
           "stats": {
             "Ag": "+3"
           }
@@ -15448,7 +16620,9 @@
       "def": "Units <nuxt-link class=\"ruleLink\" to=\"/app/rule/netted\">Netted</nuxt-link> one or more times suffer -1 Strength and -1 Armour Penetration until the end of the Round of Combat.",
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "AP": "-1",
             "St": "-1"
@@ -15538,7 +16712,9 @@
       "def": "Commander of the <nuxt-link class=\"ruleLink\" to=\"/app/rule/terracotta\">Terracotta</nuxt-link> Army",
       "mod": [
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Rsr": "=1"
           }
@@ -15549,17 +16725,25 @@
           }
         },
         {
-          "affects": ["defense"],
-          "loses_rules": ["flammable"]
+          "affects": [
+            "defense"
+          ],
+          "loses_rules": [
+            "flammable"
+          ]
         },
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "stats": {
             "Ag": "-1"
           }
         },
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Re": "+1"
           },
@@ -15573,8 +16757,13 @@
           ]
         },
         {
-          "affects": ["global"],
-          "loses_rules": ["light_troops", "underground_ambush"],
+          "affects": [
+            "global"
+          ],
+          "loses_rules": [
+            "light_troops",
+            "underground_ambush"
+          ],
           "conditions": [
             {
               "hasrule": {
@@ -15591,12 +16780,21 @@
       "def": "/subsection{lord_of_the_barrow_legion}",
       "mod": [
         {
-          "affects": ["global"],
-          "loses_rules": ["underground_ambush", "scout"]
+          "affects": [
+            "global"
+          ],
+          "loses_rules": [
+            "underground_ambush",
+            "scout"
+          ]
         },
         {
-          "affects": ["global"],
-          "loses_rules": ["light_troops"],
+          "affects": [
+            "global"
+          ],
+          "loses_rules": [
+            "light_troops"
+          ],
           "conditions": [
             {
               "hasrule": {
@@ -15841,7 +17039,9 @@
     "custom-feared": {
       "mod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rollmodifiers": {
             "to_hit": "-1"
           },
@@ -15857,7 +17057,9 @@
       ],
       "ennemymod": [
         {
-          "affects": ["offense"],
+          "affects": [
+            "offense"
+          ],
           "rollmodifiers": {
             "to_hit": "+1"
           },
@@ -15883,13 +17085,17 @@
       "def": "+1 Armour, -1 Adv, -2 Ma",
       "mod": [
         {
-          "affects": ["defense"],
+          "affects": [
+            "defense"
+          ],
           "stats": {
             "Arm": "+1"
           }
         },
         {
-          "affects": ["global"],
+          "affects": [
+            "global"
+          ],
           "stats": {
             "Ma": "-2",
             "Ad": "-1"
