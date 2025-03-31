@@ -13,7 +13,7 @@
   "include": [102],
   "hereditary": [
     {
-      "ref": "death_beginning",
+      "ref": "duty_is_eternal",
       "path": "hereditary"
     }
   ],
@@ -233,7 +233,7 @@
           "boundSpells": [
             {
               "path": "hereditary",
-              "ref": "death_beginning",
+              "ref": "duty_is_eternal",
               "mods": {
                 "castValue": 4,
                 "range": 12,
@@ -498,7 +498,7 @@
                           "refs": [
                             {
                               "ref": "aspis_arrows",
-                              "amount": 3
+                              "amount": 5
                             }
                           ]
                         }
@@ -621,7 +621,7 @@
                     {
                       "name": "Commander of the Terracotta Army",
                       "type": "check",
-                      "cost": 5,
+                      "cost": 25,
                       "refs": ["terracotta", "specialized_army"],
                       "armyHasOption": ["pharaoh_general"],
                       "armyHasNotOption": ["barrow_legion"],
@@ -883,7 +883,12 @@
                       "name": "Longbow (4+)",
                       "type": "check",
                       "cost": 5,
-                      "refs": ["aspis_arrows"]
+                      "refs": [
+                        {
+                          "ref": "aspis_arrows",
+                          "amount": 2
+                        }
+                      ]
                     },
                     {
                       "type": "check",
@@ -2813,7 +2818,7 @@
                         "shabti_archers_amount",
                         {
                           "ref": "aspis_arrows",
-                          "amount": 3
+                          "amount": 5
                         }
                       ]
                     }
