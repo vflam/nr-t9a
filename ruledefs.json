@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 346,
+  "nrversion": 351,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -23,6 +23,22 @@
       "def": "The model gains  Attached, , Exclusive(Height 1), , <nuxt-link class=\"ruleLink\" to=\"/app/rule/petrifying_stare\">Petrifying Stare</nuxt-link>, , WarPlatform.  Whenever a friendly unit within 12\" is initiating a Move (<i>see Definition and Terminology chapter in the Reference Handbook</i>), the unit gains +1 Mob and <span class=\"textbf\">Devastating Charge(Strider)</span> for the duration of the Player Turn."
     },
     "de-temple_acolytes": {
+      "0": {
+        "mod": [
+          {
+            "rules": [
+              {
+                "id": "rulebook-paired_weapons",
+                "params": []
+              },
+              {
+                "id": "de-artistry_of_death",
+                "params": []
+              }
+            ]
+          }
+        ]
+      },
       "title": "Temple Acolytes",
       "def": "The Dread Acolyte model part gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/artistry_of_death\">Artistry of Death</nuxt-link></span>, Paired Weapons and Temple."
     },
@@ -4878,7 +4894,17 @@
     },
     "koe-hooded_men": {
       "title": "Hooded Men",
-      "def": "  The model gains <span class=\"textbf\">Hard Target(1)</span> and <span class=\"textbf\">Skirmisher</span>."
+      "def": "  The model gains <span class=\"textbf\">Hard Target(1)</span> and <span class=\"textbf\">Skirmisher</span>.",
+      "mod": [
+        {
+          "rules": [
+            {
+              "id": "rulebook-skirmishers",
+              "params": []
+            }
+          ]
+        }
+      ]
     },
     "koe-champion_of_the_green_knight": {
       "title": "Champion of the Green Knight",
@@ -14584,7 +14610,7 @@
     },
     "rulebook-spear": {
       "title": "Spear",
-      "def": "Mounted <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link> cannot use <nuxt-link class=\"ruleLink\" to=\"/app/rule/spear\">Spears</nuxt-link>. +1 Agi, <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/fight_in_extra_rank\">Fight in Extra Rank</nuxt-link></span>, +3 AP against <nuxt-link class=\"ruleLink\" to=\"/app/rule/swiftstride\">Swiftstride*</nuxt-link>. *AP Bonus Cannot be used when Charging.",
+      "def": "+1 Agi, +1 AP, +1 additional AP against <nuxt-link class=\"ruleLink\" to=\"/app/rule/mount\">Mount</nuxt-link> or Centauroid <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/fight_in_extra_rank\">Fight in Extra Rank</nuxt-link></span>",
       "type": "cc_weapon",
       "mod": [
         {
@@ -14627,7 +14653,7 @@
     },
     "rulebook-bow": {
       "title": "Bow",
-      "def": "Range 24\", Shots 1, Str 3, AP 0, "
+      "def": "Range 24\", Shots 1, Str 3, AP 0, <nuxt-link class=\"ruleLink\" to=\"/app/rule/shoot_in_extra_rank\">Shoot in Extra Rank</nuxt-link>"
     },
     "rulebook-longbow": {
       "title": "Longbow",
@@ -14910,7 +14936,7 @@
     },
     "rulebook-breath_attack": {
       "title": "Breath Attack",
-      "def": "<nuxt-link class=\"ruleLink\" to=\"/app/rule/march_and_shoot\">March and Shoot</nuxt-link>. Hits automatically (no to-hit roll required). The Strength, Armour Penetration, and additional <nuxt-link class=\"ruleLink\" to=\"/app/rule/attack_attributes\">Attack Attributes</nuxt-link> are defined in brackets (X).",
+      "def": "Range 8\", Shots: 2D6, Str: X, AP: X, One use only. <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/march_and_shoot\">March and Shoot</nuxt-link></span>. Hits automatically <i>(no to-hit roll required)</i>. The Strength, Armour Penetration, and additional <nuxt-link class=\"ruleLink\" to=\"/app/rule/attack_attributes\">Attack Attributes</nuxt-link> are defined in brackets (X).",
       "type": "attack_attribute",
       "selectable": true,
       "uses": 1,
