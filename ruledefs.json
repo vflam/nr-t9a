@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 351,
+  "nrversion": 353,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -1489,35 +1489,31 @@
               ]
             },
             {
-              "id": "volcanic_embrace",
+              "id": "aegis",
               "params": [
-                "1"
+                "3+",
+                "against Flaming Attacks"
               ]
             }
           ]
         },
         {
           "affects": [
-            "global"
+            "defense"
+          ],
+          "loses_rules": [
+            "id-infernal_armour"
           ],
           "stats": {
-            "Ad": "=4",
-            "Ma": "=12"
+            "Arm": "-3"
           }
         },
         {
-          "rules": [
-            {
-              "id": "feigned_flight"
-            }
+          "affects": [
+            0
           ],
-          "conditions": [
-            {
-              "hasrule": {
-                "id": "rulebook-mount",
-                "value": "false"
-              }
-            }
+          "loses_tags": [
+            "Metal Armour"
           ]
         }
       ]
@@ -1819,7 +1815,7 @@
             0
           ],
           "loses_rules": [
-            "twohanded"
+            "rulebook-twohanded"
           ]
         },
         {
@@ -2035,7 +2031,7 @@
             "offense"
           ],
           "loses_rules": [
-            "flaming_attacks"
+            "rulebook-flaming_attacks"
           ]
         }
       ]
