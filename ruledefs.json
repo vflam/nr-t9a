@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 353,
+  "nrversion": 356,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -10354,7 +10354,7 @@
             "global"
           ],
           "stats": {
-            "Ma": "+4"
+            "Ma": "+2"
           }
         }
       ]
@@ -10428,6 +10428,9 @@
               }
             }
           ],
+          "stats": {
+            "Arm": "+1"
+          },
           "affects": [
             "defense"
           ],
@@ -10436,7 +10439,38 @@
         {
           "rules": {
             "id": "shield"
-          }
+          },
+          "loses_rules": [
+            "shield"
+          ]
+        },
+        {
+          "rules": {
+            "id": "parry"
+          },
+          "conditions": [
+            {
+              "hasrule": {
+                "id": "rulebook-hand_weapon",
+                "value": true
+              }
+            },
+            {
+              "hasrule": {
+                "id": "rulebook-mount",
+                "value": false
+              }
+            },
+            {
+              "hasrule": {
+                "id": "custom-cavalry",
+                "value": false
+              }
+            },
+            {
+              "special": "hand_weapon_effect"
+            }
+          ]
         }
       ]
     },
@@ -11680,6 +11714,9 @@
               }
             }
           ],
+          "stats": {
+            "Arm": "+1"
+          },
           "affects": [
             "defense"
           ],
@@ -11688,7 +11725,38 @@
         {
           "rules": {
             "id": "shield"
-          }
+          },
+          "loses_rules": [
+            "shield"
+          ]
+        },
+        {
+          "rules": {
+            "id": "parry"
+          },
+          "conditions": [
+            {
+              "hasrule": {
+                "id": "rulebook-hand_weapon",
+                "value": true
+              }
+            },
+            {
+              "hasrule": {
+                "id": "rulebook-mount",
+                "value": false
+              }
+            },
+            {
+              "hasrule": {
+                "id": "custom-cavalry",
+                "value": false
+              }
+            },
+            {
+              "special": "hand_weapon_effect"
+            }
+          ]
         }
       ]
     },

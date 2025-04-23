@@ -6,7 +6,7 @@
   },
   "short": "wdg",
   "version": "2023",
-  "nrversion": 381,
+  "nrversion": 382,
   "playable": 1,
   "id": 18,
   "include": [102],
@@ -238,7 +238,14 @@
           "armyHasNotOption": ["wdg_forebodorb"],
           "refs": ["army_unique", "wdg_forebodorb"],
           "description": "\tDuring Pre-game Selection: Mark a point on the Battlefield within 24\" of your Deployment Zone, and outside the opponent's Deployment Zone, with a Gateway Marker. Once per game, at the start of a friendly Magic Phase (<i>before drawing a Flux Card</i>), if the bearer's unit was allowed to move in the prior Movement Phase (<i>is not Shaken, did not Ambush, Failed Charge, Unengaged etc.</i>), remove the unit from the Battlefield and immediately place it back on the Battlefield with <span class=\"textbf\">Ambush(friendly Gateway Marker, that was not placed during this Player Turn)</span>.\n\t",
-          "option_id": "f4kkpxk95vl5z6ndjyyswa"
+          "option_id": "f4kkpxk95vl5z6ndjyyswa",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "excluded": ["5"]
+              }
+            }
+          }
         },
         {
           "type": "check",
@@ -642,7 +649,7 @@
                       "name": "Gluttony",
                       "refs": ["fv_akaan"],
                       "cost": 0,
-                      "description": "The first time a model with this Favour is on the winning side of a combat, its model parts with Path of the Favoured gain +1 Str with Duration: Permanent.",
+                      "description": "The first time a model with this Favour is on the winning side of a combat, its model parts with Path of the Favoured gains +1 Str. Duration: Permanent.",
                       "option_id": "cfjrumbeplknftjts7sqzb"
                     },
                     {
@@ -658,7 +665,7 @@
                       "name": "Lust",
                       "refs": ["fv_cibaresh"],
                       "cost": 0,
-                      "description": "The model gains Feigned Flight.",
+                      "description": "The model gains Feigned Flight and Strider.",
                       "option_id": "sf261gxa3wltobfo9oufqp"
                     },
                     {
@@ -666,7 +673,7 @@
                       "name": "Pride",
                       "refs": ["fv_savar"],
                       "cost": 20,
-                      "description": "Courage Tests taken by units containing this Favour are Minimised. Command Tests taken by units containing this Favour are Maximised.",
+                      "description": "The model gains Disciplined. Discipline Tests taken by units containing this Favour are Minimised.",
                       "option_id": "rj2pewm6iyh2nqcz5j7t"
                     },
                     {
@@ -674,7 +681,7 @@
                       "name": "Sloth",
                       "refs": ["fv_nukuja"],
                       "cost": 20,
-                      "description": "The model gains +1 Res. When the model’s unit declares a Charge or performs a March Move, the effect is lost until the start of the Melee Phase in the next Player Turn.",
+                      "description": "Model gains Aegis (6+). In addition, if the model is Height 1–4 it gains Aegis (+1, max. 4+, against no Armour Save*).",
                       "option_id": "ks6h1gw3z5ponmo34s3w3m"
                     },
                     {
@@ -682,7 +689,7 @@
                       "name": "Wrath",
                       "refs": ["fv_vanadra"],
                       "cost": 20,
-                      "description": "The model part with Path of the Favoured gains Frenzy, Fury, and Unruly.",
+                      "description": "The model part gains First Strike (Hatred).",
                       "option_id": "6xftdbyvj73dgsvd5qqpf"
                     }
                   ],
