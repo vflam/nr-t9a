@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 356,
+  "nrversion": 358,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -5237,17 +5237,7 @@
     },
     "koe-castellan": {
       "title": "Castellan",
-      "def": "  The model part gains <span class=\"textbf\">Captain</span> and <span class=\"textbf\">Commanding Presence(6\", <nuxt-link class=\"ruleLink\" to=\"/app/rule/commonfolk\">Commonfolk)</nuxt-link></span>.",
-      "mod": [
-        {
-          "affects": [
-            0
-          ],
-          "stats": {
-            "At": "+2"
-          }
-        }
-      ]
+      "def": "  The model part gains <span class=\"textbf\">Captain</span> and <span class=\"textbf\">Commanding Presence(6\", <nuxt-link class=\"ruleLink\" to=\"/app/rule/commonfolk\">Commonfolk)</nuxt-link></span>."
     },
     "koe-excellence": {
       "title": "Excellence",
@@ -6671,7 +6661,25 @@
     },
     "sa-vital_essence": {
       "title": "Vital Essence",
-      "def": "\t+1 HP and <span class=\"textbf\">Regeneration(4+)</span>."
+      "def": "\t+1 HP and <span class=\"textbf\">Regeneration(4+)</span>.",
+      "mod": [
+        {
+          "affects": [
+            "defense"
+          ],
+          "stats": {
+            "HP": "+1"
+          },
+          "rules": [
+            {
+              "id": "regeneration",
+              "params": [
+                "4+"
+              ]
+            }
+          ]
+        }
+      ]
     },
     "sa-imbued_jade": {
       "title": "Imbued Jade",
