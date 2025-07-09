@@ -36,9 +36,19 @@
     "brute_force": "Brute Force",
     "fetthisFleshmaster": "Fetthis Fleshmaster",
     "experimental_weapons": "Experimental Weapons",
-    "small_arms_fire": "Small Arms Fire"
+    "small_arms_fire": "Small Arms Fire",
+    "tunnel_gunners": "Tunnel Gunners"
   },
-  "indicators": ["jezail", "rotary_gun", "canister_launcher", "deepfire_thrower", "brute_force", "small_arms_fire", "experimental_weapons"],
+  "indicators": [
+    "jezail",
+    "rotary_gun",
+    "canister_launcher",
+    "deepfire_thrower",
+    "brute_force",
+    "small_arms_fire",
+    "experimental_weapons",
+    "tunnel_gunners"
+  ],
   "dictionnary": [
     {
       "refs": ["potions_and_scrolls"],
@@ -896,7 +906,8 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant", "spearEnchant"],
                           "optionsSuffix": " (Spear)",
-                          "option_id": "dk0xo7b00cn6xlg4cxnrt7"
+                          "option_id": "dk0xo7b00cn6xlg4cxnrt7",
+                          "hasNotOption": ["mount"]
                         },
                         {
                           "type": "check",
@@ -1067,7 +1078,7 @@
                           "type": "check",
                           "name": "Jezail (3+)",
                           "cost": 10,
-                          "refs": ["jezail"],
+                          "refs": ["jezail", "tunnel_gunners"],
                           "armyHasNotOption": [
                             {
                               "refs": ["jezail"],
@@ -1082,7 +1093,7 @@
                           "type": "check",
                           "name": "Rotary Gun (3+)",
                           "cost": 10,
-                          "refs": ["rotary_gun"],
+                          "refs": ["rotary_gun", "tunnel_gunners"],
                           "armyHasNotOption": [
                             {
                               "refs": ["rotary_gun"],
@@ -1097,7 +1108,7 @@
                           "type": "check",
                           "name": "Deepfire Thrower",
                           "cost": 50,
-                          "refs": ["deepfire_thrower"],
+                          "refs": ["deepfire_thrower", "tunnel_gunners"],
                           "armyHasNotOption": [
                             {
                               "refs": ["deepfire_thrower"],
@@ -1112,11 +1123,11 @@
                           "type": "check",
                           "name": "Canister Launcher (5+)",
                           "cost": 35,
-                          "refs": ["canister_launcher"],
+                          "refs": ["canister_launcher", "tunnel_gunners"],
                           "armyHasNotOption": [
                             {
                               "refs": ["canister_launcher"],
-                              "amount": 9
+                              "amount": 6
                             }
                           ],
                           "option_id": "oyj7k4lkc79c740775elw",
@@ -1944,7 +1955,13 @@
               "refs": ["fireRats", "non_core_unit", "tag_Beast", "tag_Mutant"],
               "unit_id": "giant_rats",
               "option_id": "fsf23f326fgfdcfsd4534d03khg409rg4",
-              "logo": "special"
+              "logo": "special",
+              "rules": [
+                {
+                  "id": "fire_rats",
+                  "params": []
+                }
+              ]
             },
             {
               "name": "Rat Swarm",
@@ -2122,7 +2139,17 @@
               "name": "Doomspark Device",
               "cost": 240,
               "category": "special",
-              "refs": ["doomsparkDevices", "non_core_unit", "tag_Vermin", "tag_Construct", "tag_Metal Armour"],
+              "refs": [
+                "doomsparkDevices",
+                "non_core_unit",
+                "tag_Vermin",
+                "tag_Construct",
+                "tag_Metal Armour",
+                {
+                  "ref": "tunnel_gunners",
+                  "amount": 3
+                }
+              ],
               "unit_id": "doomspark_device",
               "armyHasNotOption": [],
               "option_id": "gf19l3tdamll84augmbpu",
@@ -2230,7 +2257,7 @@
                               "type": "check",
                               "name": "Deepfire Thrower",
                               "cost": 10,
-                              "refs": ["deepfire_thrower"],
+                              "refs": ["deepfire_thrower", "tunnel_gunners"],
                               "option_id": "fw1ewuzr9lp59ygplkg7cc",
                               "armyHasNotOption": [
                                 {
@@ -2243,12 +2270,12 @@
                               "type": "check",
                               "name": "Canister Launcher (4+)",
                               "cost": 10,
-                              "refs": ["canister_launcher"],
+                              "refs": ["canister_launcher", "tunnel_gunners"],
                               "option_id": "tdrgv72hfypamqkeoxi3v4",
                               "armyHasNotOption": [
                                 {
                                   "refs": ["canister_launcher"],
-                                  "amount": 9
+                                  "amount": 6
                                 }
                               ]
                             },
@@ -2256,7 +2283,7 @@
                               "type": "check",
                               "name": "Rotary Gun (4+)",
                               "cost": 25,
-                              "refs": ["rotary_gun"],
+                              "refs": ["rotary_gun", "tunnel_gunners"],
                               "option_id": "bw27gzgjcumz7ak7uai24i",
                               "armyHasNotOption": [
                                 {
@@ -2270,7 +2297,7 @@
                               "name": "Jezail (4+) and Shield",
                               "cost": 0,
                               "option_id": "rl9udj4d1tsc3vgent7u6l",
-                              "refs": ["jezail"],
+                              "refs": ["jezail", "tunnel_gunners"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["jezail"],
@@ -2346,7 +2373,7 @@
                               "type": "check",
                               "name": "Rotary Gun (4+)",
                               "cost": 25,
-                              "refs": ["rotary_gun"],
+                              "refs": ["rotary_gun", "tunnel_gunners"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["rotary_gun"],
@@ -2363,7 +2390,7 @@
                               "armyHasNotOption": [
                                 {
                                   "refs": ["canister_launcher"],
-                                  "amount": 9
+                                  "amount": 6
                                 }
                               ],
                               "option_id": "tfnys7cxvbb5mb110ppmp"
@@ -2372,7 +2399,7 @@
                               "type": "check",
                               "name": "Deepfire Thrower",
                               "cost": 15,
-                              "refs": ["deepfire_thrower"],
+                              "refs": ["deepfire_thrower", "tunnel_gunners"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["deepfire_thrower"],
@@ -2386,7 +2413,7 @@
                               "name": "Jezail (4+) and Shield",
                               "parsername": "Jezail (4+) and Shield",
                               "cost": 0,
-                              "refs": ["jezail"],
+                              "refs": ["jezail", "tunnel_gunners"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["jezail"],
@@ -2481,7 +2508,16 @@
                   "option_id": "zwznn8kg6dfmhoclsh5wt"
                 }
               ],
-              "refs": ["verminArtillery", "war_machine", "non_core_unit", "tag_Vermin"],
+              "refs": [
+                "verminArtillery",
+                "war_machine",
+                "non_core_unit",
+                "tag_Vermin",
+                {
+                  "ref": "tunnel_gunners",
+                  "amount": 3
+                }
+              ],
               "unit_id": "vermin_artillery",
               "armyHasNotOption": [],
               "option_id": "rdmgw1suo40oa0iaj4tv6",

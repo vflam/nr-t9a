@@ -32,7 +32,8 @@
     "core_unit": "Core Unit",
     "chimera_mount_unit": "Chimera",
     "legendary_beast": "Legendary Beasts",
-    "feldrak": "Feldraks"
+    "feldrak": "Feldraks",
+    "fv_sugulag": "Greed"
   },
   "dictionnary": [
     {
@@ -908,6 +909,58 @@
                       "option_id": "2tvlro0cx8ahpfesxinh1s"
                     },
                     {
+                      "optionsLabel": "Paired Weapons Enchant",
+                      "optionsSuffix": " (Paired Weapons)",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                      "option_id": "43g43g43g43h543jh453fdfkbjfg43",
+                      "childrenOptions": {
+                        "hasOption": [
+                          {
+                            "refs": ["fv_sugulag"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+
+                    {
+                      "optionsLabel": "Halberd Enchant",
+                      "optionsSuffix": " (Halberd)",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["weaponEnchant"],
+                      "option_id": "f432f234g42g423n43if4ng943g43",
+                      "childrenOptions": {
+                        "hasOption": [
+                          {
+                            "refs": ["fv_sugulag"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "optionsLabel": "Great Weapon Enchant",
+                      "optionsSuffix": " (Great Weapon)",
+                      "sortOptions": true,
+                      "collapsible": true,
+                      "options": [],
+                      "optionsDict": ["weaponEnchant"],
+                      "option_id": "43g43g43f423g43n89g43ng943",
+                      "childrenOptions": {
+                        "hasOption": [
+                          {
+                            "refs": ["fv_sugulag"],
+                            "amount": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
                       "type": "group",
                       "optionsLabel": "Artefact",
                       "maxSize": 1,
@@ -1677,7 +1730,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "khsbshebvlp4wybp3mv78a"
+                          "option_id": "khsbshebvlp4wybp3mv78a",
+                          "hasNotOption": ["mount"]
                         },
                         {
                           "type": "check",

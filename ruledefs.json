@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 362,
+  "nrversion": 367,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -7080,7 +7080,8 @@
             "defense"
           ],
           "stats": {
-            "Arm": "+1"
+            "HP": "+1",
+            "Arm": "@4"
           }
         },
         {
@@ -7455,35 +7456,9 @@
           ],
           "rules": {
             "id": "distracting"
-          }
-        }
-      ],
-      "ennemymod": [
-        {
-          "affects": [
-            "offense"
-          ],
-          "stats": {
-            "At": "-1"
           },
-          "conditions": [
-            {
-              "hasrule": {
-                "id": "rulebook-harnessed",
-                "value": false
-              }
-            },
-            {
-              "duel": true
-            }
-          ]
-        },
-        {
-          "affects": [
-            "offense"
-          ],
           "stats": {
-            "Ag": "-1"
+            "Arm": "=1"
           }
         }
       ]
@@ -7503,7 +7478,8 @@
             ]
           },
           "stats": {
-            "HP": "=4"
+            "HP": "=4",
+            "Arm": "=0"
           }
         },
         {
@@ -8648,7 +8624,12 @@
     },
     "vs-fire_rats": {
       "title": "Fire Rats",
-      "def": "The model gains Flaming Attacks, Weakness(Flaming Attacks), and its base size is changed to 25×50 mm.<br>Immediately before the model is removed as a casualty as a result of a enemy Melee Attack, it inflicts 1 hit with Str 3, AP 0, Flaming Attacks, Unmodifiable towards the Health Pool of the attacking model."
+      "def": "The model gains Flaming Attacks, Weakness(Flaming Attacks), and its base size is changed to 25×50 mm.<br>Immediately before the model is removed as a casualty as a result of a enemy Melee Attack, it inflicts 1 hit with Str 3, AP 0, Flaming Attacks, Unmodifiable towards the Health Pool of the attacking model.",
+      "mod": [
+        {
+          "basesize": "25×50"
+        }
+      ]
     },
     "vs-fetthis_fleshmaster": {
       "title": "Fetthis Fleshmaster",
@@ -14359,7 +14340,7 @@
             "params": [
               "+2 Str",
               "+2 AP",
-              "+1 Agi"
+              "+2 Agi"
             ]
           },
           "conditions": [
@@ -14438,23 +14419,8 @@
             0
           ],
           "stats": {
-            "AP": "=3"
-          },
-          "conditions": [
-            {
-              "charging": false
-            },
-            {
-              "opponent": [
-                {
-                  "hasrule": {
-                    "id": "rulebook-swiftstride",
-                    "value": true
-                  }
-                }
-              ]
-            }
-          ]
+            "AP": "+1"
+          }
         }
       ]
     },
@@ -15095,7 +15061,7 @@
       "title": "Magic Dice and Flux Cards"
     },
     "rulebook-siphon_the_veil": {
-      "def": "The Active Player gains additional Magic <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">Dice</nuxt-link> from the following sources:<br><br>\t<br>&nbsp;&nbsp;&bull;  One free additional Magic <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">Dice</nuxt-link>.<br>\t<br>&nbsp;&nbsp;&bull;  Magic <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">Dice</nuxt-link> from <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link> with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel</nuxt-link></span>.<br>\t<br>&nbsp;&nbsp;&bull;  Magic <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">Dice</nuxt-link> stored from the previous phase <i>(see <nuxt-link class=\"ruleLink\" to=\"/app/rule/storing_magic\">Storing Magic)</nuxt-link></i>.<br><br><i>Note: each non-<span class=\"textbf\">Shaken</span> <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel(X)</nuxt-link></span> adds X Magic <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">Dice</nuxt-link>. The most common source of <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel</nuxt-link></span> are Wizards:<br><br>&nbsp;&nbsp;&bull;  <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/wizard_adept\">Wizard Adepts</nuxt-link></span> have <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel(1)</nuxt-link></span>.<br><br>&nbsp;&nbsp;&bull;  <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/wizard_master\">Wizard Masters</nuxt-link></span> have <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel(2)</nuxt-link></span>.<br><br>&nbsp;&nbsp;&bull;  <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/wizard_conclave\">Wizard Conclaves</nuxt-link></span> have <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel(1)</nuxt-link></span>, unless it is a <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/wizard_conclave\">Wizard Conclave</nuxt-link> (1)</span>.<br><br></i><br><br>\t-10.80vampire_MadAt.pngMad Hat<br>\t<br><br>I hope you haven’t been listening to any criminal goblins. That would be almost as inadvisable as talking to an undergraduate!<br>Herr Sigmund Selig here, Professor Emeritus; you may call me The Sage. Forgive my tardiness, but I’d just seen a paper by that buffoon of a provost from Eichtal, claiming that the Flux responds to the seniority of the mage who calls upon it. Naturally I had to write a treatise in response – the Flux is simply the vulgar term for the flow of magic into and around our Realm, and all proper experiments demonstrate that though a wizard might draw more of this substance to themselves by “channelling”, they cannot increase the total magical resources in the vicinity, which is entirely random. Thank goodness I was in time to correct you on that!",
+      "def": "The Active Player gains additional Magic <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">Dice</nuxt-link> from the following sources:<br><br>\t<br>&nbsp;&nbsp;&bull;  One free additional Magic <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">Dice</nuxt-link>.<br>\t<br>&nbsp;&nbsp;&bull;  Magic <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">Dice</nuxt-link> from <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">models</nuxt-link> with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel</nuxt-link></span>.<br>\t<br>&nbsp;&nbsp;&bull;  Magic <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">Dice</nuxt-link> stored from the previous phase <i>(see <nuxt-link class=\"ruleLink\" to=\"/app/rule/storing_magic\">Storing Magic)</nuxt-link></i>.<br><br><i>Note: each non-<span class=\"textbf\">Shaken</span> <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel(X)</nuxt-link></span> adds X Magic <nuxt-link class=\"ruleLink\" to=\"/app/rule/dice\">Dice</nuxt-link>. The most common source of <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel</nuxt-link></span> are Wizards:<br><br>&nbsp;&nbsp;&bull;  <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/wizard_adept\">Wizard Adepts</nuxt-link></span> have <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel(1)</nuxt-link></span>.<br><br>&nbsp;&nbsp;&bull;  <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/wizard_master\">Wizard Masters</nuxt-link></span> have <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel(2)</nuxt-link></span>.<br><br>&nbsp;&nbsp;&bull;  <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/wizard_conclave\">Wizard Conclaves</nuxt-link></span> have <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/channel\">Channel(1)</nuxt-link></span>, unless it is a <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/wizard_conclave\">Wizard Conclave</nuxt-link> (1)</span>.<br><br></i><br><br>\t-1<br>\t<br><br>I hope you haven’t been listening to any criminal goblins. That would be almost as inadvisable as talking to an undergraduate!<br>Herr Sigmund Selig here, Professor Emeritus; you may call me The Sage. Forgive my tardiness, but I’d just seen a paper by that buffoon of a provost from Eichtal, claiming that the Flux responds to the seniority of the mage who calls upon it. Naturally I had to write a treatise in response – the Flux is simply the vulgar term for the flow of magic into and around our Realm, and all proper experiments demonstrate that though a wizard might draw more of this substance to themselves by “channelling”, they cannot increase the total magical resources in the vicinity, which is entirely random. Thank goodness I was in time to correct you on that!",
       "title": "Siphon the Veil"
     },
     "rulebook-storing_magic": {
@@ -15159,7 +15125,7 @@
       "title": "Rally Test"
     },
     "rulebook-melee_phase": {
-      "def": "Some say that battles are won or lost by preparation or sound strategies, but ultimately every fight will come down to the clash of weapons in close quarters. The Melee Phase is the time for your forces to put their mettle to the test, once they have met the enemy in Combat, and discover whether their strength – and a touch of divine fortune – can bring them the victory. And perhaps more important, whether the defeated side can continue to fight on. This is also when your leaders and champions will meet in single Combat with their counterparts, fighting great duels that will live in legend.<br><br>During the Melee Phase, all Engaged units will attack each other: each group of interlocked units in contact with each other is called a Combat.<br><br>Each Combat goes through a Round of Combat, one Combat after another.<br><br>Giants are a fascinating species, pseudo-symbiotic with other peoples, whose instinct for friendship has led them to become weapons of war throughout history. Some call this tragic, some call it noble.<br><br>Today, with sixteen factions of growing strength locked in a delicate balance of power, certain bold, original, brilliant observers have hypothesised that perhaps it could be the trusting, suggestible giants that might tip the fragile equilibrium in favour of one group or another. You can find out more about this provocative, insightful idea in my latest three-volume masterwork, Giant By Name: How the World Underestimates Jotun Potential, available in all fine bookshops that stock self-published authors.<br><br>0.93cyclop_kolata.jpgkolata<br><br>The Melee Phase is carried out using the following sequence:<br><br>\tI & <span class=\"textbf\">Enemy Wiped</span>. If a unit’s opponents have been removed outside the Melee Phase, the unit may perform a Post-Combat Pivot or an Overrun <i>(if it was Charging)</i>.<br>II & <span class=\"textbf\">Round of Combat</span>. Each Combat is resolved in an order chosen by the Active Player.<br><br>For each Combat, follow this sequence:<br><br>&nbsp;&nbsp;&bull;  Preparations for Combat<br><br>&nbsp;&nbsp;&bull;  Remove <span class=\"textbf\">Shaken</span> units<br><br>&nbsp;&nbsp;&bull;  Freeze Unit Boundaries<br><br>&nbsp;&nbsp;&bull;  Combat Set-Up<br><br>&nbsp;&nbsp;&bull;  Check Combat Formations<br><br>&nbsp;&nbsp;&bull;  Static Combat Score<br><br>&nbsp;&nbsp;&bull;  Choose Equipment and Abilities<br><br>\t<br><br>&nbsp;&nbsp;&bull;  Perform Melee Attacks<br><br>\t<br>&nbsp;&nbsp;&bull;  Determine Agility Order<br><br>&nbsp;&nbsp;&bull;  Resolve Attacks<br><br>&nbsp;&nbsp;&bull;  Determine the Winner<br><br>&nbsp;&nbsp;&bull;  Casualty-based Combat Score<br><br>&nbsp;&nbsp;&bull;  Final Combat Score<br><br>&nbsp;&nbsp;&bull;  Take Break Tests<br><br>&nbsp;&nbsp;&bull;  Breaking and Pursuing<br><br>&nbsp;&nbsp;&bull;  Determine who Flees and who Pursues<br><br>&nbsp;&nbsp;&bull;  Unfreeze Unit Boundaries<br><br>&nbsp;&nbsp;&bull;  Move Fleeing Units<br><br>&nbsp;&nbsp;&bull;  Move Pursuing Units<br><br>&nbsp;&nbsp;&bull;  Post Combat<br><br>&nbsp;&nbsp;&bull;  Perform Post-Combat Pivots<br><br>&nbsp;&nbsp;&bull;  Perform Combat Reforms<br><br>III & Repeat steps II for each Combat: choose a Combat and complete all actions in the Round of Combat Sequence for each unit in that Combat, before moving on to resolve the next Combat.<br>IV & Once all Combats have been resolved, the Melee Phase ends.<br>\t<br><h5>Enemy Wiped</h5><br>Sometimes a unit that was previously Engaged in Combat had all its opponents removed before the start of the next Melee Phase.<br>Such units follow the rules for No More Foes.<br><br>If the unit has not moved since the enemy units were removed <i>(e.g. with a <span class=\"textbf\">Magical Move</span>)</i>, it may perform a Post-Combat Pivot, or an Overrun if it was Charging.<br><br><h5>Combat</h5><br>Each Combat is fought between a group of units that are in contact with each other. Most often, it involves only two opposing units Facing off, but it can also include multiple units against a single enemy unit, or a series of units from both sides all linked together.<br><br>The Active Player chooses one such Combat to fight in a Round of Combat <i>(which means all actions connected to a Round of Combat must be resolved with all Engaged units)</i>.<br><br>Then the Active Player chooses a new Combat that has not been fought in this Melee Phase, to fight a Round of Combat.<br>Continue choosing and resolving Combats until all of them has been fought.<br><br>\tFirst Round of Combat<br>\tDuring the First Round of Combat, specific rules come into play.<br><br>A unit’s First Round of Combat occurs in two situations:<br>\t<br>\t<br>&nbsp;&nbsp;&bull;  The First Round of Combat it fights after successfully Charging an enemy unit.<br>\t<br>&nbsp;&nbsp;&bull;  The First Round of Combat after it has been successfully charged by an enemy unit, whereas it was not already Engaged in Combat.<br>\t<br><br>\tCombined Combats<br>\tAny Combat that involves more than two units is called a Combined Combat.<br><br>/section{preparations_for_combat}/section{combat_setup}/section{perform_melee_attacks}/section{determine_the_winner}/section{post_combat}",
+      "def": "Some say that battles are won or lost by preparation or sound strategies, but ultimately every fight will come down to the clash of weapons in close quarters. The Melee Phase is the time for your forces to put their mettle to the test, once they have met the enemy in Combat, and discover whether their strength – and a touch of divine fortune – can bring them the victory. And perhaps more important, whether the defeated side can continue to fight on. This is also when your leaders and champions will meet in single Combat with their counterparts, fighting great duels that will live in legend.<br><br>During the Melee Phase, all Engaged units will attack each other: each group of interlocked units in contact with each other is called a Combat.<br><br>Each Combat goes through a Round of Combat, one Combat after another.<br><br>Giants are a fascinating species, pseudo-symbiotic with other peoples, whose instinct for friendship has led them to become weapons of war throughout history. Some call this tragic, some call it noble.<br><br>Today, with sixteen factions of growing strength locked in a delicate balance of power, certain bold, original, brilliant observers have hypothesised that perhaps it could be the trusting, suggestible giants that might tip the fragile equilibrium in favour of one group or another. You can find out more about this provocative, insightful idea in my latest three-volume masterwork, Giant By Name: How the World Underestimates Jotun Potential, available in all fine bookshops that stock self-published authors.<br><br>The Melee Phase is carried out using the following sequence:<br><br>\tI & <span class=\"textbf\">Enemy Wiped</span>. If a unit’s opponents have been removed outside the Melee Phase, the unit may perform a Post-Combat Pivot or an Overrun <i>(if it was Charging)</i>.<br>II & <span class=\"textbf\">Round of Combat</span>. Each Combat is resolved in an order chosen by the Active Player.<br><br>For each Combat, follow this sequence:<br><br>&nbsp;&nbsp;&bull;  Preparations for Combat<br><br>&nbsp;&nbsp;&bull;  Remove <span class=\"textbf\">Shaken</span> units<br><br>&nbsp;&nbsp;&bull;  Freeze Unit Boundaries<br><br>&nbsp;&nbsp;&bull;  Combat Set-Up<br><br>&nbsp;&nbsp;&bull;  Check Combat Formations<br><br>&nbsp;&nbsp;&bull;  Static Combat Score<br><br>&nbsp;&nbsp;&bull;  Choose Equipment and Abilities<br><br>\t<br><br>&nbsp;&nbsp;&bull;  Perform Melee Attacks<br><br>\t<br>&nbsp;&nbsp;&bull;  Determine Agility Order<br><br>&nbsp;&nbsp;&bull;  Resolve Attacks<br><br>&nbsp;&nbsp;&bull;  Determine the Winner<br><br>&nbsp;&nbsp;&bull;  Casualty-based Combat Score<br><br>&nbsp;&nbsp;&bull;  Final Combat Score<br><br>&nbsp;&nbsp;&bull;  Take Break Tests<br><br>&nbsp;&nbsp;&bull;  Breaking and Pursuing<br><br>&nbsp;&nbsp;&bull;  Determine who Flees and who Pursues<br><br>&nbsp;&nbsp;&bull;  Unfreeze Unit Boundaries<br><br>&nbsp;&nbsp;&bull;  Move Fleeing Units<br><br>&nbsp;&nbsp;&bull;  Move Pursuing Units<br><br>&nbsp;&nbsp;&bull;  Post Combat<br><br>&nbsp;&nbsp;&bull;  Perform Post-Combat Pivots<br><br>&nbsp;&nbsp;&bull;  Perform Combat Reforms<br><br>III & Repeat steps II for each Combat: choose a Combat and complete all actions in the Round of Combat Sequence for each unit in that Combat, before moving on to resolve the next Combat.<br>IV & Once all Combats have been resolved, the Melee Phase ends.<br>\t<br><h5>Enemy Wiped</h5><br>Sometimes a unit that was previously Engaged in Combat had all its opponents removed before the start of the next Melee Phase.<br>Such units follow the rules for No More Foes.<br><br>If the unit has not moved since the enemy units were removed <i>(e.g. with a <span class=\"textbf\">Magical Move</span>)</i>, it may perform a Post-Combat Pivot, or an Overrun if it was Charging.<br><br><h5>Combat</h5><br>Each Combat is fought between a group of units that are in contact with each other. Most often, it involves only two opposing units Facing off, but it can also include multiple units against a single enemy unit, or a series of units from both sides all linked together.<br><br>The Active Player chooses one such Combat to fight in a Round of Combat <i>(which means all actions connected to a Round of Combat must be resolved with all Engaged units)</i>.<br><br>Then the Active Player chooses a new Combat that has not been fought in this Melee Phase, to fight a Round of Combat.<br>Continue choosing and resolving Combats until all of them has been fought.<br><br>\tFirst Round of Combat<br>\tDuring the First Round of Combat, specific rules come into play.<br><br>A unit’s First Round of Combat occurs in two situations:<br>\t<br>\t<br>&nbsp;&nbsp;&bull;  The First Round of Combat it fights after successfully Charging an enemy unit.<br>\t<br>&nbsp;&nbsp;&bull;  The First Round of Combat after it has been successfully charged by an enemy unit, whereas it was not already Engaged in Combat.<br>\t<br><br>\tCombined Combats<br>\tAny Combat that involves more than two units is called a Combined Combat.<br><br>/section{preparations_for_combat}/section{combat_setup}/section{perform_melee_attacks}/section{determine_the_winner}/section{post_combat}",
       "title": "Melee Phase"
     },
     "rulebook-preparations_for_combat": {
@@ -15387,7 +15353,7 @@
       "title": "General"
     },
     "rulebook-battle_standard_bearer": {
-      "def": "1beastmanBSB_Hardstyle.pngHardstyle<br>An army may include a <nuxt-link class=\"ruleLink\" to=\"/app/rule/battle_standard_bearer\">Battle Standard Bearer</nuxt-link>.<br><br>This upgrade is <span class=\"textbf\">Legendary</span>.<br><br>A <nuxt-link class=\"ruleLink\" to=\"/app/rule/battle_standard_bearer\">Battle Standard Bearer</nuxt-link> gives +1 Combat Resolution to its side in combat, and gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/rally_around_the_flag\">Rally Around the Flag</nuxt-link></span> <i>(see <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">Model</nuxt-link> Rules)</i>.<br><br>If the <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> has the option to buy Magic Items, it is allowed to buy a Banner Enchantment.",
+      "def": "An army may include a <nuxt-link class=\"ruleLink\" to=\"/app/rule/battle_standard_bearer\">Battle Standard Bearer</nuxt-link>.<br><br>This upgrade is <span class=\"textbf\">Legendary</span>.<br><br>A <nuxt-link class=\"ruleLink\" to=\"/app/rule/battle_standard_bearer\">Battle Standard Bearer</nuxt-link> gives +1 Combat Resolution to its side in combat, and gains <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/rally_around_the_flag\">Rally Around the Flag</nuxt-link></span> <i>(see <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">Model</nuxt-link> Rules)</i>.<br><br>If the <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> has the option to buy Magic Items, it is allowed to buy a Banner Enchantment.",
       "title": "Battle Standard Bearer",
       "mod": [
         {
