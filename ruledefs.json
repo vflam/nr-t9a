@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 368,
+  "nrversion": 370,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -122,7 +122,7 @@
       "mod": [
         {
           "rules": {
-            "id": "stomp_attacks",
+            "id": "stomp_attack",
             "params": [
               "D3"
             ]
@@ -2152,7 +2152,7 @@
             0
           ],
           "rules": {
-            "id": "stomp_attacks",
+            "id": "stomp_attack",
             "params": [
               "D6"
             ]
@@ -2281,7 +2281,7 @@
         },
         {
           "rules": {
-            "id": "stomp_attacks",
+            "id": "stomp_attack",
             "params": [
               "D6"
             ]
@@ -5395,7 +5395,17 @@
     },
     "koe-prayer_etched": {
       "title": "Prayer Etched",
-      "def": "  +1 Arm, and <span class=\"textbf\">Aegis(+1, max. 4+)</span>."
+      "def": "  +1 Arm, and <span class=\"textbf\">Aegis(+1, max. 4+)</span>.",
+      "affects": [
+        "defense"
+      ],
+      "mod": [
+        {
+          "stats": {
+            "Arm": "+1"
+          }
+        }
+      ]
     },
     "koe-percivals_panoply": {
       "title": "Percival’s Panoply",
@@ -6280,7 +6290,7 @@
       "mod": [
         {
           "rules": {
-            "id": "stomp_attacks",
+            "id": "stomp_attack",
             "params": [
               "D3+1"
             ]
@@ -10291,7 +10301,7 @@
         {
           "rules": [
             {
-              "id": "stomp_attacks",
+              "id": "stomp_attack",
               "params": [
                 "D6"
               ]
@@ -14793,7 +14803,67 @@
     },
     "rulebook-stomp_attack": {
       "title": "Stomp Attack",
-      "def": "\tA <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> part with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/stomp_attack\">Stomp Attack</nuxt-link></span> can make a Special Attack which is resolved at Agility Step 0, can only be allocated towards a Health Pool of Height 0–1, and inflicts X hits, using the <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> part’s Strength, Armour Penetration and <nuxt-link class=\"ruleLink\" to=\"/app/rule/attack_attributes\">Attack Attributes</nuxt-link>, but not <nuxt-link class=\"ruleLink\" to=\"/app/rule/weapons\">Weapons</nuxt-link>.<br>\t\t<br><br>\tIf more than one <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> part of a combined <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> has <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/stomp_attack\">Stomp Attack</nuxt-link></span>, only a single <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> part <i>(chosen by the <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model’s</nuxt-link> owner)</i> can perform its <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/stomp_attack\">Stomp Attack</nuxt-link></span> in each Round of Combat."
+      "def": "\tA <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> part with <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/stomp_attack\">Stomp Attack</nuxt-link></span> can make a Special Attack which is resolved at Agility Step 0, can only be allocated towards a Health Pool of Height 0–1, and inflicts X hits, using the <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> part’s Strength, Armour Penetration and <nuxt-link class=\"ruleLink\" to=\"/app/rule/attack_attributes\">Attack Attributes</nuxt-link>, but not <nuxt-link class=\"ruleLink\" to=\"/app/rule/weapons\">Weapons</nuxt-link>.<br>\t\t<br><br>\tIf more than one <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> part of a combined <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> has <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/stomp_attack\">Stomp Attack</nuxt-link></span>, only a single <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model</nuxt-link> part <i>(chosen by the <nuxt-link class=\"ruleLink\" to=\"/app/rule/model\">model’s</nuxt-link> owner)</i> can perform its <span class=\"textbf\"><nuxt-link class=\"ruleLink\" to=\"/app/rule/stomp_attack\">Stomp Attack</nuxt-link></span> in each Round of Combat.",
+      "type": "attack_attribute",
+      "unique": true,
+      "mod": [
+        {
+          "rules": {
+            "id": "stomp_attacks_attack",
+            "params": [
+              "params"
+            ]
+          },
+          "conditions": [
+            {
+              "or": [
+                [
+                  {
+                    "multipart": false
+                  }
+                ],
+                [
+                  {
+                    "hasrule": {
+                      "id": "rulebook-harnessed",
+                      "value": true
+                    }
+                  }
+                ],
+                [
+                  {
+                    "specialattack": true
+                  }
+                ]
+              ]
+            },
+            {
+              "against": {
+                "id": "rulebook-cannot_be_stomped",
+                "value": false
+              }
+            },
+            {
+              "against": {
+                "id": "custom-large",
+                "value": false
+              }
+            },
+            {
+              "against": {
+                "id": "custom-gigantic",
+                "value": false
+              }
+            },
+            {
+              "against": {
+                "id": "custom-cavalry",
+                "value": false
+              }
+            }
+          ]
+        }
+      ]
     },
     "rulebook-sweeping_attack": {
       "title": "Sweeping Attack",
@@ -15556,7 +15626,7 @@
             "Of": "@A",
             "Ag": "@I"
           },
-          "special": "stomp_attacks"
+          "special": "stomp_attack"
         }
       ]
     },
