@@ -1834,12 +1834,36 @@
               "cost": 800,
               "option_id": "5rzuapwmpu32ezmj",
               "unit_id": "abazzalemTheMechanicalLamassu",
-              "refs": ["abazzalemthemechanicallamassu", "wizard", "wizardMaster"],
+              "maxUnitCost": 800,
+              "refs": ["abazzalemthemechanicallamassu", "wizard", "wizardMaster", "tag_Construct", "tag_Metal Armour"],
               "size": "1",
               "rarity": "Legendary",
               "height": "5",
               "basesize": "60×100",
               "options": [
+                {
+                  "type": "group",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "maxSize": 1,
+                  "minSize": 0,
+                  "option_id": "hvtkv326xweier7i",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "f7cp61p10bewvams",
+                      "refs": ["army_general"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["army_general"],
+                          "amount": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "group",
                   "name": "Path",
@@ -1865,13 +1889,38 @@
               "cost": 580,
               "option_id": "gu4nogvj7ucsj555",
               "unit_id": "ibatsokavumTheFlyingCharioteer",
-              "refs": ["ibatsokavumtheflyingcharioteer"],
+              "maxUnitCost": 580,
+              "refs": ["ibatsokavumtheflyingcharioteer", "tag_Construct", "tag_Kadim", "tag_Metal Armour"],
               "size": "1",
               "rarity": "Legendary",
               "height": "4",
               "basesize": "60×100",
               "extraCategories": ["airborneLegends"],
-              "options": []
+              "options": [
+                {
+                  "type": "group",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "maxSize": 1,
+                  "minSize": 0,
+                  "option_id": "6i4cwnbmx2vsoljl",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "ed7ho9df2ert39gm",
+                      "refs": ["army_general"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["army_general"],
+                          "amount": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "option_id": "alx84nug0rinipjwkt1ww"

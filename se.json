@@ -1632,24 +1632,73 @@
               "cost": 330,
               "option_id": "sa7cgss4q5fkcs5q",
               "unit_id": "domethlocTheUnicornShapeshifter",
-              "refs": ["domethloctheunicornshapeshifter"],
+              "maxUnitCost": 330,
+              "refs": ["domethloctheunicornshapeshifter", "tag_Elf"],
               "size": "1",
               "rarity": "Legendary",
               "height": "1",
               "basesize": "20×20",
-              "options": []
+              "options": [
+                {
+                  "type": "group",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "maxSize": 1,
+                  "minSize": 0,
+                  "option_id": "t2retr1kouqdipfw",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "lxi9kon4zg9h1dtr",
+                      "refs": ["army_general"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["army_general"],
+                          "amount": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "Dwatobel, The World-Wandering Tree",
               "cost": 600,
               "option_id": "tx6n0so100id6wc2",
               "unit_id": "dwatobelTheWorldwanderingTree",
-              "refs": ["dwatobeltheworldwanderingtree", "wizard", "wizardAdept"],
+              "maxUnitCost": 600,
+              "refs": ["dwatobeltheworldwanderingtree", "wizard", "wizardAdept", "tag_Sylvan Spirit"],
               "size": "1",
               "rarity": "Legendary",
               "height": "5",
               "basesize": "75×50",
               "options": [
+                {
+                  "type": "group",
+                  "name": "Leadership",
+                  "optionsLabel": "Leadership",
+                  "maxSize": 1,
+                  "minSize": 0,
+                  "option_id": "vhk2bgtjo07c68s6",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "General",
+                      "cost": 0,
+                      "option_id": "kaesr87sjm6vp4dq",
+                      "refs": ["army_general"],
+                      "armyHasNotOption": [
+                        {
+                          "refs": ["army_general"],
+                          "amount": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "group",
                   "name": "Options",
