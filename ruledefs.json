@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 373,
+  "nrversion": 374,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -6838,7 +6838,15 @@
     },
     "vc-sangreal": {
       "title": "Sangreal",
-      "def": "\tThe model part gains +1 Arm and <span class=\"textbf\">Fury</span>."
+      "def": "\tThe model part gains +1 Arm and <span class=\"textbf\">Fury</span>.",
+      "mod": [
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "+1"
+          }
+        }
+      ]
     },
     "vc-vetala": {
       "title": "Vetala",
@@ -15690,19 +15698,19 @@
     },
     "fullSteamAhead": {
       "title": "Full Steam Ahead!",
-      "def": "Abazzalem cannot choose to Pursue, unless he is Charging –– in which case he \\textbf{must} Pursue (including Overrun)."
+      "def": "Abazzalem cannot choose to Pursue, unless he is Charging –– in which case he <span class=\"textbf\">must</span> Pursue (including Overrun)."
     },
     "theRiddleOfPeace": {
       "title": "The Riddle of Peace",
-      "def": "During Pre-game Selections, select a single Character on the opponent’s Army List. \\newline{} Any unit containing the selected Character suffers from \\textbf{\\minimised{Charge Range Roll}}."
+      "def": "During Pre-game Selections, select a single Character on the opponent’s Army List. <br> Any unit containing the selected Character suffers from <span class=\"textbf\">Minimised(Charge Range Roll)</span>."
     },
     "asfadaHeadmaster": {
       "title": "Asfada Headmaster",
-      "def": "Instead of selecting spells, (including Universal Swapping) the Asfada Headmaster knows \\textit{Cosmology: \\#1, \\#2, \\#3, \\#5}, \\textit{Divination: \\#1, \\#2, \\#3, and \\#5}. Note: He can still Hereditary Swap."
+      "def": "Instead of selecting spells, (including Universal Swapping) the Asfada Headmaster knows <i>Cosmology: #1, #2, #3, #5</i>, <i>Divination: #1, #2, #3, and #5</i>. Note: He can still Hereditary Swap."
     },
     "commanderOfTheVeil": {
       "title": "Commander of the Veil",
-      "def": "Acadnath gains the following Magic Items: \\alphaorderlistandit{\\obsidianrock{}, \\potionofpowerpreservation{}, \\scrollofpower{}}. These Magic Items cannot be used by other friendly models. Duration: Permanent."
+      "def": "Acadnath gains the following Magic Items: Obsidian Rock, Potion of Power Preservation, Scroll of Power. These Magic Items cannot be used by other friendly models. Duration: Permanent."
     },
     "shroudSeekers": {
       "title": "Shroud Seekers",
@@ -15710,11 +15718,11 @@
     },
     "theOnlyKing": {
       "title": "The Only King",
-      "def": "All models in the Only King’s unit benefit from \\textbf{\\dyingblow{}}. \\newline{} In addition, if The Only King is removed as a casualty, all friendly units lose \\textbf{\\broodrivalry{}}. This effect persists for the Duration of One Turn after Amokek is removed as a casualty. This is an exception to the rule 4.C of the “Attacks” chapter: “Losing the Last Health Point”."
+      "def": "All models in the Only King’s unit benefit from <span class=\"textbf\">Dying Blow</span>. <br> In addition, if The Only King is removed as a casualty, all friendly units lose <span class=\"textbf\">Brood Rivalry</span>. This effect persists for the Duration of One Turn after Amokek is removed as a casualty. This is an exception to the rule 4.C of the “Attacks” chapter: “Losing the Last Health Point”."
     },
     "bornInFire": {
       "title": "Born in Fire",
-      "def": "Amokek gains \\textbf{\\resistance{\\flamingattacks{}}}. In addition, when Choosing Equipment and Abilities, he may gain \\textbf{\\flamingattacks{}}. Duration: Round of Combat."
+      "def": "Amokek gains <span class=\"textbf\">Resistance(Flaming Attacks)</span>. In addition, when Choosing Equipment and Abilities, he may gain <span class=\"textbf\">Flaming Attacks</span>. Duration: Round of Combat."
     },
     "mehJustAScratch": {
       "title": "mehJustAScratch",
@@ -15722,19 +15730,19 @@
     },
     "theBiggerTheAxe": {
       "title": "The bigger the Axe…",
-      "def": " Great Weapon. When Choosing Equipment and Abilities, Amokek may choose to gain either \\alphaorderlistorbf{\\multiplewounds{2}{}, \\hatred{}}. Duration: Round of Combat. "
+      "def": "Great Weapon. When Choosing Equipment and Abilities, Amokek may choose to gain either Multiple Wounds(2), Hatred. Duration: Round of Combat."
     },
     "likeTheTyrantsOfOld": {
       "title": "Like the Tyrants of Old",
-      "def": "Anurarch Destined is both \\textbf{General} and \\textbf{Battle Standard Bearer}. \\newline{} In addition, an Army List containing Anurarch Destined cannot include any other Character, neither the \\textit{Monolith of Vitalism} nor a \\textit{Koru Stone}."
+      "def": "Anurarch Destined is both <span class=\"textbf\">General</span> and <span class=\"textbf\">Battle Standard Bearer</span>. <br> In addition, an Army List containing Anurarch Destined cannot include any other Character, neither the <i>Monolith of Vitalism</i> nor a <i>Koru Stone</i>."
     },
     "utterlyRuthless": {
       "title": "Utterly Ruthless",
-      "def": "The first time each turn Anurarch Destined performs \\textit{The Sacrifice} and inflicts Health Point losses with it, she \\textbf{Recovers} 1 HP."
+      "def": "The first time each turn Anurarch Destined performs <i>The Sacrifice</i> and inflicts Health Point losses with it, she <span class=\"textbf\">Recovers</span> 1 HP."
     },
     "eternityChamber": {
       "title": "Eternity Chamber",
-      "def": "Anurarch Destined gains +2 \\HP{}, +3 \\Arm, and \\textbf{\\regeneration{4+}}."
+      "def": "Anurarch Destined gains +2 HP, +3 Arm, and <span class=\"textbf\">Regeneration(4+)</span>."
     },
     "stormCrystal": {
       "title": "Storm Crystal",
@@ -15742,127 +15750,127 @@
     },
     "greaterGuidingMastery": {
       "title": "Greater Guiding Mastery",
-      "def": "Friendly models containing \\ChTag{Magnasaur} in units within \\distance{12} of Anurarch Destined benefit from \\textbf{Pack Hunter}."
+      "def": "Friendly models containing Magnasaur in units within 12\" of Anurarch Destined benefit from <span class=\"textbf\">Pack Hunter</span>."
     },
     "theLostAndDamned": {
       "title": "The Lost and Damned",
-      "def": "In an Army List containing Ashotet, Skeleton Warriors and Skeleton Cavalry gain \\textbf{\\tormentedsouls{}}.\\newline{} In addition, neither of the following unit entries may be included: Death Cult Hierarch, Casket of Phatep, Rehnepeh the Undying Sun, nor any model with \\textbf{\\undyingwill{}}. "
+      "def": "In an Army List containing Ashotet, Skeleton Warriors and Skeleton Cavalry gain <span class=\"textbf\"></span>.<br> In addition, neither of the following unit entries may be included: Death Cult Hierarch, Casket of Phatep, Rehnepeh the Undying Sun, nor any model with <span class=\"textbf\">Undying Will</span>."
     },
     "tormentedSouls": {
       "title": "Tormented Souls",
-      "def": "The model gains \\alphaorderlistbf{\\aegis{5+, against non-Magical Attacks}, \\exclusive{\\tormentedsouls{}}, \\ghoststep{}, \\horror{}, \\unruly{}} \\wordand{} \\ChTag{Spirit}. The model’s Armour is \\textbf{set} to 0, it loses \\textbf{\\shield{}}, and \\ChTag{Skeleton} and its \\resurrection{} value is halved. \\newline{} All model parts gain +1 \\AP{}, \\alphaorderlistandbf{\\hatred{}, \\magicalattacks{}}, lose all their Weapons, and gain Innate Weapons."
+      "def": "The model gains Aegis(5+, against non-Magical Attacks), Exclusive, Ghost Step, Horror, Unruly and Spirit. The model’s Armour is <span class=\"textbf\">set</span> to 0, it loses <span class=\"textbf\">Shield</span>, and Skeleton and its value is halved. <br> All model parts gain +1 AP, Hatred, Magical Attacks, lose all their Weapons, and gain Innate Weapons."
     },
     "assailedSanity": {
       "title": "Assailed Sanity",
-      "def": "The Custodian of Souls knows all spells from \\textit{\\evocation{}} and cannot Hereditary Swap. \\newline{} In addition, once per turn, when she fails a Casting Roll using three or more Magic Dice, she can reroll the dice. If she does, she suffer a Miscast equal to the Casting Roll."
+      "def": "The Custodian of Souls knows all spells from <i>Evocation</i> and cannot Hereditary Swap. <br> In addition, once per turn, when she fails a Casting Roll using three or more Magic Dice, she can reroll the dice. If she does, she suffer a Miscast equal to the Casting Roll."
     },
     "thePyramidion": {
       "title": "The Pyramidion",
-      "def": "Spells cast by Ashotet gain +\\distance{6} Range.\\newline{} In addition, Ashotet can cast a unique \\boundspell{6}: \\newline{}\n    \\textbf{Surge of Mad Spirits}: Range\\spacebeforecolon{}: \\distance{24}, Type\\spacebeforecolon{}: \\hex{},\\damage{}, Duration\\spacebeforecolon{}: \\instant{}.\\newline{}\n\\thepyramidioneffect{}"
+      "def": "Spells cast by Ashotet gain +6\" Range.<br> In addition, Ashotet can cast a unique Bound Spell(6+): <br> <span class=\"textbf\">Surge of Mad Spirits</span>: Range : 24\", Type : Hex,Damage, Duration : Instant.<br>"
     },
     "fanaticalDevotion": {
       "title": "Fanatical Devotion",
-      "def": "Models in Brother Tomaz's unit benefit from \\textbf{\\regeneration{6+}}, and model parts without \\ChTag{\\mount{}} benefit from \\textbf{\\hatred{}}."
+      "def": "Models in Brother Tomaz's unit benefit from <span class=\"textbf\">Regeneration(6+)</span>, and model parts without Mount benefit from <span class=\"textbf\">Hatred</span>."
     },
     "officiallyNotAMiracle": {
       "title": "Officially Not A Miracle",
-      "def": "Brother Tomaz’s unit \\textbf{Raises} 1 HP at the start of each friendly Magic Phase. \\newline{} \\textit{Note: \\textbf{Attached} models cannot be \\textbf{Raised} unless specified.}"
+      "def": "Brother Tomaz’s unit <span class=\"textbf\">Raises</span> 1 HP at the start of each friendly Magic Phase. <br> <i>Note: <span class=\"textbf\">Attached</span> models cannot be <span class=\"textbf\">Raised</span> unless specified.</i>"
     },
     "shepherdingTheFlock": {
       "title": "Shepherding the Flock",
-      "def": "Brother Tomaz can join Zealots as if he was \\textbf{Unstable}. \\newline{} As long as he is joined to Zealots, he is \\textbf{Unstable}."
+      "def": "Brother Tomaz can join Zealots as if he was <span class=\"textbf\">Unstable</span>. <br> As long as he is joined to Zealots, he is <span class=\"textbf\">Unstable</span>."
     },
     "repent": {
       "title": "Repent!",
-      "def": "+1 \\Att{}, \\textbf{\\crushattack{}}."
+      "def": "+1 Att, <span class=\"textbf\">Crush Attack</span>."
     },
     "wondersOfTheAge": {
       "title": "Wonders of the Age",
-      "def": "Dinaz Betegoz’s Paired Weapons have the following Runic Enchantments: \\alphaorderlistit{\\runeofmight{}, \\runeofanger{}, \\runeofprecision{}}. \\newline{} In addition, Dinaz Betegoz has the following Runic Artefacts: \\alphaorderlistandit{\\runeofdenial{}, \\runeofdevouring{}, \\runeofgrounding{}}. This is in addition to the usual limitation of Runic Items, however the \\alphaorderlistandit{\\runeofdenial{}, \\runeofdevouring{}, \\runeofgrounding{}} cannot be activated by other friendly models."
+      "def": "Dinaz Betegoz’s Paired Weapons have the following Runic Enchantments: Rune of Might, Rune of Anger, Rune of Precision. <br> In addition, Dinaz Betegoz has the following Runic Artefacts: Rune of Denial, Rune of Devouring, Rune of Grounding. This is in addition to the usual limitation of Runic Items, however the Rune of Denial, Rune of Devouring, Rune of Grounding cannot be activated by other friendly models."
     },
     "theLivingLaw": {
       "title": "The Living Law",
-      "def": "At the beginning of each friendly Melee Phase, select an enemy unit on your opponent’s Army List. The selected unit becomes marked for the purpose of \\textbf{\\ancientgrudge{}}. Duration: Permanent."
+      "def": "At the beginning of each friendly Melee Phase, select an enemy unit on your opponent’s Army List. The selected unit becomes marked for the purpose of <span class=\"textbf\">Ancient Grudge</span>. Duration: Permanent."
     },
     "theUnicornsFury": {
       "title": "The Unicorn’s Fury",
-      "def": "Hand Weapon. \\alphaorderlistandbf{\\divineattacks{}, \\devastatingcharge{+1 \\Str{}, +1 \\AP{}, and +X \\Att{}, where “X” is equal to the number of Ranks in a single enemy unit in contact, up to a maximum of 4.}}"
+      "def": "Hand Weapon. Divine Attacks, Devastating Charge(+1 Str, +1 AP, and +X Att, where “X” is equal to the number of Ranks in a single enemy unit in contact, up to a maximum of 4.)"
     },
     "theUnicornsHorn": {
       "title": "The Unicorn’s Horn",
-      "def": "Spear. +1 \\Str{}, +1 \\AP{}"
+      "def": "Spear. +1 Str, +1 AP"
     },
     "theUnicornsPath": {
       "title": "The Unicorn’s Path",
-      "def": "One use only. When initiating or ending a Move Manoeuvre in a friendly Movement Phase, Domethloc can change a \\alphaorderlistor{Water, Ruins, Fields} Terrain Feature he is in contact with to a Forest of the same size."
+      "def": "One use only. When initiating or ending a Move Manoeuvre in a friendly Movement Phase, Domethloc can change a Water, Ruins, Fields Terrain Feature he is in contact with to a Forest of the same size."
     },
     "thickenedBrush": {
       "title": "Thickened Brush",
-      "def": "One use only. Can be activated at the beginning of the enemy's turn. For each friendly unit within \\distance{12} and entirely with \\ChTag{\\sylvanspirit{}}, any enemy unit in contact with it loses \\textbf{Devastating Charge}. Duration: One Turn. "
+      "def": "One use only. Can be activated at the beginning of the enemy's turn. For each friendly unit within 12\" and entirely with Sylvan Spirit, any enemy unit in contact with it loses <span class=\"textbf\">Devastating Charge</span>. Duration: One Turn."
     },
     "theWorldTree": {
       "title": "The World Tree",
-      "def": "\\wizardconclavespellslist[0]{Instead of the usual Spell Selection (including Spell Swapping), Dwatobel knows the following spells:}{\\spellformatlist{\\divinationspelltwo}{\\divination}, \\spellformatlist{\\druidismspellthree}{\\druidism}, \\spellformatlist{\\witchcraftspellthree}{\\witchcraft}, \\spellformatlist{\\forestembrace}{\\hereditaryspell}}"
+      "def": "Instead of the usual Spell Selection (including Spell Swapping), Dwatobel knows the following spells:Chance of Redemption=free, Veil of Mist=free, Illusory Paths=free, Forest Embrace=free"
     },
     "nestOfVipers": {
       "title": "Nest of Vipers",
-      "def": "Add the following Offensive Profile to Dwatobel:\\newline{}Viper (6): Att 1, Off 2, Str 2, AP 0, Agi 4, \\textbf{\\poisonattacks{}}"
+      "def": "Add the following Offensive Profile to Dwatobel:<br>Viper (6): Att 1, Off 2, Str 2, AP 0, Agi 4, <span class=\"textbf\">Poison Attacks</span>"
     },
     "colonyOfFrogs": {
       "title": "Colony of Frogs",
-      "def": "Add the following Offensive Profile to Dwatobel:\\newline{}Frog (6): Att 1, Off 2, Str 2, AP 0, Agi 4, \\textbf{\\toxicattacks{}}"
+      "def": "Add the following Offensive Profile to Dwatobel:<br>Frog (6): Att 1, Off 2, Str 2, AP 0, Agi 4, <span class=\"textbf\">Toxic Attacks</span>"
     },
     "murderOfCrows": {
       "title": "Murder of Crows",
-      "def": "Add the following Offensive Profile to Dwatobel:\\newline{}Crow (6): Att 1, Off 2, Str 2, AP 0, Agi 4, \\textbf{\\afflict{\\minuss{}1 Combat Resolution}}"
+      "def": "Add the following Offensive Profile to Dwatobel:<br>Crow (6): Att 1, Off 2, Str 2, AP 0, Agi 4, <span class=\"textbf\">Afflict(-1 Combat Resolution)</span>"
     },
     "theIronbond": {
       "title": "The Ironbond",
-      "def": "The model gains \\alphaorderlistandbf{\\resistance{}, \\stubborn{}}."
+      "def": "The model gains Resistance, Stubborn."
     },
     "youngMercenaries": {
       "title": "Young Mercenaries",
-      "def": "All friendly Bruiser model parts in an army containing Ganzorig benefit from \\textbf{\\firststrike{Fury{}}}, as long as he is on the Battlefield."
+      "def": "All friendly Bruiser model parts in an army containing Ganzorig benefit from <span class=\"textbf\">First Strike(Fury)</span>, as long as he is on the Battlefield."
     },
     "beenThereDoneThat": {
       "title": "Been There, Done That.",
-      "def": "Every friendly unit of Mercenary Veterans and Mercenary Gunners gains \\textbf{\\bodyguard{Ganzorig}}. In addition, Ganzorig benefits from any Extraordinary Model Rule upgrades the unit has."
+      "def": "Every friendly unit of Mercenary Veterans and Mercenary Gunners gains <span class=\"textbf\">Bodyguard(Ganzorig)</span>. In addition, Ganzorig benefits from any Extraordinary Model Rule upgrades the unit has."
     },
     "getTheJobDone": {
       "title": "Get the Job Done!",
-      "def": "One use only. During 'Calculate Final Combat Score' (Round of Combat, Step 4.B), Ganzorig may \\textbf{Recover} up to 2 Health Points and adds +2 Combat Resolution to his side."
+      "def": "One use only. During 'Calculate Final Combat Score' (Round of Combat, Step 4.B), Ganzorig may <span class=\"textbf\">Recover</span> up to 2 Health Points and adds +2 Combat Resolution to his side."
     },
     "standingInWait": {
       "title": "Standing in Wait",
-      "def": "During Pre-game Selections, select either: \\begin{itemize} \\item \\alphaorderlistandbf{\\attached{}, \\teachbyexample{}} \\item \\alphaorderlistbf{\\solitary{}, \\sleeper{}}, and \\textbf{\\ambush{\\field{}, \\forest{}, \\waterterrain{}}}. \\end{itemize}"
+      "def": "During Pre-game Selections, select either: <br>&nbsp;&nbsp;&bull; Attached, <br>&nbsp;&nbsp;&bull; Solitary, Sleeper, and <span class=\"textbf\">Ambush(Field, Forest, Water Terrain)</span>. <br>"
     },
     "teachByExample": {
       "title": "Teach by Example",
-      "def": "Any unit containing Ghâá! benefits from \\alphaorderlistandbf{Swiftstride, Stubborn, Mindless}. \\newline{} In addition, choose a single Minotaurs unit with a maximum of 5 models. The selected unit gains \\textbf{\\ambush{Battlefield Edge}}, and Ghâá must enter the Battlefield joined to it."
+      "def": "Any unit containing Ghâá! benefits from Swiftstride, Stubborn, Mindless. <br> In addition, choose a single Minotaurs unit with a maximum of 5 models. The selected unit gains <span class=\"textbf\">Ambush(Battlefield Edge)</span>, and Ghâá must enter the Battlefield joined to it."
     },
     "sleeper": {
       "title": "Sleeper",
-      "def": "Starting on Game Turn 1, a model with \\textbf{\\sleeper{}} \\textbf{may} decide whether its arrival from Ambush succeeds or fails, without rolling the dice."
+      "def": "Starting on Game Turn 1, a model with <span class=\"textbf\">Sleeper</span> <span class=\"textbf\">may</span> decide whether its arrival from Ambush succeeds or fails, without rolling the dice."
     },
     "aKoelhundsChase": {
       "title": "A Koelhund’s Chase",
-      "def": "Rolls for Charge Range and Pursue Distance by the model’s unit gain \\textbf{Maximized}."
+      "def": "Rolls for Charge Range and Pursue Distance by the model’s unit gain <span class=\"textbf\">Maximized</span>."
     },
     "gregorsHolyHammer": {
       "title": "Gregor’s Holy Hammer",
-      "def": "Hand Weapon, +1 Str, +1 AP, \\textbf{Multiple Wounds (2, against \\aegis{} or \\regeneration{}\\refsymbol{})}. \\newline{} \\refsymbol{}Including against models with Aegis or Regeneration Saves with conditional applications."
+      "def": "Hand Weapon, +1 Str, +1 AP, <span class=\"textbf\">Multiple Wounds (2, against Aegis or Regeneration*)</span>. <br> *Including against models with Aegis or Regeneration Saves with conditional applications."
     },
     "divineJurisdiction": {
       "title": "Divine Jurisdiction",
-      "def": "All Inquisitors may give the \\textbf{Steady, Men!} Order to their units. \\newline{} In addition, an Army List containing Heinrich Falkenbach changes the following Orders: \\begin{itemize} \\item \\textbf{Brace For Impact!} changes into: \\textbf{Cut the Head of the Snake!}: \\newline{} - The target gains \\alphaorderlistandbf{\\fury{against units containing a Character}, \\firststrike{\\hatred{against Character}}}. \\item \\textbf{Ready! Aim! Fire!} changes into \\textbf{Aim for the Weak Spot!} \\newline{} - If an attack with \\textbf{Aim for the Weak Spot!} wounds with a to-wound roll of \\result{6}, neither \\textbf{\\aegis{}} nor \\textbf{\\regeneration{}} Saves can be taken against it.\\end{itemize}"
+      "def": "All Inquisitors may give the <span class=\"textbf\">Steady, Men!</span> Order to their units. <br> In addition, an Army List containing Heinrich Falkenbach changes the following Orders: <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Brace For Impact!</span> changes into: <span class=\"textbf\">Cut the Head of the Snake!</span>: <br> - The target gains Fury(against units containing a Character), First Strike(Hatred(against Character)). <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Ready! Aim! Fire!</span> changes into <span class=\"textbf\">Aim for the Weak Spot!</span> <br> - If an attack with <span class=\"textbf\">Aim for the Weak Spot!</span> wounds with a to-wound roll of ‘6’, neither <span class=\"textbf\">Aegis</span> nor <span class=\"textbf\">Regeneration</span> Saves can be taken against it.<br>"
     },
     "borrowedSteed": {
       "title": "“Borrowed” Steed",
-      "def": "Immediately before choosing a unit to join using the \\textbf{\\hidden{}} rule, Hernaut may gain a “Destrier” mount for free, without any upgrades."
+      "def": "Immediately before choosing a unit to join using the <span class=\"textbf\">Hidden</span> rule, Hernaut may gain a “Destrier” mount for free, without any upgrades."
     },
     "infuriatingWit": {
       "title": "Infuriating Wit",
-      "def": "\\textbf{\\maximised{Charge Range rolls}} towards any unit containing Hernaut."
+      "def": "<span class=\"textbf\">Maximised(Charge Range rolls)</span> towards any unit containing Hernaut."
     },
     "leprechaunCompanion": {
       "title": "Leprechaun Companion",
@@ -15870,23 +15878,23 @@
     },
     "burningArmour": {
       "title": "Burning Armour",
-      "def": "For each Standard Melee Attack allocated against Ibat-Sokavum that rolls a ‘1’ to-hit, the attacking model’s Health Pool suffers a hit with Str 4, AP 0 and \\textbf{\\flamingattacks{}}."
+      "def": "For each Standard Melee Attack allocated against Ibat-Sokavum that rolls a ‘1’ to-hit, the attacking model’s Health Pool suffers a hit with Str 4, AP 0 and <span class=\"textbf\">Flaming Attacks</span>."
     },
     "blivetLance": {
       "title": "Blivet Lance",
-      "def": "Lance. \\textbf{\\devastatingcharge{+5 \\Agi{}}}. Attacks with the Blivet Lance ignore negative modifiers to to-hit rolls."
+      "def": "Lance. <span class=\"textbf\">Devastating Charge(+5 Agi)</span>. Attacks with the Blivet Lance ignore negative modifiers to to-hit rolls."
     },
     "helmOfKadimCommand": {
       "title": "Helm of Kadim Command",
-      "def": "Model parts with \\ChTag{Kadim} in friendly units within \\distance{12} of Ibat-Sokavum gain \\textbf{\\firststrike{\\hatred{against \\weakness{\\flamingattacks{}}}}}."
+      "def": "Model parts with Kadim in friendly units within 12\" of Ibat-Sokavum gain <span class=\"textbf\">First Strike(Hatred(against Weakness(Flaming Attacks)))</span>."
     },
     "newGuard": {
       "title": "New Guard",
-      "def": "Dukes cannot be taken in an Army List containing King Henry the Young. \\newline{} In addition, while joined to a unit of Knights of the Court, King Henry benefits from \\textbf{\\devastatingcharge{+1 \\Att{}, +1 \\Off{}, +1 \\Agi{}}}."
+      "def": "Dukes cannot be taken in an Army List containing King Henry the Young. <br> In addition, while joined to a unit of Knights of the Court, King Henry benefits from <span class=\"textbf\">Devastating Charge(+1 Att, +1 Off, +1 Agi)</span>."
     },
     "aWorthyFoe": {
       "title": "A Worthy Foe",
-      "def": "Knightly Principle. During Pre-game Selections, choose a single enemy Character or a single Height 4-5 enemy model with \\textbf{Solitary}: King Henry gains \\textbf{\\multiplewounds{10, against the chosen model}}."
+      "def": "Knightly Principle. During Pre-game Selections, choose a single enemy Character or a single Height 4-5 enemy model with <span class=\"textbf\">Solitary</span>: King Henry gains <span class=\"textbf\">Multiple Wounds(10, against the chosen model)</span>."
     },
     "feyforgedLance": {
       "title": "Feyforged Lance",
@@ -15894,47 +15902,47 @@
     },
     "theFathersGifts": {
       "title": "The Father’s Gifts",
-      "def": "At the beginning of each friendly Player Turn, Klaas can choose a single friendly unit within \\distance{12} to gain one of the following abilities, with Duration : One Turn.\\begin{itemize} \\item \\textbf{Supernal Shield:} the chosen unit suffers \\minuss{}3 Arm and gains \\textbf{\\aegis{5+}}. \\item \\textbf{Unholy Edge:} the chosen unit always strikes at \\agilitystep{} 0 and gains +1 \\AP{}. \\item \\textbf{The Eight-Point Crown:} the chosen unit suffers \\minuss{}1 Str and \\minuss{}1 AP, and gains \\alphaorderlistandbf{\\unstable{}, \\stubborn{}}. \\end{itemize}"
+      "def": "At the beginning of each friendly Player Turn, Klaas can choose a single friendly unit within 12\" to gain one of the following abilities, with Duration : One Turn. <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Supernal Shield:</span> the chosen unit suffers -3 Arm and gains <span class=\"textbf\">Aegis(5+)</span>. <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Unholy Edge:</span> the chosen unit always strikes at Agility Step 0 and gains +1 AP. <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">The Eight-Point Crown:</span> the chosen unit suffers -1 Str and -1 AP, and gains Unstable, Stubborn. <br>"
     },
     "memoryOfAHoardedBlade": {
       "title": "Memory of a Hoarded Blade",
-      "def": "If included in an Army List not containing \\textbf{Favour of Greed}, Klaas gains +2 \\Str{}, +2 \\AP{} and \\textbf{always} strikes at \\agilitystep{} 0."
+      "def": "If included in an Army List not containing <span class=\"textbf\">Favour of Greed</span>, Klaas gains +2 Str, +2 AP and <span class=\"textbf\">always</span> strikes at Agility Step 0."
     },
     "danceOfDeath": {
       "title": "Dance of Death",
-      "def": "For every Health Point Lady Chrysélie inflicts with a Standard Melee Attack: \\begin{itemize} \\item Immediately roll another Standard Melee Attack allocated at the same Health Pool as the initial attack. \\item Resolve these attacks before removing any casualties. \\item These new attacks do not generate any further attacks. \\end{itemize}"
+      "def": "For every Health Point Lady Chrysélie inflicts with a Standard Melee Attack: <br>&nbsp;&nbsp;&bull; Immediately roll another Standard Melee Attack allocated at the same Health Pool as the initial attack. <br>&nbsp;&nbsp;&bull; Resolve these attacks before removing any casualties. <br>&nbsp;&nbsp;&bull; These new attacks do not generate any further attacks. <br>"
     },
     "thirstyRapiers": {
       "title": "Thirsty Rapiers",
-      "def": "Paired Weapons. \\textbf{\\lethalstrike{}}. For every Health Point loss dealt with this Weapon, immediately roll a D6: on 5+, Lady Chrysélie \\textbf{Recovers} a single Health Point. However, all Vampiric rolls she makes automatically fail."
+      "def": "Paired Weapons. <span class=\"textbf\">Lethal Strike</span>. For every Health Point loss dealt with this Weapon, immediately roll a D6: on 5+, Lady Chrysélie <span class=\"textbf\">Recovers</span> a single Health Point. However, all Vampiric rolls she makes automatically fail."
     },
     "ironmaulLimb": {
       "title": "Ironmaul Limb",
-      "def": "Each time \\textbf{Troll Toll}’s effect is triggered, Lerrgog performs two Standard Melee Attacks instead of a single one."
+      "def": "Each time <span class=\"textbf\">Troll Toll</span>’s effect is triggered, Lerrgog performs two Standard Melee Attacks instead of a single one."
     },
     "trollsBellow": {
       "title": "Troll’s Bellow",
-      "def": "When you activate the \\textbf{War Cry!}, all friendly models with \\ChTag{Troll} gain \\textbf{\\fury{}}. Duration: One Turn."
+      "def": "When you activate the <span class=\"textbf\">War Cry!</span>, all friendly models with Troll gain <span class=\"textbf\">Fury</span>. Duration: One Turn."
     },
     "higherStandards": {
       "title": "Higher Standards",
-      "def": "Rank and File units containing \\ChTag{Troll} in an Army List containing Lerrgog are upgraded with a Standard Bearer. Duration: Permanent. This affects Battle Preparations."
+      "def": "Rank and File units containing Troll in an Army List containing Lerrgog are upgraded with a Standard Bearer. Duration: Permanent. This affects Battle Preparations."
     },
     "talesOfTheFallen": {
       "title": "Tales of the Fallen",
-      "def": "\\wizardconclavespellslist[0]{Moohoarrgh has the following Spell Scrolls:}{\\spellformatlist{\\evocationspelltwo}{\\evocation},\\spellformatlist{\\occultismspellfive}{\\occultism},\\spellformatlist{\\shamanismspellfive}{\\shamanism},\\spellformatlist{\\pyromancyspellthree}{\\pyromancy}}\n If a friendly Character anywhere on the Battlefield is removed as a casualty or removes an enemy Character as a casualty whilst being Engaged in Combat, select one of Moohoarrgh’s used Spell Scrolls: the selected Scroll can be used again."
+      "def": "Moohoarrgh has the following Spell Scrolls:Danse Macabre=free,Umbral Majesty=free,Wild Spikes=free,Dragon’s Roar=free If a friendly Character anywhere on the Battlefield is removed as a casualty or removes an enemy Character as a casualty whilst being Engaged in Combat, select one of Moohoarrgh’s used Spell Scrolls: the selected Scroll can be used again."
     },
     "proteanLimbs": {
       "title": "Protean Limbs",
-      "def": "Ook gains +\\Dsix{} \\Att. \\textit{Note: roll each time he is about to allocate attacks, as described on p. 45 of the Reference Handbook.} "
+      "def": "Ook gains +D6 Att. <i>Note: roll each time he is about to allocate attacks, as described on p. 45 of the Reference Handbook.</i>"
     },
     "superiorDarkstonePower": {
       "title": "Superior Darkstone Power",
-      "def": "Professor Mauss can choose not to move despite having \\textbf{Random Movement}. In addition, Professor Mauss cannot choose to Pursue, unless he is Charging –– in which case he \\textbf{must} Pursue (including Overrun)."
+      "def": "Professor Mauss can choose not to move despite having <span class=\"textbf\">Random Movement</span>. In addition, Professor Mauss cannot choose to Pursue, unless he is Charging –– in which case he <span class=\"textbf\">must</span> Pursue (including Overrun)."
     },
     "inergonInjection": {
       "title": "Inergon injection!",
-      "def": "One use only. In the Movement Phase, before moving, Professor Mauss can gain \\textbf{\\randommovement{\\XDsix{3}}}. Duration: One Phase."
+      "def": "One use only. In the Movement Phase, before moving, Professor Mauss can gain <span class=\"textbf\">Random Movement(3D6\")</span>. Duration: One Phase."
     },
     "prototypeMaussRifle": {
       "title": "Prototype Mauss Rifle",
@@ -15942,83 +15950,83 @@
     },
     "charioteerOfTheSun": {
       "title": "Charioteer of the Sun",
-      "def": "During 'Check Combat Formations' (Round of Combat, 2.A), the Rehnepeh model part gains a bonus to its Att, Off, Str, AP, and Agi equal to half the number of \\rankandfile{} Skeleton Chariot models in his unit, rounding fractions up."
+      "def": "During 'Check Combat Formations' (Round of Combat, 2.A), the Rehnepeh model part gains a bonus to its Att, Off, Str, AP, and Agi equal to half the number of Rank-and-File Skeleton Chariot models in his unit, rounding fractions up."
     },
     "theGoldenChariot": {
       "title": "The Golden Chariot",
-      "def": "Rehnepeh gains +2 \\HP{}, \\alphaorderlistandbf{\\distracting{},\\rallyaroundtheflag{}}. \\newline{} In addition, a unit containing \\textbf{The Golden Chariot} can never benefit from Cover."
+      "def": "Rehnepeh gains +2 HP, Distracting,Rally Around the Flag. <br> In addition, a unit containing <span class=\"textbf\">The Golden Chariot</span> can never benefit from Cover."
     },
     "staffOfPiankhKhahiroth": {
       "title": "Staff of Pi-Ankh Khahiroth",
-      "def": "A unit containing the \\textbf{Staff of Pi-Ankh Khahiroth} benefits from \\alphaorderlistandbf{\\ghoststep{}, \\strider{}}. In addition, all attacks made by model parts with \\ChTag{\\mount{}} benefit from \\alphaorderlistandbf{\\flamingattacks{}, \\magicalattacks{}}."
+      "def": "A unit containing the <span class=\"textbf\">Staff of Pi-Ankh Khahiroth</span> benefits from Ghost Step, Strider. In addition, all attacks made by model parts with Mount benefit from Flaming Attacks, Magical Attacks."
     },
     "harmonyOfTheSun": {
       "title": "Harmony of the Sun",
-      "def": "All other friendly models in units within \\distance{8} of Shade and Stone benefit from \\textbf{\\regeneration{+1, max. 4+}}."
+      "def": "All other friendly models in units within 8\" of Shade and Stone benefit from <span class=\"textbf\">Regeneration(+1, max. 4+)</span>."
     },
     "violenceOfTheStorm": {
       "title": "Violence of the Storm",
-      "def": "The Conjuring Shade model part is \\textbf{always} considered affected by \\spellformat{\\shamanismspellthree}{\\shamanism{}}."
+      "def": "The Conjuring Shade model part is <span class=\"textbf\">always</span> considered affected by <i>Awaken the Beast</i> (Shamanism)."
     },
     "balanceOfNature": {
       "title": "Balance of Nature",
-      "def": "\\textbf{\\wizardconclave{3}}. Instead of the usual Spell Selection (including Spell Swapping), Shade and Stone must select one spell from \\textit{Druidism} Apprentice and Adept spells, one spell from \\textit{Shamanism} Apprentice and Adept spells, and must always select the Hereditary Spell."
+      "def": "<span class=\"textbf\">Wizard Conclave(3)</span>. Instead of the usual Spell Selection (including Spell Swapping), Shade and Stone must select one spell from <i>Druidism</i> Apprentice and Adept spells, one spell from <i>Shamanism</i> Apprentice and Adept spells, and must always select the Hereditary Spell."
     },
     "masterBrewer": {
       "title": "Master Brewer",
-      "def": "Master Brewer: During each friendly Magic Phase, before Casting Spells ('Magic Phase, Step 5'), the Master Brewer \\textbf{may} select a single of the following Ales to affect his unit. Duration: One Turn. \\begin{itemize} \\item \\textbf{Stout Ale}: \\alphaorderlistandbf{\\stubborn{}, \\fearless{}, \\unruly{}}. \\item \\textbf{Bitter Ale}: \\alphaorderlistandbf{\\hatred{}, \\fury{}, \\unruly{}}. \\item \\textbf{Red Ale}: \\alphaorderlistandbf{\\zeal{}, \\lethalstrike{}, \\unruly{}}.\\end{itemize}"
+      "def": "Master Brewer: During each friendly Magic Phase, before Casting Spells ('Magic Phase, Step 5'), the Master Brewer <span class=\"textbf\">may</span> select a single of the following Ales to affect his unit. Duration: One Turn. <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Stout Ale</span>: Stubborn, Fearless, Unruly. <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Bitter Ale</span>: Hatred, Fury, Unruly. <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Red Ale</span>: Zeal, Lethal Strike, Unruly.<br>"
     },
     "theAlewardCrew": {
       "title": "The Aleward Crew",
-      "def": "When Tador Berafrig is Deployed in a unit of Miners, he and all \\rankandfile{} models in that unit gain +1 Armour and \\textbf{\\aegis{3+, \\againstflamingattacks}}. Duration: Permanent."
+      "def": "When Tador Berafrig is Deployed in a unit of Miners, he and all Rank-and-File models in that unit gain +1 Armour and <span class=\"textbf\">Aegis(3+, against Flaming Attacks)</span>. Duration: Permanent."
     },
     "blessedByHarag": {
       "title": "Blessed by Harag",
-      "def": "\\textit{Techainin’s rags and strange hat never stop dripping, even when out of the water.} \\alphaorderlistandbf{\\aegis{5+},\\resistance{\\againstflamingattacks{}}}."
+      "def": "<i>Techainin’s rags and strange hat never stop dripping, even when out of the water.</i> Aegis(5+),Resistance(against Flaming Attacks)."
     },
     "aWateryGrave": {
       "title": "A Watery Grave",
-      "def": "Techainin is always considered to have rolled a 3+ when rolling for whether he arrives using Ambush. \\newline{}In addition, at the beginning of “Post Combat” (Step 6 of a Round of Combat), if Techainin won the Round of Combat and an enemy Character in that Combat was removed as a casualty, then Techainin can be placed in Ambush."
+      "def": "Techainin is always considered to have rolled a 3+ when rolling for whether he arrives using Ambush. <br>In addition, at the beginning of “Post Combat” (Step 6 of a Round of Combat), if Techainin won the Round of Combat and an enemy Character in that Combat was removed as a casualty, then Techainin can be placed in Ambush."
     },
     "grimHarpoon": {
       "title": "Grim Harpoon",
-      "def": "Counts as a Great Weapon in Melee. +1 \\Att{}.\\newline{} Any unit that suffers one or more ranged hits from this weapon loses \\textbf{\\swiftstride{}}, and cannot regain it in any way, until the start of the Active Player’s next Turn."
+      "def": "Counts as a Great Weapon in Melee. +1 Att.<br> Any unit that suffers one or more ranged hits from this weapon loses <span class=\"textbf\">Swiftstride</span>, and cannot regain it in any way, until the start of the Active Player’s next Turn."
     },
     "barbedNets": {
       "title": "Barbed Nets",
-      "def": "\\textbf{\\afflict{\\minuss{}1 \\Str{}, \\minuss{}1 \\AP{}}}"
+      "def": "<span class=\"textbf\">Afflict(-1 Str, -1 AP)</span>"
     },
     "rogueHeroine": {
       "title": "Rogue Heroine",
-      "def": "The model gains \\alphaorderlistandbf{\\fearless{}, \\frenzy{}}, and is unaffected by \\textbf{Rally Around the Flag}."
+      "def": "The model gains Fearless, Frenzy, and is unaffected by <span class=\"textbf\">Rally Around the Flag</span>."
     },
     "scourgeOfFleets": {
       "title": "Scourge of Fleets",
-      "def": "Balûruth gains \\textbf{\\grindattack{\\Dsix{}, \\Str{} 4, \\AP{} 1, \\flamingattacks{}}}."
+      "def": "Balûruth gains <span class=\"textbf\">Grind Attack(D6, Str 4, AP 1, Flaming Attacks)</span>."
     },
     "theLanceOfTears": {
       "title": "The Lance of Tears",
-      "def": "Lance. The model gains \\textbf{\\afflict{\\minuss{}1 \\Dis{}}}, Tenacla gains +1 \\Att{} and \\alphaorderlistandbf{\\fury{}, \\hatred{}}. \\newline{} In addition, she loses 1 Attack at the end of every Game Turn in which she was NOT Engaged in Combat. Duration: Permanent."
+      "def": "Lance. The model gains <span class=\"textbf\">Afflict(-1 Dis)</span>, Tenacla gains +1 Att and Fury, Hatred. <br> In addition, she loses 1 Attack at the end of every Game Turn in which she was NOT Engaged in Combat. Duration: Permanent."
     },
     "revokeTheMandateOfHeaven": {
       "title": "Revoke the Mandate of Heaven",
-      "def": "One use only. May be activated at the start of the opponent’s Player Turn. Choose a single enemy unit within \\distance{24} of Tergon. The Mobility of all models with \\textbf{\\fly{}} in that unit is halved, rounding fractions up. Duration: End of Turn."
+      "def": "One use only. May be activated at the start of the opponent’s Player Turn. Choose a single enemy unit within 24\" of Tergon. The Mobility of all models with <span class=\"textbf\">Fly</span> in that unit is halved, rounding fractions up. Duration: End of Turn."
     },
     "commanderOfTheSteppes": {
       "title": "Commander of the Steppes",
-      "def": "At the Beginning of 'Moving Vanguarding Units' (Battle Setup, Step 3.F), choose two units within \\distance{12} of Tergon entirely with \\ChTag{\\mount{}} or entirely with Height 2: they gain \\textbf{\\vanguard{3}}"
+      "def": "At the Beginning of 'Moving Vanguarding Units' (Battle Setup, Step 3.F), choose two units within 12\" of Tergon entirely with Mount or entirely with Height 2: they gain <span class=\"textbf\">Vanguard(3\")</span>"
     },
     "danceOfTheRose": {
       "title": "Dance of the Rose",
-      "def": "When Choosing Equipment and Abilities, the Black Rose must choose one of the following Dances, with Duration: Round of Combat. The Black Rose cannot select a specific Dance again until one or more of the following has occurred: \\begin{itemize} \\item She is not Engaged in Combat. \\item She has selected all Dances. \\item She can only select \\textbf{Dance of Caedhren}, and it is not possible to do the \\textbf{Make Way}.  \\end{itemize} Dances: \\begin{itemize} \\item \\textbf{Dance of Caedhren:} the Black Rose can use \\textbf{Make Way}, even if she is already in contact with an enemy model, provided she moves into contact with an enemy Character in her unit’s Front Facing. \\item \\textbf{Dance of Ceinran:} Nominate one enemy Character model in contact with the Black Rose. The Black Rose and the selected Character \\textbf{always} have 0 Attacks, and no attacks nor hits can be assigned to either. At \\agilitystep{} 0, the Black Rose rolls 1D3, \\textbf{Maximized}, and the selected Character rolls 1D3. If either model rolls lower, it loses a number of Health Points equal to the difference between the two rolls. \\item \\textbf{Dance of Nabh:}\\newline{} the Black Rose gains \\alphaorderlistandbf{\\hatred{against Characters},\\zeal{against Characters}}. \\newline{}Attacks against the Black Rose gain +1 to hit.\\end{itemize}"
+      "def": "When Choosing Equipment and Abilities, the Black Rose must choose one of the following Dances, with Duration: Round of Combat. The Black Rose cannot select a specific Dance again until one or more of the following has occurred: <br>&nbsp;&nbsp;&bull; She is not Engaged in Combat. <br>&nbsp;&nbsp;&bull; She has selected all Dances. <br>&nbsp;&nbsp;&bull; She can only select <span class=\"textbf\">Dance of Caedhren</span>, and it is not possible to do the <span class=\"textbf\">Make Way</span>. <br> Dances: <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Dance of Caedhren:</span> the Black Rose can use <span class=\"textbf\">Make Way</span>, even if she is already in contact with an enemy model, provided she moves into contact with an enemy Character in her unit’s Front Facing. <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Dance of Ceinran:</span> Nominate one enemy Character model in contact with the Black Rose. The Black Rose and the selected Character <span class=\"textbf\">always</span> have 0 Attacks, and no attacks nor hits can be assigned to either. At Agility Step 0, the Black Rose rolls 1D3, <span class=\"textbf\">Maximized</span>, and the selected Character rolls 1D3. If either model rolls lower, it loses a number of Health Points equal to the difference between the two rolls. <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Dance of Nabh:</span><br> the Black Rose gains Hatred(against Characters),Zeal(against Characters). <br>Attacks against the Black Rose gain +1 to hit.<br>"
     },
     "aembeghensBlades": {
       "title": "Aembeghen’s Blades",
-      "def": "Paired Weapons. If there are any enemy Characters in contact with the wielder’s unit, the Black Rose gains +2 \\Att.\\newline{} In addition, any Melee Attacks the Black Rose allocates against a Character gain +2 \\Str, +4 \\AP."
+      "def": "Paired Weapons. If there are any enemy Characters in contact with the wielder’s unit, the Black Rose gains +2 Att.<br> In addition, any Melee Attacks the Black Rose allocates against a Character gain +2 Str, +4 AP."
     },
     "theObsidianThorns": {
       "title": "The Obsidian Thorns",
-      "def": "the Black Rose gains \\alphaorderlistandbf{\\exclusive{Obsidian Guard}, \\magicresistance{1}}, and all models in her unit gain +1 Charge Speed. \\newline{} In addition, enemy units are not allowed to choose the Flee! Charge Reaction to Charges declared on them by the Black Rose’s unit, unless they are \\textbf{Shaken}. \\newline{} \\textit{Note: this has no influence on Charge Reactions to other units.}"
+      "def": "the Black Rose gains Exclusive(Obsidian Guard), Magic Resistance(1), and all models in her unit gain +1 Charge Speed. <br> In addition, enemy units are not allowed to choose the Flee! Charge Reaction to Charges declared on them by the Black Rose’s unit, unless they are <span class=\"textbf\">Shaken</span>. <br> <i>Note: this has no influence on Charge Reactions to other units.</i>"
     },
     "cacophonyOfSuffering": {
       "title": "Cacophony of Suffering",
@@ -16026,47 +16034,47 @@
     },
     "everGrowing": {
       "title": "Ever Growing",
-      "def": "Whenever the Collective of Varyag is the target of \\spellformat{Arise!}{\\hereditaryspell}, they can \\textbf{Raise} Health Points above their number of starting Health Points, to a maximum of twice their starting Health Points."
+      "def": "Whenever the Collective of Varyag is the target of <i>Arise!</i> (Hereditary Spell), they can <span class=\"textbf\">Raise</span> Health Points above their number of starting Health Points, to a maximum of twice their starting Health Points."
     },
     "covenOfSkulls": {
       "title": "Coven of Skulls",
-      "def": "When the Collective of Varyag casts \\spellformat{Arise!}{\\hereditaryspell}, they may choose to set the spell’s Range to \\distance{6} and give it the Type: Aura. This choice is declared when choosing targets."
+      "def": "When the Collective of Varyag casts <i>Arise!</i> (Hereditary Spell), they may choose to set the spell’s Range to 6\" and give it the Type: Aura. This choice is declared when choosing targets."
     },
     "disorientingScent": {
       "title": "Disorienting Scent",
-      "def": "\\textbf{\\afflict{\\minuss{}2 Off}}, against model parts with \\alphaorderlistor{\\ChTag{Beast}, \\ChTag{Magnasaur}}"
+      "def": "<span class=\"textbf\">Afflict(-2 Off)</span>, against model parts with Beast, Magnasaur"
     },
     "shadowslicesPanoply": {
       "title": "Shadowslice’s Panoply",
-      "def": "The Shadowslice Stalker is equipped with the most advanced selection of murderous weaponry known to any species. Each time the Stalker is Deployed from \\textbf{Ambush} or using \\textbf{\\hidden{}}, she gains one of the following Magic Items. Duration: Permanent. \\begin{itemize} \\item \\textbf{Countless Daggers:} \\textbf{\\firststrike{+2 \\Att{}}}, Paired Weapons and Throwing Weapons (2+). \\item \\textbf{Darkstone Rod}: +2 \\Str, \\alphaorderlistandbfNested{\\lightningattacks{}, \\multiplewounds{2}{}} \\item \\textbf{Senator’s Toga}: +2 \\Dis{}, \\textbf{\\commandingpresence{\\distance{6}}} \\end{itemize}"
+      "def": "The Shadowslice Stalker is equipped with the most advanced selection of murderous weaponry known to any species. Each time the Stalker is Deployed from <span class=\"textbf\">Ambush</span> or using <span class=\"textbf\">Hidden</span>, she gains one of the following Magic Items. Duration: Permanent. <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Countless Daggers:</span> <span class=\"textbf\">First Strike(+2 Att)</span>, Paired Weapons and Throwing Weapons (2+). <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Darkstone Rod</span>: +2 Str, Lightning Attacks, Multiple Wounds(2) <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Senator’s Toga</span>: +2 Dis, <span class=\"textbf\">Commanding Presence(6\")</span> <br>"
     },
     "mistressOfSmoke": {
       "title": "Mistress of Smoke",
-      "def": "One use only. When the Shadowslice Stalker would be removed as a casualty or flee while joined to a unit, remove her from the Battlefield: she becomes \\textbf{\\hidden{}} again. If she uses this ability and hasn’t been removed as a casualty at the end of the game, the opponent still receives Victory Points as if she had been removed as a casualty."
+      "def": "One use only. When the Shadowslice Stalker would be removed as a casualty or flee while joined to a unit, remove her from the Battlefield: she becomes <span class=\"textbf\">Hidden</span> again. If she uses this ability and hasn’t been removed as a casualty at the end of the game, the opponent still receives Victory Points as if she had been removed as a casualty."
     },
     "stillKickin": {
       "title": "Still Kickin'",
-      "def": "At the beginning of any Player Turn when the Splendid Leader is not on the Battlefield (i.e. because he has been removed as a casualty), you can \\textbf{Summon} a new Splendid Leader using the \\textbf{\\hidden{}} rule, with the following exceptions: you can select whether the new Splendid Leader will be mounted on a Beastie, the Splendid Palanquin or a Beastie Chariot before choosing the unit he appears in.\\newline{}If the Splendid Palanquin is selected, ignore the Base Size limitation and select six \\rankandfile{} models in the unit to be joined instead of a single model. After choosing an eligible unit, remove the six \\rankandfile{} models so that the Splendid Leader is placed in the Front Rank, where the removed models were positioned."
+      "def": "At the beginning of any Player Turn when the Splendid Leader is not on the Battlefield (i.e. because he has been removed as a casualty), you can <span class=\"textbf\">Summon</span> a new Splendid Leader using the <span class=\"textbf\">Hidden</span> rule, with the following exceptions: you can select whether the new Splendid Leader will be mounted on a Beastie, the Splendid Palanquin or a Beastie Chariot before choosing the unit he appears in.<br>If the Splendid Palanquin is selected, ignore the Base Size limitation and select six Rank-and-File models in the unit to be joined instead of a single model. After choosing an eligible unit, remove the six Rank-and-File models so that the Splendid Leader is placed in the Front Rank, where the removed models were positioned."
     },
     "growingDespair": {
       "title": "Growing Despair",
-      "def": "\\textbf{\\afflict{\\minuss{}1 \\Dis{}, \\minuss{}X \\Def{}, and \\minuss{}X \\Off{}}}, where 'X' is equal to the number of the current Game Turn."
+      "def": "<span class=\"textbf\">Afflict(-1 Dis, -X Def, and -X Off)</span>, where 'X' is equal to the number of the current Game Turn."
     },
     "abandonAllHope": {
       "title": "Abandon All Hope",
-      "def": "During Tristitia’s Shooting Phase, they can make a Shooting Attack that targets all enemy units within \\distance{12} of Tristitia (including those Engaged in Combat and outside Front Arc and/or Line of Sight). Each target suffers 1 hit for each Rank it has, with Strength 9, Armour Penetration 10, \\alphaorderlistandbfNested{\\psychicattacks{}, \\magicalattacks{}}. This attack can be used even if Tristitia is Engaged in Combat."
+      "def": "During Tristitia’s Shooting Phase, they can make a Shooting Attack that targets all enemy units within 12\" of Tristitia (including those Engaged in Combat and outside Front Arc and/or Line of Sight). Each target suffers 1 hit for each Rank it has, with Strength 9, Armour Penetration 10, Psychic Attacks, Magical Attacks. This attack can be used even if Tristitia is Engaged in Combat."
     },
     "erusSecretRecipes": {
       "title": "Eru’s Secret Recipes",
-      "def": "At the start of each friendly Player Turn, pick one of the following to affect the Chefling’s unit. Duration: One Turn. \\begin{itemize} \\item \\textbf{Bluehoove Goat Stew}: +2 \\Mob{}, \\textbf{\\strider{}} \\item \\textbf{Trollbear Goulash}: \\textbf{\\regeneration{6+}}, \\textbf{Recover} a single HP on a model in the Chefling’s unit. \\newline{} \\textit{Note: \\textbf{Attached} models cannot be \\textbf{Raised} unless specified.} \\item \\textbf{Stonecold Soup}: \\alphaorderlistandbf{\\disciplined{}, \\rallyaroundtheflag{\\distance{0}}, \\channel{1}} \\end{itemize}"
+      "def": "At the start of each friendly Player Turn, pick one of the following to affect the Chefling’s unit. Duration: One Turn. <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Bluehoove Goat Stew</span>: +2 Mob, <span class=\"textbf\">Strider</span> <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Trollbear Goulash</span>: <span class=\"textbf\">Regeneration(6+)</span>, <span class=\"textbf\">Recover</span> a single HP on a model in the Chefling’s unit. <br> <i>Note: <span class=\"textbf\">Attached</span> models cannot be <span class=\"textbf\">Raised</span> unless specified.</i> <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Stonecold Soup</span>: Disciplined, Rally Around the Flag(0\"), Channel(1) <br>"
     },
     "ghostPepper": {
       "title": "Ghost Pepper",
-      "def": "During each friendly Shooting Phase, select a single model part in the Chefling’s unit: it gains \\textbf{\\breathattack{\\Str{} 3, \\AP{} 0}}. Duration: One Phase. "
+      "def": "During each friendly Shooting Phase, select a single model part in the Chefling’s unit: it gains <span class=\"textbf\">Breath Attack(Str 3, AP 0)</span>. Duration: One Phase."
     },
     "goneButNotForgotten": {
       "title": "Gone but not Forgotten",
-      "def": "If Valish is removed as a casualty, all friendly model parts with \\ChTag{Ogre} gain \\textbf{\\hatred{against the unit that caused Valish to be removed as a casualty\\refsymbol{}}}. Duration: Permanent. \\newline{} \\refsymbol{} This includes all models joined to it."
+      "def": "If Valish is removed as a casualty, all friendly model parts with Ogre gain <span class=\"textbf\">Hatred(against the unit that caused Valish to be removed as a casualty*)</span>. Duration: Permanent. <br> * This includes all models joined to it."
     }
   }
 }
