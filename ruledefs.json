@@ -10205,7 +10205,16 @@
     },
     "special-eldritch_inscriptions": {
       "title": "Eldritch Inscriptions",
-      "def": "    <span class=\"textbf\">First Strike(Hatred and Zeal)</span>."
+      "def": "    <span class=\"textbf\">First Strike(Hatred and Zeal)</span>.",
+      "type": "weapon_enchant",
+      "mod": [
+        {
+          "rules": {
+            "id": "first_strike",
+            "params": ["Hatred", "Zeal"]
+          }
+        }
+      ]
     },
     "special-heros_heart": {
       "title": "Hero's Heart",
@@ -10228,7 +10237,15 @@
     },
     "special-giant_slayer": {
       "title": "Giant Slayer",
-      "def": "    <span class=\"textbf\">Crush Attack</span>.<br>This Crush Attack gains +1 to hit towards models with Height 5."
+      "def": "    <span class=\"textbf\">Crush Attack</span>.<br>This Crush Attack gains +1 to hit towards models with Height 5.",
+      "type": "weapon_enchant",
+      "mod": [
+        {
+          "rules": {
+            "id": "crush_attack"
+          }
+        }
+      ]
     },
     "special-king_slayer": {
       "title": "King Slayer",
@@ -10322,15 +10339,39 @@
     },
     "special-death_cheater": {
       "title": "Death Cheater",
-      "def": "\t+1 Arm, and <span class=\"textbf\">Regeneration(4+)</span>."
+      "def": "\t+1 Arm, and <span class=\"textbf\">Regeneration(4+)</span>.",
+      "mod": [
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "+1"
+          }
+        }
+      ]
     },
     "special-destinys_call": {
-      "title": "Destiny’s Call",
-      "def": "\t<span class=\"textbf\">Aegis(4+)</span>, and the model’s Armour is <span class=\"textbf\">always</span> 3.<br><br>\t<i>Note that this means it cannot be improved beyond 3.<br>It is still affected by Armour Penetration.</i>"
+      "title": "Destiny's Call",
+      "def": "\t<span class=\"textbf\">Aegis(4+)</span>, and the model's Armour is <span class=\"textbf\">always</span> 3.<br><br>\t<i>Note that this means it cannot be improved beyond 3.<br>It is still affected by Armour Penetration.</i>",
+      "mod": [
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "@3"
+          }
+        }
+      ]
     },
     "special-essence_of_mithril": {
       "title": "Essence of Mithril",
-      "def": "\tThe wearer’s Armour is <span class=\"textbf\">set</span> to 5 and can <span class=\"textbf\">never</span> be improved beyond this."
+      "def": "\tThe wearer's Armour is <span class=\"textbf\">set</span> to 5 and can <span class=\"textbf\">never</span> be improved beyond this.",
+      "mod": [
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "@5"
+          }
+        }
+      ]
     },
     "special-dusk_forged": {
       "title": "Dusk Forged",
@@ -10350,11 +10391,28 @@
     },
     "special-ghostly_guard": {
       "title": "Ghostly Guard",
-      "def": "\t+2 Arm against non-Magical Attacks."
+      "def": "\t+2 Arm against non-Magical Attacks.",
+      "mod": [
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "+2"
+          },
+          "optional": true
+        }
+      ]
     },
     "special-basalt_infusion": {
       "title": "Basalt Infusion",
-      "def": "\t+1 Armour, <span class=\"textbf\">Aegis(3+, against Flaming Attacks)</span>, and the wearer automatically fails all Regeneration Saves."
+      "def": "\t+1 Armour, <span class=\"textbf\">Aegis(3+, against Flaming Attacks)</span>, and the wearer automatically fails all Regeneration Saves.",
+      "mod": [
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "+1"
+          }
+        }
+      ]
     },
     "special-warding_of_unity": {
       "title": "Warding of Unity",
@@ -10362,7 +10420,21 @@
     },
     "special-wild_warding": {
       "title": "Wild Warding",
-      "def": "    +3 Arm.<br><br>\tThe models Armour value can <span class=\"textbf\">never</span> be improved beyond 5."
+      "def": "    +3 Arm.<br><br>\tThe models Armour value can <span class=\"textbf\">never</span> be improved beyond 5.",
+      "mod": [
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "+3"
+          }
+        },
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "<5"
+          }
+        }
+      ]
     },
     "special-banner_of_speed": {
       "title": "Banner of Speed",
