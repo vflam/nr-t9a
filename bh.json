@@ -2,14 +2,19 @@
   "name": "Beast Herds",
   "translation": {
     "fr": "Hardes Bestiales",
-    "cn": "野兽人"
+    "cn": "\u91ce\u517d\u4eba"
   },
   "short": "bh",
   "version": "3rd ed",
   "nrversion": 370,
   "id": 2,
-  "include": [102],
-  "indicators": ["sticks_and_stones", "eyeballers"],
+  "include": [
+    102
+  ],
+  "indicators": [
+    "sticks_and_stones",
+    "eyeballers"
+  ],
   "playable": 1,
   "hereditary": [
     {
@@ -35,14 +40,21 @@
   },
   "dictionnary": [
     {
-      "refs": ["bannerEnchant"],
+      "refs": [
+        "bannerEnchant"
+      ],
       "options": [
         {
           "type": "check",
-          "refs": ["be_bh_wildherd", "one_use_item"],
+          "refs": [
+            "be_bh_wildherd",
+            "one_use_item"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["be_bh_wildherd"],
+              "refs": [
+                "be_bh_wildherd"
+              ],
               "amount": 1
             }
           ],
@@ -77,7 +89,9 @@
       "option_id": "jmeou9cth1qhf135t74unb"
     },
     {
-      "refs": ["handWeaponEnchant"],
+      "refs": [
+        "handWeaponEnchant"
+      ],
       "options": [
         {
           "type": "check",
@@ -85,22 +99,32 @@
           "cost": 50,
           "armyHasNotOption": [
             {
-              "refs": ["we_bh_hawthrone_curse"],
+              "refs": [
+                "we_bh_hawthrone_curse"
+              ],
               "amount": 1
             }
           ],
-          "refs": ["weaponEnchantUni", "we_bh_hawthrone_curse", "eyeballers"],
+          "refs": [
+            "weaponEnchantUni",
+            "we_bh_hawthrone_curse",
+            "eyeballers"
+          ],
           "hasNotOption": [
             {
-              "refs": ["weaponEnchantUni"],
+              "refs": [
+                "weaponEnchantUni"
+              ],
               "amount": 1
             },
             {
-              "refs": ["ambush"],
+              "refs": [
+                "ambush"
+              ],
               "amount": 1
             }
           ],
-          "description": "\t<span class=\"textbf\">Devastating Charge(+2 Str, +2 AP)</span>. The weapon can be used as a Shooting Weapon (3+) with the following profile: Range 18\", Shots 1, Str 3, AP 10, <span class=\"textbf\">Area Attack (1×5)</span>, <span class=\"textbf\">Direct Hit(Str 6, Multiple Wounds(D3))</span>. This Shooting Attack never suffers negative to-hit modifiers.",
+          "description": "\t<span class=\"textbf\">Devastating Charge(+2 Str, +2 AP)</span>. The weapon can be used as a Shooting Weapon (3+) with the following profile: Range 18\", Shots 1, Str 3, AP 10, <span class=\"textbf\">Area Attack (1\u00d75)</span>, <span class=\"textbf\">Direct Hit(Str 6, Multiple Wounds(D3))</span>. This Shooting Attack never suffers negative to-hit modifiers.",
           "option_id": "rh0cwwhe1wnc7675whhedm"
         },
         {
@@ -109,18 +133,27 @@
           "cost": 50,
           "armyHasNotOption": [
             {
-              "refs": ["we_bh_ancestral_carvings"],
+              "refs": [
+                "we_bh_ancestral_carvings"
+              ],
               "amount": 1
             }
           ],
-          "refs": ["weaponEnchantUni", "we_bh_ancestral_carvings"],
+          "refs": [
+            "weaponEnchantUni",
+            "we_bh_ancestral_carvings"
+          ],
           "hasNotOption": [
             {
-              "refs": ["weaponEnchantUni"],
+              "refs": [
+                "weaponEnchantUni"
+              ],
               "amount": 1
             }
           ],
-          "hasOption": ["soothsayer"],
+          "hasOption": [
+            "soothsayer"
+          ],
           "description": "\t+2 Att, +2 Str and +2 AP. <span class=\"textbf\">Distracting(1)</span>.",
           "option_id": "dodc9odxm6edd4ap7yx2fj",
           "rarity": "Uncommon"
@@ -129,21 +162,30 @@
       "option_id": "cdos44tz5lhd7rfizdhyef"
     },
     {
-      "refs": ["pairedWeaponsEnchant"],
+      "refs": [
+        "pairedWeaponsEnchant"
+      ],
       "options": [
         {
           "type": "check",
           "name": "Twin Hungers",
           "cost": 20,
-          "refs": ["weaponEnchantUni", "we_bh_twin_hungers"],
+          "refs": [
+            "weaponEnchantUni",
+            "we_bh_twin_hungers"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["we_bh_twin_hungers"],
+              "refs": [
+                "we_bh_twin_hungers"
+              ],
               "amount": 1
             }
           ],
-          "hasNotOption": ["weaponEnchantUni"],
-          "description": "\t<span class=\"textbf\">Lethal Strike</span>. Melee Attacks that roll a natural ‘6’ to wound and cause HP loss allow the wielder to <span class=\"textbf\">Recover</span> 1 HP at the end of the Agility Step (<i>unless their model was removed as a casualty</i>). Only 1 HP can be regained per phase this way.",
+          "hasNotOption": [
+            "weaponEnchantUni"
+          ],
+          "description": "\t<span class=\"textbf\">Lethal Strike</span>. Melee Attacks that roll a natural \u20186\u2019 to wound and cause HP loss allow the wielder to <span class=\"textbf\">Recover</span> 1 HP at the end of the Agility Step (<i>unless their model was removed as a casualty</i>). Only 1 HP can be regained per phase this way.",
           "option_id": "4rnff2wpxmlf2w733kkbfa"
         }
       ],
@@ -151,7 +193,10 @@
     },
     {
       "option_id": "swi48rruk8lcrym9tovpd7dsads",
-      "refs": ["handWeaponEnchant", "pairedWeaponsEnchant"],
+      "refs": [
+        "handWeaponEnchant",
+        "pairedWeaponsEnchant"
+      ],
       "options": [
         {
           "name": "Hero's Heart",
@@ -163,7 +208,9 @@
       ]
     },
     {
-      "refs": ["weaponEnchant"],
+      "refs": [
+        "weaponEnchant"
+      ],
       "options": [
         {
           "type": "check",
@@ -175,28 +222,39 @@
       ]
     },
     {
-      "refs": ["beastAxeEnchant"],
+      "refs": [
+        "beastAxeEnchant"
+      ],
       "options": [
         {
           "type": "check",
           "name": "Fatal Folly",
           "cost": 25,
-          "refs": ["weaponEnchantUni", "bae_bh_fatal_folly"],
+          "refs": [
+            "weaponEnchantUni",
+            "bae_bh_fatal_folly"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["bae_bh_fatal_folly"],
+              "refs": [
+                "bae_bh_fatal_folly"
+              ],
               "amount": 1
             }
           ],
-          "hasNotOption": ["weaponEnchantUni"],
-          "description": "\tFor each Melee Attack against the wielder's model that rolls a natural to-hit roll of ‘1’, the wielder must perform a Standard Melee Attack at the same Agility Step (<i>this overrides the normal restriction that Beast Axe attacks always strike at Agility Step 0</i>). This must be allocated towards the model or Health Pool that rolled the ‘1’ to hit.",
+          "hasNotOption": [
+            "weaponEnchantUni"
+          ],
+          "description": "\tFor each Melee Attack against the wielder's model that rolls a natural to-hit roll of \u20181\u2019, the wielder must perform a Standard Melee Attack at the same Agility Step (<i>this overrides the normal restriction that Beast Axe attacks always strike at Agility Step 0</i>). This must be allocated towards the model or Health Pool that rolled the \u20181\u2019 to hit.",
           "option_id": "wd3ca75xitmr6dopd3yw"
         }
       ],
       "option_id": "2adodh0wa86nsfeo1vh1eg"
     },
     {
-      "refs": ["armourEnchant"],
+      "refs": [
+        "armourEnchant"
+      ],
       "options": [
         {
           "type": "check",
@@ -209,10 +267,14 @@
           "type": "check",
           "name": "Aaghor's Affliction",
           "cost": 80,
-          "refs": ["la_bh_aagor"],
+          "refs": [
+            "la_bh_aagor"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["la_bh_aagor"],
+              "refs": [
+                "la_bh_aagor"
+              ],
               "amount": 1
             }
           ],
@@ -223,10 +285,14 @@
           "type": "check",
           "name": "Wild Form",
           "cost": 30,
-          "refs": ["ae_bh_wildform"],
+          "refs": [
+            "ae_bh_wildform"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["ae_bh_wildform"],
+              "refs": [
+                "ae_bh_wildform"
+              ],
               "amount": 1
             }
           ],
@@ -237,10 +303,14 @@
           "type": "check",
           "name": "Trickster's Cunning",
           "cost": 55,
-          "refs": ["la_bh_tricks"],
+          "refs": [
+            "la_bh_tricks"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["la_bh_tricks"],
+              "refs": [
+                "la_bh_tricks"
+              ],
               "amount": 1
             }
           ],
@@ -251,16 +321,22 @@
       "option_id": "xaqfw1w7b9d3wly722qjzb"
     },
     {
-      "refs": ["shieldEnchant"],
+      "refs": [
+        "shieldEnchant"
+      ],
       "options": [
         {
           "type": "check",
           "name": "Obscuring Fog",
           "cost": 15,
-          "refs": ["se_bh_obc"],
+          "refs": [
+            "se_bh_obc"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["se_bh_obc"],
+              "refs": [
+                "se_bh_obc"
+              ],
               "amount": 1
             }
           ],
@@ -271,16 +347,22 @@
       "option_id": "g54bqaxxaxb36msf8o8z7m"
     },
     {
-      "refs": ["artefact"],
+      "refs": [
+        "artefact"
+      ],
       "options": [
         {
           "type": "check",
           "name": "Pillager Icon",
           "cost": 50,
-          "refs": ["art_bh_pilla"],
+          "refs": [
+            "art_bh_pilla"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["art_bh_pilla"],
+              "refs": [
+                "art_bh_pilla"
+              ],
               "amount": 1
             }
           ],
@@ -291,11 +373,17 @@
           "type": "check",
           "name": "Horn of Bragh",
           "cost": 30,
-          "refs": ["art_horn_Bragh"],
-          "hasNotOption": ["mount"],
+          "refs": [
+            "art_horn_Bragh"
+          ],
+          "hasNotOption": [
+            "mount"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["art_horn_Bragh"],
+              "refs": [
+                "art_horn_Bragh"
+              ],
               "amount": 1
             }
           ],
@@ -306,10 +394,14 @@
           "type": "check",
           "name": "Crown of Madness",
           "cost": 40,
-          "refs": ["art_bh_crownhorn"],
+          "refs": [
+            "art_bh_crownhorn"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["art_bh_crownhorn"],
+              "refs": [
+                "art_bh_crownhorn"
+              ],
               "amount": 1
             }
           ],
@@ -328,11 +420,15 @@
           "name": "Spirit-Caller's Charm",
           "cost": 70,
           "option_id": "d9g2jvddypm46iqi",
-          "refs": ["spiritcallerscharm"],
+          "refs": [
+            "spiritcallerscharm"
+          ],
           "description": "Channel(2)",
           "armyHasNotOption": [
             {
-              "refs": ["spiritcallerscharm"],
+              "refs": [
+                "spiritcallerscharm"
+              ],
               "amount": 1
             }
           ]
@@ -341,16 +437,24 @@
       "option_id": "8f7qk3n17qf6mra5melrzh"
     },
     {
-      "refs": ["potions_and_scrolls"],
+      "refs": [
+        "potions_and_scrolls"
+      ],
       "options": [
         {
           "type": "check",
           "name": "Rain Augur Brew",
           "cost": 45,
-          "refs": ["art_bh_darkrain", "first_game_turn", "one_use_item"],
+          "refs": [
+            "art_bh_darkrain",
+            "first_game_turn",
+            "one_use_item"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["art_bh_darkrain"],
+              "refs": [
+                "art_bh_darkrain"
+              ],
               "amount": 1
             }
           ],
@@ -361,10 +465,16 @@
           "type": "check",
           "name": "Seed of the Dark Forest",
           "cost": 40,
-          "refs": ["art_bh_seed", "before_game_start", "one_use_item"],
+          "refs": [
+            "art_bh_seed",
+            "before_game_start",
+            "one_use_item"
+          ],
           "armyHasNotOption": [
             {
-              "refs": ["art_bh_seed"],
+              "refs": [
+                "art_bh_seed"
+              ],
               "amount": 1
             }
           ],
@@ -402,12 +512,16 @@
       "maxCost": 4500,
       "armyHasNotOption": [
         {
-          "refs": ["sticks_and_stones"],
+          "refs": [
+            "sticks_and_stones"
+          ],
           "amount": 10,
           "perPoints": 600
         },
         {
-          "refs": ["eyeballers"],
+          "refs": [
+            "eyeballers"
+          ],
           "amount": 1,
           "perPoints": 1500
         }
@@ -415,7 +529,9 @@
       "options": [
         {
           "name": "Characters",
-          "refs": ["perso"],
+          "refs": [
+            "perso"
+          ],
           "optionsLabel": "Units",
           "maxPercent": 0.4,
           "options": [
@@ -424,11 +540,15 @@
               "cost": 175,
               "option_id": "gbxvgq25wot1e6wbox7rg7",
               "unit_id": "wildhornLord",
-              "refs": ["wildhornlord", "tag_Metal Armour", "tag_Wildhorn"],
+              "refs": [
+                "wildhornlord",
+                "tag_Metal Armour",
+                "tag_Wildhorn"
+              ],
               "size": "1",
               "rarity": "Uncommon",
               "height": "1",
-              "basesize": "25×25",
+              "basesize": "25\u00d725",
               "options": [
                 {
                   "type": "group",
@@ -437,8 +557,13 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["general", "army_general"],
-                      "armyHasNotOption": ["army_general"],
+                      "refs": [
+                        "general",
+                        "army_general"
+                      ],
+                      "armyHasNotOption": [
+                        "army_general"
+                      ],
                       "type": "check",
                       "name": "General",
                       "cost": 20,
@@ -449,7 +574,10 @@
                           "cost": 25,
                           "type": "check",
                           "option_id": "uzo0xys146u51ajbobi",
-                          "refs": ["huntingcall", "general_amount"]
+                          "refs": [
+                            "huntingcall",
+                            "general_amount"
+                          ]
                         }
                       ],
                       "option_id": "3si3mcvlxyj5vio5zs595a"
@@ -468,18 +596,26 @@
                       "type": "check",
                       "option_id": "vxu4ttunx3jzde6losikfd",
                       "cost": 0,
-                      "refs": ["lighttroops"]
+                      "refs": [
+                        "lighttroops"
+                      ]
                     },
                     {
                       "name": "Light Troops and Ambush(Battlefield Edge)",
                       "type": "check",
                       "option_id": "fwef32fwfsdfdsf32f234",
                       "cost": 5,
-                      "refs": ["lighttroopsandambushbattlefieldedge", "ambush"]
+                      "refs": [
+                        "lighttroopsandambushbattlefieldedge",
+                        "ambush"
+                      ]
                     },
                     {
                       "type": "check",
-                      "refs": ["raidingchariot", "mount"],
+                      "refs": [
+                        "raidingchariot",
+                        "mount"
+                      ],
                       "name": "Raiding Chariot",
                       "cost": 90,
                       "options": [],
@@ -488,7 +624,10 @@
                     },
                     {
                       "type": "check",
-                      "refs": ["razortuskchariot", "mount"],
+                      "refs": [
+                        "razortuskchariot",
+                        "mount"
+                      ],
                       "name": "Razortusk Chariot",
                       "cost": 155,
                       "options": [],
@@ -515,9 +654,13 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["shieldEnchant"],
+                      "optionsDict": [
+                        "shieldEnchant"
+                      ],
                       "option_id": "jd0rqgjd5oc4xrdifmm9nw",
-                      "refs": ["shield"]
+                      "refs": [
+                        "shield"
+                      ]
                     },
                     {
                       "optionsLabel": "Armour Enchant",
@@ -525,7 +668,9 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["armourEnchant"],
+                      "optionsDict": [
+                        "armourEnchant"
+                      ],
                       "option_id": "u0mgr2hd8jks6fd7xai0za"
                     },
                     {
@@ -534,7 +679,10 @@
                       "cost": 5,
                       "ignoreCost": true,
                       "option_id": "7yck6ulohd4vpmg3iyawah",
-                      "refs": ["throwingweapons", "sticks_and_stones"]
+                      "refs": [
+                        "throwingweapons",
+                        "sticks_and_stones"
+                      ]
                     },
                     {
                       "type": "group",
@@ -553,9 +701,14 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "pairedWeaponsEnchant"
+                          ],
                           "option_id": "rh4ugmq1ts8finslqyvve",
-                          "refs": ["pairedweapons"]
+                          "refs": [
+                            "pairedweapons"
+                          ]
                         },
                         {
                           "type": "check",
@@ -567,9 +720,13 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant"
+                          ],
                           "option_id": "angk18s0ykffo34j8udke",
-                          "refs": ["greatweapon"]
+                          "refs": [
+                            "greatweapon"
+                          ]
                         },
                         {
                           "type": "check",
@@ -581,24 +738,35 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "halberdEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "halberdEnchant"
+                          ],
                           "option_id": "f32f423g43gh54h45h456h45",
-                          "refs": ["halberd"]
+                          "refs": [
+                            "halberd"
+                          ]
                         },
                         {
                           "type": "check",
                           "name": "Lance",
                           "cost": 5,
                           "maxSize": 1,
-                          "hasOption": ["mount"],
+                          "hasOption": [
+                            "mount"
+                          ],
                           "optionsSuffix": " (Lance)",
                           "optionsLabel": "Lance Enchant",
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant"
+                          ],
                           "option_id": "sc8wuxkc4sf6up4jmbodcw",
-                          "refs": ["lance"]
+                          "refs": [
+                            "lance"
+                          ]
                         },
                         {
                           "type": "check",
@@ -610,9 +778,14 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "beastAxeEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "beastAxeEnchant"
+                          ],
                           "option_id": "zsxrdrgx0vlopbt6v91ub",
-                          "refs": ["beastaxe"]
+                          "refs": [
+                            "beastaxe"
+                          ]
                         }
                       ],
                       "option_id": "cadi092zdod21ehwn14evw"
@@ -624,7 +797,10 @@
                       "collapsible": true,
                       "optionsSuffix": " (Hand Weapon)",
                       "options": [],
-                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "optionsDict": [
+                        "weaponEnchant",
+                        "handWeaponEnchant"
+                      ],
                       "option_id": "rvro3ojxt606zoonbpnx5w"
                     },
                     {
@@ -634,7 +810,9 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["artefact"],
+                      "optionsDict": [
+                        "artefact"
+                      ],
                       "option_id": "2hy2i9rzeqpps532vp4bl"
                     },
                     {
@@ -643,7 +821,9 @@
                       "name": "Potions and Scrolls",
                       "optionsLabel": "Potions and Scrolls",
                       "options": [],
-                      "optionsDict": ["potions_and_scrolls"],
+                      "optionsDict": [
+                        "potions_and_scrolls"
+                      ],
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true
@@ -656,23 +836,31 @@
                 {
                   "hasOption": [
                     {
-                      "refs": ["lighttroopsandambushbattlefieldedge"],
+                      "refs": [
+                        "lighttroopsandambushbattlefieldedge"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 },
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambush"],
+                      "refs": [
+                        "ambush"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 }
               ],
@@ -684,10 +872,14 @@
               "cost": 65,
               "option_id": "z1x9fhce8fsyfy9jcswcyj",
               "unit_id": "wildhornChieftain",
-              "refs": ["wildhornchieftain", "tag_Wildhorn", "tag_Metal Armour"],
+              "refs": [
+                "wildhornchieftain",
+                "tag_Wildhorn",
+                "tag_Metal Armour"
+              ],
               "size": "1",
               "height": "1",
-              "basesize": "25×25",
+              "basesize": "25\u00d725",
               "options": [
                 {
                   "type": "group",
@@ -702,11 +894,19 @@
                       "type": "check",
                       "cost": 0,
                       "option_id": "ahtsw12tkb6r2uph89nf7",
-                      "refs": ["captainandattached", "leadership_amount"]
+                      "refs": [
+                        "captainandattached",
+                        "leadership_amount"
+                      ]
                     },
                     {
-                      "refs": ["general", "army_general"],
-                      "armyHasNotOption": ["army_general"],
+                      "refs": [
+                        "general",
+                        "army_general"
+                      ],
+                      "armyHasNotOption": [
+                        "army_general"
+                      ],
                       "type": "check",
                       "name": "General",
                       "cost": 15,
@@ -717,7 +917,10 @@
                           "cost": 10,
                           "type": "check",
                           "option_id": "qlkl7vhchnrsualmugbkk",
-                          "refs": ["huntingcall", "general_amount"]
+                          "refs": [
+                            "huntingcall",
+                            "general_amount"
+                          ]
                         }
                       ],
                       "option_id": "6c9mlr1duwbd8rmqbyiq1"
@@ -727,12 +930,20 @@
                       "name": "Solitary",
                       "type": "check",
                       "cost": 15,
-                      "refs": ["solitary"]
+                      "refs": [
+                        "solitary"
+                      ]
                     },
                     {
                       "type": "check",
-                      "armyHasNotOption": ["army_bsb"],
-                      "refs": ["battlestandardbearer", "army_bsb", "not_a_leader"],
+                      "armyHasNotOption": [
+                        "army_bsb"
+                      ],
+                      "refs": [
+                        "battlestandardbearer",
+                        "army_bsb",
+                        "not_a_leader"
+                      ],
                       "name": "Battle Standard Bearer",
                       "cost": 75,
                       "option_id": "cfve3wv34wbv34eg34gv34g34g34"
@@ -767,7 +978,9 @@
                       "ref": "gnarled_hide_totem"
                     }
                   ],
-                  "refs": ["greatertotembearer"]
+                  "refs": [
+                    "greatertotembearer"
+                  ]
                 },
                 {
                   "type": "group",
@@ -780,18 +993,26 @@
                       "type": "check",
                       "option_id": "tertert4gfhfdhethrrthtr",
                       "cost": 0,
-                      "refs": ["lighttroops"]
+                      "refs": [
+                        "lighttroops"
+                      ]
                     },
                     {
                       "name": "Light Troops and Ambush(Battlefield Edge)",
                       "type": "check",
                       "option_id": "w5o4zvt1vsnjj2bltuk68q",
                       "cost": 5,
-                      "refs": ["lighttroopsandambushbattlefieldedge", "ambush"]
+                      "refs": [
+                        "lighttroopsandambushbattlefieldedge",
+                        "ambush"
+                      ]
                     },
                     {
                       "type": "check",
-                      "refs": ["raidingchariot", "mount"],
+                      "refs": [
+                        "raidingchariot",
+                        "mount"
+                      ],
                       "name": "Raiding Chariot",
                       "cost": 100,
                       "options": [],
@@ -812,13 +1033,17 @@
                       "childrenOptions": {
                         "hasOption": [
                           {
-                            "refs": ["army_bsb"],
+                            "refs": [
+                              "army_bsb"
+                            ],
                             "amount": 1
                           }
                         ]
                       },
                       "optionsLabel": "Banner Enchant",
-                      "optionsDict": ["bannerEnchant"],
+                      "optionsDict": [
+                        "bannerEnchant"
+                      ],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -834,9 +1059,13 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["shieldEnchant"],
+                      "optionsDict": [
+                        "shieldEnchant"
+                      ],
                       "option_id": "8lb1v50uhg710pwyljnbaz",
-                      "refs": ["shield"]
+                      "refs": [
+                        "shield"
+                      ]
                     },
                     {
                       "optionsLabel": "Armour Enchant",
@@ -844,7 +1073,9 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["armourEnchant"],
+                      "optionsDict": [
+                        "armourEnchant"
+                      ],
                       "option_id": "kir8exr2thsgwbvx12j0v"
                     },
                     {
@@ -853,7 +1084,10 @@
                       "cost": 5,
                       "ignoreCost": true,
                       "option_id": "nft1n7qc2tbdxpa3oeqn6l",
-                      "refs": ["throwingweapons", "sticks_and_stones"]
+                      "refs": [
+                        "throwingweapons",
+                        "sticks_and_stones"
+                      ]
                     },
                     {
                       "type": "group",
@@ -872,9 +1106,14 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "pairedWeaponsEnchant"
+                          ],
                           "option_id": "m1ylauko4gc0k6pj4rt4fcm",
-                          "refs": ["pairedweapons"]
+                          "refs": [
+                            "pairedweapons"
+                          ]
                         },
                         {
                           "type": "check",
@@ -886,9 +1125,13 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant"
+                          ],
                           "option_id": "lk7qnt7nskwp78fkm6eyr",
-                          "refs": ["greatweapon"]
+                          "refs": [
+                            "greatweapon"
+                          ]
                         },
                         {
                           "type": "check",
@@ -900,24 +1143,35 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "halberdEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "halberdEnchant"
+                          ],
                           "option_id": "f432f8032fn3490ng43g43g43",
-                          "refs": ["halberd"]
+                          "refs": [
+                            "halberd"
+                          ]
                         },
                         {
                           "type": "check",
                           "name": "Lance",
                           "cost": 5,
                           "maxSize": 1,
-                          "hasOption": ["mount"],
+                          "hasOption": [
+                            "mount"
+                          ],
                           "optionsSuffix": " (Lance)",
                           "optionsLabel": "Lance Enchant",
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant"
+                          ],
                           "option_id": "g9ou9t8ksjjubf4rw77ss",
-                          "refs": ["lance"]
+                          "refs": [
+                            "lance"
+                          ]
                         },
                         {
                           "type": "check",
@@ -929,9 +1183,14 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "beastAxeEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "beastAxeEnchant"
+                          ],
                           "option_id": "tqfmpubq1q9fn6gx6e5xt",
-                          "refs": ["beastaxe"]
+                          "refs": [
+                            "beastaxe"
+                          ]
                         }
                       ],
                       "option_id": "4tbsqcif5a7haex0t7pt8"
@@ -943,7 +1202,10 @@
                       "collapsible": true,
                       "optionsSuffix": " (Hand Weapon)",
                       "options": [],
-                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "optionsDict": [
+                        "weaponEnchant",
+                        "handWeaponEnchant"
+                      ],
                       "option_id": "e5jbfbq3wc6eolltua8"
                     },
                     {
@@ -953,7 +1215,9 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["artefact"],
+                      "optionsDict": [
+                        "artefact"
+                      ],
                       "option_id": "h0pnxc44pcwpejav78f59h"
                     },
                     {
@@ -962,7 +1226,9 @@
                       "name": "Potions and Scrolls",
                       "optionsLabel": "Potions and Scrolls",
                       "options": [],
-                      "optionsDict": ["potions_and_scrolls"],
+                      "optionsDict": [
+                        "potions_and_scrolls"
+                      ],
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true
@@ -975,23 +1241,31 @@
                 {
                   "hasOption": [
                     {
-                      "refs": ["lighttroopsandambushbattlefieldedge"],
+                      "refs": [
+                        "lighttroopsandambushbattlefieldedge"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 },
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambush"],
+                      "refs": [
+                        "ambush"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 }
               ],
@@ -1003,11 +1277,15 @@
               "cost": 270,
               "option_id": "pzl7h4bd9ehq2kkp2kqtbf",
               "unit_id": "soothsayer",
-              "refs": ["soothsayer", "tag_Wildhorn", "wizard"],
+              "refs": [
+                "soothsayer",
+                "tag_Wildhorn",
+                "wizard"
+              ],
               "size": "1",
               "rarity": "Uncommon",
               "height": "1",
-              "basesize": "25×25",
+              "basesize": "25\u00d725",
               "options": [
                 {
                   "type": "group",
@@ -1016,8 +1294,13 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["general", "army_general"],
-                      "armyHasNotOption": ["army_general"],
+                      "refs": [
+                        "general",
+                        "army_general"
+                      ],
+                      "armyHasNotOption": [
+                        "army_general"
+                      ],
                       "type": "check",
                       "name": "General",
                       "option_id": "wa9pcgktoshj5mbea9pnq",
@@ -1037,18 +1320,25 @@
                       "type": "check",
                       "option_id": "jomn7al1oejevcwmp4dto",
                       "cost": 0,
-                      "refs": ["lighttroops"]
+                      "refs": [
+                        "lighttroops"
+                      ]
                     },
                     {
                       "type": "check",
                       "name": "Light Troops and Ambush (Battlefield Edge)",
                       "cost": 5,
                       "option_id": "on22situv8qm2j2b",
-                      "refs": ["lighttroopsandambushbattlefieldedge"]
+                      "refs": [
+                        "lighttroopsandambushbattlefieldedge"
+                      ]
                     },
                     {
                       "type": "check",
-                      "refs": ["raidingchariot", "mount"],
+                      "refs": [
+                        "raidingchariot",
+                        "mount"
+                      ],
                       "name": "Raiding Chariot",
                       "cost": 15,
                       "options": [],
@@ -1068,7 +1358,9 @@
                     {
                       "hasOption": [
                         {
-                          "refs": ["art_free_ess"],
+                          "refs": [
+                            "art_free_ess"
+                          ],
                           "amount": 1
                         }
                       ],
@@ -1081,21 +1373,27 @@
                   "options": [
                     {
                       "name": "Druidism",
-                      "refs": ["druidism"],
+                      "refs": [
+                        "druidism"
+                      ],
                       "type": "check",
                       "cost": 0,
                       "option_id": "o8kcj1v5pgriwtebj9ken"
                     },
                     {
                       "name": "Evocation",
-                      "refs": ["evocation"],
+                      "refs": [
+                        "evocation"
+                      ],
                       "type": "check",
                       "cost": 0,
                       "option_id": "bidonypgpjr38v4ill6vjz"
                     },
                     {
                       "name": "Shamanism",
-                      "refs": ["shamanism"],
+                      "refs": [
+                        "shamanism"
+                      ],
                       "type": "check",
                       "cost": 0,
                       "option_id": "jkpcjmrvlgwsxnjfw24w"
@@ -1111,14 +1409,20 @@
                   "collapsible": true,
                   "options": [
                     {
-                      "refs": ["wizardadept", "wizardAdept"],
+                      "refs": [
+                        "wizardadept",
+                        "wizardAdept"
+                      ],
                       "name": "Wizard Adept",
                       "type": "check",
                       "cost": 0,
                       "option_id": "dg95bn0jl6q7tw2mm2ghr"
                     },
                     {
-                      "refs": ["wizardmaster", "wizardMaster"],
+                      "refs": [
+                        "wizardmaster",
+                        "wizardMaster"
+                      ],
                       "name": "Wizard Master",
                       "type": "check",
                       "cost": 150,
@@ -1136,7 +1440,9 @@
                     {
                       "hasOption": [
                         {
-                          "refs": ["wizardMaster"],
+                          "refs": [
+                            "wizardMaster"
+                          ],
                           "amount": 1
                         }
                       ],
@@ -1150,7 +1456,9 @@
                       "type": "group",
                       "option_id": "ok2lwj3bswphk5wpnztt5m",
                       "optionsLabel": "Armour Enchant",
-                      "optionsDict": ["armourEnchant"],
+                      "optionsDict": [
+                        "armourEnchant"
+                      ],
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true,
@@ -1173,9 +1481,14 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "pairedWeaponsEnchant"
+                          ],
                           "option_id": "x6oe4vasftfvxj2iknovo",
-                          "refs": ["pairedweapons"]
+                          "refs": [
+                            "pairedweapons"
+                          ]
                         }
                       ],
                       "option_id": "e7c1p16f3nh1qwn0g6jy4"
@@ -1187,7 +1500,10 @@
                       "collapsible": true,
                       "optionsSuffix": " (Hand Weapon)",
                       "options": [],
-                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "optionsDict": [
+                        "weaponEnchant",
+                        "handWeaponEnchant"
+                      ],
                       "option_id": "19jnfvg9hubyyjeh740gtc"
                     },
                     {
@@ -1197,7 +1513,9 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["artefact"],
+                      "optionsDict": [
+                        "artefact"
+                      ],
                       "option_id": "fwxrkxp4pezys1qcpxvml"
                     },
                     {
@@ -1206,7 +1524,9 @@
                       "name": "Potions and Scrolls",
                       "optionsLabel": "Potions and Scrolls",
                       "options": [],
-                      "optionsDict": ["potions_and_scrolls"],
+                      "optionsDict": [
+                        "potions_and_scrolls"
+                      ],
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true
@@ -1219,23 +1539,31 @@
                 {
                   "hasOption": [
                     {
-                      "refs": ["lighttroopsandambushbattlefieldedge"],
+                      "refs": [
+                        "lighttroopsandambushbattlefieldedge"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 },
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambush"],
+                      "refs": [
+                        "ambush"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 }
               ],
@@ -1247,11 +1575,16 @@
               "cost": 380,
               "option_id": "umlh8jjxhnx14d5rgibq",
               "unit_id": "minotaurWarlord",
-              "refs": ["minotaurwarlord", "tag_Minotaur", "tag_Metal Armour", "minotaur_warlord"],
+              "refs": [
+                "minotaurwarlord",
+                "tag_Minotaur",
+                "tag_Metal Armour",
+                "minotaur_warlord"
+              ],
               "size": "1",
               "rarity": "Rare",
               "height": "3",
-              "basesize": "40×40",
+              "basesize": "40\u00d740",
               "options": [
                 {
                   "type": "group",
@@ -1260,8 +1593,13 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["general", "army_general"],
-                      "armyHasNotOption": ["army_general"],
+                      "refs": [
+                        "general",
+                        "army_general"
+                      ],
+                      "armyHasNotOption": [
+                        "army_general"
+                      ],
                       "type": "check",
                       "name": "General",
                       "cost": 0,
@@ -1285,15 +1623,21 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["shieldEnchant"],
+                      "optionsDict": [
+                        "shieldEnchant"
+                      ],
                       "option_id": "sex01q9tfznhip7m3npkri",
-                      "refs": ["shield"]
+                      "refs": [
+                        "shield"
+                      ]
                     },
                     {
                       "type": "group",
                       "option_id": "gi6yiv12w7fsodc5smlxu",
                       "optionsLabel": "Armour Enchant",
-                      "optionsDict": ["armourEnchant"],
+                      "optionsDict": [
+                        "armourEnchant"
+                      ],
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true,
@@ -1316,9 +1660,14 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "pairedWeaponsEnchant"
+                          ],
                           "option_id": "ry2z7597mtp65bxmpgu55a",
-                          "refs": ["pairedweapons"]
+                          "refs": [
+                            "pairedweapons"
+                          ]
                         },
                         {
                           "type": "check",
@@ -1330,9 +1679,13 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant"
+                          ],
                           "option_id": "vjdox5e1bd8gwngqgyeu3",
-                          "refs": ["greatweapon"]
+                          "refs": [
+                            "greatweapon"
+                          ]
                         },
                         {
                           "type": "check",
@@ -1344,9 +1697,14 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "beastAxeEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "beastAxeEnchant"
+                          ],
                           "option_id": "b0y9a6siw5onieaysstln",
-                          "refs": ["beastaxe"]
+                          "refs": [
+                            "beastaxe"
+                          ]
                         }
                       ],
                       "option_id": "qex5xd7cdcf4lkf06utzku"
@@ -1358,7 +1716,10 @@
                       "collapsible": true,
                       "optionsSuffix": " (Hand Weapon)",
                       "options": [],
-                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "optionsDict": [
+                        "weaponEnchant",
+                        "handWeaponEnchant"
+                      ],
                       "option_id": "bjifyi5sr3mx3luggq6wue"
                     },
                     {
@@ -1368,7 +1729,9 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["artefact"],
+                      "optionsDict": [
+                        "artefact"
+                      ],
                       "option_id": "r9z0s62hrzptniyfgiy14"
                     },
                     {
@@ -1377,7 +1740,9 @@
                       "name": "Potions and Scrolls",
                       "optionsLabel": "Potions and Scrolls",
                       "options": [],
-                      "optionsDict": ["potions_and_scrolls"],
+                      "optionsDict": [
+                        "potions_and_scrolls"
+                      ],
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true
@@ -1395,10 +1760,14 @@
               "cost": 130,
               "option_id": "hd6bpv200av7tdnl42soof",
               "unit_id": "minotaurChieftain",
-              "refs": ["minotaurchieftain", "tag_Minotaur", "tag_Metal Armour"],
+              "refs": [
+                "minotaurchieftain",
+                "tag_Minotaur",
+                "tag_Metal Armour"
+              ],
               "size": "1",
               "height": "3",
-              "basesize": "40×40",
+              "basesize": "40\u00d740",
               "options": [
                 {
                   "type": "group",
@@ -1411,11 +1780,19 @@
                       "type": "check",
                       "cost": 0,
                       "option_id": "f34fdsff32f32fdsfdsgfdgd",
-                      "refs": ["captainandattached", "leadership_amount"]
+                      "refs": [
+                        "captainandattached",
+                        "leadership_amount"
+                      ]
                     },
                     {
-                      "refs": ["general", "army_general"],
-                      "armyHasNotOption": ["army_general"],
+                      "refs": [
+                        "general",
+                        "army_general"
+                      ],
+                      "armyHasNotOption": [
+                        "army_general"
+                      ],
                       "type": "check",
                       "name": "General",
                       "cost": 10,
@@ -1426,13 +1803,21 @@
                       "name": "Solitary",
                       "type": "check",
                       "cost": 40,
-                      "refs": ["solitary"]
+                      "refs": [
+                        "solitary"
+                      ]
                     },
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
-                      "refs": ["battlestandardbearer", "army_bsb", "not_a_leader"],
-                      "armyHasNotOption": ["army_bsb"],
+                      "refs": [
+                        "battlestandardbearer",
+                        "army_bsb",
+                        "not_a_leader"
+                      ],
+                      "armyHasNotOption": [
+                        "army_bsb"
+                      ],
                       "cost": 80,
                       "options": [],
                       "option_id": "f34fsdfsf32g34gh34f43f43"
@@ -1464,7 +1849,9 @@
                       "ref": "gnarled_hide_totem"
                     }
                   ],
-                  "refs": ["greatertotembearer"]
+                  "refs": [
+                    "greatertotembearer"
+                  ]
                 },
                 {
                   "type": "group",
@@ -1477,13 +1864,17 @@
                       "optionsLabel": "Banner Enchant",
                       "options": [],
                       "type": "group",
-                      "optionsDict": ["bannerEnchant"],
+                      "optionsDict": [
+                        "bannerEnchant"
+                      ],
                       "maxSize": 1,
                       "collapsible": true,
                       "childrenOptions": {
                         "hasOption": [
                           {
-                            "refs": ["army_bsb"],
+                            "refs": [
+                              "army_bsb"
+                            ],
                             "amount": 1
                           }
                         ]
@@ -1498,15 +1889,21 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["shieldEnchant"],
+                      "optionsDict": [
+                        "shieldEnchant"
+                      ],
                       "option_id": "mdf4ew1apaq73agodcp7sb",
-                      "refs": ["shield"]
+                      "refs": [
+                        "shield"
+                      ]
                     },
                     {
                       "type": "group",
                       "option_id": "irvmubv6jnvvaanb4hcb",
                       "optionsLabel": "Armour Enchant",
-                      "optionsDict": ["armourEnchant"],
+                      "optionsDict": [
+                        "armourEnchant"
+                      ],
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true,
@@ -1529,9 +1926,14 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "pairedWeaponsEnchant"
+                          ],
                           "option_id": "bza7bxlkd1mybc0j6nla3",
-                          "refs": ["pairedweapons"]
+                          "refs": [
+                            "pairedweapons"
+                          ]
                         },
                         {
                           "type": "check",
@@ -1543,9 +1945,13 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant"
+                          ],
                           "option_id": "aojorgenfohtm2bllljho",
-                          "refs": ["greatweapon"]
+                          "refs": [
+                            "greatweapon"
+                          ]
                         },
                         {
                           "type": "check",
@@ -1557,9 +1963,14 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "beastAxeEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "beastAxeEnchant"
+                          ],
                           "option_id": "2naae6x105zj97i82qkjg",
-                          "refs": ["beastaxe"]
+                          "refs": [
+                            "beastaxe"
+                          ]
                         }
                       ],
                       "option_id": "iunae8n00rhar62jrqs5nr"
@@ -1571,7 +1982,10 @@
                       "collapsible": true,
                       "optionsSuffix": " (Hand Weapon)",
                       "options": [],
-                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "optionsDict": [
+                        "weaponEnchant",
+                        "handWeaponEnchant"
+                      ],
                       "option_id": "10cct1yfa9cn8bbk65rqmat"
                     },
                     {
@@ -1581,7 +1995,9 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["artefact"],
+                      "optionsDict": [
+                        "artefact"
+                      ],
                       "option_id": "tqmuiyu9n8gx797m4hpx6m"
                     },
                     {
@@ -1590,7 +2006,9 @@
                       "name": "Potions and Scrolls",
                       "optionsLabel": "Potions and Scrolls",
                       "options": [],
-                      "optionsDict": ["potions_and_scrolls"],
+                      "optionsDict": [
+                        "potions_and_scrolls"
+                      ],
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true
@@ -1606,10 +2024,16 @@
               "cost": 140,
               "option_id": "e99ja4pjawbvxrdb02fn8l",
               "unit_id": "centaurChieftain",
-              "refs": ["centaurchieftain", "tag_Metal Armour", "tag_Centauroid", "centaur_chieftain", "tag_Centaur"],
+              "refs": [
+                "centaurchieftain",
+                "tag_Metal Armour",
+                "tag_Centauroid",
+                "centaur_chieftain",
+                "tag_Centaur"
+              ],
               "size": "1",
               "height": "2",
-              "basesize": "25×50",
+              "basesize": "25\u00d750",
               "options": [
                 {
                   "type": "group",
@@ -1619,8 +2043,13 @@
                   "maxSize": 1,
                   "options": [
                     {
-                      "refs": ["general", "army_general"],
-                      "armyHasNotOption": ["army_general"],
+                      "refs": [
+                        "general",
+                        "army_general"
+                      ],
+                      "armyHasNotOption": [
+                        "army_general"
+                      ],
                       "type": "check",
                       "name": "General",
                       "cost": 10,
@@ -1631,20 +2060,30 @@
                       "type": "check",
                       "cost": 0,
                       "option_id": "df23f23f23g2gdfgdfjh3",
-                      "refs": ["captainandattached"]
+                      "refs": [
+                        "captainandattached"
+                      ]
                     },
                     {
                       "option_id": "d21d21d32fn2389fh239fhn932f",
                       "name": "Solitary",
                       "type": "check",
                       "cost": 10,
-                      "refs": ["solitary"]
+                      "refs": [
+                        "solitary"
+                      ]
                     },
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
-                      "refs": ["battlestandardbearer", "army_bsb", "not_a_leader"],
-                      "armyHasNotOption": ["army_bsb"],
+                      "refs": [
+                        "battlestandardbearer",
+                        "army_bsb",
+                        "not_a_leader"
+                      ],
+                      "armyHasNotOption": [
+                        "army_bsb"
+                      ],
                       "cost": 75,
                       "options": [],
                       "option_id": "du6hwju4czmqs4qp81nm87"
@@ -1680,7 +2119,9 @@
                       "ref": "gnarled_hide_totem"
                     }
                   ],
-                  "refs": ["greatertotembearer"]
+                  "refs": [
+                    "greatertotembearer"
+                  ]
                 },
                 {
                   "type": "group",
@@ -1693,13 +2134,17 @@
                       "optionsLabel": "Banner Enchant",
                       "options": [],
                       "type": "group",
-                      "optionsDict": ["bannerEnchant"],
+                      "optionsDict": [
+                        "bannerEnchant"
+                      ],
                       "maxSize": 1,
                       "collapsible": true,
                       "childrenOptions": {
                         "hasOption": [
                           {
-                            "refs": ["army_bsb"],
+                            "refs": [
+                              "army_bsb"
+                            ],
                             "amount": 1
                           }
                         ]
@@ -1714,9 +2159,13 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["shieldEnchant"],
+                      "optionsDict": [
+                        "shieldEnchant"
+                      ],
                       "option_id": "ri5ojosnteup42o42terj",
-                      "refs": ["shield"]
+                      "refs": [
+                        "shield"
+                      ]
                     },
                     {
                       "type": "check",
@@ -1724,13 +2173,18 @@
                       "cost": 5,
                       "ignoreCost": true,
                       "option_id": "w0mrp5ppf61bfjqcux26h",
-                      "refs": ["throwingweapons", "sticks_and_stones"]
+                      "refs": [
+                        "throwingweapons",
+                        "sticks_and_stones"
+                      ]
                     },
                     {
                       "type": "group",
                       "option_id": "ex37p1r0jxvepyoodzcafp",
                       "optionsLabel": "Armour Enchant",
-                      "optionsDict": ["armourEnchant"],
+                      "optionsDict": [
+                        "armourEnchant"
+                      ],
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true,
@@ -1753,9 +2207,14 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "pairedWeaponsEnchant"
+                          ],
                           "option_id": "1xeota8t29rwnb5s1mtzsb",
-                          "refs": ["pairedweapons"]
+                          "refs": [
+                            "pairedweapons"
+                          ]
                         },
                         {
                           "type": "check",
@@ -1767,9 +2226,13 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant"
+                          ],
                           "option_id": "p2v5id0v9kchpzcky5pkf",
-                          "refs": ["greatweapon"]
+                          "refs": [
+                            "greatweapon"
+                          ]
                         },
                         {
                           "type": "check",
@@ -1781,9 +2244,13 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant"
+                          ],
                           "option_id": "y9wpt0xo9cb2pyfualntm",
-                          "refs": ["lance"]
+                          "refs": [
+                            "lance"
+                          ]
                         },
                         {
                           "type": "check",
@@ -1795,9 +2262,14 @@
                           "sortOptions": true,
                           "collapsible": true,
                           "options": [],
-                          "optionsDict": ["weaponEnchant", "beastAxeEnchant"],
+                          "optionsDict": [
+                            "weaponEnchant",
+                            "beastAxeEnchant"
+                          ],
                           "option_id": "q2ncx53rpei1jxuybtxb",
-                          "refs": ["beastaxe"]
+                          "refs": [
+                            "beastaxe"
+                          ]
                         }
                       ],
                       "option_id": "7agtluk0n246b7ahoq2ek4"
@@ -1809,7 +2281,10 @@
                       "collapsible": true,
                       "optionsSuffix": " (Hand Weapon)",
                       "options": [],
-                      "optionsDict": ["weaponEnchant", "handWeaponEnchant"],
+                      "optionsDict": [
+                        "weaponEnchant",
+                        "handWeaponEnchant"
+                      ],
                       "option_id": "5sn73rp7t2mjk4a09oa48k"
                     },
                     {
@@ -1819,7 +2294,9 @@
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
-                      "optionsDict": ["artefact"],
+                      "optionsDict": [
+                        "artefact"
+                      ],
                       "option_id": "xjaw8ftrj2h8l99p8ot3ph"
                     },
                     {
@@ -1828,7 +2305,9 @@
                       "name": "Potions and Scrolls",
                       "optionsLabel": "Potions and Scrolls",
                       "options": [],
-                      "optionsDict": ["potions_and_scrolls"],
+                      "optionsDict": [
+                        "potions_and_scrolls"
+                      ],
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true
@@ -1847,7 +2326,9 @@
                       "name": "Ambush (Battlefield Edge)",
                       "cost": 5,
                       "option_id": "y6izoujolcd50ql7",
-                      "refs": ["ambushbattlefieldedge"]
+                      "refs": [
+                        "ambushbattlefieldedge"
+                      ]
                     }
                   ]
                 }
@@ -1856,23 +2337,31 @@
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambushbattlefieldedge"],
+                      "refs": [
+                        "ambushbattlefieldedge"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 },
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambush"],
+                      "refs": [
+                        "ambush"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 }
               ],
@@ -1884,24 +2373,34 @@
               "cost": 300,
               "option_id": "i251xwdv8sx86mrj",
               "unit_id": "ghaaTheQuietMuzzle",
-              "refs": ["ghaathequietmuzzle", "tag_Minotaur"],
+              "refs": [
+                "ghaathequietmuzzle",
+                "tag_Minotaur"
+              ],
               "size": "1",
               "rarity": "Legendary",
               "height": "3",
-              "basesize": "40×40",
+              "basesize": "40\u00d740",
               "options": [],
-              "extraCategories": ["ambushPredators"]
+              "extraCategories": [
+                "ambushPredators"
+              ]
             },
             {
               "name": "Moohoarrgh, the Perpetuator of Heroes",
               "cost": 380,
               "option_id": "jjg6sh25m42wdo9x",
               "unit_id": "moohoarrghThePerpetuatorOfHeroes",
-              "refs": ["moohoarrghtheperpetuatorofheroes", "tag_Wildhorn", "wizard", "protean_magic"],
+              "refs": [
+                "moohoarrghtheperpetuatorofheroes",
+                "tag_Wildhorn",
+                "wizard",
+                "protean_magic"
+              ],
               "size": "1",
               "rarity": "Legendary",
               "height": "1",
-              "basesize": "25×25",
+              "basesize": "25\u00d725",
               "options": [],
               "magic": {
                 "amount": 3,
@@ -1927,7 +2426,9 @@
         {
           "name": "Core",
           "minPercent": 0.2,
-          "refs": ["base"],
+          "refs": [
+            "base"
+          ],
           "optionsLabel": "Units",
           "options": [
             {
@@ -1935,10 +2436,14 @@
               "cost": 15,
               "option_id": "5r65k3sbmzlfynylvbxbcj",
               "unit_id": "wildhornHerd",
-              "refs": ["wildhornherd", "tag_Wildhorn", "core_unit"],
+              "refs": [
+                "wildhornherd",
+                "tag_Wildhorn",
+                "core_unit"
+              ],
               "rarity": "Regular",
               "height": "1",
-              "basesize": "25×25",
+              "basesize": "25\u00d725",
               "options": [
                 {
                   "minSize": 15,
@@ -1950,7 +2455,9 @@
                       "name": "Number",
                       "type": "numeric",
                       "cost": 9,
-                      "refs": ["wildhorn_numbers"],
+                      "refs": [
+                        "wildhorn_numbers"
+                      ],
                       "options": [
                         {
                           "type": "group",
@@ -1963,28 +2470,38 @@
                               "name": "Shield",
                               "cost": 0,
                               "option_id": "x98tbsv7izm9p7h4vzrzg",
-                              "refs": ["shield"]
+                              "refs": [
+                                "shield"
+                              ]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 0,
                               "option_id": "7jv9or36703avhx7b3al29",
-                              "refs": ["pairedweapons"]
+                              "refs": [
+                                "pairedweapons"
+                              ]
                             },
                             {
                               "type": "check",
                               "name": "Throwing Weapons (5+)",
                               "cost": 1,
                               "option_id": "9dcdbl0dwr7dhogn6p3ne",
-                              "refs": ["throwingweapons", "sticks_and_stones"]
+                              "refs": [
+                                "throwingweapons",
+                                "sticks_and_stones"
+                              ]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons and Throwing Weapons (5+)",
                               "cost": 2,
                               "option_id": "ty1dybkz1kqd3sheueyfq4",
-                              "refs": ["pairedweaponsandthrowingweapons", "sticks_and_stones"]
+                              "refs": [
+                                "pairedweaponsandthrowingweapons",
+                                "sticks_and_stones"
+                              ]
                             }
                           ],
                           "option_id": "sb3o3qtpgcsdibc4atu77d"
@@ -1998,7 +2515,9 @@
                     {
                       "hasOption": [
                         {
-                          "refs": ["ambushbattlefieldedge"],
+                          "refs": [
+                            "ambushbattlefieldedge"
+                          ],
                           "amount": 1
                         }
                       ],
@@ -2021,9 +2540,13 @@
                       "collapsible": true,
                       "maxSize": 1,
                       "options": [],
-                      "optionsDict": ["bannerEnchant"],
+                      "optionsDict": [
+                        "bannerEnchant"
+                      ],
                       "option_id": "6b9yjb9xpjwdfmqittqybc",
-                      "refs": ["standardbearer"]
+                      "refs": [
+                        "standardbearer"
+                      ]
                     },
                     {
                       "type": "check",
@@ -2095,10 +2618,14 @@
                             }
                           ],
                           "option_id": "1iygcpsp09ympgx7o629s",
-                          "refs": ["totembearer"]
+                          "refs": [
+                            "totembearer"
+                          ]
                         }
                       ],
-                      "refs": ["musician"]
+                      "refs": [
+                        "musician"
+                      ]
                     }
                   ],
                   "option_id": "28j6m51grdmwbhryzic2k",
@@ -2115,7 +2642,9 @@
                       "name": "Ambush (Battlefield Edge)",
                       "cost": 30,
                       "option_id": "0v33i4575ltv3k3c",
-                      "refs": ["ambushbattlefieldedge"],
+                      "refs": [
+                        "ambushbattlefieldedge"
+                      ],
                       "rarity": "Rare"
                     }
                   ]
@@ -2125,23 +2654,31 @@
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambushbattlefieldedge"],
+                      "refs": [
+                        "ambushbattlefieldedge"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 },
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambush"],
+                      "refs": [
+                        "ambush"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 }
               ],
@@ -2152,10 +2689,14 @@
               "cost": 10,
               "option_id": "2hurh0qb0tiwbsop4zevx8",
               "unit_id": "mongrelHerd",
-              "refs": ["mongrelherd", "tag_Wildhorn", "core_unit"],
+              "refs": [
+                "mongrelherd",
+                "tag_Wildhorn",
+                "core_unit"
+              ],
               "rarity": "Regular",
               "height": "1",
-              "basesize": "20×20",
+              "basesize": "20\u00d720",
               "options": [
                 {
                   "minSize": 25,
@@ -2165,7 +2706,9 @@
                     {
                       "hasOption": [
                         {
-                          "refs": ["ambush"],
+                          "refs": [
+                            "ambush"
+                          ],
                           "amount": 1
                         }
                       ],
@@ -2181,7 +2724,9 @@
                       "name": "Number",
                       "type": "numeric",
                       "cost": 7,
-                      "refs": ["mongrel_numbers"],
+                      "refs": [
+                        "mongrel_numbers"
+                      ],
                       "options": [
                         {
                           "type": "group",
@@ -2192,7 +2737,9 @@
                               "name": "Spear",
                               "cost": 1,
                               "option_id": "udqfcj8n7ni8bq1jdelp",
-                              "refs": ["spear"]
+                              "refs": [
+                                "spear"
+                              ]
                             }
                           ],
                           "option_id": "rt7nmvd20ykpkeq6cuki6"
@@ -2216,16 +2763,22 @@
                       "collapsible": true,
                       "maxSize": 1,
                       "options": [],
-                      "optionsDict": ["bannerEnchant"],
+                      "optionsDict": [
+                        "bannerEnchant"
+                      ],
                       "option_id": "u7ojh0jjxmno3vkq8mg9",
-                      "refs": ["standardbearer"]
+                      "refs": [
+                        "standardbearer"
+                      ]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
                       "option_id": "xwbii24ektiyubokclui",
-                      "refs": ["musician"]
+                      "refs": [
+                        "musician"
+                      ]
                     }
                   ],
                   "option_id": "uqfy3ewc0rpk9m2id6ei8s",
@@ -2242,7 +2795,9 @@
                       "name": "Ambush (Battlefield Edge)",
                       "cost": 30,
                       "option_id": "okbm60rzgcm5gumr",
-                      "refs": ["ambushbattlefieldedge"],
+                      "refs": [
+                        "ambushbattlefieldedge"
+                      ],
                       "rarity": "Rare"
                     }
                   ]
@@ -2252,23 +2807,31 @@
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambushbattlefieldedge"],
+                      "refs": [
+                        "ambushbattlefieldedge"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 },
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambush"],
+                      "refs": [
+                        "ambush"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"],
+                    "extraCategories": [
+                      "ambushPredators"
+                    ],
                     "cost": 45
                   }
                 }
@@ -2280,9 +2843,14 @@
               "cost": 80,
               "option_id": "72q31s0kr2yi6pdatqsrz",
               "unit_id": "mongrelRaiders",
-              "refs": ["mongrelraiders", "tag_Wildhorn", "mongrel_raiders", "core_unit"],
+              "refs": [
+                "mongrelraiders",
+                "tag_Wildhorn",
+                "mongrel_raiders",
+                "core_unit"
+              ],
               "height": "1",
-              "basesize": "20×20",
+              "basesize": "20\u00d720",
               "options": [
                 {
                   "minSize": 10,
@@ -2295,7 +2863,10 @@
                       "type": "numeric",
                       "cost": 4,
                       "option_id": "64j44czzdbm17cr702a91l",
-                      "refs": ["mongrel_raiders_amount", "sticks_and_stones"]
+                      "refs": [
+                        "mongrel_raiders_amount",
+                        "sticks_and_stones"
+                      ]
                     }
                   ],
                   "option_id": "g16088vrubqijxxuqxahpo"
@@ -2309,7 +2880,9 @@
                       "name": "Musician",
                       "cost": 10,
                       "option_id": "za8tsx3flph4xr2vt4borb",
-                      "refs": ["musician"]
+                      "refs": [
+                        "musician"
+                      ]
                     }
                   ],
                   "option_id": "bwl7rwwl3cfk7m41irg1x8",
@@ -2323,7 +2896,9 @@
                       "name": "Ambush (Battlefield Edge)",
                       "cost": 0,
                       "option_id": "at8qr277obv5fw05",
-                      "refs": ["ambushbattlefieldedge"]
+                      "refs": [
+                        "ambushbattlefieldedge"
+                      ]
                     }
                   ],
                   "option_id": "884lcfkdcgbbosf0iyk865"
@@ -2333,23 +2908,31 @@
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambushbattlefieldedge"],
+                      "refs": [
+                        "ambushbattlefieldedge"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 },
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambush"],
+                      "refs": [
+                        "ambush"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 }
               ],
@@ -2361,7 +2944,9 @@
         },
         {
           "name": "Special",
-          "refs": ["special"],
+          "refs": [
+            "special"
+          ],
           "optionsLabel": "Units",
           "options": [
             {
@@ -2369,10 +2954,16 @@
               "cost": 65,
               "option_id": "7emrtxj5unjsgvu9dwp8d",
               "unit_id": "feralHounds",
-              "refs": ["feralhounds", "tag_Beast", "feral_hounds"],
+              "refs": [
+                "feralhounds",
+                "tag_Beast",
+                "feral_hounds"
+              ],
               "height": "1",
-              "basesize": "25×50",
-              "extraCategories": ["ambushPredators"],
+              "basesize": "25\u00d750",
+              "extraCategories": [
+                "ambushPredators"
+              ],
               "options": [
                 {
                   "minSize": 5,
@@ -2385,13 +2976,17 @@
                       "name": "Number",
                       "type": "numeric",
                       "cost": 7,
-                      "refs": ["feral_hounds_numbers"],
+                      "refs": [
+                        "feral_hounds_numbers"
+                      ],
                       "option_id": "1r3bqosipdlb0el7z3j71v",
                       "override": [
                         {
                           "hasOption": [
                             {
-                              "refs": ["feral_hounds_numbers"],
+                              "refs": [
+                                "feral_hounds_numbers"
+                              ],
                               "amount": 8
                             }
                           ],
@@ -2409,14 +3004,18 @@
                 {
                   "hasOption": [
                     {
-                      "refs": ["feral_hounds_numbers"],
+                      "refs": [
+                        "feral_hounds_numbers"
+                      ],
                       "amount": 8
                     }
                   ],
                   "options": {
                     "replaceCategory": "base",
                     "cost": 50,
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 }
               ],
@@ -2428,9 +3027,13 @@
               "cost": 0,
               "option_id": "f2sk8kq416sr9z4vh8tz",
               "unit_id": "longhornHerd",
-              "refs": ["longhornherd", "tag_Wildhorn", "tag_Metal Armour"],
+              "refs": [
+                "longhornherd",
+                "tag_Wildhorn",
+                "tag_Metal Armour"
+              ],
               "height": "1",
-              "basesize": "25×25",
+              "basesize": "25\u00d725",
               "options": [
                 {
                   "minSize": 10,
@@ -2440,7 +3043,9 @@
                     {
                       "hasOption": [
                         {
-                          "refs": ["ambush"],
+                          "refs": [
+                            "ambush"
+                          ],
                           "amount": 1
                         }
                       ],
@@ -2451,7 +3056,9 @@
                     {
                       "hasOption": [
                         {
-                          "refs": ["ambushbattlefieldedge"],
+                          "refs": [
+                            "ambushbattlefieldedge"
+                          ],
                           "amount": 1
                         }
                       ],
@@ -2478,14 +3085,18 @@
                               "name": "Halberd",
                               "cost": 0,
                               "option_id": "uqd4c907pjmdtny3j79l0g",
-                              "refs": ["halberd"]
+                              "refs": [
+                                "halberd"
+                              ]
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
                               "cost": 0,
                               "option_id": "rya3rj00tqio5t3afj9e",
-                              "refs": ["greatweapon"]
+                              "refs": [
+                                "greatweapon"
+                              ]
                             }
                           ],
                           "option_id": "bambztfasbol8z3lr90vn"
@@ -2498,7 +3109,9 @@
                               "name": "Ambush (Battlefield Edge)",
                               "cost": 2,
                               "option_id": "xtfdiwohkk9hm3d5",
-                              "refs": ["ambushbattlefieldedge"],
+                              "refs": [
+                                "ambushbattlefieldedge"
+                              ],
                               "rarity": "Rare"
                             }
                           ],
@@ -2506,7 +3119,9 @@
                         }
                       ],
                       "option_id": "mn76mdi5o4orx04lzkajzj",
-                      "refs": ["longhorn_herd_amount"]
+                      "refs": [
+                        "longhorn_herd_amount"
+                      ]
                     }
                   ],
                   "option_id": "9rqoccntoodzphbizxaf3g"
@@ -2524,9 +3139,13 @@
                       "collapsible": true,
                       "maxSize": 1,
                       "options": [],
-                      "optionsDict": ["bannerEnchant"],
+                      "optionsDict": [
+                        "bannerEnchant"
+                      ],
                       "option_id": "9599zrow6ms05t29waelmzr",
-                      "refs": ["standardbearer"]
+                      "refs": [
+                        "standardbearer"
+                      ]
                     },
                     {
                       "type": "check",
@@ -2598,10 +3217,14 @@
                             }
                           ],
                           "option_id": "oei52083tcgkvg5hg8u9c",
-                          "refs": ["totembearer"]
+                          "refs": [
+                            "totembearer"
+                          ]
                         }
                       ],
-                      "refs": ["musician"]
+                      "refs": [
+                        "musician"
+                      ]
                     }
                   ],
                   "option_id": "cy4rp80o6ct5y783dx1sb7",
@@ -2612,23 +3235,31 @@
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambushbattlefieldedge"],
+                      "refs": [
+                        "ambushbattlefieldedge"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 },
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambush"],
+                      "refs": [
+                        "ambush"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 }
               ],
@@ -2639,9 +3270,13 @@
               "cost": 20,
               "option_id": "an4gd5xiiy7w1yymjtwv8d",
               "unit_id": "minotaurs",
-              "refs": ["minotaurs", "tag_Minotaur", "tag_Light Armour"],
+              "refs": [
+                "minotaurs",
+                "tag_Minotaur",
+                "tag_Light Armour"
+              ],
               "height": "3",
-              "basesize": "40×40",
+              "basesize": "40\u00d740",
               "options": [
                 {
                   "minSize": 3,
@@ -2664,28 +3299,36 @@
                               "name": "Shield",
                               "cost": 8,
                               "option_id": "dwkr6jbiuj7fr7kwl5ihfe",
-                              "refs": ["shield"]
+                              "refs": [
+                                "shield"
+                              ]
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
                               "cost": 6,
                               "option_id": "w70v7fufbk9bjgpxuo8cf",
-                              "refs": ["greatweapon"]
+                              "refs": [
+                                "greatweapon"
+                              ]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 7,
                               "option_id": "ruzytx4e5qcwt4v05wg8h",
-                              "refs": ["pairedweapons"]
+                              "refs": [
+                                "pairedweapons"
+                              ]
                             }
                           ],
                           "option_id": "y7csuugax4eyfxoets41aq"
                         }
                       ],
                       "option_id": "4umpy2l31hpb6mlmg7jvu",
-                      "refs": ["minotaurs_amount"]
+                      "refs": [
+                        "minotaurs_amount"
+                      ]
                     }
                   ],
                   "option_id": "us1k7m6os3dean0r34z5z9"
@@ -2703,9 +3346,13 @@
                       "collapsible": true,
                       "maxSize": 1,
                       "options": [],
-                      "optionsDict": ["bannerEnchant"],
+                      "optionsDict": [
+                        "bannerEnchant"
+                      ],
                       "option_id": "n3bvy9zv51msr2tyhqlak",
-                      "refs": ["standardbearer"]
+                      "refs": [
+                        "standardbearer"
+                      ]
                     },
                     {
                       "type": "check",
@@ -2777,10 +3424,14 @@
                             }
                           ],
                           "option_id": "rkxqcdfxfs9ya4a6wikzu",
-                          "refs": ["totembearer"]
+                          "refs": [
+                            "totembearer"
+                          ]
                         }
                       ],
-                      "refs": ["musician"]
+                      "refs": [
+                        "musician"
+                      ]
                     }
                   ],
                   "option_id": "1z6304yyxwol7cwnj7nlh",
@@ -2795,9 +3446,14 @@
               "cost": 50,
               "option_id": "n2vg3syubms3ohhckhgfr3",
               "unit_id": "centaurs",
-              "refs": ["centaurs", "tag_Light Armour", "tag_Centauroid", "tag_Centaur"],
+              "refs": [
+                "centaurs",
+                "tag_Light Armour",
+                "tag_Centauroid",
+                "tag_Centaur"
+              ],
               "height": "2",
-              "basesize": "25×50",
+              "basesize": "25\u00d750",
               "options": [
                 {
                   "minSize": 5,
@@ -2807,7 +3463,9 @@
                     {
                       "hasOption": [
                         {
-                          "refs": ["ambush"],
+                          "refs": [
+                            "ambush"
+                          ],
                           "amount": 1
                         }
                       ],
@@ -2818,7 +3476,9 @@
                     {
                       "hasOption": [
                         {
-                          "refs": ["ambushbattlefieldedge"],
+                          "refs": [
+                            "ambushbattlefieldedge"
+                          ],
                           "amount": 1
                         }
                       ],
@@ -2844,21 +3504,27 @@
                               "name": "Great Weapon",
                               "cost": 2,
                               "option_id": "0tyngg5krhyn8kjgl80wph",
-                              "refs": ["greatweapon"]
+                              "refs": [
+                                "greatweapon"
+                              ]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 2,
                               "option_id": "m2a3r2i0wymu3d48v43xl",
-                              "refs": ["pairedweapons"]
+                              "refs": [
+                                "pairedweapons"
+                              ]
                             },
                             {
                               "type": "check",
                               "name": "Light Lance",
                               "cost": 3,
                               "option_id": "nmzzm2p2cym5pr680ng757",
-                              "refs": ["lightlance"]
+                              "refs": [
+                                "lightlance"
+                              ]
                             }
                           ],
                           "option_id": "nw7jbozq4d8uujc475q9d"
@@ -2871,7 +3537,10 @@
                               "cost": 3,
                               "type": "check",
                               "option_id": "d03ovs7uflknwqi7kvqej",
-                              "refs": ["throwingweapons", "sticks_and_stones"]
+                              "refs": [
+                                "throwingweapons",
+                                "sticks_and_stones"
+                              ]
                             }
                           ],
                           "option_id": "oz8g0q0q9cfxb7e53cr3wd"
@@ -2887,14 +3556,18 @@
                               "name": "Ambush (Battlefield Edge)",
                               "cost": 1,
                               "option_id": "cnkbgsgrd3eqj4t3",
-                              "refs": ["ambushbattlefieldedge"],
+                              "refs": [
+                                "ambushbattlefieldedge"
+                              ],
                               "_perModel": true
                             }
                           ]
                         }
                       ],
                       "option_id": "food5upfwljri86i0hm13",
-                      "refs": ["centaurs_amount"]
+                      "refs": [
+                        "centaurs_amount"
+                      ]
                     }
                   ],
                   "option_id": "92obupfc748j7u2ld0wayg"
@@ -2912,9 +3585,13 @@
                       "collapsible": true,
                       "maxSize": 1,
                       "options": [],
-                      "optionsDict": ["bannerEnchant"],
+                      "optionsDict": [
+                        "bannerEnchant"
+                      ],
                       "option_id": "nqb2j3kfwmhfgm82swbu1h",
-                      "refs": ["standardbearer"]
+                      "refs": [
+                        "standardbearer"
+                      ]
                     },
                     {
                       "type": "check",
@@ -2986,10 +3663,14 @@
                             }
                           ],
                           "option_id": "4rlxws9e4ifze7p57bs1zk",
-                          "refs": ["totembearer"]
+                          "refs": [
+                            "totembearer"
+                          ]
                         }
                       ],
-                      "refs": ["musician"]
+                      "refs": [
+                        "musician"
+                      ]
                     }
                   ],
                   "option_id": "3iszb62q3mdii7w046xr28",
@@ -3000,23 +3681,31 @@
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambushbattlefieldedge"],
+                      "refs": [
+                        "ambushbattlefieldedge"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 },
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambush"],
+                      "refs": [
+                        "ambush"
+                      ],
                       "amount": 1
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambushPredators"]
+                    "extraCategories": [
+                      "ambushPredators"
+                    ]
                   }
                 }
               ],
@@ -3028,9 +3717,16 @@
               "cost": 10,
               "option_id": "m2f9zhgy4iols95lxd5md",
               "unit_id": "raidingChariots",
-              "refs": ["raidingchariots", "tag_Wildhorn", "tag_Metal Armour", "tag_Mount", "tag_Construct", "raiding_chariot"],
+              "refs": [
+                "raidingchariots",
+                "tag_Wildhorn",
+                "tag_Metal Armour",
+                "tag_Mount",
+                "tag_Construct",
+                "raiding_chariot"
+              ],
               "height": "4",
-              "basesize": "50×100",
+              "basesize": "50\u00d7100",
               "options": [
                 {
                   "minSize": 1,
@@ -3042,7 +3738,9 @@
                       "name": "Number",
                       "type": "numeric",
                       "cost": 110,
-                      "refs": ["chariot_count"],
+                      "refs": [
+                        "chariot_count"
+                      ],
                       "option_id": "jk4mw07wmoyekyixas49"
                     }
                   ],
@@ -3053,7 +3751,9 @@
                 {
                   "hasOption": [
                     {
-                      "refs": ["chariot_count"],
+                      "refs": [
+                        "chariot_count"
+                      ],
                       "amount": 3
                     }
                   ],
@@ -3070,10 +3770,14 @@
               "cost": 15,
               "option_id": "62ie1xfow8egcuidu13bz8",
               "unit_id": "razortuskHerd",
-              "refs": ["razortuskherd", "tag_Beast", "razortusk_herd"],
+              "refs": [
+                "razortuskherd",
+                "tag_Beast",
+                "razortusk_herd"
+              ],
               "rarity": "Uncommon",
               "height": "3",
-              "basesize": "50×50",
+              "basesize": "50\u00d750",
               "options": [
                 {
                   "minSize": 3,
@@ -3086,7 +3790,9 @@
                       "type": "numeric",
                       "cost": 50,
                       "option_id": "5858piwowpiaw0gqhzv2wf",
-                      "refs": ["razortusk_herd_amount"]
+                      "refs": [
+                        "razortusk_herd_amount"
+                      ]
                     }
                   ],
                   "option_id": "fotoqu80ve0t17fml0eoz"
@@ -3100,10 +3806,17 @@
               "cost": 230,
               "option_id": "ky2oha3hponr24g7g5sr7j",
               "unit_id": "razortuskChariot",
-              "refs": ["razortuskchariot", "tag_Wildhorn", "tag_Metal Armour", "tag_Mount", "tag_Construct", "razortusk_chariot"],
+              "refs": [
+                "razortuskchariot",
+                "tag_Wildhorn",
+                "tag_Metal Armour",
+                "tag_Mount",
+                "tag_Construct",
+                "razortusk_chariot"
+              ],
               "size": "1",
               "height": "4",
-              "basesize": "50×100",
+              "basesize": "50\u00d7100",
               "options": [],
               "armyHasNotOption": [],
               "logo": "special"
@@ -3113,24 +3826,33 @@
               "cost": 125,
               "option_id": "rqemwn4y09mqq6mrx5a71b",
               "unit_id": "briarBeast",
-              "refs": ["briarbeast", "tag_Beast", "briar_beast"],
+              "refs": [
+                "briarbeast",
+                "tag_Beast",
+                "briar_beast"
+              ],
               "size": "1",
               "height": "3",
-              "basesize": "40×40",
+              "basesize": "40\u00d740",
               "options": [],
               "armyHasNotOption": [],
               "logo": "special",
-              "extraCategories": ["ambushPredators"]
+              "extraCategories": [
+                "ambushPredators"
+              ]
             },
             {
               "name": "Gargoyles",
               "cost": 110,
               "option_id": "zqtpky1k1klnfdb3bgtbyi",
               "unit_id": "gargoyles",
-              "refs": ["gargoyles", "tag_Beast"],
+              "refs": [
+                "gargoyles",
+                "tag_Beast"
+              ],
               "rarity": "Uncommon",
               "height": "1",
-              "basesize": "20×20",
+              "basesize": "20\u00d720",
               "options": [
                 {
                   "minSize": 5,
@@ -3143,7 +3865,9 @@
                       "type": "numeric",
                       "cost": 10,
                       "option_id": "b02iqcj1xgpwxml2pe8bio",
-                      "refs": ["gargoyles_amount"]
+                      "refs": [
+                        "gargoyles_amount"
+                      ]
                     }
                   ],
                   "option_id": "18e85yi6fnn8y26lazllha"
@@ -3158,7 +3882,9 @@
         {
           "name": "Terrors of the Wild",
           "maxPercent": 0.4,
-          "refs": ["terrors_of_the_wild"],
+          "refs": [
+            "terrors_of_the_wild"
+          ],
           "optionsLabel": "Units",
           "options": [
             {
@@ -3166,11 +3892,16 @@
               "cost": 310,
               "option_id": "kh0ynhmt0xr2lxnkg4p6sj",
               "unit_id": "cyclops",
-              "refs": ["cyclops", "tag_Cyclops", "cyclop", "eyeballers"],
+              "refs": [
+                "cyclops",
+                "tag_Cyclops",
+                "cyclop",
+                "eyeballers"
+              ],
               "size": "1",
               "rarity": "Uncommon",
               "height": "5",
-              "basesize": "50×100",
+              "basesize": "50\u00d7100",
               "options": [],
               "armyHasNotOption": [],
               "logo": "monster"
@@ -3180,11 +3911,14 @@
               "cost": 440,
               "option_id": "tyhvya76hiaeel21zh47de",
               "unit_id": "gortach",
-              "refs": ["gortach", "tag_Minotaur"],
+              "refs": [
+                "gortach",
+                "tag_Minotaur"
+              ],
               "size": "1",
               "rarity": "Rare",
               "height": "5",
-              "basesize": "50×100",
+              "basesize": "50\u00d7100",
               "options": [],
               "armyHasNotOption": [],
               "logo": "monster"
@@ -3194,11 +3928,14 @@
               "cost": 280,
               "option_id": "jst4xfqv4rg2uxawsvyz8",
               "unit_id": "jabberwock",
-              "refs": ["jabberwock", "tag_Beast"],
+              "refs": [
+                "jabberwock",
+                "tag_Beast"
+              ],
               "size": "1",
               "rarity": "Rare",
               "height": "5",
-              "basesize": "50×100",
+              "basesize": "50\u00d7100",
               "options": [],
               "armyHasNotOption": [],
               "logo": "monster"
@@ -3208,11 +3945,16 @@
               "cost": 270,
               "option_id": "2opbsqy04k47vb9ek9k0ru",
               "unit_id": "beastGiant",
-              "refs": ["beastgiant", "tag_Giant", "tag_Light Armour", "beast_giant"],
+              "refs": [
+                "beastgiant",
+                "tag_Giant",
+                "tag_Light Armour",
+                "beast_giant"
+              ],
               "size": "1",
               "rarity": "Uncommon",
               "height": "5",
-              "basesize": "50×75",
+              "basesize": "50\u00d775",
               "options": [
                 {
                   "optionsLabel": "Weapon",
@@ -3224,21 +3966,28 @@
                       "cost": 0,
                       "type": "check",
                       "option_id": "6r97scrb28csvdni13q4p",
-                      "refs": ["uprootedtree", "beast_giant_amount"]
+                      "refs": [
+                        "uprootedtree",
+                        "beast_giant_amount"
+                      ]
                     },
                     {
                       "name": "Beer Barrel",
                       "cost": 35,
                       "type": "check",
                       "option_id": "6d21qdtd52j0cxmdtjis60f",
-                      "refs": ["beerbarrel"]
+                      "refs": [
+                        "beerbarrel"
+                      ]
                     },
                     {
                       "name": "Giant Club",
                       "cost": 15,
                       "type": "check",
                       "option_id": "p4jm0vsydjvy84ve2w11",
-                      "refs": ["giantclub"]
+                      "refs": [
+                        "giantclub"
+                      ]
                     }
                   ],
                   "option_id": "rnitgf8pd3ownevnby6ce"
@@ -3251,7 +4000,9 @@
                       "cost": 25,
                       "type": "check",
                       "option_id": "x63gp49apfrsf8eu5rq0y",
-                      "refs": ["bigbrother"]
+                      "refs": [
+                        "bigbrother"
+                      ]
                     }
                   ],
                   "option_id": "d3cm0mqgftow89m211trwa"
@@ -3266,11 +4017,15 @@
               "name": "Supplement Beast Giant",
               "diffstatlines": true,
               "offstatline": "",
-              "refs": ["beast_giant"],
+              "refs": [
+                "beast_giant"
+              ],
               "cost": 270,
               "armyHasNotOption": [
                 {
-                  "refs": ["beast_giant"],
+                  "refs": [
+                    "beast_giant"
+                  ],
                   "amount": 3
                 }
               ],
@@ -3284,7 +4039,9 @@
                       "cost": 0,
                       "type": "check",
                       "option_id": "s6r97scrb28csvdni13q4p",
-                      "refs": ["supplement_beast_giant_amount"]
+                      "refs": [
+                        "supplement_beast_giant_amount"
+                      ]
                     },
                     {
                       "name": "Beer Barrel",
@@ -3321,7 +4078,7 @@
                   "option_id": "sd3cm0mqgftow89m211trwa"
                 }
               ],
-              "unit_id": "supplement_beast_giant",
+              "unit_id": "supplementBeastGiant",
               "option_id": "ss2opbsqy04k47vb9ek9k0ru",
               "logo": "monster"
             }
@@ -3330,7 +4087,9 @@
         },
         {
           "name": "Ambush Predators",
-          "refs": ["ambushPredators"],
+          "refs": [
+            "ambushPredators"
+          ],
           "maxPercent": 0.6,
           "optionsLabel": "Units",
           "options": [],
@@ -3339,13 +4098,15 @@
         {
           "name": "Mounts",
           "invisible": true,
-          "refs": ["mounts"],
+          "refs": [
+            "mounts"
+          ],
           "options": [
             {
               "name": "Totemic Beast",
               "creatable": true,
               "invisible": true,
-              "unit_id": "totemic_beast",
+              "unit_id": "totemicBeast",
               "option_id": "hp2gvhn932432371fxuxok"
             },
             {
@@ -3353,10 +4114,16 @@
               "cost": 0,
               "option_id": "c9hc962r5xp4mj9x0y1vx",
               "unit_id": "raidingChariotMount",
-              "refs": ["raidingchariotmount", "tag_Mount", "tag_Construct", "mount", "raidingChariot_mount_unit"],
+              "refs": [
+                "raidingchariotmount",
+                "tag_Mount",
+                "tag_Construct",
+                "mount",
+                "raidingChariot_mount_unit"
+              ],
               "invisible": true,
               "height": "4",
-              "basesize": "50×100",
+              "basesize": "50\u00d7100",
               "options": [],
               "type": "check",
               "category": "mounts",
@@ -3368,10 +4135,16 @@
               "cost": 0,
               "option_id": "a4s1i8rxmjsphwtmfil89",
               "unit_id": "razortuskChariotMount",
-              "refs": ["razortuskchariotmount", "tag_Mount", "tag_Construct", "mount", "razortuskChariot_mount_unit"],
+              "refs": [
+                "razortuskchariotmount",
+                "tag_Mount",
+                "tag_Construct",
+                "mount",
+                "razortuskChariot_mount_unit"
+              ],
               "invisible": true,
               "height": "4",
-              "basesize": "50×100",
+              "basesize": "50\u00d7100",
               "options": [],
               "type": "check",
               "category": "mounts",
