@@ -387,7 +387,8 @@
                       ],
                       "option_id": "3si3mcvlxyj5vio5zs595a"
                     }
-                  ]
+                  ],
+                  "minSize": 1
                 },
                 {
                   "type": "group",
@@ -933,7 +934,8 @@
                       "option_id": "wa9pcgktoshj5mbea9pnq",
                       "cost": 0
                     }
-                  ]
+                  ],
+                  "minSize": 1
                 },
                 {
                   "type": "group",
@@ -1165,7 +1167,8 @@
                       "cost": 0,
                       "option_id": "x84963ifa5gfovs34ofk"
                     }
-                  ]
+                  ],
+                  "minSize": 1
                 },
                 {
                   "type": "group",
@@ -1334,7 +1337,9 @@
                       "options": [],
                       "option_id": "f34fsdfsf32g34gh34f43f43"
                     }
-                  ]
+                  ],
+                  "maxSize": 1,
+                  "minSize": 1
                 },
                 {
                   "type": "check",
@@ -1544,7 +1549,8 @@
                       "options": [],
                       "option_id": "du6hwju4czmqs4qp81nm87"
                     }
-                  ]
+                  ],
+                  "minSize": 1
                 },
                 {
                   "type": "check",
@@ -1872,7 +1878,7 @@
                               "name": "Paired Weapons and Throwing Weapons (5+)",
                               "cost": 2,
                               "option_id": "ty1dybkz1kqd3sheueyfq4",
-                              "refs": ["sticks_and_stones"]
+                              "refs": ["pairedweaponsandthrowingweapons", "sticks_and_stones"]
                             }
                           ],
                           "option_id": "sb3o3qtpgcsdibc4atu77d"
@@ -1941,7 +1947,7 @@
                               "id": "totem_bearers"
                             }
                           ],
-                          "cost": 25,
+                          "cost": 20,
                           "type": "check",
                           "optionsLabel": "Bound Spell",
                           "minSize": 1,
@@ -1996,13 +2002,15 @@
                               ]
                             }
                           ],
-                          "option_id": "1iygcpsp09ympgx7o629s"
+                          "option_id": "1iygcpsp09ympgx7o629s",
+                          "refs": ["totembearer"]
                         }
                       ],
                       "refs": ["musician"]
                     }
                   ],
-                  "option_id": "28j6m51grdmwbhryzic2k"
+                  "option_id": "28j6m51grdmwbhryzic2k",
+                  "minSize": 0
                 },
                 {
                   "type": "group",
@@ -2024,7 +2032,9 @@
                       "option_id": "5cxg5d82iem8kicw",
                       "refs": ["pairedweaponsandthrowingweapons"]
                     }
-                  ]
+                  ],
+                  "maxSize": 1,
+                  "minSize": 1
                 }
               ],
               "override": [
@@ -2139,16 +2149,19 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "u7ojh0jjxmno3vkq8mg9"
+                      "option_id": "u7ojh0jjxmno3vkq8mg9",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "xwbii24ektiyubokclui"
+                      "option_id": "xwbii24ektiyubokclui",
+                      "refs": ["musician"]
                     }
                   ],
-                  "option_id": "uqfy3ewc0rpk9m2id6ei8s"
+                  "option_id": "uqfy3ewc0rpk9m2id6ei8s",
+                  "minSize": 0
                 },
                 {
                   "type": "group",
@@ -2219,7 +2232,8 @@
                       "refs": ["musician"]
                     }
                   ],
-                  "option_id": "bwl7rwwl3cfk7m41irg1x8"
+                  "option_id": "bwl7rwwl3cfk7m41irg1x8",
+                  "minSize": 0
                 },
                 {
                   "optionsLabel": "Options",
@@ -2445,7 +2459,7 @@
                               "id": "totem_bearers"
                             }
                           ],
-                          "cost": 25,
+                          "cost": 15,
                           "type": "check",
                           "optionsLabel": "Bound Spell",
                           "minSize": 1,
@@ -2500,13 +2514,15 @@
                               ]
                             }
                           ],
-                          "option_id": "oei52083tcgkvg5hg8u9c"
+                          "option_id": "oei52083tcgkvg5hg8u9c",
+                          "refs": ["totembearer"]
                         }
                       ],
                       "refs": ["musician"]
                     }
                   ],
-                  "option_id": "cy4rp80o6ct5y783dx1sb7"
+                  "option_id": "cy4rp80o6ct5y783dx1sb7",
+                  "minSize": 0
                 },
                 {
                   "type": "group",
@@ -2521,7 +2537,9 @@
                       "option_id": "xtfdiwohkk9hm3d5",
                       "refs": ["ambushbattlefieldedge"]
                     }
-                  ]
+                  ],
+                  "maxSize": 1,
+                  "minSize": 1
                 }
               ],
               "override": [
@@ -2626,7 +2644,7 @@
                               "id": "totem_bearers"
                             }
                           ],
-                          "cost": 25,
+                          "cost": 20,
                           "type": "check",
                           "optionsLabel": "Bound Spell",
                           "minSize": 1,
@@ -2681,13 +2699,15 @@
                               ]
                             }
                           ],
-                          "option_id": "rkxqcdfxfs9ya4a6wikzu"
+                          "option_id": "rkxqcdfxfs9ya4a6wikzu",
+                          "refs": ["totembearer"]
                         }
                       ],
                       "refs": ["musician"]
                     }
                   ],
-                  "option_id": "1z6304yyxwol7cwnj7nlh"
+                  "option_id": "1z6304yyxwol7cwnj7nlh",
+                  "minSize": 0
                 }
               ],
               "armyHasNotOption": [],
@@ -2769,23 +2789,20 @@
                           "option_id": "oz8g0q0q9cfxb7e53cr3wd"
                         },
                         {
-                          "optionsLabel": "Ambush",
+                          "type": "group",
+                          "name": "Options",
+                          "optionsLabel": "Options",
+                          "option_id": "jp4anjfmekx0hv4a",
                           "options": [
                             {
-                              "name": "Ambush",
-                              "cost": 2,
                               "type": "check",
-                              "refs": ["ambush", "centaur_ambushers"],
-                              "hasNotOption": [
-                                {
-                                  "refs": ["centaur_ambushers"],
-                                  "amount": 12
-                                }
-                              ],
-                              "option_id": "fhlznjc5e9p18ufj44bp"
+                              "name": "Ambush (Battlefield Edge)",
+                              "cost": 1,
+                              "option_id": "cnkbgsgrd3eqj4t3",
+                              "refs": ["ambushbattlefieldedge"],
+                              "_perModel": true
                             }
-                          ],
-                          "option_id": "5xzlx1k04ywhg53rvjwt9"
+                          ]
                         }
                       ],
                       "option_id": "food5upfwljri86i0hm13",
@@ -2825,7 +2842,7 @@
                               "id": "totem_bearers"
                             }
                           ],
-                          "cost": 25,
+                          "cost": 15,
                           "type": "check",
                           "optionsLabel": "Bound Spell",
                           "minSize": 1,
@@ -2880,28 +2897,15 @@
                               ]
                             }
                           ],
-                          "option_id": "4rlxws9e4ifze7p57bs1zk"
+                          "option_id": "4rlxws9e4ifze7p57bs1zk",
+                          "refs": ["totembearer"]
                         }
                       ],
                       "refs": ["musician"]
                     }
                   ],
-                  "option_id": "3iszb62q3mdii7w046xr28"
-                },
-                {
-                  "type": "group",
-                  "name": "Options",
-                  "optionsLabel": "Options",
-                  "option_id": "ftfni3vdp3ft15ch",
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "Ambush (Battlefield Edge)",
-                      "cost": 1,
-                      "option_id": "df8r5pj4klm6c0qt",
-                      "refs": ["ambushbattlefieldedge"]
-                    }
-                  ]
+                  "option_id": "3iszb62q3mdii7w046xr28",
+                  "minSize": 0
                 }
               ],
               "armyHasNotOption": [],
@@ -3060,38 +3064,56 @@
           "options": [
             {
               "name": "Cyclops",
-              "refs": ["cyclop", "tag_Cyclops", "eyeballers"],
-              "cost": 340,
-              "armyHasNotOption": [],
-              "unit_id": "cyclops",
+              "cost": 310,
               "option_id": "kh0ynhmt0xr2lxnkg4p6sj",
+              "unit_id": "cyclops",
+              "refs": ["cyclops", "tag_Cyclops", "cyclop", "eyeballers"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "5",
+              "basesize": "50×100",
+              "options": [],
+              "armyHasNotOption": [],
               "logo": "monster"
             },
             {
               "name": "Gortach",
-              "refs": ["gortach", "tag_Minotaur"],
-              "cost": 420,
-              "armyHasNotOption": [],
-              "unit_id": "gortach",
+              "cost": 440,
               "option_id": "tyhvya76hiaeel21zh47de",
+              "unit_id": "gortach",
+              "refs": ["gortach", "tag_Minotaur"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "5",
+              "basesize": "50×100",
+              "options": [],
+              "armyHasNotOption": [],
               "logo": "monster"
             },
             {
               "name": "Jabberwock",
-              "refs": ["jabberwock", "tag_Beast"],
-              "cost": 270,
-              "armyHasNotOption": [],
-              "unit_id": "jabberwock",
+              "cost": 280,
               "option_id": "jst4xfqv4rg2uxawsvyz8",
+              "unit_id": "jabberwock",
+              "refs": ["jabberwock", "tag_Beast"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "5",
+              "basesize": "50×100",
+              "options": [],
+              "armyHasNotOption": [],
               "logo": "monster"
             },
             {
               "name": "Beast Giant",
-              "diffstatlines": true,
-              "offstatline": "",
-              "refs": ["beast_giant", "tag_Giant", "tag_Light Armour"],
               "cost": 270,
-              "armyHasNotOption": [],
+              "option_id": "2opbsqy04k47vb9ek9k0ru",
+              "unit_id": "beastGiant",
+              "refs": ["beastgiant", "tag_Giant", "tag_Light Armour", "beast_giant"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "5",
+              "basesize": "50×75",
               "options": [
                 {
                   "optionsLabel": "Weapon",
@@ -3103,19 +3125,21 @@
                       "cost": 0,
                       "type": "check",
                       "option_id": "6r97scrb28csvdni13q4p",
-                      "refs": ["beast_giant_amount"]
+                      "refs": ["uprootedtree", "beast_giant_amount"]
                     },
                     {
                       "name": "Beer Barrel",
-                      "cost": 25,
+                      "cost": 35,
                       "type": "check",
-                      "option_id": "6d21qdtd52j0cxmdtjis60f"
+                      "option_id": "6d21qdtd52j0cxmdtjis60f",
+                      "refs": ["beerbarrel"]
                     },
                     {
                       "name": "Giant Club",
-                      "cost": 25,
+                      "cost": 15,
                       "type": "check",
-                      "option_id": "p4jm0vsydjvy84ve2w11"
+                      "option_id": "p4jm0vsydjvy84ve2w11",
+                      "refs": ["giantclub"]
                     }
                   ],
                   "option_id": "rnitgf8pd3ownevnby6ce"
@@ -3127,14 +3151,16 @@
                       "name": "Big Brother",
                       "cost": 25,
                       "type": "check",
-                      "option_id": "x63gp49apfrsf8eu5rq0y"
+                      "option_id": "x63gp49apfrsf8eu5rq0y",
+                      "refs": ["bigbrother"]
                     }
                   ],
                   "option_id": "d3cm0mqgftow89m211trwa"
                 }
               ],
-              "unit_id": "beast_giant",
-              "option_id": "2opbsqy04k47vb9ek9k0ru",
+              "diffstatlines": true,
+              "offstatline": "",
+              "armyHasNotOption": [],
               "logo": "monster"
             },
             {
