@@ -1768,6 +1768,21 @@
                     }
                   ],
                   "option_id": "y6c8823zhegop7tveg102"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "1k3itvzm1tpx0oj5",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Ambush (Battlefield Edge)",
+                      "cost": 5,
+                      "option_id": "y6izoujolcd50ql7",
+                      "refs": ["ambushbattlefieldedge"]
+                    }
+                  ]
                 }
               ],
               "override": [
@@ -1862,19 +1877,6 @@
                   "minSize": 15,
                   "maxSize": 50,
                   "addToUnitSize": true,
-                  "override": [
-                    {
-                      "hasOption": [
-                        {
-                          "refs": ["ambush"],
-                          "amount": 1
-                        }
-                      ],
-                      "options": {
-                        "maxSize": 30
-                      }
-                    }
-                  ],
                   "options": [
                     {
                       "hide": true,
@@ -2061,6 +2063,17 @@
                   "options": {
                     "extraCategories": ["ambushPredators"]
                   }
+                },
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "maxSize": 30
+                  }
                 }
               ],
               "logo": "core"
@@ -2114,33 +2127,6 @@
                             }
                           ],
                           "option_id": "rt7nmvd20ykpkeq6cuki6"
-                        },
-                        {
-                          "optionsLabel": "Ambush",
-                          "options": [
-                            {
-                              "name": "Ambush",
-                              "cost": 0,
-                              "costParentMult": false,
-                              "type": "check",
-                              "refs": ["mongrel_ambushers", "ambush"],
-                              "hasNotOption": [
-                                {
-                                  "refs": ["mongrel_ambushers"],
-                                  "amount": 40
-                                }
-                              ],
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["mongrel_ambushers"],
-                                  "amount": 2,
-                                  "parentMult": false
-                                }
-                              ],
-                              "option_id": "qwqyk0oqntgss9nsv0v8"
-                            }
-                          ],
-                          "option_id": "2i4mv1dpagbn3nn0ks5vd"
                         }
                       ],
                       "option_id": "0f384g12mfyh75updf93l6"
@@ -2564,6 +2550,17 @@
                   "options": {
                     "extraCategories": ["ambushPredators"]
                   }
+                },
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "maxSize": 25
+                  }
                 }
               ],
               "logo": "special"
@@ -2940,6 +2937,17 @@
                   ],
                   "options": {
                     "extraCategories": ["ambushPredators"]
+                  }
+                },
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "maxSize": 12
                   }
                 }
               ],
