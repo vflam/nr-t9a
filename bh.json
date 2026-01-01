@@ -589,6 +589,17 @@
                 {
                   "hasOption": [
                     {
+                      "refs": ["lighttroopsandambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambushPredators"]
+                  }
+                },
+                {
+                  "hasOption": [
+                    {
                       "refs": ["ambush"],
                       "amount": 1
                     }
@@ -897,6 +908,17 @@
                 {
                   "hasOption": [
                     {
+                      "refs": ["lighttroopsandambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambushPredators"]
+                  }
+                },
+                {
+                  "hasOption": [
+                    {
                       "refs": ["ambush"],
                       "amount": 1
                     }
@@ -1127,6 +1149,17 @@
                 }
               ],
               "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["lighttroopsandambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambushPredators"]
+                  }
+                },
                 {
                   "hasOption": [
                     {
@@ -1554,13 +1587,6 @@
                 },
                 {
                   "type": "check",
-                  "name": "Ambush (Battlefield Edge)",
-                  "refs": ["ambushbattlefieldedge", "ambush"],
-                  "cost": 5,
-                  "option_id": "tadcr4a992lvyh13cr4fv"
-                },
-                {
-                  "type": "check",
                   "name": "Greater Totem Bearer",
                   "rules": [
                     {
@@ -1744,8 +1770,18 @@
                   "option_id": "y6c8823zhegop7tveg102"
                 }
               ],
-              "armyHasNotOption": [],
               "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambushPredators"]
+                  }
+                },
                 {
                   "hasOption": [
                     {
@@ -1758,6 +1794,7 @@
                   }
                 }
               ],
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
@@ -1996,12 +2033,24 @@
                       "name": "Ambush (Battlefield Edge)",
                       "cost": 30,
                       "option_id": "0v33i4575ltv3k3c",
-                      "refs": ["ambushbattlefieldedge"]
+                      "refs": ["ambushbattlefieldedge"],
+                      "rarity": "Rare"
                     }
                   ]
                 }
               ],
               "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambushPredators"]
+                  }
+                },
                 {
                   "hasOption": [
                     {
@@ -2138,12 +2187,24 @@
                       "name": "Ambush (Battlefield Edge)",
                       "cost": 30,
                       "option_id": "okbm60rzgcm5gumr",
-                      "refs": ["ambushbattlefieldedge"]
+                      "refs": ["ambushbattlefieldedge"],
+                      "rarity": "Rare"
                     }
                   ]
                 }
               ],
               "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambushPredators"]
+                  }
+                },
                 {
                   "hasOption": [
                     {
@@ -2203,13 +2264,6 @@
                   "optionsLabel": "Options",
                   "options": [
                     {
-                      "name": "Ambush (8″, Battlefield Edge)",
-                      "cost": 0,
-                      "type": "check",
-                      "refs": ["ambush"],
-                      "option_id": "245k2z0qoruytwcel1ppb"
-                    },
-                    {
                       "type": "check",
                       "name": "Ambush (Battlefield Edge)",
                       "cost": 0,
@@ -2220,8 +2274,18 @@
                   "option_id": "884lcfkdcgbbosf0iyk865"
                 }
               ],
-              "armyHasNotOption": [],
               "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambushPredators"]
+                  }
+                },
                 {
                   "hasOption": [
                     {
@@ -2234,6 +2298,7 @@
                   }
                 }
               ],
+              "armyHasNotOption": [],
               "logo": "core"
             }
           ],
@@ -2285,7 +2350,6 @@
                   "option_id": "5jk33u7s7j4roeyyodex1r"
                 }
               ],
-              "armyHasNotOption": [],
               "override": [
                 {
                   "hasOption": [
@@ -2301,6 +2365,7 @@
                   }
                 }
               ],
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
@@ -2363,31 +2428,12 @@
                           "optionsLabel": "Options",
                           "options": [
                             {
-                              "name": "Ambush",
-                              "cost": 1,
-                              "type": "check",
-                              "refs": ["longhorn_ambushers", "ambush"],
-                              "hasNotOption": [
-                                {
-                                  "refs": ["longhorn_ambushers"],
-                                  "amount": 25
-                                }
-                              ],
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["longhorn_ambushers"],
-                                  "amount": 2,
-                                  "parentMult": false
-                                }
-                              ],
-                              "option_id": "edakrf1bb9khkisj7tfcsg"
-                            },
-                            {
                               "type": "check",
                               "name": "Ambush (Battlefield Edge)",
                               "cost": 2,
                               "option_id": "xtfdiwohkk9hm3d5",
-                              "refs": ["ambushbattlefieldedge"]
+                              "refs": ["ambushbattlefieldedge"],
+                              "rarity": "Rare"
                             }
                           ],
                           "option_id": "sokmj8fxw7cuq5il06x3bo"
@@ -2497,6 +2543,17 @@
                 }
               ],
               "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambushPredators"]
+                  }
+                },
                 {
                   "hasOption": [
                     {
@@ -2862,8 +2919,18 @@
                   "minSize": 0
                 }
               ],
-              "armyHasNotOption": [],
               "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushbattlefieldedge"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambushPredators"]
+                  }
+                },
                 {
                   "hasOption": [
                     {
@@ -2876,6 +2943,7 @@
                   }
                 }
               ],
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
@@ -2904,7 +2972,6 @@
                   "option_id": "w5tdow84j5le5zybefnir8"
                 }
               ],
-              "armyHasNotOption": [],
               "override": [
                 {
                   "hasOption": [
@@ -2918,6 +2985,7 @@
                   }
                 }
               ],
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
