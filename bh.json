@@ -354,20 +354,14 @@
           "options": [
             {
               "name": "Wildhorn Lord",
-              "cost": 195,
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["ambush"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["ambush_predators"]
-                  }
-                }
-              ],
+              "cost": 175,
+              "option_id": "gbxvgq25wot1e6wbox7rg7",
+              "unit_id": "wildhornLord",
+              "refs": ["wildhornlord", "tag_Metal Armour", "tag_Wildhorn"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "type": "group",
@@ -376,19 +370,19 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
-                      "cost": 0,
+                      "cost": 20,
                       "optionsLabel": "Options",
                       "options": [
                         {
                           "name": "Hunting Call",
-                          "cost": 20,
+                          "cost": 25,
                           "type": "check",
                           "option_id": "uzo0xys146u51ajbobi",
-                          "refs": ["general_amount"]
+                          "refs": ["huntingcall", "general_amount"]
                         }
                       ],
                       "option_id": "3si3mcvlxyj5vio5zs595a"
@@ -405,31 +399,32 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "vxu4ttunx3jzde6losikfd",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "name": "Light Troops and Ambush(Battlefield Edge)",
                       "type": "check",
                       "option_id": "fwef32fwfsdfdsf32f234",
                       "cost": 5,
-                      "refs": ["ambush"]
+                      "refs": ["lighttroopsandambushbattlefieldedge", "ambush"]
                     },
                     {
                       "type": "check",
-                      "refs": ["mount"],
+                      "refs": ["raidingchariot", "mount"],
                       "name": "Raiding Chariot",
-                      "cost": 105,
+                      "cost": 90,
                       "options": [],
-                      "refopt": "raiding_chariot_mount",
+                      "refopt": "raidingChariotMount",
                       "option_id": "fkvuuwxi5drr7kdeds6tp"
                     },
                     {
                       "type": "check",
-                      "refs": ["mount"],
+                      "refs": ["razortuskchariot", "mount"],
                       "name": "Razortusk Chariot",
-                      "cost": 180,
+                      "cost": 155,
                       "options": [],
-                      "refopt": "razortusk_chariot_mount",
+                      "refopt": "razortuskChariotMount",
                       "option_id": "h2tqd1ylwv8jtn8xsb842",
                       "maxUnitCost": 700
                     }
@@ -453,7 +448,8 @@
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["shieldEnchant"],
-                      "option_id": "jd0rqgjd5oc4xrdifmm9nw"
+                      "option_id": "jd0rqgjd5oc4xrdifmm9nw",
+                      "refs": ["shield"]
                     },
                     {
                       "optionsLabel": "Armour Enchant",
@@ -470,7 +466,7 @@
                       "cost": 5,
                       "ignoreCost": true,
                       "option_id": "7yck6ulohd4vpmg3iyawah",
-                      "refs": ["sticks_and_stones"]
+                      "refs": ["throwingweapons", "sticks_and_stones"]
                     },
                     {
                       "type": "group",
@@ -482,7 +478,7 @@
                         {
                           "type": "check",
                           "name": "Paired Weapons",
-                          "cost": 10,
+                          "cost": 15,
                           "maxSize": 1,
                           "optionsLabel": "Paired Weapons Enchant",
                           "optionsSuffix": " (Paired Weapons)",
@@ -490,7 +486,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "rh4ugmq1ts8finslqyvve"
+                          "option_id": "rh4ugmq1ts8finslqyvve",
+                          "refs": ["pairedweapons"]
                         },
                         {
                           "type": "check",
@@ -503,12 +500,13 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "angk18s0ykffo34j8udke"
+                          "option_id": "angk18s0ykffo34j8udke",
+                          "refs": ["greatweapon"]
                         },
                         {
                           "type": "check",
                           "name": "Halberd",
-                          "cost": 10,
+                          "cost": 5,
                           "maxSize": 1,
                           "optionsLabel": "Halberd Enchant",
                           "optionsSuffix": " (Halberd)",
@@ -516,7 +514,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "halberdEnchant"],
-                          "option_id": "f32f423g43gh54h45h456h45"
+                          "option_id": "f32f423g43gh54h45h456h45",
+                          "refs": ["halberd"]
                         },
                         {
                           "type": "check",
@@ -530,12 +529,13 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "sc8wuxkc4sf6up4jmbodcw"
+                          "option_id": "sc8wuxkc4sf6up4jmbodcw",
+                          "refs": ["lance"]
                         },
                         {
                           "type": "check",
                           "name": "Beast Axe",
-                          "cost": 35,
+                          "cost": 30,
                           "maxSize": 1,
                           "optionsSuffix": " (Beast Axe)",
                           "optionsLabel": "Beast Axe Enchant",
@@ -543,7 +543,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "beastAxeEnchant"],
-                          "option_id": "zsxrdrgx0vlopbt6v91ub"
+                          "option_id": "zsxrdrgx0vlopbt6v91ub",
+                          "refs": ["beastaxe"]
                         }
                       ],
                       "option_id": "cadi092zdod21ehwn14evw"
@@ -583,15 +584,6 @@
                   "option_id": "5ukomg3a5sk1hc4hnse5n4"
                 }
               ],
-              "unit_id": "wildhorn_lord",
-              "option_id": "gbxvgq25wot1e6wbox7rg7",
-              "refs": ["tag_Metal Armour", "tag_Wildhorn"],
-              "logo": "character",
-              "maxUnitCost": 700
-            },
-            {
-              "name": "Wildhorn Chieftain",
-              "cost": 60,
               "override": [
                 {
                   "hasOption": [
@@ -605,6 +597,18 @@
                   }
                 }
               ],
+              "logo": "character",
+              "maxUnitCost": 700
+            },
+            {
+              "name": "Wildhorn Chieftain",
+              "cost": 65,
+              "option_id": "z1x9fhce8fsyfy9jcswcyj",
+              "unit_id": "wildhornChieftain",
+              "refs": ["wildhornchieftain", "tag_Wildhorn", "tag_Metal Armour"],
+              "size": "1",
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "type": "group",
@@ -619,22 +623,22 @@
                       "type": "check",
                       "cost": 0,
                       "option_id": "ahtsw12tkb6r2uph89nf7",
-                      "refs": ["leadership_amount"]
+                      "refs": ["captainandattached", "leadership_amount"]
                     },
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
-                      "cost": 25,
+                      "cost": 15,
                       "optionsLabel": "Options",
                       "options": [
                         {
                           "name": "Hunting Call",
-                          "cost": 15,
+                          "cost": 10,
                           "type": "check",
                           "option_id": "qlkl7vhchnrsualmugbkk",
-                          "refs": ["general_amount"]
+                          "refs": ["huntingcall", "general_amount"]
                         }
                       ],
                       "option_id": "6c9mlr1duwbd8rmqbyiq1"
@@ -643,13 +647,13 @@
                       "option_id": "f32fewedmf23j89c023h9df23c2",
                       "name": "Solitary",
                       "type": "check",
-                      "cost": 25,
+                      "cost": 15,
                       "refs": ["solitary"]
                     },
                     {
                       "type": "check",
                       "armyHasNotOption": ["army_bsb"],
-                      "refs": ["army_bsb", "not_a_leader"],
+                      "refs": ["battlestandardbearer", "army_bsb", "not_a_leader"],
                       "name": "Battle Standard Bearer",
                       "cost": 75,
                       "option_id": "cfve3wv34wbv34eg34gv34g34g34"
@@ -659,7 +663,7 @@
                 {
                   "type": "check",
                   "name": "Greater Totem Bearer",
-                  "cost": 75,
+                  "cost": 80,
                   "rules": [
                     {
                       "id": "greater_totem_bearers"
@@ -683,7 +687,8 @@
                       "path": "totems",
                       "ref": "gnarled_hide_totem"
                     }
-                  ]
+                  ],
+                  "refs": ["greatertotembearer"]
                 },
                 {
                   "type": "group",
@@ -695,22 +700,23 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "tertert4gfhfdhethrrthtr",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "name": "Light Troops and Ambush(Battlefield Edge)",
                       "type": "check",
                       "option_id": "w5o4zvt1vsnjj2bltuk68q",
                       "cost": 5,
-                      "refs": ["ambush"]
+                      "refs": ["lighttroopsandambushbattlefieldedge", "ambush"]
                     },
                     {
                       "type": "check",
-                      "refs": ["mount"],
+                      "refs": ["raidingchariot", "mount"],
                       "name": "Raiding Chariot",
-                      "cost": 115,
+                      "cost": 100,
                       "options": [],
-                      "refopt": "raiding_chariot_mount",
+                      "refopt": "raidingChariotMount",
                       "option_id": "mux5tpw8a52sx6gvym02l"
                     }
                   ],
@@ -750,7 +756,8 @@
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["shieldEnchant"],
-                      "option_id": "8lb1v50uhg710pwyljnbaz"
+                      "option_id": "8lb1v50uhg710pwyljnbaz",
+                      "refs": ["shield"]
                     },
                     {
                       "optionsLabel": "Armour Enchant",
@@ -767,7 +774,7 @@
                       "cost": 5,
                       "ignoreCost": true,
                       "option_id": "nft1n7qc2tbdxpa3oeqn6l",
-                      "refs": ["sticks_and_stones"]
+                      "refs": ["throwingweapons", "sticks_and_stones"]
                     },
                     {
                       "type": "group",
@@ -787,7 +794,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "m1ylauko4gc0k6pj4rt4fcm"
+                          "option_id": "m1ylauko4gc0k6pj4rt4fcm",
+                          "refs": ["pairedweapons"]
                         },
                         {
                           "type": "check",
@@ -800,7 +808,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "lk7qnt7nskwp78fkm6eyr"
+                          "option_id": "lk7qnt7nskwp78fkm6eyr",
+                          "refs": ["greatweapon"]
                         },
                         {
                           "type": "check",
@@ -813,7 +822,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "halberdEnchant"],
-                          "option_id": "f432f8032fn3490ng43g43g43"
+                          "option_id": "f432f8032fn3490ng43g43g43",
+                          "refs": ["halberd"]
                         },
                         {
                           "type": "check",
@@ -827,7 +837,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "g9ou9t8ksjjubf4rw77ss"
+                          "option_id": "g9ou9t8ksjjubf4rw77ss",
+                          "refs": ["lance"]
                         },
                         {
                           "type": "check",
@@ -840,7 +851,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "beastAxeEnchant"],
-                          "option_id": "tqfmpubq1q9fn6gx6e5xt"
+                          "option_id": "tqfmpubq1q9fn6gx6e5xt",
+                          "refs": ["beastaxe"]
                         }
                       ],
                       "option_id": "4tbsqcif5a7haex0t7pt8"
@@ -880,16 +892,6 @@
                   "option_id": "jh9ropojzqrz9axmpycxo"
                 }
               ],
-              "unit_id": "wildhorn_chieftain",
-              "option_id": "z1x9fhce8fsyfy9jcswcyj",
-              "refs": ["tag_Metal Armour", "tag_Wildhorn"],
-              "logo": "character",
-              "maxUnitCost": 700
-            },
-            {
-              "name": "Soothsayer",
-              "cost": 270,
-              "refs": ["soothsayer", "wizard", "tag_Wildhorn"],
               "override": [
                 {
                   "hasOption": [
@@ -903,6 +905,19 @@
                   }
                 }
               ],
+              "logo": "character",
+              "maxUnitCost": 700
+            },
+            {
+              "name": "Soothsayer",
+              "cost": 270,
+              "option_id": "pzl7h4bd9ehq2kkp2kqtbf",
+              "unit_id": "soothsayer",
+              "refs": ["soothsayer", "tag_Wildhorn", "wizard"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "type": "group",
@@ -911,7 +926,7 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
@@ -919,14 +934,6 @@
                       "cost": 0
                     }
                   ]
-                },
-                {
-                  "name": "Ambush (Battlefield Edge)",
-                  "cost": 5,
-                  "type": "check",
-                  "hasNotOption": ["mount"],
-                  "refs": ["ambush"],
-                  "option_id": "1qt4ar2qkm1km2p41f2j0o"
                 },
                 {
                   "type": "group",
@@ -938,15 +945,23 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "jomn7al1oejevcwmp4dto",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
-                      "refs": ["mount"],
+                      "name": "Light Troops and Ambush (Battlefield Edge)",
+                      "cost": 5,
+                      "option_id": "on22situv8qm2j2b",
+                      "refs": ["lighttroopsandambushbattlefieldedge"]
+                    },
+                    {
+                      "type": "check",
+                      "refs": ["raidingchariot", "mount"],
                       "name": "Raiding Chariot",
-                      "cost": 30,
+                      "cost": 15,
                       "options": [],
-                      "refopt": "raiding_chariot_mount",
+                      "refopt": "raidingChariotMount",
                       "option_id": "9iejecsxf1i7axszbmpxet"
                     }
                   ],
@@ -1005,14 +1020,14 @@
                   "collapsible": true,
                   "options": [
                     {
-                      "refs": ["wizardAdept"],
+                      "refs": ["wizardadept", "wizardAdept"],
                       "name": "Wizard Adept",
                       "type": "check",
                       "cost": 0,
                       "option_id": "dg95bn0jl6q7tw2mm2ghr"
                     },
                     {
-                      "refs": ["wizardMaster"],
+                      "refs": ["wizardmaster", "wizardMaster"],
                       "name": "Wizard Master",
                       "type": "check",
                       "cost": 150,
@@ -1068,7 +1083,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "x6oe4vasftfvxj2iknovo"
+                          "option_id": "x6oe4vasftfvxj2iknovo",
+                          "refs": ["pairedweapons"]
                         }
                       ],
                       "option_id": "e7c1p16f3nh1qwn0g6jy4"
@@ -1108,16 +1124,32 @@
                   "option_id": "w44ht4mxcvcywk82pn956s"
                 }
               ],
-              "unit_id": "soothsayer",
-              "option_id": "pzl7h4bd9ehq2kkp2kqtbf",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambush"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambush_predators"]
+                  }
+                }
+              ],
               "logo": "character",
               "maxUnitCost": 700
             },
             {
               "name": "Minotaur Warlord",
-              "cost": 450,
-              "refs": ["minotaur_warlord", "tag_Minotaur", "tag_Metal Armour"],
-              "armyHasNotOption": [],
+              "cost": 380,
+              "option_id": "umlh8jjxhnx14d5rgibq",
+              "unit_id": "minotaurWarlord",
+              "refs": ["minotaurwarlord", "tag_Minotaur", "tag_Metal Armour", "minotaur_warlord"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "3",
+              "basesize": "40×40",
               "options": [
                 {
                   "type": "group",
@@ -1126,7 +1158,7 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
@@ -1151,7 +1183,8 @@
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["shieldEnchant"],
-                      "option_id": "sex01q9tfznhip7m3npkri"
+                      "option_id": "sex01q9tfznhip7m3npkri",
+                      "refs": ["shield"]
                     },
                     {
                       "type": "group",
@@ -1181,7 +1214,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "ry2z7597mtp65bxmpgu55a"
+                          "option_id": "ry2z7597mtp65bxmpgu55a",
+                          "refs": ["pairedweapons"]
                         },
                         {
                           "type": "check",
@@ -1194,7 +1228,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "vjdox5e1bd8gwngqgyeu3"
+                          "option_id": "vjdox5e1bd8gwngqgyeu3",
+                          "refs": ["greatweapon"]
                         },
                         {
                           "type": "check",
@@ -1207,7 +1242,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "beastAxeEnchant"],
-                          "option_id": "b0y9a6siw5onieaysstln"
+                          "option_id": "b0y9a6siw5onieaysstln",
+                          "refs": ["beastaxe"]
                         }
                       ],
                       "option_id": "qex5xd7cdcf4lkf06utzku"
@@ -1247,14 +1283,19 @@
                   "option_id": "nfvkgbxgywmtayvlp1mbw"
                 }
               ],
-              "unit_id": "minotaur_warlord",
-              "option_id": "umlh8jjxhnx14d5rgibq",
+              "armyHasNotOption": [],
               "logo": "character",
               "maxUnitCost": 700
             },
             {
               "name": "Minotaur Chieftain",
-              "cost": 160,
+              "cost": 130,
+              "option_id": "hd6bpv200av7tdnl42soof",
+              "unit_id": "minotaurChieftain",
+              "refs": ["minotaurchieftain", "tag_Minotaur", "tag_Metal Armour"],
+              "size": "1",
+              "height": "3",
+              "basesize": "40×40",
               "options": [
                 {
                   "type": "group",
@@ -1267,27 +1308,27 @@
                       "type": "check",
                       "cost": 0,
                       "option_id": "f34fdsff32f32fdsfdsgfdgd",
-                      "refs": ["leadership_amount"]
+                      "refs": ["captainandattached", "leadership_amount"]
                     },
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
-                      "cost": 30,
+                      "cost": 10,
                       "option_id": "f9rdj99iuc8ir8tk8fdxw"
                     },
                     {
                       "option_id": "dew2f23f23f23f23h823d923",
                       "name": "Solitary",
                       "type": "check",
-                      "cost": 30,
+                      "cost": 40,
                       "refs": ["solitary"]
                     },
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
-                      "refs": ["army_bsb", "not_a_leader"],
+                      "refs": ["battlestandardbearer", "army_bsb", "not_a_leader"],
                       "armyHasNotOption": ["army_bsb"],
                       "cost": 80,
                       "options": [],
@@ -1298,7 +1339,7 @@
                 {
                   "type": "check",
                   "name": "Greater Totem Bearer",
-                  "cost": 75,
+                  "cost": 70,
                   "option_id": "jbhfx4f3p8cwk3pit72qjq",
                   "boundSpells": [
                     {
@@ -1317,7 +1358,8 @@
                       "path": "totems",
                       "ref": "gnarled_hide_totem"
                     }
-                  ]
+                  ],
+                  "refs": ["greatertotembearer"]
                 },
                 {
                   "type": "group",
@@ -1352,7 +1394,8 @@
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["shieldEnchant"],
-                      "option_id": "mdf4ew1apaq73agodcp7sb"
+                      "option_id": "mdf4ew1apaq73agodcp7sb",
+                      "refs": ["shield"]
                     },
                     {
                       "type": "group",
@@ -1374,7 +1417,7 @@
                         {
                           "type": "check",
                           "name": "Paired Weapons",
-                          "cost": 10,
+                          "cost": 5,
                           "maxSize": 1,
                           "optionsLabel": "Paired Weapons Enchant",
                           "optionsSuffix": " (Paired Weapons)",
@@ -1382,12 +1425,13 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "bza7bxlkd1mybc0j6nla3"
+                          "option_id": "bza7bxlkd1mybc0j6nla3",
+                          "refs": ["pairedweapons"]
                         },
                         {
                           "type": "check",
                           "name": "Great Weapon",
-                          "cost": 20,
+                          "cost": 25,
                           "maxSize": 1,
                           "optionsLabel": "Great Weapon Enchant",
                           "optionsSuffix": " (Great Weapon)",
@@ -1395,7 +1439,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "aojorgenfohtm2bllljho"
+                          "option_id": "aojorgenfohtm2bllljho",
+                          "refs": ["greatweapon"]
                         },
                         {
                           "type": "check",
@@ -1408,7 +1453,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "beastAxeEnchant"],
-                          "option_id": "2naae6x105zj97i82qkjg"
+                          "option_id": "2naae6x105zj97i82qkjg",
+                          "refs": ["beastaxe"]
                         }
                       ],
                       "option_id": "iunae8n00rhar62jrqs5nr"
@@ -1448,29 +1494,17 @@
                   "option_id": "s4l540hy4dk0ahgjrn9wm"
                 }
               ],
-              "unit_id": "minotaur_chieftain",
-              "option_id": "hd6bpv200av7tdnl42soof",
-              "refs": ["tag_Minotaur", "tag_Metal Armour"],
               "logo": "character"
             },
             {
               "name": "Centaur Chieftain",
-              "cost": 160,
-              "refs": ["centaur_chieftain", "tag_Centaur", "tag_Metal Armour", "tag_Centauroid"],
-              "armyHasNotOption": [],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["ambush"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["ambush_predators"]
-                  }
-                }
-              ],
+              "cost": 140,
+              "option_id": "e99ja4pjawbvxrdb02fn8l",
+              "unit_id": "centaurChieftain",
+              "refs": ["centaurchieftain", "tag_Metal Armour", "tag_Centauroid", "centaur_chieftain", "tag_Centaur"],
+              "size": "1",
+              "height": "2",
+              "basesize": "25×50",
               "options": [
                 {
                   "type": "group",
@@ -1480,30 +1514,31 @@
                   "maxSize": 1,
                   "options": [
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
-                      "cost": 25,
+                      "cost": 10,
                       "option_id": "wyfsbkorp5dzlnp00cc2v"
                     },
                     {
                       "name": "Captain and Attached",
                       "type": "check",
                       "cost": 0,
-                      "option_id": "df23f23f23g2gdfgdfjh3"
+                      "option_id": "df23f23f23g2gdfgdfjh3",
+                      "refs": ["captainandattached"]
                     },
                     {
                       "option_id": "d21d21d32fn2389fh239fhn932f",
                       "name": "Solitary",
                       "type": "check",
-                      "cost": 25,
+                      "cost": 10,
                       "refs": ["solitary"]
                     },
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
-                      "refs": ["army_bsb", "not_a_leader"],
+                      "refs": ["battlestandardbearer", "army_bsb", "not_a_leader"],
                       "armyHasNotOption": ["army_bsb"],
                       "cost": 75,
                       "options": [],
@@ -1514,8 +1549,8 @@
                 {
                   "type": "check",
                   "name": "Ambush (Battlefield Edge)",
-                  "refs": ["ambush"],
-                  "cost": 10,
+                  "refs": ["ambushbattlefieldedge", "ambush"],
+                  "cost": 5,
                   "option_id": "tadcr4a992lvyh13cr4fv"
                 },
                 {
@@ -1526,7 +1561,7 @@
                       "id": "greater_totem_bearers"
                     }
                   ],
-                  "cost": 75,
+                  "cost": 80,
                   "option_id": "vsoqhixoyytzgvv0um8yi",
                   "boundSpells": [
                     {
@@ -1545,7 +1580,8 @@
                       "path": "totems",
                       "ref": "gnarled_hide_totem"
                     }
-                  ]
+                  ],
+                  "refs": ["greatertotembearer"]
                 },
                 {
                   "type": "group",
@@ -1573,14 +1609,15 @@
                     {
                       "type": "check",
                       "name": "Shield",
-                      "cost": 5,
+                      "cost": 10,
                       "optionsLabel": "Shield Enchant",
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["shieldEnchant"],
-                      "option_id": "ri5ojosnteup42o42terj"
+                      "option_id": "ri5ojosnteup42o42terj",
+                      "refs": ["shield"]
                     },
                     {
                       "type": "check",
@@ -1588,7 +1625,7 @@
                       "cost": 5,
                       "ignoreCost": true,
                       "option_id": "w0mrp5ppf61bfjqcux26h",
-                      "refs": ["sticks_and_stones"]
+                      "refs": ["throwingweapons", "sticks_and_stones"]
                     },
                     {
                       "type": "group",
@@ -1618,12 +1655,13 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "1xeota8t29rwnb5s1mtzsb"
+                          "option_id": "1xeota8t29rwnb5s1mtzsb",
+                          "refs": ["pairedweapons"]
                         },
                         {
                           "type": "check",
                           "name": "Great Weapon",
-                          "cost": 15,
+                          "cost": 10,
                           "maxSize": 1,
                           "optionsLabel": "Great Weapon Enchant",
                           "optionsSuffix": " (Great Weapon)",
@@ -1631,12 +1669,13 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "p2v5id0v9kchpzcky5pkf"
+                          "option_id": "p2v5id0v9kchpzcky5pkf",
+                          "refs": ["greatweapon"]
                         },
                         {
                           "type": "check",
                           "name": "Lance",
-                          "cost": 15,
+                          "cost": 20,
                           "maxSize": 1,
                           "optionsLabel": "Lance Enchant",
                           "optionsSuffix": " (Lance)",
@@ -1644,12 +1683,13 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "y9wpt0xo9cb2pyfualntm"
+                          "option_id": "y9wpt0xo9cb2pyfualntm",
+                          "refs": ["lance"]
                         },
                         {
                           "type": "check",
                           "name": "Beast Axe",
-                          "cost": 15,
+                          "cost": 10,
                           "maxSize": 1,
                           "optionsSuffix": " (Beast Axe)",
                           "optionsLabel": "Beast Axe Enchant",
@@ -1657,7 +1697,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "beastAxeEnchant"],
-                          "option_id": "q2ncx53rpei1jxuybtxb"
+                          "option_id": "q2ncx53rpei1jxuybtxb",
+                          "refs": ["beastaxe"]
                         }
                       ],
                       "option_id": "7agtluk0n246b7ahoq2ek4"
@@ -1697,8 +1738,20 @@
                   "option_id": "y6c8823zhegop7tveg102"
                 }
               ],
-              "unit_id": "centaur_chieftain",
-              "option_id": "e99ja4pjawbvxrdb02fn8l",
+              "armyHasNotOption": [],
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambush"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambush_predators"]
+                  }
+                }
+              ],
               "logo": "character"
             },
             {
@@ -1719,7 +1772,12 @@
               "cost": 380,
               "option_id": "jjg6sh25m42wdo9x",
               "unit_id": "moohoarrghThePerpetuatorOfHeroes",
-              "refs": ["moohoarrghtheperpetuatorofheroes", "wizard", "protean_magic", "tag_Wildhorn"],
+              "refs": ["moohoarrghtheperpetuatorofheroes", "tag_Wildhorn", "wizard", "protean_magic"],
+              "size": "1",
+              "rarity": "Legendary",
+              "height": "1",
+              "basesize": "25×25",
+              "options": [],
               "magic": {
                 "amount": 3,
                 "spells": [
@@ -1736,12 +1794,7 @@
                     "ref": "predator's_instinct"
                   }
                 ]
-              },
-              "size": "1",
-              "rarity": "Legendary",
-              "height": "1",
-              "basesize": "25×25",
-              "options": []
+              }
             }
           ],
           "option_id": "j42e45f2gz87vy4wwr5m9"
@@ -1755,19 +1808,12 @@
             {
               "name": "Wildhorn Herd",
               "cost": 15,
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["ambush"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["ambush_predators"]
-                  }
-                }
-              ],
+              "option_id": "5r65k3sbmzlfynylvbxbcj",
+              "unit_id": "wildhornHerd",
+              "refs": ["wildhornherd", "tag_Wildhorn", "core_unit"],
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "minSize": 15,
@@ -1804,20 +1850,22 @@
                               "type": "check",
                               "name": "Shield",
                               "cost": 0,
-                              "option_id": "x98tbsv7izm9p7h4vzrzg"
+                              "option_id": "x98tbsv7izm9p7h4vzrzg",
+                              "refs": ["shield"]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 0,
-                              "option_id": "7jv9or36703avhx7b3al29"
+                              "option_id": "7jv9or36703avhx7b3al29",
+                              "refs": ["pairedweapons"]
                             },
                             {
                               "type": "check",
                               "name": "Throwing Weapons (5+)",
                               "cost": 1,
                               "option_id": "9dcdbl0dwr7dhogn6p3ne",
-                              "refs": ["sticks_and_stones"]
+                              "refs": ["throwingweapons", "sticks_and_stones"]
                             },
                             {
                               "type": "check",
@@ -1876,7 +1924,8 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "6b9yjb9xpjwdfmqittqybc"
+                      "option_id": "6b9yjb9xpjwdfmqittqybc",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
@@ -1949,20 +1998,35 @@
                           ],
                           "option_id": "1iygcpsp09ympgx7o629s"
                         }
-                      ]
+                      ],
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "28j6m51grdmwbhryzic2k"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "xr9nks68tihpm5i8",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Ambush (Battlefield Edge)",
+                      "cost": 30,
+                      "option_id": "33exn1roakivn7d9",
+                      "refs": ["ambushbattlefieldedge"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Paired Weapons and<br>Throwing Weapons (5+)",
+                      "cost": 2,
+                      "option_id": "5cxg5d82iem8kicw",
+                      "refs": ["pairedweaponsandthrowingweapons"]
+                    }
+                  ]
                 }
               ],
-              "unit_id": "wildhorn_herd",
-              "option_id": "5r65k3sbmzlfynylvbxbcj",
-              "logo": "core",
-              "refs": ["core_unit", "tag_Wildhorn"]
-            },
-            {
-              "name": "Mongrel Herd",
-              "cost": 10,
               "override": [
                 {
                   "hasOption": [
@@ -1972,11 +2036,21 @@
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambush_predators"],
-                    "cost": 45
+                    "extraCategories": ["ambush_predators"]
                   }
                 }
               ],
+              "logo": "core"
+            },
+            {
+              "name": "Mongrel Herd",
+              "cost": 10,
+              "option_id": "2hurh0qb0tiwbsop4zevx8",
+              "unit_id": "mongrelHerd",
+              "refs": ["mongrelherd", "tag_Wildhorn", "core_unit"],
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 25,
@@ -2012,7 +2086,8 @@
                               "type": "check",
                               "name": "Spear",
                               "cost": 1,
-                              "option_id": "udqfcj8n7ni8bq1jdelp"
+                              "option_id": "udqfcj8n7ni8bq1jdelp",
+                              "refs": ["spear"]
                             }
                           ],
                           "option_id": "rt7nmvd20ykpkeq6cuki6"
@@ -2074,18 +2149,23 @@
                     }
                   ],
                   "option_id": "uqfy3ewc0rpk9m2id6ei8s"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "zfxfq7l0qrtgjj04",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Ambush (Battlefield Edge)",
+                      "cost": 30,
+                      "option_id": "okbm60rzgcm5gumr",
+                      "refs": ["ambushbattlefieldedge"]
+                    }
+                  ]
                 }
               ],
-              "unit_id": "mongrel_herd",
-              "option_id": "2hurh0qb0tiwbsop4zevx8",
-              "logo": "core",
-              "refs": ["core_unit", "tag_Wildhorn"]
-            },
-            {
-              "name": "Mongrel Raiders",
-              "cost": 70,
-              "refs": ["mongrel_raiders", "core_unit", "tag_Wildhorn"],
-              "armyHasNotOption": [],
               "override": [
                 {
                   "hasOption": [
@@ -2095,10 +2175,21 @@
                     }
                   ],
                   "options": {
-                    "extraCategories": ["ambush_predators"]
+                    "extraCategories": ["ambush_predators"],
+                    "cost": 45
                   }
                 }
               ],
+              "logo": "core"
+            },
+            {
+              "name": "Mongrel Raiders",
+              "cost": 80,
+              "option_id": "72q31s0kr2yi6pdatqsrz",
+              "unit_id": "mongrelRaiders",
+              "refs": ["mongrelraiders", "tag_Wildhorn", "mongrel_raiders", "core_unit"],
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 10,
@@ -2109,7 +2200,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 5,
+                      "cost": 4,
                       "option_id": "64j44czzdbm17cr702a91l",
                       "refs": ["mongrel_raiders_amount", "sticks_and_stones"]
                     }
@@ -2124,7 +2215,8 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "za8tsx3flph4xr2vt4borb"
+                      "option_id": "za8tsx3flph4xr2vt4borb",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "bwl7rwwl3cfk7m41irg1x8"
@@ -2138,13 +2230,32 @@
                       "type": "check",
                       "refs": ["ambush"],
                       "option_id": "245k2z0qoruytwcel1ppb"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Ambush (Battlefield Edge)",
+                      "cost": 0,
+                      "option_id": "at8qr277obv5fw05",
+                      "refs": ["ambushbattlefieldedge"]
                     }
                   ],
                   "option_id": "884lcfkdcgbbosf0iyk865"
                 }
               ],
-              "unit_id": "mongrel_raiders",
-              "option_id": "72q31s0kr2yi6pdatqsrz",
+              "armyHasNotOption": [],
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambush"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambush_predators"]
+                  }
+                }
+              ],
               "logo": "core"
             }
           ],
@@ -2157,25 +2268,13 @@
           "options": [
             {
               "name": "Feral Hounds",
-              "cost": 60,
-              "refs": ["feral_hounds", "tag_Beast"],
-              "armyHasNotOption": [],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["feral_hounds_numbers"],
-                      "amount": 8
-                    }
-                  ],
-                  "options": {
-                    "replaceCategory": "base",
-                    "cost": 50,
-                    "extraCategories": ["ambush_predators"]
-                  }
-                }
-              ],
-              "extraCategories": ["ambush_predators"],
+              "cost": 65,
+              "option_id": "7emrtxj5unjsgvu9dwp8d",
+              "unit_id": "feralHounds",
+              "refs": ["feralhounds", "tag_Beast", "feral_hounds"],
+              "height": "1",
+              "basesize": "25×50",
+              "extraCategories": ["ambushPredators"],
               "options": [
                 {
                   "minSize": 5,
@@ -2187,7 +2286,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 8,
+                      "cost": 7,
                       "refs": ["feral_hounds_numbers"],
                       "option_id": "1r3bqosipdlb0el7z3j71v",
                       "override": [
@@ -2208,30 +2307,36 @@
                   "option_id": "5jk33u7s7j4roeyyodex1r"
                 }
               ],
-              "unit_id": "feral_hounds",
-              "option_id": "7emrtxj5unjsgvu9dwp8d",
-              "logo": "special"
-            },
-            {
-              "name": "Longhorn Herd",
-              "cost": -10,
+              "armyHasNotOption": [],
               "override": [
                 {
                   "hasOption": [
                     {
-                      "refs": ["ambush"],
-                      "amount": 1
+                      "refs": ["feral_hounds_numbers"],
+                      "amount": 8
                     }
                   ],
                   "options": {
+                    "replaceCategory": "base",
+                    "cost": 50,
                     "extraCategories": ["ambush_predators"]
                   }
                 }
               ],
+              "logo": "special"
+            },
+            {
+              "name": "Longhorn Herd",
+              "cost": 0,
+              "option_id": "f2sk8kq416sr9z4vh8tz",
+              "unit_id": "longhornHerd",
+              "refs": ["longhornherd", "tag_Wildhorn", "tag_Metal Armour"],
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "minSize": 10,
-                  "maxSize": 30,
+                  "maxSize": 35,
                   "addToUnitSize": true,
                   "override": [
                     {
@@ -2251,7 +2356,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 16,
+                      "cost": 15,
                       "options": [
                         {
                           "type": "group",
@@ -2263,13 +2368,15 @@
                               "type": "check",
                               "name": "Halberd",
                               "cost": 0,
-                              "option_id": "uqd4c907pjmdtny3j79l0g"
+                              "option_id": "uqd4c907pjmdtny3j79l0g",
+                              "refs": ["halberd"]
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
-                              "cost": 1,
-                              "option_id": "rya3rj00tqio5t3afj9e"
+                              "cost": 0,
+                              "option_id": "rya3rj00tqio5t3afj9e",
+                              "refs": ["greatweapon"]
                             }
                           ],
                           "option_id": "bambztfasbol8z3lr90vn"
@@ -2321,7 +2428,8 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "9599zrow6ms05t29waelmzr"
+                      "option_id": "9599zrow6ms05t29waelmzr",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
@@ -2394,22 +2502,51 @@
                           ],
                           "option_id": "oei52083tcgkvg5hg8u9c"
                         }
-                      ]
+                      ],
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "cy4rp80o6ct5y783dx1sb7"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "suuxal1qoojcjz2o",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Ambush (Battlefield Edge)",
+                      "cost": 2,
+                      "option_id": "xtfdiwohkk9hm3d5",
+                      "refs": ["ambushbattlefieldedge"]
+                    }
+                  ]
                 }
               ],
-              "unit_id": "longhorn_herd",
-              "option_id": "f2sk8kq416sr9z4vh8tz",
-              "logo": "special",
-              "refs": ["tag_Metal Armour", "tag_Wildhorn"]
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambush"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambush_predators"]
+                  }
+                }
+              ],
+              "logo": "special"
             },
             {
               "name": "Minotaurs",
-              "cost": 35,
+              "cost": 20,
+              "option_id": "an4gd5xiiy7w1yymjtwv8d",
+              "unit_id": "minotaurs",
               "refs": ["minotaurs", "tag_Minotaur", "tag_Light Armour"],
-              "armyHasNotOption": [],
+              "height": "3",
+              "basesize": "40×40",
               "options": [
                 {
                   "minSize": 3,
@@ -2420,7 +2557,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 55,
+                      "cost": 50,
                       "options": [
                         {
                           "type": "group",
@@ -2430,20 +2567,23 @@
                             {
                               "type": "check",
                               "name": "Shield",
-                              "cost": 5,
-                              "option_id": "dwkr6jbiuj7fr7kwl5ihfe"
+                              "cost": 8,
+                              "option_id": "dwkr6jbiuj7fr7kwl5ihfe",
+                              "refs": ["shield"]
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
-                              "cost": 8,
-                              "option_id": "w70v7fufbk9bjgpxuo8cf"
+                              "cost": 6,
+                              "option_id": "w70v7fufbk9bjgpxuo8cf",
+                              "refs": ["greatweapon"]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
-                              "cost": 4,
-                              "option_id": "ruzytx4e5qcwt4v05wg8h"
+                              "cost": 7,
+                              "option_id": "ruzytx4e5qcwt4v05wg8h",
+                              "refs": ["pairedweapons"]
                             }
                           ],
                           "option_id": "y7csuugax4eyfxoets41aq"
@@ -2469,7 +2609,8 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "n3bvy9zv51msr2tyhqlak"
+                      "option_id": "n3bvy9zv51msr2tyhqlak",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
@@ -2542,34 +2683,24 @@
                           ],
                           "option_id": "rkxqcdfxfs9ya4a6wikzu"
                         }
-                      ]
+                      ],
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "1z6304yyxwol7cwnj7nlh"
                 }
               ],
-              "unit_id": "minotaurs",
-              "option_id": "an4gd5xiiy7w1yymjtwv8d",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Centaurs",
-              "cost": 60,
-              "refs": ["centaurs", "tag_Centaur", "tag_Light Armour", "tag_Centauroid"],
-              "armyHasNotOption": [],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["ambush"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["ambush_predators"]
-                  }
-                }
-              ],
+              "cost": 50,
+              "option_id": "n2vg3syubms3ohhckhgfr3",
+              "unit_id": "centaurs",
+              "refs": ["centaurs", "tag_Light Armour", "tag_Centauroid", "tag_Centaur"],
+              "height": "2",
+              "basesize": "25×50",
               "options": [
                 {
                   "minSize": 5,
@@ -2593,7 +2724,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 20,
+                      "cost": 22,
                       "options": [
                         {
                           "type": "group",
@@ -2604,19 +2735,22 @@
                               "type": "check",
                               "name": "Great Weapon",
                               "cost": 2,
-                              "option_id": "0tyngg5krhyn8kjgl80wph"
+                              "option_id": "0tyngg5krhyn8kjgl80wph",
+                              "refs": ["greatweapon"]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
-                              "cost": 4,
-                              "option_id": "m2a3r2i0wymu3d48v43xl"
+                              "cost": 2,
+                              "option_id": "m2a3r2i0wymu3d48v43xl",
+                              "refs": ["pairedweapons"]
                             },
                             {
                               "type": "check",
                               "name": "Light Lance",
-                              "cost": 2,
-                              "option_id": "nmzzm2p2cym5pr680ng757"
+                              "cost": 3,
+                              "option_id": "nmzzm2p2cym5pr680ng757",
+                              "refs": ["lightlance"]
                             }
                           ],
                           "option_id": "nw7jbozq4d8uujc475q9d"
@@ -2626,10 +2760,10 @@
                           "options": [
                             {
                               "name": "Throwing Weapons (5+)",
-                              "cost": 4,
+                              "cost": 3,
                               "type": "check",
                               "option_id": "d03ovs7uflknwqi7kvqej",
-                              "refs": ["sticks_and_stones"]
+                              "refs": ["throwingweapons", "sticks_and_stones"]
                             }
                           ],
                           "option_id": "oz8g0q0q9cfxb7e53cr3wd"
@@ -2674,7 +2808,8 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "nqb2j3kfwmhfgm82swbu1h"
+                      "option_id": "nqb2j3kfwmhfgm82swbu1h",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
@@ -2747,20 +2882,70 @@
                           ],
                           "option_id": "4rlxws9e4ifze7p57bs1zk"
                         }
-                      ]
+                      ],
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "3iszb62q3mdii7w046xr28"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "ftfni3vdp3ft15ch",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Ambush (Battlefield Edge)",
+                      "cost": 1,
+                      "option_id": "df8r5pj4klm6c0qt",
+                      "refs": ["ambushbattlefieldedge"]
+                    }
+                  ]
                 }
               ],
-              "unit_id": "centaurs",
-              "option_id": "n2vg3syubms3ohhckhgfr3",
+              "armyHasNotOption": [],
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambush"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["ambush_predators"]
+                  }
+                }
+              ],
               "logo": "special"
             },
             {
               "name": "Raiding Chariots",
-              "refs": ["raiding_chariot", "tag_Metal Armour", "tag_Mount", "tag_Construct", "tag_Wildhorn"],
-              "cost": 20,
+              "cost": 10,
+              "option_id": "m2f9zhgy4iols95lxd5md",
+              "unit_id": "raidingChariots",
+              "refs": ["raidingchariots", "tag_Wildhorn", "tag_Metal Armour", "tag_Mount", "tag_Construct", "raiding_chariot"],
+              "height": "4",
+              "basesize": "50×100",
+              "options": [
+                {
+                  "minSize": 1,
+                  "maxSize": 3,
+                  "addToUnitSize": true,
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 110,
+                      "refs": ["chariot_count"],
+                      "option_id": "jk4mw07wmoyekyixas49"
+                    }
+                  ],
+                  "option_id": "w5tdow84j5le5zybefnir8"
+                }
+              ],
               "armyHasNotOption": [],
               "override": [
                 {
@@ -2775,33 +2960,17 @@
                   }
                 }
               ],
-              "options": [
-                {
-                  "minSize": 1,
-                  "maxSize": 3,
-                  "addToUnitSize": true,
-                  "options": [
-                    {
-                      "hide": true,
-                      "name": "Number",
-                      "type": "numeric",
-                      "cost": 100,
-                      "refs": ["chariot_count"],
-                      "option_id": "jk4mw07wmoyekyixas49"
-                    }
-                  ],
-                  "option_id": "w5tdow84j5le5zybefnir8"
-                }
-              ],
-              "unit_id": "raiding_chariots",
-              "option_id": "m2f9zhgy4iols95lxd5md",
               "logo": "special"
             },
             {
               "name": "Razortusk Herd",
-              "refs": ["razortusk_herd", "tag_Beast"],
-              "cost": 25,
-              "armyHasNotOption": [],
+              "cost": 15,
+              "option_id": "62ie1xfow8egcuidu13bz8",
+              "unit_id": "razortuskHerd",
+              "refs": ["razortuskherd", "tag_Beast", "razortusk_herd"],
+              "rarity": "Uncommon",
+              "height": "3",
+              "basesize": "50×50",
               "options": [
                 {
                   "minSize": 3,
@@ -2820,34 +2989,45 @@
                   "option_id": "fotoqu80ve0t17fml0eoz"
                 }
               ],
-              "unit_id": "razortusk_herd",
-              "option_id": "62ie1xfow8egcuidu13bz8",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Razortusk Chariot",
-              "refs": ["razortusk_chariot", "tag_Metal Armour", "tag_Mount", "tag_Construct", "tag_Wildhorn"],
               "cost": 230,
-              "armyHasNotOption": [],
-              "unit_id": "razortusk_chariot",
               "option_id": "ky2oha3hponr24g7g5sr7j",
+              "unit_id": "razortuskChariot",
+              "refs": ["razortuskchariot", "tag_Wildhorn", "tag_Metal Armour", "tag_Mount", "tag_Construct", "razortusk_chariot"],
+              "size": "1",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Briar Beast",
-              "refs": ["briar_beast", "tag_Beast"],
-              "cost": 120,
-              "armyHasNotOption": [],
-              "unit_id": "briar_beast",
+              "cost": 125,
               "option_id": "rqemwn4y09mqq6mrx5a71b",
+              "unit_id": "briarBeast",
+              "refs": ["briarbeast", "tag_Beast", "briar_beast"],
+              "size": "1",
+              "height": "3",
+              "basesize": "40×40",
+              "options": [],
+              "armyHasNotOption": [],
               "logo": "special",
               "extraCategories": ["ambush_predators"]
             },
             {
               "name": "Gargoyles",
+              "cost": 110,
+              "option_id": "zqtpky1k1klnfdb3bgtbyi",
+              "unit_id": "gargoyles",
               "refs": ["gargoyles", "tag_Beast"],
-              "cost": 100,
-              "armyHasNotOption": [],
+              "rarity": "Uncommon",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 5,
@@ -2858,7 +3038,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 11,
+                      "cost": 10,
                       "option_id": "b02iqcj1xgpwxml2pe8bio",
                       "refs": ["gargoyles_amount"]
                     }
@@ -2866,8 +3046,7 @@
                   "option_id": "18e85yi6fnn8y26lazllha"
                 }
               ],
-              "unit_id": "gargoyles",
-              "option_id": "zqtpky1k1klnfdb3bgtbyi",
+              "armyHasNotOption": [],
               "logo": "special"
             }
           ],
@@ -3046,28 +3225,32 @@
             },
             {
               "name": "Raiding Chariot *Mount",
-              "type": "check",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "refs": ["raidingChariot_mount_unit", "mount", "tag_Mount", "tag_Construct"],
-              "armyHasNotOption": [],
-              "unit_id": "raiding_chariot_mount",
-              "invisible": true,
+              "cost": 0,
               "option_id": "c9hc962r5xp4mj9x0y1vx",
+              "unit_id": "raidingChariotMount",
+              "refs": ["raidingchariotmount", "tag_Mount", "tag_Construct", "mount", "raidingChariot_mount_unit"],
+              "invisible": true,
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
+              "type": "check",
+              "category": "mounts",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
               "name": "Razortusk Chariot *Mount",
-              "type": "check",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "refs": ["razortuskChariot_mount_unit", "mount", "tag_Mount", "tag_Construct"],
-              "armyHasNotOption": [],
-              "unit_id": "razortusk_chariot_mount",
-              "invisible": true,
+              "cost": 0,
               "option_id": "a4s1i8rxmjsphwtmfil89",
+              "unit_id": "razortuskChariotMount",
+              "refs": ["razortuskchariotmount", "tag_Mount", "tag_Construct", "mount", "razortuskChariot_mount_unit"],
+              "invisible": true,
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
+              "type": "check",
+              "category": "mounts",
+              "armyHasNotOption": [],
               "logo": "character"
             }
           ],
