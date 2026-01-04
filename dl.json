@@ -2475,14 +2475,14 @@
                           "minSize": 1,
                           "options": [
                             {
-                              "refs": ["wizardApprentice"],
+                              "refs": ["wizardapprentice", "wizardApprentice"],
                               "name": "Wizard Apprentice",
                               "type": "check",
                               "cost": 50,
                               "option_id": "09x5uet6ixzeq9b2bgd4m8j"
                             },
                             {
-                              "refs": ["wizardAdept"],
+                              "refs": ["wizardadept", "wizardAdept"],
                               "name": "Wizard Adept",
                               "type": "check",
                               "cost": 150,
@@ -2580,10 +2580,9 @@
             },
             {
               "name": "Tergon Khan",
-              "cost": 650,
+              "cost": 600,
               "option_id": "urtpgspk5oncsck9",
               "unit_id": "tergonKhan",
-              "maxUnitCost": 650,
               "refs": ["tergonkhan", "wizard", "wizardAdept", "army_general", "tag_Daemon"],
               "size": "1",
               "rarity": "Legendary",
@@ -2635,14 +2634,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "maxUnitCost": 650
             },
             {
               "name": "Tristitia",
-              "cost": 850,
+              "cost": 800,
               "option_id": "rasfny6n5mqzqilt",
               "unit_id": "tristitia",
-              "maxUnitCost": 850,
+              "maxUnitCost": 800,
               "refs": ["tristitia", "wizard", "wizardMaster", "army_general", "tag_Daemon"],
               "size": "1",
               "rarity": "Legendary",
@@ -2792,8 +2792,8 @@
                       "options": [
                         {
                           "type": "check",
-                          "name": "Firestarter - Spear of Infinity",
-                          "parsername": "Standard Bearer with Firestarter (Spear of Infinity (3+)())",
+                          "name": "Firestarter - Spear of Infinity (3+)",
+                          "parsername": "Standard Bearer with Firestarter (Spear of Infinity (3+))",
                           "cost": 30,
                           "option_id": "92chhq9uer4b0gemeogbj",
                           "boundSpells": [
@@ -2809,8 +2809,8 @@
                         },
                         {
                           "type": "check",
-                          "name": "Firestarter - Smite the Unbeliever",
-                          "parsername": "Standard Bearer with Firestarter (Smite the Unbeliever (5+)())",
+                          "name": "Firestarter - Smite the Unbeliever (5+)",
+                          "parsername": "Standard Bearer with Firestarter (Smite the Unbeliever (5+))",
                           "cost": 60,
                           "option_id": "ca4p2uae6nv0xntzwrc6rof",
                           "boundSpells": [
@@ -5838,36 +5838,10 @@
                 },
                 {
                   "type": "check",
-                  "name": "Impact Hits (2 hits) and Devastating Charge (+1Str, +1AP)",
+                  "name": "Impact Hits (2 hits) and Devastating Charge (+1 Str, +1 AP)",
                   "cost": 0,
                   "option_id": "fdor0rjlo7humkysjfdfdw8j9k",
-                  "parsername": "Impact Hits(2) and  Devastating Charge(+1Str, +1AP)",
                   "refs": ["impactgreatbeast"]
-                },
-                {
-                  "type": "group",
-                  "name": "Options",
-                  "optionsLabel": "Options",
-                  "option_id": "elug0y3zyvsd5kml",
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "Fly",
-                      "cost": 10,
-                      "option_id": "e07qlwqabqb25w1k",
-                      "refs": ["fly"]
-                    },
-                    {
-                      "type": "check",
-                      "name": "Impact Hits (2 hits) and Devastating Charge (+1 Str, +1 AP)",
-                      "cost": 0,
-                      "option_id": "s7bnamon68rslj5n",
-                      "refs": ["impactgreatbeast"]
-                    }
-                  ],
-                  "generated": true,
-                  "maxSize": 1,
-                  "minSize": 1
                 }
               ],
               "override": [
@@ -5887,6 +5861,7 @@
               "category": "mounts",
               "minSize": 1,
               "maxSize": 1,
+              "optionsLabel": "Options",
               "armyHasNotOption": [],
               "logo": "character"
             },
