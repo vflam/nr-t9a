@@ -550,6 +550,12 @@
             {
               "name": "King",
               "cost": 200,
+              "option_id": "iohlww4vvwsqorm6jeevx",
+              "unit_id": "king",
+              "refs": ["king", "tag_Dwarf", "tag_Metal Armour", "grudge"],
+              "size": "1",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "type": "group",
@@ -558,12 +564,19 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
                       "cost": 0,
                       "option_id": "4h95q99nbpm8idsfbtq409"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Ancient Grudge (1)",
+                      "cost": 40,
+                      "option_id": "mjmajtbs4yregeyu",
+                      "refs": ["ancientgrudge"]
                     }
                   ],
                   "maxSize": 1
@@ -578,21 +591,24 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "fuzyyean397tgifwwx4k6",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Shield Bearers",
-                      "cost": 90,
+                      "cost": 80,
                       "option_id": "tvnkak20a1j9cxe86alc9p",
-                      "refopt": "shield_bearers_mount"
+                      "refopt": "shieldBearersMount",
+                      "refs": ["shieldbearers"]
                     },
                     {
                       "type": "check",
                       "name": "War Throne",
-                      "cost": 170,
-                      "refopt": "war_throne_mount",
-                      "option_id": "d1g4e6kpd5md93jx89pd"
+                      "cost": 150,
+                      "refopt": "warThroneMount",
+                      "option_id": "d1g4e6kpd5md93jx89pd",
+                      "refs": ["warthrone"]
                     }
                   ],
                   "option_id": "0jwouxcpgczhu49yxzi7d1l",
@@ -739,14 +755,17 @@
                   "option_id": "340gre0bker-b34-b3h3h"
                 }
               ],
-              "option_id": "iohlww4vvwsqorm6jeevx",
-              "unit_id": "king",
-              "refs": ["grudge", "tag_Dwarf", "tag_Metal Armour"],
               "logo": "character"
             },
             {
               "name": "Thane",
               "cost": 70,
+              "option_id": "p3j2jjzcvqnp4v3e6qpcem",
+              "unit_id": "thane",
+              "refs": ["thane", "tag_Dwarf", "tag_Metal Armour"],
+              "size": "1",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "type": "group",
@@ -760,7 +779,7 @@
                       "name": "Captain and Attached",
                       "cost": 0,
                       "option_id": "v5f43g53454j7ksf67fgsfdf32",
-                      "refs": ["leadership_amount"],
+                      "refs": ["captainandattached", "leadership_amount"],
                       "armyHasNotOption": [
                         {
                           "refs": ["leadership_amount"],
@@ -769,7 +788,7 @@
                       ]
                     },
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": [
                         {
                           "refs": ["army_general"],
@@ -778,22 +797,22 @@
                       ],
                       "type": "check",
                       "name": "General",
-                      "cost": 20,
+                      "cost": 10,
                       "option_id": "j5kc26kid3h0yk9hk9i1eum"
                     },
                     {
                       "option_id": "dnwe90f32fn3490nf9nfee3",
                       "name": "Solitary",
                       "type": "check",
-                      "cost": 20,
+                      "cost": 10,
                       "refs": ["solitary"]
                     },
                     {
                       "type": "check",
                       "armyHasNotOption": ["army_bsb"],
-                      "refs": ["army_bsb", "not_a_leader"],
+                      "refs": ["battlestandardbearer", "army_bsb", "not_a_leader"],
                       "name": "Battle Standard Bearer",
-                      "cost": 70,
+                      "cost": 80,
                       "option_id": "ffsfsv342wv34534b45h54h54"
                     }
                   ],
@@ -810,14 +829,16 @@
                       "type": "check",
                       "option_id": "01njy066juyh7a8yihykboa",
                       "cost": 0,
-                      "hasNotOption": ["solitary"]
+                      "hasNotOption": ["solitary"],
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Shield Bearers",
-                      "cost": 80,
+                      "cost": 70,
                       "option_id": "gnwmeyvmh8n69akodpt0i5",
-                      "refopt": "shield_bearers_mount"
+                      "refopt": "shieldBearersMount",
+                      "refs": ["shieldbearers"]
                     }
                   ],
                   "option_id": "cddjsdg7gq7gkcxfzc2d09",
@@ -938,16 +959,18 @@
                   "option_id": "tm0q9gt3qgr26lv9i8deq"
                 }
               ],
-              "option_id": "p3j2jjzcvqnp4v3e6qpcem",
-              "unit_id": "thane",
-              "refs": ["tag_Dwarf", "tag_Metal Armour"],
               "logo": "character"
             },
             {
               "name": "Dragon Seeker",
-              "cost": 180,
-              "refs": ["dragon_seeker", "not_a_leader", "tag_Dwarf"],
-              "armyHasNotOption": [],
+              "cost": 160,
+              "option_id": "ds4kqir5y5tzk5oalqxhvg",
+              "unit_id": "dragonSeeker",
+              "refs": ["dragonseeker", "tag_Dwarf", "dragon_seeker", "not_a_leader"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "type": "group",
@@ -992,14 +1015,19 @@
                   "option_id": "cvsx4q79k0lfnfljahjkh"
                 }
               ],
-              "option_id": "ds4kqir5y5tzk5oalqxhvg",
-              "unit_id": "dragonSeeker",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
               "name": "Runic Smith",
-              "refs": ["runic_smith", "tag_Dwarf", "tag_Metal Armour"],
-              "cost": 130,
+              "cost": 110,
+              "option_id": "ikcj2r2mpsjrcy7h1h97p",
+              "unit_id": "runicSmith",
+              "refs": ["runicsmith", "tag_Dwarf", "tag_Metal Armour", "runic_smith"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "type": "group",
@@ -1008,7 +1036,7 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": [
                         {
                           "refs": ["army_general"],
@@ -1019,6 +1047,13 @@
                       "name": "General",
                       "cost": 0,
                       "option_id": "6erar55rcwa6esu4qdukge"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Ancient Grudge (1)",
+                      "cost": 40,
+                      "option_id": "g2utosqqpmpcvtos",
+                      "refs": ["ancientgrudge"]
                     }
                   ],
                   "maxSize": 1
@@ -1131,15 +1166,18 @@
                   "option_id": "r29oqhcuu1284y04rorn1"
                 }
               ],
-              "option_id": "ikcj2r2mpsjrcy7h1h97p",
-              "unit_id": "runicSmith",
               "logo": "character"
             },
             {
               "name": "Engineer",
-              "cost": 110,
+              "cost": 100,
+              "option_id": "lg2w8c8kyspj5r8g18e8l",
+              "unit_id": "engineer",
               "refs": ["engineer", "tag_Dwarf", "tag_Metal Armour"],
-              "armyHasNotOption": [],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "type": "group",
@@ -1148,12 +1186,19 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
                       "cost": 0,
                       "option_id": "io0aivfw9hebaahs6953yr"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Ancient Grudge (1)",
+                      "cost": 30,
+                      "option_id": "7nr6aqcgd0rlnahv",
+                      "refs": ["ancientgrudge"]
                     }
                   ],
                   "maxSize": 1
@@ -1319,8 +1364,7 @@
                   "option_id": "sdefg437867u567-fdgrg"
                 }
               ],
-              "option_id": "lg2w8c8kyspj5r8g18e8l",
-              "unit_id": "engineer",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
@@ -1358,7 +1402,13 @@
           "options": [
             {
               "name": "Clan Warriors",
-              "cost": 20,
+              "cost": 15,
+              "option_id": "pnlgc2b8b5htnuktsb0j",
+              "unit_id": "clanWarriors",
+              "refs": ["clanwarriors", "tag_Dwarf", "tag_Metal Armour", "core_unit"],
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 15,
@@ -1369,7 +1419,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 11,
                       "options": [
                         {
                           "optionsLabel": "Options",
@@ -1378,7 +1428,8 @@
                               "type": "check",
                               "name": "Shield Wall",
                               "cost": 2,
-                              "option_id": "w5nqlrr2pvrf9ladzl7gf"
+                              "option_id": "w5nqlrr2pvrf9ladzl7gf",
+                              "refs": ["shieldwall"]
                             },
                             {
                               "type": "check",
@@ -1386,6 +1437,7 @@
                               "cost": 1,
                               "option_id": "p6bkqcfl9zbx4lotf6tlo",
                               "refs": [
+                                "throwingweapons",
                                 {
                                   "ref": "clans_thunder",
                                   "amount": 0.5
@@ -1403,7 +1455,9 @@
                                   "parentMult": false
                                 }
                               ],
-                              "option_id": "nfa91y8azpe40r86r3e3h"
+                              "option_id": "nfa91y8azpe40r86r3e3h",
+                              "rarity": "Extraordinary",
+                              "refs": ["vanguard"]
                             }
                           ],
                           "option_id": "zf3iw6pzq40f37ejgsewd"
@@ -1455,37 +1509,42 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant", "runicBanner"],
-                      "option_id": "31lwluwujixvknfaaviv6"
+                      "option_id": "31lwluwujixvknfaaviv6",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "judkod5lwoojdb7wsxijj"
+                      "option_id": "judkod5lwoojdb7wsxijj",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "r8ieqn1ukd9kog195tnmc"
                 }
               ],
-              "option_id": "pnlgc2b8b5htnuktsb0j",
-              "unit_id": "clanWarriors",
-              "logo": "core",
-              "refs": ["core_unit", "tag_Dwarf", "tag_Metal Armour"]
+              "logo": "core"
             },
             {
               "name": "Greybeards",
-              "cost": 20,
+              "cost": 40,
+              "option_id": "7heqqxalvg20xhbbn313u0b",
+              "unit_id": "greybeards",
+              "refs": ["greybeards", "tag_Dwarf", "tag_Metal Armour", "core_unit"],
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 10,
-                  "maxSize": 25,
+                  "maxSize": 30,
                   "addToUnitSize": true,
                   "options": [
                     {
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 16,
+                      "cost": 15,
                       "options": [
                         {
                           "optionsLabel": "Options",
@@ -1494,7 +1553,8 @@
                               "type": "check",
                               "name": "Shield Wall",
                               "cost": 2,
-                              "option_id": "smu7dsji0ofdbvaumenzl7"
+                              "option_id": "smu7dsji0ofdbvaumenzl7",
+                              "refs": ["shieldwall"]
                             },
                             {
                               "type": "check",
@@ -1502,6 +1562,7 @@
                               "cost": 3,
                               "option_id": "tv9siasz7onkqprnaa5bb",
                               "refs": [
+                                "throwingweapons",
                                 {
                                   "ref": "clans_thunder",
                                   "amount": 0.5
@@ -1519,7 +1580,9 @@
                                   "parentMult": false
                                 }
                               ],
-                              "option_id": "x74pefhhfv8h2968q5ux1u"
+                              "option_id": "x74pefhhfv8h2968q5ux1u",
+                              "rarity": "Extraordinary",
+                              "refs": ["vanguard"]
                             }
                           ],
                           "option_id": "hepgowc7u2p8lqkrcjlcgn"
@@ -1559,29 +1622,30 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant", "runicBanner"],
-                      "option_id": "3xkmks87rmphmsxqudr5w8"
+                      "option_id": "3xkmks87rmphmsxqudr5w8",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "ca0rxj2u7oq01zdcbsemzkg"
+                      "option_id": "ca0rxj2u7oq01zdcbsemzkg",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "g0lwgpb9bnvegol6o2x6zn"
                 }
               ],
-              "option_id": "7heqqxalvg20xhbbn313u0b",
-              "unit_id": "greybeards",
-              "logo": "core",
-              "refs": ["core_unit", "tag_Dwarf", "tag_Metal Armour"]
+              "logo": "core"
             },
             {
               "name": "Clan Marksmen",
-              "cost": 50,
-              "refs": ["clan_marksmen", "core_unit", "tag_Dwarf", "tag_Metal Armour"],
-              "extraCategories": ["clans_thunder"],
-              "armyHasNotOption": [],
+              "cost": 70,
+              "option_id": "dakiowl2tc5noftaf00xj",
+              "unit_id": "clanMarksmen",
+              "refs": ["clanmarksmen", "tag_Dwarf", "tag_Metal Armour", "clan_marksmen", "core_unit"],
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 10,
@@ -1592,7 +1656,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 14,
+                      "cost": 10,
                       "options": [
                         {
                           "type": "group",
@@ -1610,6 +1674,7 @@
                             {
                               "type": "check",
                               "name": "Crossbow (4+) and Great Weapon",
+                              "parsername": "Crossbow () and Great Weapon (4+)",
                               "cost": 1,
                               "option_id": "gwcrxbos34214ve0a931ptrzh5l",
                               "refs": ["clans_thunder"]
@@ -1631,7 +1696,8 @@
                               "type": "check",
                               "name": "Shield Wall",
                               "cost": 2,
-                              "option_id": "48q87b0ocxtwhows24dvfp"
+                              "option_id": "48q87b0ocxtwhows24dvfp",
+                              "refs": ["shieldwall"]
                             }
                           ],
                           "option_id": "rykwahanhd5xp7ja4q412"
@@ -1657,20 +1723,22 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant", "runicBanner"],
-                      "option_id": "ap5tw4mf8qi36e9gxpbye2"
+                      "option_id": "ap5tw4mf8qi36e9gxpbye2",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "ztc4g7aprzjphn2amdevu"
+                      "option_id": "ztc4g7aprzjphn2amdevu",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "rnxqkpoykphh0pjspcigr8"
                 }
               ],
-              "option_id": "dakiowl2tc5noftaf00xj",
-              "unit_id": "clanMarksmen",
+              "extraCategories": ["clans_thunder"],
+              "armyHasNotOption": [],
               "logo": "core"
             }
           ],
@@ -1683,8 +1751,12 @@
           "options": [
             {
               "name": "Deep Watch",
-              "cost": -10,
-              "refs": ["deep_watch", "tag_Dwarf", "tag_Metal Armour"],
+              "cost": -5,
+              "option_id": "mzjlqkktmajcuqrbnmkec5",
+              "unit_id": "deepWatch",
+              "refs": ["deepwatch", "tag_Dwarf", "tag_Metal Armour", "deep_watch"],
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 15,
@@ -1695,7 +1767,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 18,
+                      "cost": 19,
                       "option_id": "z4p93qd7uhbn90s19h4k2e",
                       "refs": ["deep_watch_amount"]
                     }
@@ -1716,27 +1788,32 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant", "runicBanner"],
-                      "option_id": "cgv5y6pn74u4wo548cnn7y"
+                      "option_id": "cgv5y6pn74u4wo548cnn7y",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "99d0l90xb7ais1qf7d7z4"
+                      "option_id": "99d0l90xb7ais1qf7d7z4",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "ezflcw7nqg5kt9b78ukxyq"
                 }
               ],
-              "option_id": "mzjlqkktmajcuqrbnmkec5",
-              "unit_id": "deepWatch",
               "logo": "special"
             },
             {
               "name": "Anvil of Power",
-              "refs": ["anvil_of_power", "war_machine", "not_a_leader", "tag_Dwarf", "tag_Metal Armour", "tag_Construct"],
-              "armyHasNotOption": [],
-              "cost": 200,
+              "cost": 210,
+              "option_id": "slikgro59okgxing3twd1b",
+              "unit_id": "anvilOfPower",
+              "refs": ["anvilofpower", "tag_Dwarf", "tag_Metal Armour", "tag_Construct", "anvil_of_power", "war_machine", "not_a_leader"],
+              "size": "1",
+              "rarity": "Extraordinary",
+              "height": "2",
+              "basesize": "60×60",
               "options": [
                 {
                   "option_id": "p7xoh2yagr0hr6q4u29j",
@@ -1775,15 +1852,17 @@
                   }
                 }
               ],
-              "option_id": "slikgro59okgxing3twd1b",
-              "unit_id": "anvilOfPower",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "King's Guard",
-              "cost": 45,
-              "refs": ["kings_guard", "tag_Dwarf", "tag_Metal Armour"],
-              "armyHasNotOption": [],
+              "cost": 35,
+              "option_id": "uam09d24cmgblejkri7rrq",
+              "unit_id": "kingsGuard",
+              "refs": ["kingsguard", "tag_Dwarf", "tag_Metal Armour", "kings_guard"],
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 15,
@@ -1815,27 +1894,32 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant", "runicBanner"],
-                      "option_id": "9dvgf49simtngvl1tnozs"
+                      "option_id": "9dvgf49simtngvl1tnozs",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "x39pmamqlefs9ccdvslyga"
+                      "option_id": "x39pmamqlefs9ccdvslyga",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "qox21sv34tbofjkhhp1fr"
                 }
               ],
-              "option_id": "uam09d24cmgblejkri7rrq",
-              "unit_id": "kingsGuard",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Miners",
-              "cost": 70,
+              "cost": 80,
+              "option_id": "cw7wnqeht1wlkiu0lxut7l",
+              "unit_id": "miners",
               "refs": ["miners", "tag_Dwarf", "tag_Metal Armour"],
-              "armyHasNotOption": [],
+              "rarity": "Rare",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 10,
@@ -1846,7 +1930,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 11,
+                      "cost": 10,
                       "options": [
                         {
                           "optionsLabel": "Options",
@@ -1907,30 +1991,35 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "option_id": "76cciofdwets44zdokeiz"
+                      "option_id": "76cciofdwets44zdokeiz",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "8xur572jd05t6j4f7ilwek"
+                      "option_id": "8xur572jd05t6j4f7ilwek",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "9qaz7x7r3rqzdxs57nvz4"
                 }
               ],
-              "option_id": "cw7wnqeht1wlkiu0lxut7l",
-              "unit_id": "miners",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Seekers",
-              "cost": 0,
+              "cost": -5,
+              "option_id": "8lwrsnfgze8u099razvrd",
+              "unit_id": "seekers",
               "refs": ["seekers", "tag_Dwarf"],
-              "armyHasNotOption": [],
+              "rarity": "Uncommon",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
-                  "minSize": 8,
+                  "minSize": 10,
                   "maxSize": 25,
                   "addToUnitSize": true,
                   "options": [
@@ -1938,7 +2027,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 20,
+                      "cost": 18,
                       "options": [
                         {
                           "optionsLabel": "Options",
@@ -1949,6 +2038,13 @@
                               "name": "Vanguard",
                               "cost": 3,
                               "option_id": "c7r8n8argq5cd7e8bke6j"
+                            },
+                            {
+                              "type": "check",
+                              "name": "Brothers of Vengeance",
+                              "cost": 2,
+                              "option_id": "1e0qc3kc0ezffr6o",
+                              "refs": ["brothersofvengeance"]
                             }
                           ],
                           "option_id": "76cakl20h3h7lf9hyxu1ho"
@@ -1958,7 +2054,20 @@
                       "refs": ["seekers_amount"]
                     }
                   ],
-                  "option_id": "l5gsuv03awb2fla8nl1n4"
+                  "option_id": "l5gsuv03awb2fla8nl1n4",
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["brothersofvengeance"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 15
+                      }
+                    }
+                  ]
                 },
                 {
                   "type": "group",
@@ -1968,105 +2077,46 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "option_id": "6j2qcvknbocqyxqy6q2pd"
+                      "option_id": "6j2qcvknbocqyxqy6q2pd",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "69van2frxiltdk3qojjdca"
+                      "option_id": "69van2frxiltdk3qojjdca",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "739gae3q8z42klgqu7mkfx"
                 }
               ],
-              "option_id": "8lwrsnfgze8u099razvrd",
-              "unit_id": "seekers",
-              "logo": "special"
-            },
-            {
-              "name": "Brothers of Vengeance",
-              "cost": -6,
-              "refs": ["seekers", "brothers_of_vengeance", "tag_Dwarf"],
-              "armyHasNotOption": [
-                {
-                  "refs": ["seekers"],
-                  "amount": 3
-                },
-                {
-                  "refs": ["brothers_of_vengeance"],
-                  "amount": 1
-                }
-              ],
-              "options": [
-                {
-                  "minSize": 8,
-                  "maxSize": 15,
-                  "addToUnitSize": true,
-                  "options": [
-                    {
-                      "hide": true,
-                      "name": "Number",
-                      "type": "numeric",
-                      "cost": 22,
-                      "options": [
-                        {
-                          "optionsLabel": "Options",
-                          "minSinze": 1,
-                          "options": [
-                            {
-                              "type": "check",
-                              "name": "Vanguard",
-                              "cost": 3,
-                              "option_id": "c7r8n8argsq5cd7e8bke6j"
-                            }
-                          ],
-                          "option_id": "76cakl20hs3h7lf9hyxu1ho"
-                        }
-                      ],
-                      "option_id": "y3cchyzmhhdfxlsxm8t81v",
-                      "refs": ["seekers_amount"]
-                    }
-                  ],
-                  "option_id": "l5gsuv0s3awb2fla8nl1n4"
-                },
-                {
-                  "type": "group",
-                  "optionsLabel": "Command Group",
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "Standard Bearer",
-                      "cost": 10,
-                      "option_id": "6j2qcvsknbocqyxqy6q2pd"
-                    },
-                    {
-                      "type": "check",
-                      "name": "Musician",
-                      "cost": 10,
-                      "option_id": "69vsan2frxiltdk3qojjdca"
-                    }
-                  ],
-                  "option_id": "7s39gae3q8z42klgqu7mkfx"
-                }
-              ],
-              "option_id": "s8lwrsnfgze8u099razvrd",
-              "unit_id": "seekers",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Vengeance Seeker",
-              "refs": ["vengeance_seeker", "tag_Dwarf"],
-              "armyHasNotOption": [],
-              "cost": 120,
+              "cost": 125,
               "option_id": "vgp2oc88eoge8jlmp3te6",
               "unit_id": "vengeanceSeeker",
+              "refs": ["vengeanceseeker", "tag_Dwarf", "vengeance_seeker"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "1",
+              "basesize": "20×20",
+              "options": [],
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Hold Guardians",
-              "cost": -20,
-              "refs": ["hold_guardians", "tag_Dwarf", "tag_Metal Armour"],
+              "cost": 15,
+              "option_id": "e37tokk4mgyzo6chuxmpp",
+              "unit_id": "holdGuardians",
+              "refs": ["holdguardians", "tag_Dwarf", "tag_Metal Armour", "hold_guardians"],
+              "rarity": "Rare",
+              "height": "3",
+              "basesize": "40×40",
               "options": [
                 {
                   "minSize": 3,
@@ -2077,7 +2127,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 90,
+                      "cost": 75,
                       "option_id": "7yicq5zknsmcqwu813enpi",
                       "refs": ["hold_guardians_amount"]
                     }
@@ -2098,45 +2148,55 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant", "runicBanner"],
-                      "option_id": "4ibyr9s3bhv5w577o8lgz3"
+                      "option_id": "4ibyr9s3bhv5w577o8lgz3",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "inmrfup1r1at9pz5tqvawn"
+                      "option_id": "inmrfup1r1at9pz5tqvawn",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "d1bpmokvzlflwc6uyn4c68"
                 }
               ],
-              "option_id": "e37tokk4mgyzo6chuxmpp",
-              "unit_id": "holdGuardians",
               "logo": "special"
             },
             {
               "name": "Grudge Buster",
+              "cost": 280,
+              "option_id": "dlnsy3ktpvcd0lm888h298",
+              "unit_id": "grudgeBuster",
               "refs": [
-                "grudge_buster",
+                "grudgebuster",
                 "tag_Dwarf",
                 "tag_Metal Armour",
                 "tag_Construct",
+                "grudge_buster",
                 {
                   "ref": "clans_thunder",
                   "amount": 5
                 }
               ],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
               "armyHasNotOption": [],
-              "cost": 280,
-              "option_id": "dlnsy3ktpvcd0lm888h298",
-              "unit_id": "grudgeBuster",
               "logo": "special"
             },
             {
               "name": "Rangers",
-              "cost": 40,
+              "cost": 60,
+              "option_id": "bjf1ukgina763w7ejlduf6",
+              "unit_id": "rangers",
               "refs": ["rangers", "tag_Dwarf", "tag_Metal Armour"],
-              "armyHasNotOption": [],
+              "rarity": "Rare",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 10,
@@ -2147,7 +2207,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 11,
+                      "cost": 9,
                       "options": [
                         {
                           "optionsLabel": "Ranged Weapons",
@@ -2200,8 +2260,8 @@
                               "type": "check",
                               "name": "Crag Warden",
                               "loses_rules": ["rulebook-scoring"],
-                              "cost": 1,
-                              "refs": ["ranger_skirmishers"],
+                              "cost": 2,
+                              "refs": ["cragwarden", "ranger_skirmishers"],
                               "hasNotOption": [
                                 {
                                   "amount": 15,
@@ -2213,8 +2273,9 @@
                             {
                               "type": "check",
                               "name": "Shield Wall",
-                              "cost": 2,
-                              "option_id": "fduz0smxtwegdx2zyqjzrm"
+                              "cost": 1,
+                              "option_id": "fduz0smxtwegdx2zyqjzrm",
+                              "refs": ["shieldwall"]
                             }
                           ],
                           "option_id": "lulxt2d7x3v8mkorvffvi"
@@ -2224,7 +2285,20 @@
                       "refs": ["rangers_amount"]
                     }
                   ],
-                  "option_id": "hccj1kbjysm5d50clyh5yt"
+                  "option_id": "hccj1kbjysm5d50clyh5yt",
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["cragwarden"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 15
+                      }
+                    }
+                  ]
                 },
                 {
                   "type": "group",
@@ -2234,26 +2308,32 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "option_id": "hgdp8oqqn9szas9z5nmm5"
+                      "option_id": "hgdp8oqqn9szas9z5nmm5",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "f0vsv5ws4zcli3r5xdesr"
+                      "option_id": "f0vsv5ws4zcli3r5xdesr",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "jsv2lgaf7hcd8tiycpn0d"
                 }
               ],
-              "option_id": "bjf1ukgina763w7ejlduf6",
-              "unit_id": "rangers",
+              "armyHasNotOption": [],
               "logo": "pistols"
             },
             {
               "name": "Forge Wardens",
-              "cost": 20,
-              "refs": ["forge_wardens", "tag_Dwarf", "tag_Metal Armour"],
+              "cost": 30,
+              "option_id": "t037tkh4k87fbxqeodum9",
+              "unit_id": "forgeWardens",
+              "refs": ["forgewardens", "tag_Dwarf", "tag_Metal Armour", "forge_wardens"],
+              "rarity": "Rare",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 10,
@@ -2291,27 +2371,31 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant", "runicBanner"],
-                      "option_id": "q54x2hmgv2o26m26491"
+                      "option_id": "q54x2hmgv2o26m26491",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "iwarkwvxk7dluvn5e5mq9"
+                      "option_id": "iwarkwvxk7dluvn5e5mq9",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "vq0yoooe27c1nqkzcnwv6"
                 }
               ],
-              "option_id": "t037tkh4k87fbxqeodum9",
-              "unit_id": "forgeWardens",
               "logo": "pistols"
             },
             {
               "name": "Steam Copters",
-              "refs": ["steam_copter", "tag_Dwarf", "tag_Metal Armour", "tag_Construct"],
-              "armyHasNotOption": [],
               "cost": 60,
+              "option_id": "0ztoz1oqlxu9zfthappx7cs",
+              "unit_id": "steamCopters",
+              "refs": ["steamcopters", "tag_Construct", "tag_Dwarf", "tag_Metal Armour", "steam_copter"],
+              "rarity": "Uncommon",
+              "height": "2",
+              "basesize": "40×40",
               "options": [
                 {
                   "minSize": 1,
@@ -2322,7 +2406,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 130,
+                      "cost": 120,
                       "options": [
                         {
                           "optionsLabel": "Type",
@@ -2372,8 +2456,7 @@
                   "option_id": "hgq2qcgtoq8qr4f6jex6g9"
                 }
               ],
-              "option_id": "0ztoz1oqlxu9zfthappx7cs",
-              "unit_id": "steamCopters",
+              "armyHasNotOption": [],
               "logo": "pistols"
             }
           ],
@@ -2385,8 +2468,14 @@
           "options": [
             {
               "name": "Field Artillery",
-              "refs": ["field_artillery", "war_machine", "tag_Dwarf", "tag_Metal Armour", "tag_Construct"],
-              "cost": 100,
+              "cost": 95,
+              "option_id": "r1riufbrxto99jur1glzas",
+              "unit_id": "fieldArtillery",
+              "refs": ["fieldartillery", "tag_Dwarf", "tag_Metal Armour", "tag_Construct", "field_artillery", "war_machine"],
+              "size": "1",
+              "rarity": "Regular",
+              "height": "2",
+              "basesize": "60×60",
               "options": [
                 {
                   "optionsLabel": "Artillery Weapon",
@@ -2568,8 +2657,6 @@
                   "option_id": "o6ulbdlfcccbwh8b2eoof"
                 }
               ],
-              "option_id": "r1riufbrxto99jur1glzas",
-              "unit_id": "fieldArtillery",
               "logo": "cannonballs",
               "armyHasNotOption": []
             }
@@ -2582,35 +2669,42 @@
           "options": [
             {
               "name": "Shield Bearers *Mount",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "refs": ["mount", "shieldBearers_mount_unit", "tag_Dwarf", "tag_Mount"],
-              "armyHasNotOption": [],
-              "unit_id": "shieldBearersMount",
-              "invisible": true,
+              "cost": 0,
               "option_id": "5ljhvqulejdmg4ljfova5o",
+              "unit_id": "shieldBearersMount",
+              "refs": ["shieldbearersmount", "tag_Mount", "tag_Dwarf", "mount", "shieldBearers_mount_unit"],
+              "invisible": true,
+              "rarity": "Rare",
+              "height": "1",
+              "basesize": "40×20",
+              "options": [],
+              "category": "mounts",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
               "name": "War Throne *Mount",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
+              "cost": 0,
+              "option_id": "zxvq71y49zahl2tkeytlrq",
+              "unit_id": "warThroneMount",
               "refs": [
+                "warthronemount",
+                "tag_Mount",
+                "tag_Dwarf",
                 "mount",
                 "warThrone_mount_unit",
                 {
                   "ref": "grudge",
                   "amount": 1
-                },
-                "tag_Dwarf",
-                "tag_Mount"
+                }
               ],
-              "armyHasNotOption": [],
-              "unit_id": "warThroneMount",
               "invisible": true,
-              "option_id": "zxvq71y49zahl2tkeytlrq",
+              "rarity": "Rare",
+              "height": "3",
+              "basesize": "40×60",
+              "options": [],
+              "category": "mounts",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
