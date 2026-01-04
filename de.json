@@ -579,23 +579,25 @@
                   "options": [
                     {
                       "name": "Kraken's Hide",
-                      "cost": 20,
+                      "cost": 10,
                       "type": "check",
                       "ignoreCost": true,
                       "hasNotOption": ["mount"],
-                      "option_id": "3efdfdsfdsfdsgfdgwef32rf34w2fsd"
+                      "option_id": "3efdfdsfdsfdsgfdgwef32rf34w2fsd",
+                      "refs": ["krakenshide"]
                     },
                     {
                       "type": "check",
                       "name": "Shield",
-                      "cost": 10,
+                      "cost": 5,
                       "optionsLabel": "Shield Enchant",
                       "maxSize": 1,
                       "sortOptions": true,
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["shieldEnchant"],
-                      "option_id": "zo8o42v4khqvwyt712rqi"
+                      "option_id": "zo8o42v4khqvwyt712rqi",
+                      "refs": ["shield"]
                     },
                     {
                       "optionsLabel": "Armour Enchant",
@@ -614,7 +616,7 @@
                         {
                           "type": "check",
                           "name": "Paired Weapons",
-                          "cost": 5,
+                          "cost": 10,
                           "maxSize": 1,
                           "optionsLabel": "Paired Weapons Enchant",
                           "optionsSuffix": " (Paired Weapons)",
@@ -622,12 +624,13 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "vilhy634kutw5x05nnnw"
+                          "option_id": "vilhy634kutw5x05nnnw",
+                          "refs": ["pairedweapons"]
                         },
                         {
                           "type": "check",
                           "name": "Halberd",
-                          "cost": 10,
+                          "cost": 5,
                           "maxSize": 1,
                           "optionsLabel": "Halberd Enchant",
                           "optionsSuffix": " (Halberd)",
@@ -635,12 +638,13 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "halberdEnchant"],
-                          "option_id": "zj4olqcgjmy5ktymiq3c8"
+                          "option_id": "zj4olqcgjmy5ktymiq3c8",
+                          "refs": ["halberd"]
                         },
                         {
                           "type": "check",
                           "name": "Spear",
-                          "cost": 5,
+                          "cost": 0,
                           "maxSize": 1,
                           "optionsLabel": "Spear Enchant",
                           "optionsSuffix": " (Spear)",
@@ -649,12 +653,13 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant", "spearEnchant"],
                           "option_id": "fewf32fewhj44v3t43tc6uuxhfdt",
-                          "hasNotOption": ["mount"]
+                          "hasNotOption": ["mount"],
+                          "refs": ["spear"]
                         },
                         {
                           "type": "check",
                           "name": "Great Weapon and Elven Finesse",
-                          "cost": 15,
+                          "cost": 20,
                           "maxSize": 1,
                           "optionsLabel": "Great Weapon Enchant",
                           "optionsSuffix": " (Great Weapon)",
@@ -662,12 +667,13 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
-                          "option_id": "l5p59qgmqhsiqkhesu0id"
+                          "option_id": "l5p59qgmqhsiqkhesu0id",
+                          "refs": ["gwandelvenfinesse"]
                         },
                         {
                           "type": "check",
                           "name": "Lance",
-                          "cost": 15,
+                          "cost": 5,
                           "maxSize": 1,
                           "optionsLabel": "Lance Enchant",
                           "optionsSuffix": " (Lance)",
@@ -676,7 +682,8 @@
                           "options": [],
                           "hasOption": ["mount"],
                           "optionsDict": ["weaponEnchant", "lanceEnchant"],
-                          "option_id": "88gr3ts058d3v400wjp3ns"
+                          "option_id": "88gr3ts058d3v400wjp3ns",
+                          "refs": ["lance"]
                         }
                       ],
                       "option_id": "vwm86trg71malwcafdtvy"
@@ -800,13 +807,14 @@
                       "type": "check",
                       "option_id": "4v6mvmn16vua2d8qugci45",
                       "cost": 0,
-                      "hasNotOption": ["solitary"]
+                      "hasNotOption": ["solitary"],
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Elven Horse",
-                      "cost": 35,
-                      "refs": ["mount"],
+                      "cost": 40,
+                      "refs": ["elvenhorse", "mount"],
                       "refopt": "elvenHorseMount",
                       "option_id": "r0b5yc5yegi9gcfo3s79s5",
                       "hasNotOption": ["solitary"]
@@ -815,7 +823,7 @@
                       "type": "check",
                       "name": "Raptor",
                       "cost": 40,
-                      "refs": ["mount"],
+                      "refs": ["raptor", "mount"],
                       "refopt": "raptorMount",
                       "option_id": "rxpvxjqo28bdlma4lyjew",
                       "hasNotOption": ["solitary"]
@@ -824,7 +832,7 @@
                       "type": "check",
                       "name": "Blackmane Pegasus",
                       "cost": 90,
-                      "refs": ["mount"],
+                      "refs": ["blackmanepegasus", "mount"],
                       "refopt": "blackmanePegasusMount",
                       "option_id": "tcez9uw0xcjma014vwa1o",
                       "hasNotOption": ["captain"]
@@ -833,7 +841,7 @@
                       "type": "check",
                       "name": "Raptor Chariot",
                       "cost": 115,
-                      "refs": ["mount"],
+                      "refs": ["raptorchariot", "mount"],
                       "refopt": "raptorChariotMount",
                       "option_id": "v15h5udhw4zshiq5kizga",
                       "hasNotOption": ["captain"]
@@ -841,8 +849,8 @@
                     {
                       "type": "check",
                       "name": "Manticore",
-                      "cost": 220,
-                      "refs": ["mount"],
+                      "cost": 240,
+                      "refs": ["manticore", "mount"],
                       "refopt": "manticoreMount",
                       "option_id": "1ht5h23we6ed03esgow3hk",
                       "hasNotOption": ["captain"]
@@ -880,7 +888,7 @@
                           "type": "check",
                           "name": "Shield",
                           "cost": 5,
-                          "refs": [],
+                          "refs": ["shield"],
                           "optionsLabel": "Shield Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -895,7 +903,8 @@
                           "hasNotOption": ["mount"],
                           "cost": 15,
                           "option_id": "do9bof66grajm0dx1j81dn",
-                          "ignoreCost": true
+                          "ignoreCost": true,
+                          "refs": ["krakenshide"]
                         }
                       ],
                       "collapsible": true,
@@ -917,7 +926,7 @@
                           "type": "check",
                           "name": "Paired Weapons",
                           "cost": 5,
-                          "refs": [],
+                          "refs": ["pairedweapons"],
                           "optionsLabel": "Paired Weapons Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -931,7 +940,7 @@
                           "type": "check",
                           "name": "Spear",
                           "cost": 5,
-                          "refs": [],
+                          "refs": ["spear"],
                           "optionsLabel": "Spear Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -946,7 +955,7 @@
                           "type": "check",
                           "name": "Lance",
                           "cost": 10,
-                          "refs": [],
+                          "refs": ["lance"],
                           "optionsLabel": "Lance Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -960,7 +969,7 @@
                           "type": "check",
                           "name": "Halberd",
                           "cost": 5,
-                          "refs": [],
+                          "refs": ["halberd"],
                           "optionsLabel": "Halberd Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -974,7 +983,7 @@
                           "type": "check",
                           "name": "Great Weapon and Elven Finesse",
                           "cost": 10,
-                          "refs": [],
+                          "refs": ["gwandelvenfinesse"],
                           "optionsLabel": "Great Weapon Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -1046,7 +1055,8 @@
                       "type": "check",
                       "name": "Commanding Presence (Academy)",
                       "cost": 20,
-                      "option_id": "dsfdsf23fg32g32d32d32"
+                      "option_id": "dsfdsf23fg32g32d32d32",
+                      "refs": ["commandingpresence"]
                     }
                   ]
                 }
@@ -1068,7 +1078,7 @@
               "logo": "character"
             },
             {
-              "name": "Silent Assassin",
+              "name": "silentAssassin",
               "cost": 130,
               "option_id": "chydjz6qmql5zehjtu1sow",
               "unit_id": "silentAssassin",
@@ -1152,8 +1162,8 @@
                         {
                           "type": "check",
                           "name": "Paired Weapons",
-                          "cost": 10,
-                          "refs": [],
+                          "cost": 15,
+                          "refs": ["pairedweapons"],
                           "optionsLabel": "Paired Weapons Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -1167,7 +1177,7 @@
                           "type": "check",
                           "name": "Halberd",
                           "cost": 5,
-                          "refs": [],
+                          "refs": ["halberd"],
                           "optionsLabel": "Halberd Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -1180,8 +1190,8 @@
                         {
                           "type": "check",
                           "name": "Great Weapon and Elven Finesse",
-                          "cost": 10,
-                          "refs": [],
+                          "cost": 25,
+                          "refs": ["gwandelvenfinesse"],
                           "optionsLabel": "Great Weapon Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -1195,7 +1205,7 @@
                           "type": "check",
                           "name": "Spear",
                           "cost": 0,
-                          "refs": [],
+                          "refs": ["spear"],
                           "optionsLabel": "Spear Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -1255,14 +1265,14 @@
                   "collapsible": true,
                   "options": [
                     {
-                      "refs": ["wizardApprentice", "wizardApprenticeOrAdept"],
+                      "refs": ["wizardapprentice", "wizardApprentice", "wizardApprenticeOrAdept"],
                       "name": "Wizard Apprentice",
                       "type": "check",
                       "cost": 0,
                       "option_id": "fz73leuaf2415o5bfdnphnm"
                     },
                     {
-                      "refs": ["wizardAdept", "wizardApprenticeOrAdept"],
+                      "refs": ["wizardadept", "wizardAdept", "wizardApprenticeOrAdept"],
                       "name": "Wizard Adept",
                       "type": "check",
                       "cost": 100,
@@ -1347,13 +1357,14 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "5iorh9bl3oifay95fzhi17",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Elven Horse",
-                      "cost": 20,
-                      "refs": ["mount"],
+                      "cost": 25,
+                      "refs": ["elvenhorsemount", "mount"],
                       "refopt": "elvenHorseMount",
                       "option_id": "7f23os561w4aa91rxj4t0f"
                     },
@@ -1361,7 +1372,7 @@
                       "type": "check",
                       "name": "Raptor",
                       "cost": 25,
-                      "refs": ["mount"],
+                      "refs": ["raptormount", "mount"],
                       "refopt": "raptorMount",
                       "option_id": "kbqdw8lxr6qskd7lt5vrj"
                     },
@@ -1369,7 +1380,7 @@
                       "type": "check",
                       "name": "Blackmane Pegasus",
                       "cost": 35,
-                      "refs": ["mount"],
+                      "refs": ["blackmanepegasus", "mount"],
                       "refopt": "blackmanePegasusMount",
                       "option_id": "ahvpjet52amz9ke2nbv5pr"
                     },
@@ -1377,7 +1388,7 @@
                       "type": "check",
                       "name": "Manticore",
                       "cost": 100,
-                      "refs": ["mount"],
+                      "refs": ["manticore", "mount"],
                       "refopt": "manticoreMount",
                       "option_id": "nk2x1z5oruk9u15zpy1gj4",
                       "hasOption": ["wizardMaster"]
@@ -1386,7 +1397,7 @@
                       "type": "check",
                       "name": "Imperious Dragon",
                       "cost": 380,
-                      "refs": ["mount"],
+                      "refs": ["imperiousdragon", "mount"],
                       "refopt": "imperiousDragonMount",
                       "option_id": "laxzvti4d8plbz2jgcnyg",
                       "hasOption": ["wizardMaster"]
@@ -1493,14 +1504,14 @@
                       "minSize": 1,
                       "options": [
                         {
-                          "refs": ["wizardAdept"],
+                          "refs": ["wizardadept", "wizardAdept"],
                           "name": "Wizard Adept",
                           "type": "check",
                           "cost": 0,
                           "option_id": "2322l0pkiiodgvp3h7z27qmr"
                         },
                         {
-                          "refs": ["wizardMaster"],
+                          "refs": ["wizardmaster", "wizardMaster"],
                           "name": "Wizard Master",
                           "type": "check",
                           "cost": 150,
@@ -1584,7 +1595,7 @@
               "logo": "character"
             },
             {
-              "name": "Tethaen, the Ocean Terror",
+              "name": "Techainin and Blaishoi",
               "cost": 600,
               "option_id": "64gix37zty3xd3hs",
               "unit_id": "techaininAndBlaishoi",
@@ -1751,14 +1762,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "pcamup8swzt7fgk0wvke"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["standardbearer"],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -1814,17 +1825,17 @@
                             {
                               "type": "check",
                               "name": "Repeater Handbow (4+)",
-                              "cost": 3,
-                              "refs": ["corsairs_rhb", "raiders"],
+                              "cost": 5,
+                              "refs": ["repeaterhandbow", "corsairs_rhb", "raiders"],
                               "option_id": "fsdf5432e2htujkhujljk654"
                             },
                             {
                               "type": "check",
-                              "name": "Vanguard (3)",
+                              "name": "Vanguard (3 Mob)",
+                              "parsername": "Vanguard (3)",
                               "cost": 1,
                               "option_id": "8yvapjubqw8tihx6",
-                              "refs": ["vanguard"],
-                              "_perModel": true
+                              "refs": ["vanguard"]
                             }
                           ],
                           "option_id": "n9m0on4li2ge82ltvh8v5"
@@ -1843,14 +1854,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "xozmq15a31pnlb3yopwmu"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["standardbearer"],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -1913,14 +1924,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "2rsgynd5crsu30yg3bvnn"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["standardbearer"],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -1988,47 +1999,24 @@
                           "options": [
                             {
                               "type": "check",
-                              "name": "Light Lance",
+                              "name": "Shield",
                               "cost": 1,
-                              "option_id": "gdfgreg342fgsdgfdgfd231"
+                              "option_id": "2w1jfupeba8lna85",
+                              "refs": ["shield"],
+                              "rarity": "Rare"
                             },
-                            {
-                              "type": "check",
-                              "name": "Light Lance and Repeater Crossbow (3+)",
-                              "cost": 0,
-                              "refs": ["crossbow_riders", "raiders"],
-                              "option_id": "3l92ysgguewg2d4oghlkzf"
-                            }
-                          ],
-                          "maxSize": 1,
-                          "minSize": 1,
-                          "option_id": "pml6euh30w058rjahod9il"
-                        },
-                        {
-                          "type": "group",
-                          "name": "Options",
-                          "optionsLabel": "Options",
-                          "option_id": "qh8dq4two1onsoiy",
-                          "options": [
                             {
                               "type": "check",
                               "name": "Repeater Crossbow (3+)",
                               "cost": 5,
                               "option_id": "uo5q7o85vweojg34",
                               "refs": ["repeatercrossbow"],
-                              "rarity": "Rare",
-                              "_perModel": true
-                            },
-                            {
-                              "type": "check",
-                              "name": "Shield",
-                              "cost": 1,
-                              "option_id": "2w1jfupeba8lna85",
-                              "refs": ["shield"],
-                              "rarity": "Rare",
-                              "_perModel": true
+                              "rarity": "Rare"
                             }
-                          ]
+                          ],
+                          "maxSize": 1,
+                          "minSize": 1,
+                          "option_id": "pml6euh30w058rjahod9il"
                         }
                       ],
                       "option_id": "xe9cv67urqltsw5tqmtmij"
@@ -2043,14 +2031,15 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "068wvwjunvd871x9q4pdlz6"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "option_id": "yb5vtr9c8krjwnvtvymx1b"
+                      "option_id": "yb5vtr9c8krjwnvtvymx1b",
+                      "refs": ["standardbearer"]
                     }
                   ],
                   "option_id": "azumentx9ne9vyldzg0ozk"
@@ -2122,14 +2111,16 @@
                             {
                               "type": "check",
                               "name": "Lance",
-                              "cost": 5,
-                              "option_id": "qrtyzm8nenkkvq68975nzd"
+                              "cost": 7,
+                              "option_id": "qrtyzm8nenkkvq68975nzd",
+                              "refs": ["lance"]
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon and Elven Finesse",
-                              "cost": 4,
-                              "option_id": "wf64n7wnr3hm8fow8vnh8"
+                              "cost": 6,
+                              "option_id": "wf64n7wnr3hm8fow8vnh8",
+                              "refs": ["gwandelvenfinesse"]
                             }
                           ],
                           "option_id": "zuc53nfp7la3ufdy7bdvtv"
@@ -2190,13 +2181,15 @@
                   "type": "check",
                   "cost": 0,
                   "name": "Halberd",
-                  "option_id": "43fdser36jphgf6567120gffdg4fe6"
+                  "option_id": "43fdser36jphgf6567120gffdg4fe6",
+                  "refs": ["halberd"]
                 },
                 {
                   "type": "check",
                   "cost": 0,
                   "name": "Lance",
-                  "option_id": "3njkfdss[pk320-irjkuv6y0i3r2"
+                  "option_id": "3njkfdss[pk320-irjkuv6y0i3r2",
+                  "refs": ["lance"]
                 }
               ],
               "armyHasNotOption": [],
@@ -2248,21 +2241,24 @@
               "options": [
                 {
                   "name": "Altar of Nabh",
-                  "cost": 10,
+                  "cost": 40,
                   "type": "check",
-                  "option_id": "xuomkf5s4psq9w9gfk62h"
+                  "option_id": "xuomkf5s4psq9w9gfk62h",
+                  "refs": ["altarofnabh"]
                 },
                 {
                   "name": "Altar of Tila",
                   "cost": 0,
                   "type": "check",
-                  "option_id": "89w0u6ji95u1n03fz1elpv"
+                  "option_id": "89w0u6ji95u1n03fz1elpv",
+                  "refs": ["altaroftila"]
                 },
                 {
                   "name": "Altar of Yema",
                   "cost": 30,
                   "type": "check",
-                  "option_id": "dyzqw2cu1xhmpx7txt6xk"
+                  "option_id": "dyzqw2cu1xhmpx7txt6xk",
+                  "refs": ["altarofyema"]
                 }
               ],
               "armyHasNotOption": [],
@@ -2305,15 +2301,15 @@
                             {
                               "type": "check",
                               "name": "Halberd",
-                              "cost": 10,
-                              "refs": [],
+                              "cost": 5,
+                              "refs": ["halberd"],
                               "option_id": "ap1y7xzq7twrv37wj3d6kg"
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 0,
-                              "refs": [],
+                              "refs": ["pairedweapons"],
                               "option_id": "sg7r29bum1hr5aphrguf4"
                             }
                           ],
@@ -2332,7 +2328,7 @@
               "logo": "special"
             },
             {
-              "name": "Judicators",
+              "name": "judicators",
               "cost": 60,
               "option_id": "d5zt2o412rzfaw86dgaxn",
               "unit_id": "judicators",
@@ -2377,14 +2373,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "q3utskiy2jictaga57mtd"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["standardbearer"],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -2446,14 +2442,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "nw8mp8w1d0eieo7gmcafp"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["standardbearer"],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -2542,7 +2538,8 @@
                           "option_id": "f23f932j0few-gdkg34-ib34g34",
                           "type": "check",
                           "cost": 5,
-                          "name": "Temple Acolytes"
+                          "name": "Temple Acolytes",
+                          "refs": ["templeacolytes"]
                         },
                         {
                           "option_id": "gfr68567gfj5634wfg342gf43",
@@ -2570,7 +2567,8 @@
                                 "ref": "curse_phantom_queen"
                               }
                             ]
-                          }
+                          },
+                          "refs": ["warlockacolytes"]
                         }
                       ],
                       "option_id": "eh6ae9b4nesqpamwcd7bf",
@@ -2591,13 +2589,15 @@
                       "sortOptions": true,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "f34fergvesdrht56yr534g54h4"
+                      "option_id": "f34fergvesdrht56yr534g54h4",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "9gmb934jfg34wnm0g34v34g"
+                      "option_id": "9gmb934jfg34wnm0g34v34g",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "xivrum84rs8juj04ux0cto"
@@ -2656,36 +2656,9 @@
               "basesize": "20×20",
               "options": [
                 {
-                  "definesType": true,
-                  "optionsLabel": "Type",
-                  "option_id": "fn3289gfn329gn239gf32g32g32",
-                  "options": [
-                    {
-                      "name": "Covert Operatives",
-                      "type": "check",
-                      "cost": 0,
-                      "option_id": "fm432ign2390fn3290f32f23f23",
-                      "refs": ["covert_operatives"]
-                    }
-                  ]
-                },
-                {
                   "minSize": 5,
                   "maxSize": 10,
                   "addToUnitSize": true,
-                  "override": [
-                    {
-                      "hasOption": [
-                        {
-                          "refs": ["covert_operatives"],
-                          "amount": 1
-                        }
-                      ],
-                      "options": {
-                        "minSize": 5
-                      }
-                    }
-                  ],
                   "options": [
                     {
                       "name": "Number",
@@ -2694,52 +2667,22 @@
                       "hide": true,
                       "optionsLabel": "Ranged Weapon",
                       "maxSize": 1,
-                      "override": [
-                        {
-                          "hasOption": [
-                            {
-                              "refs": ["covert_operatives"],
-                              "amount": 1
-                            }
-                          ],
-                          "options": {
-                            "cost": 30,
-                            "minSize": 1
-                          }
-                        }
-                      ],
+                      "minSize": 1,
                       "options": [
                         {
                           "type": "check",
                           "cost": 0,
                           "name": "Repeater Crossbow (3+)",
                           "option_id": "3vbqeyazxz6ipz5a26u3yh",
-                          "hasOption": ["covert_operatives"],
-                          "refs": ["raiders"]
+                          "refs": ["repeatercrossbow", "raiders"]
                         },
                         {
                           "type": "check",
                           "cost": 3,
-                          "name": "Repeater Handbow (4+) and Poison Attacks",
+                          "name": "Repeater Handbow (4+) and Poison Attacks (Shooting)",
+                          "parsername": "Repeater Handbow (4+) and Poison Attacks (Shooting) (4+)",
                           "option_id": "czpcepax1xszdejebhobqd",
-                          "hasOption": ["covert_operatives"],
-                          "refs": ["raiders"]
-                        },
-                        {
-                          "type": "group",
-                          "name": "Options",
-                          "optionsLabel": "Options",
-                          "option_id": "dghj735f71ab4f9f",
-                          "options": [
-                            {
-                              "type": "check",
-                              "name": "Repeater Handbow (4+) and Poison Attacks (Shooting) (4+)",
-                              "cost": 3,
-                              "option_id": "f39qr413p3jrmgqj",
-                              "refs": ["repeaterhandbowandpoisonattacks"],
-                              "_perModel": true
-                            }
-                          ]
+                          "refs": ["repeaterhandbowandpoisonattacks"]
                         }
                       ],
                       "option_id": "qrcxnhdcm9rx3xxjypkcb",
@@ -2755,7 +2698,7 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "b3calxrc0r8ldhgpc7t7n"
                     }
                   ],
