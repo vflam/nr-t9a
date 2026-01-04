@@ -287,7 +287,7 @@
         },
         {
           "type": "numeric",
-          "name": "Rune of Channelling",
+          "name": "Rune of Channeling",
           "refs": ["dh_ar_mastery"],
           "cost": 35,
           "description": "\t<span class=\"textbf\">Channel(1)</span>. This Runic Artefact can only be used if the model’s army total combined value for <span class=\"textbf\">Channel</span> is 3 or less (excluding <span class=\"textbf\">Channel</span> from this Runic Artefact).",
@@ -625,7 +625,8 @@
                       "name": "Shield Wall",
                       "cost": 20,
                       "ignoreCost": true,
-                      "option_id": "7412lzxdqi3dvyeifw6w6i"
+                      "option_id": "7412lzxdqi3dvyeifw6w6i",
+                      "refs": ["shieldwall"]
                     },
                     {
                       "optionsLabel": "Ranged Weapon",
@@ -638,7 +639,7 @@
                           "cost": 5,
                           "ignoreCost": true,
                           "option_id": "3y207p5hb3xh4uslvn47mo",
-                          "refs": ["clans_thunder"]
+                          "refs": ["pistol", "clans_thunder"]
                         },
                         {
                           "type": "check",
@@ -646,7 +647,7 @@
                           "cost": 5,
                           "ignoreCost": true,
                           "option_id": "cjaj2jgu7pluwgvxhb6jf",
-                          "refs": ["clans_thunder"]
+                          "refs": ["guildcraftedhandgun", "clans_thunder"]
                         },
                         {
                           "type": "check",
@@ -654,7 +655,7 @@
                           "cost": 5,
                           "ignoreCost": true,
                           "option_id": "j1n40qz6r0ar8ldrzb76sl",
-                          "refs": ["clans_thunder"]
+                          "refs": ["crossbow", "clans_thunder"]
                         }
                       ],
                       "option_id": "1ca5ph35zj8zvamn06c3u"
@@ -679,9 +680,10 @@
                         {
                           "type": "check",
                           "name": "Great Weapon",
-                          "cost": 10,
+                          "cost": 5,
                           "ignoreCost": true,
-                          "option_id": "66u62t78q05bfayinszk1m"
+                          "option_id": "66u62t78q05bfayinszk1m",
+                          "refs": ["greatweapon"]
                         }
                       ],
                       "option_id": "fvjry5ijw5ed5qyiw0k9n8"
@@ -749,7 +751,8 @@
                           }
                         ]
                       },
-                      "option_id": "h3htrfdhfgj456j54j54j54f"
+                      "option_id": "h3htrfdhfgj456j54j54j54f",
+                      "refs": ["uptoonebattlerune"]
                     }
                   ],
                   "option_id": "340gre0bker-b34-b3h3h"
@@ -870,9 +873,10 @@
                     {
                       "type": "check",
                       "name": "Shield Wall",
-                      "cost": 20,
+                      "cost": 25,
                       "ignoreCost": true,
-                      "option_id": "1c486hhpykvskm6yy68bj"
+                      "option_id": "1c486hhpykvskm6yy68bj",
+                      "refs": ["shieldwall"]
                     },
                     {
                       "optionsLabel": "Ranged Weapon",
@@ -885,7 +889,7 @@
                           "cost": 5,
                           "ignoreCost": true,
                           "option_id": "emwjz6blepf2sia879pwdp",
-                          "refs": ["clans_thunder"]
+                          "refs": ["pistol", "clans_thunder"]
                         },
                         {
                           "type": "check",
@@ -893,7 +897,7 @@
                           "cost": 5,
                           "ignoreCost": true,
                           "option_id": "u4zf4gdfb70apux7l7xf5v",
-                          "refs": ["clans_thunder"]
+                          "refs": ["guildcraftedhandgun", "clans_thunder"]
                         },
                         {
                           "type": "check",
@@ -901,7 +905,7 @@
                           "cost": 5,
                           "ignoreCost": true,
                           "option_id": "wd2526zrw3lxcsctzwcth",
-                          "refs": ["clans_thunder"]
+                          "refs": ["crossbow", "clans_thunder"]
                         }
                       ],
                       "option_id": "p6jkjrkhdjn1ant1a4jq1l"
@@ -928,7 +932,8 @@
                           "name": "Great Weapon",
                           "cost": 5,
                           "ignoreCost": true,
-                          "option_id": "mnf1ghhf0img7s1o05weq"
+                          "option_id": "mnf1ghhf0img7s1o05weq",
+                          "refs": ["greatweapon"]
                         }
                       ],
                       "option_id": "nv3274o374rypk0tzrel2"
@@ -963,7 +968,7 @@
             },
             {
               "name": "Dragon Seeker",
-              "cost": 160,
+              "cost": 250,
               "option_id": "ds4kqir5y5tzk5oalqxhvg",
               "unit_id": "dragonSeeker",
               "refs": ["dragonseeker", "tag_Dwarf", "dragon_seeker", "not_a_leader"],
@@ -1002,14 +1007,16 @@
                     {
                       "name": "Monster Seeker",
                       "type": "check",
-                      "cost": 90,
-                      "option_id": "jchweuxsi4mpemm8eu1wjf"
+                      "cost": 20,
+                      "option_id": "jchweuxsi4mpemm8eu1wjf",
+                      "refs": ["monsterseeker"]
                     },
                     {
                       "name": "Grim Resolve",
                       "type": "check",
-                      "cost": 70,
-                      "option_id": "l1v4me9kcpmx1eavvyxsn"
+                      "cost": 0,
+                      "option_id": "l1v4me9kcpmx1eavvyxsn",
+                      "refs": ["grimresolve"]
                     }
                   ],
                   "option_id": "cvsx4q79k0lfnfljahjkh"
@@ -1067,9 +1074,10 @@
                     {
                       "type": "check",
                       "name": "Shield Wall",
-                      "cost": 20,
+                      "cost": 25,
                       "ignoreCost": true,
-                      "option_id": "r0ndo25z7m1dtnx0fmgju"
+                      "option_id": "r0ndo25z7m1dtnx0fmgju",
+                      "refs": ["shieldwall"]
                     },
                     {
                       "optionsLabel": "Armour Runes",
@@ -1091,9 +1099,10 @@
                         {
                           "type": "check",
                           "name": "Great Weapon",
-                          "cost": 5,
+                          "cost": 0,
                           "ignoreCost": true,
-                          "option_id": "1ve12y6zqjp7lyzy82673p"
+                          "option_id": "1ve12y6zqjp7lyzy82673p",
+                          "refs": ["greatweapon"]
                         }
                       ],
                       "option_id": "ayiafzt9rjo8fxqk7j17dq"
@@ -1211,9 +1220,10 @@
                     {
                       "type": "check",
                       "name": "Shield Wall",
-                      "cost": 15,
+                      "cost": 10,
                       "ignoreCost": true,
-                      "option_id": "mj4qt6g59d9vdhvyw97nj"
+                      "option_id": "mj4qt6g59d9vdhvyw97nj",
+                      "refs": ["shieldwall"]
                     },
                     {
                       "optionsLabel": "Ranged Weapon",
@@ -1226,7 +1236,7 @@
                           "cost": 5,
                           "ignoreCost": true,
                           "option_id": "27xsgsb7z62ljaznvqgkq",
-                          "refs": ["clans_thunder"]
+                          "refs": ["pistol", "clans_thunder"]
                         },
                         {
                           "type": "check",
@@ -1234,7 +1244,7 @@
                           "cost": 5,
                           "ignoreCost": true,
                           "option_id": "2lphiqhqn5ji58ro37t1vl",
-                          "refs": ["clans_thunder"]
+                          "refs": ["guildcraftedhandgun", "clans_thunder"]
                         },
                         {
                           "type": "check",
@@ -1242,7 +1252,7 @@
                           "cost": 5,
                           "ignoreCost": true,
                           "option_id": "9grycsyo4w9opelolo2sz",
-                          "refs": ["clans_thunder"]
+                          "refs": ["crossbow", "clans_thunder"]
                         },
                         {
                           "type": "check",
@@ -1251,6 +1261,7 @@
                           "ignoreCost": true,
                           "option_id": "lo5ur3r41udjoskvwivkp",
                           "refs": [
+                            "forgerepeater",
                             {
                               "ref": "clans_thunder",
                               "amount": 5
@@ -1260,10 +1271,10 @@
                         {
                           "type": "check",
                           "name": "Wyrm-Slayer Rocket (3+)",
-                          "cost": 30,
+                          "cost": 25,
                           "ignoreCost": true,
                           "option_id": "bj50cdt4ammaxzbzlv6qrh",
-                          "refs": ["engines_of_war"]
+                          "refs": ["wyrmslayerrocket", "engines_of_war"]
                         }
                       ],
                       "option_id": "wzyti0rg8xc6rr8nzk0lw"
@@ -1288,9 +1299,10 @@
                         {
                           "type": "check",
                           "name": "Great Weapon",
-                          "cost": 5,
+                          "cost": 0,
                           "ignoreCost": true,
-                          "option_id": "w439xz9avqexttoeoy3mg"
+                          "option_id": "w439xz9avqexttoeoy3mg",
+                          "refs": ["greatweapon"]
                         }
                       ],
                       "option_id": "0gt9k2bigog9n2qdwar761"
@@ -1328,7 +1340,7 @@
                       "name": "Battle Rune",
                       "parsername": "Up to 1 Battle Rune",
                       "type": "check",
-                      "cost": 40,
+                      "cost": 35,
                       "magic": {
                         "amount": "1",
                         "spells": [
@@ -1358,7 +1370,8 @@
                           }
                         ]
                       },
-                      "option_id": "fgdgf-gfd=jhggf4546gsdd"
+                      "option_id": "fgdgf-gfd=jhggf4546gsdd",
+                      "refs": ["uptoonebattlerune"]
                     }
                   ],
                   "option_id": "sdefg437867u567-fdgrg"
@@ -1369,7 +1382,7 @@
             },
             {
               "name": "Dinaz Betegoz, Master of the Guild of Lorekeepers",
-              "cost": 550,
+              "cost": 520,
               "option_id": "lv83dolujci31a7h",
               "unit_id": "dinazBetegoz",
               "refs": ["dinazbetegoz", "tag_Dwarf", "tag_Metal Armour", "tag_Mount"],
@@ -1381,7 +1394,7 @@
             },
             {
               "name": "Tador Berafrig",
-              "cost": 220,
+              "cost": 210,
               "option_id": "6lgysotup0k4zrm4",
               "unit_id": "tadorBerafrig",
               "refs": ["tadorberafrig", "captain", "tag_Dwarf", "tag_Metal Armour"],
@@ -1471,19 +1484,22 @@
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 0,
-                              "option_id": "53mtksf22m9hl9dtxao2r"
+                              "option_id": "53mtksf22m9hl9dtxao2r",
+                              "refs": ["pairedweapons"]
                             },
                             {
                               "type": "check",
                               "name": "Spear",
-                              "cost": 1,
-                              "option_id": "jo92sjklzxk6mx6v6pyd4p"
+                              "cost": 2,
+                              "option_id": "jo92sjklzxk6mx6v6pyd4p",
+                              "refs": ["spear"]
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
                               "cost": 1,
-                              "option_id": "8pajp23f99thbll2d7e4yt"
+                              "option_id": "8pajp23f99thbll2d7e4yt",
+                              "refs": ["greatweapon"]
                             }
                           ],
                           "option_id": "wa00jqvr4oc9rt2ln9ypy"
@@ -1595,8 +1611,9 @@
                             {
                               "type": "check",
                               "name": "Great Weapon",
-                              "cost": 1,
-                              "option_id": "b2uzpw6184hlytr3j9a7m"
+                              "cost": 0,
+                              "option_id": "b2uzpw6184hlytr3j9a7m",
+                              "refs": ["greatweapon"]
                             }
                           ],
                           "option_id": "ablyhg13d7q2oicx7vayjr"
@@ -1669,21 +1686,21 @@
                               "name": "Crossbow (4+)",
                               "cost": 0,
                               "option_id": "vq5erib6gve0a931ptrzh5l",
-                              "refs": ["clans_thunder"]
+                              "refs": ["crossbow", "clans_thunder"]
                             },
                             {
                               "type": "check",
                               "name": "Crossbow (4+) and Great Weapon",
-                              "parsername": "Crossbow () and Great Weapon (4+)",
+                              "parsername": "Crossbow and Great Weapon (4+)",
                               "cost": 1,
                               "option_id": "gwcrxbos34214ve0a931ptrzh5l",
-                              "refs": ["clans_thunder"]
+                              "refs": ["crossbowandgreatweapon", "clans_thunder"]
                             },
                             {
                               "type": "check",
                               "name": "Guild-Crafted Handgun (4+)",
-                              "cost": 4,
-                              "refs": ["clans_thunder"],
+                              "cost": 6,
+                              "refs": ["guildcraftedhandgun", "clans_thunder"],
                               "option_id": "cqx0rp19se6x223ohal1hd"
                             }
                           ],
@@ -1941,6 +1958,7 @@
                               "name": "Throwing Weapons (5+)",
                               "cost": 4,
                               "refs": [
+                                "throwingweapons",
                                 {
                                   "ref": "clans_thunder",
                                   "amount": 0.5
@@ -1952,26 +1970,29 @@
                               "type": "check",
                               "name": "Pistol (4+)",
                               "cost": 3,
-                              "refs": ["clans_thunder"],
+                              "refs": ["pistol", "clans_thunder"],
                               "option_id": "zzwu5yxv3xcbaspf4109ft"
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
                               "cost": 0,
-                              "option_id": "2vtzdsn4hrdkgok6ls4y1q"
+                              "option_id": "2vtzdsn4hrdkgok6ls4y1q",
+                              "refs": ["greatweapon"]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 1,
-                              "option_id": "y6lvbm456pev1ktpq8rccr"
+                              "option_id": "y6lvbm456pev1ktpq8rccr",
+                              "refs": ["pairedweapons"]
                             },
                             {
                               "type": "check",
                               "name": "Shield Wall",
                               "cost": 1,
-                              "option_id": "gf5ynsecsr8baienldzma"
+                              "option_id": "gf5ynsecsr8baienldzma",
+                              "refs": ["shieldwall"]
                             }
                           ],
                           "option_id": "rb9ufu5lpco45uzflxz99t"
@@ -2036,8 +2057,9 @@
                             {
                               "type": "check",
                               "name": "Vanguard",
-                              "cost": 3,
-                              "option_id": "c7r8n8argq5cd7e8bke6j"
+                              "cost": 2,
+                              "option_id": "c7r8n8argq5cd7e8bke6j",
+                              "refs": ["vanguard"]
                             },
                             {
                               "type": "check",
@@ -2218,6 +2240,7 @@
                               "name": "Throwing Weapons (4+)",
                               "cost": 0,
                               "refs": [
+                                "throwingweapons",
                                 {
                                   "ref": "clans_thunder",
                                   "amount": 0.5
@@ -2229,7 +2252,7 @@
                               "type": "check",
                               "name": "Crossbow (3+)",
                               "cost": 6,
-                              "refs": ["clans_thunder"],
+                              "refs": ["crossbow", "clans_thunder"],
                               "option_id": "wfc68goshgmginnpksg0ic"
                             }
                           ]
@@ -2241,14 +2264,16 @@
                             {
                               "type": "check",
                               "name": "Paired Weapons",
-                              "cost": 0,
-                              "option_id": "9urza2lbbul1h31aqueqr"
+                              "cost": 1,
+                              "option_id": "9urza2lbbul1h31aqueqr",
+                              "refs": ["pairedweapons"]
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
                               "cost": 1,
-                              "option_id": "ta7r2xnpk1hat95eb0hc17"
+                              "option_id": "ta7r2xnpk1hat95eb0hc17",
+                              "refs": ["greatweapon"]
                             }
                           ],
                           "option_id": "97yxsbbzeizss5b95to8f"
@@ -2417,21 +2442,22 @@
                               "name": "Shrapnel Grenades",
                               "cost": 0,
                               "type": "check",
-                              "refs": ["attack_copter"],
+                              "refs": ["shrapnelgrenades", "attack_copter"],
                               "option_id": "3s2hfkvz71dfy5yq24pwgt"
                             },
                             {
                               "name": "Shrapnel Bombs",
-                              "cost": 35,
+                              "cost": 30,
                               "type": "check",
-                              "refs": ["steam_bomber"],
+                              "refs": ["shrapnelbombs", "steam_bomber"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["steam_bomber"],
                                   "amount": 2
                                 }
                               ],
-                              "option_id": "rg8imisgiavshz8c0c2xj"
+                              "option_id": "rg8imisgiavshz8c0c2xj",
+                              "rarity": "Rare"
                             }
                           ],
                           "option_id": "9z0903ztglpxdjpodf31bf"
