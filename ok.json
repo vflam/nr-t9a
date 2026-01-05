@@ -797,6 +797,13 @@
                     }
                   ],
                   "option_id": "wfv2vz53zgocclx65qn7vv"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "ldlsqg80gwaeuui9",
+                  "options": []
                 }
               ],
               "armyHasNotOption": [
@@ -1085,6 +1092,13 @@
                     }
                   ],
                   "option_id": "bybhqzgq4bhaxwih6dankq"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "bo9ab9lodtljpxhp",
+                  "options": []
                 }
               ],
               "armyHasNotOption": ["ok_bn_wildheart"],
@@ -1177,13 +1191,6 @@
                   "maxSize": 1,
                   "collapsible": true,
                   "options": [
-                    {
-                      "refs": ["wizardApprentice"],
-                      "name": "Wizard Apprentice",
-                      "type": "check",
-                      "cost": 0,
-                      "option_id": "m7y7ahyplnct2mfolz2kh"
-                    },
                     {
                       "refs": ["wizardadept", "wizardAdept"],
                       "name": "Wizard Adept",
@@ -1314,6 +1321,13 @@
                     }
                   ],
                   "option_id": "2n6ww6552wbiyhc0kj4yp"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "n4dngz6t4oc8c3r9",
+                  "options": []
                 }
               ],
               "logo": "character"
@@ -1598,6 +1612,13 @@
                     }
                   ],
                   "option_id": "72ouwwbzymilu9zpa5gdp"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "rad2r3u80hym0fds",
+                  "options": []
                 }
               ],
               "override": [
@@ -2383,29 +2404,27 @@
                           "options": [
                             {
                               "name": "Hunting Spear (4+), Iron Fist and Poison Attacks (Shooting)",
-                              "cost": 5,
+                              "parsername": "Hunting Spear , Iron Fist and Poison Attacks (Shooting) (4+)",
+                              "cost": 0,
                               "type": "check",
                               "refs": [
+                                "huntingspeargunner",
                                 "scar_throwing",
                                 {
                                   "ref": "hired_guns",
                                   "amount": 5
                                 }
                               ],
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["scar_throwing"],
-                                  "amount": 1,
-                                  "parentMult": false
-                                }
-                              ],
-                              "option_id": "f23fdserfdswf32h5ghggg3"
+                              "option_id": "f23fdserfdswf32h5ghggg3",
+                              "rarity": "Extraordinary"
                             },
                             {
                               "name": "Brace of Ogre Pistols (4+) and Lethal Strike (Shooting)",
-                              "cost": 0,
+                              "parsername": "Brace of Ogre Pistols and Lethal Strike (Shooting) (4+)",
+                              "cost": 3,
                               "type": "check",
                               "refs": [
+                                "braceofogrepistolsgunner",
                                 "scare_lethal",
                                 {
                                   "ref": "hired_guns",
@@ -2414,63 +2433,28 @@
                               ],
                               "armyHasNotOption": [
                                 {
-                                  "refs": ["scare_lethal"],
-                                  "amount": 1,
-                                  "parentMult": false
-                                },
-                                {
                                   "refs": ["ok_bn_wildheart"],
                                   "amount": 1
                                 }
                               ],
-                              "option_id": "vgi132rd312d123qx5hwskeanrnt2ns"
+                              "option_id": "vgi132rd312d123qx5hwskeanrnt2ns",
+                              "rarity": "Extraordinary"
                             },
                             {
                               "name": "Ogre Crossbow (4+) and Accurate",
+                              "parsername": "Ogre Crossbow and Accurate (4+)",
                               "cost": 10,
                               "type": "check",
                               "refs": [
+                                "ogrecrossbowgunner",
                                 "scar_accurate",
                                 {
                                   "ref": "hired_guns",
                                   "amount": 5
                                 }
                               ],
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["scar_accurate"],
-                                  "amount": 1,
-                                  "parentMult": false
-                                }
-                              ],
-                              "option_id": "zj0p6wff23f32f32jgf09wsnjkh6vzak"
-                            },
-                            {
-                              "type": "check",
-                              "name": "Ogre Crossbow and Accurate (4+)",
-                              "cost": 10,
-                              "option_id": "nsnetech7odl8evv",
-                              "refs": ["ogrecrossbowgunner"],
-                              "rarity": "Extraordinary",
-                              "_perModel": true
-                            },
-                            {
-                              "type": "check",
-                              "name": "Brace of Ogre Pistols and Lethal Strike (Shooting) (4+)",
-                              "cost": 3,
-                              "option_id": "ngm6kn2rzqvmxd53",
-                              "refs": ["braceofogrepistolsgunner"],
-                              "rarity": "Extraordinary",
-                              "_perModel": true
-                            },
-                            {
-                              "type": "check",
-                              "name": "Hunting Spear , Iron Fist and Poison Attacks (Shooting) (4+)",
-                              "cost": 0,
-                              "option_id": "nmoqznphxh57ft2h",
-                              "refs": ["huntingspeargunner"],
-                              "rarity": "Extraordinary",
-                              "_perModel": true
+                              "option_id": "zj0p6wff23f32f32jgf09wsnjkh6vzak",
+                              "rarity": "Extraordinary"
                             }
                           ],
                           "option_id": "15ja81o9zz9wqdwdwr2lide52"
@@ -2567,38 +2551,6 @@
               "logo": "arrows"
             },
             {
-              "name": "Thunder Cannon",
-              "cost": 300,
-              "refs": [
-                "thunder_canon",
-                "tag_Ogre",
-                "tag_Light Armour",
-                "tag_Scrapling",
-                "tag_Mount",
-                "tag_Beast",
-                "tag_Construct",
-                "powder_keg"
-              ],
-              "armyHasNotOption": [
-                {
-                  "refs": ["ok_bn_wildheart"],
-                  "amount": 1
-                }
-              ],
-              "unit_id": "thunderCannon",
-              "option_id": "3ap3al88beeuq4eed76zmk",
-              "logo": "cannonballs"
-            },
-            {
-              "name": "Scratapult",
-              "cost": 260,
-              "refs": ["scratapult", "tag_Scrapling", "tag_Mount", "tag_Beast", "tag_Construct", "powder_keg"],
-              "armyHasNotOption": [],
-              "unit_id": "scratapult",
-              "option_id": "bvq9goe7ygsj120i1cj1v",
-              "logo": "cannonballs"
-            },
-            {
               "name": "Bombardiers",
               "cost": -10,
               "option_id": "9ikzkr50ubo4wkiknj9q",
@@ -2670,6 +2622,56 @@
             }
           ],
           "option_id": "763tk2q95zf7ca3g77nrrp"
+        },
+        {
+          "name": "Powder Keg",
+          "refs": ["powderKeg"],
+          "option_id": "nfnf932f923nf32f39r432f",
+          "optionsLabel": "Units",
+          "options": [
+            {
+              "name": "Thunder Cannon",
+              "cost": 290,
+              "option_id": "3ap3al88beeuq4eed76zmk",
+              "unit_id": "thunderCannon",
+              "refs": [
+                "thundercannon",
+                "tag_Ogre",
+                "tag_Light Armour",
+                "tag_Mount",
+                "tag_Beast",
+                "tag_Construct",
+                "thunder_canon",
+                "tag_Scrapling",
+                "powder_keg"
+              ],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
+              "armyHasNotOption": [
+                {
+                  "refs": ["ok_bn_wildheart"],
+                  "amount": 1
+                }
+              ],
+              "logo": "cannonballs"
+            },
+            {
+              "name": "Scratapult",
+              "cost": 240,
+              "option_id": "bvq9goe7ygsj120i1cj1v",
+              "unit_id": "scratapult",
+              "refs": ["scratapult", "tag_Scrapling", "tag_Beast", "tag_Mount", "tag_Construct", "powder_keg"],
+              "size": "1",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
+              "armyHasNotOption": [],
+              "logo": "cannonballs"
+            }
+          ]
         },
         {
           "name": "Chained Beasts",
@@ -2857,19 +2859,22 @@
                           "name": "First Strike (Fury)",
                           "cost": 0,
                           "type": "check",
-                          "option_id": "f32f32g43g43f423"
+                          "option_id": "f32f32g43g43f423",
+                          "generated": true
                         },
                         {
                           "name": "Lethal Strike",
                           "cost": 0,
                           "type": "check",
-                          "option_id": "6u45ghregfdsfsfsf43hf"
+                          "option_id": "6u45ghregfdsfsfsf43hf",
+                          "generated": true
                         },
                         {
                           "name": "Devastating Charge (+1 Str, +1 AP)",
                           "cost": 0,
                           "type": "check",
-                          "option_id": "23f23f32f23f32"
+                          "option_id": "23f23f32f23f32",
+                          "generated": true
                         }
                       ],
                       "option_id": "c396cfdsf32f32f2345rjtllx12oi3jlgd"
@@ -2885,20 +2890,32 @@
           "option_id": "tnqhsu0kafvd7ii0xyyss"
         },
         {
-          "name": "Extra",
+          "name": "Mounts",
           "invisible": true,
           "refs": ["mounts"],
           "options": [
             {
-              "name": "Rock Aurochs *Mount",
+              "name": "Rock Auroch (mount) *Mount",
+              "cost": 0,
+              "option_id": "eyy5pmwobmvxwz7jxq0zp",
+              "unit_id": "rockAurochsMount",
+              "refs": [
+                "rockaurochsmount",
+                "tag_Mount",
+                "tag_Beast",
+                "mount",
+                "rock_aurochs",
+                "mount_rock_aurochs",
+                "rockAurochs_mount_unit"
+              ],
+              "invisible": true,
+              "rarity": "Extraordinary",
+              "height": "5",
+              "basesize": "100×150",
+              "options": [],
               "type": "check",
-              "cost": null,
-              "refs": ["mount", "rock_aurochs", "mount_rock_aurochs", "rockAurochs_mount_unit", "tag_Mount", "tag_Beast"],
               "category": "mounts",
               "loses_rules": ["rulebook-light_troops"],
-              "options": [],
-              "unit_id": "rockAurochsMount",
-              "invisible": true,
               "armyHasNotOption": [
                 {
                   "refs": ["rockAurochs_mount_unit"],
@@ -2906,21 +2923,23 @@
                 }
               ],
               "extraCategories": ["chained_beasts"],
-              "option_id": "eyy5pmwobmvxwz7jxq0zp",
               "logo": "character_monster"
             },
             {
               "name": "Tusker *Mount",
-              "type": "check",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "loses_rules": ["rulebook-light_troops"],
-              "refs": ["tusker_mount_unit", "mount", "mount_tusker", "tag_Mount", "tag_Beast"],
-              "unit_id": "tuskerMount",
-              "invisible": true,
-              "armyHasNotOption": [],
+              "cost": 0,
               "option_id": "no4j5i9a6f79cf42mgjiu",
+              "unit_id": "tuskerMount",
+              "refs": ["tuskermount", "tag_Mount", "tag_Beast", "mount", "tusker_mount_unit", "mount_tusker"],
+              "invisible": true,
+              "rarity": "Rare",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
+              "type": "check",
+              "category": "mounts",
+              "loses_rules": ["rulebook-light_troops"],
+              "armyHasNotOption": [],
               "logo": "character"
             }
           ],
