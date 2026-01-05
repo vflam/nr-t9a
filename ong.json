@@ -49,14 +49,14 @@
       "options": [
         {
           "name": "Scroll of Draining",
-          "cost": 20,
+          "cost": 10,
           "option_id": "7yw4hqcjfdjqpapni7gixi",
           "type": "check",
           "shared": true
         },
         {
           "name": "Potion of Healing",
-          "cost": 40,
+          "cost": 30,
           "option_id": "9fac3maa96ir8v1sxvb61",
           "type": "check",
           "shared": true
@@ -71,7 +71,7 @@
         {
           "type": "check",
           "name": "Gnasher Bait",
-          "cost": 30,
+          "cost": 25,
           "description": "\tFriendly Gnashers units within 18\" gain Frenzy, Fury, and their Charge Range rolls are <span class=\"textbf\">Maximised</span>.\n",
           "refs": ["gnasher_whistle"],
           "armyHasNotOption": [
@@ -86,7 +86,7 @@
         {
           "type": "check",
           "name": "Moon Shrooms",
-          "cost": 50,
+          "cost": 40,
           "description": "\tCannot be activated at the same turn as <span class=\"textbf\">War Cry!</span> The bearer's unit acts as if the General had used <span class=\"textbf\">War Cry!</span> this turn.\n",
           "refs": ["moon_shrroms"],
           "armyHasNotOption": [
@@ -105,13 +105,13 @@
         {
           "type": "check",
           "name": "Goga Cauldron",
-          "cost": 25,
+          "cost": 35,
           "description": "\tOne use only. May be activated at the start of any Phase. Until the end of the Player Turn, the bearer’s unit gains Fearless, Unstable, Dying Blow.",
           "refs": ["dominant", "goga brew_hzyne4vv"],
           "armyHasNotOption": [
             {
               "refs": ["goga brew_hzyne4vv"],
-              "amount": 3
+              "amount": 1
             }
           ],
           "hasNotOption": ["dominant"],
@@ -121,7 +121,8 @@
               "amount": 1
             }
           ],
-          "option_id": "tkd8ielunh9dtsuopwanah"
+          "option_id": "tkd8ielunh9dtsuopwanah",
+          "rarity": "Uncommon"
         },
         {
           "name": "Banner of Speed",
@@ -139,7 +140,7 @@
         },
         {
           "name": "Distortion Emblem",
-          "cost": 25,
+          "cost": 15,
           "option_id": "jn9dxgzgfw78bpo9cxie4",
           "type": "check",
           "shared": true
@@ -153,7 +154,7 @@
         {
           "type": "check",
           "name": "Omen of the Apocalypse",
-          "cost": 110,
+          "cost": 100,
           "description": "+X Att, +X Str, and +X AP. X is equal to the number of friendly units containing Orc that are Engaged in Combat anywhere on the Battlefield, up to a maximum of +3.\n",
           "refs": ["omen of the apocalypse_7sf3si4t", "weaponEnchantUni"],
           "armyHasNotOption": [
@@ -179,7 +180,7 @@
         {
           "type": "check",
           "name": "Attack Gnasher",
-          "cost": 50,
+          "cost": 60,
           "description": "\tThe wielder gains 3 additional Standard Melee Attacks, their Str is <span class=\"textbf\">always</span> 5 and AP is <span class=\"textbf\">always</span> 2.\n \t",
           "refs": ["attack_gnasher", "weaponEnchantUni"],
           "armyHasNotOption": [
@@ -205,7 +206,7 @@
         },
         {
           "name": "Shield Breaker",
-          "cost": 40,
+          "cost": 30,
           "option_id": "f32f23f23f23f2387i5j65",
           "type": "check",
           "shared": true
@@ -258,7 +259,7 @@
         {
           "type": "check",
           "name": "Monster Munch",
-          "cost": 60,
+          "cost": 70,
           "description": "\tThe bearer can cast <i>Totemic Summon</i> (Shamanism) as a Bound Spell(6+).",
           "refs": ["monster munch_qdpf71aa"],
           "armyHasNotOption": [
@@ -281,7 +282,7 @@
         {
           "type": "check",
           "name": "Troll Hide",
-          "cost": 20,
+          "cost": 15,
           "description": "\t Mob is <span class=\"textbf\">set</span> to 6\". The model's base is changed to 40×40 mm and its Height is <span class=\"textbf\">set</span> to 3. The model's base change cannot be ignored.\n",
           "refs": ["troll_hide"],
           "armyHasNotOption": [
@@ -296,7 +297,7 @@
         {
           "type": "check",
           "name": "Pan of Protection Pinchin'",
-          "cost": 35,
+          "cost": 30,
           "description": "\tWhen successfully wounded, the bearer may choose to use the attacker's Arm and/or its Special Save:\t\t\t<br>&nbsp;&nbsp;&bull;  Use the Arm that the attacking model would have against the Attack that inflicted the wound (<i>including Conditional Application, modifiers, etc.</i>). If so, the bearer cannot use its own Arm (<i>including any modifiers</i>), if available.\t\t<br>&nbsp;&nbsp;&bull;  Use the Special Save that the attacking model would have against the Attack that inflicted the wound (<i>including Conditional Application, modifiers, etc.</i>). If so, the bearer cannot use its own Special Save (<i>including any modifiers</i>), if available.\t<br>",
           "refs": ["pan of protection pinchin'_3n1ilyts"],
           "armyHasNotOption": [
@@ -384,10 +385,15 @@
           "maxPercent": 0.4,
           "options": [
             {
-              "option_id": "2sj4f9fc4hdjelfp6xi2fq",
               "name": "Goblin Demagogue",
               "cost": 50,
-              "category": "characters",
+              "option_id": "2sj4f9fc4hdjelfp6xi2fq",
+              "unit_id": "goblinDemagogue",
+              "refs": ["goblindemagogue", "tag_Goblin", "tag_Metal Armour", "goblinDemagogue", "goblin_cunning"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "type": "group",
@@ -400,18 +406,18 @@
                       "type": "check",
                       "cost": 0,
                       "option_id": "g34g432g43gs34dsafewg34g34",
-                      "refs": ["leadership_amount"]
+                      "refs": ["captainandattached", "leadership_amount"]
                     },
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
                       "cost": 60,
                       "option_id": "3fgasf32fg32g234g54",
-                      "refs": ["army_bsb"],
+                      "refs": ["battlestandardbearer", "army_bsb"],
                       "armyHasNotOption": ["army_bsb"]
                     },
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
@@ -423,8 +429,8 @@
                           "option_id": "gfdgfdg34g534h34hg343ft2",
                           "type": "check",
                           "name": "Darrmu and Goblin Gardens",
-                          "cost": 0,
-                          "refs": ["darrmu"],
+                          "cost": 20,
+                          "refs": ["darrmuandgoblingardens", "darrmu"],
                           "armyHasNotOption": [
                             {
                               "refs": ["tag_Orc"],
@@ -478,7 +484,7 @@
                           "type": "check",
                           "name": "Shield",
                           "cost": 5,
-                          "refs": [],
+                          "refs": ["shield"],
                           "optionsLabel": "Shield Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -498,7 +504,7 @@
                           "type": "check",
                           "name": "Bow",
                           "cost": 5,
-                          "refs": ["archer_broods"],
+                          "refs": ["bow", "archer_broods"],
                           "ignoreCost": true
                         }
                       ],
@@ -513,7 +519,7 @@
                           "type": "check",
                           "name": "Paired Weapons",
                           "cost": 5,
-                          "refs": [],
+                          "refs": ["pairedweapons"],
                           "optionsLabel": "Paired Weapons Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -527,7 +533,7 @@
                           "type": "check",
                           "name": "Great Weapon",
                           "cost": 10,
-                          "refs": [],
+                          "refs": ["greatweapon"],
                           "optionsLabel": "Great Weapon Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -541,7 +547,7 @@
                           "type": "check",
                           "name": "Lance",
                           "cost": 10,
-                          "refs": [],
+                          "refs": ["lance"],
                           "optionsLabel": "Lance Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -555,7 +561,7 @@
                           "type": "check",
                           "name": "Poisoned Spear",
                           "cost": 10,
-                          "refs": [],
+                          "refs": ["poisonedspear"],
                           "optionsLabel": "Spear Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -633,37 +639,39 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "eyzpmr7z2zdu58eh77ah4a",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Beastie",
-                      "cost": 30,
-                      "refs": ["mount", "beastie_mount_option"],
-                      "refopt": "beastie_mount",
+                      "cost": 35,
+                      "refs": ["beastie", "mount", "beastie_mount_option"],
+                      "refopt": "beastieMount",
                       "option_id": "d1ldt1odra3mduslrntai"
                     },
                     {
                       "type": "check",
                       "name": "Beastie Chariot",
-                      "cost": 80,
-                      "refs": ["mount", "beastie_chariot_mount_option"],
-                      "refopt": "beastie_chariot_mount",
+                      "cost": 75,
+                      "refs": ["beastiechariot", "mount", "beastie_chariot_mount_option"],
+                      "refopt": "beastieChariotMount",
                       "option_id": "4z7h8e0qnftezrr9eo6les"
                     },
                     {
                       "type": "check",
                       "name": "Pet Monster",
-                      "cost": 85,
-                      "refs": ["mount", "pet_monster_mount_option"],
-                      "refopt": "pet_monster_mount",
+                      "cost": 80,
+                      "refs": ["petmonster", "mount", "pet_monster_mount_option"],
+                      "refopt": "petMonsterMount",
                       "option_id": "h7fvalrbfd7ytz5ycu414h"
                     },
                     {
                       "type": "check",
                       "name": "Gargantula",
-                      "cost": 360,
+                      "cost": 330,
                       "refs": [
+                        "gargantula",
                         "mount",
                         "gargantula_mount_option",
                         {
@@ -671,7 +679,7 @@
                           "amount": 8
                         }
                       ],
-                      "refopt": "gargantula_mount",
+                      "refopt": "gargantulaMount",
                       "option_id": "g8p1v5no35o221vr36vfu9j",
                       "hasOption": ["army_general"]
                     }
@@ -681,9 +689,6 @@
                   "minSize": 1
                 }
               ],
-              "refs": ["goblinDemagogue", "goblin_cunning", "tag_Goblin", "tag_Metal Armour"],
-              "unit_id": "goblinDemagogue",
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -697,13 +702,20 @@
                   }
                 }
               ],
+              "category": "characters",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
-              "option_id": "6jz2qlwd9kj4q1njgfwj2n",
               "name": "Goblin Witch",
               "cost": 270,
-              "category": "characters",
+              "option_id": "6jz2qlwd9kj4q1njgfwj2n",
+              "unit_id": "goblinWitch",
+              "refs": ["goblinwitch", "tag_Goblin", "tag_Light Armour", "goblinWitch", "wizard", "goblin_cunning"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "type": "group",
@@ -712,7 +724,7 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
@@ -724,7 +736,7 @@
                           "option_id": "dv9jbli6sldyc6ves7xz",
                           "type": "check",
                           "name": "Darrmu",
-                          "cost": 30,
+                          "cost": 40,
                           "refs": ["darrmu"],
                           "armyHasNotOption": [
                             {
@@ -811,38 +823,39 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "9fru1zxuh7w9ntx6v690s",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Beastie",
-                      "cost": 25,
-                      "refs": ["mount", "beastie_mount_option"],
-                      "refopt": "beastie_mount",
+                      "cost": 20,
+                      "refs": ["beastie", "mount", "beastie_mount_option"],
+                      "refopt": "beastieMount",
                       "option_id": "dya55s10jwas21f2kj3wvj"
                     },
                     {
                       "type": "check",
                       "name": "Beastie Chariot",
-                      "cost": 40,
-                      "refs": ["mount", "beastie_chariot_mount_option"],
-                      "refopt": "beastie_chariot_mount",
+                      "cost": 30,
+                      "refs": ["beastiechariot", "mount", "beastie_chariot_mount_option"],
+                      "refopt": "beastieChariotMount",
                       "option_id": "zfo2csh7e2iyoxq5xpnx7"
                     },
                     {
                       "type": "check",
                       "name": "Pet Monster",
-                      "cost": 40,
-                      "refs": ["mount", "pet_monster_mount_option"],
-                      "refopt": "pet_monster_mount",
+                      "cost": 30,
+                      "refs": ["petmonster", "mount", "pet_monster_mount_option"],
+                      "refopt": "petMonsterMount",
                       "option_id": "33mme3mewki9yu820gynx"
                     },
                     {
                       "type": "check",
                       "name": "Gargantula",
-                      "cost": 290,
-                      "refs": ["mount", "gargantula_mount_option"],
-                      "refopt": "gargantula_mount",
+                      "cost": 250,
+                      "refs": ["gargantula", "mount", "gargantula_mount_option"],
+                      "refopt": "gargantulaMount",
                       "option_id": "tao7cf7cke5rnc9wqqw5o",
                       "hasOption": [
                         {
@@ -865,24 +878,17 @@
                       "optionsLabel": "Level",
                       "options": [
                         {
-                          "option_id": "zf73fa7tkf8i0migq25k8",
-                          "cost": 0,
-                          "name": "Wizard Apprentice",
-                          "refs": ["wizardApprentice"],
-                          "type": "check"
-                        },
-                        {
                           "type": "check",
                           "name": "Wizard Adept",
                           "cost": 0,
-                          "refs": ["wizardAdept"],
+                          "refs": ["wizardadept", "wizardAdept"],
                           "option_id": "i9zf364ukssktjld6f6eg8"
                         },
                         {
                           "type": "check",
                           "name": "Wizard Master",
                           "cost": 150,
-                          "refs": ["wizardMaster"],
+                          "refs": ["wizardmaster", "wizardMaster"],
                           "option_id": "351w1z5qqvanylmpwlrcll"
                         }
                       ],
@@ -937,9 +943,6 @@
                   "collapsible": true
                 }
               ],
-              "refs": ["goblinWitch", "wizard", "goblin_cunning", "tag_Goblin", "tag_Light Armour"],
-              "unit_id": "goblinWitch",
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -953,13 +956,19 @@
                   }
                 }
               ],
+              "category": "characters",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
-              "option_id": "wpqpz1t7bs921yya3dic86j",
               "name": "Gogtuk Initiate",
-              "cost": 45,
-              "category": "characters",
+              "cost": 50,
+              "option_id": "wpqpz1t7bs921yya3dic86j",
+              "unit_id": "gogtukInitiate",
+              "refs": ["gogtukinitiate", "tag_Goblin", "tag_Light Armour", "gogtukInitiate", "goblin_cunning", "not_a_leader"],
+              "size": "1",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "option_id": "zlgqvutt8o7v0cczhud8pl",
@@ -978,16 +987,18 @@
                           "option_id": "a72q1kiodl3yfkctfm28m",
                           "cost": 0,
                           "hide": true,
-                          "invisible": true
+                          "invisible": true,
+                          "generated": true
                         },
                         {
                           "type": "check",
                           "name": "Beastie",
                           "cost": 0,
                           "refs": ["mount"],
-                          "refopt": "beastie_mount",
+                          "refopt": "beastieMount",
                           "option_id": "3f3w4fsdfsdfv3wgf32f32f32",
-                          "invisible": true
+                          "invisible": true,
+                          "generated": true
                         }
                       ],
                       "refs": ["gogtuk_initiate_amount"],
@@ -1022,7 +1033,8 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "rarity": "Uncommon"
                     },
                     {
                       "option_id": "e4qxb0e99uqwycidrmuxx",
@@ -1059,7 +1071,8 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "rarity": "Uncommon"
                     },
                     {
                       "option_id": "23rogcmi982q2putodw9eo",
@@ -1090,14 +1103,12 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "rarity": "Uncommon"
                     }
                   ]
                 }
               ],
-              "refs": ["gogtukInitiate", "goblin_cunning", "not_a_leader", "tag_Goblin", "tag_Light Armour"],
-              "unit_id": "gogtukInitiate",
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -1111,17 +1122,21 @@
                   }
                 }
               ],
+              "category": "characters",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
-              "option_id": "4trhth54g342h45r3234h3g3gdf",
               "name": "Mad Git",
               "cost": 55,
-              "category": "characters",
-              "options": [],
-              "refs": ["madGit", "goblin_cunning", "not_a_leader", "tag_Goblin", "tag_Light Armour"],
+              "option_id": "4trhth54g342h45r3234h3g3gdf",
               "unit_id": "madGit",
-              "armyHasNotOption": [],
+              "refs": ["madgit", "tag_Goblin", "tag_Light Armour", "madGit", "goblin_cunning", "not_a_leader"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "1",
+              "basesize": "25×25",
+              "options": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -1135,13 +1150,20 @@
                   }
                 }
               ],
+              "category": "characters",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
-              "option_id": "fcn57lbqmngzqtbt95rwt8",
               "name": "Orc Shaman",
-              "cost": 270,
-              "category": "characters",
+              "cost": 280,
+              "option_id": "fcn57lbqmngzqtbt95rwt8",
+              "unit_id": "orcShaman",
+              "refs": ["orcshaman", "tag_Orc", "tag_Light Armour", "orcShaman", "wizard", "brood_rivalry"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "type": "group",
@@ -1150,7 +1172,7 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
@@ -1163,7 +1185,7 @@
                           "type": "check",
                           "name": "Tribe Leader",
                           "cost": 0,
-                          "refs": ["tribe_leader"],
+                          "refs": ["tribeleader", "tribe_leader"],
                           "armyHasNotOption": [
                             {
                               "refs": ["tag_Goblin"],
@@ -1192,7 +1214,7 @@
                           "type": "check",
                           "name": "Paired Weapons",
                           "cost": 5,
-                          "refs": [],
+                          "refs": ["pairedweapons"],
                           "optionsLabel": "Paired Weapons Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -1270,30 +1292,31 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "3ykaz7mzidnwi85nxbnz",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Grunter",
-                      "cost": 30,
-                      "refs": ["mount", "grunter_mount_option"],
-                      "refopt": "grunter_mount",
+                      "cost": 20,
+                      "refs": ["grunter", "mount", "grunter_mount_option"],
+                      "refopt": "grunterMount",
                       "option_id": "zmfs3bhabz3fio9fhhhbc"
                     },
                     {
                       "type": "check",
                       "name": "Grunter Chariot",
-                      "cost": 50,
-                      "refs": ["mount", "grunter_chariot_mount_option"],
-                      "refopt": "grunter_chariot_mount",
+                      "cost": 40,
+                      "refs": ["grunterchariot", "mount", "grunter_chariot_mount_option"],
+                      "refopt": "grunterChariotMount",
                       "option_id": "6gzx4z5j6ty8dncjerujsf"
                     },
                     {
                       "type": "check",
                       "name": "Wyvern",
                       "cost": 150,
-                      "refs": ["mount", "wyvern_mount_option"],
-                      "refopt": "wyvern_mount",
+                      "refs": ["wyvern", "mount", "wyvern_mount_option"],
+                      "refopt": "wyvernMount",
                       "option_id": "fhvgr8ygp5dl7hlyslfmvd",
                       "hasOption": [
                         {
@@ -1319,14 +1342,14 @@
                           "type": "check",
                           "name": "Wizard Adept",
                           "cost": 0,
-                          "refs": ["wizardAdept"],
+                          "refs": ["wizardadept", "wizardAdept"],
                           "option_id": "004dg5zeast31g6gza9xsf1q"
                         },
                         {
                           "type": "check",
                           "name": "Wizard Master",
                           "cost": 150,
-                          "refs": ["wizardMaster"],
+                          "refs": ["wizardmaster", "wizardMaster"],
                           "option_id": "d33p25wemgplyltl9ina8"
                         }
                       ],
@@ -1381,9 +1404,6 @@
                   "collapsible": true
                 }
               ],
-              "refs": ["orcShaman", "wizard", "brood_rivalry", "tag_Orc", "tag_Light Armour"],
-              "unit_id": "orcShaman",
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -1397,13 +1417,20 @@
                   }
                 }
               ],
+              "category": "characters",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
-              "option_id": "e6zn8fcfgrnewwp8513nf7",
               "name": "Orc Warlord",
               "cost": 210,
-              "category": "characters",
+              "option_id": "e6zn8fcfgrnewwp8513nf7",
+              "unit_id": "orcWarlord",
+              "refs": ["orcwarlord", "tag_Orc", "tag_Metal Armour", "orcWarlord", "brood_rivalry"],
+              "size": "1",
+              "rarity": "Legendary",
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "type": "group",
@@ -1412,7 +1439,7 @@
                   "optionsLabel": "Leadership",
                   "options": [
                     {
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "type": "check",
                       "name": "General",
@@ -1425,8 +1452,8 @@
                           "option_id": "jpupxtajc6s08iz870rrxtc",
                           "type": "check",
                           "name": "Tribe Leader and Orc Horde",
-                          "cost": 0,
-                          "refs": ["tribe_leader"],
+                          "cost": 5,
+                          "refs": ["tribeleaderandorchorde", "tribe_leader"],
                           "armyHasNotOption": [
                             {
                               "refs": ["tag_Goblin"],
@@ -1468,7 +1495,7 @@
                           "type": "check",
                           "name": "Shield",
                           "cost": 5,
-                          "refs": [],
+                          "refs": ["shield"],
                           "optionsLabel": "Shield Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -1488,7 +1515,7 @@
                           "type": "check",
                           "name": "Paired Weapons",
                           "cost": 10,
-                          "refs": [],
+                          "refs": ["pairedweapons"],
                           "optionsLabel": "Paired Weapons Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -1502,7 +1529,7 @@
                           "type": "check",
                           "name": "Great Weapon",
                           "cost": 20,
-                          "refs": [],
+                          "refs": ["greatweapon"],
                           "optionsLabel": "Great Weapon Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -1516,7 +1543,7 @@
                           "type": "check",
                           "name": "Lance",
                           "cost": 15,
-                          "refs": [],
+                          "refs": ["lance"],
                           "optionsLabel": "Lance Enchant",
                           "maxSize": 1,
                           "sortOptions": true,
@@ -1571,41 +1598,61 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "qa1no9oabxc1wfqgkmoy6f",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Grunter",
                       "cost": 65,
-                      "refs": ["mount", "grunter_mount_option"],
-                      "refopt": "grunter_mount",
+                      "refs": ["grunter", "mount", "grunter_mount_option"],
+                      "refopt": "grunterMount",
                       "option_id": "i6bi62z5ew93nb0yft6k"
                     },
                     {
                       "type": "check",
                       "name": "Grunter Chariot",
-                      "cost": 90,
-                      "refs": ["mount", "grunter_chariot_mount_option"],
-                      "refopt": "grunter_chariot_mount",
+                      "cost": 75,
+                      "refs": ["grunterchariot", "mount", "grunter_chariot_mount_option"],
+                      "refopt": "grunterChariotMount",
                       "option_id": "osfyca8gp38c6m84zsi0sh"
                     },
                     {
                       "type": "check",
                       "name": "Wyvern",
                       "cost": 150,
-                      "refs": ["mount", "wyvern_mount_option"],
-                      "refopt": "wyvern_mount",
+                      "refs": ["wyvern", "mount", "wyvern_mount_option"],
+                      "refopt": "wyvernMount",
                       "option_id": "576ay88kxhduoyjvrmbm09"
                     }
                   ],
                   "maxSize": 1,
                   "collapsible": true,
                   "minSize": 1
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "odzvstwpac7vzkw0",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Bow (4+)",
+                      "cost": 5,
+                      "option_id": "clzq5y48rckd2yyd",
+                      "refs": ["bow"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Crossbow (4+)",
+                      "cost": 5,
+                      "option_id": "iqudm72dbsxe3lmc",
+                      "refs": ["crossbow"]
+                    }
+                  ]
                 }
               ],
-              "refs": ["orcWarlord", "brood_rivalry", "tag_Orc", "tag_Metal Armour"],
-              "unit_id": "orcWarlord",
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -1624,14 +1671,20 @@
                   }
                 }
               ],
+              "category": "characters",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
-              "option_id": "6uhfggdfh453h34hfghfghfghfg",
               "name": "Iron Orc Loner",
-              "unit_id": "ironOrcLoner",
               "cost": 170,
-              "refs": ["iron_orc_loner", "brood_rivalry", "tag_Orc", "tag_Metal Armour"],
+              "option_id": "6uhfggdfh453h34hfghfghfghfg",
+              "unit_id": "ironOrcLoner",
+              "refs": ["ironorcloner", "tag_Orc", "tag_Metal Armour", "iron_orc_loner", "brood_rivalry"],
+              "size": "1",
+              "rarity": "Extraordinary",
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "option_id": "2r2fdsfsdg43gds342gfdgfdgfdgfd",
@@ -1642,30 +1695,30 @@
                       "type": "check",
                       "option_id": "2rolfsgb53m8og4qpn8cjp",
                       "cost": 0,
-                      "refs": ["iron_orc_loner_amount"]
+                      "refs": ["lighttroopsandhandandahalf", "iron_orc_loner_amount"]
                     },
                     {
                       "type": "check",
                       "name": "Grunter",
-                      "cost": 170,
-                      "refs": ["mount"],
-                      "refopt": "grunter_mount",
+                      "cost": 150,
+                      "refs": ["grunter", "mount"],
+                      "refopt": "grunterMount",
                       "option_id": "k756jfjfghjgfh54h54h54"
                     },
                     {
                       "type": "check",
                       "name": "Grunter Chariot",
-                      "cost": 200,
-                      "refs": ["mount"],
-                      "refopt": "grunter_chariot_mount",
+                      "cost": 180,
+                      "refs": ["grunterchariot", "mount"],
+                      "refopt": "grunterChariotMount",
                       "option_id": "h45h54fghgfhn534hj54j54"
                     },
                     {
                       "type": "check",
                       "name": "Wyvern",
                       "cost": 240,
-                      "refs": ["mount"],
-                      "refopt": "wyvern_mount",
+                      "refs": ["wyvern", "mount"],
+                      "refopt": "wyvernMount",
                       "option_id": "h54hfdhggfhgfh54h54h54"
                     }
                   ],
@@ -1770,7 +1823,6 @@
                   "leafMaxCost": 200
                 }
               ],
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -1784,14 +1836,18 @@
                   }
                 }
               ],
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
-              "option_id": "6uhfggdfh453h34asdhfghfghfghfg",
               "name": "Brood Alpha",
-              "unit_id": "broodAlpha",
               "cost": 50,
-              "refs": ["brood_alpha", "brood_rivalry", "tag_Orc", "tag_Metal Armour"],
+              "option_id": "6uhfggdfh453h34asdhfghfghfghfg",
+              "unit_id": "broodAlpha",
+              "refs": ["broodalpha", "tag_Orc", "tag_Metal Armour", "brood_alpha", "brood_rivalry"],
+              "size": "1",
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "type": "group",
@@ -1804,14 +1860,14 @@
                       "type": "check",
                       "cost": 0,
                       "option_id": "g34g432g4a3gs34dsafewg34g34",
-                      "refs": ["leadership_amount"]
+                      "refs": ["captainandattached", "leadership_amount"]
                     },
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
                       "cost": 70,
                       "option_id": "3fgasf32fdsg32g234g54",
-                      "refs": ["army_bsb"],
+                      "refs": ["battlestandardbearer", "army_bsb"],
                       "armyHasNotOption": ["army_bsb"]
                     }
                   ],
@@ -1826,22 +1882,23 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "2rolfsgb53m8dsog4qpn8cjp",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Grunter",
                       "cost": 25,
-                      "refs": ["mount"],
-                      "refopt": "grunter_mount",
+                      "refs": ["grunter", "mount"],
+                      "refopt": "grunterMount",
                       "option_id": "k756jfjfghjdsgfh54h54h54"
                     },
                     {
                       "type": "check",
                       "name": "Grunter Chariot",
-                      "cost": 90,
-                      "refs": ["mount"],
-                      "refopt": "grunter_chariot_mount",
+                      "cost": 75,
+                      "refs": ["grunterchariot", "mount"],
+                      "refopt": "grunterChariotMount",
                       "option_id": "h45h54fdsghgfhn534hj54j54"
                     }
                   ],
@@ -1858,7 +1915,7 @@
                       "cost": 5,
                       "name": "Shield",
                       "option_id": "f23fdsgrh34h53a4h534h54",
-                      "refs": [],
+                      "refs": ["shield"],
                       "optionsLabel": "Shield Enchant",
                       "optionsSuffix": " (Shield)",
                       "exportGroup": "Shield",
@@ -1872,7 +1929,7 @@
                       "type": "check",
                       "name": "Paired Weapons",
                       "option_id": "fsdf32f342fsdgfdg34g34",
-                      "refs": [],
+                      "refs": ["pairedweapons"],
                       "optionsLabel": "Paired Weapons Enchant",
                       "maxSize": 1,
                       "sortOptions": true,
@@ -1887,7 +1944,7 @@
                       "type": "check",
                       "name": "Great Weapon",
                       "option_id": "g342g34g43gfdgdafg34g34v434g3",
-                      "refs": [],
+                      "refs": ["greatweapon"],
                       "optionsLabel": "Great Weapon Enchant",
                       "maxSize": 1,
                       "sortOptions": true,
@@ -1902,7 +1959,7 @@
                       "type": "check",
                       "name": "Lance",
                       "option_id": "fewf32f32g4a3grt4354g54",
-                      "refs": [],
+                      "refs": ["lance"],
                       "optionsLabel": "Lance Enchant",
                       "maxSize": 1,
                       "sortOptions": true,
@@ -1986,9 +2043,30 @@
                       }
                     }
                   ]
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "dh0v52vc381h7z7x",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Bow (4+)",
+                      "cost": 5,
+                      "option_id": "9tlpc4soangsqh9y",
+                      "refs": ["bow"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Crossbow (4+)",
+                      "cost": 5,
+                      "option_id": "h7euge4w7pidaciu",
+                      "refs": ["crossbow"]
+                    }
+                  ]
                 }
               ],
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -2002,11 +2080,12 @@
                   }
                 }
               ],
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
-              "name": "Amokek, the Only King",
-              "cost": 600,
+              "name": "Mokrog, the Only King?",
+              "cost": 500,
               "option_id": "t2cw28cdu869p9fq",
               "unit_id": "amokekTheOnlyKing",
               "refs": ["amokektheonlyking", "army_general", "tag_Metal Armour", "tag_Orc"],
@@ -2034,10 +2113,10 @@
                     {
                       "type": "check",
                       "name": "Tabetha 39",
-                      "cost": 100,
+                      "cost": 80,
                       "option_id": "2dmmj6t1u8zae8zx",
                       "refs": ["tabethamount"],
-                      "refopt": "tabetha41Mount"
+                      "refopt": "tabethaMount"
                     }
                   ]
                 }
@@ -2045,7 +2124,7 @@
             },
             {
               "name": "Lerrgog, the Smart Troll",
-              "cost": 420,
+              "cost": 380,
               "option_id": "yjrgqstmybz411og",
               "unit_id": "lerrgogTheSmartTroll",
               "refs": ["lerrgogthesmarttroll", "army_general", "tag_Troll"],
@@ -2057,7 +2136,7 @@
             },
             {
               "name": "The Splendid Leader",
-              "cost": 250,
+              "cost": 230,
               "option_id": "6jp55fup6djc6xfi",
               "unit_id": "theSplendidLeader",
               "refs": ["thesplendidleader", "army_general", "tag_Goblin", "tag_Metal Armour", "darrmu"],
@@ -2081,15 +2160,15 @@
                       "cost": 0,
                       "option_id": "exdsjmppk3g2wkfg",
                       "refs": ["beastie"],
-                      "refopt": "beastie_mount"
+                      "refopt": "beastieMount"
                     },
                     {
                       "type": "check",
                       "name": "Beastie Chariot",
-                      "cost": 50,
+                      "cost": 40,
                       "option_id": "dqxaj3hklisllr4x",
                       "refs": ["beastiechariot"],
-                      "refopt": "beastie_chariot_mount"
+                      "refopt": "beastieChariotMount"
                     },
                     {
                       "type": "check",
@@ -2115,20 +2194,12 @@
             {
               "name": "Feral Orcs",
               "cost": -30,
-              "category": "core",
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["headbashers"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "replaceCategory": "special"
-                  }
-                }
-              ],
+              "option_id": "ulkgf346kh4at63ojkch9",
+              "unit_id": "feralOrcs",
+              "refs": ["feralorcs", "tag_Orc", "feralOrcs", "brood_rivalry", "core_unit"],
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "minSize": 25,
@@ -2148,7 +2219,7 @@
                               "type": "check",
                               "name": "Bow (4+)",
                               "cost": 1,
-                              "refs": ["archer_broods"],
+                              "refs": ["bow", "archer_broods"],
                               "option_id": "pcjk0k13yofpcwvadkykw"
                             },
                             {
@@ -2190,14 +2261,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "2taa6s38yh7zzncfk8kko"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": ["standard_bearer"],
+                      "refs": ["standardbearer", "standard_bearer"],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -2223,15 +2294,6 @@
                   "option_id": "frivnh9ds04l6pw8ofxakb"
                 }
               ],
-              "refs": ["feralOrcs", "brood_rivalry", "core_unit", "tag_Orc"],
-              "unit_id": "feralOrcs",
-              "option_id": "ulkgf346kh4at63ojkch9",
-              "logo": "core"
-            },
-            {
-              "name": "Feral Orc Marauders",
-              "cost": 30,
-              "category": "core",
               "override": [
                 {
                   "hasOption": [
@@ -2243,19 +2305,20 @@
                   "options": {
                     "replaceCategory": "special"
                   }
-                },
-                {
-                  "armyHasOption": [
-                    {
-                      "refs": ["tribe_leader"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "rarity": "Common"
-                  }
                 }
               ],
+              "category": "core",
+              "logo": "core"
+            },
+            {
+              "name": "Feral Orc Marauders",
+              "cost": 50,
+              "option_id": "1dnkizaka0xckgw1ithzv4",
+              "unit_id": "feralOrcMarauders",
+              "refs": ["feralorcmarauders", "tag_Orc", "tag_Mount", "feralOrcMarauders", "brood_rivalry", "core_unit"],
+              "rarity": "Rare",
+              "height": "2",
+              "basesize": "25×50",
               "options": [
                 {
                   "minSize": 10,
@@ -2265,7 +2328,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 20,
+                      "cost": 18,
                       "hide": true,
                       "option_id": "xpushsw4kxm42mvhoz22qj",
                       "refs": ["feral_orc_marauders_amount"],
@@ -2304,14 +2367,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "ie213ie1x8zfxqiws4qhg"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": ["standard_bearer"],
+                      "refs": ["standardbearer", "standard_bearer"],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -2337,16 +2400,43 @@
                   "option_id": "nigyejdhvgf24ji89js5eh"
                 }
               ],
-              "refs": ["feralOrcMarauders", "brood_rivalry", "core_unit", "tag_Orc", "tag_Mount"],
-              "unit_id": "feralOrcMarauders",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["headbashers"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "replaceCategory": "special"
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["tribe_leader"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "rarity": "Common"
+                  }
+                }
+              ],
+              "category": "core",
               "armyHasNotOption": [],
-              "option_id": "1dnkizaka0xckgw1ithzv4",
               "logo": "core"
             },
             {
               "name": "Goblin Rabble",
               "cost": 45,
-              "category": "core",
+              "option_id": "3hym870tojov48al9ouzs8",
+              "unit_id": "goblinRabble",
+              "refs": ["goblinrabble", "tag_Goblin", "tag_Light Armour", "goblinRabble", "goblin_cunning", "core_unit"],
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 25,
@@ -2366,7 +2456,7 @@
                               "type": "check",
                               "name": "Bow (4+)",
                               "cost": 1,
-                              "refs": ["archer_broods"],
+                              "refs": ["bow", "archer_broods"],
                               "option_id": "s1bwhg902kellxpumj39"
                             }
                           ],
@@ -2380,14 +2470,14 @@
                               "type": "check",
                               "name": "Shield",
                               "cost": 0,
-                              "refs": [],
+                              "refs": ["shield"],
                               "option_id": "94v0zlnu1dkosr9m1yuwt"
                             },
                             {
                               "type": "check",
                               "name": "Spear and Shield",
                               "cost": 0,
-                              "refs": [],
+                              "refs": ["spearandshield"],
                               "option_id": "mxgvs7z4qrnlro5fsl336"
                             },
                             {
@@ -2395,7 +2485,8 @@
                               "name": "Poisoned Spear and Shield",
                               "cost": 2,
                               "option_id": "g34gredg3e4rjki56h34h534h534hg34",
-                              "rarity": "Rare"
+                              "rarity": "Extraordinary",
+                              "refs": ["poisonedspearandshield"]
                             }
                           ],
                           "maxSize": 1,
@@ -2415,14 +2506,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "7k5qr5yhrirgf54emrtzdw"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["standardbearer"],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -2435,15 +2526,18 @@
                   "option_id": "vpdkkes5g793dtxe99bwzq"
                 }
               ],
-              "refs": ["goblinRabble", "goblin_cunning", "core_unit", "tag_Goblin", "tag_Light Armour"],
-              "unit_id": "goblinRabble",
-              "option_id": "3hym870tojov48al9ouzs8",
+              "category": "core",
               "logo": "core"
             },
             {
               "name": "Goblin Reavers",
-              "cost": 96,
-              "category": "core",
+              "cost": 88,
+              "option_id": "nmmoy69clijnf5qg79c2k",
+              "unit_id": "goblinReavers",
+              "refs": ["goblinreavers", "tag_Goblin", "tag_Light Armour", "tag_Mount", "goblinReavers", "goblin_cunning", "core_unit"],
+              "rarity": "Uncommon",
+              "height": "2",
+              "basesize": "25×50",
               "options": [
                 {
                   "minSize": 8,
@@ -2453,7 +2547,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 8,
+                      "cost": 9,
                       "hide": true,
                       "options": [
                         {
@@ -2462,9 +2556,9 @@
                             {
                               "type": "check",
                               "name": "Bow (4+) and Spies",
-                              "parsername": "Bow (4+) and Spies()",
-                              "cost": 2,
-                              "refs": ["archer_broods", "bows_and_spies"],
+                              "parsername": "Bow (4+) and Spies",
+                              "cost": 1,
+                              "refs": ["bowandspies", "archer_broods", "bows_and_spies"],
                               "option_id": "fg55vfhv1kgb2g2gc7jt5c",
                               "armyHasNotOption": [
                                 {
@@ -2492,13 +2586,14 @@
                                     ]
                                   }
                                 }
-                              ]
+                              ],
+                              "rarity": "Rare"
                             },
                             {
                               "type": "check",
                               "name": "Lance and Shield",
                               "cost": 0,
-                              "refs": [],
+                              "refs": ["lanceandshield"],
                               "option_id": "dttd1q8boho09lxdej6pjck"
                             }
                           ],
@@ -2512,7 +2607,7 @@
                               "type": "check",
                               "name": "Creepy-Crawlies",
                               "cost": 3,
-                              "refs": [],
+                              "refs": ["creepycrawlies"],
                               "option_id": "wy73osantnvsu1lt74d0p"
                             }
                           ],
@@ -2532,14 +2627,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "0wu1dpwg2a8rmiy2nghqj"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["standardbearer"],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -2553,8 +2648,6 @@
                   "option_id": "iuchtojukskwqqpb7x9q"
                 }
               ],
-              "refs": ["goblinReavers", "goblin_cunning", "core_unit", "tag_Goblin", "tag_Light Armour", "tag_Mount"],
-              "unit_id": "goblinReavers",
               "override": [
                 {
                   "armyHasOption": [
@@ -2568,26 +2661,18 @@
                   }
                 }
               ],
-              "option_id": "nmmoy69clijnf5qg79c2k",
+              "category": "core",
               "logo": "core"
             },
             {
               "name": "Veteran Orcs",
               "cost": -30,
-              "category": "core",
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["headbashers"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "replaceCategory": "special"
-                  }
-                }
-              ],
+              "option_id": "fwi56a6gecwb08stxyovdj",
+              "unit_id": "veteranOrcs",
+              "refs": ["veteranorcs", "tag_Orc", "tag_Light Armour", "veteranOrcs", "brood_rivalry", "core_unit"],
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "minSize": 20,
@@ -2597,7 +2682,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 11,
                       "hide": true,
                       "options": [
                         {
@@ -2607,14 +2692,14 @@
                               "type": "check",
                               "name": "Shield",
                               "cost": 1,
-                              "refs": [],
+                              "refs": ["shield"],
                               "option_id": "hxp9setcuj6qrej3a9qw6"
                             },
                             {
                               "type": "check",
                               "name": "Bow",
                               "cost": 1,
-                              "refs": ["archer_broods"],
+                              "refs": ["bow", "archer_broods"],
                               "option_id": "n2mxw2jmj3chekki1uyhpt"
                             }
                           ],
@@ -2627,14 +2712,14 @@
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 2,
-                              "refs": [],
+                              "refs": ["pairedweapons"],
                               "option_id": "qlpvegvdl0k14qq468gtbw"
                             },
                             {
                               "type": "check",
                               "name": "Spear",
-                              "cost": 3,
-                              "refs": [],
+                              "cost": 4,
+                              "refs": ["spear"],
                               "option_id": "2w0lyy787zrp8k7lvd2wkb"
                             }
                           ],
@@ -2650,7 +2735,7 @@
                               "type": "check",
                               "name": "Headbashers",
                               "cost": 1,
-                              "refs": ["army_unique", "headbashers"],
+                              "refs": ["headbashers", "army_unique"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["headbashers"],
@@ -2677,14 +2762,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "5zt4vnpq9haew3bx0kwd86"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": ["standard_bearer"],
+                      "refs": ["standardbearer", "standard_bearer"],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -2710,15 +2795,39 @@
                   "option_id": "6xdg3r48gnqtkozk6cto6n"
                 }
               ],
-              "refs": ["veteranOrcs", "brood_rivalry", "core_unit", "tag_Orc", "tag_Light Armour"],
-              "unit_id": "veteranOrcs",
-              "option_id": "fwi56a6gecwb08stxyovdj",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["headbashers"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "replaceCategory": "special"
+                  }
+                }
+              ],
+              "category": "core",
               "logo": "core"
             },
             {
               "name": "Veteran Orc Marauders",
               "cost": 50,
-              "category": "core",
+              "option_id": "kftajiy7oohlkrhjple7dg",
+              "unit_id": "veteranOrcMarauders",
+              "refs": [
+                "veteranorcmarauders",
+                "tag_Orc",
+                "tag_Light Armour",
+                "tag_Mount",
+                "veteranOrcMarauders",
+                "brood_rivalry",
+                "core_unit"
+              ],
+              "rarity": "Extraordinary",
+              "height": "2",
+              "basesize": "25×50",
               "options": [
                 {
                   "minSize": 5,
@@ -2740,7 +2849,7 @@
                               "type": "check",
                               "name": "Headbashers",
                               "cost": 2,
-                              "refs": ["army_unique", "headbashers"],
+                              "refs": ["headbashers", "army_unique"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["headbashers"],
@@ -2767,14 +2876,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "8cihhieqrfm9v3qt21daj"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": ["standard_bearer"],
+                      "refs": ["standardbearer", "standard_bearer"],
                       "maxSize": 1,
                       "collapsible": true,
                       "sortOptions": true,
@@ -2799,8 +2908,6 @@
                   "option_id": "3vq2t3a2pjgp82evxjvcj"
                 }
               ],
-              "refs": ["veteranOrcMarauders", "brood_rivalry", "core_unit", "tag_Orc", "tag_Light Armour", "tag_Mount"],
-              "unit_id": "veteranOrcMarauders",
               "override": [
                 {
                   "armyHasOption": [
@@ -2825,7 +2932,7 @@
                   }
                 }
               ],
-              "option_id": "kftajiy7oohlkrhjple7dg",
+              "category": "core",
               "logo": "core"
             }
           ],
@@ -2851,8 +2958,14 @@
           "options": [
             {
               "name": "Giant",
-              "cost": 280,
-              "category": "special",
+              "cost": 275,
+              "option_id": "fz01ug9gwbta9d3lze5c0e",
+              "unit_id": "giant",
+              "refs": ["giant", "tag_Giant", "brood_rivalry", "tag_Orc"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "5",
+              "basesize": "50×75",
               "options": [
                 {
                   "optionsLabel": "Options",
@@ -2861,7 +2974,7 @@
                       "type": "check",
                       "name": "Big Brother",
                       "cost": 20,
-                      "refs": [],
+                      "refs": ["bigbrother"],
                       "option_id": "3a5jmmqm13g9e5edwzo1rw"
                     }
                   ],
@@ -2874,22 +2987,22 @@
                     {
                       "type": "check",
                       "name": "Giant Club",
-                      "cost": 0,
-                      "refs": [],
+                      "cost": 15,
+                      "refs": ["giantclub"],
                       "option_id": "1qjc4nwg1roz2sbplchae8"
                     },
                     {
                       "type": "check",
                       "name": "Beloved Mascot",
                       "cost": 0,
-                      "refs": [],
+                      "refs": ["belovedmascot"],
                       "option_id": "6pmgyjrvzjvy258bj40gr8"
                     },
                     {
                       "type": "check",
                       "name": "Armed to the Teeth",
-                      "cost": 25,
-                      "refs": [],
+                      "cost": 40,
+                      "refs": ["armedtotheteeth"],
                       "option_id": "3jr53fezgmhcam94uks7of"
                     }
                   ],
@@ -2897,8 +3010,6 @@
                   "option_id": "wzggw0wj0cdbdnpsy81z2q"
                 }
               ],
-              "refs": ["giant", "brood_rivalry", "tag_Giant", "tag_Orc"],
-              "unit_id": "giant",
               "override": [
                 {
                   "armyHasOption": [
@@ -2912,35 +3023,84 @@
                   }
                 }
               ],
-              "option_id": "fz01ug9gwbta9d3lze5c0e",
+              "category": "special",
               "logo": "special"
             },
             {
               "name": "Gnashers",
-              "cost": 0,
-              "category": "special",
+              "cost": 20,
+              "option_id": "ddr0abkyf063l18blz41bg",
+              "unit_id": "gnashers",
+              "refs": ["gnashers", "tag_Beast"],
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
-                  "minSize": 15,
+                  "minSize": 10,
                   "maxSize": 40,
                   "addToUnitSize": true,
                   "options": [
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 10,
                       "hide": true,
                       "option_id": "ik4khuaddbdsadas78fnfpjhk02",
                       "refs": ["gnashers_amount"]
                     }
                   ],
-                  "option_id": "kkc5xst7h9rfy2bpzndkmq"
+                  "option_id": "kkc5xst7h9rfy2bpzndkmq",
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["herd"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 40
+                      }
+                    },
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["dashers"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 14
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "ggrsibz5dqway4qv",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Herd",
+                      "cost": 0,
+                      "option_id": "58xpguyydmhz1rwp",
+                      "refs": ["herd"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Dashers",
+                      "cost": 50,
+                      "option_id": "ivzaauqv0sa7g3xy",
+                      "refs": ["dashers"],
+                      "rarity": "Rare"
+                    }
+                  ]
                 }
               ],
-              "refs": ["gnashers", "tag_Beast"],
-              "unit_id": "gnashers",
+              "category": "special",
               "armyHasNotOption": [],
-              "option_id": "ddr0abkyf063l18blz41bg",
               "logo": "special"
             },
             {
@@ -2996,7 +3156,14 @@
             {
               "name": "Goblin Artillery",
               "cost": 90,
-              "category": "special",
+              "option_id": "qpev3eiadfndyckxq9be9g",
+              "unit_id": "goblinArtillery",
+              "refs": ["goblinartillery", "tag_Goblin", "tag_Light Armour", "tag_Construct", "goblinArtillery", "goblin_cunning"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "2",
+              "basesize": "75×75",
+              "extraCategories": ["deathFromAbove"],
               "options": [
                 {
                   "optionsLabel": "Options",
@@ -3033,7 +3200,8 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "rarity": "Rare"
                     },
                     {
                       "type": "check",
@@ -3072,13 +3240,14 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "rarity": "Rare"
                     },
                     {
                       "type": "check",
                       "name": "Git Launcher (4+)",
-                      "cost": 80,
-                      "refs": ["git_launcher", "splatterer_or_git_launcher", "death_from_above"],
+                      "cost": 100,
+                      "refs": ["gitlauncher", "git_launcher", "splatterer_or_git_launcher", "death_from_above"],
                       "option_id": "n0ez8487bmqfj4b1kzfv",
                       "armyHasNotOption": [
                         {
@@ -3111,15 +3280,13 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "rarity": "Extraordinary"
                     }
                   ],
                   "option_id": "ag4d3pp6zp877tt7v7wjv4"
                 }
               ],
-              "refs": ["goblinArtillery", "goblin_cunning", "tag_Goblin", "tag_Light Armour", "tag_Construct"],
-              "unit_id": "goblinArtillery",
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -3133,13 +3300,27 @@
                   }
                 }
               ],
-              "option_id": "qpev3eiadfndyckxq9be9g",
+              "category": "special",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Goblin Chariots",
-              "cost": 30,
-              "category": "special",
+              "cost": 40,
+              "option_id": "uxs8xx1flsktl3kzg7f4cp",
+              "unit_id": "goblinChariots",
+              "refs": [
+                "goblinchariots",
+                "tag_Goblin",
+                "tag_Light Armour",
+                "tag_Mount",
+                "tag_Construct",
+                "goblinChariots",
+                "goblin_cunning"
+              ],
+              "rarity": "Rare",
+              "height": "4",
+              "basesize": "50×100",
               "options": [
                 {
                   "minSize": 2,
@@ -3149,7 +3330,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 90,
+                      "cost": 80,
                       "hide": true,
                       "options": [],
                       "option_id": "ioin5bwrd6hz0x4sl34lnq",
@@ -3165,9 +3346,6 @@
                   "option_id": "6opf9umvwjj5hmw9eh991x"
                 }
               ],
-              "refs": ["goblinChariots", "goblin_cunning", "tag_Goblin", "tag_Light Armour", "tag_Mount", "tag_Construct"],
-              "unit_id": "goblinChariots",
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -3181,14 +3359,20 @@
                   }
                 }
               ],
-              "option_id": "uxs8xx1flsktl3kzg7f4cp",
+              "category": "special",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Gogtuk Neophytes",
               "cost": 50,
-              "category": "special",
-              "extraCategories": ["death_from_above"],
+              "option_id": "s2bz6e4w0tw3b3bfjdffb",
+              "unit_id": "gogtukNeophytes",
+              "refs": ["gogtukneophytes", "tag_Goblin", "tag_Light Armour", "gogtukNeophytes", "goblin_cunning"],
+              "rarity": "Extraordinary",
+              "height": "1",
+              "basesize": "20×20",
+              "extraCategories": ["deathFromAbove"],
               "options": [
                 {
                   "minSize": 10,
@@ -3198,7 +3382,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 10,
+                      "cost": 12,
                       "hide": true,
                       "options": [
                         {
@@ -3207,8 +3391,8 @@
                             {
                               "type": "check",
                               "name": "Creepers",
-                              "cost": 1,
-                              "refs": ["creepers_9a29l3yc"],
+                              "cost": 0,
+                              "refs": ["creepers", "creepers_9a29l3yc"],
                               "hasNotOption": [
                                 {
                                   "refs": ["creepers_9a29l3yc"],
@@ -3225,7 +3409,20 @@
                       "refs": ["gogtuk_neophytes_amount", "archer_broods"]
                     }
                   ],
-                  "option_id": "am4nunix4ndd9m1q7j06xd"
+                  "option_id": "am4nunix4ndd9m1q7j06xd",
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["creepers"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 15
+                      }
+                    }
+                  ]
                 },
                 {
                   "optionsLabel": "Command Group",
@@ -3234,23 +3431,20 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "j0t1x9prqy2t7yzq3iekn"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["standardbearer"],
                       "option_id": "fdsf32h654hh5432v54h54"
                     }
                   ],
                   "option_id": "tpy3pcxqd2j324khwebyqa"
                 }
               ],
-              "refs": ["gogtukNeophytes", "goblin_cunning", "tag_Goblin", "tag_Light Armour"],
-              "unit_id": "gogtukNeophytes",
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -3264,16 +3458,21 @@
                   }
                 }
               ],
-              "option_id": "s2bz6e4w0tw3b3bfjdffb",
+              "category": "special",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Great Green Idol",
-              "cost": 380,
-              "category": "special",
-              "options": [],
-              "refs": ["greatGreenIdol", "tag_Construct"],
+              "cost": 400,
+              "option_id": "9afcocx8oo6hydp7ocfaj5",
               "unit_id": "greatGreenIdol",
+              "refs": ["greatgreenidol", "tag_Construct", "greatGreenIdol"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "5",
+              "basesize": "100×100",
+              "options": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -3298,7 +3497,7 @@
                   }
                 }
               ],
-              "option_id": "9afcocx8oo6hydp7ocfaj5",
+              "category": "special",
               "boundSpells": [
                 {
                   "ref": "guile_and_fury",
@@ -3312,8 +3511,12 @@
             },
             {
               "name": "Grotlings",
-              "cost": 95,
-              "category": "special",
+              "cost": 115,
+              "option_id": "hsyskkll9n156iehepujb",
+              "unit_id": "grotlings",
+              "refs": ["grotlings", "tag_Grotling"],
+              "rarity": "Uncommon",
+              "basesize": "40×40",
               "options": [
                 {
                   "minSize": 3,
@@ -3323,7 +3526,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 15,
+                      "cost": 10,
                       "hide": true,
                       "options": [],
                       "option_id": "t1zdo7y5oznykiyrn3on89",
@@ -3333,33 +3536,52 @@
                   "option_id": "cqmo0ybp61473ut9m3kcge"
                 }
               ],
-              "refs": ["grotlings", "tag_Grotling"],
-              "unit_id": "grotlings",
+              "category": "special",
               "armyHasNotOption": [],
-              "option_id": "hsyskkll9n156iehepujb",
               "logo": "special"
             },
             {
               "name": "Grotling Scrap Wagon",
-              "cost": 110,
-              "category": "special",
-              "options": [],
-              "refs": ["grotlingScrapWagon", "tag_Grotling", "tag_Construct"],
-              "unit_id": "grotlingScrapWagon",
-              "armyHasNotOption": [],
+              "cost": 120,
               "option_id": "d3i1hio5osjfza4oaperxl",
+              "unit_id": "grotlingScrapWagon",
+              "refs": ["grotlingscrapwagon", "tag_Grotling", "tag_Construct", "grotlingScrapWagon"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
+              "category": "special",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Guardian Behemoth",
               "cost": 280,
-              "category": "special",
+              "option_id": "4p6xxam7rcrqs7h72ev6b",
+              "unit_id": "guardianBehemoth",
+              "refs": [
+                "guardianbehemoth",
+                "tag_Goblin",
+                "tag_Mount",
+                "tag_Beast",
+                "guardianBehemoth",
+                "goblin_cunning",
+                {
+                  "ref": "archer_broods",
+                  "amount": 4
+                }
+              ],
+              "size": "1",
+              "rarity": "Extraordinary",
+              "height": "5",
+              "basesize": "50×100",
               "options": [
                 {
                   "type": "check",
                   "name": "Immense Bulk",
                   "cost": 30,
-                  "refs": [],
+                  "refs": ["immensebulk"],
                   "option_id": "iuycjsqgxoogcwou4oesp"
                 },
                 {
@@ -3370,46 +3592,34 @@
                       "type": "check",
                       "name": "Creepy-Crawlies",
                       "cost": 20,
-                      "refs": [],
+                      "refs": ["creepycrawlies"],
                       "option_id": "2d9xwndqm092mddjkoeo73"
                     },
                     {
                       "type": "check",
                       "name": "Slithering Frame",
                       "cost": 15,
-                      "refs": [],
+                      "refs": ["slitheringframe"],
                       "option_id": "4yln2munyxxqp3ii51am6"
                     },
                     {
                       "type": "check",
                       "name": "Scarred Carapace",
                       "cost": 40,
-                      "refs": [],
+                      "refs": ["scarredcarapace"],
                       "option_id": "0njcbpzpw6ulusp3agw3tua"
                     },
                     {
                       "type": "check",
                       "name": "Wicked Horns",
                       "cost": 50,
-                      "refs": [],
+                      "refs": ["wickedhorns"],
                       "option_id": "ccqdduqu846yalncn0fbqf"
                     }
                   ],
                   "option_id": "ni6fxecmgezzfpk12rbe"
                 }
               ],
-              "refs": [
-                "guardianBehemoth",
-                "goblin_cunning",
-                "tag_Goblin",
-                "tag_Mount",
-                "tag_Beast",
-                {
-                  "ref": "archer_broods",
-                  "amount": 4
-                }
-              ],
-              "unit_id": "guardianBehemoth",
               "override": [
                 {
                   "armyHasOption": [
@@ -3423,17 +3633,22 @@
                   }
                 }
               ],
-              "option_id": "4p6xxam7rcrqs7h72ev6b",
+              "category": "special",
               "logo": "special"
             },
             {
               "name": "Iron Orc Chariots",
               "cost": 40,
-              "category": "special",
+              "option_id": "38pztyy4wij8zfylw82mpe",
+              "unit_id": "ironOrcChariots",
+              "refs": ["ironorcchariots", "tag_Orc", "tag_Metal Armour", "tag_Mount", "tag_Construct", "ironOrcChariots", "brood_rivalry"],
+              "rarity": "Rare",
+              "height": "4",
+              "basesize": "50×100",
               "options": [
                 {
                   "minSize": 1,
-                  "maxSize": 2,
+                  "maxSize": 1,
                   "addToUnitSize": true,
                   "options": [
                     {
@@ -3450,8 +3665,8 @@
                               "option_id": "hj5hg34g54534gg534h54j56j65j65h",
                               "type": "check",
                               "name": "Headbashers",
-                              "cost": 40,
-                              "refs": ["army_unique", "headbashers"],
+                              "cost": 30,
+                              "refs": ["headbashers", "army_unique"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["headbashers"],
@@ -3501,7 +3716,7 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "wz0c851biiiae84nf0cj5",
                       "hasOption": [
                         {
@@ -3514,7 +3729,7 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["standardbearer"],
                       "options": [],
                       "collapsible": true,
                       "sortOptions": true,
@@ -3533,9 +3748,6 @@
                   "option_id": "knbreeltgs8nd83zvnb2sg"
                 }
               ],
-              "refs": ["ironOrcChariots", "brood_rivalry", "tag_Orc", "tag_Metal Armour", "tag_Mount", "tag_Construct"],
-              "unit_id": "ironOrcChariots",
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -3549,26 +3761,19 @@
                   }
                 }
               ],
-              "option_id": "38pztyy4wij8zfylw82mpe",
+              "category": "special",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Iron Orcs",
-              "cost": -15,
-              "category": "special",
-              "override": [
-                {
-                  "armyHasOption": [
-                    {
-                      "refs": ["tribe_leader"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "rarity": "Uncommon"
-                  }
-                }
-              ],
+              "cost": -5,
+              "option_id": "5tpi0iqyb1ic6ulo90p7ge",
+              "unit_id": "ironOrcs",
+              "refs": ["ironorcs", "tag_Orc", "tag_Metal Armour", "ironOrcs", "brood_rivalry"],
+              "rarity": "Extraordinary",
+              "height": "1",
+              "basesize": "25×25",
               "options": [
                 {
                   "minSize": 15,
@@ -3588,7 +3793,7 @@
                               "type": "check",
                               "name": "Crossbow (4+)",
                               "cost": 2,
-                              "refs": ["archer_broods", "iron_orc_xbows"],
+                              "refs": ["crossbow", "archer_broods", "iron_orc_xbows"],
                               "option_id": "hp6m7pvqj2v0ttvzvjp1gka",
                               "armyHasNotOption": [
                                 {
@@ -3596,7 +3801,8 @@
                                   "amount": 2,
                                   "parentMult": false
                                 }
-                              ]
+                              ],
+                              "rarity": "Rare"
                             },
                             {
                               "option_id": "hgfh3erh54hg54gh534j4h5445",
@@ -3607,7 +3813,7 @@
                                   "type": "check",
                                   "name": "Headbashers",
                                   "cost": 2,
-                                  "refs": ["army_unique", "headbashers"],
+                                  "refs": ["headbashers", "army_unique"],
                                   "armyHasNotOption": [
                                     {
                                       "refs": ["headbashers"],
@@ -3638,14 +3844,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "06m1ag2aepxlods4bgdhe4g"
                     },
                     {
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "refs": ["standard_bearer"],
+                      "refs": ["standardbearer", "standard_bearer"],
                       "options": [],
                       "maxSize": 1,
                       "collapsible": true,
@@ -3671,15 +3877,31 @@
                   "option_id": "4xv0or9eneyq2o7rv8ietf"
                 }
               ],
-              "refs": ["ironOrcs", "brood_rivalry", "tag_Orc", "tag_Metal Armour"],
-              "unit_id": "ironOrcs",
-              "option_id": "5tpi0iqyb1ic6ulo90p7ge",
+              "override": [
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["tribe_leader"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "rarity": "Uncommon"
+                  }
+                }
+              ],
+              "category": "special",
               "logo": "special"
             },
             {
               "name": "Trolls",
-              "cost": 5,
-              "category": "special",
+              "cost": 10,
+              "option_id": "emj3mtc6amlp8g1qftr2f",
+              "unit_id": "trolls",
+              "refs": ["trolls", "tag_Troll"],
+              "rarity": "Uncommon",
+              "height": "3",
+              "basesize": "40×40",
               "options": [
                 {
                   "minSize": 3,
@@ -3689,7 +3911,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 55,
+                      "cost": 50,
                       "hide": true,
                       "options": [
                         {
@@ -3699,22 +3921,22 @@
                             {
                               "type": "check",
                               "name": "Cave Troll",
-                              "cost": 5,
-                              "refs": [],
+                              "cost": 3,
+                              "refs": ["cavetroll"],
                               "option_id": "6w2apr8sqvr4aukzatsh52"
                             },
                             {
                               "type": "check",
                               "name": "Bridge Troll",
                               "cost": 5,
-                              "refs": [],
+                              "refs": ["bridgetroll"],
                               "option_id": "g559ju040mlomezup89gal"
                             },
                             {
                               "type": "check",
                               "name": "Forest Troll",
                               "cost": 0,
-                              "refs": [],
+                              "refs": ["foresttroll"],
                               "option_id": "bwl03nq82596gjl2v7nyc"
                             }
                           ],
@@ -3728,21 +3950,23 @@
                   "option_id": "23i0j08sca1wgbimylcjib"
                 }
               ],
-              "refs": ["trolls", "tag_Troll"],
-              "unit_id": "trolls",
+              "category": "special",
               "armyHasNotOption": [],
-              "option_id": "emj3mtc6amlp8g1qftr2f",
               "logo": "special"
             },
             {
               "name": "Wrecking Team",
-              "cost": 100,
-              "category": "special",
-              "options": [],
-              "refs": ["wreckingTeam", "tag_Beast"],
-              "unit_id": "wreckingTeam",
-              "armyHasNotOption": [],
+              "cost": 110,
               "option_id": "q6b6mgwqcd8r8nr5a30dra",
+              "unit_id": "wreckingTeam",
+              "refs": ["wreckingteam", "tag_Beast", "wreckingTeam"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "3",
+              "basesize": "60×60",
+              "options": [],
+              "category": "special",
+              "armyHasNotOption": [],
               "logo": "special"
             }
           ],
@@ -3755,8 +3979,13 @@
           "options": [
             {
               "name": "Beastie *Mount",
-              "cost": null,
-              "category": "mounts",
+              "cost": 0,
+              "option_id": "h30slicu5san9p9bcu1ym",
+              "unit_id": "beastieMount",
+              "refs": ["beastiemount", "tag_Mount", "mount", "beastie_mount_unit"],
+              "invisible": true,
+              "height": "2",
+              "basesize": "25×50",
               "options": [
                 {
                   "optionsLabel": "Beastie Options",
@@ -3765,79 +3994,94 @@
                       "type": "check",
                       "name": "Creepy-Crawlies",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["creepycrawlies"],
                       "option_id": "jzlhj1k71nbfb76a1e2q6"
                     }
                   ],
                   "option_id": "n6lcfxmy39qvjfmnshzh"
                 }
               ],
-              "refs": ["beastie_mount_unit", "mount", "tag_Mount"],
-              "unit_id": "beastieMount",
-              "invisible": true,
-              "option_id": "h30slicu5san9p9bcu1ym",
+              "category": "mounts",
               "logo": "character"
             },
             {
               "name": "Beastie Chariot *Mount",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "refs": ["beastieChariot_mount_unit", "mount", "tag_Mount", "tag_Construct"],
-              "unit_id": "beastieChariotMount",
-              "invisible": true,
-              "armyHasNotOption": [],
+              "cost": 0,
               "option_id": "vp20plsxhpznefje51h",
+              "unit_id": "beastieChariotMount",
+              "refs": ["beastiechariotmount", "tag_Mount", "tag_Construct", "mount", "beastieChariot_mount_unit"],
+              "invisible": true,
+              "rarity": "Uncommon",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
+              "category": "mounts",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
               "name": "Gargantula *Mount",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
+              "cost": 0,
+              "option_id": "uhk18axid2kyifx8a1huz",
+              "unit_id": "gargantulaMount",
               "refs": [
-                "gargantula_mount_unit",
-                "mount",
+                "gargantulamount",
                 "tag_Goblin",
                 "tag_Mount",
                 "tag_Beast",
+                "mount",
+                "gargantula_mount_unit",
                 {
                   "ref": "archer_broods",
                   "amount": 8
                 }
               ],
-              "unit_id": "gargantulaMount",
               "invisible": true,
-              "option_id": "uhk18axid2kyifx8a1huz",
+              "rarity": "Extraordinary",
+              "height": "5",
+              "basesize": "100×150",
+              "options": [],
+              "category": "mounts",
               "logo": "character"
             },
             {
               "name": "Grunter *Mount",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "refs": ["grunter_mount_unit", "mount", "tag_Mount"],
-              "unit_id": "grunterMount",
-              "invisible": true,
+              "cost": 0,
               "option_id": "p96pb1p032hyker00m08h",
+              "unit_id": "grunterMount",
+              "refs": ["gruntermount", "tag_Mount", "mount", "grunter_mount_unit"],
+              "invisible": true,
+              "height": "2",
+              "basesize": "25×50",
+              "options": [],
+              "category": "mounts",
               "logo": "character"
             },
             {
               "name": "Grunter Chariot *Mount",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "refs": ["grunterChariot_mount_unit", "mount", "tag_Mount", "tag_Construct"],
-              "unit_id": "grunterChariotMount",
-              "invisible": true,
-              "armyHasNotOption": [],
+              "cost": 0,
               "option_id": "nx42skh0o1juztg13dn8q",
+              "unit_id": "grunterChariotMount",
+              "refs": ["grunterchariotmount", "tag_Mount", "tag_Construct", "mount", "grunterChariot_mount_unit"],
+              "invisible": true,
+              "rarity": "Uncommon",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
+              "category": "mounts",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
               "name": "Pet Monster *Mount",
-              "cost": null,
-              "category": "mounts",
+              "cost": 0,
+              "option_id": "as78hnkkvewi3fef8n13s",
+              "unit_id": "petMonsterMount",
+              "refs": ["petmonstermount", "tag_Mount", "tag_Beast", "mount", "petMonster_mount_unit"],
+              "invisible": true,
+              "rarity": "Uncommon",
+              "height": "3",
+              "basesize": "40×40",
               "options": [
                 {
                   "optionsLabel": "Pet Monster Options",
@@ -3846,38 +4090,37 @@
                       "type": "check",
                       "name": "Huntsman Spider",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["huntsmanspider"],
                       "option_id": "o8il3d0jrwa6kkmtznezu"
                     }
                   ],
                   "option_id": "t2dwqg9n1ax7hblfrv96m"
                 }
               ],
-              "refs": ["petMonster_mount_unit", "mount", "tag_Mount"],
-              "unit_id": "petMonsterMount",
-              "invisible": true,
+              "category": "mounts",
               "armyHasNotOption": [],
-              "option_id": "as78hnkkvewi3fef8n13s",
               "logo": "character"
             },
             {
               "name": "Wyvern *Mount",
-              "cost": null,
-              "category": "mounts",
-              "optionsLabel": "Options",
+              "cost": 0,
+              "option_id": "d44ot2wg4hmofvrc4gc4qk",
+              "unit_id": "wyvernMount",
+              "refs": ["wyvernmount", "tag_Mount", "tag_Beast", "mount", "wyvern_mount_unit"],
+              "invisible": true,
+              "rarity": "Extraordinary",
+              "height": "4",
+              "basesize": "50×50",
+              "extraCategories": ["bigAndNasty"],
               "options": [
                 {
                   "type": "check",
                   "name": "Big Wing",
                   "cost": 0,
-                  "refs": ["big_wing", "towering"],
+                  "refs": ["bigwing", "big_wing", "towering"],
                   "option_id": "akey4wd63tpl4cvs7mq1ca"
                 }
               ],
-              "refs": ["wyvern_mount_unit", "mount", "tag_Mount", "tag_Beast"],
-              "unit_id": "wyvernMount",
-              "invisible": true,
-              "armyHasNotOption": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -3891,7 +4134,9 @@
                   }
                 }
               ],
-              "option_id": "d44ot2wg4hmofvrc4gc4qk",
+              "category": "mounts",
+              "optionsLabel": "Options",
+              "armyHasNotOption": [],
               "logo": "character"
             },
             {
