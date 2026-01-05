@@ -47,7 +47,7 @@
       "options": [
         {
           "name": "Scroll of Power",
-          "cost": 20,
+          "cost": 30,
           "option_id": "vo95gv94z5kinhtsplpen",
           "type": "check",
           "shared": true
@@ -55,7 +55,12 @@
         {
           "type": "check",
           "refs": ["scroll_pearl_thrne"],
-          "armyHasNotOption": ["scroll_pearl_thrne"],
+          "armyHasNotOption": [
+            {
+              "refs": ["scroll_pearl_thrne"],
+              "amount": 1
+            }
+          ],
           "name": "Scroll of the Pearl Throne",
           "cost": 30,
           "description": "\tChoose a Magic Item from an enemy unit that is in contact with the bearer. This Magic Item is ignored.\t\t<br><br>\t<i>If it was an Enchanted Weapon or Shield, the mundane effects of the Weapon or Shield can still be used</i>.<br>",
@@ -75,7 +80,7 @@
         },
         {
           "name": "Dusk Forged",
-          "cost": 55,
+          "cost": 45,
           "option_id": "f75ehm9v0zv3ks9db8ft1n",
           "type": "check",
           "shared": true
@@ -89,24 +94,34 @@
         {
           "type": "check",
           "refs": ["be_he_demonbane"],
-          "armyHasNotOption": ["be_he_demonbane"],
+          "armyHasNotOption": [
+            {
+              "refs": ["be_he_demonbane"],
+              "amount": 1
+            }
+          ],
           "name": "Daemon's Bane",
-          "cost": 20,
+          "cost": 10,
           "description": "\t+2 Arm against <span class=\"textbf\">Magical Attacks</span>.\n",
           "option_id": "mccp4vc0dv1rivmhib4nj"
         },
         {
           "type": "check",
           "refs": ["be_he_metally"],
-          "armyHasNotOption": ["be_he_metally"],
+          "armyHasNotOption": [
+            {
+              "refs": ["be_he_metally"],
+              "amount": 1
+            }
+          ],
           "name": "Star Metal Alloy",
-          "cost": 80,
+          "cost": 60,
           "description": "\t+1 Arm, which is improved to +2 Arm for models without Mount. The bearer can <span class=\"textbf\">never</span> be wounded on a roll better than 3+.\n",
           "option_id": "jg2zren397hqi4189m1s2"
         },
         {
           "name": "Ghostly Guard",
-          "cost": 30,
+          "cost": 20,
           "option_id": "lz9dfq74ixm08sajxl7lgbm",
           "type": "check",
           "shared": true
@@ -115,7 +130,12 @@
           "hasNotOption": ["mount"],
           "type": "check",
           "refs": ["ae_he_dorcprot"],
-          "armyHasNotOption": ["ae_he_dorcprot"],
+          "armyHasNotOption": [
+            {
+              "refs": ["ae_he_dorcprot"],
+              "amount": 1
+            }
+          ],
           "name": "Protection of Dorac",
           "cost": 50,
           "description": "\t+3 Arm, +3 Def, and <span class=\"textbf\">Attached</span>. Arm can <span class=\"textbf\">never</span> be improved beyond 5.\n",
@@ -133,7 +153,12 @@
           ],
           "type": "check",
           "refs": ["lae_he_gleamrobe"],
-          "armyHasNotOption": ["lae_he_gleamrobe"],
+          "armyHasNotOption": [
+            {
+              "refs": ["lae_he_gleamrobe"],
+              "amount": 1
+            }
+          ],
           "name": "Gleaming Robe",
           "cost": 60,
           "description": "\t<span class=\"textbf\">Aegis(3+)</span>. Armour is <span class=\"textbf\">set</span> to 1 and can <span class=\"textbf\">never</span> be improved beyond this. If the wearer Miscasts and rolls <span class=\"textbf\">Witchfire</span>, the number of hits is halved (rounding fractions up) for the wearer and its unit.\n",
@@ -149,7 +174,13 @@
           "name": "Elemental Blade",
           "type": "check",
           "refs": ["elemental_blade", "weaponEnchantUni"],
-          "armyHasNotOption": ["we_he_elemental_blade"],
+          "armyHasNotOption": [
+            "we_he_elemental_blade",
+            {
+              "refs": ["elemental_blade"],
+              "amount": 1
+            }
+          ],
           "hasNotOption": ["weaponEnchantUni"],
           "cost": 60,
           "description": "\t+1 Att, +1 Str. When Choosing Equipment and Abilities, choose to gain either Flaming Attacks, Lightning Attacks. The effects last until the end of the Round of Combat.\n",
@@ -163,19 +194,29 @@
         {
           "type": "check",
           "refs": ["be_he_navigator"],
-          "armyHasNotOption": ["be_he_navigator"],
+          "armyHasNotOption": [
+            {
+              "refs": ["be_he_navigator"],
+              "amount": 1
+            }
+          ],
           "name": "Navigator's Banner",
-          "cost": 50,
+          "cost": 60,
           "description": "\tThe bearer's unit gains <span class=\"textbf\">First Strike(Aegis(5+))</span>.\n",
           "option_id": "ttwbrn69c9erw067rkm8e"
         },
         {
           "type": "check",
           "refs": ["be_he_becalm"],
-          "armyHasNotOption": ["be_he_becalm"],
+          "armyHasNotOption": [
+            {
+              "refs": ["be_he_becalm"],
+              "amount": 1
+            }
+          ],
           "hasNotOption": ["core_unit"],
           "name": "Banner of Becalming",
-          "cost": 40,
+          "cost": 45,
           "description": "\tIn each of the opponent's Magic Phases, immediately after Excess Magic  the opponent must discard 1 Magic Dice.",
           "option_id": "25emuhapfmfvqscsopeb5"
         },
@@ -195,10 +236,25 @@
         },
         {
           "name": "Distortion Emblem",
-          "cost": 50,
+          "cost": 40,
           "option_id": "v0dkrtnka7ppkzn2pf9a",
           "type": "check",
           "shared": true
+        },
+        {
+          "type": "check",
+          "name": "War Banner of Ryma",
+          "cost": 60,
+          "option_id": "xvnkon7j6bx09d6m",
+          "refs": ["warbannerofryma"],
+          "armyHasNotOption": [
+            {
+              "refs": ["warbannerofryma"],
+              "amount": 1
+            }
+          ],
+          "rarity": "Rare",
+          "description": "xx"
         }
       ],
       "option_id": "wg723djz45evum77m5eqn"
@@ -229,8 +285,13 @@
         {
           "type": "check",
           "name": "Nova Flare",
-          "cost": 95,
-          "armyHasNotOption": ["we_he_nova_flare"],
+          "cost": 90,
+          "armyHasNotOption": [
+            {
+              "refs": ["we_he_nova_flare"],
+              "amount": 1
+            }
+          ],
           "refs": ["weaponEnchantUni", "we_he_nova_flare"],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "Devastating Charge(+1 Att), Lethal Strike, Divine Attacks.\t<br><br>\tOne use only. May be activated when Choosing Equipment and Abilities in the Melee Phase. The wielder counts as Charging for the purpose of <span class=\"textbf\">Devastating Charge</span>.\n",
@@ -245,8 +306,13 @@
         {
           "type": "check",
           "name": "Sliver of the Blazing Dawn",
-          "cost": 100,
-          "armyHasNotOption": ["we_he_silver_blaze_dawn"],
+          "cost": 90,
+          "armyHasNotOption": [
+            {
+              "refs": ["we_he_silver_blaze_dawn"],
+              "amount": 1
+            }
+          ],
           "refs": ["weaponEnchantUni", "we_he_silver_blaze_dawn"],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "\t+1 Str and +2 AP. Each successful to-hit roll with this weapon causes two hits instead of one.\n",
@@ -261,8 +327,13 @@
         {
           "type": "check",
           "name": "Cadaron's Heartwood",
-          "cost": 75,
-          "armyHasNotOption": ["we_he_elus_heart"],
+          "cost": 80,
+          "armyHasNotOption": [
+            {
+              "refs": ["we_he_elus_heart"],
+              "amount": 1
+            }
+          ],
           "refs": [
             "weaponEnchantUni",
             "we_he_elus_heart",
@@ -290,7 +361,12 @@
           "type": "check",
           "name": "Book of Meladys",
           "cost": 60,
-          "armyHasNotOption": ["art_he_meladys"],
+          "armyHasNotOption": [
+            {
+              "refs": ["art_he_meladys"],
+              "amount": 1
+            }
+          ],
           "refs": ["art_he_meladys", "dominant"],
           "description": "\tThe first time in each Magic Phase that the bearer fails a Casting Roll for a Learned Spell cast with two or three Magic Dice, the bearer may reroll all Magic Dice from this Casting Roll.\n",
           "option_id": "ykn689uouxlhwso08fne8"
@@ -299,7 +375,12 @@
           "type": "check",
           "name": "Diadem of Protection",
           "cost": 80,
-          "armyHasNotOption": ["art_he_diadem"],
+          "armyHasNotOption": [
+            {
+              "refs": ["art_he_diadem"],
+              "amount": 1
+            }
+          ],
           "refs": ["art_he_diadem"],
           "description": "\t<span class=\"textbf\">Aegis(+2, max 4+)</span>.\n",
           "option_id": "qjqnpbhzwik9xqjnecsr88"
@@ -310,7 +391,12 @@
           "cost": 60,
           "hasOption": ["wizard"],
           "refs": ["art_he_amecrys"],
-          "armyHasNotOption": ["art_he_amecrys"],
+          "armyHasNotOption": [
+            {
+              "refs": ["art_he_amecrys"],
+              "amount": 1
+            }
+          ],
           "description": "\tUnless Shaken: Dispelling Rolls made by the bearer's army gain a +1 modifier. If the target of an enemy spell is within 18\" of the bearer, the modifier is increased to +2.\n",
           "option_id": "sxhmenal9xbhx17uial30r"
         },
@@ -323,7 +409,7 @@
         },
         {
           "name": "Scroll of a Free Mind",
-          "cost": 10,
+          "cost": 40,
           "option_id": "je3g9gc0kfbu8pzckwie7",
           "type": "check",
           "shared": true
@@ -345,7 +431,7 @@
           "type": "check",
           "name": "Asfad Scholar",
           "hasOption": ["wizardMaster"],
-          "cost": 60,
+          "cost": 65,
           "description": "\tThe model gains <span class=\"textbf\">Channel(1)</span>. The Range of the Wizard's Learned Spells is increased by 6\". Aura spells gain +3\" Range instead, and spells with type Caster are unaffected.\n",
           "option_id": "1m3l1g1sss13v4puohy5yn",
           "refs": ["asfal_scholar"],
@@ -421,7 +507,7 @@
               }
             ]
           },
-          "cost": 150,
+          "cost": 170,
           "description": "\tThe model gains Master of Spellcrafting, Protean Magic(3), Wizard Apprentice.\t<br><br>\tThe model has these Paths of Magic available: Alchemy, Cosmology, Druidism, Evocation, Shamanism, Witchcraft.\n",
           "armyHasNotOption": [
             {
@@ -442,7 +528,7 @@
               "amount": 2
             }
           ],
-          "cost": 80,
+          "cost": 70,
           "description": "\tThe model gains Aegis(4+), Fearless, , Stubborn.\n",
           "option_id": "43askmoaubk7udbo1yf0uy",
           "hasOption": [
@@ -473,7 +559,7 @@
               "amount": 2
             }
           ],
-          "cost": 25,
+          "cost": 20,
           "description": "The model gains Strider(Water), , , Resolute(1). The model part also gains <span class=\"textbf\">Lightning Attacks</span>  and, if using a Longbow, <span class=\"textbf\">Stand and Shoot</span>.\t<br><br>\tUnless the model is Shaken, Panic Tests taken by friendly units containing Elf within 12\" of this model are <span class=\"textbf\">Minimised</span>.\n",
           "option_id": "o4fowkum7prxdgs4lpv2ef"
         },
@@ -513,7 +599,7 @@
               "amount": 2
             }
           ],
-          "cost": 25,
+          "cost": 30,
           "description": "\tThe model <span class=\"textbf\">must</span> take Great Weapon and cannot take <span class=\"textbf\">Shield</span>. The model gains Lion's Fur, Valiant, and the model part gains <span class=\"textbf\">Multiple Wounds(2, towards Height 4--5)</span>.\n",
           "option_id": "bvzolc1uk9aj534a9xcak",
           "hasOption": [
@@ -590,7 +676,7 @@
             }
           ],
           "neverHide": true,
-          "cost": 15,
+          "cost": 30,
           "armyHasNotOption": [
             {
               "refs": ["queens_companion"],
@@ -661,9 +747,14 @@
           "maxPercent": 0.4,
           "options": [
             {
-              "refs": ["prince", "tag_Elf", "tag_Metal Armour"],
               "name": "High Prince",
-              "cost": 210,
+              "cost": 200,
+              "option_id": "rydim7dt7hq9rufz2wpn4l",
+              "unit_id": "highPrince",
+              "refs": ["highprince", "tag_Elf", "tag_Metal Armour", "prince"],
+              "size": "1",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "type": "group",
@@ -675,7 +766,7 @@
                       "type": "check",
                       "name": "General",
                       "cost": 0,
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "option_id": "1n8o3p6dal1f6yn6uhp6n6"
                     }
@@ -703,35 +794,39 @@
                       "type": "check",
                       "option_id": "rief6cnav8lva54tltkaab",
                       "cost": 0,
-                      "refs": ["light_troops"]
+                      "refs": ["lighttroops", "light_troops"]
                     },
                     {
                       "type": "check",
-                      "cost": 35,
+                      "cost": 30,
                       "name": "Elven Horse",
-                      "refopt": "he_elven_horse_mount",
-                      "option_id": "vh65q7szafggd8pyzop4fk"
+                      "refopt": "elvenHorseMount",
+                      "option_id": "vh65q7szafggd8pyzop4fk",
+                      "refs": ["elvenhorse"]
                     },
                     {
                       "type": "check",
                       "name": "Giant Eagle",
                       "cost": 150,
-                      "refopt": "giant_eagle_mount",
-                      "option_id": "h8v761x74m4uayk1ne4t3"
+                      "refopt": "giantEagleMount",
+                      "option_id": "h8v761x74m4uayk1ne4t3",
+                      "refs": ["gianteagle"]
                     },
                     {
                       "type": "check",
-                      "cost": 35,
+                      "cost": 30,
                       "name": "Reaver Chariot",
-                      "refopt": "reaver_chariot_mount",
-                      "option_id": "jw99diqul5kt8ntp2k2ip"
+                      "refopt": "reaverChariotMount",
+                      "option_id": "jw99diqul5kt8ntp2k2ip",
+                      "refs": ["reaverchariot"]
                     },
                     {
                       "type": "check",
                       "name": "Griffon",
                       "cost": 270,
-                      "refopt": "griffon_mount",
-                      "option_id": "12t0q6o21yqhawyh7w2ynfl"
+                      "refopt": "griffonMount",
+                      "option_id": "12t0q6o21yqhawyh7w2ynfl",
+                      "refs": ["griffon"]
                     },
                     {
                       "type": "check",
@@ -739,28 +834,32 @@
                       "cost": 210,
                       "options": [],
                       "refopt": "sky_sloop_mount",
-                      "option_id": "o1r0tqkbbei7k7tocjw7uv"
+                      "option_id": "o1r0tqkbbei7k7tocjw7uv",
+                      "refs": ["skysloop"]
                     },
                     {
                       "type": "check",
-                      "refopt": "lion_chariot_mount",
+                      "refopt": "lionChariotMount",
                       "name": "Lion Chariot",
-                      "cost": 130,
-                      "option_id": "47ax1yjehhj9u6kzwvcuyd"
+                      "cost": 120,
+                      "option_id": "47ax1yjehhj9u6kzwvcuyd",
+                      "refs": ["lionchariot"]
                     },
                     {
                       "type": "check",
                       "name": "Regal Dragon",
-                      "cost": 400,
-                      "refopt": "regal_dragon_mount",
-                      "option_id": "p2xyb49n7ohcwjgjw32bt"
+                      "cost": 380,
+                      "refopt": "regalDragonMount",
+                      "option_id": "p2xyb49n7ohcwjgjw32bt",
+                      "refs": ["regaldragon"]
                     },
                     {
                       "type": "check",
                       "name": "Ancient Dragon",
                       "cost": 520,
-                      "refopt": "ancient_dragon_mount",
-                      "option_id": "5elp5t6vp6cd3445m1nse4"
+                      "refopt": "ancientDragonMount",
+                      "option_id": "5elp5t6vp6cd3445m1nse4",
+                      "refs": ["ancientdragon"]
                     }
                   ],
                   "option_id": "y6hrcb964h3p7ce0k9fi8"
@@ -782,15 +881,17 @@
                       "options": [],
                       "optionsDict": ["shieldEnchant"],
                       "option_id": "cx4bm7x9orgpyqvxj6p0n",
-                      "hasNotOption": ["high_warden"]
+                      "hasNotOption": ["high_warden"],
+                      "refs": ["shield"]
                     },
                     {
                       "type": "check",
                       "name": "Dragonforged Armour",
-                      "cost": 20,
+                      "cost": 25,
                       "options": [],
                       "option_id": "78hb43fdhnj6ik67p;545gh543",
-                      "ignoreCost": true
+                      "ignoreCost": true,
+                      "refs": ["dragonforgedarmour"]
                     },
                     {
                       "type": "check",
@@ -832,7 +933,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "w9dzxbjzlj832fy1bwg0ro"
+                          "option_id": "w9dzxbjzlj832fy1bwg0ro",
+                          "refs": ["lightlance"]
                         },
                         {
                           "type": "check",
@@ -845,7 +947,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "dwywpwx3f17ebfs5xiyiqp"
+                          "option_id": "dwywpwx3f17ebfs5xiyiqp",
+                          "refs": ["pairedweapons"]
                         },
                         {
                           "type": "check",
@@ -865,9 +968,9 @@
                         {
                           "type": "check",
                           "name": "Great Weapon and Elven Finesse",
-                          "cost": 15,
+                          "cost": 20,
                           "maxSize": 1,
-                          "refs": ["great_weapon"],
+                          "refs": ["gwandelvenfinesse", "great_weapon"],
                           "optionsLabel": "Great Weapon Enchant",
                           "optionsSuffix": " (Great Weapon)",
                           "sortOptions": true,
@@ -941,16 +1044,48 @@
                     }
                   ],
                   "option_id": "wvzvq73ztoymtr1unvwcb"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "j3ci3kbq8640krhr",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "A single Honour",
+                      "cost": 9999,
+                      "option_id": "cs7xc00jghuef089",
+                      "refs": ["asinglehonour"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Fae Miasma, Scout, Exclusive (Grey Watchers)",
+                      "cost": 0,
+                      "option_id": "ry5teci7zpj8lfod",
+                      "refs": ["queenscompaniongreywatcheroption"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Moonlight Arrows",
+                      "cost": 10,
+                      "option_id": "w6pvdi0jw660q40r",
+                      "refs": ["moonlightarrows"]
+                    }
+                  ]
                 }
               ],
-              "unit_id": "highPrince",
-              "option_id": "rydim7dt7hq9rufz2wpn4l",
               "logo": "character"
             },
             {
-              "refs": ["commander", "tag_Elf", "tag_Metal Armour"],
               "name": "Commander",
-              "cost": 80,
+              "cost": 90,
+              "option_id": "rtw7g9gzot1s1pdulkewi",
+              "unit_id": "commander",
+              "refs": ["commander", "tag_Elf", "tag_Metal Armour"],
+              "size": "1",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "type": "group",
@@ -963,13 +1098,13 @@
                       "type": "check",
                       "cost": 0,
                       "option_id": "g34g432g43g34dsafewg34g34",
-                      "refs": ["captain"]
+                      "refs": ["captainandattached", "captain"]
                     },
                     {
                       "type": "check",
                       "name": "General",
                       "cost": 20,
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "option_id": "w670p01oxne9k2pyd4w5w"
                     },
@@ -985,7 +1120,7 @@
                       "type": "check",
                       "cost": 70,
                       "option_id": "3fgf32fg32g234g54",
-                      "refs": ["army_bsb"],
+                      "refs": ["battlestandardbearer", "army_bsb"],
                       "armyHasNotOption": ["army_bsb"]
                     }
                   ],
@@ -1013,38 +1148,42 @@
                       "type": "check",
                       "option_id": "isn2s8rakcepc9av0dr9ul",
                       "cost": 0,
-                      "refs": ["light_troops"],
+                      "refs": ["lighttroops", "light_troops"],
                       "hasNotOption": ["solitary"]
                     },
                     {
                       "type": "check",
                       "cost": 25,
                       "name": "Elven Horse",
-                      "refopt": "he_elven_horse_mount",
+                      "refopt": "elvenHorseMount",
                       "option_id": "6zueycyu2poq3k9hdk0jvq",
-                      "hasNotOption": ["solitary"]
+                      "hasNotOption": ["solitary"],
+                      "refs": ["elvenhorse"]
                     },
                     {
                       "type": "check",
                       "name": "Giant Eagle",
-                      "cost": 140,
-                      "refopt": "giant_eagle_mount",
-                      "option_id": "i80e43356lihlirvobkbd"
+                      "cost": 130,
+                      "refopt": "giantEagleMount",
+                      "option_id": "i80e43356lihlirvobkbd",
+                      "refs": ["gianteagle"]
                     },
                     {
                       "type": "check",
-                      "cost": 60,
+                      "cost": 45,
                       "name": "Reaver Chariot",
-                      "refopt": "reaver_chariot_mount",
-                      "option_id": "usx8f7smbhqedu6zctnncr"
+                      "refopt": "reaverChariotMount",
+                      "option_id": "usx8f7smbhqedu6zctnncr",
+                      "refs": ["reaverchariot"]
                     },
                     {
                       "type": "check",
                       "name": "Griffon",
                       "cost": 240,
-                      "refopt": "griffon_mount",
+                      "refopt": "griffonMount",
                       "option_id": "kj163koiblenj9v4hsi6",
-                      "hasNotOption": ["captain"]
+                      "hasNotOption": ["captain"],
+                      "refs": ["griffon"]
                     },
                     {
                       "type": "check",
@@ -1053,21 +1192,23 @@
                       "options": [],
                       "refopt": "sky_sloop_mount",
                       "option_id": "ydu4cpz2n2hroortvy3h3",
-                      "hasNotOption": ["captain"]
+                      "hasNotOption": ["captain"],
+                      "refs": ["skysloop"]
                     },
                     {
                       "type": "check",
-                      "refopt": "lion_chariot_mount",
+                      "refopt": "lionChariotMount",
                       "name": "Lion Chariot",
-                      "cost": 150,
+                      "cost": 140,
                       "option_id": "uz1k5m7y93zqghq4bk9eo",
-                      "hasNotOption": ["captain"]
+                      "hasNotOption": ["captain"],
+                      "refs": ["lionchariot"]
                     },
                     {
                       "type": "check",
                       "name": "Regal Dragon",
-                      "cost": 400,
-                      "refopt": "regal_dragon_mount",
+                      "cost": 380,
+                      "refopt": "regalDragonMount",
                       "hasOption": [
                         {
                           "refs": ["queens_cavalier"],
@@ -1076,7 +1217,8 @@
                         }
                       ],
                       "option_id": "dzoxdy2hynbzcfyirm1g3",
-                      "hasNotOption": ["captain"]
+                      "hasNotOption": ["captain"],
+                      "refs": ["regaldragon"]
                     }
                   ],
                   "option_id": "buel0le8ppbx6hmeo169te"
@@ -1115,7 +1257,8 @@
                       "options": [],
                       "optionsDict": ["shieldEnchant"],
                       "option_id": "akhmgaef8f9whdky5tl1f",
-                      "hasNotOption": ["high_warden"]
+                      "hasNotOption": ["high_warden"],
+                      "refs": ["shield"]
                     },
                     {
                       "type": "check",
@@ -1123,7 +1266,8 @@
                       "cost": 20,
                       "options": [],
                       "option_id": "gbrg3gbdfgberg34gb34",
-                      "ignoreCost": true
+                      "ignoreCost": true,
+                      "refs": ["dragonforgedarmour"]
                     },
                     {
                       "type": "check",
@@ -1165,7 +1309,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "1w5exufq2zeznd98o9mzcl"
+                          "option_id": "1w5exufq2zeznd98o9mzcl",
+                          "refs": ["lightlance"]
                         },
                         {
                           "type": "check",
@@ -1178,7 +1323,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "qiwog2cmntmz5ahpaxxcj"
+                          "option_id": "qiwog2cmntmz5ahpaxxcj",
+                          "refs": ["pairedweapons"]
                         },
                         {
                           "type": "check",
@@ -1198,7 +1344,7 @@
                         {
                           "type": "check",
                           "name": "Great Weapon and Elven Finesse",
-                          "refs": ["great_weapon"],
+                          "refs": ["gwandelvenfinesse", "great_weapon"],
                           "cost": 10,
                           "maxSize": 1,
                           "optionsLabel": "Great Weapon Enchant",
@@ -1274,17 +1420,48 @@
                     }
                   ],
                   "option_id": "0cgwray0guo6qu7ulxjy6w"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "i8aez983oult7mi8",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "A single Honour",
+                      "cost": 9999,
+                      "option_id": "5pnuqh291x9ssobm",
+                      "refs": ["asinglehonour"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Fae Miasma, Scout, Exclusive (Grey Watchers)",
+                      "cost": 0,
+                      "option_id": "tanb01weutf4r8b8",
+                      "refs": ["queenscompaniongreywatcheroption"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Moonlight Arrows",
+                      "cost": 10,
+                      "option_id": "po9ny1viv2do53bb",
+                      "refs": ["moonlightarrows"]
+                    }
+                  ]
                 }
               ],
-              "unit_id": "commander",
-              "option_id": "rtw7g9gzot1s1pdulkewi",
               "logo": "character"
             },
             {
               "name": "Mage",
-              "refs": ["wizard", "mage", "tag_Elf"],
               "cost": 290,
-              "category": "perso",
+              "option_id": "9usolw35sevi5lopoekdx",
+              "unit_id": "mage",
+              "refs": ["mage", "tag_Elf", "wizard"],
+              "size": "1",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "type": "group",
@@ -1294,7 +1471,7 @@
                   "options": [
                     {
                       "type": "check",
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "name": "General",
                       "option_id": "eiv2fwvki9bdna4t481jzm",
@@ -1374,14 +1551,14 @@
                   "collapsible": true,
                   "options": [
                     {
-                      "refs": ["wizardAdept"],
+                      "refs": ["wizardadept", "wizardAdept"],
                       "name": "Wizard Adept",
                       "type": "check",
                       "cost": 0,
                       "option_id": "7bw3mwk5ih6jtourfl0pt"
                     },
                     {
-                      "refs": ["wizardMaster"],
+                      "refs": ["wizardmaster", "wizardMaster"],
                       "name": "Wizard Master",
                       "type": "check",
                       "cost": 150,
@@ -1402,54 +1579,59 @@
                       "type": "check",
                       "option_id": "0pyf6jxmlfz40on83rxhba",
                       "cost": 0,
-                      "refs": ["light_troops"]
+                      "refs": ["lighttroops", "light_troops"]
                     },
                     {
                       "type": "check",
-                      "cost": 10,
+                      "cost": 5,
                       "name": "Elven Horse",
-                      "refopt": "he_elven_horse_mount",
-                      "option_id": "kx3en95cwzmeofrl854hm"
+                      "refopt": "elvenHorseMount",
+                      "option_id": "kx3en95cwzmeofrl854hm",
+                      "refs": ["elvenhorse"]
                     },
                     {
                       "type": "check",
                       "name": "Giant Eagle",
                       "cost": 50,
-                      "refopt": "giant_eagle_mount",
-                      "option_id": "qascnopxv140eao3wdqc6"
+                      "refopt": "giantEagleMount",
+                      "option_id": "qascnopxv140eao3wdqc6",
+                      "refs": ["gianteagle"]
                     },
                     {
                       "type": "check",
-                      "cost": 10,
+                      "cost": 5,
                       "name": "Reaver Chariot",
-                      "refopt": "reaver_chariot_mount",
-                      "option_id": "tzf4rloxompygag5ssjf2h"
+                      "refopt": "reaverChariotMount",
+                      "option_id": "tzf4rloxompygag5ssjf2h",
+                      "refs": ["reaverchariot"]
                     },
                     {
                       "type": "check",
                       "name": "Griffon",
-                      "cost": 100,
-                      "refopt": "griffon_mount",
+                      "cost": 90,
+                      "refopt": "griffonMount",
                       "hasOption": [
                         {
                           "refs": ["wizardMaster"],
                           "amount": 1
                         }
                       ],
-                      "option_id": "zjx221rvu9j1xwatwfbk"
+                      "option_id": "zjx221rvu9j1xwatwfbk",
+                      "refs": ["griffon"]
                     },
                     {
                       "type": "check",
                       "name": "Regal Dragon",
-                      "cost": 380,
-                      "refopt": "regal_dragon_mount",
+                      "cost": 360,
+                      "refopt": "regalDragonMount",
                       "hasOption": [
                         {
                           "refs": ["wizardMaster", "fiery_order"],
                           "amount": 1
                         }
                       ],
-                      "option_id": "snnnrxdxfqe5exin3j46h"
+                      "option_id": "snnnrxdxfqe5exin3j46h",
+                      "refs": ["regaldragon"]
                     }
                   ],
                   "option_id": "q2u157r57b6hozogz2dih"
@@ -1484,16 +1666,18 @@
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["shieldEnchant"],
-                      "option_id": "ztwriclrdno7iya7c7wgj"
+                      "option_id": "ztwriclrdno7iya7c7wgj",
+                      "refs": ["shield"]
                     },
                     {
                       "type": "check",
                       "name": "Dragonforged Armour",
-                      "cost": 10,
+                      "cost": 5,
                       "options": [],
                       "option_id": "f3ef2399875348jjjj93r3",
                       "ignoreCost": true,
-                      "hasOption": ["fiery_order"]
+                      "hasOption": ["fiery_order"],
+                      "refs": ["dragonforgedarmour"]
                     },
                     {
                       "type": "group",
@@ -1523,7 +1707,8 @@
                           "hasOption": ["fiery_order"],
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "4najrzjfhm2p261owdjoq"
+                          "option_id": "4najrzjfhm2p261owdjoq",
+                          "refs": ["pairedweapons"]
                         }
                       ],
                       "option_id": "2vocqfapsguw8n0gz95rak"
@@ -1561,17 +1746,32 @@
                     }
                   ],
                   "option_id": "lg5csmtjcvlt1d52mlcc"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "40ob7q405tmangdi",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "A single Honour",
+                      "cost": 9999,
+                      "option_id": "zwdplj4xfzvzg6yt",
+                      "refs": ["asinglehonour"]
+                    }
+                  ]
                 }
               ],
-              "unit_id": "mage",
-              "option_id": "9usolw35sevi5lopoekdx",
+              "category": "perso",
               "logo": "character"
             },
             {
-              "name": "Master Acadnath, the Asfad Scholar",
-              "cost": 700,
+              "name": "Master Arcanadh, the Asfad Scholar",
+              "cost": 650,
               "option_id": "21ykhqu0hno95v7g",
               "unit_id": "acadnathTheScholar",
+              "maxUnitCost": 650,
               "refs": ["acadnaththescholar", "wizard", "wizardMaster", "tag_Elf"],
               "magic": {
                 "amount": 8,
@@ -1617,10 +1817,11 @@
               "options": []
             },
             {
-              "name": "Tenacla and Baluruth",
+              "name": "Dhaenala, the Wyrmkin",
               "cost": 750,
               "option_id": "ufmr5xodlqj6miev",
               "unit_id": "tenaclaTheRogueDragonrider",
+              "maxUnitCost": 750,
               "refs": ["tenaclatheroguedragonrider", "tag_Elf", "tag_Metal Armour", "tag_Beast", "tag_Dragon", "tag_Mount"],
               "size": "1",
               "rarity": "Legendary",
@@ -1639,8 +1840,13 @@
           "options": [
             {
               "name": "Citizen Spears",
-              "cost": 10,
-              "refs": ["citizen_spears", "core_unit", "tag_Elf", "tag_Light Armour", "tag_"],
+              "cost": 30,
+              "option_id": "rqafi24w6djvsp3j0nkc",
+              "unit_id": "citizenSpears",
+              "refs": ["citizenspears", "tag_Elf", "tag_Light Armour", "citizen_spears", "core_unit", "tag_"],
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 20,
@@ -1651,7 +1857,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 11,
                       "option_id": "yszpwhvqo4rrsj287gne3",
                       "refs": ["citizen_spears_amount"]
                     }
@@ -1671,28 +1877,30 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "3ymuswk43rn3qfg8ycjekm"
+                      "option_id": "3ymuswk43rn3qfg8ycjekm",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "kwo7ix5jlgdbcillrgqis9"
+                      "option_id": "kwo7ix5jlgdbcillrgqis9",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "3ajxayq6kay97ih59wmdur"
                 }
               ],
-              "unit_id": "citizenSpears",
-              "option_id": "rqafi24w6djvsp3j0nkc",
               "logo": "core"
             },
             {
               "name": "Highborn Lancers",
-              "armyHasNotOption": [],
-              "refs": ["highborn_lancers", "core_unit", "tag_Elf", "tag_Metal Armour", "tag_Mount"],
               "cost": 80,
-              "category": "base",
+              "option_id": "0ku0rivg5wgqwzdt0qnl",
+              "unit_id": "highbornLancers",
+              "refs": ["highbornlancers", "tag_Elf", "tag_Metal Armour", "tag_Mount", "highborn_lancers", "core_unit"],
+              "height": "2",
+              "basesize": "25×50",
               "options": [
                 {
                   "minSize": 5,
@@ -1703,7 +1911,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 26,
+                      "cost": 22,
                       "option_id": "4wszxksplq2hcftr26ntz5",
                       "refs": ["highborn_lancers_amount"]
                     }
@@ -1723,26 +1931,33 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "ltd00ni4g6raa6221ndpq"
+                      "option_id": "ltd00ni4g6raa6221ndpq",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "ebjuv5kslch3ht8win75j8"
+                      "option_id": "ebjuv5kslch3ht8win75j8",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "yv3doj4rwkkf89b1gc29nf"
                 }
               ],
-              "unit_id": "highbornLancers",
-              "option_id": "0ku0rivg5wgqwzdt0qnl",
+              "armyHasNotOption": [],
+              "category": "base",
               "logo": "core"
             },
             {
               "name": "Citizen Archers",
-              "cost": 20,
-              "refs": ["citizen_spears", "core_unit", "tag_Elf", "tag_Light Armour"],
+              "cost": 50,
+              "option_id": "9p7xul2yom5dzl3vp7s8d",
+              "unit_id": "citizenArchers",
+              "refs": ["citizenarchers", "tag_Elf", "tag_Light Armour", "citizen_spears", "core_unit"],
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 15,
@@ -1753,7 +1968,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 10,
                       "option_id": "o68yiapwhef7kwckc18sbj",
                       "refs": ["citizen_archers_amount", "queens_bows"]
                     }
@@ -1773,26 +1988,30 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "p14czy3ydsjfgm4wk2m7b"
+                      "option_id": "p14czy3ydsjfgm4wk2m7b",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "8udmh47ku3xju3bre0viuk"
+                      "option_id": "8udmh47ku3xju3bre0viuk",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "14zblkqs371pjgzna2te0a"
                 }
               ],
-              "unit_id": "citizenArchers",
-              "option_id": "9p7xul2yom5dzl3vp7s8d",
               "logo": "core"
             },
             {
               "name": "Sea Guard",
-              "cost": 0,
-              "refs": ["sea_guards", "core_unit", "tag_Elf", "tag_Light Armour"],
+              "cost": -5,
+              "option_id": "l63mjum7h3f7aqs8545kp5",
+              "unit_id": "seaGuard",
+              "refs": ["seaguard", "tag_Elf", "tag_Light Armour", "sea_guards", "core_unit"],
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 15,
@@ -1803,7 +2022,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 18,
+                      "cost": 19,
                       "option_id": "pdnel4skwi8ihqgsixyv",
                       "refs": ["sea_guard_amount", "queens_bows"]
                     }
@@ -1823,27 +2042,30 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "wf3xf0zofu32mlvj93bi5"
+                      "option_id": "wf3xf0zofu32mlvj93bi5",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "m3w0c4ztz5novki1g4ahc"
+                      "option_id": "m3w0c4ztz5novki1g4ahc",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "v5jathiguwnqmttstp38p"
                 }
               ],
-              "unit_id": "seaGuard",
-              "option_id": "l63mjum7h3f7aqs8545kp5",
               "logo": "core"
             },
             {
               "name": "Erlein Reavers",
-              "cost": 110,
-              "refs": ["elein_reavers", "core_unit", "tag_Elf", "tag_Light Armour", "tag_Mount"],
-              "armyHasNotOption": [],
+              "cost": 120,
+              "option_id": "olqgtoz7pylzx18lx119cc",
+              "unit_id": "erleinReavers",
+              "refs": ["erleinreavers", "tag_Elf", "tag_Light Armour", "tag_Mount", "elein_reavers", "core_unit"],
+              "height": "2",
+              "basesize": "25×50",
               "options": [
                 {
                   "minSize": 5,
@@ -1854,7 +2076,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 14,
+                      "cost": 12,
                       "options": [
                         {
                           "optionsLabel": "Options",
@@ -1864,7 +2086,7 @@
                               "cost": 1,
                               "type": "check",
                               "option_id": "4qmohfqvt4yodcunuy46z9",
-                              "refs": ["queens_bows"]
+                              "refs": ["bow", "queens_bows"]
                             }
                           ],
                           "option_id": "xt66ns7yh4nfyc292vnakb"
@@ -1889,20 +2111,21 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "40sdlq4q5c2p9m6byd8qp"
+                      "option_id": "40sdlq4q5c2p9m6byd8qp",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "x23oeiabxbpy9kx7egafq"
+                      "option_id": "x23oeiabxbpy9kx7egafq",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "87lommazdx70x0hr2q3q0b"
                 }
               ],
-              "unit_id": "erleinReavers",
-              "option_id": "olqgtoz7pylzx18lx119cc",
+              "armyHasNotOption": [],
               "logo": "core"
             }
           ],
@@ -1915,9 +2138,12 @@
           "options": [
             {
               "name": "Sword Masters",
-              "cost": -20,
-              "refs": ["sword_masters", "tag_Elf", "tag_Metal Armour"],
-              "armyHasNotOption": [],
+              "cost": 30,
+              "option_id": "05tlh0h4o4m30imomz2f2r28",
+              "unit_id": "swordMasters",
+              "refs": ["swordmasters", "tag_Elf", "tag_Metal Armour", "sword_masters"],
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 10,
@@ -1928,7 +2154,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 22,
+                      "cost": 20,
                       "option_id": "0cuqnfrl4t4qjuhkephqs3h",
                       "refs": ["sword_masters_amount"]
                     }
@@ -1948,27 +2174,31 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "cwmxzlctgt4lva3wtmdqi"
+                      "option_id": "cwmxzlctgt4lva3wtmdqi",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "n06n25c9ahqgdctxzr6286"
+                      "option_id": "n06n25c9ahqgdctxzr6286",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "2um2pak02wmht18tsw5pu"
                 }
               ],
-              "unit_id": "swordMasters",
-              "option_id": "05tlh0h4o4m30imomz2f2r28",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Lion Guard",
-              "cost": 0,
-              "refs": ["lion_guard", "tag_Elf", "tag_Metal Armour"],
-              "armyHasNotOption": [],
+              "cost": 20,
+              "option_id": "cd0vd8flw29ep1fxqa6d7",
+              "unit_id": "lionGuard",
+              "refs": ["lionguard", "tag_Elf", "tag_Metal Armour", "lion_guard"],
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 10,
@@ -2012,27 +2242,31 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "0ugmgbt60uwp2f2t3h61wti"
+                      "option_id": "0ugmgbt60uwp2f2t3h61wti",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "z0or65qfqkgrq1wicf3tli"
+                      "option_id": "z0or65qfqkgrq1wicf3tli",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "4s8oalc0gfh3rxcfdtzyae"
                 }
               ],
-              "unit_id": "lionGuard",
-              "option_id": "cd0vd8flw29ep1fxqa6d7",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Flame Wardens",
               "cost": 20,
-              "refs": ["flame_wardens", "tag_Elf", "tag_Metal Armour"],
-              "armyHasNotOption": [],
+              "option_id": "8tyu65zdf1kd34hbt5z8",
+              "unit_id": "flameWardens",
+              "refs": ["flamewardens", "tag_Elf", "tag_Metal Armour", "flame_wardens"],
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 10,
@@ -2063,27 +2297,31 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "sgr6tyoywvgi5nzikng8dt"
+                      "option_id": "sgr6tyoywvgi5nzikng8dt",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "nkciv235i8qq2d251p14ts"
+                      "option_id": "nkciv235i8qq2d251p14ts",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "epwpods765m61ru2683b"
                 }
               ],
-              "unit_id": "flameWardens",
-              "option_id": "8tyu65zdf1kd34hbt5z8",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Knights of Rymâ",
-              "cost": 100,
-              "refs": ["knights_ryma", "tag_Elf", "tag_Metal Armour", "tag_Mount"],
-              "armyHasNotOption": [],
+              "cost": 65,
+              "option_id": "r4tbd7se9f8jbehij32cdr",
+              "unit_id": "knightsOfRyma",
+              "refs": ["knightsofryma", "tag_Elf", "tag_Metal Armour", "tag_Mount", "knights_ryma"],
+              "height": "2",
+              "basesize": "25×50",
               "options": [
                 {
                   "minSize": 5,
@@ -2094,7 +2332,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 40,
+                      "cost": 45,
                       "option_id": "yfyz85i73iirs9hxm5kx1c",
                       "refs": ["knights_of_ryma_amount"]
                     }
@@ -2114,27 +2352,32 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "ooio33kn7ipwoo9e6oqjc"
+                      "option_id": "ooio33kn7ipwoo9e6oqjc",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "5qj1rfns3wwl05kda7gcsn"
+                      "option_id": "5qj1rfns3wwl05kda7gcsn",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "fr0haflf96jk6qfgh3ac5"
                 }
               ],
-              "unit_id": "knightsOfRyma",
-              "option_id": "r4tbd7se9f8jbehij32cdr",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Reaver Chariots",
-              "cost": 10,
-              "refs": ["reaver_char", "tag_Elf", "tag_Light Armour", "tag_Mount", "tag_Construct"],
-              "armyHasNotOption": [],
+              "cost": 30,
+              "option_id": "qb6lnpljzcoaxk3g3wbweu",
+              "unit_id": "reaverChariots",
+              "refs": ["reaverchariots", "tag_Elf", "tag_Light Armour", "tag_Mount", "tag_Construct", "reaver_char"],
+              "rarity": "Uncommon",
+              "height": "4",
+              "basesize": "50×100",
               "options": [
                 {
                   "minSize": 2,
@@ -2145,7 +2388,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 80,
+                      "cost": 70,
                       "option_id": "h2xi6ji4zwox78wf96tjaj",
                       "refs": [
                         "reaver_chariots_amount",
@@ -2166,36 +2409,46 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "option_id": "1ar0t0fvxy2fwvcjpsbwg7"
+                      "option_id": "1ar0t0fvxy2fwvcjpsbwg7",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "kyqb8xkenxao6uyl6ux2n"
+                      "option_id": "kyqb8xkenxao6uyl6ux2n",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "qikror1nmghwukr9ugihaf"
                 }
               ],
-              "unit_id": "reaverChariots",
-              "option_id": "qb6lnpljzcoaxk3g3wbweu",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Lion Chariot",
-              "cost": 200,
-              "refs": ["lion_char", "tag_Elf", "tag_Metal Armour", "tag_Mount", "tag_Construct"],
-              "armyHasNotOption": [],
-              "unit_id": "lionChariot",
+              "cost": 190,
               "option_id": "xnszcdzk5qe5uke3scs06",
+              "unit_id": "lionChariot",
+              "refs": ["lionchariot", "tag_Elf", "tag_Metal Armour", "tag_Mount", "tag_Beast", "tag_Construct", "lion_char"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Giant Eagles",
-              "cost": 80,
-              "refs": ["giant_eagle", "tag_Beast"],
-              "armyHasNotOption": [],
+              "cost": 90,
+              "option_id": "kchawhiz131nbvlfvmxgb",
+              "unit_id": "giantEagles",
+              "refs": ["gianteagles", "tag_Beast", "giant_eagle"],
+              "rarity": "Rare",
+              "height": "3",
+              "basesize": "50×50",
               "options": [
                 {
                   "minSize": 1,
@@ -2206,7 +2459,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 70,
+                      "cost": 60,
                       "option_id": "a5ocfmfrpaw6sgdeiqvjo3",
                       "refs": ["giant_eagles_amount"]
                     }
@@ -2214,17 +2467,60 @@
                   "option_id": "4rkbihiwjle0e3k88lkzwov"
                 }
               ],
-              "unit_id": "giantEagles",
-              "option_id": "kchawhiz131nbvlfvmxgb",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Phoenix",
-              "diffstatlines": true,
-              "offstatline": "",
-              "cost": 340,
+              "cost": 350,
+              "option_id": "0lo67tk84y3c20ogepcriaj",
+              "unit_id": "phoenix",
               "refs": ["phoenix", "tag_Beast", "ancient_allies"],
-              "armyHasNotOption": [],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "5",
+              "basesize": "50×100",
+              "options": [
+                {
+                  "type": "group",
+                  "name": "Type",
+                  "optionsLabel": "Type",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "definesType": true,
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Frost Phoenix",
+                      "cost": 0,
+                      "option_id": "kui0mgrfjwbnc10elgwf9",
+                      "refs": ["frostphoenix", "type_amount"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Fire Phoenix",
+                      "cost": 70,
+                      "option_id": "64drfe8pplt7xlsyg7d70a",
+                      "refs": ["firephoenix"]
+                    }
+                  ],
+                  "option_id": "vbvwvkcsoxmgrqithcvja4"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Warden's Bond",
+                      "cost": 45,
+                      "option_id": "6xk6wjeg9w7lwma06tbd7",
+                      "refopt": "warden",
+                      "refs": ["wardensbond"]
+                    }
+                  ],
+                  "option_id": "udkb93qa6xhgynqzkrqrla"
+                }
+              ],
               "override": [
                 {
                   "armyHasOption": [
@@ -2245,48 +2541,10 @@
                   }
                 }
               ],
+              "diffstatlines": true,
+              "offstatline": "",
+              "armyHasNotOption": [],
               "optionsLabel": "Options",
-              "options": [
-                {
-                  "type": "group",
-                  "name": "Type",
-                  "optionsLabel": "Type",
-                  "minSize": 1,
-                  "maxSize": 1,
-                  "definesType": true,
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "Frost Phoenix",
-                      "cost": 0,
-                      "option_id": "kui0mgrfjwbnc10elgwf9",
-                      "refs": ["type_amount"]
-                    },
-                    {
-                      "type": "check",
-                      "name": "Fire Phoenix",
-                      "cost": 60,
-                      "option_id": "64drfe8pplt7xlsyg7d70a"
-                    }
-                  ],
-                  "option_id": "vbvwvkcsoxmgrqithcvja4"
-                },
-                {
-                  "optionsLabel": "Options",
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "Warden's Bond",
-                      "cost": 40,
-                      "option_id": "6xk6wjeg9w7lwma06tbd7",
-                      "refopt": "warden"
-                    }
-                  ],
-                  "option_id": "udkb93qa6xhgynqzkrqrla"
-                }
-              ],
-              "unit_id": "phoenix",
-              "option_id": "0lo67tk84y3c20ogepcriaj",
               "logo": "special"
             },
             {
@@ -2349,28 +2607,50 @@
             },
             {
               "name": "Sea Guard Reaper",
-              "cost": 220,
-              "refs": ["sea_guard_reaper", "war_machine", "sea_guard_reaper_or_sky_sloop", "tag_Elf", "tag_Light Armour", "naval_ordnance"],
+              "cost": 210,
+              "option_id": "fewfwedsgfdgwegerwdgsdhwe",
+              "unit_id": "seaGuardReaper",
+              "refs": [
+                "seaguardreaper",
+                "tag_Elf",
+                "tag_Light Armour",
+                "sea_guard_reaper",
+                "war_machine",
+                "sea_guard_reaper_or_sky_sloop",
+                "naval_ordnance"
+              ],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "2",
+              "basesize": "60×60",
+              "options": [],
               "armyHasNotOption": [
                 {
                   "refs": ["sea_guard_reaper_or_sky_sloop"],
                   "amount": 3
                 }
               ],
-              "unit_id": "seaGuardReaper",
-              "option_id": "fewfwedsgfdgwegerwdgsdhwe",
               "logo": "special"
             },
             {
               "name": "Initiate of the Fiery Heart",
-              "cost": 400,
-              "refs": ["initiate_of_the_fiery_heart", "ancient_allies", "wizard", "tag_Elf", "tag_Mount", "tag_Beast"],
-              "armyHasNotOption": [],
-              "unit_id": "initiateOfTheFieryHeart",
+              "cost": 380,
               "option_id": "bg8osewd0w7i61k9fq570g",
-              "logo": "special",
-              "minSize": 1,
-              "maxSize": 1,
+              "unit_id": "initiateOfTheFieryHeart",
+              "refs": [
+                "initiateofthefieryheart",
+                "tag_Elf",
+                "tag_Mount",
+                "tag_Dragon",
+                "tag_Beast",
+                "initiate_of_the_fiery_heart",
+                "ancient_allies",
+                "wizard"
+              ],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "4",
+              "basesize": "50×100",
               "options": [
                 {
                   "type": "check",
@@ -2400,37 +2680,51 @@
                     ]
                   }
                 }
-              ]
+              ],
+              "armyHasNotOption": [],
+              "logo": "special",
+              "minSize": 1,
+              "maxSize": 1
             },
             {
               "name": "Sky Sloop",
-              "cost": 230,
+              "cost": 250,
+              "option_id": "whmhj2n4au4js5ul75nu",
+              "unit_id": "skySloop",
               "refs": [
-                "sky_sloop",
-                "sea_guard_reaper_or_sky_sloop",
+                "skysloop",
                 "tag_Elf",
                 "tag_Light Armour",
-                "tag_Mount",
                 "tag_Beast",
+                "tag_Mount",
                 "tag_Construct",
+                "sky_sloop",
+                "sea_guard_reaper_or_sky_sloop",
                 "naval_ordnance"
               ],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
               "armyHasNotOption": [
                 {
                   "refs": ["sea_guard_reaper_or_sky_sloop"],
                   "amount": 3
                 }
               ],
-              "unit_id": "skySloop",
-              "option_id": "whmhj2n4au4js5ul75nu",
               "logo": "special",
               "sharedRarity": "dq2quszoxaoagh4pbsvxf"
             },
             {
-              "name": "Queen's Guard",
-              "cost": 40,
-              "refs": ["queen_guard", "tag_Elf", "tag_Light Armour"],
-              "armyHasNotOption": [],
+              "name": "Queen’s Guard",
+              "cost": 20,
+              "option_id": "h835i2h8fahth4kipstij",
+              "unit_id": "queensGuard",
+              "refs": ["queensguard", "tag_Elf", "tag_Light Armour", "queen_guard"],
+              "rarity": "Extraordinary",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 10,
@@ -2455,7 +2749,8 @@
                           "option_id": "md302fdn032fn0243f23f32",
                           "name": "Shield",
                           "cost": 1,
-                          "type": "check"
+                          "type": "check",
+                          "refs": ["shield"]
                         }
                       ]
                     }
@@ -2475,27 +2770,32 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "756yk5w9u3w5alqans1ath"
+                      "option_id": "756yk5w9u3w5alqans1ath",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "vkxan0zkh9q1a67131xbtm"
+                      "option_id": "vkxan0zkh9q1a67131xbtm",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "8mof02esn1fhpdike5i0og"
                 }
               ],
-              "unit_id": "queensGuard",
-              "option_id": "h835i2h8fahth4kipstij",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Grey Watchers",
-              "cost": 70,
-              "refs": ["grey_watchers", "tag_Elf", "tag_Light Armour"],
-              "armyHasNotOption": [],
+              "cost": 75,
+              "option_id": "r51eq62rmrz1gr59rf78c",
+              "unit_id": "greyWatchers",
+              "refs": ["greywatchers", "tag_Elf", "tag_Light Armour", "grey_watchers"],
+              "rarity": "Rare",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 5,
@@ -2506,7 +2806,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 16,
+                      "cost": 15,
                       "options": [
                         {
                           "optionsLabel": "Options",
@@ -2515,7 +2815,8 @@
                               "type": "check",
                               "name": "Shield",
                               "cost": 1,
-                              "option_id": "fxwfehkhntofgbf5yvzuo"
+                              "option_id": "fxwfehkhntofgbf5yvzuo",
+                              "refs": ["shield"]
                             }
                           ],
                           "option_id": "rzz1ir3n2vieozl245cbwj"
@@ -2535,14 +2836,14 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "5bzlhtgvsusgnbi9yb3g4u"
+                      "option_id": "5bzlhtgvsusgnbi9yb3g4u",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "lo92uajfceorblb23a"
                 }
               ],
-              "unit_id": "greyWatchers",
-              "option_id": "r51eq62rmrz1gr59rf78c",
+              "armyHasNotOption": [],
               "logo": "special"
             }
           ],
@@ -2555,22 +2856,28 @@
           "options": [
             {
               "name": "Ancient Dragon *Mount",
-              "type": "check",
-              "category": "mounts",
+              "cost": 0,
+              "option_id": "52dl5g0ov7mim1r4tai15",
               "unit_id": "ancientDragonMount",
-              "invisible": true,
               "refs": [
+                "ancientdragonmount",
+                "tag_Beast",
+                "tag_Dragon",
+                "tag_Mount",
                 "mount",
                 "mountDragon",
                 "ancient_dragon",
                 "army_unique",
-                "tag_Beast",
-                "tag_Mount",
                 {
                   "ref": "ancient_allies",
                   "amount": 2
                 }
               ],
+              "invisible": true,
+              "rarity": "Extraordinary",
+              "height": "5",
+              "basesize": "100×150",
+              "options": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -2595,27 +2902,34 @@
                   }
                 }
               ],
+              "type": "check",
+              "category": "mounts",
               "armyHasNotOption": [],
-              "option_id": "52dl5g0ov7mim1r4tai15",
               "logo": "character"
             },
             {
               "name": "Regal Dragon *Mount",
-              "type": "check",
-              "category": "mounts",
+              "cost": 0,
+              "option_id": "0aqjz1daje4gx2cf2kgnheb",
               "unit_id": "regalDragonMount",
-              "invisible": true,
               "refs": [
+                "regaldragonmount",
+                "tag_Beast",
+                "tag_Dragon",
+                "tag_Mount",
                 "mount",
                 "mountDragon",
                 "regal_dragon",
-                "tag_Beast",
-                "tag_Mount",
                 {
                   "ref": "ancient_allies",
                   "amount": 2
                 }
               ],
+              "invisible": true,
+              "rarity": "Rare",
+              "height": "5",
+              "basesize": "50×100",
+              "options": [],
               "override": [
                 {
                   "armyHasOption": [
@@ -2639,96 +2953,119 @@
                   }
                 }
               ],
+              "type": "check",
+              "category": "mounts",
               "armyHasNotOption": [],
-              "option_id": "0aqjz1daje4gx2cf2kgnheb",
               "logo": "character"
             },
             {
-              "type": "check",
               "name": "Elven Horse *Mount",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "unit_id": "elvenHorseMount",
-              "invisible": true,
-              "refs": ["mount", "tag_Mount", "tag_", "elven_horse_mount"],
+              "cost": 0,
               "option_id": "zcj3b0w35dexhnxdoabxl8",
+              "unit_id": "elvenHorseMount",
+              "refs": ["elvenhorsemount", "tag_Mount", "mount", "tag_", "elven_horse_mount"],
+              "invisible": true,
+              "rarity": "Regular",
+              "height": "2",
+              "basesize": "25×50",
+              "options": [],
+              "type": "check",
+              "category": "mounts",
               "logo": "character"
             },
             {
               "name": "Giant Eagle *Mount",
+              "cost": 0,
+              "option_id": "lr7d6bcj0rs0vatqh22z1fl",
+              "unit_id": "giantEagleMount",
+              "refs": ["gianteaglemount", "tag_Mount", "tag_Beast", "mount", "giant_eagle_mount"],
+              "invisible": true,
+              "rarity": "Rare",
+              "height": "3",
+              "basesize": "50×50",
+              "options": [],
               "type": "check",
               "category": "mounts",
-              "options": [],
-              "unit_id": "giantEagleMount",
-              "invisible": true,
-              "refs": ["giant_eagle_mount", "mount", "tag_Mount", "tag_Beast"],
-              "option_id": "lr7d6bcj0rs0vatqh22z1fl",
               "logo": "character",
               "armyHasNotOption": []
             },
             {
               "name": "Griffon *Mount",
-              "type": "check",
-              "category": "mounts",
-              "options": [],
+              "cost": 0,
+              "option_id": "866izmabqr7elrynkxfj5v",
               "unit_id": "griffonMount",
-              "invisible": true,
               "refs": [
-                "mount",
-                "griffon_mount",
+                "griffonmount",
                 "tag_Beast",
                 "tag_Mount",
+                "mount",
+                "griffon_mount",
                 {
                   "ref": "ancient_allies",
                   "amount": 1
                 }
               ],
+              "invisible": true,
+              "rarity": "Rare",
+              "height": "4",
+              "basesize": "50×50",
+              "options": [],
+              "type": "check",
+              "category": "mounts",
               "armyHasNotOption": [],
-              "option_id": "866izmabqr7elrynkxfj5v",
               "logo": "character"
             },
             {
               "name": "Lion Chariot *Mount",
+              "cost": 0,
+              "option_id": "lbnfksbcjk112x2oim7e0i",
+              "unit_id": "lionChariotMount",
+              "refs": ["lionchariotmount", "tag_Mount", "tag_Beast", "tag_Construct", "mount", "lion_chariot_mount"],
+              "invisible": true,
+              "rarity": "Uncommon",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
               "type": "check",
               "category": "mounts",
-              "options": [],
-              "cost": 145,
-              "unit_id": "lionChariotMount",
-              "invisible": true,
-              "refs": ["mount", "tag_Construct", "lion_chariot_mount", "tag_Mount"],
               "armyHasNotOption": [],
-              "option_id": "lbnfksbcjk112x2oim7e0i",
               "logo": "character"
             },
             {
               "name": "Reaver Chariot *Mount",
+              "cost": 0,
+              "option_id": "03xv2o5n2idb4ldcoxgnuks",
+              "unit_id": "reaverChariotMount",
+              "refs": ["reaverchariotmount", "tag_Mount", "tag_Construct", "mount", "reaver_chariot_mount", "tag_"],
+              "invisible": true,
+              "rarity": "Uncommon",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
               "type": "check",
               "category": "mounts",
-              "options": [],
-              "unit_id": "reaverChariotMount",
-              "invisible": true,
-              "refs": ["mount", "reaver_chariot_mount", "tag_Construct", "tag_", "tag_Mount"],
               "armyHasNotOption": [],
-              "option_id": "03xv2o5n2idb4ldcoxgnuks",
               "logo": "character"
             },
             {
-              "name": "Sky Sloop *Mount",
-              "type": "check",
-              "cost": null,
-              "category": "mounts",
+              "name": "Sky Sloop (mount) *Mount",
+              "cost": 0,
+              "option_id": "dq2quszoxaoagh4pbsvxf",
+              "unit_id": "skySloopMount",
+              "refs": ["skysloopmount", "tag_Construct", "tag_Mount", "tag_Beast", "mount", "sky_sloop", "sea_guard_reaper_or_sky_sloop"],
+              "invisible": true,
+              "rarity": "Rare",
+              "height": "4",
+              "basesize": "50×100",
               "options": [],
-              "refs": ["sky_sloop", "mount", "sea_guard_reaper_or_sky_sloop", "tag_Construct", "tag_Mount", "tag_Beast"],
+              "type": "check",
+              "category": "mounts",
               "armyHasNotOption": [
                 {
                   "refs": ["sea_guard_reaper_or_sky_sloop"],
                   "amount": 3
                 }
               ],
-              "unit_id": "skySloopMount",
-              "invisible": true,
-              "option_id": "dq2quszoxaoagh4pbsvxf",
               "logo": "character",
               "sharedRarity": "whmhj2n4au4js5ul75nu"
             },
