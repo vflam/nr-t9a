@@ -63,7 +63,12 @@
           "type": "check",
           "name": "Scroll of Desiccation",
           "cost": 20,
-          "armyHasNotOption": ["art_ud_scroll"],
+          "armyHasNotOption": [
+            {
+              "refs": ["art_ud_scroll"],
+              "amount": 1
+            }
+          ],
           "refs": ["art_ud_scroll"],
           "description": "\tDuring Pre-game Selections, choose a Field, Forest, or Water Terrain Feature. This Terrain Feature ceases to be the Terrain Feature it used to be and loses all its rules. It is treated as <span class=\"textbf\">Dangerous Terrain(6+)</span> for all enemy units.\n",
           "option_id": "zx6nusovwdg1kplanum625"
@@ -76,7 +81,7 @@
         {
           "type": "check",
           "name": "Banner of the Entombed",
-          "cost": 45,
+          "cost": 55,
           "hasOption": [
             {
               "refs": ["core_unit", "army_bsb"],
@@ -86,7 +91,7 @@
           "armyHasNotOption": [
             {
               "refs": ["be_ud_entombed"],
-              "amount": 2
+              "amount": 1
             }
           ],
           "refs": ["be_ud_entombed", "underground_ambush"],
@@ -98,12 +103,13 @@
                 "excluded": ["5"]
               }
             }
-          }
+          },
+          "rarity": "Rare"
         },
         {
           "type": "check",
           "name": "Sigil of the Closed Gates",
-          "cost": 50,
+          "cost": 45,
           "armyHasNotOption": [
             {
               "refs": ["be_ud_sigil"],
@@ -115,33 +121,32 @@
           "option_id": "worf64xdplxddfsfdc97upqijy"
         },
         {
-          "type": "check",
-          "name": "Icon of Reflection",
-          "cost": 55,
-          "armyHasNotOption": [
-            {
-              "refs": ["be_ud_icon"],
-              "amount": 1
-            }
-          ],
-          "hasNotOption": ["core_unit"],
-          "refs": ["be_ud_icon"],
-          "description": "\tOne use only. When a spell is successfully cast on the bearer's unit, you may use this Banner Enchantment. Immediately resolve the effects of the spell on another friendly unit within 6\" of the bearer's unit, following the spell's normal targeting restrictions, except Range. <i>Note that this does not trigger <span class=\"textbf\">Death is Only the Beginning</span> on the second unit.</i>\n",
-          "option_id": "f3f32f23f23mi0g4m30gb435"
-        },
-        {
           "name": "Banner of Speed",
-          "cost": 50,
+          "cost": 25,
           "option_id": "r6u5ynmai4q0krgllon1v1n",
           "type": "check",
           "shared": true
         },
         {
           "name": "Distortion Emblem",
-          "cost": 25,
+          "cost": 20,
           "option_id": "orb95cle4listpbc1r9dh",
           "type": "check",
           "shared": true
+        },
+        {
+          "type": "check",
+          "name": "Envoy's Banner",
+          "cost": 50,
+          "option_id": "uclujra2hkyi8h1i",
+          "refs": ["iconofreflection"],
+          "armyHasNotOption": [
+            {
+              "refs": ["iconofreflection"],
+              "amount": 1
+            }
+          ],
+          "description": "Autonomous. In addition: One use only. During a friendly Movement Phase, the bearer's unit's Mob is set to 8. Duration: One Turn."
         }
       ],
       "option_id": "4q6oosgrat3n7imm7m96ye"
@@ -153,7 +158,12 @@
           "type": "check",
           "name": "Godslayer",
           "cost": 80,
-          "armyHasNotOption": ["we_ud_godslayer"],
+          "armyHasNotOption": [
+            {
+              "refs": ["we_ud_godslayer"],
+              "amount": 1
+            }
+          ],
           "refs": ["weaponEnchantUni", "we_ud_godslayer"],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "+1 Att, Divine Attacks, Multiple Wounds(2, towards Aegis(X+)*).<br>\n*<i>Note that the latter also applies against models with Aegis Saves with Conditional Applications.</i>\n",
@@ -169,7 +179,12 @@
           "type": "check",
           "name": "Scourge of Kings",
           "cost": 30,
-          "armyHasNotOption": ["we_ud_scourge_king"],
+          "armyHasNotOption": [
+            {
+              "refs": ["we_ud_scourge_king"],
+              "amount": 1
+            }
+          ],
           "refs": ["weaponEnchantUni", "we_ud_scourge_king"],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "\tAtt is <span class=\"textbf\">set</span> to 6. <span class=\"textbf\">Zeal(towards Characters)</span>.\n",
@@ -204,8 +219,13 @@
         {
           "type": "check",
           "name": "Crown of the Pharaohs",
-          "cost": 70,
-          "armyHasNotOption": ["we_ud_crown_phar"],
+          "cost": 60,
+          "armyHasNotOption": [
+            {
+              "refs": ["we_ud_crown_phar"],
+              "amount": 1
+            }
+          ],
           "hasOption": [
             {
               "refs": ["pharaoh", "nomarch"],
@@ -219,8 +239,13 @@
         {
           "type": "check",
           "name": "Sacred Hourglass",
-          "cost": 80,
-          "armyHasNotOption": ["we_ud_hourglass"],
+          "cost": 60,
+          "armyHasNotOption": [
+            {
+              "refs": ["we_ud_hourglass"],
+              "amount": 1
+            }
+          ],
           "hasNotOption": ["dominant"],
           "refs": ["we_ud_hourglass", "dominant"],
           "description": "\tThe first time each Magic Phase that the bearer fails a Casting Roll for a Learned Spell that was targeting a friendly unit, the bearer may reroll all Magic Dice for this Casting Roll.\n",
@@ -229,7 +254,7 @@
         {
           "type": "check",
           "name": "Book of the Dead",
-          "cost": 40,
+          "cost": 50,
           "boundSpells": [
             {
               "path": "hereditary",
@@ -241,7 +266,12 @@
               }
             }
           ],
-          "armyHasNotOption": ["we_ud_bookdead"],
+          "armyHasNotOption": [
+            {
+              "refs": ["we_ud_bookdead"],
+              "amount": 1
+            }
+          ],
           "refs": ["we_ud_bookdead"],
           "description": "\tThe bearer can cast a unique Bound Spell called <i>Unfinished Duty</i>: Casting Value (4+), Range 12\", Aura and Augment. Duration: Instant. <br>Choose one of the following effects for each target:\t\t\t<br>&nbsp;&nbsp;&bull;  The Rank-and-File part of the target <span class=\"textbf\">Raises</span> HP equal to its Rsr value. \n\t\t<br>&nbsp;&nbsp;&bull;  One Attachable Model in the target <span class=\"textbf\">Recovers</span> HP equal to its Rsr value.\n\t<br>\n",
           "option_id": "i8r69j3wuv8tm98xwhyq7n"
@@ -249,8 +279,13 @@
         {
           "type": "check",
           "name": "Kherp Sceptre",
-          "cost": 40,
-          "armyHasNotOption": ["we_ud_nephetra"],
+          "cost": 35,
+          "armyHasNotOption": [
+            {
+              "refs": ["we_ud_nephetra"],
+              "amount": 1
+            }
+          ],
           "refs": ["we_ud_nephetra", "tag_Hierophant"],
           "description": "\tThe wielder gains Hierophant. In addition, the wielder can cast <i>Danse Macabre</i> (Evocation) as a Bound Spell(5+). ",
           "option_id": "i57ittgfgfpui5ez3jy3xy1q3l"
@@ -260,7 +295,12 @@
           "name": "Blessed Wrappings",
           "cost": 30,
           "loses_rules": ["flammable"],
-          "armyHasNotOption": ["we_ud_wrappings"],
+          "armyHasNotOption": [
+            {
+              "refs": ["we_ud_wrappings"],
+              "amount": 1
+            }
+          ],
           "refs": ["we_ud_wrappings"],
           "description": "\tThe bearer gains +1 HP and loses one instance of <span class=\"textbf\">Weakness(Flaming Attacks)</span>.\n",
           "option_id": "ocf1q3m5m7v68ef5yum1"
@@ -268,15 +308,20 @@
         {
           "type": "check",
           "name": "Death Mask of Teput",
-          "cost": 55,
-          "armyHasNotOption": ["art_ud_teput"],
+          "cost": 45,
+          "armyHasNotOption": [
+            {
+              "refs": ["art_ud_teput"],
+              "amount": 1
+            }
+          ],
           "refs": ["art_ud_teput"],
           "description": "\tAegis(5+), Horror.\n",
           "option_id": "bh8jakfh53oyi9l0lgmgh"
         },
         {
           "name": "Scroll of a Free Mind",
-          "cost": 10,
+          "cost": 40,
           "option_id": "dln1qr46fiey2k6rsrdpgg",
           "type": "check",
           "shared": true
@@ -296,7 +341,7 @@
       "options": [
         {
           "name": "Hero's Heart",
-          "cost": 50,
+          "cost": 40,
           "option_id": "8y1cevj442fwfv8f6yjc6m",
           "type": "check",
           "shared": true
@@ -310,7 +355,12 @@
           "type": "check",
           "name": "Sandstorm Cloak",
           "cost": 25,
-          "armyHasNotOption": ["art_ud_sandstorm"],
+          "armyHasNotOption": [
+            {
+              "refs": ["art_ud_sandstorm"],
+              "amount": 1
+            }
+          ],
           "refs": ["art_ud_sandstorm"],
           "hasNotOption": ["mount"],
           "description": "\tThe wearer's Mob is <span class=\"textbf\">set</span> to 8, and it gains Autonomous, Fly, Sweeping Attack(2D6, Str 2, AP 1).\n",
@@ -383,21 +433,13 @@
           "options": [
             {
               "name": "Pharaoh",
-              "refs": ["pharaoh", "tag_Skeleton", "tag_Light Armour"],
               "cost": 220,
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["underground_ambush"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["entombed"]
-                  }
-                }
-              ],
+              "option_id": "mhbroxxntj936k1uhtoirh",
+              "unit_id": "pharaoh",
+              "refs": ["pharaoh", "tag_Skeleton", "tag_Light Armour"],
+              "size": "1",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "type": "group",
@@ -407,7 +449,7 @@
                   "options": [
                     {
                       "type": "check",
-                      "refs": ["army_general", "pharaoh_general"],
+                      "refs": ["general", "army_general", "pharaoh_general"],
                       "armyHasNotOption": ["army_general"],
                       "name": "General",
                       "cost": 0,
@@ -426,31 +468,35 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "sclrxcp30vekraf616g03",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Skeletal Horse",
                       "cost": 20,
                       "options": [],
-                      "refopt": "skeletal_horse_mount",
-                      "option_id": "l9sif1x131mc6j0mugsbs"
+                      "refopt": "skeletalHorseMount",
+                      "option_id": "l9sif1x131mc6j0mugsbs",
+                      "refs": ["skeletalhorse"]
                     },
                     {
                       "type": "check",
                       "name": "Skeleton Chariot",
                       "cost": 95,
                       "options": [],
-                      "refopt": "skeleton_chariot_mount",
-                      "option_id": "v1yevoy4f982f0pfs2ehwn"
+                      "refopt": "skeletonChariotMount",
+                      "option_id": "v1yevoy4f982f0pfs2ehwn",
+                      "refs": ["skeletonchariot"]
                     },
                     {
                       "type": "check",
                       "name": "Sha Guardian",
                       "cost": 320,
                       "options": [],
-                      "refopt": "sha_guardian_mount",
-                      "option_id": "rff5teqne5nbdlveucx9gr"
+                      "refopt": "shaGuardianMount",
+                      "option_id": "rff5teqne5nbdlveucx9gr",
+                      "refs": ["shaguardian"]
                     }
                   ],
                   "option_id": "ol48vqiiwrtd431f4ejdx",
@@ -472,7 +518,8 @@
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["shieldEnchant"],
-                      "option_id": "ywif1pixgcr6nmis745h9"
+                      "option_id": "ywif1pixgcr6nmis745h9",
+                      "refs": ["shield"]
                     },
                     {
                       "type": "group",
@@ -495,6 +542,7 @@
                           "ignoreCost": true,
                           "option_id": "vnk61pwy35rudctohcaj",
                           "refs": [
+                            "greataspisbow",
                             {
                               "ref": "aspis_arrows",
                               "amount": 5
@@ -520,7 +568,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "m7p83di054hwllony5cywr"
+                          "option_id": "m7p83di054hwllony5cywr",
+                          "refs": ["pairedweapons"]
                         },
                         {
                           "type": "check",
@@ -533,7 +582,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "1tuc3dp2r9bebilwc21u0i"
+                          "option_id": "1tuc3dp2r9bebilwc21u0i",
+                          "refs": ["halberd"]
                         },
                         {
                           "type": "check",
@@ -546,7 +596,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
-                          "option_id": "j4v358gldyge6lvipce07q"
+                          "option_id": "j4v358gldyge6lvipce07q",
+                          "refs": ["greatweapon"]
                         },
                         {
                           "type": "check",
@@ -560,7 +611,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "hit1e84o2sgtrvo92l2u8j"
+                          "option_id": "hit1e84o2sgtrvo92l2u8j",
+                          "refs": ["lance"]
                         }
                       ],
                       "option_id": "y6zudb08x97t8p2vq781j"
@@ -621,7 +673,7 @@
                       "name": "Commander of the Terracotta Army",
                       "type": "check",
                       "cost": 25,
-                      "refs": ["terracotta", "specialized_army"],
+                      "refs": ["commanderoftheterracottaarmy", "terracotta", "specialized_army"],
                       "armyHasOption": ["pharaoh_general"],
                       "armyHasNotOption": ["barrow_legion"],
                       "option_id": "lnua9mwgsrh2ev8tu3k58",
@@ -631,7 +683,7 @@
                       "name": "Lord of the Barrow Legion",
                       "type": "check",
                       "cost": 15,
-                      "refs": ["barrow_legion", "specialized_army"],
+                      "refs": ["lordofthebarrowlegion", "barrow_legion", "specialized_army"],
                       "neverHide": true,
                       "armyHasOption": ["pharaoh_general"],
                       "armyHasNotOption": [
@@ -658,14 +710,6 @@
                   "option_id": "hjc5vcbhbr9clan5g20nr4"
                 }
               ],
-              "unit_id": "pharaoh",
-              "option_id": "mhbroxxntj936k1uhtoirh",
-              "logo": "character"
-            },
-            {
-              "name": "Nomarch",
-              "refs": ["nomarch", "tag_Skeleton", "tag_Light Armour"],
-              "cost": 50,
               "override": [
                 {
                   "hasOption": [
@@ -677,8 +721,31 @@
                   "options": {
                     "extraCategories": ["entombed"]
                   }
+                },
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["shaguardian"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["masonsMenagerie"]
+                  }
                 }
               ],
+              "logo": "character"
+            },
+            {
+              "name": "Nomarch",
+              "cost": 60,
+              "option_id": "ffvhcuft1dhldllm36bjcr",
+              "unit_id": "nomarch",
+              "refs": ["nomarch", "tag_Skeleton", "tag_Light Armour"],
+              "size": "1",
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "optionsLabel": "Army Organisation",
@@ -705,7 +772,7 @@
                           "type": "check",
                           "armyHasOption": ["terracotta"],
                           "option_id": "7hivemzqt5p2mv08wndouv",
-                          "refs": ["nomarch_amount"]
+                          "refs": ["terracottaarmy", "nomarch_amount"]
                         }
                       ],
                       "option_id": "be8ru76isqf7ztu0vohvn2",
@@ -731,7 +798,8 @@
                           "cost": 15,
                           "type": "check",
                           "option_id": "f32f32f32f325456y746546t5454",
-                          "armyHasOption": ["barrow_legion"]
+                          "armyHasOption": ["barrow_legion"],
+                          "refs": ["barrowlegion"]
                         }
                       ],
                       "option_id": "fwefewf32f23f23f2f32.u564h56"
@@ -746,7 +814,7 @@
                   "options": [
                     {
                       "type": "check",
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "name": "General",
                       "cost": 20,
@@ -756,7 +824,8 @@
                       "type": "check",
                       "name": "Captain and Attached",
                       "cost": 0,
-                      "option_id": "vcklv0439543bjewr0vb34jv034v43"
+                      "option_id": "vcklv0439543bjewr0vb34jv034v43",
+                      "refs": ["captainandattached"]
                     },
                     {
                       "option_id": "ff23n8f32jf0329f23g23g2",
@@ -768,7 +837,7 @@
                     {
                       "type": "check",
                       "armyHasNotOption": ["army_bsb"],
-                      "refs": ["army_bsb", "not_a_leader"],
+                      "refs": ["battlestandardbearer", "army_bsb", "not_a_leader"],
                       "name": "Battle Standard Bearer",
                       "cost": 70,
                       "collapsible": true,
@@ -794,33 +863,36 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "exv5un2s7y90siqvwunaf4q",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Skeletal Horse",
-                      "cost": 20,
+                      "cost": 10,
                       "options": [],
-                      "refopt": "skeletal_horse_mount",
+                      "refopt": "skeletalHorseMount",
                       "option_id": "uoztaz7mm22gv0x5oroe5",
-                      "hasNotOption": ["solitary"]
+                      "hasNotOption": ["solitary"],
+                      "refs": ["skeletalhorse"]
                     },
                     {
                       "type": "check",
                       "name": "Skeleton Chariot",
                       "cost": 70,
                       "options": [],
-                      "refopt": "skeleton_chariot_mount",
-                      "option_id": "vilnq5uuv6e4l0jnnsvb"
+                      "refopt": "skeletonChariotMount",
+                      "option_id": "vilnq5uuv6e4l0jnnsvb",
+                      "refs": ["skeletonchariot"]
                     },
                     {
                       "type": "check",
                       "name": "Amuut",
-                      "cost": 90,
+                      "cost": 70,
                       "options": [],
-                      "refopt": "amuut_mount",
+                      "refopt": "amuutMount",
                       "option_id": "n5odu83v6wqscd13jp6t5",
-                      "refs": ["harbinger_amuut"],
+                      "refs": ["amuut", "harbinger_amuut"],
                       "loses_rules": ["rulebook-attached"],
                       "armyHasNotOption": [
                         {
@@ -832,11 +904,12 @@
                     {
                       "type": "check",
                       "name": "Sha Guardian",
-                      "cost": 280,
+                      "cost": 300,
                       "options": [],
-                      "refopt": "sha_guardian_mount",
+                      "refopt": "shaGuardianMount",
                       "option_id": "0s548k0cb2n5qnbvavtfax",
-                      "hasOption": ["deathless_noble"]
+                      "hasOption": ["deathless_noble"],
+                      "refs": ["shaguardian"]
                     }
                   ],
                   "option_id": "k3c40uqyzu9x8h8bml2sgr",
@@ -853,21 +926,24 @@
                       "name": "Deathless Noble",
                       "cost": 40,
                       "option_id": "f032f032f032f032f032f",
-                      "refs": ["deathless_noble"]
+                      "refs": ["deathlessnoble", "deathless_noble"],
+                      "rarity": "Common"
                     },
                     {
                       "type": "check",
                       "name": "Tomb Harbinger",
                       "cost": 0,
                       "option_id": "g34hn54h564gh54g54g54",
-                      "refs": ["tomb_harbinger"]
+                      "refs": ["tombharbinger", "tomb_harbinger"],
+                      "rarity": "Common"
                     },
                     {
                       "type": "check",
                       "name": "Tomb Architect",
-                      "cost": 90,
+                      "cost": 75,
                       "option_id": "fwef23f32f32h54t54j65j56",
-                      "refs": ["tomb_architect"]
+                      "refs": ["tombarchitect", "tomb_architect"],
+                      "rarity": "Rare"
                     }
                   ]
                 },
@@ -884,6 +960,7 @@
                       "type": "check",
                       "cost": 5,
                       "refs": [
+                        "longbow",
                         {
                           "ref": "aspis_arrows",
                           "amount": 2
@@ -900,7 +977,8 @@
                       "collapsible": true,
                       "options": [],
                       "optionsDict": ["shieldEnchant"],
-                      "option_id": "d8eip6v2xefnvg4vpiuik"
+                      "option_id": "d8eip6v2xefnvg4vpiuik",
+                      "refs": ["shield"]
                     },
                     {
                       "collapsible": true,
@@ -945,7 +1023,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "option_id": "51padvjk6vw12wjqkbi2qzl"
+                          "option_id": "51padvjk6vw12wjqkbi2qzl",
+                          "refs": ["pairedweapons"]
                         },
                         {
                           "type": "check",
@@ -958,7 +1037,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "mqcbn0qkn382nuskznifa"
+                          "option_id": "mqcbn0qkn382nuskznifa",
+                          "refs": ["halberd"]
                         },
                         {
                           "type": "check",
@@ -971,7 +1051,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
-                          "option_id": "8tb8lonaxiptp67hfn903"
+                          "option_id": "8tb8lonaxiptp67hfn903",
+                          "refs": ["greatweapon"]
                         },
                         {
                           "type": "check",
@@ -985,7 +1066,8 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant"],
-                          "option_id": "j9hfozzc7ahtu95hqq419p"
+                          "option_id": "j9hfozzc7ahtu95hqq419p",
+                          "refs": ["lance"]
                         }
                       ],
                       "option_id": "gl5v9q87xsni53olkujvp8"
@@ -1025,14 +1107,6 @@
                   "option_id": "sa130lp9xmhlnhe6qgeqod"
                 }
               ],
-              "unit_id": "nomarch",
-              "option_id": "ffvhcuft1dhldllm36bjcr",
-              "logo": "character"
-            },
-            {
-              "name": "Death Cult Hierarch",
-              "refs": ["wizard", "tag_Skeleton"],
-              "cost": 270,
               "override": [
                 {
                   "hasOption": [
@@ -1044,8 +1118,30 @@
                   "options": {
                     "extraCategories": ["entombed"]
                   }
+                },
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["shaguardian"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["masonsMenagerie"]
+                  }
                 }
               ],
+              "logo": "character"
+            },
+            {
+              "name": "Death Cult Hierarch",
+              "cost": 270,
+              "option_id": "toed1syddasr9foa5t2rzzr5bgo",
+              "unit_id": "deathCultHierarch",
+              "refs": ["deathculthierarch", "tag_Skeleton", "wizard"],
+              "size": "1",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "optionsLabel": "Army Organisation",
@@ -1072,7 +1168,7 @@
                           "type": "check",
                           "armyHasOption": ["terracotta"],
                           "option_id": "r18k4pedsw6vkxvs47lzic0s",
-                          "refs": ["death_cult_hierarch_amount"]
+                          "refs": ["terracottaarmy", "death_cult_hierarch_amount"]
                         }
                       ],
                       "option_id": "cj91lpxc6adwl7i5ihpzwc47",
@@ -1098,7 +1194,8 @@
                           "cost": 5,
                           "type": "check",
                           "option_id": "gh54hn54gd534v534v5554",
-                          "armyHasOption": ["barrow_legion"]
+                          "armyHasOption": ["barrow_legion"],
+                          "refs": ["barrowlegion"]
                         }
                       ],
                       "option_id": "f34g43g43g43d67k8l.u564h56"
@@ -1113,7 +1210,7 @@
                   "options": [
                     {
                       "type": "check",
-                      "refs": ["army_general"],
+                      "refs": ["general", "army_general"],
                       "armyHasNotOption": ["army_general"],
                       "name": "General",
                       "cost": 0,
@@ -1174,21 +1271,14 @@
                   "collapsible": true,
                   "options": [
                     {
-                      "refs": ["wizardApprentice"],
-                      "name": "Wizard Apprentice",
-                      "type": "check",
-                      "cost": 0,
-                      "option_id": "n6bdadfghtr8r1q0s41xyt"
-                    },
-                    {
-                      "refs": ["wizardAdept"],
+                      "refs": ["wizardadept", "wizardAdept"],
                       "name": "Wizard Adept",
                       "type": "check",
                       "cost": 0,
                       "option_id": "9yjr5zesd4eeps5lrtqi9ln"
                     },
                     {
-                      "refs": ["wizardMaster"],
+                      "refs": ["wizardmaster", "wizardMaster"],
                       "name": "Wizard Master",
                       "type": "check",
                       "cost": 150,
@@ -1207,24 +1297,27 @@
                       "name": "Light Troops",
                       "type": "check",
                       "option_id": "hgs8q6vuv7h66d0aao12ltf",
-                      "cost": 0
+                      "cost": 0,
+                      "refs": ["lighttroops"]
                     },
                     {
                       "type": "check",
                       "name": "Skeletal Horse",
-                      "cost": 20,
+                      "cost": 10,
                       "options": [],
-                      "refopt": "skeletal_horse_mount",
-                      "option_id": "x2me0lw6ypd8nukpcsu36r"
+                      "refopt": "skeletalHorseMount",
+                      "option_id": "x2me0lw6ypd8nukpcsu36r",
+                      "refs": ["skeletalhorse"]
                     },
                     {
                       "type": "check",
                       "name": "Ark of Ages",
                       "cost": 100,
                       "options": [],
-                      "refopt": "ark_of_ages_mount",
+                      "refopt": "arkOfAgesMount",
                       "option_id": "rhgvywo5vo6du1rxu3bllp",
                       "refs": [
+                        "arkofages",
                         {
                           "ref": "aspis_arrows",
                           "amount": 2
@@ -1303,37 +1396,37 @@
                   "options": [
                     {
                       "type": "check",
-                      "name": "Soul Conduit",
-                      "cost": 10,
-                      "refs": ["tag_Hierophant"],
+                      "name": "Soul Conduit and Hierophant",
+                      "cost": 25,
+                      "refs": ["soulconduitandhierophant", "tag_Hierophant"],
                       "option_id": "oguhtbt96ap340tgayzvrt",
-                      "override": [
-                        {
-                          "hasOption": [
-                            {
-                              "refs": ["wizardMaster"],
-                              "amount": 1
-                            }
-                          ],
-                          "options": {
-                            "cost": 25
-                          }
-                        }
-                      ]
+                      "rarity": "Uncommon"
                     }
                   ],
                   "option_id": "c6tx123xdkkdf6slcvj60d"
                 }
               ],
-              "unit_id": "deathCultHierarch",
-              "option_id": "toed1syddasr9foa5t2rzzr5bgo",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["underground_ambush"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["entombed"]
+                  }
+                }
+              ],
               "logo": "character"
             },
             {
               "name": "Ashotet, Custodian of Souls",
-              "cost": 750,
+              "cost": 650,
               "option_id": "ozwsw3qc0709lojd",
               "unit_id": "ashotetCustodianOfSouls",
+              "maxUnitCost": 650,
               "refs": ["ashotetcustodianofsouls", "wizard", "wizardMaster", "army_general", "tag_Skeleton", "tag_Hierophant", "tag_Spirit"],
               "size": "1",
               "rarity": "Legendary",
@@ -1365,7 +1458,7 @@
             },
             {
               "name": "Rehnepeh, the Undying Sun",
-              "cost": 600,
+              "cost": 540,
               "option_id": "uffnp7dwrnmhx89r",
               "unit_id": "rehnepehTheUndyingSun",
               "refs": ["rehnepehtheundyingsun", "army_general", "tag_Skeleton", "tag_Light Armour", "tag_Mount", "tag_Construct"],
@@ -1387,20 +1480,12 @@
             {
               "name": "Skeleton Warriors",
               "cost": 10,
-              "refs": ["core_unit", "tag_Skeleton", "tag_Light Armour"],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["underground_ambush"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["entombed"]
-                  }
-                }
-              ],
+              "option_id": "ua54o4stuqpw12h9tya8",
+              "unit_id": "skeletonWarriors",
+              "refs": ["skeletonwarriors", "tag_Skeleton", "tag_Light Armour", "core_unit"],
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 20,
@@ -1443,10 +1528,11 @@
                           "options": [
                             {
                               "name": "Terracotta Army",
-                              "cost": 0,
+                              "cost": 2,
                               "type": "check",
                               "armyHasOption": ["terracotta"],
-                              "option_id": "im35ipvvrqlo6wpayggm"
+                              "option_id": "im35ipvvrqlo6wpayggm",
+                              "refs": ["terracottaarmy"]
                             }
                           ],
                           "option_id": "213fgvtpcky8ja3qjifpzri7pr"
@@ -1460,19 +1546,22 @@
                               "type": "check",
                               "name": "Shield",
                               "option_id": "f32f329f32j0f3290f32f32f23",
-                              "cost": 0
+                              "cost": 0,
+                              "refs": ["shield"]
                             },
                             {
                               "type": "check",
                               "name": "Spear and Shield",
                               "cost": 1,
-                              "option_id": "z8r0lvpsnlqv7o2y8r5bba"
+                              "option_id": "z8r0lvpsnlqv7o2y8r5bba",
+                              "refs": ["spearandshield"]
                             },
                             {
                               "type": "check",
                               "name": "Halberd",
                               "cost": 1,
-                              "option_id": "jjg2d9916c9nn6finres6"
+                              "option_id": "jjg2d9916c9nn6finres6",
+                              "refs": ["halberd"]
                             }
                           ],
                           "option_id": "x88n23kiljv0arh4xm0ci"
@@ -1526,7 +1615,8 @@
                                   "loses_rules": ["ambush"],
                                   "cost": 1,
                                   "type": "check",
-                                  "option_id": "f4ef342g34g34g43g34"
+                                  "option_id": "f4ef342g34g34g43g34",
+                                  "refs": ["barrowlegion"]
                                 }
                               ],
                               "option_id": "fd32f3ad24f32f32f32"
@@ -1554,26 +1644,20 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "mqkgengnpsg70po4c16mh"
+                      "option_id": "mqkgengnpsg70po4c16mh",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "sxec38477vaid71cwgeue"
+                      "option_id": "sxec38477vaid71cwgeue",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "ea9rap2oqfckcj049ljas"
                 }
               ],
-              "unit_id": "skeletonWarriors",
-              "option_id": "ua54o4stuqpw12h9tya8",
-              "logo": "core"
-            },
-            {
-              "name": "Skeleton Archers",
-              "cost": 25,
-              "refs": ["core_unit", "tag_Skeleton", "tag_Light Armour"],
               "override": [
                 {
                   "hasOption": [
@@ -1587,6 +1671,17 @@
                   }
                 }
               ],
+              "logo": "core"
+            },
+            {
+              "name": "Skeleton Archers",
+              "cost": 25,
+              "option_id": "ohrmzqmjlbf5cj617hxhzg",
+              "unit_id": "skeletonArchers",
+              "refs": ["skeletonarchers", "tag_Skeleton", "tag_Light Armour", "core_unit"],
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 15,
@@ -1623,7 +1718,7 @@
                               "name": "Bow (5+)",
                               "cost": 0,
                               "option_id": "4059095bermv-34v34vc34bfdg3",
-                              "refs": ["aspis_arrows"]
+                              "refs": ["bow", "aspis_arrows"]
                             },
                             {
                               "type": "check",
@@ -1631,6 +1726,7 @@
                               "cost": 2,
                               "option_id": "34343u4g53h2309f3429hf43",
                               "refs": [
+                                "longbow",
                                 "archer_longbow",
                                 {
                                   "ref": "aspis_arrows",
@@ -1672,7 +1768,8 @@
                                   "cost": 1,
                                   "type": "check",
                                   "armyHasOption": ["terracotta"],
-                                  "option_id": "f32f2323423fwdsfsdfs"
+                                  "option_id": "f32f2323423fwdsfsdfs",
+                                  "refs": ["terracottaarmy"]
                                 }
                               ],
                               "option_id": "f32f32fdsfdsfsdfds"
@@ -1698,7 +1795,8 @@
                                   "cost": 1,
                                   "type": "check",
                                   "option_id": "32f32f4cdfsdf32f32f32",
-                                  "armyHasOption": ["barrow_legion"]
+                                  "armyHasOption": ["barrow_legion"],
+                                  "refs": ["barrowlegion"]
                                 }
                               ],
                               "option_id": "fd32f324f32f32f32"
@@ -1726,27 +1824,20 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "s9vp30lhd6cbl6gaij6xej"
+                      "option_id": "s9vp30lhd6cbl6gaij6xej",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "hppku79qpxk84tn7tttc48"
+                      "option_id": "hppku79qpxk84tn7tttc48",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "bhf01qasnrbxwchwh3y85"
                 }
               ],
-              "unit_id": "skeletonArchers",
-              "option_id": "ohrmzqmjlbf5cj617hxhzg",
-              "logo": "core"
-            },
-            {
-              "name": "Skeleton Cavalry",
-              "cost": 40,
-              "refs": ["skeleton_cavalry", "core_unit", "tag_Skeleton", "tag_Light Armour", "tag_Mount"],
-              "armyHasNotOption": [],
               "override": [
                 {
                   "hasOption": [
@@ -1760,6 +1851,17 @@
                   }
                 }
               ],
+              "logo": "core"
+            },
+            {
+              "name": "Skeleton Cavalry",
+              "cost": 50,
+              "option_id": "jq9s2k7ksbhqn9lo3cg3he",
+              "unit_id": "skeletonCavalry",
+              "refs": ["skeletoncavalry", "tag_Skeleton", "tag_Light Armour", "tag_Mount", "skeleton_cavalry", "core_unit"],
+              "rarity": "Uncommon",
+              "height": "2",
+              "basesize": "25×50",
               "options": [
                 {
                   "minSize": 10,
@@ -1783,7 +1885,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 11,
                       "options": [
                         {
                           "override": [
@@ -1805,7 +1907,8 @@
                               "cost": 2,
                               "type": "check",
                               "armyHasOption": ["terracotta"],
-                              "option_id": "owgya6wbmkclb4tgla4prq"
+                              "option_id": "owgya6wbmkclb4tgla4prq",
+                              "refs": ["terracottaarmy"]
                             }
                           ],
                           "option_id": "efjpbhmb1o6i1863rdcp3a"
@@ -1830,7 +1933,8 @@
                               "cost": 2,
                               "type": "check",
                               "armyHasOption": ["barrow_legion"],
-                              "option_id": "o36mvxe1xobzivo42gekh"
+                              "option_id": "o36mvxe1xobzivo42gekh",
+                              "refs": ["barrowlegion"]
                             }
                           ],
                           "option_id": "yqfglm73wcfg18mbxix766"
@@ -1856,26 +1960,20 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "wdg2c228w2n5f530guv0ip"
+                      "option_id": "wdg2c228w2n5f530guv0ip",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "wtbcan880z0nb2blqyuhu"
+                      "option_id": "wtbcan880z0nb2blqyuhu",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "wh7ci0num9igunf8mmx5gq"
                 }
               ],
-              "unit_id": "skeletonCavalry",
-              "option_id": "jq9s2k7ksbhqn9lo3cg3he",
-              "logo": "core"
-            },
-            {
-              "name": "Skeleton Scouts",
-              "cost": 105,
-              "refs": ["skeleton_scouts", "core_unit", "tag_Skeleton", "tag_Mount"],
               "override": [
                 {
                   "hasOption": [
@@ -1889,7 +1987,18 @@
                   }
                 }
               ],
-              "armyHasNotOption": ["terracotta"],
+              "armyHasNotOption": [],
+              "logo": "core"
+            },
+            {
+              "name": "Skeleton Scouts",
+              "cost": 105,
+              "option_id": "k514yw315rgqwpheghck",
+              "unit_id": "skeletonScouts",
+              "refs": ["skeletonscouts", "tag_Skeleton", "tag_Mount", "skeleton_scouts", "core_unit"],
+              "rarity": "Uncommon",
+              "height": "2",
+              "basesize": "25×50",
               "options": [
                 {
                   "minSize": 5,
@@ -1935,7 +2044,8 @@
                               "cost": 1,
                               "type": "check",
                               "option_id": "ljk545562fdes67gjklip09ty",
-                              "armyHasOption": ["barrow_legion"]
+                              "armyHasOption": ["barrow_legion"],
+                              "refs": ["barrowlegion"]
                             }
                           ],
                           "option_id": "tdr687kjerge35432fsd"
@@ -1961,27 +2071,20 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "qwh1yxywtmn8h11f6drz84"
+                      "option_id": "qwh1yxywtmn8h11f6drz84",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "yphepnd7dc1zfxdcvjttn"
+                      "option_id": "yphepnd7dc1zfxdcvjttn",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "de2r1i6cb599048dpo9ece"
                 }
               ],
-              "unit_id": "skeletonScouts",
-              "option_id": "k514yw315rgqwpheghck",
-              "logo": "core"
-            },
-            {
-              "name": "Skeleton Chariots",
-              "cost": 40,
-              "refs": ["skeleton_chariots", "core_unit", "tag_Skeleton", "tag_Light Armour", "tag_Mount", "tag_Construct"],
-              "armyHasNotOption": [],
               "override": [
                 {
                   "hasOption": [
@@ -1993,24 +2096,27 @@
                   "options": {
                     "extraCategories": ["entombed"]
                   }
-                },
-                {
-                  "armyHasOption": [
-                    {
-                      "refs": ["barrow_legion"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "rules": [
-                      {
-                        "id": "custom-barrow_legion",
-                        "params": []
-                      }
-                    ]
-                  }
                 }
               ],
+              "armyHasNotOption": ["terracotta"],
+              "logo": "core"
+            },
+            {
+              "name": "Skeleton Chariots",
+              "cost": 30,
+              "option_id": "tzrh115eeyaqnnnhovqe0s",
+              "unit_id": "skeletonChariots",
+              "refs": [
+                "skeletonchariots",
+                "tag_Skeleton",
+                "tag_Light Armour",
+                "tag_Mount",
+                "tag_Construct",
+                "skeleton_chariots",
+                "core_unit"
+              ],
+              "height": "4",
+              "basesize": "50×100",
               "options": [
                 {
                   "minSize": 3,
@@ -2045,7 +2151,7 @@
                               "cost": 5,
                               "option_id": "ca77mlt5p44rokhizcbqpm",
                               "loses_rules": ["light_troops", "lighttroops"],
-                              "refs": ["legion_charioteers"]
+                              "refs": ["legioncharioteers", "legion_charioteers"]
                             },
                             {
                               "name": "Aspis Arrows and Bow (5+)",
@@ -2053,6 +2159,7 @@
                               "cost": 0,
                               "option_id": "ca77mlt5p44rfdfdokhizcbqpm",
                               "refs": [
+                                "aspisarrowsandbow",
                                 {
                                   "ref": "aspis_arrows",
                                   "amount": 2
@@ -2070,13 +2177,15 @@
                               "name": "Halberd",
                               "cost": 0,
                               "type": "check",
-                              "option_id": "fewf32f32f32f32f32"
+                              "option_id": "fewf32f32f32f32f32",
+                              "refs": ["halberd"]
                             },
                             {
                               "name": "Lance",
-                              "cost": 3,
+                              "cost": 0,
                               "type": "check",
-                              "option_id": "l04w9erh23ei0e32wsckf"
+                              "option_id": "l04w9erh23ei0e32wsckf",
+                              "refs": ["lance"]
                             }
                           ],
                           "option_id": "acfc0c9ewv8wqk8ebp02j"
@@ -2105,7 +2214,8 @@
                                   "cost": 15,
                                   "type": "check",
                                   "armyHasOption": ["terracotta"],
-                                  "option_id": "f32f232113423fwdsfsdfs"
+                                  "option_id": "f32f232113423fwdsfsdfs",
+                                  "refs": ["terracottaarmy"]
                                 }
                               ],
                               "option_id": "f32f32gdgfdsfdsfsdfds"
@@ -2131,7 +2241,8 @@
                                   "cost": 10,
                                   "type": "check",
                                   "option_id": "32f3dsds2f4cdfsdf32f32f32",
-                                  "armyHasOption": ["barrow_legion"]
+                                  "armyHasOption": ["barrow_legion"],
+                                  "refs": ["barrowlegion"]
                                 }
                               ],
                               "option_id": "fd32f111324f32f32f32"
@@ -2165,20 +2276,50 @@
                           "refs": ["legion_charioteers"],
                           "amount": 1
                         }
-                      ]
+                      ],
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "b2ru5pedgdphmq1yuo75x"
+                      "option_id": "b2ru5pedgdphmq1yuo75x",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "cith2zleh4mhwggczu7qki"
                 }
               ],
-              "unit_id": "skeletonChariots",
-              "option_id": "tzrh115eeyaqnnnhovqe0s",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["underground_ambush"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["entombed"]
+                  }
+                },
+                {
+                  "armyHasOption": [
+                    {
+                      "refs": ["barrow_legion"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "rules": [
+                      {
+                        "id": "custom-barrow_legion",
+                        "params": []
+                      }
+                    ]
+                  }
+                }
+              ],
+              "armyHasNotOption": [],
               "logo": "core"
             }
           ],
@@ -2191,26 +2332,14 @@
           "options": [
             {
               "name": "Casket of Phatep",
-              "refs": ["casket_phtatep", "war_machine", "not_a_leader", "tag_Skeleton", "tag_Construct"],
-              "armyHasNotOption": [],
               "cost": 230,
-              "magic": {
-                "amount": 2,
-                "spells": [
-                  {
-                    "ref": "thunder_and_lightning",
-                    "path": "cosmology"
-                  },
-                  {
-                    "ref": "augury_of_despair",
-                    "path": "divination"
-                  },
-                  {
-                    "ref": "soul_blight",
-                    "path": "evocation"
-                  }
-                ]
-              },
+              "option_id": "t1e4mrj2z5m1f5qg65d1zk",
+              "unit_id": "casketOfPhatep",
+              "refs": ["casketofphatep", "tag_Skeleton", "tag_Construct", "casket_phtatep", "war_machine", "not_a_leader"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "2",
+              "basesize": "75×75",
               "options": [
                 {
                   "override": [
@@ -2233,7 +2362,7 @@
                       "type": "check",
                       "armyHasOption": ["terracotta"],
                       "option_id": "d7wfba6w9uwapduxpljvjn",
-                      "refs": ["casket_of_phatep_amount"]
+                      "refs": ["terracottaarmy", "casket_of_phatep_amount"]
                     }
                   ],
                   "option_id": "8iux57254qgz7lpu2xrb8f"
@@ -2258,30 +2387,52 @@
                       "cost": 5,
                       "type": "check",
                       "option_id": "fe32f3dff342g342f32f32f32",
-                      "armyHasOption": ["barrow_legion"]
+                      "armyHasOption": ["barrow_legion"],
+                      "refs": ["barrowlegion"]
                     }
                   ],
                   "option_id": "g34g34g34g43g4sss3g34"
                 }
               ],
-              "unit_id": "casketOfPhatep",
-              "option_id": "t1e4mrj2z5m1f5qg65d1zk",
+              "magic": {
+                "amount": 2,
+                "spells": [
+                  {
+                    "ref": "thunder_and_lightning",
+                    "path": "cosmology"
+                  },
+                  {
+                    "ref": "augury_of_despair",
+                    "path": "divination"
+                  },
+                  {
+                    "ref": "soul_blight",
+                    "path": "evocation"
+                  }
+                ]
+              },
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Necropolis Guard",
               "cost": -45,
+              "option_id": "l47b0gr7ouopp2tc8ckuve",
+              "unit_id": "necropolisGuard",
+              "refs": ["necropolisguard", "tag_Skeleton", "tag_Light Armour"],
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 15,
-                  "maxSize": 40,
+                  "maxSize": 35,
                   "addToUnitSize": true,
                   "options": [
                     {
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 16,
+                      "cost": 15,
                       "options": [
                         {
                           "override": [
@@ -2303,7 +2454,8 @@
                               "cost": 5,
                               "type": "check",
                               "armyHasOption": ["terracotta"],
-                              "option_id": "9jl7u05u5o4rd4mlpxjae"
+                              "option_id": "9jl7u05u5o4rd4mlpxjae",
+                              "refs": ["terracottaarmy"]
                             }
                           ],
                           "option_id": "p36snmkdxafxh5w8uw6mbj"
@@ -2328,7 +2480,8 @@
                               "cost": 1,
                               "type": "check",
                               "armyHasOption": ["barrow_legion"],
-                              "option_id": "rn30d57bvpatxd6186nl7"
+                              "option_id": "rn30d57bvpatxd6186nl7",
+                              "refs": ["barrowlegion"]
                             }
                           ],
                           "option_id": "bnwkbuc5iwpvqsw6t4l72"
@@ -2344,7 +2497,9 @@
                               "option_id": "hgsbgmq7pk4pale72797g"
                             }
                           ],
-                          "option_id": "rmgl68o2kwizk3nr1xg0p"
+                          "option_id": "rmgl68o2kwizk3nr1xg0p",
+                          "cost": 1,
+                          "refs": ["shield"]
                         },
                         {
                           "type": "group",
@@ -2355,13 +2510,15 @@
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 3,
-                              "option_id": "3884f0y8jpq4g0xmmpklgr"
+                              "option_id": "3884f0y8jpq4g0xmmpklgr",
+                              "refs": ["pairedweapons"]
                             },
                             {
                               "type": "check",
                               "name": "Halberd",
-                              "cost": 3,
-                              "option_id": "3491x4bzy1u0a21igaiax9r"
+                              "cost": 2,
+                              "option_id": "3491x4bzy1u0a21igaiax9r",
+                              "refs": ["halberd"]
                             }
                           ],
                           "option_id": "nuxi0hz3zofe5okazgx6r5"
@@ -2387,41 +2544,39 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "rh2q2x28polyczj8ws9tqj"
+                      "option_id": "rh2q2x28polyczj8ws9tqj",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "95r0ti2j7tc52lpuluge9b"
+                      "option_id": "95r0ti2j7tc52lpuluge9b",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "510xrz5j5aec3e1dz3emaa"
                 }
               ],
-              "unit_id": "necropolisGuard",
-              "option_id": "l47b0gr7ouopp2tc8ckuve",
-              "logo": "special",
-              "refs": ["tag_Skeleton", "tag_Light Armour"]
+              "logo": "special"
             },
             {
               "name": "Tomb Cataphracts",
-              "cost": -100,
-              "refs": ["tomb_cataphracts", "large_cavalry", "tag_Skeleton", "tag_Light Armour", "tag_Statue", "tag_Mount"],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["underground_ambush"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["entombed"]
-                  }
-                }
+              "cost": -70,
+              "option_id": "npaj29c21yg0us28hlwo",
+              "unit_id": "tombCataphracts",
+              "refs": [
+                "tombcataphracts",
+                "tag_Skeleton",
+                "tag_Light Armour",
+                "tag_Statue",
+                "tag_Mount",
+                "tomb_cataphracts",
+                "large_cavalry"
               ],
-              "armyHasNotOption": [],
+              "rarity": "Uncommon",
+              "height": "4",
+              "basesize": "50×100",
               "options": [
                 {
                   "minSize": 3,
@@ -2432,7 +2587,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 120,
+                      "cost": 110,
                       "options": [
                         {
                           "type": "group",
@@ -2441,8 +2596,8 @@
                             {
                               "type": "check",
                               "name": "Ambush (Open Terrain)",
-                              "cost": 10,
-                              "refs": ["underground_ambush"],
+                              "cost": 15,
+                              "refs": ["ambushopenterrain", "underground_ambush"],
                               "option_id": "0gxo6z5q7tpaobw9ff11"
                             }
                           ],
@@ -2473,7 +2628,8 @@
                                   "cost": 0,
                                   "type": "check",
                                   "armyHasOption": ["terracotta"],
-                                  "option_id": "f32f232341mhfdgrew323fwdsfsdfs"
+                                  "option_id": "f32f232341mhfdgrew323fwdsfsdfs",
+                                  "refs": ["terracottaarmyandloseambush"]
                                 }
                               ],
                               "option_id": "f32f32fdsfdsfdsassdfds"
@@ -2501,27 +2657,56 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "uxw9vo2e6ibze6zh8j8ug"
+                      "option_id": "uxw9vo2e6ibze6zh8j8ug",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "lbkgpdm4ij9i1mw1k6epp"
+                      "option_id": "lbkgpdm4ij9i1mw1k6epp",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "c8vpgmx94olinwjfvopq1p"
                 }
               ],
-              "unit_id": "tombCataphracts",
-              "option_id": "npaj29c21yg0us28hlwo",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["underground_ambush"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["entombed"]
+                  }
+                },
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushopenterrain"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["entombed"]
+                  }
+                }
+              ],
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Shabtis",
-              "cost": -35,
+              "cost": -55,
+              "option_id": "xhfk8lcuunuluwxwgt81",
+              "unit_id": "shabtis",
               "refs": ["shabtis", "tag_Statue"],
-              "armyHasNotOption": [],
+              "rarity": "Uncommon",
+              "height": "3",
+              "basesize": "40×40",
               "options": [
                 {
                   "minSize": 3,
@@ -2543,13 +2728,15 @@
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 0,
-                              "option_id": "am5xn8fi9ozv3fda6w47"
+                              "option_id": "am5xn8fi9ozv3fda6w47",
+                              "refs": ["pairedweapons"]
                             },
                             {
                               "type": "check",
                               "name": "Halberd",
                               "cost": 2,
-                              "option_id": "gm46xpgsv5xn4ffspallt"
+                              "option_id": "gm46xpgsv5xn4ffspallt",
+                              "refs": ["halberd"]
                             }
                           ],
                           "option_id": "kv9kk7soiwszz6vxzth2nj"
@@ -2575,13 +2762,15 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "u530rbx89mhrha0n8bstp"
+                      "option_id": "u530rbx89mhrha0n8bstp",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "8mpm25jc2t9qayfwchoz5"
+                      "option_id": "8mpm25jc2t9qayfwchoz5",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "eun7ox9phxf17b2tg9j9h"
@@ -2610,7 +2799,8 @@
                           "cost": 0,
                           "type": "check",
                           "armyHasOption": ["terracotta"],
-                          "option_id": "f32f2323124423fwdsfsdfs"
+                          "option_id": "f32f2323124423fwdsfsdfs",
+                          "refs": ["terracottaarmy"]
                         }
                       ],
                       "option_id": "f32f32fds343fdsfsdfds"
@@ -2636,7 +2826,8 @@
                           "cost": 0,
                           "type": "check",
                           "option_id": "32f32f4cddfdsffsdf32f32f32",
-                          "armyHasOption": ["barrow_legion"]
+                          "armyHasOption": ["barrow_legion"],
+                          "refs": ["barrowlegion"]
                         }
                       ],
                       "option_id": "fd32f324f32fdff32f32"
@@ -2644,20 +2835,18 @@
                   ]
                 }
               ],
-              "unit_id": "shabtis",
-              "option_id": "xhfk8lcuunuluwxwgt81",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Great Vultures",
               "cost": 85,
-              "refs": ["great_vultures", "tag_Skeleton", "tag_Beast"],
-              "armyHasNotOption": [
-                {
-                  "refs": ["terracotta"],
-                  "amount": 1
-                }
-              ],
+              "option_id": "qv46odukaims6vtsr55mc",
+              "unit_id": "greatVultures",
+              "refs": ["greatvultures", "tag_Beast", "great_vultures", "tag_Skeleton"],
+              "rarity": "Uncommon",
+              "height": "1",
+              "basesize": "40×40",
               "options": [
                 {
                   "minSize": 3,
@@ -2696,39 +2885,29 @@
                       "cost": 0,
                       "type": "check",
                       "option_id": "fe32f3dfsdfsdff342g342f32f32f32",
-                      "armyHasOption": ["barrow_legion"]
+                      "armyHasOption": ["barrow_legion"],
+                      "refs": ["barrowlegion"]
                     }
                   ],
                   "option_id": "g34g34g34g4fsdfsd3g4sss3g34"
                 }
               ],
-              "unit_id": "greatVultures",
-              "option_id": "qv46odukaims6vtsr55mc",
-              "logo": "special"
-            },
-            {
-              "name": "Scarab Swarms",
-              "cost": 75,
-              "refs": ["scarab_swarms", "tag_Beast"],
               "armyHasNotOption": [
                 {
                   "refs": ["terracotta"],
                   "amount": 1
                 }
               ],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["underground_ambush"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["entombed"]
-                  }
-                }
-              ],
+              "logo": "special"
+            },
+            {
+              "name": "Scarab Swarms",
+              "cost": 85,
+              "option_id": "75nw1g3lb0dceqae8m9kp",
+              "unit_id": "scarabSwarms",
+              "refs": ["scarabswarms", "tag_Beast", "scarab_swarms"],
+              "rarity": "Uncommon",
+              "basesize": "40×40",
               "options": [
                 {
                   "minSize": 3,
@@ -2745,6 +2924,17 @@
                       "options": {
                         "maxSize": 4
                       }
+                    },
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["barrowlegionandghastlyswarm"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 4
+                      }
                     }
                   ],
                   "options": [
@@ -2752,7 +2942,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 35,
+                      "cost": 25,
                       "refs": ["scarab_swarms_numbers"],
                       "options": [
                         {
@@ -2763,7 +2953,7 @@
                               "type": "check",
                               "name": "Ambush (Open Terrain)",
                               "cost": 15,
-                              "refs": ["underground_ambush"],
+                              "refs": ["ambushopenterrain", "underground_ambush"],
                               "hasNotOption": ["barrow_legion"],
                               "option_id": "7rg65aodtucdrco3sr1m"
                             }
@@ -2792,7 +2982,7 @@
                               "type": "check",
                               "armyHasOption": ["barrow_legion"],
                               "option_id": "n312egeyhcbjrt5r0srwwr",
-                              "refs": ["ghastly_swarm"],
+                              "refs": ["barrowlegionandghastlyswarm", "ghastly_swarm"],
                               "hasNotOption": ["underground_ambush"],
                               "rarity": "Rare"
                             }
@@ -2806,15 +2996,47 @@
                   "option_id": "wrte7s4p0v3pq6h8k84av"
                 }
               ],
-              "unit_id": "scarabSwarms",
-              "option_id": "75nw1g3lb0dceqae8m9kp",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["underground_ambush"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["entombed"]
+                  }
+                },
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushopenterrain"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["entombed"]
+                  }
+                }
+              ],
+              "armyHasNotOption": [
+                {
+                  "refs": ["terracotta"],
+                  "amount": 1
+                }
+              ],
               "logo": "special"
             },
             {
               "name": "Shabti Archers",
-              "cost": -75,
-              "refs": ["shabti_archers", "tag_Statue"],
-              "armyHasNotOption": [],
+              "cost": -65,
+              "option_id": "46rd41xec1fly266guz4g",
+              "unit_id": "shabtiArchers",
+              "refs": ["shabtiarchers", "tag_Statue", "shabti_archers"],
+              "rarity": "Rare",
+              "height": "3",
+              "basesize": "40×40",
               "options": [
                 {
                   "minSize": 3,
@@ -2846,13 +3068,15 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "option_id": "svhztz3tzhs0gozxm6t7cxr"
+                      "option_id": "svhztz3tzhs0gozxm6t7cxr",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "bk9gfk9676jrmndzqpexcp"
+                      "option_id": "bk9gfk9676jrmndzqpexcp",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "vbdet4qzaeiaadzkhri9"
@@ -2881,7 +3105,8 @@
                           "cost": 0,
                           "type": "check",
                           "armyHasOption": ["terracotta"],
-                          "option_id": "f32f232323423fwdsfsdfs"
+                          "option_id": "f32f232323423fwdsfsdfs",
+                          "refs": ["terracottaarmy"]
                         }
                       ],
                       "option_id": "f32f32fdfdsfdsfsdfds"
@@ -2907,7 +3132,8 @@
                           "cost": 0,
                           "type": "check",
                           "option_id": "32f32f4cdffdsfdsdf32f32f32",
-                          "armyHasOption": ["barrow_legion"]
+                          "armyHasOption": ["barrow_legion"],
+                          "refs": ["barrowlegion"]
                         }
                       ],
                       "option_id": "f32f32f32f32532gffdgfd"
@@ -2915,28 +3141,18 @@
                   ]
                 }
               ],
-              "unit_id": "shabtiArchers",
-              "option_id": "46rd41xec1fly266guz4g",
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Sand Stalkers",
-              "cost": 50,
-              "refs": ["sand_stalkers", "tag_Statue", "tag_Beast"],
-              "armyHasNotOption": [],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["underground_ambush"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["entombed"]
-                  }
-                }
-              ],
+              "cost": 60,
+              "option_id": "t89csg6ayxdq8ese1t1uf",
+              "unit_id": "sandStalkers",
+              "refs": ["sandstalkers", "tag_Statue", "tag_Beast", "sand_stalkers"],
+              "rarity": "Uncommon",
+              "height": "3",
+              "basesize": "50×100",
               "options": [
                 {
                   "minSize": 3,
@@ -2969,8 +3185,8 @@
                             {
                               "type": "check",
                               "name": "Ambush (Open Terrain)",
-                              "cost": 15,
-                              "refs": ["underground_ambush"],
+                              "cost": 20,
+                              "refs": ["ambushopenterrain", "underground_ambush"],
                               "armyHasNotOption": ["barrow_legion"],
                               "option_id": "fx9jreae4265xs7vmz04u"
                             }
@@ -3002,7 +3218,8 @@
                                   "cost": 0,
                                   "type": "check",
                                   "armyHasOption": ["terracotta"],
-                                  "option_id": "ain8071odsuvhtyr0racbow"
+                                  "option_id": "ain8071odsuvhtyr0racbow",
+                                  "refs": ["terracottaarmyandloseambush"]
                                 }
                               ],
                               "option_id": "rdm4t4hm0zasdaheqiku78e87s"
@@ -3029,7 +3246,8 @@
                                   "cost": 0,
                                   "type": "check",
                                   "option_id": "fe32f3dfadfasdsa342g342f32f32f32",
-                                  "armyHasOption": ["barrow_legion"]
+                                  "armyHasOption": ["barrow_legion"],
+                                  "refs": ["barrowlegionandloseambush"]
                                 }
                               ],
                               "option_id": "g34g3dsad1ws4g34g43g4sss3g34"
@@ -3050,21 +3268,50 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "sgv3d6e0cxsp71mi44g6"
+                      "option_id": "sgv3d6e0cxsp71mi44g6",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "jqephnrs2qluwvetc8ywec"
                 }
               ],
-              "unit_id": "sandStalkers",
-              "option_id": "t89csg6ayxdq8ese1t1uf",
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["underground_ambush"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["entombed"]
+                  }
+                },
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["ambushopenterrain"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "extraCategories": ["entombed"]
+                  }
+                }
+              ],
+              "armyHasNotOption": [],
               "logo": "special"
             },
             {
               "name": "Charnel Catapult",
-              "cost": 210,
-              "refs": ["charnel_catapult", "tag_Skeleton", "tag_Construct", "death_from_afar"],
-              "armyHasNotOption": [],
+              "cost": 180,
+              "option_id": "tqosmce5zm2vjxvqe6bnd",
+              "unit_id": "charnelCatapult",
+              "refs": ["charnelcatapult", "tag_Skeleton", "tag_Construct", "charnel_catapult", "death_from_afar"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "3",
+              "basesize": "75×75",
               "options": [
                 {
                   "optionsLabel": "Army Organisation",
@@ -3090,7 +3337,8 @@
                           "cost": 10,
                           "type": "check",
                           "armyHasOption": ["terracotta"],
-                          "option_id": "ain8071ouvhtyr0racbow"
+                          "option_id": "ain8071ouvhtyr0racbow",
+                          "refs": ["terracottaarmy"]
                         }
                       ],
                       "option_id": "rdm4t4hm0zheqiku78e87s",
@@ -3116,7 +3364,8 @@
                           "cost": 5,
                           "type": "check",
                           "armyHasOption": ["barrow_legion"],
-                          "option_id": "fe32f3dffasdsa342g342f32f32f32"
+                          "option_id": "fe32f3dffasdsa342g342f32f32f32",
+                          "refs": ["barrowlegion"]
                         }
                       ],
                       "option_id": "g34g3dsadws4g34g43g4sss3g34"
@@ -3124,9 +3373,284 @@
                   ]
                 }
               ],
-              "unit_id": "charnelCatapult",
-              "option_id": "tqosmce5zm2vjxvqe6bnd",
+              "armyHasNotOption": [],
               "logo": "special"
+            },
+            {
+              "name": "Battle Sphinx",
+              "cost": 460,
+              "option_id": "x5nr3bjgg5z3ojla",
+              "unit_id": "battleSphinx",
+              "refs": ["battlesphinx", "tag_Skeleton", "tag_Statue", "tag_Beast", "tag_Mount"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "5",
+              "basesize": "50×100",
+              "options": [
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "mjy2hlj0y4kv8ul2",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Terracotta Army",
+                      "cost": 0,
+                      "option_id": "46aicy5lwleejz2c",
+                      "refs": ["terracottaarmy"],
+                      "_parentGroup": {
+                        "group": "armyOrganisation",
+                        "numberOfSelections": {
+                          "min": 0
+                        }
+                      }
+                    }
+                  ],
+                  "minSize": 0
+                }
+              ]
+            },
+            {
+              "name": "Colossus",
+              "cost": 380,
+              "option_id": "af5x0yr31dh68uzv",
+              "unit_id": "colossus",
+              "refs": ["colossus", "tag_Statue"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "5",
+              "basesize": "50×50",
+              "options": [
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "jrr1dthvj11iwsmm",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Barrow Legion",
+                      "cost": 0,
+                      "option_id": "ma2t4ixq8uamibwo",
+                      "refs": ["barrowlegion"],
+                      "_parentGroup": {
+                        "group": "armyOrganisation",
+                        "numberOfSelections": {
+                          "min": 0
+                        }
+                      }
+                    },
+                    {
+                      "type": "check",
+                      "name": "Terracotta Army",
+                      "cost": 0,
+                      "option_id": "kycstcavyp44wkxm",
+                      "refs": ["terracottaarmy"],
+                      "_parentGroup": {
+                        "group": "armyOrganisation",
+                        "numberOfSelections": {
+                          "min": 0
+                        }
+                      }
+                    }
+                  ],
+                  "minSize": 0
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "o8612hpg5c5woava",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Great Weapon",
+                      "cost": 5,
+                      "option_id": "75z1dvbuqy1h86af",
+                      "refs": ["greatweapon"],
+                      "_parentGroup": {
+                        "group": "generic",
+                        "numberOfSelections": {
+                          "min": 0,
+                          "max": 1
+                        }
+                      }
+                    },
+                    {
+                      "type": "check",
+                      "name": "Paired Weapons",
+                      "cost": 30,
+                      "option_id": "9vk496a4fasjtc5k",
+                      "refs": ["pairedweapons"],
+                      "_parentGroup": {
+                        "group": "generic",
+                        "numberOfSelections": {
+                          "min": 0,
+                          "max": 1
+                        }
+                      }
+                    },
+                    {
+                      "type": "check",
+                      "name": "Giant Aspis Bow (4+)",
+                      "cost": 45,
+                      "option_id": "9n8uv5jdfoqmxwg4",
+                      "refs": ["giantaspisbow"],
+                      "_parentGroup": {
+                        "group": "generic",
+                        "numberOfSelections": {
+                          "min": 0,
+                          "max": 1
+                        }
+                      }
+                    },
+                    {
+                      "type": "check",
+                      "name": "Scales of Destiny",
+                      "cost": 30,
+                      "option_id": "cox0lu05ggwwmjhs",
+                      "refs": ["scalesofdestiny"],
+                      "_parentGroup": {
+                        "group": "generic",
+                        "numberOfSelections": {
+                          "min": 0,
+                          "max": 1
+                        }
+                      }
+                    }
+                  ],
+                  "minSize": 0,
+                  "maxSize": 1
+                }
+              ]
+            },
+            {
+              "name": "Dread Sphinx",
+              "cost": 380,
+              "option_id": "guo8kon8o4sjf90f",
+              "unit_id": "dreadSphinx",
+              "refs": ["dreadsphinx", "tag_Statue", "tag_Beast"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "5",
+              "basesize": "50×100",
+              "options": [
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "vltnbrz68ztvta51",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Terracotta Army",
+                      "cost": 0,
+                      "option_id": "6uw6xonsh8aocvhp",
+                      "refs": ["terracottaarmy"],
+                      "_parentGroup": {
+                        "group": "armyOrganisation",
+                        "numberOfSelections": {
+                          "min": 0
+                        }
+                      }
+                    }
+                  ],
+                  "minSize": 0
+                }
+              ]
+            },
+            {
+              "name": "Tomb Reapers",
+              "cost": -30,
+              "option_id": "ck8spwl2js6c2v4c",
+              "unit_id": "tombReapers",
+              "refs": ["tombreapers", "tag_Statue"],
+              "rarity": "Uncommon",
+              "height": "4",
+              "basesize": "50×75",
+              "options": [
+                {
+                  "addToUnitSize": true,
+                  "minSize": 2,
+                  "maxSize": 4,
+                  "option_id": "31h9zxpyztwoxabw",
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 150,
+                      "option_id": "n7r4wsy7i4g81vn5",
+                      "refs": ["tombreapers_numbers"],
+                      "options": []
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "34vl27t8gxjqdztm",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Barrow Legion",
+                      "cost": 0,
+                      "option_id": "4877vw4bn3bxsg2g",
+                      "refs": ["barrowlegion"],
+                      "_parentGroup": {
+                        "group": "armyOrganisation",
+                        "numberOfSelections": {
+                          "min": 0
+                        }
+                      }
+                    }
+                  ],
+                  "minSize": 0
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "b4wxu9dqooso8yt2",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Paired Weapons",
+                      "cost": 5,
+                      "option_id": "q0ng01eufwnbew2h",
+                      "refs": ["pairedweapons"],
+                      "_parentGroup": {
+                        "group": "generic",
+                        "numberOfSelections": {
+                          "min": 1,
+                          "max": 1
+                        }
+                      },
+                      "_perModel": true
+                    },
+                    {
+                      "type": "check",
+                      "name": "Halberd",
+                      "cost": 0,
+                      "option_id": "qtowyjm2te3xqo4e",
+                      "refs": ["halberd"],
+                      "_parentGroup": {
+                        "group": "generic",
+                        "numberOfSelections": {
+                          "min": 1,
+                          "max": 1
+                        }
+                      },
+                      "_perModel": true
+                    }
+                  ],
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "_perModel": true
+                }
+              ]
             }
           ],
           "option_id": "exkloatp7er0bievwcl6odd"
@@ -3140,8 +3664,13 @@
             {
               "name": "Sand Scorpion",
               "cost": 140,
-              "refs": ["sand_scorpion", "tag_Statue", "tag_Beast"],
-              "armyHasNotOption": [],
+              "option_id": "2aa3hbjor8h70futfibykk",
+              "unit_id": "sandScorpion",
+              "refs": ["sandscorpion", "tag_Statue", "tag_Beast", "sand_scorpion"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "3",
+              "basesize": "50×50",
               "options": [
                 {
                   "override": [
@@ -3160,6 +3689,7 @@
                   "options": [
                     {
                       "name": "Terracotta Army",
+                      "parsername": "Terracotta Army and loses Ambush",
                       "cost": 0,
                       "type": "check",
                       "armyHasOption": ["terracotta"],
@@ -3169,7 +3699,7 @@
                           "id": "ud-noterracotta"
                         }
                       ],
-                      "refs": ["sand_scorpion_amount"]
+                      "refs": ["terracottaarmyandloseambush", "sand_scorpion_amount"]
                     }
                   ],
                   "option_id": "tpcky8ja3qjifpzri7pr"
@@ -3195,22 +3725,14 @@
                       "cost": 0,
                       "type": "check",
                       "armyHasOption": ["barrow_legion"],
-                      "option_id": "097her45fgdgt6trg54"
-                    },
-                    {
-                      "name": "Terracotta Army",
-                      "parsername": "Terracotta Army and loses Ambush",
-                      "cost": 0,
-                      "type": "check",
-                      "armyHasOption": ["terracotta"],
-                      "option_id": "097her45fdfdfgdgt6trg54"
+                      "option_id": "097her45fgdgt6trg54",
+                      "refs": ["barrowlegionandloseambush"]
                     }
                   ],
                   "option_id": "fds435nkkfsd9325u"
                 }
               ],
-              "unit_id": "sandScorpion",
-              "option_id": "2aa3hbjor8h70futfibykk",
+              "armyHasNotOption": [],
               "logo": "undergroundambush"
             }
           ],
@@ -3490,26 +4012,32 @@
           "options": [
             {
               "name": "Amuut *Mount",
-              "type": "check",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "refs": ["amuut_mount_unit", "mount", "large_cavalry", "tag_Statue", "tag_Mount"],
-              "unit_id": "amuutMount",
-              "invisible": true,
+              "cost": 0,
               "option_id": "zvnj6m2rmpkl6qjru6qt",
+              "unit_id": "amuutMount",
+              "refs": ["amuutmount", "tag_Statue", "tag_Mount", "mount", "amuut_mount_unit", "large_cavalry"],
+              "invisible": true,
+              "rarity": "Rare",
+              "height": "4",
+              "basesize": "50×100",
+              "options": [],
+              "type": "check",
+              "category": "mounts",
               "logo": "character"
             },
             {
               "name": "Ark of Ages *Mount",
-              "type": "check",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "refs": ["mount", "arkOfAges_mount_unit", "tag_Skeleton", "tag_Spirit", "tag_Mount", "tag_Construct"],
-              "unit_id": "arkOfAgesMount",
-              "invisible": true,
+              "cost": 0,
               "option_id": "wice8hfpg8hso7dwequ9el",
+              "unit_id": "arkOfAgesMount",
+              "refs": ["arkofagesmount", "tag_Skeleton", "tag_Mount", "tag_Spirit", "tag_Construct", "mount", "arkOfAges_mount_unit"],
+              "invisible": true,
+              "rarity": "Regular",
+              "height": "4",
+              "basesize": "60×100",
+              "options": [],
+              "type": "check",
+              "category": "mounts",
               "rules": [
                 {
                   "id": "ud-noterracotta"
@@ -3519,15 +4047,18 @@
             },
             {
               "name": "Sha Guardian *Mount",
-              "type": "check",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "extraCategories": ["masons_menagerie"],
-              "refs": ["mount", "shaGuardian_mount_unit", "tag_Statue", "tag_Mount"],
-              "unit_id": "shaGuardianMount",
-              "invisible": true,
+              "cost": 0,
               "option_id": "t00nn6rqafaaj79xrjvpo",
+              "unit_id": "shaGuardianMount",
+              "refs": ["shaguardianmount", "tag_Statue", "tag_Mount", "mount", "shaGuardian_mount_unit"],
+              "invisible": true,
+              "rarity": "Rare",
+              "height": "5",
+              "basesize": "50×100",
+              "extraCategories": ["special"],
+              "options": [],
+              "type": "check",
+              "category": "mounts",
               "armyHasNotOption": [],
               "rules": [
                 {
@@ -3538,27 +4069,35 @@
             },
             {
               "name": "Skeletal Horse *Mount",
-              "type": "check",
-              "cost": null,
-              "category": "mounts",
-              "options": [],
-              "refs": ["mount", "skeletalHorse_mount_unit", "tag_Skeleton", "tag_Mount"],
-              "unit_id": "skeletalHorseMount",
-              "invisible": true,
+              "cost": 0,
               "option_id": "tu1z72v0w7a73oy7z6rhvc",
+              "unit_id": "skeletalHorseMount",
+              "refs": ["skeletalhorsemount", "tag_Skeleton", "tag_Mount", "mount", "skeletalHorse_mount_unit"],
+              "invisible": true,
+              "rarity": "Regular",
+              "height": "2",
+              "basesize": "25×50",
+              "options": [],
+              "type": "check",
+              "category": "mounts",
               "logo": "character"
             },
             {
               "name": "Skeleton Chariot *Mount",
-              "type": "check",
-              "cost": null,
-              "category": "mounts",
+              "cost": 0,
+              "option_id": "f3n8nknp8p8wl4spsb4jfb",
+              "unit_id": "skeletonChariotMount",
+              "refs": ["skeletonchariotmount", "tag_Skeleton", "tag_Mount", "tag_Construct", "mount", "skeletonChariot_mount_unit"],
+              "invisible": true,
+              "rarity": "Uncommon",
+              "height": "4",
+              "basesize": "50×100",
               "options": [
                 {
                   "type": "check",
                   "name": "Chariot of Nephet-Râ",
                   "cost": 10,
-                  "refs": [],
+                  "refs": ["chariotofnephetra"],
                   "option_id": "qbp4j25m8dlb04mqlk5qmk",
                   "rules": [
                     {
@@ -3567,10 +4106,8 @@
                   ]
                 }
               ],
-              "refs": ["mount", "skeletonChariot_mount_unit", "tag_Skeleton", "tag_Mount", "tag_Construct"],
-              "unit_id": "skeletonChariotMount",
-              "invisible": true,
-              "option_id": "f3n8nknp8p8wl4spsb4jfb",
+              "type": "check",
+              "category": "mounts",
               "armyHasNotOption": [],
               "logo": "character"
             },
