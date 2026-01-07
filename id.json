@@ -100,15 +100,11 @@
           "name": "Eye of the Bull",
           "cost": 30,
           "description": "\tAffects both Shooting and Standard Melee Attacks. Att is <span class=\"textbf\">always</span> 1, Str is <span class=\"textbf\">always</span> 5, and AP is <span class=\"textbf\">always</span> 10. Hits automatically (<i>no to-hit roll required</i>). <span class=\"textbf\">Multiple Wounds(2, Melee)</span>.\n",
-          "refs": ["id_special_item", "triple speed_rmcep6qb", "weaponEnchantUni"],
+          "refs": ["triple speed_rmcep6qb", "weaponEnchantUni", "id_special_item"],
           "hasNotOption": ["weaponEnchantUni"],
           "armyHasNotOption": [
             {
               "refs": ["triple speed_rmcep6qb"],
-              "amount": 1
-            },
-            {
-              "refs": ["id_special_item"],
               "amount": 1
             }
           ],
@@ -125,14 +121,8 @@
           "type": "check",
           "name": "Onyx Core",
           "cost": 70,
-          "armyHasNotOption": [
-            "we_id_onyx",
-            {
-              "refs": ["id_special_item"],
-              "amount": 1
-            }
-          ],
-          "refs": ["id_special_item", "weaponEnchantUni", "we_id_onyx"],
+          "armyHasNotOption": ["we_id_onyx", "weaponEnchantUni"],
+          "refs": ["weaponEnchantUni", "we_id_onyx", "id_special_item"],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "Str is <span class=\"textbf\">always</span> 6. Flaming Attacks, Multiple Wounds(D3, towards Weakness(Flaming Attacks)).\n",
           "option_id": "c6tcq6mldfehaaoa3cz73"
@@ -170,14 +160,10 @@
             }
           ],
           "description": "\tApply the following effects while the bearer's unit is within range of a friendly model's <span class=\"textbf\">Commanding Presence</span>:\t\t\t\t\t<br>&nbsp;&nbsp;&bull;  Model parts with Vassal gain <span class=\"textbf\">Fury</span>.\t\t\t<br>&nbsp;&nbsp;&bull;  The bearer's unit must reroll failed Charge Range rolls in the Charge Phase.\t\t<br>",
-          "refs": ["id_special_item", "their_masters_banner"],
+          "refs": ["their_masters_banner", "id_special_item"],
           "armyHasNotOption": [
             {
               "refs": ["their_masters_banner"],
-              "amount": 1
-            },
-            {
-              "refs": ["id_special_item"],
               "amount": 1
             }
           ],
@@ -189,14 +175,10 @@
           "name": "Banner of Shamut",
           "cost": 50,
           "description": "\tModels in the bearer's unit gain +1 Off.  In addition, a unit containing a Banner of Shamut adds +1 to the Combat Score of its side.\n",
-          "refs": ["id_special_item", "banner_of_shamut"],
+          "refs": ["banner_of_shamut", "id_special_item"],
           "armyHasNotOption": [
             {
               "refs": ["banner_of_shamut"],
-              "amount": 1
-            },
-            {
-              "refs": ["id_special_item"],
               "amount": 1
             }
           ],
@@ -241,14 +223,10 @@
           "name": "Blaze of Protection",
           "cost": 65,
           "description": "\tArm is <span class=\"textbf\">set</span> to 6. At the end of Agility Step 0, each  enemy model in contact with the bearer's model that could have allocated attacks towards it, but chose not to, suffers 1 hit with Str 4, AP 0, <span class=\"textbf\">Magical Attacks</span>, and <span class=\"textbf\">Flaming Attacks</span>.\n",
-          "refs": ["id_special_item", "blaze of protection_g4n0jp9o"],
+          "refs": ["blaze of protection_g4n0jp9o", "id_special_item"],
           "armyHasNotOption": [
             {
               "refs": ["blaze of protection_g4n0jp9o"],
-              "amount": 1
-            },
-            {
-              "refs": ["id_special_item"],
               "amount": 1
             }
           ],
@@ -274,14 +252,10 @@
           "name": "Kadim Binding",
           "cost": 20,
           "description": "\tAegis(+1, against Flaming Attacks, max. 3+), , Hand-and-a-Half.\n",
-          "refs": ["id_special_item", "kadim binding_2duxeqy"],
+          "refs": ["kadim binding_2duxeqy", "id_special_item"],
           "armyHasNotOption": [
             {
               "refs": ["kadim binding_2duxeqy"],
-              "amount": 1
-            },
-            {
-              "refs": ["id_special_item"],
               "amount": 1
             }
           ],
@@ -314,14 +288,10 @@
           "name": "Breath of the Brass Bull",
           "cost": 60,
           "description": "\tThe bearer's model gains +1 HP and <span class=\"textbf\">First Strike(Grind Attack(X, Magical Attacks, Toxic Attacks))</span>. X is equal to the number of models in contact with the bearer's unit's Front Facing.",
-          "refs": ["id_special_item", "breath of the brass bull_bt3o830n"],
+          "refs": ["breath of the brass bull_bt3o830n", "id_special_item"],
           "armyHasNotOption": [
             {
               "refs": ["breath of the brass bull_bt3o830n"],
-              "amount": 1
-            },
-            {
-              "refs": ["id_special_item"],
               "amount": 1
             }
           ],
@@ -334,14 +304,10 @@
           "name": "Golden Idol of Shamut",
           "cost": 40,
           "description": "\tIf the bearer's model is Height 1 it gains <span class=\"textbf\">Ghost Step</span>, its Cha is <span class=\"textbf\">set</span> to 4\" and its Mob is <span class=\"textbf\">set</span> to 6\". In addition, the bearer can cast <i>Flaming Swords</i> (Pyromancy) as a Bound Spell(3+).",
-          "refs": ["id_special_item", "golden idol of shamut_5zfn92k"],
+          "refs": ["golden idol of shamut_5zfn92k", "id_special_item"],
           "armyHasNotOption": [
             {
               "refs": ["golden idol of shamut_5zfn92k"],
-              "amount": 1
-            },
-            {
-              "refs": ["id_special_item"],
               "amount": 1
             }
           ],
@@ -362,14 +328,10 @@
           "name": "Mask of Ages",
           "cost": 40,
           "description": "\tThe wearer gains Aegis(5+, against Grind Attack, Impact Hits, Magical Attacks, and Stomp Attack), Terror, Hatred.\n",
-          "refs": ["id_special_item", "mask of ages_vj6or7u"],
+          "refs": ["mask of ages_vj6or7u", "id_special_item"],
           "armyHasNotOption": [
             {
               "refs": ["mask of ages_vj6or7u"],
-              "amount": 1
-            },
-            {
-              "refs": ["id_special_item"],
               "amount": 1
             }
           ],
@@ -388,14 +350,10 @@
           "name": "Lugar's Dice",
           "cost": 30,
           "description": "\tA single model part of the bearer's model can reroll a single failed to-hit, to-wound, or Armour Save roll per Player Turn. This cannot be used for <span class=\"textbf\">Crush Attacks</span>.",
-          "refs": ["id_special_item", "lugar's dice_ufc4p9ht"],
+          "refs": ["lugar's dice_ufc4p9ht", "id_special_item"],
           "armyHasNotOption": [
             {
               "refs": ["lugar's dice_ufc4p9ht"],
-              "amount": 1
-            },
-            {
-              "refs": ["id_special_item"],
               "amount": 1
             }
           ],
@@ -407,14 +365,10 @@
           "name": "Ring of Desiccation",
           "cost": 50,
           "description": "\tWhen Choosing Equipment and Abilities, each enemy unit in contact with the wearer's model gains Incendiary.",
-          "refs": ["id_special_item", "ring of desiccation_9k5mrpkc"],
+          "refs": ["ring of desiccation_9k5mrpkc", "id_special_item"],
           "armyHasNotOption": [
             {
               "refs": ["ring of desiccation_9k5mrpkc"],
-              "amount": 1
-            },
-            {
-              "refs": ["id_special_item"],
               "amount": 1
             }
           ],
@@ -426,17 +380,14 @@
           "name": "Tablet of Vezodinezh",
           "cost": 45,
           "description": "\tWhen the bearer attempts to cast a Learned Spell using four or more Magic Dice, treat a single rolled ‘1’ or ‘2’ as a natural ‘3’.",
-          "refs": ["id_special_item", "tablet of vezodinezh_mygyzo4t", "dominant"],
+          "refs": ["tablet of vezodinezh_mygyzo4t", "id_special_item", "dominant"],
           "armyHasNotOption": [
             {
               "refs": ["tablet of vezodinezh_mygyzo4t"],
               "amount": 1
-            },
-            {
-              "refs": ["id_special_item"],
-              "amount": 1
             }
           ],
+          "hasNotOption": ["dominant"],
           "hasOption": ["wizard"],
           "categories": [],
           "option_id": "617j3dfnblrycn0pzq00a"
@@ -1056,7 +1007,7 @@
                     {
                       "type": "check",
                       "name": "Kadim Chariot",
-                      "refopt": "kadim_chariot_mount",
+                      "refopt": "kadimChariotMount",
                       "cost": 50,
                       "hasOption": ["prophet_lugar"],
                       "option_id": "yehy3mak685lw4gabvqpu",
@@ -1065,7 +1016,7 @@
                     {
                       "type": "check",
                       "name": "Infernal Bastion",
-                      "refopt": "infernal_bastion_mount",
+                      "refopt": "infernalBastionMount",
                       "cost": 220,
                       "hasOption": ["prophet_nezibkesh"],
                       "option_id": "qa1656z71qan9u166k31m",
@@ -1483,14 +1434,6 @@
                     },
                     {
                       "type": "check",
-                      "name": "Seat of Authority",
-                      "cost": 80,
-                      "refopt": "seatOfAuthorityMount",
-                      "option_id": "3dxcu861cu3wmcrav5pdpf",
-                      "refs": ["seatofauthoritymount"]
-                    },
-                    {
-                      "type": "check",
                       "name": "Bull of Shamut",
                       "cost": 190,
                       "refopt": "bullOfShamutMount",
@@ -1501,7 +1444,7 @@
                     {
                       "type": "check",
                       "name": "Infernal Bastion",
-                      "refopt": "infernal_bastion_mount",
+                      "refopt": "infernalBastionMount",
                       "cost": 230,
                       "option_id": "543fdggfdu68532tr32",
                       "refs": ["infernalbastionmount"]
@@ -1513,21 +1456,6 @@
                       "option_id": "2ry4hqbb7qiax2is",
                       "refs": ["seatofauthoritymount"],
                       "refopt": "seatOfAuthorityMount"
-                    },
-                    {
-                      "type": "check",
-                      "name": "Bull of Shamut",
-                      "cost": 190,
-                      "option_id": "1e0hb3xzzoguytqb",
-                      "refs": ["bullofshamutmount"],
-                      "refopt": "bullOfShamutMount"
-                    },
-                    {
-                      "type": "check",
-                      "name": "Infernal Bastion",
-                      "cost": 230,
-                      "option_id": "sf11es7ef2lj42jf",
-                      "refs": ["infernalbastionmount"]
                     }
                   ],
                   "option_id": "hnpef5acnmgrzdduuh688k",
@@ -3782,7 +3710,7 @@
               "logo": "character_IoD"
             },
             {
-              "name": "Infernal Bastion (mount) *Mount",
+              "name": "Infernal Bastion *Mount",
               "cost": 0,
               "option_id": "ltz4odl981ho6qqanjrss",
               "unit_id": "infernalBastionMount",
@@ -3846,7 +3774,7 @@
               "logo": "character"
             },
             {
-              "name": "Kadim Chariot (mount) *Mount",
+              "name": "Kadim Chariot *Mount",
               "cost": 0,
               "option_id": "2thcjbyiiylqksja8ze0d",
               "unit_id": "kadimChariotMount",
