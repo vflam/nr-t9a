@@ -532,6 +532,7 @@
                 "ruinousdictator",
                 "wizard",
                 "wizardApprentice",
+                "army_general",
                 "tag_Caelysian Pantheon",
                 "non_core_unit",
                 "army_unique",
@@ -540,7 +541,7 @@
                 "tag_Supernal"
               ],
               "size": "1",
-              "rarity": "Extraordinary",
+              "rarity": "Legendary",
               "height": "5",
               "basesize": "75×75",
               "options": [
@@ -1115,14 +1116,7 @@
                       "name": "Light Troops",
                       "cost": 0,
                       "option_id": "nq1bykj69fltgszc",
-                      "refs": ["lighttroops"],
-                      "_parentGroup": {
-                        "group": "mounts",
-                        "numberOfSelections": {
-                          "min": 1,
-                          "max": 1
-                        }
-                      }
+                      "refs": ["lighttroops"]
                     }
                   ]
                 },
@@ -1665,30 +1659,14 @@
                               "name": "Bloodpox Blades",
                               "cost": 0,
                               "option_id": "lzpeo97f5zrqh6o7",
-                              "refs": ["bloodpoxblades"],
-                              "_parentGroup": {
-                                "group": "generic",
-                                "numberOfSelections": {
-                                  "min": 1,
-                                  "max": 1
-                                }
-                              },
-                              "_perModel": true
+                              "refs": ["bloodpoxblades"]
                             },
                             {
                               "type": "check",
                               "name": "Plague Flail",
                               "cost": 0,
                               "option_id": "8hpiyy0beoh981l1",
-                              "refs": ["plagueflail"],
-                              "_parentGroup": {
-                                "group": "generic",
-                                "numberOfSelections": {
-                                  "min": 1,
-                                  "max": 1
-                                }
-                              },
-                              "_perModel": true
+                              "refs": ["plagueflail"]
                             }
                           ]
                         }
@@ -1733,7 +1711,7 @@
                     }
                   ],
                   "options": {
-                    "extraCategories": ["special"]
+                    "replaceCategory": "special"
                   }
                 }
               ],
@@ -1935,11 +1913,12 @@
           "options": [
             {
               "name": "Bloodfur Praetorians",
-              "cost": 240,
+              "cost": 40,
               "option_id": "g43gergfdg4334gj034g34g34",
               "unit_id": "bloodfurPraetorians",
               "refs": ["bloodfurpraetorians", "core_unit", "bloodfurPraetorians", "tag_Vermin", "tag_Legionary", "tag_Metal Armour"],
               "rarity": "Extraordinary",
+              "height": "1",
               "basesize": "20×20",
               "options": [
                 {
@@ -1950,7 +1929,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 11,
+                      "cost": 10,
                       "hide": true,
                       "option_id": "g3433f34f34g43g34g3g34"
                     }
@@ -1964,7 +1943,7 @@
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "refs": [],
+                      "refs": ["musician"],
                       "option_id": "asdasdasdafdsf34g4554"
                     },
                     {
@@ -1977,7 +1956,8 @@
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
                       "name": "Standard Bearer",
-                      "option_id": "g34543534g34g3445353453"
+                      "option_id": "g34543534g34g3445353453",
+                      "refs": ["standardbearer"]
                     }
                   ],
                   "option_id": "g43g43g34654654g534g54g54"
@@ -2042,7 +2022,7 @@
               "options": [
                 {
                   "minSize": 10,
-                  "maxSize": 19,
+                  "maxSize": 30,
                   "keepMaxSize": true,
                   "addToUnitSize": true,
                   "options": [
@@ -2077,10 +2057,12 @@
             },
             {
               "name": "Fire Rats",
-              "cost": -50,
+              "cost": 40,
               "option_id": "fsf23f326fgfdcfsd4534d03khg409rg4",
               "unit_id": "fireRats",
               "refs": ["firerats", "fireRats", "non_core_unit", "tag_Beast", "tag_Mutant"],
+              "rarity": "Uncommon",
+              "height": "1",
               "basesize": "25×50",
               "options": [
                 {
@@ -2228,66 +2210,6 @@
               ],
               "category": "special",
               "armyHasNotOption": [],
-              "logo": "special"
-            },
-            {
-              "name": "Plague Disciples",
-              "cost": 0,
-              "category": "special",
-              "loses_rules": ["vs-bloodpox_blades"],
-              "rules": [
-                {
-                  "id": "vs-plague_flail",
-                  "params": []
-                }
-              ],
-              "options": [
-                {
-                  "minSize": 15,
-                  "maxSize": 40,
-                  "addToUnitSize": true,
-                  "options": [
-                    {
-                      "name": "Number",
-                      "type": "numeric",
-                      "cost": 12,
-                      "hide": true,
-                      "option_id": "3cisugy7xeq048vds5owprm",
-                      "refs": ["plague_disciples_amount"]
-                    }
-                  ],
-                  "option_id": "i4v0wpm6vkcyvfxoh8658g"
-                },
-                {
-                  "optionsLabel": "Command Group",
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "Musician",
-                      "cost": 10,
-                      "refs": [],
-                      "option_id": "j3scd38c1xmrgjko06xaba"
-                    },
-                    {
-                      "type": "check",
-                      "name": "Standard Bearer",
-                      "cost": 10,
-                      "refs": [],
-                      "options": [],
-                      "maxSize": 1,
-                      "collapsible": true,
-                      "sortOptions": true,
-                      "optionsLabel": "Banner Enchant",
-                      "optionsDict": ["bannerEnchant"],
-                      "option_id": "w6o2l0ypxc2lgd1p8cegc"
-                    }
-                  ],
-                  "option_id": "vjqlp7dgvs97eyyaimnwh"
-                }
-              ],
-              "refs": ["non_core_unit", "cult_of_errahman", "tag_Cult of Errahman"],
-              "unit_id": "plagueDisciples",
-              "option_id": "567gcjgwur6nfsg97kix89",
               "logo": "special"
             },
             {
