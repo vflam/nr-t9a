@@ -1869,11 +1869,13 @@
             },
             {
               "name": "State Detachment",
-              "cost": 120,
+              "cost": -15,
               "option_id": "32f23f230fn230f23f23",
               "unit_id": "stateDetachment",
               "refs": ["statedetachment", "tag_Human", "tag_Light Armour", "core_unit", "supportUnit", "tag_"],
-              "size": "15-20",
+              "rarity": "Regular",
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 15,
@@ -1894,14 +1896,16 @@
                             {
                               "type": "check",
                               "name": "Spear",
-                              "cost": 1,
-                              "option_id": "u7pkd2ankpjpcsptlceakt"
+                              "cost": 2,
+                              "option_id": "u7pkd2ankpjpcsptlceakt",
+                              "refs": ["spear"]
                             },
                             {
                               "type": "check",
                               "name": "Halberd",
                               "cost": 1,
-                              "option_id": "01j7qosa8ua9otywjfbwxsed"
+                              "option_id": "01j7qosa8ua9otywjfbwxsed",
+                              "refs": ["halberd"]
                             }
                           ],
                           "option_id": "rnp1kkt7laqfhdbagydfwa"
@@ -1924,13 +1928,15 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "sp4evgjvo7dmggp36ozlhwt"
+                      "option_id": "sp4evgjvo7dmggp36ozlhwt",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "g9v8nf8apatnnwdpm40h9"
+                      "option_id": "g9v8nf8apatnnwdpm40h9",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "207ngqhkcpga7sx4e69fp3i"
@@ -2407,11 +2413,12 @@
             },
             {
               "name": "Imperial Detachment",
-              "cost": 0,
+              "cost": -70,
               "option_id": "mcejar1c09ddsrxaxawdo3i8",
               "unit_id": "imperialDetachment",
-              "refs": ["imperialdetachment", "supportUnit", "tag_Human", "tag_Metal Armour"],
-              "size": "15",
+              "refs": ["imperialdetachment", "tag_Human", "tag_Metal Armour", "supportUnit"],
+              "height": "1",
+              "basesize": "20×20",
               "options": [
                 {
                   "minSize": 15,
@@ -2422,7 +2429,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 0,
+                      "cost": 16,
                       "options": [
                         {
                           "type": "group",
@@ -2434,13 +2441,15 @@
                               "type": "check",
                               "name": "Shield",
                               "cost": 0,
-                              "option_id": "41f8fq2uds5sfrk6rlkzycgd"
+                              "option_id": "41f8fq2uds5sfrk6rlkzycgd",
+                              "refs": ["shield"]
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
                               "cost": 2,
-                              "option_id": "g8qh8dqdsojiwcmymajjidqd"
+                              "option_id": "g8qh8dqdsojiwcmymajjidqd",
+                              "refs": ["greatweapon"]
                             }
                           ],
                           "option_id": "4te6otwtdsb9muzwoe5pvefm"
@@ -2464,13 +2473,15 @@
                       "maxSize": 1,
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
-                      "option_id": "mf55d15uq7asdscp55juyw5"
+                      "option_id": "mf55d15uq7asdscp55juyw5",
+                      "refs": ["standardbearer"]
                     },
                     {
                       "type": "check",
                       "name": "Musician",
                       "cost": 10,
-                      "option_id": "vn7ngii1rjdds14p7ed18w71j"
+                      "option_id": "vn7ngii1rjdds14p7ed18w71j",
+                      "refs": ["musician"]
                     }
                   ],
                   "option_id": "02xsqbq421tds6prq2venjkl"
@@ -2577,26 +2588,38 @@
               "basesize": "50×100",
               "options": [
                 {
-                  "optionsLabel": "Spell",
-                  "minSize": 1,
+                  "type": "group",
+                  "name": "Bound Spell",
+                  "optionsLabel": "Bound Spell",
+                  "option_id": "9dzet09sifzxhze5",
                   "maxSize": 1,
+                  "minSize": 1,
                   "options": [
                     {
                       "type": "check",
-                      "name": "Ice and Fire (Cosmology)",
+                      "name": "Ice and Fire",
                       "cost": 0,
-                      "refs": ["spell"],
-                      "option_id": "j5w7h22qhqpz00ftw70i4f"
+                      "option_id": "o8yos7bhw66zn5f1",
+                      "boundSpells": [
+                        {
+                          "path": "cosmology",
+                          "ref": "ice_fire"
+                        }
+                      ]
                     },
                     {
                       "type": "check",
-                      "name": "The Stars Align (Divination)",
+                      "name": "Chalice of Gold",
                       "cost": 0,
-                      "refs": ["spell"],
-                      "option_id": "mhlb6uwj1oe71jivjzbqls"
+                      "option_id": "ltvhpd6xg80qdfex",
+                      "boundSpells": [
+                        {
+                          "path": "alchemy",
+                          "ref": "chalice_of_gold"
+                        }
+                      ]
                     }
-                  ],
-                  "option_id": "nyxttepx9a43z0yjfsoy2"
+                  ]
                 }
               ],
               "armyHasNotOption": [],
@@ -2922,26 +2945,38 @@
               "basesize": "50×100",
               "options": [
                 {
-                  "optionsLabel": "Spell",
-                  "minSize": 1,
+                  "type": "group",
+                  "name": "Bound Spell",
+                  "optionsLabel": "Bound Spell",
+                  "option_id": "dxpuha509jip442k",
                   "maxSize": 1,
+                  "minSize": 1,
                   "options": [
                     {
                       "type": "check",
-                      "name": "Ice and Fire (Cosmology)",
+                      "name": "Ice and Fire",
                       "cost": 0,
-                      "refs": ["spell"],
-                      "option_id": "46178lctd26wwg3bsxot4"
+                      "option_id": "g5jslhbg030wrfmv",
+                      "boundSpells": [
+                        {
+                          "path": "cosmology",
+                          "ref": "ice_fire"
+                        }
+                      ]
                     },
                     {
                       "type": "check",
-                      "name": "The Stars Align (Divination)",
+                      "name": "Chalice of Gold",
                       "cost": 0,
-                      "refs": ["spell"],
-                      "option_id": "o19g1w6zy0snwaswpkg73m"
+                      "option_id": "zekto9qmqj1tp53k",
+                      "boundSpells": [
+                        {
+                          "path": "alchemy",
+                          "ref": "chalice_of_gold"
+                        }
+                      ]
                     }
-                  ],
-                  "option_id": "qpwega30hf0op2emjhb5j"
+                  ]
                 }
               ],
               "type": "check",
@@ -3010,7 +3045,7 @@
               "logo": "character"
             },
             {
-              "name": "Young Griffon *Mount",
+              "name": "Young Griffon (mount) *Mount",
               "cost": 0,
               "option_id": "rr6ggjfbthkhslfq0ipas",
               "unit_id": "youngGriffonMount",
