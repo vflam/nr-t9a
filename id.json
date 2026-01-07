@@ -543,9 +543,11 @@
                     },
                     {
                       "name": "Great Bull of Shamut",
-                      "cost": 400,
+                      "cost": 360,
                       "option_id": "hxnwv48cau81z1a4xwc8c5j",
-                      "refopt": "greatBullOfShamutMount"
+                      "refopt": "greatBullOfShamutMount",
+                      "type": "check",
+                      "refs": ["greatbullofshamutmount"]
                     },
                     {
                       "type": "check",
@@ -1029,11 +1031,13 @@
                       "refs": ["lighttroops"]
                     },
                     {
+                      "type": "check",
                       "name": "Seat of Authority",
-                      "cost": 40,
+                      "cost": 30,
                       "refopt": "seatOfAuthorityMount",
                       "option_id": "3dxcu861ca3wmcr5v1pdpf",
-                      "hasOption": ["prophet_ashuruk"]
+                      "hasOption": ["prophet_ashuruk"],
+                      "refs": ["seatofauthoritymount"]
                     },
                     {
                       "cost": 0,
@@ -1050,6 +1054,7 @@
                       ]
                     },
                     {
+                      "type": "check",
                       "name": "Kadim Chariot",
                       "refopt": "kadim_chariot_mount",
                       "cost": 75,
@@ -1057,6 +1062,7 @@
                       "option_id": "yehy3mak685lw4gabvqpu"
                     },
                     {
+                      "type": "check",
                       "name": "Infernal Bastion",
                       "refopt": "infernal_bastion_mount",
                       "cost": 300,
@@ -1064,15 +1070,18 @@
                       "option_id": "qa1656z71qan9u166k31m"
                     },
                     {
+                      "type": "check",
                       "name": "Bull of Shamut",
                       "cost": 150,
                       "refopt": "bullOfShamutMount",
                       "hasOption": ["prophet_shamut"],
-                      "option_id": "2hilwff7z96ir0yp7pmbnn"
+                      "option_id": "2hilwff7z96ir0yp7pmbnn",
+                      "refs": ["bullofshamutmount"]
                     },
                     {
+                      "type": "check",
                       "name": "Great Bull of Shamut",
-                      "cost": 380,
+                      "cost": 340,
                       "refopt": "greatBullOfShamutMount",
                       "hasOption": [
                         {
@@ -1084,7 +1093,8 @@
                           "amount": 1
                         }
                       ],
-                      "option_id": "k95tauxxh4kfehr47ngr7"
+                      "option_id": "k95tauxxh4kfehr47ngr7",
+                      "refs": ["greatbullofshamut"]
                     },
                     {
                       "type": "check",
@@ -1470,23 +1480,29 @@
                       "refs": ["taurukhritual", "taurukh_ritual", "beast"]
                     },
                     {
+                      "type": "check",
                       "name": "Seat of Authority",
                       "cost": 80,
                       "refopt": "seatOfAuthorityMount",
-                      "option_id": "3dxcu861cu3wmcrav5pdpf"
+                      "option_id": "3dxcu861cu3wmcrav5pdpf",
+                      "refs": ["seatofauthoritymount"]
                     },
                     {
+                      "type": "check",
                       "name": "Bull of Shamut",
                       "cost": 190,
                       "refopt": "bullOfShamutMount",
                       "option_id": "y3ks47zbqdnt4qe0hye",
-                      "hasNotOption": ["captain"]
+                      "hasNotOption": ["captain"],
+                      "refs": ["bullofshamutmount"]
                     },
                     {
+                      "type": "check",
                       "name": "Infernal Bastion",
                       "refopt": "infernal_bastion_mount",
-                      "cost": 320,
-                      "option_id": "543fdggfdu68532tr32"
+                      "cost": 230,
+                      "option_id": "543fdggfdu68532tr32",
+                      "refs": ["infernalbastionmount"]
                     },
                     {
                       "type": "check",
@@ -2092,12 +2108,12 @@
                     "ref": "hand_glory"
                   },
                   {
-                    "path": "pyromancy",
-                    "ref": "dragon's_roar"
-                  },
-                  {
                     "path": "witchcraft",
                     "ref": "mirror_image"
+                  },
+                  {
+                    "path": "hereditary",
+                    "ref": "curse_nezibkesh"
                   }
                 ]
               },
