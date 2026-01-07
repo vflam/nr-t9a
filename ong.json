@@ -3650,6 +3650,19 @@
                   "minSize": 1,
                   "maxSize": 1,
                   "addToUnitSize": true,
+                  "override": [
+                    {
+                      "armyHasOption": [
+                        {
+                          "refs": ["tribe_leader"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 2
+                      }
+                    }
+                  ],
                   "options": [
                     {
                       "name": "Number",
@@ -3680,31 +3693,7 @@
                         }
                       ],
                       "option_id": "5nanocg1h45xs5emdjhn1n",
-                      "refs": ["orc_chariots_numbers"],
-                      "armyHasNotOption": [
-                        {
-                          "refs": ["orc_chariots_numbers"],
-                          "amount": 2
-                        }
-                      ],
-                      "override": [
-                        {
-                          "armyHasOption": [
-                            {
-                              "refs": ["tribe_leader"],
-                              "amount": 1
-                            }
-                          ],
-                          "options": {
-                            "armyHasNotOption": [
-                              {
-                                "refs": ["orc_chariots_numbers"],
-                                "amount": 4
-                              }
-                            ]
-                          }
-                        }
-                      ]
+                      "refs": ["orc_chariots_numbers"]
                     }
                   ],
                   "option_id": "tr1xsb1ibgkf4i8fd7j1kv"
