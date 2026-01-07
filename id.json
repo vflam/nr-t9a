@@ -121,7 +121,12 @@
           "type": "check",
           "name": "Onyx Core",
           "cost": 70,
-          "armyHasNotOption": ["we_id_onyx", "weaponEnchantUni"],
+          "armyHasNotOption": [
+            {
+              "refs": ["we_id_onyx"],
+              "amount": 1
+            }
+          ],
           "refs": ["weaponEnchantUni", "we_id_onyx", "id_special_item"],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "Str is <span class=\"textbf\">always</span> 6. Flaming Attacks, Multiple Wounds(D3, towards Weakness(Flaming Attacks)).\n",
