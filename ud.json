@@ -3378,8 +3378,23 @@
             {
               "name": "Battle Sphinx",
               "cost": 460,
-              "refs": ["battle_sphinx", "tag_Skeleton", "tag_Statue", "tag_Beast", "tag_Mount"],
-              "armyHasNotOption": ["barrow_legion"],
+              "option_id": "4imwgbgarwvhbocteidqgw",
+              "unit_id": "battleSphinx",
+              "refs": ["battlesphinx", "tag_Skeleton", "tag_Statue", "tag_Beast", "tag_Mount", "battle_sphinx"],
+              "size": "1",
+              "rarity": "Uncommon",
+              "height": "5",
+              "basesize": "50×100",
+              "options": [
+                {
+                  "name": "Terracotta Army",
+                  "cost": 0,
+                  "type": "check",
+                  "armyHasOption": ["terracotta"],
+                  "option_id": "fewfwv32g234gfddfdgdfg34g34dxfds",
+                  "refs": ["terracottaarmy"]
+                }
+              ],
               "override": [
                 {
                   "armyHasOption": [
@@ -3393,28 +3408,19 @@
                   }
                 }
               ],
-              "options": [
-                {
-                  "name": "Terracotta Army",
-                  "cost": 0,
-                  "type": "check",
-                  "armyHasOption": ["terracotta"],
-                  "option_id": "fewfwv32g234gfddfdgdfg34g34dxfds"
-                }
-              ],
-              "unit_id": "battleSphinx",
-              "option_id": "4imwgbgarwvhbocteidqgw",
+              "armyHasNotOption": ["barrow_legion"],
               "logo": "monster"
             },
             {
               "name": "Dread Sphinx",
-              "cost": 400,
-              "refs": ["dread_sphinx", "tag_Statue", "tag_Beast"],
-              "armyHasNotOption": ["barrow_legion"],
-              "unit_id": "dreadSphinx",
+              "cost": 380,
               "option_id": "okj27l9lharcjz8ajir22",
-              "logo": "monster",
-              "optionsLabel": "Options",
+              "unit_id": "dreadSphinx",
+              "refs": ["dreadsphinx", "tag_Statue", "tag_Beast", "dread_sphinx"],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "5",
+              "basesize": "50×100",
               "options": [
                 {
                   "override": [
@@ -3437,23 +3443,25 @@
                       "type": "check",
                       "armyHasOption": ["terracotta"],
                       "option_id": "d7wfba6wfdsfdsfsd9uwapduxpljvjn",
-                      "refs": ["dread_sphinx_amount"]
+                      "refs": ["terracottaarmy", "dread_sphinx_amount"]
                     }
                   ],
                   "option_id": "8iux572fdsfsd54qgz7lpu2xrb8f"
                 }
-              ]
+              ],
+              "armyHasNotOption": ["barrow_legion"],
+              "logo": "monster",
+              "optionsLabel": "Options"
             },
             {
               "name": "Tomb Reapers",
-              "cost": -20,
-              "refs": ["tomb_reapers", "tag_Statue"],
-              "armyHasNotOption": [
-                {
-                  "refs": ["terracotta"],
-                  "amount": 1
-                }
-              ],
+              "cost": -30,
+              "option_id": "68ro8yq8ji56vka3inpwz8",
+              "unit_id": "tombReapers",
+              "refs": ["tombreapers", "tag_Statue", "tomb_reapers"],
+              "rarity": "Uncommon",
+              "height": "4",
+              "basesize": "50×75",
               "options": [
                 {
                   "minSize": 2,
@@ -3464,7 +3472,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 160,
+                      "cost": 150,
                       "options": [
                         {
                           "type": "group",
@@ -3475,13 +3483,15 @@
                               "type": "check",
                               "name": "Halberd",
                               "cost": 0,
-                              "option_id": "it2unofssfx8x3eragyt"
+                              "option_id": "it2unofssfx8x3eragyt",
+                              "refs": ["halberd"]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 5,
-                              "option_id": "koh1odhwiqa55hbk2014g8"
+                              "option_id": "koh1odhwiqa55hbk2014g8",
+                              "refs": ["pairedweapons"]
                             }
                           ],
                           "option_id": "klkbq2dvlgbdoqhqcn79r"
@@ -3511,7 +3521,8 @@
                                   "cost": 0,
                                   "type": "check",
                                   "option_id": "32f32f4cddsdfdsffsdf32f32f32",
-                                  "armyHasOption": ["barrow_legion"]
+                                  "armyHasOption": ["barrow_legion"],
+                                  "refs": ["barrowlegion"]
                                 }
                               ],
                               "option_id": "fd32f32ds4f32fdff32f32"
@@ -3526,15 +3537,24 @@
                   "option_id": "imlic2rd58qtwsf2omgfir"
                 }
               ],
-              "unit_id": "tombReapers",
-              "option_id": "68ro8yq8ji56vka3inpwz8",
+              "armyHasNotOption": [
+                {
+                  "refs": ["terracotta"],
+                  "amount": 1
+                }
+              ],
               "logo": "monster"
             },
             {
               "name": "Colossus",
-              "cost": 400,
+              "cost": 380,
+              "option_id": "cqjj89zrp3thhibny8edhj",
+              "unit_id": "colossus",
               "refs": ["colossus", "tag_Statue"],
-              "armyHasNotOption": [],
+              "size": "1",
+              "rarity": "Rare",
+              "height": "5",
+              "basesize": "50×50",
               "options": [
                 {
                   "optionsLabel": "Weapon",
@@ -3545,27 +3565,28 @@
                       "type": "check",
                       "cost": 5,
                       "option_id": "tmkn2k9rqur521j2mvdg7c",
-                      "refs": ["colossus_amount"]
+                      "refs": ["greatweapon", "colossus_amount"]
                     },
                     {
                       "name": "Paired Weapons",
                       "type": "check",
                       "cost": 30,
-                      "option_id": "o9hlbpyvondj356f15lrqn"
+                      "option_id": "o9hlbpyvondj356f15lrqn",
+                      "refs": ["pairedweapons"]
                     },
                     {
                       "name": "Giant Aspis Bow (4+)",
-                      "refs": ["giant_aspen_bow", "death_from_afar"],
+                      "refs": ["giantaspisbow", "giant_aspen_bow", "death_from_afar"],
                       "type": "check",
-                      "cost": 15,
+                      "cost": 45,
                       "option_id": "qj5g6as9xecrgy95yrrna"
                     },
                     {
                       "name": "Scales of Destiny",
                       "type": "check",
-                      "cost": 50,
+                      "cost": 30,
                       "option_id": "h7o0dkft1kfglwo87ggmg",
-                      "refs": ["tag_Hierophant", "wizard", "wizardApprentice"],
+                      "refs": ["scalesofdestiny", "tag_Hierophant", "wizard", "wizardApprentice"],
                       "optionsLabel": "Path",
                       "minSize": 1,
                       "maxSize": 1,
@@ -3616,21 +3637,22 @@
                       "cost": 0,
                       "type": "check",
                       "armyHasOption": ["terracotta"],
-                      "option_id": "ain8071fsdfdsouvhtyr0racbow"
+                      "option_id": "ain8071fsdfdsouvhtyr0racbow",
+                      "refs": ["terracottaarmy"]
                     },
                     {
                       "name": "Barrow Legion",
                       "cost": 0,
                       "type": "check",
                       "armyHasOption": ["barrow_legion"],
-                      "option_id": "f32f23f239f43f43f43sswwg4"
+                      "option_id": "f32f23f239f43f43f43sswwg4",
+                      "refs": ["barrowlegion"]
                     }
                   ],
                   "option_id": "rdm4t4hm0zdsdsheqiku78e87s"
                 }
               ],
-              "unit_id": "colossus",
-              "option_id": "cqjj89zrp3thhibny8edhj",
+              "armyHasNotOption": [],
               "logo": "monster"
             }
           ],
