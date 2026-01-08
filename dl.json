@@ -1175,8 +1175,7 @@
                               "name": "Wizard Adept",
                               "type": "check",
                               "cost": 150,
-                              "option_id": "s50m7hhunslgavgmchttqc",
-                              "hasNotOption": ["captain"]
+                              "option_id": "s50m7hhunslgavgmchttqc"
                             }
                           ],
                           "option_id": "vuwgnrf0lsjgudw4oapj6n"
@@ -1501,6 +1500,10 @@
                           {
                             "path": "evocation",
                             "ref": "whispers_of_the_veil"
+                          },
+                          {
+                            "path": "witchcraft",
+                            "ref": "mind_fog"
                           },
                           {
                             "path": "hereditary",
@@ -3233,32 +3236,39 @@
                   "option_id": "t3oawa14xxsyco54q9f8"
                 },
                 {
-                  "type": "check",
-                  "name": "Wizard Conclave (2)",
-                  "cost": 130,
-                  "option_id": "fn328fj23f98342f43f43f34",
-                  "magic": {
-                    "amount": 2,
-                    "spells": [
-                      {
-                        "path": "divination",
-                        "ref": "fate's_judgement"
-                      },
-                      {
-                        "path": "evocation",
-                        "ref": "danse_macabre"
-                      },
-                      {
-                        "path": "thaumaturgy",
-                        "ref": "smite_unbeliever"
-                      },
-                      {
-                        "path": "hereditary",
-                        "ref": "spear_of_infinity"
+                  "type": "group",
+                  "optionsLabel": "Magic",
+                  "option_id": "lxxals41ixkhzjsq",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Wizard Conclave (2)",
+                      "cost": 130,
+                      "option_id": "0n0rye3rmfp7x6vv",
+                      "refs": ["wizardconclave", "wizard"],
+                      "magic": {
+                        "amount": 2,
+                        "spells": [
+                          {
+                            "path": "divination",
+                            "ref": "fate's_judgement"
+                          },
+                          {
+                            "path": "evocation",
+                            "ref": "whispers_of_the_veil"
+                          },
+                          {
+                            "path": "evocation",
+                            "ref": "touch_of_the_reaper"
+                          },
+                          {
+                            "path": "hereditary",
+                            "ref": "spear_of_infinity"
+                          }
+                        ]
                       }
-                    ]
-                  },
-                  "refs": ["wizardconclave", "wizard"]
+                    }
+                  ]
                 }
               ],
               "logo": "special"
@@ -4848,22 +4858,24 @@
                 {
                   "type": "group",
                   "optionsLabel": "Magic",
+                  "option_id": "vw11047fa7ix9ozz",
                   "options": [
                     {
                       "type": "check",
-                      "name": "Wizard Conclave(2)",
+                      "name": "Wizard Conclave (2)",
                       "cost": 120,
-                      "option_id": "vteki5ba9x09pslls69fvx",
+                      "option_id": "5zrpflsgswumrmd5",
+                      "refs": ["wizardconclave", "wizard"],
                       "magic": {
                         "amount": 2,
                         "spells": [
                           {
                             "path": "thaumaturgy",
-                            "ref": "light_of_faith"
+                            "ref": "holy_affliction"
                           },
                           {
-                            "path": "witchcraft",
-                            "ref": "soured_luck"
+                            "path": "evocation",
+                            "ref": "chorus_of_the_damned"
                           },
                           {
                             "path": "witchcraft",
@@ -4874,11 +4886,9 @@
                             "ref": "spear_of_infinity"
                           }
                         ]
-                      },
-                      "refs": ["wizardconclave", "wizard"]
+                      }
                     }
-                  ],
-                  "option_id": "2p17kxaxgcfv4h1g53xs"
+                  ]
                 }
               ],
               "armyHasNotOption": [],
