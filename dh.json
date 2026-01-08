@@ -817,6 +817,14 @@
                       "name": "Battle Standard Bearer",
                       "cost": 80,
                       "option_id": "ffsfsv342wv34534b45h54h54"
+                    },
+                    {
+                      "type": "check",
+                      "name": "Ancient Grudge (1)",
+                      "cost": 35,
+                      "option_id": "zxnr5qys2b5swkke",
+                      "refs": ["ancientgrudge"],
+                      "hasOption": ["general"]
                     }
                   ],
                   "maxSize": 1
@@ -1060,7 +1068,8 @@
                       "name": "Ancient Grudge (1)",
                       "cost": 40,
                       "option_id": "g2utosqqpmpcvtos",
-                      "refs": ["ancientgrudge"]
+                      "refs": ["ancientgrudge"],
+                      "hasOption": ["army_general"]
                     }
                   ],
                   "maxSize": 1
@@ -1138,6 +1147,7 @@
                   "options": [
                     {
                       "name": "Battle Runes",
+                      "parsername": "Up to three different Battle Runes",
                       "type": "numeric",
                       "cost": 30,
                       "magic": {
@@ -1381,7 +1391,7 @@
               "logo": "character"
             },
             {
-              "name": "Dinaz Betegoz, Master of the Guild of Lorekeepers",
+              "name": "Duna Braegold, Master of the Guild of Lorekeepers",
               "cost": 520,
               "option_id": "lv83dolujci31a7h",
               "unit_id": "dinazBetegoz",
@@ -1393,7 +1403,7 @@
               "options": []
             },
             {
-              "name": "Tador Berafrig",
+              "name": "Brewmaster Tador Berafrig",
               "cost": 210,
               "option_id": "6lgysotup0k4zrm4",
               "unit_id": "tadorBerafrig",
@@ -2495,196 +2505,144 @@
             {
               "name": "Field Artillery",
               "cost": 95,
-              "option_id": "r1riufbrxto99jur1glzas",
+              "option_id": "569wzutqy4emo79t",
               "unit_id": "fieldArtillery",
-              "refs": ["fieldartillery", "tag_Dwarf", "tag_Metal Armour", "tag_Construct", "field_artillery", "war_machine"],
+              "refs": ["fieldartillery", "tag_Dwarf", "tag_Metal Armour", "tag_Construct"],
               "size": "1",
               "rarity": "Regular",
               "height": "2",
               "basesize": "60×60",
               "options": [
                 {
+                  "type": "group",
                   "optionsLabel": "Artillery Weapon",
                   "minSize": 1,
                   "maxSize": 1,
                   "definesType": true,
+                  "option_id": "x33sih8vhm8if685",
                   "options": [
                     {
                       "type": "check",
-                      "cost": 0,
                       "name": "Dwarf Ballista (4+)",
-                      "refs": [
-                        "dwarf_balista",
-                        {
-                          "ref": "engines_of_war",
-                          "amount": 1
-                        }
-                      ],
-                      "rarity": "Common",
+                      "cost": 0,
+                      "option_id": "soa0o2mmd6b8f9os",
+                      "refs": ["dwarfballista"],
                       "options": [
                         {
-                          "optionsLabel": "Options",
-                          "options": [
-                            {
-                              "type": "check",
-                              "name": "Rune Crafted (+1 to hit towards Fly)",
-                              "cost": 15,
-                              "option_id": "z3a9tz3k74whhnemnaw4"
-                            },
-                            {
-                              "type": "check",
-                              "name": "Flaming Shot",
-                              "cost": 0,
-                              "option_id": "f32fsdfgdshg34fg32few"
-                            }
-                          ],
-                          "option_id": "pai83tufv7hfiyj3lvsgmt"
+                          "type": "check",
+                          "name": "Flaming Shots",
+                          "cost": 5,
+                          "option_id": "a8mk6napbrscpupy",
+                          "refs": ["flamingshots"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Rune Crafted",
+                          "cost": 40,
+                          "option_id": "n6oqm0zsprma3nm4",
+                          "refs": ["runecrafted"]
                         }
-                      ],
-                      "option_id": "ehwltz86lm11o6j8l1b17"
+                      ]
                     },
                     {
                       "type": "check",
-                      "cost": 70,
-                      "name": "Flame Cannon (2+)",
-                      "refs": [
-                        "flame_cannon",
-                        {
-                          "ref": "engines_of_war",
-                          "amount": 2
-                        }
-                      ],
-                      "rarity": "Rare",
-                      "options": [
-                        {
-                          "optionsLabel": "Options",
-                          "options": [
-                            {
-                              "type": "check",
-                              "name": "Flaming Shot",
-                              "cost": 0,
-                              "option_id": "fg342g34g34fxcffgdgbfd34g34"
-                            },
-                            {
-                              "type": "check",
-                              "name": "Rune Crafted (+1 AP)",
-                              "cost": 50,
-                              "option_id": "ca2ofxogcps8cj2yy3dge"
-                            }
-                          ],
-                          "option_id": "dg4h448wgwyct2damg7u"
-                        }
-                      ],
-                      "option_id": "37mdlce8shw88t26jsg2mw"
-                    },
-                    {
-                      "type": "check",
-                      "cost": 110,
                       "name": "Dwarf Catapult (4+)",
-                      "refs": [
-                        "catapult",
-                        {
-                          "ref": "engines_of_war",
-                          "amount": 3
-                        }
-                      ],
+                      "cost": 80,
+                      "option_id": "py0kmasx091qshnn",
+                      "refs": ["dwarfcatapult"],
                       "rarity": "Rare",
                       "options": [
                         {
-                          "optionsLabel": "Options",
-                          "options": [
-                            {
-                              "type": "check",
-                              "name": "Flaming Shot",
-                              "cost": 0,
-                              "option_id": "f324gdfh565h34g34g34f6fj"
-                            },
-                            {
-                              "type": "check",
-                              "name": "Rune Crafted (+1 Str, +2 AP)",
-                              "cost": 50,
-                              "option_id": "olsa1q55wj9q72dptzsvtq"
-                            }
-                          ],
-                          "option_id": "xlacb4bxck0ge9s29c1ylv"
+                          "type": "check",
+                          "name": "Flaming Shots",
+                          "cost": 5,
+                          "option_id": "ho4i8q045zam2g77",
+                          "refs": ["flamingshots"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Rune Crafted",
+                          "cost": 30,
+                          "option_id": "oef3icq5zy6lrcim",
+                          "refs": ["runecrafted"]
                         }
-                      ],
-                      "option_id": "q8mvlvaynb9zdz4kzhewli"
+                      ]
                     },
                     {
                       "type": "check",
-                      "cost": 145,
                       "name": "Dwarf Cannon (4+)",
+                      "cost": 160,
+                      "option_id": "sbkft9rkkvzfj0e0",
+                      "refs": ["dwarfcannon"],
                       "rarity": "Rare",
-                      "refs": [
-                        "artillery_canon",
-                        {
-                          "ref": "engines_of_war",
-                          "amount": 3
-                        }
-                      ],
                       "options": [
                         {
-                          "optionsLabel": "Options",
-                          "options": [
-                            {
-                              "type": "check",
-                              "name": "Flaming Shot",
-                              "cost": 0,
-                              "option_id": "k4fgd3fewdb5454bb53v54"
-                            },
-                            {
-                              "type": "check",
-                              "name": "Rune Crafted (Direct Hit (D3+2) towards Height 5)",
-                              "cost": 40,
-                              "option_id": "9f9jh1pdd096djjp1wvc52"
-                            }
-                          ],
-                          "option_id": "gupn27m6f6x5sps5jvve8"
+                          "type": "check",
+                          "name": "Flaming Shots",
+                          "cost": 5,
+                          "option_id": "yl1psfryexlsu4yu",
+                          "refs": ["flamingshots"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Rune Crafted",
+                          "cost": 40,
+                          "option_id": "e51qpvvin6nw0yk9",
+                          "refs": ["runecrafted"]
                         }
-                      ],
-                      "option_id": "441365dn8mse6ba51cqni7"
+                      ]
                     },
                     {
                       "type": "check",
-                      "cost": 150,
                       "name": "Organ Gun (4+)",
-                      "refs": [
-                        "artillery_organ",
-                        {
-                          "ref": "engines_of_war",
-                          "amount": 3
-                        }
-                      ],
+                      "cost": 130,
+                      "option_id": "0nseowke2301b4rc",
+                      "refs": ["organgun"],
                       "rarity": "Rare",
                       "options": [
                         {
-                          "optionsLabel": "Options",
-                          "options": [
-                            {
-                              "type": "check",
-                              "name": "Flaming Shot",
-                              "cost": 0,
-                              "option_id": "6b7ifv3ew32vc34v43v534"
-                            },
-                            {
-                              "type": "check",
-                              "name": "Rune Crafted (+1 to wound)",
-                              "cost": 80,
-                              "option_id": "wa57vjvgvubak9zgyxj5zr"
-                            }
-                          ],
-                          "option_id": "aw2iuh63tgbluq7rf1yjzm"
+                          "type": "check",
+                          "name": "Flaming Shots",
+                          "cost": 5,
+                          "option_id": "fda2ytju3a4qw560",
+                          "refs": ["flamingshots"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Rune Crafted",
+                          "cost": 60,
+                          "option_id": "45wlvbjt3ikcju46",
+                          "refs": ["runecrafted"]
                         }
-                      ],
-                      "option_id": "iqu25bxi1xfk4scl3h0s6n"
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Flame Cannon (2+)",
+                      "cost": 70,
+                      "option_id": "ns9p76e2mi162yto",
+                      "refs": ["flamecannon"],
+                      "rarity": "Rare",
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Flaming Shots",
+                          "cost": 5,
+                          "option_id": "lvdk3496nyy8uj7d",
+                          "refs": ["flamingshots"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Rune Crafted",
+                          "cost": 40,
+                          "option_id": "eoy6oe9u2o3wnwjj",
+                          "refs": ["runecrafted"]
+                        }
+                      ]
                     }
-                  ],
-                  "option_id": "o6ulbdlfcccbwh8b2eoof"
+                  ]
                 }
-              ],
-              "logo": "cannonballs",
-              "armyHasNotOption": []
+              ]
             }
           ],
           "option_id": "6u9dggsgazfpgugmwac7ms"
