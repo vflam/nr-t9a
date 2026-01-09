@@ -8,27 +8,38 @@
   "dictionnary": [
     {
       "optionsLabel": "Leadership Skills",
-      "refs": ["leadershipSkills"],
+      "refs": [
+        "leadershipSkills"
+      ],
       "option_id": "nf932nf923n9fg23n9gf23ng432",
       "maxSize": 1,
       "options": []
     },
     {
-      "refs": ["shieldEnchant"],
+      "refs": [
+        "shieldEnchant"
+      ],
       "options": [
         {
           "type": "check",
           "name": "Dusk Forged",
-          "refs": ["ce_duskforge"],
-          "armyHasNotOption": ["ce_duskforge"],
+          "refs": [
+            "ce_duskforge"
+          ],
           "cost": 0,
           "description": "The bearer <span class=\"textbf\">must</span> reroll its failed Armour Saves.<br><br>The bearer automatically fails all Special Saves,<br>regardless of whether <span class=\"textbf\">Using the Shield</span> or not.",
           "option_id": "1dtxsil1vdhf4zubs7m9nh",
           "shared": true,
+          "rarity": "Legendary",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
               }
             }
           }
@@ -36,103 +47,145 @@
         {
           "type": "check",
           "name": "Sigil of Protection",
-          "refs": ["se_sigil_of_protection"],
-          "armyHasNotOption": ["se_sigil_of_protection"],
+          "refs": [
+            "se_sigil_of_protection"
+          ],
           "cost": 0,
           "description": "+1 Arm.",
           "option_id": "sdfsdv43g3432d321h5434f34f",
           "shared": true,
+          "hasOption": [
+            "tag_Metal Armour"
+          ],
+          "rarity": "Legendary",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
               }
             }
-          },
-          "hasOption": ["tag_Metal Armour"]
+          }
         },
         {
           "type": "check",
           "name": "Wild Warding",
-          "refs": ["se_wild_warding"],
-          "armyHasNotOption": ["se_wild_warding"],
+          "refs": [
+            "se_wild_warding"
+          ],
           "cost": 40,
           "description": "+3 Arm.<br><br>\tThe models Armour value can <span class=\"textbf\">never</span> be improved beyond 5.",
           "option_id": "fdsf3f32dsfh54g4sdfd3",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
               }
             }
-          }
+          },
+          "rarity": "Legendary"
         }
       ],
       "option_id": "zext9af2s3l9w4gaos2ox8"
     },
     {
-      "refs": ["armourEnchant"],
+      "refs": [
+        "armourEnchant"
+      ],
       "options": [
         {
           "type": "check",
-          "refs": ["ae_vc_deathcheat"],
-          "armyHasNotOption": ["ae_vc_deathcheat"],
+          "refs": [
+            "ae_vc_deathcheat"
+          ],
           "name": "Death Cheater",
           "description": "+1 Arm, and <span class=\"textbf\">Regeneration(4+)</span>.",
           "option_id": "ddeqgw7silpyehc3dho56a",
           "shared": true,
+          "cost": 0,
+          "rarity": "Legendary",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
               }
             }
-          },
-          "cost": 0
+          }
         },
         {
           "type": "check",
-          "refs": ["ae_phantom"],
-          "armyHasNotOption": ["ae_phantom"],
+          "refs": [
+            "ae_phantom"
+          ],
           "name": "Ghostly Guard",
           "description": "+2 Arm against non-Magical Attacks.",
           "option_id": "rqdl9cpywzh262hohgle5",
           "shared": true,
+          "cost": 0,
+          "rarity": "Legendary",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
               }
             }
-          },
-          "cost": 0
+          }
         },
         {
           "type": "check",
-          "refs": ["ae_destiny"],
-          "armyHasNotOption": ["ae_destiny"],
+          "refs": [
+            "ae_destiny"
+          ],
           "name": "Destiny's Call",
           "cost": 90,
           "description": "\t <span class=\"textbf\">Aegis(4+)</span>, and the model’s Armour is  <span class=\"textbf\">always</span> 3.<br>\n\t<i>Note that this means it cannot be improved beyond 3. <br> It is still affected by Armour Penetration.</i>\n",
           "option_id": "s9z04q3xgjjxel74a79o",
           "hasNotOption": [
             {
-              "refs": ["tag_Construct"],
+              "refs": [
+                "tag_Construct"
+              ],
               "amount": 1
             }
           ],
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
               }
             }
-          }
+          },
+          "rarity": "Legendary"
         },
         {
           "type": "check",
-          "refs": ["ae_warding_unity"],
-          "armyHasNotOption": ["ae_warding_unity"],
+          "refs": [
+            "ae_warding_unity"
+          ],
           "name": "Warding of Unity",
           "cost": 40,
           "description": "<span class=\"textbf\">Attached</span>, which cannot be lost, and<br><br><span class=\"textbf\">Resistance(Melee Attacks)</span>.",
@@ -140,16 +193,24 @@
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["4", "5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3"
+                ]
               }
             }
           },
-          "hasNotOption": ["solitary"]
+          "hasNotOption": [
+            "solitary"
+          ],
+          "rarity": "Legendary"
         },
         {
           "type": "check",
-          "refs": ["ae_basalt_inject"],
-          "armyHasNotOption": ["ae_basalt_inject"],
+          "refs": [
+            "ae_basalt_inject"
+          ],
           "name": "Basalt Infusion",
           "cost": 35,
           "description": "+1 Armour, <span class=\"textbf\">Aegis(3+, against Flaming Attacks)</span>, and the wearer automatically fails all Regeneration Saves.",
@@ -157,165 +218,164 @@
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
               }
             }
-          }
+          },
+          "rarity": "Legendary"
         }
       ],
       "option_id": "tn7cztve1uoafv68xax7ak"
     },
     {
-      "refs": ["bannerEnchant"],
+      "refs": [
+        "bannerEnchant"
+      ],
       "options": [
         {
           "type": "numeric",
           "name": "Stalker's Standard",
           "cost": 70,
-          "refs": ["be_ranger"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_ranger"],
-              "amount": 2
-            }
+          "refs": [
+            "be_ranger"
           ],
           "description": "\tThe bearer’s unit gains  <span class=\"textbf\">Strider</span>.",
-          "option_id": "ktsioxz6xd8oiu3c860rac"
+          "option_id": "ktsioxz6xd8oiu3c860rac",
+          "rarity": "Rare"
         },
         {
           "type": "numeric",
           "name": "Sheltering Standard",
           "cost": 20,
-          "refs": ["be_sheltering"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_sheltering"],
-              "amount": 2
-            }
+          "refs": [
+            "be_sheltering"
           ],
           "description": "Attacks with Armour Penetration 3 or less can never reduce the Armour Save roll of the bearer’s unit to worse than 6+.<br><br><i>Note: this does not grant an Armour Save to models with a 7+ Armour Save.</i>",
-          "option_id": "rf23v342v32434gefgdsgdfgfd"
+          "option_id": "rf23v342v32434gefgdsgdfgfd",
+          "rarity": "Rare"
         },
         {
           "type": "numeric",
           "name": "Flaming Standard",
           "cost": 40,
-          "refs": ["be_burning"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_burning"],
-              "amount": 2
-            }
+          "refs": [
+            "be_burning"
           ],
           "description": "One use only. Duration: End of Combat.<br>May be activated when Choosing Equipment and Abilities.<br>The bearer’s unit gains <span class=\"textbf\">Flaming Attacks</span>",
-          "option_id": "svp35mhrwadblwsw69epg"
+          "option_id": "svp35mhrwadblwsw69epg",
+          "rarity": "Rare"
         },
         {
           "type": "numeric",
           "name": "Aether Icon",
           "cost": 10,
-          "refs": ["be_ether"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_ether"],
-              "amount": 2
-            }
+          "refs": [
+            "be_ether"
           ],
           "description": "The bearer’s unit gains <span class=\"textbf\">Magic Resistance(1)</span>.",
-          "option_id": "k1mvodzrbem4w6rz1unbsn"
+          "option_id": "k1mvodzrbem4w6rz1unbsn",
+          "rarity": "Rare"
         },
         {
           "shared": true,
           "type": "numeric",
           "name": "Banner of Courage",
           "cost": 0,
-          "refs": ["be_discipline"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_discipline"],
-              "amount": 3
-            }
+          "refs": [
+            "be_discipline"
           ],
           "description": "The bearer’s unit may reroll failed Panic Tests.<br><br>\tIf the Battle Standard Bearer or the General is part of the bearer’s unit, it automatically passes Panic Tests instead.",
-          "option_id": "6fgr12sviic72tkct212zo"
+          "option_id": "6fgr12sviic72tkct212zo",
+          "rarity": "Uncommon"
         },
         {
           "type": "numeric",
           "name": "Banner of Speed",
           "cost": 0,
-          "refs": ["be_speed"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_speed"],
-              "amount": 3
-            }
+          "refs": [
+            "be_speed"
           ],
           "description": "A unit containing <font color='green!60!black'></font> <font color='green!60!black'>one or more</font> <i>Banner of Speed</i> gains +1\" Charge Speed and Mobility.",
           "option_id": "6n4c7cjvglja18yoqzcsct",
-          "shared": true
+          "shared": true,
+          "rarity": "Uncommon"
         },
         {
           "type": "check",
           "name": "Distortion Emblem",
           "cost": 0,
-          "refs": ["be_distortion"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_distortion"],
-              "amount": 1
-            }
+          "refs": [
+            "be_distortion"
           ],
           "description": "One use only. Duration: End of Turn.<br>May be activated at the start of any Phase.<br>The bearer’s unit gains <span class=\"textbf\">Hard Target(2)</span>",
           "option_id": "6n4c7dscjvglja18yoqzcsct",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Rending Banner",
           "cost": 0,
-          "refs": ["be_rending"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_rending"],
-              "amount": 1
-            }
+          "refs": [
+            "be_rending"
           ],
           "description": "One use only. Duration: End of Combat.<br>May be activated when Choosing Equipment and Abilities:<br>Rank-and-File models in the bearer’s unit gain +1 AP.",
           "option_id": "fsdfsdfsdf23yt234g34wg43g43",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary"
         }
       ],
       "option_id": "14jc82utsdskgjj8d5ww0s"
     },
     {
-      "refs": ["weaponEnchant"],
+      "refs": [
+        "weaponEnchant"
+      ],
       "options": [
         {
           "type": "check",
-          "armyHasNotOption": ["we_vorpal_binding"],
-          "refs": ["army_unique", "weaponEnchantUni", "we_vorpal_binding"],
+          "refs": [
+            "army_unique",
+            "weaponEnchantUni",
+            "we_vorpal_binding"
+          ],
           "hasNotOption": [
             {
-              "refs": ["weaponEnchantUni"],
+              "refs": [
+                "weaponEnchantUni"
+              ],
               "amount": 1
             }
           ],
           "name": "Vorpal Binding",
           "cost": 50,
           "description": "<font color='green!60!black'>Successful Armour Saves and Special Saves against<br>attacks made with this weapon must be rerolled.<br></font><font color='green!60!black'></font>",
-          "option_id": "fsdf32f32hjdgdsv32g342g43"
+          "option_id": "fsdf32f32hjdgdsv32g342g43",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
-          "armyHasNotOption": ["we_king_slayer"],
-          "refs": ["army_unique", "weaponEnchantUni", "we_king_slayer"],
+          "refs": [
+            "army_unique",
+            "weaponEnchantUni",
+            "we_king_slayer"
+          ],
           "hasNotOption": [
             {
-              "refs": ["weaponEnchantUni"],
+              "refs": [
+                "weaponEnchantUni"
+              ],
               "amount": 1
             },
             {
-              "refs": ["solitary"],
+              "refs": [
+                "solitary"
+              ],
               "amount": 1
             }
           ],
@@ -326,132 +386,199 @@
           "name": "King Slayer",
           "cost": 35,
           "description": "<span class=\"textbf\">Attached</span>, which cannot be lost.<br><br>\tWhile there is an enemy Character in contact with the wielder’s unit, the wielder gains +1 Att, +2 Str, and +2 AP.",
-          "option_id": "9nbhwy7x5j8arx2vum3628"
+          "option_id": "9nbhwy7x5j8arx2vum3628",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Touch of Greatness",
-          "armyHasNotOption": ["we_grace_touched"],
-          "refs": ["army_unique", "weaponEnchantUni", "we_grace_touched"],
-          "hasNotOption": ["weaponEnchantUni"],
+          "refs": [
+            "army_unique",
+            "weaponEnchantUni",
+            "we_grace_touched"
+          ],
+          "hasNotOption": [
+            "weaponEnchantUni"
+          ],
           "cost": 50,
           "description": "+1 Str, +1 AP.",
-          "option_id": "f4rvj2z0e17zf7kivsczl"
+          "option_id": "f4rvj2z0e17zf7kivsczl",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Giant Slayer",
-          "armyHasNotOption": ["we_giant_slayer"],
-          "refs": ["army_unique", "weaponEnchantUni", "we_giant_slayer"],
-          "hasNotOption": ["weaponEnchantUni"],
+          "refs": [
+            "army_unique",
+            "weaponEnchantUni",
+            "we_giant_slayer"
+          ],
+          "hasNotOption": [
+            "weaponEnchantUni"
+          ],
           "cost": 25,
           "description": "<span class=\"textbf\">Crush Attack</span>.<br>This Crush Attack gains +1 to hit against models with Height 5.",
           "option_id": "fed32jsfdf235jfg342f342",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["4", "5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3"
+                ]
               }
             }
-          }
+          },
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Supernatural Dexterity",
-          "armyHasNotOption": ["we_sur_dex"],
-          "refs": ["army_unique", "weaponEnchantUni", "we_sur_dex"],
-          "hasNotOption": ["weaponEnchantUni"],
+          "refs": [
+            "army_unique",
+            "weaponEnchantUni",
+            "we_sur_dex"
+          ],
+          "hasNotOption": [
+            "weaponEnchantUni"
+          ],
           "description": "+3 Def and +3 Off.",
           "option_id": "mv855a917kgpn2e269486",
           "shared": true,
           "cost": 0,
+          "rarity": "Legendary",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["4", "5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3"
+                ]
               }
             }
           }
         },
         {
           "type": "check",
-          "armyHasNotOption": ["we_eldritch_ins"],
-          "refs": ["army_unique", "weaponEnchantUni", "we_eldritch_ins"],
-          "hasNotOption": ["weaponEnchantUni"],
+          "refs": [
+            "army_unique",
+            "weaponEnchantUni",
+            "we_eldritch_ins"
+          ],
+          "hasNotOption": [
+            "weaponEnchantUni"
+          ],
           "name": "Eldritch Inscriptions",
           "description": "<span class=\"textbf\">First Strike(Hatred and Zeal)</span>.",
           "option_id": "7q0v4r6y4am8ab7ct168bx",
           "shared": true,
-          "cost": 0
+          "cost": 0,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Shield Breaker",
-          "armyHasNotOption": ["we_shield_breaker"],
-          "refs": ["army_unique", "weaponEnchantUni", "we_shield_breaker"],
-          "hasNotOption": ["weaponEnchantUni"],
+          "refs": [
+            "army_unique",
+            "weaponEnchantUni",
+            "we_shield_breaker"
+          ],
+          "hasNotOption": [
+            "weaponEnchantUni"
+          ],
           "description": "+6 AP.",
           "option_id": "llspua8sxbhbm9p2mr5lg",
           "shared": true,
-          "cost": 0
+          "cost": 0,
+          "rarity": "Legendary"
         }
       ],
       "option_id": "9dhvgrgi79wzm919xwkddh"
     },
     {
-      "refs": ["handWeaponEnchant", "pairedWeaponsEnchant"],
+      "refs": [
+        "handWeaponEnchant",
+        "pairedWeaponsEnchant"
+      ],
       "options": [
         {
           "type": "check",
           "name": "Hero's Heart",
-          "armyHasNotOption": ["we_hero_heart"],
-          "refs": ["army_unique", "weaponEnchantUni", "we_hero_heart"],
-          "hasNotOption": ["weaponEnchantUni"],
+          "refs": [
+            "army_unique",
+            "weaponEnchantUni",
+            "we_hero_heart"
+          ],
+          "hasNotOption": [
+            "weaponEnchantUni"
+          ],
           "cost": 0,
           "description": "+1 Att, and <span class=\"textbf\">always</span> at least Str 5 and AP 2.",
           "option_id": "tq76txrmr1lyzqyfjyir8f",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary"
         }
       ],
       "option_id": "m9j44d1l1tpz5lul36e64r"
     },
     {
-      "refs": ["artefact"],
+      "refs": [
+        "artefact"
+      ],
       "options": [
         {
           "type": "check",
           "name": "Magical Heirloom",
           "cost": 35,
-          "armyHasNotOption": ["art_magical_inh"],
-          "refs": ["army_unique", "art_magical_inh"],
-          "hasNotOption": ["bound_or_broken"],
-          "hasOption": ["wizard"],
+          "refs": [
+            "army_unique",
+            "art_magical_inh"
+          ],
+          "hasNotOption": [
+            "bound_or_broken"
+          ],
+          "hasOption": [
+            "wizard"
+          ],
           "description": "The bearer knows the Hereditary Spell of its Army Book in addition to its other spells (it cannot select it during Spell Selection, and cannot replace or otherwise lose it).",
-          "option_id": "f900q91pw2kbnpcjai2xxe"
+          "option_id": "f900q91pw2kbnpcjai2xxe",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Talisman of Shielding",
           "cost": 50,
-          "refs": ["protect_talis"],
-          "armyHasNotOption": ["protect_talis"],
+          "refs": [
+            "protect_talis"
+          ],
           "description": "<span class=\"textbf\">Aegis(5+)</span>.",
           "option_id": "qgh98lzrupif6hlydex33u",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
               }
             }
-          }
+          },
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Crown of the Wizard King",
           "cost": 25,
-          "refs": ["art_wizard_crown"],
-          "armyHasNotOption": ["art_wizard_crown"],
-          "hasNotOption": ["wizard"],
+          "refs": [
+            "art_wizard_crown"
+          ],
+          "hasNotOption": [
+            "wizard"
+          ],
           "description": "During Pre-game Selections, randomise a Magic Path (from all <font color='green!60!black'></font> Paths in this book).<br><br>\tThe bearer is a <span class=\"textbf\">Wizard Apprentice</span> using the<br>randomised Path, and may not Swap any spells.<br><br>\tThe bearer cannot take any Magic Items nor any other upgrades that are restricted to Wizards (or any types of Wizards).",
           "option_id": "0xe0vzte8ybruhnpexpia8j",
           "magic": {
@@ -468,66 +595,100 @@
               "divination",
               "thaumaturgy"
             ],
-            "choices": ["1"]
-          }
+            "choices": [
+              "1"
+            ]
+          },
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Mimic Cloak",
           "cost": 60,
-          "refs": ["art_mimic_cloak"],
-          "armyHasNotOption": ["art_mimic_cloak"],
-          "hasOption": ["wizard"],
+          "refs": [
+            "art_mimic_cloak"
+          ],
+          "hasOption": [
+            "wizard"
+          ],
           "description": "<span class=\"textbf\">Stand Behind</span>.<br>The wearer’s model loses Stubborn, Bodyguard, cannot gain either in any way, and is never considered to fulfil the criteria of <span class=\"textbf\">Bodyguard</span>.<br><br>In addition, the model cannot make any Supporting Attacks.",
-          "option_id": "f32f32fewwfsdf32f32g32"
+          "option_id": "f32f32fewwfsdf32f32g32",
+          "rarity": "Legendary",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": [
+                  "1",
+                  "2",
+                  "3"
+                ]
+              }
+            }
+          }
         },
         {
           "type": "check",
           "name": "Talisman of the Void",
-          "refs": ["art_void_talis"],
-          "armyHasNotOption": ["art_void_talis"],
+          "refs": [
+            "art_void_talis"
+          ],
           "cost": 65,
           "description": "<span class=\"textbf\">Channel(1)</span>.<br>This item can only be used if the model’s army´s total combined <span class=\"textbf\">Channel</span> is 2 or less (excluding <span class=\"textbf\">Channel</span> from this Magic Item).",
           "channel": 1,
-          "option_id": "wjs63i4cw5eqxlvcm1mj1"
+          "option_id": "wjs63i4cw5eqxlvcm1mj1",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Scroll of a Free Mind",
           "cost": 0,
-          "armyHasNotOption": ["scroll_of_a_free_mind"],
-          "refs": ["army_unique", "scroll_of_a_free_mind"],
-          "hasOption": ["wizard"],
+          "refs": [
+            "army_unique",
+            "scroll_of_a_free_mind"
+          ],
+          "hasOption": [
+            "wizard"
+          ],
           "description": "One use only. Duration: Permanent<br>\nWhen activated the bearer selects a Path from among the Paths they can select during List Creation. They then replace all Learned Spells with spells from the selected Path, replacing the first with the #1, spell the second with the #2 spell and so on, until they have replaced all their Learned Spells.<br>\nSpells granted by other sources than  <span class=\"textbf\">Wizard Apprentice</span>,  <span class=\"textbf\">Wizard Adept</span> or  <span class=\"textbf\">Wizard Master</span> are unaffected, and this does not change the bearer's Path Selection.<br>\n<i>Note: This means a single Wizard can gain the same spell twice, yet still not cast the same spell multiple times.</i> <br>\n<i>Example: a Vampire  <span class=\"textbf\">Wizard Adept</span> with  <span class=\"textbf\">Gates of the Netherworld</span> that selected #1, and #3  from Occultism and swapped to  <span class=\"textbf\">Arise!</span> during List Creation selects Evocation with Scroll of a Free Mind, now knows Whispers of the Veil twice. Danse Macabre, and  <span class=\"textbf\">Arise!</span>.</i>\n",
           "option_id": "h5tyfl483j7wpov0jd0r2s",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Mask of Mindless Violence",
           "cost": 0,
-          "armyHasNotOption": ["art_mask_of_mindless_violence"],
-          "refs": ["army_unique", "art_mask_of_mindless_violence"],
+          "refs": [
+            "army_unique",
+            "art_mask_of_mindless_violence"
+          ],
           "description": "<span class=\"textbf\">Rage</span>.<br>All Melee Attacks made by or against the wearer gain +1 to hit.",
           "option_id": "8923rce68gfdsdfsf62",
+          "shared": true,
+          "rarity": "Legendary",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["4", "5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3"
+                ]
               }
             }
-          },
-          "shared": true
+          }
         },
         {
           "type": "check",
           "name": "Obsidian Rock",
           "cost": 0,
-          "refs": ["art_obsi_roc"],
-          "armyHasNotOption": ["art_obsi_roc"],
+          "refs": [
+            "art_obsi_roc"
+          ],
           "description": "<span class=\"textbf\">Magic Resistance(2)</span>.",
           "option_id": "ck0fefg5g56ltydfpadwi",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
@@ -538,36 +699,40 @@
               "path": "alchemy"
             }
           ],
-          "refs": ["art_rod_of_battle", "bound_spell"],
-          "armyHasNotOption": ["art_rod_of_battle"],
+          "refs": [
+            "art_rod_of_battle",
+            "bound_spell"
+          ],
           "cost": 0,
           "description": "<br>\tThe bearer can cast a unique Bound Spell:<br><i>Rod of Battle</i>: Casting Value (4+)<br>Type: Range 18\", Augment.<br><br>Duration: One Turn.<br><br>Effect: The target’s Melee Attacks gains +1 to hit.",
           "option_id": "4kj8yym077guw0cq3wd2r",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Potion of Strength",
           "cost": 10,
           "option_id": "d2lqatvs96h2d8f9",
-          "refs": ["potionofstrength"]
+          "refs": [
+            "potionofstrength"
+          ],
+          "rarity": "Legendary"
         }
       ],
       "option_id": "p6iba3h41dicj533gr0b"
     },
     {
-      "refs": ["potions_and_scrolls"],
+      "refs": [
+        "potions_and_scrolls"
+      ],
       "options": [
         {
           "type": "numeric",
           "name": "Binding Scroll",
           "cost": 50,
-          "refs": ["art_blocking_scroll"],
-          "armyHasNotOption": [
-            {
-              "refs": ["art_blocking_scroll"],
-              "amount": 2
-            }
+          "refs": [
+            "art_blocking_scroll"
           ],
           "description": "One use only. Duration: One Phase<br><br><font color='green!60!black'></font> voluntarily <font color='green!60!black'></font>",
           "option_id": "u44i127ro4aijz0q2zvmi",
@@ -577,52 +742,68 @@
           "type": "check",
           "name": "Potion of Power Preservation",
           "cost": 30,
-          "refs": ["pot_preservation"],
-          "armyHasNotOption": ["pot_preservation"],
+          "refs": [
+            "pot_preservation"
+          ],
           "description": "One use only. Duration: Instant<br><br>\tMay be used immediately when a Casting Roll or Dispel Roll fails, due to not rolling high enough: do not discard the Magic Dice used in this unsuccessful attempt.",
-          "option_id": "f32ffdsfsdf3e2dsjgbj4342hj"
+          "option_id": "f32ffdsfsdf3e2dsjgbj4342hj",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Dragon's Brew",
           "cost": 35,
-          "refs": ["dragons_brew"],
-          "armyHasNotOption": ["dragons_brew"],
+          "refs": [
+            "dragons_brew"
+          ],
           "description": "One use only. Duration: End of Turn<br>\n\t <span class=\"textbf\">Breath Attack(Str 4, AP 1, Flaming Attacks, Stand and Shoot)</span>.",
-          "option_id": "f32ffdsfdsdsdsdf3e2dsjgbj4342hj"
+          "option_id": "f32ffdsfdsdsdsdf3e2dsjgbj4342hj",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Potion of Swiftness",
           "cost": 10,
-          "refs": ["art_speed_pot", "one_use_item"],
-          "armyHasNotOption": ["art_speed_pot"],
+          "refs": [
+            "art_speed_pot",
+            "one_use_item"
+          ],
           "description": "One use only. Duration: Round of Combat<br><br>+3 Agi.",
-          "option_id": "o2tpicuu5kmtkw6tg2e4c"
+          "option_id": "o2tpicuu5kmtkw6tg2e4c",
+          "rarity": "Legendary"
         },
         {
           "shared": true,
           "type": "check",
           "name": "Scroll of Draining",
           "cost": 0,
-          "refs": ["pot_negation"],
-          "armyHasNotOption": ["pot_negation"],
+          "refs": [
+            "pot_negation"
+          ],
           "description": "One use only. Duration: Instant<br><br>\tMay be activated in the opponent’s Magic Phase, immediately after Excess Magic: the opponent immediately discards 1 Magic Dice.",
-          "option_id": "932fn4w20v0342vj32fv32"
+          "option_id": "932fn4w20v0342vj32fv32",
+          "rarity": "Legendary"
         },
         {
           "shared": true,
           "type": "check",
           "name": "Potion of Healing",
           "cost": 0,
-          "refs": ["pot_healing"],
-          "armyHasNotOption": ["pot_healing"],
+          "refs": [
+            "pot_healing"
+          ],
           "description": "One use only. Duration: Instant<br><br>\tThe bearer’s model <span class=\"textbf\">Recovers</span> 1 HP.",
           "option_id": "gdfg324g34gfdsjj54g4g54g54",
+          "rarity": "Legendary",
           "hasStat": {
             "global": {
               "Hgt": {
-                "excluded": ["5"]
+                "values": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
               }
             }
           }
@@ -632,23 +813,31 @@
           "type": "check",
           "name": "Scroll of Power",
           "cost": 0,
-          "refs": ["scroll_power"],
-          "armyHasNotOption": ["scroll_power"],
+          "refs": [
+            "scroll_power"
+          ],
           "description": "One use only. Duration: Instant<br><br>\tMay be activated immediately after a Casting Roll: the bearer may add one additional free Magic Dice to this Casting Roll. (The limit of 5 Magic Dice still applies).",
           "option_id": "943jg349jg034f34f342h534",
-          "hasOption": ["wizard"]
+          "hasOption": [
+            "wizard"
+          ],
+          "rarity": "Legendary"
         },
         {
           "shared": true,
           "type": "check",
           "name": "Spell Scroll",
           "cost": 0,
-          "refs": ["scroll_spell"],
-          "armyHasNotOption": ["scroll_spell"],
+          "refs": [
+            "scroll_spell"
+          ],
           "description": "One use only. Duration: One Phase<br><br>May be activated at any time during your Magic Phase. The bearer knows the spell indicated in brackets (X) in addition to its other spells, <font color='green!60!black'></font> <font color='green!60!black'><br><i>(if the bearer already knows the spell, this has no effect)</i></font>.",
           "option_id": "8o56hn54g34f34g34h54hg54",
           "exportParams": true,
-          "hasOption": ["wizard"]
+          "hasOption": [
+            "wizard"
+          ],
+          "rarity": "Legendary"
         }
       ]
     }
