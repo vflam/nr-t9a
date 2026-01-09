@@ -40,15 +40,9 @@
         {
           "type": "check",
           "refs": ["be_bh_wildherd", "one_use_item"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_bh_wildherd"],
-              "amount": 1
-            }
-          ],
           "name": "Banner of the Wild Herd",
           "cost": 70,
-          "description": "\tOne use only. May be activated during Choose Equipment and Abilities: until the end of the phase, the Str of Rank-and-File models in the unit with Wildhorn is <span class=\"textbf\">set</span> to 4 and the AP is <span class=\"textbf\">set</span> to 1.",
+          "description": "One use only. Duration: One Phase. May be activated during Choose Equipment and Abilities.<br><br>Rank-and-File model parts with Wildhorn in the bearer’s unit have their Str <span class=\"textbf\">set</span> to 4 and their AP <span class=\"textbf\">set</span> to 1.",
           "option_id": "svurt5l35cqgco3p1dorm",
           "rarity": "Uncommon"
         },
@@ -83,12 +77,6 @@
           "type": "check",
           "name": "Hawthorne Curse",
           "cost": 50,
-          "armyHasNotOption": [
-            {
-              "refs": ["we_bh_hawthrone_curse"],
-              "amount": 1
-            }
-          ],
           "refs": ["weaponEnchantUni", "we_bh_hawthrone_curse", "eyeballers"],
           "hasNotOption": [
             {
@@ -100,19 +88,14 @@
               "amount": 1
             }
           ],
-          "description": "\t<span class=\"textbf\">Devastating Charge(+2 Str, +2 AP)</span>. The weapon can be used as a Shooting Weapon (3+) with the following profile: Range 18\", Shots 1, Str 3, AP 10, <span class=\"textbf\">Area Attack (1×5)</span>, <span class=\"textbf\">Direct Hit(Str 6, Multiple Wounds(D3))</span>. This Shooting Attack never suffers negative to-hit modifiers.",
-          "option_id": "rh0cwwhe1wnc7675whhedm"
+          "description": "<span class=\"textbf\">Devastating Charge(+2 Str, +2 AP)</span>.<br><br>The weapon can be used as a Shooting Weapon (3+) with the following profile: Range 18\", Shots 1, Str 3, AP 10, Area Attack (1×5), Direct Hit(Str 6, Multiple Wounds(D3)). This Shooting Attack <span class=\"textbf\">never</span> suffers negative to-hit modifiers.",
+          "option_id": "rh0cwwhe1wnc7675whhedm",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Ancestral Carvings",
           "cost": 50,
-          "armyHasNotOption": [
-            {
-              "refs": ["we_bh_ancestral_carvings"],
-              "amount": 1
-            }
-          ],
           "refs": ["weaponEnchantUni", "we_bh_ancestral_carvings"],
           "hasNotOption": [
             {
@@ -121,7 +104,7 @@
             }
           ],
           "hasOption": ["soothsayer"],
-          "description": "\t+2 Att, +2 Str and +2 AP. <span class=\"textbf\">Distracting(1)</span>.",
+          "description": "+2 Att, +2 Str and +2 AP. <span class=\"textbf\">Distracting(1)</span>.",
           "option_id": "dodc9odxm6edd4ap7yx2fj",
           "rarity": "Uncommon"
         }
@@ -136,15 +119,10 @@
           "name": "Twin Hungers",
           "cost": 20,
           "refs": ["weaponEnchantUni", "we_bh_twin_hungers"],
-          "armyHasNotOption": [
-            {
-              "refs": ["we_bh_twin_hungers"],
-              "amount": 1
-            }
-          ],
           "hasNotOption": ["weaponEnchantUni"],
-          "description": "\t<span class=\"textbf\">Lethal Strike</span>. Melee Attacks that roll a natural ‘6’ to wound and cause HP loss allow the wielder to <span class=\"textbf\">Recover</span> 1 HP at the end of the Agility Step (<i>unless their model was removed as a casualty</i>). Only 1 HP can be regained per phase this way.",
-          "option_id": "4rnff2wpxmlf2w733kkbfa"
+          "description": "<span class=\"textbf\">Lethal Strike</span>. Melee Attacks that roll a ‘6’ to wound and causes a HP loss the wielder may <span class=\"textbf\">Recover</span> 1 HP at the end of the Agility Step (unless their model was removed as a casualty).<br>Only 1 HP can be regained per Phase with this item.",
+          "option_id": "4rnff2wpxmlf2w733kkbfa",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "swi48rruk8lcrym9tovpd7"
@@ -182,15 +160,10 @@
           "name": "Fatal Folly",
           "cost": 25,
           "refs": ["weaponEnchantUni", "bae_bh_fatal_folly"],
-          "armyHasNotOption": [
-            {
-              "refs": ["bae_bh_fatal_folly"],
-              "amount": 1
-            }
-          ],
           "hasNotOption": ["weaponEnchantUni"],
-          "description": "\tFor each Melee Attack against the wielder's model that rolls a natural to-hit roll of ‘1’, the wielder must perform a Standard Melee Attack at the same Agility Step (<i>this overrides the normal restriction that Beast Axe attacks always strike at Agility Step 0</i>). This must be allocated towards the model or Health Pool that rolled the ‘1’ to hit.",
-          "option_id": "wd3ca75xitmr6dopd3yw"
+          "description": "For each Melee Attack against the wielder's model that rolls a to-hit roll of ‘1’, the wielder <span class=\"textbf\">must</span> perform a Standard Melee Attack at the end of the same Agility Step <i>(this overrides the normal restriction that Beast Axe attacks always strike at Agility Step 0)</i>.<br><br>This attack can only be allocated against the Health Pool that rolled the ‘1’ to hit, and is not considered a Standard Melee Attack for the purpose of Restricted Attacks..",
+          "option_id": "wd3ca75xitmr6dopd3yw",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "2adodh0wa86nsfeo1vh1eg"
@@ -210,42 +183,27 @@
           "name": "Aaghor's Affliction",
           "cost": 80,
           "refs": ["la_bh_aagor"],
-          "armyHasNotOption": [
-            {
-              "refs": ["la_bh_aagor"],
-              "amount": 1
-            }
-          ],
           "description": "\t+1 Res and <span class=\"textbf\">Regeneration(4+)</span>. The model automatically fails all its Armour Saves. Model loses Light Armour and Metal Armour.",
-          "option_id": "bzpqrp8lfu796elpz9kv6d"
+          "option_id": "bzpqrp8lfu796elpz9kv6d",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Wild Form",
           "cost": 30,
           "refs": ["ae_bh_wildform"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ae_bh_wildform"],
-              "amount": 1
-            }
-          ],
-          "description": "\tDuring Choose equipment and abilities, the bearer may choose to gain either of the following:\t\t\t-1 Res, +1 Str, and +1 AP\t\t\t+1 Res, -1 Str, and -1 AP\t",
-          "option_id": "6msqpbd9r58nyzsdlecp5r"
+          "description": "Duration: Round of Combat. During Choose Equipment and Abilities, the bearer may gain either of the following:\t<br>\t\t<br>&nbsp;&nbsp;&bull; -1 Res, +1 Str, +1 AP\t\t<br>&nbsp;&nbsp;&bull; +1 Res, -1 Str, -1 AP",
+          "option_id": "6msqpbd9r58nyzsdlecp5r",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Trickster's Cunning",
           "cost": 55,
           "refs": ["la_bh_tricks"],
-          "armyHasNotOption": [
-            {
-              "refs": ["la_bh_tricks"],
-              "amount": 1
-            }
-          ],
           "description": "\t<span class=\"textbf\">Resistance.</span>",
-          "option_id": "e6rfecbwtxqakis1869wjo"
+          "option_id": "e6rfecbwtxqakis1869wjo",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "xaqfw1w7b9d3wly722qjzb"
@@ -258,14 +216,9 @@
           "name": "Obscuring Fog",
           "cost": 15,
           "refs": ["se_bh_obc"],
-          "armyHasNotOption": [
-            {
-              "refs": ["se_bh_obc"],
-              "amount": 1
-            }
-          ],
-          "description": "\t<span class=\"textbf\">Afflict(-1 Agi)</span>.",
-          "option_id": "8orv2975humrs3yrjlmyod"
+          "description": "<span class=\"textbf\">Afflict(-1 Agi)</span>.",
+          "option_id": "8orv2975humrs3yrjlmyod",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "g54bqaxxaxb36msf8o8z7m"
@@ -278,14 +231,9 @@
           "name": "Pillager Icon",
           "cost": 50,
           "refs": ["art_bh_pilla"],
-          "armyHasNotOption": [
-            {
-              "refs": ["art_bh_pilla"],
-              "amount": 1
-            }
-          ],
-          "description": "\tAll friendly units  of Razortusks,  Raiding Chariots and Razortusk Chariots, excluding Characters, within 12\" of the bearer gain <span class=\"textbf\">Vanguard</span>.",
-          "option_id": "op4e6wx0lh8fgscz0ff4f"
+          "description": "All friendly units of Raiding Chariots, Razortusks, and Razortusk Chariots, excluding Characters, within 12\" of the bearer gain <span class=\"textbf\">Vanguard</span>.",
+          "option_id": "op4e6wx0lh8fgscz0ff4f",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
@@ -293,28 +241,18 @@
           "cost": 30,
           "refs": ["art_horn_Bragh"],
           "hasNotOption": ["mount"],
-          "armyHasNotOption": [
-            {
-              "refs": ["art_horn_Bragh"],
-              "amount": 1
-            }
-          ],
-          "description": "\t<span class=\"textbf\">Fury</span> and <span class=\"textbf\">Dying Blow</span>",
-          "option_id": "dsad21dd1d21d12"
+          "description": "Fury, Dying Blow.",
+          "option_id": "dsad21dd1d21d12",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Crown of Madness",
           "cost": 40,
           "refs": ["art_bh_crownhorn"],
-          "armyHasNotOption": [
-            {
-              "refs": ["art_bh_crownhorn"],
-              "amount": 1
-            }
-          ],
-          "description": "\tThe wearer's unit gain Unruly, First Strike(Stubborn). In addition, all units entirely with <span class=\"textbf\">Unruly</span> within range of the wearer's <span class=\"textbf\">Commanding Presence</span> (<i>if applicable</i>) gain <span class=\"textbf\">First Strike(Stubborn)</span>.",
-          "option_id": "ihki12slfspyh2jooujgrp"
+          "description": "The wearer gains <span class=\"textbf\">First Strike(Stubborn)</span>, and the wearer’s unit gains <span class=\"textbf\">Unruly</span>.<br><br>In addition, all units entirely with <span class=\"textbf\">Unruly</span> within range of the wearer’s <span class=\"textbf\">Commanding Presence</span> (if applicable) gain <span class=\"textbf\">First Strike(Stubborn)</span>.",
+          "option_id": "ihki12slfspyh2jooujgrp",
+          "rarity": "Legendary"
         },
         {
           "name": "Mask of Mindless Violence",
@@ -330,12 +268,7 @@
           "option_id": "d9g2jvddypm46iqi",
           "refs": ["spiritcallerscharm"],
           "description": "Channel(2)",
-          "armyHasNotOption": [
-            {
-              "refs": ["spiritcallerscharm"],
-              "amount": 1
-            }
-          ]
+          "rarity": "Legendary"
         }
       ],
       "option_id": "8f7qk3n17qf6mra5melrzh"
@@ -348,28 +281,18 @@
           "name": "Rain Augur Brew",
           "cost": 45,
           "refs": ["art_bh_darkrain", "first_game_turn", "one_use_item"],
-          "armyHasNotOption": [
-            {
-              "refs": ["art_bh_darkrain"],
-              "amount": 1
-            }
-          ],
-          "description": "\tDuration: One Turn. This item is automatically activated at the start of the first Game Turn (if the bearer is not on the Battlefield at this time, the item cannot be used). All Ranged Attacks have -1 to hit.",
-          "option_id": "fsdf2f32f32g34g34g43"
+          "description": "Duration: One Turn. If the bearer is on the Battlefield, this item is automatically activated at the start of the first Game Turn, if not it has no effect.<br><br><span class=\"textbf\">All</span> Ranged Attacks suffer -1 to hit.",
+          "option_id": "fsdf2f32f32g34g34g43",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Seed of the Dark Forest",
           "cost": 40,
           "refs": ["art_bh_seed", "before_game_start", "one_use_item"],
-          "armyHasNotOption": [
-            {
-              "refs": ["art_bh_seed"],
-              "amount": 1
-            }
-          ],
-          "description": "\tDuring Pre-game Selections, place a Forest Terrain Feature:\t\n\t\t<br>&nbsp;&nbsp;&bull;   Touching your Deployment Zone.\t\t<br>&nbsp;&nbsp;&bull;   Not in contact with any other Terrain Feature .\t<br>\n\tThis Forest is a 10\"6\" rectangle.<br>Friendly units entirely with Pack Tactics treat the Forest as part of their Deployment Zone, for the purpose of Deployment.\n    \n",
-          "option_id": "zghtfkske5sunlosr8phil"
+          "description": "During Pre-game Selections, place a Forest:\t<br>\t\t<br>&nbsp;&nbsp;&bull; Touching your Deployment Zone.\t\t<br>&nbsp;&nbsp;&bull; Not in contact with any Terrain Feature .\t<br><br>\tThis Forest is a 10\"6\" rectangle, that can not be chosen for Primary- or Secondary Objectives.<br>Friendly units entirely with <span class=\"textbf\">Pack Tactics</span> treat this Forest as part of their Deployment Zone, for the purpose of where they can be Deployed.<br><br>\tA unit that starts the game in contact with this Forest cannot declare a Charge in the first Player Turn of the first Game Turn.",
+          "option_id": "zghtfkske5sunlosr8phil",
+          "rarity": "Legendary"
         },
         {
           "name": "Potion of Healing",
@@ -2030,11 +1953,6 @@
                       "options": [
                         {
                           "name": "Totem Bearer",
-                          "rules": [
-                            {
-                              "id": "totem_bearers"
-                            }
-                          ],
                           "cost": 20,
                           "type": "check",
                           "optionsLabel": "Bound Spell",
@@ -2362,7 +2280,7 @@
           "options": [
             {
               "name": "Feral Hounds",
-              "cost": 65,
+              "cost": 60,
               "option_id": "7emrtxj5unjsgvu9dwp8d",
               "unit_id": "feralHounds",
               "refs": ["feralhounds", "tag_Beast", "feral_hounds"],
@@ -2883,8 +2801,7 @@
                               "name": "Ambush (Battlefield Edge)",
                               "cost": 1,
                               "option_id": "cnkbgsgrd3eqj4t3",
-                              "refs": ["ambushbattlefieldedge"],
-                              "_perModel": true
+                              "refs": ["ambushbattlefieldedge"]
                             }
                           ]
                         }
