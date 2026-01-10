@@ -55,16 +55,11 @@
         {
           "type": "check",
           "refs": ["scroll_pearl_thrne"],
-          "armyHasNotOption": [
-            {
-              "refs": ["scroll_pearl_thrne"],
-              "amount": 1
-            }
-          ],
           "name": "Scroll of the Pearl Throne",
           "cost": 30,
           "description": "Choose a Magic Item from an enemy unit that is in contact with the bearer. This Magic Item is ignored and ceases to be an Enchanted item. Duration: Permanent.<br><br><i>Note: it still provides its mundane effects.</i>",
-          "option_id": "mccp4vc0dv1dsdarivmhib4nj"
+          "option_id": "mccp4vc0dv1dsdarivmhib4nj",
+          "rarity": "Legendary"
         }
       ]
     },
@@ -94,30 +89,34 @@
         {
           "type": "check",
           "refs": ["be_he_demonbane"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_he_demonbane"],
-              "amount": 1
-            }
-          ],
           "name": "Daemon's Bane",
           "cost": 10,
           "description": "\t+2 Arm against <span class=\"textbf\">Magical Attacks</span>.\n",
-          "option_id": "mccp4vc0dv1rivmhib4nj"
+          "option_id": "mccp4vc0dv1rivmhib4nj",
+          "rarity": "Legendary",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1", "2", "3", "4"]
+              }
+            }
+          }
         },
         {
           "type": "check",
           "refs": ["be_he_metally"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_he_metally"],
-              "amount": 1
-            }
-          ],
           "name": "Star Metal Alloy",
           "cost": 60,
           "description": "+1 Arm, which is improved to +2 Arm for models without Mount.<br>The bearer can <span class=\"textbf\">never</span> be wounded on a roll better than 3+.",
-          "option_id": "jg2zren397hqi4189m1s2"
+          "option_id": "jg2zren397hqi4189m1s2",
+          "rarity": "Legendary",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1", "2", "3", "4"]
+              }
+            }
+          }
         },
         {
           "name": "Ghostly Guard",
@@ -130,16 +129,11 @@
           "hasNotOption": ["mount"],
           "type": "check",
           "refs": ["ae_he_dorcprot"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ae_he_dorcprot"],
-              "amount": 1
-            }
-          ],
           "name": "Protection of Dorac",
           "cost": 50,
           "description": "+3 Def, +3 Arm, and <span class=\"textbf\">Attached</span>.<br>The model’s Armour can <span class=\"textbf\">never</span> be improved beyond 5.",
-          "option_id": "witofkc3psrhnnu14bstl"
+          "option_id": "witofkc3psrhnnu14bstl",
+          "rarity": "Legendary"
         },
         {
           "hasOption": [
@@ -153,16 +147,11 @@
           ],
           "type": "check",
           "refs": ["lae_he_gleamrobe"],
-          "armyHasNotOption": [
-            {
-              "refs": ["lae_he_gleamrobe"],
-              "amount": 1
-            }
-          ],
           "name": "Gleaming Robe",
           "cost": 60,
           "description": "<span class=\"textbf\">Aegis(3+)</span>.<br>The wearer’s Armour is <span class=\"textbf\">set</span> to 1 and can <span class=\"textbf\">never</span> be improved beyond this.<br>If the wearer Miscasts and rolls <span class=\"textbf\">Witchfire</span>, the number of hits are halved (rounding fractions up) for the wearer and its unit.",
-          "option_id": "tb9adb4b5jdui4aplc4hn"
+          "option_id": "tb9adb4b5jdui4aplc4hn",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "dtly4xbft599iskeddostw"
@@ -174,17 +163,11 @@
           "name": "Elemental Blade",
           "type": "check",
           "refs": ["elemental_blade", "weaponEnchantUni"],
-          "armyHasNotOption": [
-            "we_he_elemental_blade",
-            {
-              "refs": ["elemental_blade"],
-              "amount": 1
-            }
-          ],
           "hasNotOption": ["weaponEnchantUni"],
           "cost": 60,
           "description": "+1 Att, +1 Str.<br><br>When Choosing Equipment and Abilities, choose to gain either Flaming Attacks, Lightning Attacks. Duration: Round of Combat.",
-          "option_id": "4o25h0yqvrqo0fujw6ej79"
+          "option_id": "4o25h0yqvrqo0fujw6ej79",
+          "rarity": "Legendary"
         }
       ]
     },
@@ -194,31 +177,21 @@
         {
           "type": "check",
           "refs": ["be_he_navigator"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_he_navigator"],
-              "amount": 1
-            }
-          ],
           "name": "Navigator's Banner",
           "cost": 60,
           "description": "\tThe bearer's unit gains <span class=\"textbf\">First Strike(Aegis(5+))</span>.\n",
-          "option_id": "ttwbrn69c9erw067rkm8e"
+          "option_id": "ttwbrn69c9erw067rkm8e",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "refs": ["be_he_becalm"],
-          "armyHasNotOption": [
-            {
-              "refs": ["be_he_becalm"],
-              "amount": 1
-            }
-          ],
           "hasNotOption": ["core_unit"],
           "name": "Banner of Becalming",
           "cost": 45,
           "description": "In each of the opponent’s Magic Phases, immediately after Excess Magic, the opponent must discard 1 Magic Dice.",
-          "option_id": "25emuhapfmfvqscsopeb5"
+          "option_id": "25emuhapfmfvqscsopeb5",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
@@ -247,12 +220,6 @@
           "cost": 60,
           "option_id": "xvnkon7j6bx09d6m",
           "refs": ["warbannerofryma"],
-          "armyHasNotOption": [
-            {
-              "refs": ["warbannerofryma"],
-              "amount": 1
-            }
-          ],
           "rarity": "Rare",
           "description": "xx"
         }
@@ -286,16 +253,11 @@
           "type": "check",
           "name": "Nova Flare",
           "cost": 90,
-          "armyHasNotOption": [
-            {
-              "refs": ["we_he_nova_flare"],
-              "amount": 1
-            }
-          ],
           "refs": ["weaponEnchantUni", "we_he_nova_flare"],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "Devastating Charge(+1 Att), Lethal Strike, Divine Attacks.\t<br>\tOne use only. May be used when Choosing Equipment and Abilities: the wielder counts as Charging for the purpose of <span class=\"textbf\">Devastating Charge</span> with duration: Round of Combat.",
-          "option_id": "4tdec81m1t3ek1oalxz0v9"
+          "option_id": "4tdec81m1t3ek1oalxz0v9",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "6vp46oxv473kyhv5m2zxrh"
@@ -307,16 +269,11 @@
           "type": "check",
           "name": "Sliver of the Blazing Dawn",
           "cost": 90,
-          "armyHasNotOption": [
-            {
-              "refs": ["we_he_silver_blaze_dawn"],
-              "amount": 1
-            }
-          ],
           "refs": ["weaponEnchantUni", "we_he_silver_blaze_dawn"],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "+1 Str, +2 AP.<br>Each successful to-hit roll with this weapon causes two hits instead of one.",
-          "option_id": "no5u10n70s96kpwl7ooi9h"
+          "option_id": "no5u10n70s96kpwl7ooi9h",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "kvhby719vh7j2ntsqj9o5"
@@ -328,12 +285,6 @@
           "type": "check",
           "name": "Cadaron's Heartwood",
           "cost": 80,
-          "armyHasNotOption": [
-            {
-              "refs": ["we_he_elus_heart"],
-              "amount": 1
-            }
-          ],
           "refs": [
             "weaponEnchantUni",
             "we_he_elus_heart",
@@ -344,7 +295,8 @@
           ],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "\tShots 3, Str as user +1, and AP as user +1.\n",
-          "option_id": "6tbdq3x7ggmgzuowaqxy18"
+          "option_id": "6tbdq3x7ggmgzuowaqxy18",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "kycca2o3u6224xoobiq5j"
@@ -361,29 +313,26 @@
           "type": "check",
           "name": "Book of Meladys",
           "cost": 60,
-          "armyHasNotOption": [
-            {
-              "refs": ["art_he_meladys"],
-              "amount": 1
-            }
-          ],
           "refs": ["art_he_meladys", "dominant"],
           "description": "The first time in each Magic Phase that the bearer fails a Casting Roll for a Learned Spell cast with two or three Magic Dice, the bearer may reroll all Magic Dice.",
-          "option_id": "ykn689uouxlhwso08fne8"
+          "option_id": "ykn689uouxlhwso08fne8",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Diadem of Protection",
           "cost": 80,
-          "armyHasNotOption": [
-            {
-              "refs": ["art_he_diadem"],
-              "amount": 1
-            }
-          ],
           "refs": ["art_he_diadem"],
           "description": "<span class=\"textbf\">Aegis(+2, max 4+)</span>.",
-          "option_id": "qjqnpbhzwik9xqjnecsr88"
+          "option_id": "qjqnpbhzwik9xqjnecsr88",
+          "rarity": "Legendary",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1", "2", "3", "4"]
+              }
+            }
+          }
         },
         {
           "type": "check",
@@ -391,14 +340,9 @@
           "cost": 60,
           "hasOption": ["wizard"],
           "refs": ["art_he_amecrys"],
-          "armyHasNotOption": [
-            {
-              "refs": ["art_he_amecrys"],
-              "amount": 1
-            }
-          ],
           "description": "Unless the bearer is <span class=\"textbf\">Shaken</span>, Dispelling Rolls made by the bearer’s army gain a +1 modifier; if the target of an enemy spell is within 18\" of the bearer, that modifier is increased to +2.",
-          "option_id": "sxhmenal9xbhx17uial30r"
+          "option_id": "sxhmenal9xbhx17uial30r",
+          "rarity": "Legendary"
         },
         {
           "name": "Rod of Battle",
@@ -834,7 +778,7 @@
                       "name": "Sky Sloop",
                       "cost": 210,
                       "options": [],
-                      "refopt": "sky_sloop_mount",
+                      "refopt": "skySloopMount",
                       "option_id": "o1r0tqkbbei7k7tocjw7uv",
                       "refs": ["skysloop"]
                     },
@@ -1050,27 +994,20 @@
                   "type": "group",
                   "name": "Options",
                   "optionsLabel": "Options",
-                  "option_id": "j3ci3kbq8640krhr",
+                  "option_id": "vjcs33roaagliy6x",
                   "options": [
-                    {
-                      "type": "check",
-                      "name": "A single Honour",
-                      "cost": 9999,
-                      "option_id": "cs7xc00jghuef089",
-                      "refs": ["asinglehonour"]
-                    },
                     {
                       "type": "check",
                       "name": "Fae Miasma, Scout, Exclusive (Grey Watchers)",
                       "cost": 0,
-                      "option_id": "ry5teci7zpj8lfod",
+                      "option_id": "78zd2bhcqfpgakl7",
                       "refs": ["queenscompaniongreywatcheroption"]
                     },
                     {
                       "type": "check",
                       "name": "Moonlight Arrows",
                       "cost": 10,
-                      "option_id": "w6pvdi0jw660q40r",
+                      "option_id": "3zi06krzle6y9jul",
                       "refs": ["moonlightarrows"]
                     }
                   ]
@@ -1191,7 +1128,7 @@
                       "name": "Sky Sloop",
                       "cost": 240,
                       "options": [],
-                      "refopt": "sky_sloop_mount",
+                      "refopt": "skySloopMount",
                       "option_id": "ydu4cpz2n2hroortvy3h3",
                       "hasNotOption": ["captain"],
                       "refs": ["skysloop"]
@@ -1428,13 +1365,6 @@
                   "optionsLabel": "Options",
                   "option_id": "i8aez983oult7mi8",
                   "options": [
-                    {
-                      "type": "check",
-                      "name": "A single Honour",
-                      "cost": 9999,
-                      "option_id": "5pnuqh291x9ssobm",
-                      "refs": ["asinglehonour"]
-                    },
                     {
                       "type": "check",
                       "name": "Fae Miasma, Scout, Exclusive (Grey Watchers)",
@@ -1747,21 +1677,6 @@
                     }
                   ],
                   "option_id": "lg5csmtjcvlt1d52mlcc"
-                },
-                {
-                  "type": "group",
-                  "name": "Options",
-                  "optionsLabel": "Options",
-                  "option_id": "40ob7q405tmangdi",
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "A single Honour",
-                      "cost": 9999,
-                      "option_id": "zwdplj4xfzvzg6yt",
-                      "refs": ["asinglehonour"]
-                    }
-                  ]
                 }
               ],
               "category": "perso",
@@ -2652,36 +2567,28 @@
               "rarity": "Rare",
               "height": "4",
               "basesize": "50×100",
-              "options": [
-                {
-                  "type": "check",
-                  "name": "Wizard Conclave (2)",
-                  "cost": 0,
-                  "option_id": "nf328fn823f923f3892f32f32",
-                  "replaceSpells": true,
-                  "magic": {
-                    "amount": 2,
-                    "spells": [
-                      {
-                        "path": "alchemy",
-                        "ref": "molten_copper"
-                      },
-                      {
-                        "path": "alchemy",
-                        "ref": "living_steel"
-                      },
-                      {
-                        "path": "pyromancy",
-                        "ref": "flaming_swords"
-                      },
-                      {
-                        "path": "pyromancy",
-                        "ref": "pyroclastic_flow"
-                      }
-                    ]
+
+              "magic": {
+                "amount": 2,
+                "spells": [
+                  {
+                    "path": "pyromancy",
+                    "ref": "dragon's_roar"
+                  },
+                  {
+                    "path": "pyromancy",
+                    "ref": "pyroclastic_flow"
+                  },
+                  {
+                    "path": "alchemy",
+                    "ref": "living_steel"
+                  },
+                  {
+                    "path": "alchemy",
+                    "ref": "corruption_of_tin"
                   }
-                }
-              ],
+                ]
+              },
               "armyHasNotOption": [],
               "logo": "special",
               "minSize": 1,
@@ -3049,7 +2956,7 @@
               "logo": "character"
             },
             {
-              "name": "Sky Sloop (mount) *Mount",
+              "name": "Sky Sloop *Mount",
               "cost": 0,
               "option_id": "dq2quszoxaoagh4pbsvxf",
               "unit_id": "skySloopMount",
