@@ -417,16 +417,20 @@
             "amount": 3,
             "spells": [
               {
+                "path": "cosmology",
+                "ref": "altered_sight"
+              },
+              {
+                "path": "witchcraft",
+                "ref": "mind_fog"
+              },
+              {
                 "path": "hereditary",
                 "ref": "favour_meladys"
               },
               {
                 "path": "alchemy",
                 "ref": "living_steel"
-              },
-              {
-                "path": "cosmology",
-                "ref": "altered_sight"
               },
               {
                 "path": "druidism",
@@ -439,10 +443,6 @@
               {
                 "path": "shamanism",
                 "ref": "predator's_instinct"
-              },
-              {
-                "path": "witchcraft",
-                "ref": "evil_eye"
               }
             ]
           },
@@ -587,26 +587,6 @@
           "neverHide": true,
           "cost": 30,
           "description": "The model’s Longbow Shots are <span class=\"textbf\">set</span> to 3, and the model’s unit gains <span class=\"textbf\">Accurate</span>.",
-          "maxSize": 1,
-          "minSize": 1,
-          "optionsLabel": "Options",
-          "options": [
-            {
-              "type": "check",
-              "cost": 10,
-              "name": "Moonlight Arrows",
-              "option_id": "tic7hct2yklxpzyg9zf2b",
-              "description": "Can only be used with Longbows without Weapon Enchantments.<br>The attack gains Flaming Attacks, Magical Attacks, and its Strength is <span class=\"textbf\">set</span> to 4.",
-              "rarity": "Legendary"
-            },
-            {
-              "type": "check",
-              "cost": 0,
-              "name": "Fae Miasma, Scout, Exclusive (Grey Watchers)",
-              "option_id": "95y10nd4l0upmswkgtuv7b",
-              "rarity": "Legendary"
-            }
-          ],
           "option_id": "2g0ba3yqbxu89ipnxvg56r",
           "hasOption": [
             {
@@ -666,7 +646,6 @@
                 {
                   "type": "group",
                   "option_id": "dfn17dl33ypboq374a6ibj",
-                  "name": "Leadership",
                   "optionsLabel": "Leadership",
                   "options": [
                     {
@@ -743,7 +722,7 @@
                       "refopt": "skySloopMount",
                       "option_id": "o1r0tqkbbei7k7tocjw7uv",
                       "refs": ["skysloop"],
-                      "hasOption": ["fleetofficer"]
+                      "hasOption": ["fleetOfficer"]
                     },
                     {
                       "type": "check",
@@ -752,7 +731,7 @@
                       "cost": 120,
                       "option_id": "47ax1yjehhj9u6kzwvcuyd",
                       "refs": ["lionchariot"],
-                      "hasOption": ["royalhuntsman"]
+                      "hasOption": ["royalHuntsman"]
                     },
                     {
                       "type": "check",
@@ -825,7 +804,6 @@
                     },
                     {
                       "type": "group",
-                      "name": "Close Combat Weapon",
                       "collapsible": true,
                       "optionsLabel": "Close Combat Weapon",
                       "maxSize": 1,
@@ -956,7 +934,6 @@
                 },
                 {
                   "type": "group",
-                  "name": "Options",
                   "optionsLabel": "Options",
                   "option_id": "vjcs33roaagliy6x",
                   "options": [
@@ -966,7 +943,7 @@
                       "cost": 0,
                       "option_id": "78zd2bhcqfpgakl7",
                       "refs": ["queenscompaniongreywatcheroption"],
-                      "hasOption": ["queenscompanion"]
+                      "hasOption": ["queensCompanion"]
                     },
                     {
                       "type": "check",
@@ -974,9 +951,11 @@
                       "cost": 10,
                       "option_id": "3zi06krzle6y9jul",
                       "refs": ["moonlightarrows"],
-                      "hasOption": ["queenscompanion"]
+                      "hasOption": ["queensCompanion"]
                     }
-                  ]
+                  ],
+                  "minSize": 1,
+                  "maxSize": 1
                 }
               ],
               "logo": "character"
@@ -994,7 +973,6 @@
                 {
                   "type": "group",
                   "option_id": "hrtc4ijrfuefzgg186bked",
-                  "name": "Leadership",
                   "optionsLabel": "Leadership",
                   "options": [
                     {
@@ -1098,7 +1076,7 @@
                       "option_id": "ydu4cpz2n2hroortvy3h3",
                       "hasNotOption": ["captain"],
                       "refs": ["skysloop"],
-                      "hasOption": ["fleetofficer"]
+                      "hasOption": ["fleetOfficer"]
                     },
                     {
                       "type": "check",
@@ -1108,14 +1086,14 @@
                       "option_id": "uz1k5m7y93zqghq4bk9eo",
                       "hasNotOption": ["captain"],
                       "refs": ["lionchariot"],
-                      "hasOption": ["royalhuntsman"]
+                      "hasOption": ["royalHuntsman"]
                     },
                     {
                       "type": "check",
                       "name": "Regal Dragon",
                       "cost": 380,
                       "refopt": "regalDragonMount",
-                      "hasOption": ["queenscavalier"],
+                      "hasOption": ["queensCavalier"],
                       "option_id": "dzoxdy2hynbzcfyirm1g3",
                       "hasNotOption": ["captain"],
                       "refs": ["regaldragon"]
@@ -1192,7 +1170,6 @@
                     },
                     {
                       "type": "group",
-                      "name": "Close Combat Weapon",
                       "collapsible": true,
                       "optionsLabel": "Close Combat Weapon",
                       "maxSize": 1,
@@ -1323,7 +1300,6 @@
                 },
                 {
                   "type": "group",
-                  "name": "Options",
                   "optionsLabel": "Options",
                   "option_id": "i8aez983oult7mi8",
                   "options": [
@@ -1333,7 +1309,7 @@
                       "cost": 0,
                       "option_id": "tanb01weutf4r8b8",
                       "refs": ["queenscompaniongreywatcheroption"],
-                      "hasOption": ["queenscompanion"]
+                      "hasOption": ["queensCompanion"]
                     },
                     {
                       "type": "check",
@@ -1341,9 +1317,11 @@
                       "cost": 10,
                       "option_id": "po9ny1viv2do53bb",
                       "refs": ["moonlightarrows"],
-                      "hasOption": ["queenscompanion"]
+                      "hasOption": ["queensCompanion"]
                     }
-                  ]
+                  ],
+                  "minSize": 1,
+                  "maxSize": 1
                 }
               ],
               "logo": "character"
@@ -1361,7 +1339,6 @@
                 {
                   "type": "group",
                   "option_id": "fgatmxqn07wyrh48n6hqh",
-                  "name": "Leadership",
                   "optionsLabel": "Leadership",
                   "options": [
                     {
@@ -1505,7 +1482,7 @@
                       "name": "Griffon",
                       "cost": 90,
                       "refopt": "griffonMount",
-                      "hasOption": ["wizardmaster"],
+                      "hasOption": ["wizardMaster"],
                       "option_id": "zjx221rvu9j1xwatwfbk",
                       "refs": ["griffon"]
                     },
@@ -1516,7 +1493,7 @@
                       "refopt": "regalDragonMount",
                       "hasOption": [
                         {
-                          "refs": ["wizardmaster", "orderofthefieryheart"],
+                          "refs": ["wizardMaster", "orderOfTheFieryHeart"],
                           "amount": 1
                         }
                       ],
@@ -1548,7 +1525,7 @@
                     {
                       "type": "check",
                       "name": "Shield",
-                      "hasOption": ["orderofthefieryheart"],
+                      "hasOption": ["orderOfTheFieryHeart"],
                       "cost": 5,
                       "optionsLabel": "Shield Enchant",
                       "maxSize": 1,
@@ -1566,7 +1543,7 @@
                       "options": [],
                       "option_id": "f3ef2399875348jjjj93r3",
                       "ignoreCost": true,
-                      "hasOption": ["orderofthefieryheart"],
+                      "hasOption": ["orderOfTheFieryHeart"],
                       "refs": ["dragonforgedarmour"]
                     },
                     {
@@ -1594,7 +1571,7 @@
                           "optionsSuffix": " (Paired Weapons)",
                           "sortOptions": true,
                           "collapsible": true,
-                          "hasOption": ["orderofthefieryheart"],
+                          "hasOption": ["orderOfTheFieryHeart"],
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
                           "option_id": "4najrzjfhm2p261owdjoq",
@@ -2358,7 +2335,6 @@
               "options": [
                 {
                   "type": "group",
-                  "name": "Type",
                   "optionsLabel": "Type",
                   "minSize": 1,
                   "maxSize": 1,
