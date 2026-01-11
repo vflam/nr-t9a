@@ -547,7 +547,7 @@
           "refs": ["queensCavalier"],
           "neverHide": true,
           "cost": 25,
-          "description": "The bearer gains <span class=\"textbf\">First Strike (+1 Att, +1 Off)</span> and the bearers unit <span class=\"textbf\">may</span> reroll failed Charge Range rolls. <br><br> If the model has Height 5, Regal Dragons and Ancient Dragons replace their Ancient Allies (2) rule with <span class=\"textbf\">Ancient Allies (1)</span>, and Phoenixes replace Ancient Allies (1) with <span class=\"textbf\">Ancient Allies (2)</span>.",
+          "description": "The model part gains <span class=\"textbf\">First Strike(+1 Att, +1 Off)</span> and the model’s unit <span class=\"textbf\">may</span> reroll failed Charge Range rolls.\t<br><br>\tIf the model has Height 5, Regal Dragon and Ancient Dragon replace their Ancient Allies(2) with <span class=\"textbf\">Ancient Allies(1)</span>, and Phoenix replace Ancient Allies(1) with <span class=\"textbf\">Ancient Allies(2)</span>.",
           "hasOption": [
             {
               "refs": ["elven_horse_mount", "mountDragon"],
@@ -586,7 +586,7 @@
           ],
           "neverHide": true,
           "cost": 30,
-          "description": "The model’s Longbow Shots are <span class=\"textbf\">set</span> to 3, and the model’s unit gains <span class=\"textbf\">Accurate</span>.",
+          "description": "The model’s Longbow Shots are <span class=\"textbf\">set</span> to 3, and the model’s unit gains <span class=\"textbf\">Accurate</span>.\t<br><br>\t <span class=\"textbf\">Must</span> choose (one option only):\t<br/> •Fae Miasma, Scout,<br>\t<br>Exclusive(Grey Watchers): free<br>\t<br/> •Moonlight Arrows: 10",
           "option_id": "2g0ba3yqbxu89ipnxvg56r",
           "hasOption": [
             {
@@ -1624,49 +1624,130 @@
               "option_id": "21ykhqu0hno95v7g",
               "unit_id": "acadnathTheScholar",
               "maxUnitCost": 650,
-              "refs": ["acadnaththescholar", "wizard", "wizardMaster", "tag_Elf"],
-              "magic": {
-                "amount": 8,
-                "spells": [
-                  {
-                    "path": "cosmology",
-                    "ref": "altered_sight"
-                  },
-                  {
-                    "path": "cosmology",
-                    "ref": "truth_time"
-                  },
-                  {
-                    "path": "cosmology",
-                    "ref": "weal_and_woe"
-                  },
-                  {
-                    "path": "cosmology",
-                    "ref": "cosmic_scales"
-                  },
-                  {
-                    "path": "divination",
-                    "ref": "foresight"
-                  },
-                  {
-                    "path": "divination",
-                    "ref": "immortal's_bane"
-                  },
-                  {
-                    "path": "divination",
-                    "ref": "the_stars_align"
-                  },
-                  {
-                    "path": "divination",
-                    "ref": "augury_of_triumph"
-                  }
-                ]
-              },
+              "refs": ["acadnathTheScholar", "tag_Elf", "acadnaththescholar", "wizard", "wizardMaster"],
               "size": "1",
               "rarity": "Legendary",
               "height": "1",
               "basesize": "20×20",
-              "options": []
+              "options": [
+                {
+                  "type": "group",
+                  "optionsLabel": "Bound Spells",
+                  "minSize": 8,
+                  "maxSize": 8,
+                  "option_id": "40tnd01nrxt4unlh",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Altered Sight",
+                      "cost": 0,
+                      "option_id": "2ryj2vo52m7nqvwy",
+                      "boundSpells": [
+                        {
+                          "path": "cosmology",
+                          "ref": "altered_sight"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Truth of Time",
+                      "cost": 0,
+                      "option_id": "gxnrkeytr1pj1wyk",
+                      "boundSpells": [
+                        {
+                          "path": "cosmology",
+                          "ref": "truth_time"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Weal and Woe",
+                      "cost": 0,
+                      "option_id": "g4dk9n28icnomtlx",
+                      "boundSpells": [
+                        {
+                          "path": "cosmology",
+                          "ref": "weal_and_woe"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Ice and Fire",
+                      "cost": 0,
+                      "option_id": "fp6yiepbkwkvhd2w",
+                      "boundSpells": [
+                        {
+                          "path": "cosmology",
+                          "ref": "ice_fire"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Foresight",
+                      "cost": 0,
+                      "option_id": "2xpn62zs30jrucks",
+                      "boundSpells": [
+                        {
+                          "path": "divination",
+                          "ref": "foresight"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Immortal's Bane",
+                      "cost": 0,
+                      "option_id": "x7k1ke3fxibnzxzd",
+                      "boundSpells": [
+                        {
+                          "path": "divination",
+                          "ref": "immortal's_bane"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "The Stars Align",
+                      "cost": 0,
+                      "option_id": "rgdcudyn55uur5ip",
+                      "boundSpells": [
+                        {
+                          "path": "divination",
+                          "ref": "the_stars_align"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Augury of Triumph",
+                      "cost": 0,
+                      "option_id": "3zfwezh3juwt84qe",
+                      "boundSpells": [
+                        {
+                          "path": "divination",
+                          "ref": "augury_of_triumph"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Favour of Meladys",
+                      "cost": 0,
+                      "option_id": "wn3kel4djll1wmkm",
+                      "boundSpells": [
+                        {
+                          "path": "hereditary",
+                          "ref": "favour_meladys"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "Dhaenala, the Wyrmkin",
@@ -1674,7 +1755,15 @@
               "option_id": "ufmr5xodlqj6miev",
               "unit_id": "tenaclaTheRogueDragonrider",
               "maxUnitCost": 750,
-              "refs": ["tenaclatheroguedragonrider", "tag_Elf", "tag_Metal Armour", "tag_Beast", "tag_Dragon", "tag_Mount"],
+              "refs": [
+                "tenaclaTheRogueDragonrider",
+                "tag_Elf",
+                "tag_Metal Armour",
+                "tag_Beast",
+                "tag_Dragon",
+                "tag_Mount",
+                "tenaclatheroguedragonrider"
+              ],
               "size": "1",
               "rarity": "Legendary",
               "height": "5",

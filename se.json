@@ -324,7 +324,7 @@
           "name": "Shapeshifter",
           "cost": 30,
           "hasNotOption": ["mount", "attached"],
-          "description": "The model gains +2\" Cha and +2\" Mob, as well as Solitary,Vanguard, Multiple Wounds (2, towards Height 4-5), Devastating Charge (Height is set to 3).",
+          "description": "Units containing <span class=\"textbf\">Solitary</span> can never join other units, and can never be joined by other models.",
           "option_id": "m8hkm4kcdg05ha2aswdu3",
           "refs": ["solitary"],
           "rarity": "Legendary"
@@ -1683,7 +1683,7 @@
               "cost": 300,
               "option_id": "sa7cgss4q5fkcs5q",
               "unit_id": "domethlocTheUnicornShapeshifter",
-              "refs": ["domethloctheunicornshapeshifter", "tag_Elf"],
+              "refs": ["domethlocTheUnicornShapeshifter", "tag_Elf", "domethloctheunicornshapeshifter"],
               "size": "1",
               "rarity": "Legendary",
               "height": "1",
@@ -1691,11 +1691,11 @@
               "options": []
             },
             {
-              "name": "General Dawael, the World Tree,",
+              "name": "Ancient Dawael, the World Tree,",
               "cost": 600,
               "option_id": "tx6n0so100id6wc2",
               "unit_id": "dwatobelTheWorldwanderingTree",
-              "refs": ["dwatobeltheworldwanderingtree", "wizard", "wizardAdept", "tag_Sylvan Spirit"],
+              "refs": ["dwatobelTheWorldwanderingTree", "tag_Sylvan Spirit", "dwatobeltheworldwanderingtree", "wizard", "wizardAdept"],
               "size": "1",
               "rarity": "Legendary",
               "height": "5",
@@ -1733,7 +1733,36 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "magic": {
+                "amount": 4,
+                "spells": [
+                  {
+                    "path": "druidism",
+                    "ref": "fountain_of_youth"
+                  },
+                  {
+                    "path": "druidism",
+                    "ref": "veil_of_mist"
+                  },
+                  {
+                    "path": "hereditary",
+                    "ref": "forest_embrace"
+                  },
+                  {
+                    "path": "alchemy",
+                    "ref": "corruption_of_tin"
+                  },
+                  {
+                    "path": "witchcraft",
+                    "ref": "illusory_paths"
+                  },
+                  {
+                    "path": "evocation",
+                    "ref": "chorus_of_the_damned"
+                  }
+                ]
+              }
             }
           ],
           "option_id": "58b8y7r1klm8lrnl1wloo5"
