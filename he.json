@@ -374,13 +374,13 @@
           "cost": 65,
           "description": "The model gains <span class=\"textbf\">Channel (1)</span>. <br> The Range of the Wizard’s Learned Spells is increased by 6\". <br>Aura spells gain +3\" Range instead, while spells with type Caster are unaffected.",
           "option_id": "1m3l1g1sss13v4puohy5yn",
-          "refs": ["asfal_scholar"],
+          "refs": ["asfadScholar", "asfal_scholar"],
           "rarity": "Extraordinary"
         },
         {
           "type": "check",
           "name": "Order of the Fiery Heart",
-          "refs": ["orderofthefieryheart", "tag_Metal Armour"],
+          "refs": ["orderOfTheFieryHeart", "orderofthefieryheart", "tag_Metal Armour"],
           "cost": 20,
           "description": "Order of the Fiery Heart",
           "option_id": "9jcefl5fu94ha7sdlla6lu",
@@ -395,7 +395,7 @@
         {
           "type": "check",
           "name": "Master of Canreig Tower",
-          "refs": ["master_canreig", "wizard", "protean_magic"],
+          "refs": ["masterOfCanreigTower", "master_canreig", "wizard", "protean_magic"],
           "hasOption": [
             {
               "refs": ["light_troops", "elven_horse_mount", "giant_eagle_mount"],
@@ -445,7 +445,7 @@
         {
           "type": "check",
           "name": "High Warden of the Flame",
-          "refs": ["high_warden"],
+          "refs": ["highWardenOfTheFlame", "high_warden"],
           "neverHide": true,
           "cost": 70,
           "description": "The model gains Aegis (4+), Fearless, Stubborn.",
@@ -465,7 +465,7 @@
         {
           "type": "check",
           "name": "Fleet Officer",
-          "refs": ["fleet_officer"],
+          "refs": ["fleetOfficer", "fleet_officer"],
           "neverHide": true,
           "hasOption": [
             {
@@ -481,7 +481,7 @@
         {
           "type": "check",
           "name": "Grandmaster of the Sword",
-          "refs": ["grandmaster_of_the_sword"],
+          "refs": ["grandmasterOfTheSword", "grandmaster_of_the_sword"],
           "neverHide": true,
           "cost": 20,
           "description": "The model gains , First Strike (+1 Def, +1 Off), Sword Sworn. <br>While joined to a unit containing Sword Masters, the model's unit benefits from +1 Agi.",
@@ -2602,12 +2602,6 @@
               ],
               "refs": ["highbornGiant", "ancient_allies"],
               "unit_id": "highbornGiant",
-              "armyHasNotOption": [
-                {
-                  "refs": ["highbornGiant"],
-                  "amount": 3
-                }
-              ],
               "option_id": "a17bx384p6rzvktpl1f39b",
               "logo": "special"
             },
@@ -2631,12 +2625,6 @@
               "height": "2",
               "basesize": "60×60",
               "options": [],
-              "armyHasNotOption": [
-                {
-                  "refs": ["sea_guard_reaper_or_sky_sloop"],
-                  "amount": 3
-                }
-              ],
               "logo": "special"
             },
             {
@@ -2682,9 +2670,7 @@
                 ]
               },
               "armyHasNotOption": [],
-              "logo": "special",
-              "minSize": 1,
-              "maxSize": 1
+              "logo": "special"
             },
             {
               "name": "Sky Sloop",
@@ -2708,12 +2694,6 @@
               "height": "4",
               "basesize": "50×100",
               "options": [],
-              "armyHasNotOption": [
-                {
-                  "refs": ["sea_guard_reaper_or_sky_sloop"],
-                  "amount": 3
-                }
-              ],
               "logo": "special",
               "sharedRarity": "dq2quszoxaoagh4pbsvxf"
             },
