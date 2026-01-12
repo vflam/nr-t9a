@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 410,
+  "nrversion": 412,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -6038,27 +6038,16 @@
     },
     "vc-black_standard_of_zagvozd": {
       "title": "Black Standard of Zagvozd",
-      "def": "/subsection{black_standard_of_zagvozd}",
+      "def": "<span class='gray'>Barrow Guard and Barrow Knights only</span><br/>Melee Attacks made, by Skeleton model parts without Mount, in the bearer’s unit gain +1 to-hit.",
+      "type": "banner",
       "mod": [
         {
-          "affects": ["offense"],
-          "rollmodifiers": {
-            "to_hit": "+1"
-          },
-          "conditions": [
-            {
-              "hasrule": {
-                "id": "rulebook-harnessed",
-                "value": false
-              }
-            },
-            {
-              "character": false
-            }
-          ]
+          "affect_rf": true,
+          "rules": {
+            "id": "bsoz_aura"
+          }
         }
-      ],
-      "aura": true
+      ]
     },
     "vc-banner_of_eldritch_might": {
       "title": "Banner of Eldritch Might",
@@ -11548,10 +11537,42 @@
       "title": "Gone but not Forgotten",
       "def": "If Valish is removed as a casualty, all friendly model parts with Ogre gain <span class=\"textbf\">Hatred (against the unit that caused Valish to be removed as a casualty*)</span>. Duration: Permanent. <br> * This includes all models joined to it."
     },
+    "bh-aaghorsAffliction": {
+      "title": "Aaghor's Affliction",
+      "def": "+1 Res, and <span class=\"textbf\">Regeneration (4+)</span>. <br>The model loses Light Armour, Metal Armour, and automatically fails all its Armour Saves."
+    },
+    "bh-trickstersCunning": {
+      "title": "Trickster's Cunning",
+      "def": "<span class=\"textbf\">Resistance.</span>"
+    },
+    "bh-spiritCallersCharm": {
+      "title": "Spirit Caller's Charm",
+      "def": "<span class=\"textbf\">Channel (2)</span>"
+    },
     "de-krakensHide": {
       "title": "Kraken's Hide",
       "def": "The wearer gains +1 Armour and <span class=\"textbf\">Strider (Water Terrain)</span>.",
       "type": "Armour"
+    },
+    "de-caedhrensPennon": {
+      "title": "Caedhren's Pennon",
+      "def": "While the bearer’s unit is part of a Combined Charge, that unit, as well as all other units that are Charging the same target, <span class=\"textbf\">must</span> reroll failed Charge Range rolls, and gain <span class=\"textbf\">Devastating Charge (Hard Target (1))</span>."
+    },
+    "de-ceinransScales": {
+      "title": "Ceinran's Scales",
+      "def": "The bearer can cast <i>Whispers of the Veil</i> (Evocation) as a <span class=\"textbf\">Bound Spell (4+)</span>."
+    },
+    "de-moithirsMirror": {
+      "title": "Moithir's Mirror",
+      "def": "The bearer gains <span class=\"textbf\">Aegis (5+, against Melee Attacks)</span>. If one or more Melee Attacks are allocated against the bearer, it gains <span class=\"textbf\">Grind Attack (3, Str 4, AP 2, Magical Attacks, Unmodifiable)</span>, with Duration: Round of Combat. <br> This <span class=\"textbf\">Grind Attack</span> is <span class=\"textbf\">always</span> resolved with Agi 0.<br><i>(Note that attacks made at Agility Step 0 can trigger this effect.)</i>"
+    },
+    "de-ringOfTheObsidianThrones": {
+      "title": "Ring of Obsidian Thrones",
+      "def": "Unless the wearer is <span class=\"textbf\">Shaken</span>, Break Tests and Panic Tests taken by friendly units within 6\" of the wearer gain <span class=\"textbf\">Minimised</span>."
+    },
+    "de-beastmastersVial": {
+      "title": "Beastmaster's Vial",
+      "def": "One use only. Duration: End of Combat <br>May be activated at the start of <span class=\"textbf\">any</span> Round of Combat. One friendly unit entirely with Beast within 12\" of the bearer gains <span class=\"textbf\">Dying Blow</span>."
     },
     "dh-runeOfDragonsBreath": {
       "title": "Rune of Dragon's Breath",
@@ -11594,6 +11615,22 @@
     "swiftAnger": {
       "title": "Swift Anger",
       "def": "Whenever the model loses a Health Point, it gains +1 Agi. <br>Whenever it <span class=\"textbf\">Recovers</span> or <span class=\"textbf\">Raises</span> a Health Point, it suffers -1 Agi"
+    },
+    "eos-blackSteel": {
+      "title": "Black Steel",
+      "def": "+1 Arm, and if the wearer is without \\textit{Mount}, it gains an additional +1 Arm. \\textbf{Immune (Flaming Attacks)}."
+    },
+    "eos-marksmansPennant": {
+      "title": "Marksman's Pennant",
+      "def": "The bearer’s unit gains <span class=\"textbf\">Stand and Shoot</span>."
+    },
+    "eos-exemplarsFlame": {
+      "title": "Exemplar's Flame",
+      "def": "The bearer can cast <i>Corruption of Tin</i> (Alchemy) as a Bound Spell (3+)."
+    },
+    "eos-ullorsHorn": {
+      "title": "Ullor's Horn",
+      "def": "Enemy units within 8\" of the bearer lose the <span class=\"textbf\">Charging Momentum</span> Agility bonus as well as the +1 Combat Score bonus from Charging."
     },
     "auraofpowernote": {
       "title": "auraofpowernote",
@@ -11639,9 +11676,37 @@
       "def": "The model’s Longbow Shots are <span class=\"textbf\">set</span> to 3, and the model’s unit gains <span class=\"textbf\">Accurate</span>.",
       "type": "Honour Prince"
     },
+    "he-cadaronsHeartwood": {
+      "title": "Cadaron's Heartwood",
+      "def": "Shots 3, Str as user +1, AP as user +1."
+    },
+    "he-daemonsBane": {
+      "title": "Daemon's Bane",
+      "def": "+2 Arm against <span class=\"textbf\">Magical Attacks</span>."
+    },
+    "he-warBannerOfRyma": {
+      "title": "War Banner of Ryma",
+      "def": "A unit with one or more <i>War Banners of Rymâ</i> gains +1\" Cha. <br>In addition, Rank-and-File model parts with Elf in the unit gain <span class=\"textbf\">Devastating Charge (+1 Str)</span>."
+    },
+    "he-navigatorsBanner": {
+      "title": "Navigators Banner",
+      "def": "The bearer’s unit gains <span class=\"textbf\">First Strike (Aegis (5+))</span>."
+    },
     "id-infernalWeapon": {
       "title": "Infernal Weapon - Melee Weapon",
       "def": "+1 Str, +1 AP."
+    },
+    "id-bannerOfTheTwiceBranded": {
+      "title": "Banner of the Twice Branded",
+      "def": "Models in the bearer's unit gain Shoot in Extra Rank."
+    },
+    "id-theirMastersBanner": {
+      "title": "Their Master's Banner",
+      "def": "<span class='gray'>Models with Vassals only.</span><br/>Apply the following effects while the bearer’s unit is within range of a friendly model’s <span class=\"textbf\">Commanding Presence</span>: <br>&nbsp;&nbsp;&bull; Model parts with Vassal in the bearer’s unit gain <span class=\"textbf\">Fury</span>. <br>&nbsp;&nbsp;&bull; The bearer’s unit <span class=\"textbf\">must</span> reroll failed Charge Range rolls in the Charge Phase. <br>"
+    },
+    "id-lugarsDice": {
+      "title": "Lugar's Dice",
+      "def": "A single model part of the bearer’s model can reroll a single failed to-hit, to-wound, or Armour Save roll per Player Turn. <br>This cannot be used for <span class=\"textbf\">Crush Attacks</span>."
     },
     "firingPlatformNote": {
       "title": "\\refsymbolbis{}See \\enquote{\\infernalbastion{}} Unit Entry.",
@@ -11650,6 +11715,34 @@
     "vassalSlingshot": {
       "title": "Vassal Slingshot",
       "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>3</td><td>10</td><td>areaAttack, directHit, oilFlasks</td></tr></table>"
+    },
+    "koe-tristansResolve": {
+      "title": "Tristan's Resolve",
+      "def": "+1 Att, +1 AP. <br> After a successful to-hit roll, the bearer <span class=\"textbf\">may</span> discard one of the hits made with this weapon and choose an Enchanted Weapon carried by the model the attack was allocated against: at the end of the Agility Step all Weapon Enchantments on it are ignored and the weapon ceases to be an Enchanted Weapon. Duration: Permanent."
+    },
+    "koe-uthersMettle": {
+      "title": "Uther's Mettle",
+      "def": "+X Att, where X is equal to the number of ranks in a single enemy unit in contact with the wielder, up to a maximum of 4 (if in contact with multiple units, use the one with the most ranks). <br> These extra attacks can only be allocated against Rank-and-File models <i>(if the attacks cannot be allocated against Rank-and-File models, they are lost)</i>."
+    },
+    "koe-percivalsPanoply": {
+      "title": "Percival's Panoply",
+      "def": "+2 Arm."
+    },
+    "koe-prayerEtched": {
+      "title": "Prayer-Etched",
+      "def": "+1 Arm, and <span class=\"textbf\">Aegis (+1, max. 4+)</span>."
+    },
+    "koe-castellansCrest": {
+      "title": "Castellan's Crest",
+      "def": "One use only. May be activated immediately after failing a Charge Range roll with the bearer or the bearer’s unit in the Charge Phase: the bearer or its unit must reroll its failed Charge Range roll. <br> Other Characters Charging out of the bearer’s unit are not affected."
+    },
+    "koe-ladysFavour": {
+      "title": "Lady's Favour",
+      "def": "One use only. May be activated when the bearer’s unit is chosen as the target of an Orison. <br> The bearer’s unit gains the effects of all Orisons <i>(i.e Discipline <span class=\"textbf\">set</span> to 9, +2 Off, Aegis (5+), Magical Attacks, and ignore <span class=\"textbf\">Parry</span></i>), with Duration: One Turn."
+    },
+    "koe-blackKnightsTonic": {
+      "title": "Black Knight's Tonic",
+      "def": "One use only. Duration: One Phase. <br>The first time the model suffers an unsaved wound from an attack with <span class=\"textbf\">Multiple Wounds (X)</span>, it gains <span class=\"textbf\">Immune (Multiple Wounds)</span>."
     },
     "flickeringLights": {
       "title": "Flickering Lights",
@@ -11663,6 +11756,34 @@
       "title": "Trebuchet",
       "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>7</td><td>3</td><td>artillery, areaAttack, directHit</td></tr></table>"
     },
+    "ok-khagadaisLegacy": {
+      "title": "Khagadai's Legacy",
+      "def": "<span class=\"textbf\">Multiple Wounds (D3)</span>."
+    },
+    "ok-vipersCurse": {
+      "title": "Viper's Curse",
+      "def": "<span class=\"textbf\">Poison Attacks (Melee & Shooting)</span>. <br> Shots 4, Str 4, AP 2, and <span class=\"textbf\">always</span> hits on 4+. <br> It cannot benefit from Area Attack, Direct Hit."
+    },
+    "ok-wrestlersBelt": {
+      "title": "Wrestler's Belt",
+      "def": "+1 Arm, +1 Str, and <span class=\"textbf\">Devastating Charge (+1 Arm)</span>."
+    },
+    "ok-lygursTongue": {
+      "title": "Lygur's Tongue",
+      "def": "<span class=\"textbf\">Afflict (-2 Off)</span>."
+    },
+    "ok-rampagersChain": {
+      "title": "Rampager's Chain",
+      "def": "The bearer gains <span class=\"textbf\">Stomp Attack (D3+1)</span>, and all models in its unit must reroll failed to-wound rolls with <span class=\"textbf\">Stomp Attack</span>."
+    },
+    "ong-tazreksGuard": {
+      "title": "Tazrek's Guard",
+      "def": "+1 HP, Resilience <span class=\"textbf\">set</span> to 6."
+    },
+    "ong-panOfProtectionPinchin": {
+      "title": "Pan of Protection Pinchin'",
+      "def": "When successfully wounded, the bearer may choose to use the attacker’s Arm and/or its Special Save:\r\n• Use the Arm that the attacking model would have against the attack that inflicted the wound (including Conditional Application, modifiers, etc.). If so, the bearer cannot use its own Arm (including any modifiers), if available.\r\n• Use the Special Save that the attacking model would have against the attack that inflicted the wound (including Conditional Application, modifiers, etc.). If so, the bearer cannot use its own Special Save (including any modifiers), if available."
+    },
     "dashers": {
       "title": "Dashers",
       "def": "The model gains Fly, Hard Target (1), Light Troops, Skirmisher."
@@ -11670,6 +11791,10 @@
     "splatterer": {
       "title": "Splatterer",
       "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>7</td><td>3</td><td>artillery, areaAttack, directHit</td></tr></table>"
+    },
+    "sa-serpentsNestCharm": {
+      "title": "Serpent's Nest Charm",
+      "def": "Attack Value is <span class=\"textbf\">set</span> to 6, <span class=\"textbf\">Poison Attacks</span>."
     },
     "guardianpatunote": {
       "title": "\\refsymbol{}See \\enquote{\\teguguards{}} profile.",
@@ -11701,6 +11826,26 @@
       "def": "The model gains Aegis (6+), Dances of Cenyrn (see Blade Dancer unit), Exclusive (Blade Dancer Kindred, Blade Dancers), Fearless, and Magic Resistance (1).\\newline{}In addition, the model’s unit gains Devastating Charge (Fly) and Swiftstride.",
       "type": "Kindred"
     },
+    "se-huntersHonour": {
+      "title": "Hunter's Honour",
+      "def": "+1 Str and +1 AP. <br>If the wielder causes any HP loss with this weapon, the wielder and all Rank-and-File models in its unit gain <span class=\"textbf\">Distracting (1)</span>, with Duration: Round of Combat"
+    },
+    "se-mistWalkersMirror": {
+      "title": "Mist Walker's Mirror",
+      "def": "One use only. May be activated at the end of any friendly Movement Phase if the bearer’s unit is Unengaged, consists entirely of Height 1 models, and is fully inside a Forest that is not in contact with any enemy model. Apply the following rules: <br>&nbsp;&nbsp;&bull; Remove the bearer’s unit from the Battlefield. <br>&nbsp;&nbsp;&bull; Immediately place it back using <span class=\"textbf\">Ambush (centre of Forest)</span>. <br> If the unit cannot be placed, it is removed as a casualty where it was removed."
+    },
+    "ud-jackalsBlessing": {
+      "title": "Jackal's Blessing",
+      "def": "+2 HP, <span class=\"textbf\">Regeneration (5+)</span>."
+    },
+    "ud-sunsEmbrace": {
+      "title": "Sun's Embrace",
+      "def": "<span class=\"textbf\">Distracting (1)</span>."
+    },
+    "ud-iconOfReflection": {
+      "title": "Envoy's Banner",
+      "def": "<span class=\"textbf\">Autonomous.</span> <br>In addition: One use only. Duration: One Turn. <br>During a friendly Movement Phase, the bearer’s unit's Mob is <span class=\"textbf\">set</span> to 8."
+    },
     "giantAspisBow": {
       "title": "Giant Aspis Bow",
       "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>3</td><td>10</td><td>areaAttack, directHit, aspisArrows</td></tr></table>"
@@ -11708,6 +11853,14 @@
     "inYourName": {
       "title": "In Your Name",
       "def": "The model benefits from <span class=\"textbf\">Fury</span> while a Pharaoh or Nomarch is joined to its ."
+    },
+    "vc-reapersHarvest": {
+      "title": "Reaper's Harvest",
+      "def": "Strength <span class=\"textbf\">set</span> to 10, Armour Penetration <span class=\"textbf\">set</span> to 10, Divine Attacks,Psychic Attacks."
+    },
+    "vc-nightsCrown": {
+      "title": "Night's Crown",
+      "def": "Attacks against the bearer suffer -1 to-wound."
     },
     "norestforthewickednote": {
       "title": "norestforthewickednote",
@@ -11725,6 +11878,14 @@
       "title": "Drill down",
       "def": "One use only. <br>At the beginning of Vanguard Units <i>(Battle Setup, step 3.F)</i>, a unit containing Drill Down! <span class=\"textbf\">may</span> choose to be removed from the Battlefield. If so, the unit gains <span class=\"textbf\">Ambush (Terrain Feature with a friendly Tunnel Marker)</span>.<br>."
     },
+    "vs-plagueHermitsBlessing": {
+      "title": "Plague-Hermit's Blessing",
+      "def": "The model’s number of HP is set to 6, it gains the Cult of Errahman property, and automatically fails all its Armour Saves rolls."
+    },
+    "vs-tarinasLyre": {
+      "title": "Tarina's Lyre",
+      "def": "Any <span class=\"textbf\">Stomp Attack</span> made by enemy units within 8\" of the bearer suffers a -2 to-wound modifier."
+    },
     "darkstoneGenerator": {
       "title": "Dark\\-stone Generator",
       "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>auto</td><td>12</td><td>D3+1</td><td>D6+1</td><td>3</td><td>marchAndShoot, lightningAttacks, maniacalEnthusiasm, unmodifiable, automaticHits</td></tr></table>"
@@ -11740,6 +11901,14 @@
     "rakachitMaussRifle": {
       "title": "Rakachit Mauss Rifle",
       "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>5</td><td>48</td><td>1</td><td>5</td><td>2</td><td>artillery, lightningAttacks, areaAttack, directHit</td></tr></table>"
+    },
+    "wdg-gladiatorsSpirit": {
+      "title": "Gladiator's Spirit",
+      "def": "+1 Arm, <span class=\"textbf\">Parry</span>."
+    },
+    "wdg-zealotsBanner": {
+      "title": "Zealot's Banner",
+      "def": "Models in the bearer’s unit gain \\textbf{\\extrasupport{} (2)}."
     },
     "essenceOfAFreeMind": {
       "title": "Scroll of a Free Mind",
@@ -12406,186 +12575,6 @@
       "selectable": true,
       "defaultSelection": false,
       "selectionGroup": "immortal_gauntlets"
-    },
-    "bh-aaghorsAffliction": {
-      "title": "Aaghor's Affliction",
-      "def": "+1 Res, and <span class=\"textbf\">Regeneration (4+)</span>. <br>The model loses Light Armour, Metal Armour, and automatically fails all its Armour Saves."
-    },
-    "bh-trickstersCunning": {
-      "title": "Trickster's Cunning",
-      "def": "<span class=\"textbf\">Resistance.</span>"
-    },
-    "bh-spiritCallersCharm": {
-      "title": "Spirit Caller's Charm",
-      "def": "<span class=\"textbf\">Channel (2)</span>"
-    },
-    "de-caedhrensPennon": {
-      "title": "Caedhren's Pennon",
-      "def": "While the bearer’s unit is part of a Combined Charge, that unit, as well as all other units that are Charging the same target, <span class=\"textbf\">must</span> reroll failed Charge Range rolls, and gain <span class=\"textbf\">Devastating Charge (Hard Target (1))</span>."
-    },
-    "de-ceinransScales": {
-      "title": "Ceinran's Scales",
-      "def": "The bearer can cast <i>Whispers of the Veil</i> (Evocation) as a <span class=\"textbf\">Bound Spell (4+)</span>."
-    },
-    "de-moithirsMirror": {
-      "title": "Moithir's Mirror",
-      "def": "The bearer gains <span class=\"textbf\">Aegis (5+, against Melee Attacks)</span>. If one or more Melee Attacks are allocated against the bearer, it gains <span class=\"textbf\">Grind Attack (3, Str 4, AP 2, Magical Attacks, Unmodifiable)</span>, with Duration: Round of Combat. <br> This <span class=\"textbf\">Grind Attack</span> is <span class=\"textbf\">always</span> resolved with Agi 0.<br><i>(Note that attacks made at Agility Step 0 can trigger this effect.)</i>"
-    },
-    "de-ringOfTheObsidianThrones": {
-      "title": "Ring of Obsidian Thrones",
-      "def": "Unless the wearer is <span class=\"textbf\">Shaken</span>, Break Tests and Panic Tests taken by friendly units within 6\" of the wearer gain <span class=\"textbf\">Minimised</span>."
-    },
-    "de-beastmastersVial": {
-      "title": "Beastmaster's Vial",
-      "def": "One use only. Duration: End of Combat <br>May be activated at the start of <span class=\"textbf\">any</span> Round of Combat. One friendly unit entirely with Beast within 12\" of the bearer gains <span class=\"textbf\">Dying Blow</span>."
-    },
-    "eos-blackSteel": {
-      "title": "Black Steel",
-      "def": "+1 Arm, and if the wearer is without \\textit{Mount}, it gains an additional +1 Arm. \\textbf{Immune (Flaming Attacks)}."
-    },
-    "eos-marksmansPennant": {
-      "title": "Marksman's Pennant",
-      "def": "The bearer’s unit gains <span class=\"textbf\">Stand and Shoot</span>."
-    },
-    "eos-exemplarsFlame": {
-      "title": "Exemplar's Flame",
-      "def": "The bearer can cast <i>Corruption of Tin</i> (Alchemy) as a Bound Spell (3+)."
-    },
-    "eos-ullorsHorn": {
-      "title": "Ullor's Horn",
-      "def": "Enemy units within 8\" of the bearer lose the <span class=\"textbf\">Charging Momentum</span> Agility bonus as well as the +1 Combat Score bonus from Charging."
-    },
-    "he-cadaronsHeartwood": {
-      "title": "Cadaron's Heartwood",
-      "def": "Shots 3, Str as user +1, AP as user +1."
-    },
-    "he-daemonsBane": {
-      "title": "Daemon's Bane",
-      "def": "+2 Arm against <span class=\"textbf\">Magical Attacks</span>."
-    },
-    "he-warBannerOfRyma": {
-      "title": "War Banner of Ryma",
-      "def": "A unit with one or more <i>War Banners of Rymâ</i> gains +1\" Cha. <br>In addition, Rank-and-File model parts with Elf in the unit gain <span class=\"textbf\">Devastating Charge (+1 Str)</span>."
-    },
-    "he-navigatorsBanner": {
-      "title": "Navigators Banner",
-      "def": "The bearer’s unit gains <span class=\"textbf\">First Strike (Aegis (5+))</span>."
-    },
-    "id-bannerOfTheTwiceBranded": {
-      "title": "Banner of the Twice Branded",
-      "def": "Models in the bearer's unit gain Shoot in Extra Rank."
-    },
-    "id-theirMastersBanner": {
-      "title": "Their Master's Banner",
-      "def": "<span class='gray'>Models with Vassals only.</span><br/>Apply the following effects while the bearer’s unit is within range of a friendly model’s <span class=\"textbf\">Commanding Presence</span>: <br>&nbsp;&nbsp;&bull; Model parts with Vassal in the bearer’s unit gain <span class=\"textbf\">Fury</span>. <br>&nbsp;&nbsp;&bull; The bearer’s unit <span class=\"textbf\">must</span> reroll failed Charge Range rolls in the Charge Phase. <br>"
-    },
-    "id-lugarsDice": {
-      "title": "Lugar's Dice",
-      "def": "A single model part of the bearer’s model can reroll a single failed to-hit, to-wound, or Armour Save roll per Player Turn. <br>This cannot be used for <span class=\"textbf\">Crush Attacks</span>."
-    },
-    "koe-tristansResolve": {
-      "title": "Tristan's Resolve",
-      "def": "+1 Att, +1 AP. <br> After a successful to-hit roll, the bearer <span class=\"textbf\">may</span> discard one of the hits made with this weapon and choose an Enchanted Weapon carried by the model the attack was allocated against: at the end of the Agility Step all Weapon Enchantments on it are ignored and the weapon ceases to be an Enchanted Weapon. Duration: Permanent."
-    },
-    "koe-uthersMettle": {
-      "title": "Uther's Mettle",
-      "def": "+X Att, where X is equal to the number of ranks in a single enemy unit in contact with the wielder, up to a maximum of 4 (if in contact with multiple units, use the one with the most ranks). <br> These extra attacks can only be allocated against Rank-and-File models <i>(if the attacks cannot be allocated against Rank-and-File models, they are lost)</i>."
-    },
-    "koe-percivalsPanoply": {
-      "title": "Percival's Panoply",
-      "def": "+2 Arm."
-    },
-    "koe-prayerEtched": {
-      "title": "Prayer-Etched",
-      "def": "+1 Arm, and <span class=\"textbf\">Aegis (+1, max. 4+)</span>."
-    },
-    "koe-castellansCrest": {
-      "title": "Castellan's Crest",
-      "def": "One use only. May be activated immediately after failing a Charge Range roll with the bearer or the bearer’s unit in the Charge Phase: the bearer or its unit must reroll its failed Charge Range roll. <br> Other Characters Charging out of the bearer’s unit are not affected."
-    },
-    "koe-ladysFavour": {
-      "title": "Lady's Favour",
-      "def": "One use only. May be activated when the bearer’s unit is chosen as the target of an Orison. <br> The bearer’s unit gains the effects of all Orisons <i>(i.e Discipline <span class=\"textbf\">set</span> to 9, +2 Off, Aegis (5+), Magical Attacks, and ignore <span class=\"textbf\">Parry</span></i>), with Duration: One Turn."
-    },
-    "koe-blackKnightsTonic": {
-      "title": "Black Knight's Tonic",
-      "def": "One use only. Duration: One Phase. <br>The first time the model suffers an unsaved wound from an attack with <span class=\"textbf\">Multiple Wounds (X)</span>, it gains <span class=\"textbf\">Immune (Multiple Wounds)</span>."
-    },
-    "ok-khagadaisLegacy": {
-      "title": "Khagadai's Legacy",
-      "def": "<span class=\"textbf\">Multiple Wounds (D3)</span>."
-    },
-    "ok-vipersCurse": {
-      "title": "Viper's Curse",
-      "def": "<span class=\"textbf\">Poison Attacks (Melee & Shooting)</span>. <br> Shots 4, Str 4, AP 2, and <span class=\"textbf\">always</span> hits on 4+. <br> It cannot benefit from Area Attack, Direct Hit."
-    },
-    "ok-wrestlersBelt": {
-      "title": "Wrestler's Belt",
-      "def": "+1 Arm, +1 Str, and <span class=\"textbf\">Devastating Charge (+1 Arm)</span>."
-    },
-    "ok-lygursTongue": {
-      "title": "Lygur's Tongue",
-      "def": "<span class=\"textbf\">Afflict (-2 Off)</span>."
-    },
-    "ok-rampagersChain": {
-      "title": "Rampager's Chain",
-      "def": "The bearer gains <span class=\"textbf\">Stomp Attack (D3+1)</span>, and all models in its unit must reroll failed to-wound rolls with <span class=\"textbf\">Stomp Attack</span>."
-    },
-    "ong-tazreksGuard": {
-      "title": "Tazrek's Guard",
-      "def": "+1 HP, Resilience <span class=\"textbf\">set</span> to 6."
-    },
-    "ong-panOfProtectionPinchin": {
-      "title": "Pan of Protection Pinchin'",
-      "def": "When successfully wounded, the bearer may choose to use the attacker’s Arm and/or its Special Save:\r\n• Use the Arm that the attacking model would have against the attack that inflicted the wound (including Conditional Application, modifiers, etc.). If so, the bearer cannot use its own Arm (including any modifiers), if available.\r\n• Use the Special Save that the attacking model would have against the attack that inflicted the wound (including Conditional Application, modifiers, etc.). If so, the bearer cannot use its own Special Save (including any modifiers), if available."
-    },
-    "sa-serpentsNestCharm": {
-      "title": "Serpent's Nest Charm",
-      "def": "Attack Value is <span class=\"textbf\">set</span> to 6, <span class=\"textbf\">Poison Attacks</span>."
-    },
-    "se-huntersHonour": {
-      "title": "Hunter's Honour",
-      "def": "+1 Str and +1 AP. <br>If the wielder causes any HP loss with this weapon, the wielder and all Rank-and-File models in its unit gain <span class=\"textbf\">Distracting (1)</span>, with Duration: Round of Combat"
-    },
-    "se-mistWalkersMirror": {
-      "title": "Mist Walker's Mirror",
-      "def": "One use only. May be activated at the end of any friendly Movement Phase if the bearer’s unit is Unengaged, consists entirely of Height 1 models, and is fully inside a Forest that is not in contact with any enemy model. Apply the following rules: <br>&nbsp;&nbsp;&bull; Remove the bearer’s unit from the Battlefield. <br>&nbsp;&nbsp;&bull; Immediately place it back using <span class=\"textbf\">Ambush (centre of Forest)</span>. <br> If the unit cannot be placed, it is removed as a casualty where it was removed."
-    },
-    "ud-jackalsBlessing": {
-      "title": "Jackal's Blessing",
-      "def": "+2 HP, <span class=\"textbf\">Regeneration (5+)</span>."
-    },
-    "ud-sunsEmbrace": {
-      "title": "Sun's Embrace",
-      "def": "<span class=\"textbf\">Distracting (1)</span>."
-    },
-    "ud-iconOfReflection": {
-      "title": "Envoy's Banner",
-      "def": "<span class=\"textbf\">Autonomous.</span> <br>In addition: One use only. Duration: One Turn. <br>During a friendly Movement Phase, the bearer’s unit's Mob is <span class=\"textbf\">set</span> to 8."
-    },
-    "vc-reapersHarvest": {
-      "title": "Reaper's Harvest",
-      "def": "Strength <span class=\"textbf\">set</span> to 10, Armour Penetration <span class=\"textbf\">set</span> to 10, Divine Attacks,Psychic Attacks."
-    },
-    "vc-nightsCrown": {
-      "title": "Night's Crown",
-      "def": "Attacks against the bearer suffer -1 to-wound."
-    },
-    "vs-plagueHermitsBlessing": {
-      "title": "Plague-Hermit's Blessing",
-      "def": "The model’s number of HP is set to 6, it gains the Cult of Errahman property, and automatically fails all its Armour Saves rolls."
-    },
-    "vs-tarinasLyre": {
-      "title": "Tarina's Lyre",
-      "def": "Any <span class=\"textbf\">Stomp Attack</span> made by enemy units within 8\" of the bearer suffers a -2 to-wound modifier."
-    },
-    "wdg-gladiatorsSpirit": {
-      "title": "Gladiator's Spirit",
-      "def": "+1 Arm, <span class=\"textbf\">Parry</span>."
-    },
-    "wdg-zealotsBanner": {
-      "title": "Zealot's Banner",
-      "def": "Models in the bearer’s unit gain \\textbf{\\extrasupport{} (2)}."
     }
   }
 }
