@@ -1343,7 +1343,7 @@
     },
     "id-blaze_of_protection": {
       "title": "Blaze of Protection",
-      "def": "<span class='gray'>Height 1-2 without Mount only.</span><br/>The bearer’s Armour value is <span class=\"textbf\">set</span> to 6. <br>At the end of Agility Step 0, each enemy model in contact with the bearer’s model that could have allocated attacks towards it, but chose not to, suffers one hit with Str 4, AP 0, Magical Attacks, Flaming Attacks, Unmodifiable.",
+      "def": "The bearer’s Armour value is <span class=\"textbf\">set</span> to 6. <br>At the end of Agility Step 0, each enemy model in contact with the bearer’s model that could have allocated attacks towards it, but chose not to, suffers one hit with Str 4, AP 0, Magical Attacks, Flaming Attacks, Unmodifiable.",
       "type": "armour_enchant",
       "mod": [
         {
@@ -1364,7 +1364,7 @@
     },
     "id-their_masters_banner": {
       "title": "Their Master's Banner",
-      "def": "<span class='gray'>Models with Vassals only.</span><br/>Apply the following effects while the bearer’s unit is within range of a friendly model’s <span class=\"textbf\">Commanding Presence</span>: <br>&nbsp;&nbsp;&bull; Model parts with Vassal in the bearer’s unit gain <span class=\"textbf\">Fury</span>. <br>&nbsp;&nbsp;&bull; The bearer’s unit <span class=\"textbf\">must</span> reroll failed Charge Range rolls in the Charge Phase. <br>"
+      "def": "Apply the following effects while the bearer’s unit is within range of a friendly model’s <span class=\"textbf\">Commanding Presence</span>: <br>&nbsp;&nbsp;&bull; Model parts with Vassal in the bearer’s unit gain <span class=\"textbf\">Fury</span>. <br>&nbsp;&nbsp;&bull; The bearer’s unit <span class=\"textbf\">must</span> reroll failed Charge Range rolls in the Charge Phase. <br>"
     },
     "id-mask_of_ages": {
       "title": "Mask of Ages",
@@ -1442,7 +1442,7 @@
     },
     "id-breath_of_the_brass_bull": {
       "title": "Breath of the Brass Bull",
-      "def": "<span class='gray'>Height 1-4 without Fly only.</span><br/>The bearer’s model gains +1 HP and <span class=\"textbf\">First Strike (Grind Attack (X, Magical Attacks, Toxic Attacks))</span>. <br> X is equal to the number of models in contact with the bearer’s unit’s Front Facing.",
+      "def": "The bearer’s model gains +1 HP and <span class=\"textbf\">First Strike (Grind Attack (X, Magical Attacks, Toxic Attacks))</span>. <br> X is equal to the number of models in contact with the bearer’s unit’s Front Facing.",
       "mod": [
         {
           "type": "universal",
@@ -4465,7 +4465,7 @@
     },
     "ok-firebrand": {
       "title": "Firebrand",
-      "def": "<span class='gray'>Shamans with one or more spells from Pyromancy only</span><br/>Breath Attack (Str 4, AP 0, Flaming Attacks), Flaming Attacks, Resistance (Flaming Attacks), and automatically fails all Regeneration Saves. <br>The model can cast <i>Dragon’s Roar</i> (Pyromancy) as a Bound Spell (5+).",
+      "def": "Breath Attack (Str 4, AP 0, Flaming Attacks), Flaming Attacks, Resistance (Flaming Attacks), and automatically fails all Regeneration Saves. <br>The model can cast <i>Dragon’s Roar</i> (Pyromancy) as a Bound Spell (5+).",
       "type": "Big Name",
       "mod": [
         {
@@ -5941,6 +5941,12 @@
           "basesize": "40x40",
           "stats": {
             "Hgt": "=3"
+          }
+        },
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Re": "+1"
           }
         }
       ]
@@ -11745,7 +11751,7 @@
     "essenceOfAFreeMind": {
       "title": "Scroll of a Free Mind",
       "def": "One use only. Duration: Permanent<br>Can be activated in a friendly Magic Phase before drawing a Flux card the bearer loses all its learned spells from its selected path granted by <span class=\"textbf\">Wizard Apprentice</span>, <span class=\"textbf\">Wizard Adept</span> or <span class=\"textbf\">Wizard Master</span>. Hereditary and Spells granted by other sources are unaffected. <br><br>The bearer gains the same number of spells from a single other path available to the bearer during list creation.<br>The spells are gained starting from the first spell of the path and towards the last spell of the path. <br>This does not change the bearer’s Path Selection.<br><br><i>Note: This means a single Wizard can gain the same spell twice, yet still not cast the same spell multiple times.</i> <br> <i>Example: a Vampire <span class=\"textbf\">Wizard Adept</span> with <span class=\"textbf\">Gates of the Netherworld</span> that selected #1, and #3 from Occultism and swapped to <span class=\"textbf\">Arise!</span> during List Creation selects Evocation with Scroll of the Free Mind, now knows Whispers of the Veil twice. Danse Macabre, and <span class=\"textbf\">Arise!</span>.</i>",
-      "type": "Scroll"
+      "type": "Potion And Scroll"
     },
     "spellScroll": {
       "title": "Spell Scroll\\ifblank{#1}{}{~(#1)}",
