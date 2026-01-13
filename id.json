@@ -1176,6 +1176,17 @@
                               "options": {
                                 "cost": 0
                               }
+                            },
+                            {
+                              "hasOption": [
+                                {
+                                  "refs": ["prophetOfShamut"],
+                                  "amount": 1
+                                }
+                              ],
+                              "options": {
+                                "cost": 5
+                              }
                             }
                           ],
                           "optionsLabel": "Paired Weapons Enchant",
@@ -1410,7 +1421,7 @@
                       "options": [
                         {
                           "type": "check",
-                          "name": "Pistol (3+)",
+                          "name": "Pistol (2+)",
                           "cost": 10,
                           "option_id": "v37n2dewse9j1bll4pbv",
                           "ignoreCost": true,
@@ -2004,6 +2015,7 @@
                 "tag_Metal Armour",
                 "tag_Construct",
                 "tag_Kadim",
+                "tag_Metal Armour",
                 "tag_Mount",
                 "ibatsokavumtheflyingcharioteer"
               ],
@@ -2258,6 +2270,22 @@
                     }
                   ],
                   "option_id": "jjbx4l3kaiv76syd21oyc"
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Options",
+                  "option_id": "efxbp05epgrl7blc",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Pistol (4+) and Spear (4+)",
+                      "cost": 6,
+                      "option_id": "3ft4xllbb6nw2kbf",
+                      "refs": ["pistolAndSpear", "pistol", "spear"]
+                    }
+                  ],
+                  "minSize": 1,
+                  "maxSize": 1
                 }
               ],
               "logo": "core"
@@ -3015,6 +3043,27 @@
                         "exclusiveInfernalWarrior",
                         "exclusiveinfernalwarriorandgreatweapon"
                       ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Flintlock Axe () and Exclusive (Citadel Guard) (3+)",
+                      "cost": 0,
+                      "option_id": "vre5sxew7bvqd7ha",
+                      "refs": ["exclusiveCitadelGuardAndFlintlockAxes", "exclusiveCitadelGuard", "flintlockAxes"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Great Weapon and   Exclusive (Infernal Warrior)",
+                      "cost": 30,
+                      "option_id": "wtt09uuwksc4susi",
+                      "refs": ["exclusiveinfernalWarriorAndGreatWeapon", "exclusiveinfernalWarrior", "greatWeapon"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Flintlock Axe () and Exclusive (Citadel Guard) (3+)",
+                      "cost": 0,
+                      "option_id": "xun5jzo3g1y976r4",
+                      "refs": ["exclusiveCitadelGuardAndFlintlockAxes", "exclusiveCitadelGuard", "flintlockAxes"]
                     }
                   ],
                   "maxSize": 1,
@@ -3061,7 +3110,7 @@
                     {
                       "type": "check",
                       "cost": 0,
-                      "name": "Naphtha Thrower",
+                      "name": "Naphtha Thrower (2+)",
                       "refs": [
                         "naphthaThrower",
                         "naphthathrower",
@@ -3249,7 +3298,7 @@
                     {
                       "type": "check",
                       "cost": 15,
-                      "name": "Naphtha Thrower",
+                      "name": "Naphtha Thrower (2+)",
                       "refs": [
                         "naphthaThrower",
                         "naphthathrower",
@@ -3674,7 +3723,7 @@
                     {
                       "type": "check",
                       "name": "Flintlock Axe (3+)",
-                      "parsername": "Flintlock Axe and Exclusive (Citadel Guard) (3+)",
+                      "parserid": "exclusiveCitadelGuardAndFlintlockAxes",
                       "cost": 0,
                       "option_id": "xabtz0vnjbds58j6",
                       "refs": [
@@ -3688,7 +3737,7 @@
                     {
                       "type": "check",
                       "name": "Great Weapon",
-                      "parsername": "Great Weapon and Exclusive (Infernal Warrior)",
+                      "parserid": "exclusiveinfernalWarriorAndGreatWeapon",
                       "cost": 30,
                       "option_id": "x6lev5j3uxz6cx5f",
                       "refs": [
