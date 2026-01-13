@@ -1916,14 +1916,15 @@
               "rarity": "Legendary",
               "height": "4",
               "basesize": "50×100",
-              "options": []
+              "options": [],
+              "armyHasNotOption": ["army_general"]
             },
             {
               "name": "Mraven, the Chimerical",
               "cost": 460,
               "option_id": "d23hxzo50eddl746",
               "unit_id": "ookTheApeKing",
-              "refs": ["ookTheApeKing", "tag_Pathof The Exiled", "tag_Metal Armour", "army_general", "tag_Beast", "ooktheapeking"],
+              "refs": ["ookTheApeKing", "tag_Pathof The Exiled", "tag_Metal Armour", "tag_Beast", "ooktheapeking"],
               "size": "1",
               "rarity": "Legendary",
               "height": "3",
@@ -3327,7 +3328,7 @@
                   "name": "Wings",
                   "type": "check",
                   "cost": 20,
-                  "refs": ["wings", "chimera_wings", "flyer"],
+                  "refs": ["wings", "chimera_wings", "flyer", "chimera"],
                   "armyHasNotOption": [
                     {
                       "refs": ["chimera_wings"],
@@ -3340,7 +3341,7 @@
               ],
               "armyHasNotOption": [],
               "logo": "special",
-              "sharedRarity": "bdb6ula9wvrw87qqv7pqp"
+              "sharedRarity": "chimera"
             },
             {
               "name": "Feldraks",
@@ -3576,7 +3577,7 @@
                 "forsaken_one",
                 {
                   "ref": "legendary_beast",
-                  "amount": 2
+                  "amount": 1
                 },
                 "tag_"
               ],
@@ -3693,7 +3694,8 @@
                 "chimera_mount",
                 "chimera_mount_unit",
                 "legendary_beast",
-                "solitary"
+                "solitary",
+                "chimera"
               ],
               "invisible": true,
               "rarity": "Uncommon",
@@ -3712,7 +3714,7 @@
               "category": "mounts",
               "optionsLabel": "Options",
               "logo": "character",
-              "sharedRarity": "x5lcby6m1zhv670yd9vz0m"
+              "sharedRarity": "chimera"
             },
             {
               "name": "Dark Chariot *Mount",
@@ -3838,7 +3840,10 @@
                 "wastelanddragonmount",
                 "flyer",
                 "mount_dragon",
-                "legendary_beast"
+                {
+                  "ref": "legendary_beast",
+                  "amount": 2
+                }
               ],
               "invisible": true,
               "rarity": "Extraordinary",

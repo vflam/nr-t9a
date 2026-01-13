@@ -130,10 +130,6 @@
             {
               "refs": ["shaman"],
               "amount": 1
-            },
-            {
-              "refs": ["pyromancy"],
-              "amount": 1
             }
           ],
           "description": "<span class='gray'>Shamans with one or more spells from Pyromancy only</span><br/>Breath Attack (Str 4, AP 0, Flaming Attacks), Flaming Attacks, Resistance (Flaming Attacks), and automatically fails all Regeneration Saves. <br>The model can cast <i>Dragon’s Roar</i> (Pyromancy) as a Bound Spell (5+).",
@@ -559,20 +555,6 @@
                       "collapsible": true,
                       "optionsLabel": "Close Combat Weapon",
                       "maxSize": 1,
-                      "override": [
-                        {
-                          "hasOption": [
-                            {
-                              "refs": ["ok_bn_hoardmaster"],
-                              "amount": 1
-                            }
-                          ],
-                          "options": {
-                            "maxSize": -1,
-                            "optionsLabel": "Close Combat Weapons"
-                          }
-                        }
-                      ],
                       "options": [
                         {
                           "type": "check",
@@ -585,31 +567,10 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "override": [
-                            {
-                              "hasOption": [
-                                {
-                                  "refs": ["ok_bn_hoardmaster"],
-                                  "amount": 1
-                                }
-                              ],
-                              "options": {
-                                "cost": 0,
-                                "minAmount": 1
-                              }
-                            }
-                          ],
                           "option_id": "y1ylfq07lroaxygq7ew1",
                           "allowHideChildren": true,
-                          "childrenOptions": {
-                            "hasNotOption": [
-                              {
-                                "refs": ["ok_bn_hoardmaster"],
-                                "amount": 1
-                              }
-                            ]
-                          },
-                          "refs": ["pairedweapons"]
+                          "refs": ["pairedweapons"],
+                          "hasNotOption": ["ok_bn_hoardmaster"]
                         },
                         {
                           "type": "check",
@@ -622,31 +583,10 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "ironFistEnchant"],
-                          "override": [
-                            {
-                              "hasOption": [
-                                {
-                                  "refs": ["ok_bn_hoardmaster"],
-                                  "amount": 1
-                                }
-                              ],
-                              "options": {
-                                "cost": 0,
-                                "minAmount": 1
-                              }
-                            }
-                          ],
                           "option_id": "4qcjis1tiia83bos4cccxg",
                           "allowHideChildren": true,
-                          "childrenOptions": {
-                            "hasNotOption": [
-                              {
-                                "refs": ["ok_bn_hoardmaster"],
-                                "amount": 1
-                              }
-                            ]
-                          },
-                          "refs": ["ironfist"]
+                          "refs": ["ironfist"],
+                          "hasNotOption": ["ok_bn_hoardmaster"]
                         },
                         {
                           "type": "check",
@@ -659,31 +599,10 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
-                          "override": [
-                            {
-                              "hasOption": [
-                                {
-                                  "refs": ["ok_bn_hoardmaster"],
-                                  "amount": 1
-                                }
-                              ],
-                              "options": {
-                                "cost": 0,
-                                "minAmount": 1
-                              }
-                            }
-                          ],
                           "option_id": "6be9usb1y3i9ld6mn8jv1t",
                           "allowHideChildren": true,
-                          "childrenOptions": {
-                            "hasNotOption": [
-                              {
-                                "refs": ["ok_bn_hoardmaster"],
-                                "amount": 1
-                              }
-                            ]
-                          },
-                          "refs": ["greatweapon"]
+                          "refs": ["greatweapon"],
+                          "hasNotOption": ["ok_bn_hoardmaster"]
                         }
                       ],
                       "option_id": "aswccqzc3e4fypjihwz4j4"
@@ -910,21 +829,6 @@
                       "collapsible": true,
                       "optionsLabel": "Close Combat Weapon",
                       "maxSize": 1,
-                      "override": [
-                        {
-                          "hasOption": [
-                            {
-                              "refs": ["ok_bn_hoardmaster"],
-                              "amount": 1
-                            }
-                          ],
-                          "options": {
-                            "maxSize": -1,
-                            "minSize": 4,
-                            "optionsLabel": "Close Combat Weapons"
-                          }
-                        }
-                      ],
                       "options": [
                         {
                           "type": "check",
@@ -937,21 +841,9 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
-                          "override": [
-                            {
-                              "hasOption": [
-                                {
-                                  "refs": ["ok_bn_hoardmaster"],
-                                  "amount": 1
-                                }
-                              ],
-                              "options": {
-                                "cost": 0
-                              }
-                            }
-                          ],
                           "option_id": "scwr1ry2b1c404l2w39q4",
-                          "refs": ["pairedweapons"]
+                          "refs": ["pairedweapons"],
+                          "hasNotOption": ["ok_bn_hoardmaster"]
                         },
                         {
                           "type": "check",
@@ -964,21 +856,9 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "ironFistEnchant"],
-                          "override": [
-                            {
-                              "hasOption": [
-                                {
-                                  "refs": ["ok_bn_hoardmaster"],
-                                  "amount": 1
-                                }
-                              ],
-                              "options": {
-                                "cost": 0
-                              }
-                            }
-                          ],
                           "option_id": "wzd7vuihlqrdfvsbwazyc",
-                          "refs": ["ironfist"]
+                          "refs": ["ironfist"],
+                          "hasNotOption": ["ok_bn_hoardmaster"]
                         },
                         {
                           "type": "check",
@@ -991,21 +871,9 @@
                           "collapsible": true,
                           "options": [],
                           "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
-                          "override": [
-                            {
-                              "hasOption": [
-                                {
-                                  "refs": ["ok_bn_hoardmaster"],
-                                  "amount": 1
-                                }
-                              ],
-                              "options": {
-                                "cost": 0
-                              }
-                            }
-                          ],
                           "option_id": "2r7ndj899jg0qb7kx3zxx9",
-                          "refs": ["greatweapon"]
+                          "refs": ["greatweapon"],
+                          "hasNotOption": ["ok_bn_hoardmaster"]
                         }
                       ],
                       "option_id": "3lmbtlp8u6i9aelbcxmd8d"

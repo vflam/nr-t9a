@@ -47,22 +47,17 @@
           "cost": 40,
           "description": "The model part gains <span class=\"textbf\">Breath Attack (Str 3, AP 2, Magical Attacks, Stand and Shoot)</span>.",
           "option_id": "gf423g34reigj340g34g43",
-          "refs": ["hellish_larynx"],
-          "armyHasNotOption": [
-            {
-              "refs": ["hellish_larynx"],
-              "amount": 2
-            }
-          ],
+          "refs": ["hellishLarynx", "hellish_larynx"],
           "rarity": "Rare"
         },
         {
           "type": "check",
           "name": "Trampling Hooves",
           "cost": 55,
-          "refs": ["cloven_hooves_manif", "tag_Mount", "tag_Construct"],
+          "refs": ["tramplingHooves", "cloven_hooves_manif", "tag_Mount", "tag_Construct"],
           "option_id": "f3f329d32nf932nug923ng943g3",
-          "description": "Model parts without Mount or Construct gain <span class=\"textbf\">Grind Attack (D3, Str 5, AP 2, Magical Attacks, Unmodifiable)</span>."
+          "description": "Model parts without Mount or Construct gain <span class=\"textbf\">Grind Attack (D3, Str 5, AP 2, Magical Attacks, Unmodifiable)</span>.",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
@@ -70,13 +65,7 @@
           "cost": 25,
           "description": "One use only. May be activated at the start of a friendly Charge Phase: when activated, the model gains <span class=\"textbf\">Horror</span>, and its Charge Range rolls are <span class=\"textbf\">Maximised</span>. Duration: One Phase.",
           "option_id": "f32g34g54h54h54h54h54",
-          "refs": ["hellish_larynx"],
-          "armyHasNotOption": [
-            {
-              "refs": ["hellish_larynx"],
-              "amount": 2
-            }
-          ],
+          "refs": ["horrifyingVisage", "hellish_larynx"],
           "countAsLeaf": true,
           "optionsLabel": "Guiding Horrifying Visage",
           "override": [
@@ -101,11 +90,13 @@
               "name": "Guiding Horrifying Visage",
               "refs": ["guiding_visage", "dominant"],
               "hasNotOption": ["dominant", "possessed_giant"],
-              "option_id": "fsedf32f23f23f23h43t23l"
+              "option_id": "fsedf32f23f23f23h43t23l",
+              "rarity": "Legendary"
             }
           ],
           "guidingCost": 30,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
@@ -137,18 +128,21 @@
               "refs": ["guiding_mirscale", "dominant"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "dt5ovzltmp4lkflkq34kx",
-              "description": "Each Melee Attack allocated against the model that rolls a ‘1’ to hit, is instead allocated to the attacking model’s Health Pool with <span class=\"textbf\">Automatic Hits</span>."
+              "description": "Each Melee Attack allocated against the model that rolls a ‘1’ to hit, is instead allocated to the attacking model’s Health Pool with <span class=\"textbf\">Automatic Hits</span>.",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "m5xr5bep3js3kx61lzxson",
           "guidingCost": 60,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["mirroredScales"]
         },
         {
           "type": "check",
           "name": "Kaleidoscopic Flesh",
           "cost": 50,
-          "refs": ["mfa_kaleido"],
+          "refs": ["kaleidoscopicFlesh", "mfa_kaleido"],
           "description": "<span class=\"textbf\">Hard Target (1)</span>.",
           "optionsLabel": "Guiding Kaleidoscopic Flesh",
           "countAsLeaf": true,
@@ -175,19 +169,21 @@
               "refs": ["guiding_keleido", "dominant"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "ireafpyadpa8f6ywtydl9b",
-              "description": "<span class=\"textbf\">Hard Target(1)</span>."
+              "description": "<span class=\"textbf\">Hard Target(1)</span>.",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "33fgtyp7hkwniab7f58ew9",
           "guidingCost": 60,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Mark of the Eternal Champion",
           "hasNotOption": ["possessed_giant"],
           "cost": 40,
-          "refs": ["wizard", "dl_mark_eternal_champ"],
+          "refs": ["markOfTheEternalChampion", "wizard", "dl_mark_eternal_champ"],
           "description": "The unit or model knows (or gains) <i>Spear of Infinity</i> (Hereditary Spell) as an additional Learned Spell. <br> If the unit or model is not a Wizard, it instead gains <span class=\"textbf\">Wizard Conclave (1)</span>, and knows <i>Spear of Infinity</i> (Hereditary Spell).",
           "option_id": "d4rq4p2hr8jj9exnbfa6ag",
           "magic": {
@@ -202,14 +198,17 @@
                 }
               }
             ]
-          }
+          },
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Hammer Hand",
           "cost": 40,
           "description": "+1 Att.",
-          "option_id": "bjel2nhb755ni1t79z8xs"
+          "option_id": "bjel2nhb755ni1t79z8xs",
+          "rarity": "Legendary",
+          "refs": ["hammerHand"]
         },
         {
           "type": "check",
@@ -217,7 +216,9 @@
           "hasNotOption": ["possessed_giant"],
           "cost": 50,
           "description": "A unit containing <i>Unnatural Roots</i> gains <span class=\"textbf\">Resolute</span>.",
-          "option_id": "sgy87ipoplsaifqodk87x6"
+          "option_id": "sgy87ipoplsaifqodk87x6",
+          "rarity": "Legendary",
+          "refs": ["unnaturalRoots"]
         },
         {
           "type": "check",
@@ -249,26 +250,33 @@
               "refs": ["dominant", "guiding_brimstone"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "4gqflzeoqiop8er6cpg0pe",
-              "description": "<span class=\"textbf\">Immune(Divine Attacks)</span>."
+              "description": "<span class=\"textbf\">Immune(Divine Attacks)</span>.",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "27y12ijwl0gibv8amqw0le",
           "guidingCost": 30,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["brimstoneSecretions"]
         },
         {
           "type": "check",
           "name": "Centipede Legs",
           "cost": 40,
           "description": "+2\" Mob",
-          "option_id": "i5ca0ub09cb83cwx7zo449"
+          "option_id": "i5ca0ub09cb83cwx7zo449",
+          "rarity": "Legendary",
+          "refs": ["centipedeLegs"]
         },
         {
           "type": "check",
           "name": "Chitinous Scales",
           "cost": 30,
           "description": "+2 Arm, to a maximum of 3.",
-          "option_id": "t7edqgia1d5ykm08nz3sj"
+          "option_id": "t7edqgia1d5ykm08nz3sj",
+          "rarity": "Legendary",
+          "refs": ["chitinousScales"]
         },
         {
           "type": "check",
@@ -276,13 +284,7 @@
           "cost": 30,
           "description": "At the beginning of Vanguard Units <i>(Battle Setup, step 3.F)</i>, you may remove any unit entirely with this Manifestation from the Battlefield and Deploy them again elsewhere, following the general Deployment restrictions.",
           "option_id": "kh6n0ksnc74e0m1nri03s",
-          "refs": ["dark_hide_manif"],
-          "armyHasNotOption": [
-            {
-              "refs": ["dark_hide_manif"],
-              "amount": 3
-            }
-          ],
+          "refs": ["darkHide", "dark_hide_manif"],
           "rarity": "Uncommon"
         },
         {
@@ -291,7 +293,9 @@
           "cost": 30,
           "hasNotOption": ["possessed_giant"],
           "description": "One use only. <br>May be activated just before the model’s unit rolls a Break Test: that Break Test is automatically failed, and the HP loss suffered from <span class=\"textbf\">Supernal</span> is halved, rounding fractions down. Duration: One Phase.",
-          "option_id": "dlwrlhpdcbwqupa62olw"
+          "option_id": "dlwrlhpdcbwqupa62olw",
+          "rarity": "Legendary",
+          "refs": ["hellCanWait"]
         }
       ],
       "option_id": "oxonsjndlcrjb7t7q7kiq8"
@@ -314,7 +318,8 @@
               "refs": ["dominant", "guiding_spike"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "8ft31b4055jlg7lwk8bkom",
-              "description": "+1 AP."
+              "description": "+1 AP.",
+              "rarity": "Legendary"
             }
           ],
           "override": [
@@ -334,14 +339,16 @@
           ],
           "option_id": "0ni4vgsmufqqcewpe67mbsl",
           "guidingCost": 60,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["piercingSpike"]
         },
         {
           "type": "check",
           "name": "Charged Tendrils",
           "cost": 30,
           "option_id": "f43g34gm43mg0-34g43g43",
-          "refs": ["charged_tendrils_manif"],
+          "refs": ["chargedTendrils", "charged_tendrils_manif"],
           "description": "<span class=\"textbf\">Lightning Attacks</span>.",
           "countAsLeaf": true,
           "optionsLabel": "Guiding Charged Tendrils",
@@ -352,7 +359,8 @@
               "name": "Guiding Charged Tendrils",
               "refs": ["dominant", "guiding_tendrils"],
               "hasNotOption": ["dominant", "possessed_giant"],
-              "option_id": "f32f32324r23543g453g34h34h43"
+              "option_id": "f32f32324r23543g453g34h34h43",
+              "rarity": "Legendary"
             }
           ],
           "override": [
@@ -371,7 +379,8 @@
             }
           ],
           "guidingCost": 70,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
@@ -403,12 +412,15 @@
               "refs": ["dominant", "guiding_venom"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "y599x05gvqpg2hdz8iwqbu",
-              "description": "<span class=\"textbf\">Poison Attacks (Melee & Shooting)</span>."
+              "description": "<span class=\"textbf\">Poison Attacks (Melee & Shooting)</span>.",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "7t9hkx8h9hfjbdjf112cs",
           "guidingCost": 75,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["venomSacs"]
         }
       ],
       "option_id": "j1bwexrgisavplmbi93eh"
@@ -419,7 +431,7 @@
         {
           "type": "check",
           "name": "Digestive Vomit",
-          "refs": ["one_use_item"],
+          "refs": ["digestiveVomit", "one_use_item"],
           "cost": 40,
           "countAsLeaf": true,
           "description": "If a model with <span class=\"textbf\">Digestive Vomit</span> is on on the winning side of a Combat, it gains +1 Str and +1 AP, with Duration: Permanent.",
@@ -447,18 +459,20 @@
               "refs": ["dominant", "guiding_vomit", "one_use_item"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "tpx6ws3q8mdtn9nv7krtq",
-              "description": "If a model with <span class=\"textbf\">Digestive Vomit</span> is on on the winning side of a Combat, it gains +1 Str and +1 AP.<br><br>\tDuration: Permanent."
+              "description": "If a model with <span class=\"textbf\">Digestive Vomit</span> is on on the winning side of a Combat, it gains +1 Str and +1 AP.<br><br>\tDuration: Permanent.",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "acwepsa42tzouusp4dus",
           "guidingCost": 50,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Unholy Appetite",
           "cost": 30,
-          "refs": ["dominant"],
+          "refs": ["unholyAppetite", "dominant"],
           "countAsLeaf": true,
           "hasNotOption": ["dominant"],
           "description": "After a Round of Combat in which at least one attack with <span class=\"textbf\">Unholy Appetite</span> caused any HP loss, all attacks with <span class=\"textbf\">Unholy Appetite</span> gain <span class=\"textbf\">Hatred</span> until the end of the next Player Turn.",
@@ -485,12 +499,14 @@
               "name": "Guiding Unholy Appetite",
               "refs": ["guiding_Unholy Appetite"],
               "hasNotOption": ["possessed_giant"],
-              "option_id": "0jptlg8m0mjkqnuaqhyo1oc"
+              "option_id": "0jptlg8m0mjkqnuaqhyo1oc",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "up0sz5s8oxjq4s2a12e3y",
           "guidingCost": 60,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
@@ -522,12 +538,15 @@
               "refs": ["dominant", "guiding_jaw"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "17wwe5hj1xu7dlktz35i12",
-              "description": "<span class=\"textbf\">Zeal(against Height 3--5)</span>."
+              "description": "<span class=\"textbf\">Zeal(against Height 3--5)</span>.",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "t8x6jv52suh0rzmpbo2d08",
           "guidingCost": 50,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["unhingingJaw"]
         }
       ],
       "option_id": "s5hds534gcr8xyhtnkfeb9"
@@ -565,21 +584,25 @@
               "refs": ["dominant", "guiding_shell"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "tliblakmyop5giy8ez101m",
-              "description": "Attacks with <span class=\"textbf\">Multiple Wounds(X)</span> against the model reduce their X by 1, to a minimum of 1."
+              "description": "Attacks with <span class=\"textbf\">Multiple Wounds(X)</span> against the model reduce their X by 1, to a minimum of 1.",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "5reux3g2youhw2mxedfc8l",
           "guidingCost": 30,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["segmentedShell"]
         },
         {
           "type": "check",
           "name": "Clinging Ichor",
           "cost": 30,
           "option_id": "g43g43mi0g43mg340ogm43i0g",
-          "refs": ["dominant", "grasping_proboscis_manif"],
+          "refs": ["clingingIchor", "dominant", "grasping_proboscis_manif"],
           "description": "Enemy units in contact with the model lose <span class=\"textbf\">Devastating Charge</span>.",
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
@@ -611,12 +634,15 @@
               "refs": ["dominant", "guiding_coils"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "2avr9fkfyxw0r31q7hebda",
-              "description": "<span class=\"textbf\">Zeal(against Scoring)</span>."
+              "description": "<span class=\"textbf\">Zeal(against Scoring)</span>.",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "z6icukd2qtjgrcp2jbk8et",
           "guidingCost": 70,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["smotheringCoils"]
         }
       ],
       "option_id": "tmceg79edk8bzioi1c7ln"
@@ -627,11 +653,12 @@
         {
           "type": "check",
           "name": "Mesmerising Plumage",
-          "refs": ["dominant"],
+          "refs": ["mesmerisingPlumage", "dominant"],
           "cost": 30,
           "description": "<span class=\"textbf\">Afflict (1 Def, 1 Off)</span>",
           "option_id": "pokji5qhmblru18amjf08",
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
@@ -662,12 +689,15 @@
               "name": "Guiding Hidden Knives",
               "refs": ["dominant", "guiding_hands"],
               "hasNotOption": ["dominant", "possessed_giant"],
-              "option_id": "32a40jc1zfjlr0pjpjp00p"
+              "option_id": "32a40jc1zfjlr0pjpjp00p",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "674dorifbdkfq0bh2hjneb",
           "guidingCost": 35,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["hiddenKnives"]
         },
         {
           "type": "check",
@@ -699,12 +729,15 @@
               "refs": ["dominant", "guiding_blood"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "hljdw3v3c3hua665y5oovn",
-              "description": "<span class=\"textbf\">Devastating Charge(+2 Agi)</span>."
+              "description": "<span class=\"textbf\">Devastating Charge(+2 Agi)</span>.",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "prm7ny5cylsq1hkiv5g0l",
           "guidingCost": 15,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["hotBlood"]
         }
       ],
       "option_id": "ffqgtsnyt57zf80s9jrfz"
@@ -715,25 +748,19 @@
         {
           "type": "check",
           "name": "Torporous Tendrils",
-          "refs": ["dominant"],
+          "refs": ["torporousTendrils", "dominant"],
           "cost": 55,
           "description": "<span class=\"textbf\">Afflict (-2 Agi)</span>.",
           "option_id": "p2pqonn6xkcxexc2sybaqr",
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Sorcerous Antennae",
           "hasNotOption": ["possessed_giant"],
           "cost": 40,
-          "refs": ["mfa_sorcerous", "magic_start"],
-          "armyHasNotOption": [
-            {
-              "refs": ["mfa_sorcerous"],
-              "amount": 2,
-              "parentMult": false
-            }
-          ],
+          "refs": ["sorcerousAntennae", "mfa_sorcerous", "magic_start"],
           "description": "During the Siphon the Veil step of your Magic Phase, gain one Magic Dice for each unit containing this Manifestation.",
           "option_id": "42qdxiclwhiyvfzf3itvio",
           "rarity": "Rare"
@@ -768,11 +795,14 @@
               "name": "Guiding All-Seeing Eye",
               "refs": ["guiding_aura_of_despair", "dominant"],
               "hasNotOption": ["dominant", "possessed_giant"],
-              "option_id": "ffdsfdsg34f32dfgfdsg34"
+              "option_id": "ffdsfdsg34f32dfgfdsg34",
+              "rarity": "Legendary"
             }
           ],
           "guidingCost": 25,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["allSeeingEye"]
         }
       ],
       "option_id": "km7doyz36egv0a6a69rpk"
@@ -810,12 +840,15 @@
               "refs": ["dominant", "guiding_tail"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "4rwgna4j7i9yqxdlx9c4k8",
-              "description": "Melee Attacks gain +1 to hit."
+              "description": "Melee Attacks gain +1 to hit.",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "i5cfnn4a0ai8r0o8mnj1",
           "guidingCost": 70,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["whipCrackTail"]
         },
         {
           "type": "check",
@@ -846,12 +879,15 @@
               "name": "Guiding urved Tusks",
               "refs": ["dominant", "guiding_haze"],
               "hasNotOption": ["dominant", "possessed_giant"],
-              "option_id": "q37bpyvv581bijwrq5hqg"
+              "option_id": "q37bpyvv581bijwrq5hqg",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "0v9732eptws9gtrhljo4dbe",
           "guidingCost": 70,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["curvedTusks"]
         },
         {
           "type": "check",
@@ -882,12 +918,15 @@
               "name": "Guiding Incendiary Ichor",
               "refs": ["dominant", "guiding_ichor"],
               "hasNotOption": ["dominant", "possessed_giant"],
-              "option_id": "5dv7d9jrh6idcdqy79vfuv"
+              "option_id": "5dv7d9jrh6idcdqy79vfuv",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "9v9a3nyalim3g1clajqzr",
           "guidingCost": 25,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["incendiaryIchor"]
         }
       ],
       "option_id": "vbn7lq64sul6ld0ouaccd"
@@ -925,19 +964,24 @@
               "refs": ["dominant", "guiding_backbone"],
               "hasNotOption": ["dominant", "possessed_giant"],
               "option_id": "26gddbtgnxifqs7aadygdi",
-              "description": "<span class=\"textbf\">First Strike(Hatred)</span>."
+              "description": "<span class=\"textbf\">First Strike(Hatred)</span>.",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "vw2docehs7ls2d77hl949",
           "guidingCost": 70,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["bronzeBackbone"]
         },
         {
           "type": "check",
           "name": "Golden Helm",
           "cost": 35,
           "description": "Courage Tests taken by the unit gain <span class=\"textbf\">Minimised</span>.",
-          "option_id": "i01mfv79n0boap7uk2ym5l"
+          "option_id": "i01mfv79n0boap7uk2ym5l",
+          "rarity": "Legendary",
+          "refs": ["goldenHelm"]
         },
         {
           "type": "check",
@@ -968,12 +1012,15 @@
               "name": "Guiding Horns of Hubris",
               "refs": ["dominant", "guiding_hubris"],
               "hasNotOption": ["dominant", "possessed_giant"],
-              "option_id": "mp8npub1z2u3nw5pvmty"
+              "option_id": "mp8npub1z2u3nw5pvmty",
+              "rarity": "Legendary"
             }
           ],
           "option_id": "gfzesdrxietrq0q182ehm",
           "guidingCost": 40,
-          "dominant": true
+          "dominant": true,
+          "rarity": "Legendary",
+          "refs": ["hornsOfHubris"]
         }
       ],
       "option_id": "bz44sxxjmqwrpgdf88lqzc"
@@ -1003,7 +1050,7 @@
               "cost": 100,
               "option_id": "u064oz4n9vi8zzwbum09",
               "unit_id": "harbingerOfFatherChaos",
-              "refs": ["harbingeroffatherchaos", "tag_Daemon", "harbinger"],
+              "refs": ["harbingerOfFatherChaos", "tag_Daemon", "harbingeroffatherchaos", "harbinger"],
               "size": "1",
               "height": "1",
               "basesize": "25×25",
@@ -1011,7 +1058,6 @@
                 {
                   "type": "group",
                   "option_id": "qpg1ar0gakfeowzxqfdf4a",
-                  "name": "Leadership",
                   "optionsLabel": "Leadership",
                   "minSize": 1,
                   "options": [
@@ -1020,7 +1066,7 @@
                       "name": "Captain and Attached",
                       "cost": 0,
                       "option_id": "vcklv0439543bjewssr0vb34jv034v43",
-                      "refs": ["captainandattached", "captain", "attached"]
+                      "refs": ["captainAndAttached", "captain", "attached", "captainandattached"]
                     },
                     {
                       "name": "General",
@@ -1040,7 +1086,7 @@
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
-                      "refs": ["battlestandardbearer", "army_bsb", "not_a_leader"],
+                      "refs": ["battleStandardBearer", "battlestandardbearer", "army_bsb", "not_a_leader"],
                       "cost": 60,
                       "armyHasNotOption": ["army_bsb"],
                       "option_id": "utq8eezi6zc14ulvdmum"
@@ -1062,7 +1108,7 @@
                       "option_id": "ziqjdrn9kctv5vikhpgo1c",
                       "cost": 0,
                       "hasNotOption": ["solitary"],
-                      "refs": ["lighttroops"]
+                      "refs": ["lightTroops", "lighttroops"]
                     },
                     {
                       "type": "check",
@@ -1071,7 +1117,7 @@
                       "options": [],
                       "refopt": "darkPulpitMount",
                       "option_id": "4hlh5dds5kniudcb185koo",
-                      "refs": ["darkpulpit"]
+                      "refs": ["darkPulpit", "darkpulpit"]
                     },
                     {
                       "type": "check",
@@ -1090,7 +1136,7 @@
                       "refopt": "burningWheelMount",
                       "option_id": "nlhyysjag2qe6t81w8o84i",
                       "hasNotOption": ["captain"],
-                      "refs": ["burningwheel"]
+                      "refs": ["burningWheel", "burningwheel"]
                     },
                     {
                       "type": "check",
@@ -1100,7 +1146,7 @@
                       "options": [],
                       "refopt": "greatBeastOfProphecyMount",
                       "option_id": "i2bhubbujmn5bj3yb7hqt5",
-                      "refs": ["greatbeastofprophecy"]
+                      "refs": ["greatBeastOfProphecy", "greatbeastofprophecy"]
                     }
                   ],
                   "option_id": "muz6sxbl76823dmvneiw1li"
@@ -1175,14 +1221,14 @@
                           "minSize": 1,
                           "options": [
                             {
-                              "refs": ["wizardapprentice", "wizardApprentice"],
+                              "refs": ["wizardApprentice", "wizardapprentice"],
                               "name": "Wizard Apprentice",
                               "type": "check",
                               "cost": 50,
                               "option_id": "wr9nwil49igxpvlux9ov3s"
                             },
                             {
-                              "refs": ["wizardadept", "wizardAdept"],
+                              "refs": ["wizardAdept", "wizardadept"],
                               "name": "Wizard Adept",
                               "type": "check",
                               "cost": 150,
@@ -1343,6 +1389,7 @@
                       "cost": 15,
                       "option_id": "x0txd45g7bgzn2teoyn3i",
                       "refs": [
+                        "darkFire",
                         "darkfire",
                         {
                           "ref": "small_arms_fire",
@@ -1354,30 +1401,6 @@
                   "option_id": "la9stisr8uej2zaalb4ze"
                 }
               ],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["count_towards_aves"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["aves"]
-                  }
-                },
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["burningwheel"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["aves"]
-                  }
-                }
-              ],
               "armyHasNotOption": [],
               "logo": "character"
             },
@@ -1386,7 +1409,7 @@
               "cost": 340,
               "option_id": "6220wq29ksh9z0mk08j7yn",
               "unit_id": "kuulimasDeceiver",
-              "refs": ["kuulimasdeceiver", "tag_Daemon", "kuulima_deceiver", "wizard", "protean_magic"],
+              "refs": ["kuulimasDeceiver", "tag_Daemon", "kuulimasdeceiver", "kuulima_deceiver", "wizard", "protean_magic"],
               "size": "1",
               "rarity": "Uncommon",
               "height": "1",
@@ -1399,7 +1422,6 @@
                     {
                       "type": "group",
                       "option_id": "qdggqgawwyq1xc9xj10csn",
-                      "name": "Leadership",
                       "optionsLabel": "Leadership",
                       "options": [
                         {
@@ -1465,6 +1487,7 @@
                       "cost": 15,
                       "option_id": "84dsdssojwuzkyl0m9661ybnop",
                       "refs": [
+                        "darkFire",
                         "darkfire",
                         {
                           "ref": "small_arms_fire",
@@ -1495,7 +1518,7 @@
                       "name": "Wizard Conclave (2)",
                       "cost": 0,
                       "option_id": "h9sab0l60bk2qh9x",
-                      "refs": ["wizardconclave", "wizard"],
+                      "refs": ["wizardConclave", "wizardconclave", "wizard"],
                       "generated": true,
                       "magic": {
                         "amount": 2,
@@ -1528,7 +1551,7 @@
                       "name": "Wizard Conclave (4)",
                       "cost": 40,
                       "option_id": "1f5al4hj9gj4qren",
-                      "refs": ["wizardconclave"],
+                      "refs": ["wizardConclave", "wizardconclave"],
                       "generated": true,
                       "magic": {
                         "amount": 4,
@@ -1588,7 +1611,7 @@
               "option_id": "c9iha3a2nrp06fdj9n9vgd3",
               "unit_id": "mawOfAkaan",
               "maxUnitCost": 650,
-              "refs": ["mawofakaan", "tag_Daemon", "maw_akaan", "wizard", "noHope"],
+              "refs": ["mawOfAkaan", "tag_Daemon", "mawofakaan", "maw_akaan", "wizard", "noHope"],
               "size": "1",
               "rarity": "Extraordinary",
               "height": "5",
@@ -1601,7 +1624,6 @@
                     {
                       "type": "group",
                       "option_id": "7mb1gmndsiga2g63kfvrkn",
-                      "name": "Leadership",
                       "optionsLabel": "Leadership",
                       "options": [
                         {
@@ -1668,21 +1690,21 @@
                       "minSize": 1,
                       "options": [
                         {
-                          "refs": ["wizardapprentice", "wizardApprentice"],
+                          "refs": ["wizardApprentice", "wizardapprentice"],
                           "name": "Wizard Apprentice",
                           "type": "check",
                           "cost": 0,
                           "option_id": "ialitc8d2s7dc18nf7ndxr"
                         },
                         {
-                          "refs": ["wizardadept", "wizardAdept"],
+                          "refs": ["wizardAdept", "wizardadept"],
                           "name": "Wizard Adept",
                           "type": "check",
                           "cost": 100,
                           "option_id": "0566dq6mp345zd8hnaeuydn"
                         },
                         {
-                          "refs": ["wizardmaster", "wizardMaster"],
+                          "refs": ["wizardMaster", "wizardmaster"],
                           "name": "Wizard Master",
                           "type": "check",
                           "cost": 250,
@@ -1744,7 +1766,7 @@
               "option_id": "o8tu9k4p8i6vmvefxoqmn",
               "unit_id": "miserOfSugulag",
               "maxUnitCost": 700,
-              "refs": ["miserofsugulag", "tag_Daemon", "miser_sugulag", "wizard", "noHope"],
+              "refs": ["miserOfSugulag", "tag_Daemon", "miserofsugulag", "miser_sugulag", "wizard", "noHope"],
               "size": "1",
               "rarity": "Extraordinary",
               "height": "5",
@@ -1757,7 +1779,6 @@
                     {
                       "type": "group",
                       "option_id": "giy31xv9sypjfiwnr16rck",
-                      "name": "Leadership",
                       "optionsLabel": "Leadership",
                       "options": [
                         {
@@ -1832,14 +1853,14 @@
                       "minSize": 1,
                       "options": [
                         {
-                          "refs": ["wizardadept", "wizardAdept"],
+                          "refs": ["wizardAdept", "wizardadept"],
                           "name": "Wizard Adept",
                           "type": "check",
                           "cost": 0,
                           "option_id": "3iyn41xs8w631d2kcb5gsq"
                         },
                         {
-                          "refs": ["wizardmaster", "wizardMaster"],
+                          "refs": ["wizardMaster", "wizardmaster"],
                           "name": "Wizard Master",
                           "type": "check",
                           "cost": 150,
@@ -1901,7 +1922,7 @@
               "option_id": "ava39x928nk0qsl4l2gbn5",
               "unit_id": "courtesanOfCibaresh",
               "maxUnitCost": 650,
-              "refs": ["courtesanofcibaresh", "tag_Daemon", "courtesan_cibaresh", "wizard", "noHope"],
+              "refs": ["courtesanOfCibaresh", "tag_Daemon", "courtesanofcibaresh", "courtesan_cibaresh", "wizard", "noHope"],
               "size": "1",
               "rarity": "Extraordinary",
               "height": "5",
@@ -1914,7 +1935,6 @@
                     {
                       "type": "group",
                       "option_id": "wdc4tqu4bt5rdwlgplt0y",
-                      "name": "Leadership",
                       "optionsLabel": "Leadership",
                       "options": [
                         {
@@ -1982,21 +2002,21 @@
                       "minSize": 1,
                       "options": [
                         {
-                          "refs": ["wizardapprentice", "wizardApprentice"],
+                          "refs": ["wizardApprentice", "wizardapprentice"],
                           "name": "Wizard Apprentice",
                           "type": "check",
                           "cost": 0,
                           "option_id": "danrary0cicqoq9hfm1g5k"
                         },
                         {
-                          "refs": ["wizardadept", "wizardAdept"],
+                          "refs": ["wizardAdept", "wizardadept"],
                           "name": "Wizard Adept",
                           "type": "check",
                           "cost": 100,
                           "option_id": "8t52jqfx4qizlsp8u13vcg"
                         },
                         {
-                          "refs": ["wizardmaster", "wizardMaster"],
+                          "refs": ["wizardMaster", "wizardmaster"],
                           "name": "Wizard Master",
                           "type": "check",
                           "cost": 250,
@@ -2057,7 +2077,7 @@
               "cost": 380,
               "option_id": "ixcj8w2x6t980rdcu73erf",
               "unit_id": "omenOfSavar",
-              "refs": ["omenofsavar", "tag_Daemon", "omen_savar", "wizard"],
+              "refs": ["omenOfSavar", "tag_Daemon", "omenofsavar", "omen_savar", "wizard"],
               "size": "1",
               "rarity": "Extraordinary",
               "height": "1",
@@ -2070,7 +2090,6 @@
                     {
                       "type": "group",
                       "option_id": "jd2q6vvv4szuk8q59mfoc",
-                      "name": "Leadership",
                       "optionsLabel": "Leadership",
                       "options": [
                         {
@@ -2094,16 +2113,25 @@
                   "options": [
                     {
                       "type": "check",
+                      "name": "Light Troops",
+                      "cost": 0,
+                      "option_id": "qbtbs3kh2m440wkw",
+                      "refs": ["lightTroops", "lighttroops"]
+                    },
+                    {
+                      "type": "check",
                       "cost": 115,
                       "name": "Throne of Overwhelming Splendour",
                       "options": [],
                       "refopt": "throneOfOverwhelmingSplendourMount",
                       "option_id": "9u62dx1gs2a9hj1tfbds5w",
-                      "refs": ["throneofoverwhelmingsplendour", "throne_overwhelming"],
+                      "refs": ["throneOfOverwhelmingSplendour", "throneofoverwhelmingsplendour", "throne_overwhelming"],
                       "extraCategories": ["aves"]
                     }
                   ],
-                  "option_id": "alwymubcosrzloa1twsaf"
+                  "option_id": "alwymubcosrzloa1twsaf",
+                  "minSize": 1,
+                  "maxSize": 1
                 },
                 {
                   "type": "group",
@@ -2155,14 +2183,14 @@
                       "minSize": 1,
                       "options": [
                         {
-                          "refs": ["wizardapprentice", "wizardApprentice"],
+                          "refs": ["wizardApprentice", "wizardapprentice"],
                           "name": "Wizard Apprentice",
                           "type": "check",
                           "cost": 0,
                           "option_id": "st82phu4h8krm09g3cj9y"
                         },
                         {
-                          "refs": ["wizardadept", "wizardAdept"],
+                          "refs": ["wizardAdept", "wizardadept"],
                           "name": "Wizard Adept",
                           "type": "check",
                           "cost": 100,
@@ -2213,21 +2241,6 @@
                     }
                   ],
                   "option_id": "qmk16j1b1xpsyofu8rm9"
-                },
-                {
-                  "type": "group",
-                  "name": "Options",
-                  "optionsLabel": "Options",
-                  "option_id": "3ubcm9yjvk9bhaz1",
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "Light Troops",
-                      "cost": 0,
-                      "option_id": "qbtbs3kh2m440wkw",
-                      "refs": ["lighttroops"]
-                    }
-                  ]
                 }
               ],
               "override": [
@@ -2251,7 +2264,7 @@
               "cost": 580,
               "option_id": "lk1pmwfiqzm23sh50lkrd",
               "unit_id": "sentinelOfNukuja",
-              "refs": ["sentinelofnukuja", "wizard", "wizardMaster", "tag_Daemon", "sentinel_nukuja"],
+              "refs": ["sentinelOfNukuja", "wizard", "wizardMaster", "tag_Daemon", "sentinelofnukuja", "sentinel_nukuja"],
               "size": "1",
               "rarity": "Extraordinary",
               "height": "3",
@@ -2264,7 +2277,6 @@
                     {
                       "type": "group",
                       "option_id": "gt91poxswgqtoom38vvcm",
-                      "name": "Leadership",
                       "optionsLabel": "Leadership",
                       "options": [
                         {
@@ -2290,7 +2302,6 @@
                     {
                       "type": "group",
                       "optionsLabel": "Path",
-                      "minSize": 1,
                       "maxSize": 1,
                       "override": [
                         {
@@ -2392,13 +2403,13 @@
                       "cost": 0,
                       "refopt": "darkPulpitMount",
                       "option_id": "6z57ffqwg4cbtgvielu84g",
-                      "refs": ["darkpulpit"]
+                      "refs": ["darkPulpit", "darkpulpit"]
                     },
                     {
                       "type": "check",
                       "name": "Strixian Spirit",
                       "cost": 100,
-                      "refs": ["strixianspirit", "flyer", "strixian"],
+                      "refs": ["strixianSpirit", "strixianspirit", "flyer", "strixian"],
                       "armyHasNotOption": ["strixian"],
                       "option_id": "0073qfeikd4fvp206a58am9h"
                     }
@@ -2437,7 +2448,7 @@
               "cost": 600,
               "option_id": "zc2bpeqqgi8v5dcjllmhxb",
               "unit_id": "vanadrasScourge",
-              "refs": ["vanadrasscourge", "tag_Daemon", "vanadras_scourge", "noHope"],
+              "refs": ["vanadrasScourge", "tag_Daemon", "vanadrasscourge", "vanadras_scourge", "noHope"],
               "size": "1",
               "rarity": "Extraordinary",
               "height": "5",
@@ -2451,7 +2462,6 @@
                     {
                       "type": "group",
                       "option_id": "ox6pqjbl59b14kkb67sw5s",
-                      "name": "Leadership",
                       "optionsLabel": "Leadership",
                       "options": [
                         {
@@ -2490,14 +2500,14 @@
                           "minSize": 1,
                           "options": [
                             {
-                              "refs": ["wizardapprentice", "wizardApprentice"],
+                              "refs": ["wizardApprentice", "wizardapprentice"],
                               "name": "Wizard Apprentice",
                               "type": "check",
                               "cost": 50,
                               "option_id": "09x5uet6ixzeq9b2bgd4m8j"
                             },
                             {
-                              "refs": ["wizardadept", "wizardAdept"],
+                              "refs": ["wizardAdept", "wizardadept"],
                               "name": "Wizard Adept",
                               "type": "check",
                               "cost": 150,
@@ -2646,6 +2656,7 @@
                   ]
                 }
               ],
+              "armyHasNotOption": ["army_general"],
               "maxUnitCost": 650
             },
             {
@@ -2676,7 +2687,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "armyHasNotOption": ["army_general"]
             }
           ],
           "option_id": "kseijmc91zaiuv3rvslrl"
@@ -2725,21 +2737,21 @@
                               "name": "Incendiary Ichor",
                               "cost": 0,
                               "option_id": "zlzdo8erfbeuhwee9y4iw",
-                              "refs": ["incendiaryichor"]
+                              "refs": ["incendiaryIchor", "incendiaryichor"]
                             },
                             {
                               "type": "check",
                               "name": "All-Seeing Eye",
                               "cost": 2,
                               "option_id": "fsdgdfhg43hhgfdhfgd32y43",
-                              "refs": ["allseeingeye"]
+                              "refs": ["allseeingEye", "allseeingeye"]
                             },
                             {
                               "type": "check",
                               "name": "Dark Hide",
                               "cost": 1,
                               "option_id": "ezqtyaz11df93li3pwr7a",
-                              "refs": ["darkhide"]
+                              "refs": ["darkHide", "darkhide"]
                             },
                             {
                               "type": "check",
@@ -2747,7 +2759,7 @@
                               "cost": 20,
                               "costParentMult": false,
                               "option_id": "gysln5xk4kmw58bveref7f",
-                              "refs": ["markoftheeternalchampion", "wizard", "dl_mark_eternal_champ"],
+                              "refs": ["markOfTheEternalChampion", "markoftheeternalchampion", "wizard", "dl_mark_eternal_champ"],
                               "magic": {
                                 "amount": 0,
                                 "spells": [
@@ -2765,7 +2777,7 @@
                             {
                               "type": "check",
                               "name": "Sorcerous Antennae",
-                              "refs": ["sorcerousantennae", "mfa_sorcerous", "magic_start"],
+                              "refs": ["sorcerousAntennae", "sorcerousantennae", "mfa_sorcerous", "magic_start"],
                               "cost": 40,
                               "costParentMult": false,
                               "option_id": "35yhlzapqgrbebtf1i6llu",
@@ -2814,7 +2826,7 @@
                               }
                             }
                           ],
-                          "refs": ["firestarterspearofinfinity"]
+                          "refs": ["fireStarterSpearOfInfinity", "firestarterspearofinfinity"]
                         },
                         {
                           "type": "check",
@@ -2831,7 +2843,7 @@
                               }
                             }
                           ],
-                          "refs": ["firestarterthaumaturgyone"]
+                          "refs": ["fireStarterThaumaturgyOne", "firestarterthaumaturgyone"]
                         }
                       ],
                       "option_id": "xlv57h63tlea3javucwh8a"
@@ -2880,35 +2892,35 @@
                               "name": "Dark Hide",
                               "cost": 1,
                               "option_id": "ggvaeo19nft47vvgy7h6if",
-                              "refs": ["darkhide"]
+                              "refs": ["darkHide", "darkhide"]
                             },
                             {
                               "type": "check",
                               "name": "Mesmerising Plumage",
                               "cost": 2,
                               "option_id": "9pp3e1dao3isk0yz0nbmq",
-                              "refs": ["mesmerisingplumage"]
+                              "refs": ["mesmerisingPlumage", "mesmerisingplumage"]
                             },
                             {
                               "type": "check",
                               "name": "Torporous Tendrils",
                               "cost": 3,
                               "option_id": "e4mdsgsve1ret6lycz142r",
-                              "refs": ["torporoustendrils"]
+                              "refs": ["torporousTendrils", "torporoustendrils"]
                             },
                             {
                               "type": "check",
                               "name": "Bronze Backbone",
                               "cost": 4,
                               "option_id": "u40el764prmt2lp0psurx",
-                              "refs": ["bronzebackbone"]
+                              "refs": ["bronzeBackbone", "bronzebackbone"]
                             },
                             {
                               "type": "check",
                               "name": "Horrifying Visage",
                               "cost": 1,
                               "option_id": "gfdgrehdssdfjrgfdgfd4r3",
-                              "refs": ["horrifyingvisage"]
+                              "refs": ["horrifyingVisage", "horrifyingvisage"]
                             }
                           ],
                           "option_id": "fkbhalxvmsh3rqolxef3zj"
@@ -2929,7 +2941,7 @@
                       "name": "Standard Bearer",
                       "cost": 10,
                       "option_id": "0glo207cyfht72x7jb2ucl",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -2975,28 +2987,28 @@
                               "name": "Brimstone Secretions",
                               "cost": 1,
                               "option_id": "a9x3pfu29szxo02v4j6n",
-                              "refs": ["brimstonesecretions"]
+                              "refs": ["brimstoneSecretions", "brimstonesecretions"]
                             },
                             {
                               "type": "check",
                               "name": "Golden Helm",
                               "cost": 1,
                               "option_id": "hdpth7tbyko4w6bm6ga1",
-                              "refs": ["goldenhelm"]
+                              "refs": ["goldenHelm", "goldenhelm"]
                             },
                             {
                               "type": "check",
                               "name": "Centipede Legs",
                               "cost": 2,
                               "option_id": "gpgd4dayuhfc0ix5uoqecp6t",
-                              "refs": ["centipedelegs"]
+                              "refs": ["centipedeLegs", "centipedelegs"]
                             },
                             {
                               "type": "check",
                               "name": "Torporous Tendrils",
                               "cost": 1,
                               "option_id": "39ijofps52q8nwbgleoj",
-                              "refs": ["torporoustendrils"]
+                              "refs": ["torporousTendrils", "torporoustendrils"]
                             },
                             {
                               "type": "check",
@@ -3004,7 +3016,7 @@
                               "cost": 50,
                               "option_id": "5h9v22d5g7za38aw2mwtga",
                               "costParentMult": false,
-                              "refs": ["unnaturalroots"]
+                              "refs": ["unnaturalRoots", "unnaturalroots"]
                             }
                           ],
                           "option_id": "hhhvcvc259d8qhgi8t8uje"
@@ -3025,7 +3037,7 @@
                       "name": "Standard Bearer",
                       "cost": 10,
                       "option_id": "99qf1qtcga7vmjrhstzz8n",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -3071,35 +3083,35 @@
                               "name": "Hot Blood",
                               "cost": 1,
                               "option_id": "ovrwcqycdxn4r6tjekln62",
-                              "refs": ["hotblood"]
+                              "refs": ["hotBlood", "hotblood"]
                             },
                             {
                               "type": "check",
                               "name": "Unhinging Jaw",
                               "cost": 2,
                               "option_id": "yst0yc0uzf8oh98pljajo",
-                              "refs": ["unhingingjaw"]
+                              "refs": ["unhingingJaw", "unhingingjaw"]
                             },
                             {
                               "type": "check",
                               "name": "Whipcrack Tail",
                               "cost": 3,
                               "option_id": "t9gsdn9ntr103dccry5ee",
-                              "refs": ["whipcracktail"]
+                              "refs": ["whipcrackTail", "whipcracktail"]
                             },
                             {
                               "type": "check",
                               "name": "Bronze Backbone",
                               "cost": 3,
                               "option_id": "jbc950rvcbsgnrqdsgmf",
-                              "refs": ["bronzebackbone"]
+                              "refs": ["bronzeBackbone", "bronzebackbone"]
                             },
                             {
                               "type": "check",
                               "name": "Piercing Spike",
                               "cost": 2,
                               "option_id": "blp9r69b08ifked693h0vb",
-                              "refs": ["piercingspike"]
+                              "refs": ["piercingSpike", "piercingspike"]
                             }
                           ],
                           "option_id": "bndkpm7m84f5db26uynl3s"
@@ -3120,7 +3132,7 @@
                       "name": "Standard Bearer",
                       "cost": 10,
                       "option_id": "hnb4ieh4tatupfr8cg8ki",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -3187,26 +3199,26 @@
                               "name": "Incendiary Ichor",
                               "cost": 2,
                               "option_id": "ihe7kmvyabolbaaqpc8c8",
-                              "refs": ["incendiaryichor"]
+                              "refs": ["incendiaryIchor", "incendiaryichor"]
                             },
                             {
                               "type": "check",
                               "name": "All-Seeing Eye",
                               "cost": 12,
                               "option_id": "olex8jhj6g9kj1ge8fdikd",
-                              "refs": ["allseeingeye"]
+                              "refs": ["allseeingEye", "allseeingeye"]
                             },
                             {
                               "type": "check",
                               "name": "Kaleidoscopic Flesh",
                               "cost": 6,
                               "option_id": "hywxolhaki983a1ig1wao4",
-                              "refs": ["kaleidoscopicflesh"]
+                              "refs": ["kaleidoscopicFlesh", "kaleidoscopicflesh"]
                             },
                             {
                               "type": "check",
                               "name": "Sorcerous Antennae",
-                              "refs": ["sorcerousantennae", "mfa_sorcerous", "magic_start"],
+                              "refs": ["sorcerousAntennae", "sorcerousantennae", "mfa_sorcerous", "magic_start"],
                               "cost": 30,
                               "costParentMult": false,
                               "option_id": "tv0u610exmhlesh2sllwkp",
@@ -3250,7 +3262,7 @@
                       "name": "Wizard Conclave (2)",
                       "cost": 130,
                       "option_id": "0n0rye3rmfp7x6vv",
-                      "refs": ["wizardconclave", "wizard"],
+                      "refs": ["wizardConclave", "wizardconclave", "wizard"],
                       "magic": {
                         "amount": 2,
                         "spells": [
@@ -3308,20 +3320,20 @@
                               "name": "Hot Blood",
                               "cost": 1,
                               "option_id": "2q5e6fj29vcla1gzkm7e8e",
-                              "refs": ["hotblood"]
+                              "refs": ["hotBlood", "hotblood"]
                             },
                             {
                               "type": "check",
                               "name": "Incendiary Ichor",
                               "cost": 1,
                               "option_id": "7p9vn33i0tm974p7adir9n",
-                              "refs": ["incendiaryichor"]
+                              "refs": ["incendiaryIchor", "incendiaryichor"]
                             },
                             {
                               "type": "check",
                               "name": "Digestive Vomit",
                               "cost": 2,
-                              "refs": ["digestivevomit", "one_use_item"],
+                              "refs": ["digestiveVomit", "digestivevomit", "one_use_item"],
                               "option_id": "dojoi0hs89usfq8bvkq3km"
                             },
                             {
@@ -3329,14 +3341,14 @@
                               "name": "Horns of Hubris",
                               "cost": 1,
                               "option_id": "2g01e0uinfw1uq9kx1chtq",
-                              "refs": ["hornsofhubris"]
+                              "refs": ["hornsOfHubris", "hornsofhubris"]
                             },
                             {
                               "type": "check",
                               "name": "Dark Hide",
                               "cost": 2,
                               "option_id": "3asxzriy9p1uwsdjfgrmxtdk",
-                              "refs": ["darkhide"]
+                              "refs": ["darkHide", "darkhide"]
                             }
                           ],
                           "option_id": "y7bsggnlsks736jhpdtz0c"
@@ -3371,7 +3383,7 @@
               "cost": 10,
               "option_id": "2zuxw5kctnxjhxjer0vbb",
               "unit_id": "threshingEngine",
-              "refs": ["threshingengine", "tag_Daemon", "tag_Mount", "tag_Construct", "threshing_engine"],
+              "refs": ["threshingEngine", "tag_Daemon", "tag_Mount", "tag_Construct", "threshingengine", "threshing_engine"],
               "height": "4",
               "basesize": "50×100",
               "options": [
@@ -3434,7 +3446,7 @@
                               "cost": 110,
                               "type": "check",
                               "option_id": "zt2x5be8vui3mxr090dy6r",
-                              "refs": ["hordethresher", "extra_cost"],
+                              "refs": ["hordeThresher", "hordethresher", "extra_cost"],
                               "rarity": "Uncommon"
                             },
                             {
@@ -3442,7 +3454,7 @@
                               "cost": 190,
                               "type": "check",
                               "option_id": "2i51d9r4j1qxdqtanqflr",
-                              "refs": ["legionthresher", "extra_cost"],
+                              "refs": ["legionThresher", "legionthresher", "extra_cost"],
                               "rarity": "Rare"
                             },
                             {
@@ -3450,7 +3462,7 @@
                               "name": "Threshing Engine",
                               "cost": 0,
                               "option_id": "xcwpacpw7oeafdbt",
-                              "refs": ["threshingengine"],
+                              "refs": ["threshingEngine", "threshingengine"],
                               "rarity": "Rare"
                             },
                             {
@@ -3727,7 +3739,7 @@
                                   }
                                 }
                               ],
-                              "refs": ["horrifyingvisage"]
+                              "refs": ["horrifyingVisage", "horrifyingvisage"]
                             },
                             {
                               "type": "check",
@@ -3747,7 +3759,7 @@
                                   }
                                 }
                               ],
-                              "refs": ["hornsofhubris"]
+                              "refs": ["hornsOfHubris", "hornsofhubris"]
                             },
                             {
                               "type": "check",
@@ -3767,7 +3779,7 @@
                                   }
                                 }
                               ],
-                              "refs": ["whipcracktail"]
+                              "refs": ["whipcrackTail", "whipcracktail"]
                             },
                             {
                               "type": "check",
@@ -3775,7 +3787,7 @@
                               "cost": 40,
                               "option_id": "6ussuwm825aege2r7ejmv6",
                               "costParentMult": false,
-                              "refs": ["markoftheeternalchampion", "wizard", "dl_mark_eternal_champ"],
+                              "refs": ["markOfTheEternalChampion", "markoftheeternalchampion", "wizard", "dl_mark_eternal_champ"],
                               "magic": {
                                 "amount": 0,
                                 "spells": [
@@ -3808,7 +3820,7 @@
                                   }
                                 }
                               ],
-                              "refs": ["hiddenknives"]
+                              "refs": ["hiddenKnives", "hiddenknives"]
                             }
                           ],
                           "option_id": "m4jtwvj5348tgfxc6trs3"
@@ -3834,7 +3846,7 @@
                       "cost": 10,
                       "type": "check",
                       "option_id": "7dxicuvvpo6vm7x7y2r03",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     }
                   ],
                   "option_id": "5v8c44sqm4utyyh0f8qyw"
@@ -3872,7 +3884,7 @@
               "cost": 220,
               "option_id": "a8nuxmrjabskam11y1uv2o",
               "unit_id": "titanslayerChariot",
-              "refs": ["titanslayerchariot", "tag_Daemon", "tag_Mount", "tag_Construct", "titanslayer"],
+              "refs": ["titanslayerChariot", "tag_Daemon", "tag_Mount", "tag_Construct", "titanslayerchariot", "titanslayer"],
               "size": "1",
               "rarity": "Rare",
               "height": "4",
@@ -3888,13 +3900,13 @@
                       "name": "Golden Helm",
                       "cost": 5,
                       "option_id": "aru52z1uywftqunc84qhg",
-                      "refs": ["goldenhelm", "titanslayer_chariot_amount"]
+                      "refs": ["goldenHelm", "goldenhelm", "titanslayer_chariot_amount"]
                     },
                     {
                       "type": "check",
                       "name": "Digestive Vomit",
                       "cost": 10,
-                      "refs": ["digestivevomit", "one_use_item"],
+                      "refs": ["digestiveVomit", "digestivevomit", "one_use_item"],
                       "option_id": "h91te5pldo7nz9r2eehyk"
                     },
                     {
@@ -3902,21 +3914,21 @@
                       "name": "Chitinous Scales",
                       "cost": 20,
                       "option_id": "g43gfdgfddssfhjksdfg434",
-                      "refs": ["chitinousscales"]
+                      "refs": ["chitinousScales", "chitinousscales"]
                     },
                     {
                       "type": "check",
                       "name": "Segmented Shell",
                       "cost": 5,
                       "option_id": "4xu644b2lzwl3a1t93b96",
-                      "refs": ["segmentedshell"]
+                      "refs": ["segmentedShell", "segmentedshell"]
                     },
                     {
                       "type": "check",
                       "name": "Centipede Legs",
                       "cost": 15,
                       "option_id": "jv170ashu1lm5ln7x1ty1",
-                      "refs": ["centipedelegs"]
+                      "refs": ["centipedeLegs", "centipedelegs"]
                     }
                   ],
                   "option_id": "evp25sepdp4oknax8w4wq"
@@ -3930,7 +3942,7 @@
                       "cost": 10,
                       "type": "check",
                       "option_id": "mrjjj2aaxhrszspfxwahff",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     }
                   ],
                   "option_id": "cv4659hp0dmld53l8vn0f"
@@ -3944,7 +3956,7 @@
               "cost": 90,
               "option_id": "2u1bbvqw7gsr1eqkcldpqp",
               "unit_id": "mageblightGremlins",
-              "refs": ["mageblightgremlins", "tag_Daemon", "tag_Swarm", "mageblight_gremlins"],
+              "refs": ["mageblightGremlins", "tag_Daemon", "tag_Swarm", "mageblightgremlins", "mageblight_gremlins"],
               "basesize": "40×40",
               "options": [
                 {
@@ -3981,28 +3993,28 @@
                               "name": "Hell Can Wait",
                               "cost": 8,
                               "option_id": "fz3laamhoa3g323lxwvgmqp",
-                              "refs": ["hellcanwait"]
+                              "refs": ["hellCanWait", "hellcanwait"]
                             },
                             {
                               "type": "check",
                               "name": "Charged Tendrils",
                               "cost": 6,
                               "option_id": "6kpg4dnhvaddvutbhgzlbpe",
-                              "refs": ["chargedtendrils"]
+                              "refs": ["chargedTendrils", "chargedtendrils"]
                             },
                             {
                               "type": "check",
                               "name": "Piercing Spike",
                               "cost": 10,
                               "option_id": "7mf4hm3vih3sunfksd3j6b",
-                              "refs": ["piercingspike"]
+                              "refs": ["piercingSpike", "piercingspike"]
                             },
                             {
                               "type": "check",
                               "name": "Venom Sacs",
                               "cost": 10,
                               "option_id": "kxw06hegvha1mp9gtx3b6u",
-                              "refs": ["venomsacs"]
+                              "refs": ["venomSacs", "venomsacs"]
                             }
                           ],
                           "option_id": "whruzt9mlvcmwrulo98c"
@@ -4021,7 +4033,7 @@
                           "cost": 0,
                           "type": "check",
                           "armyHasOption": ["generalEnvy"],
-                          "refs": ["favouredofenvy", "favored_of_envy"]
+                          "refs": ["favouredOfEnvy", "favouredofenvy", "favored_of_envy"]
                         }
                       ]
                     }
@@ -4037,7 +4049,7 @@
               "cost": -30,
               "option_id": "c3gz661ky9bvetapqm4vvo",
               "unit_id": "clawedFiends",
-              "refs": ["clawedfiends", "tag_Daemon", "clawed_fiends"],
+              "refs": ["clawedFiends", "tag_Daemon", "clawedfiends", "clawed_fiends"],
               "rarity": "Uncommon",
               "height": "3",
               "basesize": "40×40",
@@ -4063,35 +4075,35 @@
                               "name": "Incendiary Ichor",
                               "cost": 3,
                               "option_id": "90p02wmogbsfsa7if7jqyi7yg",
-                              "refs": ["incendiaryichor"]
+                              "refs": ["incendiaryIchor", "incendiaryichor"]
                             },
                             {
                               "type": "check",
                               "name": "Mesmerising Plumage",
                               "cost": 6,
                               "option_id": "nv4w7scv1poegvuel8mdbk",
-                              "refs": ["mesmerisingplumage"]
+                              "refs": ["mesmerisingPlumage", "mesmerisingplumage"]
                             },
                             {
                               "type": "check",
                               "name": "Piercing Spike",
                               "cost": 10,
                               "option_id": "i6ymti79flceonfoq3a6fj",
-                              "refs": ["piercingspike"]
+                              "refs": ["piercingSpike", "piercingspike"]
                             },
                             {
                               "type": "check",
                               "name": "Unholy Appetite",
                               "cost": 7,
                               "option_id": "a0rptiwha5rbxpkv6wyt",
-                              "refs": ["unholyappetite"]
+                              "refs": ["unholyAppetite", "unholyappetite"]
                             },
                             {
                               "type": "check",
                               "name": "Unhinging Jaw",
                               "cost": 12,
                               "option_id": "yst5zjoo9jjbs9axakf7n9",
-                              "refs": ["unhingingjaw"]
+                              "refs": ["unhingingJaw", "unhingingjaw"]
                             }
                           ],
                           "option_id": "6jnjf9v4o8x84jpbstrbbd"
@@ -4112,7 +4124,7 @@
                       "name": "Standard Bearer",
                       "cost": 10,
                       "option_id": "u1rwda4ctag0kfoj3vzcxu",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -4172,28 +4184,28 @@
                               "name": "Chitinous Scales",
                               "cost": 4,
                               "option_id": "mik0oxbezc9cwz2sjgz38",
-                              "refs": ["chitinousscales"]
+                              "refs": ["chitinousScales", "chitinousscales"]
                             },
                             {
                               "type": "check",
                               "name": "Segmented Shell",
                               "cost": 2,
                               "option_id": "gfdgghfdjgvfhgfh54h54h54",
-                              "refs": ["segmentedshell"]
+                              "refs": ["segmentedShell", "segmentedshell"]
                             },
                             {
                               "type": "check",
                               "name": "Clinging Ichor",
                               "cost": 4,
                               "option_id": "x4vqm2lrznhzu06eh9ads87mk",
-                              "refs": ["clingingichor"]
+                              "refs": ["clingingIchor", "clingingichor"]
                             },
                             {
                               "type": "check",
                               "name": "Mirrored Scales",
                               "cost": 15,
                               "option_id": "dfz6l0e78gld7iwvfuauz",
-                              "refs": ["mirroredscales"]
+                              "refs": ["mirroredScales", "mirroredscales"]
                             },
                             {
                               "type": "check",
@@ -4201,14 +4213,14 @@
                               "cost": 50,
                               "option_id": "wki5wb5tad926j5udqhgkc",
                               "costParentMult": false,
-                              "refs": ["unnaturalroots"]
+                              "refs": ["unnaturalRoots", "unnaturalroots"]
                             },
                             {
                               "type": "check",
                               "name": "Smothering Coils",
                               "cost": 12,
                               "option_id": "4s9yuh5h8bgfw9udhc9vcj",
-                              "refs": ["smotheringcoils"]
+                              "refs": ["smotheringCoils", "smotheringcoils"]
                             }
                           ],
                           "option_id": "oxmxb4g00ma5r9vphpx8lv"
@@ -4230,7 +4242,7 @@
                       "cost": 0,
                       "type": "check",
                       "armyHasOption": ["generalGreed"],
-                      "refs": ["favouredofgreed", "favored_of_greed"],
+                      "refs": ["favouredOfGreed", "favouredofgreed", "favored_of_greed"],
                       "rarity": "Legendary"
                     }
                   ]
@@ -4244,7 +4256,7 @@
                       "name": "Standard Bearer",
                       "cost": 10,
                       "option_id": "kp8sc188xya6ie69xgfbie",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -4265,7 +4277,7 @@
               "cost": 120,
               "option_id": "dnruxthqyrutmqdethm1h",
               "unit_id": "succubiTempters",
-              "refs": ["succubitempters", "tag_Daemon", "tag_Mount", "succubi_tempters"],
+              "refs": ["succubiTempters", "tag_Daemon", "tag_Mount", "succubitempters", "succubi_tempters"],
               "rarity": "Uncommon",
               "height": "2",
               "basesize": "25×50",
@@ -4304,35 +4316,35 @@
                               "name": "Kaleidoscopic Flesh",
                               "cost": 1,
                               "option_id": "bw29w6bx7ydsrgagwwb4r8l",
-                              "refs": ["kaleidoscopicflesh"]
+                              "refs": ["kaleidoscopicFlesh", "kaleidoscopicflesh"]
                             },
                             {
                               "type": "check",
                               "name": "Hot Blood",
                               "cost": 1,
                               "option_id": "i6fbdptpsgl2a6n2t4mx",
-                              "refs": ["hotblood"]
+                              "refs": ["hotBlood", "hotblood"]
                             },
                             {
                               "type": "check",
                               "name": "Mesmerising Plumage",
                               "cost": 1,
                               "option_id": "xtojcicyardfw7bljjuen",
-                              "refs": ["mesmerisingplumage"]
+                              "refs": ["mesmerisingPlumage", "mesmerisingplumage"]
                             },
                             {
                               "type": "check",
                               "name": "Hidden Knives",
                               "cost": 4,
                               "option_id": "0qtvawd4dkiwgegtsfo1b",
-                              "refs": ["hiddenknives"]
+                              "refs": ["hiddenKnives", "hiddenknives"]
                             },
                             {
                               "type": "check",
                               "name": "Hammer Hand",
                               "cost": 5,
                               "option_id": "hib5uviwmp96gtpenksyul",
-                              "refs": ["hammerhand"]
+                              "refs": ["hammerHand", "hammerhand"]
                             }
                           ],
                           "option_id": "ytuvz9i1yb22y7zqr6cjl"
@@ -4351,7 +4363,7 @@
                           "cost": 0,
                           "type": "check",
                           "armyHasOption": ["generalLust"],
-                          "refs": ["favouredoflust", "favored_of_lust"]
+                          "refs": ["favouredOfLust", "favouredoflust", "favored_of_lust"]
                         }
                       ]
                     }
@@ -4367,7 +4379,7 @@
                       "name": "Standard Bearer",
                       "cost": 10,
                       "option_id": "n1b7acgn8zighbgrmdy6o",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -4388,7 +4400,7 @@
               "cost": 330,
               "option_id": "n0w3tgg3k2n90c3v9bolq",
               "unit_id": "blazingGlory",
-              "refs": ["blazingglory", "tag_Daemon", "blazing_glories"],
+              "refs": ["blazingGlory", "tag_Daemon", "blazingglory", "blazing_glories"],
               "size": "1",
               "rarity": "Rare",
               "height": "4",
@@ -4410,7 +4422,7 @@
                       "cost": 0,
                       "type": "check",
                       "armyHasOption": ["generalPride"],
-                      "refs": ["favouredofpride", "favored_of_pride"]
+                      "refs": ["favouredOfPride", "favouredofpride", "favored_of_pride"]
                     }
                   ],
                   "option_id": "z5mdmdj9c1gobnrknzynq"
@@ -4438,35 +4450,35 @@
                       "name": "Brimstone Secretions",
                       "cost": 5,
                       "option_id": "u9yy5fiu6qhqxe7tvev6p",
-                      "refs": ["brimstonesecretions"]
+                      "refs": ["brimstoneSecretions", "brimstonesecretions"]
                     },
                     {
                       "type": "check",
                       "name": "Horns of Hubris",
                       "cost": 5,
                       "option_id": "zlzi4rqh10nbcnavy9pguc",
-                      "refs": ["hornsofhubris"]
+                      "refs": ["hornsOfHubris", "hornsofhubris"]
                     },
                     {
                       "type": "check",
                       "name": "Golden Helm",
                       "cost": 5,
                       "option_id": "9x3osjso5llgar2s30km",
-                      "refs": ["goldenhelm"]
+                      "refs": ["goldenHelm", "goldenhelm"]
                     },
                     {
                       "type": "check",
                       "name": "Trampling Hooves",
                       "cost": 50,
                       "option_id": "f32f32f32g34g43g34f34h43",
-                      "refs": ["tramplinghooves"]
+                      "refs": ["tramplingHooves", "tramplinghooves"]
                     },
                     {
                       "type": "check",
                       "name": "Bronze Backbone",
                       "cost": 15,
                       "option_id": "naibwveri3kg5bxelcayj",
-                      "refs": ["bronzebackbone"]
+                      "refs": ["bronzeBackbone", "bronzebackbone"]
                     }
                   ],
                   "option_id": "yu4tc4fq20i9w60di59q9"
@@ -4505,8 +4517,9 @@
               "option_id": "szsfjtpv2o9y6h6syk4qak",
               "unit_id": "hopeHarvester",
               "refs": [
-                "hopeharvester",
+                "hopeHarvester",
                 "tag_Daemon",
+                "hopeharvester",
                 "hope_harverster",
                 "not_a_leader",
                 {
@@ -4529,7 +4542,7 @@
                       "cost": 0,
                       "type": "check",
                       "armyHasOption": ["generalSloth"],
-                      "refs": ["favouredofsloth", "hope_harvester_amount", "favored_of_sloth"]
+                      "refs": ["favouredOfSloth", "favouredofsloth", "hope_harvester_amount", "favored_of_sloth"]
                     }
                   ]
                 },
@@ -4556,7 +4569,7 @@
                       "name": "Sorcerous Antennae",
                       "cost": 35,
                       "option_id": "hgfhfg213fdsfsdgdfgfdgdfg4g4",
-                      "refs": ["sorcerousantennae", "mfa_sorcerous"],
+                      "refs": ["sorcerousAntennae", "sorcerousantennae", "mfa_sorcerous"],
                       "armyHasNotOption": [
                         {
                           "refs": ["mfa_sorcerous"],
@@ -4570,21 +4583,21 @@
                       "name": "Hell Can Wait",
                       "cost": 20,
                       "option_id": "gfdgfdmn56y34gsaavb534jngfgfdgfd",
-                      "refs": ["hellcanwait"]
+                      "refs": ["hellCanWait", "hellcanwait"]
                     },
                     {
                       "type": "check",
                       "name": "All-Seeing Eye",
                       "cost": 60,
                       "option_id": "tr52c1ftwoc03dosme3d5",
-                      "refs": ["allseeingeye"]
+                      "refs": ["allseeingEye", "allseeingeye"]
                     },
                     {
                       "type": "check",
                       "name": "Mark of the Eternal Champion",
                       "cost": 30,
                       "option_id": "kkkt6yxr5xtruwzteckh",
-                      "refs": ["markoftheeternalchampion", "wizard", "dl_mark_eternal_champ"],
+                      "refs": ["markOfTheEternalChampion", "markoftheeternalchampion", "wizard", "dl_mark_eternal_champ"],
                       "magic": {
                         "amount": 0,
                         "spells": [
@@ -4604,7 +4617,7 @@
                       "name": "Torporous Tendrils",
                       "cost": 35,
                       "option_id": "lpmrmatwu3ba39wwpe7hb4",
-                      "refs": ["torporoustendrils"]
+                      "refs": ["torporousTendrils", "torporoustendrils"]
                     }
                   ],
                   "option_id": "ign7pdj3kvh39szwiyl9o9"
@@ -4616,7 +4629,7 @@
                       "type": "check",
                       "name": "Engine of Damnation",
                       "loses_rules": ["rulebook-war_platform"],
-                      "refs": ["engineofdamnation", "engine_damnation"],
+                      "refs": ["engineOfDamnation", "engineofdamnation", "engine_damnation"],
                       "cost": 80,
                       "option_id": "6gqtdbmmllusqzedtm6wy"
                     }
@@ -4632,7 +4645,7 @@
               "cost": 60,
               "option_id": "kv9n5jxxtnnehtuzsgb14",
               "unit_id": "brazenBeasts",
-              "refs": ["brazenbeasts", "tag_Daemon", "tag_Mount", "brazen_beasts"],
+              "refs": ["brazenBeasts", "tag_Daemon", "tag_Mount", "brazenbeasts", "brazen_beasts"],
               "rarity": "Uncommon",
               "height": "4",
               "basesize": "50×75",
@@ -4671,35 +4684,35 @@
                               "name": "Incendiary Ichor",
                               "cost": 4,
                               "option_id": "5ltt2yubrq23g21998mv04",
-                              "refs": ["incendiaryichor"]
+                              "refs": ["incendiaryIchor", "incendiaryichor"]
                             },
                             {
                               "type": "check",
                               "name": "Horrifying Visage",
                               "cost": 5,
                               "option_id": "xu4gyvku3zp6wfdyg1pqeyg",
-                              "refs": ["horrifyingvisage"]
+                              "refs": ["horrifyingVisage", "horrifyingvisage"]
                             },
                             {
                               "type": "check",
                               "name": "Chitinous Scales",
                               "cost": 6,
                               "option_id": "lwilkv352nad97t0uc94ug",
-                              "refs": ["chitinousscales"]
+                              "refs": ["chitinousScales", "chitinousscales"]
                             },
                             {
                               "type": "check",
                               "name": "Whipcrack Tail",
                               "cost": 10,
                               "option_id": "6kspzfxufnaaz6ic71b8xn",
-                              "refs": ["whipcracktail"]
+                              "refs": ["whipcrackTail", "whipcracktail"]
                             },
                             {
                               "type": "check",
                               "name": "Curved Tusks",
                               "cost": 16,
                               "option_id": "95njxwx3n7sr8mjy92owe",
-                              "refs": ["curvedtusks"]
+                              "refs": ["curvedTusks", "curvedtusks"]
                             }
                           ],
                           "option_id": "sopiuo1yfscdp2he67zayq"
@@ -4721,7 +4734,7 @@
                       "cost": 0,
                       "type": "check",
                       "armyHasOption": ["generalWrath"],
-                      "refs": ["favouredofwrath", "favored_of_wrath"]
+                      "refs": ["favouredOfWrath", "favouredofwrath", "favored_of_wrath"]
                     }
                   ]
                 },
@@ -4734,7 +4747,7 @@
                       "name": "Standard Bearer",
                       "cost": 10,
                       "option_id": "rpxht9f67ko31brfx36fh",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -4790,35 +4803,35 @@
                               "name": "Curved Tusks",
                               "cost": 1,
                               "option_id": "vsy4o6g6i0r7y7cej9rcrm",
-                              "refs": ["curvedtusks"]
+                              "refs": ["curvedTusks", "curvedtusks"]
                             },
                             {
                               "type": "check",
                               "name": "Venom Sacs",
                               "cost": 1,
                               "option_id": "c68ozlcnrts3etyw6fqrke",
-                              "refs": ["venomsacs"]
+                              "refs": ["venomSacs", "venomsacs"]
                             },
                             {
                               "type": "check",
                               "name": "Dark Hide",
                               "cost": 1,
                               "option_id": "yahqhexd84kfc7sw2vsh9",
-                              "refs": ["darkhide"]
+                              "refs": ["darkHide", "darkhide"]
                             },
                             {
                               "type": "check",
                               "name": "Kaleidoscopic Flesh",
                               "cost": 2,
                               "option_id": "0d993khpbd4nrht86appitj",
-                              "refs": ["kaleidoscopicflesh"]
+                              "refs": ["kaleidoscopicFlesh", "kaleidoscopicflesh"]
                             },
                             {
                               "type": "check",
                               "name": "Mesmerising Plumage",
                               "cost": 3,
                               "option_id": "qliy1osd4iqtq8mxe333mg",
-                              "refs": ["mesmerisingplumage"]
+                              "refs": ["mesmerisingPlumage", "mesmerisingplumage"]
                             }
                           ],
                           "option_id": "64jptuweksd5357u030o5"
@@ -4839,7 +4852,7 @@
               "cost": 110,
               "option_id": "wcg6ug2xexo55j47me4ca2",
               "unit_id": "veilSerpents",
-              "refs": ["veilserpents", "tag_Daemon", "veil_serpents"],
+              "refs": ["veilSerpents", "tag_Daemon", "veilserpents", "veil_serpents"],
               "rarity": "Uncommon",
               "height": "3",
               "basesize": "40×40",
@@ -4870,7 +4883,7 @@
                       "name": "Wizard Conclave (2)",
                       "cost": 120,
                       "option_id": "5zrpflsgswumrmd5",
-                      "refs": ["wizardconclave", "wizard"],
+                      "refs": ["wizardConclave", "wizardconclave", "wizard"],
                       "magic": {
                         "amount": 2,
                         "spells": [
@@ -4904,7 +4917,7 @@
               "cost": 30,
               "option_id": "vmm06nf7gsxykl1yu62zj",
               "unit_id": "bloatFlies",
-              "refs": ["bloatflies", "tag_Daemon", "bloat_flies"],
+              "refs": ["bloatFlies", "tag_Daemon", "bloatflies", "bloat_flies"],
               "rarity": "Uncommon",
               "height": "4",
               "basesize": "50×75",
@@ -4943,13 +4956,13 @@
                               "name": "Unhinging Jaw",
                               "cost": 12,
                               "option_id": "k83rl3b6ttmygv7zzvz3b",
-                              "refs": ["unhingingjaw"]
+                              "refs": ["unhingingJaw", "unhingingjaw"]
                             },
                             {
                               "type": "check",
                               "name": "Digestive Vomit",
                               "cost": 8,
-                              "refs": ["digestivevomit", "one_use_item"],
+                              "refs": ["digestiveVomit", "digestivevomit", "one_use_item"],
                               "option_id": "ro45npo9748aqy1dlgwjfe"
                             },
                             {
@@ -4957,14 +4970,14 @@
                               "name": "Kaleidoscopic Flesh",
                               "cost": 6,
                               "option_id": "3508rgom05ebuhuo8d2ly8",
-                              "refs": ["kaleidoscopicflesh"]
+                              "refs": ["kaleidoscopicFlesh", "kaleidoscopicflesh"]
                             },
                             {
                               "type": "check",
                               "name": "Unholy Appetite",
                               "cost": 8,
                               "option_id": "y2yybr7b9lsqsyjaaafjtf",
-                              "refs": ["unholyappetite"]
+                              "refs": ["unholyAppetite", "unholyappetite"]
                             }
                           ],
                           "option_id": "51u98l7jr2e6a3kxurrv5f"
@@ -4986,7 +4999,7 @@
                       "cost": 0,
                       "type": "check",
                       "armyHasOption": ["generalGluttony"],
-                      "refs": ["favouredofgluttony", "favored_of_gluttony"]
+                      "refs": ["favouredOfGluttony", "favouredofgluttony", "favored_of_gluttony"]
                     }
                   ]
                 },
@@ -4999,7 +5012,7 @@
                       "name": "Standard Bearer",
                       "cost": 10,
                       "option_id": "3lh8akgap7suxotf79tjt9",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -5029,12 +5042,12 @@
               "option_id": "bvz6xekykennyfexzujnh",
               "unit_id": "burningWheelMount",
               "refs": [
-                "burningwheelmount",
+                "burningWheelMount",
                 "tag_Mount",
                 "tag_Construct",
                 "mount",
+                "burningwheelmount",
                 "burning_wheel_mount_unit",
-                "count_towards_aves",
                 "flyer"
               ],
               "invisible": true,
@@ -5046,7 +5059,8 @@
               "category": "mounts",
               "armyHasNotOption": [],
               "loses_rules": ["rulebook-attached"],
-              "logo": "character"
+              "logo": "character",
+              "extraCategories": ["aves"]
             },
             {
               "name": "Hellsteed *Mount",
@@ -5069,7 +5083,7 @@
               "cost": 0,
               "option_id": "osn72y1a3sdb74n4sqxfgn",
               "unit_id": "darkPulpitMount",
-              "refs": ["darkpulpitmount", "tag_Mount", "mount", "darkPulpit_mount_unit"],
+              "refs": ["darkPulpitMount", "tag_Mount", "mount", "darkpulpitmount", "darkPulpit_mount_unit"],
               "invisible": true,
               "rarity": "Rare",
               "height": "3",
@@ -5085,7 +5099,7 @@
               "cost": 0,
               "option_id": "1o4vuajhnga4388byzaarg",
               "unit_id": "greatBeastOfProphecyMount",
-              "refs": ["greatbeastofprophecymount", "tag_Mount", "mount", "greatBeastOfProphecy_mount_unit"],
+              "refs": ["greatBeastOfProphecyMount", "tag_Mount", "mount", "greatbeastofprophecymount", "greatBeastOfProphecy_mount_unit"],
               "invisible": true,
               "rarity": "Uncommon",
               "height": "4",
@@ -5103,7 +5117,7 @@
                   "name": "Impact Hits (2 hits) and Devastating Charge (+1 Str, +1 AP)",
                   "cost": 0,
                   "option_id": "fdor0rjlo7humkysjfdfdw8j9k",
-                  "refs": ["impactgreatbeast"]
+                  "refs": ["impactGreatBeast", "impactHits2", "devastatingCharge1Str", "1Ap", "impactgreatbeast"]
                 }
               ],
               "override": [
@@ -5133,10 +5147,11 @@
               "option_id": "rrtvvqt2qy9oi3a2e5y2",
               "unit_id": "throneOfOverwhelmingSplendourMount",
               "refs": [
-                "throneofoverwhelmingsplendourmount",
+                "throneOfOverwhelmingSplendourMount",
                 "tag_Mount",
                 "tag_Construct",
                 "mount",
+                "throneofoverwhelmingsplendourmount",
                 "throneOfOverwhelmingSplendour_mount_unit",
                 "flyer"
               ],
