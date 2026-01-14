@@ -29,11 +29,10 @@
     "sizeLarge": "Large Size",
     "sizeGigantic": "Gigantic Size",
     "core_unit": "Core Unit",
-    "deepfire_thrower": "Deepfire Thrower",
-    "canister_launcher": "Canister Launcher",
+    "deepfireThrower": "Deepfire Thrower",
+    "canisterLauncher": "Canister Launcher",
     "rotary_gun": "Rotary Gun",
     "jezail": "Jezail",
-    "brute_force": "Brute Force",
     "fetthisFleshmaster": "Fetthis Fleshmaster",
     "experimental_weapons": "Experimental Weapons",
     "small_arms_fire": "Small Arms Fire",
@@ -44,7 +43,6 @@
     "rotary_gun",
     "canister_launcher",
     "deepfire_thrower",
-    "brute_force",
     "small_arms_fire",
     "experimental_weapons",
     "tunnel_gunners"
@@ -1951,14 +1949,7 @@
                       "cost": 55,
                       "hide": true,
                       "options": [],
-                      "option_id": "49en9k20spcefk82ialnm7",
-                      "refs": ["brute_force"],
-                      "armyHasNotOption": [
-                        {
-                          "refs": ["brute_force"],
-                          "amount": 24
-                        }
-                      ]
+                      "option_id": "49en9k20spcefk82ialnm7"
                     }
                   ],
                   "option_id": "adbhlzmpatjgmshtm1gcso"
@@ -2133,13 +2124,6 @@
                       "type": "numeric",
                       "cost": 60,
                       "hide": true,
-                      "refs": ["brute_force"],
-                      "armyHasNotOption": [
-                        {
-                          "refs": ["brute_force"],
-                          "amount": 24
-                        }
-                      ],
                       "options": [],
                       "option_id": "uxl5l9zg1j885xmki8neqt"
                     }
@@ -2300,13 +2284,6 @@
                       "type": "numeric",
                       "cost": 55,
                       "hide": true,
-                      "refs": ["brute_force"],
-                      "armyHasNotOption": [
-                        {
-                          "refs": ["brute_force"],
-                          "amount": 24
-                        }
-                      ],
                       "options": [
                         {
                           "optionsLabel": "Equipment",
@@ -2317,12 +2294,8 @@
                               "cost": 10,
                               "refs": ["deepfireThrower", "deepfirethrower", "deepfire_thrower", "tunnel_gunners"],
                               "option_id": "fw1ewuzr9lp59ygplkg7cc",
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["deepfire_thrower"],
-                                  "amount": 6
-                                }
-                              ]
+                              "rarity": "Rare",
+                              "sharedRarity": "deepfireThrower"
                             },
                             {
                               "type": "check",
@@ -2330,25 +2303,15 @@
                               "cost": 10,
                               "refs": ["canisterLauncher", "canisterlauncher", "canister_launcher", "tunnel_gunners"],
                               "option_id": "tdrgv72hfypamqkeoxi3v4",
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["canister_launcher"],
-                                  "amount": 6
-                                }
-                              ]
+                              "rarity": "Rare",
+                              "sharedRarity": "canisterLauncher"
                             },
                             {
                               "type": "check",
                               "name": "Rotary Gun (4+)",
                               "cost": 25,
                               "refs": ["rotaryGun", "rotarygun", "rotary_gun", "tunnel_gunners"],
-                              "option_id": "bw27gzgjcumz7ak7uai24i",
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["rotary_gun"],
-                                  "amount": 12
-                                }
-                              ]
+                              "option_id": "bw27gzgjcumz7ak7uai24i"
                             },
                             {
                               "type": "check",
@@ -2356,13 +2319,7 @@
                               "parsername": "Jezail and Shield (4+)",
                               "cost": 0,
                               "option_id": "rl9udj4d1tsc3vgent7u6l",
-                              "refs": ["jezailAndShield", "jezail", "shield", "jezailandshield", "tunnel_gunners"],
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["jezail"],
-                                  "amount": 18
-                                }
-                              ]
+                              "refs": ["jezailAndShield", "jezail", "shield", "jezailandshield", "tunnel_gunners"]
                             }
                           ],
                           "minSize": 1,
@@ -2444,12 +2401,6 @@
                               "name": "Rotary Gun (4+)",
                               "cost": 25,
                               "refs": ["rotaryGun", "rotarygun", "rotary_gun", "tunnel_gunners"],
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["rotary_gun"],
-                                  "amount": 12
-                                }
-                              ],
                               "option_id": "lp2yxsx75zfgwi8de32zbv"
                             },
                             {
@@ -2457,26 +2408,18 @@
                               "name": "Canister Launcher (6+)",
                               "cost": 10,
                               "refs": ["canisterLauncher", "canisterlauncher", "canister_launcher"],
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["canister_launcher"],
-                                  "amount": 6
-                                }
-                              ],
-                              "option_id": "tfnys7cxvbb5mb110ppmp"
+                              "option_id": "tfnys7cxvbb5mb110ppmp",
+                              "rarity": "Rare",
+                              "sharedRarity": "canisterLauncher"
                             },
                             {
                               "type": "check",
                               "name": "Deepfire Thrower (6+)",
                               "cost": 20,
                               "refs": ["deepfireThrower", "deepfirethrower", "deepfire_thrower", "tunnel_gunners"],
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["deepfire_thrower"],
-                                  "amount": 6
-                                }
-                              ],
-                              "option_id": "rqk2nrs0roj6p1f3ekz9ir"
+                              "option_id": "rqk2nrs0roj6p1f3ekz9ir",
+                              "rarity": "Rare",
+                              "sharedRarity": "deepfireThrower"
                             },
                             {
                               "type": "check",
@@ -2484,12 +2427,6 @@
                               "parsername": "Jezail and Shield (4+)",
                               "cost": 0,
                               "refs": ["jezailAndShield", "jezail", "shield", "jezailandshield", "tunnel_gunners"],
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["jezail"],
-                                  "amount": 18
-                                }
-                              ],
                               "option_id": "2q37kp0qorto1l5rrsvhyg"
                             }
                           ],
