@@ -2423,15 +2423,7 @@
               "cost": -10,
               "option_id": "9ikzkr50ubo4wkiknj9q",
               "unit_id": "bombardiers",
-              "refs": [
-                "bombardiers",
-                "tag_Ogre",
-                "tag_Light Armour",
-                {
-                  "ref": "hired_guns",
-                  "amount": 5
-                }
-              ],
+              "refs": ["bombardiers", "tag_Ogre", "tag_Light Armour"],
               "height": "3",
               "basesize": "40×40",
               "extraCategories": ["powderKeg"],
@@ -2447,7 +2439,13 @@
                       "type": "numeric",
                       "cost": 60,
                       "option_id": "48niwjxvklyjokysxkckna",
-                      "refs": ["bombardiers_amount"]
+                      "refs": [
+                        "bombardiers_amount",
+                        {
+                          "ref": "hired_guns",
+                          "amount": 5
+                        }
+                      ]
                     }
                   ],
                   "option_id": "6xrs2rnfgmbm0wmtijp3we"
