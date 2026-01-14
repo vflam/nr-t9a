@@ -43,6 +43,15 @@
           "shared": true,
           "rarity": "Legendary",
           "refs": ["spellScroll"]
+        },
+        {
+          "name": "Scroll of a Free Mind",
+          "cost": 40,
+          "option_id": "lgj6kawv73l0s1ghjegfkh",
+          "type": "check",
+          "shared": true,
+          "rarity": "Legendary",
+          "refs": ["essenceOfAFreeMind"]
         }
       ]
     },
@@ -343,15 +352,6 @@
           "rarity": "Legendary"
         },
         {
-          "name": "Scroll of a Free Mind",
-          "cost": 40,
-          "option_id": "lgj6kawv73l0s1ghjegfkh",
-          "type": "check",
-          "shared": true,
-          "rarity": "Legendary",
-          "refs": ["essenceOfAFreeMind"]
-        },
-        {
           "name": "Obsidian Rock",
           "cost": 20,
           "option_id": "ghceoudv9cetbc6jo5big",
@@ -438,6 +438,15 @@
                       "refs": ["lightTroops", "lighttroops"]
                     },
                     {
+                      "name": "Taurukh Ritual",
+                      "hasNotOption": ["mount"],
+                      "cost": 10,
+                      "type": "check",
+                      "option_id": "wg7c5eh745gnjm9evn0iba",
+                      "refs": ["taurukhRitual", "taurukhritual", "taurukh_ritual", "beast"],
+                      "rarity": "Rare"
+                    },
+                    {
                       "name": "Bull of Shamut",
                       "refopt": "bullOfShamutMount",
                       "cost": 180,
@@ -451,15 +460,7 @@
                       "option_id": "hxnwv48cau81z1a4xwc8c5j",
                       "refopt": "greatBullOfShamutMount",
                       "type": "check",
-                      "refs": ["greatBullOfShamutMount", "greatbullofshamutmount"]
-                    },
-                    {
-                      "type": "check",
-                      "name": "Great Bull of Shamut",
-                      "cost": 360,
-                      "option_id": "padkj6eyxgnbvd63",
-                      "refs": ["greatbullofshamutmount"],
-                      "refopt": "greatBullOfShamutMount"
+                      "refs": ["greatBullOfShamutMount"]
                     }
                   ],
                   "option_id": "8bol0pvwa0fqo0koeues3"
@@ -651,28 +652,6 @@
                     }
                   ],
                   "option_id": "bapbmxe1v4jzzdmqivmf3"
-                },
-                {
-                  "optionsLabel": "Options",
-                  "collapsible": true,
-                  "maxSize": 1,
-                  "options": [
-                    {
-                      "name": "Taurukh Ritual",
-                      "hasNotOption": ["mount"],
-                      "armyHasNotOption": [
-                        {
-                          "refs": ["taurukh_ritual"],
-                          "amount": 2
-                        }
-                      ],
-                      "cost": 10,
-                      "type": "check",
-                      "option_id": "wg7c5eh745gnjm9evn0iba",
-                      "refs": ["taurukhRitual", "taurukhritual", "taurukh_ritual", "beast"]
-                    }
-                  ],
-                  "option_id": "6abprzuo7wbuumajcel0vl"
                 }
               ],
               "override": [
@@ -2752,7 +2731,9 @@
                               "rarity": "Extraordinary"
                             }
                           ],
-                          "option_id": "z5p0p1y031lvkff30e02p"
+                          "option_id": "z5p0p1y031lvkff30e02p",
+                          "minSize": 1,
+                          "maxSize": 1
                         },
                         {
                           "optionsLabel": "Weapons",
@@ -2780,7 +2761,8 @@
                             }
                           ],
                           "maxSize": 1,
-                          "option_id": "ah4szjg4a4eib64wgftlam"
+                          "option_id": "ah4szjg4a4eib64wgftlam",
+                          "minSize": 1
                         }
                       ],
                       "option_id": "8lcbnb8w1v2j0mnddqlvlr",
