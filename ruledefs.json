@@ -6266,106 +6266,7 @@
     },
     "ud-undying_will": {
       "title": "Undying Will",
-      "def": "Rank-and-File model parts with Skeleton in units containing <span class=\"textbf\">Undying Will</span> gain +2 Def, +2 Off, Magical Attacks,Lethal Strike, and replace their Shooting Weapons’ Aim with (4+). <br> Model parts with Mount are not affected by <span class=\"textbf\">Undying Will</span>.",
-      "mod": [
-        {
-          "affects": ["offense"],
-          "stats": {
-            "Of": "+2"
-          },
-          "rules": {
-            "id": "lethal_strike"
-          },
-          "conditions": [
-            {
-              "or": [
-                [
-                  {
-                    "hasrule": {
-                      "id": "ud-royal_guard",
-                      "value": true
-                    }
-                  }
-                ],
-                [
-                  {
-                    "hasrule": {
-                      "id": "rulebook-characters",
-                      "value": false
-                    }
-                  }
-                ]
-              ]
-            },
-            {
-              "hasrule": {
-                "id": "custom-beast",
-                "value": false
-              }
-            },
-            {
-              "or": [
-                [
-                  {
-                    "hasrule": {
-                      "id": "ud-ensouled_statue",
-                      "value": false
-                    }
-                  }
-                ],
-                [
-                  {
-                    "hasrule": {
-                      "id": "ud-terracotta",
-                      "value": true
-                    }
-                  }
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "affects": ["defense"],
-          "stats": {
-            "Df": "+2"
-          },
-          "conditions": [
-            {
-              "hasrule": {
-                "id": "rulebook-characters",
-                "value": false
-              }
-            },
-            {
-              "hasrule": {
-                "id": "custom-beast",
-                "value": false
-              }
-            },
-            {
-              "or": [
-                [
-                  {
-                    "hasrule": {
-                      "id": "ud-ensouled_statue",
-                      "value": false
-                    }
-                  }
-                ],
-                [
-                  {
-                    "hasrule": {
-                      "id": "ud-terracotta",
-                      "value": true
-                    }
-                  }
-                ]
-              ]
-            }
-          ]
-        }
-      ]
+      "def": "Rank-and-File model parts with Skeleton in units containing <span class=\"textbf\">Undying Will</span> gain +2 Def, +2 Off, Magical Attacks,Lethal Strike, and replace their Shooting Weapons’ Aim with (4+). <br> Model parts with Mount are not affected by <span class=\"textbf\">Undying Will</span>."
     },
     "ud-autonomous": {
       "title": "Autonomous",
@@ -10480,7 +10381,16 @@
     "special-destinys_call": {
       "title": "Destiny’s Call",
       "def": "<span class=\"textbf\">Aegis (4+)</span>, and the model’s Armour is <span class=\"textbf\">always</span> 3.<br> <i>Note that this means it cannot be improved beyond 3. <br> It is still affected by Armour Penetration.</i>",
-      "type": "Armour"
+      "type": "Armour",
+      "mod": [
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "@3",
+            "Aeg": "=4+"
+          }
+        }
+      ]
     },
     "special-essence_of_mithril": {
       "title": "Essence of Mithril",

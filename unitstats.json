@@ -11861,9 +11861,18 @@
         "tags": "Mount"
       },
       "imperialDetachment": {
+        "name": "Imperial Guard",
         "unit_id": "imperialDetachment",
+        "cost": "170",
         "size": "15",
-        "global": {},
+        "basesize": "20×20",
+        "height": "1",
+        "rarity": "Common",
+        "global": {
+          "Ad": "4",
+          "Ma": "4",
+          "Di": "8"
+        },
         "globalrules": [
           {
             "name": "Bodyguard",
@@ -11882,7 +11891,22 @@
             "name": "Insignificant",
             "id": "rulebook-insignificant"
           }
-        ]
+        ],
+        "defense": {
+          "HP": "1",
+          "Df": "4",
+          "Re": "3",
+          "Arm": "3"
+        },
+        "offensename": "Imperial Guard",
+        "offense": {
+          "At": "1",
+          "Of": "4",
+          "St": "4",
+          "AP": "1",
+          "Ag": "3"
+        },
+        "tags": "Human,\n\t\tMetal Armour"
       },
       "imperialGuard": {
         "name": "Imperial Guard",
@@ -12458,10 +12482,18 @@
         "tagsB": "Mount"
       },
       "stateDetachment": {
+        "name": "State Infantry",
         "unit_id": "stateDetachment",
         "cost": "120",
         "size": "15-20",
-        "global": {},
+        "basesize": "20×20",
+        "height": "1",
+        "rarity": "Regular",
+        "global": {
+          "Ad": "4",
+          "Ma": "4",
+          "Di": "7"
+        },
         "globalrules": [
           {
             "name": "Support Unit",
@@ -12473,10 +12505,25 @@
           }
         ],
         "defense": {
+          "HP": "1",
+          "Df": "3",
+          "Re": "3",
           "Arm": "1"
         },
+        "defenserules": [
+          {
+            "name": "Shield",
+            "id": "rulebook-shield"
+          }
+        ],
         "offensename": "State Infantry",
-        "offense": {},
+        "offense": {
+          "At": "1",
+          "Of": "3",
+          "St": "3",
+          "AP": "0",
+          "Ag": "3"
+        },
         "tags": "Human,\n\t\tLight Armour"
       },
       "stateInfantry": {
@@ -29620,9 +29667,15 @@
         "name": "Bloodfur Praetorians",
         "unit_id": "bloodfurPraetorians",
         "cost": "240",
+        "size": "20-40",
         "basesize": "20×20",
+        "height": "1",
         "rarity": "Extraordinary",
-        "global": {},
+        "global": {
+          "Ad": "5",
+          "Ma": "5",
+          "Di": "6"
+        },
         "globalrules": [
           {
             "name": "P A R E N T",
@@ -29634,14 +29687,47 @@
             "params": ["General"]
           }
         ],
+        "defense": {
+          "HP": "1",
+          "Df": "3",
+          "Re": "2",
+          "Arm": "2"
+        },
+        "defenserules": [
+          {
+            "name": "Shield",
+            "id": "rulebook-shield"
+          }
+        ],
         "offensename": "Bloodfur Praetorian",
-        "offense": {},
+        "offense": {
+          "At": "1",
+          "Of": "4",
+          "St": "3",
+          "AP": "0",
+          "Ag": "5"
+        },
+        "offenserules": [
+          {
+            "name": "Cohort Coordination",
+            "id": "vs-cohort_coordination"
+          },
+          {
+            "name": "Gladius",
+            "id": "vs-gladius"
+          },
+          {
+            "name": "Weapon Master",
+            "id": "rulebook-weapon_master"
+          }
+        ],
         "offenseweapons": [
           {
             "name": "Great Weapon",
             "id": "rulebook-great_weapon"
           }
-        ]
+        ],
+        "tags": "Vermin,\n\t\tLegionary,\n\t\tMetal Armour"
       },
       "doomsparkDevice": {
         "name": "Doomspark Device",
@@ -29927,9 +30013,16 @@
       "fireRats": {
         "name": "Fire Rats",
         "unit_id": "fireRats",
+        "cost": "90",
         "size": "10-20",
         "basesize": "25×50",
-        "global": {},
+        "height": "1",
+        "rarity": "Uncommon",
+        "global": {
+          "Ad": "7",
+          "Ma": "7",
+          "Di": "5"
+        },
         "globalrules": [
           {
             "name": "P A R E N T",
@@ -29938,9 +30031,26 @@
           {
             "name": "Furs on Fire!",
             "id": "fursOnFire"
+          },
+          {
+            "name": "Unruly",
+            "id": "rulebook-unruly"
+          },
+          {
+            "name": "Swiftstride",
+            "id": "rulebook-swiftstride"
+          },
+          {
+            "name": "Solitary",
+            "id": "rulebook-solitary"
           }
         ],
-        "defense": {},
+        "defense": {
+          "HP": "1",
+          "Df": "2",
+          "Re": "2",
+          "Arm": "0"
+        },
         "defenserules": [
           {
             "name": "P A R E N T",
@@ -29953,7 +30063,13 @@
           }
         ],
         "offensename": "Fire Rat",
-        "offense": {},
+        "offense": {
+          "At": "1",
+          "Of": "2",
+          "St": "3",
+          "AP": "1",
+          "Ag": "5"
+        },
         "offenserules": [
           {
             "name": "P A R E N T",
@@ -29963,7 +30079,9 @@
             "name": "Flaming Attacks",
             "id": "rulebook-flaming_attacks"
           }
-        ]
+        ],
+        "offenseweapons": [],
+        "tags": "Beast,\n\t\tMutant"
       },
       "giantRats": {
         "name": "Giant Rats",
