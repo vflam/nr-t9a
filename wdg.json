@@ -2186,34 +2186,25 @@
                           "optionsLabel": "Equipment",
                           "options": [
                             {
+                              "refs": ["throwingWeapons", "throwingweapons", "barbarian_throwing"],
+                              "name": "Throwing Weapons (5+)",
+                              "cost": 1,
+                              "type": "check"
+                            }
+                          ],
+                          "option_id": "iv2c5sx6cko6ubdt5rwyns"
+                        },
+                        {
+                          "optionsLabel": "Weapons",
+                          "maxSize": 1,
+                          "options": [
+                            {
                               "name": "Shield",
                               "cost": 0,
                               "type": "check",
                               "refs": ["shield", "barbarian_shields"],
                               "option_id": "in2s3eu16ds7zlvmjoxocs"
                             },
-                            {
-                              "refs": ["throwingWeapons", "throwingweapons", "barbarian_throwing"],
-                              "name": "Throwing Weapons (5+)",
-                              "cost": 1,
-                              "type": "check",
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["barbarian_throwing"],
-                                  "amount": 40
-                                }
-                              ],
-                              "option_id": "ivv0qds3ldmlh2udxs6bk"
-                            }
-                          ],
-                          "option_id": "iv2c5sx6cko6ubdt5rwyns",
-                          "minSize": 1,
-                          "maxSize": 1
-                        },
-                        {
-                          "optionsLabel": "Weapons",
-                          "maxSize": 1,
-                          "options": [
                             {
                               "name": "Paired Weapons",
                               "cost": 1,
@@ -3656,6 +3647,7 @@
                       "name": "Wrath of God",
                       "cost": 0,
                       "option_id": "nx0i4cx139xch5gi",
+                      "hasOption": ["wizardMaster"],
                       "boundSpells": [
                         {
                           "path": "thaumaturgy",
@@ -3702,28 +3694,6 @@
                   ]
                 }
               ],
-              "magic": {
-                "amount": 1,
-                "replaceSpells": true,
-                "spells": [
-                  {
-                    "path": "alchemy",
-                    "ref": "silver_spike"
-                  },
-                  {
-                    "path": "evocation",
-                    "ref": "whispers_of_the_veil"
-                  },
-                  {
-                    "path": "evocation",
-                    "ref": "danse_macabre"
-                  },
-                  {
-                    "path": "hereditary",
-                    "ref": "hellfire"
-                  }
-                ]
-              },
               "type": "check",
               "category": "mounts",
               "armyHasNotOption": [],
