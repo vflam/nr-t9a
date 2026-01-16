@@ -4339,7 +4339,7 @@
     },
     "ok-its_a_trap": {
       "title": "It’s a Trap!",
-      "def": "When an enemy unit performs any of the following actions, it suffers 2D6 hits with Strength 4, Armour Penetration 1, and <span class=\"textbf\">Unmodifiable</span>: <br>&nbsp;&nbsp;&bull; <br>&nbsp;&nbsp;&bull; <br> Resolve the hits at the end of the action that triggered them. No unit can be affected by <span class=\"textbf\">It’s a Trap!</span> more than once in each Player Turn <i>(including from different units containing <span class=\"textbf\">It’s a Trap!</span>)</i>."
+      "def": "When an enemy unit performs any of the following actions, it suffers 2D6 hits with Strength 4, Armour Penetration 1, and <span class=\"textbf\">Unmodifiable</span>: <br>&nbsp;&nbsp;&bull; The enemy unit successfully Charges a unit containing <span class=\"textbf\">It’s a Trap!</span> in contact with a Terrain Feature. <br>&nbsp;&nbsp;&bull; The enemy unit comes into contact (while it was not in contact earlier) with a Terrain Feature that is in contact with a unit containing <span class=\"textbf\">It’s a Trap!</span>. <br> Resolve the hits at the end of the action that triggered them. No unit can be affected by <span class=\"textbf\">It’s a Trap!</span> more than once in each Player Turn <i>(including from different units containing <span class=\"textbf\">It’s a Trap!</span>)</i>."
     },
     "ok-mountain_hide": {
       "title": "Mountain Hide",
@@ -5096,7 +5096,7 @@
     },
     "se-dances_of_cenyrn": {
       "title": "Dances of Cenyrn",
-      "def": "When Choose Equipment and Abilities, a unit entirely with <span class=\"textbf\">Dances of Cenyrn</span> must choose one of the following Dances and gain its effects, with Duration: Round of Combat. <br>&nbsp;&nbsp;&bull; <br>&nbsp;&nbsp;&bull; <br>&nbsp;&nbsp;&bull; <br>&nbsp;&nbsp;&bull; <br> The unit cannot choose a specific Dance again until after one or both of the following has happened: <br>&nbsp;&nbsp;&bull; The unit is not Engaged in Combat. <br>&nbsp;&nbsp;&bull; The unit has chosen a different Dance. <br>",
+      "def": "When Choose Equipment and Abilities, a unit entirely with <span class=\"textbf\">Dances of Cenyrn</span> must choose one of the following Dances and gain its effects, with Duration: Round of Combat. <br>&nbsp;&nbsp;&bull; <i>Dance of Bedevilments:</i> <span class=\"textbf\">Afflict (-1 Dis)</span>, and enemy units in contact cannot claim Combat Score bonus from their Proper Ranks. <br>&nbsp;&nbsp;&bull; <i>Dance of Biting Wind:</i> +1 AP and <span class=\"textbf\">Lethal Strike</span> <br>&nbsp;&nbsp;&bull; <i>Dance of the Parting Mists:</i> -1 Str, -1 AP, and <span class=\"textbf\">Aegis (3+)</span> <br>&nbsp;&nbsp;&bull; <i>Dance of Whirling Blades:</i> +1 Att <br> The unit cannot choose a specific Dance again until after one or both of the following has happened: <br>&nbsp;&nbsp;&bull; The unit is not Engaged in Combat. <br>&nbsp;&nbsp;&bull; The unit has chosen a different Dance. <br>",
       "mod": [
         {
           "rules": {
@@ -5204,7 +5204,7 @@
     },
     "se-tree_singing": {
       "title": "Tree Singing",
-      "def": "Once in your Magic Phase, immediately after Excess Magic, a single model with <span class=\"textbf\">Tree Singing</span> may move a Forest following the steps below. The owner may discard a Magic Dice to increase the range to the distances written in square brackets [X\"]. <br>&nbsp;&nbsp;&bull; <br>&nbsp;&nbsp;&bull; <br>"
+      "def": "Once in your Magic Phase, immediately after Excess Magic, a single model with <span class=\"textbf\">Tree Singing</span> may move a Forest following the steps below. The owner may discard a Magic Dice to increase the range to the distances written in square brackets [X\"]. <br>&nbsp;&nbsp;&bull; Choose a Forest not in contact with any unit and within 8\" [24\"] of a friendly model with <span class=\"textbf\">Tree Singing</span>. <br>&nbsp;&nbsp;&bull; Move this Forest in a straight line up to 4\" [12\"], or until just before moving into contact with any unit or Terrain Feature. <br>"
     },
     "se-elven_cloak": {
       "title": "Elven Cloak",
@@ -5567,7 +5567,7 @@
     },
     "se-hail_shot": {
       "title": "Hail Shot",
-      "def": "One use only. Duration: One Phase.<br>May be activated in the Charge Phase or the Shooting Phase.<br>This is a Shooting Weapon with the following profile: <br>&nbsp;&nbsp;&bull; <br> <i>Hail Shot</i> cannot benefit from <span class=\"textbf\">Forest’s Thorns</span>."
+      "def": "One use only. Duration: One Phase.<br>May be activated in the Charge Phase or the Shooting Phase.<br>This is a Shooting Weapon with the following profile: <br>&nbsp;&nbsp;&bull; Aim 2+, Range 30\", Shots 3D6, Str 4, AP 1, Magical Attacks, Quick to Fire. <br> <i>Hail Shot</i> cannot benefit from <span class=\"textbf\">Forest’s Thorns</span>."
     },
     "se-mist_walkers_mirror": {
       "title": "Mist Walker's Mirror",
@@ -12084,11 +12084,6 @@
           "affects": [0],
           "stats": {
             "AP": "+1"
-          }
-        },
-        {
-          "rules": {
-            "id": "lethal_strike"
           }
         }
       ],
