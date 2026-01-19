@@ -4677,13 +4677,24 @@
         {
           "affects": ["defense"],
           "stats": {
-            "Arm": "+2"
+            "Arm": "+1"
           }
         },
         {
           "affects": [0],
           "stats": {
             "St": "+1"
+          }
+        },
+        {
+          "affects": ["defense"],
+          "conditions": [
+            {
+              "charging": true
+            }
+          ],
+          "stats": {
+            "Arm": "+1"
           }
         }
       ]
@@ -4715,24 +4726,7 @@
     },
     "ok-yeti_furs": {
       "title": "Yeti Furs",
-      "def": "Touch of Frost, Strider.",
-      "type": "armour_enchant",
-      "mod": [
-        {
-          "affects": ["defense"],
-          "stats": {
-            "Arm": "+1"
-          }
-        }
-      ],
-      "ennemymod": [
-        {
-          "affects": ["offense"],
-          "stats": {
-            "Ag": "-1"
-          }
-        }
-      ]
+      "def": "Touch of Frost, Strider."
     },
     "ok-banner_of_the_gyengget": {
       "title": "Banner of the Gyengget",
