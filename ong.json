@@ -39,9 +39,10 @@
     "tag_Orc": "Orc",
     "tag_Goblin": "Goblin",
     "archer_broods": "Archer Broods",
-    "death_from_above": "Death from Above"
+    "death_from_above": "Death from Above",
+    "bigAndNasty": "Big and Nasty"
   },
-  "indicators": ["archer_broods", "death_from_above"],
+  "indicators": ["archer_broods", "death_from_above", "bigAndNasty"],
   "costIndicators": ["tag_Orc", "tag_Goblin"],
   "dictionnary": [
     {
@@ -317,6 +318,11 @@
           "refs": ["archer_broods"],
           "amount": 10,
           "perPoints": 500
+        },
+        {
+          "refs": ["bigAndNasty"],
+          "amount": 1,
+          "perPoints": 1500
         }
       ],
       "override": [
@@ -641,6 +647,7 @@
                       "refs": [
                         "gargantula",
                         "mount",
+                        "bigAndNasty",
                         "gargantula_mount_option",
                         {
                           "ref": "archer_broods",
@@ -2872,7 +2879,7 @@
               "cost": 275,
               "option_id": "fz01ug9gwbta9d3lze5c0e",
               "unit_id": "giant",
-              "refs": ["giant", "tag_Giant", "brood_rivalry", "tag_Orc"],
+              "refs": ["giant", "tag_Giant", "brood_rivalry", "tag_Orc", "bigAndNasty"],
               "size": "1",
               "rarity": "Rare",
               "height": "5",
@@ -3280,7 +3287,7 @@
               "cost": 400,
               "option_id": "9afcocx8oo6hydp7ocfaj5",
               "unit_id": "greatGreenIdol",
-              "refs": ["greatgreenidol", "tag_Construct", "greatGreenIdol"],
+              "refs": ["greatgreenidol", "tag_Construct", "greatGreenIdol", "bigAndNasty"],
               "size": "1",
               "rarity": "Rare",
               "height": "5",
@@ -3380,6 +3387,7 @@
                 "tag_Beast",
                 "guardianBehemoth",
                 "goblin_cunning",
+                "bigAndNasty",
                 {
                   "ref": "archer_broods",
                   "amount": 4
@@ -3814,6 +3822,7 @@
                 "tag_Beast",
                 "mount",
                 "gargantula_mount_unit",
+                "bigAndNasty",
                 {
                   "ref": "archer_broods",
                   "amount": 8
@@ -3894,7 +3903,6 @@
               "rarity": "Extraordinary",
               "height": "4",
               "basesize": "50×50",
-              "extraCategories": ["bigAndNasty"],
               "options": [
                 {
                   "type": "check",
