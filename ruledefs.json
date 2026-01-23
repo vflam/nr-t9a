@@ -10269,7 +10269,23 @@
     "special-ghostly_guard": {
       "title": "Ghostly Guard",
       "def": "+2 Arm against non-Magical Attacks.",
-      "type": "Armour"
+      "type": "Armour",
+      "mod": [
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "+2"
+          },
+          "conditions": [
+            {
+              "against": {
+                "id": "rulebook-magical_attacks",
+                "value": true
+              }
+            }
+          ]
+        }
+      ]
     },
     "special-basalt_infusion": {
       "title": "Basalt Infusion",
@@ -10292,7 +10308,21 @@
     "special-wild_warding": {
       "title": "Wild Warding",
       "def": "+3 Arm. <br>The models Armour value can <span class=\"textbf\">never</span> be improved beyond 5.",
-      "type": "Shield"
+      "type": "Shield",
+      "mod": [
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "+3"
+          }
+        },
+        {
+          "affects": ["defense"],
+          "stats": {
+            "Arm": "<5"
+          }
+        }
+      ]
     },
     "special-banner_of_speed": {
       "title": "Banner of Speed",
