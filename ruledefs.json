@@ -188,11 +188,11 @@
     },
     "de-harpoon_launcher": {
       "title": "Harpoon Launcher",
-      "def": "Any unit that suffers one or more hits from this weapon loses <span class=\"textbf\">Swiftstride</span>, and cannot regain it in any way, until the start of the Active Player’s next Turn."
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>3</td><td>18</td><td>3</td><td>6</td><td>3</td></tr></table><br/><b>Attack Attributes</b>: Accurate, Quick to Fire, Harpoon Launcher<br/>Units that suffer one or more hits from this weapon lose \\textbf{\\swiftstride{}}, until the start of the Active Player’s next Turn, and cannot gain it in any way.%"
     },
     "de-daeb_bolt_thrower": {
       "title": "Daeb Bolt Thrower",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>3</td><td>24</td><td>8</td><td>5</td><td>2</td><td>daebBoltThrowerRule</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>3</td><td>24</td><td>8</td><td>5</td><td>2</td></tr></table><br/><b>Attack Attributes</b>: Can shoot after Advance or Reform Move"
     },
     "de-curse_of_the_phantom_queen": {
       "title": "Curse of the Phantom Queen",
@@ -1823,7 +1823,7 @@
     },
     "dl-aether_battery": {
       "title": "Aether Battery",
-      "def": "Before rolling for the number of Shots, the owner may choose to discard 1--3 Veil Tokens from their Veil Token pool. If so, the number of Shots is increased by +3 per discarded Veil Token."
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>3</td><td>18</td><td>3D6</td><td>4</td><td>1</td></tr></table><br/><b>Attack Attributes</b>: Magical Attacks, If the model did not move during this Player Turn, the number of shots is Maximised"
     },
     "dl-guiding_manifestations": {
       "title": "Guiding Manifestations",
@@ -2193,7 +2193,7 @@
     },
     "dl-energy_bolts": {
       "title": "Energy Bolts",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>24</td><td>1</td><td>5</td><td>0</td><td>magicalAttacks</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>24</td><td>1</td><td>5</td><td>0</td></tr></table><br/><b>Attack Attributes</b>: Magical Attacks"
     },
     "bh-giant_see_giant_do": {
       "title": "Giant See, Giant Do",
@@ -2251,10 +2251,9 @@
       "def": "A unit that contains a Character with <span class=\"textbf\">Blood Offering</span> <span class=\"textbf\">may</span> reroll failed Panic Tests at the cost of inflicting one HP loss on a Character with <span class=\"textbf\">Blood Offering</span> in the unit."
     },
     "bh-beast_axe": {
-      "type": "cc_weapon",
       "title": "Beast Axe",
-      "def": "+2 Def, +1 Str, +1 AP, Agi <span class=\"textbf\">always</span> 0.",
-      "ruletype": "Melee Weapon",
+      "def": "+2 Def, +1 Str, +1 AP, Agi <span class=\"textbf\">always</span> 0.<br>",
+      "type": "cc_weapon",
       "mod": [
         {
           "affects": [0],
@@ -2275,15 +2274,15 @@
     },
     "bh-beer_barrel": {
       "title": "Beer Barrel",
-      "def": "The model gains <span class=\"textbf\">Looted Booze</span>. One use only: <br> this weapon can be used as a Shooting Weapon with the following profile.<br>After this weapon has been used as a Shooting Weapon, the model loses <span class=\"textbf\">Looted Booze</span>."
+      "def": "<table><tr><th>HasRule</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>true</td><td>2</td><td>8</td><td>1</td><td>4</td><td>0</td></tr></table><br/><b>Attack Attributes</b>: Accurate, Quick to Fire, Area Attack, March and Shoot<br/>The model gains \\textbf{\\lootedbooze}. \\oneuseonly{}. \\newline{}\nThis weapon can be used as a Shooting Weapon with the following profile.\\newline%\nAfter this weapon has been used as a Shooting Weapon, the model loses \\textbf{\\lootedbooze{}}.%"
     },
     "bh-pack_tactics": {
       "title": "Pack Tactics",
-      "def": "Charge Range rolls made towards an enemy unit's Flank or Rear Facing are <span class=\"textbf\">Maximised</span>."
+      "def": "Charge Range rolls made towards an enemy unit’s Flank or Rear Facing are <span class=\"textbf\">Maximised</span>."
     },
     "bh-drunkard": {
       "title": "Drunkard",
-      "def": "The unit gains one of two sets of effects depending on whether it shows up <i>Sober</i> or <i>Drunk</i> on the Battlefield.<br><br>During Pre-Game Selections, each unit containing <span class=\"textbf\">Drunkard</span> <span class=\"textbf\">must</span> choose whether it is <i>Sober</i> or <i>Drunk</i>.<br><br><i>Drunk</i> Characters cannot join units containing any <i>Sober</i> models and vice versa (models without <span class=\"textbf\">Drunkard</span> are considered neither <i>Drunk</i> nor <i>Sober</i>).",
+      "def": "The unit gains one of two sets of effects depending on whether it shows up <i>Sober</i> or <i>Drunk</i> on the Battlefield. <br>During Pre-game Selections, each unit containing <span class=\"textbf\">Drunkard</span> <span class=\"textbf\">must</span> choose whether it is <i>Sober</i> or <i>Drunk</i>. <br><i>Drunk</i> Characters cannot join units containing any <i>Sober</i> models and vice versa (models without <span class=\"textbf\">Drunkard</span> are considered neither <i>Drunk</i> nor <i>Sober</i>). Sober () The model gains Light Troops, Vanguard. <br> A unit that has been <i>Sober</i> at any point during the game is <span class=\"textbf\">never</span> considered <span class=\"textbf\">Scoring</span>.<br> Drunk () The model gains Devastating Charge (+1 Str, +1 AP), Fearless, Unruly. <br><i>Drunk</i> units cannot choose to Ambush.<br>",
       "mod": [
         {
           "rules": {
@@ -2337,15 +2336,15 @@
     },
     "bh-looted_booze": {
       "title": "Looted Booze",
-      "def": "One use only. May be activated at the start of any Player Turn.<br>All models with <span class=\"textbf\">Drunkard</span> in the model's unit change from <i>Sober</i> to <i>Drunk</i>."
+      "def": "One use only. May be activated at the start of any Player Turn. <br>All models with <span class=\"textbf\">Drunkard</span> in the model’s unit change their state from <i>Sober</i> to <i>Drunk</i>."
     },
     "bh-hunting_call": {
       "title": "Hunting Call",
-      "def": "If the Army List includes a model with <span class=\"textbf\">Hunting Call</span>, the owner may reroll <span class=\"textbf\">Ambush</span> rolls of ‘1’ and ‘2’.<br><br>If the owner has the second Player Turn, any unit containing <span class=\"textbf\">Pack Tactics</span> <span class=\"textbf\">may</span> choose to roll for its Ambush starting from Player Turn 1."
+      "def": "If the Army List includes a model with <span class=\"textbf\">Hunting Call</span>, the owner may reroll <span class=\"textbf\">Ambush</span> rolls of ‘1’ and ‘2’. <br>If the owner has the second Player Turn, any unit containing <span class=\"textbf\">Pack Tactics</span> <span class=\"textbf\">may</span> choose to roll for its Ambush starting from Player Turn 1."
     },
     "bh-primal_instinct": {
       "title": "Primal Instinct",
-      "def": "During Choose Equipment and Abilities each unit containing this Attack Attribute <span class=\"textbf\">must</span> take a Courage Test.<br>If the test is passed, all model parts with <span class=\"textbf\">Primal Instinct</span> in the unit gain <span class=\"textbf\">Hatred</span>. Duration: Round of Combat.",
+      "def": "During Choose Equipment and Abilities, each unit containing this Attack Attribute <span class=\"textbf\">must</span> take a Courage Test. <br>If the test is passed, all model parts with <span class=\"textbf\">Primal Instinct</span> in the unit gain <span class=\"textbf\">Hatred</span>. Duration: Round of Combat.",
       "type": "attack_attribute"
     },
     "bh-echoes_of_the_dark_forest": {
@@ -2354,7 +2353,7 @@
     },
     "bh-hawthorne_curse": {
       "title": "Hawthorne Curse",
-      "def": "<span class=\"textbf\">Devastating Charge(+2 Str, +2 AP)</span>.<br><br>The weapon can be used as a Shooting Weapon (3+) with the following profile: Range 18\", Shots 1, Str 3, AP 10, Area Attack (1×5), Direct Hit(Str 6, Multiple Wounds(D3)). This Shooting Attack <span class=\"textbf\">never</span> suffers negative to-hit modifiers.",
+      "def": "Devastating Charge (+2 Str, +2 AP).\\newline{}The weapon can be used as a Shooting Weapon (3+) with the following profile: Range 18″, Shots 1, Str 3, AP 10, Area Attack (1×5) and Direct Hits (Str 6, Multiple Wounds (D3)). This Shooting Attack never suffers negative to-hit modifiers.",
       "type": "weapon_enchant",
       "mod": [
         {
@@ -2372,7 +2371,7 @@
     },
     "bh-ancestral_carvings": {
       "title": "Ancestral Carvings",
-      "def": "+2 Att, +2 Str and +2 AP. <span class=\"textbf\">Distracting(1)</span>.",
+      "def": "+2 Att, +2 Str, +2 AP, and <span class=\"textbf\">Distracting (1)</span>.",
       "type": "weapon_enchant",
       "mod": [
         {
@@ -2396,7 +2395,7 @@
     },
     "bh-twin_hungers": {
       "title": "Twin Hungers",
-      "def": "<span class=\"textbf\">Lethal Strike</span>. Melee Attacks that roll a ‘6’ to wound and causes a HP loss the wielder may <span class=\"textbf\">Recover</span> 1 HP at the end of the Agility Step (unless their model was removed as a casualty).<br>Only 1 HP can be regained per Phase with this item.",
+      "def": "<span class=\"textbf\">Lethal Strike</span>. Every time one of the wielder’s Melee Attacks rolls a ‘6’ to wound and causes a HP loss, the wielder may <span class=\"textbf\">Recover</span> 1 HP at the end of the Agility Step (unless their model was removed as a casualty). <br>Only 1 HP can be regained per phase with this item.",
       "type": "weapon_enchant",
       "mod": [
         {
@@ -2413,12 +2412,12 @@
     },
     "bh-fatal_folly": {
       "title": "Fatal Folly",
-      "def": "For each Melee Attack against the wielder's model that rolls a to-hit roll of ‘1’, the wielder <span class=\"textbf\">must</span> perform a Standard Melee Attack at the end of the same Agility Step <i>(this overrides the normal restriction that Beast Axe attacks always strike at Agility Step 0)</i>.<br><br>This attack can only be allocated against the Health Pool that rolled the ‘1’ to hit, and is not considered a Standard Melee Attack for the purpose of Restricted Attacks..",
+      "def": "For each Standard Melee Attack allocated against the wielder’s model that results in a to-hit roll of ‘1’, the wielder <span class=\"textbf\">must</span> perform a Standard Melee Attack at the end of the same Agility Step, before any casualties are removed. <br>This overrides the normal restriction that Beast Axe attacks always strike at Agility Step 0. <br>This attack must be allocated towards the model’s Health Pool that rolled the ‘1’ to hit, and it does not count against the number of attacks the wielder’s model can make due to Restricted Attacks.",
       "type": "weapon_enchant"
     },
     "bh-aaghors_affliction": {
-      "title": "Aaghor’s Affliction",
-      "def": "+1 Res, and <span class=\"textbf\">Regeneration(4+)</span>.<br><br>The model loses Light Armour and Metal Armour, and automatically fails all its Armour Saves.",
+      "title": "Aaghor's Affliction",
+      "def": "+1 Res, and <span class=\"textbf\">Regeneration (4+)</span>. <br>The model loses Light Armour, Metal Armour, and automatically fails all its Armour Saves.",
       "type": "armour_enchant",
       "mod": [
         {
@@ -2436,12 +2435,12 @@
       ]
     },
     "bh-tricksters_cunning": {
-      "title": "Trickster’s Cunning",
+      "title": "Trickster's Cunning",
       "def": "<span class=\"textbf\">Resistance.</span>"
     },
     "bh-obscuring_fog": {
       "title": "Obscuring Fog",
-      "def": "<span class=\"textbf\">Afflict(-1 Agi)</span>.",
+      "def": "<span class=\"textbf\">Afflict (-1 Agi)</span>.",
       "mod": [
         {
           "affects": ["offense"],
@@ -2466,7 +2465,7 @@
     },
     "bh-wild_form": {
       "title": "Wild Form",
-      "def": "Duration: Round of Combat. During Choose Equipment and Abilities, the bearer may gain either of the following:\t<br>\t\t<br>&nbsp;&nbsp;&bull; -1 Res, +1 Str, +1 AP\t\t<br>&nbsp;&nbsp;&bull; +1 Res, -1 Str, -1 AP",
+      "def": "During Choose Equipment and Abilities, the bearer may gain either of the following, with Duration: Round of Combat: <br>&nbsp;&nbsp;&bull; -1 Res, +1 Str, +1 AP <br>&nbsp;&nbsp;&bull; +1 Res, -1 Str, -1 AP <br>",
       "type": "armour_enchant",
       "mod": [
         {
@@ -2483,7 +2482,7 @@
     },
     "bh-banner_of_the_wild_herd": {
       "title": "Banner of the Wild Herd",
-      "def": "One use only. Duration: One Phase. May be activated during Choose Equipment and Abilities.<br><br>Rank-and-File model parts with Wildhorn in the bearer’s unit have their Str <span class=\"textbf\">set</span> to 4 and their AP <span class=\"textbf\">set</span> to 1.",
+      "def": "One use only. Duration: One Phase.<br>May be activated during Choose Equipment and Abilities.<br>Rank-and-File model parts with Wildhorn in the bearer’s unit have their Str <span class=\"textbf\">set</span> to 4 and their AP <span class=\"textbf\">set</span> to 1.",
       "type": "banner",
       "mod": [
         {
@@ -2519,7 +2518,7 @@
     },
     "bh-rain_augur_brew": {
       "title": "Rain Augur Brew",
-      "def": "Duration: One Turn. If the bearer is on the Battlefield, this item is automatically activated at the start of the first Game Turn, if not it has no effect.<br><br><span class=\"textbf\">All</span> Ranged Attacks suffer -1 to hit."
+      "def": "One use only. Duration: One Turn.<br>If the bearer is on the Battlefield, this item is automatically activated at the start of the first Game Turn; if not, it has no effect. <br> <span class=\"textbf\">All</span> Ranged Attacks suffer -1 to hit."
     },
     "bh-pillager_icon": {
       "title": "Pillager Icon",
@@ -2527,10 +2526,10 @@
     },
     "bh-seed_of_the_dark_forest": {
       "title": "Seed of the Dark Forest",
-      "def": "During Pre-Game Selections, place a Forest:\t<br>\t\t<br>&nbsp;&nbsp;&bull; Touching your Deployment Zone.\t\t<br>&nbsp;&nbsp;&bull; Not in contact with any Terrain Feature .\t<br><br>\tThis Forest is a 10\"6\" rectangle, that can not be chosen for Primary- or Secondary Objectives.<br>Friendly units entirely with <span class=\"textbf\">Pack Tactics</span> treat this Forest as part of their Deployment Zone, for the purpose of where they can be Deployed.<br><br>\tA unit that starts the game in contact with this Forest cannot declare a Charge in the first Player Turn of the first Game Turn."
+      "def": "One use only. Duration: Permanent. <br>During Pre-game Selections, place a Forest: <br>&nbsp;&nbsp;&bull; Touching your Deployment Zone. <br>&nbsp;&nbsp;&bull; Not in contact with any Terrain Feature . <br> This Forest is a 10\"6\" rectangle, that can not be chosen for Primary or Secondary Objectives.<br>Friendly units entirely with <span class=\"textbf\">Pack Tactics</span> treat this Forest as part of their Deployment Zone for the purpose of where they can be Deployed. <br>A unit that starts the game in contact with this Forest cannot declare a Charge in the first Player Turn of the first Game Turn."
     },
     "bh-horn_of_bragh": {
-      "title": "Horn of Bragh",
+      "title": "Horn Of Bragh",
       "def": "Fury, Dying Blow."
     },
     "bh-eye_of_dominance": {
@@ -2697,23 +2696,23 @@
     },
     "bh-crown_of_madness": {
       "title": "Crown of Madness",
-      "def": "The wearer gains <span class=\"textbf\">First Strike(Stubborn)</span>, and the wearer’s unit gains <span class=\"textbf\">Unruly</span>.<br><br>In addition, all units entirely with <span class=\"textbf\">Unruly</span> within range of the wearer’s <span class=\"textbf\">Commanding Presence</span> (if applicable) gain <span class=\"textbf\">First Strike(Stubborn)</span>."
+      "def": "The wearer gains <span class=\"textbf\">First Strike (Stubborn)</span>, and the wearer’s unit gains <span class=\"textbf\">Unruly</span>. <br>In addition, all units entirely with <span class=\"textbf\">Unruly</span> within range of the wearer’s <span class=\"textbf\">Commanding Presence</span> (if applicable) gain <span class=\"textbf\">First Strike (Stubborn)</span>."
     },
     "bh-gnarled_hide_totem": {
       "title": "Gnarled Hide Totem",
-      "def": "The target gains +1 Arm and <span class=\"textbf\">Distracting(1)</span>."
+      "def": "The target gains +1 Arm and <span class=\"textbf\">Distracting (1)</span>. <br> <br>No model can be affected by more than one Totem Bound Spell simultaneously: only apply the effects of the most recently successfully cast one."
     },
     "bh-blooded_horn_totem": {
       "title": "Blooded Horn Totem",
-      "def": "The target gains +1 Att and +2 AP."
+      "def": "The target gains +1 Att and +2 AP.<br> <br> <br>No model can be affected by more than one Totem Bound Spell simultaneously: only apply the effects of the most recently successfully cast one."
     },
     "bh-clouded_eye_totem": {
       "title": "Clouded Eye Totem",
-      "def": "The target gains Hard Target(1), Magic Resistance(3)."
+      "def": "The target gains Hard Target (1), Magic Resistance (3).<br> <br>No model can be affected by more than one Totem Bound Spell simultaneously: only apply the effects of the most recently successfully cast one."
     },
     "bh-black_wing_totem": {
       "title": "Black Wing Totem",
-      "def": "The target gains +2\" Cha and +3 Agi."
+      "def": "The target gains +2\" Cha and +3 Agi.<br> <br>No model can be affected by more than one Totem Bound Spell simultaneously: only apply the effects of the most recently successfully cast one."
     },
     "bh-totem_bearers": {
       "title": "Totem Bearers",
@@ -2725,7 +2724,7 @@
     },
     "bh-hurl_attack": {
       "title": "Hurl Attack",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>24</td><td>1</td><td>7</td><td>3</td><td>artillery, areaAttack, directHit, divineAttacks</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>24</td><td>1</td><td>7</td><td>3</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Area Attack, Direct Hit, Divine Attacks"
     },
     "eos-holy_relic": {
       "title": "Holy Relic",
@@ -3319,7 +3318,7 @@
     },
     "he-elven_bolt_thrower": {
       "title": "Elven Bolt Thrower",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>3</td><td>48</td><td>6</td><td>4</td><td>2</td></tr></table>"
+      "def": "<table><tr><th>Note</th><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>elvenBoltThrowerNote</td><td>3</td><td>48</td><td>6</td><td>4</td><td>2</td></tr></table>"
     },
     "he-warden": {
       "title": "Warden",
@@ -3655,7 +3654,7 @@
     },
     "he-sky_reaper": {
       "title": "Sky Reaper",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>1</td><td>24</td><td>4</td><td>5</td><td>3</td><td>quickToFire</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>1</td><td>24</td><td>4</td><td>5</td><td>3</td></tr></table><br/><b>Attack Attributes</b>: Quick to Fire"
     },
     "koe-hooded_men": {
       "title": "Hooded Men",
@@ -4558,21 +4557,9 @@
       "type": "weapon_enchant",
       "mod": [
         {
-          "rules": [
-            {
-              "id": "magical_attacks"
-            },
-            {
-              "id": "lethal_strike"
-            },
-            {
-              "stats": {
-                "AP": "+1"
-              }
-            }
-          ],
-          "rollmodifiers": {
-            "to_hit": ">3"
+          "affects": [0],
+          "stats": {
+            "AP": "+1"
           }
         }
       ]
@@ -4739,15 +4726,15 @@
     },
     "ok-hand_cannon": {
       "title": "Hand Cannon",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>18</td><td>3</td><td>5</td><td>3</td><td>marchAndShoot, quickToFire</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>18</td><td>3</td><td>5</td><td>3</td></tr></table><br/><b>Attack Attributes</b>: March and Shoot, Quick to Fire"
     },
     "ok-scratapult": {
       "title": "Scratapult",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>4</td><td>1</td><td>artillery, areaAttack, lethalStrike</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>48</td><td>1</td><td>4</td><td>1</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Area Attack, Lethal Strike"
     },
     "ok-thunder_cannon": {
       "title": "Thunder Cannon",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>5</td><td>2</td><td>artillery, areaAttack, directHit</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>48</td><td>1</td><td>5</td><td>2</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Area Attack, Direct Hit"
     },
     "sa-rex": {
       "title": "Rex",
@@ -5530,7 +5517,7 @@
     },
     "se-poisoned_thorn": {
       "title": "Poisoned Thorn",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>3</td><td>12</td><td>1</td><td>3</td><td>1</td><td>poisonAttacks, quickToFire, standAndShoot</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>3</td><td>12</td><td>1</td><td>3</td><td>1</td></tr></table><br/><b>Attack Attributes</b>: Poison Attacks, Quick to Fire, Stand and Shoot"
     },
     "vc-lash_of_souls": {
       "title": "Lash of Souls",
@@ -5670,7 +5657,7 @@
     },
     "vc-chilling_howl": {
       "title": "Chilling Howl",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>auto</td><td>8</td><td>chillingHowlShots</td><td>9</td><td>10</td><td>marchAndShoot, magicalAttacks, hitsAutomatically, psychicAttacks, unmodifiable, chillingHowlEffect</td></tr></table><br>\tThe number of shots is equal to the model’s current number of~HP."
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>auto</td><td>8</td><td>chillingHowlShots</td><td>9</td><td>10</td></tr></table><br/><b>Attack Attributes</b>: March and Shoot, Magical Attacks, Hits Automatically, Psychic Attacks, Unmodifiable, *The number of shots is equal to the model’s current number of HP.<br/>\tThe number of shots is equal to the model’s current number of~HP."
     },
     "vc-sangreal": {
       "title": "Sangreal",
@@ -6029,7 +6016,7 @@
     },
     "vc-wail_of_woe": {
       "title": "Wail of Woe",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>auto</td><td>8</td><td>D6+2</td><td>4</td><td>1</td><td>marchAndShoot, unmodifiable, magicalAttacks, hitsAutomatically</td></tr></table>",
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>auto</td><td>8</td><td>D6+2</td><td>4</td><td>1</td></tr></table><br/><b>Attack Attributes</b>: March and Shoot, Unmodifiable, Magical Attacks, Hits Automatically",
       "mod": [
         {
           "loses_rules": ["custom-close_combat_attacks"],
@@ -6198,11 +6185,11 @@
     },
     "ud-charnel_catapult": {
       "title": "Charnel Catapult",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>7</td><td>3</td><td>artillery, areaAttack, directHit, charnelCatapultEffect</td></tr></table><br>If this weapon causes any \\HP{} loss, the target must immediately take a Panic Test. %"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>48</td><td>1</td><td>7</td><td>3</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Area Attack, Direct Hit, If this weapon causes any HP loss, the target must immediately take a Panic Test.<br/>If this weapon causes any \\HP{} loss, the target must immediately take a Panic Test. %"
     },
     "ud-petrifying_gaze": {
       "title": "Petrifying Gaze",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>auto</td><td>12</td><td>2</td><td>*</td><td>10</td><td>standAndShoot, hitsAutomatically, unmodifiable, petrifyingGazeEffect</td></tr></table><br>\tTo-wound rolls are \\textbf{set} to~5+.%"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>auto</td><td>12</td><td>2</td><td>*</td><td>10</td></tr></table><br/><b>Attack Attributes</b>: Stand and Shoot, Hits Automatically, Unmodifiable, *To-wound rolls are set to 5+<br/>\tTo-wound rolls are \\textbf{set} to~5+.%"
     },
     "ud-duty_is_eternal": {
       "title": "Duty is Eternal",
@@ -6643,11 +6630,11 @@
     },
     "vs-sling": {
       "title": "Sling",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>18</td><td>1</td><td>4</td><td>0</td><td>quickToFire, slingRule</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>18</td><td>1</td><td>4</td><td>0</td></tr></table><br/><b>Attack Attributes</b>: Quick to Fire, Attacks made at Long Range have their Str set to 3"
     },
     "vs-deepfire_grenades": {
       "title": "Deepfire Grenades",
-      "def": "When shooting at an enemy unit Engaged in Combat <i>(using the <span class=\"textbf\">Callous</span> rule)</i>, hits are distributed onto a randomly chosen friendly unit Engaged with the original target on a roll of 5+ instead of 4+."
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>5</td><td>8</td><td>2</td><td>6</td><td>2</td></tr></table><br/><b>Attack Attributes</b>: Accurate, Flaming Attacks, Quick to Fire, Deepfire Grenades<br/>\tWhen shooting at an enemy unit Engaged in Combat \\textit{(using the \\textbf{\\callous{}} rule)}, hits are distributed onto a randomly chosen friendly unit Engaged with the original target on a roll of~5+ instead of~4+.%"
     },
     "vs-darkstone_generator": {
       "title": "Darkstone Generator",
@@ -10926,7 +10913,7 @@
     },
     "sa-stormCrystal": {
       "title": "Storm Crystal",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>auto</td><td>12</td><td>D3+1</td><td>6</td><td>2</td><td>automaticHits, marchAndShoot, unmodifiable, lightningAttacks</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>auto</td><td>12</td><td>D3+1</td><td>6</td><td>2</td></tr></table><br/><b>Attack Attributes</b>: Automatic Hits, March and Shoot, Unmodifiable, Lightning Attacks"
     },
     "sa-greaterGuidingMastery": {
       "title": "Greater Guiding Mastery",
@@ -11132,7 +11119,7 @@
     },
     "vs-prototypeMaussRifle": {
       "title": "Prototype Mauss Rifle",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>36</td><td>1</td><td>5</td><td>2</td><td>areaAttack, artillery, directHit, lightningAttacks, maniacalEnthusiasm</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>36</td><td>1</td><td>5</td><td>2</td></tr></table><br/><b>Attack Attributes</b>: Area Attack, Artillery, Direct Hit, Lightning Attacks, Maniacal Enthusiasm"
     },
     "ud-charioteerOfTheSun": {
       "title": "Charioteer of the Sun",
@@ -11257,7 +11244,7 @@
     },
     "vc-cacophonyOfSuffering": {
       "title": "Cacophony of Suffering",
-      "def": "<table><tr><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>12</td><td>halfOfVaryagHP</td><td>*</td><td>10</td><td>automaticHits, unmodifiable, marchAndShoot, woundsOnFive, standAndShoot, halfOfVaryagHPRule</td></tr></table>"
+      "def": "<table><tr><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>12</td><td>halfOfVaryagHP</td><td>*</td><td>10</td></tr></table><br/><b>Attack Attributes</b>: Automatic Hits, Unmodifiable, March and Shoot, * To-wound-rolls are set to 5+, Stand and Shoot, Half of Varyag’s HP, rounded up"
     },
     "vc-everGrowing": {
       "title": "Ever Growing",
@@ -11341,7 +11328,7 @@
     },
     "wyrmslayerRocket": {
       "title": "Wyrm-Slayer Rocket",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>3</td><td>24</td><td>1</td><td>6</td><td>3</td><td>multipleWounds, flamingAttacks</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>3</td><td>24</td><td>1</td><td>6</td><td>3</td></tr></table><br/><b>Attack Attributes</b>: Multiple Wounds, Flaming Attacks"
     },
     "entrench": {
       "title": "Entrench",
@@ -11353,7 +11340,7 @@
     },
     "forgeGun": {
       "title": "Forge Gun",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>3</td><td>18</td><td>1</td><td>4</td><td>0</td><td>marchAndShoot, flamingAttacks, standAndShoot, alwaysHitsOnThrees</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>3</td><td>18</td><td>1</td><td>4</td><td>0</td></tr></table><br/><b>Attack Attributes</b>: March and Shoot, Flaming Attacks, Stand and Shoot, Always hits on 3+"
     },
     "runeCraftMastery": {
       "title": "Rune Craft Mastery",
@@ -11381,15 +11368,15 @@
     },
     "eosCannon": {
       "title": "Cannon",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>5</td><td>2</td><td>artillery, areaAttack, directHit</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>48</td><td>1</td><td>5</td><td>2</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Area Attack, Direct Hit"
     },
     "imperialRocketeer": {
       "title": "Imperial Rocketeer",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>5</td><td>48</td><td>3</td><td>6</td><td>3</td><td>artillery, multipleWounds</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>5</td><td>48</td><td>3</td><td>6</td><td>3</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Multiple Wounds"
     },
     "mortar": {
       "title": "Mortar",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>4</td><td>1</td><td>artillery, areaAttack</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>48</td><td>1</td><td>4</td><td>1</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Area Attack"
     },
     "volleyGun": {
       "title": "Volley Gun",
@@ -11397,7 +11384,7 @@
     },
     "steamCannon": {
       "title": "Steam Cannon",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>3</td><td>36</td><td>1</td><td>5</td><td>2</td><td>artillery, areaAttack, directHit, unwieldy</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>3</td><td>36</td><td>1</td><td>5</td><td>2</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Area Attack, Direct Hit, Unwieldy"
     },
     "he-swordSworn": {
       "title": "Sword Sword",
@@ -11422,7 +11409,7 @@
     },
     "vassalSlingshot": {
       "title": "Vassal Slingshot",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>3</td><td>10</td><td>areaAttack, directHit, oilFlasks</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>48</td><td>1</td><td>3</td><td>10</td></tr></table><br/><b>Attack Attributes</b>: Area Attack, Direct Hit, Oil Flasks"
     },
     "koe-prayerEtched": {
       "title": "Prayer-Etched",
@@ -11434,11 +11421,11 @@
     },
     "scorpion": {
       "title": "Scorpion",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>3</td><td>10</td><td>areaAttack, directHit</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>48</td><td>1</td><td>3</td><td>10</td></tr></table><br/><b>Attack Attributes</b>: Area Attack, Direct Hit"
     },
     "trebuchet": {
       "title": "Trebuchet",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>7</td><td>3</td><td>artillery, areaAttack, directHit</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>48</td><td>1</td><td>7</td><td>3</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Area Attack, Direct Hit"
     },
     "dashers": {
       "title": "Dashers",
@@ -11446,7 +11433,7 @@
     },
     "splatterer": {
       "title": "Splatterer",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>7</td><td>3</td><td>artillery, areaAttack, directHit</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>48</td><td>1</td><td>7</td><td>3</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Area Attack, Direct Hit"
     },
     "guardianpatunote": {
       "title": "\\refsymbol{}See \\enquote{\\teguguards{}} profile.",
@@ -11479,7 +11466,7 @@
     },
     "giantAspisBow": {
       "title": "Giant Aspis Bow",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>4</td><td>48</td><td>1</td><td>3</td><td>10</td><td>areaAttack, directHit, aspisArrows</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>4</td><td>48</td><td>1</td><td>3</td><td>10</td></tr></table><br/><b>Attack Attributes</b>: Area Attack, Direct Hit, Aspis Arrows"
     },
     "inYourName": {
       "title": "In Your Name",
@@ -11503,7 +11490,7 @@
     },
     "darkstoneGenerator": {
       "title": "Dark\\-stone Generator",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>auto</td><td>12</td><td>D3+1</td><td>D6+1</td><td>3</td><td>marchAndShoot, lightningAttacks, maniacalEnthusiasm, unmodifiable, automaticHits</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>auto</td><td>12</td><td>D3+1</td><td>D6+1</td><td>3</td></tr></table><br/><b>Attack Attributes</b>: March and Shoot, Lightning Attacks, Maniacal Enthusiasm, Unmodifiable, Automatic Hits"
     },
     "fursOnFire": {
       "title": "Furs on Fire!",
@@ -11511,11 +11498,11 @@
     },
     "skorchitOrdnance": {
       "title": "Skorchit Ordnance",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>5</td><td>48</td><td>1</td><td>4</td><td>1</td><td>artillery, flamingAttacks, areaAttack</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>5</td><td>48</td><td>1</td><td>4</td><td>1</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Flaming Attacks, Area Attack"
     },
     "rakachitMaussRifle": {
       "title": "Rakachit Mauss Rifle",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>5</td><td>48</td><td>1</td><td>5</td><td>2</td><td>artillery, lightningAttacks, areaAttack, directHit</td></tr></table>"
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>5</td><td>48</td><td>1</td><td>5</td><td>2</td></tr></table><br/><b>Attack Attributes</b>: Artillery, Lightning Attacks, Area Attack, Direct Hit"
     },
     "spellScroll": {
       "title": "Spell Scroll\\ifblank{#1}{}{~(#1)}",
@@ -11811,6 +11798,14 @@
       "selectable": true,
       "defaultSelection": false,
       "selectionGroup": "immortal_gauntlets"
+    },
+    "bh-spiritCallersCharm": {
+      "title": "Spirit Caller's Charm",
+      "def": "<span class=\"textbf\">Channel (2)</span>"
+    },
+    "ongHeadhunter": {
+      "title": "ongHeadhunter",
+      "def": "The model part with \\ChTag{\\goblin{}} gains \\alphaorderlistbf{\\marchandshoot{}, \\poisonattacks{} (\\melee{} and \\shooting{})}, and gains \\throwingweapons{} (4+) with Shots 3.%"
     }
   }
 }
