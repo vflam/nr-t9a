@@ -200,7 +200,7 @@
           "cost": 35,
           "refs": ["symbolOfSlaughter", "army_unique", "weaponEnchantUni", "symbol_slaughter"],
           "hasNotOption": ["weaponEnchantUni"],
-          "description": "Attacks with this weapon become Magical Attacks. While using this weapon, the wielder gains +2 Attack Value and +2 Agility. Close Combat Attacks made against the wielder's model gain +1 to hit.",
+          "description": "+2 Att, +2 Agi.",
           "option_id": "xi95hvwpavg633hczjn6",
           "rarity": "Legendary"
         },
@@ -242,7 +242,7 @@
           "name": "Veilgate Orb",
           "cost": 80,
           "refs": ["veilgateOrb", "army_unique", "wdg_forebodorb"],
-          "description": "During Pre-game Selections, mark a point on the Battlefield with a Gateway Marker: it must be within 24\" of your Deployment Zone, outside the opponent’s Deployment Zone, and more than 1\" from Impassible Terrain. <br>One use only. At the start of a friendly Magic Phase, if the bearer’s unit was allowed to move in the preceding Movement Phase <i>(ie. it is not <span class=\"textbf\">Shaken</span>, did not Ambush, did not fail a Charge, is Unengaged, etc.)</i>, you may remove it from the Battlefield and immediately place it back on the Battlefield with <span class=\"textbf\">Ambush (friendly Gateway Marker, that was not placed during this Player Turn)</span>.",
+          "description": "<span class='gray'>Height 1-4 only</span><br/>During Pre-game Selections, mark a point on the Battlefield with a Gateway Marker: it must be within 24\" of your Deployment Zone, outside the opponent’s Deployment Zone, and more than 1\" from Impassible Terrain. <br>One use only. At the start of a friendly Magic Phase, if the bearer’s unit was allowed to move in the preceding Movement Phase <i>(ie. it is not <span class=\"textbf\">Shaken</span>, did not Ambush, did not fail a Charge, is Unengaged, etc.)</i>, you may remove it from the Battlefield and immediately place it back on the Battlefield with <span class=\"textbf\">Ambush (friendly Gateway Marker, that was not placed during this Player Turn)</span>.",
           "option_id": "f4kkpxk95vl5z6ndjyyswa",
           "hasStat": {
             "global": {
@@ -376,7 +376,7 @@
           "hasNotOption": ["sizeGigantic"],
           "name": "Thrice-Forged",
           "cost": 60,
-          "description": "Arm \\textbf{set} to 6.",
+          "description": "<span class='gray'>Height 1-3 only</span><br/>Arm \\textbf{set} to 6.",
           "option_id": "ak2pyk7go6n7edkw4r438c",
           "rarity": "Legendary",
           "hasStat": {
@@ -392,7 +392,7 @@
           "refs": ["gladiatorsSpirit", "spe_gladiator"],
           "name": "Gladiator's Spirit",
           "cost": 30,
-          "description": "+1 Arm, <span class=\"textbf\">Parry</span>.",
+          "description": "<span class='gray'>Height 1-4 only</span><br/>+1 Arm, <span class=\"textbf\">Parry</span>.",
           "option_id": "b87zqc7kroebkxmfg7vom6",
           "rarity": "Legendary",
           "hasStat": {
@@ -521,6 +521,7 @@
                 "tag_"
               ],
               "size": "1",
+              "rarity": "Rare",
               "height": "4",
               "basesize": "50×50",
               "options": [
@@ -1185,7 +1186,7 @@
                     {
                       "type": "check",
                       "name": "Wasteland Behemoth",
-                      "cost": 140,
+                      "cost": 150,
                       "refopt": "wastelandBehemothMount",
                       "option_id": "nok4ejlrqzfvv4co25eizp",
                       "refs": ["wastelandBehemoth", "wastelandbehemoth"]
@@ -1509,7 +1510,7 @@
                     {
                       "type": "check",
                       "name": "Wasteland Dragon",
-                      "cost": 280,
+                      "cost": 300,
                       "refopt": "wastelandDragonMount",
                       "option_id": "hrfxamtceqfm5pe9110ft",
                       "hasOption": ["general"],
@@ -2169,7 +2170,7 @@
             },
             {
               "name": "Barbarians",
-              "cost": 20,
+              "cost": 30,
               "option_id": "e0m2g9u52iwpt4c0c1u20e",
               "unit_id": "barbarians",
               "refs": ["barbarians", "tag_Human", "tag_Light Armour", "core_unit"],
@@ -3114,7 +3115,7 @@
             },
             {
               "name": "Wretched Ones",
-              "cost": 45,
+              "cost": 35,
               "option_id": "nsqmu9gk7fxpxe1inefq9",
               "unit_id": "wretchedOnes",
               "refs": ["wretchedOnes", "tag_Irredeemable", "wretchedones", "wrteched_ones"],
@@ -3131,7 +3132,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 55,
+                      "cost": 65,
                       "option_id": "clxq1pa8kmuq82nd2jqhmg",
                       "refs": ["wretched_ones_amount"]
                     }
@@ -3244,14 +3245,16 @@
                               "cost": 4,
                               "type": "check",
                               "option_id": "t7vjpcr81brr7ki4jwt6u",
-                              "refs": ["throwingWeapons", "throwingweapons", "catch_this"]
+                              "refs": ["throwingWeapons", "throwingweapons", "catch_this"],
+                              "rarity": "Rare"
                             },
                             {
                               "name": "Skinning Lash",
                               "cost": 4,
                               "type": "check",
-                              "refs": ["skinningLash", "skinninglash", "catch_this"],
-                              "option_id": "l4dm1h2m8hpu6lnb5n719"
+                              "refs": ["skinningLash", "skinninglash", { "ref": "catch_this", "amount": 2 }],
+                              "option_id": "l4dm1h2m8hpu6lnb5n719",
+                              "rarity": "Rare"
                             }
                           ],
                           "option_id": "c1fvj0g0s7botzk9kr4yhn"
@@ -3572,7 +3575,7 @@
             },
             {
               "name": "Forsaken One",
-              "cost": 300,
+              "cost": 340,
               "option_id": "9toh6p6bidanbus5lxt5pb",
               "unit_id": "forsakenOne",
               "refs": [
@@ -3582,7 +3585,7 @@
                 "forsaken_one",
                 {
                   "ref": "legendary_beast",
-                  "amount": 1
+                  "amount": 2
                 },
                 "tag_"
               ],

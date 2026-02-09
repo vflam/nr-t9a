@@ -62,7 +62,7 @@
           "refs": ["legendOfTheBlackKing", "ae_vc_black_king"],
           "name": "Legend of the Black King",
           "cost": 110,
-          "description": "+1 Arm, <span class=\"textbf\">Aegis (4+)</span>.",
+          "description": "<span class='gray'>Height 1-4 only</span><br/>+1 Arm, <span class=\"textbf\">Aegis (4+)</span>.",
           "option_id": "c7xrvyy0f7t1ufpkajv2on",
           "hasStat": {
             "global": {
@@ -219,7 +219,7 @@
           "name": "Hypnotic Pendant",
           "cost": 50,
           "refs": ["hypnoticPendant", "art_vc_hypno"],
-          "description": "The wearer and all Rank-and-File models with Height 1--2 in its unit gain <span class=\"textbf\">Parry</span>.",
+          "description": "<span class='gray'>Height 1-4 only</span><br/>The wearer and all Rank-and-File models with Height 1--2 in its unit gain <span class=\"textbf\">Parry</span>.",
           "option_id": "y7tpn4apgj3p1463shw1q",
           "hasStat": {
             "global": {
@@ -235,7 +235,7 @@
           "name": "Eternity Gem",
           "cost": 35,
           "refs": ["eternityGem", "art_vc_eternity_gem"],
-          "description": "<span class='gray'>Vampire Counts and Courtiers on Monstrous Revenant only</span><br/>The bearer’s model gains <span class=\"textbf\">Immune (Lethal Strike)</span>. When the model suffers a wound from an attack with <span class=\"textbf\">Multiple Wounds (X)</span>, reduce the number of wounds suffered by 1, to a minimum of 1.",
+          "description": "<span class='gray'>Vampire Counts and Courtiers on Monstrous Revenant only</span><br/><span class='gray'>Height 1-3 only</span><br/>The bearer’s model gains <span class=\"textbf\">Immune (Lethal Strike)</span>. When the model suffers a wound from an attack with <span class=\"textbf\">Multiple Wounds (X)</span>, reduce the number of wounds suffered by 1, to a minimum of 1.",
           "option_id": "9ii8z61i8zj1761mnblkvt",
           "hasOption": ["tag_Vampire"],
           "hasStat": {
@@ -272,7 +272,7 @@
               }
             }
           },
-          "description": "Attacks against the bearer suffer -1 to-wound.",
+          "description": "<span class='gray'>Height 1-2 only</span><br/>Attacks against the bearer suffer -1 to-wound.",
           "option_id": "0ifjy1d2xl6jmt4v8g8rp",
           "rarity": "Legendary"
         },
@@ -332,14 +332,7 @@
           "name": "Lahmia",
           "description": "<span class='gray'>Models without Shield only</span><br/>The bearer’s Armour is <span class=\"textbf\">set</span> to 1, it gains <span class=\"textbf\">Elven Finesse</span> and loses Metal Armour. Additionally, if the model is of Height 1--2, it gains <span class=\"textbf\">Distracting (1)</span>.",
           "option_id": "qEcQKTG5pcscaqCxUvuG",
-          "refs": ["lahmia", "blood_power", "ancestral_blood_power"],
-          "hasNotOption": [
-            {
-              "refs": ["blood_power"],
-              "amount": 2
-            }
-          ],
-          "neverHide": true
+          "refs": ["lahmia", "blood_power", "ancestral_blood_power"]
         },
         {
           "type": "check",
@@ -348,37 +341,7 @@
           "description": "<span class='gray'>Wizard Apprentice or Wizard Adept without Shield and on Shrieking Horror or without Mount only</span><br/>The bearer’s Armour is <span class=\"textbf\">set</span> to 0, its HP are <span class=\"textbf\">set</span> to 4, it gains <span class=\"textbf\">First Strike (Hatred)</span> and loses Metal Armour. Additionally, if it is without Mount, it gains <span class=\"textbf\">Regeneration (4+)</span>.",
           "option_id": "4J4rW4064TmII9lrFTDP",
           "refs": ["strigoi", "blood_power", "ancestral_blood_power"],
-          "hasNotOption": [
-            {
-              "refs": ["blood_power"],
-              "amount": 2
-            }
-          ],
-          "override": [
-            {
-              "hasOption": [
-                {
-                  "refs": ["army_general"],
-                  "amount": 1
-                }
-              ],
-              "options": {
-                "minSize": 1
-              }
-            }
-          ],
-          "options": [
-            {
-              "option_id": "fsdf34209fj23f32hg432h",
-              "hasOption": ["army_general"],
-              "type": "check",
-              "name": "Strigoi General",
-              "refs": ["strigoi_general"],
-              "hide": true,
-              "invisible": true
-            }
-          ],
-          "neverHide": true
+          "hasNotOption": ["shield", "wizardMaster"]
         },
         {
           "type": "check",
@@ -389,16 +352,10 @@
           "refs": ["sangreal", "blood_power", "ancestral_blood_power"],
           "hasNotOption": [
             {
-              "refs": ["blood_power"],
-              "amount": 2
-            },
-            {
               "refs": ["wizardMaster"],
               "amount": 1
             }
-          ],
-
-          "neverHide": true
+          ]
         },
         {
           "type": "check",
@@ -406,14 +363,7 @@
           "name": "Vetala",
           "description": "The bearer gains Disciplined, Unholy Conduit, Vampiric (4+), Awaken (Bat Swarms, Dire Wolves, Great Bats, Zombies).",
           "option_id": "pUDA6woO2OByU5kyGqY9",
-          "refs": ["vetala", "blood_power", "ancestral_blood_power"],
-          "hasNotOption": [
-            {
-              "refs": ["blood_power"],
-              "amount": 2
-            }
-          ],
-          "neverHide": true
+          "refs": ["vetala", "blood_power", "ancestral_blood_power"]
         }
       ],
       "option_id": "vqz547xrterse97i56jra"
@@ -2544,7 +2494,29 @@
               "rarity": "Rare",
               "height": "4",
               "basesize": "60×100",
-              "options": [],
+              "options": [
+                {
+                  "type": "group",
+                  "optionsLabel": "Bound Spells",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "option_id": "y5pk9qkrscnlqoit",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Arise!",
+                      "cost": 0,
+                      "option_id": "2pdic99xfat1og1d",
+                      "boundSpells": [
+                        {
+                          "path": "hereditary",
+                          "ref": "arise"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
               "armyHasNotOption": [],
               "logo": "special"
             },
@@ -2591,16 +2563,33 @@
               "rarity": "Rare",
               "height": "4",
               "basesize": "50×100",
-              "options": [],
-              "boundSpells": [
+              "options": [
                 {
-                  "ref": "pentagram_of_pain",
-                  "path": "bound",
-                  "mods": {
-                    "castValue": 3
-                  }
+                  "type": "group",
+                  "optionsLabel": "Bound Spells",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "option_id": "dd0e0uqe9amg5sak",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Pentagram of Pain",
+                      "cost": 0,
+                      "option_id": "q6x5qra445ei0j7u",
+                      "boundSpells": [
+                        {
+                          "path": "occultism",
+                          "ref": "pentagram_of_pain",
+                          "mods": {
+                            "castValue": 5
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 }
               ],
+
               "armyHasNotOption": [],
               "logo": "special"
             },
@@ -2657,7 +2646,6 @@
               "unit_id": "phantomHosts",
               "refs": ["phantomHosts", "tag_Spirit", "phantomhosts", "phantom_host"],
               "rarity": "Rare",
-              "height": "1",
               "basesize": "40×40",
               "options": [
                 {
@@ -2676,6 +2664,7 @@
                   "option_id": "lt2yd2acia7f5l8i6a48"
                 }
               ],
+              "height": "1",
               "armyHasNotOption": [],
               "logo": "tower"
             },
@@ -2983,21 +2972,32 @@
               "invisible": true,
               "height": "4",
               "basesize": "60×100",
-              "options": [],
+              "options": [
+                {
+                  "type": "group",
+                  "optionsLabel": "Bound Spells",
+                  "minSize": 1,
+                  "maxSize": 1,
+                  "option_id": "3zd7ef4ebnuj9d8f",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Arise!",
+                      "cost": 0,
+                      "option_id": "65xqejw5jnzfqj08",
+                      "boundSpells": [
+                        {
+                          "path": "hereditary",
+                          "ref": "arise"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
               "type": "check",
               "category": "mounts",
-              "logo": "character",
-              "boundSpells": [
-                {
-                  "ref": "arise",
-                  "path": "hereditary",
-                  "mods": {
-                    "castValue": 5,
-                    "range": 6,
-                    "types": ["augment", "aura"]
-                  }
-                }
-              ]
+              "logo": "character"
             },
             {
               "name": "Court of the Damned *Mount",
