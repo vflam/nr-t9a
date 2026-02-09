@@ -35,6 +35,59 @@
   },
   "dictionnary": [
     {
+      "refs": ["totemBearerTotems"],
+      "options": [
+        {
+          "type": "check",
+          "name": "Black Wing Totem",
+          "cost": 0,
+          "option_id": "0tlycqjxtamhouxz3qp5on",
+          "boundSpells": [
+            {
+              "path": "totems",
+              "ref": "black_wing_totem"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "name": "Blooded Horn Totem",
+          "cost": 0,
+          "option_id": "0902lahfscrj08cvuvii5rce",
+          "boundSpells": [
+            {
+              "path": "totems",
+              "ref": "blooded_horn_totem"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "name": "Clouded Eye Totem",
+          "cost": 0,
+          "option_id": "dvhmss3g0o9bo9awdeo8zp",
+          "boundSpells": [
+            {
+              "path": "totems",
+              "ref": "clouded_eye_totem"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "name": "Gnarled Hide Totem",
+          "cost": 0,
+          "option_id": "7pjkh3re8s6wc8f9ssmfqf",
+          "boundSpells": [
+            {
+              "path": "totems",
+              "ref": "gnarled_hide_totem"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "refs": ["bannerEnchant"],
       "options": [
         {
@@ -413,7 +466,7 @@
                       "refs": ["lightTroops", "lighttroops"]
                     },
                     {
-                      "name": "Light Troops and Ambush (Battlefield Edge)",
+                      "name": "Light Troops, Ambush (Battlefield Edge)",
                       "type": "check",
                       "option_id": "fwef32fwfsdfdsf32f234",
                       "cost": 5,
@@ -730,7 +783,7 @@
                       "hasNotOption": ["solitary"]
                     },
                     {
-                      "name": "Light Troops and Ambush (Battlefield Edge)",
+                      "name": "Light Troops, Ambush (Battlefield Edge)",
                       "type": "check",
                       "option_id": "w5o4zvt1vsnjj2bltuk68q",
                       "cost": 5,
@@ -991,7 +1044,7 @@
                     },
                     {
                       "type": "check",
-                      "name": "Light Troops and Ambush (Battlefield Edge)",
+                      "name": "Light Troops, Ambush (Battlefield Edge)",
                       "cost": 5,
                       "option_id": "on22situv8qm2j2b",
                       "refs": [
@@ -1987,69 +2040,7 @@
                       "name": "Musician",
                       "cost": 10,
                       "option_id": "l0t3q1jt5ls47nlhu7zmkl",
-                      "optionsLabel": "Options",
-                      "options": [
-                        {
-                          "name": "Totem Bearer",
-                          "cost": 20,
-                          "type": "check",
-                          "optionsLabel": "Bound Spell",
-                          "minSize": 1,
-                          "maxSize": 1,
-                          "options": [
-                            {
-                              "type": "check",
-                              "name": "Black Wing Totem",
-                              "cost": 0,
-                              "option_id": "0tlycqjxtamhouxz3qp5on",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "black_wing_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Blooded Horn Totem",
-                              "cost": 0,
-                              "option_id": "0902lahfscrj08cvuvii5rce",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "blooded_horn_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Clouded Eye Totem",
-                              "cost": 0,
-                              "option_id": "dvhmss3g0o9bo9awdeo8zp",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "clouded_eye_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Gnarled Hide Totem",
-                              "cost": 0,
-                              "option_id": "7pjkh3re8s6wc8f9ssmfqf",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "gnarled_hide_totem"
-                                }
-                              ]
-                            }
-                          ],
-                          "option_id": "1iygcpsp09ympgx7o629s",
-                          "refs": ["totemBearer", "totembearer"]
-                        }
-                      ],
+                      "options": [],
                       "refs": ["musician"]
                     }
                   ],
@@ -2068,6 +2059,24 @@
                       "option_id": "0v33i4575ltv3k3c",
                       "refs": ["ambushBattlefieldEdge", "ambushbattlefieldedge"],
                       "rarity": "Rare"
+                    },
+                    {
+                      "name": "Totem Bearer",
+                      "rules": [
+                        {
+                          "id": "totem_bearers"
+                        }
+                      ],
+                      "cost": 20,
+                      "costParentMult": false,
+                      "type": "check",
+                      "optionsLabel": "Bound Spell",
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["totemBearerTotems"],
+                      "option_id": "1iygcpsp09ympgx7o629s",
+                      "refs": ["totemBearer", "totembearer"]
                     }
                   ]
                 }
@@ -2116,13 +2125,12 @@
                     {
                       "hasOption": [
                         {
-                          "refs": ["ambush"],
+                          "refs": ["ambushbattlefieldedge"],
                           "amount": 1
                         }
                       ],
                       "options": {
-                        "maxSize": 40,
-                        "minSize": 20
+                        "maxSize": 40
                       }
                     }
                   ],
@@ -2434,6 +2442,24 @@
                               "option_id": "xtfdiwohkk9hm3d5",
                               "refs": ["ambushBattlefieldEdge", "ambushbattlefieldedge"],
                               "rarity": "Rare"
+                            },
+                            {
+                              "name": "Totem Bearer",
+                              "rules": [
+                                {
+                                  "id": "totem_bearers"
+                                }
+                              ],
+                              "cost": 20,
+                              "costParentMult": false,
+                              "type": "check",
+                              "optionsLabel": "Bound Spell",
+                              "minSize": 1,
+                              "maxSize": 1,
+                              "options": [],
+                              "optionsDict": ["totemBearerTotems"],
+                              "option_id": "oei52083tcgkvg5hg8u9c",
+                              "refs": ["totemBearer", "totembearer"]
                             }
                           ],
                           "option_id": "sokmj8fxw7cuq5il06x3bo"
@@ -2468,73 +2494,7 @@
                       "cost": 10,
                       "option_id": "7pz07m16rnb37x21mktq1",
                       "optionsLabel": "Options",
-                      "options": [
-                        {
-                          "name": "Totem Bearer",
-                          "rules": [
-                            {
-                              "id": "totem_bearers"
-                            }
-                          ],
-                          "cost": 15,
-                          "type": "check",
-                          "optionsLabel": "Bound Spell",
-                          "minSize": 1,
-                          "maxSize": 1,
-                          "options": [
-                            {
-                              "type": "check",
-                              "name": "Black Wing Totem",
-                              "cost": 0,
-                              "option_id": "5ks2txdsqfbd0jwyc5l10h",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "black_wing_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Blooded Horn Totem",
-                              "cost": 0,
-                              "option_id": "appdmnwdk5mwnr41cugamd",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "blooded_horn_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Clouded Eye Totem",
-                              "cost": 0,
-                              "option_id": "k8nthvh1owc293vnbl1hm",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "clouded_eye_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Gnarled Hide Totem",
-                              "cost": 0,
-                              "option_id": "dorbgb921lk449qx6oox4e",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "gnarled_hide_totem"
-                                }
-                              ]
-                            }
-                          ],
-                          "option_id": "oei52083tcgkvg5hg8u9c",
-                          "refs": ["totemBearer", "totembearer"]
-                        }
-                      ],
+                      "options": [],
                       "refs": ["musician"]
                     }
                   ],
@@ -2645,78 +2605,34 @@
                       "name": "Musician",
                       "cost": 10,
                       "option_id": "4rsvxej96gf2e11b86hqv8",
-                      "optionsLabel": "Options",
-                      "options": [
-                        {
-                          "name": "Totem Bearer",
-                          "rules": [
-                            {
-                              "id": "totem_bearers"
-                            }
-                          ],
-                          "cost": 20,
-                          "type": "check",
-                          "optionsLabel": "Bound Spell",
-                          "minSize": 1,
-                          "maxSize": 1,
-                          "options": [
-                            {
-                              "type": "check",
-                              "name": "Black Wing Totem",
-                              "cost": 0,
-                              "option_id": "83maze70vukjem3w0qdza",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "black_wing_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Blooded Horn Totem",
-                              "cost": 0,
-                              "option_id": "4r6fnh8482mbbgrgaakimd",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "blooded_horn_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Clouded Eye Totem",
-                              "cost": 0,
-                              "option_id": "xt44284tq5ga6x4zeoztt",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "clouded_eye_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Gnarled Hide Totem",
-                              "cost": 0,
-                              "option_id": "byitjnh4fh4zq5k11e8r4f",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "gnarled_hide_totem"
-                                }
-                              ]
-                            }
-                          ],
-                          "option_id": "rkxqcdfxfs9ya4a6wikzu",
-                          "refs": ["totemBearer", "totembearer"]
-                        }
-                      ],
                       "refs": ["musician"]
                     }
                   ],
                   "option_id": "1z6304yyxwol7cwnj7nlh"
+                },
+                {
+                  "optionsLabel": "Options",
+                  "option_id": "nf493nv9423nf943f943f43g43",
+                  "options": [
+                    {
+                      "name": "Totem Bearer",
+                      "rules": [
+                        {
+                          "id": "totem_bearers"
+                        }
+                      ],
+                      "cost": 15,
+                      "costParentMult": false,
+                      "type": "check",
+                      "optionsLabel": "Bound Spell",
+                      "minSize": 1,
+                      "maxSize": 1,
+                      "options": [],
+                      "optionsDict": ["totemBearerTotems"],
+                      "option_id": "rkxqcdfxfs9ya4a6wikzu",
+                      "refs": ["totemBearer", "totembearer"]
+                    }
+                  ]
                 }
               ],
               "armyHasNotOption": [],
@@ -2820,6 +2736,24 @@
                               "cost": 1,
                               "option_id": "cnkbgsgrd3eqj4t3",
                               "refs": ["ambushBattlefieldEdge", "ambushbattlefieldedge"]
+                            },
+                            {
+                              "name": "Totem Bearer",
+                              "rules": [
+                                {
+                                  "id": "totem_bearers"
+                                }
+                              ],
+                              "cost": 15,
+                              "costParentMult": false,
+                              "type": "check",
+                              "optionsLabel": "Bound Spell",
+                              "minSize": 1,
+                              "maxSize": 1,
+                              "options": [],
+                              "optionsDict": ["totemBearerTotems"],
+                              "option_id": "4rlxws9e4ifze7p57bs1zk",
+                              "refs": ["totemBearer", "totembearer"]
                             }
                           ]
                         }
@@ -2852,74 +2786,6 @@
                       "name": "Musician",
                       "cost": 10,
                       "option_id": "zse9nlkmai3xk1tojcn85",
-                      "optionsLabel": "Options",
-                      "options": [
-                        {
-                          "name": "Totem Bearer",
-                          "rules": [
-                            {
-                              "id": "totem_bearers"
-                            }
-                          ],
-                          "cost": 15,
-                          "type": "check",
-                          "optionsLabel": "Bound Spell",
-                          "minSize": 1,
-                          "maxSize": 1,
-                          "options": [
-                            {
-                              "type": "check",
-                              "name": "Black Wing Totem",
-                              "cost": 0,
-                              "option_id": "qmxvjctbf89f9cxs0wi01",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "black_wing_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Blooded Horn Totem",
-                              "cost": 0,
-                              "option_id": "qidiuk24v6nmohs4j8wqq",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "blooded_horn_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Clouded Eye Totem",
-                              "cost": 0,
-                              "option_id": "v7257cmt0tleqp9k6zi4je",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "clouded_eye_totem"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "check",
-                              "name": "Gnarled Hide Totem",
-                              "cost": 0,
-                              "option_id": "a9kact4hhijpyjck62dcpl",
-                              "boundSpells": [
-                                {
-                                  "path": "totems",
-                                  "ref": "gnarled_hide_totem"
-                                }
-                              ]
-                            }
-                          ],
-                          "option_id": "4rlxws9e4ifze7p57bs1zk",
-                          "refs": ["totemBearer", "totembearer"]
-                        }
-                      ],
                       "refs": ["musician"]
                     }
                   ],
