@@ -62,7 +62,7 @@
           "type": "check",
           "name": "Stampede Resonator Crystal",
           "cost": 50,
-          "description": "One use only. Duration: End of Turn.<br>May be activated at the start of any Charge Phase. Choose one friendly unit containing models with Height 4-5 within 18\": the chosen unit loses <span class=\"textbf\">Stomp Attack</span> and gains <span class=\"textbf\">Impact Hits (X)</span>, where X is equal to the amount of hits from its <span class=\"textbf\">Stomp Attack</span> (if a model already had <span class=\"textbf\">Impact Hits</span>, increase the number of hits by its amount of <span class=\"textbf\">Stomp Attack</span> instead).",
+          "description": "One use only. Duration: End of Turn.<br>May be activated at the start of any Charge Phase. Select a single friendly unit containing models with Height 4-5 within 18\": all model parts with Height 4-5 in the selected unit loses <span class=\"textbf\">Stomp Attack</span> and gains <span class=\"textbf\">Impact Hits (X)</span>, where X is equal to the amount of hits from its <span class=\"textbf\">Stomp Attack</span> (if a model part already had <span class=\"textbf\">Impact Hits</span>, increase the number of hits by its amount of <span class=\"textbf\">Stomp Attack</span> instead).",
           "refs": ["stampedeResonatorCrystal", "stampede resonator crystal_bf32lrqs"],
           "hasNotOption": [],
           "option_id": "gfm2pw53p6s8wj496njaq3",
@@ -136,7 +136,7 @@
           "type": "check",
           "name": "Glory of the Dawn Age",
           "cost": 55,
-          "description": "The wielder benefits from an increase to: Str, AP and Att by 1 for every spell with Duration: One Turn <span class=\"textbf\">currently</span> affecting the wielders model and/or enemy units in contact with the wielder.<br><i>Note: Number of spells is determined at the start of the wielders Agility Step.</i>",
+          "description": "The wielder benefits from an increase to: Str, AP and Att by 1 for every spell with Duration: One Turn <span class=\"textbf\">currently</span> affecting the wielder's model and/or enemy units in contact with the wielder. <br> <i>Note: Number of spells is determined at the start of the wielder's Agility Step.</i>",
           "refs": ["gloryOfTheDawnAge", "glory_of_dawn_age", "weaponEnchantUni"],
           "hasNotOption": [],
           "option_id": "fsdf32fdsfsdfewg3qhthfg",
@@ -360,7 +360,7 @@
           "type": "check",
           "name": "Carved Wisdom",
           "cost": 35,
-          "description": "Select one of the following spells as a Bound Spell, each can only be selected once. <br>It may not be changed during Pre-game Selections Fate’s Judgement (Divination) as Bound Spell (4+), Silver Spike (Alchemy) as Bound Spell (4+), Swarm of Insects (Shamanism) as Bound Spell (5+), Touch of the Reaper (Evocation) as Bound Spell (4+),",
+          "description": "Select one of the following spells as a Bound Spell, each can only be selected once. <br>It may not be changed during Pre-game Selections Fate’s Judgement (Divination) as Bound Spell (4+), Silver Spike (Alchemy) as Bound Spell (4+), Swarm of Insects (Shamanism) as Bound Spell (5+), The Devouring Dark (Occultism) as Bound Spell (4+),",
           "refs": ["carvedWisdom", "carved wisdom_doleke0k"],
           "hasNotOption": [],
           "option_id": "zwr5g0mriujt4npokl81f",
@@ -508,7 +508,7 @@
           "type": "check",
           "name": "Suncatcher Crystal",
           "cost": 20,
-          "description": "The model gains an additional model part:<br><table><thead><tr><th></th><th>Att</th><th>Off</th><th>Str</th><th>AP</th><th>Agi</th><th></th></tr></thead><tbody><tr><td>Suncatcher Crystal</td><td>2</td><td>3</td><td>6</td><td>3</td><td>2</td><td>Flaming Attacks</td></tr></tbody></table>",
+          "description": "The model gains an additional model part:<br><table><thead><tr><th></th><th>Att</th><th>Off</th><th>Str</th><th>AP</th><th>Agi</th><th></th></tr></thead><tbody><tr><td>Suncatcher Crystal</td><td>3</td><td>3</td><td>6</td><td>3</td><td>2</td><td>Flaming Attacks</td></tr></tbody></table>",
           "refs": ["suncatcherCrystal", "suncatcher crystal_9l638i1g"],
           "hasNotOption": [],
           "option_id": "hqatvpbdv5qrbkhzt4lhn",
@@ -2988,7 +2988,7 @@
                               "cost": 0,
                               "refs": ["salamander", "salamander_nfwhurve"],
                               "option_id": "4bq1ioy68jq4j0cy6czdxr",
-                              "rarity": "Rare"
+                              "rarity": "Extraordinary"
                             }
                           ],
                           "maxSize": 1,
@@ -3004,7 +3004,20 @@
                       ]
                     }
                   ],
-                  "option_id": "8ddeuwyew5jlhlyqvbdd7q"
+                  "option_id": "8ddeuwyew5jlhlyqvbdd7q",
+                  "override": [
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["salamander"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 2
+                      }
+                    }
+                  ]
                 }
               ],
               "generated": true,
