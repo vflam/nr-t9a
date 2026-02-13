@@ -411,7 +411,7 @@
           "refs": ["digestiveVomit", "one_use_item"],
           "cost": 40,
           "countAsLeaf": true,
-          "description": "If a model with <span class=\"textbf\">Digestive Vomit</span> is on on the winning side of a Combat, it gains +1 Str and +1 AP, with Duration: Permanent.",
+          "description": "The first time the model with <span class=\"textbf\">Digestive Vomit</span> is on the winning side of a Combat, it gains +1 Str and +1 AP, with Duration: Permanent.",
           "override": [
             {
               "hasOption": [
@@ -450,7 +450,7 @@
           "refs": ["unholyAppetite", "dominant"],
           "countAsLeaf": true,
           "hasNotOption": ["dominant"],
-          "description": "After a Round of Combat in which at least one attack with <span class=\"textbf\">Unholy Appetite</span> caused any HP loss, all attacks with <span class=\"textbf\">Unholy Appetite</span> gain <span class=\"textbf\">Hatred</span> until the end of the next Player Turn.",
+          "description": "After a Round of Combat in which at least one attack with <span class=\"textbf\">Unholy Appetite</span> caused any HP loss, all attacks from the same unit with <span class=\"textbf\">Unholy Appetite</span> gain <span class=\"textbf\">Hatred</span> until the end of the next Player Turn.",
           "override": [
             {
               "hasOption": [
@@ -2271,6 +2271,21 @@
                     }
                   ],
                   "option_id": "xyjkh8es3ejt6rze96r17"
+                },
+                {
+                  "type": "group",
+                  "name": "Options",
+                  "optionsLabel": "Options",
+                  "option_id": "y3p8w0hrrxn6dqsq",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Dark Fire (3+)",
+                      "cost": 15,
+                      "option_id": "6fpw5ojo6mqs8of7",
+                      "refs": ["darkFire"]
+                    }
+                  ]
                 }
               ],
               "override": [
@@ -2452,8 +2467,8 @@
               "refs": ["tergonKhan", "wizard", "wizardAdept", "army_general", "tag_Daemon", "tergonkhan"],
               "size": "1",
               "rarity": "Legendary",
-              "height": "2",
-              "basesize": "50×50",
+              "height": "seeMount",
+              "basesize": "undefined×undefined",
               "options": [
                 {
                   "type": "group",
@@ -2475,7 +2490,6 @@
                   "type": "group",
                   "optionsLabel": "Mount",
                   "maxSize": 1,
-                  "minSize": 1,
                   "collapsible": true,
                   "option_id": "witj5z5o7b6to2t9",
                   "options": [
@@ -2648,7 +2662,8 @@
                       "type": "check",
                       "name": "Standard Bearer",
                       "cost": 10,
-                      "option_id": "xlv57h63tlea3javucwh8a"
+                      "option_id": "xlv57h63tlea3javucwh8a",
+                      "refs": ["standardBearer"]
                     },
                     {
                       "type": "check",
@@ -2667,9 +2682,9 @@
                   "options": [
                     {
                       "type": "check",
-                      "name": "Firestarter - Spear of Infinity (3+)",
-                      "parsername": "Firestarter (Spear of Infinity (3+))",
-                      "cost": 40,
+                      "name": "Spear of Infinity",
+                      "parsername": "Firestarter (Spear of Infinity)",
+                      "cost": 20,
                       "option_id": "92chhq9uer4b0gemeogbj",
                       "boundSpells": [
                         {
@@ -2685,8 +2700,8 @@
                     {
                       "type": "check",
                       "name": "Firestarter - Smite the Unbeliever (5+)",
-                      "parsername": "Firestarter (Smite the Unbeliever (5+))",
-                      "cost": 70,
+                      "parsername": "Firestarter (Smite the Unbeliever)",
+                      "cost": 50,
                       "option_id": "ca4p2uae6nv0xntzwrc6rof",
                       "boundSpells": [
                         {
