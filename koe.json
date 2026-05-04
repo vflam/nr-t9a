@@ -6,7 +6,7 @@
   },
   "short": "koe",
   "version": "2023 beta4",
-  "nrversion": 499,
+  "nrversion": 500,
   "playable": 1,
   "id": 9,
   "include": [102],
@@ -58,7 +58,7 @@
         {
           "type": "check",
           "refs": ["blackKnightsTonic", "black_knight_tonic"],
-          "cost": 35,
+          "cost": 25,
           "name": "Black Knight's Tonic",
           "option_id": "432f342f43g54h3h43h3",
           "description": "One use only. Duration: One Phase. <br>The first time the model suffers an unsaved wound from an attack with <span class=\"textbf\">Multiple Wounds (X)</span>, it gains <span class=\"textbf\">Immune (Multiple Wounds)</span>.",
@@ -72,7 +72,7 @@
         {
           "type": "check",
           "refs": ["oriflamme"],
-          "cost": 45,
+          "cost": 35,
           "name": "Oriflamme",
           "option_id": "hn054iyt43gm45309gj534g3",
           "description": "The bearer’s unit gains Afflict (-1 Dis), Horror.",
@@ -82,7 +82,7 @@
         {
           "type": "check",
           "refs": ["bannerOfRoland", "banner_of_roland"],
-          "cost": 40,
+          "cost": 30,
           "name": "Banner of Roland",
           "option_id": "432fewv34h65nmu7k87ol6",
           "description": "The bearer’s unit gains <span class=\"textbf\">Aegis (5+, against Ranged Attacks)</span>. <br> In addition, enemy units with <span class=\"textbf\">Stand and Shoot</span> cannot use this rule towards the bearer’s unit.",
@@ -249,7 +249,7 @@
           "cost": 70,
           "name": "Prayer Etched",
           "option_id": "jmg-43it4m9g5445j0g54mn854",
-          "description": "+1 Arm, and <span class=\"textbf\">Aegis(+1, max. 4+)</span>.",
+          "description": "+1 Arm, and <span class=\"textbf\">Aegis (+1, max. 4+)</span>.",
           "rarity": "Legendary"
         },
         {
@@ -317,12 +317,12 @@
       "refs": ["heroicTrait"],
       "options": [
         {
-          "cost": 200,
+          "cost": 190,
           "name": "Quin",
           "type": "check",
           "option_id": "vrvv43iv34kvc3432r231",
           "refs": ["quin", "wizard", "wizardAdept"],
-          "description": "The model is a <span class=\"textbf\">Wizard Adept</span> that chooses <i>Witchcraft</i> as its Path of Magic.<br><br>If without Mount, the model also gains <span class=\"textbf\">Scout</span>.",
+          "description": "<span class='gray'>Counts as two Heroic Traits</span><br/>The model is a <span class=\"textbf\">Wizard Adept</span> that chooses <i>Witchcraft</i> as its Path of Magic. <br> If without Mount, the model also gains <span class=\"textbf\">Scout</span>.",
           "optionsLabel": "Path",
           "minSize": 1,
           "maxSize": 1,
@@ -359,7 +359,7 @@
           "neverHide": true
         },
         {
-          "cost": 35,
+          "cost": 30,
           "name": "Minstrel",
           "type": "check",
           "option_id": "vfmv3ovm34-v3k-0v34k-v43",
@@ -386,7 +386,7 @@
           "type": "check",
           "option_id": "vdver348jv3094u4trf3f",
           "refs": ["castellan"],
-          "description": "The bearer gains Captain, Commanding Presence(6\", Commonfolk).",
+          "description": "The bearer gains Captain, Commanding Presence (6\", Commonfolk).",
           "hasNotOption": ["quin", "army_general"],
           "neverHide": true
         }
@@ -411,7 +411,7 @@
           "cost": 50,
           "refs": ["justice", "kp_justice"],
           "name": "Justice",
-          "description": "At the end of Agility Step 0, the model performs X additional Standard Melee Attacks, where X is equal to the number of HP losses suffered in the Round of Combat by Rank-and-File models in the bearer’s unit.<br>X can never be greater than 3.\\<br><i>If the model is unable to perform the additional attacks granted by <span class=\"textbf\">Justice</span>, those attacks are lost.</i>",
+          "description": "At the end of Agility Step 0, the model part performs X additional Standard Melee Attacks, where X is equal to the number of HP losses suffered in the Round of Combat by Rank-and-File models in the bearer’s unit.<br> X can never be greater than 3.\\ <i>If the model is unable to perform the additional attacks granted by <span class=\"textbf\">Justice</span>, those attacks are lost.</i>",
           "rarity": "Legendary"
         },
         {
@@ -420,7 +420,7 @@
           "cost": 65,
           "refs": ["valour", "kp_valour"],
           "name": "Valour",
-          "description": "The bearer gains <span class=\"textbf\">Fearless, Multiple Wounds(2, towards Res 5 or more)</span>.",
+          "description": "The bearer gains <span class=\"textbf\">Fearless, Multiple Wounds (2, towards Res 5 or more)</span>.",
           "rarity": "Legendary"
         },
         {
@@ -429,7 +429,7 @@
           "cost": 70,
           "refs": ["excellence", "kp_excellence"],
           "name": "Excellence",
-          "description": "The bearer gains <span class=\"textbf\">Zeal</span>, and any Melee Attacks it allocates towards a Character gains +2 AP.",
+          "description": "The bearer gains <span class=\"textbf\">Zeal</span>, and any Melee Attacks it allocates towards a Character gain +2 AP.",
           "rarity": "Legendary"
         },
         {
@@ -438,7 +438,7 @@
           "cost": 30,
           "refs": ["faith", "kp_faith", "tag_Holy Vows"],
           "name": "Faith",
-          "description": "The bearer gains <span class=\"textbf\">Fearless</span> and Holy Vows.<br>Moreover, if its unit is the target of an <span class=\"textbf\">Orison</span> while Engaged in Combat, add one Blessing Token to your pool.",
+          "description": "The bearer gains <span class=\"textbf\">Fearless</span> and Holy Vows. <br> Moreover, if its unit is the target of an <span class=\"textbf\">Orison</span> while Engaged in Combat, add one Blessing Token to your pool.",
           "rarity": "Legendary"
         },
         {
@@ -457,7 +457,7 @@
             }
           ],
           "name": "Forbearance",
-          "description": "When <span class=\"textbf\">Using a Shield</span>, the model gains <span class=\"textbf\">Distracting(1)</span>.",
+          "description": "When <span class=\"textbf\">Using a Shield</span>, the model gains <span class=\"textbf\">Distracting (1)</span>.",
           "rarity": "Legendary"
         },
         {
@@ -466,7 +466,7 @@
           "cost": 25,
           "refs": ["generosity", "kp_generosity"],
           "name": "Generosity",
-          "description": "The model gains Attached,Exclusive(Rank-and-File).<br><br>In addition, Rank-and-File models with <span class=\"textbf\">Nobility</span> in the unit that the bearer is Deployed in gain a Bastard Sword and <span class=\"textbf\">Weapon Master</span>. Duration: Permanent.",
+          "description": "The model gains Attached,Exclusive (Rank-and-File). <br>In addition, Rank-and-File models with <span class=\"textbf\">Nobility</span> in the unit that the bearer is Deployed in gain a Bastard Sword and <span class=\"textbf\">Weapon Master</span>, with Duration: Permanent.",
           "rarity": "Legendary"
         }
       ],
@@ -1510,7 +1510,7 @@
                     {
                       "type": "check",
                       "name": "Heraldic Steed",
-                      "cost": 50,
+                      "cost": 60,
                       "options": [],
                       "refopt": "heraldicSteedMount",
                       "option_id": "432f43f43g453y3sdfg",
@@ -1576,7 +1576,7 @@
                     {
                       "type": "check",
                       "name": "Sainted",
-                      "cost": 80,
+                      "cost": 90,
                       "refs": ["sainted", "army_unique"],
                       "hasNotOption": ["army_bsb"],
                       "option_id": "6f2wea0c4jn54bkomvem2",
@@ -1701,7 +1701,7 @@
                         {
                           "type": "check",
                           "name": "Longbow with Shots 3 (3+)",
-                          "cost": 5,
+                          "cost": 0,
                           "refs": [
                             "longbowWithShotsThree",
                             "longbowwithshotsthree",
@@ -2090,7 +2090,7 @@
             },
             {
               "name": "Lowborn Levies",
-              "cost": -15,
+              "cost": -5,
               "option_id": "wazldt6giqlnf41mne9dnp",
               "unit_id": "lowbornLevies",
               "refs": ["lowbornLevies", "tag_Human", "tag_Light Armour", "lowbornlevies", "core_unit"],
@@ -2376,7 +2376,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 6,
+                      "cost": 5,
                       "hide": true,
                       "option_id": "vrygfgxps5hfblzrz9s01f",
                       "optionsLabel": "Options",
@@ -2534,7 +2534,7 @@
             },
             {
               "name": "Knights Penitent",
-              "cost": 85,
+              "cost": 55,
               "option_id": "im39ggmg6hxdbh9773gz8",
               "unit_id": "knightsPenitent",
               "refs": ["knightsPenitent", "tag_Human", "tag_Metal Armour", "tag_Mount", "knightspenitent"],
@@ -2550,7 +2550,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 55,
+                      "cost": 65,
                       "hide": true,
                       "options": [],
                       "option_id": "mtziyt5g5rne493ddnv4r6",
@@ -2788,7 +2788,7 @@
             },
             {
               "name": "Pegasus Knights",
-              "cost": 80,
+              "cost": 85,
               "option_id": "3jpyefs2nz85i3r1riox9u",
               "unit_id": "pegasusKnights",
               "refs": [
@@ -2815,7 +2815,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 60,
+                      "cost": 55,
                       "hide": true,
                       "options": [],
                       "option_id": "980kuqnsl3rm7jypktwd3q",
@@ -2898,7 +2898,7 @@
             },
             {
               "name": "Siege Weapon",
-              "cost": 80,
+              "cost": 75,
               "option_id": "s1vhwn5eadnbuzush217ml",
               "unit_id": "siegeWeapon",
               "refs": ["siegeWeapon", "tag_Human", "tag_Construct", "tag_Siege", "siegeweapon", "siegeWarMachine"],
@@ -2944,7 +2944,7 @@
             },
             {
               "name": "Sky Heralds",
-              "cost": 120,
+              "cost": 122,
               "option_id": "569vcdgatr5f756hh6r08",
               "unit_id": "skyHeralds",
               "refs": ["skyHeralds", "tag_Human", "tag_Light Armour", "tag_Mount", "skyheralds", "gallantry"],
@@ -2960,7 +2960,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 30,
+                      "cost": 26,
                       "hide": true,
                       "options": [
                         {
@@ -3183,11 +3183,12 @@
             },
             {
               "name": "Friar's Lanterns",
-              "cost": 90,
+              "cost": 88,
               "option_id": "wvva6b231auu0kq7gmq2p",
               "unit_id": "friarsLanterns",
               "refs": ["friarsLanterns", "tag_Fey", "friarslanterns", "friar'sLantern"],
               "rarity": "Rare",
+              "height": "0",
               "basesize": "50×50",
               "options": [
                 {
@@ -3198,7 +3199,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 30,
+                      "cost": 26,
                       "hide": true,
                       "options": [],
                       "option_id": "g43g34gsdgsfg3g34g34g4jdd3",
@@ -3280,7 +3281,7 @@
             },
             {
               "name": "The Lady's Courtier",
-              "cost": 360,
+              "cost": 350,
               "option_id": "j9wp7yhieravhrenlw0su",
               "unit_id": "theLadysCourtier",
               "refs": ["theLadysCourtier", "tag_Beast", "tag_Fey", "theladyscourtier", "army_unique"],
@@ -3325,7 +3326,16 @@
                       "type": "check",
                       "name": "Courtier of the Dusk",
                       "cost": 40,
-                      "refs": ["courtierOfTheDusk", "courtierofthedusk", "wizard", "wizardAdept", { "ref": "gallantry", "amount": 2 }],
+                      "refs": [
+                        "courtierOfTheDusk",
+                        "courtierofthedusk",
+                        "wizard",
+                        "wizardAdept",
+                        {
+                          "ref": "gallantry",
+                          "amount": 2
+                        }
+                      ],
                       "option_id": "c0ujr8xvwg54vzruxk8h",
                       "replaceSpells": true,
                       "magic": {

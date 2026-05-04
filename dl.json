@@ -6,7 +6,7 @@
   },
   "short": "dl",
   "version": "2024 beta1",
-  "nrversion": 395,
+  "nrversion": 396,
   "playable": 1,
   "id": 5,
   "include": [102],
@@ -60,7 +60,7 @@
         {
           "type": "check",
           "name": "Horrifying Visage",
-          "cost": 25,
+          "cost": 15,
           "description": "One use only. May be activated at the start of a friendly Charge Phase: when activated, the model gains <span class=\"textbf\">Horror</span>, and its Charge Range rolls are <span class=\"textbf\">Maximised</span>. Duration: One Phase.",
           "option_id": "f32g34g54h54h54h54h54",
           "refs": ["horrifyingVisage", "hellish_larynx"],
@@ -204,7 +204,7 @@
           "type": "check",
           "name": "Unnatural Roots",
           "hasNotOption": ["possessed_giant"],
-          "cost": 50,
+          "cost": 40,
           "description": "A unit containing <i>Unnatural Roots</i> gains <span class=\"textbf\">Resolute</span>.",
           "option_id": "sgy87ipoplsaifqodk87x6",
           "refs": ["unnaturalRoots"]
@@ -212,7 +212,7 @@
         {
           "type": "check",
           "name": "Brimstone Secretions",
-          "cost": 30,
+          "cost": 25,
           "description": "<span class=\"textbf\">Immune (Divine Attacks)</span>.",
           "optionsLabel": "Guiding Brimstone Secretions",
           "countAsLeaf": true,
@@ -267,7 +267,7 @@
           "type": "check",
           "name": "Dark Hide",
           "cost": 30,
-          "description": "At the beginning of Vanguard Units <i>(Battle Setup, step 3.F)</i>, you may remove any unit entirely with this Manifestation from the Battlefield and Deploy them again elsewhere, following the general Deployment restrictions.",
+          "description": "At the beginning of Vanguard Units <i>(Battle Setup, 3.F)</i>, you may remove any unit entirely with this Manifestation from the Battlefield and Deploy them again elsewhere, following the general Deployment restrictions.",
           "option_id": "kh6n0ksnc74e0m1nri03s",
           "refs": ["darkHide", "dark_hide_manif"]
         },
@@ -411,7 +411,7 @@
           "refs": ["digestiveVomit", "one_use_item"],
           "cost": 40,
           "countAsLeaf": true,
-          "description": "The first time the model with <span class=\"textbf\">Digestive Vomit</span> is on the winning side of a Combat, it gains +1 Str and +1 AP, with Duration: Permanent.",
+          "description": "The first time a model with <span class=\"textbf\">Digestive Vomit</span> is on the winning side of a Combat, it gains +1 Str and +1 AP, with Duration: Permanent.",
           "override": [
             {
               "hasOption": [
@@ -528,7 +528,7 @@
         {
           "type": "check",
           "name": "Segmented Shell",
-          "cost": 20,
+          "cost": 15,
           "countAsLeaf": true,
           "description": "/subsection{segmented_shell}",
           "override": [
@@ -1026,7 +1026,7 @@
                       "option_id": "fdsf23f32f23nf23f23",
                       "name": "Solitary",
                       "type": "check",
-                      "cost": 10,
+                      "cost": 40,
                       "refs": ["solitary"]
                     },
                     {
@@ -1077,7 +1077,7 @@
                     {
                       "type": "check",
                       "name": "Burning Wheel",
-                      "cost": 70,
+                      "cost": 40,
                       "options": [],
                       "refopt": "burningWheelMount",
                       "option_id": "nlhyysjag2qe6t81w8o84i",
@@ -2531,7 +2531,6 @@
                   "type": "group",
                   "optionsLabel": "Path",
                   "maxSize": 1,
-                  "minSize": 1,
                   "collapsible": false,
                   "option_id": "54npekpt3owmg6tj",
                   "options": [
@@ -2722,7 +2721,7 @@
             },
             {
               "name": "Succubi",
-              "cost": 30,
+              "cost": 50,
               "option_id": "zz9okz52rjnupe45q85",
               "unit_id": "succubi",
               "refs": ["succubi", "tag_Daemon", "core_unit"],
@@ -2739,7 +2738,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 20,
+                      "cost": 18,
                       "options": [
                         {
                           "type": "group",
@@ -2817,7 +2816,7 @@
             },
             {
               "name": "Lemures",
-              "cost": 0,
+              "cost": 10,
               "option_id": "wsiy4sf26oabhddbgc1v0c",
               "unit_id": "lemures",
               "refs": ["lemures", "tag_Daemon", "core_unit"],
@@ -2858,7 +2857,7 @@
                             {
                               "type": "check",
                               "name": "Centipede Legs",
-                              "cost": 2,
+                              "cost": 3,
                               "option_id": "gpgd4dayuhfc0ix5uoqecp6t",
                               "refs": ["centipedeLegs", "centipedelegs"]
                             },
@@ -3487,7 +3486,7 @@
             },
             {
               "name": "Titanslayer Chariot",
-              "cost": 220,
+              "cost": 210,
               "option_id": "a8nuxmrjabskam11y1uv2o",
               "unit_id": "titanslayerChariot",
               "refs": ["titanslayerChariot", "tag_Daemon", "tag_Daemon", "tag_Mount", "tag_Construct", "titanslayerchariot", "titanslayer"],
@@ -3511,14 +3510,14 @@
                     {
                       "type": "check",
                       "name": "Digestive Vomit",
-                      "cost": 10,
+                      "cost": 5,
                       "refs": ["digestiveVomit", "digestivevomit", "one_use_item"],
                       "option_id": "h91te5pldo7nz9r2eehyk"
                     },
                     {
                       "type": "check",
                       "name": "Chitinous Scales",
-                      "cost": 20,
+                      "cost": 10,
                       "option_id": "g43gfdgfddssfhjksdfg434",
                       "refs": ["chitinousScales", "chitinousscales"]
                     },
@@ -3563,6 +3562,7 @@
               "option_id": "2u1bbvqw7gsr1eqkcldpqp",
               "unit_id": "mageblightGremlins",
               "refs": ["mageblightGremlins", "tag_Daemon", "tag_Swarm", "mageblightgremlins", "mageblight_gremlins"],
+              "height": "0",
               "basesize": "40×40",
               "options": [
                 {
@@ -3749,7 +3749,7 @@
             },
             {
               "name": "Hoarders",
-              "cost": -45,
+              "cost": -60,
               "option_id": "sak61veh6veng6mnre85hb",
               "unit_id": "hoarders",
               "refs": ["hoarders", "tag_Daemon"],
@@ -3766,7 +3766,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 95,
+                      "cost": 100,
                       "options": [
                         {
                           "type": "group",
@@ -3898,7 +3898,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 20,
+                      "cost": 18,
                       "options": [
                         {
                           "type": "group",
@@ -3921,28 +3921,28 @@
                             {
                               "type": "check",
                               "name": "Kaleidoscopic Flesh",
-                              "cost": 1,
+                              "cost": 0,
                               "option_id": "bw29w6bx7ydsrgagwwb4r8l",
                               "refs": ["kaleidoscopicFlesh", "kaleidoscopicflesh"]
                             },
                             {
                               "type": "check",
                               "name": "Hot Blood",
-                              "cost": 1,
+                              "cost": 0,
                               "option_id": "i6fbdptpsgl2a6n2t4mx",
                               "refs": ["hotBlood", "hotblood"]
                             },
                             {
                               "type": "check",
                               "name": "Mesmerising Plumage",
-                              "cost": 1,
+                              "cost": 0,
                               "option_id": "xtojcicyardfw7bljjuen",
                               "refs": ["mesmerisingPlumage", "mesmerisingplumage"]
                             },
                             {
                               "type": "check",
                               "name": "Hidden Knives",
-                              "cost": 4,
+                              "cost": 2,
                               "option_id": "0qtvawd4dkiwgegtsfo1b",
                               "refs": ["hiddenKnives", "hiddenknives"]
                             },
@@ -4385,7 +4385,7 @@
           "options": [
             {
               "name": "Furies",
-              "cost": 135,
+              "cost": 130,
               "option_id": "bzo4jgkpedu8oi6m0aoi8m",
               "unit_id": "furies",
               "refs": ["furies", "tag_Daemon"],
@@ -4402,7 +4402,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 9,
+                      "cost": 8,
                       "options": [
                         {
                           "type": "group",

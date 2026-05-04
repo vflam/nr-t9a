@@ -6,7 +6,7 @@
   },
   "short": "wdg",
   "version": "2023",
-  "nrversion": 385,
+  "nrversion": 386,
   "playable": 1,
   "id": 18,
   "include": [102],
@@ -52,7 +52,7 @@
         {
           "type": "check",
           "name": "Wyrd Stone",
-          "cost": 40,
+          "cost": 35,
           "refs": ["wyrdStone", "wdg_wyrdstone"],
           "description": "One use only. Duration: One Phase.<br>The bearer’s model gains <span class=\"textbf\">Hard Target (2)</span>.",
           "option_id": "afvzkxy2q0ewwmzek13lp",
@@ -231,16 +231,16 @@
         {
           "type": "check",
           "name": "Immortal Gauntlets",
-          "cost": 60,
+          "cost": 55,
           "refs": ["immortalGauntlets", "army_unique", "wdg_immogaunt"],
-          "description": "When Choosing Equipment and Abilities, choose one of the following Attack Attributes for the wearer’s Melee Attacks: Divine Attacks, Flaming Attacks, Magical Attacks. Duration: Round of Combat.",
+          "description": "During Combat Choices, choose one of the following Attack Attributes for the wearer’s Melee Attacks: Divine Attacks, Flaming Attacks, Magical Attacks. Duration: Round of Combat.",
           "option_id": "gyzoiw5mljcbb5xehe33nw",
           "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Veilgate Orb",
-          "cost": 80,
+          "cost": 70,
           "refs": ["veilgateOrb", "army_unique", "wdg_forebodorb"],
           "description": "<span class='gray'>Height 1-4 only</span><br/>During Pre-game Selections, mark a point on the Battlefield with a Gateway Marker: it must be within 24\" of your Deployment Zone, outside the opponent’s Deployment Zone, and more than 1\" from Impassible Terrain. <br>One use only. At the start of a friendly Magic Phase, if the bearer’s unit was allowed to move in the preceding Movement Phase <i>(ie. it is not <span class=\"textbf\">Shaken</span>, did not Ambush, did not fail a Charge, is Unengaged, etc.)</i>, you may remove it from the Battlefield and immediately place it back on the Battlefield with <span class=\"textbf\">Ambush (friendly Gateway Marker, that was not placed during this Player Turn)</span>.",
           "option_id": "f4kkpxk95vl5z6ndjyyswa",
@@ -323,7 +323,7 @@
             }
           ],
           "refs": ["darkPrelate", "wsg_dark_prelate"],
-          "description": "The bearer can cast <i>Blood Curse</i> (Occultism) and <i>Pentagram of Pain</i> (Occultism) as a Bound Spell(5+).",
+          "description": "The bearer can cast <i>Blood Curse</i> (Occultism) as a Bound Spell (3+) and <i>Pentagram of Pain</i> (Occultism) as a Bound Spell (5+).",
           "option_id": "04x2u826xq6uiw1ypetpknn",
           "rarity": "Legendary"
         },
@@ -333,7 +333,7 @@
           "cost": 45,
           "hasNotOption": ["sizeGigantic"],
           "refs": ["entropicAura", "wdg_entropic"],
-          "description": "Weapon Enchantments and Armour Enchantments carried by the bearer, by models in the bearer’s unit, and by models in units that are in contact with the bearer are ignored and ceases to be Enchanted.<br><br><i>Note: The weapon or shield still provides its mundane effects.</i>",
+          "description": "Ignore all the Weapon Enchantments, Armour Enchantments and Shield Enchantments in units that are in contact with the bearer, including his own, for as long as the units remain in contact with the bearer.",
           "option_id": "egl3dogcsh6tub4curpxg",
           "rarity": "Legendary"
         },
@@ -342,7 +342,7 @@
           "name": "Luck of the Dark Gods",
           "cost": 60,
           "refs": ["luckOfTheDarkGods", "wdg_luckdg"],
-          "description": "The bearer’s model gains <span class=\"textbf\">Aegis(+1, max. 4+)</span>.",
+          "description": "The bearer’s model gains <span class=\"textbf\">Aegis (+1, max. 4+)</span>.",
           "option_id": "yc0i0ctxqggu6i6imzi1h",
           "rarity": "Legendary"
         },
@@ -351,7 +351,7 @@
           "name": "Idol of Spite",
           "cost": 70,
           "refs": ["idolOfSpite", "wdg_idolspite"],
-          "description": "One use only. May be activated when Choosing Equipment and Abilities: the bearer gains +1 Att, +1 Str, and +1 AP, with Duration: Round of Combat.",
+          "description": "One use only. Can be activated during Combat Choices: the bearer gains +1 Att, +1 Str, and +1 AP, with Duration: Round of Combat.",
           "option_id": "hrdmlgx4n9jxz9433m0zjh",
           "rarity": "Legendary"
         }
@@ -415,7 +415,7 @@
           "option_id": "vuhmpks4fpkunc51",
           "refs": ["abidingSpirit"],
           "rarity": "Legendary",
-          "description": "Hard Target (1)."
+          "description": "<span class=\"textbf\">Hard Target (1)</span>."
         },
         {
           "type": "check",
@@ -424,7 +424,7 @@
           "option_id": "w6md39uc93oawy66",
           "refs": ["brandOfTheDragon"],
           "rarity": "Legendary",
-          "description": "Fly,Light Troops,Swiftstride,Breath Attack(Str 4, AP 1, Flaming Attacks)"
+          "description": "Fly,Swiftstride,Breath Attack (Str 4, AP 1, Flaming Attacks)."
         },
         {
           "type": "check",
@@ -433,7 +433,7 @@
           "option_id": "7uj39jytxykjxe1d",
           "refs": ["emissaryOfChaos"],
           "rarity": "Legendary",
-          "description": "(D6),Stubborn,,Terror"
+          "description": "Stomp Attack (D6),Courageous."
         },
         {
           "type": "check",
@@ -442,7 +442,7 @@
           "option_id": "1xzltepp8gx62xku",
           "refs": ["sorcererImmortal"],
           "rarity": "Legendary",
-          "description": "<span class=\"textbf\">Veil Walker</span>,Channel(1)"
+          "description": "<span class=\"textbf\">Veil Walker</span>,."
         },
         {
           "type": "check",
@@ -451,7 +451,7 @@
           "option_id": "via0cd5m8nmfzf74",
           "refs": ["unholyAvatar"],
           "rarity": "Legendary",
-          "description": "+1 Strength, +1 Armour Penetration, and <span class=\"textbf\">Divine Attacks</span>"
+          "description": "+1 Str, +1 AP, and <span class=\"textbf\">Divine Attacks</span>."
         }
       ]
     }
@@ -701,7 +701,7 @@
             },
             {
               "name": "Chosen Lord",
-              "cost": 280,
+              "cost": 300,
               "option_id": "bme1pa4bpduaez1kfpvb",
               "unit_id": "chosenLord",
               "refs": [
@@ -744,7 +744,7 @@
                       "type": "check",
                       "name": "Envy",
                       "refs": ["envy", "fv_kuulima"],
-                      "cost": 20,
+                      "cost": 0,
                       "description": "Charge Range and Pursue Distance rolls by units containing this Favour are Maximised.",
                       "option_id": "ly5lugc2yool0sqvatte"
                     },
@@ -760,7 +760,7 @@
                       "type": "check",
                       "name": "Greed",
                       "refs": ["greed", "fv_sugulag"],
-                      "cost": 20,
+                      "cost": 0,
                       "description": "The model part with Path of the Favoured gains Great Weapon, Halberd, Paired Weapons, and Weapon Master. A Chosen Lord with this Favour may take a second item from either the Artefacts category or the Potions and Scrolls category (but cannot take a second item from both categories).",
                       "option_id": "88b3auf8znu02x8vyncnbnt"
                     },
@@ -768,7 +768,7 @@
                       "type": "check",
                       "name": "Lust",
                       "refs": ["lust", "fv_cibaresh"],
-                      "cost": 15,
+                      "cost": 0,
                       "description": "The model gains Feigned Flight and Strider.",
                       "option_id": "sf261gxa3wltobfo9oufqp"
                     },
@@ -776,7 +776,7 @@
                       "type": "check",
                       "name": "Pride",
                       "refs": ["pride", "fv_savar"],
-                      "cost": 20,
+                      "cost": 0,
                       "description": "The model gains Disciplined. Discipline Tests taken by units containing this Favour are Minimised.",
                       "option_id": "rj2pewm6iyh2nqcz5j7t"
                     },
@@ -784,7 +784,7 @@
                       "type": "check",
                       "name": "Sloth",
                       "refs": ["sloth", "fv_nukuja"],
-                      "cost": 20,
+                      "cost": 0,
                       "description": "Model gains Aegis (6+). In addition, if the model is Height 1–4 it gains Aegis (+1, max. 4+, against no Armour Save*).",
                       "option_id": "ks6h1gw3z5ponmo34s3w3m"
                     },
@@ -792,7 +792,7 @@
                       "type": "check",
                       "name": "Wrath",
                       "refs": ["wrath", "fv_vanadra"],
-                      "cost": 20,
+                      "cost": 0,
                       "description": "The model part gains First Strike (Hatred).",
                       "option_id": "6xftdbyvj73dgsvd5qqpf"
                     }
@@ -1145,7 +1145,7 @@
             },
             {
               "name": "Doomlord",
-              "cost": 340,
+              "cost": 330,
               "option_id": "v5kqpz77v6nddewjc1csh6",
               "unit_id": "doomlord",
               "refs": ["doomlord", "tag_Metal Armour", "tag_Path Of The Exiled", "doom_lord", "tag_Path of the Exiled"],
@@ -2049,7 +2049,7 @@
                           "options": [
                             {
                               "name": "Gluttony",
-                              "cost": 3,
+                              "cost": 2,
                               "type": "check",
                               "refs": ["gluttony", "warrior_favour"],
                               "option_id": "w6730yrwi116g3vnv5w62"
@@ -2070,7 +2070,7 @@
                             },
                             {
                               "name": "Lust",
-                              "cost": 2,
+                              "cost": 3,
                               "type": "check",
                               "refs": ["lust", "warrior_favour"],
                               "option_id": "80ndcu88s5ad7132g9k2l"
@@ -2084,7 +2084,7 @@
                             },
                             {
                               "name": "Sloth",
-                              "cost": 3,
+                              "cost": 4,
                               "type": "check",
                               "refs": ["sloth", "warrior_favour"],
                               "option_id": "hh77ycqpm2p38v4romtrs9"
@@ -2137,7 +2137,7 @@
             },
             {
               "name": "Fallen",
-              "cost": 75,
+              "cost": 85,
               "option_id": "5s8dflxjwn3zyosk2gs8z",
               "unit_id": "fallen",
               "refs": ["fallen", "tag_Metal Armour", "tag_Path Of The Exiled", "core_unit", "tag_Path of the Exiled"],
@@ -2154,7 +2154,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 15,
+                      "cost": 13,
                       "option_id": "ffkmfemy994yxsvnlo5o3",
                       "refs": ["fallen_amount"]
                     }
@@ -2180,7 +2180,7 @@
             },
             {
               "name": "Barbarians",
-              "cost": 30,
+              "cost": 40,
               "option_id": "e0m2g9u52iwpt4c0c1u20e",
               "unit_id": "barbarians",
               "refs": ["barbarians", "tag_Human", "tag_Light Armour", "core_unit"],
@@ -2414,7 +2414,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 44,
+                      "cost": 46,
                       "options": [
                         {
                           "maxSize": 1,
@@ -2452,14 +2452,14 @@
                           "options": [
                             {
                               "name": "Envy",
-                              "cost": 3,
+                              "cost": 4,
                               "type": "check",
                               "option_id": "hx8rm68j7ngbumk5vhvy6b",
                               "refs": ["envy"]
                             },
                             {
                               "name": "Gluttony",
-                              "cost": 1,
+                              "cost": 3,
                               "type": "check",
                               "option_id": "2g2l6kqm38bmdtqbbahgmf",
                               "refs": ["gluttony"]
@@ -2480,7 +2480,7 @@
                             },
                             {
                               "name": "Pride",
-                              "cost": 1,
+                              "cost": 2,
                               "type": "check",
                               "option_id": "7hma0gdv6lwg010f1lkch5",
                               "refs": ["pride"]
@@ -2494,7 +2494,7 @@
                             },
                             {
                               "name": "Wrath",
-                              "cost": 7,
+                              "cost": 8,
                               "type": "check",
                               "option_id": "xz8t7iqbarydqmnr8pq5",
                               "refs": ["wrath"]
@@ -2541,7 +2541,7 @@
             },
             {
               "name": "Warrior Chariot",
-              "cost": 220,
+              "cost": 210,
               "option_id": "58w4b8xokp70od3e3mdcqb",
               "unit_id": "warriorChariot",
               "refs": [
@@ -2586,7 +2586,7 @@
                     },
                     {
                       "name": "Lust",
-                      "cost": 15,
+                      "cost": 20,
                       "type": "check",
                       "option_id": "ilxja90ds86v3euwy8cfqmd",
                       "refs": ["lust"]
@@ -2690,14 +2690,14 @@
                             },
                             {
                               "name": "Gluttony",
-                              "cost": 5,
+                              "cost": 0,
                               "type": "check",
                               "option_id": "71v918lxf9rg7egfvlsqz9",
                               "refs": ["gluttony"]
                             },
                             {
                               "name": "Greed",
-                              "cost": 8,
+                              "cost": 10,
                               "type": "check",
                               "option_id": "fmte84rajw8a7qivjtwz4d",
                               "refs": ["greed", "favour_greed"]
@@ -2837,7 +2837,7 @@
                             },
                             {
                               "name": "Lust",
-                              "cost": 7,
+                              "cost": 5,
                               "type": "check",
                               "option_id": "iflkktb3liohkieqiq8pyh",
                               "refs": ["lust"]
@@ -2858,7 +2858,7 @@
                             },
                             {
                               "name": "Wrath",
-                              "cost": 5,
+                              "cost": 10,
                               "type": "check",
                               "option_id": "et7xpgk63df4d8dljkz2e5",
                               "refs": ["wrath"]
@@ -2936,14 +2936,14 @@
                     },
                     {
                       "name": "Gluttony",
-                      "cost": 0,
+                      "cost": 10,
                       "type": "check",
                       "option_id": "qn80d0yq9pq9fkldx7g2",
                       "refs": ["gluttony"]
                     },
                     {
                       "name": "Greed",
-                      "cost": 30,
+                      "cost": 25,
                       "type": "check",
                       "option_id": "sv3b8cjn5mfkxl6mwe6o9",
                       "refs": ["greed", "favour_greed"]
@@ -2957,21 +2957,21 @@
                     },
                     {
                       "name": "Pride",
-                      "cost": 0,
+                      "cost": 10,
                       "type": "check",
                       "option_id": "lsmmx4mdgc9fvjrcaupp8",
                       "refs": ["pride"]
                     },
                     {
                       "name": "Sloth",
-                      "cost": 30,
+                      "cost": 20,
                       "type": "check",
                       "option_id": "497vgmalzdagttszitoffb",
                       "refs": ["sloth"]
                     },
                     {
                       "name": "Wrath",
-                      "cost": 0,
+                      "cost": 10,
                       "type": "check",
                       "option_id": "h1n85puqv3gxl8hk542ud",
                       "refs": ["wrath"]
@@ -3125,7 +3125,7 @@
             },
             {
               "name": "Wretched Ones",
-              "cost": 35,
+              "cost": 25,
               "option_id": "nsqmu9gk7fxpxe1inefq9",
               "unit_id": "wretchedOnes",
               "refs": ["wretchedOnes", "tag_Irredeemable", "wretchedones", "wrteched_ones"],
@@ -3142,7 +3142,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 65,
+                      "cost": 75,
                       "option_id": "clxq1pa8kmuq82nd2jqhmg",
                       "refs": ["wretched_ones_amount"]
                     }
@@ -3260,7 +3260,7 @@
                             },
                             {
                               "name": "Skinning Lash",
-                              "cost": 4,
+                              "cost": 6,
                               "type": "check",
                               "refs": [
                                 "skinningLash",
@@ -3346,7 +3346,7 @@
             },
             {
               "name": "Chimera",
-              "cost": 220,
+              "cost": 210,
               "option_id": "x5lcby6m1zhv670yd9vz0m",
               "unit_id": "chimera",
               "refs": ["chimera", "tag_Beast", "chimera_unit", "legendary_beast"],
@@ -3592,7 +3592,7 @@
             },
             {
               "name": "Forsaken One",
-              "cost": 340,
+              "cost": 360,
               "option_id": "9toh6p6bidanbus5lxt5pb",
               "unit_id": "forsakenOne",
               "refs": [

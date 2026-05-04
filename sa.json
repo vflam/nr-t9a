@@ -6,7 +6,7 @@
   },
   "short": "sa",
   "version": "2023",
-  "nrversion": 450,
+  "nrversion": 451,
   "playable": 1,
   "id": 13,
   "include": [102],
@@ -62,7 +62,7 @@
           "type": "check",
           "name": "Stampede Resonator Crystal",
           "cost": 50,
-          "description": "One use only. Duration: End of Turn.<br>May be activated at the start of any Charge Phase. Select a single friendly unit containing models with Height 4-5 within 18\": all model parts with Height 4-5 in the selected unit loses <span class=\"textbf\">Stomp Attack</span> and gains <span class=\"textbf\">Impact Hits (X)</span>, where X is equal to the amount of hits from its <span class=\"textbf\">Stomp Attack</span> (if a model part already had <span class=\"textbf\">Impact Hits</span>, increase the number of hits by its amount of <span class=\"textbf\">Stomp Attack</span> instead).",
+          "description": "One use only. Duration: End of Turn.<br>May be activated at the start of any Charge Phase. Select a single friendly unit containing models with Height 4-5 within 18\": all model parts with Height 4-5 in the selected unit lose <span class=\"textbf\">Stomp Attack</span> and gains <span class=\"textbf\">Impact Hits (X)</span>, where X is equal to the amount of hits from its <span class=\"textbf\">Stomp Attack</span> (if a model part already had <span class=\"textbf\">Impact Hits</span>, increase the number of hits by its amount of <span class=\"textbf\">Stomp Attack</span> instead).",
           "refs": ["stampedeResonatorCrystal", "stampede resonator crystal_bf32lrqs"],
           "hasNotOption": [],
           "option_id": "gfm2pw53p6s8wj496njaq3",
@@ -86,7 +86,7 @@
           "type": "check",
           "name": "Koru Stone",
           "cost": 50,
-          "description": "The bearer’s unit gains <span class=\"textbf\">Beacon of Courage</span>.",
+          "description": "The bearer’s unit gains <span class=\"textbf\">Beacon of Courage (12\")</span>.",
           "refs": ["koruStone", "koru_stone"],
           "hasNotOption": ["core_unit"],
           "option_id": "4qi4kf957owckk8r9pyyhk",
@@ -136,7 +136,7 @@
           "type": "check",
           "name": "Glory of the Dawn Age",
           "cost": 55,
-          "description": "The wielder benefits from an increase to: Str, AP and Att by 1 for every spell with Duration: One Turn <span class=\"textbf\">currently</span> affecting the wielder's model and/or enemy units in contact with the wielder. <br> <i>Note: Number of spells is determined at the start of the wielder's Agility Step.</i>",
+          "description": "The wielder benefits from an increase to: Str, AP and Att by 1 for every spell with Duration: One Turn <span class=\"textbf\">currently</span> affecting the wielder's model and/or enemy units in contact with the wielder. <br> <i>Note: The number of spells is determined at the start of the wielder's Agility Step.</i>",
           "refs": ["gloryOfTheDawnAge", "glory_of_dawn_age", "weaponEnchantUni"],
           "hasNotOption": [],
           "option_id": "fsdf32fdsfsdfewg3qhthfg",
@@ -216,7 +216,7 @@
         {
           "type": "check",
           "name": "Imbued Jade",
-          "cost": 70,
+          "cost": 60,
           "description": "Channel (1), Regeneration (5+).",
           "refs": ["imbuedJade", "imbued_jade"],
           "hasNotOption": [
@@ -238,8 +238,8 @@
         {
           "type": "check",
           "name": "Ancient Plaque",
-          "cost": 70,
-          "description": "The first time each Magic Phase that the bearer fails a Casting Roll for a Learned Spell, it may reroll all Magic Dice for this Casting Roll, provided no other friendly Wizard has made a Casting Roll during this phase.",
+          "cost": 60,
+          "description": "The first time in each Magic Phase that the bearer fails a Casting Roll for a Learned Spell, it <span class=\"textbf\">may</span> reroll all Magic Dice for this Casting Roll, provided no other friendly Wizard has made a Casting Roll during this phase.",
           "refs": ["ancientPlaque", "ancient plaque_jg9lqnha", "dominant"],
           "hasNotOption": ["veil_mastery", "eternal_mastery"],
           "option_id": "axblefwwqdfedxek6hpcov",
@@ -474,7 +474,7 @@
           "type": "check",
           "name": "Monolith of Vitalism",
           "cost": 50,
-          "description": "The model gains <span class=\"textbf\">Beacon of Courage</span>.",
+          "description": "The model gains <span class=\"textbf\">Beacon of Courage (12\")</span>.",
           "refs": ["monolithOfVitalism", "monolith of vitalism_6l7off1", "army_unique"],
           "extraVp": 200,
           "hasNotOption": [],
@@ -507,8 +507,8 @@
         {
           "type": "check",
           "name": "Suncatcher Crystal",
-          "cost": 20,
-          "description": "The model gains an additional model part:<br><table><thead><tr><th></th><th>Att</th><th>Off</th><th>Str</th><th>AP</th><th>Agi</th><th></th></tr></thead><tbody><tr><td>Suncatcher Crystal</td><td>3</td><td>3</td><td>6</td><td>3</td><td>2</td><td>Flaming Attacks</td></tr></tbody></table>",
+          "cost": 10,
+          "description": "The model gains an additional model part:<br><table><thead><tr><th></th><th>Att</th><th>Off</th><th>Str</th><th>AP</th><th>Agi</th><th></th></tr></thead><tbody><tr><td>Suncatcher Crystal</td><td>2</td><td>3</td><td>6</td><td>3</td><td>2</td><td>Flaming Attacks</td></tr></tbody></table>",
           "refs": ["suncatcherCrystal", "suncatcher crystal_9l638i1g"],
           "hasNotOption": [],
           "option_id": "hqatvpbdv5qrbkhzt4lhn",
@@ -527,7 +527,7 @@
           "name": "Veil Mastery",
           "cost": 100,
           "option_id": "ogaz9db0fjncs26xewxig6",
-          "description": "The model gains <span class=\"textbf\">Channel(2)</span>.",
+          "description": "The model gains <span class=\"textbf\">Channel (2)</span>.",
           "rarity": "Legendary"
         },
         {
@@ -536,7 +536,7 @@
           "name": "Farseeing Mastery",
           "cost": 40,
           "option_id": "q9nhqxerg1dnslwziiqpsd",
-          "description": "Learned Spells cast by the model gain +6\" Range (Aura Spells gain +3\" Range instead).",
+          "description": "Learned Spells cast by the model gain +6\" Range (spells with Type “Aura” gain +3\" Range instead).",
           "rarity": "Legendary"
         },
         {
@@ -591,7 +591,7 @@
               }
             ]
           },
-          "description": "Select either Pyromancy,Occultism: the model knows two additional spells from the chosen Path, which <span class=\"textbf\">must</span> be selected from the Apprentice Spell and Adept Spells (#1--#4).<br>Casting Rolls for these spells suffer a -1 modifier.<br>",
+          "description": "Select either Pyromancy,Occultism: the model knows one additional spell from the selected Path, which <span class=\"textbf\">must</span> be selected from the Apprentice Spell and Adept Spells (#1--#4).",
           "rarity": "Legendary"
         }
       ]
@@ -614,7 +614,7 @@
           "name": "Guiding Mastery",
           "cost": 30,
           "option_id": "g43g43fdsgfdgfdg34g43",
-          "description": "\n\tAt the start of each friendly Player Turn, the model may choose a friendly unit entirely with Magnasaur within 12\". The unit must reroll failed Charge Range rolls. Duration: One Turn.\n",
+          "description": "At the start of each friendly Player Turn, the model may choose a friendly unit entirely with Magnasaur within 12\": the unit must reroll failed Charge Range rolls and loses Frenzy (if it has it), with Duration: One Turn.",
           "rarity": "Legendary"
         },
         {
@@ -623,7 +623,7 @@
           "name": "Maddening Mastery",
           "cost": 30,
           "option_id": "65jfhgfh54h534hg34f43j65432",
-          "description": "\n\tThe model gains , Musician, Horror.\n",
+          "description": "The model gains , Musician, Horror.",
           "rarity": "Legendary"
         },
         {
@@ -632,7 +632,7 @@
           "name": "Invasive Mastery",
           "cost": 25,
           "option_id": "f32f32f32f32g34",
-          "description": "Once per friendly Magic Phase, the model may choose a Learned Spell that was successfully cast by an enemy Wizard in the previous Magic Phase: the model knows the chosen spell, with duration: One Phase.<br>Hereditary Spells cannot be chosen.",
+          "description": "Once per friendly Magic Phase, the model may choose a Learned Spell that was successfully cast by an enemy Wizard in the previous Magic Phase: the model knows the chosen spell, with Duration: One Phase. <br>Hereditary Spells cannot be chosen.",
           "rarity": "Legendary"
         }
       ]
@@ -885,14 +885,14 @@
                     {
                       "name": "Combat Master",
                       "type": "check",
-                      "cost": 60,
+                      "cost": 50,
                       "refs": ["combatMaster", "combatmaster"],
                       "option_id": "fdsfd-vc34fv3f2f32f43g3"
                     },
                     {
                       "name": "Combat Legend",
                       "type": "check",
-                      "cost": 200,
+                      "cost": 180,
                       "refs": ["combatLegend", "combatlegend", "combat_legend"],
                       "armyHasNotOption": [
                         {
@@ -1338,7 +1338,7 @@
                     {
                       "type": "check",
                       "name": "Pouakai Sky Tyrant",
-                      "cost": 190,
+                      "cost": 200,
                       "refs": ["pouakaiSkyTyrant", "pouakaiskytyrant", "mount", "pouakai_sky_tyrant_mount_option"],
                       "refopt": "pouakaiSkyTyrantMount",
                       "extraCategories": ["magna_sauria"],
@@ -1347,7 +1347,7 @@
                     {
                       "type": "check",
                       "name": "Taurosaur",
-                      "cost": 380,
+                      "cost": 360,
                       "refs": [
                         "taurosaur",
                         "mount",
@@ -1657,7 +1657,7 @@
             },
             {
               "name": "Shade and Stone",
-              "cost": 420,
+              "cost": 460,
               "option_id": "qzptrqpqs2pumo8f",
               "unit_id": "shadeAndStone",
               "refs": ["shadeAndStone", "tag_Skink", "tag_Light Armour", "tag_Caiman", "tag_Light Armour", "shadeandstone"],
@@ -2246,7 +2246,7 @@
             },
             {
               "name": "Raptor Pack",
-              "cost": 88,
+              "cost": 84,
               "option_id": "ml8ao39c1o3adtza8e6ef",
               "unit_id": "raptorPack",
               "refs": ["raptorPack", "tag_Magnasaur", "raptorpack", "tag_Beast"],
@@ -2261,7 +2261,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 11,
                       "hide": true,
                       "refs": ["raptor_count"],
                       "options": [
@@ -2311,7 +2311,7 @@
             },
             {
               "name": "Raptor Riders",
-              "cost": 20,
+              "cost": 14,
               "option_id": "9za2b74fioosnikwac2k9",
               "unit_id": "raptorRiders",
               "refs": ["raptorRiders", "tag_Tegu", "tag_Light Armour", "tag_Mount", "tag_Magnasaur", "raptorriders"],
@@ -2327,7 +2327,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 40,
+                      "cost": 42,
                       "hide": true,
                       "option_id": "5jijse5t7ab4tzbkmqp3yb",
                       "refs": ["raptor_riders_amount"]
@@ -2431,6 +2431,7 @@
               "unit_id": "saurianSwarms",
               "refs": ["saurianSwarms", "tag_Saurian", "saurianswarms"],
               "rarity": "Uncommon",
+              "height": "0",
               "basesize": "40×40",
               "options": [
                 {
@@ -2456,7 +2457,7 @@
             },
             {
               "name": "Tegu Guards",
-              "cost": -15,
+              "cost": -50,
               "option_id": "ewslulmwmfea0fdviq2f3",
               "unit_id": "teguGuards",
               "refs": ["teguGuards", "tag_Light Armour", "tag_Tegu", "teguguards"],
@@ -2471,7 +2472,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 21,
+                      "cost": 22,
                       "hide": true,
                       "option_id": "jdh0dz9fjnp9hwlt5985a",
                       "refs": ["tegu_guards_amount"]
@@ -2608,7 +2609,7 @@
             },
             {
               "name": "Thyroscutus Herd",
-              "cost": 50,
+              "cost": 60,
               "option_id": "9k6jjb2gw9reo8ume87qw6",
               "unit_id": "thyroscutusHerd",
               "refs": ["thyroscutusHerd", "tag_Skink", "tag_Mount", "tag_Magnasaur", "thyroscutusherd"],
@@ -2666,7 +2667,7 @@
                                 {
                                   "type": "check",
                                   "name": "Venomous Fortress",
-                                  "cost": 40,
+                                  "cost": 50,
                                   "option_id": "328ufnb329nf239f32k65f",
                                   "rarity": "Extraordinary",
                                   "refs": [
@@ -3181,7 +3182,7 @@
             },
             {
               "name": "Taurosaur",
-              "cost": 420,
+              "cost": 380,
               "option_id": "yg2igze9vga0jd5n2j4s4",
               "unit_id": "taurosaur",
               "refs": [
@@ -3213,7 +3214,7 @@
             },
             {
               "name": "Titanopod",
-              "cost": 500,
+              "cost": 460,
               "option_id": "r97k74582qqg96aontuxyu",
               "unit_id": "titanopod",
               "refs": [

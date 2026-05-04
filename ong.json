@@ -6,7 +6,7 @@
   },
   "short": "ong",
   "version": "2023 alpha4",
-  "nrversion": 465,
+  "nrversion": 466,
   "playable": 1,
   "id": 12,
   "include": [102],
@@ -79,7 +79,7 @@
           "type": "check",
           "name": "Gnasher Bait",
           "cost": 25,
-          "description": "One use only Duration: End of Turn.<br>Friendly Gnasher and Gnasher Dasher units within 18\" gain Frenzy, Fury, and their Charge Range rolls are <span class=\"textbf\">Maximised</span>.",
+          "description": "One use only Duration: End of Turn.<br>Friendly Gnasher and Gnasher Dasher units within 18\" gain <span class=\"textbf\">Frenzy</span>, and their Charge Range rolls are <span class=\"textbf\">Maximised</span>. Model parts with Gnasher gain Fury.",
           "refs": ["gnasherBait", "gnasher_whistle"],
           "hasNotOption": [],
           "option_id": "fsdf3ew2fsdfdsfsdfsdf3w2wg342fg433",
@@ -88,8 +88,8 @@
         {
           "type": "check",
           "name": "Moon Shrooms",
-          "cost": 40,
-          "description": "One use only. Duration: End of Turn <br>Cannot be activated at the same turn as <span class=\"textbf\">War Cry!</span>. <br>The bearer’s unit gains the effects of <span class=\"textbf\">Warcry</span> as if the General had used it this turn.",
+          "cost": 35,
+          "description": "One use only. Duration: End of Turn <br>Cannot be activated at the same turn as <span class=\"textbf\">War Cry!</span>. <br>The bearer’s unit gains the effects of <span class=\"textbf\">War Cry!</span> as if the General had used it this turn.",
           "refs": ["moonShrooms", "moon_shrroms"],
           "option_id": "ovs5dsadsaprpaanidi8n9jsvhat",
           "rarity": "Legendary"
@@ -103,7 +103,7 @@
           "type": "check",
           "name": "Goga Cauldron",
           "cost": 35,
-          "description": "<span class='gray'>Models with Goblin only.</span><br/>One use only.<br>May be activated at the start of any phase, or when Choosing Equipment and Abilities: the bearer’s unit gains Fearless, Unstable, Dying Blow, with Duration: End of Turn.",
+          "description": "<span class='gray'>Models with Goblin only.</span><br/>One use only.<br>May be activated at the start of any phase, or during Combat Choices: the bearer’s unit gains Fearless, Unstable, Dying Blow, with Duration: End of Turn.",
           "refs": ["gogaCauldron", "dominant", "goga brew_hzyne4vv"],
           "hasNotOption": ["dominant"],
           "hasOption": [
@@ -172,7 +172,7 @@
         {
           "type": "check",
           "name": "Attack Gnasher",
-          "cost": 60,
+          "cost": 55,
           "description": "The wielder gains 3 additional Standard Melee Attacks, whose Strength is <span class=\"textbf\">always</span> 5 and Armour Penetration <span class=\"textbf\">always</span> 2.",
           "refs": ["attackGnasher", "attack_gnasher", "weaponEnchantUni"],
           "hasNotOption": [
@@ -265,8 +265,8 @@
         {
           "type": "check",
           "name": "Troll Hide",
-          "cost": 15,
-          "description": "Mobility <span class=\"textbf\">set</span> to 6\". <br>The model’s base size is changed to 40×40 mm, gains Troll and its Height is <span class=\"textbf\">set</span> to 3. <br>(The model’s base size change cannot be ignored).",
+          "cost": 10,
+          "description": "Mobility <span class=\"textbf\">set</span> to 6\". <br>The model’s base size is changed to 40×40 mm, the model gains Troll and its Height is <span class=\"textbf\">set</span> to 3. <br>(The model’s base size change cannot be ignored).",
           "refs": ["trollHide", "troll_hide"],
           "hasNotOption": ["mount"],
           "option_id": "fdsf3g23dsg4fdg4g34sqd32jnyjkx",
@@ -1016,6 +1016,7 @@
                       "name": "Headhunter",
                       "cost": 5,
                       "refs": [
+                        "ongHeadhunter",
                         "headhunter",
                         {
                           "ref": "archer_broods",
@@ -1629,7 +1630,7 @@
             },
             {
               "name": "Iron Orc Loner",
-              "cost": 170,
+              "cost": 160,
               "option_id": "6uhfggdfh453h34hfghfghfghfg",
               "unit_id": "ironOrcLoner",
               "refs": ["ironOrcLoner", "tag_Orc", "tag_Metal Armour", "ironorcloner", "iron_orc_loner", "brood_rivalry"],
@@ -1658,7 +1659,7 @@
                     {
                       "type": "check",
                       "name": "Grunter",
-                      "cost": 150,
+                      "cost": 140,
                       "refs": ["grunter", "mount"],
                       "refopt": "grunterMount",
                       "option_id": "k756jfjfghjgfh54h54h54"
@@ -2150,7 +2151,7 @@
           "options": [
             {
               "name": "Feral Orcs",
-              "cost": -30,
+              "cost": -5,
               "option_id": "ulkgf346kh4at63ojkch9",
               "unit_id": "feralOrcs",
               "refs": ["feralOrcs", "tag_Orc", "feralorcs", "brood_rivalry", "core_unit"],
@@ -2166,7 +2167,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 10,
+                      "cost": 9,
                       "hide": true,
                       "options": [
                         {
@@ -2263,7 +2264,7 @@
             },
             {
               "name": "Feral Orc Marauders",
-              "cost": 50,
+              "cost": 70,
               "option_id": "1dnkizaka0xckgw1ithzv4",
               "unit_id": "feralOrcMarauders",
               "refs": ["feralOrcMarauders", "tag_Orc", "tag_Mount", "feralorcmarauders", "brood_rivalry", "core_unit"],
@@ -2279,7 +2280,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 18,
+                      "cost": 16,
                       "hide": true,
                       "option_id": "xpushsw4kxm42mvhoz22qj",
                       "refs": ["feral_orc_marauders_amount"],
@@ -2292,7 +2293,7 @@
                               "option_id": "f32g534g34g54hj54h45j4sdsafsd",
                               "type": "check",
                               "name": "Headbashers",
-                              "cost": 2,
+                              "cost": 1,
                               "refs": ["headbashers", "army_unique"],
                               "rarity": "Legendary",
                               "sharedRarity": "headbashers"
@@ -2613,7 +2614,7 @@
             },
             {
               "name": "Veteran Orcs",
-              "cost": -30,
+              "cost": -10,
               "option_id": "fwi56a6gecwb08stxyovdj",
               "unit_id": "veteranOrcs",
               "refs": ["veteranOrcs", "tag_Orc", "tag_Light Armour", "veteranorcs", "brood_rivalry", "core_unit"],
@@ -2629,7 +2630,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 11,
+                      "cost": 10,
                       "hide": true,
                       "options": [
                         {
@@ -2893,7 +2894,7 @@
           "options": [
             {
               "name": "Giant",
-              "cost": 275,
+              "cost": 260,
               "option_id": "fz01ug9gwbta9d3lze5c0e",
               "unit_id": "giant",
               "refs": ["giant", "tag_Giant", "brood_rivalry", "tag_Orc", "bigAndNasty"],
@@ -2936,7 +2937,7 @@
                     {
                       "type": "check",
                       "name": "Armed to the Teeth",
-                      "cost": 40,
+                      "cost": 30,
                       "refs": ["armedToTheTeeth", "armedtotheteeth"],
                       "option_id": "3jr53fezgmhcam94uks7of"
                     }
@@ -3009,6 +3010,17 @@
                         "minSize": 15,
                         "maxSize": 45
                       }
+                    },
+                    {
+                      "hasOption": [
+                        {
+                          "refs": ["herd"],
+                          "amount": 1
+                        }
+                      ],
+                      "options": {
+                        "maxSize": 40
+                      }
                     }
                   ]
                 },
@@ -3043,7 +3055,7 @@
             },
             {
               "name": "Goblin Artillery",
-              "cost": 90,
+              "cost": 85,
               "option_id": "qpev3eiadfndyckxq9be9g",
               "unit_id": "goblinArtillery",
               "refs": ["goblinArtillery", "tag_Goblin", "tag_Light Armour", "tag_Construct", "goblinartillery", "goblin_cunning"],
@@ -3082,7 +3094,7 @@
                     {
                       "type": "check",
                       "name": "Splatterer (4+)",
-                      "cost": 90,
+                      "cost": 85,
                       "refs": ["splatterer", "splatterer_or_git_launcher", "death_from_above"],
                       "option_id": "810p4ouzmhl44ks6r0jmym",
                       "override": [
@@ -3103,7 +3115,7 @@
                     {
                       "type": "check",
                       "name": "Git Launcher (4+)",
-                      "cost": 100,
+                      "cost": 105,
                       "refs": ["gitLauncher", "gitlauncher", "git_launcher", "splatterer_or_git_launcher", "death_from_above"],
                       "option_id": "n0ez8487bmqfj4b1kzfv",
                       "override": [
@@ -3302,7 +3314,7 @@
             },
             {
               "name": "Great Green Idol",
-              "cost": 400,
+              "cost": 420,
               "option_id": "9afcocx8oo6hydp7ocfaj5",
               "unit_id": "greatGreenIdol",
               "refs": ["greatGreenIdol", "tag_Construct", "greatgreenidol", "bigAndNasty"],
@@ -3311,6 +3323,15 @@
               "height": "5",
               "basesize": "100×100",
               "options": [],
+              "boundSpells": [
+                {
+                  "path": "hereditary",
+                  "ref": "guile_and_fury",
+                  "mods": {
+                    "castValue": 4
+                  }
+                }
+              ],
               "override": [
                 {
                   "armyHasOption": [
@@ -3336,24 +3357,16 @@
                 }
               ],
               "category": "special",
-              "boundSpells": [
-                {
-                  "ref": "guile_and_fury",
-                  "path": "hereditary",
-                  "mod": {
-                    "castValue": 5
-                  }
-                }
-              ],
               "logo": "special"
             },
             {
               "name": "Grotlings",
-              "cost": 115,
+              "cost": 105,
               "option_id": "hsyskkll9n156iehepujb",
               "unit_id": "grotlings",
               "refs": ["grotlings", "tag_Grotling"],
               "rarity": "Uncommon",
+              "height": "0",
               "basesize": "40×40",
               "options": [
                 {
@@ -3477,7 +3490,7 @@
             },
             {
               "name": "Iron Orc Chariots",
-              "cost": 40,
+              "cost": 35,
               "option_id": "38pztyy4wij8zfylw82mpe",
               "unit_id": "ironOrcChariots",
               "refs": ["ironOrcChariots", "tag_Orc", "tag_Metal Armour", "tag_Mount", "tag_Construct", "ironorcchariots", "brood_rivalry"],
@@ -3506,7 +3519,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 160,
+                      "cost": 155,
                       "hide": true,
                       "options": [
                         {
@@ -3517,7 +3530,7 @@
                               "option_id": "hj5hg34g54534gg534h54j56j65j65h",
                               "type": "check",
                               "name": "Headbashers",
-                              "cost": 30,
+                              "cost": 25,
                               "refs": ["headbashers"],
                               "rarity": "Legendary",
                               "sharedRarity": "headbashers",
@@ -3767,7 +3780,7 @@
             },
             {
               "name": "Wrecking Team",
-              "cost": 110,
+              "cost": 100,
               "option_id": "q6b6mgwqcd8r8nr5a30dra",
               "unit_id": "wreckingTeam",
               "refs": ["wreckingTeam", "tag_Beast", "wreckingteam"],

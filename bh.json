@@ -6,7 +6,7 @@
   },
   "short": "bh",
   "version": "3rd ed",
-  "nrversion": 371,
+  "nrversion": 372,
   "id": 2,
   "include": [102],
   "indicators": ["sticks_and_stones", "eyeballers"],
@@ -47,7 +47,9 @@
               "path": "totems",
               "ref": "black_wing_totem"
             }
-          ]
+          ],
+          "rarity": "Legendary",
+          "description": "The target gains +2\" Cha and +3 Agi.<br> <br>No model can be affected by more than one Totem Bound Spell simultaneously: only apply the effects of the most recently successfully cast one."
         },
         {
           "type": "check",
@@ -59,7 +61,9 @@
               "path": "totems",
               "ref": "blooded_horn_totem"
             }
-          ]
+          ],
+          "rarity": "Legendary",
+          "description": "The target gains +1 Att and Melee Attacks gain +2 AP.<br> <br> <br>No model can be affected by more than one Totem Bound Spell simultaneously: only apply the effects of the most recently successfully cast one."
         },
         {
           "type": "check",
@@ -71,7 +75,9 @@
               "path": "totems",
               "ref": "clouded_eye_totem"
             }
-          ]
+          ],
+          "rarity": "Legendary",
+          "description": "The target gains Hard Target (1), Magic Resistance (3).<br> <br>No model can be affected by more than one Totem Bound Spell simultaneously: only apply the effects of the most recently successfully cast one."
         },
         {
           "type": "check",
@@ -83,7 +89,9 @@
               "path": "totems",
               "ref": "gnarled_hide_totem"
             }
-          ]
+          ],
+          "rarity": "Legendary",
+          "description": "The target gains +1 Arm and <span class=\"textbf\">Distracting (1)</span>. <br> <br>No model can be affected by more than one Totem Bound Spell simultaneously: only apply the effects of the most recently successfully cast one."
         }
       ]
     },
@@ -95,7 +103,7 @@
           "refs": ["bannerOfTheWildHerd", "be_bh_wildherd", "one_use_item"],
           "name": "Banner of the Wild Herd",
           "cost": 70,
-          "description": "One use only. Duration: One Phase.<br>May be activated during Choose Equipment and Abilities.<br>Rank-and-File model parts with Wildhorn in the bearer’s unit have their Str <span class=\"textbf\">set</span> to 4 and their AP <span class=\"textbf\">set</span> to 1.",
+          "description": "One use only. Duration: One Phase.<br> May be activated during Combat Choices.<br> Rank-and-File model parts with Wildhorn in the bearer’s unit have their Str <span class=\"textbf\">set</span> to 4 and their AP <span class=\"textbf\">set</span> to 1.",
           "option_id": "svurt5l35cqgco3p1dorm",
           "rarity": "Uncommon"
         },
@@ -154,7 +162,7 @@
         {
           "type": "check",
           "name": "Ancestral Carvings",
-          "cost": 50,
+          "cost": 45,
           "refs": ["ancestralCarvings", "weaponEnchantUni", "we_bh_ancestral_carvings"],
           "hasNotOption": [
             {
@@ -176,10 +184,10 @@
         {
           "type": "check",
           "name": "Twin Hungers",
-          "cost": 20,
+          "cost": 15,
           "refs": ["twinHungers", "weaponEnchantUni", "we_bh_twin_hungers"],
           "hasNotOption": ["weaponEnchantUni"],
-          "description": "<span class=\"textbf\">Lethal Strike</span>. Every time one of the wielder’s Melee Attacks rolls a ‘6’ to wound and causes a HP loss, the wielder may <span class=\"textbf\">Recover</span> 1 HP at the end of the Agility Step (unless their model was removed as a casualty). <br>Only 1 HP can be regained per phase with this item.",
+          "description": "<span class=\"textbf\">Lethal Strike</span>. Every time a Standard Melee Attack made with this weapon rolls a ‘6’ to wound and causes a HP loss, the wielder may <span class=\"textbf\">Recover</span> 1 HP at the end of current the Agility Step (unless their model was removed as a casualty). <br> Only 1 HP can be regained per phase with this item.",
           "option_id": "4rnff2wpxmlf2w733kkbfa",
           "rarity": "Legendary"
         }
@@ -224,7 +232,7 @@
           "cost": 25,
           "refs": ["fatalFolly", "weaponEnchantUni", "bae_bh_fatal_folly"],
           "hasNotOption": ["weaponEnchantUni"],
-          "description": "For each Standard Melee Attack allocated against the wielder’s model that results in a to-hit roll of ‘1’, the wielder <span class=\"textbf\">must</span> perform a Standard Melee Attack at the end of the same Agility Step, before any casualties are removed. <br>This overrides the normal restriction that Beast Axe attacks always strike at Agility Step 0. <br>This attack must be allocated towards the model’s Health Pool that rolled the ‘1’ to hit, and it does not count against the number of attacks the wielder’s model can make due to Restricted Attacks.",
+          "description": "For each Standard Melee Attack allocated against the wielder’s model that results in a to-hit roll of ‘1’, the wielder <span class=\"textbf\">must</span> perform a Standard Melee Attack at the end of the same Agility Step, before any casualties are removed. <br> This overrides the normal restriction that Beast Axe attacks always strike at Agility Step 0. <br> This attack must be allocated towards the model’s Health Pool that rolled the ‘1’ to hit, and it does not count against the number of attacks the wielder’s model can make due to Restricted Attacks.",
           "option_id": "wd3ca75xitmr6dopd3yw",
           "rarity": "Legendary"
         }
@@ -257,7 +265,7 @@
           "name": "Wild Form",
           "cost": 30,
           "refs": ["wildForm", "ae_bh_wildform"],
-          "description": "During Choose Equipment and Abilities, the bearer may gain either of the following, with Duration: Round of Combat: <br>&nbsp;&nbsp;&bull; -1 Res, +1 Str, +1 AP <br>&nbsp;&nbsp;&bull; +1 Res, -1 Str, -1 AP <br>",
+          "description": "During Combat Choices, the bearer may gain either of the following, with Duration: Round of Combat: <br>&nbsp;&nbsp;&bull; -1 Res, +1 Str, +1 AP <br>&nbsp;&nbsp;&bull; +1 Res, -1 Str, -1 AP <br>",
           "option_id": "6msqpbd9r58nyzsdlecp5r",
           "rarity": "Legendary"
         },
@@ -294,7 +302,7 @@
         {
           "type": "check",
           "name": "Pillager Icon",
-          "cost": 50,
+          "cost": 40,
           "refs": ["pillagerIcon", "art_bh_pilla"],
           "description": "All friendly units of Raiding Chariots, Razortusks, and Razortusk Chariots, excluding Characters, within 12\" of the bearer gain <span class=\"textbf\">Vanguard</span>.",
           "option_id": "op4e6wx0lh8fgscz0ff4f",
@@ -306,7 +314,7 @@
           "cost": 30,
           "refs": ["hornOfBragh", "art_horn_Bragh"],
           "hasNotOption": ["mount"],
-          "description": "Fury, Dying Blow.",
+          "description": "The bearer gains Fury, Dying Blow.",
           "option_id": "dsad21dd1d21d12",
           "rarity": "Legendary"
         },
@@ -348,7 +356,7 @@
           "name": "Rain Augur Brew",
           "cost": 45,
           "refs": ["rainAugurBrew", "art_bh_darkrain", "first_game_turn", "one_use_item"],
-          "description": "One use only. Duration: One Turn.<br>If the bearer is on the Battlefield, this item is automatically activated at the start of the first Game Turn; if not, it has no effect. <br> <span class=\"textbf\">All</span> Ranged Attacks suffer -1 to hit.",
+          "description": "One use only. Duration: One Turn.<br> If the bearer is on the Battlefield, this item is automatically activated at the start of the first Game Turn; if not, it has no effect. <br> <span class=\"textbf\">All</span> Ranged Attacks suffer -1 to hit.",
           "option_id": "fsdf2f32f32g34g34g43",
           "rarity": "Legendary"
         },
@@ -420,7 +428,7 @@
               "cost": 175,
               "option_id": "gbxvgq25wot1e6wbox7rg7",
               "unit_id": "wildhornLord",
-              "refs": ["wildhornLord", "tag_Metal Armour", "tag_Wildhorn", "wildhornlord"],
+              "refs": ["wildhornLord", "tag_Metal Armour", "tag_Wildhornspecies", "tag_Wildhorn", "wildhornlord"],
               "size": "1",
               "rarity": "Uncommon",
               "height": "1",
@@ -683,7 +691,7 @@
               "cost": 65,
               "option_id": "z1x9fhce8fsyfy9jcswcyj",
               "unit_id": "wildhornChieftain",
-              "refs": ["wildhornChieftain", "tag_Wildhorn", "tag_Metal Armour", "wildhornchieftain"],
+              "refs": ["wildhornChieftain", "tag_Wildhornspecies", "tag_Metal Armour", "tag_Wildhorn", "wildhornchieftain"],
               "size": "1",
               "height": "1",
               "basesize": "25×25",
@@ -1008,7 +1016,7 @@
               "cost": 270,
               "option_id": "pzl7h4bd9ehq2kkp2kqtbf",
               "unit_id": "soothsayer",
-              "refs": ["soothsayer", "tag_Wildhorn", "wizard"],
+              "refs": ["soothsayer", "tag_Wildhornspecies", "tag_Wildhorn", "wizard"],
               "size": "1",
               "rarity": "Uncommon",
               "height": "1",
@@ -1939,7 +1947,7 @@
               "cost": 15,
               "option_id": "5r65k3sbmzlfynylvbxbcj",
               "unit_id": "wildhornHerd",
-              "refs": ["wildhornHerd", "tag_Wildhorn", "wildhornherd", "core_unit"],
+              "refs": ["wildhornHerd", "tag_Wildhornspecies", "tag_Wildhorn", "wildhornherd", "core_unit"],
               "rarity": "Regular",
               "height": "1",
               "basesize": "25×25",
@@ -2048,7 +2056,6 @@
                 },
                 {
                   "type": "group",
-                  "name": "Options",
                   "optionsLabel": "Options",
                   "option_id": "idil8av0d27shkz5",
                   "options": [
@@ -2073,8 +2080,36 @@
                       "optionsLabel": "Bound Spell",
                       "minSize": 1,
                       "maxSize": 1,
-                      "options": [],
-                      "optionsDict": ["totemBearerTotems"],
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Black Wing Totem",
+                          "cost": 0,
+                          "option_id": "vqwkluff6nbhxozs",
+                          "refs": ["blackWingTotem"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Blooded Horn Totem",
+                          "cost": 0,
+                          "option_id": "euny0qm306olinxx",
+                          "refs": ["bloodedHornTotem"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Clouded Eye Totem",
+                          "cost": 0,
+                          "option_id": "ihffu56t09sqyuod",
+                          "refs": ["cloudedEyeTotem"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Gnarled Hide Totem",
+                          "cost": 0,
+                          "option_id": "96afrid6pakle66b",
+                          "refs": ["gnarledHideTotem"]
+                        }
+                      ],
                       "option_id": "1iygcpsp09ympgx7o629s",
                       "refs": ["totemBearer", "totembearer"]
                     }
@@ -2112,7 +2147,7 @@
               "cost": 10,
               "option_id": "2hurh0qb0tiwbsop4zevx8",
               "unit_id": "mongrelHerd",
-              "refs": ["mongrelHerd", "tag_Wildhorn", "mongrelherd", "core_unit"],
+              "refs": ["mongrelHerd", "tag_Wildhornspecies", "tag_Wildhorn", "mongrelherd", "core_unit"],
               "rarity": "Regular",
               "height": "1",
               "basesize": "20×20",
@@ -2235,10 +2270,10 @@
             },
             {
               "name": "Mongrel Raiders",
-              "cost": 80,
+              "cost": 90,
               "option_id": "72q31s0kr2yi6pdatqsrz",
               "unit_id": "mongrelRaiders",
-              "refs": ["mongrelRaiders", "tag_Wildhorn", "mongrelraiders", "mongrel_raiders", "core_unit"],
+              "refs": ["mongrelRaiders", "tag_Wildhornspecies", "tag_Wildhorn", "mongrelraiders", "mongrel_raiders", "core_unit"],
               "height": "1",
               "basesize": "20×20",
               "options": [
@@ -2251,7 +2286,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 4,
+                      "cost": 3,
                       "option_id": "64j44czzdbm17cr702a91l",
                       "refs": ["mongrel_raiders_amount", "sticks_and_stones"]
                     }
@@ -2367,10 +2402,10 @@
             },
             {
               "name": "Longhorn Herd",
-              "cost": 0,
+              "cost": 10,
               "option_id": "f2sk8kq416sr9z4vh8tz",
               "unit_id": "longhornHerd",
-              "refs": ["longhornHerd", "tag_Wildhorn", "tag_Metal Armour", "longhornherd"],
+              "refs": ["longhornHerd", "tag_Wildhornspecies", "tag_Metal Armour", "tag_Wildhorn", "longhornherd"],
               "height": "1",
               "basesize": "25×25",
               "options": [
@@ -2407,7 +2442,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 15,
+                      "cost": 14,
                       "options": [
                         {
                           "type": "group",
@@ -2456,8 +2491,36 @@
                               "optionsLabel": "Bound Spell",
                               "minSize": 1,
                               "maxSize": 1,
-                              "options": [],
-                              "optionsDict": ["totemBearerTotems"],
+                              "options": [
+                                {
+                                  "type": "check",
+                                  "name": "Black Wing Totem",
+                                  "cost": 0,
+                                  "option_id": "3ujjqyph5m68918x",
+                                  "refs": ["blackWingTotem"]
+                                },
+                                {
+                                  "type": "check",
+                                  "name": "Blooded Horn Totem",
+                                  "cost": 0,
+                                  "option_id": "lua4zv56ktargwm0",
+                                  "refs": ["bloodedHornTotem"]
+                                },
+                                {
+                                  "type": "check",
+                                  "name": "Clouded Eye Totem",
+                                  "cost": 0,
+                                  "option_id": "pf2hdbwyqvwasw2p",
+                                  "refs": ["cloudedEyeTotem"]
+                                },
+                                {
+                                  "type": "check",
+                                  "name": "Gnarled Hide Totem",
+                                  "cost": 0,
+                                  "option_id": "ta8rc5lg81bwp679",
+                                  "refs": ["gnarledHideTotem"]
+                                }
+                              ],
                               "option_id": "oei52083tcgkvg5hg8u9c",
                               "refs": ["totemBearer", "totembearer"]
                             }
@@ -2529,7 +2592,7 @@
             },
             {
               "name": "Minotaurs",
-              "cost": 20,
+              "cost": 25,
               "option_id": "an4gd5xiiy7w1yymjtwv8d",
               "unit_id": "minotaurs",
               "refs": ["minotaurs", "tag_Minotaur", "tag_Light Armour"],
@@ -2555,21 +2618,21 @@
                             {
                               "type": "check",
                               "name": "Shield",
-                              "cost": 8,
+                              "cost": 9,
                               "option_id": "dwkr6jbiuj7fr7kwl5ihfe",
                               "refs": ["shield"]
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
-                              "cost": 6,
+                              "cost": 7,
                               "option_id": "w70v7fufbk9bjgpxuo8cf",
                               "refs": ["greatWeapon", "greatweapon"]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
-                              "cost": 7,
+                              "cost": 8,
                               "option_id": "ruzytx4e5qcwt4v05wg8h",
                               "refs": ["pairedWeapons", "pairedweapons"]
                             }
@@ -2627,8 +2690,36 @@
                       "optionsLabel": "Bound Spell",
                       "minSize": 1,
                       "maxSize": 1,
-                      "options": [],
-                      "optionsDict": ["totemBearerTotems"],
+                      "options": [
+                        {
+                          "type": "check",
+                          "name": "Black Wing Totem",
+                          "cost": 0,
+                          "option_id": "chjfbw465r9nc40a",
+                          "refs": ["blackWingTotem"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Blooded Horn Totem",
+                          "cost": 0,
+                          "option_id": "y5qfh4b58vo9d0qd",
+                          "refs": ["bloodedHornTotem"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Clouded Eye Totem",
+                          "cost": 0,
+                          "option_id": "ioztyu1g23l814aj",
+                          "refs": ["cloudedEyeTotem"]
+                        },
+                        {
+                          "type": "check",
+                          "name": "Gnarled Hide Totem",
+                          "cost": 0,
+                          "option_id": "z2mvf9jeq2h619ky",
+                          "refs": ["gnarledHideTotem"]
+                        }
+                      ],
                       "option_id": "rkxqcdfxfs9ya4a6wikzu",
                       "refs": ["totemBearer", "totembearer"]
                     }
@@ -2726,7 +2817,6 @@
                         },
                         {
                           "type": "group",
-                          "name": "Options",
                           "optionsLabel": "Options",
                           "option_id": "jp4anjfmekx0hv4a",
                           "options": [
@@ -2750,8 +2840,36 @@
                               "optionsLabel": "Bound Spell",
                               "minSize": 1,
                               "maxSize": 1,
-                              "options": [],
-                              "optionsDict": ["totemBearerTotems"],
+                              "options": [
+                                {
+                                  "type": "check",
+                                  "name": "Black Wing Totem",
+                                  "cost": 0,
+                                  "option_id": "0t0uo086j8kpn6nl",
+                                  "refs": ["blackWingTotem"]
+                                },
+                                {
+                                  "type": "check",
+                                  "name": "Blooded Horn Totem",
+                                  "cost": 0,
+                                  "option_id": "jeud9wr0lnmpnb71",
+                                  "refs": ["bloodedHornTotem"]
+                                },
+                                {
+                                  "type": "check",
+                                  "name": "Clouded Eye Totem",
+                                  "cost": 0,
+                                  "option_id": "xv6icinzi93vfv4l",
+                                  "refs": ["cloudedEyeTotem"]
+                                },
+                                {
+                                  "type": "check",
+                                  "name": "Gnarled Hide Totem",
+                                  "cost": 0,
+                                  "option_id": "bp5c7ioqhoo8eges",
+                                  "refs": ["gnarledHideTotem"]
+                                }
+                              ],
                               "option_id": "4rlxws9e4ifze7p57bs1zk",
                               "refs": ["totemBearer", "totembearer"]
                             }
@@ -2826,10 +2944,11 @@
               "unit_id": "raidingChariots",
               "refs": [
                 "raidingChariots",
-                "tag_Wildhorn",
+                "tag_Wildhornspecies",
                 "tag_Metal Armour",
                 "tag_Mount",
                 "tag_Construct",
+                "tag_Wildhorn",
                 "raidingchariots",
                 "raiding_chariot"
               ],
@@ -2871,7 +2990,7 @@
             },
             {
               "name": "Razortusk Herd",
-              "cost": 15,
+              "cost": 27,
               "option_id": "62ie1xfow8egcuidu13bz8",
               "unit_id": "razortuskHerd",
               "refs": ["razortuskHerd", "tag_Beast", "razortuskherd", "razortusk_herd"],
@@ -2888,7 +3007,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 50,
+                      "cost": 46,
                       "option_id": "5858piwowpiaw0gqhzv2wf",
                       "refs": ["razortusk_herd_amount"]
                     }
@@ -2901,15 +3020,16 @@
             },
             {
               "name": "Razortusk Chariot",
-              "cost": 230,
+              "cost": 210,
               "option_id": "ky2oha3hponr24g7g5sr7j",
               "unit_id": "razortuskChariot",
               "refs": [
                 "razortuskChariot",
-                "tag_Wildhorn",
+                "tag_Wildhornspecies",
                 "tag_Metal Armour",
                 "tag_Mount",
                 "tag_Construct",
+                "tag_Wildhorn",
                 "razortuskchariot",
                 "razortusk_chariot"
               ],
@@ -2922,7 +3042,7 @@
             },
             {
               "name": "Briar Beast",
-              "cost": 125,
+              "cost": 130,
               "option_id": "rqemwn4y09mqq6mrx5a71b",
               "unit_id": "briarBeast",
               "refs": ["briarBeast", "tag_Beast", "briarbeast", "briar_beast"],
@@ -2975,7 +3095,7 @@
           "options": [
             {
               "name": "Cyclops",
-              "cost": 310,
+              "cost": 300,
               "option_id": "kh0ynhmt0xr2lxnkg4p6sj",
               "unit_id": "cyclops",
               "refs": ["cyclops", "tag_Cyclops", "cyclop", "eyeballers"],
@@ -3017,7 +3137,7 @@
             },
             {
               "name": "Beast Giant",
-              "cost": 270,
+              "cost": 250,
               "option_id": "2opbsqy04k47vb9ek9k0ru",
               "unit_id": "beastGiant",
               "refs": ["beastGiant", "tag_Giant", "tag_Light Armour", "beastgiant", "beast_giant"],

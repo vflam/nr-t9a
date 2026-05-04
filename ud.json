@@ -6,7 +6,7 @@
   },
   "short": "ud",
   "version": "2023",
-  "nrversion": 366,
+  "nrversion": 367,
   "playable": 1,
   "indicators": ["aspis_arrows", "death_from_afar"],
   "id": 15,
@@ -91,7 +91,7 @@
         {
           "type": "check",
           "name": "Banner of the Entombed",
-          "cost": 55,
+          "cost": 65,
           "hasOption": [
             {
               "refs": ["core_unit", "army_bsb"],
@@ -143,7 +143,7 @@
           "cost": 50,
           "option_id": "uclujra2hkyi8h1i",
           "refs": ["iconOfReflection", "iconofreflection"],
-          "description": "<span class=\"textbf\">Autonomous.</span> <br>In addition: One use only. Duration: One Turn. <br>During a friendly Movement Phase, the bearer’s unit's Mob is <span class=\"textbf\">set</span> to 8.",
+          "description": "All models in the bearer’s unit gain <span class=\"textbf\">Autonomous.</span> <br>In addition: One use only. Duration: One Turn. <br>During a friendly Movement Phase, the bearer’s unit's Mob is <span class=\"textbf\">set</span> to 8.",
           "rarity": "Legendary",
           "hasNotOption": ["core_unit"]
         }
@@ -255,7 +255,7 @@
         {
           "type": "check",
           "name": "Kherp Sceptre",
-          "cost": 35,
+          "cost": 25,
           "refs": ["kherpSceptre", "we_ud_nephetra", "tag_Hierophant"],
           "description": "The wielder gains Hierophant. <br>In addition, the wielder can cast <i>Danse Macabre</i> (Evocation) as a Bound Spell (3+).",
           "option_id": "i57ittgfgfpui5ez3jy3xy1q3l",
@@ -264,7 +264,7 @@
         {
           "type": "check",
           "name": "Blessed Wrappings",
-          "cost": 30,
+          "cost": 25,
           "loses_rules": ["flammable"],
           "refs": ["blessedWrappings", "we_ud_wrappings"],
           "description": "The wearer gains +1 HP and loses one instance of <span class=\"textbf\">Weakness (Flaming Attacks)</span>.",
@@ -274,7 +274,7 @@
         {
           "type": "check",
           "name": "Death Mask of Teput",
-          "cost": 45,
+          "cost": 40,
           "refs": ["deathMaskOfTeput", "art_ud_teput"],
           "description": "Aegis (5+), Horror.",
           "option_id": "bh8jakfh53oyi9l0lgmgh",
@@ -1473,6 +1473,32 @@
                   ]
                 }
               ],
+              "boundSpells": [
+                {
+                  "path": "evocation",
+                  "ref": "whispers_of_the_veil"
+                },
+                {
+                  "path": "evocation",
+                  "ref": "danse_macabre"
+                },
+                {
+                  "path": "evocation",
+                  "ref": "chorus_of_the_damned"
+                },
+                {
+                  "path": "evocation",
+                  "ref": "touch_of_the_reaper"
+                },
+                {
+                  "path": "evocation",
+                  "ref": "spectral_blades"
+                },
+                {
+                  "path": "evocation",
+                  "ref": "soul_blight"
+                }
+              ],
               "magic": {
                 "amount": 1
               },
@@ -2008,7 +2034,7 @@
             },
             {
               "name": "Skeleton Scouts",
-              "cost": 105,
+              "cost": 95,
               "option_id": "k514yw315rgqwpheghck",
               "unit_id": "skeletonScouts",
               "refs": ["skeletonScouts", "tag_Skeleton", "tag_Skeleton", "tag_Mount", "skeletonscouts", "skeleton_scouts", "core_unit"],
@@ -2119,7 +2145,7 @@
             },
             {
               "name": "Skeleton Chariots",
-              "cost": 30,
+              "cost": 45,
               "option_id": "tzrh115eeyaqnnnhovqe0s",
               "unit_id": "skeletonChariots",
               "refs": [
@@ -2158,7 +2184,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 70,
+                      "cost": 65,
                       "options": [
                         {
                           "optionsLabel": "Options",
@@ -2233,7 +2259,7 @@
                               "options": [
                                 {
                                   "name": "Terracotta Army",
-                                  "cost": 15,
+                                  "cost": 10,
                                   "type": "check",
                                   "armyHasOption": ["terracotta"],
                                   "option_id": "f32f232113423fwdsfsdfs",
@@ -2260,7 +2286,7 @@
                                 {
                                   "name": "Barrow Legion",
                                   "loses_rules": ["ambush"],
-                                  "cost": 10,
+                                  "cost": 5,
                                   "type": "check",
                                   "option_id": "32f3dsds2f4cdfsdf32f32f32",
                                   "armyHasOption": ["barrow_legion"],
@@ -2725,7 +2751,7 @@
             },
             {
               "name": "Shabtis",
-              "cost": -55,
+              "cost": -50,
               "option_id": "xhfk8lcuunuluwxwgt81",
               "unit_id": "shabtis",
               "refs": ["shabtis", "tag_Statue"],
@@ -2742,7 +2768,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 75,
+                      "cost": 70,
                       "options": [
                         {
                           "type": "group",
@@ -2759,7 +2785,7 @@
                             {
                               "type": "check",
                               "name": "Halberd",
-                              "cost": 2,
+                              "cost": 0,
                               "option_id": "gm46xpgsv5xn4ffspallt",
                               "refs": ["halberd"]
                             }
@@ -2932,6 +2958,7 @@
               "unit_id": "scarabSwarms",
               "refs": ["scarabSwarms", "tag_Beast", "scarabswarms", "scarab_swarms"],
               "rarity": "Uncommon",
+              "height": "0",
               "basesize": "40×40",
               "options": [
                 {
@@ -3003,7 +3030,7 @@
                           "options": [
                             {
                               "name": "Barrow Legion and Ghastly Swarm",
-                              "cost": 30,
+                              "cost": 25,
                               "type": "check",
                               "armyHasOption": ["barrow_legion"],
                               "option_id": "n312egeyhcbjrt5r0srwwr",
@@ -3061,7 +3088,7 @@
             },
             {
               "name": "Shabti Archers",
-              "cost": -65,
+              "cost": -55,
               "option_id": "46rd41xec1fly266guz4g",
               "unit_id": "shabtiArchers",
               "refs": ["shabtiArchers", "tag_Statue", "shabtiarchers", "shabti_archers"],
@@ -3335,7 +3362,7 @@
             },
             {
               "name": "Charnel Catapult",
-              "cost": 180,
+              "cost": 170,
               "option_id": "tqosmce5zm2vjxvqe6bnd",
               "unit_id": "charnelCatapult",
               "refs": ["charnelCatapult", "tag_Skeleton", "tag_Construct", "charnelcatapult", "charnel_catapult", "death_from_afar"],
@@ -3392,7 +3419,7 @@
                       "options": [
                         {
                           "name": "Barrow Legion",
-                          "cost": 5,
+                          "cost": 0,
                           "type": "check",
                           "armyHasOption": ["barrow_legion"],
                           "option_id": "fe32f3dffasdsa342g342f32f32f32",
@@ -3409,7 +3436,7 @@
             },
             {
               "name": "Battle Sphinx",
-              "cost": 460,
+              "cost": 440,
               "option_id": "4imwgbgarwvhbocteidqgw",
               "unit_id": "battleSphinx",
               "refs": ["battleSphinx", "tag_Skeleton", "tag_Statue", "tag_Beast", "tag_Mount", "battlesphinx", "battle_sphinx"],
@@ -3445,7 +3472,7 @@
             },
             {
               "name": "Dread Sphinx",
-              "cost": 380,
+              "cost": 400,
               "option_id": "okj27l9lharcjz8ajir22",
               "unit_id": "dreadSphinx",
               "refs": ["dreadSphinx", "tag_Statue", "tag_Beast", "dreadsphinx", "dread_sphinx"],
@@ -3580,7 +3607,7 @@
             },
             {
               "name": "Colossus",
-              "cost": 380,
+              "cost": 360,
               "option_id": "cqjj89zrp3thhibny8edhj",
               "unit_id": "colossus",
               "refs": ["colossus", "tag_Statue"],
@@ -3596,7 +3623,7 @@
                     {
                       "name": "Great Weapon",
                       "type": "check",
-                      "cost": 5,
+                      "cost": 0,
                       "option_id": "tmkn2k9rqur521j2mvdg7c",
                       "refs": ["greatWeapon", "greatweapon", "colossus_amount"]
                     },
@@ -3611,7 +3638,7 @@
                       "name": "Giant Aspis Bow (4+)",
                       "refs": ["giantAspisBow", "giantaspisbow", "giant_aspen_bow", "death_from_afar"],
                       "type": "check",
-                      "cost": 45,
+                      "cost": 60,
                       "option_id": "qj5g6as9xecrgy95yrrna"
                     },
                     {
@@ -3699,7 +3726,7 @@
           "options": [
             {
               "name": "Sand Scorpion",
-              "cost": 140,
+              "cost": 130,
               "option_id": "2aa3hbjor8h70futfibykk",
               "unit_id": "sandScorpion",
               "refs": ["sandScorpion", "tag_Statue", "tag_Beast", "sandscorpion", "sand_scorpion"],

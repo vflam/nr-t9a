@@ -6,7 +6,7 @@
   },
   "short": "he",
   "version": "2023",
-  "nrversion": 386,
+  "nrversion": 387,
   "playable": 1,
   "indicators": ["ancient_allies", "queens_bows", "naval_ordnance"],
   "useunitmax": ["queens_bows"],
@@ -52,7 +52,8 @@
           "option_id": "vo95gv94z5kinhtsplpen",
           "type": "check",
           "shared": true,
-          "rarity": "Legendary"
+          "rarity": "Legendary",
+          "refs": ["scrollOfPower"]
         },
         {
           "name": "Scroll of a Free Mind",
@@ -60,11 +61,12 @@
           "option_id": "je3g9gc0kfbu8pzckwie7",
           "type": "check",
           "shared": true,
-          "rarity": "Legendary"
+          "rarity": "Legendary",
+          "refs": ["essenceOfAFreeMind"]
         },
         {
           "type": "check",
-          "refs": ["scroll_pearl_thrne"],
+          "refs": ["scrollOfThePearlThrone", "scroll_pearl_thrne"],
           "name": "Scroll of the Pearl Throne",
           "cost": 30,
           "description": "One use only. Duration: Round of Combat. <br>Choose a Magic Item from an enemy unit that is in contact with the bearer. This Magic Item is ignored. <br> <i>Note: If it was an Enchanted Weapon or Enchanted Shield, the mundane effects of the Weapon or Shield can still be used.</i>",
@@ -82,7 +84,8 @@
           "option_id": "0wb9xn2aq5exp2lbygna",
           "type": "check",
           "shared": true,
-          "rarity": "Legendary"
+          "rarity": "Legendary",
+          "refs": ["sigilOfProtection"]
         },
         {
           "name": "Dusk Forged",
@@ -90,7 +93,8 @@
           "option_id": "f75ehm9v0zv3ks9db8ft1n",
           "type": "check",
           "shared": true,
-          "rarity": "Legendary"
+          "rarity": "Legendary",
+          "refs": ["duskForged"]
         }
       ],
       "option_id": "jsg1ky1eezdx67ucpsabf"
@@ -100,7 +104,7 @@
       "options": [
         {
           "type": "check",
-          "refs": ["be_he_demonbane"],
+          "refs": ["daemonsBane", "be_he_demonbane"],
           "name": "Daemon's Bane",
           "cost": 10,
           "description": "+2 Arm against <span class=\"textbf\">Magical Attacks</span>.",
@@ -116,9 +120,9 @@
         },
         {
           "type": "check",
-          "refs": ["be_he_metally"],
+          "refs": ["starMetalAlloy", "be_he_metally"],
           "name": "Star Metal Alloy",
-          "cost": 60,
+          "cost": 55,
           "description": "+1 Arm, which is improved to +2 Arm for models without Mount. <br>The bearer can <span class=\"textbf\">never</span> be wounded on a roll better than 3+.",
           "option_id": "jg2zren397hqi4189m1s2",
           "rarity": "Legendary",
@@ -136,12 +140,13 @@
           "option_id": "lz9dfq74ixm08sajxl7lgbm",
           "type": "check",
           "shared": true,
-          "rarity": "Legendary"
+          "rarity": "Legendary",
+          "refs": ["ghostlyGuard"]
         },
         {
           "hasNotOption": ["mount"],
           "type": "check",
-          "refs": ["ae_he_dorcprot"],
+          "refs": ["protectionOfDorac", "ae_he_dorcprot"],
           "name": "Protection of Dorac",
           "cost": 50,
           "description": "+3 Def, +3 Arm, and <span class=\"textbf\">Attached</span>. <br>The model’s Armour can <span class=\"textbf\">never</span> be improved beyond 5.",
@@ -159,7 +164,7 @@
             }
           ],
           "type": "check",
-          "refs": ["lae_he_gleamrobe"],
+          "refs": ["gleamingRobe", "lae_he_gleamrobe"],
           "name": "Gleaming Robe",
           "cost": 60,
           "description": "<span class=\"textbf\">Aegis (3+)</span>. <br>The wearer’s Armour is <span class=\"textbf\">set</span> to 1 and can <span class=\"textbf\">never</span> be improved beyond this. <br>If the wearer Miscasts and suffers <span class=\"textbf\">Witchfire</span>, the number of hits are halved (rounding fractions up) for the wearer and its unit.",
@@ -175,10 +180,10 @@
         {
           "name": "Elemental Blade",
           "type": "check",
-          "refs": ["elemental_blade", "weaponEnchantUni"],
+          "refs": ["elementalBlade", "elemental_blade", "weaponEnchantUni"],
           "hasNotOption": ["weaponEnchantUni"],
           "cost": 60,
-          "description": "+1 Att, +1 Str. <br>When Choosing Equipment and Abilities, gain either Flaming Attacks, Lightning Attacks, with Duration: Round of Combat.",
+          "description": "+1 Att, +1 Str. <br> During Combat Choices, gain either Flaming Attacks, Lightning Attacks, with Duration: Round of Combat.",
           "option_id": "4o25h0yqvrqo0fujw6ej79",
           "rarity": "Legendary"
         }
@@ -189,7 +194,7 @@
       "options": [
         {
           "type": "check",
-          "refs": ["be_he_navigator"],
+          "refs": ["navigatorsBanner", "be_he_navigator"],
           "name": "Navigator's Banner",
           "cost": 60,
           "description": "\tThe bearer's unit gains <span class=\"textbf\">First Strike(Aegis(5+))</span>.\n",
@@ -198,7 +203,7 @@
         },
         {
           "type": "check",
-          "refs": ["be_he_becalm"],
+          "refs": ["bannerOfBecalming", "be_he_becalm"],
           "hasNotOption": ["core_unit"],
           "name": "Banner of Becalming",
           "cost": 45,
@@ -208,7 +213,7 @@
         },
         {
           "type": "check",
-          "refs": ["be_he_ryma"],
+          "refs": ["warBannerOfRyma", "be_he_ryma"],
           "name": "War Banner of Rymâ",
           "cost": 60,
           "description": "A unit with one or more <i>War Banners of Rymâ</i> gains +1\" Cha.<br><br>In addition, Rank-and-File model parts with Elf in the unit gain <span class=\"textbf\">Devastating Charge(+1 Str)</span>.",
@@ -221,7 +226,8 @@
           "option_id": "v0dkrtnka7ppkzn2pf9a",
           "type": "check",
           "shared": true,
-          "rarity": "Legendary"
+          "rarity": "Legendary",
+          "refs": ["distortionEmblem"]
         }
       ],
       "option_id": "wg723djz45evum77m5eqn"
@@ -235,7 +241,8 @@
           "option_id": "yovi4xwszxiy6niokset3k",
           "type": "check",
           "shared": true,
-          "rarity": "Legendary"
+          "rarity": "Legendary",
+          "refs": ["eldritchInscriptions"]
         },
         {
           "name": "Supernatural Dexterity",
@@ -243,7 +250,8 @@
           "option_id": "o5opzcpw5glp309c1hies",
           "type": "check",
           "shared": true,
-          "rarity": "Legendary"
+          "rarity": "Legendary",
+          "refs": ["supernaturalDexterity"]
         }
       ],
       "option_id": "6rxax6ow5yy18fz53hv2lv"
@@ -254,10 +262,10 @@
         {
           "type": "check",
           "name": "Nova Flare",
-          "cost": 90,
-          "refs": ["weaponEnchantUni", "we_he_nova_flare"],
+          "cost": 80,
+          "refs": ["novaFlare", "weaponEnchantUni", "we_he_nova_flare"],
           "hasNotOption": ["weaponEnchantUni"],
-          "description": "Devastating Charge (+1 Att), Lethal Strike, Divine Attacks. <br> One use only. May be used when Choosing Equipment and Abilities: the wielder counts as Charging for the purpose of <span class=\"textbf\">Devastating Charge</span>, with Duration: Round of Combat.",
+          "description": "Devastating Charge (+1 Att), Lethal Strike, Divine Attacks. <br> One use only. May be used during Combat Choices: the wielder counts as Charging for the purpose of <span class=\"textbf\">Devastating Charge</span>, with Duration: Round of Combat.",
           "option_id": "4tdec81m1t3ek1oalxz0v9",
           "rarity": "Legendary"
         }
@@ -271,7 +279,7 @@
           "type": "check",
           "name": "Sliver of the Blazing Dawn",
           "cost": 90,
-          "refs": ["weaponEnchantUni", "we_he_silver_blaze_dawn"],
+          "refs": ["sliverOfTheBlazingDawn", "weaponEnchantUni", "we_he_silver_blaze_dawn"],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "+1 Str, +2 AP. <br>Each successful to-hit roll with this weapon causes two hits instead of one.",
           "option_id": "no5u10n70s96kpwl7ooi9h",
@@ -286,8 +294,9 @@
         {
           "type": "check",
           "name": "Cadaron's Heartwood",
-          "cost": 80,
+          "cost": 70,
           "refs": [
+            "cadaronsHeartwood",
             "weaponEnchantUni",
             "we_he_elus_heart",
             {
@@ -315,7 +324,7 @@
           "type": "check",
           "name": "Book of Meladys",
           "cost": 60,
-          "refs": ["art_he_meladys", "dominant"],
+          "refs": ["bookOfMeladys", "art_he_meladys", "dominant"],
           "description": "The first time in each Magic Phase that the bearer fails a Casting Roll for a Learned Spell cast with three Magic Dice, the bearer may reroll all Magic Dice.",
           "option_id": "ykn689uouxlhwso08fne8",
           "rarity": "Legendary"
@@ -324,7 +333,7 @@
           "type": "check",
           "name": "Diadem of Protection",
           "cost": 80,
-          "refs": ["art_he_diadem"],
+          "refs": ["diademOfProtection", "art_he_diadem"],
           "description": "<span class=\"textbf\">Aegis (+2, max 4+)</span>.",
           "option_id": "qjqnpbhzwik9xqjnecsr88",
           "rarity": "Legendary",
@@ -341,7 +350,7 @@
           "name": "Amethyst Crystal",
           "cost": 60,
           "hasOption": ["wizard"],
-          "refs": ["art_he_amecrys"],
+          "refs": ["amethystCrystal", "art_he_amecrys"],
           "description": "Unless the bearer is <span class=\"textbf\">Shaken</span>, Dispelling Rolls made by the bearer’s army gain a +1 modifier; if the target of an enemy spell is within 18\" of the bearer, that modifier is increased to +2.",
           "option_id": "sxhmenal9xbhx17uial30r",
           "rarity": "Legendary"
@@ -352,7 +361,8 @@
           "option_id": "bm51uo3zbmtyia0vxpx2aq",
           "type": "check",
           "shared": true,
-          "rarity": "Legendary"
+          "rarity": "Legendary",
+          "refs": ["rodOfBattle"]
         },
         {
           "name": "Obsidian Rock",
@@ -360,7 +370,8 @@
           "option_id": "n5fj1neakniwkdc7b7jhnc",
           "type": "check",
           "shared": true,
-          "rarity": "Legendary"
+          "rarity": "Legendary",
+          "refs": ["obsidianRock"]
         }
       ],
       "option_id": "prkvvi54qlp6gfiamxygu5"
@@ -383,7 +394,7 @@
           "name": "Order of the Fiery Heart",
           "refs": ["orderOfTheFieryHeart", "orderofthefieryheart", "tag_Metal Armour"],
           "cost": 20,
-          "description": "Order of the Fiery Heart",
+          "description": "The model gains <span class=\"textbf\">Flaming Attacks</span>, Metal Armour, and the model part’s Armour is <span class=\"textbf\">set</span> to 2. <br> The model replaces its available Paths of Magic with Alchemy, Pyromancy, and ignores the Missile, Damage spell Types for Learned Spells when targeting units that are Engaged in Combat with itself.",
           "option_id": "9jcefl5fu94ha7sdlla6lu",
           "rarity": "Extraordinary"
         }
@@ -438,7 +449,7 @@
               }
             ]
           },
-          "cost": 170,
+          "cost": 180,
           "description": "The model gains Master of Spellcrafting, Wizard Conclave (3). <br><br> The model has these spells available: Living Steel, Altered Sight, Fountain of Youth, Whispers of the Veil, Predator’s Instinct, Mind Fog, Favour of Meladys.",
           "option_id": "487iq3ve3wn2o3l9p159wt",
           "rarity": "Rare"
@@ -475,7 +486,7 @@
             }
           ],
           "cost": 20,
-          "description": "The model gains Strider (Water Terrain), Resolute.<br>If the models unit contains a model that already has <span class=\"textbf\">Resolute</span> from another source, the unit is considered to have two additional Proper Ranks instead of one. <br>The bearer also gains <span class=\"textbf\">Lightning Attacks</span> and, if using a Longbow, <span class=\"textbf\">Stand and Shoot</span>.",
+          "description": "The model gains Strider (Water Terrain), Resolute. <br> If the models unit contains a model that already has <span class=\"textbf\">Resolute</span> from another source, the unit is considered to have two additional Proper Ranks instead of one. <br>The bearer also gains <span class=\"textbf\">Lightning Attacks</span> and, if using a Longbow, <span class=\"textbf\">Stand and Shoot</span>.",
           "option_id": "o4fowkum7prxdgs4lpv2ef",
           "rarity": "Rare"
         },
@@ -485,7 +496,7 @@
           "refs": ["grandmasterOfTheSword", "grandmaster_of_the_sword"],
           "neverHide": true,
           "cost": 20,
-          "description": "The model gains , First Strike (+1 Def, +1 Off), Sword Sworn. <br>While joined to a unit containing Sword Masters, the model's unit benefits from +1 Agi.",
+          "description": "The model gains First Strike (+1 Def, +1 Off), Sword Sworn. <br>While joined to a unit containing Sword Masters, the model's unit benefits from +1 Agi.",
           "option_id": "fgsdgg32g32f32fd32gf342gf42",
           "hasOption": [
             {
@@ -627,7 +638,7 @@
           "options": [
             {
               "name": "High Prince",
-              "cost": 200,
+              "cost": 190,
               "option_id": "rydim7dt7hq9rufz2wpn4l",
               "unit_id": "highPrince",
               "refs": ["highPrince", "tag_Elf", "tag_Metal Armour", "highprince", "prince"],
@@ -676,7 +687,7 @@
                     },
                     {
                       "type": "check",
-                      "cost": 30,
+                      "cost": 25,
                       "name": "Elven Horse",
                       "refopt": "elvenHorseMount",
                       "option_id": "vh65q7szafggd8pyzop4fk",
@@ -685,14 +696,14 @@
                     {
                       "type": "check",
                       "name": "Giant Eagle",
-                      "cost": 150,
+                      "cost": 140,
                       "refopt": "giantEagleMount",
                       "option_id": "h8v761x74m4uayk1ne4t3",
                       "refs": ["giantEagle", "gianteagle"]
                     },
                     {
                       "type": "check",
-                      "cost": 30,
+                      "cost": 25,
                       "name": "Reaver Chariot",
                       "refopt": "reaverChariotMount",
                       "option_id": "jw99diqul5kt8ntp2k2ip",
@@ -709,7 +720,7 @@
                     {
                       "type": "check",
                       "name": "Sky Sloop",
-                      "cost": 210,
+                      "cost": 200,
                       "options": [],
                       "refopt": "skySloopMount",
                       "option_id": "o1r0tqkbbei7k7tocjw7uv",
@@ -720,7 +731,7 @@
                       "type": "check",
                       "refopt": "lionChariotMount",
                       "name": "Lion Chariot",
-                      "cost": 120,
+                      "cost": 110,
                       "option_id": "47ax1yjehhj9u6kzwvcuyd",
                       "refs": ["lionChariot", "lionchariot"],
                       "hasOption": ["royalHuntsman"]
@@ -728,7 +739,7 @@
                     {
                       "type": "check",
                       "name": "Regal Dragon",
-                      "cost": 380,
+                      "cost": 360,
                       "refopt": "regalDragonMount",
                       "option_id": "p2xyb49n7ohcwjgjw32bt",
                       "refs": ["regalDragon", "regaldragon"]
@@ -736,7 +747,7 @@
                     {
                       "type": "check",
                       "name": "Ancient Dragon",
-                      "cost": 520,
+                      "cost": 480,
                       "refopt": "ancientDragonMount",
                       "option_id": "5elp5t6vp6cd3445m1nse4",
                       "refs": ["ancientDragon", "ancientdragon"]
@@ -849,7 +860,7 @@
                           "name": "Great Weapon and Elven Finesse",
                           "cost": 20,
                           "maxSize": 1,
-                          "refs": ["gwAndElvenFinesse", "greatWeapon", "elvenFinesse", "gwandelvenfinesse", "great_weapon"],
+                          "refs": ["gwAndElvenFinesse", "gw", "elvenFinesse", "greatWeapon", "gwandelvenfinesse", "great_weapon"],
                           "optionsLabel": "Great Weapon Enchant",
                           "optionsSuffix": " (Great Weapon)",
                           "sortOptions": true,
@@ -973,7 +984,7 @@
             },
             {
               "name": "Commander",
-              "cost": 90,
+              "cost": 95,
               "option_id": "rtw7g9gzot1s1pdulkewi",
               "unit_id": "commander",
               "refs": ["commander", "tag_Elf", "tag_Metal Armour"],
@@ -1232,7 +1243,7 @@
                         {
                           "type": "check",
                           "name": "Great Weapon and Elven Finesse",
-                          "refs": ["gwAndElvenFinesse", "greatWeapon", "elvenFinesse", "gwandelvenfinesse", "great_weapon"],
+                          "refs": ["gwAndElvenFinesse", "gw", "elvenFinesse", "greatWeapon", "gwandelvenfinesse", "great_weapon"],
                           "cost": 10,
                           "maxSize": 1,
                           "optionsLabel": "Great Weapon Enchant",
@@ -1523,7 +1534,7 @@
                       "refopt": "regalDragonMount",
                       "hasOption": [
                         {
-                          "refs": ["wizardMaster", "orderOfTheFieryHeart"],
+                          "refs": ["wizardMaster"],
                           "amount": 1
                         }
                       ],
@@ -1588,7 +1599,6 @@
                     },
                     {
                       "type": "group",
-                      "name": "Weapon",
                       "optionsLabel": "Weapon",
                       "maxSize": 1,
                       "options": [
@@ -2047,7 +2057,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 10,
                       "options": [
                         {
                           "optionsLabel": "Options",
@@ -2399,7 +2409,7 @@
             },
             {
               "name": "Lion Chariot",
-              "cost": 190,
+              "cost": 180,
               "option_id": "xnszcdzk5qe5uke3scs06",
               "unit_id": "lionChariot",
               "refs": ["lionChariot", "tag_Elf", "tag_Metal Armour", "tag_Mount", "tag_Beast", "tag_Construct", "lionchariot", "lion_char"],
@@ -2430,7 +2440,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 60,
+                      "cost": 50,
                       "option_id": "a5ocfmfrpaw6sgdeiqvjo3",
                       "refs": ["giant_eagles_amount"]
                     }
@@ -2593,7 +2603,7 @@
             },
             {
               "name": "Initiate of the Fiery Heart",
-              "cost": 380,
+              "cost": 360,
               "option_id": "bg8osewd0w7i61k9fq570g",
               "unit_id": "initiateOfTheFieryHeart",
               "refs": [

@@ -6,7 +6,7 @@
   },
   "short": "ok",
   "version": "2023 beta2",
-  "nrversion": 375,
+  "nrversion": 376,
   "playable": 1,
   "id": 11,
   "include": [102],
@@ -41,21 +41,27 @@
           "cost": 20,
           "option_id": "aou0hebs6rr6t37nsmdqjn",
           "type": "check",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary",
+          "refs": ["potionOfHealing"]
         },
         {
           "name": "Scroll of Power",
           "cost": 30,
           "option_id": "sgynrc9pb78pp8ehzzvotg",
           "type": "check",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary",
+          "refs": ["scrollOfPower"]
         },
         {
           "name": "Scroll of Draining",
           "cost": 15,
           "option_id": "4ijjgrprmdfyyrf9tqnrh",
           "type": "check",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary",
+          "refs": ["scrollOfDraining"]
         }
       ]
     },
@@ -66,38 +72,37 @@
           "type": "check",
           "name": "Trolleater",
           "cost": 40,
-          "refs": ["ok_bn_trolleater"],
-          "armyHasNotOption": ["ok_bn_trolleater"],
+          "refs": ["trolleater", "ok_bn_trolleater"],
           "hasNotOption": ["mount"],
           "description": "Regeneration (5+), Multiple Wounds (2, towards Height 3).",
-          "option_id": "an19lc7jqlr21go3jo0nsh"
+          "option_id": "an19lc7jqlr21go3jo0nsh",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Godspeaker",
           "cost": 50,
-          "refs": ["ok_bn_godspeaker"],
-          "armyHasNotOption": ["ok_bn_godspeaker"],
+          "refs": ["godspeaker", "ok_bn_godspeaker"],
           "hasNotOption": ["army_general"],
           "description": "Attached, Fearless. <br>The bearer’s unit gains <span class=\"textbf\">Unstable</span> (the model may join units without <span class=\"textbf\">Unstable</span> during Deployment despite having <span class=\"textbf\">Unstable</span>).",
-          "option_id": "gerg34f3443gsds34g34g34"
+          "option_id": "gerg34f3443gsds34g34g34",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Scraplord",
           "cost": 20,
-          "refs": ["ok_bn_scraplord"],
-          "armyHasNotOption": ["ok_bn_scraplord"],
+          "refs": ["scraplord", "ok_bn_scraplord"],
           "hasNotOption": ["mammoth_hunter"],
           "description": "<span class=\"textbf\">Commanding Presence (12\", Scrapling)</span>. <br>Units with Scrapling property lose <span class=\"textbf\">Unruly</span> as long as the bearer is on the Battlefield. <br>As long as the bearer is joined to a unit of Scraplings, its model counts as being of the same Height as its unit for the purpose of allocating Ranged Attacks.",
-          "option_id": "gerg34f3443g34g34g34"
+          "option_id": "gerg34f3443g34g34g34",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Hoardmaster",
           "cost": 25,
-          "refs": ["ok_bn_hoardmaster"],
-          "armyHasNotOption": ["ok_bn_hoardmaster"],
+          "refs": ["hoardmaster", "ok_bn_hoardmaster"],
           "hasNotOption": [
             {
               "refs": ["mammoth_hunter"],
@@ -109,30 +114,30 @@
             }
           ],
           "description": "+1 Arm, <span class=\"textbf\">Weapon Master</span>, and may not take any Weapon Enchantment. <br>In addition, the bearer gains the following weapons: Great Weapon, Halberd, Paired Weapons, Iron Fist.",
-          "option_id": "mjo0lbcr2ndi7l43nx67i"
+          "option_id": "mjo0lbcr2ndi7l43nx67i",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Headhunter",
           "cost": 30,
-          "refs": ["ok_bn_headhunter"],
-          "armyHasNotOption": ["ok_bn_headhunter"],
-          "description": "The model part with Goblin gains March and Shoot, Poison Attacks (Melee and Shooting), and gains Throwing Weapons (4+) with Shots 3.",
-          "option_id": "beilz5ckagm6wnj52sqhv6"
+          "refs": ["headhunterOk", "ok_bn_headhunter"],
+          "description": "At the end of any Round of Combat in which the model part has caused a HP loss on enemy models and did not break from combat, roll a D6: on 3+, the model <span class=\"textbf\">Recovers</span> 1 HP.",
+          "option_id": "beilz5ckagm6wnj52sqhv6",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Firebrand",
           "cost": 30,
-          "refs": ["ok_bn_firebrand"],
-          "armyHasNotOption": ["ok_bn_firebrand"],
+          "refs": ["firebrand", "ok_bn_firebrand"],
           "hasOption": [
             {
               "refs": ["shaman"],
               "amount": 1
             }
           ],
-          "description": "<span class='gray'>Shamans with one or more spells from Pyromancy only</span><br/>Breath Attack (Str 4, AP 0, Flaming Attacks), Flaming Attacks, Resistance (Flaming Attacks), and automatically fails all Regeneration Saves. <br>The model can cast <i>Dragon’s Roar</i> (Pyromancy) as a Bound Spell (5+).",
+          "description": "<span class='gray'>Shamans with one or more spells from Pyromancy only</span><br/>Breath Attack (Str 4, AP 0, Flaming Attacks), Flaming Attacks, Resistance, and automatically fails all Regeneration Saves. <br>The model can cast <i>Dragon’s Roar</i> (Pyromancy) as a Bound Spell (5+).",
           "option_id": "d6apobtcxkxqbt73mzeaa",
           "boundSpells": [
             {
@@ -142,14 +147,14 @@
                 "castValue": 5
               }
             }
-          ]
+          ],
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Gut Roarer",
           "cost": 40,
-          "refs": ["ok_bn_gutroar"],
-          "armyHasNotOption": ["ok_bn_gutroar"],
+          "refs": ["gutRoarer", "ok_bn_gutroar"],
           "hasOption": [
             {
               "refs": ["shaman"],
@@ -157,26 +162,27 @@
             }
           ],
           "description": "Channel (1), Horror.",
-          "option_id": "h0y1xi9pqwe0s70su3zur"
+          "option_id": "h0y1xi9pqwe0s70su3zur",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Spinesplitter",
           "cost": 35,
-          "refs": ["ok_bn_spinesplt"],
-          "armyHasNotOption": ["ok_bn_spinesplt"],
+          "refs": ["spinesplitter", "ok_bn_spinesplt"],
           "description": "The bearer gains <span class=\"textbf\">Devastating Charge (+1 Att, +1 Str, +1 AP)</span>.",
-          "option_id": "1d8ydc65rhvjn4mxfcvocb"
+          "option_id": "1d8ydc65rhvjn4mxfcvocb",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Rottenjaw",
           "cost": 20,
-          "refs": ["ok_bn_rotten"],
-          "armyHasNotOption": ["ok_bn_rotten"],
+          "refs": ["rottenjaw", "ok_bn_rotten"],
           "description": "Poison Attacks, Immune (Poison Attacks). <br> Friendly Kin-Eater units <span class=\"textbf\">may</span> reroll failed <span class=\"textbf\">Ambush</span> rolls while the bearer is on the Battlefield.",
           "option_id": "pfmyb6rg98krfwyg2jryc",
-          "hasNotOption": ["mount"]
+          "hasNotOption": ["mount"],
+          "rarity": "Legendary"
         }
       ],
       "option_id": "s7hxg14sq28kc2pxlt4jw7"
@@ -188,58 +194,47 @@
           "type": "check",
           "name": "Banner of the Gyengget",
           "cost": 55,
-          "refs": ["ok_be_gyengett"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_be_gyengett"],
-              "amount": 1
-            }
-          ],
+          "refs": ["bannerOfTheGyengget", "ok_be_gyengett"],
           "hasNotOption": ["core_unit"],
-          "description": "The bearer’s unit gains <span class=\"textbf\">First Strike(re-roll to-hit and to-wound rolls of ‘1’)</span>.",
-          "option_id": "pg414zu70srs1vxtu1g9g"
+          "description": "The bearer’s unit gains <span class=\"textbf\">First Strike (re-roll to-hit and to-wound rolls of ‘1’)</span>.",
+          "option_id": "pg414zu70srs1vxtu1g9g",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Pennant of the Great Grass Sky",
           "cost": 45,
-          "refs": ["ok_be_grasssky"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_be_grasssky"],
-              "amount": 1
-            }
-          ],
+          "refs": ["pennantOfTheGreatGrassSky", "ok_be_grasssky"],
           "description": "The bearer’s unit’s Charge Range rolls gain <span class=\"textbf\">Maximised</span>, and its Flee Distance rolls gain <span class=\"textbf\">Minimised</span>.",
-          "option_id": "cwwvxxxy5cslcyxfahueb"
+          "option_id": "cwwvxxxy5cslcyxfahueb",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Skull of Qenghet",
           "cost": 25,
-          "refs": ["ok_be_qen"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_be_qen"],
-              "amount": 1
-            }
-          ],
+          "refs": ["skullOfQenghet", "ok_be_qen"],
           "description": "The bearer’s unit gains <span class=\"textbf\">Terror</span>.",
-          "option_id": "c5vi81wepdaqppnrgu3uc"
+          "option_id": "c5vi81wepdaqppnrgu3uc",
+          "rarity": "Legendary"
         },
         {
           "name": "Banner of Courage",
           "cost": 20,
           "option_id": "jwd6l82hwlvc1of7isyz",
           "type": "check",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary",
+          "refs": ["bannerOfCourage"]
         },
         {
           "name": "Banner of Speed",
           "cost": 45,
           "option_id": "qw9jq3ul0qb1awgu89akj",
           "type": "check",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary",
+          "refs": ["bannerOfSpeed"]
         }
       ],
       "option_id": "3i4wke0f8dj59o42wfb8se"
@@ -251,16 +246,11 @@
           "type": "check",
           "name": "Khagadai's Legacy",
           "cost": 75,
-          "refs": ["weaponEnchantUni", "ok_gwe_khagadai"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_gwe_khagadai"],
-              "amount": 1
-            }
-          ],
+          "refs": ["khagadaisLegacy", "weaponEnchantUni", "ok_gwe_khagadai"],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "\t<span class=\"textbf\">Multiple Wounds (D3)</span>.",
-          "option_id": "2nthopxcd35e09ncs12kcp"
+          "option_id": "2nthopxcd35e09ncs12kcp",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "i8v45d8gqqagdx1kbg4429"
@@ -271,17 +261,12 @@
         {
           "type": "check",
           "name": "Viper's Curse ",
-          "cost": 45,
-          "refs": ["weaponEnchantUni", "ok_we_viper"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_we_viper"],
-              "amount": 1
-            }
-          ],
+          "cost": 40,
+          "refs": ["vipersCurse", "weaponEnchantUni", "ok_we_viper"],
           "hasNotOption": ["weaponEnchantUni"],
           "description": "\t<span class=\"textbf\">Poison Attacks (Melee & Shooting)</span>. <br>\tShots <span class=\"textbf\">set</span> to 4, Str 4, AP 2 and <span class=\"textbf\">always</span> hits on 4+. It cannot benefit from Area Attack, Direct Hit.",
-          "option_id": "e3j6onax9gihqbnujih23s"
+          "option_id": "e3j6onax9gihqbnujih23s",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "gdws48bwiewwxdw6etibi8"
@@ -293,16 +278,11 @@
           "type": "check",
           "name": "Heart-Ripper",
           "cost": 30,
-          "refs": ["weaponEnchantUni", "ok_we_hripper"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_we_hripper"],
-              "amount": 1
-            }
-          ],
+          "refs": ["heartRipper", "weaponEnchantUni", "ok_we_hripper"],
           "hasNotOption": ["weaponEnchantUni"],
-          "description": "+1 AP, <span class=\"textbf\">Lethal Strike</span>, and <span class=\"textbf\">always</span> hits on at least 3+.",
-          "option_id": "3n84nafd3hh3f6buihuwxh"
+          "description": "+1 AP, Lethal Strike and always hits at least on 3+.",
+          "option_id": "3n84nafd3hh3f6buihuwxh",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "qzueg4i12if0u6th7wfjlxg"
@@ -313,18 +293,13 @@
         {
           "type": "check",
           "name": "Ritual Bloodletter",
-          "cost": 40,
-          "refs": ["weaponEnchantUni", "ok_we_bloodletter"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_we_bloodletter"],
-              "amount": 1
-            }
-          ],
+          "cost": 30,
+          "refs": ["ritualBloodletter", "weaponEnchantUni", "ok_we_bloodletter"],
           "hasNotOption": ["weaponEnchantUni"],
           "hasOption": ["shaman"],
-          "description": "+1 Att.<br><br>While the wielder’s unit is Engaged in Combat, the wielder <span class=\"textbf\">must</span> reroll Magic Dice that roll ‘1’ for its Casting Rolls.",
-          "option_id": "dz96yep2hfmn2ml79wu2i"
+          "description": "+1 Att. <br> While the wielder’s unit is Engaged in Combat, the it can cast <i>Hand of Glory</i> (Occultism) as a Bound Spell (4+).",
+          "option_id": "dz96yep2hfmn2ml79wu2i",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "hk6mf4ms57oisdribawn9"
@@ -337,51 +312,45 @@
           "cost": 80,
           "option_id": "4f361vq0v3ghhhnyl539p",
           "type": "check",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary",
+          "refs": ["deathCheater"]
         },
         {
           "type": "check",
           "name": "Aurochs Resilience",
           "cost": 35,
-          "refs": ["ok_art_auroch"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_art_auroch"],
-              "amount": 1
+          "refs": ["aurochsResilience", "ok_art_auroch"],
+          "description": "<span class='gray'>Height 1-4 only</span><br/>+1 Res, and <span class=\"textbf\">Mountain Hide</span>. <br> The model automatically fails all Special Saves.",
+          "option_id": "s1i299p6yxjaqomyzz5m2n",
+          "rarity": "Legendary",
+          "hasStat": {
+            "global": {
+              "Hgt": {
+                "values": ["1", "2", "3", "4"]
+              }
             }
-          ],
-          "description": "+1 Res, and <span class=\"textbf\">Mountain Hide</span>.<br>The model automatically fails all Special Saves.",
-          "option_id": "s1i299p6yxjaqomyzz5m2n"
+          }
         },
         {
           "type": "check",
           "name": "Wrestler's Belt",
           "cost": 50,
-          "refs": ["ok_ae_wrestler"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_ae_wrestler"],
-              "amount": 1
-            }
-          ],
+          "refs": ["wrestlersBelt", "ok_ae_wrestler"],
           "hasNotOption": ["mount"],
           "description": "\t+1 Arm, +1 Str and <span class=\"textbf\">Devastating Charge(+1 Arm)</span>.",
-          "option_id": "qt3d8ukec9m18vm1jw02ry"
+          "option_id": "qt3d8ukec9m18vm1jw02ry",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Mammoth-Hide Cloak",
           "cost": 35,
-          "refs": ["ok_ae_mammoth"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_ae_mammoth"],
-              "amount": 1
-            }
-          ],
+          "refs": ["mammothHideCloak", "ok_ae_mammoth"],
           "hasNotOption": ["mount"],
-          "description": "+1 Arm. Attacks against the wearer can <span class=\"textbf\">never</span> have more than Str 5.",
-          "option_id": "aks0won81brgzixzbu5jy"
+          "description": "+1 Arm. Attacks against the wearer can never have Str above 5.",
+          "option_id": "aks0won81brgzixzbu5jy",
+          "rarity": "Legendary"
         }
       ],
       "option_id": "k9f1jh85hh9nf7afmuj"
@@ -393,50 +362,37 @@
           "type": "check",
           "name": "Lygur's Tongue",
           "cost": 40,
-          "refs": ["ok_art_lygur"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_art_lygur"],
-              "amount": 1
-            }
-          ],
+          "refs": ["lygursTongue", "ok_art_lygur"],
           "description": "\t<span class=\"textbf\">Afflict(-2 Off)</span>.",
-          "option_id": "n4f3aw42jxr75ru7kksfxp"
+          "option_id": "n4f3aw42jxr75ru7kksfxp",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Yeti Furs",
-          "cost": 30,
-          "refs": ["ok_ae_yeti"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_ae_yeti"],
-              "amount": 1
-            }
-          ],
+          "cost": 20,
+          "refs": ["yetiFurs", "ok_ae_yeti"],
           "description": "Touch of Frost, Strider.",
-          "option_id": "tmgvjsp65vl0gpuf0cv3j39"
+          "option_id": "tmgvjsp65vl0gpuf0cv3j39",
+          "rarity": "Legendary"
         },
         {
           "type": "check",
           "name": "Rampager's Chain",
           "cost": 25,
-          "refs": ["ok_art_rampager"],
-          "armyHasNotOption": [
-            {
-              "refs": ["ok_art_rampager"],
-              "amount": 1
-            }
-          ],
+          "refs": ["rampagersChain", "ok_art_rampager"],
           "description": "\tThe bearer gains <span class=\"textbf\">Stomp Attack(D3+1)</span>, and all models in the bearer's unit must reroll failed to-wound rolls with <span class=\"textbf\">Stomp Attack</span>.",
-          "option_id": "oz79ts4gvp6g9nmous766"
+          "option_id": "oz79ts4gvp6g9nmous766",
+          "rarity": "Legendary"
         },
         {
           "name": "Rod of Battle",
           "cost": 30,
           "option_id": "ye9jgj2mkgpgicd2ptrst8",
           "type": "check",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary",
+          "refs": ["rodOfBattle"]
         }
       ],
       "option_id": "aovld3eoxwpitf824l13u"
@@ -449,14 +405,18 @@
           "cost": 30,
           "option_id": "5hh9595bf97s1mvfwki2y",
           "type": "check",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary",
+          "refs": ["shieldBreaker"]
         },
         {
           "name": "Eldritch Inscriptions",
           "cost": 35,
           "option_id": "4wrx8jxsv17vpx2kd3ld2r",
           "type": "check",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary",
+          "refs": ["eldritchInscriptions"]
         }
       ]
     },
@@ -468,7 +428,9 @@
           "cost": 25,
           "option_id": "w26epxdwfcgumz15orork",
           "type": "check",
-          "shared": true
+          "shared": true,
+          "rarity": "Legendary",
+          "refs": ["herosHeart"]
         }
       ]
     }
@@ -502,7 +464,7 @@
               "cost": 250,
               "option_id": "3zmp0cmkxc94hgsmyo74ei",
               "unit_id": "greatKhan",
-              "refs": ["greatkhan", "tag_Ogre", "tag_Metal Armour", "great_khan"],
+              "refs": ["greatKhan", "tag_Ogre", "tag_Metal Armour", "greatkhan", "great_khan"],
               "size": "1",
               "rarity": "Rare",
               "height": "3",
@@ -511,7 +473,6 @@
                 {
                   "type": "group",
                   "option_id": "ny9e3xjgn29nr8gr8t639f",
-                  "name": "Leadership",
                   "optionsLabel": "Leadership",
                   "options": [
                     {
@@ -569,7 +530,7 @@
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
                           "option_id": "y1ylfq07lroaxygq7ew1",
                           "allowHideChildren": true,
-                          "refs": ["pairedweapons"],
+                          "refs": ["pairedWeapons", "pairedweapons"],
                           "hasNotOption": ["ok_bn_hoardmaster"]
                         },
                         {
@@ -585,7 +546,7 @@
                           "optionsDict": ["weaponEnchant", "ironFistEnchant"],
                           "option_id": "4qcjis1tiia83bos4cccxg",
                           "allowHideChildren": true,
-                          "refs": ["ironfist"],
+                          "refs": ["ironFist", "ironfist"],
                           "hasNotOption": ["ok_bn_hoardmaster"]
                         },
                         {
@@ -601,7 +562,7 @@
                           "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
                           "option_id": "6be9usb1y3i9ld6mn8jv1t",
                           "allowHideChildren": true,
-                          "refs": ["greatweapon"],
+                          "refs": ["greatWeapon", "greatweapon"],
                           "hasNotOption": ["ok_bn_hoardmaster"]
                         }
                       ],
@@ -615,6 +576,7 @@
                       "options": [
                         {
                           "refs": [
+                            "braceOfOgrePistols",
                             "braceofogrepistols",
                             {
                               "ref": "hired_guns",
@@ -646,6 +608,7 @@
                           "type": "check",
                           "name": "Ogre Crossbow (3+)",
                           "refs": [
+                            "ogreCrossbow",
                             "ogrecrossbow",
                             {
                               "ref": "hired_guns",
@@ -746,7 +709,6 @@
                 {
                   "type": "group",
                   "option_id": "b009wyd8rkkicu8g31f99",
-                  "name": "Leadership",
                   "optionsLabel": "Leadership",
                   "options": [
                     {
@@ -754,14 +716,14 @@
                       "type": "check",
                       "cost": 0,
                       "option_id": "1egrg34t34g34g34",
-                      "refs": ["captainandattached", "leadership_amount"]
+                      "refs": ["captainAndAttached", "captain", "attached", "captainandattached", "leadership_amount"]
                     },
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
                       "cost": 115,
                       "option_id": "f32f32f32f3aaaaad242",
-                      "refs": ["battlestandardbearer", "army_bsb"],
+                      "refs": ["battleStandardBearer", "battlestandardbearer", "army_bsb"],
                       "armyHasNotOption": ["army_bsb"]
                     },
                     {
@@ -780,7 +742,8 @@
                       "refs": ["solitary"]
                     }
                   ],
-                  "maxSize": 1
+                  "maxSize": 1,
+                  "minSize": 1
                 },
                 {
                   "type": "group",
@@ -842,7 +805,7 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
                           "option_id": "scwr1ry2b1c404l2w39q4",
-                          "refs": ["pairedweapons"],
+                          "refs": ["pairedWeapons", "pairedweapons"],
                           "hasNotOption": ["ok_bn_hoardmaster"]
                         },
                         {
@@ -857,7 +820,7 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant", "ironFistEnchant"],
                           "option_id": "wzd7vuihlqrdfvsbwazyc",
-                          "refs": ["ironfist"],
+                          "refs": ["ironFist", "ironfist"],
                           "hasNotOption": ["ok_bn_hoardmaster"]
                         },
                         {
@@ -872,7 +835,7 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
                           "option_id": "2r7ndj899jg0qb7kx3zxx9",
-                          "refs": ["greatweapon"],
+                          "refs": ["greatWeapon", "greatweapon"],
                           "hasNotOption": ["ok_bn_hoardmaster"]
                         }
                       ],
@@ -887,6 +850,7 @@
                         {
                           "type": "check",
                           "refs": [
+                            "braceOfOgrePistols",
                             "braceofogrepistols",
                             {
                               "ref": "hired_guns",
@@ -907,6 +871,7 @@
                         {
                           "type": "check",
                           "refs": [
+                            "ogreCrossbow",
                             "ogrecrossbow",
                             {
                               "ref": "hired_guns",
@@ -985,7 +950,6 @@
                 {
                   "type": "group",
                   "option_id": "itsp7nprjxhcjk1iz08in4",
-                  "name": "Leadership",
                   "optionsLabel": "Leadership",
                   "options": [
                     {
@@ -1060,14 +1024,14 @@
                   "collapsible": true,
                   "options": [
                     {
-                      "refs": ["wizardadept", "wizardAdept"],
+                      "refs": ["wizardAdept", "wizardadept"],
                       "name": "Wizard Adept",
                       "type": "check",
                       "cost": 0,
                       "option_id": "h6lsdm6tzml6o042pp45lv"
                     },
                     {
-                      "refs": ["wizardmaster", "wizardMaster"],
+                      "refs": ["wizardMaster", "wizardmaster"],
                       "name": "Wizard Master",
                       "type": "check",
                       "cost": 150,
@@ -1123,7 +1087,7 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
                           "option_id": "wvdt1wdkjbj1r1tdsx2y",
-                          "refs": ["pairedweapons"]
+                          "refs": ["pairedWeapons", "pairedweapons"]
                         },
                         {
                           "type": "check",
@@ -1137,7 +1101,7 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant", "ironFistEnchant"],
                           "option_id": "p9b6cxw59qsgwr9g2unh",
-                          "refs": ["ironfist"]
+                          "refs": ["ironFist", "ironfist"]
                         },
                         {
                           "type": "check",
@@ -1151,7 +1115,7 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
                           "option_id": "3gvuk28tgnvwvjohw2p3be",
-                          "refs": ["greatweapon"]
+                          "refs": ["greatWeapon", "greatweapon"]
                         }
                       ],
                       "option_id": "itg76w87rxohqo6lyackbo"
@@ -1205,7 +1169,7 @@
               "cost": 200,
               "option_id": "7rl6en4i8wopjtpi7yzoo",
               "unit_id": "mammothHunter",
-              "refs": ["mammothhunter", "tag_Ogre", "tag_Light Armour", "not_a_leader", "mammoth_hunter"],
+              "refs": ["mammothHunter", "tag_Ogre", "tag_Light Armour", "mammothhunter", "not_a_leader", "mammoth_hunter"],
               "size": "1",
               "rarity": "Rare",
               "height": "3",
@@ -1226,7 +1190,7 @@
                     {
                       "name": "Battle Standard Bearer",
                       "type": "check",
-                      "refs": ["battlestandardbearer", "army_bsb", "not_a_leader"],
+                      "refs": ["battleStandardBearer", "battlestandardbearer", "army_bsb", "not_a_leader"],
                       "armyHasNotOption": ["army_bsb"],
                       "cost": 50,
                       "options": [],
@@ -1237,6 +1201,13 @@
                           "amount": 1
                         }
                       ]
+                    },
+                    {
+                      "type": "check",
+                      "name": "General, Disciplined, and Wildheart",
+                      "cost": 30,
+                      "option_id": "oqnrvmwu2fjlahaa",
+                      "refs": ["generalWildheart"]
                     }
                   ],
                   "maxSize": 1,
@@ -1302,7 +1273,7 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant", "pairedWeaponsEnchant"],
                           "option_id": "ygydexx0jo6awx2sw39xi",
-                          "refs": ["pairedweapons"]
+                          "refs": ["pairedWeapons", "pairedweapons"]
                         },
                         {
                           "type": "check",
@@ -1317,7 +1288,7 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant", "ironFistEnchant"],
                           "option_id": "an5kh6glzzf4cdylbrf5f7",
-                          "refs": ["ironfist"]
+                          "refs": ["ironFist", "ironfist"]
                         },
                         {
                           "type": "check",
@@ -1345,7 +1316,7 @@
                           "options": [],
                           "optionsDict": ["weaponEnchant", "greatWeaponEnchant"],
                           "option_id": "7sb4bqr7cw3kec1o9higz8",
-                          "refs": ["greatweapon"]
+                          "refs": ["greatWeapon", "greatweapon"]
                         }
                       ],
                       "option_id": "ly48pbj9kyoj6sjzxz4t9"
@@ -1364,6 +1335,7 @@
                           "ignoreCost": true,
                           "option_id": "x8us606l04ehsjmqtdkgks",
                           "refs": [
+                            "huntingSpear",
                             "huntingspear",
                             {
                               "ref": "hired_guns",
@@ -1374,6 +1346,7 @@
                         {
                           "type": "check",
                           "refs": [
+                            "ogreCrossbow",
                             "ogrecrossbow",
                             {
                               "ref": "hired_guns",
@@ -1449,17 +1422,17 @@
                           "name": "Scout and Vanguard",
                           "parsername": "Scout, Vanguard",
                           "option_id": "4zpm7k5ob6yyccdsgrxk",
-                          "refs": ["scoutandvanguard"]
+                          "refs": ["scoutAndVanguard", "scout", "vanguard", "scoutandvanguard"]
                         },
                         {
                           "type": "check",
                           "cost": 10,
                           "name": "Leader of the Pack",
                           "option_id": "5xu5kw4h5hdn1ryt4zyuep",
-                          "refs": ["leaderofthepack"]
+                          "refs": ["leaderOfThePack", "leaderofthepack"]
                         }
                       ],
-                      "refs": ["lighttroops"]
+                      "refs": ["lightTroops", "lighttroops"]
                     },
                     {
                       "type": "check",
@@ -1472,12 +1445,12 @@
                     },
                     {
                       "type": "check",
-                      "cost": 300,
+                      "cost": 280,
                       "name": "Rock Aurochs",
                       "options": [],
                       "refopt": "rockAurochsMount",
                       "option_id": "1y45dnkmuznkqd5xd9fsxg",
-                      "refs": ["rockaurochs"]
+                      "refs": ["rockAurochs", "rockaurochs"]
                     }
                   ],
                   "option_id": "72ouwwbzymilu9zpa5gdp"
@@ -1565,7 +1538,7 @@
           "options": [
             {
               "name": "Tribesmen",
-              "cost": 16,
+              "cost": 8,
               "option_id": "f9imkag7ixkph9sw83n2s",
               "unit_id": "tribesmen",
               "refs": ["tribesmen", "tag_Ogre", "tag_Light Armour", "core_unit"],
@@ -1581,7 +1554,7 @@
                       "hide": true,
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 36,
+                      "cost": 38,
                       "options": [
                         {
                           "type": "group",
@@ -1590,19 +1563,21 @@
                             {
                               "type": "check",
                               "name": "Iron Fist",
-                              "cost": 6,
+                              "cost": 5,
                               "option_id": "x3tezjulff6cavxx3x5gq",
-                              "refs": ["ironfist"]
+                              "refs": ["ironFist", "ironfist"]
                             },
                             {
                               "type": "check",
                               "name": "Paired Weapons",
                               "cost": 0,
                               "option_id": "f3f32f32g3243257654634",
-                              "refs": ["pairedweapons"]
+                              "refs": ["pairedWeapons", "pairedweapons"]
                             }
                           ],
-                          "option_id": "3676ca5bocomm6cmzhfrkh"
+                          "option_id": "3676ca5bocomm6cmzhfrkh",
+                          "minSize": 1,
+                          "maxSize": 1
                         }
                       ],
                       "option_id": "pyvnu0wdto9m5osaumzmph",
@@ -1626,7 +1601,7 @@
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
                       "option_id": "lpki1n4n5sepqcfwsuqeh",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -1682,7 +1657,7 @@
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
                       "option_id": "e3m6a6df32wgfbs6wxezq9",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -1705,7 +1680,7 @@
             },
             {
               "name": "Scraplings",
-              "cost": 50,
+              "cost": 40,
               "option_id": "4q21e8dhbti4jww4ihkszp",
               "unit_id": "scraplings",
               "refs": ["scraplings", "tag_Scrapling", "core_unit"],
@@ -1734,7 +1709,7 @@
                               "name": "Throwing Weapons (5+)",
                               "cost": 0,
                               "option_id": "1xl9by95em5vm8a6o3pgta",
-                              "refs": ["throwingweapons", "hired_guns"]
+                              "refs": ["throwingWeapons", "throwingweapons", "hired_guns"]
                             },
                             {
                               "type": "check",
@@ -1759,7 +1734,7 @@
                             {
                               "type": "check",
                               "name": "Spear",
-                              "cost": 1,
+                              "cost": 0,
                               "option_id": "pg8h8uth9657p7t4qel5x",
                               "refs": ["spear"]
                             }
@@ -1786,7 +1761,7 @@
                       "optionsDict": ["bannerEnchant"],
                       "maxSize": 1,
                       "collapsible": true,
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -1812,10 +1787,10 @@
           "options": [
             {
               "name": "Mercenary Veterans",
-              "cost": -15,
+              "cost": -5,
               "option_id": "yy4f0thhxj1uz4mn8jwmp",
               "unit_id": "mercenaryVeterans",
-              "refs": ["mercenaryveterans", "tag_Ogre", "tag_Metal Armour", "mercenary_veterans"],
+              "refs": ["mercenaryVeterans", "tag_Ogre", "tag_Metal Armour", "mercenaryveterans", "mercenary_veterans"],
               "rarity": "Uncommon",
               "height": "3",
               "basesize": "40×40",
@@ -1841,7 +1816,7 @@
                               "name": "Lethal Strike",
                               "cost": 0,
                               "type": "check",
-                              "refs": ["lethalstrike", "scar_lethal"],
+                              "refs": ["lethalStrike", "lethalstrike", "scar_lethal"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["scar_lethal"],
@@ -1856,7 +1831,7 @@
                               "name": "Devastating Charge (+1 Str, +1 AP)",
                               "cost": 3,
                               "type": "check",
-                              "refs": ["devastatingchargeveterans", "scar_devast"],
+                              "refs": ["devastatingChargeVeterans", "devastatingchargeveterans", "scar_devast"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["scar_devast"],
@@ -1871,7 +1846,7 @@
                               "name": "First Strike (Fury)",
                               "cost": 2,
                               "type": "check",
-                              "refs": ["firststrikeveterans", "scar_fury"],
+                              "refs": ["firstStrikeVeterans", "firststrikeveterans", "scar_fury"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["scar_fury"],
@@ -1895,7 +1870,7 @@
                               "name": "Magic Resistance (2)",
                               "cost": 3,
                               "type": "check",
-                              "refs": ["magicresistance", "scar_resist"],
+                              "refs": ["magicResistance", "magicresistance", "scar_resist"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["scar_resist"],
@@ -1949,14 +1924,14 @@
                               "name": "Paired Weapons",
                               "cost": 0,
                               "option_id": "sa0cf8do78818cxzpt9biw",
-                              "refs": ["pairedweapons"]
+                              "refs": ["pairedWeapons", "pairedweapons"]
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
                               "cost": 0,
                               "option_id": "t0emq04tufzjza7q4g1pq",
-                              "refs": ["greatweapon"]
+                              "refs": ["greatWeapon", "greatweapon"]
                             },
                             {
                               "type": "check",
@@ -1970,7 +1945,7 @@
                               "name": "Iron Fist",
                               "cost": 2,
                               "option_id": "3z9gk6z7d0v2okqshcqho5",
-                              "refs": ["ironfist"]
+                              "refs": ["ironFist", "ironfist"]
                             }
                           ],
                           "option_id": "vfc0hikkk8i5d9myp4d"
@@ -1997,7 +1972,7 @@
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
                       "option_id": "vhjgtkctacdwyqjskmw7f",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -2023,7 +1998,7 @@
               "cost": 15,
               "option_id": "cd1acyqoesrpxwgtr8qdos",
               "unit_id": "tuskerCavalry",
-              "refs": ["tuskercavalry", "tag_Ogre", "tag_Metal Armour", "tag_Mount", "tag_Beast", "tusker_cavalry"],
+              "refs": ["tuskerCavalry", "tag_Ogre", "tag_Metal Armour", "tag_Mount", "tag_Beast", "tuskercavalry", "tusker_cavalry"],
               "rarity": "Uncommon",
               "height": "4",
               "basesize": "50×100",
@@ -2049,14 +2024,14 @@
                               "name": "Paired Weapons",
                               "cost": 5,
                               "option_id": "x0ynsopys5niolmdk1xhia",
-                              "refs": ["pairedweapons"]
+                              "refs": ["pairedWeapons", "pairedweapons"]
                             },
                             {
                               "type": "check",
                               "name": "Great Weapon",
                               "cost": 15,
                               "option_id": "45m4smf0gekafned46gvmq",
-                              "refs": ["greatweapon"]
+                              "refs": ["greatWeapon", "greatweapon"]
                             }
                           ],
                           "option_id": "hnl9i0xi7c98t0hrsq6jm6"
@@ -2083,7 +2058,7 @@
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
                       "option_id": "du1h644447l9h2xwnki4wd",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -2148,7 +2123,7 @@
               "cost": 95,
               "option_id": "8ccsho3zl5ol0w8jyozceq",
               "unit_id": "scraplingTrappers",
-              "refs": ["scraplingtrappers", "tag_Scrapling", "scrappling_trappers"],
+              "refs": ["scraplingTrappers", "tag_Scrapling", "scraplingtrappers", "scrappling_trappers"],
               "rarity": "Uncommon",
               "height": "1",
               "basesize": "20×20",
@@ -2192,7 +2167,7 @@
               "cost": 20,
               "option_id": "9i3g2sy733ahdcgetflijp",
               "unit_id": "sabretoothTigers",
-              "refs": ["sabretoothtigers", "tag_Beast", "sabertooth_tigers"],
+              "refs": ["sabretoothTigers", "tag_Beast", "sabretoothtigers", "sabertooth_tigers"],
               "rarity": "Uncommon",
               "height": "2",
               "basesize": "25×50",
@@ -2232,10 +2207,10 @@
             },
             {
               "name": "Kin-Eater",
-              "cost": 150,
+              "cost": 160,
               "option_id": "dqrjc96795iwz5v1hku4",
               "unit_id": "kinEater",
-              "refs": ["kineater", "tag_Ogre", "kin_eater"],
+              "refs": ["kinEater", "tag_Ogre", "kineater", "kin_eater"],
               "size": "1",
               "rarity": "Uncommon",
               "height": "3",
@@ -2249,7 +2224,7 @@
               "cost": -35,
               "option_id": "f23fdsff342534h54h54h45h54",
               "unit_id": "mercenaryGunners",
-              "refs": ["mercenarygunners", "tag_Ogre", "tag_Metal Armour", "mercenary_veterans"],
+              "refs": ["mercenaryGunners", "tag_Ogre", "tag_Metal Armour", "mercenarygunners", "mercenary_veterans"],
               "rarity": "Uncommon",
               "height": "3",
               "basesize": "40×40",
@@ -2277,6 +2252,7 @@
                               "cost": 0,
                               "type": "check",
                               "refs": [
+                                "huntingSpearGunner",
                                 "huntingspeargunner",
                                 "scar_throwing",
                                 {
@@ -2293,6 +2269,7 @@
                               "cost": 3,
                               "type": "check",
                               "refs": [
+                                "braceOfOgrePistolsGunner",
                                 "braceofogrepistolsgunner",
                                 "scare_lethal",
                                 {
@@ -2315,6 +2292,7 @@
                               "cost": 10,
                               "type": "check",
                               "refs": [
+                                "ogreCrossbowGunner",
                                 "ogrecrossbowgunner",
                                 "scar_accurate",
                                 {
@@ -2337,7 +2315,7 @@
                               "name": "Magic Resistance (2)",
                               "cost": 3,
                               "type": "check",
-                              "refs": ["magicresistance", "scar_resist"],
+                              "refs": ["magicResistance", "magicresistance", "scar_resist"],
                               "armyHasNotOption": [
                                 {
                                   "refs": ["scar_resist"],
@@ -2403,7 +2381,7 @@
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
                       "option_id": "vhjgtkctacdwydsdsqjskmw7f",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -2466,7 +2444,7 @@
                       "options": [],
                       "optionsDict": ["bannerEnchant"],
                       "option_id": "tyw131wfv9ggf84eo8czsd",
-                      "refs": ["standardbearer"]
+                      "refs": ["standardBearer", "standardbearer"]
                     },
                     {
                       "type": "check",
@@ -2498,16 +2476,17 @@
           "options": [
             {
               "name": "Thunder Cannon",
-              "cost": 290,
+              "cost": 270,
               "option_id": "3ap3al88beeuq4eed76zmk",
               "unit_id": "thunderCannon",
               "refs": [
-                "thundercannon",
+                "thunderCannon",
                 "tag_Ogre",
                 "tag_Light Armour",
                 "tag_Mount",
                 "tag_Beast",
                 "tag_Construct",
+                "thundercannon",
                 "thunder_canon",
                 "tag_Scrapling",
                 "powder_keg"
@@ -2527,7 +2506,7 @@
             },
             {
               "name": "Scratapult",
-              "cost": 240,
+              "cost": 220,
               "option_id": "bvq9goe7ygsj120i1cj1v",
               "unit_id": "scratapult",
               "refs": ["scratapult", "tag_Scrapling", "tag_Beast", "tag_Mount", "tag_Construct", "powder_keg"],
@@ -2548,10 +2527,10 @@
           "options": [
             {
               "name": "Rock Aurochs",
-              "cost": 440,
+              "cost": 420,
               "option_id": "qkvs7vh0ey8ixsxkvpx9lb",
               "unit_id": "rockAurochs",
-              "refs": ["rockaurochs", "tag_Ogre", "tag_Mount", "tag_Beast", "rock_aurochs"],
+              "refs": ["rockAurochs", "tag_Ogre", "tag_Mount", "tag_Beast", "rockaurochs", "rock_aurochs"],
               "size": "1",
               "rarity": "Rare",
               "height": "5",
@@ -2568,6 +2547,7 @@
                       "type": "check",
                       "option_id": "0p4pk3ypbxhfc7qa28dn25",
                       "refs": [
+                        "ogreCrossbow",
                         "ogrecrossbow",
                         "rock_aurochs_amount",
                         {
@@ -2582,6 +2562,7 @@
                       "type": "check",
                       "option_id": "p54qlfjzv3gwwny6kpjk2d",
                       "refs": [
+                        "huntingSpear",
                         "huntingspear",
                         {
                           "ref": "hired_guns",
@@ -2608,7 +2589,7 @@
               "cost": 400,
               "option_id": "4kol33sqj2659kwvbfo6om",
               "unit_id": "frostMammoth",
-              "refs": ["frostmammoth", "tag_Ogre", "tag_Mount", "tag_Beast", "frost_mammoth"],
+              "refs": ["frostMammoth", "tag_Ogre", "tag_Mount", "tag_Beast", "frostmammoth", "frost_mammoth"],
               "size": "1",
               "rarity": "Uncommon",
               "height": "5",
@@ -2625,6 +2606,7 @@
                       "type": "check",
                       "option_id": "dsevm8wtsilq29idzajx",
                       "refs": [
+                        "ogreCrossbow",
                         "ogrecrossbow",
                         "frost_mammoth_amount",
                         {
@@ -2639,6 +2621,7 @@
                       "type": "check",
                       "option_id": "14paghtkfvi1at0hr66jm",
                       "refs": [
+                        "huntingSpear",
                         "huntingspear",
                         {
                           "ref": "hired_guns",
@@ -2667,7 +2650,7 @@
               "cost": 260,
               "option_id": "frslggme6swehd7gb5znui",
               "unit_id": "mercenaryGiant",
-              "refs": ["mercenarygiant", "tag_Giant", "tag_Light Armour", "slave_giant"],
+              "refs": ["mercenaryGiant", "tag_Giant", "tag_Light Armour", "mercenarygiant", "slave_giant"],
               "size": "1",
               "rarity": "Uncommon",
               "height": "5",
@@ -2684,25 +2667,26 @@
                           "cost": 0,
                           "type": "check",
                           "option_id": "69t2i15jujizia1zd3ex6e",
-                          "refs": ["ironfist"]
+                          "refs": ["ironFist", "ironfist"]
                         },
                         {
                           "name": "Great Weapon",
                           "cost": 20,
                           "type": "check",
                           "option_id": "l4r39gld28p7j7o46gcho",
-                          "refs": ["greatweapon"]
+                          "refs": ["greatWeapon", "greatweapon"]
                         },
                         {
                           "name": "Giant Club",
                           "cost": 10,
                           "type": "check",
                           "option_id": "jvp48lnlyxlhv7hpu1jyz",
-                          "refs": ["giantclub"]
+                          "refs": ["giantClub", "giantclub"]
                         }
                       ],
                       "option_id": "c396c45rjtllx12oi3jlgd",
-                      "refs": ["slave_giant_amount"]
+                      "refs": ["slave_giant_amount"],
+                      "minSize": 1
                     },
                     {
                       "optionsLabel": "Big Brother",
@@ -2712,7 +2696,7 @@
                           "cost": 25,
                           "type": "check",
                           "option_id": "bziiz55vfde0y12mteqb0q9",
-                          "refs": ["bigbrother"]
+                          "refs": ["bigBrother", "bigbrother"]
                         }
                       ],
                       "option_id": "u2m1ig9i6lispwozymhhh"
@@ -2762,15 +2746,16 @@
           "refs": ["mounts"],
           "options": [
             {
-              "name": "Rock Auroch (mount) *Mount",
+              "name": "Rock Auroch *Mount",
               "cost": 0,
               "option_id": "eyy5pmwobmvxwz7jxq0zp",
               "unit_id": "rockAurochsMount",
               "refs": [
-                "rockaurochsmount",
+                "rockAurochsMount",
                 "tag_Mount",
                 "tag_Beast",
                 "mount",
+                "rockaurochsmount",
                 "rock_aurochs",
                 "mount_rock_aurochs",
                 "rockAurochs_mount_unit"
@@ -2797,7 +2782,7 @@
               "cost": 0,
               "option_id": "no4j5i9a6f79cf42mgjiu",
               "unit_id": "tuskerMount",
-              "refs": ["tuskermount", "tag_Mount", "tag_Beast", "mount", "tusker_mount_unit", "mount_tusker"],
+              "refs": ["tuskerMount", "tag_Mount", "tag_Beast", "mount", "tuskermount", "tusker_mount_unit", "mount_tusker"],
               "invisible": true,
               "rarity": "Rare",
               "height": "4",

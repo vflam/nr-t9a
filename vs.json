@@ -6,7 +6,7 @@
   },
   "short": "vs",
   "version": "2023 alpha3",
-  "nrversion": 517,
+  "nrversion": 518,
   "playable": 1,
   "id": 21,
   "include": [102],
@@ -82,7 +82,7 @@
           "type": "check",
           "name": "Potion of Rat Form",
           "cost": 10,
-          "description": "One use only. Duration: One Phase.<br>During any friendly Magic Phase, the bearer can choose to lose <span class=\"textbf\">Attached</span> (if they had it) and perform a <span class=\"textbf\">Magical Move (6 Mob)</span>. <br>It must end this move by joining another friendly unit <i>(following the normal rules for joining units)</i>.",
+          "description": "<span class='gray'>Height 1 only</span><br/>One use only. Duration: One Phase.<br>During any friendly Magic Phase, the bearer can choose to lose <span class=\"textbf\">Attached</span> (if they had it) and perform a <span class=\"textbf\">Magical Move (6 Mob)</span>. <br>It must end this move by joining another friendly unit <i>(following the normal rules for joining units)</i>.",
           "refs": ["potionOfRatForm", "potion_ratform"],
           "hasStat": {
             "global": {
@@ -127,7 +127,7 @@
         {
           "type": "check",
           "name": "Plague-Hermit's Blessing",
-          "cost": 50,
+          "cost": 40,
           "description": "The model’s number of HP is set to 6, it gains the Cult of Errahman property, and automatically fails all its Armour Saves rolls.",
           "refs": ["plagueHermitsBlessing", "pestilent plate_1dl4iyof", "cult_of_errahman"],
           "loses_rules": ["vs-caelysian_pantheon"],
@@ -238,13 +238,13 @@
         {
           "type": "check",
           "name": "Secrets of the Doom Blade",
-          "cost": 140,
-          "description": "+1 Att, +2 AP. Maniacal Enthusiasm (To-wound roll),Multiple Wounds (D3). <br>Rolls this model makes on the <span class=\"textbf\">Maniacal Enthusiasm</span> chart gain a +2 modifier.",
+          "cost": 130,
+          "description": "<span class='gray'>Height 1-3 only</span><br/>+1 Att, +2 AP. Maniacal Enthusiasm (To-wound roll),Multiple Wounds (D3). <br>Rolls this model makes on the <span class=\"textbf\">Maniacal Enthusiasm</span> chart gain a +2 modifier.",
           "refs": ["secretsOfTheDoomBlade", "doom blade_ux76y1nv", "weaponEnchantUni"],
           "hasStat": {
             "global": {
               "Hgt": {
-                "values": ["1", "2", "3", "4"]
+                "values": ["1", "2", "3"]
               }
             }
           },
@@ -262,7 +262,7 @@
           "type": "check",
           "name": "Swarm Master",
           "cost": 25,
-          "description": "While using this weapon, the wielder gains <span class=\"textbf\">Grind Attack (X, Str 3, AP 1,Unmodifiable)</span>, where X is the number of Proper Ranks in the wielder’s unit, up to a maximum of 10.",
+          "description": "<span class='gray'>Height 1 only</span><br/>While using this weapon, the wielder gains <span class=\"textbf\">Grind Attack (X, Str 3, AP 1,Unmodifiable)</span>, where X is the number of Proper Ranks in the wielder’s unit, up to a maximum of 10.",
           "refs": ["swarmMaster", "swarm_master_432y1nv", "weaponEnchantUni"],
           "hasNotOption": [
             {
@@ -303,7 +303,7 @@
         {
           "type": "check",
           "name": "Tome of the Ratking",
-          "cost": 30,
+          "cost": 20,
           "description": "The bearer’s unit gains <span class=\"textbf\">Unstable</span>.",
           "refs": ["tomeOfTheRatking", "tome_of_the_ratking"],
           "hasNotOption": [],
@@ -338,7 +338,7 @@
           "type": "check",
           "name": "Crown of Hubris",
           "cost": 70,
-          "description": "At the start of any friendly Magic Phase, the bearer <span class=\"textbf\">may</span> choose to inflict 3 HP losses on its unit.<br>If so done, the bearer gains <span class=\"textbf\">Channel (2)</span> Duration: One Phase.",
+          "description": "At the start of any friendly Magic Phase, the bearer <span class=\"textbf\">may</span> choose to inflict 3 HP losses on its unit.<br> If so, the bearer gains <span class=\"textbf\">Channel (2)</span> Duration: One Phase.",
           "refs": ["crownOfHubris", "soulstone_z9gynq02"],
           "hasNotOption": [],
           "categories": [],
@@ -359,7 +359,7 @@
         {
           "type": "check",
           "name": "Darkstone Detonator",
-          "cost": 30,
+          "cost": 20,
           "description": "At the end of any friendly Movement Phase after the first, the bearer may remove all friendly Tunnel Markers placed on a single Terrain Feature within 24\" of the bearer. If so, one Unengaged unit in contact with that Terrain Feature suffers 2D6 hits with Str 4, AP 1, and <span class=\"textbf\">Unmodifiable</span>.",
           "refs": ["darkstoneDetonator", "staff of tectonic shift_tbl6tdo5e"],
           "hasNotOption": [],
@@ -397,7 +397,7 @@
           "cost": 0,
           "option_id": "mnfpytwe8xaxub3f",
           "refs": ["girdedByAcratos", "girdedbyacratos"],
-          "description": "The model's Armour is <span class=\"textbf\">set</span> to 4, it gains <span class=\"textbf\">Magic Resistance(2)</span> and Metal Armour.",
+          "description": "The model's Armour is <span class=\"textbf\">set</span> to 4, it gains <span class=\"textbf\">Magic Resistance (2)</span> and Metal Armour.",
           "rarity": "Legendary"
         },
         {
@@ -406,7 +406,7 @@
           "cost": 40,
           "option_id": "xj9675h6vxjzdqss",
           "refs": ["enlightenedByFavana", "enlightenedbyfavana"],
-          "description": "The model replaces <span class=\"textbf\">Wizard Apprentice</span> with <span class=\"textbf\">Wizard Adept</span>, and can choose Witchcraft,Thaumaturgy instead of <i>Occultism</i>.<br>The model cannot take Paired Weapons, Halberd, Great Weapon.",
+          "description": "The model replaces <span class=\"textbf\">Wizard Apprentice</span> with <span class=\"textbf\">Wizard Adept</span>, and can choose Witchcraft,Thaumaturgy instead of <i>Occultism</i>. <br>The model cannot take Paired Weapons, Halberd, Great Weapon.",
           "rarity": "Legendary"
         },
         {
@@ -415,7 +415,7 @@
           "cost": 10,
           "option_id": "f2e8ndvu37sefbt5",
           "refs": ["fortifiedByUdius", "fortifiedbyudius"],
-          "description": "The model gains Regeneration(4+), Hard Target(1).",
+          "description": "The model gains Regeneration (4+), Hard Target (1).",
           "rarity": "Legendary"
         }
       ]
@@ -444,10 +444,10 @@
         {
           "type": "check",
           "name": "Lord of the Legions",
-          "cost": 90,
+          "cost": 80,
           "option_id": "5zrdtjt834zac7rl",
           "refs": ["lordOfTheLegions", "lordofthelegions"],
-          "description": "The model’s Standard Melee Attacks gains <span class=\"textbf\">Multiple Wounds(D3)</span>.",
+          "description": "The Ruinous Dictator’s model part’s Standard Melee Attacks gains <span class=\"textbf\">Multiple Wounds (D3)</span>.",
           "rarity": "Legendary"
         }
       ]
@@ -633,21 +633,21 @@
                       "type": "check",
                       "name": "Great Weapon",
                       "option_id": "yRubxDpHu7t43XkXuW0pQFo6",
-                      "cost": 20,
+                      "cost": 10,
                       "refs": ["greatWeapon", "greatweapon"]
                     },
                     {
                       "type": "check",
                       "name": "Halberd",
                       "option_id": "axDBn6ipONWSy0jM564fKEAA",
-                      "cost": 30,
+                      "cost": 20,
                       "refs": ["halberd"]
                     },
                     {
                       "type": "check",
                       "name": "Paired Weapons",
                       "option_id": "gP6A3LKuMCri8AAa25PMnhT4",
-                      "cost": 30,
+                      "cost": 20,
                       "refs": ["pairedWeapons", "pairedweapons"]
                     }
                   ]
@@ -767,7 +767,7 @@
                     {
                       "type": "check",
                       "name": "Senatorial Litter",
-                      "cost": 30,
+                      "cost": 10,
                       "refs": ["senatorialLitter", "senatoriallitter", "mount"],
                       "refopt": "senatorialLitterMount",
                       "option_id": "vsul1iedhtu7g0aw3cv38"
@@ -785,7 +785,7 @@
             },
             {
               "name": "Bloodfur Legate",
-              "cost": 150,
+              "cost": 140,
               "option_id": "nzqms2my62njfo1qb7c2k",
               "unit_id": "bloodfurLegate",
               "refs": ["bloodfurLegate", "tag_Vermin", "tag_Metal Armour", "bloodfurlegate", "bloodfurCommander", "non_core_unit"],
@@ -977,7 +977,7 @@
                     {
                       "type": "check",
                       "name": "Triumphal Platform",
-                      "cost": 260,
+                      "cost": 240,
                       "refs": ["triumphalPlatform", "triumphalplatform", "mount"],
                       "refopt": "triumphalPlatformMount",
                       "option_id": "ych3phgcc1ev8ul9oy84f"
@@ -1203,7 +1203,7 @@
                     {
                       "type": "check",
                       "name": "Rakachit Technocrat",
-                      "cost": 30,
+                      "cost": 20,
                       "refs": ["rakachitTechnocrat", "rakachittechnocrat"],
                       "option_id": "c070avh2c4a8dc5soa9zbs",
                       "armyHasNotOption": [
@@ -1217,7 +1217,7 @@
                     {
                       "type": "check",
                       "name": "Skorchit Alchemist",
-                      "cost": 60,
+                      "cost": 50,
                       "refs": ["skorchitAlchemist", "skorchitalchemist"],
                       "option_id": "v3n1jt60f80cn0ur8g6i9a",
                       "armyHasNotOption": [
@@ -1515,14 +1515,7 @@
                       "type": "numeric",
                       "cost": 10,
                       "hide": true,
-                      "option_id": "vm28q00c8jqxxune3wuh68",
-                      "refs": ["blackfur_veterans_amount"],
-                      "armyHasNotOption": [
-                        {
-                          "refs": ["blackfur_veterans_amount"],
-                          "amount": 120
-                        }
-                      ]
+                      "option_id": "vm28q00c8jqxxune3wuh68"
                     }
                   ],
                   "option_id": "yw01bw65w0qy6dpnleltc"
@@ -1560,10 +1553,10 @@
                     {
                       "option_id": "fn23u9fn329fn329nfodsf239f32",
                       "type": "check",
-                      "cost": 40,
+                      "cost": 20,
                       "name": "Bloodfur Praetorian",
                       "rarity": "Extraordinary",
-                      "refs": ["bloodfur_praetorians"]
+                      "refs": ["bloodfurPraetoriansRule", "bloodfur_praetorians"]
                     }
                   ]
                 }
@@ -1579,6 +1572,17 @@
                   "options": {
                     "replaceCategory": "special"
                   }
+                },
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["bloodfurpraetoriansrule"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "replaceCategory": "special"
+                  }
                 }
               ],
               "category": "base",
@@ -1586,7 +1590,7 @@
             },
             {
               "name": "Plague Cultists",
-              "cost": -25,
+              "cost": 0,
               "option_id": "567gcjgwdsur6nfsg97kix89",
               "unit_id": "plagueCultists",
               "refs": [
@@ -1611,7 +1615,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 12,
+                      "cost": 10,
                       "hide": true,
                       "option_id": "3cisugy7dsxeq048vds5owprm",
                       "refs": ["plague_disciples_amount"],
@@ -1631,7 +1635,7 @@
                             {
                               "type": "check",
                               "name": "Plague Flail",
-                              "cost": 4,
+                              "cost": 3,
                               "option_id": "8hpiyy0beoh981l1",
                               "refs": ["plagueFlail", "plagueflail"]
                             }
@@ -1761,7 +1765,7 @@
             },
             {
               "name": "Vermin Slaves",
-              "cost": 70,
+              "cost": 50,
               "option_id": "99s0ibs9n7b8bbflqhm6p9",
               "unit_id": "verminSlaves",
               "refs": ["verminSlaves", "tag_Vermin", "verminslaves", "core_unit"],
@@ -1817,7 +1821,7 @@
             },
             {
               "name": "Vermin Slingers",
-              "cost": 50,
+              "cost": 60,
               "option_id": "wbmyfsqzval0ccxw8yflwz9",
               "unit_id": "verminSlingers",
               "refs": ["verminSlingers", "tag_Vermin", "tag_Light Armour", "tag_Legionary", "verminslingers", "core_unit", "verminVelites"],
@@ -1833,7 +1837,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 5,
+                      "cost": 4,
                       "hide": true,
                       "options": [],
                       "option_id": "ue934hnxdtiirc0poakvqa",
@@ -1929,7 +1933,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 4,
+                      "cost": 3,
                       "hide": true,
                       "option_id": "xygbczmqzyjsjbj55qmrt",
                       "refs": ["giant_rats_amount"]
@@ -1972,7 +1976,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 5,
+                      "cost": 4,
                       "hide": true,
                       "option_id": "xygbczmqzysdjsjbj55qmrt"
                     }
@@ -1991,11 +1995,12 @@
             },
             {
               "name": "Rat Swarm",
-              "cost": 90,
+              "cost": 85,
               "option_id": "qwiqruhz2xypp96dt0pgl",
               "unit_id": "ratSwarm",
               "refs": ["ratSwarm", "tag_Beast", "ratswarm"],
               "rarity": "Uncommon",
+              "height": "0",
               "basesize": "40×40",
               "options": [
                 {
@@ -2006,7 +2011,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 20,
+                      "cost": 15,
                       "hide": true,
                       "option_id": "xygbcdsdszmqzyjsjbj55qmrt",
                       "refs": ["rat_swarm_amount"]
@@ -2020,7 +2025,7 @@
             },
             {
               "name": "Legionary Drill Team",
-              "cost": 80,
+              "cost": 70,
               "option_id": "destt9c7l1pnr0m4dohq8h",
               "unit_id": "legionaryDrillTeam",
               "refs": ["legionaryDrillTeam", "tag_Construct", "tag_Metal Armour", "legionarydrillteam", "non_core_unit"],
@@ -2114,7 +2119,7 @@
             },
             {
               "name": "Doomspark Device",
-              "cost": 230,
+              "cost": 220,
               "option_id": "gf19l3tdamll84augmbpu",
               "unit_id": "doomsparkDevice",
               "refs": [
@@ -2217,7 +2222,7 @@
             },
             {
               "name": "Thunder Brutes",
-              "cost": 65,
+              "cost": 55,
               "option_id": "26486idw2dsdsjrpdcavfhy1jf",
               "unit_id": "thunderBrutes",
               "refs": ["thunderBrutes", "tag_Vermin", "tag_Mutant", "tag_Metal Armour", "thunderbrutes", "non_core_unit"],
@@ -2242,7 +2247,7 @@
                             {
                               "type": "check",
                               "name": "Deepfire Thrower (6+)",
-                              "cost": 10,
+                              "cost": 15,
                               "refs": ["deepfireThrower", "deepfirethrower", "deepfire_thrower", "tunnel_gunners"],
                               "option_id": "fw1ewuzr9lp59ygplkg7cc",
                               "rarity": "Rare",
@@ -2316,7 +2321,7 @@
             },
             {
               "name": "Experimental Weapon Teams",
-              "cost": 18,
+              "cost": 20,
               "option_id": "blwo5tptes7e4lij7ekgw",
               "unit_id": "experimentalWeaponTeams",
               "refs": [
@@ -2339,7 +2344,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 34,
+                      "cost": 30,
                       "hide": true,
                       "options": [
                         {
@@ -2366,7 +2371,7 @@
                             {
                               "type": "check",
                               "name": "Deepfire Thrower (6+)",
-                              "cost": 20,
+                              "cost": 25,
                               "refs": ["deepfireThrower", "deepfirethrower", "deepfire_thrower", "tunnel_gunners"],
                               "option_id": "rqk2nrs0roj6p1f3ekz9ir",
                               "rarity": "Rare",
@@ -2397,7 +2402,7 @@
             },
             {
               "name": "Ignifier Grenadiers",
-              "cost": 80,
+              "cost": 75,
               "option_id": "sosrd2vy7kbc580xt7fhcc",
               "unit_id": "ignifierGrenadiers",
               "refs": ["ignifierGrenadiers", "tag_Vermin", "tag_Metal Armour", "ignifiergrenadiers", "non_core_unit"],
@@ -2413,7 +2418,7 @@
                     {
                       "name": "Number",
                       "type": "numeric",
-                      "cost": 10,
+                      "cost": 9,
                       "hide": true,
                       "options": [],
                       "option_id": "eo483h89triqvz9lpmu8bd",
@@ -2429,7 +2434,7 @@
             },
             {
               "name": "Vermin Artillery",
-              "cost": 180,
+              "cost": 170,
               "option_id": "rdmgw1suo40oa0iaj4tv6",
               "unit_id": "verminArtillery",
               "refs": [
@@ -2456,7 +2461,7 @@
                     {
                       "type": "check",
                       "name": "Rakachit Mauss Rifle (5+)",
-                      "cost": 35,
+                      "cost": 45,
                       "refs": ["rakachitMaussRifle", "rakachitmaussrifle", "mauss_cannon"],
                       "option_id": "vttekpg9enrgavwa1skc0j",
                       "armyHasNotOption": [
@@ -2488,6 +2493,77 @@
               "category": "special",
               "armyHasNotOption": [],
               "logo": "pistols"
+            },
+            {
+              "name": "Bloodfur Praetorians",
+              "cost": 40,
+              "option_id": "7yewpvk51qjvv3k7",
+              "unit_id": "bloodfurPraetorians",
+              "refs": ["bloodfurPraetorians"],
+              "rarity": "Extraordinary",
+              "height": "1",
+              "basesize": "20×20",
+              "options": [
+                {
+                  "addToUnitSize": true,
+                  "minSize": 20,
+                  "maxSize": 40,
+                  "option_id": "6y7n71tdr379w6rk",
+                  "options": [
+                    {
+                      "hide": true,
+                      "name": "Number",
+                      "type": "numeric",
+                      "cost": 10,
+                      "option_id": "74znipqsxlfjuuu2",
+                      "refs": ["bloodfurpraetorians_numbers"],
+                      "options": []
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "optionsLabel": "Command Group",
+                  "option_id": "5gkexhcsv5lrq87b",
+                  "options": [
+                    {
+                      "type": "check",
+                      "name": "Musician",
+                      "cost": 10,
+                      "option_id": "2196exjf0h6exbb9",
+                      "refs": ["musician"]
+                    },
+                    {
+                      "type": "check",
+                      "name": "Standard Bearer",
+                      "cost": 10,
+                      "option_id": "bsfe3zpqh1gxozuk",
+                      "refs": ["standardBearer"]
+                    }
+                  ]
+                },
+                {
+                  "type": "check",
+                  "name": "Bloodfur Praetorian",
+                  "cost": 20,
+                  "option_id": "hnf58w967gigpcuc",
+                  "refs": ["bloodfurPraetoriansRule"],
+                  "rarity": "Extraordinary"
+                }
+              ],
+              "override": [
+                {
+                  "hasOption": [
+                    {
+                      "refs": ["bloodfurpraetoriansrule"],
+                      "amount": 1
+                    }
+                  ],
+                  "options": {
+                    "replaceCategory": "special"
+                  }
+                }
+              ]
             }
           ],
           "option_id": "v33kd5j1ta88isnha69na"
@@ -2547,7 +2623,7 @@
             },
             {
               "name": "Dreadmill Chariots",
-              "cost": 20,
+              "cost": 0,
               "option_id": "12vbs5prfix308n7fvhnbh",
               "unit_id": "dreadmillChariots",
               "refs": ["dreadmillChariots", "tag_Vermin", "tag_Construct", "tag_Light Armour", "dreadmillchariots", "non_core_unit"],
@@ -2671,7 +2747,7 @@
                     {
                       "type": "check",
                       "name": "Pestilent Pulpit",
-                      "cost": 35,
+                      "cost": 15,
                       "refs": ["pestilentPulpit", "pestilentpulpit", "pestilent pulpit_a77ce1gi"],
                       "hasOption": ["cult_of_errahman"],
                       "option_id": "yh64zfb6g1pe7n2t5kgpd"
