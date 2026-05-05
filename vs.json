@@ -1468,7 +1468,17 @@
               "cost": 540,
               "option_id": "5lgyl0rnq7mg8p4o",
               "unit_id": "professorMauss",
-              "refs": ["professorMauss", "tag_Vermin", "tag_Construct", "tag_Metal Armour", "professormauss"],
+              "refs": [
+                "professorMauss",
+                "tag_Vermin",
+                "tag_Construct",
+                "tag_Metal Armour",
+                "professormauss",
+                {
+                  "ref": "tunnel_gunners",
+                  "amount": 8
+                }
+              ],
               "size": "1",
               "rarity": "Legendary",
               "height": "5",
@@ -1554,9 +1564,9 @@
                       "option_id": "fn23u9fn329fn329nfodsf239f32",
                       "type": "check",
                       "cost": 20,
-                      "name": "Bloodfur Praetorian",
+                      "name": "Bloodfur Praetorians",
                       "rarity": "Extraordinary",
-                      "refs": ["bloodfurPraetoriansRule", "bloodfur_praetorians"]
+                      "refs": ["bloodfur_praetorians"]
                     }
                   ]
                 }
@@ -1566,17 +1576,6 @@
                   "hasOption": [
                     {
                       "refs": ["bloodfur_praetorians"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "replaceCategory": "special"
-                  }
-                },
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["bloodfurpraetoriansrule"],
                       "amount": 1
                     }
                   ],
@@ -2493,77 +2492,6 @@
               "category": "special",
               "armyHasNotOption": [],
               "logo": "pistols"
-            },
-            {
-              "name": "Bloodfur Praetorians",
-              "cost": 40,
-              "option_id": "7yewpvk51qjvv3k7",
-              "unit_id": "bloodfurPraetorians",
-              "refs": ["bloodfurPraetorians"],
-              "rarity": "Extraordinary",
-              "height": "1",
-              "basesize": "20×20",
-              "options": [
-                {
-                  "addToUnitSize": true,
-                  "minSize": 20,
-                  "maxSize": 40,
-                  "option_id": "6y7n71tdr379w6rk",
-                  "options": [
-                    {
-                      "hide": true,
-                      "name": "Number",
-                      "type": "numeric",
-                      "cost": 10,
-                      "option_id": "74znipqsxlfjuuu2",
-                      "refs": ["bloodfurpraetorians_numbers"],
-                      "options": []
-                    }
-                  ]
-                },
-                {
-                  "type": "group",
-                  "optionsLabel": "Command Group",
-                  "option_id": "5gkexhcsv5lrq87b",
-                  "options": [
-                    {
-                      "type": "check",
-                      "name": "Musician",
-                      "cost": 10,
-                      "option_id": "2196exjf0h6exbb9",
-                      "refs": ["musician"]
-                    },
-                    {
-                      "type": "check",
-                      "name": "Standard Bearer",
-                      "cost": 10,
-                      "option_id": "bsfe3zpqh1gxozuk",
-                      "refs": ["standardBearer"]
-                    }
-                  ]
-                },
-                {
-                  "type": "check",
-                  "name": "Bloodfur Praetorian",
-                  "cost": 20,
-                  "option_id": "hnf58w967gigpcuc",
-                  "refs": ["bloodfurPraetoriansRule"],
-                  "rarity": "Extraordinary"
-                }
-              ],
-              "override": [
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["bloodfurpraetoriansrule"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "replaceCategory": "special"
-                  }
-                }
-              ]
             }
           ],
           "option_id": "v33kd5j1ta88isnha69na"

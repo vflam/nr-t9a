@@ -666,7 +666,41 @@
                       "type": "check",
                       "name": "General, Disciplined, and The Dead Arise",
                       "cost": 20,
-                      "option_id": "0lwh9quaq64r6l6oc31iv"
+                      "option_id": "0lwh9quaq64r6l6oc31iv",
+                      "options": [
+                        {
+                          "type": "group",
+                          "hide": true,
+                          "minSize": 0,
+                          "maxSize": 1,
+                          "option_id": "strigoigenmrkrvc01grp",
+                          "override": [
+                            {
+                              "hasOption": [
+                                {
+                                  "refs": ["strigoi"],
+                                  "amount": 1
+                                }
+                              ],
+                              "options": {
+                                "minSize": 1
+                              }
+                            }
+                          ],
+                          "options": [
+                            {
+                              "type": "check",
+                              "hide": true,
+                              "invisible": true,
+                              "name": "Strigoi General",
+                              "cost": 0,
+                              "refs": ["strigoi_general"],
+                              "option_id": "strigoigenmrkrvc01opt",
+                              "hasOption": ["strigoi"]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1057,7 +1091,41 @@
                           "armyHasNotOption": ["army_general"],
                           "name": "General and The Dead Arise",
                           "cost": 30,
-                          "option_id": "gqh0c8yuv44rkwekfnipb"
+                          "option_id": "gqh0c8yuv44rkwekfnipb",
+                          "options": [
+                            {
+                              "type": "group",
+                              "hide": true,
+                              "minSize": 0,
+                              "maxSize": 1,
+                              "option_id": "strigoigenmrkrvco01gr",
+                              "override": [
+                                {
+                                  "hasOption": [
+                                    {
+                                      "refs": ["strigoi"],
+                                      "amount": 1
+                                    }
+                                  ],
+                                  "options": {
+                                    "minSize": 1
+                                  }
+                                }
+                              ],
+                              "options": [
+                                {
+                                  "type": "check",
+                                  "hide": true,
+                                  "invisible": true,
+                                  "name": "Strigoi General",
+                                  "cost": 0,
+                                  "refs": ["strigoi_general"],
+                                  "hasOption": ["strigoi"],
+                                  "option_id": "strigoigenmrkrvco01op"
+                                }
+                              ]
+                            }
+                          ]
                         },
                         {
                           "type": "check",
@@ -2124,7 +2192,13 @@
                           "type": "check",
                           "name": "Vanguard",
                           "cost": 1,
-                          "armyHasOption": ["strigoi_general"],
+                          "armyHasOption": [
+                            {
+                              "refs": ["strigoi_general"],
+                              "amount": 1,
+                              "lenient": true
+                            }
+                          ],
                           "refs": ["vanguard", "stryg_bloodlink"],
                           "hasNotOption": [
                             {
