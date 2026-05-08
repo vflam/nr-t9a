@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 436,
+  "nrversion": 439,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -3092,7 +3092,7 @@
     },
     "he-meetingofminds": {
       "title": "Meetingofminds",
-      "def": "The model gains <span class=\"textbf\">Resistance</span>.",
+      "def": "The model gains <span class=\"textbf\">Resistance (Flaming Attacks)</span>.",
       "source": ["translations", "modifiers"],
       "mod": [
         {
@@ -3134,7 +3134,7 @@
     },
     "he-dragonforged_armour": {
       "title": "Dragonforged Armour",
-      "def": "The wearer gains Resistance,Aegis (6+).",
+      "def": "The wearer gains Resistance (Flaming Attacks),Aegis (6+).",
       "type": "armour",
       "source": ["translations", "gdt-armybase", "modifiers"],
       "mod": [
@@ -3671,7 +3671,7 @@
     },
     "id-infernal_armour": {
       "title": "Infernal Armour",
-      "def": "The model gains <span class=\"textbf\">Resistance</span>.",
+      "def": "The model gains <span class=\"textbf\">Resistance (Flaming Attacks)</span>.",
       "type": "armour",
       "source": ["translations", "gdt-armybase", "modifiers"],
       "mod": [
@@ -4699,7 +4699,7 @@
     },
     "ok-firebrand": {
       "title": "Firebrand",
-      "def": "<span class='gray'>Shamans with one or more spells from Pyromancy only</span><br/>Breath Attack (Str 4, AP 0, Flaming Attacks), Flaming Attacks, Resistance, and automatically fails all Regeneration Saves. <br>The model can cast <i>Dragon’s Roar</i> (Pyromancy) as a Bound Spell (5+).",
+      "def": "<span class='gray'>Shamans with one or more spells from Pyromancy only</span><br/>Breath Attack (Str 4, AP 0, Flaming Attacks), Flaming Attacks, Resistance (Flaming Attacks), and automatically fails all Regeneration Saves. <br>The model can cast <i>Dragon’s Roar</i> (Pyromancy) as a Bound Spell (5+).",
       "type": "Big Name",
       "source": ["translations", "gdt-armybase", "modifiers"],
       "mod": [
@@ -5732,7 +5732,7 @@
     },
     "sa-salamander": {
       "title": "Salamander",
-      "def": "The model gains <span class=\"textbf\">Resistance</span>, and the Weapon Beast model part gains <span class=\"textbf\">Breath Attack (Str 4, AP 0, Flaming Attacks)</span>. This Breath Attack does <span class=\"textbf\">not</span> have: One use only.",
+      "def": "The model gains <span class=\"textbf\">Resistance (Flaming Attacks)</span>, and the Weapon Beast model part gains <span class=\"textbf\">Breath Attack (Str 4, AP 0, Flaming Attacks)</span>. This Breath Attack does <span class=\"textbf\">not</span> have: One use only.",
       "source": ["translations", "gdt-armybase"]
     },
     "sa-shoot_spikes": {
@@ -8303,7 +8303,8 @@
         {
           "rules": [
             {
-              "id": "strider"
+              "id": "devastating_charge",
+              "params": ["strider"]
             },
             {
               "id": "feigned_flight"
@@ -8824,7 +8825,7 @@
     },
     "season-blessed_by_harag": {
       "title": "Blessed by Harag",
-      "def": "<i>Tethaen’s rags and strange hat never stop dripping, even when out of the water.</i><br>Aegis (5+),Resistance.",
+      "def": "<i>Tethaen’s rags and strange hat never stop dripping, even when out of the water.</i><br>Aegis (5+),Resistance (against Flaming Attacks).",
       "source": ["translations", "gdt-units"]
     },
     "season-grim_harpoon": {
@@ -8967,7 +8968,7 @@
     },
     "season-meetingofminds": {
       "title": "Meetingofminds",
-      "def": "The model gains <span class=\"textbf\">Resistance</span>.",
+      "def": "The model gains <span class=\"textbf\">Resistance (Flaming Attacks)</span>.",
       "source": ["translations", "modifiers"],
       "mod": [
         {
@@ -9610,7 +9611,7 @@
     },
     "rulebook-predators_instinct": {
       "title": "Predator’s Instinct",
-      "def": "The target gains +3\" Cha and <br> <span class=\"textbf\">Resistance</span>.",
+      "def": "The target gains +3\" Cha and <br> <span class=\"textbf\">Resistance (Ranged Attacks)</span>.",
       "source": ["translations"]
     },
     "rulebook-wild_guardian": {
@@ -10640,7 +10641,7 @@
     },
     "rulebook-warding_of_unity": {
       "title": "Warding of Unity",
-      "def": "<span class=\"textbf\">Attached</span>, which cannot be lost, and <br> <span class=\"textbf\">Resistance</span>.",
+      "def": "<span class=\"textbf\">Attached</span>, which cannot be lost, and <br> <span class=\"textbf\">Resistance (Melee Attacks)</span>.",
       "type": "Armour",
       "source": ["translations", "gdt-arcane"]
     },
@@ -12192,6 +12193,10 @@
       "title": "Summoned Units",
       "def": "Summoned units are units that are created during the game.<br><br>\tWhen  <span class=\"textbf\">Summoning</span> a unit, all its models must be Deployed within the specified Range of the ability.<br><br>If the unit is summoned as a result of a spell with Type: Ground, at least one model must be placed on the targeted point, and all models must be within the spell’s Range.<br><br>Summoned models must be placed following the Unit Spacing rule. If the whole unit cannot be Deployed, then no model can be Deployed.<br><br>Once summoned, the newly created unit operates as a normal unit controlled by the side that  <span class=\"textbf\">Summoned</span> it.<br><br>Summoned units do not award Victory Points to the opponent when they are removed as a casualty.",
       "source": ["chapters"]
+    },
+    "rulebook-mount": {
+      "title": "Mount",
+      "def": "Mount"
     }
   }
 }
