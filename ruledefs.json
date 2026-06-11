@@ -1,6 +1,6 @@
 {
   "name": "Rule Definitions",
-  "nrversion": 446,
+  "nrversion": 449,
   "version": "3",
   "playable": 0,
   "permission": 10,
@@ -1273,7 +1273,7 @@
     },
     "dh-rune_of_returning": {
       "title": "Rune of Returning",
-      "def": "Can be used as a Shooting Weapon with the following profile: Range 8\", Shots 1, Str , AP , Quick to Fire,Accurate, The effects of other Runic Weapon Enchantments apply to Shooting Attacks made with this weapon <i>(even if their effects were normally restricted to Melee Attacks, including Special Attacks)</i>.",
+      "def": "Can be used as a Shooting Weapon with the following profile: <table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Attack Attributes</th></tr><tr><td>2</td><td>8\"</td><td>1</td><td>User</td><td>User</td><td>Accurate, Quick to Fire</td></tr></table><br> <br> The effects of other Runic Weapon Enchantments apply to Shooting Attacks made with this weapon <i>(even if their effects were normally restricted to Melee Attacks, including Special Attacks)</i>.",
       "type": "Weapon",
       "source": ["translations", "gdt-armybase"]
     },
@@ -1565,23 +1565,7 @@
     "dl-wings": {
       "title": "Wings",
       "def": "The model’s Charge Speed and Mobility are both <span class=\"textbf\">set</span> to 7\", and it gains <span class=\"textbf\">Fly</span>.",
-      "source": ["translations", "gdt-armybase", "modifiers"],
-      "mod": [
-        {
-          "stats": {
-            "Ma": "=16"
-          },
-          "rules": [
-            {
-              "id": "fly",
-              "params": ["8\"", "16\""]
-            },
-            {
-              "id": "light_troops"
-            }
-          ]
-        }
-      ]
+      "source": ["translations", "gdt-armybase"]
     },
     "dl-know_thyself": {
       "title": "Know Thyself",
@@ -2134,20 +2118,8 @@
     "dl-unholy_appetite": {
       "title": "Unholy Appetite",
       "def": "After a Round of Combat in which at least one attack with <span class=\"textbf\">Unholy Appetite</span> has caused a HP loss, all attacks with <span class=\"textbf\">Unholy Appetite</span> gain <span class=\"textbf\">Hatred</span> until the end of the next Player Turn.",
-      "type": "attack_attribute",
-      "source": ["translations", "gdt-armybase", "modifiers"],
-      "mod": [
-        {
-          "rollmodifiers": {
-            "to_hit": "reroll_failed"
-          },
-          "conditions": [
-            {
-              "firstround": false
-            }
-          ]
-        }
-      ]
+      "type": "Manifestation Of Gluttony",
+      "source": ["translations", "gdt-armybase"]
     },
     "dl-smothering_coils": {
       "title": "Smothering Coils",
@@ -3475,20 +3447,7 @@
     "id-giant_see_giant_do": {
       "title": "Giant See, Giant Do",
       "def": "The model gains Infernal Armour, Commanding Presence (12, Insignificant), First Strike (Stubborn).",
-      "source": ["translations", "gdt-armybase", "modifiers"],
-      "mod": [
-        {
-          "rules": {
-            "id": "drunkard"
-          }
-        },
-        {
-          "rules": {
-            "id": "strider",
-            "params": ["Forest"]
-          }
-        }
-      ]
+      "source": ["translations", "gdt-armybase"]
     },
     "id-big_brother": {
       "title": "Big Brother",
@@ -4538,20 +4497,7 @@
     "ok-giant_see_giant_do": {
       "title": "Giant See, Giant Do",
       "def": "During step 1.2 of Pregame Planning (Build an Army), choose one of the following Model Rules, and write your choice on the Army List: <br>&nbsp;&nbsp;&bull; First Strike (Fury) <br>&nbsp;&nbsp;&bull; Lethal Strike <br>&nbsp;&nbsp;&bull; Devastating Charge (+1 Str, +1 AP) <br>",
-      "source": ["translations", "gdt-armybase", "modifiers"],
-      "mod": [
-        {
-          "rules": {
-            "id": "drunkard"
-          }
-        },
-        {
-          "rules": {
-            "id": "strider",
-            "params": ["Forest"]
-          }
-        }
-      ]
+      "source": ["translations", "gdt-armybase"]
     },
     "ok-big_brother": {
       "title": "Big Brother",
@@ -4650,7 +4596,7 @@
     },
     "ok-firebrand": {
       "title": "Firebrand",
-      "def": "<span class='gray'>Shamans with one or more spells from Pyromancy only</span><br/>Breath Attack (Str 4, AP 0, Flaming Attacks), Flaming Attacks, Resistance (Flaming Attacks), and automatically fails all Regeneration Saves. <br>The model can cast <i>Dragon’s Roar</i> (Pyromancy) as a Bound Spell (5+).",
+      "def": "Breath Attack (Str 4, AP 0, Flaming Attacks), Flaming Attacks, Resistance (Flaming Attacks), and automatically fails all Regeneration Saves. <br>The model can cast <i>Dragon’s Roar</i> (Pyromancy) as a Bound Spell (5+).",
       "type": "Big Name",
       "source": ["translations", "gdt-armybase", "modifiers"],
       "mod": [
@@ -6889,7 +6835,7 @@
     },
     "vc-lahmia": {
       "title": "Lahmia",
-      "def": "<span class='gray'>Models without Shield only</span><br/>The bearer’s Armour is <span class=\"textbf\">set</span> to 1, it gains <span class=\"textbf\">Elven Finesse</span> and loses Metal Armour. Additionally, if the model is of Height 1--2, it gains <span class=\"textbf\">Distracting (1)</span>.",
+      "def": "The bearer’s Armour is <span class=\"textbf\">set</span> to 1, it gains <span class=\"textbf\">Elven Finesse</span> and loses Metal Armour. Additionally, if the model is of Height 1--2, it gains <span class=\"textbf\">Distracting (1)</span>.",
       "type": "Ancestral Blood Power",
       "source": ["translations", "gdt-armybase", "modifiers"],
       "mod": [
@@ -6955,7 +6901,7 @@
     },
     "vc-commandment": {
       "title": "Commandment",
-      "def": "<span class='gray'>Vampire Counts with Lahmia only</span><br/>The Defensive Skill and Offensive Skill of Rank-and-File models in the bearer’s unit are <span class=\"textbf\">set</span> to 6.",
+      "def": "<span class='gray'>Vampire Counts only with Lamia only</span><br/>The Defensive Skill and Offensive Skill of Rank-and-File models in the bearer’s unit are <span class=\"textbf\">set</span> to 6.",
       "type": "Blood Power",
       "source": ["translations", "gdt-armybase"]
     },
@@ -7572,7 +7518,6 @@
     "vs-diseased": {
       "title": "Diseased",
       "def": "For each Standard Melee Attack allocated against a model with Diseased that rolls a to-hit roll of ‘1’, the attacking model's Health Pool suffers 1 hit with <span class=\"textbf\">Toxic Attacks</span> at the end of the same Agility Step.",
-      "type": "Melee",
       "source": ["translations", "gdt-armybase"]
     },
     "vs-deepfire_thrower": {
@@ -8705,7 +8650,7 @@
     "season-growing_despair": {
       "title": "Growing Despair",
       "def": "<span class=\"textbf\">Afflict (-1 Dis, -X Def, and -X Off)</span>, where 'X' is equal to the number of the current Game Turn.",
-      "source": ["translations", "gdt-units", "modifiers"]
+      "source": ["translations", "gdt-units"]
     },
     "season-commander_of_the_steppes": {
       "title": "Commander of the Steppes",
@@ -8740,24 +8685,7 @@
     "season-aembeghens_blades": {
       "title": "Aembeghen’s Blades",
       "def": "Paired Weapons. If there are any enemy Characters in contact with the wielder’s unit, the Black Rose gains +2 Att.<br> In addition, any Melee Attacks the Black Rose allocates against a Character gain +2 Str, +4 AP.",
-      "source": ["translations", "gdt-units", "modifiers"],
-      "mod": [
-        {
-          "affects": [0],
-          "optional": true,
-          "stats": {
-            "At": "+2"
-          }
-        },
-        {
-          "affects": [0],
-          "optional": true,
-          "stats": {
-            "St": "+2",
-            "AP": "+4"
-          }
-        }
-      ]
+      "source": ["translations", "gdt-units"]
     },
     "season-dance_of_the_rose": {
       "title": "Dance of the Rose",
@@ -8767,15 +8695,7 @@
     "season-the_obsidian_thorns": {
       "title": "The Obsidian Thorns",
       "def": "The Black Rose gains Exclusive (Obsidian Guard), Magic Resistance (1), and all models in her unit gain +1 Charge Speed. <br> In addition, enemy units are not allowed to choose the Flee! Charge Reaction to Charges declared on them by the Black Rose’s unit, unless they are <span class=\"textbf\">Shaken</span>. <br> <i>Note: this has no influence on Charge Reactions from other units.</i>",
-      "source": ["translations", "gdt-units", "modifiers"],
-      "mod": [
-        {
-          "affects": ["global"],
-          "stats": {
-            "Ma": "+1"
-          }
-        }
-      ]
+      "source": ["translations", "gdt-units"]
     },
     "season-the_living_law": {
       "title": "The Living Law",
@@ -8795,15 +8715,7 @@
     "season-the_aleward_crew": {
       "title": "The Aleward Crew",
       "def": "When Tador Berafrig is Deployed, all Rank-and-File models in that unit gains +1 Armour and <span class=\"textbf\">Aegis (3+, against Flaming Attacks)</span>. Duration: Permanent.",
-      "source": ["translations", "gdt-units", "modifiers"],
-      "mod": [
-        {
-          "affects": ["defense"],
-          "stats": {
-            "Arm": "+1"
-          }
-        }
-      ]
+      "source": ["translations", "gdt-units"]
     },
     "season-master_brewer": {
       "title": "Master Brewer",
@@ -8873,15 +8785,7 @@
     "season-the_lance_of_tears": {
       "title": "The Lance of Tears",
       "def": "Lance. The model gains <span class=\"textbf\">Afflict (-1 Dis)</span>, Dhaenala gains +1 Att and Fury, Hatred. <br> In addition, she loses 1 Attack at the end of every Game Turn in which she was NOT Engaged in Combat. Duration: Permanent.",
-      "source": ["translations", "gdt-units", "modifiers"],
-      "mod": [
-        {
-          "affects": [0],
-          "stats": {
-            "At": "+1"
-          }
-        }
-      ]
+      "source": ["translations", "gdt-units"]
     },
     "season-the_riddle_of_peace": {
       "title": "The Riddle of Peace",
@@ -9191,30 +9095,7 @@
     "season-shadowslices_panoply": {
       "title": "Shadowslice’s Panoply",
       "def": "The Shadowslice Stalker is equipped with the most advanced selection of murderous weaponry known to any species. Each time the Stalker is Deployed using <span class=\"textbf\">Hidden</span>, she gains one of the following Magic Items. Duration: Permanent. <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Countless Daggers:</span> <span class=\"textbf\">First Strike (+2 Att)</span>, Paired Weapons and Throwing Weapons (2+). <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Darkstone Rod</span>: +2 Str, Lightning Attacks, Multiple Wounds (2) <br>&nbsp;&nbsp;&bull; <span class=\"textbf\">Senator’s Toga</span>: +2 Dis, <span class=\"textbf\">Commanding Presence (6)</span> <br>",
-      "source": ["translations", "gdt-units", "modifiers"],
-      "mod": [
-        {
-          "affects": [0],
-          "optional": true,
-          "stats": {
-            "At": "+2"
-          }
-        },
-        {
-          "affects": [0],
-          "optional": true,
-          "stats": {
-            "St": "+2"
-          }
-        },
-        {
-          "affects": ["global"],
-          "optional": true,
-          "stats": {
-            "Di": "+2"
-          }
-        }
-      ]
+      "source": ["translations", "gdt-units"]
     },
     "season-escape_routes": {
       "title": "Escape Routes",
@@ -9224,17 +9105,7 @@
     "season-memory_of_a_hoarded_blade": {
       "title": "Memory of a Hoarded Blade",
       "def": "If included in an Army List not containing <span class=\"textbf\">Favour of Greed</span>, Joulgrim gains +2 Str, +2 AP and <span class=\"textbf\">always</span> strikes at Agility Step 0.",
-      "source": ["translations", "gdt-units", "modifiers"],
-      "mod": [
-        {
-          "affects": [0],
-          "optional": true,
-          "stats": {
-            "St": "+2",
-            "AP": "+2"
-          }
-        }
-      ]
+      "source": ["translations", "gdt-units"]
     },
     "season-the_fathers_gifts": {
       "title": "The Father’s Gifts",
@@ -9433,7 +9304,7 @@
     },
     "rulebook-umbral_majesty": {
       "title": "Umbral Majesty",
-      "def": "In each Round of Combat, one model in the target unit gains a “Majesty” model part, with Duration: Round of Combat. Select the affected model immediately before the “Majesty” model part allocates its attacks. <br>The “Majesty” model part has the following Offensive Profile: <br><br>Majesty69528.",
+      "def": "In each Round of Combat, one model in the target unit gains a “Majesty” model part, with Duration: Round of Combat. Select the affected model immediately before the “Majesty” model part allocates its attacks. <br>The “Majesty” model part has the following Offensive Profile: <br><br><table><thead><tr><th>Offensive</th><th>Att</th><th>Off</th><th>Str</th><th>AP</th><th>Agi</th></tr></thead><tbody><tr><td>Majesty</td><td>6</td><td>9</td><td>5</td><td>2</td><td>8</td></tr></tbody></table>.",
       "source": ["translations"]
     },
     "rulebook-the_grave_calls": {
@@ -9493,7 +9364,7 @@
     },
     "rulebook-wild_guardian": {
       "title": "Wild Guardian",
-      "def": "Mark a Health Pool in the target. In each Round of Combat one model in the marked Health Pool gains a Guardian model part with Duration: Round of Combat. Select which model immediately before the Wild Guardian allocates its attacks. A unit can never have more than one Guardian model part. <br> The Guardian model part has: <br>Guardian43633.<br/>=4pt<i>*This spell only ever affects the marked Health Pool.</i>",
+      "def": "Mark a Health Pool in the target. In each Round of Combat one model in the marked Health Pool gains a Guardian model part with Duration: Round of Combat. Select which model immediately before the Wild Guardian allocates its attacks. A unit can never have more than one Guardian model part. <br> The Guardian model part has: <br><table><thead><tr><th>Offensive</th><th>Att</th><th>Off</th><th>Str</th><th>AP</th><th>Agi</th></tr></thead><tbody><tr><td>Guardian</td><td>4</td><td>3</td><td>6</td><td>3</td><td>3</td></tr></tbody></table>.<br/>=4pt<i>*This spell only ever affects the marked Health Pool.</i>",
       "source": ["translations"]
     },
     "rulebook-totemic_summon": {
@@ -10764,25 +10635,7 @@
     "ask-symbol_of_slaughter": {
       "title": "Symbol of Slaughter",
       "def": "Attacks with this weapon become Magical Attacks. While using this weapon, the wielder gains +2 Attack Value and +2 Agility. Close Combat Attacks made against the wielder's model gain +1 to hit.",
-      "source": ["translations", "modifiers"],
-      "type": "weapon_enchant",
-      "mod": [
-        {
-          "affects": [0],
-          "rules": [
-            {
-              "id": "magical_attacks"
-            }
-          ],
-          "stats": {
-            "At": "+2",
-            "Ag": "+2"
-          },
-          "rollmodifiers": {
-            "to_hit": "+1"
-          }
-        }
-      ]
+      "source": ["translations"]
     },
     "ask-byargfylli": {
       "title": "Byargfylli",
@@ -11026,7 +10879,7 @@
     },
     "he-sky_reaper": {
       "title": "Sky Reaper",
-      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th></tr><tr><td>1</td><td>24</td><td>4</td><td>5</td><td>3</td></tr></table><br/><b>Attack Attributes</b>: Quick to Fire",
+      "def": "<table><tr><th>Aim</th><th>Range</th><th>Shots</th><th>Str</th><th>AP</th><th>Note</th></tr><tr><td>1</td><td>24</td><td>4</td><td>5</td><td>3</td><td>skyReaperNote</td></tr></table><br/><b>Attack Attributes</b>: Quick to Fire",
       "source": ["gdt-armybase"]
     },
     "id-vassal_slingshot": {
