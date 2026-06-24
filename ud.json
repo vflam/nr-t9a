@@ -8,7 +8,7 @@
   "version": "2023",
   "nrversion": 367,
   "playable": 1,
-  "indicators": ["aspis_arrows", "death_from_afar"],
+  "indicators": ["aspis_arrows", "death_from_afar", "masons_menagerie"],
   "id": 15,
   "include": [102],
   "hereditary": [
@@ -32,7 +32,8 @@
     "core_unit": "Core Unit",
     "hierophant": "Hierophant",
     "terracotta": "Terracotta Army",
-    "barrow_legion": "Barrow Legion"
+    "barrow_legion": "Barrow Legion",
+    "masons_menagerie": "Masons' Menagerie"
   },
   "dictionnary": [
     {
@@ -213,7 +214,7 @@
           "cost": 60,
           "hasOption": [
             {
-              "refs": ["pharaoh", "nomarch"],
+              "refs": ["undyingWill"],
               "amount": 1
             }
           ],
@@ -362,6 +363,11 @@
           "refs": ["death_from_afar"],
           "amount": 1,
           "perPoints": 2000
+        },
+        {
+          "refs": ["masons_menagerie"],
+          "amount": 1,
+          "perPoints": 1500
         }
       ],
       "armyHasOption": [
@@ -386,7 +392,7 @@
               "cost": 220,
               "option_id": "mhbroxxntj936k1uhtoirh",
               "unit_id": "pharaoh",
-              "refs": ["pharaoh", "tag_Skeleton", "tag_Light Armour"],
+              "refs": ["pharaoh", "tag_Skeleton", "tag_Light Armour", "undyingWill"],
               "size": "1",
               "height": "1",
               "basesize": "20×20",
@@ -669,17 +675,6 @@
                   "options": {
                     "extraCategories": ["entombed"]
                   }
-                },
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["shaGuardian"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["masonsMenagerie"]
-                  }
                 }
               ],
               "logo": "character"
@@ -875,7 +870,7 @@
                       "name": "Deathless Noble",
                       "cost": 40,
                       "option_id": "f032f032f032f032f032f",
-                      "refs": ["deathlessNoble", "deathless_noble"],
+                      "refs": ["deathlessNoble", "deathless_noble", "undyingWill"],
                       "rarity": "Common"
                     },
                     {
@@ -1066,17 +1061,6 @@
                   ],
                   "options": {
                     "extraCategories": ["entombed"]
-                  }
-                },
-                {
-                  "hasOption": [
-                    {
-                      "refs": ["shaGuardian"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "extraCategories": ["masonsMenagerie"]
                   }
                 }
               ],
@@ -1492,7 +1476,7 @@
               "magic": {
                 "amount": 1
               },
-              "armyHasNotOption": ["army_general"]
+              "armyHasNotOption": ["army_general", "deathCultHierarch", "casketOfPhatep", "undyingWill"]
             },
             {
               "name": "Rehnepeh, the Undying Sun",
@@ -1746,14 +1730,6 @@
                                 {
                                   "ref": "aspis_arrows",
                                   "amount": 2
-                                }
-                              ],
-                              "armyHasNotOption": [
-                                {
-                                  "refs": ["archer_longbow"],
-                                  "amount": 1,
-                                  "amountRefs": ["pharaoh"],
-                                  "parentMult": false
                                 }
                               ]
                             }
@@ -3395,7 +3371,7 @@
               "cost": 440,
               "option_id": "4imwgbgarwvhbocteidqgw",
               "unit_id": "battleSphinx",
-              "refs": ["battleSphinx", "tag_Skeleton", "tag_Statue", "tag_Beast", "tag_Mount", "battle_sphinx"],
+              "refs": ["battleSphinx", "tag_Skeleton", "tag_Statue", "tag_Beast", "tag_Mount", "battle_sphinx", "masons_menagerie"],
               "size": "1",
               "rarity": "Uncommon",
               "height": "5",
@@ -3431,7 +3407,7 @@
               "cost": 400,
               "option_id": "okj27l9lharcjz8ajir22",
               "unit_id": "dreadSphinx",
-              "refs": ["dreadSphinx", "tag_Statue", "tag_Beast", "dread_sphinx"],
+              "refs": ["dreadSphinx", "tag_Statue", "tag_Beast", "dread_sphinx", "masons_menagerie"],
               "size": "1",
               "rarity": "Rare",
               "height": "5",
@@ -3473,7 +3449,7 @@
               "cost": -30,
               "option_id": "68ro8yq8ji56vka3inpwz8",
               "unit_id": "tombReapers",
-              "refs": ["tombReapers", "tag_Statue", "tomb_reapers"],
+              "refs": ["tombReapers", "tag_Statue", "tomb_reapers", "masons_menagerie"],
               "rarity": "Uncommon",
               "height": "4",
               "basesize": "50×75",
@@ -3566,7 +3542,7 @@
               "cost": 360,
               "option_id": "cqjj89zrp3thhibny8edhj",
               "unit_id": "colossus",
-              "refs": ["colossus", "tag_Statue"],
+              "refs": ["colossus", "tag_Statue", "masons_menagerie"],
               "size": "1",
               "rarity": "Rare",
               "height": "5",
@@ -3802,7 +3778,7 @@
               "cost": 0,
               "option_id": "t00nn6rqafaaj79xrjvpo",
               "unit_id": "shaGuardianMount",
-              "refs": ["shaGuardianMount", "tag_Statue", "tag_Mount", "mount", "shaGuardian_mount_unit"],
+              "refs": ["shaGuardianMount", "tag_Statue", "tag_Mount", "mount", "shaGuardian_mount_unit", "masons_menagerie"],
               "invisible": true,
               "rarity": "Rare",
               "height": "5",

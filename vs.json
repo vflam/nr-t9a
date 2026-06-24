@@ -484,6 +484,7 @@
                 "army_unique",
                 "caelysianPantheon",
                 "tag_Supernal",
+                "beastOrDictator",
                 {
                   "ref": "tunnel_gunners",
                   "amount": 7
@@ -491,6 +492,12 @@
               ],
               "size": "1",
               "rarity": "Legendary",
+              "sharedRarity": [
+                {
+                  "ref": "beastOrDictator",
+                  "rarity": "Rare"
+                }
+              ],
               "height": "5",
               "basesize": "75×75",
               "options": [
@@ -2468,9 +2475,15 @@
               "cost": 280,
               "option_id": "40p3o104hzb5mq68ob90i7",
               "unit_id": "arenaBeast",
-              "refs": ["arenaBeast", "tag_Beast", "tag_Mutant", "tag_Vermin", "non_core_unit"],
+              "refs": ["arenaBeast", "tag_Beast", "tag_Mutant", "tag_Vermin", "non_core_unit", "beastOrDictator"],
               "size": "1",
               "rarity": "Uncommon",
+              "sharedRarity": [
+                {
+                  "ref": "beastOrDictator",
+                  "rarity": "Rare"
+                }
+              ],
               "height": "5",
               "basesize": "50×100",
               "options": [
@@ -2486,24 +2499,6 @@
                     }
                   ],
                   "option_id": "b9tjh7ouoeouarbxi67j5"
-                }
-              ],
-              "override": [
-                {
-                  "armyHasOption": [
-                    {
-                      "refs": ["ruinousDictator"],
-                      "amount": 1
-                    }
-                  ],
-                  "options": {
-                    "armyHasNotOption": [
-                      {
-                        "refs": ["arenaBeast"],
-                        "amount": 2
-                      }
-                    ]
-                  }
                 }
               ],
               "category": "bread_and_games",
